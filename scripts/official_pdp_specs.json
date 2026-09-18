@@ -1,0 +1,42 @@
+{
+  "pro_12th_intel": {
+    "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
+    "title": "Surface Pro 商用版, 13 英寸(第 12 代) Intel 二合一笔记本电脑 – 微软官方商城",
+    "description": "",
+    "prices": [
+      "¥757",
+      "¥16,888"
+    ],
+    "price_box": ""
+  },
+  "pro_12th_snapdragon": {
+    "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon",
+    "title": "Surface Pro 商用版, 13 英寸(第 12 代) Snapdragon – 微软官方商城",
+    "description": "",
+    "prices": [
+      "¥699",
+      "¥15,488"
+    ],
+    "price_box": ""
+  },
+  "laptop_8th_intel": {
+    "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
+    "title": "Surface Laptop 商用版, 13.8或15英寸(第 8 代) Intel – 微软官方商城",
+    "description": "",
+    "prices": [
+      "¥719",
+      "¥16,888"
+    ],
+    "price_box": ""
+  },
+  "laptop_8th_snapdragon": {
+    "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
+    "title": "Surface Laptop 商用版, 13.8和15英寸(第 8 代) | Snapdragon – 微软官方商城",
+    "description": "",
+    "prices": [
+      "¥636",
+      "¥14,888"
+    ],
+    "price_box": ""
+  }
+}

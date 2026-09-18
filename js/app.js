@@ -734,10 +734,22 @@ const App = {
                     <div style="font-size:11px; color:var(--ms-text-tertiary);">${sp.resolution || ''} ${sp.refreshRate || ''}</div>
                   </td>
                   <td style="padding:10px 14px; text-align:center;">
-                    <div style="display:inline-flex; gap:6px;">
-                      <a href="${storeUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:11px; padding:3px 8px;" title="前往微软官网选配/商城页核对">
-                        🛒 选配直达 ↗
-                      </a>
+                    <div style="display:inline-flex; gap:6px; flex-wrap:wrap; justify-content:center;">
+                      ${sp.officialIntelConfigureUrl ? `
+                        <a href="${sp.officialIntelConfigureUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:10.5px; padding:2px 6px;" title="前往微软官方 Intel Ultra 选配定制页">
+                          🛒 Ultra选配 ↗
+                        </a>
+                      ` : ''}
+                      ${sp.officialSnapdragonConfigureUrl ? `
+                        <a href="${sp.officialSnapdragonConfigureUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:10.5px; padding:2px 6px;" title="前往微软官方骁龙版选配定制页">
+                          ⚡ 骁龙选配 ↗
+                        </a>
+                      ` : ''}
+                      ${!sp.officialIntelConfigureUrl && !sp.officialSnapdragonConfigureUrl ? `
+                        <a href="${storeUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:11px; padding:3px 8px;" title="前往微软官网选配/商城页核对">
+                          🛒 选配直达 ↗
+                        </a>
+                      ` : ''}
                       ${learnUrl ? `
                         <a href="${learnUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:11px; padding:3px 8px;" title="前往微软官方 Learn 文档核对">
                           📖 Learn ↗
@@ -846,9 +858,21 @@ const App = {
                 🔄 查看与上一代 (${prevDev.name}) 升级比对
               </button>
             ` : ''}
-            <a class="fluent-btn" href="${dev.specs.officialDocUrl || 'https://www.microsoftstore.com.cn/'}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-              🛒 微软官方商城/选配直达 ↗
-            </a>
+            ${dev.specs.officialIntelConfigureUrl ? `
+              <a class="fluent-btn" href="${dev.specs.officialIntelConfigureUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;" title="进入微软官方商城 Intel 酷睿 Ultra 版选配定制">
+                🛒 Intel 酷睿 Ultra 选配 ↗
+              </a>
+            ` : ''}
+            ${dev.specs.officialSnapdragonConfigureUrl ? `
+              <a class="fluent-btn" href="${dev.specs.officialSnapdragonConfigureUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;" title="进入微软官方商城高通骁龙版选配定制">
+                ⚡ 骁龙 X2 选配 ↗
+              </a>
+            ` : ''}
+            ${!dev.specs.officialIntelConfigureUrl && !dev.specs.officialSnapdragonConfigureUrl ? `
+              <a class="fluent-btn" href="${dev.specs.officialDocUrl || 'https://www.microsoftstore.com.cn/'}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+                🛒 微软官方商城/选配直达 ↗
+              </a>
+            ` : ''}
             ${dev.learnDocUrl ? `
               <a class="fluent-btn" href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
                 📖 微软 Learn 技术文档 ↗

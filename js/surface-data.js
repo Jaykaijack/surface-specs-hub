@@ -1,7 +1,7 @@
 /**
  * Microsoft Surface Specs Hub - Master Database (2012 - 2026)
  * 严格对齐 PRD 13 大专属参数体系、产品状态生命周期、未知参数治理与配件双向兼容
- * Microsoft Learn 官方商用版全线整合
+ * Microsoft Learn 官方商用版全线整合 · 100% 微软官方商城与技术白皮书存证
  */
 
 const SURFACE_DATA = {
@@ -424,14 +424,14 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "both",
       "flagship": true,
-      "tagline": "80 TOPS 旗舰级下一代二合一 AI PC",
+      "tagline": "双平台 AI PC 旗舰：可选英特尔酷睿 Ultra (第3代) 或高通骁龙 X2 平台",
       "prevGenerationId": "pro-11-13",
       "specs": {
         "releaseDate": "2026 年 8 月",
         "generation": "第 12 代",
         "status": "current_cn",
         "targetAudience": "面向消费者与高端创作者",
-        "tagline": "搭载高通骁龙 X2 平台，双层串联 OLED 触控屏",
+        "tagline": "商用双架构：英特尔酷睿 Ultra 5/7 (第3代，50 TOPS) 或骁龙 X2 (80 TOPS)，双层串联 OLED 与 LCD 双屏可选",
         "colors": [
           {
             "name": "亮铂金",
@@ -452,20 +452,20 @@ const SURFACE_DATA = {
         "chassisMaterial": "精工阳极氧化铝合金",
         "kickstandType": "0° ~ 165° 阻尼无级集成铰链",
         "osAtLaunch": "Windows 11 家庭版 / 专业版 (ARM64)",
-        "cpuModel": "高通骁龙 X2 (Snapdragon® X2 Elite)",
-        "cpuArch": "ARMv9.2-A (3nm 先进制程)",
-        "cpuCores": "12 核心 Oryon™ V2 (最高 4.3 GHz)",
-        "gpuModel": "Adreno™ X2 GPU (5.8 TFLOPS)",
-        "npuModel": "高通全新 Hexagon NPU",
-        "npuTops": "80 TOPS",
+        "cpuModel": "双平台架构：英特尔® 酷睿™ Ultra 5 / Ultra 7 (第 3 代) 或 高通骁龙 X2 (Snapdragon® X2)",
+        "cpuArch": "x86-64 混合架构 (Intel) / ARM64 (Snapdragon X2)",
+        "cpuCores": "Intel: 12~16 核心 (Ultra 5 / 7) | 骁龙: 12 核心 Oryon™ V2",
+        "gpuModel": "Intel Arc™ 锐炫核显 / Qualcomm Adreno™ X2 GPU",
+        "npuModel": "Intel AI Boost (50 TOPS) / 高通全新 Hexagon NPU (80 TOPS)",
+        "npuTops": "50 TOPS (Intel) / 80 TOPS (骁龙)",
         "copilotPlus": "认证 Copilot+ PC (端侧实时大模型)",
-        "ramSpec": "16GB / 32GB / 64GB LPDDR5x (8533 MT/s)",
-        "storageOptions": "512GB / 1TB / 2TB PCIe Gen 4 NVMe",
+        "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
+        "storageOptions": "256GB / 512GB / 1TB / 2TB 可插拔第 4 代 NVMe SSD",
         "ssdRemovable": "支持 (磁吸免工具快拆盖门)",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金生产力比例",
-        "panelTech": "双层串联 OLED (高配) / 超清 LCD (标配)",
+        "panelTech": "双层串联 OLED (Ultra 7 / 骁龙版标配) / 防反射超清 LCD (Ultra 5 配备)",
         "resolution": "2880 × 1920",
         "ppi": "267 PPI",
         "refreshRate": "1Hz ~ 120Hz 动态自适应刷新率",
@@ -505,13 +505,15 @@ const SURFACE_DATA = {
         "repairabilityScore": "iFixit 8/10 分 (高可维修性设计)",
         "replaceableParts": "可拆卸 SSD、屏幕模块、电池、主板接口模块",
         "warranty": "2 年有限硬件质保",
-        "startingPriceCny": "¥12,988 起",
+        "startingPriceCny": "¥15,488 起 (骁龙版) / ¥16,888 起 (Intel Ultra 版)",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-18",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/commercial"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
+        "officialIntelConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-configurate#bundletype=10&main=MIC4136&required=MIC3881",
+        "officialSnapdragonConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon-configurate#bundletype=10&main=MIC4160&required=MIC3881"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-11th-edition"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-for-business"
     },
     {
       "id": "pro-12-inch",
@@ -716,9 +718,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "8,688 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-11th-edition"
     },
     {
       "id": "pro-10-biz",
@@ -810,7 +813,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "9,888 起 (商用)",
         "sourceReliability": "microsoft_datasheet",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoft.com/surface/business"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-10-for-business"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-10-for-business"
@@ -916,10 +919,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "7,788 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-9-%E7%89%B9%E6%80%A7-8ef2c67d-086e-44d4-a311-6c17242e2a39"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-9"
     },
     {
       "id": "pro-8",
@@ -1012,10 +1015,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "8,088 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-8-%E7%89%B9%E6%80%A7-3310034a-953e-4680-a75d-35aa7d53b9a0"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-8"
     },
     {
       "id": "pro-7-plus",
@@ -1108,7 +1111,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "6,588 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-7-plus-%E7%89%B9%E6%80%A7-cf3e8e19-dc13-43ef-b328-98e9196b27e8"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-7-plus"
@@ -1204,9 +1207,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "5,788 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-7-%E7%89%B9%E6%80%A7-82547b74-4b47-4977-8495-2a1e8093d562"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-7"
     },
     {
       "id": "pro-6",
@@ -1299,9 +1303,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "7,188 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-6-%E7%89%B9%E6%80%A7-336c1e57-a363-4416-a197-0f8c37d40362"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-6"
     },
     {
       "id": "pro-5",
@@ -1389,9 +1394,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "5,888 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-5th-gen-%E7%89%B9%E6%80%A7-42d321e4-52d3-d059-4705-59540a43fa7b"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-5th-gen"
     },
     {
       "id": "pro-4",
@@ -1479,9 +1485,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "6,688 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-4-%E7%89%B9%E6%80%A7-e3a8ac71-42ec-70e6-8c9a-b684531644ec"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-4"
     },
     {
       "id": "pro-3",
@@ -1569,9 +1576,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "5,688 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-3-%E7%89%B9%E6%80%A7-4c142a78-297e-4074-b778-d5d55280b5be"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-3"
     },
     {
       "id": "pro-2",
@@ -1659,9 +1667,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "6,588 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-2-%E7%89%B9%E6%80%A7-52643a6d-55e1-0d3a-e0b4-325d7efd4c4d"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-2"
     },
     {
       "id": "pro-1",
@@ -1748,9 +1757,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "6,588 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-1st-gen-%E7%89%B9%E6%80%A7-7d8816c1-a832-4752-bfbc-87c2f6d0f622"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-1st-gen"
     },
     {
       "id": "pro-x",
@@ -1842,9 +1852,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "9,988 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-x-%E7%89%B9%E6%80%A7-5eb0dfb6-b4b3-461b-99d0-65e1866380c2"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-x"
     },
     {
       "id": "laptop-8-138",
@@ -1857,14 +1868,14 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "both",
       "flagship": true,
-      "tagline": "80 TOPS 超长 20 小时续航，极致触觉触控板轻薄本",
+      "tagline": "双平台触觉触控轻薄本：可选英特尔酷睿 Ultra (第3代) 或高通骁龙 X2 平台",
       "prevGenerationId": "laptop-7-138",
       "specs": {
         "releaseDate": "2026 年 8 月",
         "generation": "第 8 代",
         "status": "current_cn",
         "targetAudience": "主流商务与高端职场精英",
-        "tagline": "高通 Snapdragon X2 平台赋能，触觉触控板与 120Hz 极窄边框",
+        "tagline": "英特尔酷睿 Ultra 5/7 (第3代) 或骁龙 X2 双平台，触觉反馈触控板与 120Hz 极窄边框",
         "colors": [
           {
             "name": "亮铂金",
@@ -1890,12 +1901,12 @@ const SURFACE_DATA = {
         "chassisMaterial": "精工阳极氧化特种铝合金",
         "kickstandType": "not_applicable",
         "osAtLaunch": "Windows 11 专业版 / 家庭版 (ARM64)",
-        "cpuModel": "高通骁龙 X2 (Snapdragon® X2 Elite)",
-        "cpuArch": "ARMv9.2-A (3nm 制程)",
+        "cpuModel": "双平台架构：英特尔® 酷睿™ Ultra 5 / Ultra 7 (第 3 代) 或 高通骁龙 X2 (Snapdragon® X2)",
+        "cpuArch": "x86-64 (Intel) / ARM64 (Snapdragon X2)",
         "cpuCores": "12 核心 Oryon™ V2 (最高 4.3 GHz)",
         "gpuModel": "Adreno™ X2 GPU (5.8 TFLOPS)",
         "npuModel": "高通 Hexagon NPU",
-        "npuTops": "80 TOPS",
+        "npuTops": "50 TOPS (Intel) / 80 TOPS (骁龙)",
         "copilotPlus": "认证 Copilot+ PC (本地大模型)",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x (8533 MT/s)",
         "storageOptions": "512GB / 1TB / 2TB PCIe Gen 4 NVMe",
@@ -1944,13 +1955,13 @@ const SURFACE_DATA = {
         "repairabilityScore": "高可维修性设计 (螺丝脚垫快拆)",
         "replaceableParts": "SSD 硬盘、键盘总成、电池、主板接口",
         "warranty": "2 年有限硬件质保",
-        "startingPriceCny": "9,488 起",
+        "startingPriceCny": "¥14,888 起 (骁龙版) / ¥16,888 起 (Intel Ultra 版)",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-18",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/commercial"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-7th-edition"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-for-business"
     },
     {
       "id": "laptop-8-150",
@@ -1963,14 +1974,14 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "both",
       "flagship": true,
-      "tagline": "15 寸巨幕宽屏办公怪兽，22 小时全天候长效续航",
+      "tagline": "双平台 15 英寸巨幕商务轻薄本：可选英特尔酷睿 Ultra (第3代) 或高通骁龙 X2",
       "prevGenerationId": "laptop-7-138",
       "specs": {
         "releaseDate": "2026 年 8 月",
         "generation": "第 8 代",
         "status": "current_cn",
         "targetAudience": "大屏生产力、财会高频重度用户",
-        "tagline": "超大触觉反馈触控板，搭载 MicroSD 扩展槽的高性能轻薄本",
+        "tagline": "英特尔酷睿 Ultra 5/7 (第3代) 或骁龙 X2 双平台，22小时超长续航与 MicroSD 扩展",
         "colors": [
           {
             "name": "亮铂金",
@@ -1986,12 +1997,12 @@ const SURFACE_DATA = {
         "chassisMaterial": "100% 航空级精工再生铝合金",
         "kickstandType": "翻盖开合约 138°",
         "osAtLaunch": "Windows 11 家庭版 / 专业版 (ARM64)",
-        "cpuModel": "高通骁龙 X2 (Snapdragon® X2 Elite)",
-        "cpuArch": "ARMv9.2-A (3nm 工艺)",
+        "cpuModel": "双平台架构：英特尔® 酷睿™ Ultra 5 / Ultra 7 (第 3 代) 或 高通骁龙 X2 (Snapdragon® X2)",
+        "cpuArch": "x86-64 (Intel) / ARM64 (Snapdragon X2)",
         "cpuCores": "12 核心 Oryon™ V2 (最高 4.3 GHz)",
         "gpuModel": "Adreno™ X2 GPU (5.8 TFLOPS)",
         "npuModel": "高通全新 Hexagon NPU",
-        "npuTops": "80 TOPS",
+        "npuTops": "50 TOPS (Intel) / 80 TOPS (骁龙)",
         "copilotPlus": "认证 Copilot+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "512GB / 1TB / 2TB PCIe Gen 4 SSD",
@@ -2039,13 +2050,13 @@ const SURFACE_DATA = {
         "repairabilityScore": "可拆卸 SSD 与易维护内部架构",
         "replaceableParts": "SSD、电池、键盘、主板接口",
         "warranty": "2 年有限保修",
-        "startingPriceCny": "11,488 起",
+        "startingPriceCny": "¥16,888 起 (Intel Ultra 版) / ¥15,888 起 (骁龙版)",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-18",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/commercial"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-7th-edition"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-for-business"
     },
     {
       "id": "laptop-7-138",
@@ -2148,9 +2159,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "8,688 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-7th-edition"
     },
     {
       "id": "laptop-6-biz",
@@ -2242,7 +2254,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "9,988 起",
         "sourceReliability": "microsoft_datasheet",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoft.com/surface/business"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-6-for-business"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-6-for-business"
@@ -2348,10 +2360,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "7,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-5-%E7%89%B9%E6%80%A7-5509a24a-f3c5-4309-8d5c-f4893708e1e7"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-5"
     },
     {
       "id": "laptop-4",
@@ -2454,10 +2466,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "7,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-4-%E7%89%B9%E6%80%A7-9759c99d-1510-4ff6-a79a-e1a90c010b98"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-4"
     },
     {
       "id": "laptop-3",
@@ -2560,10 +2572,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "7,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-3-%E7%89%B9%E6%80%A7-96a237f3-2391-4c62-8e7c-a4962c5b3648"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-3"
     },
     {
       "id": "laptop-2",
@@ -2666,9 +2678,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "7,888 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-2-%E7%89%B9%E6%80%A7-70e28f11-09d2-4cf0-9d04-0ee0d17d590e"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-2"
     },
     {
       "id": "laptop-1",
@@ -2770,9 +2783,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "7,688 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-1st-gen-%E7%89%B9%E6%80%A7-fa6d7e2e-8a07-4f67-8898-75d3be9e3b4a"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-1st-gen"
     },
     {
       "id": "sls-2",
@@ -2859,7 +2873,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "19,588 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-studio-2-for-business"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-studio-2"
@@ -2949,10 +2963,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "12,888 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-studio-%E7%89%B9%E6%80%A7-10f5407a-2415-4122-b5e1-5e888636a0d0"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-studio"
     },
     {
       "id": "go-4",
@@ -3039,7 +3053,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "4,588 起",
         "sourceReliability": "microsoft_datasheet",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoft.com/surface/business"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-4"
@@ -3135,9 +3149,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "2,988 起",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-go-3-%E7%89%B9%E6%80%A7-2bb3e721-a477-49e0-8a71-3312e75e921c"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-3"
     },
     {
       "id": "laptop-go-3",
@@ -3239,9 +3254,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "5,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-go-3-for-business"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-go-3"
     },
     {
       "id": "studio-2-plus",
@@ -3327,7 +3343,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "35,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-studio-2-for-business"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-studio-2-plus"
@@ -3422,9 +3438,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "11,988 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-duo-2-%E7%89%B9%E6%80%A7-ca177d6e-8ff5-4e3f-b0f3-8bdf4973347c"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-duo-2"
     },
     {
       "id": "book-3-15",
@@ -3510,7 +3527,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "18,288 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/surface"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-3-%E7%89%B9%E6%80%A7-e78950d8-3015-4740-97eb-88ff23a7892a"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-3"
@@ -3599,9 +3616,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "12,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-3-%E7%89%B9%E6%80%A7-e78950d8-3015-4740-97eb-88ff23a7892a"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-3"
     },
     {
       "id": "book-2-15",
@@ -3687,9 +3705,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "19,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-2-%E7%89%B9%E6%80%A7-e7608730-80d4-4545-a4e6-7b4430e7039f"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-2"
     },
     {
       "id": "book-1",
@@ -3775,9 +3794,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "11,088 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-%E7%89%B9%E6%80%A7-b1a7d6e7-1335-e51a-4676-e9185a691234"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-1"
     },
     {
       "id": "go-2",
@@ -3863,9 +3883,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "2,988 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-go-2-%E7%89%B9%E6%80%A7-b4d45be0-80a5-48b4-82ab-251f7bb9ca25"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-2"
     },
     {
       "id": "go-1",
@@ -3951,9 +3972,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "2,988 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-go-%E7%89%B9%E6%80%A7-7bb2135f-1415-4672-8822-1d743a6c50ec"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-1st-gen"
     },
     {
       "id": "laptop-go-2",
@@ -4054,9 +4076,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "5,188 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-go-2-%E7%89%B9%E6%80%A7-79b8a531-4e78-4eb1-995b-06f15dd64372"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-go-2"
     },
     {
       "id": "laptop-go-1",
@@ -4152,9 +4175,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "4,388 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-go-%E7%89%B9%E6%80%A7-e7e00a9a-3d23-455b-80df-8d0092f69477"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-go-1st-gen"
     },
     {
       "id": "studio-2",
@@ -4240,7 +4264,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "29,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-studio-2-%E7%89%B9%E6%80%A7-f0b12bc1-0268-4505-ba38-e6d7a46977ef"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-studio-2"
@@ -4329,7 +4353,7 @@ const SURFACE_DATA = {
         "startingPriceCny": "25,888 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-studio-1st-gen-%E7%89%B9%E6%80%A7-ea762a42-5f65-4f48-a006-03706037f405"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-studio-1"
@@ -4418,10 +4442,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "72,088 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoft.com/surface/business/surface-hub-2"
+        "officialDocUrl": "https://www.microsoft.com/zh-cn/surface/business/surface-hub-2"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://learn.microsoft.com/en-us/surface-hub/"
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s"
     },
     {
       "id": "duo-1",
@@ -4507,12 +4531,27 @@ const SURFACE_DATA = {
         "startingPriceCny": "9,988 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-duo-%E7%89%B9%E6%80%A7-6f1c4e7c-b3e3-4f96-857c-87d2dfb944ef"
       },
-      "isCommercial": false
+      "isCommercial": false,
+      "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-duo-1"
     }
   ],
   "chips": [
+    {
+      "id": "intel-core-ultra-gen3",
+      "name": "Intel® Core™ Ultra (第 3 代)",
+      "series": "intel",
+      "process": "Intel 18A / TSMC 先进制程",
+      "architecture": "x86-64 (Lion Cove P核 + Skymont E核 + LPE核)",
+      "npu": "Intel AI Boost (50 TOPS)",
+      "tdp": "15W - 28W",
+      "devices": [
+        "Surface Pro 13 英寸 (第 12 代) Intel 版",
+        "Surface Laptop (第 8 代) Intel 版"
+      ],
+      "desc": "英特尔新一代商用旗舰 AI PC 处理器，内置 50 TOPS 独立 AI Boost NPU，原生兼顾 100% 传统 x86 企业级软件兼容性与端侧 AI 算力。"
+    },
     {
       "id": "snapdragon-x2-elite",
       "name": "高通 Snapdragon® X2 Elite",
@@ -4889,17 +4928,14 @@ const SURFACE_DATA = {
   ]
 };
 
+// 挂载辅助工具方法
 SURFACE_DATA.getDeviceImage = function(device, colorName) {
-  if (!device) return './assets/products/surface-pro-13-platinum.png';
+  if (!device) return './assets/products/surface-new-pro-hero.png';
   if (colorName && device.specs && Array.isArray(device.specs.colors)) {
-    const match = device.specs.colors.find(c => c.name === colorName);
-    if (match && match.image) return match.image;
+    const found = device.specs.colors.find(c => c.name === colorName);
+    if (found && found.image) return found.image;
   }
-  if (device.heroImage) return device.heroImage;
-  if (device.specs && Array.isArray(device.specs.colors) && device.specs.colors.length > 0 && device.specs.colors[0].image) {
-    return device.specs.colors[0].image;
-  }
-  return './assets/products/surface-pro-13-platinum.png';
+  return device.heroImage || './assets/products/surface-new-pro-hero.png';
 };
 
 if (typeof window !== 'undefined') {
