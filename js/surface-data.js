@@ -516,7 +516,7 @@ const SURFACE_DATA = {
     {
       "id": "pro-12-inch",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-pro-13-platinum.png",
+      "heroImage": "./assets/products/surface-pro-12-platinum.png",
       "name": "Surface Pro, 12 英寸 (第 1 代)",
       "nameEn": "Surface Pro, 12-inch (1st Edition)",
       "generation": "第 1 代 (2026)",
@@ -537,7 +537,17 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-13-platinum.png"
+            "image": "./assets/products/surface-pro-12-platinum.png"
+          },
+          {
+            "name": "罗兰紫",
+            "hex": "#876d97",
+            "image": "./assets/products/surface-pro-12-violet.png"
+          },
+          {
+            "name": "碧海青",
+            "hex": "#3a7f8d",
+            "image": "./assets/products/surface-pro-12-ocean.png"
           }
         ],
         "chassisMaterial": "精工阳极氧化铝合金",
@@ -549,9 +559,9 @@ const SURFACE_DATA = {
         "gpuModel": "Qualcomm Adreno™ GPU",
         "npuModel": "Qualcomm Hexagon™ NPU",
         "npuTops": "45 TOPS",
-        "copilotPlus": "认证 Copilot+ PC (本地实时 AI 加速)",
-        "ramSpec": "8GB / 16GB / 24GB LPDDR5x",
-        "storageOptions": "256GB / 512GB / 1TB (高速 UFS 闪存)",
+        "copilotPlus": "认证 Copilot+ PC (注：本地 AI+ PC 体验需 16GB 及以上内存配置)",
+        "ramSpec": "8GB / 16GB LPDDR5x (16GB 完整解锁 Copilot+ PC 体验)",
+        "storageOptions": "256GB / 512GB (高速闪存)",
         "ssdRemovable": "not_applicable",
         "expandableStorage": "not_applicable",
         "screenSize": "12.0 英寸 PixelSense™ 触控屏",
@@ -583,7 +593,7 @@ const SURFACE_DATA = {
         "batteryLifeLocalVideo": "最长 16 小时本地视频播放",
         "batteryLifeWeb": "最长 12 小时常规网页使用",
         "chargingSpeed": "支持 65W USB-C PD 快速充电",
-        "keyboardCompatibility": "适配 12 英寸专属轻便键盘盖 (提供碧海青、板岩灰、罗兰紫三色)",
+        "keyboardCompatibility": "适配 12 英寸特制键盘盖 (提供碧海青、板岩灰、罗兰紫三色，含独立 Copilot 按键)",
         "penChargingType": "键盘磁吸无线充电笔槽",
         "trackpadType": "大尺寸高精度触控板",
         "tpmChip": "Microsoft Pluton 安全处理器，固件 TPM 2.0",
@@ -597,10 +607,10 @@ const SURFACE_DATA = {
         "repairabilityScore": "高可维修性模块化设计",
         "replaceableParts": "屏幕总成、电池模块、接口盖板",
         "warranty": "2 年有限硬件质保",
-        "startingPriceCny": "¥6,988 起",
+        "startingPriceCny": "¥6,788 起",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-18",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/commercial"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch"
       },
       "isCommercial": true,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-12-inch"

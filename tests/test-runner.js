@@ -360,6 +360,12 @@ const pro12Inch = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch');
 assert(Boolean(pro12Inch), '全系参数库正式收录官方 Surface Pro, 12 英寸 (第 1 代)');
 assertEqual(pro12Inch.specs.resolution, '2196 × 1464', '12 英寸机型分辨率 2196x1464 准确无误');
 assertEqual(pro12Inch.specs.npuTops, '45 TOPS', '12 英寸机型搭载 45 TOPS 高通 NPU');
+assertEqual(pro12Inch.specs.startingPriceCny, '¥6,788 起', '12 英寸机型官方商城起售价准确无误 (Actual: ¥6,788 起)');
+assertEqual(pro12Inch.specs.officialDocUrl, 'https://www.microsoftstore.com.cn/configure/surface-pro-12-inch', '12 英寸官方商城直达选配页链接准确');
+const pro12Colors = pro12Inch.specs.colors.map(c => c.name);
+assert(pro12Colors.includes('亮铂金') && pro12Colors.includes('罗兰紫') && pro12Colors.includes('碧海青'), '12 英寸机型完整包含官网在售 3 色: 亮铂金、罗兰紫、碧海青');
+assert(SURFACE_DATA.getDeviceImage(pro12Inch, '罗兰紫').includes('violet.png'), '12 英寸支持切换罗兰紫配色图');
+assert(SURFACE_DATA.getDeviceImage(pro12Inch, '碧海青').includes('ocean.png'), '12 英寸支持切换碧海青配色图');
 
 // ----------------------------------------------------
 // 8. Matt Pocock 架构与工程规范校验 (Architecture & Governance)
