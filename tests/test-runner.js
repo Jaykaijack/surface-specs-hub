@@ -78,6 +78,31 @@ assert(!!laptop8_intel, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 
 const laptop8_snap = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138-snap');
 assert(!!laptop8_snap, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 英寸商用 骁龙版收录正常');
 
+// 架构重构检查: 消费版与商用版两大顶级分类独立并列
+assertEqual(SURFACE_DATA.consumerCategories.length, 8, '消费版产品库独立收录完整的 8 大消费系列');
+assertEqual(SURFACE_DATA.commercialCategories.length, 6, '商用版产品库独立收录完整的 6 大商用系列');
+
+// 补全商用型号官方 Learn 架构与 Fact Sheet 存证检查
+const pro12_biz = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch-biz');
+assert(!!pro12_biz, '官方商用型号检查: 严格收录 Surface Pro 12 英寸 (第 1 代) 商用版 (SKU 2109)');
+assert(pro12_biz.isCommercial === true && pro12_biz.segment === 'commercial', 'Pro 12 商用版严格标记商用属性');
+assert(pro12_biz.specs.colors.length === 1 && pro12_biz.specs.colors[0].name === '亮铂金', 'Pro 12 商用版外观严格仅官方亮铂金商务单色');
+
+const lp13_biz = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch-biz');
+assert(!!lp13_biz, '官方商用型号检查: 严格收录 Surface Laptop 13 英寸 (第 1 代) 商用版 (SKU 2095)');
+assert(lp13_biz.specs.colors.length === 1 && lp13_biz.specs.colors[0].name === '亮铂金', 'Laptop 13 商用版外观严格仅官方亮铂金单色');
+
+const hub3 = SURFACE_DATA.devices.find(d => d.id === 'hub-3');
+assert(!!hub3, '官方商用巨幕检查: 严格收录 Surface Hub 3 (50" / 85") 协作一体机 (SKU Hub 3 50/85)');
+
+const pro11_snap = SURFACE_DATA.devices.find(d => d.id === 'pro-11-biz-snap');
+const pro11_intel = SURFACE_DATA.devices.find(d => d.id === 'pro-11-biz-intel');
+assert(!!pro11_snap && !!pro11_intel, '官方商用型号检查: 完整收录 Surface Pro (第 11 代) 商用版 骁龙与 Intel 双架构');
+
+const lp7_snap = SURFACE_DATA.devices.find(d => d.id === 'laptop-7-biz-snap');
+const lp7_intel = SURFACE_DATA.devices.find(d => d.id === 'laptop-7-biz-intel');
+assert(!!lp7_snap && !!lp7_intel, '官方商用型号检查: 完整收录 Surface Laptop (第 7 代) 商用版 骁龙与 Intel 双架构');
+
 // ----------------------------------------------------
 // 2. 13 大专属参数大类覆盖检查 (Spec Groups & Zero Hallucination)
 // ----------------------------------------------------
@@ -288,11 +313,17 @@ assert(typeof App.switchSeriesViewMode === 'function', '交互验证: App 具备
 assert(typeof App.toggleDockCollapse === 'function', '交互验证: App 具备 toggleDockCollapse 托盘折叠方法');
 assert(typeof App.navigateToDetail === 'function', '路由交互验证: App 具备 navigateToDetail 详情跳转方法');
 
-// 检验系列页机型卡片点击事件与复选框隔离
-const mockContainer = { innerHTML: '' };
-App.renderSeriesView(mockContainer, 'pro');
-assert(mockContainer.innerHTML.includes('onclick="App.navigateToDetail(\'pro\', \'pro-12-13-intel\')"'), '系列页卡片主体点击跳转详情');
-assert(mockContainer.innerHTML.includes('event.stopPropagation(); ComparisonEngine.toggleDevice(\'pro-12-13-intel\')'), '系列页卡片复选框独立隔离对比事件');
+// 检验系列页机型卡片点击事件与复选框隔离 (商用版与消费版 100% 绝对隔离)
+const mockBizContainer = { innerHTML: '' };
+App.renderSeriesView(mockBizContainer, 'pro', 'commercial');
+assert(mockBizContainer.innerHTML.includes('onclick="App.navigateToDetail(\'pro\', \'pro-12-13-intel\')"'), '系列页卡片主体点击跳转详情');
+assert(mockBizContainer.innerHTML.includes('event.stopPropagation(); ComparisonEngine.toggleDevice(\'pro-12-13-intel\')'), '系列页卡片复选框独立隔离对比事件');
+assert(!mockBizContainer.innerHTML.includes('data-id="pro-12-inch"'), '商用系列页严格零消费版机型混入 (100% 绝对隔离)');
+
+const mockConsContainer = { innerHTML: '' };
+App.renderSeriesView(mockConsContainer, 'pro', 'consumer');
+assert(mockConsContainer.innerHTML.includes('pro-12-inch'), '消费系列页包含 12 英寸第 1 代消费机型');
+assert(!mockConsContainer.innerHTML.includes('pro-12-13-intel'), '消费系列页严格零商用版机型混入 (100% 绝对隔离)');
 
 // 检验详情页完整 13 大类参数直出渲染（无需二次点击切换）
 const mockDetailContainer = { innerHTML: '' };
