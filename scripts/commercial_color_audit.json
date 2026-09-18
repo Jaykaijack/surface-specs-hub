@@ -1,0 +1,58 @@
+{
+  "pro_12th_intel_biz": {
+    "title": "Surface Pro 商用版, 13 英寸(第 12 代) Intel 二合一笔记本电脑 – 微软官方商城",
+    "colors": [],
+    "prices": [
+      "¥757",
+      "¥16,888"
+    ]
+  },
+  "pro_12th_snap_biz": {
+    "title": "Surface Pro 商用版, 13 英寸(第 12 代) Snapdragon – 微软官方商城",
+    "colors": [],
+    "prices": [
+      "¥699",
+      "¥15,488"
+    ]
+  },
+  "laptop_8th_intel_biz": {
+    "title": "Surface Laptop 商用版, 13.8或15英寸(第 8 代) Intel – 微软官方商城",
+    "colors": [],
+    "prices": [
+      "¥719",
+      "¥16,888"
+    ]
+  },
+  "laptop_8th_snap_biz": {
+    "title": "Surface Laptop 商用版, 13.8和15英寸(第 8 代) | Snapdragon – 微软官方商城",
+    "colors": [],
+    "prices": [
+      "¥636",
+      "¥14,888"
+    ]
+  },
+  "pro_10_biz": {
+    "error": "HTTP Error 404: Not Found"
+  },
+  "laptop_6_biz": {
+    "error": "HTTP Error 404: Not Found"
+  },
+  "pro_12_inch": {
+    "title": "购买 12 英寸 Surface Pro：二合一 Windows 笔记本电脑 &amp; Windows 11 AI+ PC (Snapdragon) - 微软官方商城",
+    "colors": [
+      "亮铂金"
+    ],
+    "prices": [
+      "¥7",
+      "¥8",
+      "¥9",
+      "¥10",
+      "¥13"
+    ]
+  },
+  "pro_11_consumer": {
+    "title": "Surface Pro（12 英寸和 13 英寸）– 功能强大的 2 合 1 笔记本平板电脑 | 微软 Surface",
+    "colors": [],
+    "prices": []
+  }
+}

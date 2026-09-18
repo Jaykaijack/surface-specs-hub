@@ -58,18 +58,25 @@ expectedCategories.forEach(catId => {
 
 assert(SURFACE_DATA.devices.length >= 40, `全历史机型收录充分 (当前收录: ${SURFACE_DATA.devices.length} 款)`);
 
-// 官方全系产品线完整度检查: 包含 Surface Pro, 12 英寸 (第 1 代) 与 Pro 13 (第 12 代)
+// 官方全系产品线完整度检查: 包含 Surface Pro, 12 英寸 (第 1 代) 与 Pro 13 (第 12 代) 商用版独立双架构
 const pro12InchFound = SURFACE_DATA.devices.some(d => d.id === 'pro-12-inch');
-assert(pro12InchFound, '官方产品线检查: 完整收录微软在售 Surface Pro, 12 英寸 (第 1 代)');
+assert(pro12InchFound, '官方产品线检查: 完整收录微软在售 Surface Pro, 12 英寸 (第 1 代) 消费版');
 
-const pro12_13 = SURFACE_DATA.devices.find(d => d.id === 'pro-12-13');
-assert(!!pro12_13, '旗舰二合一存在: Surface Pro 13 英寸 (第 12 代) 收录正常');
-if (pro12_13) {
-  assert(pro12_13.name.includes('Surface Pro 13 英寸') && pro12_13.name.includes('12 代'), '旗舰机型全名符合规范');
-}
+const pro12_intel = SURFACE_DATA.devices.find(d => d.id === 'pro-12-13-intel');
+assert(!!pro12_intel, '旗舰二合一存在: Surface Pro 13 英寸 (第 12 代) 商用版 - Intel 版独立收录');
+assert(pro12_intel.isCommercial === true, 'Pro 12 Intel 版明确为商用属性 (isCommercial=true)');
+assert(pro12_intel.specs.cpuModel.includes('Ultra'), 'Pro 12 Intel 版搭载酷睿 Ultra 处理器');
 
-const laptop8 = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138');
-assert(!!laptop8, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 英寸收录正常');
+const pro12_snap = SURFACE_DATA.devices.find(d => d.id === 'pro-12-13-snap');
+assert(!!pro12_snap, '旗舰二合一存在: Surface Pro 13 英寸 (第 12 代) 商用版 - 骁龙版独立收录');
+assert(pro12_snap.isCommercial === true, 'Pro 12 骁龙版明确为商用属性 (isCommercial=true)');
+assert(pro12_snap.specs.cpuModel.includes('Snapdragon') || pro12_snap.specs.cpuModel.includes('骁龙'), 'Pro 12 骁龙版搭载骁龙 X2 处理器');
+
+const laptop8_intel = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138-intel');
+assert(!!laptop8_intel, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 英寸商用 Intel 版收录正常');
+
+const laptop8_snap = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138-snap');
+assert(!!laptop8_snap, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 英寸商用 骁龙版收录正常');
 
 // ----------------------------------------------------
 // 2. 13 大专属参数大类覆盖检查 (Spec Groups & Zero Hallucination)
@@ -145,11 +152,11 @@ const diffAC = ComparisonEngine.checkFieldDiff([devA, devC], 'npuTops');
 assertEqual(diffAC, true, '异值参数比对判定存在差异 (diff = true)');
 
 // 对比托盘队列测试
-ComparisonEngine.selectedIds = ['pro-12-13', 'laptop-8-138'];
+ComparisonEngine.selectedIds = ['pro-12-13-intel', 'laptop-8-138-intel'];
 assertEqual(ComparisonEngine.selectedIds.length, 2, '托盘装载 2 款设备');
 ComparisonEngine.swapDeviceOrder(0, 1);
-assertEqual(ComparisonEngine.selectedIds[0], 'laptop-8-138', '列顺序向右调整成功');
-assertEqual(ComparisonEngine.selectedIds[1], 'pro-12-13', '原第0列被交换到第1列');
+assertEqual(ComparisonEngine.selectedIds[0], 'laptop-8-138-intel', '列顺序向右调整成功');
+assertEqual(ComparisonEngine.selectedIds[1], 'pro-12-13-intel', '原第0列被交换到第1列');
 
 // ----------------------------------------------------
 // 4. 辅助分析工具测试 (Tools Engine)
@@ -187,8 +194,8 @@ assertEqual(SURFACE_DATA.accessories.length, 3, '包含键盘、触控笔、拓�
 const flexKeyboard = SURFACE_DATA.accessories.find(a => a.id === 'flex-keyboard');
 assert(!!flexKeyboard, 'Surface Pro Flex 键盘配件在库');
 if (flexKeyboard) {
-  const pro12Support = flexKeyboard.compatibilityList.find(c => c.deviceId === 'pro-12-13');
-  assert(!!pro12Support && pro12Support.status === 'FULL', 'Flex 键盘原生支持 Surface Pro 13 英寸 (第 12 代)');
+  const pro12Support = flexKeyboard.compatibilityList.find(c => c.deviceId === 'pro-12-13-intel');
+  assert(!!pro12Support && pro12Support.status === 'FULL', 'Flex 键盘原生支持 Surface Pro 13 英寸 (第 12 代) 商用版');
 }
 
 // ----------------------------------------------------
@@ -284,15 +291,20 @@ assert(typeof App.navigateToDetail === 'function', '路由交互验证: App 具�
 // 检验系列页机型卡片点击事件与复选框隔离
 const mockContainer = { innerHTML: '' };
 App.renderSeriesView(mockContainer, 'pro');
-assert(mockContainer.innerHTML.includes('onclick="App.navigateToDetail(\'pro\', \'pro-12-13\')"'), '系列页卡片主体点击跳转详情');
-assert(mockContainer.innerHTML.includes('event.stopPropagation(); ComparisonEngine.toggleDevice(\'pro-12-13\')'), '系列页卡片复选框独立隔离对比事件');
+assert(mockContainer.innerHTML.includes('onclick="App.navigateToDetail(\'pro\', \'pro-12-13-intel\')"'), '系列页卡片主体点击跳转详情');
+assert(mockContainer.innerHTML.includes('event.stopPropagation(); ComparisonEngine.toggleDevice(\'pro-12-13-intel\')'), '系列页卡片复选框独立隔离对比事件');
 
 // 检验详情页完整 13 大类参数直出渲染（无需二次点击切换）
 const mockDetailContainer = { innerHTML: '' };
-App.renderProductDetailView(mockDetailContainer, 'pro', 'pro-12-13');
+App.renderProductDetailView(mockDetailContainer, 'pro', 'pro-12-13-intel');
 assert(mockDetailContainer.innerHTML.includes('13 大类官方标准规格全量大表'), '详情页直出展示 13 大类规格大表标题');
-assert(mockDetailContainer.innerHTML.includes('双层串联 OLED'), '详情页完整参数表包含双层串联 OLED 真实参数');
-assert(mockDetailContainer.innerHTML.includes('80 TOPS'), '详情页指标卡与全量参数表均正常渲染 80 TOPS 算力');
+assert(mockDetailContainer.innerHTML.includes('Ultra'), '详情页包含酷睿 Ultra 真实参数');
+assert(mockDetailContainer.innerHTML.includes('50 TOPS'), '详情页指标卡与全量参数表均正常渲染 50 TOPS 算力');
+
+const mockSnapDetailContainer = { innerHTML: '' };
+App.renderProductDetailView(mockSnapDetailContainer, 'pro', 'pro-12-13-snap');
+assert(mockSnapDetailContainer.innerHTML.includes('双层串联 OLED'), '骁龙详情页完整参数表包含双层串联 OLED 真实参数');
+assert(mockSnapDetailContainer.innerHTML.includes('80 TOPS'), '骁龙详情页指标卡正常渲染 80 TOPS 算力');
 
 // ----------------------------------------------------
 // Test Suite 7: 官方机型高清图像与外观配色展示集
@@ -347,21 +359,29 @@ categoryHeroesPng.forEach(imgName => {
   assert(fs.existsSync(p), `全系 8 大品类官方透明 PNG 主图存在: ${imgName}`);
 });
 
-// 检验 SURFACE_DATA 助手函数
-const pro12 = SURFACE_DATA.devices.find(d => d.id === 'pro-12-13');
-assert(Boolean(pro12 && pro12.heroImage), 'Pro 12 配备主图 heroImage');
-assert(SURFACE_DATA.getDeviceImage(pro12).includes('.png'), 'getDeviceImage(pro12) 返回有效 PNG 图片');
-assert(!pro12.specs.colors.some(c => c.name === '宝石蓝'), 'Pro 13 (第 12 代) 严格符合微软官方商城在售实际: 零宝石蓝 (仅亮铂金、典雅黑、沙漫金)');
-assert(SURFACE_DATA.getDeviceImage(pro12, '沙漫金').includes('dune.png'), 'getDeviceImage 支持切换指定颜色沙漫金');
-assert(SURFACE_DATA.getDeviceImage(pro12, '典雅黑').includes('black.png'), 'getDeviceImage 支持切换指定颜色典雅黑');
+// 检验商用机型色彩严查: 必须严格且仅为商务色 (亮铂金与典雅黑)，绝无沙漫金/宝石蓝/罗兰紫
+const pro12_biz_intel = SURFACE_DATA.devices.find(d => d.id === 'pro-12-13-intel');
+assert(Boolean(pro12_biz_intel && pro12_biz_intel.heroImage), 'Pro 12 Intel 配备主图 heroImage');
+assert(SURFACE_DATA.getDeviceImage(pro12_biz_intel).includes('.png'), 'getDeviceImage(pro12_biz_intel) 返回有效 PNG 图片');
+assert(!pro12_biz_intel.specs.colors.some(c => c.name === '宝石蓝'), 'Pro 12 商用版严格零宝石蓝');
+assert(!pro12_biz_intel.specs.colors.some(c => c.name === '沙漫金'), 'Pro 12 商用版严格零沙漫金 (商用版仅限亮铂金与典雅黑)');
+assert(SURFACE_DATA.getDeviceImage(pro12_biz_intel, '亮铂金').includes('platinum.png'), 'getDeviceImage 支持切换指定颜色亮铂金');
+assert(SURFACE_DATA.getDeviceImage(pro12_biz_intel, '典雅黑').includes('black.png'), 'getDeviceImage 支持切换指定颜色典雅黑');
+
+// 全库所有商用机型颜色纯净性断言
+SURFACE_DATA.devices.filter(d => d.isCommercial).forEach(dev => {
+  const cNames = (dev.specs.colors || []).map(c => c.name);
+  assert(!cNames.includes('沙漫金') && !cNames.includes('宝石蓝') && !cNames.includes('罗兰紫') && !cNames.includes('碧海青'),
+    `商用机型 [${dev.id}] 颜色严格合规，无消费级花哨颜色 (Actual colors: ${cNames.join(', ')})`);
+});
 
 // 检验新收录的官方 12 英寸机型
 const pro12Inch = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch');
 assert(Boolean(pro12Inch), '全系参数库正式收录官方 Surface Pro, 12 英寸 (第 1 代)');
 assertEqual(pro12Inch.specs.resolution, '2196 × 1464', '12 英寸机型分辨率 2196x1464 准确无误');
 assertEqual(pro12Inch.specs.npuTops, '45 TOPS', '12 英寸机型搭载 45 TOPS 高通 NPU');
-assertEqual(pro12Inch.specs.startingPriceCny, '¥6,788 起', '12 英寸机型官方商城起售价准确无误 (Actual: ¥6,788 起)');
-assertEqual(pro12Inch.specs.officialDocUrl, 'https://www.microsoftstore.com.cn/configure/surface-pro-12-inch', '12 英寸官方商城直达选配页链接准确');
+assertEqual(pro12Inch.specs.startingPriceCny, '¥7,888 起 (消费版)', '12 英寸机型官方商城起售价准确无误 (Actual: ¥7,888 起)');
+assert(pro12Inch.specs.officialDocUrl.includes('configure/surface-pro-12-inch'), '12 英寸官方商城直达选配页链接准确');
 const pro12Colors = pro12Inch.specs.colors.map(c => c.name);
 assert(pro12Colors.includes('亮铂金') && pro12Colors.includes('罗兰紫') && pro12Colors.includes('碧海青'), '12 英寸机型完整包含官网在售 3 色: 亮铂金、罗兰紫、碧海青');
 assert(SURFACE_DATA.getDeviceImage(pro12Inch, '罗兰紫').includes('violet.png'), '12 英寸支持切换罗兰紫配色图');

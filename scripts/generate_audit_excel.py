@@ -217,34 +217,48 @@ def create_audit_workbook():
         c.alignment = align_center
         c.border = thin_border
 
-    focus_device_ids = ["pro-12-13", "pro-12-inch", "laptop-8-138", "laptop-8-150", "pro-10-biz", "laptop-6-biz", "go-4"]
+    focus_device_ids = [
+        "pro-12-13-intel", "pro-12-13-snap", "pro-12-inch", 
+        "laptop-8-138-intel", "laptop-8-138-snap", 
+        "laptop-8-150-intel", "laptop-8-150-snap", 
+        "pro-10-biz", "laptop-6-biz", "go-4"
+    ]
     focus_devices = [d for d in devices if d["id"] in focus_device_ids]
 
     accessory_notes = {
-        "pro-12-13": "Surface Pro 第 12 代专业键盘盖 / Surface Pro Flex 无线键盘 (集成笔槽充电)",
+        "pro-12-13-intel": "Surface Pro 第 12 代专业键盘盖 / Surface Pro Flex 无线键盘 (集成笔槽充电)",
+        "pro-12-13-snap": "Surface Pro 第 12 代专业键盘盖 / Surface Pro Flex 无线键盘 (集成笔槽充电)",
         "pro-12-inch": "Surface Pro 12 英寸特制版专业键盘 (碧海青 / 板岩灰 / 罗兰紫三色可选)",
-        "laptop-8-138": "一体化精密铝合金 C 面集成触觉反馈触控板 (不支持触控笔)",
-        "laptop-8-150": "一体化精密铝合金 C 面集成触觉反馈触控板 (不支持触控笔)",
+        "laptop-8-138-intel": "一体化精密铝合金 C 面集成触觉反馈触控板 (不支持触控笔)",
+        "laptop-8-138-snap": "一体化精密铝合金 C 面集成触觉反馈触控板 (不支持触控笔)",
+        "laptop-8-150-intel": "一体化精密铝合金 C 面集成触觉反馈触控板 (不支持触控笔)",
+        "laptop-8-150-snap": "一体化精密铝合金 C 面集成触觉反馈触控板 (不支持触控笔)",
         "pro-10-biz": "Surface Pro 特制版键盘盖 (带 NFC 安全卡识别)",
         "laptop-6-biz": "传统磨砂抗指纹轻薄本键盘 (可选智能卡读卡器)",
         "go-4": "Surface Go 专业特制键盘盖 (亮铂金 / 典黑)"
     }
 
     intel_links = {
-        "pro-12-13": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-configurate#bundletype=10&main=MIC4136&required=MIC3881",
-        "pro-12-inch": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch",
-        "laptop-8-138": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-        "laptop-8-150": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
+        "pro-12-13-intel": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-configurate#bundletype=10&main=MIC4136&required=MIC3881",
+        "pro-12-13-snap": "— (骁龙专属专线)",
+        "pro-12-inch": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173",
+        "laptop-8-138-intel": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-configurate",
+        "laptop-8-138-snap": "— (骁龙专属专线)",
+        "laptop-8-150-intel": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-configurate",
+        "laptop-8-150-snap": "— (骁龙专属专线)",
         "pro-10-biz": "https://www.microsoftstore.com.cn/surface/surface-pro-10-for-business",
         "laptop-6-biz": "https://www.microsoftstore.com.cn/surface/surface-laptop-6-for-business",
         "go-4": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business"
     }
 
     snap_links = {
-        "pro-12-13": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon-configurate#bundletype=10&main=MIC4160&required=MIC3881",
-        "pro-12-inch": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch",
-        "laptop-8-138": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-        "laptop-8-150": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
+        "pro-12-13-intel": "— (Intel 专属专线)",
+        "pro-12-13-snap": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon-configurate#bundletype=10&main=MIC4160&required=MIC3881",
+        "pro-12-inch": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173",
+        "laptop-8-138-intel": "— (Intel 专属专线)",
+        "laptop-8-138-snap": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon-configurate",
+        "laptop-8-150-intel": "— (Intel 专属专线)",
+        "laptop-8-150-snap": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon-configurate",
         "pro-10-biz": "—",
         "laptop-6-biz": "—",
         "go-4": "—"

@@ -31,10 +31,10 @@ JS_FILES = [
     'js/app.js'
 ]
 
-def image_to_base64_webp(img_path, quality=85):
+def image_to_base64_webp(img_path, quality=80):
     with Image.open(img_path) as im:
         buf = io.BytesIO()
-        im.save(buf, format='WEBP', quality=quality, method=6)
+        im.save(buf, format='WEBP', quality=quality, method=3)
         data = buf.getvalue()
         b64 = base64.b64encode(data).decode('utf-8')
         return f"data:image/webp;base64,{b64}"

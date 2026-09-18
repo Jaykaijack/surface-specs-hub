@@ -14,7 +14,7 @@ const ToolsEngine = {
   // 配件兼容模式：'matrix' (全景矩阵) | 'by_accessory' (按配件查设备) | 'by_device' (按设备查配件)
   compatViewMode: 'matrix',
   selectedAccessoryId: 'flex-keyboard',
-  selectedDeviceId: 'pro-12-13',
+  selectedDeviceId: 'pro-12-13-intel',
 
   calculateDimensions(diag, wRatio, hRatio) {
     const diagCm = diag * 2.54;

@@ -176,8 +176,8 @@ const App = {
           <button class="fluent-btn" onclick="App.navigate('#/business')">
             <span>🏢</span> Surface 商用版 (Learn 专区)
           </button>
-          <button class="fluent-btn" onclick="App.navigate('#/compare?products=pro-12-13,laptop-8-138')">
-            <span>⚖️</span> 旗舰对决：Pro 12 vs Laptop 8
+          <button class="fluent-btn" onclick="App.navigate('#/compare?products=pro-12-13-intel,pro-12-13-snap')">
+            <span>⚖️</span> 旗舰对决：Pro 12 Intel vs 骁龙
           </button>
           <button class="fluent-btn" onclick="App.navigate('#/timeline')">
             <span>⏳</span> 2012~2026 编年时间线
@@ -265,16 +265,16 @@ const App = {
         <h2>⚖️ 经典热门对比推荐</h2>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
-        <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-12-13,pro-11-13')">
-          <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Pro 12 (第12代) vs Pro 11 (第11代)</div>
-          <div style="font-size:12px; color:var(--ms-text-secondary);">80 TOPS 骁龙 X2 对比 45 TOPS 首代 Copilot+ PC</div>
+        <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-12-13-intel,pro-12-13-snap')">
+          <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Pro 12 商用版 (Intel vs 骁龙)</div>
+          <div style="font-size:12px; color:var(--ms-text-secondary);">50 TOPS 酷睿 Ultra 3 代 对比 80 TOPS 骁龙 X2 Elite</div>
         </div>
-        <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-12-13,laptop-8-138')">
-          <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Surface Pro 12 vs Surface Laptop 8</div>
+        <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-12-13-intel,laptop-8-138-intel')">
+          <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Surface Pro 12 vs Surface Laptop 8 (商用 Intel)</div>
           <div style="font-size:12px; color:var(--ms-text-secondary);">二合一触控平板 vs 经典触觉触控板轻薄本选型</div>
         </div>
         <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-11-13,pro-10-biz')">
-          <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Pro 11 (消费者版) vs Pro 10 (商用版)</div>
+          <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Pro 11 (消费零售版) vs Pro 10 (商用版)</div>
           <div style="font-size:12px; color:var(--ms-text-secondary);">高通骁龙 X 架构对比 Intel Core Ultra 标压商用</div>
         </div>
       </div>
@@ -447,7 +447,7 @@ const App = {
 
   // 3.5 Surface 商用版专区 (Surface for Business) - 微软官方 Learn 架构全线对齐
   renderBusinessView(container) {
-    const commercialDevices = SURFACE_DATA.devices.filter(d => d.isCommercial || d.targetAudience === 'commercial' || d.targetAudience === 'both');
+    const commercialDevices = SURFACE_DATA.devices.filter(d => d.isCommercial || d.targetAudience === 'commercial');
 
     let html = `
       <div class="business-hero-banner">
@@ -858,26 +858,9 @@ const App = {
                 🔄 查看与上一代 (${prevDev.name}) 升级比对
               </button>
             ` : ''}
-            ${dev.specs.officialIntelConfigureUrl ? `
-              <a class="fluent-btn" href="${dev.specs.officialIntelConfigureUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;" title="进入微软官方商城 Intel 酷睿 Ultra 版选配定制">
-                🛒 Intel 酷睿 Ultra 选配 ↗
-              </a>
-            ` : ''}
-            ${dev.specs.officialSnapdragonConfigureUrl ? `
-              <a class="fluent-btn" href="${dev.specs.officialSnapdragonConfigureUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;" title="进入微软官方商城高通骁龙版选配定制">
-                ⚡ 骁龙 X2 选配 ↗
-              </a>
-            ` : ''}
-            ${!dev.specs.officialIntelConfigureUrl && !dev.specs.officialSnapdragonConfigureUrl ? `
-              <a class="fluent-btn" href="${dev.specs.officialDocUrl || 'https://www.microsoftstore.com.cn/'}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-                🛒 微软官方商城/选配直达 ↗
-              </a>
-            ` : ''}
-            ${dev.learnDocUrl ? `
-              <a class="fluent-btn" href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-                📖 微软 Learn 技术文档 ↗
-              </a>
-            ` : ''}
+            <button class="fluent-btn" onclick="App.scrollToSpecsBottom()" style="display:inline-flex; align-items:center; gap:6px;">
+              📋 官方商城直达与技术文档 (查阅大表底部) ↓
+            </button>
           </div>
 
           <!-- 官方数据存证证书卡片 -->
@@ -1560,6 +1543,20 @@ const App = {
         if (toggleBtn) toggleBtn.innerHTML = '▼ 收起';
       }
     }
+  },
+
+  scrollToSpecsBottom() {
+    if (typeof document === 'undefined') return;
+    this.switchDetailTab('specs');
+    setTimeout(() => {
+      const el = document.querySelector('.field-row-metadata') || document.querySelector('.spec-table tbody tr:last-child');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.style.transition = 'background-color 0.5s';
+        el.style.backgroundColor = 'rgba(0,120,212,0.15)';
+        setTimeout(() => { el.style.backgroundColor = ''; }, 2000);
+      }
+    }, 50);
   }
 };
 

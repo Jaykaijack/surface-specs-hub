@@ -5,7 +5,7 @@
 
 const ComparisonEngine = {
   // 选中的对比设备 ID 列表 (跨品类支持)
-  selectedIds: ['pro-12-13', 'laptop-8-138'],
+  selectedIds: ['pro-12-13-intel', 'laptop-8-138-intel'],
   highlightDiff: true,
   diffOnly: false,
   maxCompareLimit: 5,
@@ -26,7 +26,7 @@ const ComparisonEngine = {
           // 校验合法性
           this.selectedIds = parsed.filter(id => SURFACE_DATA.devices.some(d => d.id === id));
           if (this.selectedIds.length === 0) {
-            this.selectedIds = ['pro-12-13', 'laptop-8-138'];
+            this.selectedIds = ['pro-12-13-intel', 'laptop-8-138-intel'];
           }
         }
       }
@@ -317,7 +317,7 @@ const ComparisonEngine = {
 
         devicesToCompare.forEach(dev => {
           const rawVal = dev.specs[field.key];
-          const formattedVal = this.formatFieldValue(rawVal, field.type);
+          const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
           html += `<td class="spec-val-cell">${formattedVal}</td>`;
         });
 
@@ -347,7 +347,7 @@ const ComparisonEngine = {
   },
 
   // 严格根据 PRD 第九、十章处理字段格式化与未知参数治理 (Zero-Hallucination)
-  formatFieldValue(val, type) {
+  formatFieldValue(val, type, dev, fieldKey) {
     if (val === undefined || val === null || val === '' || val === 'null') {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
     }
@@ -405,9 +405,41 @@ const ComparisonEngine = {
       return val;
     }
 
-    // 链接
-    if (typeof val === 'string' && (val.startsWith('http://') || val.startsWith('https://'))) {
-      return `<a href="${val}" target="_blank" rel="noopener noreferrer" style="color:var(--ms-accent); text-decoration:underline;">官方说明书 ↗</a>`;
+    // 官方链接与技术文档定制渲染 (第13类：资料与价格来源)
+    if (fieldKey === 'officialDocUrl' || (typeof val === 'string' && (val.startsWith('http://') || val.startsWith('https://')))) {
+      const isCommercial = dev ? !!dev.isCommercial : false;
+      const configureUrl = (dev && dev.specs && dev.specs.officialConfigureUrl) ? dev.specs.officialConfigureUrl : val;
+      const learnUrl = dev ? dev.learnDocUrl : null;
+
+      let linksHtml = '<div style="display:flex; flex-direction:column; gap:6px; align-items:flex-start;">';
+      
+      if (isCommercial) {
+        linksHtml += `
+          <a href="${configureUrl}" target="_blank" rel="noopener noreferrer" 
+            style="display:inline-flex; align-items:center; gap:5px; color:#0078d4; background:rgba(0,120,212,0.08); border:1px solid rgba(0,120,212,0.25); border-radius:6px; padding:4px 9px; font-size:12px; font-weight:600; text-decoration:none;" title="直达微软中国官方商用商城选配页">
+            <span>🏢</span> 微软商用官方选配直达 ↗
+          </a>
+        `;
+      } else {
+        linksHtml += `
+          <a href="${configureUrl}" target="_blank" rel="noopener noreferrer" 
+            style="display:inline-flex; align-items:center; gap:5px; color:#107c10; background:rgba(16,124,16,0.08); border:1px solid rgba(16,124,16,0.25); border-radius:6px; padding:4px 9px; font-size:12px; font-weight:600; text-decoration:none;" title="直达微软官方商城零售选配页">
+            <span>🛒</span> 微软官方商城选配直达 ↗
+          </a>
+        `;
+      }
+
+      if (learnUrl) {
+        linksHtml += `
+          <a href="${learnUrl}" target="_blank" rel="noopener noreferrer" 
+            style="display:inline-flex; align-items:center; gap:5px; color:var(--ms-text-secondary); background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:6px; padding:3px 8px; font-size:11.5px; text-decoration:none;" title="查阅微软官方 Microsoft Learn 技术文档">
+            <span>📘</span> 微软 Learn 技术文档 ↗
+          </a>
+        `;
+      }
+
+      linksHtml += '</div>';
+      return linksHtml;
     }
 
     return String(val);

@@ -10,30 +10,34 @@ This project is a high-density, authoritative technical reference platform model
 
 All hardware represented in the Specs Hub must reflect official Microsoft technical whitepapers, architectural disclosures, and the official Microsoft Store China (`https://www.microsoftstore.com.cn/`).
 
-### A. Surface Pro 13 英寸（第 12 代）[核心主推旗舰]
-- **Target SKU Anchor**: Surface Pro 13 英寸 (第 12 代), Qualcomm Snapdragon® X2 Elite, PixelSense Flow OLED 触控屏, 16GB/32GB/64GB RAM, 512GB/1TB/2TB SSD.
-- **Form Factor**: 旗舰二合一分离式平板电脑，阳极氧化铝合金机身，单机净重约 895g，165° 一体成型无级阻尼铰链支架。
-- **Display**: 13.0 英寸 PixelSense Flow OLED 触控屏（2880 × 1920，3:2 效率黄金比例，100万:1 对比度，120Hz 动态高刷，支持杜比视界 IQ）。
-- **Platform**: 高通第二代骁龙® X2 Elite（12 核 Oryon 架构），内置高达 80 TOPS 硬件算力的 Qualcomm Hexagon NPU（全球 AI 算力巅峰）。
-- **Key Accessories**: Surface Pro Flex 键盘（支持离机蓝牙无线打字与磁吸直连双模，自带隐藏式笔槽无线充电）与 Surface 超薄触控笔 2（4096 级压感与触觉振动反馈）。
-- **Official Colorways**: 亮铂金 (Platinum)、典雅黑 (Black)、沙漫金 (Dune) 官方三色（严格按微软官方商城商业专区在售真实规格，无宝石蓝）。
+### A. Surface Pro 13 英寸（第 12 代）商用版 [核心主推旗舰·双架构独立收录]
+- **Pro 13 英寸 (第 12 代) 商用版 - Intel 版 (`pro-12-13-intel`)**:
+  - 平台：英特尔® 酷睿™ Ultra 5 / Ultra 7 处理器 (第 3 代)，Intel® AI Boost NPU (50 TOPS)。
+  - 屏幕：13.0 英寸 PixelSense Flow (2880 × 1920，120Hz 动态高刷)，Ultra 5 配备防反射 LCD / Ultra 7 配备双层串联 OLED。
+  - 配色：**亮铂金 (Platinum) 与 典雅黑 (Black)** 商务双色（官方商用商城真实在售规格，严格无沙漫金/宝石蓝）。
+  - 起售价：¥16,888 起 (仅商用直达)。
+- **Pro 13 英寸 (第 12 代) 商用版 - 骁龙版 (`pro-12-13-snap`)**:
+  - 平台：高通第二代骁龙® X2 Elite（12 核 Oryon 架构），Qualcomm Hexagon NPU (80 TOPS 算力巅峰)。
+  - 屏幕：13.0 英寸 PixelSense Flow 双层串联 OLED 屏幕 (2880 × 1920，120Hz，100万:1 对比度)。
+  - 配色：**亮铂金 (Platinum) 与 典雅黑 (Black)** 商务双色（官方商用商城真实在售规格，严格无沙漫金/宝石蓝）。
+  - 起售价：¥15,488 起 (仅商用直达)。
+- **配件生态**: Surface Pro Flex 键盘（支持离机蓝牙无线打字与磁吸直连双模，自带隐藏式笔槽无线充电）与 Surface 超薄触控笔 2（4096 级压感与触觉振动反馈）。
 
-### B. Surface Laptop 13.8 英寸与 15 英寸（第 8 代）[核心主推旗舰]
-- **Target SKU Anchor**: Surface Laptop 13.8 英寸 & 15 英寸 (第 8 代), Qualcomm Snapdragon® X2 Elite, PixelSense 触控屏, 16GB/32GB/64GB RAM.
-- **Form Factor**: 极简全金属精工超轻薄笔记本，13.8" 净重约 1.34kg，15" 净重约 1.66kg，支持单手丝滑开合。
-- **Display**: 13.8 英寸 (2304 × 1536) / 15.0 英寸 (2496 × 1664) PixelSense 触控屏，3:2 纵向黄金视野，超窄微边框，120Hz 动态高刷。
-- **Platform**: 高通第二代骁龙® X2 Elite，全铝合金均热板静音温凉散热。
-- **Battery**: 本地视频播放长达 20~22 小时，日常综合办公离电 10~12 小时。
-- **Keyboard & Touchpad**: 全域触觉振动触控板（Haptic Precision Touchpad），1.3mm 键程静音剪刀脚键盘。
-- **CRITICAL REDLINE**: 屏幕支持手指十点触控，但**绝对不支持触控笔输入**（严禁为 Laptop 标注或推荐手写笔）。
-- **Official Colorways**: 亮铂金 (Platinum)、典黑 (Black)、沙漫金 (Dune)、宝石蓝 (Sapphire)、仙踪绿 (Sage)。
+### B. Surface Pro, 12 英寸（第 1 代）[官方消费级轻薄 AI+ PC]
+- **Target SKU**: 高通骁龙® X Plus (8 核心)，12.0 英寸 PixelSense 触控屏 (2196 × 1464)，45 TOPS NPU，轻至 686g。
+- **定位与属性**: 个人与家庭消费级便携 AI+ PC (`isCommercial: false`)。
+- **配色**: 亮铂金 (Platinum)、罗兰紫 (Violet)、碧海青 (Ocean) 时尚三色。
+- **起售价**: ¥7,888 起 (消费商城直达)。
 
-### C. Commercial Editions (x86 Compatibility) & 12-inch Portable Lineup
-- **Surface Pro 12-inch (1st Edition)**: 微软官方商城商业专区与 Learn 重点在售轻薄 Copilot+ PC（高通骁龙 X Plus 8 核，686g 羽量机身，2196×1464 屏幕）。
-- **Surface Pro, 13 英寸(第 12 代) 商用版** 与 **Surface Laptop (第 8 代) 商用版**: 涵盖高通 X2 与 Intel 酷睿 Ultra 架构。
-- **Surface Pro 10 Commercial** & **Surface Laptop 6 Commercial**: Powered by Intel® Core™ Ultra processors (Meteor Lake) with Intel AI Boost NPU, designed for legacy enterprise industrial software and hardware dongle compatibility.
+### C. Surface Laptop（第 8 代）商用版 [核心主推旗舰·独立架构解耦]
+- **13.8 英寸商用版**: 独立拆分为 Intel 版 (`laptop-8-138-intel`，Ultra 5/7，50 TOPS，¥16,888起) 与 骁龙版 (`laptop-8-138-snap`，Snapdragon X2，80 TOPS，¥14,888起)。
+- **15.0 英寸商用版**: 独立拆分为 Intel 版 (`laptop-8-150-intel`，Ultra X7，50 TOPS，¥18,888起) 与 骁龙版 (`laptop-8-150-snap`，Snapdragon X2，80 TOPS，¥16,888起)。
+- **商用配色标准**: 严格且仅限 **亮铂金 (Platinum)** 与 **典雅黑 (Black)**（彻底剔除消费级宝石蓝、沙漫金、仙踪绿）。
+- **CRITICAL REDLINE**: 屏幕支持手指十点触控，但**绝对不支持触控笔输入**。
+- **独立消费版**: Surface Laptop (第 7 代) 消费版 (`laptop-7-138`) 保留时尚 4 色消费零售。
 
-### D. Historical Full Genealogy (8 大品类、43 款机型全覆盖)
+### D. Historical Full Genealogy (8 大品类、46 款机型全覆盖)
+- **商用版与消费版彻底解耦**: 全系总计收录 46 款设备，商用机型打上 `isCommercial: true` 且仅配商务双色，购买链接 100% 直达微软中国官方商用商城选配页；消费机型打上 `isCommercial: false` 直达消费零售页，绝无混淆串门。
 - **Surface Pro 系列 (15款)**: 第 12 代 13 英寸 (2026), 12 英寸 (第 1 代), 第 11 代, Pro 10 商用版, Pro 9 (Intel/5G), Pro 8, Pro 7+, Pro 7, Pro 6, Pro 5 (2017), Pro 4, Pro 3, Pro 2, Pro 1 (初代 2012), Pro X (ARM 超薄先锋).
 - **Surface Laptop 系列 (9款)**: 第 8 代 (13.8" & 15"), 第 7 代, Laptop 6 商用版, Laptop 5, Laptop 4, Laptop 3, Laptop 2, 初代 Laptop.
 - **Surface Laptop Studio 系列 (2款)**: SLS 2 (RTX 4060/4050 变形工作站), 初代 SLS.
