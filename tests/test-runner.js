@@ -460,6 +460,25 @@ commercialList.forEach(cd => {
   assert(Boolean(cd.learnDocUrl && cd.learnDocUrl.includes('learn.microsoft.com')), `商用机型 [${cd.id}] 具备有效 Microsoft Learn 文档链接`);
 });
 
+// ====================================================
+// Test Suite 10: 官方信源核验与 Excel 审计台校验
+// ====================================================
+console.log('\n🔍 Test Suite 10: 官方信源核验与 Excel 审计台校验');
+assert(typeof App.renderAuditView === 'function', 'App 具备 renderAuditView 官方核验总账渲染方法');
+
+const excelPath = path.resolve(__dirname, '..', 'docs', 'Surface_全系规格与官方信源核对总账.xlsx');
+assert(fs.existsSync(excelPath), 'docs/Surface_全系规格与官方信源核对总账.xlsx 存在');
+const excelStats = fs.statSync(excelPath);
+assert(excelStats.size > 20000, `Excel 核验总账大小正常 (Actual: ${excelStats.size} bytes)`);
+
+let validStoreUrlCount = 0;
+SURFACE_DATA.devices.forEach(dev => {
+  if (dev.specs && dev.specs.officialDocUrl && dev.specs.officialDocUrl.startsWith('http')) {
+    validStoreUrlCount++;
+  }
+});
+assertEqual(validStoreUrlCount, SURFACE_DATA.devices.length, '全系 43 款产品 100% 具备官方信源超链接');
+
 // ----------------------------------------------------
 // 最终汇总
 // ----------------------------------------------------
