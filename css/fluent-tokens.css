@@ -1,0 +1,208 @@
+/**
+ * Microsoft Surface Specs Hub - Fluent 2 Design Tokens
+ * 纯静态离线设计系统令牌：浅色/深色模式、Mica 亚克力效果、Segoe UI 字体族、高对比度
+ */
+
+:root {
+  /* 基础配色 - 浅色模式 (Light Theme) */
+  --surface-bg: #f3f3f3;
+  --ms-bg-canvas: #f3f3f3;
+  --ms-bg-card: #ffffff;
+  --ms-bg-card-secondary: #f9f9f9;
+  --ms-bg-card-hover: #f0f0f0;
+  --ms-bg-sidebar: #f8f9fa;
+  --ms-bg-header: rgba(255, 255, 255, 0.85);
+  --ms-bg-dock: rgba(255, 255, 255, 0.92);
+  
+  --ms-border-subtle: #e5e5e5;
+  --ms-border-strong: #d1d1d1;
+  --ms-border-focus: #0078d4;
+
+  --ms-text-primary: #242424;
+  --ms-text-secondary: #616161;
+  --ms-text-tertiary: #8a8a8a;
+  --ms-text-brand: #0067b8;
+  --ms-text-brand-hover: #004e8c;
+  --ms-text-on-brand: #ffffff;
+
+  /* 微软官方品牌色 (Fluent Accent) */
+  --ms-accent: #0078d4;
+  --ms-accent-light: #eff6fc;
+  --ms-accent-hover: #106ebe;
+  --ms-accent-active: #005a9e;
+  
+  /* 状态色与差异高亮色 */
+  --ms-highlight-diff: rgba(0, 120, 212, 0.08);
+  --ms-highlight-diff-border: rgba(0, 120, 212, 0.35);
+  --ms-highlight-badge: #0078d4;
+  --ms-badge-bg: #e8f3fc;
+  --ms-badge-text: #0067b8;
+  --ms-tag-new: #107c41;
+  --ms-tag-flagship: #8764b8;
+  --ms-tag-copilot: #6264a7;
+
+  /* 阴影效果与材质 */
+  --ms-shadow-card: 0 1.6px 3.6px 0 rgba(0,0,0,0.06), 0 0.3px 0.9px 0 rgba(0,0,0,0.04);
+  --ms-shadow-floating: 0 6.4px 14.4px 0 rgba(0,0,0,0.12), 0 1.2px 3.6px 0 rgba(0,0,0,0.08);
+  --ms-shadow-dock: 0 -4px 16px rgba(0, 0, 0, 0.08);
+
+  /* 圆角规范 */
+  --ms-radius-sm: 4px;
+  --ms-radius-md: 8px;
+  --ms-radius-lg: 12px;
+  --ms-radius-full: 9999px;
+
+  /* 字体与字阶 */
+  --ms-font-family: "Segoe UI Variable Text", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ms-font-mono: "Cascadia Code", "Segoe UI Mono", Consolas, "Courier New", monospace;
+  
+  --ms-font-size-xs: 11px;
+  --ms-font-size-sm: 12px;
+  --ms-font-size-base: 13.5px;
+  --ms-font-size-md: 15px;
+  --ms-font-size-lg: 18px;
+  --ms-font-size-xl: 22px;
+  --ms-font-size-xxl: 28px;
+
+  /* 过渡动画 */
+  --ms-transition-fast: 0.15s cubic-bezier(0.33, 1, 0.68, 1);
+  --ms-transition-normal: 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+  /* ---------------------------------------------------- */
+  /* Google Material Design 3 (M3) 规范令牌扩展            */
+  /* ---------------------------------------------------- */
+  /* M3 语义表面容器 (Surface Containers) */
+  --md-sys-color-surface: #fdfdfd;
+  --md-sys-color-surface-dim: #dedede;
+  --md-sys-color-surface-bright: #ffffff;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f7f9fc;
+  --md-sys-color-surface-container: #f0f4f9;
+  --md-sys-color-surface-container-high: #e8edf4;
+  --md-sys-color-surface-container-highest: #dfe4ec;
+
+  --md-sys-color-primary: #0b57d0;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #d3e3fd;
+  --md-sys-color-on-primary-container: #041e49;
+
+  --md-sys-color-secondary: #00639b;
+  --md-sys-color-secondary-container: #c2e7ff;
+  --md-sys-color-on-secondary-container: #001d35;
+
+  --md-sys-color-on-surface: #1f1f1f;
+  --md-sys-color-on-surface-variant: #444746;
+  --md-sys-color-outline: #747775;
+  --md-sys-color-outline-variant: #c4c7c5;
+
+  /* M3 官方排版阶梯 (Typography Scale) */
+  --md-sys-typescale-display-large: 57px;
+  --md-sys-typescale-display-medium: 45px;
+  --md-sys-typescale-display-small: 36px;
+  --md-sys-typescale-headline-large: 34px;
+  --md-sys-typescale-headline-medium: 28px;
+  --md-sys-typescale-headline-small: 24px;
+  --md-sys-typescale-title-large: 22px;
+  --md-sys-typescale-title-medium: 16px;
+  --md-sys-typescale-title-small: 14px;
+  --md-sys-typescale-body-large: 16px;
+  --md-sys-typescale-body-medium: 14px;
+  --md-sys-typescale-body-small: 12px;
+  --md-sys-typescale-label-large: 14px;
+  --md-sys-typescale-label-medium: 12px;
+  --md-sys-typescale-label-small: 11px;
+
+  /* M3 标准海拔阴影 (Elevations) */
+  --md-sys-elevation-0: none;
+  --md-sys-elevation-1: 0 1px 3px 1px rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.12);
+  --md-sys-elevation-2: 0 2px 6px 2px rgba(0,0,0,0.10), 0 1px 2px 0 rgba(0,0,0,0.14);
+  --md-sys-elevation-3: 0 4px 12px 3px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.16);
+  --md-sys-elevation-4: 0 6px 16px 4px rgba(0,0,0,0.14), 0 2px 4px 0 rgba(0,0,0,0.18);
+
+  /* M3 形状体系 (Shape) */
+  --md-sys-shape-corner-none: 0;
+  --md-sys-shape-corner-extra-small: 4px;
+  --md-sys-shape-corner-small: 8px;
+  --md-sys-shape-corner-medium: 12px;
+  --md-sys-shape-corner-large: 16px;
+  --md-sys-shape-corner-extra-large: 24px;
+  --md-sys-shape-corner-full: 9999px;
+}
+
+/* 深色模式 (Dark Theme) */
+[data-theme="dark"] {
+  --ms-bg-canvas: #181818;
+  --ms-bg-card: #202020;
+  --ms-bg-card-secondary: #272727;
+  --ms-bg-card-hover: #2e2e2e;
+  --ms-bg-sidebar: #1c1c1c;
+  --ms-bg-header: rgba(32, 32, 32, 0.88);
+  --ms-bg-dock: rgba(32, 32, 32, 0.94);
+
+  --ms-border-subtle: #2f2f2f;
+  --ms-border-strong: #444444;
+  --ms-border-focus: #2886de;
+
+  --ms-text-primary: #f3f3f3;
+  --ms-text-secondary: #adadad;
+  --ms-text-tertiary: #757575;
+  --ms-text-brand: #479ef5;
+  --ms-text-brand-hover: #6cb8f6;
+  --ms-text-on-brand: #ffffff;
+
+  --ms-accent: #2886de;
+  --ms-accent-light: #162a3f;
+  --ms-accent-hover: #479ef5;
+  --ms-accent-active: #1562a8;
+
+  --ms-highlight-diff: rgba(40, 134, 222, 0.15);
+  --ms-highlight-diff-border: rgba(40, 134, 222, 0.45);
+  --ms-highlight-badge: #2886de;
+  --ms-badge-bg: #1c2c3d;
+  --ms-badge-text: #6cb8f6;
+  --ms-tag-new: #107c41;
+  --ms-tag-flagship: #9d76d2;
+  --ms-tag-copilot: #7f85d9;
+
+  --ms-shadow-card: 0 1.6px 3.6px 0 rgba(0,0,0,0.3), 0 0.3px 0.9px 0 rgba(0,0,0,0.2);
+  --ms-shadow-floating: 0 6.4px 14.4px 0 rgba(0,0,0,0.4), 0 1.2px 3.6px 0 rgba(0,0,0,0.25);
+  --ms-shadow-dock: 0 -4px 20px rgba(0, 0, 0, 0.4);
+
+  /* M3 深色模式表面与高对比映射 */
+  --md-sys-color-surface: #141414;
+  --md-sys-color-surface-dim: #111111;
+  --md-sys-color-surface-bright: #282828;
+  --md-sys-color-surface-container-lowest: #0d0d0d;
+  --md-sys-color-surface-container-low: #1b1c1e;
+  --md-sys-color-surface-container: #212327;
+  --md-sys-color-surface-container-high: #2b2d32;
+  --md-sys-color-surface-container-highest: #36383e;
+
+  --md-sys-color-primary: #a8c7fa;
+  --md-sys-color-on-primary: #062e6f;
+  --md-sys-color-primary-container: #0842a0;
+  --md-sys-color-on-primary-container: #d3e3fd;
+
+  --md-sys-color-secondary: #7fcfff;
+  --md-sys-color-secondary-container: #004a75;
+  --md-sys-color-on-secondary-container: #c2e7ff;
+
+  --md-sys-color-on-surface: #e3e3e3;
+  --md-sys-color-on-surface-variant: #c4c7c5;
+  --md-sys-color-outline: #8e918f;
+  --md-sys-color-outline-variant: #444746;
+
+/* 全局滚动条美化（与原版 HubWeb 对齐并适配 Fluent） */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: var(--ms-radius-full);
+  background-color: var(--ms-border-strong);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--ms-text-tertiary);
+}

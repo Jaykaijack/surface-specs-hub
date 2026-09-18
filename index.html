@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Microsoft Surface 产品参数中心 | Surface Product Hub (HubWeb 复刻版)</title>
+  <meta name="description" content="专业 Surface 产品参数数据库与历代机型横向对比平台。收录 Surface Pro、Laptop、Studio、Go、Book 等全系产品详细规格、高通骁龙 X 与 Intel 芯片架构、NPU 算力天梯及双向配件兼容矩阵。">
+  <meta name="keywords" content="Surface参数, Surface Pro 12参数, Surface Laptop 8参数, 微软Surface全系对比, NPU TOPS, Copilot+ PC, Surface配件兼容">
+  <link rel="canonical" href="https://hubweb.cn/surface/">
+  
+  <!-- OpenGraph 元数据 (PRD 第二十三章) -->
+  <meta property="og:title" content="Microsoft Surface 产品参数中心 | Surface Product Hub">
+  <meta property="og:description" content="查阅、筛选和横向比较历代 Microsoft Surface 产品全维度规格参数。">
+  <meta property="og:type" content="website">
+
+  <!-- Fluent 2 样式系统 & HubWeb 布局框架 (100% 离线自给自足) -->
+  <link rel="stylesheet" href="./css/fluent-tokens.css">
+  <link rel="stylesheet" href="./css/hubweb-layout.css">
+  <link rel="stylesheet" href="./css/spec-table.css">
+  <link rel="stylesheet" href="./css/tools.css">
+</head>
+<body>
+
+  <!-- 顶部 Fluent 导航栏 -->
+  <header class="hub-header">
+    <div class="header-left">
+      <!-- 移动端汉堡抽屉开关按钮 -->
+      <button class="header-btn" id="mobile-menu-btn" title="展开分类">☰</button>
+
+      <!-- 微软官方四色徽标与品牌入口 -->
+      <div class="header-brand-text" onclick="App.navigate('#/')">
+        <div class="ms-logo" title="Microsoft Surface">
+          <div class="ms-logo-tile red"></div>
+          <div class="ms-logo-tile green"></div>
+          <div class="ms-logo-tile blue"></div>
+          <div class="ms-logo-tile yellow"></div>
+        </div>
+        <span>Surface 参数中枢</span>
+        <span class="header-sub-tag">HubWeb Replica · 生产级</span>
+      </div>
+    </div>
+
+    <!-- 全局快捷搜索栏 -->
+    <div class="header-center">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          class="hub-search-input" 
+          id="global-search-input" 
+          placeholder="快捷搜索型号、芯片、代数或特性 (如 Pro 12, X2, OLED, 80 TOPS, 商用)..." 
+          autocomplete="off"
+        >
+        <button class="search-clear-btn" id="search-clear-btn" title="清空搜索">✕</button>
+      </div>
+    </div>
+
+    <!-- 右侧工具栏 -->
+    <div class="header-right">
+      <button class="header-btn" onclick="App.navigate('#/compare')" title="进入多设备对比工作台">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm1 2v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm0-1h14V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v1z"/>
+        </svg>
+        自由对比台
+      </button>
+
+      <button class="header-btn" onclick="App.navigate('#/timeline')" title="查看 2012~2026 编年时间线">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+        </svg>
+        时间线
+      </button>
+
+      <!-- 深色 / 浅色模式切换 -->
+      <button class="header-btn" id="theme-toggle-btn" onclick="App.toggleTheme()" title="切换深色/浅色主题">
+        <!-- 由 JS 动态填充 -->
+      </button>
+    </div>
+  </header>
+
+  <!-- 主体工作区分栏 (左侧分类树 + 右侧工作区) -->
+  <div class="hub-body">
+    <!-- 左侧分类树 (HubWeb Sidebar) -->
+    <aside class="hub-sidebar" id="hub-sidebar-content">
+      <!-- 由 App.renderSidebar() 动态注入 -->
+    </aside>
+
+    <!-- 右侧工作台主区域 -->
+    <main class="hub-main" id="hub-main-content">
+      <!-- 动态路由注入视图 -->
+    </main>
+  </div>
+
+  <!-- 全局搜索弹窗结果容器 -->
+  <div id="search-results-modal" style="display:none;"></div>
+
+  <!-- 底部常驻多机对比悬浮托盘 (Dockable Comparison Tray) -->
+  <div class="comparison-dock hidden" id="comparison-dock">
+    <div class="dock-left">
+      <span class="dock-tip-label">对比池 (<span id="dock-count">0</span>/5)：</span>
+      <div id="dock-pills" style="display:flex; gap:8px; align-items:center;">
+        <!-- 动态渲染已选设备胶囊 -->
+      </div>
+    </div>
+
+    <div class="dock-right">
+      <button class="fluent-btn primary" onclick="App.navigate('#/compare')">
+        立即横向比对
+      </button>
+      <button class="fluent-btn" onclick="ComparisonEngine.clearAll()">
+        清空全部
+      </button>
+      <button class="dock-collapse-toggle" id="dock-collapse-btn" onclick="App.toggleDockCollapse()" title="收起/展开对比托盘">
+        ▼ 收起
+      </button>
+    </div>
+  </div>
+
+  <!-- 权威法务与版权声明页脚 (PRD 第二十九章: 明确品牌与第三方非官方边界) -->
+  <footer class="hub-footer">
+    <div><strong>免责与版权声明：</strong>本网站为民间独立维护的 Surface 硬件产品技术资料与规格数据库，并非 Microsoft 官方网站。</div>
+    <div>Microsoft、Surface、Windows、PixelSense、Xbox 及相关产品标识均为微软公司 (Microsoft Corporation) 在美国和/或其他国家地区的注册商标。</div>
+    <div>数据采编自微软官方商城公开技术白皮书与技术支持文档，严禁用于虚假商业宣传。最后核验时间：2026-09-16 · 遵守 WCAG 2.2 AA 无障碍标准。</div>
+  </footer>
+
+  <!-- 核心数据源与业务引擎脚本 (严格按依赖顺序加载) -->
+  <script src="./js/surface-data.js"></script>
+  <script src="./js/comparison-engine.js"></script>
+  <script src="./js/tools-engine.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>

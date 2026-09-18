@@ -1,0 +1,297 @@
+/**
+ * Microsoft Surface Specs Hub - Auxiliary Tools Styles
+ * 3:2 屏幕比例对比器、芯片架构与 NPU 天梯榜、配件兼容性矩阵
+ */
+
+.tool-view-card {
+  background: var(--ms-bg-card);
+  border: 1px solid var(--ms-border-subtle);
+  border-radius: var(--ms-radius-lg);
+  padding: 24px;
+  box-shadow: var(--ms-shadow-card);
+  margin-bottom: 24px;
+}
+
+.tool-header-block {
+  margin-bottom: 20px;
+}
+.tool-title {
+  font-size: var(--ms-font-size-lg);
+  font-weight: 600;
+  color: var(--ms-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tool-desc {
+  font-size: var(--ms-font-size-sm);
+  color: var(--ms-text-secondary);
+  margin-top: 4px;
+}
+
+/* 1. 3:2 屏幕对比器专用样式 */
+.screen-calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .screen-calc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.screen-ctrl-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.screen-slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.slider-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--ms-font-size-sm);
+  font-weight: 500;
+}
+.screen-range-input {
+  width: 100%;
+  accent-color: var(--ms-accent);
+  cursor: pointer;
+}
+
+.aspect-ratio-selector {
+  display: flex;
+  gap: 8px;
+}
+.ratio-btn {
+  flex: 1;
+  padding: 8px;
+  border-radius: var(--ms-radius-md);
+  border: 1px solid var(--ms-border-strong);
+  background: var(--ms-bg-card-secondary);
+  color: var(--ms-text-primary);
+  font-size: var(--ms-font-size-sm);
+  cursor: pointer;
+  text-align: center;
+  transition: all var(--ms-transition-fast);
+}
+.ratio-btn.active {
+  background: var(--ms-accent-light);
+  border-color: var(--ms-accent);
+  color: var(--ms-text-brand);
+  font-weight: 600;
+}
+
+.screen-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+.metric-box {
+  background: var(--ms-bg-card-secondary);
+  border: 1px solid var(--ms-border-subtle);
+  border-radius: var(--ms-radius-md);
+  padding: 12px;
+  text-align: center;
+}
+.metric-val {
+  font-size: var(--ms-font-size-xl);
+  font-weight: 700;
+  color: var(--ms-text-brand);
+}
+.metric-label {
+  font-size: var(--ms-font-size-xs);
+  color: var(--ms-text-secondary);
+  margin-top: 2px;
+}
+
+.screen-visual-stage {
+  height: 320px;
+  background: var(--ms-bg-canvas);
+  border: 1px dashed var(--ms-border-strong);
+  border-radius: var(--ms-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.screen-wireframe-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.wireframe-surface-32 {
+  position: absolute;
+  border: 2.5px solid var(--ms-accent);
+  background: rgba(0, 120, 212, 0.12);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ms-text-brand);
+  transition: all 0.3s ease;
+}
+
+.wireframe-comp-169 {
+  position: absolute;
+  border: 2px dashed #e81123;
+  background: rgba(232, 17, 35, 0.08);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #d13438;
+  transition: all 0.3s ease;
+}
+
+/* 2. 芯片与 NPU 算力榜专用样式 */
+.chip-filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.chip-ladder-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chip-ladder-row {
+  display: grid;
+  grid-template-columns: 200px 1fr 90px;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 14px;
+  background: var(--ms-bg-card-secondary);
+  border: 1px solid var(--ms-border-subtle);
+  border-radius: var(--ms-radius-md);
+  transition: all var(--ms-transition-fast);
+}
+.chip-ladder-row:hover {
+  background: var(--ms-bg-card-hover);
+  border-color: var(--ms-accent);
+}
+
+.chip-name-cell {
+  display: flex;
+  flex-direction: column;
+}
+.chip-model {
+  font-size: var(--ms-font-size-sm);
+  font-weight: 600;
+  color: var(--ms-text-primary);
+}
+.chip-meta {
+  font-size: 11px;
+  color: var(--ms-text-tertiary);
+}
+
+.chip-bar-track {
+  height: 24px;
+  background: var(--ms-border-subtle);
+  border-radius: var(--ms-radius-full);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.chip-bar-fill {
+  height: 100%;
+  border-radius: var(--ms-radius-full);
+  background: linear-gradient(90deg, #0078d4, #00a4ef);
+  transition: width 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.chip-bar-fill.gold {
+  background: linear-gradient(90deg, #8764b8, #b146c2);
+}
+.chip-bar-fill.x86 {
+  background: linear-gradient(90deg, #107c41, #27ac5b);
+}
+
+.chip-baseline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #d13438;
+  z-index: 5;
+}
+.chip-baseline-label {
+  position: absolute;
+  top: -18px;
+  transform: translateX(-50%);
+  font-size: 10px;
+  font-weight: 700;
+  color: #d13438;
+  white-space: nowrap;
+}
+
+.chip-score-cell {
+  text-align: right;
+  font-size: var(--ms-font-size-md);
+  font-weight: 700;
+  font-family: var(--ms-font-mono);
+  color: var(--ms-text-primary);
+}
+
+/* 3. 配件兼容性矩阵专用样式 */
+.compat-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--ms-font-size-sm);
+}
+.compat-matrix-table th,
+.compat-matrix-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--ms-border-subtle);
+  text-align: center;
+}
+.compat-matrix-table th {
+  background: var(--ms-bg-card-secondary);
+  font-weight: 600;
+  color: var(--ms-text-primary);
+}
+.compat-matrix-table td.compat-device-label {
+  text-align: left;
+  font-weight: 600;
+  background: var(--ms-bg-card-secondary);
+  color: var(--ms-text-primary);
+}
+
+.compat-status-yes {
+  color: #107c41;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.compat-status-no {
+  color: #a80000;
+  font-size: 13px;
+}
+.compat-status-partial {
+  color: #b75b00;
+  font-size: 11.5px;
+}

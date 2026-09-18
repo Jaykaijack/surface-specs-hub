@@ -1,0 +1,378 @@
+/**
+ * Microsoft Surface Specs Hub - Spec Table Styles
+ * 核心横向滚动对比表、固定表头/固定首列、差异高亮、分组折叠、未知参数状态治理
+ */
+
+.spec-table-container {
+  position: relative;
+  background: var(--ms-bg-card);
+  border: 1px solid var(--ms-border-subtle);
+  border-radius: var(--ms-radius-lg);
+  box-shadow: var(--ms-shadow-card);
+  overflow-x: auto;
+  max-width: 100%;
+  margin-top: 12px;
+}
+
+.spec-table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: var(--ms-font-size-sm);
+  table-layout: fixed;
+}
+
+/* 顶部粘性表头 */
+.spec-table thead th {
+  position: sticky;
+  top: 48px;
+  z-index: 20;
+  background: var(--ms-bg-card);
+  border-bottom: 2px solid var(--ms-border-strong);
+  padding: 16px 14px;
+  vertical-align: top;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+/* 首列与表头交叉左上角 */
+.spec-table thead th.corner-header {
+  position: sticky;
+  left: 0;
+  top: 48px;
+  z-index: 30;
+  background: var(--ms-bg-card);
+  border-right: 1px solid var(--ms-border-strong);
+  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+  text-align: left;
+  padding: 16px 14px;
+}
+
+/* 单设备规格表头样式（消除与顶部大图的冗余重复） */
+.table-single-header-th {
+  text-align: left !important;
+  padding: 14px 20px !important;
+  vertical-align: middle !important;
+  background: var(--ms-bg-card) !important;
+}
+
+.table-single-header-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.table-single-header-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ms-text-primary);
+  letter-spacing: -0.2px;
+}
+
+.table-single-header-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--ms-text-secondary);
+}
+
+.table-single-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--ms-accent-subtle);
+  color: var(--ms-accent);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.table-single-meta-desc {
+  color: var(--ms-text-tertiary);
+}
+
+.table-device-card {
+  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* 统一 14:9 标准表头图像视窗舞台 */
+.table-device-img {
+  width: 140px;
+  height: 85px;
+  aspect-ratio: 14 / 9;
+  box-sizing: border-box;
+  background: var(--md-sys-color-surface-container-low, var(--ms-bg-card-secondary));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: transform var(--ms-transition-fast);
+  position: relative;
+  overflow: hidden;
+  padding: 6px 8px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+}
+.table-device-img:hover {
+  transform: scale(1.05);
+}
+.table-device-img svg {
+  max-width: 80%;
+  max-height: 80%;
+}
+.table-thumb-img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.08));
+  transition: transform 0.2s ease;
+}
+.table-color-dots {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 16px;
+}
+.table-color-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.table-color-dot:hover, .table-color-dot.active {
+  transform: scale(1.4);
+  border-color: var(--ms-accent);
+  box-shadow: 0 0 0 1.5px var(--ms-accent);
+}
+
+.table-device-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ms-text-primary);
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+.table-device-title:hover {
+  color: var(--ms-accent);
+}
+
+.table-device-subtitle {
+  font-size: var(--ms-font-size-xs);
+  color: var(--ms-text-secondary);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.table-device-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.table-device-remove-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--ms-radius-full);
+  border: 1px solid var(--ms-border-subtle);
+  background: var(--ms-bg-card-secondary);
+  color: var(--ms-text-tertiary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  transition: all var(--ms-transition-fast);
+}
+.table-device-remove-btn:hover {
+  background: #d13438;
+  color: white;
+  border-color: #d13438;
+}
+
+/* 首列粘性固定 (Sticky Parameter Name Column) */
+.spec-table tbody td.spec-param-name {
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  background: var(--ms-bg-card);
+  border-right: 1px solid var(--ms-border-strong);
+  font-weight: 600;
+  color: var(--ms-text-secondary);
+  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+  padding: 10px 14px;
+  text-align: left;
+  user-select: none;
+  font-size: var(--ms-font-size-xs);
+}
+
+/* 参数值单元格 */
+.spec-table tbody td.spec-val-cell {
+  padding: 10px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--ms-border-subtle);
+  color: var(--ms-text-primary);
+  width: 230px;
+  min-width: 230px;
+  max-width: 230px;
+  word-break: break-word;
+  line-height: 1.45;
+  transition: background-color var(--ms-transition-fast);
+}
+
+/* 斑马纹悬浮 */
+.spec-table tbody tr:hover td.spec-param-name {
+  background: var(--ms-bg-card-hover);
+}
+.spec-table tbody tr:hover td.spec-val-cell {
+  background: var(--ms-bg-card-hover);
+}
+
+/* 分组行 (Group Headers) */
+.spec-group-row td {
+  background-color: var(--ms-bg-card-secondary);
+  padding: 11px 14px;
+  font-weight: 700;
+  font-size: var(--ms-font-size-xs);
+  color: var(--ms-text-brand);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-top: 1px solid var(--ms-border-strong);
+  border-bottom: 1px solid var(--ms-border-strong);
+}
+.spec-group-row td.spec-param-name {
+  background-color: var(--ms-bg-card-secondary);
+  color: var(--ms-text-brand);
+}
+
+.spec-group-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* 差异高亮效果 (Difference Highlighting) */
+.spec-table.highlight-diff tbody tr.row-diff td.spec-val-cell {
+  background-color: var(--ms-highlight-diff);
+}
+.spec-table.highlight-diff tbody tr.row-diff td.spec-param-name {
+  color: var(--ms-text-brand);
+  border-left: 3px solid var(--ms-accent);
+}
+
+/* 仅看差异模式隐藏完全一致行 */
+.spec-table.diff-only tbody tr.row-same {
+  display: none !important;
+}
+
+/* 未知参数治理状态样式 (PRD 第九章: 杜绝臆测) */
+.spec-state.not-disclosed {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--ms-text-tertiary);
+  background: var(--ms-bg-card-secondary);
+  padding: 2px 6px;
+  border-radius: var(--ms-radius-sm);
+  border: 1px dashed var(--ms-border-strong);
+  font-style: italic;
+}
+
+.spec-state.not-applicable {
+  font-size: 11.5px;
+  color: var(--ms-text-tertiary);
+  opacity: 0.75;
+}
+
+.spec-state.null {
+  color: var(--ms-text-tertiary);
+  font-weight: bold;
+}
+
+/* 徽标、颜色圆点与标签 */
+.spec-badge {
+  display: inline-block;
+  font-size: 10.5px;
+  padding: 1.5px 6px;
+  border-radius: var(--ms-radius-sm);
+  background: var(--ms-badge-bg);
+  color: var(--ms-badge-text);
+  font-weight: 600;
+  margin: 1px;
+}
+.spec-badge.gold {
+  background: #fff4ce;
+  color: #795b00;
+}
+.spec-badge.copilot {
+  background: #f0e6ff;
+  color: #5c2d91;
+}
+.spec-badge.green {
+  background: #e6f7ec;
+  color: #107c41;
+}
+
+.color-palette-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.color-dot-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--ms-text-secondary);
+  background: var(--ms-bg-card-secondary);
+  padding: 2px 6px;
+  border-radius: var(--ms-radius-full);
+  border: 1px solid var(--ms-border-subtle);
+}
+
+.color-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.spec-table-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--ms-text-tertiary);
+}
+.spec-table-empty h3 {
+  font-size: var(--ms-font-size-lg);
+  color: var(--ms-text-secondary);
+  margin-bottom: 8px;
+}
