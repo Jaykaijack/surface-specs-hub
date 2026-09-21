@@ -10,55 +10,91 @@ This project is a high-density, authoritative technical reference platform model
 
 All hardware represented in the Specs Hub must reflect official Microsoft technical whitepapers, architectural disclosures, and the official Microsoft Store China (`https://www.microsoftstore.com.cn/`).
 
-### A. Surface Pro 13 英寸（第 12 代）商用版 [核心主推旗舰·双架构独立收录]
+### A. Surface Pro 13 英寸（第 12 代）商用版与消费版 [核心主推旗舰]
+现网核验日期：2026-09-21，信源为微软中国官方商城产品页（不以旧样机底账覆盖现网标价）。
+- **Pro 13 英寸 (第 12 代) 消费版 (`pro-12-13`)**:
+  - 平台：骁龙® X2 Plus（10 核） / X2 Elite（12 核），80 TOPS NPU。消费页不出现英特尔 SKU。
+  - 配色：**亮铂金、典雅黑、沙漫金** 3 色。
+  - 起售价：¥12,888 起；本地视频续航 15.5 小时；标配 39W 电源。
 - **Pro 13 英寸 (第 12 代) 商用版 - Intel 版 (`pro-12-13-intel`)**:
-  - 平台：英特尔® 酷睿™ Ultra 5 / Ultra 7 处理器 (第 3 代)，Intel® AI Boost NPU (50 TOPS)。
-  - 屏幕：13.0 英寸 PixelSense Flow (2880 × 1920，120Hz 动态高刷)，Ultra 5 配备防反射 LCD / Ultra 7 配备双层串联 OLED。
-  - 配色：**亮铂金 (Platinum) 与 典雅黑 (Black)** 商务双色（官方商用商城真实在售规格，严格无沙漫金/宝石蓝）。
-  - 起售价：¥16,888 起 (仅商用直达)。
+  - 平台：英特尔® 酷睿™ Ultra 5 335 / Ultra 7 366H（第 3 代），Intel® AI Boost 50 TOPS。
+  - 配色：**亮铂金与典雅黑**。
+  - 起售价：¥16,888 起；本地视频续航 17 小时。
 - **Pro 13 英寸 (第 12 代) 商用版 - 骁龙版 (`pro-12-13-snap`)**:
-  - 平台：高通第二代骁龙® X2 Elite（12 核 Oryon 架构），Qualcomm Hexagon NPU (80 TOPS 算力巅峰)。
-  - 屏幕：13.0 英寸 PixelSense Flow 双层串联 OLED 屏幕 (2880 × 1920，120Hz，100万:1 对比度)。
-  - 配色：**亮铂金 (Platinum) 与 典雅黑 (Black)** 商务双色（官方商用商城真实在售规格，严格无沙漫金/宝石蓝）。
-  - 起售价：¥15,488 起 (仅商用直达)。
-- **配件生态**: Surface Pro Flex 键盘（支持离机蓝牙无线打字与磁吸直连双模，自带隐藏式笔槽无线充电）与 Surface 超薄触控笔 2（4096 级压感与触觉振动反馈）。
+  - 平台：骁龙® X2 Plus / X2 Elite，Hexagon 80 TOPS。
+  - 配色：**亮铂金与典雅黑**。
+  - 起售价：¥15,488 起；本地视频续航 15.5 小时。
+- **配件生态**: Surface Pro Flex 键盘与 Surface 超薄触控笔 2。
 
-### B. Surface Pro, 12 英寸（第 1 代）[官方消费级轻薄 AI+ PC]
-- **Target SKU**: 高通骁龙® X Plus (8 核心)，12.0 英寸 PixelSense 触控屏 (2196 × 1464)，45 TOPS NPU，轻至 686g。
-- **定位与属性**: 个人与家庭消费级便携 AI+ PC (`isCommercial: false`)。
-- **配色**: 亮铂金 (Platinum)、罗兰紫 (Violet)、碧海青 (Ocean) 时尚三色。
-- **起售价**: ¥7,888 起 (消费商城直达)。
+### B. Surface Pro, 12 英寸（第 1 代）[官方便携 AI+ PC 双线并收录]
+- **消费版 (`pro-12-inch`)**:
+  - 骁龙® X Plus (8 核心)，12.0 英寸 PixelSense (2196 × 1464)，45 TOPS，686g。
+  - 配色：亮铂金、罗兰紫、碧海青。
+  - 起售价：¥6,788 起；本地视频续航 16 小时。
+- **商用版 (`pro-12-inch-biz`)**:
+  - Windows 11 专业版，仅亮铂金；内存 16GB / 24GB；电池额定 38 Wh。
+  - 起售价：¥9,788 起。官方页：`/surface/surface-pro-11th-edition-12-inch-for-business`。
 
-### C. Surface Laptop（第 8 代）商用版 [核心主推旗舰·独立架构解耦]
-- **13.8 英寸商用版**: 独立拆分为 Intel 版 (`laptop-8-138-intel`，Ultra 5/7，50 TOPS，¥16,888起) 与 骁龙版 (`laptop-8-138-snap`，Snapdragon X2，80 TOPS，¥14,888起)。
-- **15.0 英寸商用版**: 独立拆分为 Intel 版 (`laptop-8-150-intel`，Ultra X7，50 TOPS，¥18,888起) 与 骁龙版 (`laptop-8-150-snap`，Snapdragon X2，80 TOPS，¥16,888起)。
-- **商用配色标准**: 严格且仅限 **亮铂金 (Platinum)** 与 **典雅黑 (Black)**（彻底剔除消费级宝石蓝、沙漫金、仙踪绿）。
-- **CRITICAL REDLINE**: 屏幕支持手指十点触控，但**绝对不支持触控笔输入**。
-- **独立消费版**: Surface Laptop (第 7 代) 消费版 (`laptop-7-138`) 保留时尚 4 色消费零售。
+### C. Surface Laptop 系列最新在售核心阵容
+- **Laptop（第 8 代）13.8 消费版 (`laptop-8-138`)**: 仅骁龙 X2 Plus / Elite，¥11,488 起，20 小时，39W。
+- **Laptop（第 8 代）15 消费版 (`laptop-8-150`)**: 仅骁龙 X2 Plus / Elite，¥12,888 起，19 小时，65W，内存最高 32GB。
+- **Laptop, 13 英寸 (第 1 代) 消费版 (`laptop-13-inch`)**: 骁龙 X Plus 8 核，1.22kg，¥7,788 起，23 小时。
+- **Laptop 13 英寸 商用骁龙 (`laptop-13-inch-biz`)**: X Plus，16/24GB，¥10,788 起，23 小时。
+- **Laptop 13 英寸 商用 Intel (`laptop-13-inch-intel-biz`)**: Ultra 5 **325**（第 3 代，不是 125），8/16/24GB，¥10,188 起，22 小时，47 TOPS。
+- **Laptop（第 8 代）商用版 (13.8" & 15")**:
+  - 13.8 Intel (`laptop-8-138-intel`)：¥16,888 起；Ultra 5 335 / Ultra 7 366H / Ultra X7 368H；23 小时；256GB 起；39W。
+  - 13.8 骁龙 (`laptop-8-138-snap`)：¥14,888 起；X2 Plus / Elite；20 小时；256GB–2TB；39W。
+  - 15 Intel (`laptop-8-150-intel`)：分辨率 3270×2180 (262 PPI)；21 小时；65W。15 英寸独立入门价官方合页未单列 → `not_disclosed`。
+  - 15 骁龙 (`laptop-8-150-snap`)：3270×2180 (262 PPI)；19 小时；65W。15 英寸独立入门价同样 `not_disclosed`。
+  - 商用配色：仅亮铂金与典雅黑。
+  - 铁律：十点触控，**不支持触控笔**。
 
-### D. Historical Full Genealogy (8 大品类、46 款机型全覆盖)
-- **商用版与消费版彻底解耦**: 全系总计收录 46 款设备，商用机型打上 `isCommercial: true` 且仅配商务双色，购买链接 100% 直达微软中国官方商用商城选配页；消费机型打上 `isCommercial: false` 直达消费零售页，绝无混淆串门。
-- **Surface Pro 系列 (15款)**: 第 12 代 13 英寸 (2026), 12 英寸 (第 1 代), 第 11 代, Pro 10 商用版, Pro 9 (Intel/5G), Pro 8, Pro 7+, Pro 7, Pro 6, Pro 5 (2017), Pro 4, Pro 3, Pro 2, Pro 1 (初代 2012), Pro X (ARM 超薄先锋).
-- **Surface Laptop 系列 (9款)**: 第 8 代 (13.8" & 15"), 第 7 代, Laptop 6 商用版, Laptop 5, Laptop 4, Laptop 3, Laptop 2, 初代 Laptop.
-- **Surface Laptop Studio 系列 (2款)**: SLS 2 (RTX 4060/4050 变形工作站), 初代 SLS.
-- **Surface Book 系列 (4款)**: Book 3 (15" & 13.5"), Book 2 (15" & 13.5"), 初代 Book.
-- **Surface Go 系列 (4款)**: Go 4 商用版 (Intel N200), Go 3, Go 2, 初代 Go.
-- **Surface Laptop Go 系列 (3款)**: Laptop Go 3, Laptop Go 2, 初代 Laptop Go.
-- **Surface Studio & Hub 系列 (4款)**: Studio 2+ (RTX 3060), Studio 2, 初代 Studio, Hub 2S.
-- **Surface Duo 系列 (2款)**: Duo 2 (4.8mm 双屏 90Hz), 初代 Duo.
+### C2. 仍在售的前代商用 AI+ PC（2026-09-21 现网仍有独立产品页）
+- **Pro 11 商用骁龙 (`pro-11-biz-snap`)**：¥11,239 起；X Plus（10 核）/ X Elite（12 核）；45 TOPS；本地视频 14 小时。
+- **Pro 11 商用 Intel (`pro-11-biz-intel`)**：¥14,488 起；Ultra 5 236V/238V、Ultra 7 266V/268V；40/48 TOPS；本地视频 14 小时。
+- **Laptop 7 商用骁龙 (`laptop-7-biz-snap`)**：¥11,329 起；13.8 英寸 X Plus/X Elite，15 英寸仅 Elite；20/22 小时。
+- **Laptop 7 商用 Intel (`laptop-7-biz-intel`)**：¥14,488 起；同上 V 系列；13.8 英寸 20 小时 / 15 英寸 22 小时。不得再写 135H 或 11.5 TOPS。
+- **Hub 3 (`hub-3`)**：企业询价，中国商城无零售起售价 → `not_disclosed`。交流供电，**禁止写电池续航**。信源：Microsoft Learn tech specs。
+
+### C3. 已从国行新品页撤下（不得再标 `current_cn`）
+消费购机页「选择你的全新 Surface」仅保留 Pro 12/13 与 Laptop 13/13.8/15（第 8 代）。以下现网只剩认证翻新、404 或已撤下，状态改为 `discontinued`：
+`pro-11-13`、`laptop-7-138`、`laptop-7-150`、`pro-10-biz`、`laptop-6-biz`、`sls-2`、`sls-2-biz`、`go-4`、`laptop-go-3`、`laptop-go-3-biz`、`studio-2-plus`、`studio-2-plus-biz`。
+
+### D. 完整谱系结构 (共 70 款设备，消费版与商用版彻底物理隔离)
+- **商用版与消费版彻底解耦**: 全系收录 70 款设备（消费版 40 款，商用版 30 款），从导航侧边栏、路由（`#/consumer/` 与 `#/business/`）、系列卡片、参数对比表到底部官方信源完全独立闭环，杜绝任何商用跳转消费的错位体验。
+- **消费版产品谱系 (40 款，8 大系列)**:
+  - Surface Pro 消费系列 (14款)
+  - Surface Laptop 消费系列 (9款，含 Laptop 13 英寸与 Laptop 7 15 英寸)
+  - Surface Laptop Studio 消费系列 (2款)
+  - Surface Book 消费系列 (3款)
+  - Surface Go 消费系列 (3款)
+  - Surface Laptop Go 消费系列 (3款)
+  - Surface Studio 消费系列 (4款)
+  - Surface Duo 消费系列 (2款)
+- **商用版产品谱系 (30 款，7 大系列，对齐 Microsoft Learn System SKU 参考表与 CommercialCofig)**:
+  - Surface Pro 商用系列 (9款: Pro 12-13 Intel/Snap, Pro 12 Biz, Pro 11 Intel/Snap, Pro 10, Pro 9 Biz, Pro 8 Biz, Pro 7+, Pro 6 Biz)
+  - Surface Laptop 商用系列 (8款: Laptop 8 13.8/15 Intel/Snap, Laptop 13 Biz Snap/Intel, Laptop 7 Biz Intel/Snap, Laptop 6, Laptop 5 Biz)
+  - Surface Laptop Studio 商用系列 (2款: SLS 2 Biz, SLS 1 Biz)
+  - Surface Book 商用系列 (1款: Book 3 Biz 独占 Quadro RTX 3000)
+  - Surface Go 商用系列 (3款: Go 4, Go 3 Biz, Go 2 Biz)
+  - Surface Laptop Go 商用系列 (1款: Laptop Go 3 Biz)
+  - Surface Hub & Studio 商用系列 (6款: Hub 3 50/85, Hub 2S, Studio 2+ Biz 等)
 
 ---
 
 ## 3. Strict Exclusions & Compliance Redlines
 
-1. **Surface Pro 12-inch Official Inclusion**:
+1. **只收录大陆国行口径**：
+   - 档案数字必须来自微软中国商城、国行 Support / 国行新闻，或国行认证翻新规格表。
+   - 美区、欧区、港台、东南亚商城或外区 Support 的配置、SKU、尺寸、重量、电池不得填入国行档案。国行没写就标 `not_disclosed`。
+2. **Surface Pro 12-inch Official Inclusion**:
    - 微软官方商城（`microsoftstore.com.cn/commercial`）重点在售核心机型，必须全面收录其 13 大类权威参数。
-2. **Superseded Generations**:
+3. **Superseded Generations**:
    - Do not refer to 11th edition or 7th edition as the latest flagship. Current flagships are Pro 13 (12th Gen), Pro 12-inch, and Laptop (8th Gen).
-3. **Promotions & Giveaways**:
+4. **Promotions & Giveaways**:
    - **Strictly prohibit inventing unauthorized discounts, vouchers, or free gifts**.
    - Pricing language: "以微软官方商城实时页面标价与活动为准" (Prices strictly subject to official real-time tags).
-4. **Internal Routing Terms**:
+5. **Internal Routing Terms**:
    - Strictly avoid mentioning internal operational terms like "橙子建站" or "未开店".
 
 ---

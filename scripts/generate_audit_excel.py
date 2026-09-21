@@ -52,20 +52,21 @@ def create_audit_workbook():
     align_right = Alignment(horizontal="right", vertical="center")
 
     # -------------------------------------------------------------
-    # Sheet 1: 全系43款官方信源核对总账
+    # Sheet 1: 全系官方信源核对总账
     # -------------------------------------------------------------
+    num_devices = len(devices)
     ws1 = wb.active
-    ws1.title = "全系43款官方信源核对总账"
+    ws1.title = f"全系{num_devices}款官方信源核对总账"
     ws1.views.sheetView[0].showGridLines = True
 
     ws1.merge_cells("A1:U1")
-    ws1["A1"] = "Microsoft Surface 历代全系产品规格与官方信源核验总账 (2012 - 2026)"
+    ws1["A1"] = f"Microsoft Surface 历代全系产品规格与官方信源核验总账 (共 {num_devices} 款，含消费版与商用版独立全阵容)"
     ws1["A1"].font = font_title
     ws1["A1"].alignment = Alignment(horizontal="left", vertical="center")
     ws1.row_dimensions[1].height = 35
 
     ws1.merge_cells("A2:U2")
-    ws1["A2"] = "编制说明：本总账完整收录全系 43 款产品。全量参数 100% 对齐微软官方商城对应产品选配定制落地页与微软 Learn 架构白皮书（零泛首页链接）。点击各行「官方直达链接」可直接在新窗口校验官方原始文档。"
+    ws1["A2"] = f"编制说明：本总账完整收录全系 {num_devices} 款产品（消费版与商用版全部分开列示）。全量参数 100% 对齐微软官方商城对应产品选配定制落地页与微软 Learn 架构白皮书（零泛首页链接）。点击各行「官方直达链接」可直接在新窗口校验官方原始文档。"
     ws1["A2"].font = font_subtitle
     ws1["A2"].alignment = Alignment(horizontal="left", vertical="center")
     ws1.row_dimensions[2].height = 20

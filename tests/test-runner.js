@@ -8,11 +8,17 @@ const path = require('path');
 
 // 导入待测核心模块
 const SURFACE_DATA = require('../js/surface-data.js');
+const Catalog = require('../js/catalog.js');
+const Taxonomy = require('../js/taxonomy.js');
 const ComparisonEngine = require('../js/comparison-engine.js');
 const ToolsEngine = require('../js/tools-engine.js');
 const App = require('../js/app.js');
+const OFFICIAL_CURRENT_LINEUP_FACTS = require('./official-current-lineup-facts.js');
+const OFFICIAL_HISTORICAL_LINEUP_FACTS = require('./official-historical-lineup-facts.js');
 // 挂载到全局环境供 Node.js 测试执行
 global.SURFACE_DATA = SURFACE_DATA;
+global.Catalog = Catalog;
+global.Taxonomy = Taxonomy;
 global.ComparisonEngine = ComparisonEngine;
 global.ToolsEngine = ToolsEngine;
 global.App = App;
@@ -28,6 +34,22 @@ function assert(condition, message) {
     console.error(`  ❌ FAIL: ${message}`);
     failedTests++;
   }
+}
+
+function assertSpecFacts(deviceId, dev, fact) {
+  const contains = fact.specContains || {};
+  Object.keys(contains).forEach((key) => {
+    const actual = String(Catalog.getSpec(dev, key) || '');
+    const needles = Array.isArray(contains[key]) ? contains[key] : [contains[key]];
+    needles.forEach((needle) => {
+      assert(actual.includes(needle), `${deviceId} ${key} 必须含国行 ${needle}（实际: ${actual}）`);
+    });
+  });
+  const states = fact.specState || {};
+  Object.keys(states).forEach((key) => {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, key)), states[key],
+      `${deviceId} ${key} 国行未写或物理不具备时不得脑补`);
+  });
 }
 
 function assertEqual(actual, expected, message) {
@@ -80,7 +102,7 @@ assert(!!laptop8_snap, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 �
 
 // 架构重构检查: 消费版与商用版两大顶级分类独立并列
 assertEqual(SURFACE_DATA.consumerCategories.length, 8, '消费版产品库独立收录完整的 8 大消费系列');
-assertEqual(SURFACE_DATA.commercialCategories.length, 6, '商用版产品库独立收录完整的 6 大商用系列');
+assertEqual(SURFACE_DATA.commercialCategories.length, 7, '商用版产品库独立收录完整的 7 大商用系列 (Pro/Laptop/SLS/Book/Go/Studio/Hub)');
 
 // 补全商用型号官方 Learn 架构与 Fact Sheet 存证检查
 const pro12_biz = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch-biz');
@@ -214,14 +236,64 @@ SURFACE_DATA.chips.forEach(chip => {
   }
 });
 
-// 双向配件兼容表测试
-assertEqual(SURFACE_DATA.accessories.length, 3, '包含键盘、触控笔、拓展坞 3 大类配件兼容库');
+// 双向配件生态全品类兼容表测试 (涵盖鼠标、键盘、手写笔、拓展坞、音频与创意交互 6 大生态)
+assert(SURFACE_DATA.accessories.length >= 20, `全面收录 6 大品类官方全生态配件库 (当前收录: ${SURFACE_DATA.accessories.length} 款)`);
+
+// 1. 鼠标外设全系收录
+const arcMouse = SURFACE_DATA.accessories.find(a => a.id === 'surface-arc-mouse');
+assert(!!arcMouse && arcMouse.category === 'mouse', 'Surface Arc 鼠标在库 (可弯折创新形态)');
+const precisionMouse = SURFACE_DATA.accessories.find(a => a.id === 'surface-precision-mouse');
+assert(!!precisionMouse && precisionMouse.category === 'mouse', 'Surface 精准鼠标在库 (三设备跨屏旗舰工学)');
+const mobileMouse = SURFACE_DATA.accessories.find(a => a.id === 'surface-mobile-mouse');
+assert(!!mobileMouse && mobileMouse.category === 'mouse', 'Surface 便携移动鼠标在库 (小巧对称金属滚轮)');
+const ergoMouse = SURFACE_DATA.accessories.find(a => a.id === 'surface-ergonomic-mouse');
+assert(!!ergoMouse && ergoMouse.category === 'mouse', 'Surface 人体工学鼠标在库 (舒适健康手型倾角)');
+
+// 2. 键盘与保护盖
 const flexKeyboard = SURFACE_DATA.accessories.find(a => a.id === 'flex-keyboard');
-assert(!!flexKeyboard, 'Surface Pro Flex 键盘配件在库');
+assert(!!flexKeyboard && flexKeyboard.category === 'keyboard', 'Surface Pro Flex 键盘配件在库');
 if (flexKeyboard) {
   const pro12Support = flexKeyboard.compatibilityList.find(c => c.deviceId === 'pro-12-13-intel');
   assert(!!pro12Support && pro12Support.status === 'FULL', 'Flex 键盘原生支持 Surface Pro 13 英寸 (第 12 代) 商用版');
 }
+const classicCover = SURFACE_DATA.accessories.find(a => a.id === 'pro-classic-type-cover');
+assert(!!classicCover, 'Surface Pro 经典专业键盘盖在库 (Pro 3~7+)');
+const touchCover = SURFACE_DATA.accessories.find(a => a.id === 'surface-touch-cover');
+assert(!!touchCover, 'Surface 早期经典触控键盘在库 (Touch / Type Cover 1~2 历史款)');
+
+// 3. 手写笔与压感
+const slimPen2 = SURFACE_DATA.accessories.find(a => a.id === 'slim-pen-2');
+assert(!!slimPen2 && slimPen2.category === 'pen', 'Surface 超感触控笔 2 在库 (触觉震动拟真纸感)');
+const classicPen = SURFACE_DATA.accessories.find(a => a.id === 'surface-pen-classic');
+assert(!!classicPen, 'Surface 经典触控笔在库 (4096级/AAAA电池)');
+
+// 4. 拓展坞与转换器
+const dock2 = SURFACE_DATA.accessories.find(a => a.id === 'surface-dock-2');
+assert(!!dock2 && dock2.category === 'dock', 'Surface 拓展坞 2 代在库 (199W 磁吸双 4K)');
+const dock1 = SURFACE_DATA.accessories.find(a => a.id === 'surface-dock-1');
+assert(!!dock1, 'Surface 拓展坞 1 代在库 (Surface Connect 砖块形)');
+const tb4Dock = SURFACE_DATA.accessories.find(a => a.id === 'surface-tb4-dock');
+assert(!!tb4Dock, 'Surface 雷电 4 拓展坞在库 (USB4/Thunderbolt 4 96W 反充)');
+const travelHub = SURFACE_DATA.accessories.find(a => a.id === 'surface-travel-hub');
+assert(!!travelHub, 'Surface 便携多功能扩展坞在库 (USB-C 5合1差旅神器)');
+
+// 5. 音频与会议外设
+const headphones2 = SURFACE_DATA.accessories.find(a => a.id === 'surface-headphones-2');
+assert(!!headphones2 && headphones2.category === 'audio', 'Surface 头戴式降噪耳机 2 代在库 (双物理拨盘/13级降噪)');
+const earbuds = SURFACE_DATA.accessories.find(a => a.id === 'surface-earbuds');
+assert(!!earbuds && earbuds.category === 'audio', 'Surface 真无线耳塞式耳机在库 (圆形触控大盘/Office听写)');
+const audioDock = SURFACE_DATA.accessories.find(a => a.id === 'surface-audio-dock');
+assert(!!audioDock && audioDock.category === 'audio', 'Surface 智能会议音箱拓展坞在库 (工位极简四合一)');
+
+// 6. 创意交互外设
+const dial = SURFACE_DATA.accessories.find(a => a.id === 'surface-dial');
+assert(!!dial && dial.category === 'creative', 'Surface Dial 屏幕实体交互旋钮在库');
+
+// 7. 配件-主机矩阵 100% 覆盖率验证
+SURFACE_DATA.accessories.forEach(acc => {
+  assert(acc.compatibilityList && acc.compatibilityList.length === SURFACE_DATA.devices.length,
+    `配件 [${acc.name}] 必须 100% 覆盖全部 ${SURFACE_DATA.devices.length} 款主机设备兼容性判定`);
+});
 
 // ----------------------------------------------------
 // 5. 路由与多维筛选系统测试 (Router & Filters)
@@ -257,7 +329,7 @@ assertEqual(App.filters.copilotOnly, false, '重置后 copilotOnly 恢复为 fal
 
 // 全局模糊搜索测试
 const searchResults1 = SURFACE_DATA.devices.filter(d => {
-  const text = `${d.name} ${d.specs.cpuModel} ${d.year}`.toLowerCase();
+  const text = App.normalizeSearchText(`${d.name} ${d.specs.cpuModel} ${d.year}`);
   return text.includes('骁龙 x2');
 });
 assert(searchResults1.length >= 2, '通过"骁龙 X2"可精准检索到最新第 12 代 Pro 与第 8 代 Laptop');
@@ -406,12 +478,46 @@ SURFACE_DATA.devices.filter(d => d.isCommercial).forEach(dev => {
     `商用机型 [${dev.id}] 颜色严格合规，无消费级花哨颜色 (Actual colors: ${cNames.join(', ')})`);
 });
 
+// 检验消费版旗舰 Pro 13 (第 12 代) 严格零宝石蓝 (对齐新一代评测指南与老大指正)
+const pro12_13_cons = SURFACE_DATA.devices.find(d => d.id === 'pro-12-13');
+assert(Boolean(pro12_13_cons), '全系参数库正式收录 Surface Pro 13 英寸 (第 12 代) 消费版');
+assert(!pro12_13_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Pro 13 消费版第 12 代严格零宝石蓝 (对齐官方评测指南三款经典配色)');
+assertEqual(pro12_13_cons.specs.colors.length, 3, 'Pro 13 消费版第 12 代严格三款配色: 亮铂金、典雅黑、沙漫金');
+
+// 检验消费版旗舰 Laptop 13.8 (第 8 代) 独占翡翠绿新色
+const laptop8_138_cons = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138');
+assert(Boolean(laptop8_138_cons), '全系参数库正式收录 Surface Laptop 13.8 英寸 (第 8 代) 消费版');
+assert(laptop8_138_cons.specs.colors.some(c => c.name === '翡翠绿'), 'Laptop 13.8 第 8 代独占全新翡翠绿 (Emerald) 官方配色');
+assert(!laptop8_138_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Laptop 13.8 第 8 代消费版严格无宝石蓝配色');
+
+// 检验找回并录入的消费版 13 英寸机型 (Surface Laptop 13 英寸 第 1 代)
+const laptop13Inch = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch');
+assert(Boolean(laptop13Inch), '全系参数库正式收录官方 Surface Laptop, 13 英寸 (第 1 代) 消费版');
+assertEqual(laptop13Inch.specs.resolution, '1920 × 1280', 'Laptop 13 英寸机型分辨率 1920x1280 准确无误');
+assertEqual(laptop13Inch.specs.npuTops, '45 TOPS', 'Laptop 13 英寸机型搭载 45 TOPS 高通 NPU');
+assertEqual(laptop13Inch.specs.startingPriceCny, '¥7,788 起 (消费版)', 'Laptop 13 英寸机型官方商城起售价准确无误 (Actual: ¥7,788 起)');
+assert(laptop13Inch.specs.officialDocUrl.includes('configure/surface-laptop-13-inch'), 'Laptop 13 英寸官方商城直达选配页链接准确');
+assertEqual(laptop13Inch.specs.weightGrams, '1220g (1.22 kg)', 'Laptop 13 英寸机型裸机重量 1.22kg 准确无误');
+
+// 检验消费版 Laptop 7 15 英寸机型
+const laptop7_150 = SURFACE_DATA.devices.find(d => d.id === 'laptop-7-150');
+assert(Boolean(laptop7_150), '全系参数库正式收录官方 Surface Laptop (第 7 代) 15 英寸 消费版');
+assert(laptop7_150.specs.screenSize.includes('15.0 英寸'), 'Laptop 7 15 英寸屏幕规格准确');
+assert(laptop7_150.specs.cpuModel.includes('高通骁龙® X Elite'), 'Laptop 7 15 英寸搭载骁龙 X Elite 旗舰核心');
+
+// 检验商用版新增机型: Surface Laptop 13 英寸 商用版 - Intel 版
+const laptop13_intel_biz = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch-intel-biz');
+assert(Boolean(laptop13_intel_biz), '全系参数库正式收录 Surface Laptop 13 英寸 商用版 - Intel 版');
+assert(laptop13_intel_biz.specs.cpuModel.includes('Ultra 5') && laptop13_intel_biz.specs.cpuModel.includes('325'), 'Laptop 13 英寸 Intel 版搭载英特尔酷睿 Ultra 5 325');
+assertEqual(laptop13_intel_biz.specs.startingPriceCny, '¥10,188 起 (商用版)', 'Laptop 13 英寸 Intel 商用版起售价对齐现网官方商城 ¥10,188 起');
+assertEqual(laptop13_intel_biz.specs.colors.length, 1, 'Laptop 13 英寸 Intel 商用版严格单色亮铂金');
+
 // 检验新收录的官方 12 英寸机型
 const pro12Inch = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch');
 assert(Boolean(pro12Inch), '全系参数库正式收录官方 Surface Pro, 12 英寸 (第 1 代)');
 assertEqual(pro12Inch.specs.resolution, '2196 × 1464', '12 英寸机型分辨率 2196x1464 准确无误');
 assertEqual(pro12Inch.specs.npuTops, '45 TOPS', '12 英寸机型搭载 45 TOPS 高通 NPU');
-assertEqual(pro12Inch.specs.startingPriceCny, '¥7,888 起 (消费版)', '12 英寸机型官方商城起售价准确无误 (Actual: ¥7,888 起)');
+assertEqual(pro12Inch.specs.startingPriceCny, '¥6,788 起 (消费版)', '12 英寸机型官方商城起售价准确无误 (Actual: ¥6,788 起)');
 assert(pro12Inch.specs.officialDocUrl.includes('configure/surface-pro-12-inch'), '12 英寸官方商城直达选配页链接准确');
 const pro12Colors = pro12Inch.specs.colors.map(c => c.name);
 assert(pro12Colors.includes('亮铂金') && pro12Colors.includes('罗兰紫') && pro12Colors.includes('碧海青'), '12 英寸机型完整包含官网在售 3 色: 亮铂金、罗兰紫、碧海青');
@@ -503,12 +609,40 @@ assertEqual(missingAssetCount, 0, '全量引用图像本地文件 100% 存在');
 const hub2s = SURFACE_DATA.devices.find(d => d.id === 'hub-2s');
 assert(Boolean(hub2s && hub2s.heroImage.includes('hub')), 'Surface Hub 2S 拥有独立专属巨幕图片，不与 Studio 混淆');
 
-// 4. 校验商用版专区与 Microsoft Learn 架构
+// 4. 校验商用版专区与官方文档（Learn 旧路径大量 404，现网以 Support / tech-specs 为准）
 assert(typeof App.renderBusinessView === 'function', 'App 具备 renderBusinessView 商用专区渲染方法');
 const commercialList = SURFACE_DATA.devices.filter(d => d.isCommercial);
 assert(commercialList.length >= 8, `全面收录商用机型 (当前收录: ${commercialList.length} 款)`);
+function isOfficialMicrosoftDocUrl(url) {
+  if (!url || typeof url !== 'string') return false;
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    return host === 'learn.microsoft.com' || host === 'support.microsoft.com';
+  } catch (e) {
+    return false;
+  }
+}
 commercialList.forEach(cd => {
-  assert(Boolean(cd.learnDocUrl && cd.learnDocUrl.includes('learn.microsoft.com')), `商用机型 [${cd.id}] 具备有效 Microsoft Learn 文档链接`);
+  assert(isOfficialMicrosoftDocUrl(cd.learnDocUrl), `商用机型 [${cd.id}] 必须挂有效微软官方文档（Learn 或 Support），不得用商城页或死链冒充`);
+});
+
+const DEAD_LEARN_PATHS = [
+  '/surface/surface-pro-for-business',
+  '/surface/surface-laptop-for-business',
+  '/surface/surface-laptop-7th-edition',
+  '/surface/surface-pro-12-inch',
+  '/surface/surface-laptop-13-inch',
+  '/surface/surface-pro-11th-edition',
+  '/surface/surface-system-sku-reference'
+];
+Catalog.listDevices().forEach(dev => {
+  const url = String(dev.learnDocUrl || '');
+  DEAD_LEARN_PATHS.forEach(dead => {
+    assert(
+      !url.includes(dead),
+      `${dev.id} 不得再挂已 404 的旧 Learn 路径 ${dead}（实际: ${url}）`
+    );
+  });
 });
 
 // ====================================================
@@ -528,7 +662,754 @@ SURFACE_DATA.devices.forEach(dev => {
     validStoreUrlCount++;
   }
 });
-assertEqual(validStoreUrlCount, SURFACE_DATA.devices.length, '全系 43 款产品 100% 具备官方信源超链接');
+assertEqual(validStoreUrlCount, SURFACE_DATA.devices.length, '全系产品 100% 具备官方信源超链接');
+
+// ----------------------------------------------------
+// Test Suite 11: Catalog seam + 现网官方旗舰准确性
+// ----------------------------------------------------
+console.log('\n📚 Test Suite 11: Catalog seam 与现网官方旗舰准确性');
+
+assert(typeof Catalog.getDevice === 'function', 'Catalog.getDevice 是读取机型的 interface');
+assert(typeof Catalog.getSpec === 'function', 'Catalog.getSpec 是读取参数的 interface');
+assert(typeof Catalog.presentSpec === 'function', 'Catalog.presentSpec 是四态展示 interface');
+assert(typeof Catalog.applySnapshot === 'function', 'Catalog.applySnapshot 是云端/本地 adapter 的 seam');
+assert(typeof App.renderRoute === 'function', '云端刷新必须能调用 App.renderRoute');
+
+assertEqual(Catalog.presentSpec('not_disclosed').includes('官方未披露'), true, '四态：NOT_DISCLOSED 统一为官方未披露');
+assertEqual(Catalog.presentSpec('not_applicable').includes('不适用'), true, '四态：NOT_APPLICABLE 统一为不适用');
+assertEqual(Catalog.presentSpec(null).includes('—'), true, '四态：NULL 统一为 —');
+assertEqual(Catalog.isNpuDisplayable('not_disclosed'), false, '官方未披露的 NPU 不得出现在徽章上');
+
+const aliasLaptop = Catalog.getDevice('laptop-8-138');
+assert(!!aliasLaptop, 'Catalog 能取到 Laptop 8 13.8 消费版');
+assert(!!Catalog.getSpec(aliasLaptop, 'batteryCapacityWh') || !!Catalog.getSpec(aliasLaptop, 'batteryLifeVideo'),
+  'Catalog.getSpec 能读到别名字段（电池容量或续航）而不是空白');
+const composePortsLaptop = Catalog.getDevice('laptop-8-138');
+assert(String(Catalog.getSpec(composePortsLaptop, 'usbPorts') || '').includes('USB-A'),
+  'Catalog.getSpec(usbPorts) 必须拼上分栏里的 USB-A，不得只露出 USB-C');
+
+const commercialPro = Catalog.listDevices({ segment: 'commercial', seriesId: 'pro' });
+const consumerPro = Catalog.listDevices({ segment: 'consumer', seriesId: 'pro' });
+assert(commercialPro.every(d => Catalog.segmentOf(d) === 'commercial'), 'Taxonomy：商用 Pro 列表零消费版串线');
+assert(consumerPro.every(d => Catalog.segmentOf(d) === 'consumer'), 'Taxonomy：消费 Pro 列表零商用版串线');
+assert(!commercialPro.some(d => d.id === 'pro-12-inch'), '商用 Pro 不含消费版 12 英寸');
+assert(consumerPro.some(d => d.id === 'pro-12-inch'), '消费 Pro 含官方在售 12 英寸第 1 代');
+
+const compatAccessories = Catalog.accessories();
+assert(compatAccessories.length >= 8, '兼容矩阵的配件名单来自 Catalog.accessories，而不是手写列');
+
+const originalDevices = SURFACE_DATA.devices;
+const originalAccessories = SURFACE_DATA.accessories;
+const beforeSnap = Catalog.getSnapshot();
+const beforeCount = originalDevices.length;
+const beforeAccCount = originalAccessories.length;
+const applied = Catalog.applySnapshot({ devices: originalDevices.slice(0, 2), accessories: [] });
+assertEqual(applied, true, 'applySnapshot 接受新载荷');
+assert(Catalog.getSnapshot() !== beforeSnap, 'applySnapshot 后旧 snapshot 不再是当前快照');
+assertEqual(beforeSnap.deviceIds.length, beforeCount, '旧 snapshot 的机型清单不被原地改写');
+assertEqual(SURFACE_DATA.devices, originalDevices, 'applySnapshot 不得替换本地基线 devices 引用');
+assertEqual(SURFACE_DATA.devices.length, beforeCount, 'applySnapshot 不得改写本地基线机型数量');
+assertEqual(SURFACE_DATA.accessories, originalAccessories, 'applySnapshot 不得替换本地基线 accessories 引用');
+assertEqual(SURFACE_DATA.accessories.length, beforeAccCount, 'applySnapshot 不得改写本地基线配件数量');
+assertEqual(Catalog.listDevices().length, 2, 'Catalog 读取的是快照机型，不是被改写的基线');
+assertEqual(Catalog.accessories().length, 0, 'Catalog 读取的是快照配件，不是被改写的基线');
+Catalog.resetToBaseline();
+assert(Catalog.listDevices().length >= 70, '测试后 Catalog 恢复全量档案');
+assertEqual(SURFACE_DATA.devices.length, beforeCount, '恢复快照后本地基线机型数仍未被改写');
+assertEqual(SURFACE_DATA.accessories.length, beforeAccCount, '恢复快照后本地基线配件数仍未被改写');
+assertEqual(Catalog.listDevices().length, SURFACE_DATA.devices.length, 'resetToBaseline 后 Catalog 回到本地基线');
+assert(!!SURFACE_DATA.datasetVersion, '本地基线必须带 datasetVersion，才能拒绝过期云端快照');
+assertEqual(Catalog.acceptsCloudVersion('2026.09.18'), false, '过期云端 v2026.09.18 不得覆盖本地核验基线');
+assertEqual(Catalog.acceptsCloudVersion(SURFACE_DATA.datasetVersion), true, '同版本云端可以覆盖');
+assertEqual(Catalog.acceptsCloudVersion('2026.09.22'), true, '更新的云端可以覆盖');
+assertEqual(Catalog.acceptsCloudVersion(''), false, '云端缺版本号时不得覆盖本地核验基线');
+
+assert(typeof App.listDevices === 'function', 'App 只通过 Catalog 取机型，禁止直读 SURFACE_DATA.devices');
+Catalog.applySnapshot({ devices: originalDevices.slice(0, 2) });
+assertEqual(App.listDevices().length, 2, '云端快照后 App 读到的是 Catalog 机型');
+assertEqual(SURFACE_DATA.devices.length, beforeCount, 'App 读取快照时本地基线仍保持全量');
+Catalog.resetToBaseline();
+assertEqual(App.listDevices().length, beforeCount, '回到基线后 App 机型数恢复');
+
+assert(typeof Catalog.presentDeviceSpec === 'function', '卡片/详情/大表共用 Catalog.presentDeviceSpec');
+const hubPresented = Catalog.getDevice('hub-3');
+const hubBatteryHtml = Catalog.presentDeviceSpec(hubPresented, 'batteryLifeVideo');
+const hubPriceHtml = Catalog.presentDeviceSpec(hubPresented, 'startingPriceCny');
+assert(String(hubBatteryHtml).includes('不适用'), 'Hub 3 详情续航必须显示「不适用」');
+assert(!String(hubBatteryHtml).includes('not_applicable'), 'Hub 3 详情不得泄漏 raw not_applicable');
+assert(String(hubPriceHtml).includes('官方未披露'), 'Hub 3 详情起售价必须显示「官方未披露」');
+assert(!String(hubPriceHtml).includes('not_disclosed'), 'Hub 3 详情不得泄漏 raw not_disclosed');
+const heroHtml = App.renderMetricCards ? App.renderMetricCards(hubPresented) : '';
+assert(typeof App.renderMetricCards === 'function', '详情六指标卡片走统一四态 interface');
+assert(!heroHtml.includes('not_disclosed') && !heroHtml.includes('not_applicable'),
+  '详情指标卡不得出现 raw 四态标记');
+assert(heroHtml.includes('不适用') || heroHtml.includes('官方未披露') || heroHtml.includes('—'),
+  '详情指标卡对未披露/不适用必须用人话展示');
+
+assert(typeof Taxonomy !== 'undefined' && typeof Taxonomy.canonicalPath === 'function',
+  '消费/商用路由必须走 Taxonomy interface');
+assert(!String(Taxonomy.seriesLabel('hub', 'commercial')).includes('undefined'),
+  'Hub 系列名不得是 undefined 系列');
+assert(String(Taxonomy.seriesLabel('hub', 'commercial')).includes('Hub'),
+  'Hub 商用系列必须用人话系列名');
+assertEqual(Taxonomy.canonicalPath(Catalog.getDevice('hub-3')), '#/business/hub/hub-3',
+  'Hub 3 规范路径必须落在商用 Hub 系列');
+const legacyHub = Taxonomy.resolvePath('/surface/studio/hub-3');
+assertEqual(legacyHub.canonical, '#/business/hub/hub-3', '#/surface 历史路由必须改写到商用 Hub，禁止当消费系列');
+assertEqual(legacyHub.rewritten, true, '#/surface 是死路由，必须改写');
+assertEqual(Taxonomy.resolvePath('/surface/pro').canonical, '#/consumer/pro',
+  '#/surface/pro 必须改写到消费 Pro，禁止静默串线');
+assertEqual(App.navigateToDetail.toString().includes('#/surface/'), false,
+  'navigateToDetail 不得再写出 #/surface 死路由');
+
+assert(typeof ComparisonEngine.getSessionIds === 'function', '对比会话有独立读取 interface');
+assert(typeof ComparisonEngine.renderSpecTable === 'function', '参数大表有独立渲染 interface');
+assert(typeof App.devicesForSeriesTable === 'function', '系列规格大表不跟对比托盘共用机型名单');
+const sessionBackup = ComparisonEngine.selectedIds.slice();
+ComparisonEngine.selectedIds = ['hub-3'];
+const seriesTableDevices = App.devicesForSeriesTable('laptop', 'consumer');
+assert(seriesTableDevices.length > 0, '系列规格大表必须列出本系列机型');
+assert(seriesTableDevices.every(d => d.categoryId === 'laptop' && Catalog.segmentOf(d) === 'consumer'),
+  '系列规格大表只含当前消费 Laptop，不串商用/其他品类');
+assert(!seriesTableDevices.some(d => d.id === 'hub-3'), '系列规格大表不得把对比托盘里的 Hub 塞进来');
+const sessionBeforeTable = ComparisonEngine.getSessionIds().join(',');
+ComparisonEngine.renderSpecTable(seriesTableDevices.slice(0, 2));
+assertEqual(ComparisonEngine.getSessionIds().join(','), sessionBeforeTable, '渲染参数大表不得改对比会话');
+ComparisonEngine.selectedIds = sessionBackup;
+
+const baselineAccCount = SURFACE_DATA.accessories.length;
+Catalog.applySnapshot({ accessories: [] });
+assertEqual(SURFACE_DATA.accessories.length, baselineAccCount, '兼容快照不得改写本地配件基线');
+assertEqual(Catalog.accessories().length, 0, 'Catalog 配件快照可被清空');
+assertEqual(ToolsEngine.getCompatStatus('flex-keyboard', 'pro-12-13'), null,
+  '兼容矩阵必须读 Catalog.accessories，快照清空后不得再命中本地基线配件');
+Catalog.resetToBaseline();
+assert(!!ToolsEngine.getCompatStatus('flex-keyboard', 'pro-12-13'),
+  '回到基线后兼容矩阵恢复配件判定');
+
+Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices).forEach(deviceId => {
+  const fact = OFFICIAL_CURRENT_LINEUP_FACTS.devices[deviceId];
+  const dev = Catalog.getDevice(deviceId);
+  assert(!!dev, `现网机型在库: ${deviceId}`);
+  if (!dev) return;
+
+  const price = Catalog.getSpec(dev, 'startingPriceCny');
+  if (fact.startingPriceContains) {
+    assert(String(price || '').includes(fact.startingPriceContains),
+      `${deviceId} 官方起售价必须含 ${fact.startingPriceContains}（实际: ${price}）`);
+  }
+  if (fact.startingPriceState) {
+    assertEqual(Catalog.specState(price), fact.startingPriceState,
+      `${deviceId} 起售价四态必须是 ${fact.startingPriceState}（官方合页未单列该尺寸入门价）`);
+  }
+
+  const cpu = String(Catalog.getSpec(dev, 'cpuModel') || '');
+  (fact.cpuMustInclude || []).forEach(token => {
+    assert(cpu.includes(token), `${deviceId} CPU 必须含官方口径「${token}」（实际: ${cpu}）`);
+  });
+  (fact.cpuMustNotInclude || []).forEach(token => {
+    assert(!cpu.includes(token), `${deviceId} CPU 不得混入未在该产品页出现的「${token}」`);
+  });
+
+  if (fact.npuTopsContains) {
+    const npu = String(Catalog.getSpec(dev, 'npuTops') || '');
+    assert(npu.includes(fact.npuTopsContains), `${deviceId} NPU 必须含 ${fact.npuTopsContains}（实际: ${npu}）`);
+  }
+  if (fact.batteryLifeVideoContains) {
+    const video = String(Catalog.getSpec(dev, 'batteryLifeVideo') || '');
+    assert(video.includes(fact.batteryLifeVideoContains),
+      `${deviceId} 本地视频续航必须含官方 ${fact.batteryLifeVideoContains} 小时（实际: ${video}）`);
+  }
+  if (fact.batteryLifeOfficeContains) {
+    const office = String(Catalog.getSpec(dev, 'batteryLifeOffice') || '');
+    assert(office.includes(fact.batteryLifeOfficeContains),
+      `${deviceId} 网页续航必须含官方 ${fact.batteryLifeOfficeContains} 小时（实际: ${office}）`);
+  }
+  (fact.batteryLifeOfficeMustNotInclude || []).forEach(token => {
+    const office = String(Catalog.getSpec(dev, 'batteryLifeOffice') || '');
+    assert(!office.includes(token),
+      `${deviceId} 网页续航不得含非官方口径「${token}」（实际: ${office}）`);
+  });
+  if (fact.batteryCapacityState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'batteryCapacityWh')), fact.batteryCapacityState,
+      `${deviceId} 电池容量四态必须是 ${fact.batteryCapacityState}（官方未披露瓦时不得脑补）`);
+  }
+  if (fact.batteryCapacityContains) {
+    const wh = String(Catalog.getSpec(dev, 'batteryCapacityWh') || Catalog.getSpec(dev, 'batteryCapacity') || '');
+    assert(wh.includes(fact.batteryCapacityContains),
+      `${deviceId} 电池容量必须含官方 ${fact.batteryCapacityContains} Wh（实际: ${wh}）`);
+  }
+  if (fact.brightnessContains) {
+    const nits = String(Catalog.getSpec(dev, 'brightness') || '');
+    assert(nits.includes(fact.brightnessContains),
+      `${deviceId} 亮度必须含官方 ${fact.brightnessContains} nits（实际: ${nits}）`);
+  }
+  if (fact.brightnessState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'brightness')), fact.brightnessState,
+      `${deviceId} 官方未给出亮度时不得脑补`);
+  }
+  if (fact.dimensionsContains) {
+    const dim = String(Catalog.getSpec(dev, 'dimensionsMm') || Catalog.getSpec(dev, 'dimensions') || '');
+    assert(dim.includes(fact.dimensionsContains),
+      `${deviceId} 尺寸必须含官方 ${fact.dimensionsContains}（实际: ${dim}）`);
+  }
+  if (fact.dimensionsState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'dimensionsMm') || Catalog.getSpec(dev, 'dimensions')), fact.dimensionsState,
+      `${deviceId} 官方未给出尺寸时不得脑补`);
+  }
+  if (fact.batteryLifeOfficeState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'batteryLifeOffice')), fact.batteryLifeOfficeState,
+      `${deviceId} 网页续航四态必须是 ${fact.batteryLifeOfficeState}`);
+  }
+  if (fact.batteryLifeVideoState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'batteryLifeVideo')), fact.batteryLifeVideoState,
+      `${deviceId} 视频续航四态必须是 ${fact.batteryLifeVideoState}`);
+  }
+  if (fact.surfaceConnectState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'surfaceConnect')), fact.surfaceConnectState,
+      `${deviceId} Surface Connect 四态必须是 ${fact.surfaceConnectState}`);
+  }
+  if (fact.chargingPowerContains) {
+    const charge = String(Catalog.getSpec(dev, 'chargingPower') || '');
+    assert(charge.includes(fact.chargingPowerContains),
+      `${deviceId} 标配电源必须含官方 ${fact.chargingPowerContains}W（实际: ${charge}）`);
+  }
+  if (fact.chargingPowerState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'chargingPower')), fact.chargingPowerState,
+      `${deviceId} 官方未给出标配电源瓦数时不得脑补`);
+  }
+  if (fact.weightContains) {
+    const weight = String(Catalog.getSpec(dev, 'weightGrams') || Catalog.getSpec(dev, 'weight') || '');
+    assert(weight.includes(fact.weightContains),
+      `${deviceId} 重量必须含官方 ${fact.weightContains}（实际: ${weight}）`);
+  }
+  if (fact.weightState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'weightGrams') || Catalog.getSpec(dev, 'weight')), fact.weightState,
+      `${deviceId} 官方未给出重量时不得脑补`);
+  }
+  if (fact.storageMustInclude) {
+    const storage = String(Catalog.getSpec(dev, 'storageOptions') || '');
+    assert(storage.includes(fact.storageMustInclude),
+      `${deviceId} 存储起步必须含官方 ${fact.storageMustInclude}（实际: ${storage}）`);
+  }
+  if (fact.ramMustInclude) {
+    const ram = String(Catalog.getSpec(dev, 'ramSpec') || '');
+    const need = Array.isArray(fact.ramMustInclude) ? fact.ramMustInclude : [fact.ramMustInclude];
+    need.forEach((token) => {
+      assert(ram.includes(token), `${deviceId} 内存必须含官方 ${token}（实际: ${ram}）`);
+    });
+  }
+  if (fact.ramMustNotInclude) {
+    const ram = String(Catalog.getSpec(dev, 'ramSpec') || '');
+    const banned = Array.isArray(fact.ramMustNotInclude) ? fact.ramMustNotInclude : [fact.ramMustNotInclude];
+    banned.forEach((token) => {
+      assert(!ram.includes(token), `${deviceId} 内存不得误写官方未列的 ${token}（实际: ${ram}）`);
+    });
+  }
+  if (fact.resolutionContains) {
+    const res = String(Catalog.getSpec(dev, 'resolution') || '');
+    assert(res.includes(fact.resolutionContains),
+      `${deviceId} 分辨率必须含官方 ${fact.resolutionContains}（实际: ${res}）`);
+  }
+  if (fact.refreshRateContains) {
+    const hz = String(Catalog.getSpec(dev, 'refreshRate') || '');
+    assert(hz.includes(fact.refreshRateContains),
+      `${deviceId} 刷新率必须含官方 ${fact.refreshRateContains}（实际: ${hz}）`);
+  }
+  if (fact.screenSizeContains) {
+    const size = String(Catalog.getSpec(dev, 'screenSize') || '');
+    assert(size.includes(fact.screenSizeContains),
+      `${deviceId} 屏幕必须含官方 ${fact.screenSizeContains}（实际: ${size}）`);
+  }
+  if (fact.usbMustInclude) {
+    const ports = String(Catalog.getSpec(dev, 'usbPorts') || '');
+    const need = Array.isArray(fact.usbMustInclude) ? fact.usbMustInclude : [fact.usbMustInclude];
+    need.forEach((token) => {
+      assert(ports.includes(token), `${deviceId} 接口必须含官方 ${token}（实际: ${ports}）`);
+    });
+  }
+  if (fact.usbMustNotInclude) {
+    const ports = String(Catalog.getSpec(dev, 'usbPorts') || '');
+    const banned = Array.isArray(fact.usbMustNotInclude) ? fact.usbMustNotInclude : [fact.usbMustNotInclude];
+    banned.forEach((token) => {
+      assert(!ports.includes(token), `${deviceId} 接口不得把国行未写的 ${token} 写进去（实际: ${ports}）`);
+    });
+  }
+  if (fact.wifiMustInclude || fact.wifiMustNotInclude) {
+    const wifi = String(Catalog.getSpec(dev, 'wireless') || Catalog.getSpec(dev, 'wifi') || '');
+    if (fact.wifiMustInclude) {
+      assert(wifi.includes(fact.wifiMustInclude), `${deviceId} 无线必须含官方 ${fact.wifiMustInclude}（实际: ${wifi}）`);
+    }
+    if (fact.wifiMustNotInclude) {
+      assert(!wifi.includes(fact.wifiMustNotInclude), `${deviceId} 无线不得套用 ${fact.wifiMustNotInclude} 模板`);
+    }
+  }
+  if (fact.colorNames) {
+    const names = (Catalog.getSpec(dev, 'colors') || []).map(c => c.name);
+    fact.colorNames.forEach(name => {
+      assert(names.includes(name), `${deviceId} 必须有官方配色 ${name}`);
+    });
+  }
+  if (fact.osMustInclude || fact.osMustNotInclude) {
+    const os = String(Catalog.getSpec(dev, 'osAtLaunch') || '');
+    const need = Array.isArray(fact.osMustInclude) ? fact.osMustInclude : (fact.osMustInclude ? [fact.osMustInclude] : []);
+    need.forEach((token) => {
+      assert(os.includes(token), `${deviceId} 系统必须含国行 ${token}（实际: ${os}）`);
+    });
+    const banned = Array.isArray(fact.osMustNotInclude) ? fact.osMustNotInclude : (fact.osMustNotInclude ? [fact.osMustNotInclude] : []);
+    banned.forEach((token) => {
+      assert(!os.includes(token), `${deviceId} 系统不得写国行未列的 ${token}（实际: ${os}）`);
+    });
+  }
+  if (fact.osState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'osAtLaunch')), fact.osState,
+      `${deviceId} 国行未写预装系统时不得套外区版本`);
+  }
+  if (fact.warrantyContains) {
+    const warranty = String(Catalog.getSpec(dev, 'warranty') || '');
+    assert(warranty.includes(fact.warrantyContains),
+      `${deviceId} 质保必须含国行 ${fact.warrantyContains}（实际: ${warranty}）`);
+  }
+  if (fact.warrantyState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'warranty')), fact.warrantyState,
+      `${deviceId} 国行未写官方质保年限时不得用编辑口径顶上`);
+  }
+  if (fact.rearCameraContains || fact.rearCameraMustNotInclude) {
+    const cam = String(Catalog.getSpec(dev, 'rearCamera') || '');
+    if (fact.rearCameraContains) {
+      assert(cam.includes(fact.rearCameraContains),
+        `${deviceId} 后置摄像头必须含国行 ${fact.rearCameraContains}（实际: ${cam}）`);
+    }
+    if (fact.rearCameraMustNotInclude) {
+      assert(!cam.includes(fact.rearCameraMustNotInclude),
+        `${deviceId} 后置摄像头不得写 ${fact.rearCameraMustNotInclude}（实际: ${cam}）`);
+    }
+  }
+  if (fact.frontCameraContains || fact.frontCameraMustNotInclude || fact.frontCameraState) {
+    const cam = String(Catalog.getSpec(dev, 'frontCamera') || '');
+    if (fact.frontCameraContains) {
+      const needles = Array.isArray(fact.frontCameraContains) ? fact.frontCameraContains : [fact.frontCameraContains];
+      needles.forEach((needle) => {
+        assert(cam.includes(needle), `${deviceId} 前置摄像头必须含国行 ${needle}（实际: ${cam}）`);
+      });
+    }
+    if (fact.frontCameraMustNotInclude) {
+      assert(!cam.includes(fact.frontCameraMustNotInclude),
+        `${deviceId} 前置摄像头不得写国行未列的 ${fact.frontCameraMustNotInclude}（实际: ${cam}）`);
+    }
+    if (fact.frontCameraState) {
+      assertEqual(Catalog.specState(cam), fact.frontCameraState,
+        `${deviceId} 国行未写前置像素时不得套外区数字`);
+    }
+  }
+  if (fact.rearCameraState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'rearCamera')), fact.rearCameraState,
+      `${deviceId} 国行未写后置像素时不得套外区数字`);
+  }
+  if (fact.speakersState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'speakers')), fact.speakersState,
+      `${deviceId} 国行未写扬声器规格时不得套外区数字`);
+  }
+  if (fact.speakersContains || fact.speakersMustNotInclude) {
+    const speakers = String(Catalog.getSpec(dev, 'speakers') || '');
+    const need = Array.isArray(fact.speakersContains) ? fact.speakersContains : (fact.speakersContains ? [fact.speakersContains] : []);
+    need.forEach((token) => {
+      assert(speakers.includes(token), `${deviceId} 扬声器必须含国行 ${token}（实际: ${speakers}）`);
+    });
+    const banned = Array.isArray(fact.speakersMustNotInclude)
+      ? fact.speakersMustNotInclude
+      : (fact.speakersMustNotInclude ? [fact.speakersMustNotInclude] : []);
+    banned.forEach((token) => {
+      assert(!speakers.includes(token), `${deviceId} 扬声器不得套用 ${token}（实际: ${speakers}）`);
+    });
+  }
+  if (fact.cellularContains || fact.cellularMustNotInclude || fact.cellularState) {
+    const cell = String(Catalog.getSpec(dev, 'cellular') || '');
+    if (fact.cellularContains) {
+      assert(cell.includes(fact.cellularContains),
+        `${deviceId} 蜂窝必须含国行 ${fact.cellularContains}（实际: ${cell}）`);
+    }
+    const bannedCell = Array.isArray(fact.cellularMustNotInclude)
+      ? fact.cellularMustNotInclude
+      : (fact.cellularMustNotInclude ? [fact.cellularMustNotInclude] : []);
+    bannedCell.forEach((token) => {
+      assert(!cell.includes(token), `${deviceId} 蜂窝不得写国行未列的 ${token}（实际: ${cell}）`);
+    });
+    if (fact.cellularState) {
+      assertEqual(Catalog.specState(cell), fact.cellularState,
+        `${deviceId} 国行未写蜂窝配置时不得套外区 5G 模板`);
+    }
+  }
+  if (fact.repairabilityState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'repairabilityScore')), fact.repairabilityState,
+      `${deviceId} iFixit 分数不是国行官方规格`);
+  }
+  if (fact.keyboardWeightState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'totalWeightWithKeyboard')), fact.keyboardWeightState,
+      `${deviceId} 含键盘整机重量国行未写数字时不得脑补`);
+  }
+  if (fact.keyboardWeightContains) {
+    const expectedKw = Array.isArray(fact.keyboardWeightContains) ? fact.keyboardWeightContains : [fact.keyboardWeightContains];
+    const actualKw = String(Catalog.getSpec(dev, 'totalWeightWithKeyboard') || '');
+    expectedKw.forEach((needle) => {
+      assert(actualKw.includes(needle), `${deviceId} 含键盘整机重量应包含 ${needle}，实际: ${actualKw}`);
+    });
+  }
+  if (fact.officialDocUrl) {
+    assertEqual(Catalog.getSpec(dev, 'officialDocUrl'), fact.officialDocUrl,
+      `${deviceId} 官方选配/产品页必须是现网有效地址`);
+  }
+  if (fact.learnDocUrl) {
+    assertEqual(dev.learnDocUrl, fact.learnDocUrl,
+      `${deviceId} 官方规格页必须是现网有效 Support/Learn 地址`);
+  }
+  assertSpecFacts(deviceId, dev, fact);
+});
+
+const officialCurrentIds = OFFICIAL_CURRENT_LINEUP_FACTS.currentCnDeviceIds;
+const markedCurrent = SURFACE_DATA.devices.filter(d => d.status === 'current_cn').map(d => d.id).sort();
+const expectedCurrent = officialCurrentIds.slice().sort();
+assertEqual(markedCurrent.join(','), expectedCurrent.join(','),
+  '国行在售机型必须与现网新品名单完全一致（不含仅翻新/已撤页前代）');
+officialCurrentIds.forEach(id => {
+  const d = Catalog.getDevice(id);
+  assert(!!d && d.status === 'current_cn', `现网新品 ${id} 必须标 current_cn`);
+});
+['pro-11-13', 'laptop-7-138', 'laptop-7-150', 'pro-10-biz', 'laptop-6-biz', 'sls-2', 'go-4', 'laptop-go-3', 'studio-2-plus'].forEach(id => {
+  const d = Catalog.getDevice(id);
+  assert(!!d && d.status === 'discontinued', `${id} 现网已无新品在售，不得再标国行在售`);
+});
+assertEqual(Catalog.specState(Catalog.getSpec(hub3, 'batteryLifeVideo')), 'NOT_APPLICABLE',
+  'Hub 3 是交流供电会议一体机，续航必须为不适用');
+assertEqual(Catalog.specState(Catalog.getSpec(hub3, 'startingPriceCny')), 'NOT_DISCLOSED',
+  'Hub 3 中国商城未公布零售起售价，必须官方未披露');
+
+const intelLaptop = Catalog.getDevice('laptop-8-138-intel');
+if (intelLaptop) {
+  const cores = String(Catalog.getSpec(intelLaptop, 'cpuCores') || '');
+  assert(!cores.includes('Oryon'), 'Intel 商用 Laptop 8 不得误写骁龙 Oryon 核心');
+}
+
+Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices).forEach(deviceId => {
+  const fact = OFFICIAL_HISTORICAL_LINEUP_FACTS.devices[deviceId];
+  const dev = Catalog.getDevice(deviceId);
+  assert(!!dev, `历史核验机型在库: ${deviceId}`);
+  if (!dev) return;
+
+  const cpu = String(Catalog.getSpec(dev, 'cpuModel') || '');
+  (fact.cpuMustInclude || []).forEach(token => {
+    assert(cpu.includes(token), `${deviceId} CPU 必须含官方口径「${token}」（实际: ${cpu}）`);
+  });
+  (fact.cpuMustNotInclude || []).forEach(token => {
+    assert(!cpu.includes(token), `${deviceId} CPU 不得混入未在该产品页出现的「${token}」`);
+  });
+
+  if (fact.npuTopsContains) {
+    const npu = String(Catalog.getSpec(dev, 'npuTops') || '');
+    assert(npu.includes(fact.npuTopsContains), `${deviceId} NPU 必须含 ${fact.npuTopsContains}（实际: ${npu}）`);
+  }
+  if (fact.npuTopsState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'npuTops')), fact.npuTopsState,
+      `${deviceId} 官方未给出 TOPS 数字时不得脑补`);
+  }
+  if (fact.batteryLifeVideoState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'batteryLifeVideo')), fact.batteryLifeVideoState,
+      `${deviceId} 官方未给出视频续航时不得脑补`);
+  }
+  if (fact.batteryLifeOfficeState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'batteryLifeOffice')), fact.batteryLifeOfficeState,
+      `${deviceId} 官方未给出网页/办公续航时不得脑补`);
+  }
+  if (fact.batteryCapacityState) {
+    assertEqual(
+      Catalog.specState(Catalog.getSpec(dev, 'batteryCapacityWh') || Catalog.getSpec(dev, 'batteryCapacity')),
+      fact.batteryCapacityState,
+      `${deviceId} 官方未给出电池容量时不得脑补`
+    );
+  }
+  if (fact.batteryLifeVideoContains) {
+    const video = String(Catalog.getSpec(dev, 'batteryLifeVideo') || '');
+    assert(video.includes(fact.batteryLifeVideoContains),
+      `${deviceId} 本地视频续航必须含官方 ${fact.batteryLifeVideoContains} 小时（实际: ${video}）`);
+  }
+  if (fact.batteryLifeOfficeContains) {
+    const office = String(Catalog.getSpec(dev, 'batteryLifeOffice') || '');
+    assert(office.includes(fact.batteryLifeOfficeContains),
+      `${deviceId} 网页/办公续航必须含官方 ${fact.batteryLifeOfficeContains} 小时（实际: ${office}）`);
+  }
+  if (fact.batteryCapacityContains) {
+    const wh = String(Catalog.getSpec(dev, 'batteryCapacityWh') || Catalog.getSpec(dev, 'batteryCapacity') || '');
+    assert(wh.includes(fact.batteryCapacityContains),
+      `${deviceId} 电池容量必须含官方 ${fact.batteryCapacityContains} Wh（实际: ${wh}）`);
+  }
+  if (fact.chargingPowerContains) {
+    const charge = String(Catalog.getSpec(dev, 'chargingPower') || '');
+    assert(charge.includes(fact.chargingPowerContains),
+      `${deviceId} 标配电源必须含官方 ${fact.chargingPowerContains}W（实际: ${charge}）`);
+  }
+  if (fact.chargingPowerState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'chargingPower')), fact.chargingPowerState,
+      `${deviceId} 官方未给出标配电源瓦数时不得脑补`);
+  }
+  if (fact.brightnessContains) {
+    const nits = String(Catalog.getSpec(dev, 'brightness') || '');
+    assert(nits.includes(fact.brightnessContains),
+      `${deviceId} 亮度必须含官方 ${fact.brightnessContains} nits（实际: ${nits}）`);
+  }
+  if (fact.brightnessState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'brightness')), fact.brightnessState,
+      `${deviceId} 官方未给出亮度时不得脑补`);
+  }
+  if (fact.dimensionsContains) {
+    const dim = String(Catalog.getSpec(dev, 'dimensionsMm') || Catalog.getSpec(dev, 'dimensions') || '');
+    assert(dim.includes(fact.dimensionsContains),
+      `${deviceId} 尺寸必须含官方 ${fact.dimensionsContains}（实际: ${dim}）`);
+  }
+  if (fact.dimensionsState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'dimensionsMm') || Catalog.getSpec(dev, 'dimensions')), fact.dimensionsState,
+      `${deviceId} 官方未给出尺寸时不得脑补`);
+  }
+  if (fact.weightContains) {
+    const weight = String(Catalog.getSpec(dev, 'weightGrams') || Catalog.getSpec(dev, 'weight') || '');
+    assert(weight.includes(fact.weightContains),
+      `${deviceId} 重量必须含官方 ${fact.weightContains}（实际: ${weight}）`);
+  }
+  if (fact.weightState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'weightGrams') || Catalog.getSpec(dev, 'weight')), fact.weightState,
+      `${deviceId} 官方未给出重量时不得脑补`);
+  }
+  if (fact.ramMustInclude) {
+    const ram = String(Catalog.getSpec(dev, 'ramSpec') || '');
+    const need = Array.isArray(fact.ramMustInclude) ? fact.ramMustInclude : [fact.ramMustInclude];
+    need.forEach((token) => {
+      assert(ram.includes(token), `${deviceId} 内存必须含官方 ${token}（实际: ${ram}）`);
+    });
+  }
+  if (fact.ramMustNotInclude) {
+    const ram = String(Catalog.getSpec(dev, 'ramSpec') || '');
+    assert(!ram.includes(fact.ramMustNotInclude), `${deviceId} 内存不得误写 ${fact.ramMustNotInclude}`);
+  }
+  if (fact.storageMustInclude) {
+    const storage = String(Catalog.getSpec(dev, 'storageOptions') || '');
+    assert(storage.includes(fact.storageMustInclude),
+      `${deviceId} 存储必须含官方 ${fact.storageMustInclude}（实际: ${storage}）`);
+  }
+  if (fact.storageMustNotInclude) {
+    const storage = String(Catalog.getSpec(dev, 'storageOptions') || '');
+    assert(!storage.includes(fact.storageMustNotInclude),
+      `${deviceId} 存储不得混入官方未列的 ${fact.storageMustNotInclude}`);
+  }
+  if (fact.wifiMustInclude || fact.wifiMustNotInclude || fact.wifiState) {
+    const wifi = String(Catalog.getSpec(dev, 'wireless') || Catalog.getSpec(dev, 'wifi') || '');
+    if (fact.wifiMustInclude) {
+      assert(wifi.includes(fact.wifiMustInclude), `${deviceId} 无线必须含官方 ${fact.wifiMustInclude}（实际: ${wifi}）`);
+    }
+    if (fact.wifiMustNotInclude) {
+      assert(!wifi.includes(fact.wifiMustNotInclude), `${deviceId} 无线不得套用 ${fact.wifiMustNotInclude} 模板`);
+    }
+    if (fact.wifiState) {
+      assertEqual(Catalog.specState(wifi), fact.wifiState,
+        `${deviceId} 国行官方未写无线标准时不得用外区页数字顶上`);
+    }
+  }
+  if (fact.bluetoothMustInclude) {
+    const bt = String(Catalog.getSpec(dev, 'bluetooth') || Catalog.getSpec(dev, 'wireless') || '');
+    assert(bt.includes(fact.bluetoothMustInclude),
+      `${deviceId} 蓝牙必须含官方 ${fact.bluetoothMustInclude}（实际: ${bt}）`);
+  }
+  if (fact.resolutionContains) {
+    const res = String(Catalog.getSpec(dev, 'resolution') || '');
+    assert(res.includes(fact.resolutionContains),
+      `${deviceId} 分辨率必须含官方 ${fact.resolutionContains}（实际: ${res}）`);
+  }
+  if (fact.resolutionState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'resolution')), fact.resolutionState,
+      `${deviceId} 国行官方未写分辨率时不得用外区页数字顶上`);
+  }
+  if (fact.refreshRateContains) {
+    const hz = String(Catalog.getSpec(dev, 'refreshRate') || '');
+    assert(hz.includes(fact.refreshRateContains),
+      `${deviceId} 刷新率必须含官方 ${fact.refreshRateContains}（实际: ${hz}）`);
+  }
+  if (fact.refreshRateState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'refreshRate')), fact.refreshRateState,
+      `${deviceId} 官方规格表未写刷新率时不得脑补`);
+  }
+  if (fact.screenSizeContains) {
+    const size = String(Catalog.getSpec(dev, 'screenSize') || '');
+    assert(size.includes(fact.screenSizeContains),
+      `${deviceId} 屏幕必须含官方 ${fact.screenSizeContains}（实际: ${size}）`);
+  }
+  if (fact.usbMustInclude) {
+    const ports = String(Catalog.getSpec(dev, 'usbPorts') || '');
+    const need = Array.isArray(fact.usbMustInclude) ? fact.usbMustInclude : [fact.usbMustInclude];
+    need.forEach((token) => {
+      assert(ports.includes(token), `${deviceId} 接口必须含官方 ${token}（实际: ${ports}）`);
+    });
+  }
+  if (fact.usbMustNotInclude) {
+    const ports = String(Catalog.getSpec(dev, 'usbPorts') || '');
+    const banned = Array.isArray(fact.usbMustNotInclude) ? fact.usbMustNotInclude : [fact.usbMustNotInclude];
+    banned.forEach((token) => {
+      assert(!ports.includes(token), `${deviceId} 接口不得把国行未写的 ${token} 写进去（实际: ${ports}）`);
+    });
+  }
+  if (fact.warrantyContains) {
+    const warranty = String(Catalog.getSpec(dev, 'warranty') || '');
+    assert(warranty.includes(fact.warrantyContains),
+      `${deviceId} 质保必须含国行 ${fact.warrantyContains}（实际: ${warranty}）`);
+  }
+  if (fact.warrantyState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'warranty')), fact.warrantyState,
+      `${deviceId} 「已过质保期」不是国行官方质保条款`);
+  }
+  if (fact.osMustInclude || fact.osMustNotInclude) {
+    const os = String(Catalog.getSpec(dev, 'osAtLaunch') || '');
+    const need = Array.isArray(fact.osMustInclude) ? fact.osMustInclude : (fact.osMustInclude ? [fact.osMustInclude] : []);
+    need.forEach((token) => {
+      assert(os.includes(token), `${deviceId} 系统必须含国行 ${token}（实际: ${os}）`);
+    });
+    const banned = Array.isArray(fact.osMustNotInclude) ? fact.osMustNotInclude : (fact.osMustNotInclude ? [fact.osMustNotInclude] : []);
+    banned.forEach((token) => {
+      assert(!os.includes(token), `${deviceId} 系统不得写国行未列的 ${token}（实际: ${os}）`);
+    });
+  }
+  if (fact.osState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'osAtLaunch')), fact.osState,
+      `${deviceId} 国行未写预装系统时不得套外区版本`);
+  }
+  if (fact.frontCameraContains || fact.frontCameraMustNotInclude || fact.frontCameraState) {
+    const cam = String(Catalog.getSpec(dev, 'frontCamera') || '');
+    if (fact.frontCameraContains) {
+      const needles = Array.isArray(fact.frontCameraContains) ? fact.frontCameraContains : [fact.frontCameraContains];
+      needles.forEach((needle) => {
+        assert(cam.includes(needle), `${deviceId} 前置摄像头必须含国行 ${needle}（实际: ${cam}）`);
+      });
+    }
+    if (fact.frontCameraMustNotInclude) {
+      assert(!cam.includes(fact.frontCameraMustNotInclude),
+        `${deviceId} 前置摄像头不得写国行未列的 ${fact.frontCameraMustNotInclude}（实际: ${cam}）`);
+    }
+    if (fact.frontCameraState) {
+      assertEqual(Catalog.specState(cam), fact.frontCameraState,
+        `${deviceId} 国行未写前置像素时不得套外区数字`);
+    }
+  }
+  if (fact.rearCameraState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'rearCamera')), fact.rearCameraState,
+      `${deviceId} 国行未写后置像素时不得套外区数字`);
+  }
+  if (fact.speakersState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'speakers')), fact.speakersState,
+      `${deviceId} 国行未写扬声器规格时不得套外区数字`);
+  }
+  if (fact.rearCameraContains || fact.rearCameraMustNotInclude) {
+    const cam = String(Catalog.getSpec(dev, 'rearCamera') || '');
+    if (fact.rearCameraContains) {
+      assert(cam.includes(fact.rearCameraContains),
+        `${deviceId} 后置摄像头必须含国行 ${fact.rearCameraContains}（实际: ${cam}）`);
+    }
+    if (fact.rearCameraMustNotInclude) {
+      assert(!cam.includes(fact.rearCameraMustNotInclude),
+        `${deviceId} 后置摄像头不得写 ${fact.rearCameraMustNotInclude}（实际: ${cam}）`);
+    }
+  }
+  if (fact.speakersContains || fact.speakersMustNotInclude) {
+    const speakers = String(Catalog.getSpec(dev, 'speakers') || '');
+    const need = Array.isArray(fact.speakersContains) ? fact.speakersContains : (fact.speakersContains ? [fact.speakersContains] : []);
+    need.forEach((token) => {
+      assert(speakers.includes(token), `${deviceId} 扬声器必须含国行 ${token}（实际: ${speakers}）`);
+    });
+    const banned = Array.isArray(fact.speakersMustNotInclude)
+      ? fact.speakersMustNotInclude
+      : (fact.speakersMustNotInclude ? [fact.speakersMustNotInclude] : []);
+    banned.forEach((token) => {
+      assert(!speakers.includes(token), `${deviceId} 扬声器不得套用 ${token}（实际: ${speakers}）`);
+    });
+  }
+  if (fact.cellularContains || fact.cellularMustNotInclude || fact.cellularState) {
+    const cell = String(Catalog.getSpec(dev, 'cellular') || '');
+    if (fact.cellularContains) {
+      assert(cell.includes(fact.cellularContains),
+        `${deviceId} 蜂窝必须含国行 ${fact.cellularContains}（实际: ${cell}）`);
+    }
+    const bannedCell = Array.isArray(fact.cellularMustNotInclude)
+      ? fact.cellularMustNotInclude
+      : (fact.cellularMustNotInclude ? [fact.cellularMustNotInclude] : []);
+    bannedCell.forEach((token) => {
+      assert(!cell.includes(token), `${deviceId} 蜂窝不得写国行未列的 ${token}（实际: ${cell}）`);
+    });
+    if (fact.cellularState) {
+      assertEqual(Catalog.specState(cell), fact.cellularState,
+        `${deviceId} 国行未写蜂窝配置时不得套外区模板`);
+    }
+  }
+  if (fact.repairabilityState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'repairabilityScore')), fact.repairabilityState,
+      `${deviceId} iFixit 分数不是国行官方规格`);
+  }
+  if (fact.keyboardWeightState) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'totalWeightWithKeyboard')), fact.keyboardWeightState,
+      `${deviceId} 含键盘整机重量国行未写数字时不得脑补`);
+  }
+  if (fact.keyboardWeightContains) {
+    const expectedKw = Array.isArray(fact.keyboardWeightContains) ? fact.keyboardWeightContains : [fact.keyboardWeightContains];
+    const actualKw = String(Catalog.getSpec(dev, 'totalWeightWithKeyboard') || '');
+    expectedKw.forEach((needle) => {
+      assert(actualKw.includes(needle), `${deviceId} 含键盘整机重量应包含 ${needle}，实际: ${actualKw}`);
+    });
+  }
+  if (fact.learnDocUrl) {
+    assertEqual(dev.learnDocUrl, fact.learnDocUrl, `${deviceId} Learn/Support 信源必须是现网有效地址`);
+  }
+  assertSpecFacts(deviceId, dev, fact);
+});
+
+const officialLockedIds = new Set([
+  ...Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices),
+  ...Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices)
+]);
+Catalog.listDevices().forEach(dev => {
+  assert(officialLockedIds.has(dev.id), `${dev.id} 必须有现网或历史官方事实锁，不得只靠档案自述`);
+});
+assertEqual(officialLockedIds.size, Catalog.listDevices().length,
+  '官方事实锁必须覆盖全量设备，一台都不能少');
+
+Catalog.listDevices().forEach(dev => {
+  if (dev.status === 'current_cn') return;
+  assertEqual(
+    Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')),
+    'NOT_DISCLOSED',
+    `${dev.id} 已撤新品/历史机现网商城不再标价，起售价必须官方未披露，不得保留无法核验的历史数字`
+  );
+});
+
+const FOREIGN_STORE_MARKERS = [
+  'microsoft.com/en-hk',
+  'microsoft.com/en-in',
+  'microsoft.com/en-th',
+  'microsoft.com/en-gb',
+  'microsoft.com/en-au',
+  'microsoft.com/en-ca',
+  'microsoft.com/en-us/d/',
+  'microsoft.com/en-my'
+];
+Catalog.listDevices().forEach(dev => {
+  const productUrl = String(Catalog.getSpec(dev, 'officialDocUrl') || '');
+  FOREIGN_STORE_MARKERS.forEach((marker) => {
+    assert(!productUrl.includes(marker),
+      `${dev.id} 官方产品页必须是大陆国行，不得挂外区商城（命中 ${marker}）`);
+  });
+  if (dev.status === 'current_cn' && dev.id !== 'hub-3') {
+    assert(productUrl.includes('microsoftstore.com.cn'),
+      `${dev.id} 现网国行机官方产品页必须是微软中国商城`);
+  }
+});
+const histSources = JSON.stringify(OFFICIAL_HISTORICAL_LINEUP_FACTS.sources || {});
+FOREIGN_STORE_MARKERS.forEach((marker) => {
+  assert(!histSources.includes(marker),
+    `历史事实信源不得再用外区商城 ${marker} 当国行口径`);
+});
 
 // ----------------------------------------------------
 // 最终汇总

@@ -1,0 +1,328 @@
+{
+  "consumer": {},
+  "business": {},
+  "unknown": {
+    "unknown": [
+      {
+        "id": "pro-12-13-intel",
+        "name": "Surface Pro 13 英寸 (第 12 代) 商用版 - Intel 版",
+        "generation": "第 12 代 (2026)"
+      },
+      {
+        "id": "pro-12-13-snap",
+        "name": "Surface Pro 13 英寸 (第 12 代) 商用版 - 骁龙版",
+        "generation": "第 12 代 (2026)"
+      },
+      {
+        "id": "pro-12-13",
+        "name": "Surface Pro 13 英寸 (第 12 代)",
+        "generation": "第 12 代 (2026)"
+      },
+      {
+        "id": "pro-12-inch",
+        "name": "Surface Pro, 12 英寸 (第 1 代)",
+        "generation": "第 1 代 (2026)"
+      },
+      {
+        "id": "pro-11-13",
+        "name": "Surface Pro (第 11 代)",
+        "generation": "第 11 代 (2024)"
+      },
+      {
+        "id": "pro-10-biz",
+        "name": "Surface Pro 10 商用版",
+        "generation": "第 10 代商用 (2024)"
+      },
+      {
+        "id": "pro-9",
+        "name": "Surface Pro 9",
+        "generation": "第 9 代 (2022)"
+      },
+      {
+        "id": "pro-8",
+        "name": "Surface Pro 8",
+        "generation": "第 8 代 (2021)"
+      },
+      {
+        "id": "pro-7-plus",
+        "name": "Surface Pro 7+",
+        "generation": "第 7+ 代 (2021)"
+      },
+      {
+        "id": "pro-7",
+        "name": "Surface Pro 7",
+        "generation": "第 7 代 (2019)"
+      },
+      {
+        "id": "pro-6",
+        "name": "Surface Pro 6",
+        "generation": "第 6 代 (2018)"
+      },
+      {
+        "id": "pro-5",
+        "name": "Surface Pro (第 5 代 / 2017)",
+        "generation": "第 5 代 (2017)"
+      },
+      {
+        "id": "pro-4",
+        "name": "Surface Pro 4",
+        "generation": "第 4 代 (2015)"
+      },
+      {
+        "id": "pro-3",
+        "name": "Surface Pro 3",
+        "generation": "第 3 代 (2014)"
+      },
+      {
+        "id": "pro-2",
+        "name": "Surface Pro 2",
+        "generation": "第 2 代 (2013)"
+      },
+      {
+        "id": "pro-1",
+        "name": "Surface Pro 初代 (Original)",
+        "generation": "初代 (2013)"
+      },
+      {
+        "id": "pro-x",
+        "name": "Surface Pro X",
+        "generation": "Pro X 世代 (2019/2020)"
+      },
+      {
+        "id": "laptop-8-138-intel",
+        "name": "Surface Laptop 13.8 英寸 (第 8 代) 商用版 - Intel 版",
+        "generation": "第 8 代 (2026)"
+      },
+      {
+        "id": "laptop-8-138-snap",
+        "name": "Surface Laptop 13.8 英寸 (第 8 代) 商用版 - 骁龙版",
+        "generation": "第 8 代 (2026)"
+      },
+      {
+        "id": "laptop-8-150-intel",
+        "name": "Surface Laptop 15 英寸 (第 8 代) 商用版 - Intel 版",
+        "generation": "第 8 代 (2026)"
+      },
+      {
+        "id": "laptop-8-150-snap",
+        "name": "Surface Laptop 15 英寸 (第 8 代) 商用版 - 骁龙版",
+        "generation": "第 8 代 (2026)"
+      },
+      {
+        "id": "laptop-8-138",
+        "name": "Surface Laptop 13.8 英寸 (第 8 代)",
+        "generation": "第 8 代 (2026)"
+      },
+      {
+        "id": "laptop-8-150",
+        "name": "Surface Laptop 15 英寸 (第 8 代)",
+        "generation": "第 8 代 (2026)"
+      },
+      {
+        "id": "laptop-7-138",
+        "name": "Surface Laptop (第 7 代) 13.8 英寸",
+        "generation": "第 7 代 (2024)"
+      },
+      {
+        "id": "laptop-6-biz",
+        "name": "Surface Laptop 6 商用版 (13.5\" & 15\")",
+        "generation": "第 6 代商用 (2024)"
+      },
+      {
+        "id": "laptop-5",
+        "name": "Surface Laptop 5 (13.5\" & 15\")",
+        "generation": "第 5 代 (2022)"
+      },
+      {
+        "id": "laptop-4",
+        "name": "Surface Laptop 4 (13.5\" & 15\")",
+        "generation": "第 4 代 (2021)"
+      },
+      {
+        "id": "laptop-3",
+        "name": "Surface Laptop 3 (13.5\" & 15\")",
+        "generation": "第 3 代 (2019)"
+      },
+      {
+        "id": "laptop-2",
+        "name": "Surface Laptop 2",
+        "generation": "第 2 代 (2018)"
+      },
+      {
+        "id": "laptop-1",
+        "name": "Surface Laptop 初代 (Original)",
+        "generation": "初代 (2017)"
+      },
+      {
+        "id": "sls-2",
+        "name": "Surface Laptop Studio 2",
+        "generation": "第 2 代 (2023)"
+      },
+      {
+        "id": "sls-1",
+        "name": "Surface Laptop Studio 初代",
+        "generation": "初代 (2021)"
+      },
+      {
+        "id": "go-4",
+        "name": "Surface Go 4 商用版",
+        "generation": "第 4 代 (2023)"
+      },
+      {
+        "id": "go-3",
+        "name": "Surface Go 3",
+        "generation": "第 3 代 (2021)"
+      },
+      {
+        "id": "laptop-go-3",
+        "name": "Surface Laptop Go 3",
+        "generation": "第 3 代 (2023)"
+      },
+      {
+        "id": "studio-2-plus",
+        "name": "Surface Studio 2+",
+        "generation": "Studio 2+ (2022)"
+      },
+      {
+        "id": "duo-2",
+        "name": "Surface Duo 2",
+        "generation": "第 2 代 (2021)"
+      },
+      {
+        "id": "book-3-15",
+        "name": "Surface Book 3 15 英寸",
+        "generation": "第 3 代 (2020)"
+      },
+      {
+        "id": "book-3-135",
+        "name": "Surface Book 3 13.5 英寸",
+        "generation": "第 3 代 (2020)"
+      },
+      {
+        "id": "book-2-15",
+        "name": "Surface Book 2 15 英寸",
+        "generation": "第 2 代 (2017)"
+      },
+      {
+        "id": "book-1",
+        "name": "Surface Book 初代 (Original)",
+        "generation": "初代 (2015)"
+      },
+      {
+        "id": "go-2",
+        "name": "Surface Go 2",
+        "generation": "第 2 代 (2020)"
+      },
+      {
+        "id": "go-1",
+        "name": "Surface Go 初代 (Original)",
+        "generation": "初代 (2018)"
+      },
+      {
+        "id": "laptop-go-2",
+        "name": "Surface Laptop Go 2",
+        "generation": "第 2 代 (2022)"
+      },
+      {
+        "id": "laptop-go-1",
+        "name": "Surface Laptop Go 初代",
+        "generation": "初代 (2020)"
+      },
+      {
+        "id": "studio-2",
+        "name": "Surface Studio 2",
+        "generation": "第 2 代 (2018)"
+      },
+      {
+        "id": "studio-1",
+        "name": "Surface Studio 初代 (Original)",
+        "generation": "初代 (2016)"
+      },
+      {
+        "id": "hub-2s",
+        "name": "Surface Hub 2S (50\" / 85\")",
+        "generation": "Hub 2S (2019/2021)"
+      },
+      {
+        "id": "duo-1",
+        "name": "Surface Duo 初代 (Original)",
+        "generation": "初代 (2020)"
+      },
+      {
+        "id": "pro-12-inch-biz",
+        "name": "Surface Pro 12 英寸 (第 1 代) 商用版",
+        "generation": "第 1 代 (2025)"
+      },
+      {
+        "id": "laptop-13-inch-biz",
+        "name": "Surface Laptop 13 英寸 (第 1 代) 商用版",
+        "generation": "第 1 代 (2025)"
+      },
+      {
+        "id": "pro-11-biz-snap",
+        "name": "Surface Pro (第 11 代) 商用版 - 骁龙版",
+        "generation": "第 11 代 (2024)"
+      },
+      {
+        "id": "pro-11-biz-intel",
+        "name": "Surface Pro (第 11 代) 商用版 - Intel 版",
+        "generation": "第 11 代 (2024)"
+      },
+      {
+        "id": "laptop-7-biz-snap",
+        "name": "Surface Laptop (第 7 代) 商用版 - 骁龙版",
+        "generation": "第 7 代 (2024)"
+      },
+      {
+        "id": "laptop-7-biz-intel",
+        "name": "Surface Laptop (第 7 代) 商用版 - Intel 版",
+        "generation": "第 7 代 (2024)"
+      },
+      {
+        "id": "hub-3",
+        "name": "Surface Hub 3 (50\" / 85\")",
+        "generation": "第 3 代 (2023)"
+      },
+      {
+        "id": "laptop-go-3-biz",
+        "name": "Surface Laptop Go 3 商用版",
+        "generation": "第 3 代 (2023)"
+      },
+      {
+        "id": "pro-9-biz",
+        "name": "Surface Pro 9 商用版",
+        "generation": "第 9 代 (2022)"
+      },
+      {
+        "id": "pro-8-biz",
+        "name": "Surface Pro 8 商用版",
+        "generation": "第 8 代 (2021)"
+      },
+      {
+        "id": "laptop-5-biz",
+        "name": "Surface Laptop 5 商用版",
+        "generation": "第 5 代 (2022)"
+      },
+      {
+        "id": "sls-2-biz",
+        "name": "Surface Laptop Studio 2 商用版",
+        "generation": "第 2 代 (2023)"
+      },
+      {
+        "id": "sls-1-biz",
+        "name": "Surface Laptop Studio 初代商用版",
+        "generation": "第 1 代 (2021)"
+      },
+      {
+        "id": "go-3-biz",
+        "name": "Surface Go 3 商用版",
+        "generation": "第 3 代 (2021)"
+      },
+      {
+        "id": "studio-2-plus-biz",
+        "name": "Surface Studio 2+ 商用版",
+        "generation": "第 2+ 代 (2022)"
+      }
+    ]
+  }
+}
