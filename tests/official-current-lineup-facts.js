@@ -22,7 +22,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
     laptop7SnapBiz: 'https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business',
     laptop7IntelBiz: 'https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel',
     hub3Specs: 'https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs',
-    compareDevices: 'https://www.microsoftstore.com.cn/surface/compare-devices'
+    compareDevices: 'https://www.microsoftstore.com.cn/surface/compare-devices',
+    cnSurfacePortal: 'https://www.microsoft.com/zh-cn/surface',
+    cnPro12Snap: 'https://www.microsoft.com/zh-cn/surface/business/surface-pro-12-inch-snapdragon',
+    cnLaptop7Snap: 'https://www.microsoft.com/zh-cn/surface/business/surface-laptop-7th-edition',
+    cnLaptop7Intel: 'https://www.microsoft.com/zh-cn/surface/business/surface-laptop-intel-7th-edition'
   },
   /**
    * 2026-09-21 现网「正式在售新品」机型。
@@ -105,7 +109,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             ],
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
-      },
+      
+            "fastCharging": ["60","65"],
+            "cpuCores": ["10","12"],},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -157,7 +163,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
-      },
+      
+            "fastCharging": "45",
+            "cpuCores": "8",
+            "panelTech": "LCD",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -223,7 +232,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             ],
             "gpuModel": "图形处理器",
             "npuModel": "AI Boost",
-      },
+      
+            "fastCharging": ["60","65"],},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -280,7 +290,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             ],
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
-      },
+      
+            "fastCharging": ["60","65"],
+            "cpuCores": ["10","12"],},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -332,7 +344,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
             "thunderboltSupport": "USB4",
-      },
+      
+            "fastCharging": ["60","65"],
+            "cpuCores": ["10","12"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -386,7 +400,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "Hexagon",
             "thunderboltSupport": "USB4",
             "expandableStorage": "MicroSD",
-      },
+      
+            "fastCharging": ["60","65"],
+            "cpuCores": ["10","12"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -435,6 +451,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
+            "fastCharging": "60",
+            "cpuCores": "8",
+            "ssdRemovable": "可拆"
       },
       specState: {
             "kickstandType": "NOT_APPLICABLE",
@@ -490,7 +509,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "gpuModel": "图形处理器",
             "npuModel": "AI Boost",
             "thunderboltSupport": "Thunderbolt",
-      },
+      
+            "fastCharging": ["60","65"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -541,7 +561,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
             "thunderboltSupport": "USB4",
-      },
+      
+            "fastCharging": ["60","65"],
+            "cpuCores": ["10","12"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -593,7 +615,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "AI Boost",
             "thunderboltSupport": "Thunderbolt",
             "expandableStorage": "MicroSD",
-      },
+      
+            "fastCharging": ["60","65"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -643,7 +666,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "Hexagon",
             "thunderboltSupport": "USB4",
             "expandableStorage": "MicroSD",
-      },
+      
+            "fastCharging": ["60","65"],
+            "cpuCores": ["10","12"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -690,7 +715,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
-      },
+      
+            "fastCharging": "45",
+            "cpuCores": "8",
+            "panelTech": "LCD",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -745,6 +773,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
+            "fastCharging": "60",
+            "cpuCores": "8",
+            "ssdRemovable": "可拆"
       },
       specState: {
             "kickstandType": "NOT_APPLICABLE",
@@ -797,6 +828,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "gpuModel": "图形处理器",
             "npuModel": "AI Boost",
+            "ssdRemovable": "可拆",
+            "fastCharging": "60"
       },
       specState: {
             "kickstandType": "NOT_APPLICABLE",
@@ -852,7 +885,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "gpuModel": "Adreno",
             "npuModel": "Hexagon",
-      },
+      
+            "fastCharging": "65",
+            "cpuCores": ["10","12"],},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -956,7 +991,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "Hexagon",
             "thunderboltSupport": "USB4",
             "expandableStorage": "MicroSD",
-      },
+      
+            "fastCharging": "65",
+            "cpuCores": ["10","12"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -1007,7 +1044,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "AI Boost",
             "thunderboltSupport": "Thunderbolt",
             "expandableStorage": "MicroSD",
-      },
+      
+            "fastCharging": ["65","60"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },

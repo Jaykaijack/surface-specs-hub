@@ -256,6 +256,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       cellularState: 'NOT_APPLICABLE',
       learnDocUrl: 'https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features',
       specContains: {
+            "gpuModel": "RTX",
             "ppi": "200",
             "colorSupport": [
                   "sRGB",
@@ -296,7 +297,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       refreshRateContains: '120',
       screenSizeContains: '14.4',
       usbMustInclude: ['USB-A', 'MicroSD'],
-      warrantyContains: '2',
+      warrantyState: 'NOT_DISCLOSED',
       osMustInclude: '专业',
       frontCameraContains: '1080',
       speakersContains: ['Omnisonic', 'Atmos'],
@@ -350,11 +351,21 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       learnDocUrl: 'https://support.microsoft.com/zh-cn/surface/models/surface-studio-2-features',
       specContains: {
             "gpuModel": "3060",
+            "ppi": "192",
+            "aspectRatio": "3:2",
+            "colorSupport": [
+                  "sRGB",
+                  "Vivid"
+            ],
             "headphoneJack": "3.5",
             "thunderboltSupport": "Thunderbolt",
             "windowsHello": "Hello",
             "microphones": "麦克",
-            "audioTech": "Atmos"
+            "audioTech": "Atmos",
+            "touchAndPenProtocol": [
+                  "10",
+                  "MPP"
+            ]
       },
       specState: {
             "surfaceConnect": "NOT_APPLICABLE",
@@ -625,7 +636,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "expandableStorage": "MicroSD",
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
-            "microphones": "麦克"
+            "microphones": "麦克",
+            "fastCharging": "80"
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
@@ -649,16 +661,29 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       storageMustInclude: '256',
       usbMustInclude: 'USB-C',
       osMustInclude: '专业',
-      frontCameraState: 'NOT_DISCLOSED',
-      speakersState: 'NOT_DISCLOSED',
+      frontCameraContains: '1080',
+      speakersContains: ['Omnisonic', 'Atmos'],
       cellularState: 'NOT_APPLICABLE',
       learnDocUrl: 'https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features',
       specContains: {
+            "gpuModel": [
+                  "Xe",
+                  "3050"
+            ],
+            "ppi": "201",
+            "aspectRatio": "3:2",
+            "ssdRemovable": "可拆",
             "headphoneJack": "3.5",
             "thunderboltSupport": "Thunderbolt",
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
-            "microphones": "麦克"
+            "microphones": "麦克",
+            "audioTech": "Atmos",
+            "touchAndPenProtocol": [
+                  "10",
+                  "MPP"
+            ],
+            "chassisMaterial": "镁"
       },
       specState: {
             "kickstandType": "NOT_APPLICABLE"
@@ -996,11 +1021,21 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       learnDocUrl: 'https://support.microsoft.com/zh-cn/surface/models/surface-studio-2-features',
       specContains: {
             "gpuModel": "3060",
+            "ppi": "192",
+            "aspectRatio": "3:2",
+            "colorSupport": [
+                  "sRGB",
+                  "Vivid"
+            ],
             "headphoneJack": "3.5",
             "thunderboltSupport": "Thunderbolt",
             "windowsHello": "Hello",
             "microphones": "麦克",
-            "audioTech": "Atmos"
+            "audioTech": "Atmos",
+            "touchAndPenProtocol": [
+                  "10",
+                  "MPP"
+            ]
       },
       specState: {
             "surfaceConnect": "NOT_APPLICABLE",
@@ -1743,16 +1778,29 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       keyboardWeightState: 'NOT_DISCLOSED',
       osMustInclude: '家庭',
       osMustNotInclude: '专业',
-      frontCameraState: 'NOT_DISCLOSED',
-      speakersState: 'NOT_DISCLOSED',
+      frontCameraContains: '1080',
+      speakersContains: ['Omnisonic', 'Atmos'],
       cellularState: 'NOT_APPLICABLE',
       learnDocUrl: 'https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features',
       specContains: {
+            "gpuModel": [
+                  "Xe",
+                  "3050"
+            ],
+            "ppi": "201",
+            "aspectRatio": "3:2",
+            "ssdRemovable": "可拆",
             "headphoneJack": "3.5",
             "thunderboltSupport": "Thunderbolt",
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
-            "microphones": "麦克"
+            "microphones": "麦克",
+            "audioTech": "Atmos",
+            "touchAndPenProtocol": [
+                  "10",
+                  "MPP"
+            ],
+            "chassisMaterial": "镁"
       },
       specState: {
             "kickstandType": "NOT_APPLICABLE"
@@ -1787,7 +1835,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "expandableStorage": "MicroSD",
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
-            "microphones": "麦克"
+            "microphones": "麦克",
+            "fastCharging": "80"
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
@@ -2162,23 +2211,19 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       },
 },
     'duo-2': {
-      cpuMustInclude: ['888'],
-      ramMustInclude: 'LPDDR5',
-      storageMustInclude: '512',
-      wifiMustInclude: 'Wi-Fi 6',
-      bluetoothMustInclude: '5.1',
-      batteryCapacityContains: '4449',
-      batteryLifeVideoContains: '15.5',
+      batteryCapacityState: 'NOT_DISCLOSED',
+      batteryLifeVideoState: 'NOT_DISCLOSED',
       batteryLifeOfficeState: 'NOT_DISCLOSED',
-      brightnessContains: '800',
-      chargingPowerContains: '23',
+      brightnessState: 'NOT_DISCLOSED',
+      chargingPowerState: 'NOT_DISCLOSED',
       npuTopsState: 'NOT_DISCLOSED',
-      dimensionsContains: '145.2',
-      weightContains: '284',
-      resolutionContains: '1892',
+      dimensionsState: 'NOT_DISCLOSED',
+      weightState: 'NOT_DISCLOSED',
+      resolutionState: 'NOT_DISCLOSED',
       screenSizeContains: '8.3',
       usbMustInclude: 'USB-C',
-      refreshRateContains: '90',
+      refreshRateState: 'NOT_DISCLOSED',
+      wifiState: 'NOT_DISCLOSED',
       warrantyState: 'NOT_DISCLOSED',
       repairabilityState: 'NOT_DISCLOSED',
       keyboardWeightState: 'NOT_DISCLOSED',
@@ -2187,14 +2232,16 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       rearCameraState: 'NOT_DISCLOSED',
       speakersState: 'NOT_DISCLOSED',
       cellularState: 'NOT_DISCLOSED',
-      learnDocUrl: 'https://support.microsoft.com/en-us/surface/models/surface-duo-2-features',
+      learnDocUrl: 'https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features',
       specContains: {
             "windowsHello": "Hello"
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "surfaceConnect": "NOT_APPLICABLE",
-            "kickstandType": "NOT_APPLICABLE"
+            "kickstandType": "NOT_APPLICABLE",
+            "headphoneJack": "NOT_APPLICABLE",
+            "expandableStorage": "NOT_APPLICABLE"
       },
 },
     'studio-1': {
