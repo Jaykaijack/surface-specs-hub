@@ -1,5 +1,5 @@
 name: merge-main-img-p0-into-catalog
-# retrigger 2026-09-22T12:10 CST to finish merge commit + IMG-P0 mappings
+# retrigger 2026-09-22T12:15 CST — finish merge commit + IMG-P0 mappings
 on:
   workflow_dispatch:
   push:
