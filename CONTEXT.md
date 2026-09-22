@@ -117,7 +117,7 @@ All hardware represented in the Specs Hub must reflect official Microsoft techni
   - Bidirectional Accessories Compatibility Matrix (Accessory -> Devices, Device -> Accessories, Full Table).
 - **Asset Localization & Color Variant Switching**:
   - All product images stored locally in `assets/products/`.
-  - Pro 13 (4 colors) & Laptop 8 (5 colors) equipped with interactive color swatches in cards, detail hero, and comparison table header.
+  - Consumer Pro 13 / Laptop 8 may expose multi-color swatches when `isCommercial:false`; commercial SKUs stay dual-color only (亮铂金 + 典雅黑) per §A/C. Swatches appear in cards, detail hero, and comparison table header.
 
 ---
 
