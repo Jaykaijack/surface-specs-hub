@@ -1,16 +1,11 @@
-# p0-apply-surface-data-patch — A52 retrigger 2026-09-22T09:28+08:00
 name: p0-apply-surface-data-patch
 on:
   workflow_dispatch:
   push:
     branches: [fix/p0-spec-verification-20260922]
     paths:
-      - 'docs/p0-surface-data.patch.b64'
-      - 'docs/batch1-surface-data.patch.b64'
-      - 'docs/batch2-surface-data.patch.b64'
-      - 'docs/batch3-surface-data.patch.b64'
-      - 'docs/ban-closure-auto-fix.patch.b64'
       - 'docs/ban-A52-surface-data.patch.b64'
+      - 'docs/surface-data.js.gz.b64'
       - 'docs/full-library-verification-registry.json.gz.b64'
       - '.github/workflows/p0-apply-surface-data-patch.yml'
 permissions:
@@ -24,23 +19,19 @@ jobs:
         with:
           ref: fix/p0-spec-verification-20260922
           fetch-depth: 0
-      - name: Restore base and apply all verified patches
+      - name: Apply A52 onto current surface-data.js + decode registry
         run: |
           set -euo pipefail
-          BASE_COMMIT=3374f26dc26dc1fc33c8b2eaef0b11ee023940f7
-          git show "${BASE_COMMIT}:js/surface-data.js" > js/surface-data.js
-          for name in p0 batch1 batch2 batch3; do
-            artifact="docs/${name}-surface-data.patch.b64"
-            if [ -f "$artifact" ]; then
-              base64 -d "$artifact" > "/tmp/${name}-surface-data.patch"
-              patch -p1 < "/tmp/${name}-surface-data.patch"
-            fi
-          done
-          base64 -d docs/ban-closure-auto-fix.patch.b64 | gzip -d > /tmp/ban-closure-auto-fix.patch
-          patch -p1 < /tmp/ban-closure-auto-fix.patch
-          base64 -d docs/ban-A52-surface-data.patch.b64 | gzip -d > /tmp/ban-A52-surface-data.patch
-          patch -p1 < /tmp/ban-A52-surface-data.patch
+          if [ -f docs/surface-data.js.gz.b64 ]; then
+            echo "Using full surface-data.js.gz.b64 artifact"
+            base64 -d docs/surface-data.js.gz.b64 | gzip -d > js/surface-data.js
+          else
+            echo "Applying ban-A52 patch onto checked-out js/surface-data.js"
+            base64 -d docs/ban-A52-surface-data.patch.b64 | gzip -d > /tmp/ban-A52-surface-data.patch
+            patch -p1 --verbose < /tmp/ban-A52-surface-data.patch
+          fi
           base64 -d docs/full-library-verification-registry.json.gz.b64 | gzip -d > docs/full-library-verification-registry.json
+          sha256sum js/surface-data.js docs/full-library-verification-registry.json
       - name: Verify exact data and registry outputs
         run: |
           set -euo pipefail
@@ -63,17 +54,11 @@ jobs:
             if (got !== value) throw new Error(`${key}: ${got} != ${value}`);
           }
           for (const entry of registry.entries) {
-            if (!entry.deviceId || !entry.field || !entry.verdict || !entry.sourceUrl) throw new Error('incomplete registry entry');
-            if (entry.verdict === 'PENDING' || entry.verdict === 'MISMATCH' || entry.verdict === 'UNREVIEWED' || entry.verdict === 'BAD_URL') {
-              throw new Error('forbidden verdict: ' + entry.verdict + ' ' + entry.deviceId + '.' + entry.field);
-            }
-            if (String(entry.verdict).startsWith('POLICY_SAFE') && !entry.reason) {
-              throw new Error('POLICY without reason: ' + entry.deviceId + '.' + entry.field);
-            }
-            if (entry.verdict === 'VERIFIED' && !entry.sourceUrl) {
-              throw new Error('VERIFIED without sourceUrl');
-            }
+            if (!entry.deviceId || !entry.field || !entry.verdict || !entry.sourceUrl) throw new Error('incomplete');
+            if (['PENDING','MISMATCH','UNREVIEWED','BAD_URL'].includes(entry.verdict)) throw new Error(entry.verdict);
+            if (String(entry.verdict).startsWith('POLICY_SAFE') && !entry.reason) throw new Error('no reason');
           }
+          console.log('OK', registry.verdictCounts);
           NODE
       - name: Commit and push generated outputs
         run: |
