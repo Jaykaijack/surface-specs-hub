@@ -15,6 +15,7 @@ const ToolsEngine = {
   compatViewMode: 'matrix',
   selectedAccessoryId: 'flex-keyboard',
   selectedDeviceId: 'pro-12-13-intel',
+  selectedAccCategory: 'all',
 
   calculateDimensions(diag, wRatio, hRatio) {
     const diagCm = diag * 2.54;
@@ -196,19 +197,23 @@ const ToolsEngine = {
     `;
 
     chips.forEach(chip => {
-      const fillPercent = Math.max(3, (chip.npuTops / maxTops) * 100);
-      const isTop = chip.npuTops >= 80;
-      const isX86 = chip.architecture.includes('x86');
+      const npuTops = Number(chip.npuTops) || 0;
+      const fillPercent = Math.max(3, (npuTops / maxTops) * 100);
+      const isTop = npuTops >= 80;
+      const isX86 = (chip.architecture || '').includes('x86');
 
       let barClass = 'chip-bar-fill';
       if (isTop) barClass += ' gold';
       else if (isX86) barClass += ' x86';
 
+      const equippedList = Array.isArray(chip.equippedDevices) ? chip.equippedDevices
+        : (Array.isArray(chip.devices) ? chip.devices : []);
+
       html += `
         <div class="chip-ladder-row">
           <div class="chip-name-cell">
             <span class="chip-model">${chip.name}</span>
-            <span class="chip-meta">${chip.vendor} · ${chip.processNode}</span>
+            <span class="chip-meta">${chip.vendor || '芯片'} · ${chip.processNode || chip.process || '先进制程'}</span>
           </div>
 
           <div class="chip-bar-track">
@@ -217,13 +222,13 @@ const ToolsEngine = {
           </div>
 
           <div class="chip-score-cell">
-            ${chip.npuTops > 0 ? `${chip.npuTops} <span style="font-size:11px; font-weight:normal;">TOPS</span>` : '<span style="font-size:11px; color:var(--ms-text-tertiary);">无独立NPU</span>'}
+            ${npuTops > 0 ? `${npuTops} <span style="font-size:11px; font-weight:normal;">TOPS</span>` : '<span style="font-size:11px; color:var(--ms-text-tertiary);">无独立NPU</span>'}
           </div>
         </div>
 
         <div style="font-size:12px; color:var(--ms-text-secondary); margin:-6px 0 14px 14px; padding-left:12px; border-left:2px solid var(--ms-border-subtle); line-height:1.5;">
-          <span style="color:var(--ms-text-tertiary);">装备机型：</span><strong>${chip.equippedDevices.join('、')}</strong><br>
-          <span style="color:var(--ms-text-tertiary);">架构亮点：</span>${chip.highlights}
+          <span style="color:var(--ms-text-tertiary);">装备机型：</span><strong>${equippedList.join('、') || '—'}</strong><br>
+          <span style="color:var(--ms-text-tertiary);">架构亮点：</span>${chip.highlights || chip.desc || '—'}
         </div>
       `;
     });
@@ -290,38 +295,49 @@ const ToolsEngine = {
 
   setCompatView(mode) {
     this.compatViewMode = mode;
+    if (typeof App !== 'undefined' && App.renderActiveView) {
+      App.renderActiveView();
+      return;
+    }
     const container = document.getElementById('hub-main-content');
     if (container) container.innerHTML = this.renderAccessoryMatrix();
   },
 
   // 全景总表
   renderFullCompatTable() {
-    const devices = SURFACE_DATA.devices.filter(d => ['pro', 'sls', 'go'].includes(d.categoryId));
+    const devices = Catalog.listDevices().filter(d => ['pro', 'sls', 'go', 'book', 'laptop'].includes(d.categoryId));
+    const preferredIds = [
+      'flex-keyboard', 'pro-classic-type-cover', 'slim-pen-2', 'surface-pen-classic',
+      'surface-arc-mouse', 'surface-precision-mouse', 'surface-dock-2', 'surface-dock-1'
+    ];
+    const flagshipCols = preferredIds.map(id => {
+      const acc = Catalog.accessories().find(a => a.id === id);
+      return acc ? { id: acc.id, name: acc.name, sub: acc.tagline || acc.category || '' } : null;
+    }).filter(Boolean);
+
     return `
       <div style="overflow-x:auto;">
         <table class="compat-matrix-table">
           <thead>
             <tr>
-              <th style="width:220px; text-align:left;">Surface 主机型号</th>
-              <th>Surface Flex 键盘<br><span style="font-size:10.5px; font-weight:normal; color:var(--ms-text-tertiary);">蓝牙无线分离+内置电池</span></th>
-              <th>Pro 特制专业键盘盖<br><span style="font-size:10.5px; font-weight:normal; color:var(--ms-text-tertiary);">磁吸笔槽无线充电</span></th>
-              <th>Slim Pen 2 触控笔<br><span style="font-size:10.5px; font-weight:normal; color:var(--ms-text-tertiary);">仿真纸感触觉震动</span></th>
+              <th style="width:200px; text-align:left;">Surface 主机型号</th>
+              ${flagshipCols.map(col => `
+                <th>${col.name}<br><span style="font-size:10.5px; font-weight:normal; color:var(--ms-text-tertiary);">${col.sub}</span></th>
+              `).join('')}
             </tr>
           </thead>
           <tbody>
             ${devices.map(dev => {
-              const flexCompat = this.getCompatStatus('flex-keyboard', dev.id);
-              const sigCompat = this.getCompatStatus('pro-signature-keyboard', dev.id);
-              const penCompat = this.getCompatStatus('slim-pen-2', dev.id);
               return `
                 <tr>
                   <td class="compat-device-label">
                     ${dev.name}
                     <div style="font-size:11px; font-weight:normal; color:var(--ms-text-tertiary);">${dev.generation}</div>
                   </td>
-                  <td>${this.formatStatusObj(flexCompat)}</td>
-                  <td>${this.formatStatusObj(sigCompat)}</td>
-                  <td>${this.formatStatusObj(penCompat)}</td>
+                  ${flagshipCols.map(col => {
+                    const compat = this.getCompatStatus(col.id, dev.id);
+                    return `<td>${this.formatStatusObj(compat)}</td>`;
+                  }).join('')}
                 </tr>
               `;
             }).join('')}
@@ -333,41 +349,94 @@ const ToolsEngine = {
 
   // 按配件查看
   renderByAccessoryView() {
-    const acc = SURFACE_DATA.accessories.find(a => a.id === this.selectedAccessoryId) || SURFACE_DATA.accessories[0];
+    const allAccessories = Catalog.accessories();
+    let accessories = allAccessories;
+    if (this.selectedAccCategory && this.selectedAccCategory !== 'all') {
+      accessories = accessories.filter(a => a.category === this.selectedAccCategory);
+    }
+    const acc = accessories.find(a => a.id === this.selectedAccessoryId) || accessories[0] || allAccessories[0];
+    if (!acc) {
+      return `<div class="spec-table-empty"><h3>当前配件目录为空</h3><p>兼容矩阵只读取 Catalog 配件快照，本地基线未被改写。</p></div>`;
+    }
+
+    // 品类统计
+    const catCounts = {};
+    allAccessories.forEach(a => {
+      catCounts[a.category] = (catCounts[a.category] || 0) + 1;
+    });
 
     return `
       <div style="display:flex; flex-direction:column; gap:16px;">
-        <div style="display:flex; gap:8px; align-items:center;">
-          <span style="font-size:13px; font-weight:600;">当前选择配件：</span>
-          <select class="fluent-btn" onchange="ToolsEngine.onSelectAccessory(this.value)">
-            ${SURFACE_DATA.accessories.map(a => `
-              <option value="${a.id}" ${a.id === acc.id ? 'selected' : ''}>${a.name}</option>
-            `).join('')}
+        <!-- 品类快速筛选 Tabs -->
+        <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:4px;">
+          <button class="fluent-btn ${this.selectedAccCategory === 'all' ? 'active' : ''}" onclick="ToolsEngine.onSelectAccCategory('all')">
+            ⚡ 全部配件 (${allAccessories.length})
+          </button>
+          <button class="fluent-btn ${this.selectedAccCategory === 'mouse' ? 'active' : ''}" onclick="ToolsEngine.onSelectAccCategory('mouse')">
+            🖱️ 鼠标与触控 (${catCounts.mouse || 0})
+          </button>
+          <button class="fluent-btn ${this.selectedAccCategory === 'keyboard' ? 'active' : ''}" onclick="ToolsEngine.onSelectAccCategory('keyboard')">
+            ⌨️ 键盘与保护盖 (${catCounts.keyboard || 0})
+          </button>
+          <button class="fluent-btn ${this.selectedAccCategory === 'pen' ? 'active' : ''}" onclick="ToolsEngine.onSelectAccCategory('pen')">
+            ✏️ 手写笔与压感 (${catCounts.pen || 0})
+          </button>
+          <button class="fluent-btn ${this.selectedAccCategory === 'dock' ? 'active' : ''}" onclick="ToolsEngine.onSelectAccCategory('dock')">
+            🔌 拓展坞与转换器 (${catCounts.dock || 0})
+          </button>
+          <button class="fluent-btn ${this.selectedAccCategory === 'audio' ? 'active' : ''}" onclick="ToolsEngine.onSelectAccCategory('audio')">
+            🎧 音频与会议外设 (${catCounts.audio || 0})
+          </button>
+          <button class="fluent-btn ${this.selectedAccCategory === 'creative' ? 'active' : ''}" onclick="ToolsEngine.onSelectAccCategory('creative')">
+            🎨 创意交互外设 (${catCounts.creative || 0})
+          </button>
+        </div>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <span style="font-size:13px; font-weight:600; white-space:nowrap;">选择具体配件：</span>
+          <select class="fluent-btn" style="padding:6px 12px; font-size:13px; cursor:pointer;" onchange="ToolsEngine.onSelectAccessory(this.value)">
+            ${this.renderAccessoryOptionsGrouped(acc.id)}
           </select>
         </div>
 
         <div style="background:var(--ms-bg-card-secondary); padding:16px; border-radius:var(--ms-radius-md); border-left:3px solid var(--ms-accent);">
-          <div style="font-weight:700; font-size:15px; margin-bottom:4px;">${acc.name}</div>
-          <div style="font-size:12.5px; color:var(--ms-text-secondary); margin-bottom:8px;">${acc.tagline}</div>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+            <span style="font-size:20px;">${acc.icon || '📦'}</span>
+            <span style="font-weight:700; font-size:16px;">${acc.name}</span>
+            <span class="spec-badge" style="background:var(--ms-accent-subtle); color:var(--ms-accent); border:1px solid var(--ms-accent-border); font-size:11px;">
+              ${acc.categoryName || acc.category}
+            </span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); margin-bottom:10px; line-height:1.5;">${acc.tagline}</div>
           <div style="display:flex; gap:6px; flex-wrap:wrap;">
-            ${acc.features.map(f => `<span class="spec-badge">${f}</span>`).join('')}
+            ${(acc.features || []).map(f => `<span class="spec-badge">${f}</span>`).join('')}
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+          <div style="font-weight:600; font-size:14px;">适配 Surface 全系设备判定清单 (${(acc.compatibilityList || []).length} 款机型)</div>
+          <div style="font-size:12px; color:var(--ms-text-tertiary);">
+            绿色：原生完美 · 橙色：部分/功能受限 · 红色：不兼容
           </div>
         </div>
 
         <table class="compat-matrix-table">
           <thead>
             <tr>
-              <th style="width:240px; text-align:left;">适配 Surface 设备</th>
-              <th style="width:120px;">兼容级别</th>
+              <th style="width:260px; text-align:left;">适配 Surface 设备</th>
+              <th style="width:130px;">兼容级别</th>
               <th style="text-align:left;">特性与注意事项</th>
             </tr>
           </thead>
           <tbody>
-            ${acc.compatibilityList.map(item => {
-              const dev = SURFACE_DATA.devices.find(d => d.id === item.deviceId);
+            ${(acc.compatibilityList || []).map(item => {
+              const dev = Catalog.getDevice(item.deviceId);
               return `
                 <tr>
-                  <td class="compat-device-label">${dev ? dev.name : item.deviceId}</td>
+                  <td class="compat-device-label">
+                    ${dev ? dev.name : item.deviceId}
+                    ${dev ? `<div style="font-size:11px; color:var(--ms-text-tertiary); font-weight:normal;">${dev.generation}</div>` : ''}
+                  </td>
                   <td>${this.formatBadgeByStatus(item.status)}</td>
                   <td style="text-align:left; color:var(--ms-text-secondary); font-size:12.5px;">${item.note}</td>
                 </tr>
@@ -379,51 +448,113 @@ const ToolsEngine = {
     `;
   },
 
+  renderAccessoryOptionsGrouped(selectedId) {
+    const categories = [
+      { id: 'mouse', label: '🖱️ 鼠标与触控外设' },
+      { id: 'keyboard', label: '⌨️ 键盘与保护盖' },
+      { id: 'pen', label: '✏️ 手写笔与压感' },
+      { id: 'dock', label: '🔌 拓展坞与转换器' },
+      { id: 'audio', label: '🎧 音频与会议外设' },
+      { id: 'creative', label: '🎨 创意交互外设' }
+    ];
+
+    let html = '';
+    categories.forEach(cat => {
+      let items = Catalog.accessories().filter(a => a.category === cat.id);
+      if (this.selectedAccCategory && this.selectedAccCategory !== 'all') {
+        if (cat.id !== this.selectedAccCategory) items = [];
+      }
+      if (items.length > 0) {
+        html += `<optgroup label="${cat.label}">`;
+        items.forEach(a => {
+          html += `<option value="${a.id}" ${a.id === selectedId ? 'selected' : ''}>${a.name}</option>`;
+        });
+        html += `</optgroup>`;
+      }
+    });
+    return html;
+  },
+
   // 按设备查看
   renderByDeviceView() {
-    const dev = SURFACE_DATA.devices.find(d => d.id === this.selectedDeviceId) || SURFACE_DATA.devices[0];
+    const allDevices = Catalog.listDevices();
+    const dev = Catalog.getDevice(this.selectedDeviceId) || allDevices[0];
+
+    const categories = [
+      { id: 'mouse', label: '🖱️ 鼠标与触控外设' },
+      { id: 'keyboard', label: '⌨️ 键盘与保护盖外设' },
+      { id: 'pen', label: '✏️ 手写笔与压感外设' },
+      { id: 'dock', label: '🔌 拓展坞与转换器外设' },
+      { id: 'audio', label: '🎧 音频与会议外设' },
+      { id: 'creative', label: '🎨 创意交互外设' }
+    ];
 
     return `
       <div style="display:flex; flex-direction:column; gap:16px;">
-        <div style="display:flex; gap:8px; align-items:center;">
-          <span style="font-size:13px; font-weight:600;">当前选择 Surface 设备：</span>
-          <select class="fluent-btn" onchange="ToolsEngine.onSelectDevice(this.value)">
-            ${SURFACE_DATA.devices.map(d => `
-              <option value="${d.id}" ${d.id === dev.id ? 'selected' : ''}>${d.name}</option>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <span style="font-size:13px; font-weight:600; white-space:nowrap;">当前选择 Surface 设备：</span>
+          <select class="fluent-btn" style="padding:6px 12px; font-size:13px; cursor:pointer;" onchange="ToolsEngine.onSelectDevice(this.value)">
+            ${allDevices.map(d => `
+              <option value="${d.id}" ${d.id === dev.id ? 'selected' : ''}>${d.name} (${d.generation})</option>
             `).join('')}
           </select>
         </div>
 
         <div style="background:var(--ms-bg-card-secondary); padding:16px; border-radius:var(--ms-radius-md); border-left:3px solid var(--ms-accent);">
-          <div style="font-weight:700; font-size:15px; margin-bottom:4px;">${dev.name}</div>
-          <div style="font-size:12.5px; color:var(--ms-text-secondary);">${dev.tagline}</div>
+          <div style="font-weight:700; font-size:16px; margin-bottom:4px;">${dev.name}</div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.5;">${dev.tagline || dev.desc || 'Microsoft Surface 官方系列硬件'}</div>
         </div>
 
-        <table class="compat-matrix-table">
-          <thead>
-            <tr>
-              <th style="width:240px; text-align:left;">Surface 核心配件</th>
-              <th style="width:120px;">兼容级别</th>
-              <th style="text-align:left;">详细兼容表现说明</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${SURFACE_DATA.accessories.map(acc => {
-              const match = acc.compatibilityList.find(c => c.deviceId === dev.id);
-              const status = match ? match.status : 'UNSUPPORTED';
-              const note = match ? match.note : '官方白皮书暂未列入适配名单';
-              return `
-                <tr>
-                  <td class="compat-device-label">${acc.name}</td>
-                  <td>${this.formatBadgeByStatus(status)}</td>
-                  <td style="text-align:left; color:var(--ms-text-secondary); font-size:12.5px;">${note}</td>
-                </tr>
-              `;
-            }).join('')}
-          </tbody>
-        </table>
+        <!-- 按品类分组展示全系配件兼容表现 -->
+        ${categories.map(cat => {
+          const accs = Catalog.accessories().filter(a => a.category === cat.id);
+          if (accs.length === 0) return '';
+          return `
+            <div style="margin-top:8px;">
+              <div style="font-weight:700; font-size:14.5px; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+                <span>${cat.label}</span>
+                <span style="font-size:12px; font-weight:normal; color:var(--ms-text-tertiary);">(${accs.length} 款配件)</span>
+              </div>
+              <table class="compat-matrix-table">
+                <thead>
+                  <tr>
+                    <th style="width:260px; text-align:left;">配件型号</th>
+                    <th style="width:130px;">兼容级别</th>
+                    <th style="text-align:left;">详细兼容表现说明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${accs.map(acc => {
+                    const match = (acc.compatibilityList || []).find(c => c.deviceId === dev.id);
+                    const status = match ? match.status : 'UNSUPPORTED';
+                    const note = match ? match.note : '官方白皮书暂未列入适配名单';
+                    return `
+                      <tr>
+                        <td class="compat-device-label">
+                          ${acc.icon ? acc.icon + ' ' : ''}${acc.name}
+                          <div style="font-size:11px; color:var(--ms-text-tertiary); font-weight:normal;">${acc.categoryName}</div>
+                        </td>
+                        <td>${this.formatBadgeByStatus(status)}</td>
+                        <td style="text-align:left; color:var(--ms-text-secondary); font-size:12.5px;">${note}</td>
+                      </tr>
+                    `;
+                  }).join('')}
+                </tbody>
+              </table>
+            </div>
+          `;
+        }).join('')}
       </div>
     `;
+  },
+
+  onSelectAccCategory(cat) {
+    this.selectedAccCategory = cat;
+    if (cat !== 'all') {
+      const firstAcc = Catalog.accessories().find(a => a.category === cat);
+      if (firstAcc) this.selectedAccessoryId = firstAcc.id;
+    }
+    this.setCompatView('by_accessory');
   },
 
   onSelectAccessory(id) {
@@ -437,9 +568,9 @@ const ToolsEngine = {
   },
 
   getCompatStatus(accId, devId) {
-    const acc = SURFACE_DATA.accessories.find(a => a.id === accId);
+    const acc = Catalog.accessories().find(a => a.id === accId);
     if (!acc) return null;
-    return acc.compatibilityList.find(c => c.deviceId === devId) || { status: 'UNSUPPORTED', note: '不支持' };
+    return (acc.compatibilityList || []).find(c => c.deviceId === devId) || { status: 'UNSUPPORTED', note: '不支持' };
   },
 
   formatStatusObj(obj) {

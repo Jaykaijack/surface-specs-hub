@@ -5,3 +5,8 @@ Thumbs.db
 __pycache__/
 *.pyc
 .system_generated/
+
+# 本地实验与 IDE/代理痕迹，勿进 main
+.scratch/
+.workbuddy/
+.wbapp_*.genie

@@ -88,28 +88,15 @@
   font-weight: 600;
 }
 
-.screen-metrics-grid {
+/* 屏幕计算器左栏指标组：保持 3 列布局。
+   .metric-box/.metric-val/.metric-label 的组件样式统一由 hubweb-layout.css
+   的 M3 Metric Cards 定义，此处仅做布局覆盖，避免重复定义互相覆盖。 */
+.screen-ctrl-panel .screen-metrics-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   margin-top: 8px;
-}
-.metric-box {
-  background: var(--ms-bg-card-secondary);
-  border: 1px solid var(--ms-border-subtle);
-  border-radius: var(--ms-radius-md);
-  padding: 12px;
-  text-align: center;
-}
-.metric-val {
-  font-size: var(--ms-font-size-xl);
-  font-weight: 700;
-  color: var(--ms-text-brand);
-}
-.metric-label {
-  font-size: var(--ms-font-size-xs);
-  color: var(--ms-text-secondary);
-  margin-top: 2px;
+  margin-bottom: 0;
 }
 
 .screen-visual-stage {
@@ -191,6 +178,30 @@
 .chip-ladder-row:hover {
   background: var(--ms-bg-card-hover);
   border-color: var(--ms-accent);
+}
+
+/* 手机端：工具卡片降档，天梯行改为纵向堆叠 */
+@media (max-width: 768px) {
+  .tool-view-card {
+    padding: 16px;
+  }
+  .chip-ladder-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .chip-score-cell {
+    text-align: left;
+  }
+  .screen-ctrl-panel .screen-metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .compat-matrix-table {
+    font-size: 12px;
+  }
+  .compat-matrix-table th,
+  .compat-matrix-table td {
+    padding: 8px 8px;
+  }
 }
 
 .chip-name-cell {

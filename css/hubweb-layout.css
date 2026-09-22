@@ -41,6 +41,8 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .ms-logo {
@@ -66,6 +68,8 @@ body {
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .header-sub-tag {
@@ -76,11 +80,13 @@ body {
   padding: 2px 6px;
   border-radius: var(--ms-radius-sm);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .header-center {
   flex: 1;
   max-width: 460px;
+  min-width: 0;
   margin: 0 20px;
   position: relative;
 }
@@ -133,6 +139,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .header-btn {
@@ -147,6 +154,8 @@ body {
   align-items: center;
   gap: 6px;
   transition: all var(--ms-transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .header-btn:hover {
   background: var(--ms-bg-card-hover);
@@ -241,6 +250,8 @@ body {
   color: var(--ms-text-tertiary);
   padding: 1px 6px;
   border-radius: var(--ms-radius-full);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .sidebar-nav-item.active .nav-item-count {
   background: var(--ms-badge-bg);
@@ -337,6 +348,21 @@ body {
   box-shadow: 0 0 0 1px var(--ms-accent);
 }
 
+/* 语义成功色按钮 (官方商城选配 CTA) */
+.fluent-btn.success {
+  background: var(--ms-success);
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: var(--md-sys-elevation-1);
+}
+.fluent-btn.success:hover {
+  background: var(--ms-success-hover);
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: var(--md-sys-elevation-2);
+  transform: translateY(-1px);
+}
+
 .fluent-btn-sm {
   height: 30px;
   min-height: 30px;
@@ -377,12 +403,16 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
+  row-gap: 8px;
 }
 
 .filter-label {
   font-size: 12px;
   font-weight: 600;
   color: var(--ms-text-tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .filter-chip {
@@ -399,6 +429,8 @@ body {
   align-items: center;
   gap: 6px;
   transition: all var(--ms-transition-fast);
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 .filter-chip:hover {
   border-color: var(--ms-accent);
@@ -456,6 +488,8 @@ body {
   align-items: center;
   gap: 4px;
   transition: all var(--ms-transition-fast);
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .quick-chip:hover {
@@ -749,6 +783,17 @@ body {
   color: var(--ms-text-secondary);
   border: 1px solid var(--ms-border-subtle);
   font-weight: 500;
+  white-space: nowrap;
+}
+
+/* 卡片底部操作行：统一按钮高度与字号，消除 40px/30px 混排的高度差 */
+.device-card-mini .fluent-btn,
+.device-card-mini .fluent-btn-sm {
+  height: 36px;
+  min-height: 36px;
+  padding: 0 14px;
+  font-size: 12.5px;
+  white-space: nowrap;
 }
 
 /* 首页专属排版 (Home View) */
@@ -1039,10 +1084,11 @@ body {
   box-shadow: var(--md-sys-elevation-1);
 }
 
-/* 核心指标六边形卡片高光规范 (M3 Metric Cards) */
+/* 核心指标六边形卡片高光规范 (M3 Metric Cards)
+   minmax(300px) 保证长文本指标有足够呼吸空间：桌面 3 列 / 平板 2 列 / 手机 1 列 */
 .screen-metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 14px;
   margin-bottom: 24px;
 }
@@ -1066,6 +1112,7 @@ body {
   color: var(--md-sys-color-primary, var(--ms-accent));
   letter-spacing: -0.3px;
   margin-bottom: 4px;
+  overflow-wrap: break-word;
 }
 .metric-label {
   font-size: 12px;
@@ -1189,6 +1236,8 @@ body {
   align-items: center;
   gap: 12px;
   overflow-x: auto;
+  flex: 1;
+  min-width: 0;
   max-width: 70%;
   padding-right: 12px;
 }
@@ -1198,6 +1247,7 @@ body {
   font-weight: 600;
   color: var(--ms-text-secondary);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .dock-item-pill {
@@ -1212,8 +1262,12 @@ body {
   font-weight: 500;
   color: var(--ms-text-primary);
   white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   box-shadow: var(--md-sys-elevation-1);
   transition: all var(--ms-transition-fast);
+  flex-shrink: 0;
 }
 .dock-item-pill:hover {
   border-color: var(--ms-accent);
@@ -1241,6 +1295,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .dock-collapse-toggle {
@@ -1256,6 +1311,7 @@ body {
   justify-content: center;
   font-size: 12px;
   transition: all var(--ms-transition-fast);
+  flex-shrink: 0;
 }
 .dock-collapse-toggle:hover {
   background: var(--ms-bg-card-hover);
@@ -1274,7 +1330,70 @@ body {
   line-height: 1.6;
 }
 
-/* 响应式调整 (PRD 第二十一章: 手机端专项防崩坏) */
+/* ==================================================================== */
+/* 响应式断点体系 (PRD 第二十一章: 各尺寸防崩坏)                            */
+/* 1200px: 隐藏副标签 → 1024px: 收窄间距 → 900px: 顶栏图标化              */
+/* 768px : 移动端抽屉侧栏 + 全面降档                                       */
+/* ==================================================================== */
+
+/* 中桌面 / 小窗口：副标签最不重要，优先隐藏释放顶栏空间 */
+@media (max-width: 1200px) {
+  .header-sub-tag {
+    display: none;
+  }
+}
+
+/* 平板横屏：收窄顶栏与工作区间距 */
+@media (max-width: 1024px) {
+  .header-center {
+    margin: 0 12px;
+  }
+  .header-right {
+    gap: 6px;
+  }
+  .hub-main {
+    padding: 16px 20px 100px 20px;
+  }
+  .view-title-group h1 {
+    font-size: 24px;
+  }
+}
+
+/* 平板竖屏：顶栏按钮图标化（隐藏文字保留图标与 title 提示），托盘压缩 */
+@media (max-width: 900px) {
+  .header-btn .btn-label {
+    display: none;
+  }
+  .header-btn {
+    padding: 6px 8px;
+  }
+  .header-center {
+    margin: 0 8px;
+  }
+  .cloud-account-btn .cloud-account-name {
+    display: none;
+  }
+  .dock-tip-label {
+    display: none;
+  }
+  .comparison-dock {
+    padding: 0 12px;
+  }
+  .dock-right {
+    gap: 8px;
+  }
+  .comparison-dock .fluent-btn {
+    height: 34px;
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+  .detail-hero-left {
+    width: 300px;
+  }
+}
+
+/* 手机端：抽屉侧栏 + 全局降档 */
 @media (max-width: 768px) {
   .hub-sidebar {
     position: fixed;
@@ -1286,15 +1405,87 @@ body {
   .hub-sidebar.open {
     left: 0;
   }
+  /* 顶栏空间让位于品牌与导航入口，搜索框隐藏（移动端空间不足时保证核心可用） */
+  .header-center {
+    display: none;
+  }
+  .hub-header {
+    padding: 0 10px;
+  }
+  .header-brand-text {
+    font-size: 14px;
+  }
   .hub-main {
-    padding: 12px;
+    padding: 12px 12px 96px 12px;
+  }
+  .view-header {
+    margin-bottom: 14px;
+    gap: 10px;
+  }
+  .view-title-group h1 {
+    font-size: 20px;
+    gap: 8px;
   }
   .comparison-dock {
     left: 0;
+    height: 60px;
+    border-radius: 12px 12px 0 0;
+  }
+  .dock-left {
+    max-width: none;
+    gap: 8px;
+    padding-right: 8px;
+  }
+  .dock-item-pill {
+    max-width: 140px;
+    padding: 5px 10px;
   }
   .product-detail-hero {
     flex-direction: column;
     text-align: center;
-    gap: 16px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: var(--md-sys-shape-corner-large, 16px);
+  }
+  .detail-hero-left {
+    width: 100%;
+    max-width: 340px;
+  }
+  .home-hero-card {
+    padding: 20px;
+    border-radius: var(--md-sys-shape-corner-large, 16px);
+    margin-bottom: 20px;
+  }
+  .home-section-header h2 {
+    font-size: 17px;
+  }
+  .business-hero-banner {
+    padding: 20px;
+  }
+  .business-hero-title {
+    font-size: 22px;
+  }
+  .filter-toolbar {
+    padding: 10px 12px;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .table-quick-strip {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .series-gallery-grid {
+    gap: 12px;
+  }
+  .device-select-strip {
+    gap: 10px;
+  }
+  .timeline-container {
+    padding-left: 14px;
+  }
+  .search-modal-card {
+    width: 100%;
+    max-width: calc(100vw - 24px);
+    padding: 14px;
   }
 }

@@ -19,11 +19,31 @@ const App = {
     audience: 'all'    // 'all' | 'consumer' | 'commercial'
   },
 
+  listDevices(query) {
+    if (typeof Catalog !== 'undefined' && Catalog.listDevices) {
+      return Catalog.listDevices(query);
+    }
+    return (typeof SURFACE_DATA !== 'undefined' && Array.isArray(SURFACE_DATA.devices)) ? SURFACE_DATA.devices : [];
+  },
+
+  getDevice(id) {
+    if (typeof Catalog !== 'undefined' && Catalog.getDevice) {
+      return Catalog.getDevice(id);
+    }
+    return this.listDevices().find(d => d.id === id) || null;
+  },
+
   init() {
     this.initTheme();
     this.initRouter();
     this.bindEvents();
     ComparisonEngine.init();
+    if (typeof Catalog !== 'undefined' && Catalog.onChange) {
+      Catalog.onChange(() => {
+        this.renderSidebar();
+        this.renderRoute();
+      });
+    }
   },
 
   // 1. URL Hash 路由系统
@@ -66,11 +86,17 @@ const App = {
   },
 
   navigateToDetail(seriesId, deviceId) {
-    const dev = SURFACE_DATA.devices.find(d => d.id === deviceId);
-    const isCommercial = dev ? (dev.segment === 'commercial' || !!dev.isCommercial) : false;
-    const prefix = isCommercial ? '/business' : '/consumer';
-    const cleanSeries = (seriesId === 'studio' && dev && dev.categoryId === 'hub') ? 'hub' : seriesId;
-    this.navigate(`#${prefix}/${cleanSeries}/${deviceId}`);
+    const dev = this.getDevice(deviceId);
+    if (dev && typeof Taxonomy !== 'undefined' && Taxonomy.canonicalPath) {
+      this.navigate(Taxonomy.canonicalPath(dev));
+      return;
+    }
+    const segment = (dev && (dev.segment === 'commercial' || dev.isCommercial)) ? 'commercial' : 'consumer';
+    const prefix = segment === 'commercial' ? 'business' : 'consumer';
+    const cleanSeries = (typeof Taxonomy !== 'undefined' && Taxonomy.seriesIdOf && dev)
+      ? Taxonomy.seriesIdOf(dev)
+      : (seriesId || (dev && dev.categoryId) || '');
+    this.navigate(`#/${prefix}/${cleanSeries}/${deviceId}`);
   },
 
   dispatchRoute() {
@@ -130,9 +156,9 @@ const App = {
       return;
     }
 
-        // 路由: 商用版专区快捷路由 (#/business -> 默认进入 Surface Pro 商用系列)
-    if (path === '/business' || path === '/surface/business') {
-      this.renderSeriesView(main, 'pro', 'commercial');
+    // 路由: 云端素材中心 (#/assets) —— 产品图片与资料附件的云端存取（需登录）
+    if (path === '/assets') {
+      this.renderAssetsView(main);
       return;
     }
 
@@ -168,22 +194,14 @@ const App = {
       return;
     }
 
-    // 兼容历史路由: 单个机型详情页 (#/surface/:series/:id)
-    const detailMatch = path.match(/^\/surface\/([^/]+)\/([^/]+)$/);
-    if (detailMatch) {
-      const [_, seriesId, deviceId] = detailMatch;
-      const dev = SURFACE_DATA.devices.find(d => d.id === deviceId);
-      const seg = (dev && dev.segment === 'commercial') ? 'commercial' : 'consumer';
-      this.renderProductDetailView(main, seriesId, deviceId);
-      return;
-    }
-
-    // 兼容历史路由: 系列横向对比页 (#/surface/:series)
-    const seriesMatch = path.match(/^\/surface\/([^/]+)$/);
-    if (seriesMatch) {
-      const seriesId = seriesMatch[1];
-      this.renderSeriesView(main, seriesId, 'consumer');
-      return;
+    if (path.startsWith('/surface')) {
+      const resolved = (typeof Taxonomy !== 'undefined' && Taxonomy.resolvePath)
+        ? Taxonomy.resolvePath(path)
+        : { canonical: '#/' };
+      if (resolved.canonical && resolved.canonical !== '#' + path) {
+        this.navigate(resolved.canonical);
+        return;
+      }
     }
 
     // 回退首页
@@ -192,8 +210,8 @@ const App = {
 
   // 2. 首页渲染 (PRD 第十五章: 快速定位产品，非官方营销页)
   renderHomeView(container) {
-    const currentCnDevices = SURFACE_DATA.devices.filter(d => d.status === 'current_cn');
-    const recentAdditions = SURFACE_DATA.devices.slice(0, 4);
+    const currentCnDevices = this.listDevices().filter(d => d.status === 'current_cn');
+    const recentAdditions = this.listDevices().slice(0, 4);
 
     let html = `
       <div class="home-hero-card">
@@ -264,7 +282,7 @@ const App = {
           ${colorDotsHtml}
           <div style="display:flex; gap:4px; justify-content:center; margin-top:6px;">
             <span class="spec-badge green">国行在售</span>
-            ${dev.specs.npuTops && dev.specs.npuTops.includes('80 TOPS') ? '<span class="spec-badge gold">80 TOPS</span>' : ''}
+            ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge gold">80 TOPS</span>' : ''}
           </div>
         </div>
       `;
@@ -284,7 +302,7 @@ const App = {
 
       <div class="series-nav-grid">
         ${(SURFACE_DATA.consumerCategories || []).map(cat => {
-          const devs = SURFACE_DATA.devices.filter(d => d.categoryId === cat.seriesId && d.segment === 'consumer');
+          const devs = this.listDevices({ seriesId: cat.seriesId, segment: 'consumer' });
           return `
             <div class="series-card" onclick="App.navigate('#/consumer/${cat.seriesId}')">
               <div class="series-icon">
@@ -315,7 +333,7 @@ const App = {
 
       <div class="series-nav-grid">
         ${(SURFACE_DATA.commercialCategories || []).map(cat => {
-          const devs = SURFACE_DATA.devices.filter(d => (cat.seriesId === 'hub' ? (d.categoryId === 'studio' || d.categoryId === 'hub') : d.categoryId === cat.seriesId) && d.segment === 'commercial');
+          const devs = this.listDevices({ seriesId: cat.seriesId, segment: 'commercial' });
           return `
             <div class="series-card" onclick="App.navigate('#/business/${cat.seriesId}')" style="border-top:3px solid #0078d4;">
               <div class="series-icon">
@@ -387,20 +405,8 @@ const App = {
     }
 
     // 100% 隔离筛选：消费版仅含消费机型，商用版仅含商用机型
-    let catDevices = SURFACE_DATA.devices.filter(d => {
-      const matchCat = (seriesId === 'hub' ? (d.categoryId === 'studio' || d.categoryId === 'hub') : d.categoryId === seriesId);
-      const devSeg = d.segment || (d.isCommercial ? 'commercial' : 'consumer');
-      return matchCat && devSeg === segment;
-    });
-
-    // 应用多维筛选器 (CPU、在售状态、Copilot+)
-    catDevices = this.applyFilters(catDevices);
-
-    // 默认展示机型：托盘优先，否则展示当前筛选出的前 2 款
-    let devicesForTable = catDevices.filter(d => ComparisonEngine.selectedIds.includes(d.id));
-    if (devicesForTable.length === 0) {
-      devicesForTable = catDevices.slice(0, 2);
-    }
+    let catDevices = this.devicesForSeriesTable(seriesId, segment);
+    const devicesForTable = catDevices;
 
     let html = `
       <div class="view-header">
@@ -478,7 +484,7 @@ const App = {
                 ${colorDotsHtml}
                 <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                   <span class="spec-badge">${dev.specs.cpuModel}</span>
-                  ${(dev.specs.npuTops && dev.specs.npuTops !== 'not_applicable' && dev.specs.npuTops !== 'not_disclosed') ? `<span class="spec-badge gold">${dev.specs.npuTops}</span>` : ''}
+                  ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${Catalog.getSpec(dev, 'npuTops')}</span>` : ''}
                   <span class="spec-badge">${dev.specs.screenSize}</span>
                 </div>
                 <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
@@ -542,7 +548,7 @@ const App = {
 
         <!-- 13 大类参数横向双轴吸附大表 -->
         <div id="category-table-wrap">
-          ${ComparisonEngine.renderComparisonTable(devicesForTable)}
+          ${ComparisonEngine.renderSpecTable(devicesForTable)}
         </div>
       `;
     }
@@ -552,7 +558,7 @@ const App = {
 
   // 3.5 Surface 商用版专区 (Surface for Business) - 微软官方 Learn 架构全线对齐
   renderBusinessView(container) {
-    const commercialDevices = SURFACE_DATA.devices.filter(d => d.isCommercial || d.targetAudience === 'commercial');
+    const commercialDevices = this.listDevices({ segment: 'commercial' });
 
     let html = `
       <div class="business-hero-banner">
@@ -662,7 +668,7 @@ const App = {
               ${colorDotsHtml}
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                 <span class="spec-badge">${dev.specs.cpuModel}</span>
-                ${(dev.specs.npuTops && dev.specs.npuTops !== 'not_applicable' && dev.specs.npuTops !== 'not_disclosed') ? `<span class="spec-badge gold">${dev.specs.npuTops}</span>` : ''}
+                ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${Catalog.getSpec(dev, 'npuTops')}</span>` : ''}
                 <span class="spec-badge">${dev.specs.screenSize}</span>
               </div>
               <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
@@ -689,7 +695,7 @@ const App = {
 
   // 数据核验与官方溯源工作台 (#/audit)
   renderAuditView(container) {
-    const devices = SURFACE_DATA.devices;
+    const devices = this.listDevices();
     const currentDevices = devices.filter(d => d.status === 'current_cn');
     const commercialDevices = devices.filter(d => d.isCommercial || d.targetAudience === 'commercial');
     const filterType = this.auditFilter || 'all';
@@ -830,8 +836,8 @@ const App = {
                   </td>
                   <td style="padding:10px 14px; font-size:12px;">
                     <div style="font-weight:600; color:var(--ms-text-primary);">${sp.cpuModel || '—'}</div>
-                    ${sp.npuTops && sp.npuTops !== 'not_applicable' && sp.npuTops !== 'not_disclosed' ? `
-                      <div style="color:#0078d4; font-size:11px;">⚡ ${sp.npuTops}</div>
+                    ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `
+                      <div style="color:#0078d4; font-size:11px;">⚡ ${Catalog.getSpec(dev, 'npuTops')}</div>
                     ` : ''}
                   </td>
                   <td style="padding:10px 14px; font-size:12px; color:var(--ms-text-secondary);">
@@ -876,6 +882,40 @@ const App = {
     container.innerHTML = html;
   },
 
+  renderMetricCards(dev) {
+    const npuRaw = Catalog.getSpec(dev, 'npuTops');
+    const npuHtml = Catalog.isNpuDisplayable(npuRaw)
+      ? Catalog.presentDeviceSpec(dev, 'npuTops')
+      : Catalog.presentSpec(npuRaw === 'not_applicable' ? 'not_applicable' : null);
+    return `
+      <div class="screen-metrics-grid">
+        <div class="metric-box">
+          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'cpuModel')}</div>
+          <div class="metric-label">处理器核心</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val" style="color:#8764b8;">${npuHtml}</div>
+          <div class="metric-label">NPU AI 算力</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'screenSize')}</div>
+          <div class="metric-label">屏幕尺寸 (3:2)</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'refreshRate')}</div>
+          <div class="metric-label">最高刷新率</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'batteryLifeOffice')}</div>
+          <div class="metric-label">日常办公续航</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'weightGrams')}</div>
+          <div class="metric-label">裸机重量</div>
+        </div>
+      </div>
+    `;
+  },
 
   /** 核验列：读取 VERIFICATION_STATUS（由 registry 构建时嵌入），禁止写死「已核验」 */
   getDeviceVerificationBadge(deviceId) {
@@ -900,14 +940,14 @@ const App = {
 
   // 4. 单机独立详情页 (PRD 第十二章 - 完整13大类规格直出)
   renderProductDetailView(container, seriesId, deviceId) {
-    const dev = SURFACE_DATA.devices.find(d => d.id === deviceId);
+    const dev = this.getDevice(deviceId);
     if (!dev) {
       container.innerHTML = `<div class="spec-table-empty"><h3>未找到该产品信息</h3><button class="fluent-btn" onclick="App.navigate('#/')">返回首页</button></div>`;
       return;
     }
 
-    const prevDev = dev.prevGenerationId ? SURFACE_DATA.devices.find(d => d.id === dev.prevGenerationId) : null;
-    const nextDev = dev.nextGenerationId ? SURFACE_DATA.devices.find(d => d.id === dev.nextGenerationId) : null;
+    const prevDev = dev.prevGenerationId ? this.getDevice(dev.prevGenerationId) : null;
+    const nextDev = dev.nextGenerationId ? this.getDevice(dev.nextGenerationId) : null;
     const defaultImg = SURFACE_DATA.getDeviceImage(dev);
     const colors = (dev.specs && Array.isArray(dev.specs.colors)) ? dev.specs.colors : [];
     const hasColors = colors.length > 0;
@@ -920,8 +960,8 @@ const App = {
 
     let html = `
       <div style="margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <a href="${(dev.segment === 'commercial' || !!dev.isCommercial) ? '#/business/' + (dev.categoryId === 'hub' ? 'hub' : dev.categoryId) : '#/consumer/' + dev.categoryId}" style="font-size:13.5px; color:var(--ms-accent); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
-          ← 返回 ${(dev.segment === 'commercial' || !!dev.isCommercial) ? ((SURFACE_DATA.commercialCategories || []).find(c => c.seriesId === (dev.categoryId === 'hub' ? 'hub' : dev.categoryId))?.name || '商用系列') : ((SURFACE_DATA.consumerCategories || []).find(c => c.seriesId === dev.categoryId)?.name || '消费系列')} 列表
+        <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}" style="font-size:13.5px; color:var(--ms-accent); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+          ← 返回 ${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))} 列表
         </a>
         <div style="font-size:12px; color:var(--ms-text-tertiary);">
           核验来源：${dev.specs.sourceReliability || '微软官方说明书'} ｜ 核验日期：${dev.specs.lastVerified || '2026-09'}
@@ -965,14 +1005,14 @@ const App = {
             ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge">${dev.generation}</span>
             ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
-            ${dev.specs.npuTops && dev.specs.npuTops.includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS AI</span>' : ''}
+            ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge copilot">80 TOPS AI</span>' : ''}
           </div>
 
-          <h1 style="font-size:32px; font-weight:800; color:var(--ms-text-primary); margin-bottom:6px; line-height:1.25; letter-spacing:-0.5px;">
+          <h1 style="font-size:clamp(21px, 3.2vw, 32px); font-weight:800; color:var(--ms-text-primary); margin-bottom:6px; line-height:1.25; letter-spacing:-0.5px;">
             ${dev.name}
           </h1>
           <div style="font-size:14px; color:var(--ms-text-tertiary); margin-bottom:10px; font-weight:500;">${dev.nameEn}</div>
-          <p style="font-size:15px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:24px;">${dev.tagline}</p>
+          <p style="font-size:clamp(13.5px, 1.6vw, 15px); color:var(--ms-text-secondary); line-height:1.6; margin-bottom:24px;">${dev.tagline}</p>
 
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
             <button class="fluent-btn ${isSelected ? 'active' : 'primary'}" onclick="ComparisonEngine.toggleDevice('${dev.id}')">
@@ -983,8 +1023,27 @@ const App = {
                 🔄 查看与上一代 (${prevDev.name}) 升级比对
               </button>
             ` : ''}
+            ${(dev.isCommercial || dev.segment === 'commercial') ? `
+              <a href="${dev.specs.officialConfigureUrl || dev.specs.officialDocUrl || 'https://www.microsoftstore.com.cn/commercial'}" target="_blank" rel="noopener noreferrer" class="fluent-btn success" style="text-decoration:none;" title="直达微软官方商用商城选配">
+                <span>🏢</span> 微软商用商城选配 ↗
+              </a>
+              ${dev.learnDocUrl ? `
+                <a href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none;" title="查看微软官方技术规格书">
+                  <span>📘</span> 官方规格说明书 ↗
+                </a>
+              ` : ''}
+            ` : `
+              <a href="${dev.specs.officialConfigureUrl || dev.specs.officialDocUrl || 'https://www.microsoftstore.com.cn/surface'}" target="_blank" rel="noopener noreferrer" class="fluent-btn primary" style="text-decoration:none;" title="直达微软官方商城零售选配">
+                <span>🛒</span> 微软官方商城选配 ↗
+              </a>
+              ${dev.learnDocUrl ? `
+                <a href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none;" title="查看微软官方技术规格书">
+                  <span>📘</span> 官方规格说明书 ↗
+                </a>
+              ` : ''}
+            `}
             <button class="fluent-btn" onclick="App.scrollToSpecsBottom()" style="display:inline-flex; align-items:center; gap:6px;">
-              📋 官方商城直达与技术文档 (查阅大表底部) ↓
+              📋 查看全量大表参数 ↓
             </button>
           </div>
 
@@ -996,45 +1055,19 @@ const App = {
               <span style="color:var(--ms-text-secondary);">${dev.specs.sourceReliability || '微软官方说明书'}（核验时间：${dev.specs.lastVerified || '2026-09'}）</span>
             </div>
             <a href="#/audit" style="color:var(--ms-accent); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:4px;">
-              查阅全系 43 款核验总账与 Excel ↗
+              查阅全系 ${this.listDevices().length} 款核验总账与 Excel ↗
             </a>
           </div>
 
           <!-- 代际快速跳转 -->
           <div style="display:flex; gap:24px; font-size:13px; color:var(--ms-text-tertiary); border-top:1px solid var(--ms-border-subtle); padding-top:16px;">
-            <div>上一代：${prevDev ? `<a href="#/surface/${prevDev.categoryId}/${prevDev.id}" style="color:var(--ms-accent); font-weight:600; text-decoration:none;">${prevDev.name}</a>` : '— (首代产品)'}</div>
-            <div>下一代：${nextDev ? `<a href="#/surface/${nextDev.categoryId}/${nextDev.id}" style="color:var(--ms-accent); font-weight:600; text-decoration:none;">${nextDev.name}</a>` : '— (当前最新代)'}</div>
+            <div>上一代：${prevDev ? `<a href="#/${(prevDev.segment === 'commercial' || prevDev.isCommercial) ? 'business' : 'consumer'}/${prevDev.categoryId}/${prevDev.id}" style="color:var(--ms-accent); font-weight:600; text-decoration:none;">${prevDev.name}</a>` : '— (首代产品)'}</div>
+            <div>下一代：${nextDev ? `<a href="#/${(nextDev.segment === 'commercial' || nextDev.isCommercial) ? 'business' : 'consumer'}/${nextDev.categoryId}/${nextDev.id}" style="color:var(--ms-accent); font-weight:600; text-decoration:none;">${nextDev.name}</a>` : '— (当前最新代)'}</div>
           </div>
         </div>
       </div>
 
-      <!-- 核心硬件六边形指标大卡片 (M3 Metric Cards - 强化数值层级) -->
-      <div class="screen-metrics-grid">
-        <div class="metric-box">
-          <div class="metric-val">${dev.specs.cpuModel}</div>
-          <div class="metric-label">处理器核心</div>
-        </div>
-        <div class="metric-box">
-          <div class="metric-val" style="color:#8764b8;">${(dev.specs.npuTops && dev.specs.npuTops !== 'not_applicable' && dev.specs.npuTops !== 'not_disclosed') ? dev.specs.npuTops : '— (无独立 NPU)'}</div>
-          <div class="metric-label">NPU AI 算力</div>
-        </div>
-        <div class="metric-box">
-          <div class="metric-val">${dev.specs.screenSize}</div>
-          <div class="metric-label">屏幕尺寸 (3:2)</div>
-        </div>
-        <div class="metric-box">
-          <div class="metric-val">${dev.specs.refreshRate}</div>
-          <div class="metric-label">最高刷新率</div>
-        </div>
-        <div class="metric-box">
-          <div class="metric-val">${dev.specs.batteryLifeOffice}</div>
-          <div class="metric-label">日常办公续航</div>
-        </div>
-        <div class="metric-box">
-          <div class="metric-val">${dev.specs.weightGrams}</div>
-          <div class="metric-label">裸机重量</div>
-        </div>
-      </div>
+      ${this.renderMetricCards(dev)}
 
       <!-- M3 详情页切换选项卡 (Tabs Navigation) -->
       <div class="m3-tab-bar" style="margin-top:28px; margin-bottom:16px;">
@@ -1098,7 +1131,7 @@ const App = {
           <div class="spec-table-empty">
             <div style="font-size:36px; margin-bottom:12px;">🌟</div>
             <h3>该产品为该品类首代开山旗舰</h3>
-            <p>本型号是 ${SURFACE_DATA.categories.find(c => c.id === dev.categoryId)?.name} 系列的第一代开山之作，暂无更早一代前置机型可供比对。</p>
+            <p>本型号是 ${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))} 的第一代开山之作，暂无更早一代前置机型可供比对。</p>
           </div>
         `}
       </div>
@@ -1125,7 +1158,7 @@ const App = {
       }
     }
 
-    const selectedDevices = devIds.map(id => SURFACE_DATA.devices.find(d => d.id === id)).filter(Boolean);
+    const selectedDevices = devIds.map(id => this.getDevice(id)).filter(Boolean);
 
     let html = `
       <div class="view-header">
@@ -1186,7 +1219,7 @@ const App = {
     `;
 
     years.forEach(yr => {
-      const devsInYear = SURFACE_DATA.devices.filter(d => d.year === yr);
+      const devsInYear = this.listDevices().filter(d => d.year === yr);
       if (devsInYear.length === 0) return;
 
       html += `
@@ -1214,6 +1247,10 @@ const App = {
 
     html += `</div>`;
     container.innerHTML = html;
+  },
+
+  devicesForSeriesTable(seriesId, segment) {
+    return this.applyFilters(this.listDevices({ seriesId, segment }));
   },
 
   // 7. 多维筛选工具条 (按处理器架构、在售状态与 Copilot+ PC 精准筛选)
@@ -1326,8 +1363,12 @@ const App = {
   },
 
   // 8. 全局搜索系统 (PRD 第十六章)
+  normalizeSearchText(text) {
+    return String(text || '').toLowerCase().replace(/[®™©]/g, '').replace(/\s+/g, ' ').trim();
+  },
+
   handleGlobalSearch(query) {
-    const term = query.trim().toLowerCase();
+    const term = this.normalizeSearchText(query);
     const resultsContainer = document.getElementById('search-results-modal');
     if (!resultsContainer) return;
 
@@ -1336,13 +1377,15 @@ const App = {
       return;
     }
 
-    const matchedDevices = SURFACE_DATA.devices.filter(d => {
-      const fullText = `${d.name} ${d.nameEn} ${d.generation} ${d.specs.cpuModel} ${d.specs.npuTops} ${d.tagline} ${d.year}`.toLowerCase();
+    const matchedDevices = this.listDevices().filter(d => {
+      const fullText = this.normalizeSearchText(
+        `${d.name} ${d.nameEn} ${d.generation} ${d.specs.cpuModel} ${d.specs.npuTops} ${d.tagline} ${d.year}`
+      );
       return fullText.includes(term);
     });
 
     const matchedChips = SURFACE_DATA.chips.filter(c => {
-      return `${c.name} ${c.vendor} ${c.npuDesc} ${c.highlights}`.toLowerCase().includes(term);
+      return this.normalizeSearchText(`${c.name} ${c.vendor} ${c.npuDesc} ${c.highlights}`).includes(term);
     });
 
     let html = `
@@ -1399,10 +1442,6 @@ const App = {
     if (resultsContainer) resultsContainer.style.display = 'none';
   },
 
-  navigateToDetail(seriesId, deviceId) {
-    this.navigate(`#/surface/${seriesId}/${deviceId}`);
-  },
-
   // 9. 侧栏渲染与高亮状态
   renderSidebar() {
     const sidebar = document.getElementById('hub-sidebar-content');
@@ -1427,7 +1466,7 @@ const App = {
     `;
 
     (SURFACE_DATA.consumerCategories || []).forEach(cat => {
-      const count = SURFACE_DATA.devices.filter(d => d.categoryId === cat.seriesId && d.segment === 'consumer').length;
+      const count = this.listDevices({ seriesId: cat.seriesId, segment: 'consumer' }).length;
       const isActive = this.activeRoute.path === `/consumer/${cat.seriesId}` || 
                        this.activeRoute.path.startsWith(`/consumer/${cat.seriesId}/`) ||
                        this.activeRoute.path === `/surface/${cat.seriesId}`;
@@ -1454,10 +1493,7 @@ const App = {
     `;
 
     (SURFACE_DATA.commercialCategories || []).forEach(cat => {
-      const count = SURFACE_DATA.devices.filter(d => {
-        if (cat.seriesId === 'hub') return (d.categoryId === 'studio' || d.categoryId === 'hub') && d.segment === 'commercial';
-        return d.categoryId === cat.seriesId && d.segment === 'commercial';
-      }).length;
+      const count = this.listDevices({ seriesId: cat.seriesId, segment: 'commercial' }).length;
       const isActive = this.activeRoute.path === `/business/${cat.seriesId}` || 
                        this.activeRoute.path.startsWith(`/business/${cat.seriesId}/`);
       html += `
@@ -1577,13 +1613,17 @@ const App = {
     const btn = document.getElementById('theme-toggle-btn');
     if (btn) {
       btn.innerHTML = this.theme === 'dark' 
-        ? `<svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg> 浅色`
-        : `<svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg> 深色`;
+        ? `<svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg> <span class="btn-label">浅色</span>`
+        : `<svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg> <span class="btn-label">深色</span>`;
     }
   },
 
   renderActiveView() {
     this.dispatchRoute();
+  },
+
+  renderRoute() {
+    this.renderActiveView();
   },
 
   switchDetailColor(deviceId, colorName, imageUrl, btnEl) {
@@ -1626,12 +1666,15 @@ const App = {
     }
   },
 
-  selectAllCategoryDevices(catId) {
+  selectAllCategoryDevices(catId, segment) {
     let devs;
-    if (catId === 'commercial') {
-      devs = SURFACE_DATA.devices.filter(d => d.isCommercial || d.targetAudience === 'commercial');
+    if (catId === 'commercial' || segment === 'commercial') {
+      devs = this.listDevices({
+        seriesId: catId === 'commercial' ? undefined : catId,
+        segment: 'commercial'
+      });
     } else {
-      devs = SURFACE_DATA.devices.filter(d => d.categoryId === catId);
+      devs = this.listDevices({ seriesId: catId, segment: segment || 'consumer' });
     }
     devs.slice(0, ComparisonEngine.maxCompareLimit).forEach(d => {
       if (!ComparisonEngine.selectedIds.includes(d.id)) {
@@ -1678,12 +1721,26 @@ const App = {
     if (dock) {
       if (this.isDockCollapsed) {
         dock.classList.add('collapsed');
-        if (toggleBtn) toggleBtn.innerHTML = '▲ 展开';
+        if (toggleBtn) toggleBtn.innerHTML = '▲';
       } else {
         dock.classList.remove('collapsed');
-        if (toggleBtn) toggleBtn.innerHTML = '▼ 收起';
+        if (toggleBtn) toggleBtn.innerHTML = '▼';
       }
     }
+  },
+
+  // 云端素材中心视图 (#/assets)
+  // 具体渲染与交互由 cloud-ui.js 负责，此处仅作路由转发与降级兜底。
+  renderAssetsView(main) {
+    if (!main) return;
+    if (window.SurfaceCloudUI && typeof window.SurfaceCloudUI.renderAssetsView === 'function') {
+      window.SurfaceCloudUI.renderAssetsView(main);
+      return;
+    }
+    main.innerHTML = `
+      <div class="cloud-empty" style="margin-top:40px;">
+        云端模块未能加载（可能处于离线环境）。请联网后刷新页面再试。
+      </div>`;
   },
 
   scrollToSpecsBottom() {
@@ -1703,7 +1760,29 @@ const App = {
 
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
+    // 1. 立即同步启动应用（零延迟秒开）：使用随包内置的高质量全量基线数据
     App.init();
+
+    // 2. 初始化云端 UI（顶栏账号按钮、素材中心入口等）
+    if (window.SurfaceCloudUI && typeof window.SurfaceCloudUI.init === 'function') {
+      try {
+        window.SurfaceCloudUI.init();
+      } catch (e) {
+        console.warn('[SurfaceCloudUI] 初始化异常:', e);
+      }
+    }
+
+    // 3. 云端数据集后台静默同步：非阻塞，成功则增量刷新界面，失败则完全静默
+    const cloudReady = (window.SurfaceCloud && window.SurfaceCloud.ready) || Promise.resolve();
+    Promise.resolve(cloudReady)
+      .then((sc) => {
+        if (sc && sc.dataSource === 'cloud') {
+          // 云端数据加载成功，原地刷新当前视图与侧边栏
+          App.renderSidebar();
+          App.renderRoute();
+        }
+      })
+      .catch(() => null);
   });
 }
 

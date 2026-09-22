@@ -14,11 +14,13 @@
    - `NOT_DISCLOSED`：官方技术白皮书确未公开，明确标注为 `<span class="spec-state not-disclosed">官方未披露</span>`。
    - `NOT_APPLICABLE`：产品形态物理上不存在该功能，明确标注为 `<span class="spec-state not-applicable">不适用</span>`（如折叠双屏无键盘盖接口、纯笔记本不适用笔震动）。
    - `NULL`：数据缺省，展示为标准缺省符 `—`。
-3. **四级数据源权重阶梯**：
-   - 第一级（权威基石）：微软官方技术白皮书 (Microsoft Learn)、Surface IT Pro 部署指南。
-   - 第二级（官方口径）：微软官方商城产品技术规格页 (microsoftstore.com.cn)。
-   - 第三级（官方认证）：工信部入网许可、3C 认证、FCC 申报白皮书。
+3. **四级数据源权重阶梯（只认大陆国行）**：
+   - 第一级（国行现网）：微软中国官方商城 (`microsoftstore.com.cn`) 规格表、配置页、认证翻新对比表。
+   - 第二级（国行官方口径）：`support.microsoft.com/zh-cn`、`learn.microsoft.com/zh-cn`、微软中国新闻中心。
+   - 第三级（官方认证）：工信部入网许可、3C 认证。FCC / 外区申报不得直接当国行配置。
    - 第四级（工程实测）：权威硬件拆解实测（如 iFixit 电池拆解容量，需显著标注来源）。
+   - **禁止**：美区 / 欧区 / 港台 / 东南亚商城或外区 Support 规格数字写入国行档案。地区配置不同，国行没写的字段必须 `not_disclosed`，不得用外区 SKU、尺寸、重量、电池、分辨率顶上。
+   - Hub 3 会议一体机例外：中国商城无零售规格表时，可用 Learn 英文 tech specs，仍不得套用外区零售 SKU。
 
 ## 后果
 - **优势**：

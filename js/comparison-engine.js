@@ -24,7 +24,7 @@ const ComparisonEngine = {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
           // 校验合法性
-          this.selectedIds = parsed.filter(id => SURFACE_DATA.devices.some(d => d.id === id));
+          this.selectedIds = parsed.filter(id => !!Catalog.getDevice(id));
           if (this.selectedIds.length === 0) {
             this.selectedIds = ['pro-12-13-intel', 'laptop-8-138-intel'];
           }
@@ -103,6 +103,14 @@ const ComparisonEngine = {
     }
   },
 
+  getSessionIds() {
+    return this.selectedIds.slice();
+  },
+
+  renderSpecTable(devicesToCompare) {
+    return this.renderComparisonTable(devicesToCompare);
+  },
+
   clearAll() {
     this.selectedIds = [];
     this.saveToStorage();
@@ -168,7 +176,7 @@ const ComparisonEngine = {
 
     let html = '';
     this.selectedIds.forEach((id, idx) => {
-      const dev = SURFACE_DATA.devices.find(d => d.id === id);
+      const dev = Catalog.getDevice(id);
       if (dev) {
         html += `
           <div class="dock-item-pill">
@@ -316,7 +324,9 @@ const ComparisonEngine = {
         `;
 
         devicesToCompare.forEach(dev => {
-          const rawVal = dev.specs[field.key];
+          const rawVal = (typeof Catalog !== 'undefined' && Catalog.getSpec)
+            ? Catalog.getSpec(dev, field.key)
+            : (dev.specs && dev.specs[field.key]);
           const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
           html += `<td class="spec-val-cell">${formattedVal}</td>`;
         });
@@ -336,7 +346,12 @@ const ComparisonEngine = {
 
   checkFieldDiff(devices, fieldKey) {
     if (!devices || devices.length <= 1) return false;
-    const values = devices.map(d => (d && d.specs && d.specs[fieldKey] !== undefined ? d.specs[fieldKey] : 'null'));
+    const values = devices.map(d => {
+      const raw = (typeof Catalog !== 'undefined' && Catalog.getSpec)
+        ? Catalog.getSpec(d, fieldKey)
+        : (d && d.specs ? d.specs[fieldKey] : undefined);
+      return raw !== undefined ? raw : 'null';
+    });
     const firstVal = JSON.stringify(values[0]);
     for (let i = 1; i < values.length; i++) {
       if (JSON.stringify(values[i]) !== firstVal) {
@@ -348,15 +363,14 @@ const ComparisonEngine = {
 
   // 严格根据 PRD 第九、十章处理字段格式化与未知参数治理 (Zero-Hallucination)
   formatFieldValue(val, type, dev, fieldKey) {
-    if (val === undefined || val === null || val === '' || val === 'null') {
+    if (typeof Catalog !== 'undefined' && Catalog.specState) {
+      const state = Catalog.specState(val);
+      if (state !== 'VALID') return Catalog.presentSpec(val);
+    } else if (val === undefined || val === null || val === '' || val === 'null') {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
-    }
-
-    if (val === 'not_disclosed') {
+    } else if (val === 'not_disclosed') {
       return '<span class="spec-state not-disclosed" title="微软官方白皮书从未对外正式披露">官方未披露</span>';
-    }
-
-    if (val === 'not_applicable') {
+    } else if (val === 'not_applicable') {
       return '<span class="spec-state not-applicable" title="该产品物理形态不具备此属性">不适用</span>';
     }
 

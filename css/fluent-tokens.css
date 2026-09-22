@@ -28,8 +28,13 @@
   /* 微软官方品牌色 (Fluent Accent) */
   --ms-accent: #0078d4;
   --ms-accent-light: #eff6fc;
+  --ms-accent-subtle: #eaf4fc;
   --ms-accent-hover: #106ebe;
   --ms-accent-active: #005a9e;
+
+  /* 语义成功色 (官方商城 CTA 等) */
+  --ms-success: #107c41;
+  --ms-success-hover: #0e6b38;
   
   /* 状态色与差异高亮色 */
   --ms-highlight-diff: rgba(0, 120, 212, 0.08);
@@ -151,8 +156,12 @@
 
   --ms-accent: #2886de;
   --ms-accent-light: #162a3f;
+  --ms-accent-subtle: #152a3e;
   --ms-accent-hover: #479ef5;
   --ms-accent-active: #1562a8;
+
+  --ms-success: #3fa85f;
+  --ms-success-hover: #55bd74;
 
   --ms-highlight-diff: rgba(40, 134, 222, 0.15);
   --ms-highlight-diff-border: rgba(40, 134, 222, 0.45);
