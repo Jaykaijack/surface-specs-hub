@@ -745,7 +745,7 @@ const SURFACE_DATA = {
     "nextGenerationId": null,
     "segment": "commercial"
   },
-  {
+    {
     "id": "pro-12-13",
     "categoryId": "pro",
     "heroImage": "./assets/products/surface-new-pro-hero.png",
@@ -764,7 +764,7 @@ const SURFACE_DATA = {
       "generation": "第 12 代",
       "status": "current_cn",
       "targetAudience": "面向高端个人创作者与数码先锋",
-      "tagline": "搭载高通骁龙 X2 平台与酷睿 Ultra 双架构，双层串联 OLED 触控屏与全套绚丽四色",
+      "tagline": "搭载高通骁龙 X2 平台与酷睿 Ultra 双架构，双层串联 OLED 触控屏与公开三色（亮铂金/典雅黑/沙漫金）",
       "colors": [
         {
           "name": "亮铂金",
@@ -775,11 +775,6 @@ const SURFACE_DATA = {
           "name": "典雅黑",
           "hex": "#262626",
           "image": "./assets/products/surface-pro-13-black.png"
-        },
-        {
-          "name": "宝石蓝",
-          "hex": "#2f4f7f",
-          "image": "./assets/products/surface-pro-13-sapphire.png"
         },
         {
           "name": "沙漫金",
@@ -1164,7 +1159,7 @@ const SURFACE_DATA = {
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-10-for-business",
     "segment": "commercial"
   },
-  {
+    {
     "id": "pro-9",
     "categoryId": "pro",
     "heroImage": "./assets/products/surface-pro-9-hero.png",
@@ -1188,17 +1183,17 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-pro-13-platinum.png"
+          "image": "./assets/products/surface-pro-9-platinum.png"
         },
         {
           "name": "典黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-pro-13-black.png"
+          "image": "./assets/products/surface-pro-9-black.png"
         },
         {
           "name": "宝石蓝",
           "hex": "#2f4f7f",
-          "image": "./assets/products/surface-pro-13-sapphire.png"
+          "image": "./assets/products/surface-pro-9-sapphire.png"
         },
         {
           "name": "森野绿",
@@ -1368,7 +1363,7 @@ const SURFACE_DATA = {
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-8",
     "segment": "consumer"
   },
-  {
+    {
     "id": "pro-7-plus",
     "categoryId": "pro",
     "heroImage": "./assets/products/surface-pro-7-plus-hero.png",
@@ -2608,7 +2603,7 @@ const SURFACE_DATA = {
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-for-business",
     "segment": "commercial"
   },
-  {
+    {
     "id": "laptop-8-138",
     "categoryId": "laptop",
     "heroImage": "./assets/products/surface-new-laptop-hero.png",
@@ -2632,22 +2627,22 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-laptop-platinum.png"
+          "image": "./assets/products/surface-laptop-8-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-laptop-black.png"
+          "image": "./assets/products/surface-laptop-8-black.png"
         },
         {
           "name": "宝石蓝",
           "hex": "#2f4f7f",
-          "image": "./assets/products/surface-laptop-sapphire.png"
+          "image": "./assets/products/surface-laptop-8-sapphire.png"
         },
         {
           "name": "沙漫金",
           "hex": "#d2b48c",
-          "image": "./assets/products/surface-laptop-dune.png"
+          "image": "./assets/products/surface-laptop-8-dune.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化特种铝合金",
@@ -5513,7 +5508,7 @@ const SURFACE_DATA = {
       "batteryCapacityWh": "额定 50 Wh / 最小 48 Wh"
     }
   },
-  {
+    {
     "id": "pro-11-biz-snap",
     "categoryId": "pro",
     "segment": "commercial",
@@ -5542,12 +5537,12 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-13-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-13-black.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化铝合金",
@@ -5614,7 +5609,7 @@ const SURFACE_DATA = {
       "batteryCapacityWh": "LCD 额定 47 Wh / OLED 额定 53 Wh"
     }
   },
-  {
+    {
     "id": "pro-11-biz-intel",
     "categoryId": "pro",
     "segment": "commercial",
@@ -5643,12 +5638,12 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-13-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-13-black.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化铝合金",
@@ -5715,7 +5710,7 @@ const SURFACE_DATA = {
       "batteryCapacityWh": "LCD 额定 47 Wh / OLED 额定 53 Wh"
     }
   },
-  {
+    {
     "id": "laptop-7-biz-snap",
     "categoryId": "laptop",
     "segment": "commercial",
@@ -5744,12 +5739,12 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-new-laptop-hero.png"
+          "image": "./assets/products/surface-laptop-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-new-laptop-hero.png"
+          "image": "./assets/products/surface-laptop-black.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化铝合金",
@@ -5816,7 +5811,7 @@ const SURFACE_DATA = {
       "batteryCapacityWh": "13.8英寸额定54 Wh / 15英寸额定66 Wh"
     }
   },
-  {
+    {
     "id": "laptop-7-biz-intel",
     "categoryId": "laptop",
     "segment": "commercial",
@@ -5845,12 +5840,12 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-new-laptop-hero.png"
+          "image": "./assets/products/surface-laptop-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-new-laptop-hero.png"
+          "image": "./assets/products/surface-laptop-black.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化铝合金",
@@ -6108,11 +6103,11 @@ const SURFACE_DATA = {
       "batteryCapacityWh": "41 Wh"
     }
   },
-  {
+    {
     "id": "pro-9-biz",
     "categoryId": "pro",
     "segment": "commercial",
-    "heroImage": "./assets/products/surface-new-pro-hero.png",
+    "heroImage": "./assets/products/surface-pro-9-hero.png",
     "name": "Surface Pro 9 商用版",
     "nameEn": "Surface Pro 9 for Business",
     "systemSku": "Surface_Pro_9_for_Business_2038",
@@ -6137,12 +6132,12 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-9-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-9-black.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化铝合金",
@@ -6209,11 +6204,11 @@ const SURFACE_DATA = {
       "batteryCapacityWh": "额定 47.7 Wh / 最小 46.5 Wh"
     }
   },
-  {
+    {
     "id": "pro-8-biz",
     "categoryId": "pro",
     "segment": "commercial",
-    "heroImage": "./assets/products/surface-new-pro-hero.png",
+    "heroImage": "./assets/products/surface-pro-8-hero.png",
     "name": "Surface Pro 8 商用版",
     "nameEn": "Surface Pro 8 for Business",
     "systemSku": "Surface_Pro_8_for_Business_1983",
@@ -6238,12 +6233,12 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-13-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-new-pro-hero.png"
+          "image": "./assets/products/surface-pro-13-black.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化铝合金",
@@ -6310,11 +6305,11 @@ const SURFACE_DATA = {
       "batteryCapacityWh": "额定 51.5 Wh / 最小 50.2 Wh"
     }
   },
-  {
+    {
     "id": "laptop-5-biz",
     "categoryId": "laptop",
     "segment": "commercial",
-    "heroImage": "./assets/products/surface-new-laptop-hero.png",
+    "heroImage": "./assets/products/surface-laptop-5-hero.png",
     "name": "Surface Laptop 5 商用版",
     "nameEn": "Surface Laptop 5 for Business",
     "systemSku": "Surface_Laptop_5_for_Business_1950:1951",
@@ -6339,12 +6334,12 @@ const SURFACE_DATA = {
         {
           "name": "亮铂金",
           "hex": "#d8d8d8",
-          "image": "./assets/products/surface-new-laptop-hero.png"
+          "image": "./assets/products/surface-laptop-platinum.png"
         },
         {
           "name": "典雅黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-new-laptop-hero.png"
+          "image": "./assets/products/surface-laptop-black.png"
         }
       ],
       "chassisMaterial": "精工阳极氧化铝合金",

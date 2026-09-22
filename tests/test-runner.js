@@ -11,6 +11,7 @@ const SURFACE_DATA = require('../js/surface-data.js');
 const ComparisonEngine = require('../js/comparison-engine.js');
 const ToolsEngine = require('../js/tools-engine.js');
 const App = require('../js/app.js');
+const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js');
 // 挂载到全局环境供 Node.js 测试执行
 global.SURFACE_DATA = SURFACE_DATA;
 global.ComparisonEngine = ComparisonEngine;
@@ -530,6 +531,8 @@ SURFACE_DATA.devices.forEach(dev => {
   }
 });
 assertEqual(validStoreUrlCount, SURFACE_DATA.devices.length, '全系 43 款产品 100% 具备官方信源超链接');
+
+runImageMappingP0Tests({ assert, assertEqual });
 
 // ----------------------------------------------------
 // 最终汇总
