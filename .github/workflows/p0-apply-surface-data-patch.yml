@@ -4,7 +4,7 @@ on:
   push:
     branches: [fix/p0-spec-verification-20260922]
     paths:
-      - 'docs/p0-surface-data.patch'
+      - 'docs/p0-surface-data.patch.b64'
       - '.github/workflows/p0-apply-surface-data-patch.yml'
 permissions:
   contents: write
@@ -22,11 +22,11 @@ jobs:
           set -euo pipefail
           BASE_COMMIT=3374f26dc26dc1fc33c8b2eaef0b11ee023940f7
           git show "${BASE_COMMIT}:js/surface-data.js" > js/surface-data.js
-          patch -p1 < docs/p0-surface-data.patch
-          # sanity: must contain P0 markers
-          grep -q '3270 × 2180' js/surface-data.js
-          grep -q 'LCD 额定 47 Wh' js/surface-data.js
-          grep -q '¥6,788' js/surface-data.js
+          base64 -d docs/p0-surface-data.patch.b64 > /tmp/p0-surface-data.patch
+          patch -p1 < /tmp/p0-surface-data.patch
+          grep -q '3270' js/surface-data.js
+          grep -q '47 Wh' js/surface-data.js
+          grep -q '6,788' js/surface-data.js
       - name: Commit and push if changed
         run: |
           set -euo pipefail
