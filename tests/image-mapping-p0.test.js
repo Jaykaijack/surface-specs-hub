@@ -177,6 +177,20 @@ function runImageMappingP0Tests(helpers) {
     }
   });
 
+  // ---------- IMG-P0-06b guard: pro-7-plus 不得跨代顶黑 ----------
+  {
+    const device = SURFACE_DATA.devices.find((d) => d.id === 'pro-7-plus');
+    assert(Boolean(device), 'IMG-P0-06b-guard: 收录 pro-7-plus');
+    if (device) {
+      const { black } = dualColorPair(device);
+      const fileName = mappedFileName(black && black.image);
+      assert(
+        fileName !== 'surface-pro-13-black.png' && !fileName.startsWith('surface-pro-13-'),
+        `IMG-P0-06b-guard: pro-7-plus 典雅黑不得绑 Pro13 跨代图 (Actual: ${fileName})`
+      );
+    }
+  }
+
   // ---------- IMG-P0-06b ----------
   FAKE_DUAL_COLOR_IDS.forEach((id) => {
     const device = SURFACE_DATA.devices.find((d) => d.id === id);

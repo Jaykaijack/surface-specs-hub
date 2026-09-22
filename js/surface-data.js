@@ -1389,7 +1389,7 @@ const SURFACE_DATA = {
         {
           "name": "典黑",
           "hex": "#262626",
-          "image": "./assets/products/surface-pro-13-black.png"
+          "image": "./assets/products/surface-pro-7-plus-hero.png"
         }
       ],
       "chassisMaterial": "经典特制镁合金机身",
