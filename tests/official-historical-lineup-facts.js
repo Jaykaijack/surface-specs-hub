@@ -121,7 +121,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "chassisMaterial": "阳极氧化",
             "kickstandType": "165"
-      },
+      ,
+            "cpuArch": ["Oryon","64"],
+            "fastCharging": "60",
+            "chargingPower": "39",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -170,7 +173,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "npuModel": "Hexagon",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "阳极氧化"
-      },
+      ,
+            "cpuArch": ["Oryon","64"],
+            "fastCharging": "60",},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -221,7 +226,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "touchAndPenProtocol": "10",
             "chassisMaterial": "阳极氧化",
             "expandableStorage": "MicroSD"
-      },
+      ,
+            "cpuArch": ["Oryon","4nm"],
+            "fastCharging": "60",
+            "chargingPower": "65",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -241,7 +249,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       wifiMustNotInclude: 'Wi-Fi 7',
       batteryCapacityContains: '58',
       batteryLifeOfficeContains: '19',
-      chargingPowerContains: '102',
+      chargingPowerContains: '95',
       brightnessContains: '500',
       dimensionsContains: '323',
       weightContains: '1890',
@@ -273,7 +281,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Atmos",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "阳极氧化"
-      },
+      ,
+            "cpuArch": ["64","Intel 7"],
+            "chargingPower": "95",
+            "fastCharging": ["95","120"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -289,7 +300,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       wifiMustNotInclude: 'Wi-Fi 7',
       batteryCapacityContains: '58',
       batteryLifeOfficeContains: '18',
-      chargingPowerContains: '102',
+      chargingPowerContains: '95',
       dimensionsContains: '323',
       brightnessContains: '500',
       weightContains: '1980',
@@ -321,7 +332,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Atmos",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "阳极氧化"
-      },
+      ,
+            "cpuArch": ["64","Intel 7"],
+            "chargingPower": "95",
+            "fastCharging": ["95","120"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -366,10 +380,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "10",
                   "MPP"
             ]
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "chargingPower": "交流",},
       specState: {
             "surfaceConnect": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'pro-8-biz': {
@@ -412,7 +430,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "MPP"
             ],
             "chassisMaterial": "氧化铝"
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "fastCharging": "60",},
       specState: {
             "expandableStorage": "NOT_APPLICABLE"
       },
@@ -460,8 +480,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "10",
                   "MPP"
             ],
-            "chassisMaterial": "阳极氧化"
-      },
+            "chassisMaterial": "阳极氧化",
+            "fastCharging": "60",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -511,7 +531,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "MPP"
             ],
             "chassisMaterial": "阳极氧化"
-      },
+      ,
+            "cpuArch": ["64","Intel 7"],
+            "fastCharging": "60",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -558,9 +580,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","10 nm"],
+            "chargingPower": "60",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'pro-7-plus': {
@@ -605,9 +631,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "MPP"
             ],
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "chargingPower": "60",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'go-3-biz': {
@@ -637,8 +667,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
             "microphones": "麦克",
-            "fastCharging": "80"
-      },
+            "fastCharging": "30"
+      ,
+            "cpuArch": ["64","14 nm"],},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -651,7 +682,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       wifiMustNotInclude: 'Wi-Fi 7',
       batteryCapacityContains: '58',
       batteryLifeOfficeContains: '19',
-      chargingPowerContains: '65',
+      chargingPowerContains: '60',
       brightnessState: 'NOT_DISCLOSED',
       dimensionsContains: '323.28',
       weightContains: '1742.9',
@@ -684,7 +715,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "MPP"
             ],
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "chargingPower": "60",
+            "fastCharging": ["60","95"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -719,7 +753,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
             "microphones": "麦克"
-      },
+      ,
+            "cpuArch": ["64","Intel 7"],
+            "fastCharging": "39",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
@@ -768,7 +804,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "npuModel": "AI Boost",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "阳极氧化"
-      },
+      ,
+            "cpuArch": ["64","Intel 4"],
+            "fastCharging": "60",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -819,7 +857,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             ],
             "chassisMaterial": "阳极氧化",
             "kickstandType": "165"
-      },
+      ,
+            "cpuArch": ["64","Intel 4"],
+            "fastCharging": "45",
+            "chargingPower": "39",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -863,7 +904,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Atmos",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","10 nm"],
+            "fastCharging": "120",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -906,7 +949,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Atmos",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","10 nm"],
+            "fastCharging": "80",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -949,9 +994,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],
+            "chargingPower": "39",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'pro-6-biz': {
@@ -990,9 +1039,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],
+            "chargingPower": "39",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'studio-2-plus': {
@@ -1036,10 +1089,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "10",
                   "MPP"
             ]
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "chargingPower": "交流",},
       specState: {
             "surfaceConnect": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'studio-2': {
@@ -1084,11 +1141,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "microphones": "麦克",
             "audioTech": "Audio",
             "touchAndPenProtocol": "10"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "surfaceConnect": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'laptop-5': {
@@ -1136,7 +1196,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "MPP"
             ],
             "chassisMaterial": "阳极氧化"
-      },
+      ,
+            "cpuArch": ["64","Intel 7"],
+            "fastCharging": "60",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -1183,7 +1245,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "MPP"
             ],
             "chassisMaterial": "氧化铝"
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "fastCharging": "60",},
       specState: {
             "expandableStorage": "NOT_APPLICABLE"
       },
@@ -1234,8 +1298,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "10",
                   "MPP"
             ],
-            "chassisMaterial": "阳极氧化"
-      },
+            "chassisMaterial": "阳极氧化",
+            "fastCharging": "60",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -1286,7 +1350,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             ],
             "chassisMaterial": "镁",
             "kickstandType": "165"
-      },
+      ,
+            "cpuArch": ["64","Intel 7"],
+            "fastCharging": "30",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -1332,8 +1398,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "microphones": "麦克",
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
-            "chassisMaterial": "铝"
-      },
+            "chassisMaterial": "铝",
+            "fastCharging": "60",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
@@ -1376,7 +1442,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],
+            "fastCharging": "30",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -1419,7 +1487,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],
+            "fastCharging": "30",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -1463,9 +1533,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "microphones": "麦克",
             "audioTech": "Audio",
             "touchAndPenProtocol": "10"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],
+            "chargingPower": "39",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'pro-x': {
@@ -1507,8 +1581,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "10",
                   "MPP"
             ],
-            "chassisMaterial": "氧化铝"
-      },
+            "chassisMaterial": "氧化铝",
+            "fastCharging": "60",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -1549,7 +1623,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "铝"
-      },
+      ,
+            "cpuArch": ["64","10 nm"],
+            "fastCharging": "39",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
@@ -1584,7 +1660,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
             "microphones": "麦克"
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "fastCharging": "39",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
@@ -1620,7 +1698,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
             "microphones": "麦克"
-      },
+      ,
+            "cpuArch": ["64","Intel 7"],
+            "fastCharging": "39",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
@@ -1666,9 +1746,12 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'pro-4': {
@@ -1713,6 +1796,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'laptop-2': {
@@ -1751,10 +1836,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "铝"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'sls-1': {
@@ -1764,7 +1852,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       batteryCapacityContains: '58',
       batteryLifeOfficeContains: '19',
       batteryLifeVideoState: 'NOT_DISCLOSED',
-      chargingPowerContains: '65',
+      chargingPowerContains: '60',
       brightnessState: 'NOT_DISCLOSED',
       dimensionsContains: '323.28',
       weightContains: '1742.9',
@@ -1801,7 +1889,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
                   "MPP"
             ],
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","SuperFin"],
+            "chargingPower": "60",
+            "fastCharging": ["60","95"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -1836,8 +1927,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
             "microphones": "麦克",
-            "fastCharging": "80"
-      },
+            "fastCharging": "30"
+      ,
+            "cpuArch": ["64","14 nm"],},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -1876,7 +1968,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Atmos",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","10 nm"],
+            "fastCharging": "80",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
@@ -1912,8 +2006,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "headphoneJack": "3.5",
             "surfaceConnect": "Connect",
             "windowsHello": "Hello",
-            "microphones": "麦克"
-      },
+            "microphones": "麦克",
+            "fastCharging": "60",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
@@ -1953,6 +2047,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'pro-2': {
@@ -1994,6 +2090,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'pro-1': {
@@ -2033,6 +2131,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'laptop-1': {
@@ -2077,6 +2177,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'go-1': {
@@ -2116,7 +2218,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "audioTech": "Audio",
             "touchAndPenProtocol": "10",
             "chassisMaterial": "镁"
-      },
+      ,
+            "cpuArch": ["64","14 nm"],
+            "fastCharging": "24",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -2164,6 +2268,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       },
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'duo-1': {
@@ -2202,7 +2308,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "microphones": "麦克",
             "chassisMaterial": "康宁",
             "panelTech": "AMOLED"
-      },
+      ,
+            "cpuArch": ["Kryo","7nm"],},
       specState: {
             "expandableStorage": "NOT_APPLICABLE",
             "thunderboltSupport": "NOT_APPLICABLE",
@@ -2284,12 +2391,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "windowsHello": "Hello",
             "microphones": "麦克",
             "audioTech": "Audio",
-            "touchAndPenProtocol": "10"
-      },
+            "touchAndPenProtocol": "10",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE",
             "surfaceConnect": "NOT_APPLICABLE",
             "kickstandType": "NOT_APPLICABLE"
+,
+            "fastCharging": "NOT_APPLICABLE"
       },
 },
     'hub-2s': {

@@ -687,6 +687,11 @@ assert(!!Catalog.getSpec(aliasLaptop, 'batteryCapacityWh') || !!Catalog.getSpec(
 const composePortsLaptop = Catalog.getDevice('laptop-8-138');
 assert(String(Catalog.getSpec(composePortsLaptop, 'usbPorts') || '').includes('USB-A'),
   'Catalog.getSpec(usbPorts) 必须拼上分栏里的 USB-A，不得只露出 USB-C');
+['laptop-8-138', 'laptop-8-138-intel', 'laptop-8-138-snap', 'laptop-8-150', 'laptop-13-inch-biz', 'laptop-7-biz-snap', 'laptop-7-biz-intel'].forEach((id) => {
+  const ports = String(Catalog.getSpec(Catalog.getDevice(id), 'usbPorts') || '');
+  const usbACount = (ports.match(/USB-A/g) || []).length;
+  assert(usbACount <= 1, id + ' 端口不得把 USB-A 拼两遍（实际: ' + ports + ')');
+});
 
 const commercialPro = Catalog.listDevices({ segment: 'commercial', seriesId: 'pro' });
 const consumerPro = Catalog.listDevices({ segment: 'consumer', seriesId: 'pro' });

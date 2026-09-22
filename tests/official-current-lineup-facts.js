@@ -26,7 +26,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
     cnSurfacePortal: 'https://www.microsoft.com/zh-cn/surface',
     cnPro12Snap: 'https://www.microsoft.com/zh-cn/surface/business/surface-pro-12-inch-snapdragon',
     cnLaptop7Snap: 'https://www.microsoft.com/zh-cn/surface/business/surface-laptop-7th-edition',
-    cnLaptop7Intel: 'https://www.microsoft.com/zh-cn/surface/business/surface-laptop-intel-7th-edition'
+    cnLaptop7Intel: 'https://www.microsoft.com/zh-cn/surface/business/surface-laptop-intel-7th-edition',
+    intelUltra5_335: 'https://www.intel.com/content/www/us/en/products/sku/245727/intel-core-ultra-5-processor-335-8m-cache-up-to-4-70-ghz/specifications.html',
+    intelUltra5_236V: 'https://www.intel.com/content/www/us/en/products/sku/240959/intel-core-ultra-5-processor-236v-8m-cache-up-to-4-70-ghz/specifications.html',
+    qualcommXPlus: 'https://www.qualcomm.com/products/mobile/snapdragon/laptops-and-tablets/snapdragon-x-plus',
+    qualcommX2Elite: 'https://www.qualcomm.com/products/mobile/snapdragon/laptops-and-tablets/snapdragon-x2-elite'
   },
   /**
    * 2026-09-21 现网「正式在售新品」机型。
@@ -111,7 +115,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "Hexagon",
       
             "fastCharging": ["60","65"],
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","ARM64"],
+            "usbPorts": ["USB-C","USB4","DisplayPort"],
+            "thunderboltSupport": "USB4",
+            "chargingPower": "39",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -166,7 +174,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       
             "fastCharging": "45",
             "cpuCores": "8",
-            "panelTech": "LCD",},
+            "panelTech": "LCD",
+            "cpuArch": ["Oryon","64"],
+            "usbPorts": ["USB-C","USB 3.2","DisplayPort"],
+            "chargingPower": ["27","45"],},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -175,7 +186,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       },
       usbMustNotInclude: [
             "USB4",
-            "Thunderbolt",
             "雷电"
       ],
 },
@@ -233,7 +243,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "gpuModel": "图形处理器",
             "npuModel": "AI Boost",
       
-            "fastCharging": ["60","65"],},
+            "fastCharging": ["60","65"],
+            "cpuArch": ["64","18A"],
+            "usbPorts": ["USB-C","Thunderbolt","DisplayPort"],
+            "thunderboltSupport": "Thunderbolt",
+            "chargingPower": "39",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -292,7 +306,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "Hexagon",
       
             "fastCharging": ["60","65"],
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","ARM64"],
+            "usbPorts": ["USB-C","USB4","DisplayPort"],
+            "thunderboltSupport": "USB4",
+            "chargingPower": "39",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -346,7 +364,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "thunderboltSupport": "USB4",
       
             "fastCharging": ["60","65"],
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","ARM64"],
+            "usbPorts": ["USB-C","USB4","USB-A","DisplayPort"],
+            "chargingPower": "39",},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -402,7 +423,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "expandableStorage": "MicroSD",
       
             "fastCharging": ["60","65"],
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","ARM64"],
+            "usbPorts": ["USB-C","USB4","USB-A","MicroSDXC"],
+            "chargingPower": "65",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -454,7 +478,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "fastCharging": "60",
             "cpuCores": "8",
             "ssdRemovable": "可拆"
-      },
+      ,
+            "cpuArch": ["Oryon","64"],
+            "usbPorts": ["USB-C","USB 3.2","USB-A","DisplayPort"],
+            "chargingPower": "45",},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -510,7 +537,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "AI Boost",
             "thunderboltSupport": "Thunderbolt",
       
-            "fastCharging": ["60","65"],},
+            "fastCharging": ["60","65"],
+            "cpuArch": ["64","18A"],
+            "usbPorts": ["USB-C","USB-A","Thunderbolt","DisplayPort"],
+            "chargingPower": "39",},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -563,7 +593,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "thunderboltSupport": "USB4",
       
             "fastCharging": ["60","65"],
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","ARM64"],
+            "usbPorts": ["USB-C","USB4","USB-A","DisplayPort"],
+            "chargingPower": "39",},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -616,7 +649,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "thunderboltSupport": "Thunderbolt",
             "expandableStorage": "MicroSD",
       
-            "fastCharging": ["60","65"],},
+            "fastCharging": ["60","65"],
+            "cpuArch": ["64","18A"],
+            "usbPorts": ["USB-C","USB-A","MicroSDXC","Thunderbolt"],
+            "chargingPower": "65",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -668,7 +704,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "expandableStorage": "MicroSD",
       
             "fastCharging": ["60","65"],
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","ARM64"],
+            "usbPorts": ["USB-C","USB4","USB-A","MicroSDXC"],
+            "chargingPower": "65",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -718,7 +757,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       
             "fastCharging": "45",
             "cpuCores": "8",
-            "panelTech": "LCD",},
+            "panelTech": "LCD",
+            "cpuArch": ["Oryon","64"],
+            "usbPorts": ["USB-C","USB 3.2","DisplayPort"],
+            "chargingPower": "45",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -728,7 +770,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       },
       usbMustNotInclude: [
             "USB4",
-            "Thunderbolt",
             "雷电"
       ],
 },
@@ -776,7 +817,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "fastCharging": "60",
             "cpuCores": "8",
             "ssdRemovable": "可拆"
-      },
+      ,
+            "cpuArch": ["Oryon","64"],
+            "usbPorts": ["USB-C","USB 3.2","USB-A","DisplayPort"],
+            "chargingPower": "45",},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -830,7 +874,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "AI Boost",
             "ssdRemovable": "可拆",
             "fastCharging": "60"
-      },
+      ,
+            "cpuArch": ["64","18A"],
+            "usbPorts": ["USB-C","USB 3.2","USB-A","DisplayPort"],
+            "chargingPower": "45",},
       specState: {
             "kickstandType": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE",
@@ -887,7 +934,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "Hexagon",
       
             "fastCharging": "65",
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","64"],
+            "usbPorts": ["USB-C","USB4","DisplayPort"],
+            "thunderboltSupport": "USB4",
+            "chargingPower": "39",},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -939,7 +990,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "gpuModel": "Arc",
             "npuModel": "AI Boost",
             "thunderboltSupport": "Thunderbolt",
-      },
+      
+            "cpuArch": ["64","N3B"],
+            "usbPorts": ["USB-C","Thunderbolt","DisplayPort"],
+            "chargingPower": "39",
+            "fastCharging": ["60","65"],},
       specState: {
             "headphoneJack": "NOT_APPLICABLE",
             "expandableStorage": "NOT_APPLICABLE"
@@ -993,7 +1048,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "expandableStorage": "MicroSD",
       
             "fastCharging": "65",
-            "cpuCores": ["10","12"],},
+            "cpuCores": ["10","12"],
+            "cpuArch": ["Oryon","64"],
+            "usbPorts": ["USB-C","USB4","USB-A","DisplayPort"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },
@@ -1045,7 +1102,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "thunderboltSupport": "Thunderbolt",
             "expandableStorage": "MicroSD",
       
-            "fastCharging": ["65","60"],},
+            "fastCharging": ["60","65"],
+            "cpuArch": ["64","N3B"],
+            "usbPorts": ["USB-C","Thunderbolt","USB-A","DisplayPort"],},
       specState: {
             "kickstandType": "NOT_APPLICABLE"
       },

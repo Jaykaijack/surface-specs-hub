@@ -66,13 +66,21 @@ const Catalog = (function () {
     return 'VALID';
   }
 
+  function mentions(hay, needles) {
+    const text = String(hay || '');
+    return needles.some((needle) => text.indexOf(needle) !== -1);
+  }
+
   function composePorts(specs) {
     const parts = [];
-    if (!isEmpty(specs.usbC)) parts.push(specs.usbC);
-    else if (!isEmpty(specs.usbCPorts)) parts.push(specs.usbCPorts);
-    if (!isEmpty(specs.usbA) && specs.usbA !== 'not_applicable') parts.push(specs.usbA);
-    else if (!isEmpty(specs.usbAPorts) && specs.usbAPorts !== 'not_applicable') parts.push(specs.usbAPorts);
-    if (!isEmpty(specs.sdSlot) && specs.sdSlot !== 'not_applicable') parts.push(specs.sdSlot);
+    const usbC = !isEmpty(specs.usbC) ? specs.usbC : (!isEmpty(specs.usbCPorts) ? specs.usbCPorts : '');
+    if (usbC) parts.push(usbC);
+    const usbA = (!isEmpty(specs.usbA) && specs.usbA !== 'not_applicable')
+      ? specs.usbA
+      : ((!isEmpty(specs.usbAPorts) && specs.usbAPorts !== 'not_applicable') ? specs.usbAPorts : '');
+    if (usbA && !mentions(usbC, ['USB-A', 'USB A'])) parts.push(usbA);
+    const sdSlot = (!isEmpty(specs.sdSlot) && specs.sdSlot !== 'not_applicable') ? specs.sdSlot : '';
+    if (sdSlot && !mentions(parts.join('；'), ['MicroSD', 'SDXC', 'SD 卡', '读卡器'])) parts.push(sdSlot);
     return parts.length ? parts.join('；') : undefined;
   }
 
