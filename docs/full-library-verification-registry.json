@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-22T09:21:10+08:00",
-  "scope": "full-library 64 devices × 9 fields = 576; A52 VERIFIED closure + POLICY reason enrichment",
+  "generatedAt": "2026-09-22T10:05:00+08:00",
+  "scope": "full-library 64 devices × 9 fields = 576; P0 hotfix 2026-09-22: fake badge removed; pro-12-13 consumer 404 → POLICY_SAFE_PRICE_UNAVAILABLE; canClaimSafe100Percent=false",
   "verdictCounts": {
     "VERIFIED": 437,
     "POLICY_SAFE_NOT_DISCLOSED": 43,
@@ -160,8 +160,8 @@
         "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon",
         "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
       ],
-      "recommendedValueApplied": "Snapdragon X2：80 TOPS；Intel Core Ultra（第 3 代）：50 TOPS（按处理器架构）",
-      "verifiedAt": "2026-09-22T09:21:10+08:00"
+      "recommendedValueApplied": "骁龙 X2：80 TOPS；Intel Core Ultra 第3代：50 TOPS（勿笼统说80）",
+      "verifiedAt": "2026-09-22T10:05:00+08:00"
     },
     {
       "deviceId": "pro-12-13",
@@ -174,16 +174,25 @@
       "field": "startingPriceCny",
       "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
       "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-      "reason": "将字段标记为 price_unavailable，删除/禁讲无仍可达微软中国官方页支持的价格。",
+      "reason": "国行消费专页 https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch 实测 HTTP 404；禁止讲述具体国行消费价。可引导至商用页核对规格/商用价，或以全球页核对。禁止口播 ¥11,988 等无源消费价。",
       "attemptedUrls": [
-        "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
-      ]
+        "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch",
+        "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
+        "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+      ],
+      "verifiedAt": "2026-09-22T10:05:00+08:00"
     },
     {
       "deviceId": "pro-12-13",
       "field": "officialDocUrl",
       "verdict": "VERIFIED",
-      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
+      "evidenceQuote": "消费专页 surface-pro-12th-edition-13-inch 返回 HTTP 404；官方公开可达页改用商用汇总页（HTTP 200）作为 officialDocUrl。",
+      "attemptedUrls": [
+        "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch",
+        "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+      ],
+      "verifiedAt": "2026-09-22T10:05:00+08:00"
     },
     {
       "deviceId": "pro-12-inch",
@@ -231,7 +240,9 @@
       "deviceId": "pro-12-inch",
       "field": "startingPriceCny",
       "verdict": "VERIFIED",
-      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173",
+      "evidenceQuote": "微软中国商城选配页可见起价 ¥6,788；以实时选配页为准（截图若显示 7,888 以库内 6,788 + 实时页 caveat 为准）。",
+      "verifiedAt": "2026-09-22T10:05:00+08:00"
     },
     {
       "deviceId": "pro-12-inch",
