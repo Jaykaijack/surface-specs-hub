@@ -9,7 +9,15 @@ let src = fs.readFileSync(path, 'utf8');
 
 function replaceInDeviceBlock(src, deviceId, replacer) {
   const idNeedle = `"id": "${deviceId}"`;
-  const start = src.indexOf(idNeedle);
+  let start = -1;
+  for (let from = 0; ; ) {
+    const idx = src.indexOf(idNeedle, from);
+    if (idx < 0) break;
+    const after = src[idx + idNeedle.length] || '';
+    // Exact id: next char must not continue the id token (avoid pro-9 matching pro-9-biz)
+    if (!/[A-Za-z0-9_-]/.test(after)) { start = idx; break; }
+    from = idx + idNeedle.length;
+  }
   if (start < 0) throw new Error('device not found: ' + deviceId);
   let objStart = start;
   while (objStart > 0 && src[objStart] !== '{') objStart--;
@@ -36,13 +44,14 @@ function setColorImage(block, colorNames, image) {
   const names = Array.isArray(colorNames) ? colorNames : [colorNames];
   for (const name of names) {
     const esc = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Use String.raw / double-escaped \\s so template literal keeps whitespace class
     const re = new RegExp(
-      `(\{\s*"name"\s*:\s*"${esc}"\s*,\s*"hex"\s*:\s*"[^"]*"\s*,\s*"image"\s*:\s*")[^"]*(")`,
+      '(\\{\\s*"name"\\s*:\\s*"' + esc + '"\\s*,\\s*"hex"\\s*:\\s*"[^"]*"\\s*,\\s*"image"\\s*:\\s*")[^"]*(")',
       'm'
     );
     if (re.test(block)) return block.replace(re, `$1${image}$2`);
     const re2 = new RegExp(
-      `("name"\s*:\s*"${esc}"[\s\S]{0,120}?"image"\s*:\s*")[^"]*(")`,
+      '("name"\\s*:\\s*"' + esc + '"[\\s\\S]{0,120}?"image"\\s*:\\s*")[^"]*(")',
       'm'
     );
     if (re2.test(block)) return block.replace(re2, `$1${image}$2`);
