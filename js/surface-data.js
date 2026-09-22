@@ -3807,10 +3807,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "主板及组件大幅提升可维修性",
       "replaceableParts": "屏幕、支架、电池",
       "warranty": "商用保修",
-      "startingPriceCny": "全新官价待微软中国商城在售页核实；认证翻新页曾见约 ¥3,649 起（禁口播为全新官价）",
+      "startingPriceCny": "中国区全新官价：公开在售页未核到（禁口播全新官价）。美国微软商城公开标价约 $1,649 起（出处：microsoft.com Surface Go 4 for Business；汇率/区域价勿换算口播为国内官价）",
       "sourceReliability": "microsoft_datasheet",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business"
+      "officialDocUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
     },
     "isCommercial": true,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-4",
