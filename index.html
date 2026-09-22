@@ -156,19 +156,13 @@
   <script src="./js/tools-engine.js?v=20260921x"></script>
 
   <!--
-    WorkBuddy 云服务 SDK。
-    优先加载仓库内自托管副本（不依赖外部 CDN，国内网络亦可稳定加载）。
-    若本地副本缺失，再同步回退到 CDN；两者都失败时应用自动回退到内置基线数据，离线可用。
+    可选云端叠层：默认关闭（见 js/cloud-config.js enabled:false / ADR-0001）。
+    仅自托管 vendor 副本；已移除 CDN document.write 回退。核心数据仍走 surface-data.js。
   -->
   <script src="./js/vendor/workbuddy-cloud-sdk.global.js"></script>
-  <script>
-    if (typeof window.WorkBuddyCloud === 'undefined') {
-      document.write('<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js"><\/script>');
-    }
-  </script>
 
   <!-- 云端层：公开配置 -> 云端客户端(数据/账号/素材) -> 云端界面 -->
-  <script src="./js/cloud-config.js?v=20260921x"></script>
+  <script src="./js/cloud-config.js?v=20260922-offline"></script>
   <script src="./js/cloud-client.js?v=20260921x"></script>
   <script src="./js/cloud-ui.js?v=20260921x"></script>
 

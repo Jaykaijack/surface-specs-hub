@@ -163,6 +163,10 @@
     if (!lib || typeof lib.createWorkBuddyCloud !== 'function') return null;
     if (!cfg.endpoint || !cfg.publishableKey) return null;
 
+    var cfgGate = (typeof window !== 'undefined' && window.SURFACE_CLOUD_CONFIG) || {};
+    if (cfgGate.enabled !== true || !cfgGate.endpoint || !cfgGate.publishableKey) {
+      return null;
+    }
     SurfaceCloud.client = lib.createWorkBuddyCloud({
       endpoint: cfg.endpoint,
       publishableKey: cfg.publishableKey

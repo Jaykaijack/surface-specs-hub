@@ -1,21 +1,17 @@
 /**
- * WorkBuddy Cloud Service — 前端公开配置 (publicConfig)
+ * 可选云端叠层配置（默认关闭）
  *
- * 这两个值是云端返回的 publicConfig 中唯一允许进入前端源码的字段：
- *   - endpoint        当前应用发布域的数据面基址，初始化客户端时必传
- *   - publishableKey  标识"是哪个应用"，本身不携带任何权限；
- *                     服务端按发布域的精确 Origin 匹配来鉴权
+ * 对齐 ADR-0001：站点核心是纯静态 SPA，双击 index.html 必须离线可用。
+ * 云端能力仅在显式 enabled=true 且提供 endpoint/publishableKey 时启用；
+ * 默认关闭时不发起任何网络请求，不依赖 WorkBuddy。
  *
- * 请勿在此文件写入任何长期密钥、环境 ID 或服务端凭据。
+ * 请勿在此文件写入长期密钥或服务端凭据。
  */
 
 window.SURFACE_CLOUD_CONFIG = {
-  endpoint: 'https://surface-specs-hub.app.workbuddy.host',
-  publishableKey: 'wbpk_5G7lpzS2MtDdTV2YQYxUj6_Us9a6h1PSzlhwjX1C1JvmrHleOPm4Btj',
-
-  // 云端数据集表（surface_dataset）中的当前版本号，仅用于展示与校验提示
-  datasetVersion: '2026.09.18',
-
-  // 单次允许上传的最大体积（字节），前端拦截，避免无谓的失败请求
+  enabled: false,
+  endpoint: '',
+  publishableKey: '',
+  datasetVersion: '',
   maxUploadBytes: 25 * 1024 * 1024
 };
