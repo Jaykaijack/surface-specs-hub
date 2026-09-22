@@ -714,7 +714,7 @@ const SURFACE_DATA = {
       "surfaceConnect": "配备经典磁吸 Surface Connect 口",
       "wireless": "Wi-Fi 7 (802.11be) + 蓝牙 5.4",
       "cellular": "可选 5G Sub-6 蜂窝网络 (Nano-SIM + 双 eSIM)",
-      "batteryCapacityWh": "LCD 额定 53 Wh / OLED 额定 47 Wh（出处：微软中国商城 Surface Pro 13\" 第12代骁龙商用页规格）",
+      "batteryCapacityWh": "LCD 额定 47 Wh / OLED 额定 53 Wh（出处：microsoft.com Surface Pro for Business 13-inch 12th Edition Snapdragon 规格页）",
       "batteryLifeOffice": "常规办公约 15 小时",
       "batteryLifeVideo": "本地视频播放约 20 小时",
       "chargingPower": "65W 磁吸快充",
