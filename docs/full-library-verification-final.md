@@ -1,64 +1,44 @@
-# SurfaceHub 全库安全 100% 最终复验报告
+# SurfaceHub 全库核验报告（已撤销安全 100% 宣称）
 
-- **时间**：2026-09-22 09:36 CST（Asia/Shanghai）
+- **时间**：2026-09-22 10:05 CST（Asia/Shanghai）
 - **仓库**：Jaykaijack/surface-specs-hub
 - **分支**：`fix/p0-spec-verification-20260922`
 - **PR**：https://github.com/Jaykaijack/surface-specs-hub/pull/1
-- **数据落地 commit**：`7fcf12c52e632035967c4f638e1e37fa3f012c07`（github-actions[bot]：A52 闭合）
-- **基线**：`bf6258a1`（215 自动闭合后 PENDING=52）→ A52 52 条 VERIFIED 落库
 
-## 「安全 100%」定义
+## 结论（强制）
 
-每个 registry 字段已为：
+**`canClaimSafe100Percent` = false**
 
-- `VERIFIED`（有微软官方 `sourceUrl` + 证据），**或**
-- `POLICY_SAFE_NOT_DISCLOSED` / `POLICY_SAFE_NOT_APPLICABLE` / `POLICY_SAFE_PRICE_UNAVAILABLE`（有 `reason`，禁讲/不可披露）
+### 撤销原因
 
-**不是**要求每个字段都有可口播数字。
+1. **假徽章**：`js/app.js` 全量规格表核验列曾写死「✓ 已核验」，不读取 `docs/full-library-verification-registry.json`。用户截图已证实 UI 与官网页/registry 不一致。现已改为读取 `js/verification-status.js`（由 registry 派生）。
+2. **消费价 404 回退**：设备 `pro-12-13`（消费）原消费专页 `https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch` 实测 **HTTP 404**；`startingPriceCny` 必须为 `price_unavailable`（POLICY_SAFE_PRICE_UNAVAILABLE），禁止口播具体国行消费价（含旧值 ¥11,988）。
+3. **NPU 笼统口播风险**：消费汇总行不得笼统说「80 TOPS」；须分列骁龙 80 / Intel 50。
 
-## 门槛与结果
+此前报告中的 `canClaimSafe100Percent = true` **作废**，不得再对外宣称。
 
-| # | 门槛 | 结果 |
-|---|---|---|
-| 1 | registry 条目恰好 64×9 = **576**，无重复/遗漏 | **PASS** |
-| 2 | verdict 仅允许 VERIFIED 或三类 POLICY_SAFE_* | **PASS** |
-| 3 | PENDING=0, MISMATCH=0, UNREVIEWED=0, BAD_URL=0 | **PASS** |
-| 4 | 每个 VERIFIED 有微软官方 sourceUrl（microsoft.com / learn / support / news / microsoftstore.com.cn / cdn-dynmedia 等） | **PASS**（437/437） |
-| 5 | 每个 POLICY_SAFE 有 reason（含 attempted/source URL 时已写入） | **PASS**（139/139） |
-| 6 | 先前 P0+Batch1/2/3 mismatch（抽查 20 条历史记录）旧库值不再出现 | **PASS**（STILL_OLD=0） |
-| 7 | `js/surface-data.js` Node `require` 可加载；registry JSON 可解析 | **PASS** |
-| 8 | 关键地标仍在：laptop-7-biz-snap 触控笔「不支持」；hub-2s 含 85″；go-4 29 Wh；book-1 71.66 Wh；pro-11-biz-intel NPU 40/48 | **PASS** |
+## 本轮 P0 hotfix
 
-## 576 verdict 计数
-
-| verdict | count |
-|---|---:|
-| VERIFIED | **437** |
-| POLICY_SAFE_NOT_DISCLOSED | **43** |
-| POLICY_SAFE_NOT_APPLICABLE | **39** |
-| POLICY_SAFE_PRICE_UNAVAILABLE | **57** |
-| PENDING | **0** |
-| MISMATCH | **0** |
-| UNREVIEWED | **0** |
-| BAD_URL | **0** |
-| **合计** | **576** |
-
-## 文件哈希（落地后）
-
-| 文件 | SHA-256 |
+| 项 | 处理 |
 |---|---|
-| `js/surface-data.js` | `ba24ebb9d0765e2c2e7d41c99427884e1e0e1a092eb48e48f15b2648dd8a7244` |
-| `docs/full-library-verification-registry.json` | `e989ead3e6f603f47ddffdda72ffad2f0351b32a527751b8f7773ba01af4ac58` |
+| 核验列 | `getDeviceVerificationBadge(deviceId)` 读 `VERIFICATION_STATUS.byDeviceId` |
+| pro-12-13 价 | `price_unavailable（消费专页 404…）` + registry POLICY_SAFE_PRICE_UNAVAILABLE |
+| pro-12-13 NPU | `骁龙 X2：80 TOPS；Intel Core Ultra 第3代：50 TOPS（勿笼统说80）` |
+| pro-12-13 officialDocUrl | 改用仍 200 的商用汇总页，并注明消费专页 404 |
+| pro-12-inch 价 | ¥6,788 起 + 实时选配页 caveat（测试断言 7888→6788） |
+| 商用 pro-12-13-snap / intel | ¥15,488 / ¥16,888 保留（与商城 200 页一致） |
 
-## A52 本轮
+## 核验列显示规则
 
-- 输入 52 条全部 VERIFIED（推荐值 + 微软 sourceUrl）
-- JS 字段文本变化 48；值已正确仅补 registry 4
-- 摘要：`docs/ban-A52-verified.md`
-- 增量补丁：`docs/ban-A52-surface-data.patch.b64`（Actions 应用）
+- 9 个关键口播字段全部 `VERIFIED` → **已核验**（绿）
+- 存在 `POLICY_SAFE_*` 且无 `PENDING`/`MISMATCH` → **部分可讲/政策禁讲**（橙）
+- 任一关键字段 `PENDING`/`MISMATCH`/缺 registry → **待核验**（红/橙），禁止显示已核验
 
-## 结论
+## 截图相关机型预期徽章
 
-**`canClaimSafe100Percent` = true**
-
-全库 576 字段均已核验为可讲（VERIFIED）或明确政策安全禁讲（POLICY_SAFE_*）；无 PENDING / MISMATCH / UNREVIEWED / BAD_URL。
+| deviceId | 预期核验列 |
+|---|---|
+| pro-12-13 | 部分可讲/政策禁讲（价 POLICY_SAFE） |
+| pro-12-inch | 已核验 |
+| pro-12-13-intel | 已核验 |
+| pro-12-13-snap | 已核验 |
