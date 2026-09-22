@@ -5,6 +5,7 @@ on:
     branches: [fix/p0-spec-verification-20260922]
     paths:
       - 'docs/p0-surface-data.patch.b64'
+      - 'docs/batch1-surface-data.patch.b64'
       - '.github/workflows/p0-apply-surface-data-patch.yml'
 permissions:
   contents: write
@@ -17,16 +18,24 @@ jobs:
         with:
           ref: fix/p0-spec-verification-20260922
           fetch-depth: 0
-      - name: Restore base then apply P0 patch
+      - name: Restore base then apply P0 + batch1 patches
         run: |
           set -euo pipefail
           BASE_COMMIT=3374f26dc26dc1fc33c8b2eaef0b11ee023940f7
           git show "${BASE_COMMIT}:js/surface-data.js" > js/surface-data.js
           base64 -d docs/p0-surface-data.patch.b64 > /tmp/p0-surface-data.patch
           patch -p1 < /tmp/p0-surface-data.patch
+          if [ -f docs/batch1-surface-data.patch.b64 ]; then
+            base64 -d docs/batch1-surface-data.patch.b64 > /tmp/batch1-surface-data.patch
+            patch -p1 < /tmp/batch1-surface-data.patch
+          fi
           grep -q '3270' js/surface-data.js
           grep -q '47 Wh' js/surface-data.js
           grep -q '6,788' js/surface-data.js
+          grep -q '9,788' js/surface-data.js
+          grep -q '14,488' js/surface-data.js
+          grep -q '40/48 TOPS' js/surface-data.js
+          grep -q 'LCD 额定 53 Wh / OLED 额定 47 Wh' js/surface-data.js
       - name: Commit and push if changed
         run: |
           set -euo pipefail
@@ -37,5 +46,5 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: align P0 Surface specs with Microsoft public sources"
+          git commit -m "fix: align Surface specs (P0 + batch1 MISMATCH) with Microsoft public sources"
           git push origin HEAD:fix/p0-spec-verification-20260922
