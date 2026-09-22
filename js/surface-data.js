@@ -843,10 +843,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 8/10 分 (高可维修性设计)",
       "replaceableParts": "可拆卸 SSD、屏幕模块、电池、主板接口模块",
       "warranty": "2 年有限硬件质保",
-      "startingPriceCny": "¥11,988 起 (消费版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch",
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
       "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch"
     },
     "isCommercial": false,
@@ -951,7 +951,9 @@ const SURFACE_DATA = {
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
       "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173",
-      "officialConfigureUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+      "officialConfigureUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173",
+      "batteryCapacityWh": "额定 38 Wh / 最小 37 Wh",
+      "touchAndPenProtocol": "10 点多点触控；笔兼容性另以官方兼容表为准"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-12-inch",
@@ -1055,7 +1057,7 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 8/10 分",
       "replaceableParts": "SSD、电池、屏幕、主板各接口组件",
       "warranty": "2 年有限保修",
-      "startingPriceCny": "8,688 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoftstore.com.cn/surface/surface-pro）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro",
@@ -1104,7 +1106,7 @@ const SURFACE_DATA = {
       "cpuCores": "12 核心 14 线程 (最高 4.9 GHz)",
       "gpuModel": "Intel® Graphics (4 个 Xe 核心)",
       "npuModel": "Intel® AI Boost NPU",
-      "npuTops": "11.5 TOPS",
+      "npuTops": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf）",
       "copilotPlus": "否 (支持基础 Windows Copilot 侧栏)",
       "ramSpec": "8GB / 16GB / 32GB / 64GB LPDDR5x",
       "storageOptions": "256GB / 512GB / 1TB PCIe Gen 4",
@@ -1152,10 +1154,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "高易修性商用架构 (主板有维修 QR 码)",
       "replaceableParts": "SSD、主板、支架、屏幕、电池、支架铰链",
       "warranty": "商业客户专属有限保修",
-      "startingPriceCny": "9,888 起 (商用)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf）",
       "sourceReliability": "microsoft_datasheet",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-10-for-business"
+      "officialDocUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
     },
     "isCommercial": true,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-10-for-business",
@@ -1211,7 +1213,7 @@ const SURFACE_DATA = {
       "cpuCores": "10 核 12 线程 (Intel) / 8 核 (SQ3)",
       "gpuModel": "Intel Iris® Xe / SQ3 Adreno 8cx Gen 3",
       "npuModel": "SQ3 版集成专用 NPU / Intel 版无",
-      "npuTops": "约 15 TOPS (SQ3 5G版)",
+      "npuTops": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs）",
       "copilotPlus": "否",
       "ramSpec": "8GB / 16GB / 32GB LPDDR5",
       "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
@@ -1259,10 +1261,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 7/10 分",
       "replaceableParts": "SSD、电池、屏幕",
       "warranty": "2 年有限硬件质保",
-      "startingPriceCny": "7,788 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-9-%E7%89%B9%E6%80%A7-8ef2c67d-086e-44d4-a311-6c17242e2a39"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-9",
@@ -1356,10 +1358,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "可拆卸 SSD",
       "replaceableParts": "SSD 模块",
       "warranty": "2 年有限保修",
-      "startingPriceCny": "8,088 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-8-%E7%89%B9%E6%80%A7-3310034a-953e-4680-a75d-35aa7d53b9a0"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-8",
@@ -1416,7 +1418,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2736 × 1824",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs）",
       "brightness": "典型 400 nits",
       "colorSupport": "sRGB 标准色彩",
       "touchAndPenProtocol": "10 点触控，Surface 触控笔 (4096级压感)",
@@ -1453,10 +1455,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "背面独立更换 SSD",
       "replaceableParts": "SSD 固态硬盘",
       "warranty": "商用保修",
-      "startingPriceCny": "6,588 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-7-plus-%E7%89%B9%E6%80%A7-cf3e8e19-dc13-43ef-b328-98e9196b27e8"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
     },
     "isCommercial": true,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-7-plus",
@@ -1513,7 +1515,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2736 × 1824",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features）",
       "brightness": "典型 400 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "4096 级压感手写",
@@ -1530,7 +1532,7 @@ const SURFACE_DATA = {
       "surfaceConnect": "配备 Surface Connect",
       "wireless": "Wi-Fi 6 + 蓝牙 5.0",
       "cellular": "not_applicable",
-      "batteryCapacityWh": "43.2 Wh",
+      "batteryCapacityWh": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mscle/documents/legal/legal-compliance-and-ethics/Microsoft_Lithium_Ion_PDS_1July2025C.pdf）",
       "batteryLifeOffice": "长达 10.5 小时日常使用",
       "batteryLifeVideo": "长达 10.5 小时",
       "chargingPower": "65W 快充 (1小时充80%)",
@@ -1550,10 +1552,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 1/10 分 (胶水贴合)",
       "replaceableParts": "not_disclosed",
       "warranty": "2 年有限质保",
-      "startingPriceCny": "5,788 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-7-%E7%89%B9%E6%80%A7-82547b74-4b47-4977-8495-2a1e8093d562"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-7",
@@ -1610,7 +1612,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2736 × 1824",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features）",
       "brightness": "典型 400 nits",
       "colorSupport": "sRGB 色彩还原",
       "touchAndPenProtocol": "MPP 触控笔与 Surface Dial 屏幕交互",
@@ -1647,10 +1649,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "不可自修拆机",
       "replaceableParts": "not_disclosed",
       "warranty": "2 年质保",
-      "startingPriceCny": "7,188 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-6-%E7%89%B9%E6%80%A7-336c1e57-a363-4416-a197-0f8c37d40362"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-6",
@@ -1702,7 +1704,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2736 × 1824",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features）",
       "brightness": "典型 400 nits",
       "colorSupport": "sRGB 模式",
       "touchAndPenProtocol": "首次支持 4096 级压感与倾斜书写 (Tilt)",
@@ -1739,10 +1741,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "不可拆修",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "5,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-5th-gen-%E7%89%B9%E6%80%A7-42d321e4-52d3-d059-4705-59540a43fa7b"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-5th-gen",
@@ -1794,7 +1796,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2736 × 1824",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features）",
       "brightness": "典型 380 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "1024 级压感触控笔，顶部带实体橡皮擦",
@@ -1831,10 +1833,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "不可拆解",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "6,688 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-4-%E7%89%B9%E6%80%A7-e3a8ac71-42ec-70e6-8c9a-b684531644ec"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-4",
@@ -1886,7 +1888,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2160 × 1440",
       "ppi": "216 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features）",
       "brightness": "典型 350 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "256 级压感 N-Trig 阳极氧化铝手写笔",
@@ -1923,10 +1925,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "不可拆解 (胶水贴合)",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "5,688 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-3-%E7%89%B9%E6%80%A7-4c142a78-297e-4074-b778-d5d55280b5be"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-3",
@@ -1978,7 +1980,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "1920 × 1080",
       "ppi": "208 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features）",
       "brightness": "典型 360 nits",
       "colorSupport": "标准色域",
       "touchAndPenProtocol": "Wacom EMR 1024 级无源电磁手写笔 (免装电池)",
@@ -2015,10 +2017,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 1/10 分",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "6,588 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-2-%E7%89%B9%E6%80%A7-52643a6d-55e1-0d3a-e0b4-325d7efd4c4d"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-2",
@@ -2069,7 +2071,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "1920 × 1080",
       "ppi": "208 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications）",
       "brightness": "典型 350 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "Wacom 压感电磁笔 (支持手掌误触抑制)",
@@ -2106,10 +2108,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "不可自修",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "6,588 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-1st-gen-%E7%89%B9%E6%80%A7-7d8816c1-a832-4752-bfbc-87c2f6d0f622"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-1st-gen",
@@ -2154,7 +2156,7 @@ const SURFACE_DATA = {
       "cpuCores": "8 核心 Kryo 495 (最高 3.15 GHz)",
       "gpuModel": "Adreno 685 / Adreno 690",
       "npuModel": "早代高通 AI 引擎",
-      "npuTops": "约 9 TOPS",
+      "npuTops": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs）",
       "copilotPlus": "否",
       "ramSpec": "8GB / 16GB LPDDR4x",
       "storageOptions": "128GB / 256GB / 512GB 可拆卸 NVMe SSD",
@@ -2165,7 +2167,7 @@ const SURFACE_DATA = {
       "panelTech": "超薄 LCD",
       "resolution": "2880 × 1920",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs）",
       "brightness": "典型 450 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "首创 Slim Pen 细扁笔与无线笔槽补电",
@@ -2202,10 +2204,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "可拆卸 SSD",
       "replaceableParts": "SSD 模块",
       "warranty": "已过质保期",
-      "startingPriceCny": "9,988 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-pro-x-%E7%89%B9%E6%80%A7-5eb0dfb6-b4b3-461b-99d0-65e1866380c2"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-x",
@@ -2303,7 +2305,9 @@ const SURFACE_DATA = {
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-configurate"
+      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-configurate",
+      "batteryCapacityWh": "额定 54 Wh / 最小 52 Wh",
+      "touchAndPenProtocol": "10 点触控；不支持触控笔输入"
     },
     "isCommercial": true,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-for-business",
@@ -2401,7 +2405,9 @@ const SURFACE_DATA = {
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon-configurate"
+      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon-configurate",
+      "batteryCapacityWh": "额定 54 Wh / 最小 52 Wh",
+      "touchAndPenProtocol": "10 点触控；不支持触控笔输入"
     },
     "isCommercial": true,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-for-business",
@@ -2494,7 +2500,7 @@ const SURFACE_DATA = {
       "repairabilityScore": "可拆卸 SSD 与易维护内部架构",
       "replaceableParts": "SSD、电池、键盘、主板接口",
       "warranty": "2 年有限保修",
-      "startingPriceCny": "¥18,888 起 (商用)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
@@ -2591,7 +2597,7 @@ const SURFACE_DATA = {
       "repairabilityScore": "可拆卸 SSD 与易维护内部架构",
       "replaceableParts": "SSD、电池、键盘、主板接口",
       "warranty": "2 年有限保修",
-      "startingPriceCny": "¥16,888 起 (商用)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
@@ -2700,11 +2706,13 @@ const SURFACE_DATA = {
       "repairabilityScore": "高可维修性设计 (螺丝脚垫快拆)",
       "replaceableParts": "SSD 硬盘、键盘总成、电池、主板接口",
       "warranty": "2 年有限硬件质保",
-      "startingPriceCny": "¥9,488 起 (消费版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition",
-      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition"
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
+      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition",
+      "batteryCapacityWh": "额定 54 Wh / 最小 52 Wh",
+      "touchAndPenProtocol": "10 点触控；不支持触控笔输入"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-7th-edition",
@@ -2796,11 +2804,13 @@ const SURFACE_DATA = {
       "repairabilityScore": "高可维修性设计",
       "replaceableParts": "SSD 硬盘、键盘总成、电池、主板接口",
       "warranty": "2 年有限硬件质保",
-      "startingPriceCny": "¥11,988 起 (消费版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-18",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition",
-      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition"
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
+      "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition",
+      "batteryCapacityWh": "额定 66 Wh / 最小 63 Wh",
+      "touchAndPenProtocol": "10 点触控；不支持触控笔输入"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-7th-edition",
@@ -2904,7 +2914,7 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 8/10 分",
       "replaceableParts": "SSD、键盘盖组件、电池",
       "warranty": "2 年有限质保",
-      "startingPriceCny": "8,688 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoftstore.com.cn/surface/surface-laptop）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
@@ -2952,7 +2962,7 @@ const SURFACE_DATA = {
       "cpuCores": "16 核心 22 线程 (最高 5.0 GHz)",
       "gpuModel": "Intel® Arc™ 锐炫显卡 (8 Xe 核心)",
       "npuModel": "Intel AI Boost NPU",
-      "npuTops": "11.5 TOPS",
+      "npuTops": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf）",
       "copilotPlus": "否",
       "ramSpec": "8GB / 16GB / 32GB / 64GB LPDDR5x",
       "storageOptions": "256GB / 512GB / 1TB SSD",
@@ -2963,7 +2973,7 @@ const SURFACE_DATA = {
       "panelTech": "防眩光抗反射涂层 LCD",
       "resolution": "2256 × 1504 (13.5\") / 2496 × 1664 (15\")",
       "ppi": "201 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf）",
       "brightness": "典型 400 nits",
       "colorSupport": "sRGB / 杜比视界",
       "touchAndPenProtocol": "10 点触控，支持手写笔",
@@ -3000,10 +3010,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "高可拆修性商用架构",
       "replaceableParts": "SSD、键盘、主板、电池",
       "warranty": "商用专业质保",
-      "startingPriceCny": "9,988 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf）",
       "sourceReliability": "microsoft_datasheet",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-6-for-business"
+      "officialDocUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
     },
     "isCommercial": true,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-6-for-business",
@@ -3070,7 +3080,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2256 × 1504 (13.5\") / 2496 × 1664 (15\")",
       "ppi": "201 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features）",
       "brightness": "典型 400 nits",
       "colorSupport": "sRGB / 杜比视界 IQ",
       "touchAndPenProtocol": "10 点触控，支持手写笔",
@@ -3107,10 +3117,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "可更换 SSD",
       "replaceableParts": "SSD 模块",
       "warranty": "2 年有限质保",
-      "startingPriceCny": "7,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-5-%E7%89%B9%E6%80%A7-5509a24a-f3c5-4309-8d5c-f4893708e1e7"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-5",
@@ -3177,7 +3187,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2256 × 1504 (13.5\") / 2496 × 1664 (15\")",
       "ppi": "201 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx）",
       "brightness": "典型 380 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "10 点触控，支持触控笔",
@@ -3214,10 +3224,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "可更换 SSD",
       "replaceableParts": "SSD 模块",
       "warranty": "已过质保期",
-      "startingPriceCny": "7,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-4-%E7%89%B9%E6%80%A7-9759c99d-1510-4ff6-a79a-e1a90c010b98"
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-4",
@@ -3284,7 +3294,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2256 × 1504 (13.5\") / 2496 × 1664 (15\")",
       "ppi": "201 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features）",
       "brightness": "典型 380 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "10 点触控，支持手写笔",
@@ -3321,10 +3331,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "键盘掌托顶盖四颗螺丝即可开启维修内部",
       "replaceableParts": "SSD 模块、键盘掌托组件",
       "warranty": "已过质保期",
-      "startingPriceCny": "7,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-3-%E7%89%B9%E6%80%A7-96a237f3-2391-4c62-8e7c-a4962c5b3648"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-3",
@@ -3391,7 +3401,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2256 × 1504",
       "ppi": "201 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features）",
       "brightness": "典型 360 nits",
       "colorSupport": "sRGB 模式",
       "touchAndPenProtocol": "10 点触控，支持触控笔",
@@ -3428,10 +3438,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "织物胶合不可无损拆解",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "7,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-2-%E7%89%B9%E6%80%A7-70e28f11-09d2-4cf0-9d04-0ee0d17d590e"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-2",
@@ -3497,7 +3507,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "2256 × 1504",
       "ppi": "201 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features）",
       "brightness": "典型 350 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "10 点触控，支持 Surface 触控笔",
@@ -3534,10 +3544,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "不可自拆维修",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "7,688 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-1st-gen-%E7%89%B9%E6%80%A7-fa6d7e2e-8a07-4f67-8898-75d3be9e3b4a"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-1st-gen",
@@ -3577,7 +3587,7 @@ const SURFACE_DATA = {
       "cpuCores": "14 核心 20 线程 (最高 5.0 GHz)",
       "gpuModel": "NVIDIA® GeForce RTX™ 4050 / RTX™ 4060 (80W TGP)",
       "npuModel": "Intel® Movidius™ 3700VC VPU (独立辅助芯片)",
-      "npuTops": "约 10 TOPS (Windows Studio 特效专用)",
+      "npuTops": "not_applicable",
       "copilotPlus": "否",
       "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
       "storageOptions": "512GB / 1TB / 2TB Gen 4 NVMe SSD",
@@ -3625,10 +3635,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 8/10 分",
       "replaceableParts": "SSD、电池、屏幕总成、主板端口",
       "warranty": "2 年有限硬件质保",
-      "startingPriceCny": "19,588 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-studio-2"
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-studio-2",
@@ -3716,10 +3726,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "可更换 SSD",
       "replaceableParts": "SSD 模块",
       "warranty": "已过质保期",
-      "startingPriceCny": "12,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-studio-%E7%89%B9%E6%80%A7-10f5407a-2415-4122-b5e1-5e888636a0d0"
+      "officialDocUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-studio",
@@ -3807,7 +3817,7 @@ const SURFACE_DATA = {
       "repairabilityScore": "主板及组件大幅提升可维修性",
       "replaceableParts": "屏幕、支架、电池",
       "warranty": "商用保修",
-      "startingPriceCny": "中国区全新官价：公开在售页未核到（禁口播全新官价）。美国微软商城公开标价约 $1,649 起（出处：microsoft.com Surface Go 4 for Business；汇率/区域价勿换算口播为国内官价）",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77）",
       "sourceReliability": "microsoft_datasheet",
       "lastVerified": "2026-09-16",
       "officialDocUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
@@ -3867,7 +3877,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD",
       "resolution": "1920 × 1280",
       "ppi": "220 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf）",
       "brightness": "典型 350 nits",
       "colorSupport": "sRGB",
       "touchAndPenProtocol": "4096 级压感手写",
@@ -3904,10 +3914,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "不可自拆",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "2,988 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf）",
       "sourceReliability": "microsoft_support",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-go-3-%E7%89%B9%E6%80%A7-2bb3e721-a477-49e0-8a71-3312e75e921c"
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-3",
@@ -4010,10 +4020,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "可更换 SSD",
       "replaceableParts": "SSD 模块",
       "warranty": "2 年有限质保",
-      "startingPriceCny": "全新官价待微软中国商城在售页核实；认证翻新页曾见约 ¥7,129 起（禁口播为全新官价）",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-go-3-for-business"
+      "officialDocUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-go-3",
@@ -4063,7 +4073,7 @@ const SURFACE_DATA = {
       "panelTech": "DCI-P3 广色域专业显示器",
       "resolution": "4500 × 3000 (1350 万像素, 1:1 物理比例)",
       "ppi": "192 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-2-features）",
       "brightness": "典型 500 nits",
       "colorSupport": "sRGB / DCI-P3 / Vivid 多重色彩模式，杜比视界",
       "touchAndPenProtocol": "10 点触控，支持手写笔与 Surface Dial 屏上旋钮",
@@ -4080,7 +4090,7 @@ const SURFACE_DATA = {
       "surfaceConnect": "not_applicable (标准 AC 交流电输入)",
       "wireless": "Wi-Fi 6 + 蓝牙 5.1",
       "cellular": "not_applicable",
-      "batteryCapacityWh": "not_applicable (交流电直供)",
+      "batteryCapacityWh": "not_applicable",
       "batteryLifeOffice": "not_applicable (台式一体机插电运行)",
       "batteryLifeVideo": "not_applicable",
       "chargingPower": "内置 450W 全电压自动切换电源",
@@ -4100,10 +4110,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "底座组件模块化",
       "replaceableParts": "SSD、底座风扇、电源模块",
       "warranty": "2 年有限保修",
-      "startingPriceCny": "35,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-2-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-studio-2-plus"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-studio-2-plus",
@@ -4148,7 +4158,7 @@ const SURFACE_DATA = {
       "cpuCores": "8 核心 (最高 2.84 GHz)",
       "gpuModel": "Adreno 660 GPU",
       "npuModel": "Qualcomm 6th Gen AI Engine",
-      "npuTops": "26 TOPS",
+      "npuTops": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf）",
       "copilotPlus": "否",
       "ramSpec": "8GB LPDDR5",
       "storageOptions": "128GB / 256GB / 512GB UFS 3.1",
@@ -4196,10 +4206,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "精密粘合不可自修",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "11,988 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-duo-2-%E7%89%B9%E6%80%A7-ca177d6e-8ff5-4e3f-b0f3-8bdf4973347c"
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-duo-2",
@@ -4249,7 +4259,7 @@ const SURFACE_DATA = {
       "panelTech": "高精触控 LCD 显示面板",
       "resolution": "3240 × 2160",
       "ppi": "260 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features）",
       "brightness": "典型 400 nits",
       "colorSupport": "100% sRGB / 增强色彩模式",
       "touchAndPenProtocol": "10 点触控，支持 Surface 触控笔与 Surface Dial 屏上交互",
@@ -4286,10 +4296,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 1/10 (精密胶粘高度集成)",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "18,288 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-3-%E7%89%B9%E6%80%A7-e78950d8-3015-4740-97eb-88ff23a7892a"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-3",
@@ -4339,7 +4349,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD 高精度触控屏",
       "resolution": "3000 × 2000",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features）",
       "brightness": "典型 400 nits",
       "colorSupport": "100% sRGB",
       "touchAndPenProtocol": "10 点触控，支持 MPP 协议手写笔",
@@ -4376,10 +4386,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 1/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "12,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-3-%E7%89%B9%E6%80%A7-e78950d8-3015-4740-97eb-88ff23a7892a"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-3",
@@ -4429,7 +4439,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD 触控屏",
       "resolution": "3240 × 2160",
       "ppi": "260 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features）",
       "brightness": "典型 400 nits",
       "colorSupport": "100% sRGB",
       "touchAndPenProtocol": "10 点触控，支持 Surface Pen 4096 级压感",
@@ -4466,10 +4476,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 1/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "19,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-2-%E7%89%B9%E6%80%A7-e7608730-80d4-4545-a4e6-7b4430e7039f"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-2",
@@ -4519,7 +4529,7 @@ const SURFACE_DATA = {
       "panelTech": "LCD 光学触控贴合屏",
       "resolution": "3000 × 2000",
       "ppi": "267 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features）",
       "brightness": "典型 380 nits",
       "colorSupport": "100% sRGB",
       "touchAndPenProtocol": "10 点触控，配备初代磁吸 Surface Pen (1024级压感)",
@@ -4556,10 +4566,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 1/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "11,088 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-book-%E7%89%B9%E6%80%A7-b1a7d6e7-1335-e51a-4676-e9185a691234"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-1",
@@ -4609,7 +4619,7 @@ const SURFACE_DATA = {
       "panelTech": "康宁大猩猩玻璃 3 LCD",
       "resolution": "1920 × 1280",
       "ppi": "220 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features）",
       "brightness": "典型 350 nits",
       "colorSupport": "100% sRGB",
       "touchAndPenProtocol": "10 点触控，支持 Surface 触控笔 4096 级压感",
@@ -4646,10 +4656,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 3/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "2,988 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-go-2-%E7%89%B9%E6%80%A7-b4d45be0-80a5-48b4-82ab-251f7bb9ca25"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-2",
@@ -4699,7 +4709,7 @@ const SURFACE_DATA = {
       "panelTech": "康宁大猩猩玻璃 3 LCD",
       "resolution": "1800 × 1200",
       "ppi": "217 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features）",
       "brightness": "典型 350 nits",
       "colorSupport": "100% sRGB",
       "touchAndPenProtocol": "10 点触控，支持 Surface Pen 4096 级压感",
@@ -4736,10 +4746,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 1/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "2,988 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-go-%E7%89%B9%E6%80%A7-7bb2135f-1415-4672-8822-1d743a6c50ec"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-1st-gen",
@@ -4804,10 +4814,10 @@ const SURFACE_DATA = {
       "panelTech": "LCD 触控屏",
       "resolution": "1536 × 1024",
       "ppi": "148 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf）",
       "brightness": "典型 330 nits",
       "colorSupport": "sRGB 色域",
-      "touchAndPenProtocol": "10 点触控 (不支持手写笔)",
+      "touchAndPenProtocol": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf）",
       "frontCamera": "720p HD 全清视频前置镜头",
       "windowsHello": "电源键集成指纹识别 (4GB 基础版无指纹)",
       "rearCamera": "not_applicable",
@@ -4841,10 +4851,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "官方提供更换备件指南",
       "replaceableParts": "SSD、键盘 C 面、脚垫",
       "warranty": "已过质保期",
-      "startingPriceCny": "5,188 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-go-2-%E7%89%B9%E6%80%A7-79b8a531-4e78-4eb1-995b-06f15dd64372"
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-go-2",
@@ -4904,10 +4914,10 @@ const SURFACE_DATA = {
       "panelTech": "LCD 触控屏",
       "resolution": "1536 × 1024",
       "ppi": "148 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features）",
       "brightness": "典型 300 nits",
       "colorSupport": "sRGB 色域",
-      "touchAndPenProtocol": "10 点触控 (不支持手写笔)",
+      "touchAndPenProtocol": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features）",
       "frontCamera": "720p HD 高清前置摄像头",
       "windowsHello": "电源键集成指纹识别 (基础版无)",
       "rearCamera": "not_applicable",
@@ -4941,10 +4951,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 3/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "4,388 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-laptop-go-%E7%89%B9%E6%80%A7-e7e00a9a-3d23-455b-80df-8d0092f69477"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-laptop-go-1st-gen",
@@ -4994,7 +5004,7 @@ const SURFACE_DATA = {
       "panelTech": "真实比例 13.5 亿色超薄 IPS 显示屏",
       "resolution": "4500 × 3000 (1350 万像素)",
       "ppi": "192 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs）",
       "brightness": "典型 500 nits",
       "colorSupport": "sRGB、DCI-P3 与 Vivid 三重专业色彩模式",
       "touchAndPenProtocol": "10 点触控，支持 Surface 触控笔 (4096级压感) 与 Surface Dial",
@@ -5031,10 +5041,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 5/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "29,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-studio-2-%E7%89%B9%E6%80%A7-f0b12bc1-0268-4505-ba38-e6d7a46977ef"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-studio-2",
@@ -5084,7 +5094,7 @@ const SURFACE_DATA = {
       "panelTech": "真实比例超薄触控 IPS 面板",
       "resolution": "4500 × 3000 (1350 万像素)",
       "ppi": "192 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs）",
       "brightness": "典型 450 nits",
       "colorSupport": "Adobe sRGB 与 DCI-P3 广色域快速切换",
       "touchAndPenProtocol": "10 点触控，配备 Surface Pen 与 Surface Dial 屏上直接拾色器",
@@ -5121,10 +5131,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 5/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "25,888 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-studio-1st-gen-%E7%89%B9%E6%80%A7-ea762a42-5f65-4f48-a006-03706037f405"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-studio-1",
@@ -5174,7 +5184,7 @@ const SURFACE_DATA = {
       "panelTech": "IPS 触控防眩光显示面板",
       "resolution": "50 英寸 3840 × 2560 (3:2)；85 英寸 3840 × 2160 (16:9)。出处：https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs 与 https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-85",
       "ppi": "95 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs）",
       "brightness": "典型 400 nits",
       "colorSupport": "100% sRGB 色域",
       "touchAndPenProtocol": "原生多点触控与支持双笔同步书写 (Surface Hub 2 Pen)",
@@ -5191,7 +5201,7 @@ const SURFACE_DATA = {
       "surfaceConnect": "not_applicable",
       "wireless": "Wi-Fi 5 + 蓝牙 4.1 + Miracast 无线投屏",
       "cellular": "not_applicable",
-      "batteryCapacityWh": "支持可选搭载 APC 移动电池续航约 2 小时",
+      "batteryCapacityWh": "not_applicable",
       "batteryLifeOffice": "市电直供 (可选移动电池包)",
       "batteryLifeVideo": "not_applicable",
       "chargingPower": "AC 100V ~ 240V 全球宽幅输入",
@@ -5211,10 +5221,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "模块化卡带升级架构 (Cartridge 可抽拉更换)",
       "replaceableParts": "Compute Cartridge 核心计算核心板、摄像头、扬声器",
       "warranty": "已过质保期",
-      "startingPriceCny": "72,088 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://www.microsoft.com/zh-cn/surface/business/surface-hub-2"
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
     },
     "isCommercial": true,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s",
@@ -5253,7 +5263,7 @@ const SURFACE_DATA = {
       "cpuCores": "8 核心 (最高 2.84 GHz)",
       "gpuModel": "Adreno 640 GPU",
       "npuModel": "Qualcomm 4th Gen AI Engine",
-      "npuTops": "7 TOPS",
+      "npuTops": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs）",
       "copilotPlus": "否",
       "ramSpec": "6GB LPDDR4x",
       "storageOptions": "128GB / 256GB UFS 3.0",
@@ -5264,7 +5274,7 @@ const SURFACE_DATA = {
       "panelTech": "双 AMOLED 柔性基底硬屏",
       "resolution": "展开 2700 × 1800",
       "ppi": "401 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs）",
       "brightness": "峰值 600 nits",
       "colorSupport": "100% sRGB / 100% DCI-P3",
       "touchAndPenProtocol": "支持 Surface Slim Pen 手写笔双屏批注",
@@ -5301,10 +5311,10 @@ const SURFACE_DATA = {
       "repairabilityScore": "iFixit 2/10",
       "replaceableParts": "not_disclosed",
       "warranty": "已过质保期",
-      "startingPriceCny": "9,988 起",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs）",
       "sourceReliability": "microsoft_official",
       "lastVerified": "2026-09-16",
-      "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-duo-%E7%89%B9%E6%80%A7-6f1c4e7c-b3e3-4f96-857c-87d2dfb944ef"
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
     },
     "isCommercial": false,
     "learnDocUrl": "https://learn.microsoft.com/en-us/surface/surface-duo-1",
@@ -5400,9 +5410,10 @@ const SURFACE_DATA = {
       "warranty": "2 年微软官方商业保修",
       "startingPriceCny": "¥9,788 起（商用版，以商用汇总/实时页为准；出处：https://www.microsoftstore.com.cn/commercial）",
       "sourceReliability": "MSFT-surface-pro-12-inch-snapdragon-techspecs-factsheet.pdf",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "额定 38 Wh / 最小 37 Wh"
     }
   },
   {
@@ -5459,7 +5470,7 @@ const SURFACE_DATA = {
       "refreshRate": "60Hz",
       "brightness": "400 nits (典型值)",
       "colorSupport": "sRGB 色域与自适应色彩",
-      "touchAndPenProtocol": "10 点触控，Microsoft Pen Protocol",
+      "touchAndPenProtocol": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs）",
       "frontCamera": "1080p 全高清 Surface Studio 镜头",
       "windowsHello": "支持 Windows Hello 人脸识别与 ESS",
       "rearCamera": "1000 万像素超高清镜头",
@@ -5493,11 +5504,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥8,288 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs）",
       "sourceReliability": "MSFT-surface-laptop-13-inch-snapdragon-fact-sheet.pdf",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "额定 50 Wh / 最小 48 Wh"
     }
   },
   {
@@ -5593,11 +5605,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥11,088 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs）",
       "sourceReliability": "MSFT-Microsoft-Surface-Pro-11th-Edition-Fact-Sheet.pdf",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "LCD 额定 47 Wh / OLED 额定 53 Wh"
     }
   },
   {
@@ -5693,11 +5706,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥12,288 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs）",
       "sourceReliability": "MSFT-SurfaceProIntel-Fact-Sheet.pdf",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "LCD 额定 47 Wh / OLED 额定 53 Wh"
     }
   },
   {
@@ -5793,11 +5807,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥11,188 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs）",
       "sourceReliability": "MSFT-Microsoft-Surface-Laptop-7th-Edition-Fact-Sheet.pdf",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "13.8英寸额定54 Wh / 15英寸额定66 Wh"
     }
   },
   {
@@ -5895,9 +5910,10 @@ const SURFACE_DATA = {
       "warranty": "2 年微软官方商业保修",
       "startingPriceCny": "¥14,488 起（商用版，以实时页为准；出处：https://www.microsoftstore.com.cn/commercial）",
       "sourceReliability": "MSFT-SurfaceLaptopIntel-Fact-Sheet.pdf",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "13.8英寸额定54 Wh / 15英寸额定66 Wh"
     }
   },
   {
@@ -5951,7 +5967,7 @@ const SURFACE_DATA = {
       "panelTech": "防眩光 PixelSense™ 触控屏",
       "resolution": "3840 × 2560 (50\") / 3840 × 2160 (85\")",
       "ppi": "94 PPI (50\") / 52 PPI (85\")",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs）",
       "brightness": "350 nits",
       "colorSupport": "sRGB 色域与自适应色彩",
       "touchAndPenProtocol": "50″：10 点触控 + 2 笔；85″：20 点触控 + 2 笔（出处：learn.microsoft.com Surface Hub 3 tech specs）",
@@ -5988,9 +6004,9 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥78,888 起 (50\") / ¥188,888 起 (85\")",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs）",
       "sourceReliability": "Surface Hub 3 官方技术架构白皮书",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
       "lastVerified": "2026-09"
     }
@@ -6083,11 +6099,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥6,388 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3）",
       "sourceReliability": "Surface Laptop Go 3 官方规格表",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "41 Wh"
     }
   },
   {
@@ -6183,11 +6200,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥9,688 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429）",
       "sourceReliability": "Surface Pro 9 商用版官方白皮书",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "额定 47.7 Wh / 最小 46.5 Wh"
     }
   },
   {
@@ -6283,11 +6301,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥8,988 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf）",
       "sourceReliability": "Surface Pro 8 商用说明书",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "额定 51.5 Wh / 最小 50.2 Wh"
     }
   },
   {
@@ -6346,7 +6365,7 @@ const SURFACE_DATA = {
       "panelTech": "防眩光 PixelSense™ 触控屏",
       "resolution": "2256 × 1504 (13.5\") / 2496 × 1664 (15\")",
       "ppi": "201 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf）",
       "brightness": "400 nits",
       "colorSupport": "sRGB 色域与自适应色彩",
       "touchAndPenProtocol": "10 点触控，Microsoft Pen Protocol",
@@ -6383,11 +6402,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥8,688 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf）",
       "sourceReliability": "Surface Laptop 5 商业白皮书",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "额定 47.4 Wh / 最小 45.8 Wh"
     }
   },
   {
@@ -6430,7 +6450,7 @@ const SURFACE_DATA = {
       "cpuCores": "14 核心 (6P + 8E)",
       "gpuModel": "NVIDIA® RTX™ 2000 Ada (8GB) / GeForce RTX™ 4050 / 4060",
       "npuModel": "Intel® Movidius™ 3700VC VPU (端侧 AI)",
-      "npuTops": "8.5 TOPS",
+      "npuTops": "not_applicable",
       "copilotPlus": "not_applicable",
       "ramSpec": "16GB / 32GB LPDDR5x",
       "storageOptions": "256GB / 512GB / 1TB 快拆固态硬盘 (rSSD)",
@@ -6478,9 +6498,9 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥19,588 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf）",
       "sourceReliability": "Surface Laptop Studio 2 商用版 Fact Sheet",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
       "lastVerified": "2026-09"
     }
@@ -6573,11 +6593,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥12,888 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf）",
       "sourceReliability": "Surface Laptop Studio 商用说明书",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "标称约 58 Wh（PDS额定 56.3 Wh）"
     }
   },
   {
@@ -6636,7 +6657,7 @@ const SURFACE_DATA = {
       "panelTech": "防眩光 PixelSense™ 触控屏",
       "resolution": "1920 × 1280",
       "ppi": "220 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf）",
       "brightness": "350 nits",
       "colorSupport": "sRGB 色域与自适应色彩",
       "touchAndPenProtocol": "10 点触控，Microsoft Pen Protocol",
@@ -6673,11 +6694,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥3,888 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf）",
       "sourceReliability": "Surface Go 3 商业白皮书",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "标称约 28 Wh（PDS额定 26.8 Wh）"
     }
   },
   {
@@ -6731,7 +6753,7 @@ const SURFACE_DATA = {
       "panelTech": "防眩光 PixelSense™ 触控屏",
       "resolution": "4500 × 3000",
       "ppi": "192 PPI",
-      "refreshRate": "60Hz",
+      "refreshRate": "not_disclosed（微软公开资料未披露该项；禁止以推测值替代。核验官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-2-features）",
       "brightness": "500 nits",
       "colorSupport": "sRGB 色域与自适应色彩",
       "touchAndPenProtocol": "10 点触控，Microsoft Pen Protocol",
@@ -6768,11 +6790,12 @@ const SURFACE_DATA = {
       "packagingWeight": "约 1.8 千克",
       "serviceabilityScore": "9/10 (支持备件现场更换)",
       "warranty": "2 年微软官方商业保修",
-      "startingPriceCny": "¥35,888 起 (商用版)",
+      "startingPriceCny": "price_unavailable（该区域/历史国行官方价格目前无可复核公开记录，禁止讲述具体价格；已尝试微软官方源：https://support.microsoft.com/en-us/surface/models/surface-studio-2-features）",
       "sourceReliability": "Surface Studio 2+ 商用说明书",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/commercial",
+      "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
       "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/commercial",
-      "lastVerified": "2026-09"
+      "lastVerified": "2026-09",
+      "batteryCapacityWh": "not_applicable"
     }
   }
 ],

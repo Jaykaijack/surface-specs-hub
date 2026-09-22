@@ -1,0 +1,3483 @@
+{
+  "generatedAt": "2026-09-22T09:14:11+08:00",
+  "scope": {
+    "devices": 64,
+    "fields": [
+      "screenSize",
+      "resolution",
+      "refreshRate",
+      "touchAndPenProtocol",
+      "cpuModel",
+      "npuTops",
+      "batteryCapacityWh",
+      "startingPriceCny",
+      "officialDocUrl"
+    ],
+    "entryCount": 576
+  },
+  "verdictCounts": {
+    "VERIFIED": 385,
+    "PENDING": 52,
+    "POLICY_SAFE_PRICE_UNAVAILABLE": 57,
+    "POLICY_SAFE_NOT_DISCLOSED": 43,
+    "POLICY_SAFE_NOT_APPLICABLE": 39
+  },
+  "entries": [
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "startingPriceCny",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-intel",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "startingPriceCny",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13-snap",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "npuTops",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-13",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "startingPriceCny",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+    },
+    {
+      "deviceId": "pro-12-inch",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch#icid=ZHCN_HP_Mosaic3_CTA1_wireless_20260901&bundletype=30&main=MIC4173"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "batteryCapacityWh",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-11-13",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "screenSize",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "refreshRate",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-10-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Pro-10-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7-plus",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "batteryCapacityWh",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mscle/documents/legal/legal-compliance-and-ethics/Microsoft_Lithium_Ion_PDS_1July2025C.pdf"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-7",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-6",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-5",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-4",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-3",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-2",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/pen/surface-pen-compatibility-and-features"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "pro-x",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "startingPriceCny",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-intel",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "startingPriceCny",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138-snap",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-intel",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-150-snap",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "npuTops",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-138",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "npuTops",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-8-150",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "batteryCapacityWh",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-7-138",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "screenSize",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-6-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-business-home/MSFT-Microsoft-Surface-Laptop-6-Spec-Sheet-EEA.pdf"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-5",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-4",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2021/05/FINAL-Surface-Laptop-4-Fact-Sheet.docx"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "screenSize",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "refreshRate",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "batteryCapacityWh",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "sls-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf/cmqj"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-4",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-4-for-business/8qczkbwf3t77"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "batteryCapacityWh",
+      "verdict": "PENDING",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "screenSize",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "batteryCapacityWh",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "duo-2",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Duo-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-15",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-3-135",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-2-15",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "book-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-2",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "go-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "touchAndPenProtocol",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "laptop-go-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-2",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "studio-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "batteryCapacityWh",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "hub-2s",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "duo-1",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "refreshRate",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "startingPriceCny",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-12-inch-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "laptop-13-inch-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-snap",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "pro-11-biz-intel",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "npuTops",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-snap",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "npuTops",
+      "verdict": "PENDING",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "startingPriceCny",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "laptop-7-biz-intel",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "hub-3",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "npuTops",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mscle/documents/legal/legal-compliance-and-ethics/Microsoft_Lithium_Ion_PDS_1July2025C.pdf"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "laptop-go-3-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/surface/business/surface-laptop-go-3"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-9-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-9-for-business-certified-refurbished/91h92g0rj429"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-ca/d/surface-laptop-5-for-business-certified-refurbished/90gttp2hg4cz"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "laptop-5-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/646/2022/10/Surface-Laptop-5-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "screenSize",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "refreshRate",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "PENDING",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-2-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/664/2023/09/Surface-Laptop-Studio-2-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "refreshRate",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-laptop-studio/Surface-Laptop-Studio-Spec-Sheet-Portrait.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "sls-1-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Laptop-Studio-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "screenSize",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "resolution",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "cpuModel",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://www.microsoft.com/en-th/surface/devices/surface-go-3"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "go-3-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Go-3-Fact-Sheet.pdf"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "screenSize",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "resolution",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "refreshRate",
+      "verdict": "POLICY_SAFE_NOT_DISCLOSED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "touchAndPenProtocol",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "cpuModel",
+      "verdict": "PENDING",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "npuTops",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "batteryCapacityWh",
+      "verdict": "POLICY_SAFE_NOT_APPLICABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "startingPriceCny",
+      "verdict": "POLICY_SAFE_PRICE_UNAVAILABLE",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    },
+    {
+      "deviceId": "studio-2-plus-biz",
+      "field": "officialDocUrl",
+      "verdict": "VERIFIED",
+      "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features"
+    }
+  ]
+}
