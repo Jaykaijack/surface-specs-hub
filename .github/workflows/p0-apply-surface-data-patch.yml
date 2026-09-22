@@ -9,6 +9,7 @@ on:
       - 'docs/batch2-surface-data.patch.b64'
       - 'docs/batch3-surface-data.patch.b64'
       - 'docs/ban-closure-auto-fix.patch.b64'
+      - 'docs/ban-A52-surface-data.patch.b64'
       - 'docs/full-library-verification-registry.json.gz.b64'
       - '.github/workflows/p0-apply-surface-data-patch.yml'
 permissions:
@@ -36,29 +37,41 @@ jobs:
           done
           base64 -d docs/ban-closure-auto-fix.patch.b64 | gzip -d > /tmp/ban-closure-auto-fix.patch
           patch -p1 < /tmp/ban-closure-auto-fix.patch
+          base64 -d docs/ban-A52-surface-data.patch.b64 | gzip -d > /tmp/ban-A52-surface-data.patch
+          patch -p1 < /tmp/ban-A52-surface-data.patch
           base64 -d docs/full-library-verification-registry.json.gz.b64 | gzip -d > docs/full-library-verification-registry.json
       - name: Verify exact data and registry outputs
         run: |
           set -euo pipefail
-          echo '0a94751c6b002a21b8e683606b83ce02aef2f4df62eb8feb47406ad82157dff4  js/surface-data.js' | sha256sum -c -
-          echo '3459dfaa4af2643545669aedec86583d208840fd53e78e80562577f425afd978  docs/full-library-verification-registry.json' | sha256sum -c -
+          echo 'ba24ebb9d0765e2c2e7d41c99427884e1e0e1a092eb48e48f15b2648dd8a7244  js/surface-data.js' | sha256sum -c -
+          echo 'e989ead3e6f603f47ddffdda72ffad2f0351b32a527751b8f7773ba01af4ac58  docs/full-library-verification-registry.json' | sha256sum -c -
           node <<'NODE'
           const data = require('./js/surface-data.js');
           const registry = require('./docs/full-library-verification-registry.json');
           if (data.devices.length !== 64) throw new Error('expected 64 devices');
           if (registry.entries.length !== 576) throw new Error('expected 576 registry entries');
           const expected = {
-            VERIFIED: 385,
+            VERIFIED: 437,
             POLICY_SAFE_NOT_DISCLOSED: 43,
             POLICY_SAFE_NOT_APPLICABLE: 39,
             POLICY_SAFE_PRICE_UNAVAILABLE: 57,
-            PENDING: 52
+            PENDING: 0
           };
           for (const [key, value] of Object.entries(expected)) {
-            if (registry.verdictCounts[key] !== value) throw new Error(`${key}: ${registry.verdictCounts[key]} != ${value}`);
+            const got = registry.verdictCounts[key] || 0;
+            if (got !== value) throw new Error(`${key}: ${got} != ${value}`);
           }
           for (const entry of registry.entries) {
             if (!entry.deviceId || !entry.field || !entry.verdict || !entry.sourceUrl) throw new Error('incomplete registry entry');
+            if (entry.verdict === 'PENDING' || entry.verdict === 'MISMATCH' || entry.verdict === 'UNREVIEWED' || entry.verdict === 'BAD_URL') {
+              throw new Error('forbidden verdict: ' + entry.verdict + ' ' + entry.deviceId + '.' + entry.field);
+            }
+            if (String(entry.verdict).startsWith('POLICY_SAFE') && !entry.reason) {
+              throw new Error('POLICY without reason: ' + entry.deviceId + '.' + entry.field);
+            }
+            if (entry.verdict === 'VERIFIED' && !entry.sourceUrl) {
+              throw new Error('VERIFIED without sourceUrl');
+            }
           }
           NODE
       - name: Commit and push generated outputs
@@ -71,5 +84,5 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: close all plan-backed Surface BAN items"
+          git commit -m "fix: close A52 BAN items — full-library VERIFIED/POLICY_SAFE 576"
           git push origin HEAD:fix/p0-spec-verification-20260922
