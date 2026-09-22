@@ -5,7 +5,6 @@ on:
     branches: [fix/p0-spec-verification-20260922]
     paths:
       - 'docs/ban-A52-surface-data.patch.b64'
-      - 'docs/surface-data.js.gz.b64'
       - 'docs/full-library-verification-registry.json.gz.b64'
       - '.github/workflows/p0-apply-surface-data-patch.yml'
 permissions:
@@ -19,19 +18,26 @@ jobs:
         with:
           ref: fix/p0-spec-verification-20260922
           fetch-depth: 0
-      - name: Apply A52 onto current surface-data.js + decode registry
+      - name: Apply A52 patch + repair registry.gz.b64 + decode
         run: |
           set -euo pipefail
-          if [ -f docs/surface-data.js.gz.b64 ]; then
-            echo "Using full surface-data.js.gz.b64 artifact"
-            base64 -d docs/surface-data.js.gz.b64 | gzip -d > js/surface-data.js
-          else
-            echo "Applying ban-A52 patch onto checked-out js/surface-data.js"
-            base64 -d docs/ban-A52-surface-data.patch.b64 | gzip -d > /tmp/ban-A52-surface-data.patch
-            patch -p1 --verbose < /tmp/ban-A52-surface-data.patch
-          fi
+          echo "Applying ban-A52 patch onto checked-out js/surface-data.js"
+          base64 -d docs/ban-A52-surface-data.patch.b64 | gzip -d > /tmp/ban-A52-surface-data.patch
+          patch -p1 --verbose < /tmp/ban-A52-surface-data.patch
+          echo "Repair known 2-char corruption in registry.gz.b64 (MCP upload artifact)"
+          python3 <<'PY'
+          from pathlib import Path
+          p = Path('docs/full-library-verification-registry.json.gz.b64')
+          s = list(p.read_text())
+          # Known corruptions from upload: pos 2489 C->c, pos 11616 Z->T
+          assert s[2489] in ('C','c'), s[2489]
+          assert s[11616] in ('Z','T'), s[11616]
+          s[2489] = 'c'
+          s[11616] = 'T'
+          p.write_text(''.join(s))
+          PY
           base64 -d docs/full-library-verification-registry.json.gz.b64 | gzip -d > docs/full-library-verification-registry.json
-          sha256sum js/surface-data.js docs/full-library-verification-registry.json
+          sha256sum js/surface-data.js docs/full-library-verification-registry.json docs/full-library-verification-registry.json.gz.b64
       - name: Verify exact data and registry outputs
         run: |
           set -euo pipefail
@@ -42,13 +48,7 @@ jobs:
           const registry = require('./docs/full-library-verification-registry.json');
           if (data.devices.length !== 64) throw new Error('expected 64 devices');
           if (registry.entries.length !== 576) throw new Error('expected 576 registry entries');
-          const expected = {
-            VERIFIED: 437,
-            POLICY_SAFE_NOT_DISCLOSED: 43,
-            POLICY_SAFE_NOT_APPLICABLE: 39,
-            POLICY_SAFE_PRICE_UNAVAILABLE: 57,
-            PENDING: 0
-          };
+          const expected = { VERIFIED: 437, POLICY_SAFE_NOT_DISCLOSED: 43, POLICY_SAFE_NOT_APPLICABLE: 39, POLICY_SAFE_PRICE_UNAVAILABLE: 57, PENDING: 0 };
           for (const [key, value] of Object.entries(expected)) {
             const got = registry.verdictCounts[key] || 0;
             if (got !== value) throw new Error(`${key}: ${got} != ${value}`);
@@ -65,10 +65,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add js/surface-data.js docs/full-library-verification-registry.json
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
+          git add js/surface-data.js docs/full-library-verification-registry.json docs/full-library-verification-registry.json.gz.b64
+          if git diff --cached --quiet; then echo "No changes to commit"; exit 0; fi
           git commit -m "fix: close A52 BAN items — full-library VERIFIED/POLICY_SAFE 576"
           git push origin HEAD:fix/p0-spec-verification-20260922
