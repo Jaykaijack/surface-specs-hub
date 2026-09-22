@@ -1,0 +1,70 @@
+name: p0-hotfix-fake-badge
+on:
+  workflow_dispatch:
+  push:
+    branches: [fix/p0-spec-verification-20260922]
+    paths:
+      - 'docs/hotfix-20260922/p0-hotfix.patch.gz.b64'
+      - '.github/workflows/p0-hotfix-fake-badge.yml'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/p0-spec-verification-20260922
+          fetch-depth: 0
+      - name: Apply P0 hotfix patch (badge + pro-12-13 + tests + registry)
+        run: |
+          set -euo pipefail
+          base64 -d docs/hotfix-20260922/p0-hotfix.patch.gz.b64 | gzip -d > /tmp/p0-hotfix.patch
+          patch -p1 --verbose < /tmp/p0-hotfix.patch
+          sha256sum js/app.js js/surface-data.js tests/test-runner.js docs/full-library-verification-registry.json
+      - name: Run unit tests
+        run: |
+          set -euo pipefail
+          node tests/test-runner.js
+      - name: Verify key P0 assertions
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const data = require('./js/surface-data.js');
+          const fs = require('fs');
+          const app = fs.readFileSync('./js/app.js','utf8');
+          if (app.includes('✓ 已核验') && !app.includes('getDeviceVerificationBadge')) {
+            throw new Error('hardcoded verified badge still present without helper');
+          }
+          if (!app.includes('getDeviceVerificationBadge')) throw new Error('missing getDeviceVerificationBadge');
+          const c = data.devices.find(d => d.id === 'pro-12-13');
+          const i = data.devices.find(d => d.id === 'pro-12-inch');
+          if (!c.specs.startingPriceCny.includes('price_unavailable')) throw new Error('pro-12-13 price');
+          if (!c.specs.startingPriceCny.includes('404')) throw new Error('pro-12-13 must mention 404');
+          if (!c.specs.npuTops.includes('80') || !c.specs.npuTops.includes('50')) throw new Error('npu split');
+          if (c.specs.npuTops === '80 TOPS') throw new Error('npu still blanket 80');
+          if (!i.specs.startingPriceCny.includes('6,788')) throw new Error('12-inch price');
+          const vs = fs.readFileSync('./js/verification-status.js','utf8');
+          if (!vs.includes('canClaimSafe100Percent: false') && !vs.includes('"canClaimSafe100Percent": false')) {
+            throw new Error('verification-status must revoke safe 100%');
+          }
+          console.log('P0 assertions OK');
+          NODE
+      - name: Commit and push patched files
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/app.js js/surface-data.js tests/test-runner.js docs/full-library-verification-registry.json
+          if git diff --cached --quiet; then echo "No changes to commit"; exit 0; fi
+          git commit -m "$(cat <<'EOF'
+          fix(p0): registry-driven verification badge; pro-12-13 404 price; 12-inch ¥6788 test
+
+          - app.js: stop hardcoding 已核验; read VERIFICATION_STATUS
+          - surface-data: consumer price unavailable + NPU split + docUrl note
+          - registry: POLICY_SAFE_PRICE_UNAVAILABLE reason for consumer 404
+          - tests: 7888 → 6788
+          EOF
+          )"
+          git push origin HEAD:fix/p0-spec-verification-20260922
