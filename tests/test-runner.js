@@ -11,7 +11,8 @@ const SURFACE_DATA = require('../js/surface-data.js');
 const ComparisonEngine = require('../js/comparison-engine.js');
 const ToolsEngine = require('../js/tools-engine.js');
 const App = require('../js/app.js');
-const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js');
+const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js')
+const { runP0SpecBatteryRegressionTests } = require('./p0-spec-battery-regression.test.js');
 // 挂载到全局环境供 Node.js 测试执行
 global.SURFACE_DATA = SURFACE_DATA;
 global.ComparisonEngine = ComparisonEngine;
@@ -412,7 +413,8 @@ const pro12Inch = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch');
 assert(Boolean(pro12Inch), '全系参数库正式收录官方 Surface Pro, 12 英寸 (第 1 代)');
 assertEqual(pro12Inch.specs.resolution, '2196 × 1464', '12 英寸机型分辨率 2196x1464 准确无误');
 assertEqual(pro12Inch.specs.npuTops, '45 TOPS', '12 英寸机型搭载 45 TOPS 高通 NPU');
-assertEqual(pro12Inch.specs.startingPriceCny, '¥7,888 起 (消费版)', '12 英寸机型官方商城起售价准确无误 (Actual: ¥7,888 起)');
+assert(pro12Inch.specs.startingPriceCny.includes('6,788'), '12 英寸机型官方商城起售价为 ¥6,788 起（以实时选配页为准）');
+assert(pro12Inch.specs.startingPriceCny.includes('实时'), '12 英寸起售价含实时页 caveat');
 assert(pro12Inch.specs.officialDocUrl.includes('configure/surface-pro-12-inch'), '12 英寸官方商城直达选配页链接准确');
 const pro12Colors = pro12Inch.specs.colors.map(c => c.name);
 assert(pro12Colors.includes('亮铂金') && pro12Colors.includes('罗兰紫') && pro12Colors.includes('碧海青'), '12 英寸机型完整包含官网在售 3 色: 亮铂金、罗兰紫、碧海青');
@@ -531,7 +533,8 @@ SURFACE_DATA.devices.forEach(dev => {
 });
 assertEqual(validStoreUrlCount, SURFACE_DATA.devices.length, '全系 43 款产品 100% 具备官方信源超链接');
 
-runImageMappingP0Tests({ assert, assertEqual });
+runP0SpecBatteryRegressionTests({ assert, assertEqual });
+  runImageMappingP0Tests({ assert, assertEqual });
 
 // ----------------------------------------------------
 // 最终汇总
