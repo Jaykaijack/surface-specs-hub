@@ -15,6 +15,7 @@ const ToolsEngine = require('../js/tools-engine.js');
 const App = require('../js/app.js');
 const OFFICIAL_CURRENT_LINEUP_FACTS = require('./official-current-lineup-facts.js');
 const OFFICIAL_HISTORICAL_LINEUP_FACTS = require('./official-historical-lineup-facts.js');
+const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js');
 // 挂载到全局环境供 Node.js 测试执行
 global.SURFACE_DATA = SURFACE_DATA;
 global.Catalog = Catalog;
