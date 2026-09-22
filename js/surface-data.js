@@ -1189,17 +1189,17 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-13-platinum.png"
+            "image": "./assets/products/surface-pro-9-platinum.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-13-black.png"
+            "image": "./assets/products/surface-pro-9-black.png"
           },
           {
             "name": "宝石蓝",
             "hex": "#2f4f7f",
-            "image": "./assets/products/surface-pro-13-sapphire.png"
+            "image": "./assets/products/surface-pro-9-sapphire.png"
           },
           {
             "name": "森野绿",
@@ -2644,12 +2644,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-8-black.png"
           },
           {
             "name": "翡翠绿",
@@ -2659,7 +2659,7 @@ const SURFACE_DATA = {
           {
             "name": "沙漫金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-dune.png"
+            "image": "./assets/products/surface-laptop-8-dune.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -5556,12 +5556,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-13-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-13-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -5657,12 +5657,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-13-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-13-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -5758,12 +5758,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-new-laptop-hero.png"
+            "image": "./assets/products/surface-laptop-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-new-laptop-hero.png"
+            "image": "./assets/products/surface-laptop-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -5859,12 +5859,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-new-laptop-hero.png"
+            "image": "./assets/products/surface-laptop-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-new-laptop-hero.png"
+            "image": "./assets/products/surface-laptop-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -6152,12 +6152,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-9-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-9-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -6254,12 +6254,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-13-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-new-pro-hero.png"
+            "image": "./assets/products/surface-pro-13-black.png"
           }
         ],
         "chassisMaterial": "签名氧化铝",
@@ -6355,12 +6355,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-new-laptop-hero.png"
+            "image": "./assets/products/surface-laptop-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-new-laptop-hero.png"
+            "image": "./assets/products/surface-laptop-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
