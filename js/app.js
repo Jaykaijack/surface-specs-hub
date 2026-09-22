@@ -747,8 +747,8 @@ const App = {
           <div class="metric-label">商用企业级支持机型</div>
         </div>
         <div class="metric-box">
-          <div class="metric-val" style="color:#d83b01;">100%</div>
-          <div class="metric-label">官方信源可追溯率</div>
+          <div class="metric-val" style="color:#d83b01;">按 registry</div>
+          <div class="metric-label">核验列读 VERIFICATION_STATUS（禁写死已核验）</div>
         </div>
       </div>
 
@@ -869,9 +869,7 @@ const App = {
                     </div>
                   </td>
                   <td style="padding:10px 14px; text-align:center;">
-                    <span style="font-size:12px; color:#0e703c; font-weight:700; background:rgba(16,124,65,0.08); padding:3px 8px; border-radius:4px; border:1px solid rgba(16,124,65,0.2);">
-                      ✓ 已核验
-                    </span>
+                    ${this.getDeviceVerificationBadge(dev.id)}
                   </td>
                 </tr>
               `;
@@ -917,6 +915,27 @@ const App = {
         </div>
       </div>
     `;
+  },
+
+  /** 核验列：读取 VERIFICATION_STATUS（由 registry 构建时嵌入），禁止写死「已核验」 */
+  getDeviceVerificationBadge(deviceId) {
+    const root = (typeof window !== 'undefined' && window.VERIFICATION_STATUS) ? window.VERIFICATION_STATUS : null;
+    const toneStyles = {
+      ok: 'color:#0e703c; font-weight:700; background:rgba(16,124,65,0.08); border:1px solid rgba(16,124,65,0.2);',
+      policy: 'color:#8a6116; font-weight:700; background:rgba(255,185,0,0.12); border:1px solid rgba(138,97,22,0.28);',
+      warn: 'color:#c43e1c; font-weight:700; background:rgba(209,52,27,0.10); border:1px solid rgba(196,62,28,0.28);',
+      danger: 'color:#a4262c; font-weight:700; background:rgba(164,38,44,0.10); border:1px solid rgba(164,38,44,0.3);'
+    };
+    const entry = root && typeof root.resolve === 'function'
+      ? root.resolve(deviceId)
+      : (root && root.byDeviceId ? root.byDeviceId[deviceId] : null);
+    if (!entry) {
+      return `<span title="缺 registry / 未加载 verification-status.js" style="font-size:11px; padding:3px 8px; border-radius:4px; ${toneStyles.warn}">⚠ 待核验</span>`;
+    }
+    const style = toneStyles[entry.tone] || toneStyles.warn;
+    const prefix = entry.status === 'verified' ? '✓ ' : (entry.status === 'policy_partial' ? '◐ ' : '⚠ ');
+    const title = (entry.reason || entry.label || '').replace(/"/g, '&quot;');
+    return `<span title="${title}" style="font-size:11px; padding:3px 8px; border-radius:4px; ${style}">${prefix}${entry.label}</span>`;
   },
 
   // 4. 单机独立详情页 (PRD 第十二章 - 完整13大类规格直出)
