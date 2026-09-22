@@ -6,6 +6,7 @@ on:
     paths:
       - 'docs/p0-surface-data.patch.b64'
       - 'docs/batch1-surface-data.patch.b64'
+      - 'docs/batch2-surface-data.patch.b64'
       - '.github/workflows/p0-apply-surface-data-patch.yml'
 permissions:
   contents: write
@@ -18,7 +19,7 @@ jobs:
         with:
           ref: fix/p0-spec-verification-20260922
           fetch-depth: 0
-      - name: Restore base then apply P0 + batch1 patches
+      - name: Restore base then apply P0 + batch1 + batch2 patches
         run: |
           set -euo pipefail
           BASE_COMMIT=3374f26dc26dc1fc33c8b2eaef0b11ee023940f7
@@ -29,6 +30,10 @@ jobs:
             base64 -d docs/batch1-surface-data.patch.b64 > /tmp/batch1-surface-data.patch
             patch -p1 < /tmp/batch1-surface-data.patch
           fi
+          if [ -f docs/batch2-surface-data.patch.b64 ]; then
+            base64 -d docs/batch2-surface-data.patch.b64 > /tmp/batch2-surface-data.patch
+            patch -p1 < /tmp/batch2-surface-data.patch
+          fi
           grep -q '3270' js/surface-data.js
           grep -q '47 Wh' js/surface-data.js
           grep -q '6,788' js/surface-data.js
@@ -36,6 +41,13 @@ jobs:
           grep -q '14,488' js/surface-data.js
           grep -q '40/48 TOPS' js/surface-data.js
           grep -q 'LCD 额定 53 Wh / OLED 额定 47 Wh' js/surface-data.js
+          grep -q '16.70 Wh 额定' js/surface-data.js
+          grep -q '微软公开口径冲突' js/surface-data.js
+          grep -q '72.8 Wh' js/surface-data.js
+          grep -q '85.4 Wh' js/surface-data.js
+          grep -q '13.5 Wh 额定' js/surface-data.js
+          grep -q '85 英寸 3840 × 2160' js/surface-data.js
+          grep -q '26.77 Wh' js/surface-data.js
       - name: Commit and push if changed
         run: |
           set -euo pipefail
@@ -46,5 +58,5 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: align Surface specs (P0 + batch1 MISMATCH) with Microsoft public sources"
+          git commit -m "fix: align Surface specs (P0 + batch1 + batch2 MISMATCH) with Microsoft public sources"
           git push origin HEAD:fix/p0-spec-verification-20260922
