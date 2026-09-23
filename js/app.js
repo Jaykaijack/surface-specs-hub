@@ -48,6 +48,19 @@ const App = {
     return `<span class="portrait-stand-in"${idAttr}${hidden}>同系列示意</span>`;
   },
 
+  picture(shot, opts) {
+    return Catalog.frame(shot, opts);
+  },
+
+  hideBrokenImage(img) {
+    if (!img) return;
+    img.style.display = 'none';
+    const box = img.closest('.device-img-wrap, .detail-hero-img-box, .series-icon, .table-device-img');
+    if (!box) return;
+    const fallback = box.querySelector('div');
+    if (fallback) fallback.style.display = 'block';
+  },
+
   init() {
     this.initTheme();
     this.initRouter();
@@ -281,7 +294,7 @@ const App = {
       <div class="device-select-strip" style="margin-bottom:28px;">
     `;
 
-    currentCnDevices.forEach(dev => {
+    currentCnDevices.forEach((dev, index) => {
       const devShot = this.shot(dev);
       const homeColors = this.spec(dev, 'colors');
       const colorDotsHtml = (Array.isArray(homeColors) && homeColors.length > 1) ? `
@@ -297,8 +310,15 @@ const App = {
       html += `
         <div class="device-card-mini" id="card-${dev.id}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
           <div class="device-img-wrap">
-            <img class="device-thumb-img" id="thumb-${dev.id}" src="${devShot.src}" alt="${dev.name}" loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            ${this.picture(devShot, {
+              slot: 'card',
+              id: `thumb-${dev.id}`,
+              className: 'device-thumb-img',
+              alt: dev.name,
+              loading: index < 4 ? 'eager' : 'lazy',
+              sizes: '(max-width: 768px) 80vw, 160px',
+              onerror: 'App.hideBrokenImage(this)'
+            })}
             ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
             <div style="display:none; width:100%; height:100%;">
               ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
@@ -328,13 +348,18 @@ const App = {
       </div>
 
       <div class="series-nav-grid">
-        ${(SURFACE_DATA.consumerCategories || []).map(cat => {
+        ${(SURFACE_DATA.consumerCategories || []).map((cat, index) => {
           const devs = this.listDevices({ seriesId: cat.seriesId, segment: 'consumer' });
           return `
             <div class="series-card" onclick="App.navigate('#/consumer/${cat.seriesId}')">
               <div class="series-icon">
-                <img src="${this.shot(devs[0]).src}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 5px rgba(0,0,0,0.1));"
-                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                ${this.picture(this.shot(devs[0]), {
+                  slot: 'icon',
+                  className: 'series-icon-img',
+                  alt: cat.name,
+                  loading: index < 4 ? 'eager' : 'lazy',
+                  onerror: 'App.hideBrokenImage(this)'
+                })}
                 <div style="display:none; width:100%; height:100%;">
                   ${ComparisonEngine.getDeviceSvgIcon(cat.seriesId)}
                 </div>
@@ -364,8 +389,13 @@ const App = {
           return `
             <div class="series-card" onclick="App.navigate('#/business/${cat.seriesId}')" style="border-top:3px solid #0078d4;">
               <div class="series-icon">
-                <img src="${this.shot(devs[0]).src}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 5px rgba(0,0,0,0.1));"
-                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                ${this.picture(this.shot(devs[0]), {
+                  slot: 'icon',
+                  className: 'series-icon-img',
+                  alt: cat.name,
+                  loading: 'lazy',
+                  onerror: 'App.hideBrokenImage(this)'
+                })}
                 <div style="display:none; width:100%; height:100%;">
                   ${ComparisonEngine.getDeviceSvgIcon(cat.seriesId === 'hub' ? 'desktop' : cat.seriesId)}
                 </div>
@@ -474,7 +504,7 @@ const App = {
       // 🎴 画廊视图 (Gallery View)
       html += `
         <div class="series-gallery-grid">
-          ${catDevices.map(dev => {
+          ${catDevices.map((dev, index) => {
             const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
             const devShot = this.shot(dev);
             const galleryColors = this.spec(dev, 'colors');
@@ -492,8 +522,15 @@ const App = {
               <div class="device-card-mini ${isSelected ? 'selected' : ''}" style="text-align:left; padding:20px; align-items:flex-start; cursor:pointer;" data-id="${dev.id}" id="card-${dev.id}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
                 <div class="card-checkbox ${isSelected ? 'checked' : ''}" title="${isSelected ? '已加入对比（点击取消）' : '点击加入横向对比'}" onclick="event.stopPropagation(); ComparisonEngine.toggleDevice('${dev.id}')">${isSelected ? '✓' : ''}</div>
                 <div class="device-img-wrap" style="height:140px; cursor:pointer; margin-bottom:12px;">
-                  <img class="device-thumb-img" id="thumb-${dev.id}" src="${devShot.src}" alt="${dev.name}" loading="lazy"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  ${this.picture(devShot, {
+                    slot: 'card',
+                    id: `thumb-${dev.id}`,
+                    className: 'device-thumb-img',
+                    alt: dev.name,
+                    loading: index < 4 ? 'eager' : 'lazy',
+                    priority: index === 0 ? 'high' : '',
+                    onerror: 'App.hideBrokenImage(this)'
+                  })}
                   ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
                   <div style="display:none; width:100%; height:100%;">
                     ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
@@ -661,7 +698,7 @@ const App = {
       </div>
 
       <div class="series-gallery-grid">
-        ${commercialDevices.map(dev => {
+        ${commercialDevices.map((dev, index) => {
           const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
           const devShot = this.shot(dev);
           const galleryColors = this.spec(dev, 'colors');
@@ -678,8 +715,15 @@ const App = {
           return `
             <div class="device-card-mini ${isSelected ? 'selected' : ''}" style="text-align:left; padding:20px; align-items:flex-start; cursor:pointer;" data-id="${dev.id}" id="card-${dev.id}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
               <div class="device-img-wrap" style="height:140px; cursor:pointer; margin-bottom:12px;">
-                <img class="device-thumb-img" id="thumb-${dev.id}" src="${devShot.src}" alt="${dev.name}" loading="lazy"
-                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                ${this.picture(devShot, {
+                  slot: 'card',
+                  id: `thumb-${dev.id}`,
+                  className: 'device-thumb-img',
+                  alt: dev.name,
+                  loading: index < 4 ? 'eager' : 'lazy',
+                  priority: index === 0 ? 'high' : '',
+                  onerror: 'App.hideBrokenImage(this)'
+                })}
                 ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
                 <div style="display:none; width:100%; height:100%;">
                   ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
@@ -838,7 +882,11 @@ const App = {
                   <td style="padding:10px 14px; text-align:center; font-size:12px; color:var(--ms-text-tertiary);">${idx + 1}</td>
                   <td style="padding:10px 14px;">
                     <div style="display:flex; align-items:center; gap:10px;">
-                      <img src="${this.shot(dev).src}" style="width:36px; height:28px; object-fit:contain;" alt="${dev.name}">
+                      ${this.picture(this.shot(dev), {
+                        slot: 'audit',
+                        alt: dev.name,
+                        loading: 'lazy'
+                      })}
                       <div>
                         <a href="#/surface/${dev.categoryId}/${dev.id}" style="font-weight:700; color:var(--ms-text-primary); text-decoration:none; font-size:13.5px;" title="点击查看单机全量规格">
                           ${dev.name} ↗
@@ -1003,8 +1051,14 @@ const App = {
       <div class="product-detail-hero">
         <div class="detail-hero-left">
           <div class="detail-hero-img-box">
-            <img id="detail-main-img" class="detail-main-img" src="${activeShot.src}" alt="${dev.name}" loading="eager"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            ${this.picture(activeShot, {
+              slot: 'detail',
+              id: 'detail-main-img',
+              className: 'detail-main-img',
+              alt: dev.name,
+              loading: 'eager',
+              onerror: 'App.hideBrokenImage(this)'
+            })}
             ${this.portraitBadge(dev, activeColorName, 'portrait-mark-detail')}
             <div style="display:none; width:100%; height:100%;">
               ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
@@ -1694,7 +1748,7 @@ const App = {
       imgEl.style.opacity = '0.3';
       imgEl.style.transform = 'scale(0.97)';
       setTimeout(() => {
-        imgEl.src = shot.src;
+        Catalog.paint(imgEl, shot, 'detail');
         imgEl.style.display = 'block';
         imgEl.style.opacity = '1';
         imgEl.style.transform = 'scale(1)';
@@ -1719,7 +1773,7 @@ const App = {
     if (!shot.src) return;
     const thumbEl = document.getElementById(`thumb-${deviceId}`);
     if (thumbEl) {
-      thumbEl.src = shot.src;
+      Catalog.paint(thumbEl, shot, 'card');
     }
     const mark = document.getElementById(`portrait-mark-${deviceId}`);
     if (mark) mark.hidden = shot.identity !== 'shared';

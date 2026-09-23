@@ -32,7 +32,59 @@ const Catalog = (function () {
   };
 
   const PORTRAIT_REV = '20260923';
+  const DELIVERY_REV = '20260923img';
   const PORTRAIT_FALLBACK = './assets/products/surface-new-pro-hero.png';
+
+  const IMAGE_SLOTS = {
+    icon: { sizes: '64px', boxW: 64, boxH: 64 },
+    audit: { sizes: '36px', boxW: 36, boxH: 28 },
+    guide: { sizes: '100px', boxW: 100, boxH: 75 },
+    table: { sizes: '140px', boxW: 140, boxH: 85 },
+    card: { sizes: '(max-width: 768px) 46vw, 260px', boxW: 320, boxH: 140 },
+    detail: { sizes: '(max-width: 900px) 92vw, 380px', boxW: 380, boxH: 250 }
+  };
+
+  function deliveryTable() {
+    if (typeof window !== 'undefined' && window.IMAGE_DELIVERY) return window.IMAGE_DELIVERY;
+    if (typeof require === 'function') {
+      try { return require('./image-delivery.js'); } catch (err) { return null; }
+    }
+    return null;
+  }
+
+  function fileStem(src) {
+    const clean = String(src || '').split('?')[0].split('#')[0];
+    const base = clean.split('/').pop() || '';
+    return base.replace(/\.(png|jpe?g|webp|avif)$/i, '');
+  }
+
+  function deliveryWidths(src) {
+    if (!src || String(src).indexOf('data:') === 0) return null;
+    const table = deliveryTable();
+    if (!table) return null;
+    const widths = table[fileStem(src) + '.png'] || table[fileStem(src) + '.jpg'] || table[fileStem(src) + '.jpeg'];
+    return Array.isArray(widths) && widths.length ? widths.slice().sort(function (a, b) { return a - b; }) : null;
+  }
+
+  function deliveryUrl(src, kind, width) {
+    return './assets/delivery/' + kind + '/w' + width + '/' + fileStem(src) + '.' + kind + '?v=' + DELIVERY_REV;
+  }
+
+  function srcsetFor(src, kind, widths) {
+    return widths.map(function (width) {
+      return deliveryUrl(src, kind, width) + ' ' + width + 'w';
+    }).join(', ');
+  }
+
+  function pickWidth(widths, slotName) {
+    const prefer = slotName === 'detail' ? 1280 : (slotName === 'card' || slotName === 'table' ? 640 : 320);
+    const enough = widths.filter(function (width) { return width >= prefer; });
+    return enough.length ? enough[0] : widths[widths.length - 1];
+  }
+
+  function escAttr(value) {
+    return String(value || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  }
 
   const listeners = [];
   let version = 0;
@@ -311,6 +363,52 @@ const Catalog = (function () {
     return '<span class="portrait-stand-in">同系列示意</span>';
   }
 
+  function frame(shot, options) {
+    const opts = options || {};
+    const slotName = IMAGE_SLOTS[opts.slot] ? opts.slot : 'card';
+    const slot = IMAGE_SLOTS[slotName];
+    const src = shot && shot.src ? shot.src : withPortraitRev(PORTRAIT_FALLBACK);
+    const loading = opts.loading || (slotName === 'detail' ? 'eager' : 'lazy');
+    const priority = (slotName === 'detail' || opts.priority === 'high') ? ' fetchpriority="high"' : '';
+    const decoding = slotName === 'detail' ? 'auto' : 'async';
+    const id = opts.id ? ' id="' + escAttr(opts.id) + '"' : '';
+    const cls = opts.className ? ' class="' + escAttr(opts.className) + '"' : '';
+    const alt = escAttr(opts.alt || '');
+    const onerror = opts.onerror ? ' onerror="' + opts.onerror + '"' : '';
+    const sizes = opts.sizes || slot.sizes;
+    const widths = deliveryWidths(src);
+    if (!widths) {
+      return '<img' + id + cls + ' src="' + escAttr(src) + '" alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>';
+    }
+    const fallback = deliveryUrl(src, 'webp', pickWidth(widths, slotName));
+    return '<picture>'
+      + '<source type="image/avif" srcset="' + srcsetFor(src, 'avif', widths) + '" sizes="' + sizes + '">'
+      + '<source type="image/webp" srcset="' + srcsetFor(src, 'webp', widths) + '" sizes="' + sizes + '">'
+      + '<img' + id + cls + ' src="' + fallback + '" alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>'
+      + '</picture>';
+  }
+
+  function paint(img, shot, slotName) {
+    if (!img || !shot || !shot.src) return;
+    const slot = IMAGE_SLOTS[slotName] || IMAGE_SLOTS.card;
+    const name = IMAGE_SLOTS[slotName] ? slotName : 'card';
+    const widths = deliveryWidths(shot.src);
+    if (!widths || String(shot.src).indexOf('data:') === 0) {
+      img.removeAttribute('srcset');
+      img.src = shot.src;
+      return;
+    }
+    const picture = img.closest ? img.closest('picture') : null;
+    if (picture) {
+      picture.querySelectorAll('source').forEach(function (source) {
+        const kind = source.type === 'image/avif' ? 'avif' : 'webp';
+        source.srcset = srcsetFor(shot.src, kind, widths);
+      });
+    }
+    img.removeAttribute('srcset');
+    img.src = deliveryUrl(shot.src, 'webp', pickWidth(widths, name));
+  }
+
   return {
     version: function () { return version; },
     getDevice: getDevice,
@@ -330,7 +428,9 @@ const Catalog = (function () {
     acceptsCloudVersion: acceptsCloudVersion,
     onChange: onChange,
     portrait: portrait,
-    portraitMark: portraitMark
+    portraitMark: portraitMark,
+    frame: frame,
+    paint: paint
   };
 })();
 

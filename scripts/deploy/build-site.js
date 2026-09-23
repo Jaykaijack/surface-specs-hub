@@ -36,13 +36,16 @@ function rmrf(p) {
 function copy(src, dest) {
   const st = fs.statSync(src);
   if (st.isDirectory()) {
-    fs.mkdirSync(dest, { recursive: true });
+    fs.mkdirSync(dest, { recursive: true, mode: 0o755 });
+    fs.chmodSync(dest, 0o755);
     for (const name of fs.readdirSync(src)) {
       copy(path.join(src, name), path.join(dest, name));
     }
   } else {
-    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.mkdirSync(path.dirname(dest), { recursive: true, mode: 0o755 });
     fs.copyFileSync(src, dest);
+    // 源图片在本机常是仅所有者可读。网站进程是另一个用户，沿用原权限会 403。
+    fs.chmodSync(dest, 0o644);
   }
 }
 
@@ -70,6 +73,29 @@ for (const entry of INCLUDE) {
 if (missingTop.length) {
   console.error('FAIL  缺少必需的顶层条目: ' + missingTop.join(', '));
   process.exit(1);
+}
+
+const delivery = require(path.join(ROOT, 'js', 'image-delivery.js'));
+
+function stripPublishedMasters(dir) {
+  if (!fs.existsSync(dir)) return;
+  for (const name of fs.readdirSync(dir)) {
+    if (!/\.(png|jpe?g)$/i.test(name)) continue;
+    if (!delivery[name]) continue;
+    fs.rmSync(path.join(dir, name));
+  }
+}
+stripPublishedMasters(path.join(OUT, 'assets', 'products'));
+stripPublishedMasters(path.join(OUT, 'assets', 'accessories'));
+
+function coveredByDelivery(ref) {
+  const base = path.basename(ref.split('?')[0]);
+  const widths = delivery[base];
+  if (!widths || !widths.length) return false;
+  const stem = base.replace(/\.(png|jpe?g)$/i, '');
+  const webp = path.join(OUT, 'assets', 'delivery', 'webp', 'w' + widths[widths.length - 1], stem + '.webp');
+  const avif = path.join(OUT, 'assets', 'delivery', 'avif', 'w' + widths[widths.length - 1], stem + '.avif');
+  return fs.existsSync(webp) && fs.existsSync(avif);
 }
 
 // ---------------------------------------------------------------- 2. 引用完整性校验
@@ -107,7 +133,7 @@ const assetNames = new Set();
 for (const rel of files) {
   if (!/\.js$/i.test(rel)) continue;
   const text = fs.readFileSync(path.join(OUT, rel), 'utf8');
-  const re = /["'`](\.?\/?assets\/[A-Za-z0-9_\-./]+\.(?:png|jpe?g|svg|webp|gif))["'`]/gi;
+  const re = /["'`](\.?\/?assets\/[A-Za-z0-9_\-./]+\.(?:png|jpe?g|svg|webp|avif|gif))["'`]/gi;
   let m;
   while ((m = re.exec(text)) !== null) {
     refs.set(m[1].replace(/^\.\//, '/'), rel);
@@ -118,7 +144,7 @@ for (const rel of files) {
 const missingRefs = [];
 for (const [ref, from] of refs) {
   const target = path.join(OUT, ref.replace(/^\/+/, ''));
-  if (!fs.existsSync(target)) missingRefs.push(`${ref}  (被 ${from} 引用)`);
+  if (!fs.existsSync(target) && !coveredByDelivery(ref)) missingRefs.push(`${ref}  (被 ${from} 引用)`);
 }
 
 // 显式引用的 assets 之外的静态资源文件也应一并存在

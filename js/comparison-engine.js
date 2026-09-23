@@ -253,8 +253,14 @@ const ComparisonEngine = {
               <button class="table-device-remove-btn" onclick="ComparisonEngine.removeDevice('${dev.id}')" title="从对比中移除">✕</button>
               
               <div class="table-device-img" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')" style="cursor:pointer;" title="点击查看单机详情页">
-                <img class="table-thumb-img" id="table-thumb-${dev.id}-${colIdx}" src="${Catalog.portrait(dev).src}" alt="${dev.name}" loading="lazy"
-                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                ${Catalog.frame(Catalog.portrait(dev), {
+                  slot: 'table',
+                  id: `table-thumb-${dev.id}-${colIdx}`,
+                  className: 'table-thumb-img',
+                  alt: dev.name,
+                  loading: 'eager',
+                  onerror: 'App.hideBrokenImage(this)'
+                })}
                 ${Catalog.portrait(dev).identity === 'shared' ? '<span class="portrait-stand-in" id="portrait-mark-' + dev.id + '-' + colIdx + '">同系列示意</span>' : '<span class="portrait-stand-in" id="portrait-mark-' + dev.id + '-' + colIdx + '" hidden>同系列示意</span>'}
                 <div style="display:none; width:100%; height:100%;">
                   ${this.getDeviceSvgIcon(dev.categoryId)}
@@ -574,7 +580,7 @@ const ComparisonEngine = {
     if (!shot.src) return;
     const imgEl = document.getElementById(`table-thumb-${devId}-${colIdx}`);
     if (imgEl) {
-      imgEl.src = shot.src;
+      Catalog.paint(imgEl, shot, 'table');
     }
     const mark = document.getElementById(`portrait-mark-${devId}-${colIdx}`);
     if (mark) mark.hidden = shot.identity !== 'shared';

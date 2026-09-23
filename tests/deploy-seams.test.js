@@ -70,6 +70,20 @@ function runDeploySeamTests(helpers) {
   assertEqual(officialShot.identity, 'official', '只属于这一台、这一色的图，身份是官方原图');
   assertEqual(Catalog.portraitMark(officialDevice, officialColor), '', '官方原图不打代用标记');
 
+  const detailHtml = Catalog.frame(officialShot, { slot: 'detail', alt: '详情' });
+  assert(detailHtml.includes('type="image/avif"'), '详情图先提供 AVIF，浏览器只下一张');
+  assert(detailHtml.includes('type="image/webp"'), '不支持 AVIF 的浏览器用 WebP');
+  assert(detailHtml.includes('fetchpriority="high"'), '详情主图是首屏高优先级');
+  assert(detailHtml.includes('loading="eager"'), '详情主图立即加载');
+  assert(!/src="[^"]+\.png/.test(detailHtml), '详情图不再直接下载原始大图');
+  const cardHtml = Catalog.frame(officialShot, { slot: 'card', loading: 'lazy' });
+  assert(cardHtml.includes('loading="lazy"'), '列表图可以晚一点加载');
+  assert(!cardHtml.includes('fetchpriority="high"'), '列表图不抢最高优先级');
+  assert(cardHtml.includes('sizes='), '列表图按真实卡片宽度选尺寸');
+  const offlineHtml = Catalog.frame({ src: 'data:image/webp;base64,abc', identity: 'official' }, { slot: 'detail' });
+  assert(offlineHtml.includes('data:image/webp;base64,abc'), '离线内嵌图保持原样');
+  assert(!offlineHtml.includes('assets/delivery'), '离线内嵌图不再去找交付图');
+
   const aliasHtml = ComparisonEngine.renderComparisonTable([{
     id: 'alias-stub',
     name: '别名桩',

@@ -35,6 +35,7 @@ CSS_FILES = [
 JS_FILES = [
     'js/surface-data.js',
     'js/verification-status.js',
+    'js/image-delivery.js',
     'js/catalog.js',
     'js/taxonomy.js',
     'js/comparison-engine.js',

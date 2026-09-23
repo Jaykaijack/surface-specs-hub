@@ -331,7 +331,7 @@ const ToolsEngine = {
                 return `
                   <th>
                     <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
-                      ${imgSrc ? `<img src="${imgSrc}" style="width:36px; height:28px; object-fit:contain;" alt="${col.name}">` : ''}
+                      ${imgSrc ? Catalog.frame({ src: imgSrc, identity: 'official' }, { slot: 'audit', alt: col.name, loading: 'eager' }) : ''}
                       <div>${col.name}</div>
                       <span style="font-size:10.5px; font-weight:normal; color:var(--ms-text-tertiary);">${col.sub}</span>
                     </div>
@@ -415,7 +415,11 @@ const ToolsEngine = {
 
         <div style="background:var(--ms-bg-card-secondary); padding:16px 20px; border-radius:var(--ms-radius-md); border-left:4px solid var(--ms-accent); display:flex; gap:20px; align-items:center;">
           <div style="flex-shrink:0; width:120px; height:90px; display:flex; align-items:center; justify-content:center; background:var(--ms-bg-card); border-radius:var(--ms-radius-sm); border:1px solid var(--ms-border-subtle); padding:6px;">
-            <img src="${SURFACE_DATA.getAccessoryImage(acc)}" alt="${acc.name}" style="max-width:100%; max-height:100%; object-fit:contain;">
+            ${Catalog.frame({ src: SURFACE_DATA.getAccessoryImage(acc), identity: 'official' }, {
+              slot: 'guide',
+              alt: acc.name,
+              loading: 'eager'
+            })}
           </div>
           <div style="flex:1; min-width:0;">
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
@@ -550,7 +554,11 @@ const ToolsEngine = {
                       <tr>
                         <td class="compat-device-label">
                           <div style="display:flex; align-items:center; gap:10px;">
-                            <img src="${SURFACE_DATA.getAccessoryImage(acc)}" alt="${acc.name}" style="width:38px; height:30px; object-fit:contain; background:var(--ms-bg-card); border-radius:4px; padding:2px; border:1px solid var(--ms-border-subtle); flex-shrink:0;">
+                            ${Catalog.frame({ src: SURFACE_DATA.getAccessoryImage(acc), identity: 'official' }, {
+                              slot: 'audit',
+                              alt: acc.name,
+                              loading: 'lazy'
+                            })}
                             <div>
                               <div style="font-weight:600;">${acc.name}</div>
                               <div style="font-size:11px; color:var(--ms-text-tertiary); font-weight:normal;">${acc.categoryName}</div>
@@ -746,7 +754,12 @@ const ToolsEngine = {
           
           <div class="guide-card-hero">
             <span style="position:relative; display:inline-block;">
-              <img src="${shot.src}" alt="${dev.name}" class="guide-hero-img">
+              ${Catalog.frame(shot, {
+                slot: 'guide',
+                className: 'guide-hero-img',
+                alt: dev.name,
+                loading: 'lazy'
+              })}
               ${shot.identity === 'shared' ? '<span class="portrait-stand-in">同系列示意</span>' : ''}
             </span>
             <div>
