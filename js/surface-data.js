@@ -7619,6 +7619,7 @@ const SURFACE_DATA = {
   "accessories": [
     {
       "id": "surface-arc-mouse",
+      "image": "./assets/accessories/surface-arc-mouse.png",
       "name": "Surface Arc 鼠标 (Surface Arc Mouse)",
       "category": "mouse",
       "categoryName": "鼠标与触控外设",
@@ -7985,6 +7986,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-precision-mouse",
+      "image": "./assets/accessories/surface-precision-mouse.png",
       "name": "Surface 精准鼠标 (Surface Precision Mouse)",
       "category": "mouse",
       "categoryName": "鼠标与触控外设",
@@ -8351,6 +8353,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-mobile-mouse",
+      "image": "./assets/accessories/surface-mobile-mouse.png",
       "name": "Surface 便携移动鼠标 (Surface Mobile Mouse)",
       "category": "mouse",
       "categoryName": "鼠标与触控外设",
@@ -8717,6 +8720,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-ergonomic-mouse",
+      "image": "./assets/accessories/surface-ergonomic-mouse.png",
       "name": "Surface 人体工学鼠标 (Surface Ergonomic Mouse)",
       "category": "mouse",
       "categoryName": "鼠标与触控外设",
@@ -9083,6 +9087,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "flex-keyboard",
+      "image": "./assets/accessories/flex-keyboard.png",
       "name": "Surface Pro Flex 键盘",
       "category": "keyboard",
       "categoryName": "键盘与保护盖",
@@ -9449,6 +9454,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "pro-signature-keyboard",
+      "image": "./assets/accessories/pro-signature-keyboard.png",
       "name": "Surface Pro 特制版专业键盘盖 (带笔槽款)",
       "category": "keyboard",
       "categoryName": "键盘与保护盖",
@@ -9815,6 +9821,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "pro-classic-type-cover",
+      "image": "./assets/accessories/pro-classic-type-cover.png",
       "name": "Surface Pro 经典专业键盘盖 (Type Cover)",
       "category": "keyboard",
       "categoryName": "键盘与保护盖",
@@ -10181,6 +10188,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "go-signature-type-cover",
+      "image": "./assets/accessories/go-signature-type-cover.png",
       "name": "Surface Go 特制版专业键盘盖 (Go Type Cover)",
       "category": "keyboard",
       "categoryName": "键盘与保护盖",
@@ -10547,6 +10555,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-touch-cover",
+      "image": "./assets/accessories/surface-touch-cover.png",
       "name": "Surface 早期经典触控键盘 (Touch / Type Cover 1~2)",
       "category": "keyboard",
       "categoryName": "键盘与保护盖",
@@ -10913,6 +10922,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-keyboard-desktop",
+      "image": "./assets/accessories/surface-keyboard-desktop.png",
       "name": "Surface 蓝牙桌面无线键盘 (含 Modern Keyboard 指纹款)",
       "category": "keyboard",
       "categoryName": "键盘与保护盖",
@@ -11279,6 +11289,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "slim-pen-2",
+      "image": "./assets/accessories/slim-pen-2.png",
       "name": "Surface 超感触控笔 2 (Slim Pen 2)",
       "category": "pen",
       "categoryName": "手写笔与压感",
@@ -11645,6 +11656,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "slim-pen-1",
+      "image": "./assets/accessories/slim-pen-1.png",
       "name": "Surface 超感触控笔一代 (Slim Pen 1)",
       "category": "pen",
       "categoryName": "手写笔与压感",
@@ -12011,6 +12023,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-pen-classic",
+      "image": "./assets/accessories/surface-pen-classic.png",
       "name": "Surface 触控笔经典款 (Surface Pen 4096 级带笔夹/单侧磁吸)",
       "category": "pen",
       "categoryName": "手写笔与压感",
@@ -12377,6 +12390,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-pen-pro3",
+      "image": "./assets/accessories/surface-pen-pro3.png",
       "name": "Surface 初代压感触控笔 (Pro 3 / 256级 紫色顶键)",
       "category": "pen",
       "categoryName": "手写笔与压感",
@@ -12743,6 +12757,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-dock-2",
+      "image": "./assets/accessories/surface-dock-2.png",
       "name": "Surface 拓展坞 2 代 (Surface Dock 2 磁吸口)",
       "category": "dock",
       "categoryName": "拓展坞与转换器",
@@ -13109,6 +13124,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-dock-1",
+      "image": "./assets/accessories/surface-dock-1.png",
       "name": "Surface 拓展坞 1 代 (Surface Dock 1 砖块形)",
       "category": "dock",
       "categoryName": "拓展坞与转换器",
@@ -13475,6 +13491,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-tb4-dock",
+      "image": "./assets/accessories/surface-tb4-dock.png",
       "name": "Surface 雷电 4 拓展坞 (Thunderbolt 4 Dock)",
       "category": "dock",
       "categoryName": "拓展坞与转换器",
@@ -13841,6 +13858,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-travel-hub",
+      "image": "./assets/accessories/surface-travel-hub.png",
       "name": "Surface 便携多功能扩展坞 (Surface USB-C Travel Hub)",
       "category": "dock",
       "categoryName": "拓展坞与转换器",
@@ -14207,6 +14225,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-connect-usbc",
+      "image": "./assets/accessories/surface-connect-usbc.png",
       "name": "Surface Connect 转 USB-C 适配器 (历史神器)",
       "category": "dock",
       "categoryName": "拓展坞与转换器",
@@ -14573,6 +14592,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-headphones-2",
+      "image": "./assets/accessories/surface-headphones-2.png",
       "name": "Surface 头戴式降噪耳机 2 代 (Surface Headphones 2)",
       "category": "audio",
       "categoryName": "音频与会议外设",
@@ -14939,6 +14959,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-earbuds",
+      "image": "./assets/accessories/surface-earbuds.png",
       "name": "Surface 真无线耳塞式耳机 (Surface Earbuds)",
       "category": "audio",
       "categoryName": "音频与会议外设",
@@ -15305,6 +15326,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-audio-dock",
+      "image": "./assets/accessories/surface-audio-dock.png",
       "name": "Surface 智能会议音箱拓展坞 (Surface Audio Dock)",
       "category": "audio",
       "categoryName": "音频与会议外设",
@@ -15671,6 +15693,7 @@ const SURFACE_DATA = {
     },
     {
       "id": "surface-dial",
+      "image": "./assets/accessories/surface-dial.png",
       "name": "Surface Dial 屏幕实体交互旋钮",
       "category": "creative",
       "categoryName": "创意交互外设",
@@ -16040,12 +16063,20 @@ const SURFACE_DATA = {
 
 // 挂载辅助工具方法
 SURFACE_DATA.getDeviceImage = function(device, colorName) {
+  if (typeof Catalog !== 'undefined' && Catalog.portrait) {
+    return Catalog.portrait(device, colorName).src;
+  }
   if (!device) return './assets/products/surface-new-pro-hero.png';
   if (colorName && device.specs && Array.isArray(device.specs.colors)) {
     const found = device.specs.colors.find(c => c.name === colorName);
     if (found && found.image) return found.image;
   }
   return device.heroImage || './assets/products/surface-new-pro-hero.png';
+};
+
+SURFACE_DATA.getAccessoryImage = function(acc) {
+  if (!acc) return '';
+  return acc.image || ('./assets/accessories/' + acc.id + '.png');
 };
 
 if (typeof window !== 'undefined') {

@@ -34,3 +34,7 @@
 1. `js/cloud-config.js` 默认 `enabled: false`，且不得写死生产 WorkBuddy endpoint/key 为默认开启态。
 2. `enabled !== true` 时不加载依赖云端的网络请求；双击 `index.html`（含 `file://`）核心参数查阅/比对/工具必须可用。
 3. 云端能力不得成为核心规格数据的唯一真源；真源仍为打包进仓库的 `js/surface-data.js`（及本仓静态资源）。
+
+> **本修订已被部分取代**（2026-09-22）：上述"可选云端叠层"条款由
+> [ADR-0005](0005-remove-optional-cloud-layer.md) 取代 —— 该叠层已因业务上不需要而被彻底移除。
+> 本 ADR 其余关于纯静态、零依赖架构的决策继续有效。

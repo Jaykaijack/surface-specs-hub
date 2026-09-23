@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+:root {
+  --hub-sidebar-width: 292px;
+}
+
 body {
   font-family: var(--ms-font-family);
   background-color: var(--ms-bg-canvas);
@@ -177,8 +181,8 @@ body {
 
 /* 左侧分类树 (HubWeb Sidebar) */
 .hub-sidebar {
-  width: 220px;
-  min-width: 220px;
+  width: var(--hub-sidebar-width);
+  min-width: var(--hub-sidebar-width);
   background-color: var(--ms-bg-sidebar);
   border-right: 1px solid var(--ms-border-subtle);
   overflow-y: auto;
@@ -194,18 +198,51 @@ body {
 }
 
 .sidebar-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   font-size: var(--ms-font-size-xs);
   font-weight: 700;
-  text-transform: uppercase;
   color: var(--ms-text-tertiary);
   padding: 6px 10px;
-  letter-spacing: 0.5px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.sidebar-group-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.35;
+}
+
+.sidebar-group-badge {
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.sidebar-group-badge.consumer {
+  background: rgba(0, 120, 212, 0.1);
+  color: var(--ms-accent);
+}
+
+.sidebar-group-badge.business {
+  background: rgba(16, 124, 65, 0.12);
+  color: #107c41;
 }
 
 .sidebar-nav-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
+  min-height: 32px;
   padding: 7px 10px;
   border-radius: var(--ms-radius-md);
   font-size: var(--ms-font-size-sm);
@@ -239,9 +276,18 @@ body {
 .nav-item-left {
   display: flex;
   align-items: center;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-item-label {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.35;
 }
 
 .nav-item-count {
@@ -699,6 +745,24 @@ body {
 .device-card-mini .device-img-wrap svg {
   max-width: 80%;
   max-height: 80%;
+}
+.portrait-stand-in {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  z-index: 2;
+  font-size: 10px;
+  line-height: 1.2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 185, 0, 0.94);
+  color: #3b2f00;
+  font-weight: 700;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.portrait-stand-in[hidden] {
+  display: none !important;
 }
 .device-thumb-img {
   width: 100%;
@@ -1208,7 +1272,7 @@ body {
 .comparison-dock {
   position: fixed;
   bottom: 0;
-  left: 220px;
+  left: var(--hub-sidebar-width);
   right: 0;
   height: 68px;
   background-color: var(--ms-bg-dock);
@@ -1370,9 +1434,6 @@ body {
   .header-center {
     margin: 0 8px;
   }
-  .cloud-account-btn .cloud-account-name {
-    display: none;
-  }
   .dock-tip-label {
     display: none;
   }
@@ -1397,7 +1458,7 @@ body {
 @media (max-width: 768px) {
   .hub-sidebar {
     position: fixed;
-    left: -240px;
+    left: calc(-1 * var(--hub-sidebar-width) - 16px);
     z-index: 150;
     transition: left var(--ms-transition-normal);
     box-shadow: var(--ms-shadow-floating);
@@ -1488,4 +1549,17 @@ body {
     max-width: calc(100vw - 24px);
     padding: 14px;
   }
+}
+
+/* ---------------------------------------------------------------------------
+   兼容历史页面（防御性规则，可安全删除）
+   平台边缘缓存可能仍把「/」指向旧版首页（资源文件本身已是最新）。
+   旧版顶栏含两个已移除功能的入口，这里统一隐藏，避免出现"点了没反应"的死按钮：
+     - 「素材中心」：旧 index.html 里硬编码的 header-btn
+     - 「成员登录」：旧 cloud-ui.js 运行时注入的 #cloud-account-btn
+   正常页面不存在这两个元素，故此规则不产生任何可见影响。
+--------------------------------------------------------------------------- */
+.header-btn[onclick*="#/assets"],
+#cloud-account-btn {
+  display: none !important;
 }

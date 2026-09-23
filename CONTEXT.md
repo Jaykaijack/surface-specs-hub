@@ -118,6 +118,9 @@ All hardware represented in the Specs Hub must reflect official Microsoft techni
 - **Asset Localization & Color Variant Switching**:
   - All product images stored locally in `assets/products/`.
   - Consumer Pro 13 / Laptop 8 may expose multi-color swatches when `isCommercial:false`; commercial SKUs stay dual-color only (亮铂金 + 典雅黑) per §A/C. Swatches appear in cards, detail hero, and comparison table header.
+- **机型图**:
+  某一台设备、某一种配色所对应的那张本地图片，并带有身份：官方原图、同系列代用图，或没有图。没有图时仍用该系列代表图，卡片不留白。代用图要让人看出来，不能当成这台机器自己的官方图。
+  _Avoid_: hero 路径、产品图文件名
 
 ---
 

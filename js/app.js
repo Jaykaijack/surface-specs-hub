@@ -33,6 +33,21 @@ const App = {
     return this.listDevices().find(d => d.id === id) || null;
   },
 
+  spec(device, key) {
+    return Catalog.getSpec(device, key);
+  },
+
+  shot(device, colorName) {
+    return Catalog.portrait(device, colorName);
+  },
+
+  portraitBadge(device, colorName, markId) {
+    const shot = this.shot(device, colorName);
+    const hidden = shot.identity === 'shared' ? '' : ' hidden';
+    const idAttr = markId ? ` id="${markId}"` : '';
+    return `<span class="portrait-stand-in"${idAttr}${hidden}>同系列示意</span>`;
+  },
+
   init() {
     this.initTheme();
     this.initRouter();
@@ -130,7 +145,23 @@ const App = {
       return;
     }
 
-    // 路由 4: 辅助分析工具
+    // 路由 4: 特色辅助分析工具矩阵
+    if (path === '/tools' || path === '/tools/guide') {
+      main.innerHTML = `<div id="tool-smart-guide-container">${ToolsEngine.renderSmartGuide()}</div>`;
+      return;
+    }
+    if (path === '/tools/weight') {
+      main.innerHTML = `<div id="tool-weight-calc-container">${ToolsEngine.renderWeightCalculator()}</div>`;
+      return;
+    }
+    if (path === '/tools/upgrade') {
+      main.innerHTML = `<div id="tool-upgrade-advisor-container">${ToolsEngine.renderUpgradeAdvisor()}</div>`;
+      return;
+    }
+    if (path === '/tools/storage') {
+      main.innerHTML = `<div id="tool-storage-guide-container">${ToolsEngine.renderStorageGuide()}</div>`;
+      return;
+    }
     if (path === '/tools/screen') {
       main.innerHTML = `<div id="tool-screen-calc-container">${ToolsEngine.renderScreenCalculator()}</div>`;
       return;
@@ -153,12 +184,6 @@ const App = {
     // 路由: 官方数据核验与全系溯源中枢 (#/audit)
     if (path === '/audit') {
       this.renderAuditView(main);
-      return;
-    }
-
-    // 路由: 云端素材中心 (#/assets) —— 产品图片与资料附件的云端存取（需登录）
-    if (path === '/assets') {
-      this.renderAssetsView(main);
       return;
     }
 
@@ -257,13 +282,14 @@ const App = {
     `;
 
     currentCnDevices.forEach(dev => {
-      const devImg = SURFACE_DATA.getDeviceImage(dev);
-      const colorDotsHtml = (dev.specs && Array.isArray(dev.specs.colors) && dev.specs.colors.length > 1) ? `
+      const devShot = this.shot(dev);
+      const homeColors = this.spec(dev, 'colors');
+      const colorDotsHtml = (Array.isArray(homeColors) && homeColors.length > 1) ? `
         <div class="card-color-swatches" onclick="event.stopPropagation();">
-          ${dev.specs.colors.map((c, idx) => `
+          ${homeColors.map((c, idx) => `
             <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}"
-              onmouseenter="App.previewCardColor('${dev.id}', '${c.image || devImg}', this)"
-              onclick="App.previewCardColor('${dev.id}', '${c.image || devImg}', this)"></span>
+              onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
+              onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
           `).join('')}
         </div>
       ` : '';
@@ -271,8 +297,9 @@ const App = {
       html += `
         <div class="device-card-mini" id="card-${dev.id}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
           <div class="device-img-wrap">
-            <img class="device-thumb-img" id="thumb-${dev.id}" src="${devImg}" alt="${dev.name}" loading="lazy"
+            <img class="device-thumb-img" id="thumb-${dev.id}" src="${devShot.src}" alt="${dev.name}" loading="lazy"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
             <div style="display:none; width:100%; height:100%;">
               ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
             </div>
@@ -306,7 +333,7 @@ const App = {
           return `
             <div class="series-card" onclick="App.navigate('#/consumer/${cat.seriesId}')">
               <div class="series-icon">
-                <img src="${SURFACE_DATA.getDeviceImage(devs[0])}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 5px rgba(0,0,0,0.1));"
+                <img src="${this.shot(devs[0]).src}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 5px rgba(0,0,0,0.1));"
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <div style="display:none; width:100%; height:100%;">
                   ${ComparisonEngine.getDeviceSvgIcon(cat.seriesId)}
@@ -337,7 +364,7 @@ const App = {
           return `
             <div class="series-card" onclick="App.navigate('#/business/${cat.seriesId}')" style="border-top:3px solid #0078d4;">
               <div class="series-icon">
-                <img src="${SURFACE_DATA.getDeviceImage(devs[0])}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 5px rgba(0,0,0,0.1));"
+                <img src="${this.shot(devs[0]).src}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 5px rgba(0,0,0,0.1));"
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <div style="display:none; width:100%; height:100%;">
                   ${ComparisonEngine.getDeviceSvgIcon(cat.seriesId === 'hub' ? 'desktop' : cat.seriesId)}
@@ -449,13 +476,14 @@ const App = {
         <div class="series-gallery-grid">
           ${catDevices.map(dev => {
             const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
-            const devImg = SURFACE_DATA.getDeviceImage(dev);
-            const colorDotsHtml = (dev.specs && Array.isArray(dev.specs.colors) && dev.specs.colors.length > 1) ? `
+            const devShot = this.shot(dev);
+            const galleryColors = this.spec(dev, 'colors');
+            const colorDotsHtml = (Array.isArray(galleryColors) && galleryColors.length > 1) ? `
               <div class="card-color-swatches" onclick="event.stopPropagation();" style="margin-bottom:12px;">
-                ${dev.specs.colors.map((c, idx) => `
+                ${galleryColors.map((c, idx) => `
                   <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}"
-                    onmouseenter="App.previewCardColor('${dev.id}', '${c.image || devImg}', this)"
-                    onclick="App.previewCardColor('${dev.id}', '${c.image || devImg}', this)"></span>
+                    onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
+                    onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
                 `).join('')}
               </div>
             ` : '';
@@ -464,15 +492,16 @@ const App = {
               <div class="device-card-mini ${isSelected ? 'selected' : ''}" style="text-align:left; padding:20px; align-items:flex-start; cursor:pointer;" data-id="${dev.id}" id="card-${dev.id}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
                 <div class="card-checkbox ${isSelected ? 'checked' : ''}" title="${isSelected ? '已加入对比（点击取消）' : '点击加入横向对比'}" onclick="event.stopPropagation(); ComparisonEngine.toggleDevice('${dev.id}')">${isSelected ? '✓' : ''}</div>
                 <div class="device-img-wrap" style="height:140px; cursor:pointer; margin-bottom:12px;">
-                  <img class="device-thumb-img" id="thumb-${dev.id}" src="${devImg}" alt="${dev.name}" loading="lazy"
+                  <img class="device-thumb-img" id="thumb-${dev.id}" src="${devShot.src}" alt="${dev.name}" loading="lazy"
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
                   <div style="display:none; width:100%; height:100%;">
                     ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
                   </div>
                 </div>
                 <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
                   <div style="display:flex; gap:6px; align-items:center;">
-                    <span class="device-year-badge">${dev.specs.releaseDate || dev.year}</span>
+                    <span class="device-year-badge">${this.spec(dev, 'releaseDate') || dev.year}</span>
                     ${dev.isCommercial ? '<span class="spec-badge commercial">🏢 商用</span>' : ''}
                   </div>
                   ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -483,9 +512,9 @@ const App = {
                 <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
                 ${colorDotsHtml}
                 <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
-                  <span class="spec-badge">${dev.specs.cpuModel}</span>
-                  ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${Catalog.getSpec(dev, 'npuTops')}</span>` : ''}
-                  <span class="spec-badge">${dev.specs.screenSize}</span>
+                  <span class="spec-badge">${this.spec(dev, 'cpuModel')}</span>
+                  ${Catalog.isNpuDisplayable(this.spec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
+                  <span class="spec-badge">${this.spec(dev, 'screenSize')}</span>
                 </div>
                 <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                   <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -634,13 +663,14 @@ const App = {
       <div class="series-gallery-grid">
         ${commercialDevices.map(dev => {
           const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
-          const devImg = SURFACE_DATA.getDeviceImage(dev);
-          const colorDotsHtml = (dev.specs && Array.isArray(dev.specs.colors) && dev.specs.colors.length > 1) ? `
+          const devShot = this.shot(dev);
+          const galleryColors = this.spec(dev, 'colors');
+          const colorDotsHtml = (Array.isArray(galleryColors) && galleryColors.length > 1) ? `
             <div class="card-color-swatches" onclick="event.stopPropagation();" style="margin-bottom:12px;">
-              ${dev.specs.colors.map((c, idx) => `
+              ${galleryColors.map((c, idx) => `
                 <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}"
-                  onmouseenter="App.previewCardColor('${dev.id}', '${c.image || devImg}', this)"
-                  onclick="App.previewCardColor('${dev.id}', '${c.image || devImg}', this)"></span>
+                  onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
+                  onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
               `).join('')}
             </div>
           ` : '';
@@ -648,15 +678,16 @@ const App = {
           return `
             <div class="device-card-mini ${isSelected ? 'selected' : ''}" style="text-align:left; padding:20px; align-items:flex-start; cursor:pointer;" data-id="${dev.id}" id="card-${dev.id}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
               <div class="device-img-wrap" style="height:140px; cursor:pointer; margin-bottom:12px;">
-                <img class="device-thumb-img" id="thumb-${dev.id}" src="${devImg}" alt="${dev.name}" loading="lazy"
+                <img class="device-thumb-img" id="thumb-${dev.id}" src="${devShot.src}" alt="${dev.name}" loading="lazy"
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
                 <div style="display:none; width:100%; height:100%;">
                   ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
                 </div>
               </div>
               <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
                 <div style="display:flex; gap:6px; align-items:center;">
-                  <span class="device-year-badge">${dev.specs.releaseDate || dev.year}</span>
+                  <span class="device-year-badge">${this.spec(dev, 'releaseDate') || dev.year}</span>
                   <span class="spec-badge commercial">🏢 商业版</span>
                 </div>
                 ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -667,9 +698,9 @@ const App = {
               <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
               ${colorDotsHtml}
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
-                <span class="spec-badge">${dev.specs.cpuModel}</span>
-                ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${Catalog.getSpec(dev, 'npuTops')}</span>` : ''}
-                <span class="spec-badge">${dev.specs.screenSize}</span>
+                <span class="spec-badge">${this.spec(dev, 'cpuModel')}</span>
+                ${Catalog.isNpuDisplayable(this.spec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
+                <span class="spec-badge">${this.spec(dev, 'screenSize')}</span>
               </div>
               <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                 <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -778,10 +809,10 @@ const App = {
       </div>
 
       <!-- 全系核验交互表格 -->
-      <div class="spec-table-container" style="max-height: calc(100vh - 340px); overflow:auto; border-radius:12px; border:1px solid var(--ms-border-subtle); background:var(--ms-bg-card);">
-        <table class="spec-table" style="width:100%; border-collapse:collapse; min-width:1100px;">
+      <div class="spec-table-container has-internal-scroll" style="max-height: calc(100vh - 340px); overflow:auto; border-radius:12px; border:1px solid var(--ms-border-subtle); background:var(--ms-bg-card);">
+        <table class="spec-table audit-table" style="width:100%; border-collapse:separate; border-spacing:0; min-width:1100px;">
           <thead>
-            <tr style="background:var(--ms-bg-subtle, #f5f5f5); position:sticky; top:0; z-index:10; border-bottom:2px solid var(--ms-border-subtle);">
+            <tr style="background:var(--ms-bg-subtle, #f5f5f5);">
               <th style="padding:12px 14px; text-align:center; width:50px;">序号</th>
               <th style="padding:12px 14px; text-align:left; width:250px;">产品名称 / 代际</th>
               <th style="padding:12px 14px; text-align:center; width:90px;">销售状态</th>
@@ -795,9 +826,9 @@ const App = {
           </thead>
           <tbody>
             ${filtered.map((dev, idx) => {
-              const sp = dev.specs || {};
-              const colors = sp.colors || [];
-              const storeUrl = sp.officialDocUrl || 'https://www.microsoftstore.com.cn/';
+              const specOf = (key) => this.spec(dev, key);
+              const colors = specOf('colors') || [];
+              const storeUrl = specOf('officialDocUrl') || 'https://www.microsoftstore.com.cn/';
               const learnUrl = dev.learnDocUrl;
               const isCommercial = dev.isCommercial || dev.targetAudience === 'commercial';
               const isCurrent = dev.status === 'current_cn';
@@ -807,7 +838,7 @@ const App = {
                   <td style="padding:10px 14px; text-align:center; font-size:12px; color:var(--ms-text-tertiary);">${idx + 1}</td>
                   <td style="padding:10px 14px;">
                     <div style="display:flex; align-items:center; gap:10px;">
-                      <img src="${SURFACE_DATA.getDeviceImage(dev)}" style="width:36px; height:28px; object-fit:contain;" alt="${dev.name}">
+                      <img src="${this.shot(dev).src}" style="width:36px; height:28px; object-fit:contain;" alt="${dev.name}">
                       <div>
                         <a href="#/surface/${dev.categoryId}/${dev.id}" style="font-weight:700; color:var(--ms-text-primary); text-decoration:none; font-size:13.5px;" title="点击查看单机全量规格">
                           ${dev.name} ↗
@@ -820,7 +851,7 @@ const App = {
                     ${ComparisonEngine.renderStatusBadge(dev.status)}
                   </td>
                   <td style="padding:10px 14px; text-align:right; font-weight:700; color:var(--ms-text-primary); font-size:13.5px;">
-                    ${sp.startingPriceCny || '—'}
+                    ${specOf('startingPriceCny') || '—'}
                   </td>
                   <td style="padding:10px 14px;">
                     ${colors.length > 0 ? `
@@ -835,28 +866,28 @@ const App = {
                     ` : '<span style="color:var(--ms-text-tertiary); font-size:12px;">官方单色</span>'}
                   </td>
                   <td style="padding:10px 14px; font-size:12px;">
-                    <div style="font-weight:600; color:var(--ms-text-primary);">${sp.cpuModel || '—'}</div>
+                    <div style="font-weight:600; color:var(--ms-text-primary);">${specOf('cpuModel') || '—'}</div>
                     ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `
                       <div style="color:#0078d4; font-size:11px;">⚡ ${Catalog.getSpec(dev, 'npuTops')}</div>
                     ` : ''}
                   </td>
                   <td style="padding:10px 14px; font-size:12px; color:var(--ms-text-secondary);">
-                    <div>${sp.screenSize || '—'} 3:2</div>
-                    <div style="font-size:11px; color:var(--ms-text-tertiary);">${sp.resolution || ''} ${sp.refreshRate || ''}</div>
+                    <div>${specOf('screenSize') || '—'} 3:2</div>
+                    <div style="font-size:11px; color:var(--ms-text-tertiary);">${specOf('resolution') || ''} ${specOf('refreshRate') || ''}</div>
                   </td>
                   <td style="padding:10px 14px; text-align:center;">
                     <div style="display:inline-flex; gap:6px; flex-wrap:wrap; justify-content:center;">
-                      ${sp.officialIntelConfigureUrl ? `
-                        <a href="${sp.officialIntelConfigureUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:10.5px; padding:2px 6px;" title="前往微软官方 Intel Ultra 选配定制页">
+                      ${specOf('officialIntelConfigureUrl') ? `
+                        <a href="${specOf('officialIntelConfigureUrl')}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:10.5px; padding:2px 6px;" title="前往微软官方 Intel Ultra 选配定制页">
                           🛒 Ultra选配 ↗
                         </a>
                       ` : ''}
-                      ${sp.officialSnapdragonConfigureUrl ? `
-                        <a href="${sp.officialSnapdragonConfigureUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:10.5px; padding:2px 6px;" title="前往微软官方骁龙版选配定制页">
+                      ${specOf('officialSnapdragonConfigureUrl') ? `
+                        <a href="${specOf('officialSnapdragonConfigureUrl')}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:10.5px; padding:2px 6px;" title="前往微软官方骁龙版选配定制页">
                           ⚡ 骁龙选配 ↗
                         </a>
                       ` : ''}
-                      ${!sp.officialIntelConfigureUrl && !sp.officialSnapdragonConfigureUrl ? `
+                      ${!specOf('officialIntelConfigureUrl') && !specOf('officialSnapdragonConfigureUrl') ? `
                         <a href="${storeUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:11px; padding:3px 8px;" title="前往微软官网选配/商城页核对">
                           🛒 选配直达 ↗
                         </a>
@@ -948,11 +979,11 @@ const App = {
 
     const prevDev = dev.prevGenerationId ? this.getDevice(dev.prevGenerationId) : null;
     const nextDev = dev.nextGenerationId ? this.getDevice(dev.nextGenerationId) : null;
-    const defaultImg = SURFACE_DATA.getDeviceImage(dev);
-    const colors = (dev.specs && Array.isArray(dev.specs.colors)) ? dev.specs.colors : [];
-    const hasColors = colors.length > 0;
-    const activeColorName = hasColors ? colors[0].name : '';
-    const activeColorImg = (hasColors && colors[0].image) ? colors[0].image : defaultImg;
+    const colors = this.spec(dev, 'colors');
+    const colorRows = Array.isArray(colors) ? colors : [];
+    const hasColors = colorRows.length > 0;
+    const activeColorName = hasColors ? colorRows[0].name : '';
+    const activeShot = this.shot(dev, activeColorName);
     const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
 
     // 默认展示全量参数表
@@ -964,7 +995,7 @@ const App = {
           ← 返回 ${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))} 列表
         </a>
         <div style="font-size:12px; color:var(--ms-text-tertiary);">
-          核验来源：${dev.specs.sourceReliability || '微软官方说明书'} ｜ 核验日期：${dev.specs.lastVerified || '2026-09'}
+          核验来源：${this.spec(dev, 'sourceReliability') || '微软官方说明书'} ｜ 核验日期：${this.spec(dev, 'lastVerified') || '2026-09'}
         </div>
       </div>
 
@@ -972,8 +1003,9 @@ const App = {
       <div class="product-detail-hero">
         <div class="detail-hero-left">
           <div class="detail-hero-img-box">
-            <img id="detail-main-img" class="detail-main-img" src="${activeColorImg}" alt="${dev.name}" loading="eager"
+            <img id="detail-main-img" class="detail-main-img" src="${activeShot.src}" alt="${dev.name}" loading="eager"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            ${this.portraitBadge(dev, activeColorName, 'portrait-mark-detail')}
             <div style="display:none; width:100%; height:100%;">
               ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
             </div>
@@ -987,10 +1019,10 @@ const App = {
                 <span class="detail-color-active-name" id="detail-active-color-label">${activeColorName}</span>
               </div>
               <div class="detail-color-options">
-                ${colors.map((c, idx) => `
+                ${colorRows.map((c, idx) => `
                   <button type="button" class="color-choice-btn ${idx === 0 ? 'active' : ''}" 
-                    data-color="${c.name}" data-img="${c.image || defaultImg}"
-                    onclick="App.switchDetailColor('${dev.id}', '${c.name}', '${c.image || defaultImg}', this)">
+                    data-color="${c.name}"
+                    onclick="App.switchDetailColor('${dev.id}', '${c.name}', this)">
                     <span class="color-choice-dot" style="background:${c.hex};"></span>
                     <span>${c.name}</span>
                   </button>
@@ -1024,7 +1056,7 @@ const App = {
               </button>
             ` : ''}
             ${(dev.isCommercial || dev.segment === 'commercial') ? `
-              <a href="${dev.specs.officialConfigureUrl || dev.specs.officialDocUrl || 'https://www.microsoftstore.com.cn/commercial'}" target="_blank" rel="noopener noreferrer" class="fluent-btn success" style="text-decoration:none;" title="直达微软官方商用商城选配">
+              <a href="${this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl') || 'https://www.microsoftstore.com.cn/commercial'}" target="_blank" rel="noopener noreferrer" class="fluent-btn success" style="text-decoration:none;" title="直达微软官方商用商城选配">
                 <span>🏢</span> 微软商用商城选配 ↗
               </a>
               ${dev.learnDocUrl ? `
@@ -1033,7 +1065,7 @@ const App = {
                 </a>
               ` : ''}
             ` : `
-              <a href="${dev.specs.officialConfigureUrl || dev.specs.officialDocUrl || 'https://www.microsoftstore.com.cn/surface'}" target="_blank" rel="noopener noreferrer" class="fluent-btn primary" style="text-decoration:none;" title="直达微软官方商城零售选配">
+              <a href="${this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl') || 'https://www.microsoftstore.com.cn/surface'}" target="_blank" rel="noopener noreferrer" class="fluent-btn primary" style="text-decoration:none;" title="直达微软官方商城零售选配">
                 <span>🛒</span> 微软官方商城选配 ↗
               </a>
               ${dev.learnDocUrl ? `
@@ -1052,7 +1084,7 @@ const App = {
             <div style="display:flex; align-items:center; gap:6px;">
               <span style="font-size:15px;">🛡️</span>
               <strong style="color:var(--ms-text-primary);">官方数据存证：</strong>
-              <span style="color:var(--ms-text-secondary);">${dev.specs.sourceReliability || '微软官方说明书'}（核验时间：${dev.specs.lastVerified || '2026-09'}）</span>
+              <span style="color:var(--ms-text-secondary);">${this.spec(dev, 'sourceReliability') || '微软官方说明书'}（核验时间：${this.spec(dev, 'lastVerified') || '2026-09'}）</span>
             </div>
             <a href="#/audit" style="color:var(--ms-accent); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:4px;">
               查阅全系 ${this.listDevices().length} 款核验总账与 Excel ↗
@@ -1232,7 +1264,7 @@ const App = {
                   ${dev.name}
                 </div>
                 <div style="font-size:12px; color:var(--ms-text-secondary); margin-bottom:6px;">
-                  ${dev.specs.releaseDate} · ${dev.specs.cpuModel}
+                  ${this.spec(dev, 'releaseDate')} · ${this.spec(dev, 'cpuModel')}
                 </div>
                 <div style="font-size:11.5px; color:var(--ms-text-tertiary);">${dev.tagline}</div>
                 <div style="display:flex; gap:4px; margin-top:6px;">
@@ -1314,15 +1346,15 @@ const App = {
 
       // CPU 过滤
       if (this.filters.cpu === 'snapdragon') {
-        const cpu = (d.specs.cpuModel || '').toLowerCase();
+        const cpu = String(this.spec(d, 'cpuModel') || '').toLowerCase();
         if (!cpu.includes('snapdragon') && !cpu.includes('sq') && !cpu.includes('高通')) return false;
       }
       if (this.filters.cpu === 'intel') {
-        const cpu = (d.specs.cpuModel || '').toLowerCase();
+        const cpu = String(this.spec(d, 'cpuModel') || '').toLowerCase();
         if (!cpu.includes('intel') && !cpu.includes('酷睿') && !cpu.includes('奔腾')) return false;
       }
       if (this.filters.cpu === 'amd') {
-        const cpu = (d.specs.cpuModel || '').toLowerCase();
+        const cpu = String(this.spec(d, 'cpuModel') || '').toLowerCase();
         if (!cpu.includes('amd') && !cpu.includes('ryzen')) return false;
       }
 
@@ -1332,7 +1364,7 @@ const App = {
 
       // Copilot+ 过滤
       if (this.filters.copilotOnly) {
-        const topsStr = d.specs.npuTops || '';
+        const topsStr = this.spec(d, 'npuTops') || '';
         const num = parseInt(topsStr, 10);
         if (isNaN(num) || num < 40) return false;
       }
@@ -1379,7 +1411,7 @@ const App = {
 
     const matchedDevices = this.listDevices().filter(d => {
       const fullText = this.normalizeSearchText(
-        `${d.name} ${d.nameEn} ${d.generation} ${d.specs.cpuModel} ${d.specs.npuTops} ${d.tagline} ${d.year}`
+        `${d.name} ${d.nameEn} ${d.generation} ${this.spec(d, 'cpuModel')} ${this.spec(d, 'npuTops')} ${d.tagline} ${d.year}`
       );
       return fullText.includes(term);
     });
@@ -1407,7 +1439,7 @@ const App = {
                 <div class="search-result-item" onclick="App.navigateToDetail('${d.categoryId}', '${d.id}'); App.closeSearchModal();">
                   <div>
                     <div style="font-weight:600; font-size:13.5px;">${d.name}</div>
-                    <div style="font-size:11.5px; color:var(--ms-text-secondary);">${d.specs.cpuModel} · ${d.specs.npuTops} · ${d.specs.releaseDate}</div>
+                    <div style="font-size:11.5px; color:var(--ms-text-secondary);">${this.spec(d, 'cpuModel')} · ${this.spec(d, 'npuTops')} · ${this.spec(d, 'releaseDate')}</div>
                   </div>
                   <span class="spec-badge">${d.generation}</span>
                 </div>
@@ -1452,16 +1484,16 @@ const App = {
         <div class="sidebar-nav-item ${this.activeRoute.path === '/' ? 'active' : ''}" onclick="App.navigate('#/')">
           <div class="nav-item-left">
             <span class="nav-item-icon">🏠</span>
-            <span>参数中心首页</span>
+            <span class="nav-item-label">参数中心首页</span>
           </div>
         </div>
       </div>
 
       <!-- 🛒 消费版产品系列 (Consumer) -->
       <div class="sidebar-group">
-        <div class="sidebar-group-title" style="display:flex; justify-content:space-between; align-items:center; color:var(--ms-text-primary); font-weight:800;">
-          <span>🛒 消费版产品系列</span>
-          <span style="font-size:10px; font-weight:700; background:rgba(0,120,212,0.1); color:var(--ms-accent); padding:1px 6px; border-radius:10px;">Consumer</span>
+        <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
+          <span class="sidebar-group-label">🛒 消费版产品系列</span>
+          <span class="sidebar-group-badge consumer">Consumer</span>
         </div>
     `;
 
@@ -1474,7 +1506,7 @@ const App = {
         <div class="sidebar-nav-item ${isActive ? 'active' : ''}" onclick="App.navigate('#/consumer/${cat.seriesId}')">
           <div class="nav-item-left">
             <span class="nav-item-icon">💻</span>
-            <span>${cat.name}</span>
+            <span class="nav-item-label" title="${cat.name}">${cat.name}</span>
           </div>
           <span class="nav-item-count">${count}</span>
         </div>
@@ -1486,9 +1518,9 @@ const App = {
 
       <!-- 🏢 商用版产品系列 (For Business) -->
       <div class="sidebar-group">
-        <div class="sidebar-group-title" style="display:flex; justify-content:space-between; align-items:center; color:var(--ms-text-primary); font-weight:800;">
-          <span>🏢 商用版产品系列</span>
-          <span style="font-size:10px; font-weight:700; background:rgba(16,124,65,0.12); color:#107c41; padding:1px 6px; border-radius:10px;">For Business</span>
+        <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
+          <span class="sidebar-group-label">🏢 商用版产品系列</span>
+          <span class="sidebar-group-badge business">For Business</span>
         </div>
     `;
 
@@ -1500,7 +1532,7 @@ const App = {
         <div class="sidebar-nav-item ${isActive ? 'active' : ''}" onclick="App.navigate('#/business/${cat.seriesId}')">
           <div class="nav-item-left">
             <span class="nav-item-icon">🏢</span>
-            <span>${cat.name}</span>
+            <span class="nav-item-label" title="${cat.name}">${cat.name}</span>
           </div>
           <span class="nav-item-count" style="background:#0078d4; color:#fff;">${count}</span>
         </div>
@@ -1515,7 +1547,7 @@ const App = {
         <div class="sidebar-nav-item ${this.activeRoute.path === '/audit' ? 'active' : ''}" onclick="App.navigate('#/audit')">
           <div class="nav-item-left">
             <span class="nav-item-icon">🛡️</span>
-            <span>数据核验与官方溯源</span>
+            <span class="nav-item-label" title="数据核验与官方溯源">数据核验与官方溯源</span>
           </div>
           <span class="nav-item-count" style="background:#107c41; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">100% 溯源</span>
         </div>
@@ -1526,7 +1558,7 @@ const App = {
         <div class="sidebar-nav-item ${this.activeRoute.path.includes('chips') ? 'active' : ''}" onclick="App.navigate('#/tools/chips')">
           <div class="nav-item-left">
             <span class="nav-item-icon">⚡</span>
-            <span>定制芯片架构库</span>
+            <span class="nav-item-label">定制芯片架构库</span>
           </div>
           <span class="nav-item-count">${SURFACE_DATA.chips.length}</span>
         </div>
@@ -1534,22 +1566,50 @@ const App = {
 
       <div class="sidebar-group">
         <div class="sidebar-group-title">特色辅助分析工具</div>
+        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools' || this.activeRoute.path === '/tools/guide' ? 'active' : ''}" onclick="App.navigate('#/tools/guide')">
+          <div class="nav-item-left">
+            <span class="nav-item-icon">🎯</span>
+            <span class="nav-item-label">场景智能选型向导</span>
+          </div>
+          <span class="nav-item-count" style="background:var(--ms-accent); color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">推荐首选</span>
+        </div>
+        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/weight' ? 'active' : ''}" onclick="App.navigate('#/tools/weight')">
+          <div class="nav-item-left">
+            <span class="nav-item-icon">🎒</span>
+            <span class="nav-item-label">差旅背包负重测算</span>
+          </div>
+          <span class="nav-item-count" style="background:#0078d4; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">外勤实测</span>
+        </div>
+        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/upgrade' ? 'active' : ''}" onclick="App.navigate('#/tools/upgrade')">
+          <div class="nav-item-left">
+            <span class="nav-item-icon">⚖️</span>
+            <span class="nav-item-label">跨代升级价值评估</span>
+          </div>
+          <span class="nav-item-count" style="background:#b75b00; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">新旧PK</span>
+        </div>
+        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/storage' ? 'active' : ''}" onclick="App.navigate('#/tools/storage')">
+          <div class="nav-item-left">
+            <span class="nav-item-icon">🛠️</span>
+            <span class="nav-item-label">固态硬盘省钱指南</span>
+          </div>
+          <span class="nav-item-count" style="background:#107c41; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">省¥1500+</span>
+        </div>
         <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/screen' ? 'active' : ''}" onclick="App.navigate('#/tools/screen')">
           <div class="nav-item-left">
             <span class="nav-item-icon">📐</span>
-            <span>3:2 黄金比例对比器</span>
+            <span class="nav-item-label">3:2 黄金比例对比器</span>
           </div>
         </div>
         <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/compat' ? 'active' : ''}" onclick="App.navigate('#/tools/compat')">
           <div class="nav-item-left">
             <span class="nav-item-icon">⌨️</span>
-            <span>配件双向兼容矩阵</span>
+            <span class="nav-item-label">配件双向兼容矩阵</span>
           </div>
         </div>
         <div class="sidebar-nav-item ${this.activeRoute.path === '/timeline' ? 'active' : ''}" onclick="App.navigate('#/timeline')">
           <div class="nav-item-left">
             <span class="nav-item-icon">⏳</span>
-            <span>2012-2026 编年史</span>
+            <span class="nav-item-label">2012-2026 编年史</span>
           </div>
         </div>
       </div>
@@ -1626,19 +1686,22 @@ const App = {
     this.renderActiveView();
   },
 
-  switchDetailColor(deviceId, colorName, imageUrl, btnEl) {
+  switchDetailColor(deviceId, colorName, btnEl) {
     const imgEl = document.getElementById('detail-main-img');
     const labelEl = document.getElementById('detail-active-color-label');
-    if (imgEl && imageUrl) {
+    const shot = this.shot(this.getDevice(deviceId), colorName);
+    if (imgEl && shot.src) {
       imgEl.style.opacity = '0.3';
       imgEl.style.transform = 'scale(0.97)';
       setTimeout(() => {
-        imgEl.src = imageUrl;
+        imgEl.src = shot.src;
         imgEl.style.display = 'block';
         imgEl.style.opacity = '1';
         imgEl.style.transform = 'scale(1)';
       }, 150);
     }
+    const mark = document.getElementById('portrait-mark-detail');
+    if (mark) mark.hidden = shot.identity !== 'shared';
     if (labelEl) {
       labelEl.textContent = colorName;
     }
@@ -1651,12 +1714,15 @@ const App = {
     }
   },
 
-  previewCardColor(deviceId, imageUrl, dotEl) {
-    if (!imageUrl) return;
+  previewCardColor(deviceId, colorName, dotEl) {
+    const shot = this.shot(this.getDevice(deviceId), colorName);
+    if (!shot.src) return;
     const thumbEl = document.getElementById(`thumb-${deviceId}`);
     if (thumbEl) {
-      thumbEl.src = imageUrl;
+      thumbEl.src = shot.src;
     }
+    const mark = document.getElementById(`portrait-mark-${deviceId}`);
+    if (mark) mark.hidden = shot.identity !== 'shared';
     if (dotEl) {
       const parent = dotEl.parentElement;
       if (parent) {
@@ -1729,20 +1795,6 @@ const App = {
     }
   },
 
-  // 云端素材中心视图 (#/assets)
-  // 具体渲染与交互由 cloud-ui.js 负责，此处仅作路由转发与降级兜底。
-  renderAssetsView(main) {
-    if (!main) return;
-    if (window.SurfaceCloudUI && typeof window.SurfaceCloudUI.renderAssetsView === 'function') {
-      window.SurfaceCloudUI.renderAssetsView(main);
-      return;
-    }
-    main.innerHTML = `
-      <div class="cloud-empty" style="margin-top:40px;">
-        云端模块未能加载（可能处于离线环境）。请联网后刷新页面再试。
-      </div>`;
-  },
-
   scrollToSpecsBottom() {
     if (typeof document === 'undefined') return;
     this.switchDetailTab('specs');
@@ -1760,29 +1812,8 @@ const App = {
 
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
-    // 1. 立即同步启动应用（零延迟秒开）：使用随包内置的高质量全量基线数据
+    // 立即同步启动应用（零延迟秒开）：使用随包内置的高质量全量基线数据
     App.init();
-
-    // 2. 初始化云端 UI（顶栏账号按钮、素材中心入口等）
-    if (window.SurfaceCloudUI && typeof window.SurfaceCloudUI.init === 'function') {
-      try {
-        window.SurfaceCloudUI.init();
-      } catch (e) {
-        console.warn('[SurfaceCloudUI] 初始化异常:', e);
-      }
-    }
-
-    // 3. 云端数据集后台静默同步：非阻塞，成功则增量刷新界面，失败则完全静默
-    const cloudReady = (window.SurfaceCloud && window.SurfaceCloud.ready) || Promise.resolve();
-    Promise.resolve(cloudReady)
-      .then((sc) => {
-        if (sc && sc.dataSource === 'cloud') {
-          // 云端数据加载成功，原地刷新当前视图与侧边栏
-          App.renderSidebar();
-          App.renderRoute();
-        }
-      })
-      .catch(() => null);
   });
 }
 

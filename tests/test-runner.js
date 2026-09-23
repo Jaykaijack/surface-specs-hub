@@ -16,6 +16,7 @@ const App = require('../js/app.js');
 const OFFICIAL_CURRENT_LINEUP_FACTS = require('./official-current-lineup-facts.js');
 const OFFICIAL_HISTORICAL_LINEUP_FACTS = require('./official-historical-lineup-facts.js');
 const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js');
+const { runDeploySeamTests } = require('./deploy-seams.test.js');
 const { runP0SpecBatteryRegressionTests } = require('./p0-spec-battery-regression.test.js');
 // 挂载到全局环境供 Node.js 测试执行
 global.SURFACE_DATA = SURFACE_DATA;
@@ -296,6 +297,80 @@ SURFACE_DATA.accessories.forEach(acc => {
   assert(acc.compatibilityList && acc.compatibilityList.length === SURFACE_DATA.devices.length,
     `配件 [${acc.name}] 必须 100% 覆盖全部 ${SURFACE_DATA.devices.length} 款主机设备兼容性判定`);
 });
+
+// 8. 配件配图真实资产 100% 存在性与有效性验证
+console.log('\n🎨 验证全系 23 款官方配件真实图片资产');
+SURFACE_DATA.accessories.forEach(acc => {
+  assert(!!acc.image, `配件 [${acc.name}] 必须显式声明 image 字段`);
+  const imgRel = (acc.image || '').replace(/^\.\//, '');
+  const fullPath = path.join(__dirname, '..', imgRel);
+  assert(fs.existsSync(fullPath), `配件 [${acc.name}] 图片物理文件必须存在 (${imgRel})`);
+  if (fs.existsSync(fullPath)) {
+    const sz = fs.statSync(fullPath).size;
+    assert(sz > 1000, `配件 [${acc.name}] 图片不能为破损空文件 (当前: ${sz} bytes)`);
+  }
+});
+
+// ----------------------------------------------------
+// 4b. 特色辅助选机工具矩阵测试 (Smart Tools Matrix)
+// ----------------------------------------------------
+console.log('\n🛠️ Test Suite 4b: 特色辅助选机工具矩阵 (智能向导/背包负重/跨代升级/SSD省钱)');
+
+// 1. 场景化智能选型向导
+const smartGuideHtml = ToolsEngine.renderSmartGuide();
+assert(typeof smartGuideHtml === 'string' && smartGuideHtml.includes('guide-container'), '智能选型向导渲染正常');
+assert(smartGuideHtml.includes('场景最佳首选'), '智能向导输出首选卡片');
+assert(smartGuideHtml.includes('高性价比/均衡备选'), '智能向导输出备选卡片');
+
+// 场景联动验证
+ToolsEngine.guideScene = 'commute';
+let matchRes = ToolsEngine.matchRecommendedDevices();
+assert(matchRes.best.id === 'pro-11-13' || matchRes.best.categoryId === 'pro', '移动差旅首推轻便续航型 Pro 机型');
+
+ToolsEngine.guideScene = 'office';
+matchRes = ToolsEngine.matchRecommendedDevices();
+assert(matchRes.best.id === 'laptop-8-138-intel' || matchRes.best.categoryId === 'laptop', '商务办公首推全能兼容 Laptop 机型');
+
+ToolsEngine.guideScene = 'design';
+matchRes = ToolsEngine.matchRecommendedDevices();
+assert(matchRes.best.id === 'sls-2' || matchRes.best.categoryId === 'sls', '创意设计首推专业独显 SLS 机型');
+
+// 2. 差旅背包综合负重与外勤测算器
+ToolsEngine.weightDeviceId = 'pro-11-13';
+ToolsEngine.weightWithKeyboard = true;
+ToolsEngine.weightWithPen = true;
+ToolsEngine.weightCharger = 'gan_65w';
+const weightHtml = ToolsEngine.renderWeightCalculator();
+assert(typeof weightHtml === 'string' && weightHtml.includes('weight-dashboard'), '背包负重测算器渲染正常');
+assert(weightHtml.includes('差旅背包综合负重与外勤测算器'), '负重测算器包含标题与说明');
+assert(weightHtml.includes('真实办公续航估算'), '负重测算器输出真实离电续航估算');
+
+// 3. 跨代升级价值评估透视镜
+ToolsEngine.upgradeOldId = 'pro-7';
+ToolsEngine.upgradeNewId = 'pro-11-13';
+const upgradeHtml = ToolsEngine.renderUpgradeAdvisor();
+assert(typeof upgradeHtml === 'string' && upgradeHtml.includes('Upgrade Advisor'), '跨代升级评估渲染正常');
+assert(upgradeHtml.includes('性能与算力跃迁'), '跨代升级透视镜包含核心硬件提升对比');
+assert(upgradeHtml.includes('升级价值与置换建议'), '跨代升级透视镜输出置换建议结论');
+
+// 4. 可拆卸 SSD 升级与系统安装迁移终极指南 (全方案多Tab覆盖)
+ToolsEngine.storageTab = 'clone';
+const storageCloneHtml = ToolsEngine.renderStorageGuide();
+assert(typeof storageCloneHtml === 'string' && storageCloneHtml.includes('savings-banner'), 'SSD 省钱指南容器渲染正常');
+assert(storageCloneHtml.includes('M.2 2230'), 'SSD 省钱指南强调 M.2 2230 核心规格');
+assert(storageCloneHtml.includes('BitLocker'), '克隆方案包含 BitLocker 避坑提醒');
+assert(storageCloneHtml.includes('等比自动扩容'), '克隆方案包含 C 盘等比自动扩容指导');
+
+ToolsEngine.storageTab = 'recovery';
+const storageRecHtml = ToolsEngine.renderStorageGuide();
+assert(storageRecHtml.includes('FAT32'), '官方恢复方案强调 FAT32 U盘格式');
+assert(storageRecHtml.includes('音量减键'), '官方恢复方案包含 Surface 物理组合键引导指导');
+assert(storageRecHtml.includes('从驱动器恢复'), '官方恢复方案提供 WinRE 详细点击指引');
+
+ToolsEngine.storageTab = 'generic';
+const storageGenHtml = ToolsEngine.renderStorageGuide();
+assert(storageGenHtml.includes('BYPASSNRO'), '通用介质方案提供 OOBE 绕过联网破解指令');
+assert(storageGenHtml.includes('Shift + F10'), '通用介质方案提供快捷键呼出命令提示符指引');
 
 // ----------------------------------------------------
 // 5. 路由与多维筛选系统测试 (Router & Filters)
@@ -1421,6 +1496,7 @@ FOREIGN_STORE_MARKERS.forEach((marker) => {
 
 runP0SpecBatteryRegressionTests({ assert, assertEqual });
   runImageMappingP0Tests({ assert, assertEqual });
+  runDeploySeamTests({ assert, assertEqual });
 
 // ----------------------------------------------------
 // 最终汇总

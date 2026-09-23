@@ -241,7 +241,7 @@ const ComparisonEngine = {
               <div class="table-single-header-title">${dev.name} 官方技术规格全览</div>
               <div class="table-single-header-sub">
                 <span class="table-single-meta-pill">${dev.generation}</span>
-                <span class="table-single-meta-desc">${dev.specs.cpuModel ? `架构：${dev.specs.cpuModel}` : (dev.tagline || '')}</span>
+                <span class="table-single-meta-desc">${Catalog.getSpec(dev, 'cpuModel') ? `架构：${Catalog.getSpec(dev, 'cpuModel')}` : (dev.tagline || '')}</span>
               </div>
             </div>
           </th>
@@ -253,19 +253,20 @@ const ComparisonEngine = {
               <button class="table-device-remove-btn" onclick="ComparisonEngine.removeDevice('${dev.id}')" title="从对比中移除">✕</button>
               
               <div class="table-device-img" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')" style="cursor:pointer;" title="点击查看单机详情页">
-                <img class="table-thumb-img" id="table-thumb-${dev.id}-${colIdx}" src="${SURFACE_DATA.getDeviceImage(dev)}" alt="${dev.name}" loading="lazy"
+                <img class="table-thumb-img" id="table-thumb-${dev.id}-${colIdx}" src="${Catalog.portrait(dev).src}" alt="${dev.name}" loading="lazy"
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                ${Catalog.portrait(dev).identity === 'shared' ? '<span class="portrait-stand-in" id="portrait-mark-' + dev.id + '-' + colIdx + '">同系列示意</span>' : '<span class="portrait-stand-in" id="portrait-mark-' + dev.id + '-' + colIdx + '" hidden>同系列示意</span>'}
                 <div style="display:none; width:100%; height:100%;">
                   ${this.getDeviceSvgIcon(dev.categoryId)}
                 </div>
               </div>
 
               <!-- 表头多配色快速预览 -->
-              ${(dev.specs && Array.isArray(dev.specs.colors) && dev.specs.colors.length > 1) ? `
+              ${(Array.isArray(Catalog.getSpec(dev, 'colors')) && Catalog.getSpec(dev, 'colors').length > 1) ? `
                 <div class="table-color-dots" onclick="event.stopPropagation();">
-                  ${dev.specs.colors.map(c => `
+                  ${Catalog.getSpec(dev, 'colors').map(c => `
                     <span class="table-color-dot" style="background:${c.hex};" title="${c.name}"
-                      onclick="ComparisonEngine.switchTableDeviceColor('${dev.id}', ${colIdx}, '${c.image || ''}', this)"></span>
+                      onclick="ComparisonEngine.switchTableDeviceColor('${dev.id}', ${colIdx}, '${c.name}', this)"></span>
                   `).join('')}
                 </div>
               ` : ''}
@@ -284,8 +285,8 @@ const ComparisonEngine = {
               <div class="table-device-badge-row">
                 ${this.renderStatusBadge(dev.status)}
                 ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
-                ${dev.specs.npuTops && dev.specs.npuTops.includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS</span>' : ''}
-                ${dev.specs.panelTech && dev.specs.panelTech.includes('OLED') ? '<span class="spec-badge green">OLED</span>' : ''}
+                ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS</span>' : ''}
+                ${String(Catalog.getSpec(dev, 'panelTech') || '').includes('OLED') ? '<span class="spec-badge green">OLED</span>' : ''}
               </div>
             </div>
           </th>
@@ -324,9 +325,7 @@ const ComparisonEngine = {
         `;
 
         devicesToCompare.forEach(dev => {
-          const rawVal = (typeof Catalog !== 'undefined' && Catalog.getSpec)
-            ? Catalog.getSpec(dev, field.key)
-            : (dev.specs && dev.specs[field.key]);
+          const rawVal = Catalog.getSpec(dev, field.key);
           const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
           html += `<td class="spec-val-cell">${formattedVal}</td>`;
         });
@@ -347,9 +346,7 @@ const ComparisonEngine = {
   checkFieldDiff(devices, fieldKey) {
     if (!devices || devices.length <= 1) return false;
     const values = devices.map(d => {
-      const raw = (typeof Catalog !== 'undefined' && Catalog.getSpec)
-        ? Catalog.getSpec(d, fieldKey)
-        : (d && d.specs ? d.specs[fieldKey] : undefined);
+      const raw = Catalog.getSpec(d, fieldKey);
       return raw !== undefined ? raw : 'null';
     });
     const firstVal = JSON.stringify(values[0]);
@@ -422,7 +419,7 @@ const ComparisonEngine = {
     // 官方链接与技术文档定制渲染 (第13类：资料与价格来源)
     if (fieldKey === 'officialDocUrl' || (typeof val === 'string' && (val.startsWith('http://') || val.startsWith('https://')))) {
       const isCommercial = dev ? !!dev.isCommercial : false;
-      const configureUrl = (dev && dev.specs && dev.specs.officialConfigureUrl) ? dev.specs.officialConfigureUrl : val;
+      const configureUrl = (dev && Catalog.getSpec(dev, 'officialConfigureUrl')) ? Catalog.getSpec(dev, 'officialConfigureUrl') : val;
       const learnUrl = dev ? dev.learnDocUrl : null;
 
       let linksHtml = '<div style="display:flex; flex-direction:column; gap:6px; align-items:flex-start;">';
@@ -572,12 +569,15 @@ const ComparisonEngine = {
     }
   },
 
-  switchTableDeviceColor(devId, colIdx, imageUrl, dotEl) {
-    if (!imageUrl) return;
+  switchTableDeviceColor(devId, colIdx, colorName, dotEl) {
+    const shot = Catalog.portrait(Catalog.getDevice(devId), colorName);
+    if (!shot.src) return;
     const imgEl = document.getElementById(`table-thumb-${devId}-${colIdx}`);
     if (imgEl) {
-      imgEl.src = imageUrl;
+      imgEl.src = shot.src;
     }
+    const mark = document.getElementById(`portrait-mark-${devId}-${colIdx}`);
+    if (mark) mark.hidden = shot.identity !== 'shared';
     if (dotEl) {
       const parent = dotEl.parentElement;
       if (parent) {

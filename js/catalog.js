@@ -31,10 +31,14 @@ const Catalog = (function () {
     weight: ['weightGrams']
   };
 
+  const PORTRAIT_REV = '20260923';
+  const PORTRAIT_FALLBACK = './assets/products/surface-new-pro-hero.png';
+
   const listeners = [];
   let version = 0;
   let frozenSnapshot = null;
   let overlay = null;
+  let portraitIndex = null;
 
   function baseline() {
     return (typeof SURFACE_DATA !== 'undefined') ? SURFACE_DATA : null;
@@ -199,6 +203,7 @@ const Catalog = (function () {
     });
     if (applied === 0) return false;
     overlay = next;
+    portraitIndex = null;
     version += 1;
     frozenSnapshot = Object.freeze({
       version: version,
@@ -213,6 +218,7 @@ const Catalog = (function () {
   function resetToBaseline() {
     if (!overlay) return false;
     overlay = null;
+    portraitIndex = null;
     version += 1;
     frozenSnapshot = Object.freeze({
       version: version,
@@ -240,6 +246,71 @@ const Catalog = (function () {
     if (typeof cb === 'function') listeners.push(cb);
   }
 
+  function pathKey(rel) {
+    return String(rel || '').split('?')[0].replace(/^\.\//, '');
+  }
+
+  function colorList(device) {
+    const colors = device && device.specs && device.specs.colors;
+    return Array.isArray(colors) ? colors : [];
+  }
+
+  function declaredPaths(device) {
+    const paths = [];
+    if (device && device.heroImage) paths.push(pathKey(device.heroImage));
+    colorList(device).forEach(function (color) {
+      if (color && color.image) paths.push(pathKey(color.image));
+    });
+    return paths;
+  }
+
+  function ensurePortraitIndex() {
+    if (portraitIndex) return portraitIndex;
+    portraitIndex = new Map();
+    devices().forEach(function (device) {
+      declaredPaths(device).forEach(function (file) {
+        if (!portraitIndex.has(file)) portraitIndex.set(file, new Set());
+        portraitIndex.get(file).add(device.id);
+      });
+    });
+    return portraitIndex;
+  }
+
+  function withPortraitRev(src) {
+    const raw = String(src || '');
+    if (!raw || raw.indexOf('data:') === 0 || raw.indexOf('?v=') !== -1) return raw;
+    return raw + '?v=' + PORTRAIT_REV;
+  }
+
+  function portrait(device, colorName) {
+    if (!device) {
+      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
+    }
+    let raw = '';
+    if (colorName) {
+      const found = colorList(device).find(function (color) { return color && color.name === colorName; });
+      if (found && found.image) raw = found.image;
+    }
+    if (!raw) raw = device.heroImage || '';
+    if (!raw) {
+      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
+    }
+    const owners = ensurePortraitIndex().get(pathKey(raw));
+    let shared = false;
+    if (owners) {
+      owners.forEach(function (id) {
+        if (id !== device.id) shared = true;
+      });
+    }
+    return { src: withPortraitRev(raw), identity: shared ? 'shared' : 'official' };
+  }
+
+  function portraitMark(device, colorName) {
+    const shot = portrait(device, colorName);
+    if (shot.identity !== 'shared') return '';
+    return '<span class="portrait-stand-in">同系列示意</span>';
+  }
+
   return {
     version: function () { return version; },
     getDevice: getDevice,
@@ -257,7 +328,9 @@ const Catalog = (function () {
     resetToBaseline: resetToBaseline,
     baselineVersion: baselineVersion,
     acceptsCloudVersion: acceptsCloudVersion,
-    onChange: onChange
+    onChange: onChange,
+    portrait: portrait,
+    portraitMark: portraitMark
   };
 })();
 
