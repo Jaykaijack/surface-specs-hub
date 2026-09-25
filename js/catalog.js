@@ -32,7 +32,7 @@ const Catalog = (function () {
   };
 
   const PORTRAIT_REV = '20260923';
-  const DELIVERY_REV = '20260925pic';
+  const DELIVERY_REV = '20260925pic2';
   const PORTRAIT_FALLBACK = './assets/products/surface-new-pro-hero.png';
 
   const IMAGE_SLOTS = {
