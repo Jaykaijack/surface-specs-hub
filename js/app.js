@@ -252,44 +252,11 @@ const App = {
     const recentAdditions = this.listDevices().slice(0, 4);
 
     let html = `
-      <div class="home-hero-card">
-        <div class="ms-logo" style="width:28px; height:28px; margin-bottom:16px;">
-          <div class="ms-logo-tile red"></div>
-          <div class="ms-logo-tile green"></div>
-          <div class="ms-logo-tile blue"></div>
-          <div class="ms-logo-tile yellow"></div>
-        </div>
-        <h1 style="font-size:34px; font-weight:800; color:var(--ms-text-primary); margin-bottom:12px; line-height:1.25; letter-spacing:-0.5px;">
-          Microsoft Surface 产品参数中心
-        </h1>
-        <p style="font-size:15px; color:var(--ms-text-secondary); max-width:720px; line-height:1.6; margin-bottom:24px;">
-          专业、权威、高密度的 Surface 历代全系技术规格中枢。依照 Google Material Design 规范深度重构，支持横向多机横向滚动比对、智能差异高亮、3:2 屏幕计算器与双向配件生态检索。
-        </p>
-
-        <div style="display:flex; gap:12px; flex-wrap:wrap;">
-          <button class="fluent-btn primary" onclick="App.navigate('#/surface/pro')">
-            <span>💻</span> 浏览 Surface Pro 全系列
-          </button>
-          <button class="fluent-btn" onclick="App.navigate('#/surface/laptop')">
-            <span>⌨️</span> 浏览 Surface Laptop 全系列
-          </button>
-          <button class="fluent-btn" onclick="App.navigate('#/business')">
-            <span>🏢</span> Surface 商用版 (Learn 专区)
-          </button>
-          <button class="fluent-btn" onclick="App.navigate('#/compare?products=pro-12-13-intel,pro-12-13-snap')">
-            <span>⚖️</span> 旗舰对决：Pro 12 Intel vs 骁龙
-          </button>
-          <button class="fluent-btn" onclick="App.navigate('#/timeline')">
-            <span>⏳</span> 2012~2026 编年时间线
-          </button>
-        </div>
-      </div>
-
-      <!-- 当前中国市场正式在售主力机型 -->
       <div class="home-section-header">
-        <h2>🔥 当前国行在售主力旗舰 (Current in China)</h2>
-        <span class="header-sub-tag">共 ${currentCnDevices.length} 款现役机型</span>
+        <h1 style="font-size:22px; font-weight:700; margin:0;">国行在售</h1>
+        <button class="fluent-btn primary" onclick="App.navigate('#/compare?products=pro-12-inch-2,laptop-13-inch-2')">开始对比</button>
       </div>
+      <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">共 ${currentCnDevices.length} 款。点机型看参数，或先对比今天新上的 12 英寸 Pro 与 13 英寸 Laptop。</p>
 
       <div class="device-select-strip" style="margin-bottom:28px;">
     `;
@@ -341,10 +308,9 @@ const App = {
       <!-- 🛒 探索消费版全系列 (Consumer) -->
       <div class="home-section-header">
         <div style="display:flex; align-items:center; gap:8px;">
-          <span style="font-size:22px;">🛒</span>
-          <h2 style="font-size:20px; font-weight:800; color:var(--ms-text-primary); margin:0;">探索消费版产品系列 (Consumer)</h2>
+          <h2 style="font-size:20px; font-weight:700; color:var(--ms-text-primary); margin:0;">消费版</h2>
         </div>
-        <span class="header-sub-tag">共 8 大消费专属产品线 · 100% 微软官方商城在售与历代旗舰</span>
+        <span class="header-sub-tag">按系列查看历代机型</span>
       </div>
 
       <div class="series-nav-grid">
@@ -377,17 +343,16 @@ const App = {
       <!-- 🏢 探索商用版全系列 (For Business) -->
       <div class="home-section-header" style="margin-top:36px;">
         <div style="display:flex; align-items:center; gap:8px;">
-          <span style="font-size:22px;">🏢</span>
-          <h2 style="font-size:20px; font-weight:800; color:var(--ms-text-primary); margin:0;">探索商用版产品系列 (For Business)</h2>
+          <h2 style="font-size:20px; font-weight:700; color:var(--ms-text-primary); margin:0;">商用版</h2>
         </div>
-        <span class="header-sub-tag">专为企业 IT 采购与部署设计 · 100% 微软官方 Learn 与原厂 Fact Sheet 存证</span>
+        <span class="header-sub-tag">按系列查看商用机型</span>
       </div>
 
       <div class="series-nav-grid">
         ${(SURFACE_DATA.commercialCategories || []).map(cat => {
           const devs = this.listDevices({ seriesId: cat.seriesId, segment: 'commercial' });
           return `
-            <div class="series-card" onclick="App.navigate('#/business/${cat.seriesId}')" style="border-top:3px solid #0078d4;">
+            <div class="series-card" onclick="App.navigate('#/business/${cat.seriesId}')">
               <div class="series-icon">
                 ${this.picture(this.shot(devs[0]), {
                   slot: 'icon',
@@ -401,9 +366,9 @@ const App = {
                 </div>
               </div>
               <div class="series-info">
-                <div class="series-title" style="color:#0078d4;">${cat.name}</div>
+                <div class="series-title">${cat.name}</div>
                 <div class="series-desc">${cat.desc}</div>
-                <div class="series-count" style="color:#0078d4;">收录历代 ${devs.length} 款商用产品 ↗</div>
+                <div class="series-count">收录历代 ${devs.length} 款商用产品 ↗</div>
               </div>
             </div>
           `;
@@ -412,7 +377,7 @@ const App = {
 
       <!-- 快速对比经典组合推荐 -->
       <div class="home-section-header" style="margin-top:28px;">
-        <h2>⚖️ 经典热门对比推荐</h2>
+        <h2>常用对比</h2>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
         <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-12-13-intel,pro-12-13-snap')">
@@ -1546,8 +1511,7 @@ const App = {
       <!-- 🛒 消费版产品系列 (Consumer) -->
       <div class="sidebar-group">
         <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
-          <span class="sidebar-group-label">🛒 消费版产品系列</span>
-          <span class="sidebar-group-badge consumer">Consumer</span>
+          <span class="sidebar-group-label">消费版</span>
         </div>
     `;
 
@@ -1573,8 +1537,7 @@ const App = {
       <!-- 🏢 商用版产品系列 (For Business) -->
       <div class="sidebar-group">
         <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
-          <span class="sidebar-group-label">🏢 商用版产品系列</span>
-          <span class="sidebar-group-badge business">For Business</span>
+          <span class="sidebar-group-label">商用版</span>
         </div>
     `;
 
@@ -1588,7 +1551,7 @@ const App = {
             <span class="nav-item-icon">🏢</span>
             <span class="nav-item-label" title="${cat.name}">${cat.name}</span>
           </div>
-          <span class="nav-item-count" style="background:#0078d4; color:#fff;">${count}</span>
+          <span class="nav-item-count">${count}</span>
         </div>
       `;
     });
@@ -1601,9 +1564,8 @@ const App = {
         <div class="sidebar-nav-item ${this.activeRoute.path === '/audit' ? 'active' : ''}" onclick="App.navigate('#/audit')">
           <div class="nav-item-left">
             <span class="nav-item-icon">🛡️</span>
-            <span class="nav-item-label" title="数据核验与官方溯源">数据核验与官方溯源</span>
+            <span class="nav-item-label" title="数据核验">数据核验</span>
           </div>
-          <span class="nav-item-count" style="background:#107c41; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">100% 溯源</span>
         </div>
       </div>
 
@@ -1625,28 +1587,24 @@ const App = {
             <span class="nav-item-icon">🎯</span>
             <span class="nav-item-label">场景智能选型向导</span>
           </div>
-          <span class="nav-item-count" style="background:var(--ms-accent); color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">推荐首选</span>
         </div>
         <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/weight' ? 'active' : ''}" onclick="App.navigate('#/tools/weight')">
           <div class="nav-item-left">
             <span class="nav-item-icon">🎒</span>
             <span class="nav-item-label">差旅背包负重测算</span>
           </div>
-          <span class="nav-item-count" style="background:#0078d4; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">外勤实测</span>
         </div>
         <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/upgrade' ? 'active' : ''}" onclick="App.navigate('#/tools/upgrade')">
           <div class="nav-item-left">
             <span class="nav-item-icon">⚖️</span>
             <span class="nav-item-label">跨代升级价值评估</span>
           </div>
-          <span class="nav-item-count" style="background:#b75b00; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">新旧PK</span>
         </div>
         <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/storage' ? 'active' : ''}" onclick="App.navigate('#/tools/storage')">
           <div class="nav-item-left">
             <span class="nav-item-icon">🛠️</span>
             <span class="nav-item-label">固态硬盘省钱指南</span>
           </div>
-          <span class="nav-item-count" style="background:#107c41; color:#fff; font-size:11px; padding:2px 6px; border-radius:4px;">省¥1500+</span>
         </div>
         <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/screen' ? 'active' : ''}" onclick="App.navigate('#/tools/screen')">
           <div class="nav-item-left">

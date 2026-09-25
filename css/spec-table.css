@@ -294,7 +294,8 @@
 }
 .spec-table.highlight-diff tbody tr.row-diff td.spec-param-name {
   color: var(--ms-text-brand);
-  border-left: 3px solid var(--ms-accent);
+  font-weight: 700;
+  background-color: var(--ms-highlight-diff);
 }
 
 /* 仅看差异模式隐藏完全一致行 */

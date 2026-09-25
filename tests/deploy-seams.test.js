@@ -61,14 +61,50 @@ function runDeploySeamTests(helpers) {
   assert(Boolean(sharedDevice), '档案里存在同系列共用的机型图');
   assert(Boolean(officialDevice), '档案里存在只属于一台机器的配色图');
 
-  const sharedShot = Catalog.portrait(sharedDevice);
-  assertEqual(sharedShot.identity, 'shared', '多台机器共用的图，身份是同系列代用图');
+  const pro13 = SURFACE_DATA.devices.find((device) => device.id === 'pro-12-13-intel');
+  const pro13Shot = Catalog.portrait(pro13);
+  assertEqual(pro13Shot.identity, 'official', '同一代的 Intel、骁龙、消费版共用官方图，不叫代用图');
+  assertEqual(Catalog.portraitMark(pro13), '', '国行在售的第 12 代不打「同系列示意」');
+  const pro12 = SURFACE_DATA.devices.find((device) => device.id === 'pro-12-inch');
+  assertEqual(Catalog.portrait(pro12).identity, 'official', '12 英寸消费版和商用版共用官方图，不叫代用图');
+  const borrowed = SURFACE_DATA.devices.find((device) => device.id === 'pro-11-13');
+  const sharedShot = Catalog.portrait(borrowed);
+  assertEqual(sharedShot.identity, 'shared', '用了另一代机器的图，身份才是同系列代用图');
   assert(String(sharedShot.src).includes('?v='), '机型图地址带版本标记，服务器上换图后浏览器会重新取');
-  assert(Catalog.portraitMark(sharedDevice).includes('同系列示意'), '代用图要标出「同系列示意」');
+  assert(Catalog.portraitMark(borrowed).includes('同系列示意'), '代用图要标出「同系列示意」');
 
-  const officialShot = Catalog.portrait(officialDevice, officialColor);
-  assertEqual(officialShot.identity, 'official', '只属于这一台、这一色的图，身份是官方原图');
-  assertEqual(Catalog.portraitMark(officialDevice, officialColor), '', '官方原图不打代用标记');
+  const laptop8 = SURFACE_DATA.devices.find((device) => device.id === 'laptop-8-138');
+  const laptop8Platinum = Catalog.portrait(laptop8, '亮铂金');
+  assertEqual(laptop8Platinum.identity, 'official', '第 8 代消费版亮铂金用的是单独的官方配色图');
+  assertEqual(Catalog.portraitMark(laptop8, '亮铂金'), '', '单独配色图不打代用标记');
+  const laptop8Intel = SURFACE_DATA.devices.find((device) => device.id === 'laptop-8-138-intel');
+  assertEqual(Catalog.portrait(laptop8Intel, '亮铂金').identity, 'official', '第 8 代 Intel 亮铂金和第 8 代主图是同一张，不叫代用图');
+  const laptop1 = SURFACE_DATA.devices.find((device) => device.id === 'laptop-1');
+  assertEqual(Catalog.portrait(laptop1).identity, 'official', '初代 Laptop 主图已换成 2017 年官方产品图');
+  assertEqual(Catalog.portrait(laptop1, '亮铂金').identity, 'official', '初代 Laptop 亮铂金用的是 2017 年官方铂金图');
+  assertEqual(Catalog.portrait(laptop1, '勃艮第红').identity, 'official', '初代 Laptop 勃艮第红用的是 2017 年官方红色图');
+  const laptop2 = SURFACE_DATA.devices.find((device) => device.id === 'laptop-2');
+  assertEqual(Catalog.portrait(laptop2).identity, 'official', 'Laptop 2 主图已换成自己的官方产品图');
+  const pro1 = SURFACE_DATA.devices.find((device) => device.id === 'pro-1');
+  assertEqual(Catalog.portrait(pro1).identity, 'shared', '初代 Pro 的主图和第 12 代典雅黑是同一张，要标示意');
+  const pro8 = SURFACE_DATA.devices.find((device) => device.id === 'pro-8');
+  const pro3 = SURFACE_DATA.devices.find((device) => device.id === 'pro-3');
+  const pro4 = SURFACE_DATA.devices.find((device) => device.id === 'pro-4');
+  const pro5 = SURFACE_DATA.devices.find((device) => device.id === 'pro-5');
+  const pro6 = SURFACE_DATA.devices.find((device) => device.id === 'pro-6');
+  const prox = SURFACE_DATA.devices.find((device) => device.id === 'pro-x');
+  assertEqual(Catalog.portrait(pro8).identity, 'official', 'Pro 8 主图已换成自己的官方产品图');
+  assertEqual(Catalog.portrait(pro5).identity, 'official', '2017 款 Surface Pro 主图已换成自己的官方产品图');
+  assertEqual(Catalog.portrait(pro6).identity, 'official', 'Pro 6 主图已换成自己的官方产品图');
+  assertEqual(Catalog.portrait(prox).identity, 'official', 'Pro X 主图已换成自己的官方产品图');
+  assertEqual(Catalog.portrait(pro3).identity, 'official', 'Pro 3 主图已换成 2014 年官方产品图');
+  assertEqual(Catalog.portrait(pro4).identity, 'shared', 'Pro 4 还没有自己的官方产品图，继续标示意');
+  const hub2s = SURFACE_DATA.devices.find((device) => device.id === 'hub-2s');
+  const hub3 = SURFACE_DATA.devices.find((device) => device.id === 'hub-3');
+  assertEqual(Catalog.portrait(hub2s).identity, 'official', '文件名写明 Hub 2S 的图，仍属于 Hub 2S');
+  assertEqual(Catalog.portrait(hub3).identity, 'shared', 'Hub 3 借用 Hub 2S 的图，要标示意');
+
+  const officialShot = laptop8Platinum;
 
   const detailHtml = Catalog.frame(officialShot, { slot: 'detail', alt: '详情' });
   assert(detailHtml.includes('type="image/avif"'), '详情图先提供 AVIF，浏览器只下一张');

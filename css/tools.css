@@ -452,11 +452,10 @@
   line-height: 1.6;
 }
 .guide-feature-box.reasons {
-  border-left: 3px solid #107c41;
+  background: rgba(16, 124, 65, 0.1);
 }
 .guide-feature-box.warnings {
-  border-left: 3px solid #d83b01;
-  background: rgba(216, 59, 1, 0.05);
+  background: rgba(216, 59, 1, 0.1);
 }
 
 /* ========================================================
@@ -678,18 +677,15 @@
   line-height: 1.6;
 }
 .tip-callout.warning {
-  background: rgba(216, 59, 1, 0.08);
-  border-left: 4px solid #d83b01;
+  background: rgba(216, 59, 1, 0.12);
   color: var(--ms-text-primary);
 }
 .tip-callout.info {
-  background: rgba(0, 120, 212, 0.08);
-  border-left: 4px solid #0078d4;
+  background: rgba(0, 120, 212, 0.12);
   color: var(--ms-text-primary);
 }
 .tip-callout.success {
-  background: rgba(16, 124, 65, 0.08);
-  border-left: 4px solid #107c41;
+  background: rgba(16, 124, 65, 0.12);
   color: var(--ms-text-primary);
 }
 

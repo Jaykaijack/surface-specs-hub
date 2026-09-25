@@ -18,10 +18,10 @@
   <meta property="og:image" content="./assets/delivery/webp/w1280/surface-new-pro-hero.webp">
 
   <!-- Fluent 2 样式系统 & HubWeb 布局框架 (100% 离线自给自足) -->
-  <link rel="stylesheet" href="./css/fluent-tokens.css">
-  <link rel="stylesheet" href="./css/hubweb-layout.css?v=20260923-img">
-  <link rel="stylesheet" href="./css/spec-table.css">
-  <link rel="stylesheet" href="./css/tools.css">
+  <link rel="stylesheet" href="./css/fluent-tokens.css?v=20260924-ui">
+  <link rel="stylesheet" href="./css/hubweb-layout.css?v=20260924-ui">
+  <link rel="stylesheet" href="./css/spec-table.css?v=20260924-ui">
+  <link rel="stylesheet" href="./css/tools.css?v=20260924-ui">
 </head>
 <body>
 
@@ -52,7 +52,7 @@
           type="text" 
           class="hub-search-input" 
           id="global-search-input" 
-          placeholder="快捷搜索型号、芯片、代数或特性 (如 Pro 12, X2, OLED, 80 TOPS, 商用)..." 
+          placeholder="搜索机型" 
           autocomplete="off"
         >
         <button class="search-clear-btn" id="search-clear-btn" title="清空搜索">✕</button>
@@ -117,7 +117,7 @@
 
     <div class="dock-right">
       <button class="fluent-btn primary" onclick="App.navigate('#/compare')">
-        立即横向比对
+        打开对比表
       </button>
       <button class="fluent-btn" onclick="ComparisonEngine.clearAll()">
         清空全部
@@ -136,14 +136,14 @@
   </footer>
 
   <!-- 核心数据源与业务引擎脚本 (严格按依赖顺序加载) -->
-  <script src="./js/surface-data.js?v=20260922-merge"></script>
+  <script src="./js/surface-data.js?v=20260924-new"></script>
   <script src="./js/verification-status.js"></script>
-  <script src="./js/image-delivery.js?v=20260923-img"></script>
-  <script src="./js/catalog.js?v=20260923-img"></script>
+  <script src="./js/image-delivery.js?v=20260924-new"></script>
+  <script src="./js/catalog.js?v=20260923-mark4"></script>
   <script src="./js/taxonomy.js?v=20260921x"></script>
-  <script src="./js/comparison-engine.js?v=20260923-img"></script>
-  <script src="./js/tools-engine.js?v=20260923-img"></script>
-  <script src="./js/app.js?v=20260923-img"></script>
+  <script src="./js/comparison-engine.js?v=20260924-ui2"></script>
+  <script src="./js/tools-engine.js?v=20260924-ui"></script>
+  <script src="./js/app.js?v=20260924-ui"></script>
 
 </body>
 </html>

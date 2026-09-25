@@ -865,7 +865,7 @@ const SURFACE_DATA = {
       "flagship": false,
       "tagline": "12 英寸便携羽量级 Copilot+ PC，高通骁龙 X Plus 8 核",
       "prevGenerationId": null,
-      "nextGenerationId": null,
+      "nextGenerationId": "pro-12-inch-2",
       "specs": {
         "fastCharging": "推荐快充 45W",
         "thunderboltSupport": "not_applicable",
@@ -959,6 +959,115 @@ const SURFACE_DATA = {
       },
       "isCommercial": false,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
+      "segment": "consumer"
+    },
+    {
+      "id": "pro-12-inch-2",
+      "categoryId": "pro",
+      "heroImage": "./assets/products/surface-pro-12-2-platinum.png",
+      "name": "Surface Pro, 12 英寸 (第 2 代)",
+      "nameEn": "Surface Pro, 12-inch (2nd Edition)",
+      "generation": "第 2 代 (2026)",
+      "year": 2026,
+      "status": "current_cn",
+      "targetAudience": "consumer",
+      "flagship": false,
+      "tagline": "6 核骁龙 X2 Plus，12 英寸 500 尼特屏",
+      "prevGenerationId": "pro-12-inch",
+      "nextGenerationId": null,
+      "specs": {
+        "fastCharging": "USB-C 最低 60W 可快充",
+        "thunderboltSupport": "not_applicable",
+        "windowsHello": "Windows Hello 面部识别",
+        "releaseDate": "2026 年 9 月",
+        "generation": "第 2 代",
+        "status": "current_cn",
+        "targetAudience": "面向个人移动创作与轻薄便携",
+        "tagline": "6 核骁龙 X2 Plus，屏幕亮度优于前代",
+        "colors": [
+          {
+            "name": "亮铂金",
+            "hex": "#d7d8d8",
+            "image": "./assets/products/surface-pro-12-2-platinum.png"
+          },
+          {
+            "name": "罗兰紫",
+            "hex": "#a19dc4",
+            "image": "./assets/products/surface-pro-12-2-violet.png"
+          },
+          {
+            "name": "典雅黑",
+            "hex": "#000000",
+            "image": "./assets/products/surface-pro-12-2-black.png"
+          }
+        ],
+        "chassisMaterial": "托架采用 100% 再生铝合金",
+        "kickstandType": "一体式支架",
+        "osAtLaunch": "Windows 11 家庭版；附带 Office 家庭版 2024",
+        "cpuModel": "Snapdragon® X2 Plus（6 核）",
+        "cpuArch": "not_disclosed",
+        "cpuCores": "6 核",
+        "gpuModel": "not_disclosed",
+        "npuModel": "Qualcomm® Hexagon™",
+        "npuTops": "80 TOPS",
+        "copilotPlus": "16GB 及以上为 Copilot+ PC / Windows 11 AI+ PC（8GB 不适用）",
+        "ramSpec": "8GB / 16GB / 24GB LPDDR5x",
+        "storageOptions": "256GB / 512GB（UFS）",
+        "ssdRemovable": "not_applicable",
+        "expandableStorage": "not_applicable",
+        "screenSize": "12.0 英寸 PixelSense™ LCD 触控屏",
+        "aspectRatio": "3:2",
+        "panelTech": "LCD",
+        "resolution": "2196 × 1464",
+        "ppi": "220 PPI",
+        "refreshRate": "最高 90Hz（默认 60Hz）",
+        "brightness": "SDR 最大 500 尼特（典型值）",
+        "colorGamut": "sRGB 和增强型，对比度 1400:1",
+        "displayProtection": "not_disclosed",
+        "penSupport": "专为 Surface 超薄触控笔 2 设计，支持触觉反馈",
+        "touchAndPenProtocol": "支持 Microsoft Pen Protocol（MPP）",
+        "touchSupport": "触控屏",
+        "audioTech": "Dolby Atmos®",
+        "rearCamera": "1000 万像素 Ultra HD 后置摄像头",
+        "frontCamera": "全高清（1080p）前置 Surface Studio 摄像头",
+        "studioEffects": "Windows 工作室效果（自动取景、人像模糊、创意滤镜、眼神交流、人像光效）",
+        "speakers": "支持杜比全景声（Dolby Atmos®）的 2W 立体声扬声器",
+        "mics": "not_disclosed",
+        "usbC": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞",
+        "usbA": "not_applicable",
+        "audioJack": "not_applicable",
+        "surfaceConnect": "Surface 键盘连接器",
+        "sdSlot": "not_applicable",
+        "simSlot": "5G 版含 SIM 卡托",
+        "wifi": "Wi-Fi 7",
+        "bluetooth": "蓝牙 5.4",
+        "cellular": "可选 Wi-Fi + 5G",
+        "batteryWh": "38 Wh（额定；最小 37 Wh）",
+        "batteryLifeLocalVideo": "仅 Wi-Fi 型号最长 15.5 小时本地视频播放",
+        "batteryLifeWeb": "仅 Wi-Fi 型号最长 13 小时网页浏览",
+        "chargingSpeed": "包装不含充电器，附 USB-C 充电线；USB-C 最低 60W 可快充",
+        "keyboardCompatibility": "Surface Pro 12 英寸键盘（另售）",
+        "penChargingType": "机背磁吸收纳并无线充电",
+        "trackpadType": "not_applicable",
+        "tpmChip": "Microsoft Pluton 安全处理器，TPM 2.0",
+        "securedCorePc": "Windows 11 安全核心 PC",
+        "biometrics": "Windows Hello 人脸识别",
+        "enterpriseManage": "not_disclosed",
+        "dimensionsMm": "274 × 190 × 7.8",
+        "weightGrams": "686 克（不含键盘）",
+        "totalWeightWithKeyboard": "not_disclosed",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "¥9,688 起",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-24",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro",
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/buy-surface-pro"
+      },
+      "isCommercial": false,
+      "learnDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro",
       "segment": "consumer"
     },
     {
@@ -2218,7 +2327,7 @@ const SURFACE_DATA = {
     {
       "id": "laptop-8-138-intel",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-new-laptop-hero.png",
+      "heroImage": "./assets/products/surface-laptop-8-platinum.png",
       "name": "Surface Laptop 13.8 英寸 (第 8 代) 商用版 - Intel 版",
       "nameEn": "Surface Laptop, 13.8-inch (8th Edition) for Business - Intel",
       "generation": "第 8 代 (2026)",
@@ -2243,12 +2352,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -2321,7 +2430,7 @@ const SURFACE_DATA = {
     {
       "id": "laptop-8-138-snap",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-new-laptop-hero.png",
+      "heroImage": "./assets/products/surface-laptop-8-platinum.png",
       "name": "Surface Laptop 13.8 英寸 (第 8 代) 商用版 - 骁龙版",
       "nameEn": "Surface Laptop, 13.8-inch (8th Edition) for Business - Snapdragon",
       "generation": "第 8 代 (2026)",
@@ -2346,12 +2455,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -2424,7 +2533,7 @@ const SURFACE_DATA = {
     {
       "id": "laptop-8-150-intel",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-new-laptop-hero.png",
+      "heroImage": "./assets/products/surface-laptop-8-platinum.png",
       "name": "Surface Laptop 15 英寸 (第 8 代) 商用版 - Intel 版",
       "nameEn": "Surface Laptop, 15-inch (8th Edition) for Business - Intel",
       "generation": "第 8 代 (2026)",
@@ -2444,12 +2553,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -2521,7 +2630,7 @@ const SURFACE_DATA = {
     {
       "id": "laptop-8-150-snap",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-new-laptop-hero.png",
+      "heroImage": "./assets/products/surface-laptop-8-platinum.png",
       "name": "Surface Laptop 15 英寸 (第 8 代) 商用版 - 骁龙版",
       "nameEn": "Surface Laptop, 15-inch (8th Edition) for Business - Snapdragon",
       "generation": "第 8 代 (2026)",
@@ -2541,12 +2650,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -2618,7 +2727,7 @@ const SURFACE_DATA = {
     {
       "id": "laptop-8-138",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-new-laptop-hero.png",
+      "heroImage": "./assets/products/surface-laptop-8-platinum.png",
       "name": "Surface Laptop 13.8 英寸 (第 8 代)",
       "nameEn": "Surface Laptop, 13.8-inch (8th Edition)",
       "generation": "第 8 代 (2026)",
@@ -2732,7 +2841,7 @@ const SURFACE_DATA = {
     {
       "id": "laptop-8-150",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-new-laptop-hero.png",
+      "heroImage": "./assets/products/surface-laptop-8-platinum.png",
       "name": "Surface Laptop 15 英寸 (第 8 代)",
       "nameEn": "Surface Laptop, 15-inch (8th Edition)",
       "generation": "第 8 代 (2026)",
@@ -2758,12 +2867,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -3388,7 +3497,7 @@ const SURFACE_DATA = {
           {
             "name": "勃艮第红",
             "hex": "#800020",
-            "image": "./assets/products/surface-laptop-perspective-hero.png"
+            "image": "./assets/products/surface-laptop-2-hero.png"
           },
           {
             "name": "深钴蓝",
@@ -3484,22 +3593,22 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-1-hero.png"
           },
           {
             "name": "石墨金",
             "hex": "#cfb53b",
-            "image": "./assets/products/surface-laptop-dune.png"
+            "image": "./assets/products/surface-laptop-1-gold.png"
           },
           {
             "name": "勃艮第红",
             "hex": "#800020",
-            "image": "./assets/products/surface-laptop-perspective-hero.png"
+            "image": "./assets/products/surface-laptop-1-burgundy.png"
           },
           {
             "name": "深钴蓝",
             "hex": "#0047ab",
-            "image": "./assets/products/surface-laptop-sapphire.png"
+            "image": "./assets/products/surface-laptop-1-cobalt.png"
           }
         ],
         "chassisMaterial": "铝",
@@ -6830,7 +6939,7 @@ const SURFACE_DATA = {
       "flagship": false,
       "tagline": "极简超便携轻薄触控本，官方本地视频续航长达 23 小时",
       "prevGenerationId": null,
-      "nextGenerationId": null,
+      "nextGenerationId": "laptop-13-inch-2",
       "specs": {
         "releaseDate": "2025 年 10 月 / 2026 年",
         "generation": "第 1 代",
@@ -6908,6 +7017,109 @@ const SURFACE_DATA = {
       },
       "isCommercial": false,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
+      "segment": "consumer"
+    },
+    {
+      "id": "laptop-13-inch-2",
+      "categoryId": "laptop",
+      "heroImage": "./assets/products/surface-laptop-13-2-violet.png",
+      "name": "Surface Laptop, 13 英寸 (第 2 代)",
+      "nameEn": "Surface Laptop, 13-inch (2nd Edition)",
+      "generation": "第 2 代 (2026)",
+      "year": 2026,
+      "status": "current_cn",
+      "targetAudience": "consumer",
+      "flagship": false,
+      "tagline": "6 核骁龙 X2 Plus，本地视频最长 22.5 小时",
+      "prevGenerationId": "laptop-13-inch",
+      "nextGenerationId": null,
+      "specs": {
+        "releaseDate": "2026 年 9 月",
+        "generation": "第 2 代",
+        "status": "current_cn",
+        "targetAudience": "面向日常轻薄本用户",
+        "tagline": "全新 13 英寸，起售价 ¥9,688",
+        "colors": [
+          {
+            "name": "罗兰紫",
+            "hex": "#a19dc4",
+            "image": "./assets/products/surface-laptop-13-2-violet.png"
+          },
+          {
+            "name": "亮铂金",
+            "hex": "#d7d8d8",
+            "image": "./assets/products/surface-laptop-13-2-platinum.png"
+          },
+          {
+            "name": "典雅黑",
+            "hex": "#000000",
+            "image": "./assets/products/surface-laptop-13-2-black.png"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "Windows 11 家庭版；附带 Office 家庭版 2024",
+        "cpuModel": "Snapdragon® X2 Plus（6 核）",
+        "cpuArch": "not_disclosed",
+        "cpuCores": "6 核",
+        "gpuModel": "not_disclosed",
+        "npuModel": "Qualcomm® Hexagon™",
+        "npuTops": "80 TOPS",
+        "copilotPlus": "16GB 及以上为 Copilot+ PC / Windows 11 AI+ PC（8GB 不适用）",
+        "ramSpec": "8GB / 16GB / 24GB LPDDR5x",
+        "storageOptions": "256GB / 512GB（UFS），官方标注可拆卸式",
+        "ssdRemovable": "官方标注可拆卸式",
+        "expandableStorage": "not_applicable",
+        "screenSize": "13.0 英寸 PixelSense™ LCD 触控屏",
+        "aspectRatio": "3:2",
+        "panelTech": "LCD",
+        "resolution": "1920 × 1280",
+        "ppi": "178 PPI",
+        "refreshRate": "最高 60Hz",
+        "brightness": "最大 500 尼特（典型值）",
+        "colorSupport": "sRGB 和增强型，对比度 1000:1",
+        "touchAndPenProtocol": "仅触控，不支持触控笔",
+        "frontCamera": "1080p 全高清前置 Surface Studio 摄像头",
+        "windowsHello": "指纹电源按钮",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "Windows 工作室效果（自动取景、人像模糊、创意滤镜、眼神交流、人像光效）",
+        "microphones": "具有语音聚焦功能的矩阵式远场双麦克风",
+        "speakers": "Omnisonic® 扬声器，搭载杜比音效™",
+        "audioTech": "杜比音效™",
+        "headphoneJack": "not_applicable",
+        "usbPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "Wi-Fi 7 + 蓝牙 5.4",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "50 Wh（额定；最小 48 Wh）",
+        "batteryLifeOffice": "最长 18 小时网页浏览",
+        "batteryLifeVideo": "最长 22.5 小时本地视频播放",
+        "chargingPower": "标配 Surface 45W USB-C 壁式充电器，附 USB-C 充电线",
+        "fastCharging": "not_disclosed",
+        "compatibleKeyboard": "集成键盘",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "精确式触摸板，带自适应触控模式",
+        "tpmChip": "Microsoft Pluton 安全处理器，TPM 2.0",
+        "securedCorePc": "Windows 11 安全核心 PC",
+        "biometrics": "指纹电源按钮",
+        "enterpriseManage": "not_disclosed",
+        "dimensionsMm": "285.65 × 214.14 × 15.6",
+        "weightGrams": "1220 克（1.22 千克）",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "¥9,688 起",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-24",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop",
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop"
+      },
+      "isCommercial": false,
+      "learnDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop",
       "segment": "consumer"
     },
     {
@@ -7653,6 +7865,11 @@ const SURFACE_DATA = {
           "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
         },
         {
+          "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
+        },
+        {
           "deviceId": "pro-11-13",
           "status": "FULL",
           "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
@@ -7958,6 +8175,11 @@ const SURFACE_DATA = {
           "note": "原生免驱蓝牙直连，平滑触控滚动"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "原生免驱蓝牙直连，平滑触控滚动"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "原生免驱蓝牙直连，平滑触控滚动"
@@ -8016,6 +8238,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "二合一生产力桌面拓展主力鼠标"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "二合一生产力桌面拓展主力鼠标"
         },
@@ -8325,6 +8552,11 @@ const SURFACE_DATA = {
           "note": "旗舰级办公操控体验，支持蓝牙+有线双模"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "旗舰级办公操控体验，支持蓝牙+有线双模"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "旗舰级办公操控体验，支持蓝牙+有线双模"
@@ -8383,6 +8615,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "轻薄便携差旅办公"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "轻薄便携差旅办公"
         },
@@ -8692,6 +8929,11 @@ const SURFACE_DATA = {
           "note": "随身移动办公"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "随身移动办公"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "随身移动办公"
@@ -8750,6 +8992,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "桌面拓展办公首选"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "桌面拓展办公首选"
         },
@@ -9059,6 +9306,11 @@ const SURFACE_DATA = {
           "note": "重度桌面办公健康之选"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "重度桌面办公健康之选"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "重度桌面办公健康之选"
@@ -9117,6 +9369,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理磁吸接口与尺寸不兼容)"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
         },
@@ -9426,6 +9683,11 @@ const SURFACE_DATA = {
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理磁吸接口与尺寸不兼容)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
@@ -9484,6 +9746,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (接口物理不兼容)"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持 (接口物理不兼容)"
         },
@@ -9793,6 +10060,11 @@ const SURFACE_DATA = {
           "note": "不支持 (接口物理不兼容)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (接口物理不兼容)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (接口物理不兼容)"
@@ -9851,6 +10123,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理接口或尺寸不兼容)"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理接口或尺寸不兼容)"
         },
@@ -10160,6 +10437,11 @@ const SURFACE_DATA = {
           "note": "不支持 (物理接口或尺寸不兼容)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理接口或尺寸不兼容)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理接口或尺寸不兼容)"
@@ -10218,6 +10500,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
         },
@@ -10527,6 +10814,11 @@ const SURFACE_DATA = {
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
@@ -10585,6 +10877,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
         },
@@ -10894,6 +11191,11 @@ const SURFACE_DATA = {
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
@@ -10952,6 +11254,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "二合一主机桌面办公利器"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "二合一主机桌面办公利器"
         },
@@ -11261,6 +11568,11 @@ const SURFACE_DATA = {
           "note": "外接大屏桌面办公利器"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "外接大屏桌面办公利器"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "外接大屏桌面办公利器"
@@ -11319,6 +11631,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "PARTIAL",
+          "note": "支持 4096 级压感与倾角书写；机身无震动马达驱动，需外置充电座"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "PARTIAL",
           "note": "支持 4096 级压感与倾角书写；机身无震动马达驱动，需外置充电座"
         },
@@ -11628,6 +11945,11 @@ const SURFACE_DATA = {
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
@@ -11686,6 +12008,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "PARTIAL",
+          "note": "支持正常书写，需配外置充电盒"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "PARTIAL",
           "note": "支持正常书写，需配外置充电盒"
         },
@@ -11995,6 +12322,11 @@ const SURFACE_DATA = {
           "note": "不支持"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持"
@@ -12053,6 +12385,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "PARTIAL",
+          "note": "支持 4096 级书写绘图，机身侧边无磁吸定位槽"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "PARTIAL",
           "note": "支持 4096 级书写绘图，机身侧边无磁吸定位槽"
         },
@@ -12362,6 +12699,11 @@ const SURFACE_DATA = {
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
@@ -12420,6 +12762,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持现代机型高级倾斜与高阶压感"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持现代机型高级倾斜与高阶压感"
         },
@@ -12729,6 +13076,11 @@ const SURFACE_DATA = {
           "note": "不支持现代机型高级倾斜与高阶压感"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持现代机型高级倾斜与高阶压感"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持现代机型高级倾斜与高阶压感"
@@ -12787,6 +13139,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
         },
@@ -13096,6 +13453,11 @@ const SURFACE_DATA = {
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
@@ -13154,6 +13516,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸口)"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸口)"
         },
@@ -13463,6 +13830,11 @@ const SURFACE_DATA = {
           "note": "不支持 (无 Surface Connect 磁吸口)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸口)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸口)"
@@ -13521,6 +13893,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "PARTIAL",
+          "note": "支持 USB-C 快速充电与外设扩展"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "PARTIAL",
           "note": "支持 USB-C 快速充电与外设扩展"
         },
@@ -13830,6 +14207,11 @@ const SURFACE_DATA = {
           "note": "不支持 (早期机型无 USB-C / 雷电接口)"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (早期机型无 USB-C / 雷电接口)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "满血 USB4 原生支持"
@@ -13888,6 +14270,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "二合一外出开会与出差黄金转接头"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "二合一外出开会与出差黄金转接头"
         },
@@ -14197,6 +14584,11 @@ const SURFACE_DATA = {
           "note": "完美兼容 USB-C 差旅一线转接投影与外设"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "完美兼容 USB-C 差旅一线转接投影与外设"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "完美兼容 USB-C 差旅一线转接投影与外设"
@@ -14255,6 +14647,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
         },
@@ -14564,6 +14961,11 @@ const SURFACE_DATA = {
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
@@ -14622,6 +15024,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "全系蓝牙免驱配对，高保真办公与会议降噪"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "全系蓝牙免驱配对，高保真办公与会议降噪"
         },
@@ -14931,6 +15338,11 @@ const SURFACE_DATA = {
           "note": "全系蓝牙免驱支持，多点双设备无缝切换"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "全系蓝牙免驱支持，多点双设备无缝切换"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "全系蓝牙免驱支持，多点双设备无缝切换"
@@ -14989,6 +15401,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "出差差旅与移动会议绝配"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "出差差旅与移动会议绝配"
         },
@@ -15298,6 +15715,11 @@ const SURFACE_DATA = {
           "note": "移动办公标配，支持 PPT 演示触控翻页"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "移动办公标配，支持 PPT 演示触控翻页"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "移动办公标配，支持 PPT 演示触控翻页"
@@ -15356,6 +15778,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "FULL",
+          "note": "二合一电脑桌面工位拓展利器"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "FULL",
           "note": "二合一电脑桌面工位拓展利器"
         },
@@ -15665,6 +16092,11 @@ const SURFACE_DATA = {
           "note": "居家与工位混合办公神器，一条 Type-C 搞定供电、显示与会议"
         },
         {
+          "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "居家与工位混合办公神器，一条 Type-C 搞定供电、显示与会议"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "居家与工位混合办公神器，一条 Type-C 搞定供电、显示与会议"
@@ -15723,6 +16155,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch",
+          "status": "UNSUPPORTED",
+          "note": "不支持"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
           "status": "UNSUPPORTED",
           "note": "不支持"
         },
@@ -16028,6 +16465,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "laptop-13-inch",
+          "status": "PARTIAL",
+          "note": "支持桌面离屏蓝牙旋钮操作"
+        },
+        {
+          "deviceId": "laptop-13-inch-2",
           "status": "PARTIAL",
           "note": "支持桌面离屏蓝牙旋钮操作"
         },

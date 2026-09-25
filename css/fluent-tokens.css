@@ -37,7 +37,7 @@
   --ms-success-hover: #0e6b38;
   
   /* 状态色与差异高亮色 */
-  --ms-highlight-diff: rgba(0, 120, 212, 0.08);
+  --ms-highlight-diff: rgba(0, 120, 212, 0.22);
   --ms-highlight-diff-border: rgba(0, 120, 212, 0.35);
   --ms-highlight-badge: #0078d4;
   --ms-badge-bg: #e8f3fc;
@@ -163,7 +163,7 @@
   --ms-success: #3fa85f;
   --ms-success-hover: #55bd74;
 
-  --ms-highlight-diff: rgba(40, 134, 222, 0.15);
+  --ms-highlight-diff: rgba(40, 134, 222, 0.34);
   --ms-highlight-diff-border: rgba(40, 134, 222, 0.45);
   --ms-highlight-badge: #2886de;
   --ms-badge-bg: #1c2c3d;

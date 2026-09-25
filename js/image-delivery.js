@@ -62,7 +62,8 @@ var IMAGE_DELIVERY = {
   ],
   "surface-laptop-5-hero.png": [
     320,
-    520
+    640,
+    1280
   ],
   "surface-laptop-6-biz-hero.png": [
     320,
@@ -210,8 +211,7 @@ var IMAGE_DELIVERY = {
   ],
   "surface-pro-3-hero.png": [
     320,
-    640,
-    1280
+    540
   ],
   "surface-pro-4-hero.png": [
     320,
@@ -221,7 +221,7 @@ var IMAGE_DELIVERY = {
   "surface-pro-5-hero.png": [
     320,
     640,
-    1280
+    1080
   ],
   "surface-pro-6-hero.png": [
     320,
@@ -230,7 +230,8 @@ var IMAGE_DELIVERY = {
   ],
   "surface-pro-7-hero.png": [
     320,
-    520
+    640,
+    1280
   ],
   "surface-pro-7-plus-hero.png": [
     320,
@@ -371,6 +372,51 @@ var IMAGE_DELIVERY = {
   ],
   "surface-travel-hub.png": [
     320
+  ],
+  "surface-laptop-1-gold.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-1-burgundy.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-1-cobalt.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-12-2-platinum.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-12-2-violet.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-12-2-black.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-13-2-violet.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-13-2-platinum.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-13-2-black.png": [
+    320,
+    640,
+    1280
   ]
 };
 if (typeof module !== 'undefined' && module.exports) module.exports = IMAGE_DELIVERY;

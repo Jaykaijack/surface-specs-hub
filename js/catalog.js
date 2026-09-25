@@ -32,7 +32,7 @@ const Catalog = (function () {
   };
 
   const PORTRAIT_REV = '20260923';
-  const DELIVERY_REV = '20260923img';
+  const DELIVERY_REV = '20260923pic3';
   const PORTRAIT_FALLBACK = './assets/products/surface-new-pro-hero.png';
 
   const IMAGE_SLOTS = {
@@ -334,6 +334,143 @@ const Catalog = (function () {
     return raw + '?v=' + PORTRAIT_REV;
   }
 
+  // Same pixels saved under more than one file name. A single filename in a group
+  // must not be treated as that old model's own photo.
+  const CONTENT_GROUPS = [
+    ['surface-laptop-platinum.png', 'surface-new-laptop-hero.png'],
+    ['surface-laptop-3-hero.png', 'surface-laptop-dune.png'],
+    ['surface-new-pro-hero.png', 'surface-pro-13-platinum.png'],
+    ['surface-pro-1-hero.png', 'surface-pro-2-hero.png', 'surface-pro-13-black.png'],
+    ['surface-pro-10-biz-hero.png', 'surface-pro-7-plus-hero.png']
+  ];
+
+  // Shared pixels that are not the real photo of any device still using them.
+  const UNATTRIBUTED = [
+    'surface-pro-4-hero.png'
+  ];
+
+  function fileBase(file) {
+    return String(file || '').split('/').pop().toLowerCase();
+  }
+
+  function contentBases(file) {
+    const base = fileBase(file);
+    for (let i = 0; i < CONTENT_GROUPS.length; i++) {
+      if (CONTENT_GROUPS[i].indexOf(base) !== -1) return CONTENT_GROUPS[i];
+    }
+    return [base];
+  }
+
+  function rawGenerationToken(text) {
+    const plus = String(text || '').match(/第\s*(\d+)\s*\+\s*代/);
+    if (plus) return plus[1] + '+';
+    if (/2\s*\+/.test(text)) return '2+';
+    if (/Hub\s*2S/i.test(text)) return '2s';
+    if (String(text || '').indexOf('初代') !== -1) return 'original';
+    const numbered = String(text || '').match(/第\s*(\d+)\s*代/);
+    if (numbered) return numbered[1];
+    return String(text || '');
+  }
+
+  function generationFamily(device) {
+    const text = String(device && device.generation || '');
+    let token = rawGenerationToken(text);
+    // 「初代」和「第 1 代」只有同一年、同一条产品线才是同一代（如 Laptop Studio 初代与商用第 1 代）。
+    // 2013 年的 Pro 初代不能并进 2026 年的 12 英寸「第 1 代」。
+    if (token === 'original' && device) {
+      const year = Number(device.year) || 0;
+      const cat = device.categoryId || '';
+      const sameYearFirst = devices().some(function (other) {
+        return other && other.categoryId === cat && (Number(other.year) || 0) === year && rawGenerationToken(other.generation) === '1';
+      });
+      if (sameYearFirst) token = '1';
+    }
+    return (device && device.categoryId ? device.categoryId : '') + '|' + token;
+  }
+
+  function devicesForPicture(file) {
+    const bases = contentBases(file);
+    const seen = new Map();
+    ensurePortraitIndex().forEach(function (ids, path) {
+      if (bases.indexOf(fileBase(path)) === -1) return;
+      ids.forEach(function (id) {
+        const found = getDevice(id);
+        if (found) seen.set(found.id, found);
+      });
+    });
+    return Array.from(seen.values());
+  }
+
+  function familiesAtNewestYear(pool) {
+    let bestYear = -1;
+    pool.forEach(function (device) {
+      const year = Number(device.year) || 0;
+      if (year > bestYear) bestYear = year;
+    });
+    const families = [];
+    pool.forEach(function (device) {
+      if ((Number(device.year) || 0) !== bestYear) return;
+      const family = generationFamily(device);
+      if (families.indexOf(family) === -1) families.push(family);
+    });
+    return families;
+  }
+
+  function familyNamedByFile(file, owners) {
+    const base = String(file || '').split('/').pop().toLowerCase();
+    const hits = owners.filter(function (device) {
+      const id = String(device.id || '').toLowerCase();
+      if (!id) return false;
+      const at = base.indexOf(id);
+      if (at < 0) return false;
+      const beforeOk = at === 0 || /[^a-z0-9]/.test(base.charAt(at - 1));
+      const after = base.charAt(at + id.length);
+      return beforeOk && (!after || /[^a-z0-9]/.test(after));
+    });
+    if (!hits.length) return '';
+    const longest = hits.reduce(function (max, device) {
+      return Math.max(max, String(device.id).length);
+    }, 0);
+    const named = hits.filter(function (device) {
+      return String(device.id).length === longest;
+    });
+    return generationFamily(named[0]);
+  }
+
+  function homeFamilies(file, owners) {
+    const bases = contentBases(file);
+    if (bases.length === 1) {
+      const named = familyNamedByFile(file, owners);
+      if (named) return [named];
+      const heroUsers = owners.filter(function (device) {
+        return fileBase(device.heroImage) === fileBase(file);
+      });
+      return familiesAtNewestYear(heroUsers.length ? heroUsers : owners);
+    }
+    // Several filenames, one picture. An old filename such as pro-1-hero must not
+    // keep the picture when a newer model is showing those same pixels.
+    return familiesAtNewestYear(owners);
+  }
+
+  function isStandIn(device, raw) {
+    const file = pathKey(raw);
+    const bases = contentBases(file);
+    for (let i = 0; i < bases.length; i++) {
+      if (UNATTRIBUTED.indexOf(bases[i]) !== -1) return true;
+    }
+    const owners = devicesForPicture(file);
+    if (owners.length < 2) return false;
+    const mine = generationFamily(device);
+    let sameFamily = true;
+    owners.forEach(function (other) {
+      if (generationFamily(other) !== mine) sameFamily = false;
+    });
+    if (sameFamily) return false;
+    const homes = homeFamilies(file, owners);
+    if (!homes.length) return false;
+    return homes.indexOf(mine) === -1;
+  }
+
   function portrait(device, colorName) {
     if (!device) {
       return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
@@ -347,14 +484,7 @@ const Catalog = (function () {
     if (!raw) {
       return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
     }
-    const owners = ensurePortraitIndex().get(pathKey(raw));
-    let shared = false;
-    if (owners) {
-      owners.forEach(function (id) {
-        if (id !== device.id) shared = true;
-      });
-    }
-    return { src: withPortraitRev(raw), identity: shared ? 'shared' : 'official' };
+    return { src: withPortraitRev(raw), identity: isStandIn(device, raw) ? 'shared' : 'official' };
   }
 
   function portraitMark(device, colorName) {

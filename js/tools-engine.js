@@ -134,7 +134,7 @@ const ToolsEngine = {
               </div>
             </div>
 
-            <div style="font-size:12.5px; line-height:1.55; color:var(--ms-text-secondary); background:var(--ms-bg-card-secondary); padding:12px; border-radius:var(--ms-radius-md); border-left:3px solid var(--ms-accent);">
+            <div style="font-size:12.5px; line-height:1.55; color:var(--ms-text-secondary); background:var(--ms-bg-card-secondary); padding:12px; border-radius:var(--ms-radius-md); ">
               <strong>💡 直播培训核心论点：</strong> 同为 ${diag.toFixed(1)} 英寸，Surface 的 3:2 屏幕纵向高度足足高出了 <strong>${(h32_cm - hComp_cm).toFixed(1)} 厘米</strong>！看财报表格和Word文档少滑滚动条，这才是专为严肃办公定制的“黄金长宽比”！
             </div>
           </div>
@@ -230,7 +230,7 @@ const ToolsEngine = {
           </div>
         </div>
 
-        <div style="font-size:12px; color:var(--ms-text-secondary); margin:-6px 0 14px 14px; padding-left:12px; border-left:2px solid var(--ms-border-subtle); line-height:1.5;">
+        <div style="font-size:12px; color:var(--ms-text-secondary); margin:-6px 0 14px 14px; padding-left:12px;  line-height:1.5;">
           <span style="color:var(--ms-text-tertiary);">装备机型：</span><strong>${equippedList.join('、') || '—'}</strong><br>
           <span style="color:var(--ms-text-tertiary);">架构亮点：</span>${chip.highlights || chip.desc || '—'}
         </div>
@@ -413,7 +413,7 @@ const ToolsEngine = {
           </select>
         </div>
 
-        <div style="background:var(--ms-bg-card-secondary); padding:16px 20px; border-radius:var(--ms-radius-md); border-left:4px solid var(--ms-accent); display:flex; gap:20px; align-items:center;">
+        <div style="background:var(--ms-bg-card-secondary); padding:16px 20px; border-radius:var(--ms-radius-md);  display:flex; gap:20px; align-items:center;">
           <div style="flex-shrink:0; width:120px; height:90px; display:flex; align-items:center; justify-content:center; background:var(--ms-bg-card); border-radius:var(--ms-radius-sm); border:1px solid var(--ms-border-subtle); padding:6px;">
             ${Catalog.frame({ src: SURFACE_DATA.getAccessoryImage(acc), identity: 'official' }, {
               slot: 'guide',
@@ -522,7 +522,7 @@ const ToolsEngine = {
           </select>
         </div>
 
-        <div style="background:var(--ms-bg-card-secondary); padding:16px; border-radius:var(--ms-radius-md); border-left:3px solid var(--ms-accent);">
+        <div style="background:var(--ms-bg-card-secondary); padding:16px; border-radius:var(--ms-radius-md); ">
           <div style="font-weight:700; font-size:16px; margin-bottom:4px;">${dev.name}</div>
           <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.5;">${dev.tagline || dev.desc || 'Microsoft Surface 官方系列硬件'}</div>
         </div>
@@ -1049,7 +1049,7 @@ const ToolsEngine = {
                 <span style="color:var(--ms-text-secondary);">真实办公预估 (扣除虚标)：</span>
                 <span style="font-weight:700; color:#107c41;">约 ${realOfficeHours} 小时连贯外勤</span>
               </div>
-              <div style="font-size:11.5px; color:var(--ms-text-tertiary); background:rgba(0,120,212,0.05); padding:8px 12px; border-radius:6px; border-left:3px solid var(--ms-accent);">
+              <div style="font-size:11.5px; color:var(--ms-text-tertiary); background:rgba(0,120,212,0.05); padding:8px 12px; border-radius:6px; ">
                 💡 导购建议：若日常通勤搭配第三方 65W GaN 充电头，比原装充电器立减约 140g，相当于包里少带了一台手机！
               </div>
             </div>
@@ -1154,7 +1154,7 @@ const ToolsEngine = {
           </tbody>
         </table>
 
-        <div class="guide-panel" style="border-left:4px solid #107c41; background:rgba(16,124,65,0.04);">
+        <div class="guide-panel" style=" background:rgba(16,124,65,0.04);">
           <div style="font-size:16px; font-weight:700; color:#107c41; margin-bottom:6px;">🏁 综合换机结论评估：强烈建议换代升级！</div>
           <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6;">
             从 <strong>${oldDev.name}</strong> 升级到 <strong>${newDev.name}</strong> 属于跨代革命性质变，不论是 120Hz 极窄边框屏幕、超长续航能效，还是全新的 NPU AI 体验，都能带来立竿见影的生产力提升。
@@ -1455,7 +1455,7 @@ const ToolsEngine = {
                 <div class="step-body">
                   <p>1. 将制作好的恢复 U 盘插入 Surface 的 USB 接口，并<strong>务必连接电源适配器</strong>防止刷写中断。</p>
                   <p>2. <strong>微软标准硬件引导手势（请牢记按键顺序）：</strong></p>
-                  <div style="background:var(--ms-bg-card-secondary); padding:12px 16px; border-radius:8px; border-left:4px solid var(--ms-accent); margin:8px 0; font-size:13px; line-height:1.8;">
+                  <div style="background:var(--ms-bg-card-secondary); padding:12px 16px; border-radius:8px;  margin:8px 0; font-size:13px; line-height:1.8;">
                     ① 保持关机状态，用左手手指<strong>长按住机身上的【音量减键 (-)】不松开</strong>；<br>
                     ② 右手轻按一下机身上的<strong>【电源键】</strong>立即松开；<br>
                     ③ 眼睛盯紧屏幕，看到屏幕亮起白色 Microsoft 或 Surface 文字 Logo，且<strong>下方出现旋转的白色小圆点时，立即松开左手的【音量减键】</strong>！

@@ -277,8 +277,8 @@ const ComparisonEngine = {
                 </div>
               ` : ''}
 
-              <div class="table-device-title" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')" style="cursor:pointer;" title="点击查看详情">
-                ${dev.name}
+              <div class="table-device-title" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')" style="cursor:pointer;" title="${dev.name}">
+                ${dev.name.replace('Surface ', '').replace(/[（(]第[^）)]+[）)]/g, '').replace(/ +/g, ' ').trim()}
               </div>
               <div class="table-device-subtitle">${dev.generation}</div>
 
