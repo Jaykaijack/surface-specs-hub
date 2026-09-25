@@ -349,6 +349,10 @@
   background: #e6f7ec;
   color: #107c41;
 }
+.spec-badge.new {
+  background: var(--ms-accent-subtle);
+  color: var(--ms-text-brand);
+}
 
 .color-palette-wrap {
   display: flex;

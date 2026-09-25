@@ -32,7 +32,7 @@ const Catalog = (function () {
   };
 
   const PORTRAIT_REV = '20260923';
-  const DELIVERY_REV = '20260923pic3';
+  const DELIVERY_REV = '20260925pic';
   const PORTRAIT_FALLBACK = './assets/products/surface-new-pro-hero.png';
 
   const IMAGE_SLOTS = {
@@ -518,6 +518,18 @@ const Catalog = (function () {
       + '</picture>';
   }
 
+  function isRecentLaunch(device, asOf) {
+    const text = String(getSpec(device, 'releaseDate') || '');
+    const match = text.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
+    if (!match) return false;
+    const month = Number(match[2]);
+    if (month < 1 || month > 12) return false;
+    const launched = Number(match[1]) * 12 + (month - 1);
+    const clock = asOf instanceof Date && !isNaN(asOf.getTime()) ? asOf : new Date();
+    const age = clock.getFullYear() * 12 + clock.getMonth() - launched;
+    return age >= 0 && age <= 6;
+  }
+
   function paint(img, shot, slotName) {
     if (!img || !shot || !shot.src) return;
     const slot = IMAGE_SLOTS[slotName] || IMAGE_SLOTS.card;
@@ -559,6 +571,7 @@ const Catalog = (function () {
     onChange: onChange,
     portrait: portrait,
     portraitMark: portraitMark,
+    isRecentLaunch: isRecentLaunch,
     frame: frame,
     paint: paint
   };

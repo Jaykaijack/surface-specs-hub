@@ -41,6 +41,10 @@ const App = {
     return Catalog.portrait(device, colorName);
   },
 
+  recentLaunchBadge(device) {
+    return Catalog.isRecentLaunch(device) ? '<span class="spec-badge new">新品</span>' : '';
+  },
+
   portraitBadge(device, colorName, markId) {
     const shot = this.shot(device, colorName);
     const hidden = shot.identity === 'shared' ? '' : ' hidden';
@@ -294,7 +298,8 @@ const App = {
           <div class="device-name">${dev.name}</div>
           <div class="device-tagline">${dev.tagline}</div>
           ${colorDotsHtml}
-          <div style="display:flex; gap:4px; justify-content:center; margin-top:6px;">
+          <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
+            ${this.recentLaunchBadge(dev)}
             <span class="spec-badge green">国行在售</span>
             ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge gold">80 TOPS</span>' : ''}
           </div>
@@ -514,6 +519,7 @@ const App = {
                 <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
                 ${colorDotsHtml}
                 <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
+                  ${this.recentLaunchBadge(dev)}
                   <span class="spec-badge">${this.spec(dev, 'cpuModel')}</span>
                   ${Catalog.isNpuDisplayable(this.spec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
                   <span class="spec-badge">${this.spec(dev, 'screenSize')}</span>
@@ -707,6 +713,7 @@ const App = {
               <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
               ${colorDotsHtml}
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
+                ${this.recentLaunchBadge(dev)}
                 <span class="spec-badge">${this.spec(dev, 'cpuModel')}</span>
                 ${Catalog.isNpuDisplayable(this.spec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
                 <span class="spec-badge">${this.spec(dev, 'screenSize')}</span>
@@ -1053,6 +1060,7 @@ const App = {
 
         <div class="detail-hero-right">
           <div style="display:flex; gap:8px; align-items:center; margin-bottom:10px; flex-wrap:wrap;">
+            ${this.recentLaunchBadge(dev)}
             ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge">${dev.generation}</span>
             ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
@@ -1460,6 +1468,7 @@ const App = {
                     <div style="font-weight:600; font-size:13.5px;">${d.name}</div>
                     <div style="font-size:11.5px; color:var(--ms-text-secondary);">${this.spec(d, 'cpuModel')} · ${this.spec(d, 'npuTops')} · ${this.spec(d, 'releaseDate')}</div>
                   </div>
+                  ${this.recentLaunchBadge(d)}
                   <span class="spec-badge">${d.generation}</span>
                 </div>
               `).join('')}

@@ -35,7 +35,37 @@ var IMAGE_DELIVERY = {
     640,
     1280
   ],
+  "surface-laptop-1-burgundy.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-1-cobalt.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-1-gold.png": [
+    320,
+    640,
+    1280
+  ],
   "surface-laptop-1-hero.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-13-2-black.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-13-2-platinum.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-13-2-violet.png": [
     320,
     640,
     1280
@@ -169,6 +199,21 @@ var IMAGE_DELIVERY = {
     640,
     1280
   ],
+  "surface-pro-12-2-black.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-12-2-platinum.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-12-2-violet.png": [
+    320,
+    640,
+    1280
+  ],
   "surface-pro-12-ocean.png": [
     320,
     640,
@@ -177,9 +222,24 @@ var IMAGE_DELIVERY = {
   "surface-pro-12-platinum.png": [
     320,
     640,
-    1280
+    1200
   ],
   "surface-pro-12-violet.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-13-2026-black.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-13-2026-dune.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-pro-13-2026-platinum.png": [
     320,
     640,
     1280
@@ -372,51 +432,6 @@ var IMAGE_DELIVERY = {
   ],
   "surface-travel-hub.png": [
     320
-  ],
-  "surface-laptop-1-gold.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-laptop-1-burgundy.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-laptop-1-cobalt.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-pro-12-2-platinum.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-pro-12-2-violet.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-pro-12-2-black.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-laptop-13-2-violet.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-laptop-13-2-platinum.png": [
-    320,
-    640,
-    1280
-  ],
-  "surface-laptop-13-2-black.png": [
-    320,
-    640,
-    1280
   ]
 };
 if (typeof module !== 'undefined' && module.exports) module.exports = IMAGE_DELIVERY;

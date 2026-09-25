@@ -556,7 +556,7 @@ const SURFACE_DATA = {
     {
       "id": "pro-12-13-intel",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-new-pro-hero.png",
+      "heroImage": "./assets/products/surface-pro-13-2026-platinum.png",
       "name": "Surface Pro 13 英寸 (第 12 代) 商用版 - Intel 版",
       "nameEn": "Surface Pro, 13-inch (12th Edition) for Business - Intel",
       "generation": "第 12 代 (2026)",
@@ -576,12 +576,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-13-platinum.png"
+            "image": "./assets/products/surface-pro-13-2026-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-13-black.png"
+            "image": "./assets/products/surface-pro-13-2026-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -654,7 +654,7 @@ const SURFACE_DATA = {
     {
       "id": "pro-12-13-snap",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-new-pro-hero.png",
+      "heroImage": "./assets/products/surface-pro-13-2026-platinum.png",
       "name": "Surface Pro 13 英寸 (第 12 代) 商用版 - 骁龙版",
       "nameEn": "Surface Pro, 13-inch (12th Edition) for Business - Snapdragon",
       "generation": "第 12 代 (2026)",
@@ -674,12 +674,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-13-platinum.png"
+            "image": "./assets/products/surface-pro-13-2026-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-13-black.png"
+            "image": "./assets/products/surface-pro-13-2026-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -752,7 +752,7 @@ const SURFACE_DATA = {
     {
       "id": "pro-12-13",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-new-pro-hero.png",
+      "heroImage": "./assets/products/surface-pro-13-2026-platinum.png",
       "name": "Surface Pro 13 英寸 (第 12 代)",
       "nameEn": "Surface Pro, 13-inch (12th Edition)",
       "generation": "第 12 代 (2026)",
@@ -773,17 +773,17 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-13-platinum.png"
+            "image": "./assets/products/surface-pro-13-2026-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-13-black.png"
+            "image": "./assets/products/surface-pro-13-2026-black.png"
           },
           {
             "name": "沙漫金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-pro-13-dune.png"
+            "image": "./assets/products/surface-pro-13-2026-dune.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",

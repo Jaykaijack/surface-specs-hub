@@ -289,6 +289,7 @@ const ComparisonEngine = {
               </div>
 
               <div class="table-device-badge-row">
+                ${Catalog.isRecentLaunch(dev) ? '<span class="spec-badge new">新品</span>' : ''}
                 ${this.renderStatusBadge(dev.status)}
                 ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
                 ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS</span>' : ''}
