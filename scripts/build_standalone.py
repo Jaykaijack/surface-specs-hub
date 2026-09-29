@@ -17,9 +17,9 @@ DIST_DIR = os.path.join(WORKSPACE, 'dist')
 RELEASES_DIR = os.path.join(WORKSPACE, 'releases')
 
 # 版本规范
-VERSION = "v1.4.1"
-DATE_STR = "20260923"
-DESCRIPTOR = "ssd-migration-master"
+VERSION = "v1.5.0"
+DATE_STR = "20260929"
+DESCRIPTOR = "xbox-lineup-hub"
 
 STANDALONE_ROOT = os.path.join(WORKSPACE, 'surface-specs-hub-standalone.html')
 STANDALONE_DIST = os.path.join(DIST_DIR, 'surface-specs-hub-standalone.html')

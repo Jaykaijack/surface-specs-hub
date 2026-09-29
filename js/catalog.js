@@ -7,6 +7,7 @@ const Catalog = (function () {
     'categories',
     'consumerCategories',
     'commercialCategories',
+    'xboxCategories',
     'specGroups',
     'devices',
     'chips',
@@ -107,7 +108,8 @@ const Catalog = (function () {
 
   function segmentOf(device) {
     if (!device) return 'consumer';
-    if (device.segment === 'commercial' || device.segment === 'consumer') return device.segment;
+    if (device.segment === 'commercial' || device.segment === 'consumer' || device.segment === 'xbox') return device.segment;
+    if (device.categoryId === 'xbox') return 'xbox';
     return device.isCommercial ? 'commercial' : 'consumer';
   }
 
@@ -210,6 +212,7 @@ const Catalog = (function () {
       if (q.segment && segmentOf(d) !== q.segment) return false;
       if (q.seriesId) {
         if (q.seriesId === 'hub') return d.categoryId === 'studio' || d.categoryId === 'hub';
+        if (q.seriesId === 'xbox' || q.seriesId === 'consoles') return d.categoryId === 'xbox';
         return d.categoryId === q.seriesId;
       }
       return true;
@@ -221,6 +224,7 @@ const Catalog = (function () {
     if (!data) return [];
     if (segment === 'commercial') return data.commercialCategories || [];
     if (segment === 'consumer') return data.consumerCategories || [];
+    if (segment === 'xbox') return data.xboxCategories || [];
     return data.categories || [];
   }
 

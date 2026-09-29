@@ -237,6 +237,11 @@ body {
   color: #107c41;
 }
 
+.sidebar-group-badge.xbox {
+  background: rgba(16, 124, 16, 0.12);
+  color: #107c10;
+}
+
 .sidebar-nav-item {
   display: flex;
   align-items: center;

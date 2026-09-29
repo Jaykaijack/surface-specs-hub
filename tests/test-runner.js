@@ -104,9 +104,10 @@ assert(!!laptop8_intel, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 
 const laptop8_snap = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138-snap');
 assert(!!laptop8_snap, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 英寸商用 骁龙版收录正常');
 
-// 架构重构检查: 消费版与商用版两大顶级分类独立并列
-assertEqual(SURFACE_DATA.consumerCategories.length, 9, '消费版在 8 个 Surface 系列之外加上 Xbox');
+// 架构重构检查: 消费版、商用版与 Xbox 专区顶级大类彻底分离
+assertEqual(SURFACE_DATA.consumerCategories.length, 8, 'Surface 消费版严格收录 8 大 Surface 系列，Xbox 不得混入 Surface 消费版');
 assertEqual(SURFACE_DATA.commercialCategories.length, 7, '商用版产品库独立收录完整的 7 大商用系列 (Pro/Laptop/SLS/Book/Go/Studio/Hub)');
+assertEqual(SURFACE_DATA.xboxCategories.length, 3, 'Xbox 独立设专区，细分为 XBOX 主机、XBOX 手柄、XBOX 配件');
 
 // 补全商用型号官方 Learn 架构与 Fact Sheet 存证检查
 const pro12_biz = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch-biz');
@@ -1540,6 +1541,21 @@ assert(App.homeShelfDevices('upcoming').some(d => d.id === 'pro-12-inch-2-biz'),
   '首页即将发售仍保留国行商用新品');
 assert(!App.homeShelfDevices('current').some(d => d.categoryId === 'xbox'),
   '首页国行在售不混入 Xbox');
+
+assertEqual(Taxonomy.canonicalPath(seriesX), '#/xbox/consoles/xbox-series-x',
+  'Xbox 主机规范路径落在专区 #/xbox/consoles/...');
+assertEqual(Taxonomy.resolvePath('/xbox/consoles').canonical, '#/xbox/consoles',
+  '#/xbox/consoles 正确解析为 Xbox 主机系列页');
+assertEqual(Taxonomy.resolvePath('/xbox/controllers').canonical, '#/xbox/controllers',
+  '#/xbox/controllers 正确解析为 Xbox 手柄专区');
+assertEqual(Taxonomy.resolvePath('/xbox/accessories').canonical, '#/xbox/accessories',
+  '#/xbox/accessories 正确解析为 Xbox 配件专区');
+assertEqual(Taxonomy.resolvePath('/consumer/xbox').canonical, '#/xbox/consoles',
+  '旧消费路由 #/consumer/xbox 自动改写到 #/xbox/consoles');
+assertEqual(Taxonomy.resolvePath('/xbox').canonical, '#/xbox/consoles',
+  '#/xbox 专区主路由自动重定向到 #/xbox/consoles');
+assertEqual(Taxonomy.segmentOf(seriesX), 'xbox',
+  'Xbox 设备的品类细分为独立的 xbox，不混入 consumer 或 commercial');
 
 const officialLockedIds = new Set([
   ...Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices),

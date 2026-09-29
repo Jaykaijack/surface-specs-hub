@@ -431,7 +431,14 @@ const ComparisonEngine = {
 
       let linksHtml = '<div style="display:flex; flex-direction:column; gap:6px; align-items:flex-start;">';
       
-      if (isCommercial) {
+      if (dev && (dev.categoryId === 'xbox' || dev.segment === 'xbox')) {
+        linksHtml += `
+          <a href="${dev.officialDocUrl || dev.learnDocUrl || 'https://www.xbox.com/'}" target="_blank" rel="noopener noreferrer" 
+            style="display:inline-flex; align-items:center; gap:5px; color:#107c10; background:rgba(16,124,16,0.08); border:1px solid rgba(16,124,16,0.25); border-radius:6px; padding:4px 9px; font-size:12px; font-weight:600; text-decoration:none;" title="查阅 Xbox 官方产品规格页">
+            <span>🎮</span> Xbox 官方产品页直达 ↗
+          </a>
+        `;
+      } else if (isCommercial) {
         linksHtml += `
           <a href="${configureUrl}" target="_blank" rel="noopener noreferrer" 
             style="display:inline-flex; align-items:center; gap:5px; color:#0078d4; background:rgba(0,120,212,0.08); border:1px solid rgba(0,120,212,0.25); border-radius:6px; padding:4px 9px; font-size:12px; font-weight:600; text-decoration:none;" title="直达微软中国官方商用商城选配页">
@@ -560,11 +567,36 @@ const ComparisonEngine = {
           </svg>
         `;
       case 'xbox':
+      case 'console':
+      case 'xbox-consoles':
         return `
           <svg viewBox="0 0 100 70" width="80" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="38" y="8" width="24" height="50" rx="3" fill="#107C10" fill-opacity="0.16" stroke="#107C10" stroke-width="2"/>
             <circle cx="50" cy="18" r="3" fill="#107C10"/>
             <rect x="44" y="28" width="12" height="8" rx="1" stroke="#107C10" stroke-width="1.5"/>
+          </svg>
+        `;
+      case 'controller':
+      case 'xbox-controllers':
+        return `
+          <svg viewBox="0 0 100 70" width="80" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="22" y="16" width="56" height="36" rx="14" fill="#107C10" fill-opacity="0.16" stroke="#107C10" stroke-width="2"/>
+            <circle cx="36" cy="30" r="4" stroke="#107C10" stroke-width="1.8"/>
+            <circle cx="64" cy="38" r="4" stroke="#107C10" stroke-width="1.8"/>
+            <line x1="36" y1="36" x2="36" y2="44" stroke="#107C10" stroke-width="2" stroke-linecap="round"/>
+            <line x1="32" y1="40" x2="40" y2="40" stroke="#107C10" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="68" cy="28" r="2" fill="#107C10"/>
+            <circle cx="60" cy="24" r="2" fill="#107C10"/>
+          </svg>
+        `;
+      case 'accessory':
+      case 'xbox-accessories':
+        return `
+          <svg viewBox="0 0 100 70" width="80" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="12" width="40" height="46" rx="4" fill="#107C10" fill-opacity="0.16" stroke="#107C10" stroke-width="2"/>
+            <rect x="36" y="18" width="28" height="12" rx="2" stroke="#107C10" stroke-width="1.5"/>
+            <line x1="42" y1="38" x2="58" y2="38" stroke="#107C10" stroke-width="2"/>
+            <line x1="42" y1="46" x2="52" y2="46" stroke="#107C10" stroke-width="2"/>
           </svg>
         `;
       case 'duo':

@@ -257,7 +257,41 @@ const App = {
     const consSeriesMatch = path.match(/^\/consumer\/([^/]+)$/);
     if (consSeriesMatch) {
       const seriesId = consSeriesMatch[1];
+      if (seriesId === 'xbox') {
+        this.navigate('#/xbox/consoles');
+        return;
+      }
       this.renderSeriesView(main, seriesId, 'consumer');
+      return;
+    }
+
+    // 路由: Xbox 专区主页与主机系列页 (#/xbox, #/xbox/consoles)
+    if (path === '/xbox' || path === '/xbox/consoles' || path === '/consumer/xbox') {
+      this.renderSeriesView(main, 'xbox', 'xbox');
+      return;
+    }
+
+    // 路由: Xbox 手柄专区 (#/xbox/controllers)
+    if (path === '/xbox/controllers') {
+      this.renderXboxControllersView(main);
+      return;
+    }
+
+    // 路由: Xbox 配件专区 (#/xbox/accessories)
+    if (path === '/xbox/accessories') {
+      this.renderXboxAccessoriesView(main);
+      return;
+    }
+
+    // 路由: Xbox 单机详情 (#/xbox/consoles/:id 或 #/xbox/:id 或 #/consumer/xbox/:id)
+    const xboxConsolesDetail = path.match(/^\/xbox\/consoles\/([^/]+)$/) || path.match(/^\/consumer\/xbox\/([^/]+)$/);
+    if (xboxConsolesDetail) {
+      this.renderProductDetailView(main, 'xbox', xboxConsolesDetail[1]);
+      return;
+    }
+    const xboxShortDetail = path.match(/^\/xbox\/([^/]+)$/);
+    if (xboxShortDetail && xboxShortDetail[1] !== 'controllers' && xboxShortDetail[1] !== 'accessories') {
+      this.renderProductDetailView(main, 'xbox', xboxShortDetail[1]);
       return;
     }
 
@@ -446,6 +480,47 @@ const App = {
         }).join('')}
       </div>
 
+      <!-- 🎮 探索 XBOX 专区 (独立一栏，不放在 Surface 后面) -->
+      <div class="home-section-header" style="margin-top:36px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <h2 style="font-size:20px; font-weight:700; color:var(--ms-text-primary); margin:0;">Xbox 专区</h2>
+          <span class="sidebar-group-badge xbox" style="font-size:11px; padding:2px 8px;">独立产品大类</span>
+        </div>
+        <span class="header-sub-tag">按类别查看 Xbox 主机、手柄与配件体系</span>
+      </div>
+
+      <div class="series-nav-grid">
+        ${(SURFACE_DATA.xboxCategories || []).map((cat, index) => {
+          let countText = '';
+          let targetPath = '';
+          if (cat.subCategory === 'consoles') {
+            const devs = this.listDevices({ seriesId: 'xbox', segment: 'xbox' });
+            countText = `收录历代 ${devs.length} 款主机型号 ↗`;
+            targetPath = '#/xbox/consoles';
+          } else if (cat.subCategory === 'controllers') {
+            countText = '官方无线手柄与操控设备 ↗';
+            targetPath = '#/xbox/controllers';
+          } else {
+            countText = '官方存储扩展卡与耳机配件 ↗';
+            targetPath = '#/xbox/accessories';
+          }
+          return `
+            <div class="series-card" onclick="App.navigate('${targetPath}')">
+              <div class="series-icon">
+                <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:center;">
+                  ${ComparisonEngine.getDeviceSvgIcon(cat.icon || cat.subCategory)}
+                </div>
+              </div>
+              <div class="series-info">
+                <div class="series-title">${cat.name}</div>
+                <div class="series-desc">${cat.desc}</div>
+                <div class="series-count">${countText}</div>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+
       <!-- 快速对比经典组合推荐 -->
       <div class="home-section-header" style="margin-top:28px;">
         <h2>常用对比</h2>
@@ -477,11 +552,24 @@ const App = {
     } else if (seriesId.startsWith('consumer-')) {
       seriesId = seriesId.replace('consumer-', '');
       segment = 'consumer';
+    } else if (seriesId.startsWith('xbox-')) {
+      seriesId = seriesId.replace('xbox-', '');
+      segment = 'xbox';
+    } else if (seriesId === 'xbox' || seriesId === 'consoles') {
+      segment = 'xbox';
     }
 
     const isCommercial = segment === 'commercial';
+    const isXbox = segment === 'xbox' || seriesId === 'xbox' || seriesId === 'consoles';
     let cat;
-    if (isCommercial) {
+    if (isXbox) {
+      cat = (SURFACE_DATA.xboxCategories || []).find(c => c.seriesId === seriesId || c.subCategory === seriesId) || {
+        id: 'xbox-consoles',
+        seriesId: 'xbox',
+        name: 'XBOX 主机',
+        desc: '微软历代 Xbox 游戏主机规格中枢'
+      };
+    } else if (isCommercial) {
       cat = (SURFACE_DATA.commercialCategories || []).find(c => c.seriesId === seriesId) || {
         id: 'business-' + seriesId,
         seriesId: seriesId,
@@ -497,8 +585,8 @@ const App = {
       };
     }
 
-    // 100% 隔离筛选：消费版仅含消费机型，商用版仅含商用机型
-    let catDevices = this.devicesForSeriesTable(seriesId, segment);
+    // 100% 隔离筛选：消费版仅含消费机型，商用版仅含商用机型，Xbox 版仅含 Xbox 主机
+    let catDevices = this.devicesForSeriesTable(seriesId === 'consoles' ? 'xbox' : seriesId, segment);
     const devicesForTable = catDevices;
 
     let html = `
@@ -657,6 +745,202 @@ const App = {
       `;
     }
 
+    container.innerHTML = html;
+  },
+
+  // 3.4a Xbox 手柄专区
+  renderXboxControllersView(container) {
+    let html = `
+      <div class="view-header">
+        <div class="view-title-group">
+          <h1>
+            <span>XBOX 手柄</span>
+            <span class="header-sub-tag">Xbox 官方无线控制器生态</span>
+          </h1>
+          <div class="view-meta-tip">
+            <span>最后更新：2026-09-29 ｜ 💡 微软官方 Xbox 无线控制器、精英 2 代手柄与操控硬件生态 ｜ 信源对齐官方产品页</span>
+          </div>
+        </div>
+        <div class="view-actions">
+          <a href="https://www.xbox.com/zh-CN/accessories/controllers" target="_blank" rel="noopener noreferrer" class="fluent-btn primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+            🎮 微软 Xbox 官方手柄商城 ↗
+          </a>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:18px; margin-top:20px;">
+        <!-- 卡片 1: Xbox 无线控制器 -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无线控制器（标准版）</div>
+            <span class="spec-badge green">官方在售</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            最新一代 Xbox Series X|S 标配无线手柄。采用防滑纹理握把与混合式方向键，自带实体“分享”键一键截屏或录制。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>连接协议：</strong>Xbox 无线直连协议 + 蓝牙低功耗 (BLE) 双模</div>
+            <div><strong>适用平台：</strong>Xbox Series X|S、Xbox One、Windows 10/11、iOS、Android</div>
+            <div><strong>接口与音频：</strong>USB-C 有线即插即用；3.5 毫米立体声耳机插孔</div>
+            <div><strong>供电与续航：</strong>支持 2 节 AA 电池或官方可充电电池组（续航最高约 40 小时）</div>
+            <div><strong>官方代表配色：</strong>磨砂黑、机器人白、风暴蓝、极光紫、脉冲红、深海青</div>
+          </div>
+        </div>
+
+        <!-- 卡片 2: Xbox 精英无线控制器 2 代 -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 精英无线控制器 2 代</div>
+            <span class="spec-badge gold">专业电竞旗舰</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            面向职业选手与核心玩家的旗舰级操控手柄。提供超过 30 种全新操控方式与高精度可调节硬件。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>核心机构：</strong>可调节阻尼摇杆（3 档阻尼）+ 超灵敏微调扳机锁（3 级键程）</div>
+            <div><strong>背面拨片：</strong>4 个可拆卸式不锈钢拨片（映射任意按键）</div>
+            <div><strong>固件映射：</strong>板载内存支持保存 3 套自定义按键配置 + 1 套默认配置</div>
+            <div><strong>电池与充电：</strong>内置可充电锂电池，续航长达 40 小时；附磁吸充电底座</div>
+            <div><strong>握持质感：</strong>全包围防滑橡胶握把，耐用部件与可更换摇杆/方向键</div>
+          </div>
+        </div>
+
+        <!-- 卡片 3: Xbox 精英无线控制器 2 代 青春版 -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 精英手柄 2 代 青春版 (Core)</div>
+            <span class="spec-badge green">官方在售</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            保留精英 2 代核心高精度硬件微调性能，精简收纳包与配件，带来极致性价比专业手柄体验。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>核心机构：</strong>保留可调节阻尼摇杆、微调扳机锁与全包围橡胶握把</div>
+            <div><strong>电池与续航：</strong>内置可充电锂电池，单次充满续航最高达 40 小时</div>
+            <div><strong>配件扩展性：</strong>支持后期单独选购官方配件包（包含拨片、额外摇杆与充电座）</div>
+            <div><strong>官方配色：</strong>机器人白、烈焰红、璀璨蓝等多色设计</div>
+          </div>
+        </div>
+
+        <!-- 卡片 4: Xbox 无障碍控制器 -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无障碍控制器 (Adaptive)</div>
+            <span class="spec-badge" style="background:#e8edf5; color:#1a5fb4;">无障碍包容性设计</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            微软包容性科技代表作，专为行动不便与特殊需求玩家打造的高度可定制统一控制器集线器。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>扩展接口：</strong>背板配备 19 个 3.5 毫米外部开关插孔，对应手柄全部按键</div>
+            <div><strong>USB 端口：</strong>左右两侧各配备 1 个 USB 2.0 端口用于连接第三方摇杆</div>
+            <div><strong>固定方式：</strong>配备行业标准三脚架螺纹螺孔（1/4-20 螺口与 AMPS 标准螺纹安装孔）</div>
+            <div><strong>供电方式：</strong>内置可充电电池，配 USB-C 连接线</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:24px; padding:14px 18px; background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:8px; font-size:12px; color:var(--ms-text-secondary); line-height:1.6;">
+        🛡️ <strong>零杜撰参数守则：</strong>Xbox 手柄芯片方案、无线射频天线功率与电气白皮书未在对应官方公开规格页披露之参数严格保持未披露状态，严禁引用非官方民间拆解猜测。
+      </div>
+    `;
+    container.innerHTML = html;
+  },
+
+  // 3.4b Xbox 配件专区
+  renderXboxAccessoriesView(container) {
+    let html = `
+      <div class="view-header">
+        <div class="view-title-group">
+          <h1>
+            <span>XBOX 配件</span>
+            <span class="header-sub-tag">Xbox 官方存储扩展、音频与周边生态</span>
+          </h1>
+          <div class="view-meta-tip">
+            <span>最后更新：2026-09-29 ｜ 💡 微软官方认证扩展硬件体系 ｜ 零杜撰参数治理</span>
+          </div>
+        </div>
+        <div class="view-actions">
+          <a href="https://www.xbox.com/zh-CN/accessories" target="_blank" rel="noopener noreferrer" class="fluent-btn primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+            🎒 微软 Xbox 官方配件商城 ↗
+          </a>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:18px; margin-top:20px;">
+        <!-- 卡片 1: 专用存储扩展卡 -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox Series X|S 专用存储扩展卡</div>
+            <span class="spec-badge green">官方认证</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            与希捷 (Seagate) 及西部数据 (WD_BLACK) 联合开发的专属定制存储卡，主机专属插槽即插即用。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>容量档位：</strong>512GB / 1TB / 2TB 定制 PCIe Gen 4x2 NVMe SSD</div>
+            <div><strong>架构集成：</strong>完全无缝接入 Xbox 快速架构 (Xbox Velocity Architecture)</div>
+            <div><strong>读写性能：</strong>与内置 SSD 速度完全一致（2.4 GB/s 原始吞吐，4.8 GB/s 硬件解压吞吐）</div>
+            <div><strong>游戏体验：</strong>支持直接运行次世代优化游戏，完全支持快速唤醒 (Quick Resume)</div>
+          </div>
+        </div>
+
+        <!-- 卡片 2: Xbox 无线立体声耳机 -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无线立体声耳机</div>
+            <span class="spec-badge green">官方在售</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            低延迟原生配对次世代游戏耳机。无需适配器或线缆直接与 Xbox 主机无线连接。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>空间音频：</strong>支持 Windows Sonic、Dolby Atmos 与 DTS Headphone:X</div>
+            <div><strong>双模并发：</strong>主机原生 Xbox 无线直连 + 同时蓝牙配对手机/PC 进行通话</div>
+            <div><strong>耳罩交互：</strong>两侧旋转式大拨盘（快速调节游戏与语音平衡、总音量）</div>
+            <div><strong>麦克风：</strong>双麦克风波束成形拾音降噪，支持自动静音</div>
+            <div><strong>续航能力：</strong>内置锂电，续航最高达 15 小时；USB-C 充电 30 分钟可用 4 小时</div>
+          </div>
+        </div>
+
+        <!-- 卡片 3: Xbox 主机专用可充电电池 + USB-C -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 官方可充电电池 + USB-C 连线</div>
+            <span class="spec-badge green">官方在售</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            告别抛弃型一次性干电池，随时边玩边充的官方电源解决方案。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>充电特性：</strong>支持边玩边充，在游戏过程或主机待机状态下均可充满</div>
+            <div><strong>充满时间：</strong>约 4 小时即可完全充满</div>
+            <div><strong>连续续航：</strong>单次充电可持续畅玩最高达 30 小时</div>
+            <div><strong>包装附随：</strong>高品质 2.7 米长 USB-C 数据/充电线</div>
+          </div>
+        </div>
+
+        <!-- 卡片 4: Xbox 无线适配器 (Windows 10/11) -->
+        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无线适配器 (适用于 Windows PC)</div>
+            <span class="spec-badge green">官方在售</span>
+          </div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+            将 Xbox 主机原生超低延迟无线连接体验扩展至 Windows 10/11 PC。
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+            <div><strong>多设备并发：</strong>单适配器支持同时连接多达 8 个 Xbox 无线控制器</div>
+            <div><strong>无线音频：</strong>支持高达 4 个聊天耳机或 2 个立体声耳机的无线高保真音频传输</div>
+            <div><strong>体积设计：</strong>相比一代适配器体积缩减 66%，即插即用</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:24px; padding:14px 18px; background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:8px; font-size:12px; color:var(--ms-text-secondary); line-height:1.6;">
+        🛡️ <strong>设备兼容性声明：</strong>Xbox 存储扩展卡仅适用于 Xbox Series X 与 Xbox Series S；传统 USB 3.1 外接移动硬盘可用于存放历代向下兼容 Xbox One / Xbox 360 游戏，但不可直接运行次世代优化游戏。
+      </div>
+    `;
     container.innerHTML = html;
   },
 
@@ -1384,6 +1668,23 @@ const App = {
 
   // 7. 多维筛选工具条 (按处理器架构、在售状态与 Copilot+ PC 精准筛选)
   renderFilterBar(seriesId, segment = 'consumer') {
+    if (segment === 'xbox' || seriesId === 'xbox' || seriesId === 'consoles') {
+      return `
+        <div class="filter-toolbar">
+          <div class="filter-group">
+            <span class="filter-label">主机代际状态:</span>
+            <button class="filter-chip ${this.filters.status === 'all' ? 'active' : ''}" onclick="App.setFilter('status', 'all')">全部主机</button>
+            <button class="filter-chip ${this.filters.status === 'current_global' ? 'active' : ''}" onclick="App.setFilter('status', 'current_global')">现役在售</button>
+            <button class="filter-chip ${this.filters.status === 'upcoming' ? 'active' : ''}" onclick="App.setFilter('status', 'upcoming')">即将发售</button>
+            <button class="filter-chip ${this.filters.status === 'discontinued' ? 'active' : ''}" onclick="App.setFilter('status', 'discontinued')">已停售 / 经典代际</button>
+          </div>
+          ${this.hasActiveFilters() ? `
+            <button class="fluent-btn-sm" onclick="App.resetFilters()" style="color:#d13438;">重置筛选</button>
+          ` : ''}
+        </div>
+      `;
+    }
+
     return `
       <div class="filter-toolbar">
         <div class="filter-group">
@@ -1432,8 +1733,8 @@ const App = {
 
   applyFilters(devices) {
     return devices.filter(d => {
-      // 受众过滤
-      if (this.filters.audience && this.filters.audience !== 'all') {
+      // 受众过滤 (Xbox 不参与 PC 消费/商用筛选)
+      if (this.filters.audience && this.filters.audience !== 'all' && d.segment !== 'xbox' && d.categoryId !== 'xbox') {
         if (this.filters.audience === 'commercial') {
           if (!d.isCommercial && d.targetAudience !== 'commercial' && d.targetAudience !== 'both') return false;
         } else if (this.filters.audience === 'consumer') {
@@ -1457,6 +1758,9 @@ const App = {
 
       // 状态过滤
       if (this.filters.status === 'current_cn' && d.status !== 'current_cn') return false;
+      if (this.filters.status === 'current_global' && d.status !== 'current_global') return false;
+      if (this.filters.status === 'upcoming' && d.status !== 'upcoming') return false;
+      if (this.filters.status === 'discontinued' && d.status !== 'discontinued' && d.status !== 'legacy') return false;
       if (this.filters.status === 'legacy' && d.status !== 'legacy' && d.status !== 'discontinued') return false;
 
       // Copilot+ 过滤
@@ -1636,6 +1940,35 @@ const App = {
     });
 
     html += `
+      </div>
+
+      <!-- 🎮 XBOX 专区 (独立一栏，不放在 Surface 后面) -->
+      <div class="sidebar-group">
+        <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
+          <span class="sidebar-group-label">Xbox 专区</span>
+          <span class="sidebar-group-badge xbox">独立大类</span>
+        </div>
+        <div class="sidebar-nav-item ${this.activeRoute.path === '/xbox/consoles' || this.activeRoute.path === '/xbox' || this.activeRoute.path.startsWith('/xbox/consoles/') || this.activeRoute.path === '/consumer/xbox' || this.activeRoute.path.startsWith('/consumer/xbox/') ? 'active' : ''}" onclick="App.navigate('#/xbox/consoles')">
+          <div class="nav-item-left">
+            <span class="nav-item-icon">🎮</span>
+            <span class="nav-item-label" title="XBOX 主机">XBOX 主机</span>
+          </div>
+          <span class="nav-item-count">${this.listDevices({ seriesId: 'xbox', segment: 'xbox' }).length}</span>
+        </div>
+        <div class="sidebar-nav-item ${this.activeRoute.path === '/xbox/controllers' ? 'active' : ''}" onclick="App.navigate('#/xbox/controllers')">
+          <div class="nav-item-left">
+            <span class="nav-item-icon">🕹️</span>
+            <span class="nav-item-label" title="XBOX 手柄">XBOX 手柄</span>
+          </div>
+          <span class="nav-item-count">官方手柄</span>
+        </div>
+        <div class="sidebar-nav-item ${this.activeRoute.path === '/xbox/accessories' ? 'active' : ''}" onclick="App.navigate('#/xbox/accessories')">
+          <div class="nav-item-left">
+            <span class="nav-item-icon">🎒</span>
+            <span class="nav-item-label" title="XBOX 配件">XBOX 配件</span>
+          </div>
+          <span class="nav-item-count">周边配件</span>
+        </div>
       </div>
 
       <div class="sidebar-group">

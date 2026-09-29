@@ -1,17 +1,21 @@
 /**
- * Taxonomy — 消费/商用品类与路由的唯一 interface。
- * #/surface 是历史死路由，必须改写到 #/consumer 或 #/business。
+ * Taxonomy — 消费/商用/Xbox 品类与路由的唯一 interface。
+ * #/surface 是历史死路由，必须改写到 #/consumer 或 #/business 或 #/xbox。
  */
 const Taxonomy = (function () {
   function segmentOf(device) {
     if (typeof Catalog !== 'undefined' && Catalog.segmentOf) return Catalog.segmentOf(device);
     if (!device) return 'consumer';
-    if (device.segment === 'commercial' || device.segment === 'consumer') return device.segment;
+    if (device.segment === 'commercial' || device.segment === 'consumer' || device.segment === 'xbox') return device.segment;
+    if (device.categoryId === 'xbox') return 'xbox';
     return device.isCommercial ? 'commercial' : 'consumer';
   }
 
   function seriesIdOf(device) {
     if (!device) return '';
+    if (device.categoryId === 'xbox' || segmentOf(device) === 'xbox') {
+      return 'consoles';
+    }
     if (segmentOf(device) === 'commercial' && (device.categoryId === 'studio' || device.categoryId === 'hub')) {
       return 'hub';
     }
@@ -19,7 +23,9 @@ const Taxonomy = (function () {
   }
 
   function routePrefix(segment) {
-    return segment === 'commercial' ? 'business' : 'consumer';
+    if (segment === 'commercial') return 'business';
+    if (segment === 'xbox') return 'xbox';
+    return 'consumer';
   }
 
   function seriesLabel(seriesId, segment) {
@@ -31,7 +37,11 @@ const Taxonomy = (function () {
     });
     if (hit && hit.name) return hit.name;
     if (seriesId === 'hub') return 'Surface Hub & Studio 商用协作系列';
+    if (seriesId === 'xbox' || seriesId === 'consoles' || seriesId === 'xbox-consoles') return 'XBOX 主机';
+    if (seriesId === 'controllers' || seriesId === 'xbox-controllers') return 'XBOX 手柄';
+    if (seriesId === 'accessories' || seriesId === 'xbox-accessories') return 'XBOX 配件';
     const token = seriesId ? String(seriesId) : '';
+    if (segment === 'xbox') return 'XBOX ' + token;
     return segment === 'commercial'
       ? ('Surface ' + token + ' 商用系列')
       : ('Surface ' + token + ' 消费系列');
@@ -42,10 +52,19 @@ const Taxonomy = (function () {
     if (input.id && input.specs) {
       const segment = segmentOf(input);
       const seriesId = seriesIdOf(input);
+      if (segment === 'xbox' || input.categoryId === 'xbox') {
+        return '#/xbox/consoles/' + input.id;
+      }
       return '#/' + routePrefix(segment) + '/' + seriesId + '/' + input.id;
     }
     const segment = input.segment || 'consumer';
     const seriesId = input.seriesId;
+    if (segment === 'xbox' || seriesId === 'xbox' || seriesId === 'consoles') {
+      if (input.deviceId) {
+        return '#/xbox/consoles/' + input.deviceId;
+      }
+      return '#/xbox/' + (seriesId && seriesId !== 'xbox' ? seriesId : 'consoles');
+    }
     if (!seriesId) return segment === 'commercial' ? '#/business' : '#/';
     if (input.deviceId) {
       return '#/' + routePrefix(segment) + '/' + seriesId + '/' + input.deviceId;
@@ -64,7 +83,26 @@ const Taxonomy = (function () {
       };
     }
 
-    let m = clean.match(/^\/business\/([^/]+)\/([^/]+)$/);
+    if (clean === '/xbox') {
+      return {
+        kind: 'series',
+        segment: 'xbox',
+        seriesId: 'consoles',
+        canonical: '#/xbox/consoles',
+        rewritten: true
+      };
+    }
+
+    let m = clean.match(/^\/xbox\/([^/]+)\/([^/]+)$/);
+    if (m) {
+      return { kind: 'detail', segment: 'xbox', seriesId: m[1], deviceId: m[2], canonical: '#/xbox/' + m[1] + '/' + m[2] };
+    }
+    m = clean.match(/^\/xbox\/([^/]+)$/);
+    if (m) {
+      return { kind: 'series', segment: 'xbox', seriesId: m[1], canonical: '#/xbox/' + m[1] };
+    }
+
+    m = clean.match(/^\/business\/([^/]+)\/([^/]+)$/);
     if (m) {
       return { kind: 'detail', segment: 'commercial', seriesId: m[1], deviceId: m[2], canonical: '#/business/' + m[1] + '/' + m[2] };
     }
@@ -74,10 +112,16 @@ const Taxonomy = (function () {
     }
     m = clean.match(/^\/consumer\/([^/]+)\/([^/]+)$/);
     if (m) {
+      if (m[1] === 'xbox') {
+        return { kind: 'detail', segment: 'xbox', seriesId: 'consoles', deviceId: m[2], canonical: '#/xbox/consoles/' + m[2], rewritten: true };
+      }
       return { kind: 'detail', segment: 'consumer', seriesId: m[1], deviceId: m[2], canonical: '#/consumer/' + m[1] + '/' + m[2] };
     }
     m = clean.match(/^\/consumer\/([^/]+)$/);
     if (m) {
+      if (m[1] === 'xbox') {
+        return { kind: 'series', segment: 'xbox', seriesId: 'consoles', canonical: '#/xbox/consoles', rewritten: true };
+      }
       return { kind: 'series', segment: 'consumer', seriesId: m[1], canonical: '#/consumer/' + m[1] };
     }
 
@@ -88,6 +132,16 @@ const Taxonomy = (function () {
       const dev = (typeof Catalog !== 'undefined' && Catalog.getDevice) ? Catalog.getDevice(deviceId) : null;
       const segment = segmentOf(dev);
       const seriesId = dev ? seriesIdOf(dev) : fallbackSeries;
+      if (segment === 'xbox' || fallbackSeries === 'xbox') {
+        return {
+          kind: 'detail',
+          segment: 'xbox',
+          seriesId: 'consoles',
+          deviceId: deviceId,
+          canonical: '#/xbox/consoles/' + deviceId,
+          rewritten: true
+        };
+      }
       return {
         kind: 'detail',
         segment: segment,
@@ -101,6 +155,15 @@ const Taxonomy = (function () {
     m = clean.match(/^\/surface\/([^/]+)$/);
     if (m) {
       const seriesId = m[1];
+      if (seriesId === 'xbox') {
+        return {
+          kind: 'series',
+          segment: 'xbox',
+          seriesId: 'consoles',
+          canonical: '#/xbox/consoles',
+          rewritten: true
+        };
+      }
       const segment = seriesId === 'hub' ? 'commercial' : 'consumer';
       return {
         kind: 'series',

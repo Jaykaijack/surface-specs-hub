@@ -100,7 +100,7 @@ var XBOX_LINEUP = (function () {
       nextGenerationId: meta.next || null,
       learnDocUrl: meta.url,
       isCommercial: false,
-      segment: 'consumer',
+      segment: 'xbox',
       specs: specs
     };
   }

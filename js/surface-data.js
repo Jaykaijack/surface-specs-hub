@@ -65,9 +65,9 @@ const SURFACE_DATA = {
     },
     {
       "id": "xbox",
-      "name": "Xbox 主机",
+      "name": "XBOX 系列",
       "icon": "console",
-      "desc": "微软游戏主机。规格按美国微软官网，销售区域单独标明",
+      "desc": "微软 Xbox 游戏主机、无线手柄与配件体系",
       "defaultModel": "xbox-series-x"
     }
   ],
@@ -143,15 +143,6 @@ const SURFACE_DATA = {
       "icon": "phone",
       "desc": "双屏铰链移动折叠设备 (5.6\" - 8.3\")",
       "defaultModel": "duo-2"
-    },
-    {
-      "id": "consumer-xbox",
-      "seriesId": "xbox",
-      "segment": "consumer",
-      "name": "Xbox 主机",
-      "icon": "console",
-      "desc": "从初代到 Series X25。美国微软官网规格，销售区域写在参数表",
-      "defaultModel": "xbox-series-x"
     }
   ],
   "commercialCategories": [
@@ -217,6 +208,38 @@ const SURFACE_DATA = {
       "icon": "desktop",
       "desc": "会议室协同巨幕与企业管理级一体机 (28\" - 85\")",
       "defaultModel": "hub-3"
+    }
+  ],
+  "xboxCategories": [
+    {
+      "id": "xbox-consoles",
+      "seriesId": "xbox",
+      "subCategory": "consoles",
+      "segment": "xbox",
+      "name": "XBOX 主机",
+      "icon": "console",
+      "desc": "微软历代 Xbox 游戏主机（从初代到 Series X|S）",
+      "defaultModel": "xbox-series-x"
+    },
+    {
+      "id": "xbox-controllers",
+      "seriesId": "xbox-controllers",
+      "subCategory": "controllers",
+      "segment": "xbox",
+      "name": "XBOX 手柄",
+      "icon": "controller",
+      "desc": "Xbox 官方标准无线控制器、精英无线手柄 2 代与特别版",
+      "defaultModel": ""
+    },
+    {
+      "id": "xbox-accessories",
+      "seriesId": "xbox-accessories",
+      "subCategory": "accessories",
+      "segment": "xbox",
+      "name": "XBOX 配件",
+      "icon": "accessory",
+      "desc": "Xbox 官方专用高速存储扩展卡、无线耳机与电源周边生态",
+      "defaultModel": ""
     }
   ],
   "specGroups": [
