@@ -482,6 +482,7 @@ const Catalog = (function () {
     }
     if (!raw) raw = device.heroImage || '';
     if (!raw) {
+      if (device.categoryId === 'xbox') return { src: '', identity: 'missing' };
       return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
     }
     return { src: withPortraitRev(raw), identity: isStandIn(device, raw) ? 'shared' : 'official' };
@@ -494,6 +495,7 @@ const Catalog = (function () {
   }
 
   function frame(shot, options) {
+    if (shot && shot.identity === 'missing' && !shot.src) return '';
     const opts = options || {};
     const slotName = IMAGE_SLOTS[opts.slot] ? opts.slot : 'card';
     const slot = IMAGE_SLOTS[slotName];

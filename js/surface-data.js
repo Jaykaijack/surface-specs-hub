@@ -62,6 +62,13 @@ const SURFACE_DATA = {
       "icon": "phone",
       "desc": "双屏铰链移动折叠移动设备 (5.6\" - 8.3\")",
       "defaultModel": "duo-2"
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox 主机",
+      "icon": "console",
+      "desc": "微软游戏主机。规格按美国微软官网，销售区域单独标明",
+      "defaultModel": "xbox-series-x"
     }
   ],
   "consumerCategories": [
@@ -136,6 +143,15 @@ const SURFACE_DATA = {
       "icon": "phone",
       "desc": "双屏铰链移动折叠设备 (5.6\" - 8.3\")",
       "defaultModel": "duo-2"
+    },
+    {
+      "id": "consumer-xbox",
+      "seriesId": "xbox",
+      "segment": "consumer",
+      "name": "Xbox 主机",
+      "icon": "console",
+      "desc": "从初代到 Series X25。美国微软官网规格，销售区域写在参数表",
+      "defaultModel": "xbox-series-x"
     }
   ],
   "commercialCategories": [
@@ -220,6 +236,10 @@ const SURFACE_DATA = {
           "key": "status",
           "label": "销售状态",
           "type": "status_badge"
+        },
+        {
+          "key": "salesRegion",
+          "label": "销售区域"
         },
         {
           "key": "targetAudience",
@@ -16926,6 +16946,33 @@ const SURFACE_DATA = {
     }
   ]
 };
+
+(function attachXboxLineup() {
+  var list = (typeof XBOX_LINEUP !== 'undefined' && XBOX_LINEUP && XBOX_LINEUP.length) ? XBOX_LINEUP : [];
+  if (!list.length && typeof require === 'function') {
+    try { list = require('./xbox-lineup.js'); } catch (e) { list = []; }
+  }
+  if (!list || !list.length) return;
+  var seen = {};
+  SURFACE_DATA.devices.forEach(function (device) { seen[device.id] = true; });
+  list.forEach(function (device) {
+    if (!seen[device.id]) SURFACE_DATA.devices.push(device);
+  });
+  SURFACE_DATA.devices.forEach(function (device) {
+    if (device.categoryId !== 'xbox') return;
+    SURFACE_DATA.accessories.forEach(function (acc) {
+      var rows = acc.compatibilityList || (acc.compatibilityList = []);
+      var found = rows.some(function (row) { return row.deviceId === device.id; });
+      if (!found) {
+        rows.push({
+          deviceId: device.id,
+          status: 'UNSUPPORTED',
+          note: '这是 Surface 配件，不适用于 Xbox 主机'
+        });
+      }
+    });
+  });
+})();
 
 // 挂载辅助工具方法
 SURFACE_DATA.getDeviceImage = function(device, colorName) {

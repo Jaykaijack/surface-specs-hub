@@ -33,6 +33,7 @@ CSS_FILES = [
 ]
 
 JS_FILES = [
+    'js/xbox-lineup.js',
     'js/surface-data.js',
     'js/verification-status.js',
     'js/image-delivery.js',

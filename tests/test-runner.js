@@ -15,6 +15,7 @@ const ToolsEngine = require('../js/tools-engine.js');
 const App = require('../js/app.js');
 const OFFICIAL_CURRENT_LINEUP_FACTS = require('./official-current-lineup-facts.js');
 const OFFICIAL_HISTORICAL_LINEUP_FACTS = require('./official-historical-lineup-facts.js');
+const OFFICIAL_XBOX_LINEUP_FACTS = require('./official-xbox-lineup-facts.js');
 const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js');
 const { runDeploySeamTests } = require('./deploy-seams.test.js');
 const { runP0SpecBatteryRegressionTests } = require('./p0-spec-battery-regression.test.js');
@@ -73,10 +74,10 @@ console.log('========================================================\n');
 // 1. 数据架构与分类谱系测试 (Taxonomy & Hierarchy)
 // ----------------------------------------------------
 console.log('📦 Test Suite 1: 产品分类体系与谱系收录');
-assertEqual(SURFACE_DATA.categories.length, 8, '收录完整的 8 大 Surface 品类');
+assertEqual(SURFACE_DATA.categories.length, 9, '8 大 Surface 品类之外加上 Xbox 主机');
 
 const categoryIds = SURFACE_DATA.categories.map(c => c.id);
-const expectedCategories = ['pro', 'laptop', 'sls', 'book', 'go', 'laptopgo', 'studio', 'duo'];
+const expectedCategories = ['pro', 'laptop', 'sls', 'book', 'go', 'laptopgo', 'studio', 'duo', 'xbox'];
 expectedCategories.forEach(catId => {
   assert(categoryIds.includes(catId), `包含预期品类: ${catId}`);
 });
@@ -104,7 +105,7 @@ const laptop8_snap = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138-snap'
 assert(!!laptop8_snap, '旗舰笔记本存在: Surface Laptop (第 8 代) 13.8 英寸商用 骁龙版收录正常');
 
 // 架构重构检查: 消费版与商用版两大顶级分类独立并列
-assertEqual(SURFACE_DATA.consumerCategories.length, 8, '消费版产品库独立收录完整的 8 大消费系列');
+assertEqual(SURFACE_DATA.consumerCategories.length, 9, '消费版在 8 个 Surface 系列之外加上 Xbox');
 assertEqual(SURFACE_DATA.commercialCategories.length, 7, '商用版产品库独立收录完整的 7 大商用系列 (Pro/Laptop/SLS/Book/Go/Studio/Hub)');
 
 // 补全商用型号官方 Learn 架构与 Fact Sheet 存证检查
@@ -1511,9 +1512,39 @@ Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices).forEach(deviceId => {
   assertSpecFacts(deviceId, dev, fact);
 });
 
+Object.keys(OFFICIAL_XBOX_LINEUP_FACTS.devices).forEach(deviceId => {
+  const fact = OFFICIAL_XBOX_LINEUP_FACTS.devices[deviceId];
+  const dev = Catalog.getDevice(deviceId);
+  assert(!!dev, `Xbox 主机在库: ${deviceId}`);
+  if (!dev) return;
+  assertEqual(dev.categoryId, 'xbox', `${deviceId} 归在 Xbox 系列`);
+  assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'NOT_DISCLOSED',
+    `${deviceId} 不把美元或另一台的人民币标价写进国行价格栏`);
+  assertSpecFacts(deviceId, dev, fact);
+  if (fact.storageMustNotInclude) {
+    const storage = String(Catalog.getSpec(dev, 'storageOptions') || '');
+    assert(!storage.includes(fact.storageMustNotInclude),
+      `${deviceId} 存储不得写成 ${fact.storageMustNotInclude}（实际: ${storage}）`);
+  }
+});
+
+const seriesX = Catalog.getDevice('xbox-series-x');
+const x25 = Catalog.getDevice('xbox-series-x25');
+assertEqual(seriesX.status, 'current_global', '在美国商店能买到的 Series X 标成海外在售，不标国行在售');
+assertEqual(x25.status, 'upcoming', 'X25 的美国发售日还没到，标即将发售');
+assertEqual(Catalog.portrait(seriesX).src, '', '没有官方图片文件时，不用 Surface 的照片顶上');
+assertEqual(ToolsEngine.guidePassesFilters(x25), false, '选机向导不把 Xbox 主机混进 Surface 推荐');
+assert(!App.homeShelfDevices('upcoming').some(d => d.id === 'xbox-series-x25'),
+  '首页即将发售不把美国限量主机写进国行说明');
+assert(App.homeShelfDevices('upcoming').some(d => d.id === 'pro-12-inch-2-biz'),
+  '首页即将发售仍保留国行商用新品');
+assert(!App.homeShelfDevices('current').some(d => d.categoryId === 'xbox'),
+  '首页国行在售不混入 Xbox');
+
 const officialLockedIds = new Set([
   ...Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices),
-  ...Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices)
+  ...Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices),
+  ...Object.keys(OFFICIAL_XBOX_LINEUP_FACTS.devices)
 ]);
 Catalog.listDevices().forEach(dev => {
   assert(officialLockedIds.has(dev.id), `${dev.id} 必须有现网或历史官方事实锁，不得只靠档案自述`);
@@ -1541,6 +1572,7 @@ const FOREIGN_STORE_MARKERS = [
   'microsoft.com/en-my'
 ];
 Catalog.listDevices().forEach(dev => {
+  if (dev.categoryId === 'xbox') return;
   const productUrl = String(Catalog.getSpec(dev, 'officialDocUrl') || '');
   FOREIGN_STORE_MARKERS.forEach((marker) => {
     assert(!productUrl.includes(marker),

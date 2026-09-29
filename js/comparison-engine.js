@@ -559,6 +559,14 @@ const ComparisonEngine = {
             <rect x="30" y="62" width="40" height="5" rx="1" fill="#8764B8" stroke="#8764B8" stroke-width="1.5"/>
           </svg>
         `;
+      case 'xbox':
+        return `
+          <svg viewBox="0 0 100 70" width="80" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="38" y="8" width="24" height="50" rx="3" fill="#107C10" fill-opacity="0.16" stroke="#107C10" stroke-width="2"/>
+            <circle cx="50" cy="18" r="3" fill="#107C10"/>
+            <rect x="44" y="28" width="12" height="8" rx="1" stroke="#107C10" stroke-width="1.5"/>
+          </svg>
+        `;
       case 'duo':
         return `
           <svg viewBox="0 0 100 70" width="80" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">

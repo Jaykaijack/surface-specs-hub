@@ -33,6 +33,15 @@ const App = {
     return this.listDevices().find(d => d.id === id) || null;
   },
 
+  homeShelfDevices(kind) {
+    return this.listDevices().filter(d => {
+      if (!d || d.categoryId === 'xbox') return false;
+      if (kind === 'current') return d.status === 'current_cn';
+      if (kind === 'upcoming') return d.status === 'upcoming';
+      return false;
+    });
+  },
+
   spec(device, key) {
     return Catalog.getSpec(device, key);
   },
@@ -268,7 +277,7 @@ const App = {
 
   // 2. 首页渲染 (PRD 第十五章: 快速定位产品，非官方营销页)
   renderHomeView(container) {
-    const currentCnDevices = this.listDevices().filter(d => d.status === 'current_cn');
+    const currentCnDevices = this.homeShelfDevices('current');
     const recentAdditions = this.listDevices().slice(0, 4);
 
     let html = `
@@ -306,12 +315,12 @@ const App = {
               sizes: '(max-width: 768px) 80vw, 160px',
               onerror: 'App.hideBrokenImage(this)'
             })}
-            ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
-            <div style="display:none; width:100%; height:100%;">
-              ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
-            </div>
-          </div>
-          <div class="device-name">${dev.name}</div>
+                  ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
+                  <div style="display:${devShot.src ? 'none' : 'flex'}; width:100%; height:100%; align-items:center; justify-content:center;">
+                    ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
+                  </div>
+                </div>
+                <div class="device-name">${dev.name}</div>
           <div class="device-tagline">${dev.tagline}</div>
           ${this.audienceHtml(dev)}
           ${colorDotsHtml}
@@ -328,7 +337,7 @@ const App = {
       </div>
     `;
 
-    const upcomingDevices = this.listDevices().filter(d => d.status === 'upcoming');
+    const upcomingDevices = this.homeShelfDevices('upcoming');
     if (upcomingDevices.length) {
       html += `
         <div class="home-section-header">
@@ -377,17 +386,18 @@ const App = {
       <div class="series-nav-grid">
         ${(SURFACE_DATA.consumerCategories || []).map((cat, index) => {
           const devs = this.listDevices({ seriesId: cat.seriesId, segment: 'consumer' });
+          const iconShot = this.shot(devs[0]);
           return `
             <div class="series-card" onclick="App.navigate('#/consumer/${cat.seriesId}')">
               <div class="series-icon">
-                ${this.picture(this.shot(devs[0]), {
+                ${iconShot.src ? this.picture(iconShot, {
                   slot: 'icon',
                   className: 'series-icon-img',
                   alt: cat.name,
                   loading: index < 4 ? 'eager' : 'lazy',
                   onerror: 'App.hideBrokenImage(this)'
-                })}
-                <div style="display:none; width:100%; height:100%;">
+                }) : ''}
+                <div style="display:${iconShot.src ? 'none' : 'flex'}; width:100%; height:100%; align-items:center; justify-content:center;">
                   ${ComparisonEngine.getDeviceSvgIcon(cat.seriesId)}
                 </div>
               </div>
@@ -821,7 +831,7 @@ const App = {
             </h1>
           </div>
           <div class="view-meta-tip">
-            <span>全系 43 款产品参数 100% 对齐微软中国官方商城与 Microsoft Learn 架构白皮书 ｜ 拒绝 AI 幻觉与参数臆造</span>
+            <span>Surface 参数按国行官方页面核对。Xbox 主机按美国微软官网收录，规格表里写明销售区域。</span>
           </div>
         </div>
         <div class="view-actions" style="display:flex; gap:10px; flex-wrap:wrap;">
@@ -1090,7 +1100,7 @@ const App = {
               onerror: 'App.hideBrokenImage(this)'
             })}
             ${this.portraitBadge(dev, activeColorName, 'portrait-mark-detail')}
-            <div style="display:none; width:100%; height:100%;">
+            <div style="display:${activeShot.src ? 'none' : 'flex'}; width:100%; height:100%; align-items:center; justify-content:center;">
               ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
             </div>
           </div>

@@ -671,6 +671,7 @@ const ToolsEngine = {
   },
 
   guidePassesFilters(device) {
+    if (device.categoryId === 'xbox') return false;
     if (device.status !== 'current_cn' && device.status !== 'upcoming') return false;
     const price = this.guidePriceYuan(device);
     if (this.guideBudget === 'budget_entry' && !(price !== null && price < 6000)) return false;
