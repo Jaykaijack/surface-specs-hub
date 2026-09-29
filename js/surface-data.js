@@ -299,7 +299,7 @@ const SURFACE_DATA = {
         },
         {
           "key": "ssdRemovable",
-          "label": "SSD 是否免工具快拆"
+          "label": "硬盘是否可拆卸"
         },
         {
           "key": "expandableStorage",
@@ -596,7 +596,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 NVMe SSD",
-        "ssdRemovable": "支持 (磁吸免工具快拆盖门)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金生产力比例",
@@ -694,7 +694,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 NVMe SSD",
-        "ssdRemovable": "支持 (磁吸免工具快拆盖门)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金生产力比例",
@@ -798,7 +798,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB",
-        "ssdRemovable": "支持 (磁吸免工具快拆盖门)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金生产力比例",
@@ -1124,7 +1124,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB LPDDR5x (8448 MT/s)",
         "storageOptions": "256GB / 512GB / 1TB PCIe Gen 4",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -1221,7 +1221,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB PCIe Gen 4",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -1328,7 +1328,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB / 32GB LPDDR5",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -1425,7 +1425,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB / 32GB LPDDR4x",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -1522,7 +1522,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB / 32GB LPDDR4x",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
-        "ssdRemovable": "支持可移动固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_disclosed",
         "screenSize": "12.3 英寸 PixelSense™",
         "aspectRatio": "3:2",
@@ -2271,7 +2271,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB LPDDR4x",
         "storageOptions": "128GB / 256GB / 512GB 可拆卸 NVMe SSD",
-        "ssdRemovable": "支持可移动固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘；用户不可自行拆卸，仅可由技术人员按微软说明拆卸",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™",
         "aspectRatio": "3:2",
@@ -2372,7 +2372,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 NVMe SSD",
-        "ssdRemovable": "支持 (底部快拆)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.8 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -2475,7 +2475,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB / 2TB 可拆卸第 4 代 NVMe SSD",
-        "ssdRemovable": "支持 (底部快拆)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.8 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -2573,7 +2573,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 NVMe SSD",
-        "ssdRemovable": "支持",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "配备 MicroSDXC Express 读卡器",
         "screenSize": "15.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金生产力比例",
@@ -2670,7 +2670,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB / 2TB 可拆卸第 4 代 NVMe SSD",
-        "ssdRemovable": "支持",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "配备 MicroSDXC Express 读卡器",
         "screenSize": "15.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金生产力比例",
@@ -2783,7 +2783,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 24GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB",
-        "ssdRemovable": "支持 (底部快拆)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.8 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -2887,7 +2887,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB LPDDR5x",
         "storageOptions": "512GB / 1TB",
-        "ssdRemovable": "支持",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "配备 MicroSDXC Express 读卡器",
         "screenSize": "15.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -2993,7 +2993,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.8 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -3089,7 +3089,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB Gen 4 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第四代固态硬盘）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.5 英寸 / 15.0 英寸 PixelSense™",
         "aspectRatio": "3:2",
@@ -3196,7 +3196,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB / 32GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "13.5 英寸 / 15.0 英寸 PixelSense™",
         "aspectRatio": "3:2",
@@ -3410,7 +3410,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "13.5 英寸 8GB / 16GB LPDDR4x；15 英寸 8GB / 16GB DDR4",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
-        "ssdRemovable": "支持可移动固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘；用户不可自行拆卸，仅可由技术人员按微软说明拆卸",
         "expandableStorage": "not_applicable",
         "screenSize": "13.5 英寸 / 15.0 英寸 (首款 15 寸轻薄本)",
         "aspectRatio": "3:2",
@@ -3714,7 +3714,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "512GB / 1TB / 2TB Gen 4 NVMe SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）；用户不可自行拆卸，仅可由授权技术人员拆卸",
         "expandableStorage": "配备 MicroSDXC 读卡器",
         "screenSize": "14.4 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -3805,7 +3805,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB LPDDR4x",
         "storageOptions": "256GB / 512GB / 1TB / 2TB SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "14.4 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -5459,7 +5459,7 @@ const SURFACE_DATA = {
       "flagship": false,
       "tagline": "轻巧灵动，专为企业移动办公与现场作业打造的 12 英寸 Copilot+ PC 商用平板",
       "prevGenerationId": null,
-      "nextGenerationId": null,
+      "nextGenerationId": "pro-12-inch-2-biz",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
       "specs": {
@@ -5539,6 +5539,102 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-21"
       }
     },
+        {
+      "id": "pro-12-inch-2-biz",
+      "categoryId": "pro",
+      "segment": "commercial",
+      "heroImage": "./assets/products/surface-pro-12-2-platinum.png",
+      "name": "Surface Pro 商用版, 12 英寸 (第 2 代)",
+      "nameEn": "Surface Pro for Business, 12-inch (2nd Edition)",
+      "generation": "第 2 代 (2026)",
+      "year": 2026,
+      "status": "upcoming",
+      "isCommercial": true,
+      "targetAudience": "commercial",
+      "flagship": false,
+      "tagline": "商用版 12 英寸第 2 代：686 克，Windows 11 专业版，2026 年 10 月推出",
+      "prevGenerationId": "pro-12-inch-biz",
+      "nextGenerationId": null,
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+      "learnDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+      "specs": {
+        "releaseDate": "2026 年 10 月",
+        "generation": "第 2 代",
+        "status": "upcoming",
+        "targetAudience": "面向企业移动办公的专业人士；可作平板、手绘或笔记本，预装 Windows 11 专业版",
+        "tagline": "商用版 12 英寸第 2 代：686 克，Windows 11 专业版，2026 年 10 月推出",
+        "colors": [
+          {
+            "name": "亮铂金",
+            "hex": "#d7d8d8",
+            "image": "./assets/products/surface-pro-12-2-platinum.png"
+          },
+          {
+            "name": "典雅黑",
+            "hex": "#000000",
+            "image": "./assets/products/surface-pro-12-2-black.png"
+          }
+        ],
+        "chassisMaterial": "阳极氧化铝",
+        "kickstandType": "一体式支架，配备 165 度全阻尼铰链",
+        "osAtLaunch": "Windows 11 专业版；预装 Microsoft 365 应用版",
+        "cpuModel": "Snapdragon® X2 Plus（6 核）",
+        "cpuArch": "not_disclosed",
+        "cpuCores": "6 核",
+        "gpuModel": "Qualcomm® Adreno™ GPU",
+        "npuModel": "Qualcomm® Hexagon™",
+        "npuTops": "80 TOPS",
+        "copilotPlus": "Windows 11 AI+ PC（内存配置为 16GB、24GB）",
+        "ramSpec": "16GB / 24GB LPDDR5x",
+        "storageOptions": "256GB / 512GB / 1TB（UFS）",
+        "ssdRemovable": "not_applicable",
+        "expandableStorage": "not_applicable",
+        "screenSize": "12 英寸 PixelSense™ LCD 触控屏",
+        "aspectRatio": "3:2",
+        "panelTech": "LCD",
+        "resolution": "2196 × 1464",
+        "ppi": "220 PPI",
+        "refreshRate": "最高 90Hz（默认 60Hz）",
+        "brightness": "最大 500 尼特（典型值）",
+        "colorSupport": "sRGB 和增强型，对比度 1400:1，防反光（ISO 9241-307）",
+        "touchAndPenProtocol": "10 点多点触控；专为 Surface 超薄触控笔 2 设计，支持触觉反馈与 Microsoft Pen Protocol（MPP）",
+        "frontCamera": "1080p 全高清前置 Surface Studio 摄像头",
+        "windowsHello": "Windows Hello 面部识别，配备增强的登录安全性",
+        "rearCamera": "1000 万像素 Ultra HD 后置摄像头",
+        "videoFeatures": "Windows 工作室效果（自动取景、人像模糊、创意滤镜、眼神交流、人像光效）",
+        "microphones": "具有语音聚焦功能的双录音室麦克风",
+        "speakers": "支持 Dolby Atmos 的 2W 立体扬声器",
+        "audioTech": "Dolby Atmos®",
+        "headphoneJack": "not_applicable",
+        "usbCPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞",
+        "usbAPorts": "not_applicable",
+        "surfaceConnect": "Surface Pro 12 英寸键盘连接器",
+        "videoOut": "DisplayPort 1.4a，最多两台 4K 60Hz",
+        "cellular": "可选 Wi-Fi+5G。5G 型号：NanoSIM 与 eSIM，GNSS（GPS、Galileo、北斗、QZSS、NAVIC），热点最多 8 台；5G-NR SA/NSA Rel 16 最高 2.9 Gbps。5G 频段 n1、n2、n3、n5、n7、n8、n12、n14、n20、n25、n26、n28、n29、n30、n38、n40、n41、n48、n66、n71、n77、n78。LTE 频段 1、2、3、4、5、7、8、12、13、14、19、20、25、26、28、29、30、38、39、40、41、42、48、66、71。WCDMA 频段 1、2、4、5、8",
+        "wifi": "Wi-Fi 7",
+        "bluetooth": "蓝牙 Core 5.4",
+        "nfc": "支持 NFC 身份验证",
+        "batteryCapacity": "Wi-Fi 与 Wi-Fi+5G 均为额定 38 Wh、最小 37 Wh",
+        "batteryLifeVideo": "仅 Wi-Fi 型号、使用 Wi-Fi：最长 15.5 小时本地视频；Wi-Fi+5G 型号、使用手机网络：最长 13 小时本地视频",
+        "batteryLifeOffice": "仅 Wi-Fi 型号、使用 Wi-Fi：最长 13 小时网页浏览；Wi-Fi+5G 型号、使用手机网络：最长 10 小时网页浏览",
+        "charger": "USB-C 最低 60W 可快充；Surface 45W USB-C 充电器仅特定市场的特定配置随附",
+        "fastCharging": "USB-C 最低 60W",
+        "keyboardCompat": "Surface Pro 12 英寸键盘（另售）",
+        "penCompat": "专为 Surface 超薄触控笔 2 设计；机背磁吸收纳并无线充电",
+        "tpm": "Microsoft Pluton TPM 2.0",
+        "biometrics": "Windows Hello 面部识别；NFC 身份验证",
+        "securityFeatures": "Windows 11 安全核心 PC，Microsoft Pluton，BitLocker",
+        "dimensions": "274 mm × 190 mm × 7.8 mm",
+        "weightGrams": "仅 Wi-Fi：686 克；Wi-Fi+5G：707 克（均不含键盘）",
+        "warranty": "3 年有限硬件保修（自发票日期起）",
+        "replaceableParts": "显示屏、电池、主板（含处理器、内存和存储）、散热、USB-C、麦克风、红外摄像头、扬声器、外壳、前后摄像头、电源和音量键、一体式支架；5G 型号另含 5G 模块与 Nano SIM 卡托",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+        "lastVerified": "2026-09-29"
+      }
+    },
     {
       "id": "laptop-13-inch-biz",
       "categoryId": "laptop",
@@ -5555,7 +5651,7 @@ const SURFACE_DATA = {
       "flagship": false,
       "tagline": "企业轻巧触控本：13 英寸 PixelSense，1.22kg，本地视频续航长达 23 小时",
       "prevGenerationId": null,
-      "nextGenerationId": null,
+      "nextGenerationId": "laptop-13-inch-2-biz",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
       "specs": {
@@ -5584,7 +5680,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 24GB LPDDR5x",
         "storageOptions": "256GB（UFS） / 512GB（UFS） / 1TB 可拆卸第 4 代 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式：256GB（UFS）、512GB（UFS）、1TB 固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™",
         "aspectRatio": "3:2 黄金比例",
@@ -5633,6 +5729,104 @@ const SURFACE_DATA = {
         "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
         "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business-configurate",
         "lastVerified": "2026-09-21"
+      }
+    },
+        {
+      "id": "laptop-13-inch-2-biz",
+      "categoryId": "laptop",
+      "segment": "commercial",
+      "heroImage": "./assets/products/surface-laptop-13-2-platinum.png",
+      "name": "Surface Laptop 商用版, 13 英寸 (第 2 代)",
+      "nameEn": "Surface Laptop for Business, 13-inch (2nd Edition)",
+      "generation": "第 2 代 (2026)",
+      "year": 2026,
+      "status": "upcoming",
+      "isCommercial": true,
+      "targetAudience": "commercial",
+      "flagship": false,
+      "tagline": "商用版 13 英寸第 2 代：1.23 千克，本地视频 22.5 小时，2026 年 10 月推出",
+      "prevGenerationId": "laptop-13-inch-biz",
+      "nextGenerationId": null,
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+      "learnDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+      "specs": {
+        "releaseDate": "2026 年 10 月",
+        "generation": "第 2 代",
+        "status": "upcoming",
+        "targetAudience": "面向随时随地办公的企业用户；轻薄本，预装 Windows 11 专业版",
+        "tagline": "商用版 13 英寸第 2 代：1.23 千克，本地视频 22.5 小时，2026 年 10 月推出",
+        "colors": [
+          {
+            "name": "亮铂金",
+            "hex": "#d7d8d8",
+            "image": "./assets/products/surface-laptop-13-2-platinum.png"
+          },
+          {
+            "name": "典雅黑",
+            "hex": "#000000",
+            "image": "./assets/products/surface-laptop-13-2-black.png"
+          }
+        ],
+        "chassisMaterial": "阳极氧化铝",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "Windows 11 专业版；预装 Microsoft 365 应用版",
+        "cpuModel": "Snapdragon® X2 Plus（6 核）",
+        "cpuArch": "not_disclosed",
+        "cpuCores": "6 核",
+        "gpuModel": "Qualcomm® Adreno™ GPU",
+        "npuModel": "Qualcomm® Hexagon™",
+        "npuTops": "80 TOPS",
+        "copilotPlus": "Windows 11 AI+ PC（内存配置为 16GB、24GB）",
+        "ramSpec": "16GB / 24GB LPDDR5x",
+        "storageOptions": "可拆卸式 256GB（UFS）、512GB（UFS）、可拆卸式 1TB 固态硬盘（第 4 代 SSD）",
+        "ssdRemovable": "可拆卸式：256GB（UFS）、512GB（UFS）、1TB 固态硬盘（第 4 代 SSD）",
+        "expandableStorage": "not_applicable",
+        "screenSize": "13 英寸 PixelSense™ 触控屏",
+        "aspectRatio": "3:2",
+        "panelTech": "LCD",
+        "resolution": "1920 × 1280",
+        "ppi": "178 PPI",
+        "refreshRate": "最高 60Hz",
+        "brightness": "最大 500 尼特（典型值）",
+        "colorSupport": "sRGB 和增强型，对比度 1000:1，防反光（ISO 9241-307）",
+        "touchAndPenProtocol": "10 点多点触控；仅触控，不支持触控笔，不兼容 Surface 触控笔或超薄触控笔",
+        "frontCamera": "1080p 全高清前置 Surface Studio 摄像头",
+        "windowsHello": "具备增强登录安全性的指纹电源按钮",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "Windows 工作室效果（自动取景、人像模糊、创意滤镜、眼神交流、人像光效）",
+        "microphones": "具有语音聚焦功能的双录音室麦克风",
+        "speakers": "Omnitonic 扬声器，搭载杜比音效",
+        "audioTech": "杜比音效",
+        "headphoneJack": "3.5 毫米耳机插孔",
+        "usbCPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）",
+        "usbAPorts": "USB-A 3.2",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "videoOut": "DisplayPort 1.4a，最多两台 4K 60Hz",
+        "cellular": "not_applicable",
+        "wifi": "Wi-Fi 7",
+        "bluetooth": "蓝牙 Core 5.4",
+        "nfc": "not_disclosed",
+        "batteryCapacity": "额定 50 Wh、最小 48 Wh",
+        "batteryLifeVideo": "最长 22.5 小时本地视频播放",
+        "batteryLifeOffice": "最长 18 小时网页浏览",
+        "charger": "USB-C 最低 60W 可快充；Surface 45W USB-C 充电器仅特定市场的特定配置随附",
+        "fastCharging": "USB-C 最低 60W",
+        "keyboardCompat": "机械按键，QWERTY，整行功能键 F1–F12，背光",
+        "penCompat": "not_applicable",
+        "trackpadType": "精确式触摸板，带自适应触控模式",
+        "tpm": "Microsoft Pluton TPM 2.0",
+        "biometrics": "指纹电源按钮",
+        "securityFeatures": "Windows 11 安全核心 PC，Microsoft Pluton，BitLocker",
+        "dimensions": "285.65 mm × 214.14 mm × 15.6 mm",
+        "weightGrams": "1.23 千克",
+        "warranty": "3 年有限硬件保修（自发票日期起）",
+        "replaceableParts": "显示组件（含摄像头）、键盘、触摸板、可拆卸固态硬盘、电池、主板（含处理器和内存）、散热、扬声器、外壳、USB-C、USB-A、耳机插孔、风扇、支脚",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+        "lastVerified": "2026-09-29"
       }
     },
     {
@@ -5685,7 +5879,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 SSD",
-        "ssdRemovable": "支持 (官方快拆 SSD)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -5786,7 +5980,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 SSD",
-        "ssdRemovable": "支持 (官方快拆 SSD)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -5887,7 +6081,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 SSD",
-        "ssdRemovable": "支持 (官方快拆 SSD)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "15 英寸配备 MicroSDXC 读卡器",
         "screenSize": "13.8 英寸 / 15.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -5988,7 +6182,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 SSD",
-        "ssdRemovable": "支持 (官方快拆 SSD)",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "15 英寸配备 MicroSDXC Express 读卡器",
         "screenSize": "13.8 英寸 / 15.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2 黄金比例",
@@ -6083,7 +6277,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "32GB",
         "storageOptions": "512GB 可拆卸 SSD",
-        "ssdRemovable": "支持（计算模块内可拆卸 SSD）",
+        "ssdRemovable": "计算模块内可拆卸固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "50.0 英寸 (3:2) / 85.0 英寸 (16:9)",
         "aspectRatio": "3:2 (50\") / 16:9 (85\")",
@@ -6281,7 +6475,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "8GB / 16GB / 32GB LPDDR5（Intel） / 8GB / 16GB LPDDR4x（SQ® 3 5G）",
         "storageOptions": "128GB / 256GB / 512GB / 1TB（Intel） / 128GB / 256GB / 512GB（SQ® 3 5G）可拆卸 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -6383,7 +6577,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "8GB / 16GB / 32GB LPDDR4x",
         "storageOptions": "128GB / 256GB / 512GB / 1TB 可拆卸 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -6484,7 +6678,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "8GB / 16GB LPDDR5x（13.5\"） / 8GB / 16GB / 32GB LPDDR5x（15\"）",
         "storageOptions": "256GB / 512GB（13.5\"） / 256GB / 512GB / 1TB（15\"）可维护 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "13.5 英寸 / 15.0 英寸 PixelSense™",
         "aspectRatio": "3:2",
@@ -6580,7 +6774,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "512GB / 1TB / 2TB 可更换 Gen 4 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）；商用可更换部件包含固态硬盘，由技术人员按维修指南更换",
         "expandableStorage": "配备 MicroSDXC 读卡器",
         "sdSlot": "MicroSDXC 读卡器",
         "screenSize": "14.4 英寸 PixelSense™ Flow",
@@ -6677,7 +6871,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "16GB / 32GB LPDDR4x",
         "storageOptions": "256GB / 512GB / 1TB / 2TB SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
         "screenSize": "14.4 英寸 PixelSense™ Flow",
         "aspectRatio": "3:2",
@@ -6965,7 +7159,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "8GB / 16GB LPDDR5x（16GB 起解锁完整 AI+ PC 体验）",
         "storageOptions": "256GB / 512GB",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ 显示屏",
         "aspectRatio": "3:2 生产力黄金比例",
@@ -7067,8 +7261,8 @@ const SURFACE_DATA = {
         "npuTops": "80 TOPS",
         "copilotPlus": "16GB 及以上为 Copilot+ PC / Windows 11 AI+ PC（8GB 不适用）",
         "ramSpec": "8GB / 16GB / 24GB LPDDR5x",
-        "storageOptions": "256GB / 512GB（UFS），官方标注可拆卸式",
-        "ssdRemovable": "官方标注可拆卸式",
+        "storageOptions": "可拆卸式 256GB、512GB（UFS）",
+        "ssdRemovable": "可拆卸式：256GB、512GB（UFS）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ LCD 触控屏",
         "aspectRatio": "3:2",
@@ -7166,7 +7360,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x RAM (8448 MT/s)",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸 Gen 4 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "配备 MicroSDXC 读卡器",
         "screenSize": "15.0 英寸 PixelSense™ Flow 显示屏",
         "aspectRatio": "3:2",
@@ -7259,7 +7453,7 @@ const SURFACE_DATA = {
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "8GB / 16GB / 24GB LPDDR5x RAM",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸第 4 代 SSD",
-        "ssdRemovable": "支持可拆卸固态硬盘",
+        "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.0 英寸 PixelSense™ 触控显示屏",
         "aspectRatio": "3:2 商务黄金生产力比例",
@@ -7352,7 +7546,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "8GB / 16GB / 32GB 3733Mhz LPDDR4x",
         "storageOptions": "256GB / 512GB / 1TB / 2TB PCIe NVMe SSD",
-        "ssdRemovable": "not_applicable",
+        "ssdRemovable": "not_disclosed",
         "expandableStorage": "全尺寸 SDXC 读卡器",
         "screenSize": "13.5 英寸 (3000×2000) / 15.0 英寸 (3240×2160)",
         "aspectRatio": "3:2",
@@ -7445,7 +7639,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "4GB / 8GB LPDDR3",
         "storageOptions": "64GB eMMC / 128GB SSD",
-        "ssdRemovable": "not_applicable",
+        "ssdRemovable": "not_disclosed",
         "expandableStorage": "配备 MicroSDXC 读卡器",
         "screenSize": "10.5 英寸 PixelSense™ 触控屏",
         "aspectRatio": "3:2",
@@ -7543,7 +7737,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_applicable",
         "ramSpec": "8GB / 16GB LPDDR3",
         "storageOptions": "128GB / 256GB / 512GB / 1TB PCIe NVMe SSD",
-        "ssdRemovable": "not_applicable",
+        "ssdRemovable": "not_disclosed",
         "expandableStorage": "配备 MicroSDXC 读卡器",
         "screenSize": "12.3 英寸 PixelSense™ 显示屏",
         "aspectRatio": "3:2",
@@ -7870,6 +8064,11 @@ const SURFACE_DATA = {
           "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
         },
         {
+          "deviceId": "pro-12-inch-2-biz",
+          "status": "FULL",
+          "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
+        },
+        {
           "deviceId": "pro-11-13",
           "status": "FULL",
           "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
@@ -8180,6 +8379,11 @@ const SURFACE_DATA = {
           "note": "原生免驱蓝牙直连，平滑触控滚动"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "原生免驱蓝牙直连，平滑触控滚动"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "原生免驱蓝牙直连，平滑触控滚动"
@@ -8243,6 +8447,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "二合一生产力桌面拓展主力鼠标"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "FULL",
           "note": "二合一生产力桌面拓展主力鼠标"
         },
@@ -8557,6 +8766,11 @@ const SURFACE_DATA = {
           "note": "旗舰级办公操控体验，支持蓝牙+有线双模"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "旗舰级办公操控体验，支持蓝牙+有线双模"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "旗舰级办公操控体验，支持蓝牙+有线双模"
@@ -8620,6 +8834,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "轻薄便携差旅办公"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "FULL",
           "note": "轻薄便携差旅办公"
         },
@@ -8934,6 +9153,11 @@ const SURFACE_DATA = {
           "note": "随身移动办公"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "随身移动办公"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "随身移动办公"
@@ -8997,6 +9221,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "桌面拓展办公首选"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "FULL",
           "note": "桌面拓展办公首选"
         },
@@ -9311,6 +9540,11 @@ const SURFACE_DATA = {
           "note": "重度桌面办公健康之选"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "重度桌面办公健康之选"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "重度桌面办公健康之选"
@@ -9374,6 +9608,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理磁吸接口与尺寸不兼容)"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
         },
@@ -9688,6 +9927,11 @@ const SURFACE_DATA = {
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理磁吸接口与尺寸不兼容)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
@@ -9751,6 +9995,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (接口物理不兼容)"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (接口物理不兼容)"
         },
@@ -10065,6 +10314,11 @@ const SURFACE_DATA = {
           "note": "不支持 (接口物理不兼容)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (接口物理不兼容)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (接口物理不兼容)"
@@ -10128,6 +10382,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理接口或尺寸不兼容)"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理接口或尺寸不兼容)"
         },
@@ -10442,6 +10701,11 @@ const SURFACE_DATA = {
           "note": "不支持 (物理接口或尺寸不兼容)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (物理接口或尺寸不兼容)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理接口或尺寸不兼容)"
@@ -10505,6 +10769,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
         },
@@ -10819,6 +11088,11 @@ const SURFACE_DATA = {
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
@@ -10882,6 +11156,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
         },
@@ -11196,6 +11475,11 @@ const SURFACE_DATA = {
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
@@ -11259,6 +11543,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "二合一主机桌面办公利器"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "FULL",
           "note": "二合一主机桌面办公利器"
         },
@@ -11573,6 +11862,11 @@ const SURFACE_DATA = {
           "note": "外接大屏桌面办公利器"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "外接大屏桌面办公利器"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "外接大屏桌面办公利器"
@@ -11636,6 +11930,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "PARTIAL",
+          "note": "支持 4096 级压感与倾角书写；机身无震动马达驱动，需外置充电座"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "PARTIAL",
           "note": "支持 4096 级压感与倾角书写；机身无震动马达驱动，需外置充电座"
         },
@@ -11950,6 +12249,11 @@ const SURFACE_DATA = {
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
@@ -12013,6 +12317,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "PARTIAL",
+          "note": "支持正常书写，需配外置充电盒"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "PARTIAL",
           "note": "支持正常书写，需配外置充电盒"
         },
@@ -12327,6 +12636,11 @@ const SURFACE_DATA = {
           "note": "不支持"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持"
@@ -12390,6 +12704,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "PARTIAL",
+          "note": "支持 4096 级书写绘图，机身侧边无磁吸定位槽"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "PARTIAL",
           "note": "支持 4096 级书写绘图，机身侧边无磁吸定位槽"
         },
@@ -12704,6 +13023,11 @@ const SURFACE_DATA = {
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (Laptop 传统笔电屏幕不支持手写笔)"
@@ -12767,6 +13091,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持现代机型高级倾斜与高阶压感"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持现代机型高级倾斜与高阶压感"
         },
@@ -13081,6 +13410,11 @@ const SURFACE_DATA = {
           "note": "不支持现代机型高级倾斜与高阶压感"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持现代机型高级倾斜与高阶压感"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持现代机型高级倾斜与高阶压感"
@@ -13144,6 +13478,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
         },
@@ -13458,6 +13797,11 @@ const SURFACE_DATA = {
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
@@ -13521,6 +13865,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸口)"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸口)"
         },
@@ -13835,6 +14184,11 @@ const SURFACE_DATA = {
           "note": "不支持 (无 Surface Connect 磁吸口)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (无 Surface Connect 磁吸口)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸口)"
@@ -13898,6 +14252,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "PARTIAL",
+          "note": "支持 USB-C 快速充电与外设扩展"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "PARTIAL",
           "note": "支持 USB-C 快速充电与外设扩展"
         },
@@ -14212,6 +14571,11 @@ const SURFACE_DATA = {
           "note": "不支持 (早期机型无 USB-C / 雷电接口)"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "不支持 (早期机型无 USB-C / 雷电接口)"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "满血 USB4 原生支持"
@@ -14275,6 +14639,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "二合一外出开会与出差黄金转接头"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "FULL",
           "note": "二合一外出开会与出差黄金转接头"
         },
@@ -14589,6 +14958,11 @@ const SURFACE_DATA = {
           "note": "完美兼容 USB-C 差旅一线转接投影与外设"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "完美兼容 USB-C 差旅一线转接投影与外设"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "完美兼容 USB-C 差旅一线转接投影与外设"
@@ -14652,6 +15026,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
         },
@@ -14966,6 +15345,11 @@ const SURFACE_DATA = {
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "UNSUPPORTED",
+          "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "UNSUPPORTED",
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
@@ -15029,6 +15413,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "全系蓝牙免驱配对，高保真办公与会议降噪"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "FULL",
           "note": "全系蓝牙免驱配对，高保真办公与会议降噪"
         },
@@ -15343,6 +15732,11 @@ const SURFACE_DATA = {
           "note": "全系蓝牙免驱支持，多点双设备无缝切换"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "全系蓝牙免驱支持，多点双设备无缝切换"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "全系蓝牙免驱支持，多点双设备无缝切换"
@@ -15406,6 +15800,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "FULL",
+          "note": "出差差旅与移动会议绝配"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "FULL",
           "note": "出差差旅与移动会议绝配"
         },
@@ -15716,6 +16115,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "laptop-13-inch-2",
+          "status": "FULL",
+          "note": "移动办公标配，支持 PPT 演示触控翻页"
+        },
+        {
+          "deviceId": "laptop-13-inch-2-biz",
           "status": "FULL",
           "note": "移动办公标配，支持 PPT 演示触控翻页"
         },
@@ -15787,6 +16191,11 @@ const SURFACE_DATA = {
           "note": "二合一电脑桌面工位拓展利器"
         },
         {
+          "deviceId": "pro-12-inch-2-biz",
+          "status": "FULL",
+          "note": "二合一电脑桌面工位拓展利器"
+        },
+        {
           "deviceId": "pro-11-13",
           "status": "FULL",
           "note": "二合一电脑桌面工位拓展利器"
@@ -16097,6 +16506,11 @@ const SURFACE_DATA = {
           "note": "居家与工位混合办公神器，一条 Type-C 搞定供电、显示与会议"
         },
         {
+          "deviceId": "laptop-13-inch-2-biz",
+          "status": "FULL",
+          "note": "居家与工位混合办公神器，一条 Type-C 搞定供电、显示与会议"
+        },
+        {
           "deviceId": "laptop-7-150",
           "status": "FULL",
           "note": "居家与工位混合办公神器，一条 Type-C 搞定供电、显示与会议"
@@ -16160,6 +16574,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "pro-12-inch-2",
+          "status": "UNSUPPORTED",
+          "note": "不支持"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
           "status": "UNSUPPORTED",
           "note": "不支持"
         },
@@ -16470,6 +16889,11 @@ const SURFACE_DATA = {
         },
         {
           "deviceId": "laptop-13-inch-2",
+          "status": "PARTIAL",
+          "note": "支持桌面离屏蓝牙旋钮操作"
+        },
+        {
+          "deviceId": "laptop-13-inch-2-biz",
           "status": "PARTIAL",
           "note": "支持桌面离屏蓝牙旋钮操作"
         },

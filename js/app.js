@@ -52,6 +52,22 @@ const App = {
     return `<span class="portrait-stand-in"${idAttr}${hidden}>同系列示意</span>`;
   },
 
+  escapeText(value) {
+    return String(value || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  },
+
+  audienceHtml(device) {
+    const text = (typeof Catalog.audience === 'function') ? Catalog.audience(device) : '';
+    if (!text) return '';
+    return `<div class="device-audience">推荐人群：${this.escapeText(text)}</div>`;
+  },
+
+  highlightsHtml(device) {
+    const points = (typeof Catalog.highlights === 'function') ? Catalog.highlights(device) : [];
+    if (!points.length) return '';
+    return `<div class="detail-points"><div class="detail-points-title">亮点</div><ul>${points.map(p => `<li>${this.escapeText(p)}</li>`).join('')}</ul></div>`;
+  },
+
   picture(shot, opts) {
     return Catalog.frame(shot, opts);
   },
@@ -297,6 +313,7 @@ const App = {
           </div>
           <div class="device-name">${dev.name}</div>
           <div class="device-tagline">${dev.tagline}</div>
+          ${this.audienceHtml(dev)}
           ${colorDotsHtml}
           <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
             ${this.recentLaunchBadge(dev)}
@@ -309,7 +326,46 @@ const App = {
 
     html += `
       </div>
+    `;
 
+    const upcomingDevices = this.listDevices().filter(d => d.status === 'upcoming');
+    if (upcomingDevices.length) {
+      html += `
+        <div class="home-section-header">
+          <h2 style="font-size:20px; font-weight:700; margin:0;">即将发售</h2>
+        </div>
+        <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">官方写了上市月份，现在还不能标成国行在售。共 ${upcomingDevices.length} 款。</p>
+        <div class="device-select-strip" style="margin-bottom:28px;">
+      `;
+      upcomingDevices.forEach((dev) => {
+        const devShot = this.shot(dev);
+        html += `
+          <div class="device-card-mini" id="card-${dev.id}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
+            <div class="device-img-wrap">
+              ${this.picture(devShot, {
+                slot: 'card',
+                id: `thumb-${dev.id}`,
+                className: 'device-thumb-img',
+                alt: dev.name,
+                loading: 'lazy',
+                sizes: '(max-width: 768px) 80vw, 160px',
+                onerror: 'App.hideBrokenImage(this)'
+              })}
+              ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
+            </div>
+            <div class="device-name">${dev.name}</div>
+            <div class="device-tagline">${dev.tagline}</div>
+            ${this.audienceHtml(dev)}
+            <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
+              ${ComparisonEngine.renderStatusBadge(dev.status)}
+            </div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    }
+
+    html += `
       <!-- 🛒 探索消费版全系列 (Consumer) -->
       <div class="home-section-header">
         <div style="display:flex; align-items:center; gap:8px;">
@@ -517,6 +573,7 @@ const App = {
                   ${dev.name}
                 </div>
                 <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
+                ${this.audienceHtml(dev)}
                 ${colorDotsHtml}
                 <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                   ${this.recentLaunchBadge(dev)}
@@ -605,7 +662,7 @@ const App = {
         </div>
         <h1 class="business-hero-title">Surface 商用版产品中枢</h1>
         <p class="business-hero-desc">
-          严格对齐微软官方 Learn (learn.microsoft.com/surface) 技术架构标准。专为企业 IT 集中运维、采购合规、高安全办公与工业现场场景设计，提供深度硬件参数、快拆可更换硬盘 (rSSD)、Secured-core PC 安全基线与官方驱动生命周期支持。
+          严格对齐微软官方 Learn (learn.microsoft.com/surface) 技术架构标准。专为企业 IT 集中运维、采购合规、高安全办公与工业现场场景设计，提供深度硬件参数、规格表写明的可拆卸式固态硬盘、Secured-core PC 安全基线与官方驱动生命周期支持。
         </p>
         <div class="business-hero-actions">
           <a href="https://www.microsoftstore.com.cn/commercial" target="_blank" rel="noopener" class="fluent-btn primary">
@@ -635,8 +692,8 @@ const App = {
         </div>
         <div class="business-pillar-card">
           <div class="pillar-icon">🔧</div>
-          <div class="pillar-title">官方快拆 SSD (rSSD)</div>
-          <div class="pillar-desc">企业 IT 可快速弹出并留存硬盘，设备送修时保护商业机密与敏感数据自持，附带官方部件服务指南 (Service Guides)。</div>
+          <div class="pillar-title">可拆卸式固态硬盘</div>
+          <div class="pillar-desc">仅技术规格写明「可拆卸式」的机型适用。送修时能否留存硬盘，以该机型的驱动器保留条款和维修指南为准。</div>
         </div>
         <div class="business-pillar-card">
           <div class="pillar-icon">☁️</div>
@@ -711,6 +768,7 @@ const App = {
                 ${dev.name}
               </div>
               <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
+              ${this.audienceHtml(dev)}
               ${colorDotsHtml}
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                 ${this.recentLaunchBadge(dev)}
@@ -1071,7 +1129,9 @@ const App = {
             ${dev.name}
           </h1>
           <div style="font-size:14px; color:var(--ms-text-tertiary); margin-bottom:10px; font-weight:500;">${dev.nameEn}</div>
-          <p style="font-size:clamp(13.5px, 1.6vw, 15px); color:var(--ms-text-secondary); line-height:1.6; margin-bottom:24px;">${dev.tagline}</p>
+          <p style="font-size:clamp(13.5px, 1.6vw, 15px); color:var(--ms-text-secondary); line-height:1.6; margin-bottom:12px;">${dev.tagline}</p>
+          ${this.audienceHtml(dev)}
+          ${this.highlightsHtml(dev)}
 
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
             <button class="fluent-btn ${isSelected ? 'active' : 'primary'}" onclick="ComparisonEngine.toggleDevice('${dev.id}')">

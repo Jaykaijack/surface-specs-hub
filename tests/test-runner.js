@@ -333,7 +333,59 @@ assert(matchRes.best.id === 'laptop-8-138-intel' || matchRes.best.categoryId ===
 
 ToolsEngine.guideScene = 'design';
 matchRes = ToolsEngine.matchRecommendedDevices();
-assert(matchRes.best.id === 'sls-2' || matchRes.best.categoryId === 'sls', '创意设计首推专业独显 SLS 机型');
+assert(matchRes.best.categoryId === 'sls' || matchRes.best.categoryId === 'pro', '创意设计首推可手绘的 Pro，或仍在售的 SLS');
+assert(matchRes.matches.length >= 3, '选型向导默认场景要列出多台在售机，而不是写死两台');
+
+ToolsEngine.guideScene = 'commute';
+ToolsEngine.guideForm = 'laptop';
+ToolsEngine.guideBudget = 'all';
+ToolsEngine.guideArch = 'all';
+matchRes = ToolsEngine.matchRecommendedDevices();
+assert(matchRes.best && (matchRes.best.categoryId === 'laptop' || matchRes.best.categoryId === 'laptopgo'), '选了轻薄本形态就不能再推平板');
+
+ToolsEngine.guideForm = '2in1';
+matchRes = ToolsEngine.matchRecommendedDevices();
+assert(matchRes.best && (matchRes.best.categoryId === 'pro' || matchRes.best.categoryId === 'go'), '选了二合一就要推 Pro 或 Go');
+
+ToolsEngine.guideForm = 'all';
+ToolsEngine.guideArch = 'intel';
+matchRes = ToolsEngine.matchRecommendedDevices();
+assert(matchRes.best && /Intel|酷睿|Ultra|奔腾/.test(String(Catalog.getSpec(matchRes.best, 'cpuModel') || '')), '选了 Intel 就要推 Intel 机型');
+
+ToolsEngine.guideArch = 'snapdragon';
+matchRes = ToolsEngine.matchRecommendedDevices();
+assert(matchRes.best && /Snapdragon|骁龙|高通/.test(String(Catalog.getSpec(matchRes.best, 'cpuModel') || '')), '选了骁龙就要推骁龙机型');
+
+ToolsEngine.guideArch = 'all';
+ToolsEngine.guideBudget = 'budget_entry';
+matchRes = ToolsEngine.matchRecommendedDevices();
+assert(!matchRes.matches.some(d => d.id === 'pro-12-inch-2'), '入门预算不能塞进官方起售价已经过万的 12 英寸第 2 代');
+ToolsEngine.guideBudget = 'all';
+ToolsEngine.guideScene = 'commute';
+ToolsEngine.guideForm = 'all';
+
+const proBiz2 = Catalog.getDevice('pro-12-inch-2-biz');
+const laptopBiz2 = Catalog.getDevice('laptop-13-inch-2-biz');
+assert(proBiz2 && proBiz2.status === 'upcoming', '12 英寸商用第 2 代官方写 10 月推出，不能标国行在售');
+assert(laptopBiz2 && laptopBiz2.status === 'upcoming', '13 英寸 Laptop 商用第 2 代官方写 10 月推出，不能标国行在售');
+assert(String(Catalog.getSpec(proBiz2, 'ramSpec')).includes('16GB') && !String(Catalog.getSpec(proBiz2, 'ramSpec')).includes('8GB'), '商用 Pro 第 2 代内存只有 16GB 和 24GB');
+assert(String(Catalog.getSpec(laptopBiz2, 'ramSpec')).includes('16GB') && !String(Catalog.getSpec(laptopBiz2, 'ramSpec')).includes('8GB'), '商用 Laptop 第 2 代内存只有 16GB 和 24GB');
+assert(String(Catalog.getSpec(proBiz2, 'osAtLaunch')).includes('专业版'), '商用 Pro 第 2 代预装 Windows 11 专业版');
+assert(String(Catalog.getSpec(laptopBiz2, 'osAtLaunch')).includes('专业版'), '商用 Laptop 第 2 代预装 Windows 11 专业版');
+assert(Catalog.getSpec(proBiz2, 'startingPriceCny') === 'not_disclosed', '商用 Pro 第 2 代国行页没有标价');
+assert(Catalog.getSpec(laptopBiz2, 'startingPriceCny') === 'not_disclosed', '商用 Laptop 第 2 代国行页没有标价');
+assert(String(Catalog.getSpec(proBiz2, 'weightGrams')).includes('686') && String(Catalog.getSpec(proBiz2, 'weightGrams')).includes('707'), '商用 Pro 第 2 代要分开写 Wi-Fi 和 5G 重量');
+assert(String(Catalog.getSpec(proBiz2, 'batteryLifeVideo')).includes('15.5') && String(Catalog.getSpec(proBiz2, 'batteryLifeVideo')).includes('13'), '商用 Pro 第 2 代 Wi-Fi 与 5G 续航不能混用');
+assert(String(Catalog.getSpec(laptopBiz2, 'weightGrams')).includes('1.23'), '商用 Laptop 第 2 代重量 1.23 千克');
+assert(String(Catalog.getSpec(laptopBiz2, 'batteryLifeVideo')).includes('22.5'), '商用 Laptop 第 2 代本地视频 22.5 小时');
+assert(String(Catalog.getSpec(laptopBiz2, 'headphoneJack')).includes('3.5'), '商用 Laptop 第 2 代有 3.5 毫米耳机孔');
+assert(Catalog.getSpec(laptopBiz2, 'thunderboltSupport') === 'not_applicable', '商用 Laptop 第 2 代官方页没有雷电扩展坞');
+assert(String(Catalog.getSpec(laptopBiz2, 'touchAndPenProtocol')).includes('不支持触控笔'), '商用 Laptop 第 2 代不支持触控笔');
+assert(Catalog.getDevice('pro-12-inch-biz').nextGenerationId === 'pro-12-inch-2-biz', '12 英寸商用第 1 代要指向第 2 代');
+assert(Catalog.audience(proBiz2).includes('企业'), '商用 Pro 第 2 代要能看到推荐人群');
+assert(Catalog.highlights(proBiz2).length >= 3, '商用 Pro 第 2 代要有官方参数亮点');
+assert(Catalog.highlights(laptopBiz2).some(line => String(line).includes('22.5')), '商用 Laptop 第 2 代亮点要带上官方续航');
+assert(Catalog.isRecentLaunch(proBiz2, new Date(2026, 8, 29)) === false, '10 月才上市的机器，9 月 29 日不能提前标新品');
 
 // 2. 差旅背包综合负重与外勤测算器
 ToolsEngine.weightDeviceId = 'pro-11-13';
@@ -694,8 +746,11 @@ assert(commercialList.length >= 8, `全面收录商用机型 (当前收录: ${co
 function isOfficialMicrosoftDocUrl(url) {
   if (!url || typeof url !== 'string') return false;
   try {
-    const host = new URL(url).hostname.toLowerCase();
-    return host === 'learn.microsoft.com' || host === 'support.microsoft.com';
+    const parsed = new URL(url);
+    const host = parsed.hostname.toLowerCase();
+    if (host === 'learn.microsoft.com' || host === 'support.microsoft.com') return true;
+    // 这两款 2026 年 10 月商用新品的规格表目前只发在国行商城产品页，还没有单独的 Learn 规格书。
+    return host === 'www.microsoftstore.com.cn' && /^\/surface\/surface-[a-z0-9.-]+/.test(parsed.pathname);
   } catch (e) {
     return false;
   }
@@ -715,6 +770,9 @@ const DEAD_LEARN_PATHS = [
 ];
 Catalog.listDevices().forEach(dev => {
   const url = String(dev.learnDocUrl || '');
+  let host = '';
+  try { host = new URL(url).hostname.toLowerCase(); } catch (e) { host = ''; }
+  if (host !== 'learn.microsoft.com') return;
   DEAD_LEARN_PATHS.forEach(dead => {
     assert(
       !url.includes(dead),
@@ -974,6 +1032,11 @@ Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices).forEach(deviceId => {
     const storage = String(Catalog.getSpec(dev, 'storageOptions') || '');
     assert(storage.includes(fact.storageMustInclude),
       `${deviceId} 存储起步必须含官方 ${fact.storageMustInclude}（实际: ${storage}）`);
+  }
+  if (fact.storageMustNotInclude) {
+    const storage = String(Catalog.getSpec(dev, 'storageOptions') || '');
+    assert(!storage.includes(fact.storageMustNotInclude),
+      `${deviceId} 存储不得混入官方未列的 ${fact.storageMustNotInclude}（实际: ${storage}）`);
   }
   if (fact.ramMustInclude) {
     const ram = String(Catalog.getSpec(dev, 'ramSpec') || '');

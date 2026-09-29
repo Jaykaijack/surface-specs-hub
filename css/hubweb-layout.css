@@ -839,6 +839,45 @@ body {
   overflow: hidden;
 }
 
+.device-audience {
+  font-size: 12px;
+  color: var(--ms-text-secondary);
+  line-height: 1.4;
+  margin: 4px 0 8px;
+}
+
+.device-card-mini .device-audience {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.detail-points {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border: 1px solid var(--ms-border-subtle);
+  border-radius: 10px;
+  background: var(--ms-bg-card);
+}
+
+.detail-points-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.detail-points ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.detail-points li {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ms-text-secondary);
+}
+
 .device-card-mini .device-year-badge {
   font-size: 11px;
   padding: 2px 8px;

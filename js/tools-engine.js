@@ -636,85 +636,132 @@ const ToolsEngine = {
     if (container) container.innerHTML = this.renderSmartGuide();
   },
 
+  guidePriceYuan(device) {
+    const raw = String(Catalog.getSpec(device, 'startingPriceCny') || '').replace(/,/g, '');
+    const match = raw.match(/(\d{4,6})/);
+    return match ? Number(match[1]) : null;
+  },
+
+  guideCpuText(device) {
+    return String(Catalog.getSpec(device, 'cpuModel') || '');
+  },
+
+  guideIsIntel(device) {
+    const cpu = this.guideCpuText(device);
+    return /Intel|酷睿|Ultra|奔腾/i.test(cpu) && !/Snapdragon|骁龙|高通/i.test(cpu);
+  },
+
+  guideIsSnapdragon(device) {
+    return /Snapdragon|骁龙|高通/i.test(this.guideCpuText(device));
+  },
+
+  guideHours(device) {
+    const text = String(Catalog.getSpec(device, 'batteryLifeVideo') || Catalog.getSpec(device, 'batteryLifeLocalVideo') || '');
+    const match = text.match(/(\d+(?:\.\d+)?)\s*小时/);
+    return match ? Number(match[1]) : 0;
+  },
+
+  guideGrams(device) {
+    const text = String(Catalog.getSpec(device, 'weight') || Catalog.getSpec(device, 'weightGrams') || '');
+    const kg = text.match(/(\d+(?:\.\d+)?)\s*千克/);
+    if (kg) return Number(kg[1]) * 1000;
+    const grams = text.match(/(\d+(?:\.\d+)?)\s*克/);
+    if (grams) return Number(grams[1]);
+    return 2500;
+  },
+
+  guidePassesFilters(device) {
+    if (device.status !== 'current_cn' && device.status !== 'upcoming') return false;
+    const price = this.guidePriceYuan(device);
+    if (this.guideBudget === 'budget_entry' && !(price !== null && price < 6000)) return false;
+    if (this.guideBudget === 'budget_mid' && !(price !== null && price >= 6000 && price <= 10000)) return false;
+    if (this.guideBudget === 'budget_high' && !(price !== null && price > 10000 && price <= 16000)) return false;
+    if (this.guideBudget === 'budget_pro' && !(price !== null && price > 16000)) return false;
+    const category = device.categoryId;
+    if (this.guideForm === '2in1' && category !== 'pro' && category !== 'go') return false;
+    if (this.guideForm === 'laptop' && category !== 'laptop' && category !== 'laptopgo') return false;
+    if (this.guideForm === 'studio' && category !== 'sls') return false;
+    if (this.guideArch === 'intel' && !this.guideIsIntel(device)) return false;
+    if (this.guideArch === 'snapdragon' && !this.guideIsSnapdragon(device)) return false;
+    return true;
+  },
+
+  guideScore(device) {
+    const scene = this.guideScene || 'commute';
+    const categoryBoost = {
+      commute: { pro: 140, laptopgo: 110, go: 90, laptop: 50 },
+      office: { laptop: 160, pro: 50, laptopgo: 40 },
+      design: { sls: 220, pro: 140 },
+      study: { go: 120, laptopgo: 100, pro: 80, laptop: 30 },
+      pro: { sls: 240, laptop: 100, pro: 30 }
+    }[scene] || {};
+    let score = categoryBoost[device.categoryId] || 0;
+    score += Math.max(0, 2200 - this.guideGrams(device)) / 10;
+    score += this.guideHours(device) * 4;
+    if (device.status === 'current_cn') score += 30;
+    if (scene === 'office' && this.guideIsIntel(device)) score += 80;
+    if (scene === 'office' && device.segment === 'commercial') score += 40;
+    const pen = String(Catalog.getSpec(device, 'touchAndPenProtocol') || Catalog.getSpec(device, 'penSupport') || '');
+    if ((scene === 'design' || scene === 'study') && /触控笔|MPP/.test(pen) && !pen.includes('不支持')) score += 70;
+    const npu = parseInt(Catalog.getSpec(device, 'npuTops'), 10);
+    if (!isNaN(npu)) score += Math.min(npu, 80) / 10;
+    score += (Number(device.year) || 0) / 100;
+    return score;
+  },
+
+  guideCaveat(device) {
+    const lines = [];
+    if (device.status === 'upcoming') lines.push('官方页面写的是上市月份，现在还不能当作国行在售。');
+    const pen = String(Catalog.getSpec(device, 'touchAndPenProtocol') || '');
+    if (pen.includes('不支持触控笔')) lines.push('官方写明不支持触控笔。');
+    const keyboard = String(Catalog.getSpec(device, 'keyboardCompat') || Catalog.getSpec(device, 'compatibleKeyboard') || '');
+    if (keyboard.includes('另售')) lines.push('键盘另售，不在主机包装里。');
+    const video = String(Catalog.getSpec(device, 'batteryLifeVideo') || '');
+    if (video.includes('5G') && video.includes('Wi-Fi')) lines.push('Wi-Fi 机型和 5G 机型的续航要分开看。');
+    if (Catalog.getSpec(device, 'startingPriceCny') === 'not_disclosed') lines.push('国行售价官方页面没有标出。');
+    return lines.join('');
+  },
+
   matchRecommendedDevices() {
-    const devices = Catalog.listDevices();
-
-    // 针对不同场景的预设评分与推荐规则库
-    const sceneRules = {
-      commute: {
-        title: '移动差旅与高频外勤',
-        priorityCategories: ['pro', 'laptopgo', 'go', 'laptop'],
-        bestPickId: 'pro-11-13',
-        bestReason: '895g 超轻羽量机身 + 骁龙 X 架构带来的 14 小时真实离电办公续航，高铁飞机即开即用，告别充电宝与电量焦虑。',
-        bestWarning: '二合一形态建议搭配 Flex 键盘盖使用；若需长时间放在大腿上打字，传统翻盖本形态更稳固。',
-        altPickId: 'laptop-7-138',
-        altReason: '1.34kg 传统翻盖轻薄本，13.8 英寸窄边框触摸屏，长达 20 小时续航，大腿/移动打字支撑感极佳。',
-        altWarning: '不支持屏幕与键盘拆分单独作平板使用，且屏幕不支持 Surface 触控笔手写。'
-      },
-      office: {
-        title: '日常重度商务与行政办公',
-        priorityCategories: ['laptop', 'pro'],
-        bestPickId: 'laptop-8-138-intel',
-        bestReason: '最新酷睿 Ultra 处理器提供 100% 极高企业软件兼容性，支持全套行业财务、报表与内网加密插件，触觉振动触控板操控精准。',
-        bestWarning: '离电续航相比骁龙版略短（约 10~12 小时），高负荷下风扇有轻微呼啸。',
-        altPickId: 'pro-12-13-intel',
-        altReason: '商用双架构旗舰，兼顾手写批注合同与传统 x86 企业软件兼容，可随时外接双 4K 显示器扩展成桌面主机。',
-        altWarning: '商用版需另行选配特制键盘盖与触控笔，整套购机预算需上浮约 ¥1,200。'
-      },
-      design: {
-        title: '手绘创作、平面设计与修图',
-        priorityCategories: ['sls', 'pro'],
-        bestPickId: 'sls-2',
-        bestReason: 'RTX 4060 独立显卡 + 14.4 英寸 120Hz 广色域专业屏，创新三段式画布模式，手写笔下压阻尼感绝佳，Adobe 全家桶丝滑渲染。',
-        bestWarning: '机身重量约 1.98kg，便携性较低，适合固定工位或工作室使用。',
-        altPickId: 'pro-11-13',
-        altReason: 'Slim Pen 2 触觉纸感马达 + 2.8K 120Hz 高刷屏，接近真纸触感，便携随身速写利器。',
-        altWarning: '核显性能适合 2D 绘图与轻量修图，超大型 3D 建模渲染建议选择带独立显卡的 Laptop Studio。'
-      },
-      study: {
-        title: '大学学习、考研刷题与无纸化笔记',
-        priorityCategories: ['pro', 'go', 'laptopgo'],
-        bestPickId: 'pro-9',
-        bestReason: '13 英寸 120Hz 视网膜触控屏，完美支持 OneNote 与 PDF 分屏精细批注，可自行更换大容量 SSD，性价比极高。',
-        bestWarning: '12 代酷睿续航约 6~7 小时，图书馆自习建议携带 65W PD 轻量充电头。',
-        altPickId: 'go-4-biz',
-        altReason: '仅 521g 极致轻巧，千元级起步预算，四核 Intel N200 处理器完全胜任网课、文献阅读与轻量 Office。',
-        altWarning: '10.5 英寸屏幕面积较小，不建议作为专业编程或重度剪辑的主力机。'
-      },
-      pro: {
-        title: '专业工程计算、3D 渲染与剪辑',
-        priorityCategories: ['sls', 'laptop'],
-        bestPickId: 'sls-2',
-        bestReason: 'Surface 算力巅峰之作，13 代酷睿 i7-13700H 标压处理器配合 80W 功耗释放的 RTX 4060 显卡，64GB 内存轻松应对多轨 4K/8K 剪辑。',
-        bestWarning: '整机价格较高，需使用专用的 127W 磁吸充电器满血供电。',
-        altPickId: 'laptop-8-150-intel',
-        altReason: '15 英寸大屏 + Ultra 处理器，超大触摸板与双风扇散热，兼顾大视野多任务与移动性。',
-        altWarning: '核显配置无独显，不适合超大型 3D 光追渲染任务。'
-      }
+    const titles = {
+      commute: '移动差旅与高频外勤',
+      office: '日常重度商务与行政办公',
+      design: '手绘创作、平面设计与修图',
+      study: '大学学习、考研刷题与无纸化笔记',
+      pro: '专业工程计算、3D 渲染与剪辑'
     };
-
-    const rule = sceneRules[this.guideScene] || sceneRules.commute;
-    let best = Catalog.getDevice(rule.bestPickId) || devices[0];
-    let alt = Catalog.getDevice(rule.altPickId) || devices[1];
-
-    // 过滤形态与架构
-    if (this.guideArch === 'intel') {
-      if (String(this.spec(best, 'cpuModel') || '').includes('Snapdragon') || String(this.spec(best, 'cpuModel') || '').includes('骁龙')) {
-        const intelBest = devices.find(d => d.categoryId === best.categoryId && String(this.spec(d, 'cpuModel') || '').includes('Ultra'));
-        if (intelBest) best = intelBest;
-      }
-    } else if (this.guideArch === 'snapdragon') {
-      if (String(this.spec(best, 'cpuModel') || '').includes('Intel') || String(this.spec(best, 'cpuModel') || '').includes('酷睿')) {
-        const snapBest = devices.find(d => d.categoryId === best.categoryId && String(this.spec(d, 'cpuModel') || '').includes('Snapdragon'));
-        if (snapBest) best = snapBest;
-      }
+    const ranked = Catalog.listDevices()
+      .filter(device => this.guidePassesFilters(device))
+      .sort((a, b) => this.guideScore(b) - this.guideScore(a) || String(a.name).localeCompare(String(b.name), 'zh'));
+    const rule = { title: titles[this.guideScene] || titles.commute };
+    if (!ranked.length) {
+      return {
+        rule,
+        best: null,
+        alt: null,
+        rest: [],
+        matches: [],
+        emptyNote: this.guideBudget === 'all'
+          ? '当前形态和芯片条件下，没有在售或即将发售的机型。'
+          : '这个预算里没有官方标价、又符合条件的机型。没标价的机型不会被硬塞进预算档。'
+      };
     }
-
-    return { rule, best, alt };
+    const leaders = ranked.slice(0, 2);
+    const upcoming = ranked.filter(device => device.status === 'upcoming' && leaders.indexOf(device) === -1);
+    const others = ranked.slice(2).filter(device => device.status !== 'upcoming');
+    const visible = leaders.concat(upcoming, others).slice(0, 8);
+    return {
+      rule,
+      best: visible[0],
+      alt: visible[1] || null,
+      rest: visible.slice(2),
+      matches: ranked,
+      emptyNote: ''
+    };
   },
 
   renderSmartGuide() {
-    const { rule, best, alt } = this.matchRecommendedDevices();
+    const { rule, best, alt, rest, matches, emptyNote } = this.matchRecommendedDevices();
 
     const budgets = [
       { id: 'all', label: '全部预算' },
@@ -745,11 +792,18 @@ const ToolsEngine = {
       { id: 'intel', label: 'Intel 酷睿 (极高行业软件兼容性)' }
     ];
 
-    const renderCard = (dev, badgeClass, badgeText, reasonText, warningText) => {
+    const renderCard = (dev, badgeClass, badgeText) => {
+      if (!dev) return '';
       const specOf = (key) => this.spec(dev, key);
       const shot = Catalog.portrait(dev);
+      const price = specOf('startingPriceCny');
+      const priceLabel = !price || price === 'not_disclosed' || price === 'not_applicable' ? '官方未标价' : price;
+      const points = (typeof Catalog.highlights === 'function' ? Catalog.highlights(dev) : []).map(item => `<li>${item}</li>`).join('');
+      const audience = typeof Catalog.audience === 'function' ? Catalog.audience(dev) : '';
+      const caveat = this.guideCaveat(dev);
+      const cardClass = badgeClass.includes('gold') ? 'best-pick' : 'alt-pick';
       return `
-        <div class="guide-card ${badgeClass.includes('gold') ? 'best-pick' : 'alt-pick'}">
+        <div class="guide-card ${cardClass}">
           <div class="guide-card-badge ${badgeClass}">${badgeText}</div>
           
           <div class="guide-card-hero">
@@ -765,40 +819,40 @@ const ToolsEngine = {
             <div>
               <div style="font-weight:700; font-size:16px; color:var(--ms-text-primary);">${dev.name}</div>
               <div style="font-size:12px; color:var(--ms-text-tertiary); margin:2px 0 6px;">${dev.nameEn} · ${dev.generation}</div>
-              <div style="font-weight:800; font-size:15px; color:var(--ms-accent);">${specOf('startingPriceCny') ? `${specOf('startingPriceCny')}` : '官方在售'}</div>
+              <div style="font-weight:800; font-size:15px; color:var(--ms-accent);">${priceLabel}</div>
             </div>
           </div>
 
           <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px;">
+            ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge" style="background:var(--ms-accent-subtle); color:var(--ms-accent); border:1px solid var(--ms-accent-border);">
-              ${specOf('cpuModel') || '高性能处理器'}
+              ${specOf('cpuModel') || '处理器官方未披露'}
             </span>
-            <span class="spec-badge">
-              ${specOf('screenSize') || '13.0"'} 3:2 · ${specOf('refreshRate') || '60Hz'}
-            </span>
-            ${specOf('npuTops') && specOf('npuTops') !== '—' ? `<span class="spec-badge" style="color:#0078d4; border-color:rgba(0,120,212,0.3);">⚡ NPU ${specOf('npuTops')}</span>` : ''}
+            ${specOf('npuTops') && specOf('npuTops') !== '—' ? `<span class="spec-badge">NPU ${specOf('npuTops')}</span>` : ''}
           </div>
 
+          <div class="device-audience">推荐人群：${audience}</div>
           <div class="guide-feature-box reasons">
-            <div style="font-weight:700; color:#107c41; margin-bottom:4px;">💡 为什么推荐它：</div>
-            <div>${reasonText}</div>
+            <div style="font-weight:700; margin-bottom:4px;">亮点</div>
+            <ul style="margin:0; padding-left:18px;">${points}</ul>
           </div>
-
-          <div class="guide-feature-box warnings">
-            <div style="font-weight:700; color:#d83b01; margin-bottom:4px;">⚠️ 选购前必看（避坑指南）：</div>
-            <div>${warningText}</div>
-          </div>
+          ${caveat ? `
+            <div class="guide-feature-box warnings">
+              <div style="font-weight:700; margin-bottom:4px;">选之前看清楚</div>
+              <div>${caveat}</div>
+            </div>
+          ` : ''}
 
           <div style="display:flex; gap:8px; margin-top:auto; padding-top:10px;">
             <button class="fluent-btn-sm" style="flex:1;" onclick="ComparisonEngine.addDevice('${dev.id}')" title="加入对比台同屏比对">
               + 加入对比
             </button>
-            <a href="#/surface/${dev.categoryId}/${dev.id}" class="fluent-btn-sm" style="flex:1; text-align:center; text-decoration:none;" title="查看单机全量 13 大类技术规格">
+            <a href="#/surface/${dev.categoryId}/${dev.id}" class="fluent-btn-sm" style="flex:1; text-align:center; text-decoration:none;" title="查看单机全量规格">
               全量规格 ↗
             </a>
             ${specOf('officialDocUrl') ? `
-              <a href="${specOf('officialDocUrl')}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="flex:1; text-align:center; text-decoration:none;" title="直达微软官方选配购买页">
-                官网选配 ↗
+              <a href="${specOf('officialDocUrl')}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm primary" style="flex:1; text-align:center; text-decoration:none;" title="直达微软官方页面">
+                官网 ↗
               </a>
             ` : ''}
           </div>
@@ -870,10 +924,14 @@ const ToolsEngine = {
           </div>
         </div>
 
+        <p style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${rule.title}。符合条件 ${matches.length} 款，下面按官方参数排序，不只给两台旧机型。</p>
+        ${emptyNote ? `<p style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${emptyNote}</p>` : ''}
+
         <!-- 推荐结果卡片区 -->
         <div class="guide-results-grid">
-          ${renderCard(best, 'gold', '🥇 场景最佳首选 (Best Match)', rule.bestReason, rule.bestWarning)}
-          ${renderCard(alt, 'green', '🥈 高性价比/均衡备选 (Value Alternative)', rule.altReason, rule.altWarning)}
+          ${renderCard(best, 'gold', '场景最佳首选')}
+          ${renderCard(alt, 'green', '高性价比/均衡备选')}
+          ${(rest || []).map(dev => renderCard(dev, 'green', '同场景还可看')).join('')}
         </div>
       </div>
     `;
@@ -1184,96 +1242,18 @@ const ToolsEngine = {
         <div class="savings-banner">
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
             <div>
-              <div style="font-size:18px; font-weight:800; color:#107c41; margin-bottom:4px;">💡 Surface 官方可拆卸 SSD (rSSD) 升级省钱攻略与装机实操</div>
+              <div style="font-size:18px; font-weight:800; color:#107c41; margin-bottom:4px;">硬盘是否可拆卸，以各机型官方规格原文为准</div>
               <div style="font-size:13px; color:var(--ms-text-primary); line-height:1.6;">
-                微软自 Surface Pro 7+ / Pro X 及 Laptop 3 开始，全面普及了<strong>机身背部免拆机磁吸小盖板</strong>设计。官方 256GB 升级到 1TB 加价高达 ¥2,500+，而自行选购原厂顶级规格 M.2 2230 固态硬盘仅需约 ¥450，立省 <strong>¥2,000+</strong>！
+                官方写「可拆卸式固态硬盘」才表示这台机器的硬盘被标成可拆卸。没有这句，就不能写成「支持」或「免工具快拆」。Pro X 与 Laptop 3 的官方说明是：用户不可自行拆卸，只能由技术人员按微软提供的说明操作。
               </div>
             </div>
-            <div style="background:#107c41; color:#fff; padding:8px 18px; border-radius:var(--ms-radius-full); font-weight:800; font-size:14px; box-shadow:0 2px 6px rgba(16,124,65,0.3);">
-              💰 自主换盘普遍立省 ¥1,500 ~ ¥3,200
-            </div>
-          </div>
-
-          <!-- 省钱对比卡片 -->
-          <div class="savings-calc-grid">
-            <div class="savings-calc-card">
-              <div style="display:flex; justify-content:space-between; align-items:center;">
-                <span style="font-weight:700; font-size:14px;">256GB 升级至 1TB</span>
-                <span style="color:#107c41; font-weight:800; font-size:15px;">净省约 ¥2,150</span>
-              </div>
-              <div style="font-size:12px; color:var(--ms-text-secondary); margin-top:4px;">
-                官方升级加价：<strong>¥2,600</strong> vs 自购原厂 OEM 盘（如西数 SN740 1TB）：<strong>约 ¥450</strong>
-              </div>
-              <div style="font-size:11.5px; color:#107c41; margin-top:2px;">
-                ✨ 省下的钱足够添置一套原装 Surface Pro Flex 蓝牙键盘盖 + Slim Pen 2！
-              </div>
-            </div>
-
-            <div class="savings-calc-card">
-              <div style="display:flex; justify-content:space-between; align-items:center;">
-                <span style="font-weight:700; font-size:14px;">256GB 升级至 2TB 顶配</span>
-                <span style="color:#107c41; font-weight:800; font-size:15px;">净省约 ¥3,320</span>
-              </div>
-              <div style="font-size:12px; color:var(--ms-text-secondary); margin-top:4px;">
-                官方升级加价：<strong>¥4,200</strong> vs 自购原厂 2TB 2230（如西数 SN740 2TB）：<strong>约 ¥880</strong>
-              </div>
-              <div style="font-size:11.5px; color:#107c41; margin-top:2px;">
-                🚀 畅享 2TB 巨量空间，工程文件、4K 视频素材与无损音乐随心存放。
-              </div>
-            </div>
-          </div>
         </div>
 
-        <!-- 2. 官方支持免拆免保损更换 SSD 的 Surface 机型全汇总 -->
         <div class="guide-panel" style="margin-bottom:20px;">
-          <div style="font-weight:700; font-size:15px; margin-bottom:10px;">📋 官方支持免拆免保损更换 SSD 的 Surface 机型全汇总：</div>
-          <table class="compat-matrix-table" style="background:var(--ms-bg-card);">
-            <thead>
-              <tr>
-                <th style="width:220px; text-align:left;">Surface 机型系列</th>
-                <th style="width:140px;">SSD 规格尺寸</th>
-                <th style="width:130px;">拆换便利度</th>
-                <th style="text-align:left;">具体更换方式与防翻车要点</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="compat-device-label">Surface Pro 12 / 11 / 10 / 9 / 8 / 7+ / X</td>
-                <td style="font-weight:700; color:var(--ms-accent);">M.2 2230 PCIe 4.0</td>
-                <td><span class="compat-status-yes">★★★★★ 极易</span></td>
-                <td style="text-align:left; font-size:12.5px;">支架下方有取卡针弹出式磁吸小仓门，单颗 T3/T4 梅花螺丝固定，无需拆开屏幕胶水，1分钟搞定且不影响保修。</td>
-              </tr>
-              <tr>
-                <td class="compat-device-label">Surface Laptop 8 / 7 / 6 / 5 / 4 / 3</td>
-                <td style="font-weight:700; color:var(--ms-accent);">M.2 2230 PCIe 4.0</td>
-                <td><span class="compat-status-partial">★★★☆☆ 中等</span></td>
-                <td style="text-align:left; font-size:12.5px;">底壳防滑胶垫下有 4 颗螺丝，轻掀 C 面键盘面板后即可直接更换 M.2 2230 固态硬盘。</td>
-              </tr>
-              <tr>
-                <td class="compat-device-label">Surface Laptop Studio 1 / 2</td>
-                <td style="font-weight:700; color:var(--ms-accent);">M.2 2280 PCIe 4.0</td>
-                <td><span class="compat-status-partial">★★★☆☆ 中等</span></td>
-                <td style="text-align:left; font-size:12.5px;">采用标准 2280 长度 M.2 固态硬盘，撕开底壳防滑胶条即可自由扩容最高 4TB/8TB 存储。</td>
-              </tr>
-              <tr>
-                <td class="compat-device-label">早期旧款 (Pro 3~7、Laptop 1~2、Go 全系)</td>
-                <td>板载 eMMC / BGA 焊接</td>
-                <td><span class="compat-status-no">✕ 不可换</span></td>
-                <td style="text-align:left; font-size:12.5px; color:var(--ms-text-tertiary);">闪存芯片直接焊死在主板上，不可自主更换，只能通过 TF 卡槽或 USB-C 拓展坞扩展存储。</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- 必备工具与配件准备清单 -->
-          <div style="margin-top:14px; padding:12px 14px; background:var(--ms-bg-card-secondary); border-radius:var(--ms-radius-md); border:1px solid var(--ms-border-subtle);">
-            <div style="font-weight:700; font-size:13px; margin-bottom:6px; color:var(--ms-text-primary);">🧰 动手换盘前必备工具清单：</div>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px; font-size:12px; color:var(--ms-text-secondary);">
-              <div>🔹 <strong>全新 M.2 2230 固态硬盘</strong>：严选单面颗粒，推荐西数 SN740/SN770M、海力士 BC711/BC901、三星 PM991a（功耗低发热小）。</div>
-              <div>🔹 <strong>手机取卡针 / 顶针</strong>：轻顶 Pro 机身支架背部小圆孔弹出磁吸小仓门。</div>
-              <div>🔹 <strong>T3 / T4 梅花螺丝刀</strong>：拆装固定固态硬盘的专用微型螺丝（严禁硬用十字螺丝刀滑丝！）。</div>
-              <div>🔹 <strong>NVMe 移动硬盘盒 或 16G+ U盘</strong>：用于系统无损迁移或制作官方原厂恢复盘。</div>
-            </div>
-          </div>
+          <div style="font-weight:700; font-size:15px; margin-bottom:10px;">不要把一种拆法套到全部机型</div>
+          <p style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin:0;">
+            每台机器的硬盘说明在参数表「硬盘是否可拆卸」里，用的是该机官方规格原文。国行现售的 13 英寸、13.8 英寸和 15 英寸，官方写的是可拆卸式固态硬盘（第 4 代 SSD），或可拆卸式 UFS。12 英寸 Pro 的规格表没有写可拆卸，维修清单把存储器写在主板上。拆装步骤以微软该机型维修指南为准，本站不提供取卡针、磁吸盖门或螺丝规格。
+          </p>
         </div>
 
         <!-- 3. 核心重头戏：系统安装与迁移双轨实操指南 -->
@@ -1360,14 +1340,11 @@ const ToolsEngine = {
               <div class="step-card">
                 <div class="step-header">
                   <span class="step-badge">第 4 步</span>
-                  <span class="step-title">物理更换固态硬盘（极简 1 分钟拆换）</span>
+                  <span class="step-title">物理更换固态硬盘</span>
                   <span class="step-time-tag">耗时 1~2 分钟</span>
                 </div>
                 <div class="step-body">
-                  <p>1. 拔掉外接硬盘盒，点击开始菜单「关机」，<strong>拔掉 Surface 原装充电器与所有外设</strong>。</p>
-                  <p>2. 翻开 Surface 铰链支架，找到支架下方边缘的磁吸小仓门。用手机取卡针轻轻顶入旁边的小圆孔，磁吸盖板自动翘起弹开。</p>
-                  <p>3. 使用 <strong>T3 / T4 梅花螺丝刀</strong>拧下单颗微型固定螺丝（保管好极易丢失的小螺丝）。</p>
-                  <p>4. 旧固态硬盘尾部会自动翘起约 30 度角，轻轻顺势向外拔出；将克隆好的新固态同样以 30 度斜角对准金手指插入母座，确认插紧后向下按平，拧紧螺丝，扣回磁吸盖板。</p>
+                  <p>关机并拔掉电源和外设之后，按该机型微软维修指南更换硬盘。不同机型的盖门、螺丝和能否由用户自行拆卸都不一样，不能套用同一种拆法。</p>
                 </div>
               </div>
 
@@ -1442,7 +1419,7 @@ const ToolsEngine = {
                   <span class="step-time-tag">耗时 1 分钟</span>
                 </div>
                 <div class="step-body">
-                  <p>拔掉 Surface 外部连线并关机。用取卡针轻顶背部盖板圆孔弹出小盖板，使用 T3/T4 螺丝刀拧下微型螺丝，取出旧固态，将全新的空白 M.2 2230 固态按 30 度角插紧到位，拧好螺丝并盖回盖板。</p>
+                  <p>关机并拔掉电源和外设之后，按该机型微软维修指南更换硬盘。不同机型的盖门和能否由用户自行拆卸都不一样。</p>
                 </div>
               </div>
 
@@ -1548,8 +1525,8 @@ const ToolsEngine = {
             <div class="faq-card">
               <div class="faq-question">❌ 事故 2：换好开机直接进 BIOS，找不到固态硬盘？</div>
               <div class="faq-answer">
-                <strong>病因</strong>：99% 是 M.2 金手指未完全插牢导致的虚接。<br>
-                <strong>急救</strong>：关机断电，重新拧下梅花螺丝。务必将 2230 固态硬盘以 <strong>30 度角斜向用力插入金手指插槽到底</strong>（直到金手指铜片完全没入），确认卡到位后再向下按平拧紧螺丝。
+                <strong>病因</strong>：硬盘没有装到位时，开机可能进不了系统。<br>
+                <strong>处理</strong>：关机断电后，按该机型微软维修指南重新安装。不要套用别的机型的螺丝或插法。
               </div>
             </div>
 

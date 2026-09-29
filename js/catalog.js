@@ -518,6 +518,36 @@ const Catalog = (function () {
       + '</picture>';
   }
 
+  function audience(device) {
+    const raw = getSpec(device, 'targetAudience');
+    const text = String(raw || '').trim();
+    if (text && text !== 'consumer' && text !== 'commercial' && specState(text) === 'VALID') return text;
+    if (segmentOf(device) === 'commercial') return '企业采购与商用办公';
+    return '个人使用';
+  }
+
+  function highlights(device) {
+    const plain = function (key) {
+      const value = getSpec(device, key);
+      if (specState(value) !== 'VALID' || Array.isArray(value)) return '';
+      return String(value);
+    };
+    const out = [];
+    const push = function (line) {
+      if (line && out.length < 4 && out.indexOf(line) === -1) out.push(line);
+    };
+    const weight = plain('weight') || plain('weightGrams');
+    if (weight) push('重量 ' + weight);
+    push(plain('batteryLifeVideo') || plain('batteryLifeLocalVideo'));
+    const npu = plain('npuTops');
+    if (npu) push('NPU ' + npu);
+    const screen = [plain('screenSize'), plain('brightness')].filter(Boolean).join('，');
+    if (screen) push(screen);
+    if (out.length < 4) push(plain('osAtLaunch'));
+    if (out.length < 4) push(plain('touchAndPenProtocol') || plain('penSupport'));
+    return out;
+  }
+
   function isRecentLaunch(device, asOf) {
     const text = String(getSpec(device, 'releaseDate') || '');
     const match = text.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
@@ -572,6 +602,8 @@ const Catalog = (function () {
     portrait: portrait,
     portraitMark: portraitMark,
     isRecentLaunch: isRecentLaunch,
+    audience: audience,
+    highlights: highlights,
     frame: frame,
     paint: paint
   };
