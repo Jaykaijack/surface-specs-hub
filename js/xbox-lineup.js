@@ -8,7 +8,7 @@ var XBOX_LINEUP = (function () {
 
   function blank() {
     return {
-      releaseDate: '这次打开的官网页面没有写发售日期',
+      releaseDate: ND,
       generation: '',
       status: '',
       salesRegion: '',
@@ -260,6 +260,7 @@ var XBOX_LINEUP = (function () {
       next: 'xbox-one-s-digital',
       url: 'https://www.xbox.com/en-US/consoles/xbox-one-s'
     }, {
+      releaseDate: '2016 年 8 月 2 日全球首发上市',
       salesRegion: '美国 xbox.com 的 Xbox One S 页面仍在。不是当前国行在售。页面没有写处理器、内存和硬盘容量，那些格子保持未披露。',
       videoFeatures: '内置 4K Ultra HD 和 4K 视频串流。HDR 需游戏和电视支持。',
       storageOptions: '4K UHD 蓝光、内置电源。Xbox Wire 在介绍 One X 时写明：和 One S 一样，有 4K UHD 蓝光、内置电源、3 个 USB 3.0（前面 1 个、后面 2 个）和红外。硬盘容量没有写数字。',
@@ -338,6 +339,7 @@ var XBOX_LINEUP = (function () {
       next: 'xbox-series-s-1tb',
       url: 'https://www.xbox.com/en-US/consoles/xbox-series-s'
     }, {
+      releaseDate: '2020 年 11 月 10 日全球发售（国行 2021 年 6 月 10 日）',
       salesRegion: '美国 xbox.com 规格页，以及美国微软商店的 Xbox Series S – 512GB。国行微软商城另有一台 Xbox Series S 全数字版，标价 ¥2,399 起，页面没有写是 512GB 还是 1TB，所以这台不标成国行在售，也不把这个人民币价钱记进来。',
       colors: [{ name: '机器人白 Robot White', hex: '#f2f2f2' }],
       cpuModel: seriesCpu,
@@ -369,6 +371,7 @@ var XBOX_LINEUP = (function () {
       prev: 'xbox-series-s-512',
       url: 'https://www.xbox.com/en-US/consoles/xbox-series-s'
     }, {
+      releaseDate: '2023 年 9 月 1 日全球发售',
       salesRegion: '美国 xbox.com 规格页把碳黑 1TB 和机器人白 1TB 写成两台全数字 Series S。美国微软商店也能看到 1TB。国行商城的 Series S 页面没有单独写出 1TB。上市月份规格页没有写。',
       colors: [
         { name: '碳黑 Carbon Black', hex: '#2a2a2a' },
@@ -404,6 +407,7 @@ var XBOX_LINEUP = (function () {
       prev: 'xbox-one-x',
       url: 'https://www.xbox.com/en-US/consoles/xbox-series-x'
     }, {
+      releaseDate: '2020 年 11 月 10 日全球发售（国行 2021 年 6 月 10 日）',
       salesRegion: '美国 xbox.com 规格页的碳黑 1TB。美国微软商店把 Xbox Series X 标成 799.99 美元（2026-09-29 页面显示缺货）。国行微软商城也在售一台 Xbox Series X：1TB 定制版 SSD、12 teraflops、磨砂黑手柄，标价 ¥4,299 起。国行页面没有写有没有光驱，所以不把这个人民币价钱记进价格栏，也不标成国行在售。',
       colors: [{ name: '碳黑 Carbon Black', hex: '#1c1c1c' }],
       cpuModel: seriesCpu,
@@ -437,6 +441,7 @@ var XBOX_LINEUP = (function () {
       prev: 'xbox-series-x',
       url: 'https://www.xbox.com/en-US/consoles/xbox-series-x'
     }, {
+      releaseDate: '2024 年 10 月 15 日全球发售',
       salesRegion: '美国 xbox.com 规格页，以及美国微软商店的 Xbox Series X – 1TB Digital Edition (White)，标价 749.99 美元（2026-09-29 页面显示缺货）。国行商城的 Series X 页面没有单独写出白色数字版。上市月份规格页没有写。',
       colors: [{ name: '白色 White', hex: '#f7f7f7' }],
       cpuModel: seriesCpu,
@@ -468,6 +473,7 @@ var XBOX_LINEUP = (function () {
       prev: 'xbox-series-x',
       url: 'https://www.xbox.com/en-US/consoles/xbox-series-x'
     }, {
+      releaseDate: '2024 年 10 月 15 日全球发售',
       salesRegion: '美国 xbox.com 规格表仍列出银河黑 2TB。2026 年 9 月 29 日美国微软商店新品区显示限量缺货，支持官翻购买。不标成国行在售。上市月份规格页没有写。',
       colors: [{ name: '银河黑 Galaxy Black', hex: '#161616' }],
       cpuModel: seriesCpu,
