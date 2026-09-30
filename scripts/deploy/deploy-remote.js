@@ -28,17 +28,40 @@ execSync('node scripts/deploy/smoke-test.js', { cwd: ROOT, stdio: 'inherit' });
 
 console.log('\n📦 [3/5] 打包静态资源并上传至 grow-server (106.14.17.19)...');
 const tarPath = path.join(SCRATCH, 'deploy-site.tar.gz');
-execSync(`tar.exe -czf "${tarPath}" -C dist/site .`, { cwd: ROOT, stdio: 'inherit' });
-execSync(`scp "${tarPath}" grow-server:/tmp/deploy-site.tar.gz`, { cwd: ROOT, stdio: 'inherit' });
+const pyCmd = process.platform === 'win32' ? 'python' : 'python3';
+execSync(`${pyCmd} -c "import tarfile, os; src=r'dist/site'; dest=r'${tarPath}'; tar=tarfile.open(dest, 'w:gz'); [tar.add(os.path.join(src, i), arcname=i) for i in os.listdir(src)]; tar.close()"`, { cwd: ROOT, stdio: 'inherit' });
+function waitMs(ms) {
+  try {
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+  } catch (e) {
+    const end = Date.now() + ms;
+    while (Date.now() < end) {}
+  }
+}
+
+function runRemote(cmd, desc) {
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      execSync(cmd, { cwd: ROOT, stdio: 'inherit' });
+      return;
+    } catch (err) {
+      console.warn(`⚠️ [${desc}] 尝试 ${attempt}/3 失败，等待重试...`);
+      if (attempt === 3) throw err;
+      waitMs(2000);
+    }
+  }
+}
+
+runRemote(`scp -O -o ConnectTimeout=15 -o ServerAliveInterval=5 "${tarPath}" grow-server:/tmp/deploy-site.tar.gz`, '上传压缩包');
 
 console.log('\n🔄 [4/5] 服务器解压部署并更新文件权限...');
-execSync('ssh grow-server "tar -xzf /tmp/deploy-site.tar.gz -C /opt/surface-specs-hub/site && chmod -R 755 /opt/surface-specs-hub/site && rm -f /tmp/deploy-site.tar.gz"', { cwd: ROOT, stdio: 'inherit' });
+runRemote('ssh -o ConnectTimeout=10 grow-server "tar -xzf /tmp/deploy-site.tar.gz -C /opt/surface-specs-hub/site && chmod -R 755 /opt/surface-specs-hub/site && rm -f /tmp/deploy-site.tar.gz"', '服务器解压部署');
 
 const standalonePath = path.join(ROOT, 'surface-specs-hub-standalone.html');
 if (fs.existsSync(standalonePath)) {
   console.log('📄 同步更新单文件离线包至线上目录...');
-  execSync(`scp "${standalonePath}" grow-server:/opt/surface-specs-hub/site/surface-specs-hub-standalone.html`, { cwd: ROOT, stdio: 'inherit' });
-  execSync('ssh grow-server "chmod 644 /opt/surface-specs-hub/site/surface-specs-hub-standalone.html"', { cwd: ROOT, stdio: 'inherit' });
+  runRemote(`scp -O "${standalonePath}" grow-server:/opt/surface-specs-hub/site/surface-specs-hub-standalone.html`, '上传单文件离线包');
+  runRemote('ssh -o ConnectTimeout=10 grow-server "chmod 644 /opt/surface-specs-hub/site/surface-specs-hub-standalone.html"', '离线包权限设置');
 }
 
 if (fs.existsSync(tarPath)) fs.unlinkSync(tarPath);

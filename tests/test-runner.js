@@ -361,7 +361,7 @@ assert(matchRes.best && /Snapdragon|骁龙|高通/.test(String(Catalog.getSpec(m
 ToolsEngine.guideArch = 'all';
 ToolsEngine.guideBudget = 'budget_entry';
 matchRes = ToolsEngine.matchRecommendedDevices();
-assert(!matchRes.matches.some(d => d.id === 'pro-12-inch-2'), '入门预算不能塞进官方起售价已经过万的 12 英寸第 2 代');
+assert(!matchRes.matches.some(d => d.id === 'pro-12-inch-2'), '尚未预售且价格待核验的 12 英寸第 2 代不能进入在售预算推荐');
 ToolsEngine.guideBudget = 'all';
 ToolsEngine.guideScene = 'commute';
 ToolsEngine.guideForm = 'all';
@@ -615,11 +615,11 @@ assert(Boolean(pro12_13_cons), '全系参数库正式收录 Surface Pro 13 英�
 assert(!pro12_13_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Pro 13 消费版第 12 代严格零宝石蓝 (对齐官方评测指南三款经典配色)');
 assertEqual(pro12_13_cons.specs.colors.length, 3, 'Pro 13 消费版第 12 代严格三款配色: 亮铂金、典雅黑、沙漫金');
 
-// 检验消费版旗舰 Laptop 13.8 (第 8 代) 独占翡翠绿新色
+// 检验消费版旗舰 Laptop 13.8 (第 8 代) 官方配色（亮铂金、典雅黑、宝石蓝、沙漫金）
 const laptop8_138_cons = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138');
 assert(Boolean(laptop8_138_cons), '全系参数库正式收录 Surface Laptop 13.8 英寸 (第 8 代) 消费版');
-assert(laptop8_138_cons.specs.colors.some(c => c.name === '翡翠绿'), 'Laptop 13.8 第 8 代独占全新翡翠绿 (Emerald) 官方配色');
-assert(!laptop8_138_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Laptop 13.8 第 8 代消费版严格无宝石蓝配色');
+assert(laptop8_138_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Laptop 13.8 第 8 代收录官方宝石蓝 (Sapphire) 经典配色');
+assert(!laptop8_138_cons.specs.colors.some(c => c.name === '翡翠绿'), 'Laptop 13.8 第 8 代消除杜撰的翡翠绿配色');
 
 // 检验找回并录入的消费版 13 英寸机型 (Surface Laptop 13 英寸 第 1 代)
 const laptop13Inch = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch');
@@ -1533,7 +1533,8 @@ const seriesX = Catalog.getDevice('xbox-series-x');
 const x25 = Catalog.getDevice('xbox-series-x25');
 assertEqual(seriesX.status, 'current_global', '在美国商店能买到的 Series X 标成海外在售，不标国行在售');
 assertEqual(x25.status, 'upcoming', 'X25 的美国发售日还没到，标即将发售');
-assertEqual(Catalog.portrait(seriesX).src, '', '没有官方图片文件时，不用 Surface 的照片顶上');
+assert(Catalog.portrait(seriesX).src.includes('xbox-series-x'), '有官方产品图片文件时，展示真实 Xbox 官方摄影');
+assert(!Catalog.portrait(seriesX).src.includes('surface'), '不用 Surface 的照片顶上');
 assertEqual(ToolsEngine.guidePassesFilters(x25), false, '选机向导不把 Xbox 主机混进 Surface 推荐');
 assert(!App.homeShelfDevices('upcoming').some(d => d.id === 'xbox-series-x25'),
   '首页即将发售不把美国限量主机写进国行说明');
@@ -1570,6 +1571,11 @@ assertEqual(officialLockedIds.size, Catalog.listDevices().length,
 
 Catalog.listDevices().forEach(dev => {
   if (dev.status === 'current_cn') return;
+  if (['pro-12-inch-2', 'laptop-13-inch-2'].includes(dev.id)) {
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'NULL',
+      `${dev.id} 专属产品列仅列预售日期，价格待核验而非断言官方未披露`);
+    return;
+  }
   assertEqual(
     Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')),
     'NOT_DISCLOSED',
@@ -1621,4 +1627,3 @@ if (failedTests > 0) {
 } else {
   console.log('🎉 所有数据模型、参数治理、对比引擎与交互逻辑全部验证通过！\n');
 }
-

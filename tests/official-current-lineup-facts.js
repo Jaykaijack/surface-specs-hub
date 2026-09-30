@@ -39,14 +39,12 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
   currentCnDeviceIds: [
     'pro-12-13',
     'pro-12-inch',
-    'pro-12-inch-2',
     'pro-12-13-intel',
     'pro-12-13-snap',
     'pro-12-inch-biz',
     'laptop-8-138',
     'laptop-8-150',
     'laptop-13-inch',
-    'laptop-13-inch-2',
     'laptop-8-138-intel',
     'laptop-8-138-snap',
     'laptop-8-150-intel',
@@ -1150,7 +1148,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       },
 },
     'pro-12-inch-2': {
-      startingPriceContains: '9,688',
+      specState: { startingPriceCny: 'NULL', surfaceConnect: 'NULL' },
       cpuMustInclude: ['X2 Plus', '6'],
       npuTopsContains: '80',
       batteryLifeVideoContains: '15.5',
@@ -1174,7 +1172,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       officialDocUrl: 'https://www.microsoftstore.com.cn/surface/surface-pro'
     },
     'laptop-13-inch-2': {
-      startingPriceContains: '9,688',
+      specState: { startingPriceCny: 'NULL' },
       cpuMustInclude: ['X2 Plus', '6'],
       npuTopsContains: '80',
       batteryLifeVideoContains: '22.5',
@@ -1191,6 +1189,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       storageMustInclude: 'UFS',
       storageMustNotInclude: '1TB',
       specContains: {
+        headphoneJack: ['3.5'],
+        usbPorts: ['USB-A 3.2'],
+        fastCharging: ['60W'],
         storageOptions: ['可拆卸式', '256GB', '512GB'],
         ssdRemovable: ['可拆卸', '256GB', '512GB']
       },

@@ -8,6 +8,15 @@ This project is a high-density, authoritative technical reference platform model
 
 ## 2. Hardware Lineup & Technical Specifications (2026 / FY27)
 
+### 2026-09-30 分批核验更正
+
+- Pro 12 英寸第 2 代消费版与 Laptop 13 英寸第 2 代消费版的中国官方产品专属列均写“10月19日预售”。截至 2026-09-30 属于 `upcoming`，不是国行已在售；预售日不等于发货日。
+- 本批未确认两款独立 SKU 的起售价，顶部多型号通用标价不能绑定到具体产品。暂用 `null`，不把待核验称为官方未披露。
+- Laptop 13 第 2 代有 USB-A 3.2 和 3.5 毫米耳机插孔；标配 45W 充电器与最低 60W 快充门槛是不同口径。
+- Pro 的 Surface 键盘连接器不是 Surface Connect 磁吸电源口。
+- 证据与范围：`releases/verification-20260930-batch02/field-ledger-r2.json`（88 条确认、52 条待核验；包含元数据）。两款六色图片仍待核验，显示 `pending` 状态。
+- 以下原有 2026-09-21 数据仍是历史记录，不表示已在本批重新核实；当前全库准确性未通过验收。
+
 All hardware represented in the Specs Hub must reflect official Microsoft technical whitepapers, architectural disclosures, and the official Microsoft Store China (`https://www.microsoftstore.com.cn/`).
 
 ### A. Surface Pro 13 英寸（第 12 代）商用版与消费版 [核心主推旗舰]
@@ -119,7 +128,7 @@ All hardware represented in the Specs Hub must reflect official Microsoft techni
   - All product images stored locally in `assets/products/`.
   - Consumer Pro 13 / Laptop 8 may expose multi-color swatches when `isCommercial:false`; commercial SKUs stay dual-color only (亮铂金 + 典雅黑) per §A/C. Swatches appear in cards, detail hero, and comparison table header.
 - **机型图**:
-  某一台设备、某一种配色所对应的那张本地图片，并带有身份：官方原图、同系列代用图，或没有图。没有图时仍用该系列代表图，卡片不留白。代用图要让人看出来，不能当成这台机器自己的官方图。
+  某一台设备、某一种配色所对应的那张本地图片，并带有身份：官方原图、同系列代用图、待核验，或没有图。没有图时仍用该系列代表图，卡片不留白。代用图和待核验图要让人看出来，不能当成这台机器已确认的官方图。
   _Avoid_: hero 路径、产品图文件名
 
 ---

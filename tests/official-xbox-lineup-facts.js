@@ -90,6 +90,22 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
       },
       specState: { weightGrams: 'NOT_DISCLOSED' }
     },
+    'xbox-360-e': {
+      specContains: {
+        salesRegion: ['美国', '不是当前国行在售'],
+        releaseDate: ['2013 年 6 月 10 日'],
+        cpuModel: ['定制 PowerPC'],
+        usbPorts: ['USB 2.0']
+      }
+    },
+    'xbox-one-s-digital': {
+      specContains: {
+        salesRegion: ['不是当前国行在售', '249.99'],
+        storageOptions: ['1TB', '全数字'],
+        videoFeatures: ['4K Ultra HD']
+      },
+      storageMustNotInclude: 'Blu-ray'
+    },
     'xbox-series-x25': {
       specContains: {
         salesRegion: ['美国', '不是国行在售', '899.99'],

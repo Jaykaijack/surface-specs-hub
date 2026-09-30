@@ -1006,13 +1006,17 @@ const SURFACE_DATA = {
     },
     {
       "id": "pro-12-inch-2",
+      "imageVerification": {
+        "status": "pending",
+        "evidenceFile": "releases/verification-20260930-batch02/evidence/image-comparison.json"
+      },
       "categoryId": "pro",
       "heroImage": "./assets/products/surface-pro-12-2-platinum.png",
       "name": "Surface Pro, 12 英寸 (第 2 代)",
       "nameEn": "Surface Pro, 12-inch (2nd Edition)",
       "generation": "第 2 代 (2026)",
       "year": 2026,
-      "status": "current_cn",
+      "status": "upcoming",
       "targetAudience": "consumer",
       "flagship": false,
       "tagline": "6 核骁龙 X2 Plus，12 英寸 500 尼特屏",
@@ -1022,9 +1026,9 @@ const SURFACE_DATA = {
         "fastCharging": "USB-C 最低 60W 可快充",
         "thunderboltSupport": "not_applicable",
         "windowsHello": "Windows Hello 面部识别",
-        "releaseDate": "2026 年 9 月",
+        "releaseDate": "2026 年 10 月 19 日预售",
         "generation": "第 2 代",
-        "status": "current_cn",
+        "status": "upcoming",
         "targetAudience": "面向个人移动创作与轻薄便携",
         "tagline": "6 核骁龙 X2 Plus，屏幕亮度优于前代",
         "colors": [
@@ -1050,7 +1054,7 @@ const SURFACE_DATA = {
         "cpuModel": "Snapdragon® X2 Plus（6 核）",
         "cpuArch": "not_disclosed",
         "cpuCores": "6 核",
-        "gpuModel": "not_disclosed",
+        "gpuModel": "Qualcomm® Adreno™ GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "80 TOPS",
         "copilotPlus": "16GB 及以上为 Copilot+ PC / Windows 11 AI+ PC（8GB 不适用）",
@@ -1066,7 +1070,7 @@ const SURFACE_DATA = {
         "refreshRate": "最高 90Hz（默认 60Hz）",
         "brightness": "SDR 最大 500 尼特（典型值）",
         "colorGamut": "sRGB 和增强型，对比度 1400:1",
-        "displayProtection": "not_disclosed",
+        "displayProtection": "强化玻璃显示屏",
         "penSupport": "专为 Surface 超薄触控笔 2 设计，支持触觉反馈",
         "touchAndPenProtocol": "支持 Microsoft Pen Protocol（MPP）",
         "touchSupport": "触控屏",
@@ -1075,11 +1079,11 @@ const SURFACE_DATA = {
         "frontCamera": "全高清（1080p）前置 Surface Studio 摄像头",
         "studioEffects": "Windows 工作室效果（自动取景、人像模糊、创意滤镜、眼神交流、人像光效）",
         "speakers": "支持杜比全景声（Dolby Atmos®）的 2W 立体声扬声器",
-        "mics": "not_disclosed",
+        "mics": "具有语音聚焦功能的矩阵式远场双麦克风",
         "usbC": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞",
         "usbA": "not_applicable",
         "audioJack": "not_applicable",
-        "surfaceConnect": "Surface 键盘连接器",
+        "surfaceConnect": null,
         "sdSlot": "not_applicable",
         "simSlot": "5G 版含 SIM 卡托",
         "wifi": "Wi-Fi 7",
@@ -1102,8 +1106,8 @@ const SURFACE_DATA = {
         "thermalDesign": "not_disclosed",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
-        "startingPriceCny": "¥9,688 起",
+        "warranty": "自购买凭证（发票）标注时间起，Surface 主机 2 年有限硬件保修",
+        "startingPriceCny": null,
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-24",
         "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro",
@@ -1524,7 +1528,12 @@ const SURFACE_DATA = {
     {
       "id": "pro-7-plus",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-pro-7-plus-hero.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-pro-7-plus-official-diagram.png",
       "name": "Surface Pro 7+",
       "nameEn": "Surface Pro 7+ for Business",
       "generation": "第 7+ 代 (2021)",
@@ -1545,12 +1554,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-7-plus-hero.png"
+            "image": null
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-7-plus-hero.png"
+            "image": null
           }
         ],
         "chassisMaterial": "镁合金",
@@ -2091,7 +2100,12 @@ const SURFACE_DATA = {
     {
       "id": "pro-2",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-pro-2-hero.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-pro-2-official-diagram.png",
       "name": "Surface Pro 2",
       "nameEn": "Surface Pro 2",
       "generation": "第 2 代 (2013)",
@@ -2112,12 +2126,12 @@ const SURFACE_DATA = {
           {
             "name": "暗钛灰",
             "hex": "#333333",
-            "image": "./assets/products/surface-pro-2-hero.png"
+            "image": null
           }
         ],
         "chassisMaterial": "VaporMg",
         "kickstandType": "双角度支架",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows 8.1 专业版",
         "cpuModel": "Intel 第 4 代酷睿 i5",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
@@ -2138,12 +2152,12 @@ const SURFACE_DATA = {
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
         "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "not_disclosed",
+        "frontCamera": "720p 高清前置摄像头",
         "windowsHello": "not_applicable",
-        "rearCamera": "not_disclosed",
+        "rearCamera": "720p 高清后置摄像头",
         "videoFeatures": "not_applicable",
         "microphones": "麦克风",
-        "speakers": "not_disclosed",
+        "speakers": "带 Dolby® 声效的立体声扬声器",
         "audioTech": "Dolby®",
         "headphoneJack": "配备耳机插孔",
         "usbPorts": "1 × 全尺寸 USB 3.0 + 1 × Mini DisplayPort",
@@ -2174,16 +2188,23 @@ const SURFACE_DATA = {
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-21",
-        "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features"
       },
       "isCommercial": false,
-      "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features",
+      "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
       "segment": "consumer"
     },
     {
       "id": "pro-1",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-pro-1-hero.png",
+      "imageVerification": {
+        "status": "shared",
+        "kind": "diagram",
+        "representativeDeviceId": "pro-2",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-pro-2-official-diagram.png",
       "name": "Surface Pro 初代 (Original)",
       "nameEn": "Surface Pro (Original)",
       "generation": "初代 (2013)",
@@ -2203,12 +2224,12 @@ const SURFACE_DATA = {
           {
             "name": "暗钛灰",
             "hex": "#333333",
-            "image": "./assets/products/surface-pro-1-hero.png"
+            "image": null
           }
         ],
-        "chassisMaterial": "蒸汽Mg",
+        "chassisMaterial": "VaporMg",
         "kickstandType": "集成支架",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows 8 专业版（可升级到 Windows 8.1 专业版）",
         "cpuModel": "Intel 第 3 代酷睿 i5",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
@@ -2229,12 +2250,12 @@ const SURFACE_DATA = {
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
         "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "not_disclosed",
+        "frontCamera": "720p 高清前置摄像头",
         "windowsHello": "not_applicable",
-        "rearCamera": "not_disclosed",
+        "rearCamera": "720p 高清后置摄像头",
         "videoFeatures": "not_applicable",
         "microphones": "麦克风",
-        "speakers": "not_disclosed",
+        "speakers": "立体声扬声器",
         "audioTech": "not_disclosed",
         "headphoneJack": "配备耳机插孔",
         "usbPorts": "1 × 全尺寸 USB 3.0 + 1 × Mini DisplayPort",
@@ -2265,10 +2286,10 @@ const SURFACE_DATA = {
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-21",
-        "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications"
       },
       "isCommercial": false,
-      "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+      "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
       "segment": "consumer"
     },
     {
@@ -2379,6 +2400,7 @@ const SURFACE_DATA = {
       "targetAudience": "commercial",
       "flagship": true,
       "tagline": "商用轻薄触控本旗舰：搭载英特尔® 酷睿™ Ultra (第 3 代) 处理器，50 TOPS AI 算力与全域触觉触控板",
+      "aliases": ["Surface Laptop Ultra", "Surface Laptop 13.8 Ultra", "Laptop Ultra", "Laptop 8 Ultra", "酷睿 Ultra"],
       "prevGenerationId": "laptop-6-biz",
       "specs": {
         "fastCharging": "推荐快充 60W（国行：65W Surface 电源或 60W USB-C PD）",
@@ -2585,6 +2607,7 @@ const SURFACE_DATA = {
       "targetAudience": "commercial",
       "flagship": true,
       "tagline": "商用大屏性能轻薄本：搭载英特尔® 酷睿™ Ultra 5 335 / Ultra X7 368H（第 3 代），50 TOPS 与 262 PPI 超清屏",
+      "aliases": ["Surface Laptop Ultra", "Surface Laptop 15 Ultra", "Laptop Ultra", "Laptop 8 Ultra 15", "酷睿 Ultra"],
       "prevGenerationId": "laptop-6-biz",
       "specs": {
         "releaseDate": "2026 年 8 月",
@@ -2804,9 +2827,9 @@ const SURFACE_DATA = {
             "image": "./assets/products/surface-laptop-8-black.png"
           },
           {
-            "name": "翡翠绿",
-            "hex": "#2e6b54",
-            "image": "./assets/products/surface-laptop-emerald.png"
+            "name": "宝石蓝",
+            "hex": "#2e5a88",
+            "image": "./assets/products/surface-laptop-8-sapphire.png"
           },
           {
             "name": "沙漫金",
@@ -3101,6 +3124,7 @@ const SURFACE_DATA = {
       "targetAudience": "commercial",
       "flagship": false,
       "tagline": "Intel Core Ultra H 系列标压商用本，国行规格不含美加专属智能卡读卡器",
+      "aliases": ["Surface Laptop Ultra", "Surface Laptop 6 Ultra", "Laptop Ultra", "酷睿 Ultra"],
       "prevGenerationId": "laptop-5",
       "specs": {
         "releaseDate": "2024 年 3 月",
@@ -3800,7 +3824,7 @@ const SURFACE_DATA = {
         "thermalDesign": "双风扇大尺寸热管强压直吹散热",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "SSD、电池、屏幕总成、主板端口",
-        "warranty": "not_disclosed",
+        "warranty": "1 年有限硬件保修",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
@@ -3967,7 +3991,7 @@ const SURFACE_DATA = {
         "batteryLifeOffice": "典型日常使用长达 12.5 小时",
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "最低充电 24W；标配 24W（型号 1735 / 1736）",
-        "fastCharging": "推荐快充 30W",
+        "fastCharging": "not_disclosed",
         "compatibleKeyboard": "Surface Go 专业键盘盖 (欧缔兰或黑色)",
         "penHapticFeedback": "不支持",
         "penChargingType": "笔侧磁吸在机身边框",
@@ -4806,7 +4830,7 @@ const SURFACE_DATA = {
         "batteryLifeOffice": "常规日常使用长达 10 小时",
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "最低充电 24W；标配 24W（型号 1735 / 1736）",
-        "fastCharging": "推荐快充 30W",
+        "fastCharging": "not_disclosed",
         "compatibleKeyboard": "Surface Go 专业键盘盖",
         "penHapticFeedback": "不支持",
         "penChargingType": "边框磁吸 (AAAA 电池)",
@@ -6969,7 +6993,12 @@ const SURFACE_DATA = {
       "id": "go-3-biz",
       "categoryId": "go",
       "segment": "commercial",
-      "heroImage": "./assets/products/surface-go-hero.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-go-3-official-diagram.png",
       "name": "Surface Go 3 商用版",
       "nameEn": "Surface Go 3 for Business",
       "systemSku": "Surface_Go_3_1926",
@@ -6995,12 +7024,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-go-hero.png"
+            "image": null
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-go-hero.png"
+            "image": null
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -7166,7 +7195,12 @@ const SURFACE_DATA = {
     {
       "id": "laptop-13-inch",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-laptop-platinum.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch05/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-laptop-13-consumer-official-diagram.png",
       "name": "Surface Laptop, 13 英寸 (第 1 代)",
       "nameEn": "Surface Laptop, 13-inch (1st Edition)",
       "generation": "第 1 代 (2025/2026)",
@@ -7187,7 +7221,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": null
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -7248,7 +7282,7 @@ const SURFACE_DATA = {
         "warranty": "2 年有限硬件保修",
         "startingPriceCny": "¥7,788 起 (消费版)",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-21",
+        "lastVerified": "2026-09-30",
         "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-inch",
         "officialConfigureUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-inch"
       },
@@ -7258,24 +7292,28 @@ const SURFACE_DATA = {
     },
     {
       "id": "laptop-13-inch-2",
+      "imageVerification": {
+        "status": "pending",
+        "evidenceFile": "releases/verification-20260930-batch02/evidence/image-comparison.json"
+      },
       "categoryId": "laptop",
       "heroImage": "./assets/products/surface-laptop-13-2-violet.png",
       "name": "Surface Laptop, 13 英寸 (第 2 代)",
       "nameEn": "Surface Laptop, 13-inch (2nd Edition)",
       "generation": "第 2 代 (2026)",
       "year": 2026,
-      "status": "current_cn",
+      "status": "upcoming",
       "targetAudience": "consumer",
       "flagship": false,
       "tagline": "6 核骁龙 X2 Plus，本地视频最长 22.5 小时",
       "prevGenerationId": "laptop-13-inch",
       "nextGenerationId": null,
       "specs": {
-        "releaseDate": "2026 年 9 月",
+        "releaseDate": "2026 年 10 月 19 日预售",
         "generation": "第 2 代",
-        "status": "current_cn",
+        "status": "upcoming",
         "targetAudience": "面向日常轻薄本用户",
-        "tagline": "全新 13 英寸，起售价 ¥9,688",
+        "tagline": "全新 13 英寸，6 核骁龙 X2 Plus",
         "colors": [
           {
             "name": "罗兰紫",
@@ -7293,13 +7331,13 @@ const SURFACE_DATA = {
             "image": "./assets/products/surface-laptop-13-2-black.png"
           }
         ],
-        "chassisMaterial": "not_disclosed",
+        "chassisMaterial": "阳极氧化铝",
         "kickstandType": "not_applicable",
         "osAtLaunch": "Windows 11 家庭版；附带 Office 家庭版 2024",
         "cpuModel": "Snapdragon® X2 Plus（6 核）",
         "cpuArch": "not_disclosed",
         "cpuCores": "6 核",
-        "gpuModel": "not_disclosed",
+        "gpuModel": "Qualcomm® Adreno™ GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "80 TOPS",
         "copilotPlus": "16GB 及以上为 Copilot+ PC / Windows 11 AI+ PC（8GB 不适用）",
@@ -7323,8 +7361,8 @@ const SURFACE_DATA = {
         "microphones": "具有语音聚焦功能的矩阵式远场双麦克风",
         "speakers": "Omnisonic® 扬声器，搭载杜比音效™",
         "audioTech": "杜比音效™",
-        "headphoneJack": "not_applicable",
-        "usbPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）",
+        "headphoneJack": "3.5 毫米耳机插孔",
+        "usbPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞；USB-A 3.2",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "not_applicable",
         "wireless": "Wi-Fi 7 + 蓝牙 5.4",
@@ -7333,7 +7371,7 @@ const SURFACE_DATA = {
         "batteryLifeOffice": "最长 18 小时网页浏览",
         "batteryLifeVideo": "最长 22.5 小时本地视频播放",
         "chargingPower": "标配 Surface 45W USB-C 壁式充电器，附 USB-C 充电线",
-        "fastCharging": "not_disclosed",
+        "fastCharging": "USB-C 最低 60W 可快充",
         "compatibleKeyboard": "集成键盘",
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
@@ -7348,8 +7386,8 @@ const SURFACE_DATA = {
         "thermalDesign": "not_disclosed",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
-        "startingPriceCny": "¥9,688 起",
+        "warranty": "自购买凭证（发票）标注时间起，Surface 主机 2 年有限硬件保修",
+        "startingPriceCny": null,
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-24",
         "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop",
@@ -7362,6 +7400,10 @@ const SURFACE_DATA = {
     {
       "id": "laptop-7-150",
       "categoryId": "laptop",
+      "imageVerification": {
+        "status": "pending",
+        "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
+      },
       "heroImage": "./assets/products/surface-laptop-platinum.png",
       "name": "Surface Laptop (第 7 代) 15 英寸",
       "nameEn": "Surface Laptop, 15-inch (7th Edition)",
@@ -7396,11 +7438,11 @@ const SURFACE_DATA = {
         "osAtLaunch": "Windows 11 家庭中文版 (ARM64)",
         "cpuModel": "高通骁龙® X Elite (12 核心, 最高 3.4 GHz, 双核睿频 4.0 GHz)",
         "cpuArch": "Qualcomm Oryon™ 64 位 / 4nm",
-        "cpuCores": "not_disclosed",
+        "cpuCores": "12 核",
         "gpuModel": "Qualcomm® Adreno™ GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "45 TOPS",
-        "copilotPlus": "not_disclosed",
+        "copilotPlus": "Copilot+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x RAM (8448 MT/s)",
         "storageOptions": "256GB / 512GB / 1TB 可拆卸 Gen 4 SSD",
         "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
@@ -7419,7 +7461,7 @@ const SURFACE_DATA = {
         "rearCamera": "not_applicable",
         "videoFeatures": "Windows Studio 效果",
         "microphones": "矩阵式远场双麦克风",
-        "speakers": "not_disclosed",
+        "speakers": null,
         "audioTech": "Dolby Atmos®",
         "headphoneJack": "3.5 毫米耳机插孔",
         "usbPorts": "2 × USB-C (USB4 / 雷电兼容) + 1 × USB-A 3.1 + MicroSDXC",
@@ -7431,7 +7473,7 @@ const SURFACE_DATA = {
         "batteryLifeOffice": "长达 15 小时常规网页浏览",
         "batteryLifeVideo": "长达 22 小时本地视频播放",
         "chargingPower": "国行标配 65W；官方充电表最低 45W、推荐快充 60W（型号 2062 为 60W）",
-        "fastCharging": "推荐快充 60W",
+        "fastCharging": null,
         "compatibleKeyboard": "全尺寸背光按键机械键盘",
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
@@ -7446,10 +7488,10 @@ const SURFACE_DATA = {
         "thermalDesign": "双热管微风扇散热系统",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "固态硬盘、主板模块、电池、屏幕",
-        "warranty": "not_disclosed",
+        "warranty": null,
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-21",
+        "lastVerified": "2026-09-30",
         "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
         "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
       },
@@ -7460,7 +7502,12 @@ const SURFACE_DATA = {
     {
       "id": "laptop-13-inch-intel-biz",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-laptop-platinum.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-laptop-13-official-diagram.png",
       "name": "Surface Laptop 13 英寸 商用版 - Intel 版",
       "nameEn": "Surface Laptop for Business 13-inch (Intel)",
       "generation": "第 1 代 (2025/2026)",
@@ -7481,7 +7528,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": null
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -7542,7 +7589,7 @@ const SURFACE_DATA = {
         "warranty": "3 年有限硬件保修",
         "startingPriceCny": "¥10,188 起 (商用版)",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-21",
+        "lastVerified": "2026-09-30",
         "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13-inch-for-business",
         "officialConfigureUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13-inch-for-business-configurate"
       },
@@ -7553,7 +7600,12 @@ const SURFACE_DATA = {
     {
       "id": "book-3-biz",
       "categoryId": "book",
-      "heroImage": "./assets/products/surface-book-hero.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-book-3-official-diagram.png",
       "name": "Surface Book 3 商用版 (13.5\" & 15\")",
       "nameEn": "Surface Book 3 for Business",
       "generation": "第 3 代 (2020)",
@@ -7574,7 +7626,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-book-hero.png"
+            "image": null
           }
         ],
         "chassisMaterial": "镁合金",
@@ -7583,7 +7635,7 @@ const SURFACE_DATA = {
         "cpuModel": "英特尔® 酷睿™ 第 10 代 i5-1035G7 / i7-1065G7",
         "cpuArch": "64 位 / 10 nm",
         "cpuCores": "not_disclosed",
-        "gpuModel": "not_disclosed",
+        "gpuModel": "13.5 英寸：Intel Iris Plus Graphics 或 NVIDIA GeForce GTX 1650 Max-Q 4GB；15 英寸：NVIDIA GeForce GTX 1660 Ti Max-Q 6GB",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_applicable",
@@ -7594,8 +7646,8 @@ const SURFACE_DATA = {
         "screenSize": "13.5 英寸 (3000×2000) / 15.0 英寸 (3240×2160)",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
-        "resolution": "3240 × 2160 (15寸) / 3000 × 2000 (13.5寸)",
-        "ppi": "not_disclosed",
+        "resolution": "13.5 英寸：3000 × 2000；15 英寸：3240 × 2160",
+        "ppi": "13.5 英寸：267 PPI；15 英寸：260 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
@@ -7614,7 +7666,7 @@ const SURFACE_DATA = {
         "wireless": "Wi-Fi 6 (802.11ax) + 蓝牙 5.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
-        "batteryLifeOffice": "常规使用约 17.5 小时",
+        "batteryLifeOffice": "13.5 英寸连接键盘基座最长 15.5 小时；15 英寸连接键盘基座最长 17.5 小时",
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "15 英寸最低/标配 120W（型号 1932）；13.5 英寸集显 60W / 独显 95W",
         "fastCharging": "13.5 英寸集显推荐快充 80W；独显 95W；15 英寸 120W",
@@ -7626,17 +7678,17 @@ const SURFACE_DATA = {
         "securedCorePc": "not_applicable",
         "biometrics": "Windows Hello 人脸识别",
         "enterpriseManage": "支持 Microsoft Endpoint Manager 与企业集中管控",
-        "dimensionsMm": "343 × 251 × 23",
-        "weightGrams": "1905g (15寸含基座)",
-        "totalWeightWithKeyboard": "1905g（含键盘）",
+        "dimensionsMm": "13.5 英寸：312 × 232 × 13–23（i5）或 15–23（i7）；15 英寸：343 × 251 × 15–23",
+        "weightGrams": "13.5 英寸：1534g（i5，含键盘）或 1642g（i7，含键盘）；15 英寸：1905g（含键盘）",
+        "totalWeightWithKeyboard": "13.5 英寸：1534g（i5）或 1642g（i7）；15 英寸：1905g",
         "thermalDesign": "平板部分与键盘基座双独立主动散热风扇",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "服务网点官方置换",
-        "warranty": "not_disclosed",
+        "warranty": "1 年有限硬件保修",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-18",
-        "officialDocUrl": "https://learn.microsoft.com/en-us/surface/surface-book-3",
+        "lastVerified": "2026-09-30",
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
         "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/surface-book-3"
       },
       "isCommercial": true,
@@ -7646,7 +7698,12 @@ const SURFACE_DATA = {
     {
       "id": "go-2-biz",
       "categoryId": "go",
-      "heroImage": "./assets/products/surface-go-hero.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-go-2-official-diagram.png",
       "name": "Surface Go 2 商用版",
       "nameEn": "Surface Go 2 for Business",
       "generation": "第 2 代 (2020)",
@@ -7667,7 +7724,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-go-hero.png"
+            "image": null
           }
         ],
         "chassisMaterial": "镁合金",
@@ -7710,7 +7767,7 @@ const SURFACE_DATA = {
         "batteryLifeOffice": "常规使用约 10 小时",
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "最低充电 24W；标配 24W（型号 1735 / 1736）",
-        "fastCharging": "推荐快充 30W",
+        "fastCharging": null,
         "compatibleKeyboard": "Surface Go 专业键盘盖",
         "penHapticFeedback": "not_applicable",
         "penChargingType": "磁吸附机身侧边",
@@ -7728,8 +7785,8 @@ const SURFACE_DATA = {
         "warranty": "not_disclosed",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-18",
-        "officialDocUrl": "https://learn.microsoft.com/en-us/surface/surface-go-2",
+        "lastVerified": "2026-09-30",
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-go-2-specs-and-features",
         "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/surface-go-2"
       },
       "isCommercial": true,
@@ -7739,7 +7796,12 @@ const SURFACE_DATA = {
     {
       "id": "pro-6-biz",
       "categoryId": "pro",
-      "heroImage": "./assets/products/surface-pro-6-hero.png",
+      "imageVerification": {
+        "status": "diagram",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch05/image-review.json"
+      },
+      "heroImage": "./assets/products/surface-pro-6-official-diagram.png",
       "name": "Surface Pro 6 商用版",
       "nameEn": "Surface Pro 6 for Business",
       "generation": "第 6 代 (2018)",
@@ -7760,12 +7822,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-13-platinum.png"
+            "image": null
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-13-black.png"
+            "image": null
           }
         ],
         "chassisMaterial": "镁合金",
@@ -7823,15 +7885,15 @@ const SURFACE_DATA = {
         "thermalDesign": "i5 无风扇静音被动散热 / i7 超薄静音主动风扇",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "官方售后整机置换",
-        "warranty": "not_disclosed",
+        "warranty": "1 年有限硬件保修",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-18",
-        "officialDocUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-6",
+        "lastVerified": "2026-09-30",
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
         "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/surface-pro-6"
       },
       "isCommercial": true,
-      "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+      "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
       "segment": "commercial"
     }
   ],

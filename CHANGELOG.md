@@ -5,6 +5,138 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.6.0] - 2026-09-30
+
+### Added
+- **Surface 官方原装配件全景图鉴与路由专区**：
+  - 新增 `#/accessories` 与 `#/accessories/:category` 专属分类路由，全量收录 23 款微软官方原装主力配件（6 款键盘盖、4 款触控笔、5 款拓展坞、5 款鼠标与旋钮、3 款音频耳机）。
+  - 配件卡片包含官方发售年份、核心功能、接口类型、原生适配机型胶囊及直达双向兼容矩阵按键。
+  - 在首页增设「Surface 原装配件」分类卡片专区，与 Surface 消费版、商用版、Xbox 专区形成四大对称基石。
+- **Xbox 手柄国行译名与发售区域精细化治理**：
+  - 全面校准对齐微软中国官方标准中文色号译名（冰雪白、冲击蓝、电光绿、疾速绿、深粉、星空紫、赤焰迷彩、苍穹蓝、幽灵白等）。
+  - 在手柄专区增设「🇨🇳 国行在售」「🇺🇸 美国限定 / 未在大陆发售」「经典复刻」分类 Tab 与卡片发售区域高对比徽章。
+- **选型向导 9 大专业细分业务场景**：
+  - 升级为极轻差旅外勤、现代商务行政、企业 IT 统采安全、Copilot+ 本地 AI、原笔迹触控手绘、视频会务协作、专业工程研发、高校备考无纸化、医疗巡检特种现场 9 大细分场景，匹配专业权重与推荐逻辑。
+
+### Changed
+- **宽屏大视野流体自适应 (Awwwards / Fluent 2 标准)**：
+  - 彻底解除 `.hub-main` 的 `1560px` 锁死限制（改用 `max-width: 100%`），消除 2K / 4K / 超宽带鱼屏右侧大片空白问题，使网格容器在全分辨率下自适应平铺。
+  - 为 `.device-card-mini` 引入 Doppelrand 双层光影质感与 `cubic-bezier(0.16, 1, 0.3, 1)` 缓动悬停动效。
+- **移动端 (Mobile) 黄金比例协调重构**：
+  - 针对手机端（`<= 640px`）重构为紧凑 2 列等宽网格（`repeat(2, minmax(0, 1fr))`），消除此前单列拉伸导致的图片扁平与字阶大大小小失调。
+  - 规范移动端字体与间距：标题 13px、标签 10.5px、图片舞台 96px、紧凑隐藏受众描述，杜绝卡片高低错乱。
+  - 移动端顶栏精简为纯图标模式，彻底解决品牌文字与工具按钮在小屏上的拥挤溢出。
+  - 移动端点击导航项自动收起抽屉侧栏。
+
+### Fixed
+- **商品详情页侧边栏多维筛选协同**：
+  - 修复系列筛选、状态筛选、发布时间排序与关键词搜索无法联动的缺陷，实现 4 维协同即时过滤与计数更新。
+- **颜色切换闪烁与主图重试占位**：
+  - 切换颜色时主动重置加载重试状态并隐藏内层 fallback 占位，避免图片叠加闪烁。
+
+### Why (决策理由)
+- 响应老大提出的「配件专区缺失、右侧大片空白、手机打开比例不协调、Xbox 手柄国行译名不准、筛选失效」等核心体验痛点，通过全方位流动排版与微动效打磨，使系统质感与工程健壮度达到 Awwwards / Webby / FWA 评选品质。
+
+## 2026-09-30 规格显示与产品名称一致性修复
+
+### Fixed
+
+- 修复单机详情页继承多机对比状态后被 `仅看差异` 隐藏全部规格的问题；单机表格始终展示完整参数。
+- 统一首页机型卡片与详情左侧产品目录的名称区域高度和两行排版，长名称按稳定布局换行，不再造成卡片高低跳动。
+
+### Validation
+
+- Playwright Chromium：详情页 80 行规格全部可见，147 个规格单元格有内容；强制开启 `diffOnly` 后仍保持 80 行可见。
+- Playwright Chromium：桌面首页 23 个机型名称统一为 38px；详情目录名称统一为 32px；移动端无名称截断、无横向溢出、无控制台错误。
+- `node tests/test-runner.js`：5035 项通过，0 项失败。
+- `node tests/image-mapping-p0.test.js`：122 项通过，0 项失败。
+- `node tests/deploy-seams.test.js`、Node 语法检查：通过。
+- 证据截图：`releases/verification-20260930-batch11-name-specs/`。
+
+## 2026-09-30 Catalog Explorer UI redesign
+
+- 按用户提供的 Catalog Explorer 参考图重新对齐详情页：顶部品牌与搜索、左侧产品目录列表、中央产品首屏与分组规格、右侧操作/官方资源/产品图片/产品状态栏。
+- 详情路由使用 360px 产品目录、844px 中央工作区、280px 证据栏；左侧支持产品搜索，主图和右侧缩略图随配色切换同步更新。
+- 收紧顶栏、侧栏、按钮、规格表和详情 Hero 的间距、边框和圆角，降低卡片堆叠感，保留高密度查参数体验。
+- 保留所有现有路由、数据出口、图片身份、对比托盘、主题切换和业务计算逻辑。
+- 新增离线快照与设计 QA 记录；Playwright Chromium 已完成参考图对齐、桌面/移动端、产品目录搜索和缩略图切换验收，见 `design-qa.md`。
+
+### Validation
+
+- `node tests/test-runner.js`：5035 项通过，0 项失败。
+- `node tests/image-mapping-p0.test.js`：122 项通过，0 项失败。
+- `node tests/deploy-seams.test.js`：通过。
+- Node 语法检查：通过。
+- Playwright 浏览器视觉验收：1484x1080 参考图对齐、移动 390x844 均通过；无 JavaScript 错误、无横向溢出，目录搜索和缩略图切换通过。
+
+## 2026-09-30 Batch07 工具失败与 Go 充电字段修正
+
+- 修复差旅负重工具：优先读取官方 `batteryLifeOffice`，其次读取 `batteryLifeVideo`；官方未披露时不再默认编造 14 小时。
+- 增加“真实办公续航估算”可见结果，并在无可解析官方续航时明确显示“无法估算”。
+- 修复跨代升级工具标题与结论文案，增加“性能与算力跃迁”和“升级价值与置换建议”；移除未经当前字段计算支持的固定“翻倍/强烈建议换代”等结论。
+- 将 Surface Go 4 与 Surface Go 2 的国行快充字段统一为 `not_disclosed`；恢复 Go 3 的官方 30W 字段。
+- 将历史事实测试账中的快充状态统一为项目约定的小写四态值，避免被误判为普通有效文本。
+
+### Validation
+
+- `node tests/test-runner.js`：5035 项通过，0 项失败。
+- `node tests/image-mapping-p0.test.js`：122 项通过，0 项失败。
+- `node tests/deploy-seams.test.js`：通过。
+- `node --check`：`js/tools-engine.js`、`js/surface-data.js`、`js/catalog.js`、历史事实测试通过。
+
+## 2026-09-30 Batch04 官方字段与图片核验
+
+- 核验并保存 Laptop 7、Laptop 13 商用 Intel、Surface Book 3 商用版、Surface Go 2 商用版的微软官方来源快照。
+- 修正 Laptop 7 的处理器核心数、Copilot+ PC、扬声器、65W 供电/快充和 1 年保修字段；旧中文 Support 链接返回 404，未继续作为证据。
+- 修正 Book 3 的显卡、分尺寸显示参数、续航、尺寸、重量和保修；修正 Go 2 的快充状态，撤销无官方证据的 30W 结论。
+- 撤下本批未完成配色核验的图片路径；商用 Intel Laptop、Book 3、Go 2 改用官方结构图并在界面标注“官方结构图（非配色照片）”，Laptop 7 标注“图片待核验”。
+- 本批独立图片来源账：`releases/verification-20260930-batch04/image-source-ledger.json`；字段和图片说明：`docs/verification/batch04-20260930.md`。
+
+## 2026-09-30 Batch05 官方字段与图片核验
+
+- 核验 Pro 6 商用版和 Laptop 13 英寸第 1 版消费版的微软中国 Support 页面。
+- Pro 6 商用版保修修正为 1 年有限硬件保修；旧 Learn URL 返回 404，不再作为当前来源。
+- 两款产品改用型号绑定的官方结构图，撤下未经配色核验的颜色图片路径。
+- 记录 Laptop 13 Support 的至少 40W USB-C PD 建议与商城 45W 标配的不同口径，不强行合并。
+- Batch05 证据与逐字段账位于 `releases/verification-20260930-batch05/`。
+
+## 2026-09-30 Batch06 官方字段核验
+
+- 核验 Laptop 6 商用版与 Surface Laptop Studio 2 中国 Support 页面。
+- 将 Surface Laptop Studio 2 保修修正为官方明确的 1 年有限硬件保修。
+- Laptop 6 Support 页面信息不完整，未用不完整页面覆盖现有参数或配色图片。
+
+## [Unreleased] - 2026-09-30 - 官方数据核验 Batch02
+
+### Batch03：历史型号图片与来源核验
+
+- 撤下 Pro 1/Pro 2 复用现代 Pro 黑色图、Pro 7+ 与 Go 3 商用版双色共用同一文件的问题映射。
+- 接入微软中国 Support 的 Pro 2、Pro 7+、Go 3 官方型号结构图；图片身份分别显示“官方结构图（非配色照片）”或“其他机型结构图示意”。
+- Pro 1/2 的官方中文 Support 页面补录可直接看到的系统、720p 摄像头、扬声器和 Pro 1 电池容量字段。
+- Pro 初代官方博客产品大图在 2026-09-30 返回 404，保留失败证据，不创建伪造图片。
+- 新增 `docs/verification/batch03-20260930.md`、`releases/verification-20260930-batch03/` 证据快照和图片来源账。
+- 图片 P0 测试：112 通过、0 失败；全量测试：5022 通过、3 失败，剩余失败为既有工具测试。
+
+### Changed
+- 按微软中国产品专属列，将 Pro 12 第 2 代与 Laptop 13 第 2 代消费版改为“即将推出”，记录 2026-10-19 预售；不把预售日当发货日，也不提前显示已发售新品。
+- 修正 Laptop 13 第 2 代遗漏的 USB-A 3.2 与误标不适用的 3.5 毫米耳机孔，补录最低 60W 快充门槛；保留标配 45W 充电器的独立口径。
+- 补录官方已披露的 Adreno GPU、两款主机 2 年有限硬件保修，以及 Pro 强化玻璃/双麦克风、Laptop 阳极氧化铝。
+- 撤下无法绑定到具体型号的 9,688 元通用起售价，保留为 `null` 待核验。撤下 Pro 磁吸电源口字段中误填的键盘连接器，不推断其电源口状态。
+- 两款六色图片标记 `pending`，卡片、详情及对比表（含换色后）显示“图片待核验”。未伪造图片通过记录。
+- 修正审计脚本：不同路径去重后共 5 组字节完全相同文件，不能称为 40 组重复像素图。
+
+### Added
+- 官方网页结构化快照、逐字段来源账、六色图片比对记录与针对性回归测试。140 个字段（含元数据）中 88 条确认、52 条待核验。
+- 构建脚本新增 `--snapshot-only --release`，核验预览不覆盖既有交付物。
+- 独立证据及预览快照：`releases/verification-20260930-batch02/`。`surface-specs-hub-audit-preview-r2.html` 为本批预览；首份 preview 为中间检查点。
+
+### Validation And Limits
+- 针对性测试通过；全量测试 5024 项通过、9 项失败，保留基线失败。未宣布全库完成或正式发布。
+- 五张官方图可读取但与本地尺寸/像素不同，一张官方图返回 HTTP 403；六张仍待视觉/来源复核。
+- laya-mlx 已用于辅助分流，但再次错判明确冲突，不参与落库裁决。
+- 浏览器安全策略禁止 `file:` 访问，真实浏览器交互验收未通过执行。没有绕过安全限制。
+- 未覆盖用户或其他任务已有修改，未部署线上；预览包含当前工作区已有内容，不是纯净生产发布。
+
 ## [v1.4.1] - 2026-09-23 - SSD System Installation & Migration Master (固态换装与系统迁移终极实操)
 
 ### Added

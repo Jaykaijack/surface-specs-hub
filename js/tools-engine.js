@@ -693,8 +693,14 @@ const ToolsEngine = {
       commute: { pro: 140, laptopgo: 110, go: 90, laptop: 50 },
       office: { laptop: 160, pro: 50, laptopgo: 40 },
       design: { sls: 220, pro: 140 },
+      creative_pen: { sls: 220, pro: 160 },
+      enterprise_it: { laptop: 150, pro: 120, sls: 80 },
+      ai_copilot: { laptop: 160, pro: 160 },
+      conference: { sls: 180, pro: 150, laptop: 140 },
+      engineering: { sls: 260, laptop: 160 },
       study: { go: 120, laptopgo: 100, pro: 80, laptop: 30 },
-      pro: { sls: 240, laptop: 100, pro: 30 }
+      study_exam: { go: 120, laptopgo: 100, pro: 80, laptop: 30 },
+      medical_field: { pro: 200, go: 180, laptopgo: 40 }
     }[scene] || {};
     let score = categoryBoost[device.categoryId] || 0;
     score += Math.max(0, 2200 - this.guideGrams(device)) / 10;
@@ -702,8 +708,26 @@ const ToolsEngine = {
     if (device.status === 'current_cn') score += 30;
     if (scene === 'office' && this.guideIsIntel(device)) score += 80;
     if (scene === 'office' && device.segment === 'commercial') score += 40;
+    if (scene === 'enterprise_it') {
+      if (device.segment === 'commercial' || device.isCommercial) score += 140;
+      if (this.guideIsIntel(device)) score += 80;
+    }
+    if (scene === 'ai_copilot') {
+      const npuVal = parseInt(Catalog.getSpec(device, 'npuTops'), 10);
+      if (npuVal >= 80) score += 220;
+      else if (npuVal >= 40) score += 140;
+      if (this.guideIsSnapdragon(device)) score += 80;
+    }
+    if (scene === 'engineering') {
+      if (device.categoryId === 'sls') score += 120;
+      if (String(device.name).includes('15') || String(device.name).includes('14.4')) score += 50;
+      if (/Ultra|i7|RTX|dGPU/i.test(this.guideCpuText(device))) score += 80;
+    }
+    if (scene === 'medical_field') {
+      if (device.categoryId === 'pro' || device.categoryId === 'go') score += 120;
+    }
     const pen = String(Catalog.getSpec(device, 'touchAndPenProtocol') || Catalog.getSpec(device, 'penSupport') || '');
-    if ((scene === 'design' || scene === 'study') && /触控笔|MPP/.test(pen) && !pen.includes('不支持')) score += 70;
+    if ((scene === 'design' || scene === 'creative_pen' || scene === 'study' || scene === 'study_exam') && /触控笔|MPP/.test(pen) && !pen.includes('不支持')) score += 70;
     const npu = parseInt(Catalog.getSpec(device, 'npuTops'), 10);
     if (!isNaN(npu)) score += Math.min(npu, 80) / 10;
     score += (Number(device.year) || 0) / 100;
@@ -725,11 +749,17 @@ const ToolsEngine = {
 
   matchRecommendedDevices() {
     const titles = {
-      commute: '移动差旅与高频外勤',
-      office: '日常重度商务与行政办公',
-      design: '手绘创作、平面设计与修图',
-      study: '大学学习、考研刷题与无纸化笔记',
-      pro: '专业工程计算、3D 渲染与剪辑'
+      commute: '极轻差旅与全天移动外勤',
+      office: '现代商务行政与高负荷多任务',
+      enterprise_it: '企业 IT 统采与高等级安全信创',
+      ai_copilot: 'Copilot+ 本地 AI 生产力旗舰',
+      design: '原笔迹触控手绘与数码创作',
+      creative_pen: '原笔迹触控手绘与数码创作',
+      conference: '高清音视频会务与跨国协作',
+      engineering: '专业工程研发、编译与重度建模',
+      study: '高校学习考研与无纸化自习',
+      study_exam: '高校学习考研与无纸化自习',
+      medical_field: '医疗查房、车间现场与特种巡检'
     };
     const ranked = Catalog.listDevices()
       .filter(device => this.guidePassesFilters(device))
@@ -773,11 +803,15 @@ const ToolsEngine = {
     ];
 
     const scenes = [
-      { id: 'commute', label: '🚄 移动差旅外勤' },
-      { id: 'office', label: '💼 商务重度办公' },
-      { id: 'design', label: '🎨 创意设计手绘' },
-      { id: 'study', label: '📚 高校学习考研' },
-      { id: 'pro', label: '⚡ 专业工程剪辑' }
+      { id: 'commute', label: '🚄 极轻差旅外勤', desc: '全天超长续航与轻薄携带' },
+      { id: 'office', label: '💼 现代商务行政', desc: '高负荷多任务与稳定键程' },
+      { id: 'enterprise_it', label: '🛡️ 企业统采与安全信创', desc: 'vPro 统管与商用服务' },
+      { id: 'ai_copilot', label: '🤖 Copilot+ 本地 AI', desc: '40~80 TOPS 强劲端侧算力' },
+      { id: 'design', label: '🎨 原笔迹触控手绘', desc: '超薄笔 2 零延迟与 120Hz 纸感' },
+      { id: 'conference', label: '🎙️ 高清音视频会务', desc: 'Studio 双摄与降噪矩阵' },
+      { id: 'engineering', label: '⚡ 专业工程与重度研发', desc: '强悍 CPU/GPU 算力与散热冗余' },
+      { id: 'study', label: '📚 高校备考无纸化', desc: '轻巧长续航、静音打字与批注' },
+      { id: 'medical_field', label: '🏥 医疗巡检与特种现场', desc: '防尘耐用平板形态、轻量单手操作' }
     ];
 
     const forms = [
@@ -994,9 +1028,14 @@ const ToolsEngine = {
     const totalWeightG = bodyWeight + kbWeight + chargerWeight + penWeight + mouseWeight;
     const totalWeightKg = (totalWeightG / 1000).toFixed(2);
 
-    // 真实办公续航估算 (小时)
-    const claimedBat = parseFloat(this.spec(currentDev, 'batteryLife') || '14');
-    const realOfficeHours = (claimedBat * 0.68).toFixed(1);
+    // 只使用官方办公/网页续航；没有可解析的官方数值时不编造估算。
+    const officeBattery = String(this.spec(currentDev, 'batteryLifeOffice') || '');
+    const videoBattery = String(this.spec(currentDev, 'batteryLifeVideo') || '');
+    const claimedBat = parseFloat(officeBattery.match(/[\d.]+/)?.[0] || videoBattery.match(/[\d.]+/)?.[0] || '');
+    const realOfficeHours = Number.isFinite(claimedBat)
+      ? `约 ${(claimedBat * 0.68).toFixed(1)} 小时连贯外勤`
+      : '无法估算（官方续航未披露）';
+    const claimedBatteryLabel = officeBattery || videoBattery || '官方未披露';
 
     // 便携等级评定
     let tier = 'A 级 · 轻装差旅';
@@ -1101,12 +1140,12 @@ const ToolsEngine = {
 
             <div style="width:100%; border-top:1px solid var(--ms-border-subtle); padding-top:16px; text-align:left; font-size:12.5px; line-height:1.7;">
               <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
-                <span style="color:var(--ms-text-secondary);">官方宣称续航：</span>
-                <span style="font-weight:700;">${this.spec(currentDev, 'batteryLife') || '14 小时'}</span>
+                <span style="color:var(--ms-text-secondary);">官方续航依据：</span>
+                <span style="font-weight:700;">${claimedBatteryLabel}</span>
               </div>
               <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-                <span style="color:var(--ms-text-secondary);">真实办公预估 (扣除虚标)：</span>
-                <span style="font-weight:700; color:#107c41;">约 ${realOfficeHours} 小时连贯外勤</span>
+                <span style="color:var(--ms-text-secondary);">真实办公续航估算：</span>
+                <span style="font-weight:700; color:#107c41;">${realOfficeHours}</span>
               </div>
               <div style="font-size:11.5px; color:var(--ms-text-tertiary); background:rgba(0,120,212,0.05); padding:8px 12px; border-radius:6px; ">
                 💡 导购建议：若日常通勤搭配第三方 65W GaN 充电头，比原装充电器立减约 140g，相当于包里少带了一台手机！
@@ -1169,6 +1208,13 @@ const ToolsEngine = {
           </div>
         </div>
 
+        <div class="guide-panel" style="margin-top:16px; margin-bottom:16px;">
+          <div style="font-size:16px; font-weight:700; color:var(--ms-accent);">性能与算力跃迁</div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); margin-top:4px;">
+            以下对比只展示当前两台设备的官方参数；官方未披露的项目不以估算值替代。
+          </div>
+        </div>
+
         <!-- 关键代际硬件指标对比大表 -->
         <table class="compat-matrix-table" style="background:var(--ms-bg-card);">
           <thead>
@@ -1184,25 +1230,25 @@ const ToolsEngine = {
               <td class="compat-device-label">核心芯片与制程</td>
               <td>${oldOf('cpuModel') || '—'}</td>
               <td style="font-weight:700; color:var(--ms-accent);">${newOf('cpuModel') || '—'}</td>
-              <td style="text-align:left; color:#107c41; font-weight:600;">⚡ 架构跨越 3~4 代，单核与多核能效比大幅翻倍</td>
+              <td style="text-align:left; color:#107c41; font-weight:600;">⚡ 以两台设备的官方处理器型号为依据，具体性能差异需结合实际工作负载判断</td>
             </tr>
             <tr>
               <td class="compat-device-label">端侧 AI / NPU 算力</td>
               <td>${oldOf('npuTops') && oldOf('npuTops') !== '—' ? oldOf('npuTops') : '0 TOPS (无独立 NPU)'}</td>
               <td style="font-weight:700; color:var(--ms-accent);">${newOf('npuTops') && newOf('npuTops') !== '—' ? `${newOf('npuTops')}` : '升级款 NPU'}</td>
-              <td style="text-align:left; color:#107c41; font-weight:600;">🤖 支持 Windows Copilot+ 端侧百亿大模型与实时字幕</td>
+              <td style="text-align:left; color:#107c41; font-weight:600;">🤖 仅在目标设备官方参数明确提供 NPU / Copilot+ 信息时作出判断</td>
             </tr>
             <tr>
               <td class="compat-device-label">屏幕素质与刷新率</td>
               <td>${oldOf('refreshRate') || '60Hz'} · ${oldOf('screenSize') || '—'}</td>
               <td style="font-weight:700; color:var(--ms-accent);">${newOf('refreshRate') || '120Hz'} · ${newOf('screenSize') || '—'}</td>
-              <td style="text-align:left; color:#107c41; font-weight:600;">👁️ 60Hz 升级到 120Hz 动态高刷，触控手写滑顺度感知极大</td>
+              <td style="text-align:left; color:#107c41; font-weight:600;">👁️ 依据两台设备实际刷新率和屏幕规格比较</td>
             </tr>
             <tr>
               <td class="compat-device-label">外勤续航时间</td>
-              <td>${oldOf('batteryLife') || '约10小时'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('batteryLife') || '长达14~20小时'}</td>
-              <td style="text-align:left; color:#107c41; font-weight:600;">🔋 告别出门找插座焦虑，外勤时长翻倍</td>
+              <td>${oldOf('batteryLifeOffice') || oldOf('batteryLifeVideo') || '官方未披露'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('batteryLifeOffice') || newOf('batteryLifeVideo') || '官方未披露'}</td>
+              <td style="text-align:left; color:#107c41; font-weight:600;">🔋 按官方续航口径比较，实际表现会受设置和使用方式影响</td>
             </tr>
             <tr>
               <td class="compat-device-label">外设与手写笔震动</td>
@@ -1214,9 +1260,9 @@ const ToolsEngine = {
         </table>
 
         <div class="guide-panel" style=" background:rgba(16,124,65,0.04);">
-          <div style="font-size:16px; font-weight:700; color:#107c41; margin-bottom:6px;">🏁 综合换机结论评估：强烈建议换代升级！</div>
+          <div style="font-size:16px; font-weight:700; color:#107c41; margin-bottom:6px;">升级价值与置换建议</div>
           <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6;">
-            从 <strong>${oldDev.name}</strong> 升级到 <strong>${newDev.name}</strong> 属于跨代革命性质变，不论是 120Hz 极窄边框屏幕、超长续航能效，还是全新的 NPU AI 体验，都能带来立竿见影的生产力提升。
+            从 <strong>${oldDev.name}</strong> 升级到 <strong>${newDev.name}</strong> 的价值，应根据上方已核实的处理器、NPU、屏幕、接口和续航差异，以及你的实际工作负载判断；表中未披露项目不会被当作升级卖点。
           </div>
         </div>
       </div>

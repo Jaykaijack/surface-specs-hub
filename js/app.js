@@ -56,9 +56,10 @@ const App = {
 
   portraitBadge(device, colorName, markId) {
     const shot = this.shot(device, colorName);
-    const hidden = shot.identity === 'shared' ? '' : ' hidden';
+    const label = Catalog.portraitLabel(shot);
+    const hidden = label ? '' : ' hidden';
     const idAttr = markId ? ` id="${markId}"` : '';
-    return `<span class="portrait-stand-in"${idAttr}${hidden}>同系列示意</span>`;
+    return `<span class="portrait-stand-in"${idAttr}${hidden}>${label}</span>`;
   },
 
   escapeText(value) {
@@ -83,11 +84,41 @@ const App = {
 
   hideBrokenImage(img) {
     if (!img) return;
+    // 阶段 1：如果是带 ?v= 参数的优化交付图在本地环境失败，先尝试剥离参数请求
+    if (img.src && img.src.includes('?v=') && !img.dataset.retryClean) {
+      img.dataset.retryClean = '1';
+      const cleanSrc = img.src.split('?')[0];
+      const picture = img.closest ? img.closest('picture') : null;
+      if (picture) {
+        picture.querySelectorAll('source').forEach(s => s.remove());
+      }
+      img.removeAttribute('srcset');
+      img.src = cleanSrc;
+      return;
+    }
+    // 阶段 2：如果衍生格式仍失败，平滑回退至 assets/products 原始产品大图
+    const fallbackPath = img.getAttribute('data-fallback-path');
+    if (fallbackPath && !img.dataset.retryFallback) {
+      img.dataset.retryFallback = '1';
+      const cleanPath = fallbackPath.split('?')[0];
+      const picture = img.closest ? img.closest('picture') : null;
+      if (picture) {
+        picture.querySelectorAll('source').forEach(s => s.remove());
+      }
+      img.removeAttribute('srcset');
+      img.src = cleanPath;
+      return;
+    }
+    // 阶段 3：若所有图片源均不可达，优雅展示占位图标并重置为居中对齐
     img.style.display = 'none';
-    const box = img.closest('.device-img-wrap, .detail-hero-img-box, .series-icon, .table-device-img');
+    const box = img.closest('.device-img-wrap, .detail-hero-img-box, .series-icon, .table-device-img, .catalog-item-image');
     if (!box) return;
     const fallback = box.querySelector('div');
-    if (fallback) fallback.style.display = 'block';
+    if (fallback) {
+      fallback.style.display = 'flex';
+      fallback.style.alignItems = 'center';
+      fallback.style.justifyContent = 'center';
+    }
   },
 
   init() {
@@ -130,6 +161,8 @@ const App = {
     // 解析 Path 路由
     this.activeRoute = { path: pathPart, query };
     this.parseFiltersFromQuery(query);
+
+    this.syncLayoutMode();
 
     // 同步侧栏选中态
     this.updateSidebarActiveState();
@@ -217,6 +250,17 @@ const App = {
       return;
     }
 
+    // 路由: Surface 官方配件专区 (#/accessories 或 #/accessories/:category 或 #/surface/accessories)
+    if (path === '/accessories' || path === '/surface/accessories') {
+      this.renderSurfaceAccessoriesView(main, 'all');
+      return;
+    }
+    const accMatch = path.match(/^\/(?:surface\/)?accessories\/([^/]+)$/);
+    if (accMatch) {
+      this.renderSurfaceAccessoriesView(main, accMatch[1]);
+      return;
+    }
+
     // 路由: 商用版专区 (#/business 或 #/surface/business)
     if (path === '/business' || path === '/surface/business') {
       this.renderBusinessView(main);
@@ -243,6 +287,16 @@ const App = {
       const seriesId = bizSeriesMatch[1];
       this.renderSeriesView(main, seriesId, 'commercial');
       return;
+    }
+
+    // 路由: 兼容简写单机详情 (#/detail/:id)
+    const shorthandDetailMatch = path.match(/^\/detail\/([^/]+)$/);
+    if (shorthandDetailMatch) {
+      const targetDev = this.getDevice(shorthandDetailMatch[1]);
+      if (targetDev) {
+        this.navigateToDetail(targetDev.seriesId, targetDev.id);
+        return;
+      }
     }
 
     // 路由: 消费版单机详情 (#/consumer/:series/:id)
@@ -486,30 +540,34 @@ const App = {
           <h2 style="font-size:20px; font-weight:700; color:var(--ms-text-primary); margin:0;">Xbox 专区</h2>
           <span class="sidebar-group-badge xbox" style="font-size:11px; padding:2px 8px;">独立产品大类</span>
         </div>
-        <span class="header-sub-tag">按类别查看 Xbox 主机、手柄与配件体系</span>
+        <span class="header-sub-tag">按类别查看 Xbox 主机、手柄大全与配件体系</span>
       </div>
 
       <div class="series-nav-grid">
         ${(SURFACE_DATA.xboxCategories || []).map((cat, index) => {
           let countText = '';
           let targetPath = '';
+          let heroImg = '';
           if (cat.subCategory === 'consoles') {
             const devs = this.listDevices({ seriesId: 'xbox', segment: 'xbox' });
             countText = `收录历代 ${devs.length} 款主机型号 ↗`;
             targetPath = '#/xbox/consoles';
+            heroImg = './assets/products/xbox-series-x-1tb-hero.png';
           } else if (cat.subCategory === 'controllers') {
-            countText = '官方无线手柄与操控设备 ↗';
+            const ctrlCount = (typeof XBOX_CONTROLLERS !== 'undefined' ? XBOX_CONTROLLERS.length : 36);
+            countText = `收录历代 ${ctrlCount} 款全色彩与限定版手柄 ↗`;
             targetPath = '#/xbox/controllers';
+            heroImg = './assets/products/xbox-series-controller-sky-cipher.jpg';
           } else {
-            countText = '官方存储扩展卡与耳机配件 ↗';
+            const accCount = (typeof XBOX_ACCESSORIES !== 'undefined' ? XBOX_ACCESSORIES.length : 5);
+            countText = `收录 ${accCount} 款官方存储卡、耳机与配件 ↗`;
             targetPath = '#/xbox/accessories';
+            heroImg = './assets/products/xbox-wireless-headset.png';
           }
           return `
             <div class="series-card" onclick="App.navigate('${targetPath}')">
-              <div class="series-icon">
-                <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:center;">
-                  ${ComparisonEngine.getDeviceSvgIcon(cat.icon || cat.subCategory)}
-                </div>
+              <div class="series-icon" style="background:var(--ms-bg-subtle); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px;">
+                <img src="${heroImg}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08));" loading="lazy">
               </div>
               <div class="series-info">
                 <div class="series-title">${cat.name}</div>
@@ -519,6 +577,83 @@ const App = {
             </div>
           `;
         }).join('')}
+      </div>
+
+      <!-- ⌨️ 探索 Surface 官方原装配件体系 -->
+      <div class="home-section-header" style="margin-top:36px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <h2 style="font-size:20px; font-weight:700; color:var(--ms-text-primary); margin:0;">Surface 原装配件</h2>
+          <span class="sidebar-group-badge" style="font-size:11px; padding:2px 8px; background:var(--ms-accent-light); color:var(--ms-accent);">官方生态</span>
+        </div>
+        <span class="header-sub-tag">键盘盖、超薄触控笔、雷电扩展坞、鼠标与音频外设</span>
+      </div>
+
+      <div class="series-nav-grid">
+        <div class="series-card" onclick="App.navigate('#/accessories/keyboard')">
+          <div class="series-icon" style="background:var(--ms-bg-subtle); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px;">
+            <img src="./assets/accessories/flex-keyboard.png" alt="键盘盖与保护套" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08));" loading="lazy">
+          </div>
+          <div class="series-info">
+            <div class="series-title">专业键盘盖与键鼠套件</div>
+            <div class="series-desc">Flex 触觉键盘、特制版带笔槽键盘盖与经典便携键盘</div>
+            <div class="series-count">收录 6 款原装键盘 ↗</div>
+          </div>
+        </div>
+
+        <div class="series-card" onclick="App.navigate('#/accessories/pen')">
+          <div class="series-icon" style="background:var(--ms-bg-subtle); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px;">
+            <img src="./assets/accessories/slim-pen-2.png" alt="触控笔" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08));" loading="lazy">
+          </div>
+          <div class="series-info">
+            <div class="series-title">触控笔 / 超薄触控笔</div>
+            <div class="series-desc">4096 级压感超薄笔 2、触觉震动反馈与经典压感笔</div>
+            <div class="series-count">收录 4 款原装触控笔 ↗</div>
+          </div>
+        </div>
+
+        <div class="series-card" onclick="App.navigate('#/accessories/dock')">
+          <div class="series-icon" style="background:var(--ms-bg-subtle); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px;">
+            <img src="./assets/accessories/surface-tb4-dock.png" alt="拓展坞" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08));" loading="lazy">
+          </div>
+          <div class="series-info">
+            <div class="series-title">拓展坞与雷电连接坞</div>
+            <div class="series-desc">Thunderbolt 4 高速坞、Dock 2 桌面工作站与便携集线器</div>
+            <div class="series-count">收录 5 款官方扩展坞 ↗</div>
+          </div>
+        </div>
+
+        <div class="series-card" onclick="App.navigate('#/accessories/mouse')">
+          <div class="series-icon" style="background:var(--ms-bg-subtle); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px;">
+            <img src="./assets/accessories/surface-arc-mouse.png" alt="鼠标与旋钮" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08));" loading="lazy">
+          </div>
+          <div class="series-info">
+            <div class="series-title">精工鼠标与创作者旋钮</div>
+            <div class="series-desc">Arc 弯折便携鼠标、精准人体工学鼠标与 Surface Dial</div>
+            <div class="series-count">收录 5 款鼠标与旋钮 ↗</div>
+          </div>
+        </div>
+
+        <div class="series-card" onclick="App.navigate('#/accessories/audio')">
+          <div class="series-icon" style="background:var(--ms-bg-subtle); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px;">
+            <img src="./assets/accessories/surface-headphones-2.png" alt="音频耳机" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08));" loading="lazy">
+          </div>
+          <div class="series-info">
+            <div class="series-title">音频与降噪耳机</div>
+            <div class="series-desc">Headphones 2 旋钮降噪耳机、Earbuds 与会务音箱坞</div>
+            <div class="series-count">收录 3 款原装音频产品 ↗</div>
+          </div>
+        </div>
+
+        <div class="series-card" onclick="App.navigate('#/tools/compat')">
+          <div class="series-icon" style="background:var(--ms-accent-light); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px; color:var(--ms-accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+          </div>
+          <div class="series-info">
+            <div class="series-title" style="color:var(--ms-accent);">配件双向兼容矩阵 ↗</div>
+            <div class="series-desc">选择任意 Surface 主机或配件，实时查看全面兼容状态</div>
+            <div class="series-count" style="color:var(--ms-accent); font-weight:600;">进入全景交互矩阵 ➔</div>
+          </div>
+        </div>
       </div>
 
       <!-- 快速对比经典组合推荐 -->
@@ -748,17 +883,41 @@ const App = {
     container.innerHTML = html;
   },
 
-  // 3.4a Xbox 手柄专区
+  // 3.4a Xbox 手柄专区 (大全中心)
   renderXboxControllersView(container) {
+    const controllers = (typeof XBOX_CONTROLLERS !== 'undefined' ? XBOX_CONTROLLERS : (typeof XBOX_LINEUP !== 'undefined' && XBOX_LINEUP.controllers ? XBOX_LINEUP.controllers : []));
+    const activeFilter = this._xboxCtrlFilter || 'all';
+    const searchQuery = (this._xboxCtrlQuery || '').trim().toLowerCase();
+
+    const filtered = controllers.filter(ctrl => {
+      // 类别与发售地区筛选
+      if (activeFilter === 'cn_active' && ctrl.salesRegion !== 'cn_official') return false;
+      if (activeFilter === 'us_exclusive' && ctrl.salesRegion !== 'us_only') return false;
+      if (activeFilter === 'series_core' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'core')) return false;
+      if (activeFilter === 'series_special' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'special')) return false;
+      if (activeFilter === 'series_camo' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'camo')) return false;
+      if (activeFilter === 'series_limited' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'limited')) return false;
+      if (activeFilter === 'elite' && ctrl.generation !== 'elite') return false;
+      if (activeFilter === 'retro' && (ctrl.generation !== 'one' && ctrl.generation !== '360' && ctrl.generation !== 'original')) return false;
+      if (activeFilter === 'adaptive' && ctrl.generation !== 'adaptive') return false;
+
+      // 关键词搜索
+      if (searchQuery) {
+        const text = `${ctrl.name} ${ctrl.nameEn} ${ctrl.colorName} ${ctrl.description} ${ctrl.generationName} ${ctrl.seriesTypeName} ${ctrl.year}`.toLowerCase();
+        if (!text.includes(searchQuery)) return false;
+      }
+      return true;
+    });
+
     let html = `
       <div class="view-header">
         <div class="view-title-group">
           <h1>
-            <span>XBOX 手柄</span>
-            <span class="header-sub-tag">Xbox 官方无线控制器生态</span>
+            <span>Xbox 手柄大全中心</span>
+            <span class="header-sub-tag">Xbox 历代官方控制器·全色系图鉴与硬件微观参数</span>
           </h1>
           <div class="view-meta-tip">
-            <span>最后更新：2026-09-29 ｜ 💡 微软官方 Xbox 无线控制器、精英 2 代手柄与操控硬件生态 ｜ 信源对齐官方产品页</span>
+            <span>官方收录共 ${controllers.length} 款 ｜ 💡 对齐微软中国官方标准命名，清晰标注国行在售与美国限定款式 ｜ 覆盖初代 Duke、360、One、Series X|S 核心纯色、烟云透视、战术迷彩、联名限定与精英 2 代系列</span>
           </div>
         </div>
         <div class="view-actions">
@@ -768,96 +927,287 @@ const App = {
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:18px; margin-top:20px;">
-        <!-- 卡片 1: Xbox 无线控制器 -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无线控制器（标准版）</div>
-            <span class="spec-badge green">官方在售</span>
+      <!-- 控制台：代际色彩分类 Tab + 实时搜索 -->
+      <div style="background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:10px; padding:16px; margin:20px 0; box-shadow:var(--ms-shadow-card);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <button class="fluent-btn ${activeFilter === 'all' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('all')">全部 (${controllers.length})</button>
+            <button class="fluent-btn ${activeFilter === 'cn_active' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('cn_active')">🇨🇳 国行在售</button>
+            <button class="fluent-btn ${activeFilter === 'us_exclusive' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('us_exclusive')">🇺🇸 美国限定 / 未在大陆发售</button>
+            <button class="fluent-btn ${activeFilter === 'series_core' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_core')">Series 核心纯色</button>
+            <button class="fluent-btn ${activeFilter === 'series_special' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_special')">透视与烟云特别版</button>
+            <button class="fluent-btn ${activeFilter === 'series_camo' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_camo')">战术迷彩系列</button>
+            <button class="fluent-btn ${activeFilter === 'elite' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('elite')">精英系列 (Elite)</button>
+            <button class="fluent-btn ${activeFilter === 'retro' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('retro')">经典复刻 (One/360/初代)</button>
+            <button class="fluent-btn ${activeFilter === 'adaptive' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('adaptive')">无障碍控制器</button>
           </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            最新一代 Xbox Series X|S 标配无线手柄。采用防滑纹理握把与混合式方向键，自带实体“分享”键一键截屏或录制。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>连接协议：</strong>Xbox 无线直连协议 + 蓝牙低功耗 (BLE) 双模</div>
-            <div><strong>适用平台：</strong>Xbox Series X|S、Xbox One、Windows 10/11、iOS、Android</div>
-            <div><strong>接口与音频：</strong>USB-C 有线即插即用；3.5 毫米立体声耳机插孔</div>
-            <div><strong>供电与续航：</strong>支持 2 节 AA 电池或官方可充电电池组（续航最高约 40 小时）</div>
-            <div><strong>官方代表配色：</strong>磨砂黑、机器人白、风暴蓝、极光紫、脉冲红、深海青</div>
-          </div>
-        </div>
-
-        <!-- 卡片 2: Xbox 精英无线控制器 2 代 -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 精英无线控制器 2 代</div>
-            <span class="spec-badge gold">专业电竞旗舰</span>
-          </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            面向职业选手与核心玩家的旗舰级操控手柄。提供超过 30 种全新操控方式与高精度可调节硬件。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>核心机构：</strong>可调节阻尼摇杆（3 档阻尼）+ 超灵敏微调扳机锁（3 级键程）</div>
-            <div><strong>背面拨片：</strong>4 个可拆卸式不锈钢拨片（映射任意按键）</div>
-            <div><strong>固件映射：</strong>板载内存支持保存 3 套自定义按键配置 + 1 套默认配置</div>
-            <div><strong>电池与充电：</strong>内置可充电锂电池，续航长达 40 小时；附磁吸充电底座</div>
-            <div><strong>握持质感：</strong>全包围防滑橡胶握把，耐用部件与可更换摇杆/方向键</div>
+          <div style="position:relative; min-width:240px; flex:1; max-width:320px;">
+            <input type="text" placeholder="搜索手柄名称、色号、型号..." value="${this._xboxCtrlQuery || ''}"
+              style="width:100%; box-sizing:border-box; padding:7px 12px 7px 32px; border-radius:6px; border:1px solid var(--ms-border-subtle); background:var(--ms-bg-subtle); font-size:13px; color:var(--ms-text-primary);"
+              oninput="App.searchXboxControllers(this.value)">
+            <span style="position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:13px; opacity:0.6;">🔍</span>
           </div>
         </div>
-
-        <!-- 卡片 3: Xbox 精英无线控制器 2 代 青春版 -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 精英手柄 2 代 青春版 (Core)</div>
-            <span class="spec-badge green">官方在售</span>
-          </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            保留精英 2 代核心高精度硬件微调性能，精简收纳包与配件，带来极致性价比专业手柄体验。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>核心机构：</strong>保留可调节阻尼摇杆、微调扳机锁与全包围橡胶握把</div>
-            <div><strong>电池与续航：</strong>内置可充电锂电池，单次充满续航最高达 40 小时</div>
-            <div><strong>配件扩展性：</strong>支持后期单独选购官方配件包（包含拨片、额外摇杆与充电座）</div>
-            <div><strong>官方配色：</strong>机器人白、烈焰红、璀璨蓝等多色设计</div>
-          </div>
-        </div>
-
-        <!-- 卡片 4: Xbox 无障碍控制器 -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无障碍控制器 (Adaptive)</div>
-            <span class="spec-badge" style="background:#e8edf5; color:#1a5fb4;">无障碍包容性设计</span>
-          </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            微软包容性科技代表作，专为行动不便与特殊需求玩家打造的高度可定制统一控制器集线器。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>扩展接口：</strong>背板配备 19 个 3.5 毫米外部开关插孔，对应手柄全部按键</div>
-            <div><strong>USB 端口：</strong>左右两侧各配备 1 个 USB 2.0 端口用于连接第三方摇杆</div>
-            <div><strong>固定方式：</strong>配备行业标准三脚架螺纹螺孔（1/4-20 螺口与 AMPS 标准螺纹安装孔）</div>
-            <div><strong>供电方式：</strong>内置可充电电池，配 USB-C 连接线</div>
-          </div>
+        <div style="font-size:12px; color:var(--ms-text-secondary); display:flex; justify-content:space-between; align-items:center;">
+          <span>当前筛选结果：<strong>${filtered.length}</strong> 款手柄展示中</span>
+          <span style="opacity:0.8;">💡 点击卡片可查看微软官方全色彩及详细微观硬件结构</span>
         </div>
       </div>
 
-      <div style="margin-top:24px; padding:14px 18px; background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:8px; font-size:12px; color:var(--ms-text-secondary); line-height:1.6;">
-        🛡️ <strong>零杜撰参数守则：</strong>Xbox 手柄芯片方案、无线射频天线功率与电气白皮书未在对应官方公开规格页披露之参数严格保持未披露状态，严禁引用非官方民间拆解猜测。
+      <!-- 🎮 手柄全图鉴高密度网格 -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:20px;">
+        ${filtered.map(ctrl => {
+          let badgeClass = 'spec-badge green';
+          if (ctrl.status === 'discontinued') badgeClass = 'spec-badge';
+          if (ctrl.status === 'upcoming') badgeClass = 'spec-badge blue';
+          if (ctrl.seriesType === 'limited') badgeClass = 'spec-badge gold';
+
+          const regionBadgeHtml = ctrl.salesRegion === 'us_only'
+            ? '<span class="spec-badge gold" style="font-size:11px; padding:2px 8px; font-weight:700;">🇺🇸 美国限定</span>'
+            : (ctrl.salesRegion === 'cn_official'
+              ? '<span class="spec-badge green" style="font-size:11px; padding:2px 8px; font-weight:700;">🇨🇳 国行在售</span>'
+              : '<span class="spec-badge" style="font-size:11px; padding:2px 8px; background:var(--ms-bg-subtle); color:var(--ms-text-tertiary);">历史经典款</span>');
+
+          return `
+            <div class="device-card-mini" style="text-align:left; padding:18px 20px; align-items:flex-start; height:auto; transition:transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
+              <!-- 卡片顶部信息条 -->
+              <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:8px; font-size:11.5px; flex-wrap:wrap; gap:6px;">
+                <span style="color:var(--ms-text-tertiary); font-weight:600;">${ctrl.generationName} · ${ctrl.year} 年</span>
+                <div style="display:flex; gap:4px; align-items:center;">
+                  ${regionBadgeHtml}
+                  <span class="${badgeClass}" style="font-size:11px; padding:2px 8px;">${ctrl.statusLabel}</span>
+                </div>
+              </div>
+
+              <!-- 手柄真实官方摄影大图展示区 -->
+              <div style="width:100%; height:170px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:10px; box-sizing:border-box; overflow:hidden;">
+                <img src="${ctrl.image}" alt="${ctrl.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 6px 12px rgba(0,0,0,0.12));" loading="lazy" onerror="App.hideBrokenImage(this)">
+              </div>
+
+              <!-- 标题与色彩徽章 -->
+              <div style="font-size:16px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px; line-height:1.3;">
+                ${ctrl.name}
+              </div>
+              <div style="font-size:11.5px; color:var(--ms-text-tertiary); margin-bottom:10px;">${ctrl.nameEn}</div>
+
+              <!-- 官方色卡指示器 -->
+              <div style="display:inline-flex; align-items:center; gap:8px; padding:4px 10px; background:var(--ms-bg-subtle); border-radius:20px; margin-bottom:12px; font-size:12px; border:1px solid var(--ms-border-subtle);">
+                <span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:${ctrl.colorHex}; box-shadow:0 0 0 1px rgba(0,0,0,0.2) inset;"></span>
+                <span style="font-weight:600; color:var(--ms-text-primary);">${ctrl.colorName}</span>
+              </div>
+
+              <!-- 详细微观规格矩阵 -->
+              <div style="display:flex; flex-direction:column; gap:6px; width:100%; font-size:12px; border-top:1px solid var(--ms-border-subtle); padding-top:12px; color:var(--ms-text-secondary); line-height:1.5;">
+                <div><strong style="color:var(--ms-text-primary);">🕹️ 方向键结构：</strong>${ctrl.dpad}</div>
+                <div><strong style="color:var(--ms-text-primary);">⚡ 扳机技术：</strong>${ctrl.triggers}</div>
+                <div><strong style="color:var(--ms-text-primary);">📶 连接协议：</strong>${ctrl.connectivity}</div>
+                <div><strong style="color:var(--ms-text-primary);">🔋 供电与续航：</strong>${ctrl.battery}</div>
+                <div><strong style="color:var(--ms-text-primary);">🎧 音频接口：</strong>${ctrl.headphoneJack}</div>
+                <div><strong style="color:var(--ms-text-primary);">🏷️ 官方参考价：</strong><span style="color:var(--ms-accent); font-weight:700;">${ctrl.msrp}</span></div>
+              </div>
+
+              <!-- 设计背景故事 -->
+              <div style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--ms-border-subtle); font-size:12px; color:var(--ms-text-tertiary); line-height:1.5;">
+                ${ctrl.description}
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+
+      <div style="margin-top:30px; padding:16px 20px; background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:8px; font-size:12.5px; color:var(--ms-text-secondary); line-height:1.6;">
+        🛡️ <strong>Xbox 手柄档案核验守则：</strong>本中心收录的所有色彩款型、按键机构、微动开关、射频协议及建议售价均与微软 Xbox 官方技术白皮书及发售公报逐一核对。已明确标明国行在售与美国限定（未在大陆发售）版本。
       </div>
     `;
     container.innerHTML = html;
   },
 
-  // 3.4b Xbox 配件专区
-  renderXboxAccessoriesView(container) {
+  // 交互辅助：手柄过滤与搜索
+  setXboxControllerFilter(filterName) {
+    this._xboxCtrlFilter = filterName;
+    const main = document.getElementById('hub-main-content');
+    if (main) this.renderXboxControllersView(main);
+  },
+
+  searchXboxControllers(query) {
+    this._xboxCtrlQuery = query;
+    const main = document.getElementById('hub-main-content');
+    if (main) this.renderXboxControllersView(main);
+  },
+
+  // 3.4c Surface 官方配件专区 (23 款官方原装配件图鉴)
+  renderSurfaceAccessoriesView(container, activeCategory) {
+    const category = activeCategory || 'all';
+    this._activeAccessoryCategory = category;
+    const allAccessories = (typeof Catalog !== 'undefined' && Catalog.accessories) ? Catalog.accessories() : ((typeof SURFACE_DATA !== 'undefined' && SURFACE_DATA.accessories) ? SURFACE_DATA.accessories : []);
+    const query = (this._accessorySearchQuery || '').trim().toLowerCase();
+
+    const filtered = allAccessories.filter(acc => {
+      if (category === 'keyboard' && acc.category !== 'keyboard') return false;
+      if (category === 'pen' && acc.category !== 'pen') return false;
+      if (category === 'dock' && acc.category !== 'dock') return false;
+      if (category === 'mouse' && acc.category !== 'mouse' && acc.category !== 'creative') return false;
+      if (category === 'audio' && acc.category !== 'audio') return false;
+      if (query) {
+        const hay = `${acc.name} ${acc.category} ${acc.releaseYear} ${(acc.features || []).join(' ')} ${JSON.stringify(acc['specs'] || {})}`.toLowerCase();
+        if (!hay.includes(query)) return false;
+      }
+      return true;
+    });
+
+    const categoryTabs = [
+      { id: 'all', label: '全部配件', count: allAccessories.length, icon: '⚡' },
+      { id: 'keyboard', label: '专业键盘盖与键鼠套件', count: allAccessories.filter(a => a.category === 'keyboard').length, icon: '⌨️' },
+      { id: 'pen', label: '触控笔 / 超薄笔', count: allAccessories.filter(a => a.category === 'pen').length, icon: '🖊️' },
+      { id: 'dock', label: '拓展坞与雷电连接坞', count: allAccessories.filter(a => a.category === 'dock').length, icon: '🔌' },
+      { id: 'mouse', label: '鼠标与创作者旋钮', count: allAccessories.filter(a => a.category === 'mouse' || a.category === 'creative').length, icon: '🖱️' },
+      { id: 'audio', label: '音频与降噪耳机', count: allAccessories.filter(a => a.category === 'audio').length, icon: '🎧' }
+    ];
+
+    const categoryNamesMap = {
+      keyboard: '键盘盖与保护套',
+      pen: '触控笔系列',
+      dock: '高速拓展坞与集线器',
+      mouse: '精工鼠标系列',
+      creative: '创作者智能旋钮',
+      audio: '沉浸音频与降噪耳机'
+    };
+
     let html = `
       <div class="view-header">
         <div class="view-title-group">
           <h1>
-            <span>XBOX 配件</span>
+            <span>Surface 官方配件图鉴</span>
+            <span class="header-sub-tag">微软官方原装配件 · 官方技术规格 · 双向全景兼容矩阵</span>
+          </h1>
+          <div class="view-meta-tip">
+            <span>官方认证全量收录 ${allAccessories.length} 款原装主力配件 ｜ 💡 涵盖专业键盘盖、超薄触控笔 2、雷电 4 拓展坞、精准鼠标、降噪耳机与 Dial 智能旋钮 ｜ 零杜撰参数</span>
+          </div>
+        </div>
+        <div class="view-actions">
+          <button class="fluent-btn primary" onclick="App.navigate('#/tools/compat')">
+            📊 配件双向兼容矩阵 ↗
+          </button>
+        </div>
+      </div>
+
+      <!-- 控制台：分类 Tab + 实时搜索 -->
+      <div style="background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:12px; padding:16px 20px; margin:20px 0; box-shadow:var(--ms-shadow-card);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            ${categoryTabs.map(t => `
+              <button class="fluent-btn ${category === t.id ? 'primary' : ''}" style="font-size:12.5px; padding:6px 14px; border-radius:20px;" onclick="App.navigate('#/accessories${t.id === 'all' ? '' : '/' + t.id}')">
+                <span>${t.icon}</span> <span>${t.label} (${t.count})</span>
+              </button>
+            `).join('')}
+          </div>
+          <div style="position:relative; min-width:240px; flex:1; max-width:320px;">
+            <input type="text" placeholder="搜索配件名称、接口、特性..." value="${this._accessorySearchQuery || ''}"
+              style="width:100%; box-sizing:border-box; padding:7px 12px 7px 32px; border-radius:6px; border:1px solid var(--ms-border-subtle); background:var(--ms-bg-subtle); font-size:13px; color:var(--ms-text-primary);"
+              oninput="App.searchAccessories(this.value)">
+            <span style="position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:13px; opacity:0.6;">🔍</span>
+          </div>
+        </div>
+        <div style="font-size:12px; color:var(--ms-text-secondary); display:flex; justify-content:space-between; align-items:center;">
+          <span>当前筛选结果：展示 <strong>${filtered.length}</strong> 款官方原装配件</span>
+          <span style="opacity:0.8;">💡 点击卡片下方支持机型可直达设备参数或跳转兼容矩阵</span>
+        </div>
+      </div>
+
+      <!-- 配件网格 -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:22px; margin-bottom:40px;">
+        ${filtered.map(acc => {
+          const catName = categoryNamesMap[acc.category] || '原装配件';
+          const fullSupported = (acc.compatibilityList || []).filter(d => d.status === 'FULL' && !d.deviceId.startsWith('xbox'));
+          const sampleSupported = fullSupported.slice(0, 4);
+
+          return `
+            <div class="device-card-mini" style="text-align:left; padding:20px; align-items:flex-start; height:auto; transition:transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
+              <!-- 卡片顶部信息条 -->
+              <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:10px;">
+                <span style="font-size:11.5px; font-weight:700; color:var(--ms-accent); background:var(--ms-accent-light); padding:3px 8px; border-radius:12px;">${catName}</span>
+                <span class="spec-badge" style="font-size:11px; padding:2px 8px; background:var(--ms-bg-card-secondary); color:var(--ms-text-secondary);">${acc.categoryName || '官方原装'}</span>
+              </div>
+
+              <!-- 产品官方大图展示区 -->
+              <div style="width:100%; height:160px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:12px; box-sizing:border-box; overflow:hidden;">
+                <img src="${acc.image}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.08));" loading="lazy" onerror="App.hideBrokenImage(this)">
+              </div>
+
+              <!-- 标题与特性导语 -->
+              <div style="font-size:16.5px; font-weight:700; color:var(--ms-text-primary); margin-bottom:6px; line-height:1.35;">
+                ${acc.name}
+              </div>
+              <div style="font-size:12.5px; color:var(--ms-text-secondary); line-height:1.45; margin-bottom:12px;">
+                ${acc.tagline || ''}
+              </div>
+
+              <!-- 核心功能亮点 (4 项官方认证特性) -->
+              ${(acc.features && acc.features.length) ? `
+                <div style="font-size:12px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px; width:100%;">
+                  <ul style="margin:0; padding-left:16px;">
+                    ${acc.features.slice(0, 4).map(f => `<li style="margin-bottom:3px;">${f}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+
+              <!-- 适配代表机型 -->
+              <div style="margin-top:auto; width:100%; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
+                <div style="font-size:11px; font-weight:700; color:var(--ms-text-tertiary); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.5px;">
+                  原生适配支持机型 (${fullSupported.length} 款)
+                </div>
+                <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:12px;">
+                  ${sampleSupported.map(dev => {
+                    const devObj = App.getDevice(dev.deviceId);
+                    const label = devObj ? devObj.name : dev.deviceId;
+                    return `
+                      <span class="accessory-compat-chip" style="font-size:11px; padding:2px 8px; border-radius:10px; background:var(--ms-bg-subtle); color:var(--ms-text-primary); cursor:pointer; border:1px solid var(--ms-border-subtle);" onclick="App.navigateToDetail('', '${dev.deviceId}')" title="${dev.note || '完美支持'}">
+                        ${label}
+                      </span>
+                    `;
+                  }).join('')}
+                  ${fullSupported.length > 4 ? `
+                    <span style="font-size:11px; padding:2px 6px; color:var(--ms-accent); cursor:pointer;" onclick="App.navigate('#/tools/compat'); setTimeout(() => { if (typeof ToolsEngine !== 'undefined') ToolsEngine.selectAccessory('${acc.id}'); }, 80);">
+                      +更多${fullSupported.length - 4}款
+                    </span>
+                  ` : ''}
+                </div>
+
+                <!-- 操作按钮组 -->
+                <div style="display:flex; gap:8px;">
+                  <button class="fluent-btn-sm" style="flex:1; justify-content:center; text-align:center;" onclick="App.navigate('#/tools/compat'); setTimeout(() => { if (typeof ToolsEngine !== 'undefined') ToolsEngine.selectAccessory('${acc.id}'); }, 80);" title="在全景矩阵中查看所有支持设备状态与注意事项">
+                    📊 查看兼容矩阵 ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+
+    container.innerHTML = html;
+  },
+
+  searchAccessories(query) {
+    this._accessorySearchQuery = query;
+    const main = document.getElementById('hub-main-content');
+    if (main) this.renderSurfaceAccessoriesView(main, this._activeAccessoryCategory);
+  },
+
+  // 3.4b Xbox 配件专区 (官方扩展图鉴)
+  renderXboxAccessoriesView(container) {
+    const accessories = (typeof XBOX_ACCESSORIES !== 'undefined' ? XBOX_ACCESSORIES : (typeof XBOX_LINEUP !== 'undefined' && XBOX_LINEUP.accessories ? XBOX_LINEUP.accessories : []));
+
+    let html = `
+      <div class="view-header">
+        <div class="view-title-group">
+          <h1>
+            <span>Xbox 官方配件图鉴</span>
             <span class="header-sub-tag">Xbox 官方存储扩展、音频与周边生态</span>
           </h1>
           <div class="view-meta-tip">
-            <span>最后更新：2026-09-29 ｜ 💡 微软官方认证扩展硬件体系 ｜ 零杜撰参数治理</span>
+            <span>官方认证收录 ${accessories.length} 款主力配件 ｜ 💡 包含希捷定制存储卡、官方无线双模耳机、Windows 10/11 极速无线适配器与电池包 ｜ 零杜撰参数</span>
           </div>
         </div>
         <div class="view-actions">
@@ -867,82 +1217,66 @@ const App = {
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:18px; margin-top:20px;">
-        <!-- 卡片 1: 专用存储扩展卡 -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox Series X|S 专用存储扩展卡</div>
-            <span class="spec-badge green">官方认证</span>
-          </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            与希捷 (Seagate) 及西部数据 (WD_BLACK) 联合开发的专属定制存储卡，主机专属插槽即插即用。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>容量档位：</strong>512GB / 1TB / 2TB 定制 PCIe Gen 4x2 NVMe SSD</div>
-            <div><strong>架构集成：</strong>完全无缝接入 Xbox 快速架构 (Xbox Velocity Architecture)</div>
-            <div><strong>读写性能：</strong>与内置 SSD 速度完全一致（2.4 GB/s 原始吞吐，4.8 GB/s 硬件解压吞吐）</div>
-            <div><strong>游戏体验：</strong>支持直接运行次世代优化游戏，完全支持快速唤醒 (Quick Resume)</div>
-          </div>
-        </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:22px; margin-top:20px;">
+        ${accessories.map(acc => `
+          <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto; transition:transform 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
+            <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:10px;">
+              <span style="font-size:12px; font-weight:700; color:var(--ms-accent);">${acc.categoryName}</span>
+              <span class="spec-badge green">${acc.statusLabel}</span>
+            </div>
 
-        <!-- 卡片 2: Xbox 无线立体声耳机 -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无线立体声耳机</div>
-            <span class="spec-badge green">官方在售</span>
-          </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            低延迟原生配对次世代游戏耳机。无需适配器或线缆直接与 Xbox 主机无线连接。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>空间音频：</strong>支持 Windows Sonic、Dolby Atmos 与 DTS Headphone:X</div>
-            <div><strong>双模并发：</strong>主机原生 Xbox 无线直连 + 同时蓝牙配对手机/PC 进行通话</div>
-            <div><strong>耳罩交互：</strong>两侧旋转式大拨盘（快速调节游戏与语音平衡、总音量）</div>
-            <div><strong>麦克风：</strong>双麦克风波束成形拾音降噪，支持自动静音</div>
-            <div><strong>续航能力：</strong>内置锂电，续航最高达 15 小时；USB-C 充电 30 分钟可用 4 小时</div>
-          </div>
-        </div>
+            <!-- 产品真实大图展示 -->
+            <div style="width:100%; height:180px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:10px; box-sizing:border-box;">
+              <img src="${acc.image}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.1));" loading="lazy" onerror="App.hideBrokenImage(this)">
+            </div>
 
-        <!-- 卡片 3: Xbox 主机专用可充电电池 + USB-C -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 官方可充电电池 + USB-C 连线</div>
-            <span class="spec-badge green">官方在售</span>
-          </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            告别抛弃型一次性干电池，随时边玩边充的官方电源解决方案。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>充电特性：</strong>支持边玩边充，在游戏过程或主机待机状态下均可充满</div>
-            <div><strong>充满时间：</strong>约 4 小时即可完全充满</div>
-            <div><strong>连续续航：</strong>单次充电可持续畅玩最高达 30 小时</div>
-            <div><strong>包装附随：</strong>高品质 2.7 米长 USB-C 数据/充电线</div>
-          </div>
-        </div>
+            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">${acc.name}</div>
+            <div style="font-size:12px; color:var(--ms-text-tertiary); margin-bottom:12px;">${acc.nameEn}</div>
 
-        <!-- 卡片 4: Xbox 无线适配器 (Windows 10/11) -->
-        <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto;">
-          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
-            <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary);">Xbox 无线适配器 (适用于 Windows PC)</div>
-            <span class="spec-badge green">官方在售</span>
+            <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
+              ${acc.description}
+            </div>
+
+            <!-- 参数列表 -->
+            <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px; color:var(--ms-text-secondary);">
+              ${Object.keys(acc.details || {}).map(k => {
+                const labelMap = {
+                  capacity: '💾 存储容量',
+                  interface: '🔌 硬件接口',
+                  speed: '🚀 读写吞吐',
+                  architecture: '⚡ 快速架构',
+                  features: '✨ 核心特性',
+                  driver: '🔊 扬声单元',
+                  spatialAudio: '🎧 空间音频',
+                  connectivity: '📶 无线协议',
+                  battery: '🔋 供电续航',
+                  mic: '🎙️ 麦克风',
+                  controls: '🎛️ 机身交互',
+                  headsetSupport: '🎧 耳机支持',
+                  port: '💻 接口规格',
+                  dimensions: '📐 物理尺寸',
+                  weight: '⚖️ 机身净重',
+                  batteryType: '🔋 电池类型',
+                  chargingTime: '⏱️ 充满耗时',
+                  batteryLife: '🎮 游戏续航',
+                  cable: '🧵 随附线缆',
+                  compatibility: '🤝 兼容设备'
+                };
+                return `<div><strong style="color:var(--ms-text-primary);">${labelMap[k] || k}：</strong>${acc.details[k]}</div>`;
+              }).join('')}
+              <div style="margin-top:6px;"><strong style="color:var(--ms-text-primary);">🏷️ 官方参考价：</strong><span style="color:var(--ms-accent); font-weight:700;">${acc.price}</span></div>
+            </div>
           </div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin-bottom:14px;">
-            将 Xbox 主机原生超低延迟无线连接体验扩展至 Windows 10/11 PC。
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; width:100%; font-size:12.5px; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
-            <div><strong>多设备并发：</strong>单适配器支持同时连接多达 8 个 Xbox 无线控制器</div>
-            <div><strong>无线音频：</strong>支持高达 4 个聊天耳机或 2 个立体声耳机的无线高保真音频传输</div>
-            <div><strong>体积设计：</strong>相比一代适配器体积缩减 66%，即插即用</div>
-          </div>
-        </div>
+        `).join('')}
       </div>
 
       <div style="margin-top:24px; padding:14px 18px; background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:8px; font-size:12px; color:var(--ms-text-secondary); line-height:1.6;">
-        🛡️ <strong>设备兼容性声明：</strong>Xbox 存储扩展卡仅适用于 Xbox Series X 与 Xbox Series S；传统 USB 3.1 外接移动硬盘可用于存放历代向下兼容 Xbox One / Xbox 360 游戏，但不可直接运行次世代优化游戏。
+        🛡️ <strong>官方扩展协议守则：</strong>Xbox Series X|S 专属存储扩展卡利用定点 PCIe 4.0 x2 直连通道提供与机身内置 SSD 毫无二致的 4.8 GB/s 瞬时硬件解压带宽；通用 USB 3.1 移动硬盘仅供存放与运行向下兼容作品。
       </div>
     `;
     container.innerHTML = html;
   },
+
 
   // 3.5 Surface 商用版专区 (Surface for Business) - 微软官方 Learn 架构全线对齐
   renderBusinessView(container) {
@@ -1360,17 +1694,19 @@ const App = {
 
     // 默认展示全量参数表
     const isComparisonTab = this.activeDetailTab === 'comparison';
+    const shotIdentityLabel = activeShot.identity === 'official' ? '官方图像' : (Catalog.portraitLabel(activeShot) || '同系列示意');
+    const shotRoleLabel = activeColorName ? `${activeColorName} 配色图` : '代表图';
 
     let html = `
-      <div style="margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}" style="font-size:13.5px; color:var(--ms-accent); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
-          ← 返回 ${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))} 列表
-        </a>
-        <div style="font-size:12px; color:var(--ms-text-tertiary);">
-          核验来源：${this.spec(dev, 'sourceReliability') || '微软官方说明书'} ｜ 核验日期：${this.spec(dev, 'lastVerified') || '2026-09'}
-        </div>
+      <div class="catalog-detail-layout">
+      <section class="catalog-detail-main">
+      <div class="catalog-breadcrumb">
+        <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}">产品目录</a>
+        <span>›</span>
+        <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}">${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))}</a>
+        <span>›</span>
+        <strong>${this.escapeText(dev.name)}</strong>
       </div>
-
       <!-- 单机顶部 Hero 核心视觉区 (M3 黄金比例舞台与外观展示) -->
       <div class="product-detail-hero">
         <div class="detail-hero-left">
@@ -1411,7 +1747,7 @@ const App = {
         </div>
 
         <div class="detail-hero-right">
-          <div style="display:flex; gap:8px; align-items:center; margin-bottom:10px; flex-wrap:wrap;">
+          <div class="detail-hero-status-row">
             ${this.recentLaunchBadge(dev)}
             ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge">${dev.generation}</span>
@@ -1419,98 +1755,62 @@ const App = {
             ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge copilot">80 TOPS AI</span>' : ''}
           </div>
 
-          <h1 style="font-size:clamp(21px, 3.2vw, 32px); font-weight:800; color:var(--ms-text-primary); margin-bottom:6px; line-height:1.25; letter-spacing:-0.5px;">
+          <h1 class="detail-hero-title">
             ${dev.name}
           </h1>
-          <div style="font-size:14px; color:var(--ms-text-tertiary); margin-bottom:10px; font-weight:500;">${dev.nameEn}</div>
-          <p style="font-size:clamp(13.5px, 1.6vw, 15px); color:var(--ms-text-secondary); line-height:1.6; margin-bottom:12px;">${dev.tagline}</p>
-          ${this.audienceHtml(dev)}
-          ${this.highlightsHtml(dev)}
-
-          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
-            <button class="fluent-btn ${isSelected ? 'active' : 'primary'}" onclick="ComparisonEngine.toggleDevice('${dev.id}')">
-              ${isSelected ? '✓ 已在横向对比池' : '+ 加入横向对比池'}
-            </button>
-            ${prevDev ? `
-              <button class="fluent-btn" onclick="App.switchDetailTab('comparison')">
-                🔄 查看与上一代 (${prevDev.name}) 升级比对
-              </button>
-            ` : ''}
-            ${(dev.isCommercial || dev.segment === 'commercial') ? `
-              <a href="${this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl') || 'https://www.microsoftstore.com.cn/commercial'}" target="_blank" rel="noopener noreferrer" class="fluent-btn success" style="text-decoration:none;" title="直达微软官方商用商城选配">
-                <span>🏢</span> 微软商用商城选配 ↗
-              </a>
-              ${dev.learnDocUrl ? `
-                <a href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none;" title="查看微软官方技术规格书">
-                  <span>📘</span> 官方规格说明书 ↗
-                </a>
-              ` : ''}
-            ` : `
-              <a href="${this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl') || 'https://www.microsoftstore.com.cn/surface'}" target="_blank" rel="noopener noreferrer" class="fluent-btn primary" style="text-decoration:none;" title="直达微软官方商城零售选配">
-                <span>🛒</span> 微软官方商城选配 ↗
-              </a>
-              ${dev.learnDocUrl ? `
-                <a href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none;" title="查看微软官方技术规格书">
-                  <span>📘</span> 官方规格说明书 ↗
-                </a>
-              ` : ''}
-            `}
-            <button class="fluent-btn" onclick="App.scrollToSpecsBottom()" style="display:inline-flex; align-items:center; gap:6px;">
-              📋 查看全量大表参数 ↓
-            </button>
+          <div class="detail-hero-name-en">${dev.nameEn}</div>
+          <p class="detail-hero-tagline">${this.escapeText(dev.tagline || '')}</p>
+          <div class="detail-hero-meta">
+            <div class="hero-meta-card"><span>发布日期</span><strong>${this.spec(dev, 'releaseDate') || dev.year || '—'}</strong></div>
+            <div class="hero-meta-card"><span>产品定位</span><strong>${this.escapeText(dev.tagline || 'Surface 设备')}</strong></div>
+            <div class="hero-meta-card"><span>起始价格</span><strong>${Catalog.presentDeviceSpec(dev, 'startingPriceCny')}</strong></div>
+            <div class="hero-meta-card"><span>目标客户</span><strong>${this.escapeText(Catalog.audience(dev) || '个人与企业用户')}</strong></div>
           </div>
-
-          <!-- 官方数据存证证书卡片 -->
-          <div style="background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:10px; padding:10px 14px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; font-size:12.5px;">
-            <div style="display:flex; align-items:center; gap:6px;">
-              <span style="font-size:15px;">🛡️</span>
-              <strong style="color:var(--ms-text-primary);">官方数据存证：</strong>
-              <span style="color:var(--ms-text-secondary);">${this.spec(dev, 'sourceReliability') || '微软官方说明书'}（核验时间：${this.spec(dev, 'lastVerified') || '2026-09'}）</span>
-            </div>
-            <a href="#/audit" style="color:var(--ms-accent); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:4px;">
-              查阅全系 ${this.listDevices().length} 款核验总账与 Excel ↗
-            </a>
+          <div class="detail-hero-links">
+            ${(this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')) ? `
+              <a class="hero-link-btn" href="${this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')}" target="_blank" rel="noopener noreferrer">▣ 查看官方产品页 ↗</a>
+            ` : ''}
+            ${dev.learnDocUrl ? `<a class="hero-link-btn" href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer">▤ 技术规格（Microsoft Learn）↗</a>` : ''}
+            ${this.spec(dev, 'supportUrl') ? `<a class="hero-link-btn" href="${this.spec(dev, 'supportUrl')}" target="_blank" rel="noopener noreferrer">▱ 支持页面 ↗</a>` : ''}
           </div>
 
           <!-- 代际快速跳转 -->
-          <div style="display:flex; gap:24px; font-size:13px; color:var(--ms-text-tertiary); border-top:1px solid var(--ms-border-subtle); padding-top:16px;">
-            <div>上一代：${prevDev ? `<a href="#/${(prevDev.segment === 'commercial' || prevDev.isCommercial) ? 'business' : 'consumer'}/${prevDev.categoryId}/${prevDev.id}" style="color:var(--ms-accent); font-weight:600; text-decoration:none;">${prevDev.name}</a>` : '— (首代产品)'}</div>
-            <div>下一代：${nextDev ? `<a href="#/${(nextDev.segment === 'commercial' || nextDev.isCommercial) ? 'business' : 'consumer'}/${nextDev.categoryId}/${nextDev.id}" style="color:var(--ms-accent); font-weight:600; text-decoration:none;">${nextDev.name}</a>` : '— (当前最新代)'}</div>
+          <div class="detail-generation-links">
+            <div>上一代：${prevDev ? `<a href="#/${(prevDev.segment === 'commercial' || prevDev.isCommercial) ? 'business' : 'consumer'}/${prevDev.categoryId}/${prevDev.id}">${prevDev.name}</a>` : '—'}</div>
+            <div>下一代：${nextDev ? `<a href="#/${(nextDev.segment === 'commercial' || nextDev.isCommercial) ? 'business' : 'consumer'}/${nextDev.categoryId}/${nextDev.id}">${nextDev.name}</a>` : '—'}</div>
           </div>
         </div>
       </div>
 
-      ${this.renderMetricCards(dev)}
-
       <!-- M3 详情页切换选项卡 (Tabs Navigation) -->
-      <div class="m3-tab-bar" style="margin-top:28px; margin-bottom:16px;">
+      <div class="m3-tab-bar catalog-detail-tabs-bar">
         <button class="m3-tab-item ${!isComparisonTab ? 'active' : ''}" data-tab="specs" onclick="App.switchDetailTab('specs')">
-          <span>📋 13 大类官方标准规格全量大表</span>
+          <span>技术规格</span>
         </button>
         ${prevDev ? `
           <button class="m3-tab-item ${isComparisonTab ? 'active' : ''}" data-tab="comparison" onclick="App.switchDetailTab('comparison')">
-            <span>⚖️ 跨代进化对比（对比上一代 ${prevDev.name}）</span>
+            <span>机型与配置</span>
           </button>
         ` : ''}
+        <span class="catalog-detail-tab-static">配件</span>
+        <span class="catalog-detail-tab-static">服务与保修</span>
+        <span class="catalog-detail-tab-static">资源库</span>
+        <div class="catalog-detail-tab-actions">
+          <button class="fluent-btn-sm" onclick="ComparisonEngine.expandAllGroups()">⌃ 展开全部</button>
+          <button class="fluent-btn-sm" onclick="ComparisonEngine.collapseAllGroups()">⌄ 折叠全部</button>
+        </div>
       </div>
 
-      <!-- 选项卡面板 1: 13 大类全量参数规格大表 (默认直出展示) -->
+      <!-- 选项卡面板 1: 13 大类全量参数手风琴折叠卡片 (默认直出展示) -->
       <div class="m3-tab-pane" data-pane="specs" style="display: ${!isComparisonTab ? 'block' : 'none'};">
-        <div class="home-section-header" style="margin-bottom:12px;">
+        <div class="detail-specs-heading">
           <div>
-            <h2 style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">
-              📋 ${dev.name} 官方标准全量规格大表
-            </h2>
-            <div style="font-size:13px; color:var(--ms-text-tertiary);">
-              完整包含处理器架构、NPU算力、双层OLED/屏幕、存储选项、续航、端口与生态全部 13 大类官方技术参数
-            </div>
+            <h2 aria-label="${dev.name} · 13 大类官方标准规格全量大表">${dev.name} · 技术规格</h2>
+            <p>字段按官方资料分组展示；没有公布的参数保持原始核验状态。</p>
           </div>
-          <div style="display:flex; gap:8px;">
-            <button class="fluent-btn-sm" onclick="ComparisonEngine.expandAllGroups()">全部展开</button>
-            <button class="fluent-btn-sm" onclick="ComparisonEngine.collapseAllGroups()">全部折叠</button>
-          </div>
+          <span class="detail-verification-inline">${this.getDeviceVerificationBadge(dev.id)}</span>
         </div>
-        ${ComparisonEngine.renderComparisonTable([dev])}
+        ${ComparisonEngine.renderDetailAccordion(dev)}
       </div>
 
       <!-- 选项卡面板 2: 跨代进化对比 (Generations) -->
@@ -1547,6 +1847,81 @@ const App = {
             <p>本型号是 ${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))} 的第一代开山之作，暂无更早一代前置机型可供比对。</p>
           </div>
         `}
+      </div>
+      </section>
+
+      <aside class="detail-utility-rail" aria-label="产品证据与图片信息">
+        <div class="utility-rail-section utility-action-section">
+          <button class="fluent-btn primary utility-primary-action" onclick="ComparisonEngine.toggleDevice('${dev.id}')">
+            ${isSelected ? '✓ 已加入对比' : '+ 加入对比'}
+          </button>
+          <button class="fluent-btn utility-secondary-action" type="button" title="收藏功能待接入">
+            ♡ 收藏产品
+          </button>
+        </div>
+
+        <div class="utility-rail-section">
+          <div class="utility-rail-heading">
+            <span>官方资源</span>
+            <span class="utility-rail-count">${dev.learnDocUrl || dev.officialDocUrl ? '已绑定' : '待补充'}</span>
+          </div>
+          <div class="utility-link-list">
+            ${(this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')) ? `
+              <a href="${this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')}" target="_blank" rel="noopener noreferrer">▣ 产品页面 ↗</a>
+            ` : ''}
+            ${dev.learnDocUrl ? `<a href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer">▤ 技术规格 ↗</a>` : ''}
+            ${this.spec(dev, 'supportUrl') ? `<a href="${this.spec(dev, 'supportUrl')}" target="_blank" rel="noopener noreferrer">▣ 支持页面 ↗</a>` : ''}
+            <a href="#/audit">▧ 产品图片 ↗</a>
+            <a href="#/audit">▤ 宣传素材 ↗</a>
+          </div>
+        </div>
+
+        <div class="utility-rail-section">
+          <div class="utility-rail-heading">
+            <span>产品图片</span>
+            <a href="#/audit" class="utility-rail-count utility-rail-link">查看全部 (${colorRows.length || 1})</a>
+          </div>
+          <div class="utility-rail-main-image">
+            ${this.picture(activeShot, {
+              slot: 'detail',
+              id: 'detail-rail-main-img',
+              className: 'utility-main-img',
+              alt: dev.name,
+              loading: 'lazy',
+              onerror: 'App.hideBrokenImage(this)'
+            })}
+          </div>
+          <div class="utility-image-caption">
+            <strong id="detail-rail-image-label">${shotRoleLabel}</strong>
+            <span id="detail-rail-color-label">${shotIdentityLabel}</span>
+          </div>
+          <div class="utility-image-carousel-row">
+            <div class="utility-image-grid">
+              ${colorRows.slice(0, 4).map((color) => {
+                const shot = this.shot(dev, color.name);
+                return `
+                  <button type="button" class="utility-image-thumb ${color.name === activeColorName ? 'active' : ''}" onclick="App.switchDetailColor('${dev.id}', '${color.name}', this)" title="${color.name}">
+                    ${this.picture(shot, { slot: 'card', className: 'utility-thumb-img', alt: `${dev.name} ${color.name}`, loading: 'lazy', onerror: 'App.hideBrokenImage(this)' })}
+                  </button>
+                `;
+              }).join('')}
+            </div>
+            ${colorRows.length > 1 ? `<button type="button" class="utility-image-arrow-next" onclick="App.nextDetailImage('${dev.id}')" title="查看下一张图片">›</button>` : ''}
+          </div>
+        </div>
+
+        <div class="utility-rail-section utility-status-section">
+          <div class="utility-rail-heading"><span>产品状态</span></div>
+          <div class="utility-status-row">${ComparisonEngine.renderStatusBadge(dev.status)}</div>
+          <dl class="utility-meta-list">
+            <div><dt>产品线</dt><dd>${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))}</dd></div>
+            <div><dt>版本</dt><dd>${dev.generation || '—'}</dd></div>
+            <div><dt>核验日期</dt><dd>${this.spec(dev, 'lastVerified') || '2026-09'}</dd></div>
+            <div><dt>图像身份</dt><dd id="detail-rail-meta-identity">${shotIdentityLabel}</dd></div>
+            <div><dt>备注</dt><dd>${this.spec(dev, 'sourceReliability') || '—'}</dd></div>
+          </dl>
+        </div>
+      </aside>
       </div>
     `;
 
@@ -1877,165 +2252,489 @@ const App = {
   },
 
   // 9. 侧栏渲染与高亮状态
+  isProductDetailRoute(path = this.activeRoute.path) {
+    return /^\/(consumer|business)\/[^/]+\/[^/]+$/.test(path || '');
+  },
+
+  syncLayoutMode() {
+    if (typeof document === 'undefined') return;
+    document.body.classList.toggle('catalog-explorer-detail', this.isProductDetailRoute());
+  },
+
+  detailCatalogStatusLabel(status) {
+    const labels = {
+      current_cn: '已发布',
+      upcoming: '即将推出',
+      discontinued: '已停止销售',
+      legacy: '历史型号',
+      current_global: '全球在售'
+    };
+    return labels[status] || '待确认';
+  },
+
+  detailFilterState: {
+    keyword: '',
+    series: 'all',
+    status: 'all',
+    sort: 'default'
+  },
+
+  updateDetailFilter(key, val) {
+    if (key === 'keyword') this.detailFilterState.keyword = String(val || '').trim().toLowerCase();
+    if (key === 'series') this.detailFilterState.series = String(val || 'all');
+    if (key === 'status') this.detailFilterState.status = String(val || 'all');
+    if (key === 'sort') this.detailFilterState.sort = String(val || 'default');
+    this.applyDetailCatalogFilters();
+  },
+
+  applyDetailCatalogFilters() {
+    const { keyword, series, status, sort } = this.detailFilterState;
+    document.querySelectorAll('.detail-catalog-group').forEach(group => {
+      const container = group.querySelector('.detail-catalog-items');
+      if (!container) return;
+      const items = [...container.querySelectorAll('.detail-catalog-item')];
+      items.forEach(item => {
+        const text = (item.dataset.search || item.textContent || '').toLowerCase();
+        const matchesKeyword = !keyword || text.includes(keyword);
+        const matchesSeries = (series === 'all') || (item.dataset.series === series);
+        let matchesStatus = true;
+        if (status === '已发布' || status === 'current_cn') {
+          matchesStatus = item.dataset.status === 'current_cn';
+        } else if (status === '已停止销售' || status === 'discontinued') {
+          matchesStatus = item.dataset.status === 'discontinued' || item.dataset.status === 'legacy';
+        } else if (status === '即将推出' || status === 'upcoming') {
+          matchesStatus = item.dataset.status === 'upcoming';
+        }
+        item.hidden = !(matchesKeyword && matchesSeries && matchesStatus);
+      });
+
+      // 排序
+      if (sort === '最新优先' || sort === 'newest') {
+        items.sort((a, b) => (Number(b.dataset.year) || 0) - (Number(a.dataset.year) || 0));
+        items.forEach(el => container.appendChild(el));
+      } else if (sort === '最早优先' || sort === 'oldest') {
+        items.sort((a, b) => (Number(a.dataset.year) || 9999) - (Number(b.dataset.year) || 9999));
+        items.forEach(el => container.appendChild(el));
+      } else {
+        items.sort((a, b) => (Number(a.dataset.order) || 0) - (Number(b.dataset.order) || 0));
+        items.forEach(el => container.appendChild(el));
+      }
+
+      const visible = items.some(item => !item.hidden);
+      group.hidden = !visible;
+    });
+  },
+
+  filterDetailCatalog(query) {
+    this.updateDetailFilter('keyword', query);
+  },
+
+  renderDetailCatalogSidebar(sidebar) {
+    const current = this.getDevice(this.activeRoute.path.split('/').pop());
+    const segment = current && (current.segment === 'commercial' || current.isCommercial) ? 'commercial' : 'consumer';
+    const categories = segment === 'commercial'
+      ? (SURFACE_DATA.commercialCategories || [])
+      : (SURFACE_DATA.consumerCategories || []);
+    const activeSeriesId = current ? Taxonomy.seriesIdOf(current) : this.activeRoute.path.split('/')[2];
+    const orderedCategories = [
+      ...categories.filter(cat => cat.seriesId === activeSeriesId),
+      ...categories.filter(cat => cat.seriesId !== activeSeriesId)
+    ];
+
+    const groups = orderedCategories.map(cat => {
+      const devices = this.listDevices({ seriesId: cat.seriesId, segment });
+      if (!devices.length) return '';
+      const isActiveGroup = cat.seriesId === activeSeriesId;
+      return `
+        <section class="detail-catalog-group ${isActiveGroup ? 'active' : ''}">
+          <div class="detail-catalog-group-heading">
+            <strong>${this.escapeText(cat.name)}</strong>
+            <span>${devices.length} 款产品</span>
+          </div>
+          <div class="detail-catalog-items">
+            ${devices.map((dev, devIdx) => {
+              const shot = this.shot(dev);
+              const active = dev.id === (current && current.id);
+              const year = this.spec(dev, 'releaseDate') || dev.year || '—';
+              const catLabel = cat.name ? cat.name.replace(/系列|机型/g, '') : 'Surface';
+              const cleanYear = String(year).slice(0, 4);
+              const itemSub = `${catLabel} · ${cleanYear}`;
+              const aliases = Array.isArray(dev.aliases) ? dev.aliases.join(' ') : '';
+              return `
+                <button type="button"
+                  class="detail-catalog-item ${active ? 'active' : ''}"
+                  data-search="${this.escapeText(`${dev.name} ${dev.nameEn || ''} ${dev.generation || ''} ${cat.name} ${aliases}`)}"
+                  data-series="${this.escapeText(cat.name)}"
+                  data-status="${dev.status}"
+                  data-year="${cleanYear}"
+                  data-order="${devIdx}"
+                  onclick="App.navigateToDetail('${cat.seriesId}', '${dev.id}')">
+                  <span class="detail-catalog-item-image">
+                    ${this.picture(shot, {
+                      slot: 'card',
+                      className: 'catalog-item-image',
+                      alt: dev.name,
+                      loading: 'lazy',
+                      onerror: 'App.hideBrokenImage(this)'
+                    })}
+                  </span>
+                  <span class="detail-catalog-item-copy">
+                    <span class="detail-catalog-item-title">${this.escapeText(dev.name)}</span>
+                    <span class="detail-catalog-item-meta">${this.escapeText(itemSub)}</span>
+                  </span>
+                  <span class="detail-catalog-status ${dev.status}">${this.detailCatalogStatusLabel(dev.status)}</span>
+                </button>
+              `;
+            }).join('')}
+          </div>
+        </section>
+      `;
+    }).join('');
+
+    sidebar.classList.add('catalog-detail-sidebar');
+    sidebar.innerHTML = `
+      <div class="catalog-detail-sidebar-inner">
+        <div class="detail-catalog-tabs" role="tablist" aria-label="目录视图">
+          <button type="button" class="detail-catalog-tab active" role="tab" aria-selected="true" onclick="App.navigate('#/')">
+            <span class="catalog-tab-icon">▦</span>产品目录
+          </button>
+          <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" onclick="App.navigate('#/compare')">
+            <span class="catalog-tab-icon">▣</span>对比 (${ComparisonEngine.selectedIds.length})
+          </button>
+          <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" title="收藏功能待接入">
+            <span class="catalog-tab-icon">♡</span>收藏 (0)
+          </button>
+        </div>
+        <div class="detail-catalog-controls">
+          <label class="detail-catalog-search">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" placeholder="搜索产品、型号或关键词" aria-label="搜索产品、型号或关键词" value="${this.detailFilterState.keyword}" oninput="App.updateDetailFilter('keyword', this.value)">
+          </label>
+          <div class="detail-catalog-selects">
+            <select aria-label="按系列筛选" onchange="App.updateDetailFilter('series', this.value)">
+              <option value="all" ${this.detailFilterState.series === 'all' ? 'selected' : ''}>所有系列</option>
+              ${categories.map(cat => `<option value="${this.escapeText(cat.name)}" ${this.detailFilterState.series === cat.name ? 'selected' : ''}>${this.escapeText(cat.name)}</option>`).join('')}
+            </select>
+            <select aria-label="按状态筛选" onchange="App.updateDetailFilter('status', this.value)">
+              <option value="all" ${this.detailFilterState.status === 'all' ? 'selected' : ''}>所有状态</option>
+              <option value="已发布" ${this.detailFilterState.status === '已发布' || this.detailFilterState.status === 'current_cn' ? 'selected' : ''}>已发布</option>
+              <option value="已停止销售" ${this.detailFilterState.status === '已停止销售' || this.detailFilterState.status === 'discontinued' ? 'selected' : ''}>已停止销售</option>
+              <option value="即将推出" ${this.detailFilterState.status === '即将推出' || this.detailFilterState.status === 'upcoming' ? 'selected' : ''}>即将推出</option>
+            </select>
+            <select aria-label="按发布时间筛选" onchange="App.updateDetailFilter('sort', this.value)">
+              <option value="default" ${this.detailFilterState.sort === 'default' ? 'selected' : ''}>发布时间排序</option>
+              <option value="最新优先" ${this.detailFilterState.sort === '最新优先' || this.detailFilterState.sort === 'newest' ? 'selected' : ''}>最新优先</option>
+              <option value="最早优先" ${this.detailFilterState.sort === '最早优先' || this.detailFilterState.sort === 'oldest' ? 'selected' : ''}>最早优先</option>
+            </select>
+          </div>
+        </div>
+        <div class="detail-catalog-list">
+          ${groups}
+          <div class="sidebar-group" style="margin-top:16px; padding-top:12px; border-top:1px solid var(--catalog-line);">
+            <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800; display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; padding:0 8px;">
+              <span class="sidebar-group-label">Xbox 专区</span>
+              <span class="sidebar-group-badge xbox" style="font-size:11px; padding:2px 8px; border-radius:10px; background:rgba(16,124,16,0.1); color:#107c10; font-weight:600;">独立大类</span>
+            </div>
+            <div class="sidebar-nav-item ${this.activeRoute.path.includes('/xbox') ? 'active' : ''}" onclick="App.navigate('#/xbox/consoles')">
+              <div class="nav-item-left">
+                <span class="nav-item-icon">🎮</span>
+                <span class="nav-item-label" title="XBOX 主机">XBOX 主机</span>
+              </div>
+              <span class="nav-item-count">${this.listDevices({ seriesId: 'xbox', segment: 'xbox' }).length}</span>
+            </div>
+            <div class="sidebar-nav-item" onclick="App.navigate('#/xbox/controllers')">
+              <div class="nav-item-left">
+                <span class="nav-item-icon">🕹️</span>
+                <span class="nav-item-label" title="XBOX 手柄">XBOX 手柄</span>
+              </div>
+              <span class="nav-item-count">官方手柄</span>
+            </div>
+            <div class="sidebar-nav-item" onclick="App.navigate('#/xbox/accessories')">
+              <div class="nav-item-left">
+                <span class="nav-item-icon">🎒</span>
+                <span class="nav-item-label" title="XBOX 配件">XBOX 配件</span>
+              </div>
+              <span class="nav-item-count">周边配件</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  sidebarTreeState: {
+    surface: true,
+    commercial: false,
+    xbox: false,
+    accessories: false
+  },
+  _lastAutoExpandedPath: null,
+
+  toggleSidebarTree(key) {
+    if (this.sidebarTreeState[key] === undefined) this.sidebarTreeState[key] = false;
+    this.sidebarTreeState[key] = !this.sidebarTreeState[key];
+    this.renderSidebar();
+  },
+
   renderSidebar() {
     const sidebar = document.getElementById('hub-sidebar-content');
     if (!sidebar) return;
 
+    if (this.isProductDetailRoute()) {
+      this.renderDetailCatalogSidebar(sidebar);
+      return;
+    }
+
+    sidebar.classList.remove('catalog-detail-sidebar');
+    const path = this.activeRoute.path || '/';
+
+    // 路由联动：仅当路由切换时自动展开对应层级，避免重绘冲掉用户手动折叠的操作
+    if (this._lastAutoExpandedPath !== path) {
+      this._lastAutoExpandedPath = path;
+      if (path.startsWith('/business')) {
+        this.sidebarTreeState.commercial = true;
+      } else if (path.includes('xbox')) {
+        this.sidebarTreeState.xbox = true;
+      } else if (path.includes('compat') || path.startsWith('/accessories')) {
+        this.sidebarTreeState.accessories = true;
+      } else if (path.startsWith('/consumer') || path === '/' || path === '') {
+        this.sidebarTreeState.surface = true;
+      }
+    }
+
+    const isHome = path === '/' || path === '';
+
     let html = `
-      <div class="sidebar-group">
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/' ? 'active' : ''}" onclick="App.navigate('#/')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🏠</span>
-            <span class="nav-item-label">参数中心首页</span>
-          </div>
-        </div>
+      <!-- 顶部 首页 -->
+      <div class="sidebar-flat-item ${isHome ? 'active' : ''}" onclick="App.navigate('#/')">
+        <span class="sidebar-action-icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        </span>
+        <span class="sidebar-item-text" style="font-weight:600;">首页</span>
       </div>
 
-      <!-- 🛒 消费版产品系列 (Consumer) -->
-      <div class="sidebar-group">
-        <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
-          <span class="sidebar-group-label">消费版</span>
-        </div>
-    `;
+      <!-- 分组：产品库 -->
+      <div class="sidebar-section-title">产品库</div>
 
-    (SURFACE_DATA.consumerCategories || []).forEach(cat => {
-      const count = this.listDevices({ seriesId: cat.seriesId, segment: 'consumer' }).length;
-      const isActive = this.activeRoute.path === `/consumer/${cat.seriesId}` || 
-                       this.activeRoute.path.startsWith(`/consumer/${cat.seriesId}/`) ||
-                       this.activeRoute.path === `/surface/${cat.seriesId}`;
-      html += `
-        <div class="sidebar-nav-item ${isActive ? 'active' : ''}" onclick="App.navigate('#/consumer/${cat.seriesId}')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">💻</span>
-            <span class="nav-item-label" title="${cat.name}">${cat.name}</span>
+      <!-- 1. Surface 消费版 折叠树 -->
+      <div class="sidebar-tree-group">
+        <div class="sidebar-parent-row ${this.sidebarTreeState.surface ? 'expanded' : ''}" onclick="App.toggleSidebarTree('surface')">
+          <span class="parent-accent-bar"></span>
+          <div class="parent-row-left">
+            <span class="parent-row-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+            </span>
+            <span class="parent-row-title" style="font-weight:600;">Surface 消费版</span>
           </div>
-          <span class="nav-item-count">${count}</span>
+          <span class="parent-chevron">
+            <svg class="parent-chevron-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
         </div>
-      `;
-    });
 
-    html += `
+        ${this.sidebarTreeState.surface ? `
+          <div class="sidebar-tree-children">
+            <div class="tree-sub-item ${path === '/consumer/pro' || path.startsWith('/consumer/pro/') ? 'active' : ''}" onclick="App.navigate('#/consumer/pro')">
+              <span class="tree-sub-text">Surface Pro</span>
+            </div>
+            <div class="tree-sub-item ${path === '/consumer/laptop' || path.startsWith('/consumer/laptop/') ? 'active' : ''}" onclick="App.navigate('#/consumer/laptop')">
+              <span class="tree-sub-text">Surface Laptop</span>
+            </div>
+            <div class="tree-sub-item ${path === '/consumer/sls' || path.startsWith('/consumer/sls/') ? 'active' : ''}" onclick="App.navigate('#/consumer/sls')">
+              <span class="tree-sub-text">Surface Laptop Studio</span>
+            </div>
+            <div class="tree-sub-item ${path === '/consumer/book' || path.startsWith('/consumer/book/') ? 'active' : ''}" onclick="App.navigate('#/consumer/book')">
+              <span class="tree-sub-text">Surface Book</span>
+            </div>
+            <div class="tree-sub-item ${path === '/consumer/go' || path.startsWith('/consumer/go/') ? 'active' : ''}" onclick="App.navigate('#/consumer/go')">
+              <span class="tree-sub-text">Surface Go</span>
+            </div>
+            <div class="tree-sub-item ${path === '/consumer/laptopgo' || path.startsWith('/consumer/laptopgo/') ? 'active' : ''}" onclick="App.navigate('#/consumer/laptopgo')">
+              <span class="tree-sub-text">Surface Laptop Go</span>
+            </div>
+            <div class="tree-sub-item ${path === '/consumer/studio' || path.startsWith('/consumer/studio/') ? 'active' : ''}" onclick="App.navigate('#/consumer/studio')">
+              <span class="tree-sub-text">Surface Studio</span>
+            </div>
+            <div class="tree-sub-item ${path === '/consumer/duo' || path.startsWith('/consumer/duo/') ? 'active' : ''}" onclick="App.navigate('#/consumer/duo')">
+              <span class="tree-sub-text">Surface Duo</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
-      <!-- 🏢 商用版产品系列 (For Business) -->
-      <div class="sidebar-group">
-        <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
-          <span class="sidebar-group-label">商用版</span>
-        </div>
-    `;
-
-    (SURFACE_DATA.commercialCategories || []).forEach(cat => {
-      const count = this.listDevices({ seriesId: cat.seriesId, segment: 'commercial' }).length;
-      const isActive = this.activeRoute.path === `/business/${cat.seriesId}` || 
-                       this.activeRoute.path.startsWith(`/business/${cat.seriesId}/`);
-      html += `
-        <div class="sidebar-nav-item ${isActive ? 'active' : ''}" onclick="App.navigate('#/business/${cat.seriesId}')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🏢</span>
-            <span class="nav-item-label" title="${cat.name}">${cat.name}</span>
+      <!-- 2. Surface 商用版 (对齐设计稿 Windows 设备位) 折叠树 -->
+      <div class="sidebar-tree-group">
+        <div class="sidebar-parent-row ${this.sidebarTreeState.commercial ? 'expanded' : ''}" onclick="App.toggleSidebarTree('commercial')">
+          <span class="parent-accent-bar"></span>
+          <div class="parent-row-left">
+            <span class="parent-row-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </span>
+            <span class="parent-row-title" style="font-weight:600;">Surface 商用版</span>
           </div>
-          <span class="nav-item-count">${count}</span>
+          <span class="parent-chevron">
+            <svg class="parent-chevron-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
         </div>
-      `;
-    });
 
-    html += `
+        ${this.sidebarTreeState.commercial ? `
+          <div class="sidebar-tree-children">
+            <div class="tree-sub-item ${path === '/business/pro' || path.startsWith('/business/pro/') ? 'active' : ''}" onclick="App.navigate('#/business/pro')">
+              <span class="tree-sub-text">Surface Pro 商用版</span>
+            </div>
+            <div class="tree-sub-item ${path === '/business/laptop' || path.startsWith('/business/laptop/') ? 'active' : ''}" onclick="App.navigate('#/business/laptop')">
+              <span class="tree-sub-text">Surface Laptop 商用版</span>
+            </div>
+            <div class="tree-sub-item ${path === '/business/sls' || path.startsWith('/business/sls/') ? 'active' : ''}" onclick="App.navigate('#/business/sls')">
+              <span class="tree-sub-text">Surface Laptop Studio 商用版</span>
+            </div>
+            <div class="tree-sub-item ${path === '/business/book' || path.startsWith('/business/book/') ? 'active' : ''}" onclick="App.navigate('#/business/book')">
+              <span class="tree-sub-text">Surface Book 商用版</span>
+            </div>
+            <div class="tree-sub-item ${path === '/business/go' || path.startsWith('/business/go/') ? 'active' : ''}" onclick="App.navigate('#/business/go')">
+              <span class="tree-sub-text">Surface Go 商用版</span>
+            </div>
+            <div class="tree-sub-item ${path === '/business/laptopgo' || path.startsWith('/business/laptopgo/') ? 'active' : ''}" onclick="App.navigate('#/business/laptopgo')">
+              <span class="tree-sub-text">Surface Laptop Go 商用版</span>
+            </div>
+            <div class="tree-sub-item ${path === '/business/hub' || path.startsWith('/business/hub/') || path.includes('hub-studio') ? 'active' : ''}" onclick="App.navigate('#/business/hub')">
+              <span class="tree-sub-text">Surface Hub 协作巨幕</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
-      <!-- 🎮 XBOX 专区 (独立一栏，不放在 Surface 后面) -->
-      <div class="sidebar-group">
-        <div class="sidebar-group-title" style="color:var(--ms-text-primary); font-weight:800;">
-          <span class="sidebar-group-label">Xbox 专区</span>
-          <span class="sidebar-group-badge xbox">独立大类</span>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/xbox/consoles' || this.activeRoute.path === '/xbox' || this.activeRoute.path.startsWith('/xbox/consoles/') || this.activeRoute.path === '/consumer/xbox' || this.activeRoute.path.startsWith('/consumer/xbox/') ? 'active' : ''}" onclick="App.navigate('#/xbox/consoles')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🎮</span>
-            <span class="nav-item-label" title="XBOX 主机">XBOX 主机</span>
+      <!-- 3. Xbox 折叠树 -->
+      <div class="sidebar-tree-group">
+        <div class="sidebar-parent-row ${this.sidebarTreeState.xbox ? 'expanded' : ''}" onclick="App.toggleSidebarTree('xbox')">
+          <span class="parent-accent-bar"></span>
+          <div class="parent-row-left">
+            <span class="parent-row-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="6.5" y1="6.5" x2="17.5" y2="17.5"/><line x1="17.5" y1="6.5" x2="6.5" y2="17.5"/></svg>
+            </span>
+            <span class="parent-row-title" style="font-weight:600;">Xbox</span>
           </div>
-          <span class="nav-item-count">${this.listDevices({ seriesId: 'xbox', segment: 'xbox' }).length}</span>
+          <span class="parent-chevron">
+            <svg class="parent-chevron-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
         </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/xbox/controllers' ? 'active' : ''}" onclick="App.navigate('#/xbox/controllers')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🕹️</span>
-            <span class="nav-item-label" title="XBOX 手柄">XBOX 手柄</span>
+
+        ${this.sidebarTreeState.xbox ? `
+          <div class="sidebar-tree-children">
+            <div class="tree-sub-item ${path === '/xbox/consoles' || path === '/xbox' || path.startsWith('/xbox/consoles/') ? 'active' : ''}" onclick="App.navigate('#/xbox/consoles')">
+              <span class="tree-sub-text">Xbox 游戏主机</span>
+            </div>
+            <div class="tree-sub-item ${path === '/xbox/controllers' ? 'active' : ''}" onclick="App.navigate('#/xbox/controllers')">
+              <span class="tree-sub-text">Xbox 无线手柄</span>
+            </div>
+            <div class="tree-sub-item ${path === '/xbox/accessories' ? 'active' : ''}" onclick="App.navigate('#/xbox/accessories')">
+              <span class="tree-sub-text">Xbox 拓展配件</span>
+            </div>
           </div>
-          <span class="nav-item-count">官方手柄</span>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/xbox/accessories' ? 'active' : ''}" onclick="App.navigate('#/xbox/accessories')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🎒</span>
-            <span class="nav-item-label" title="XBOX 配件">XBOX 配件</span>
-          </div>
-          <span class="nav-item-count">周边配件</span>
-        </div>
+        ` : ''}
       </div>
 
-      <div class="sidebar-group">
-        <div class="sidebar-group-title">数据合规与审计</div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/audit' ? 'active' : ''}" onclick="App.navigate('#/audit')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🛡️</span>
-            <span class="nav-item-label" title="数据核验">数据核验</span>
+      <!-- 4. Surface 配件 (对齐设计稿 Microsoft 365 位，独立大类！) 折叠树 -->
+      <div class="sidebar-tree-group">
+        <div class="sidebar-parent-row ${this.sidebarTreeState.accessories ? 'expanded' : ''}" onclick="App.toggleSidebarTree('accessories')">
+          <span class="parent-accent-bar"></span>
+          <div class="parent-row-left">
+            <span class="parent-row-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="6" y1="8" x2="6" y2="8"/><line x1="10" y1="8" x2="10" y2="8"/><line x1="14" y1="8" x2="14" y2="8"/><line x1="18" y1="8" x2="18" y2="8"/><line x1="7" y1="16" x2="17" y2="16"/></svg>
+            </span>
+            <span class="parent-row-title" style="font-weight:600;">Surface 配件</span>
           </div>
+          <span class="parent-chevron">
+            <svg class="parent-chevron-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
         </div>
+
+        ${this.sidebarTreeState.accessories ? `
+          <div class="sidebar-tree-children">
+            <div class="tree-sub-item ${path === '/accessories' || path === '/surface/accessories' ? 'active' : ''}" onclick="App.navigate('#/accessories')">
+              <span class="tree-sub-text">全部配件图鉴 (23款)</span>
+            </div>
+            <div class="tree-sub-item ${path === '/accessories/keyboard' ? 'active' : ''}" onclick="App.navigate('#/accessories/keyboard')">
+              <span class="tree-sub-text">键盘盖与保护套</span>
+            </div>
+            <div class="tree-sub-item ${path === '/accessories/pen' ? 'active' : ''}" onclick="App.navigate('#/accessories/pen')">
+              <span class="tree-sub-text">触控笔 / 超薄笔</span>
+            </div>
+            <div class="tree-sub-item ${path === '/accessories/dock' ? 'active' : ''}" onclick="App.navigate('#/accessories/dock')">
+              <span class="tree-sub-text">拓展坞与连接坞</span>
+            </div>
+            <div class="tree-sub-item ${path === '/accessories/mouse' ? 'active' : ''}" onclick="App.navigate('#/accessories/mouse')">
+              <span class="tree-sub-text">鼠标与旋钮</span>
+            </div>
+            <div class="tree-sub-item ${path === '/accessories/audio' ? 'active' : ''}" onclick="App.navigate('#/accessories/audio')">
+              <span class="tree-sub-text">音频与降噪耳机</span>
+            </div>
+            <div class="tree-sub-item ${path === '/tools/compat' ? 'active' : ''}" onclick="App.navigate('#/tools/compat')">
+              <span class="tree-sub-text">配件双向兼容矩阵 ↗</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
-      <div class="sidebar-group">
-        <div class="sidebar-group-title">处理器与芯片库</div>
-        <div class="sidebar-nav-item ${this.activeRoute.path.includes('chips') ? 'active' : ''}" onclick="App.navigate('#/tools/chips')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">⚡</span>
-            <span class="nav-item-label">定制芯片架构库</span>
-          </div>
-          <span class="nav-item-count">${SURFACE_DATA.chips.length}</span>
-        </div>
+      <!-- 分组：使用场景 (对齐设计稿第二组) -->
+      <div class="sidebar-section-title" style="margin-top:14px;">使用场景</div>
+
+      <div class="sidebar-action-item ${path === '/tools' || path === '/tools/guide' ? 'active' : ''}" onclick="App.navigate('#/tools/guide')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </span>
+        <span class="sidebar-item-text">场景智能选型向导</span>
+      </div>
+      <div class="sidebar-action-item ${path === '/tools/upgrade' ? 'active' : ''}" onclick="App.navigate('#/tools/upgrade')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
+        </span>
+        <span class="sidebar-item-text">跨代升级价值评估</span>
+      </div>
+      <div class="sidebar-action-item ${path === '/tools/weight' ? 'active' : ''}" onclick="App.navigate('#/tools/weight')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2z"/><line x1="10" y1="3" x2="14" y2="3"/><line x1="12" y1="12" x2="12" y2="15"/></svg>
+        </span>
+        <span class="sidebar-item-text">差旅背包负重测算</span>
+      </div>
+      <div class="sidebar-action-item ${path === '/tools/storage' ? 'active' : ''}" onclick="App.navigate('#/tools/storage')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+        </span>
+        <span class="sidebar-item-text">固态硬盘省钱指南</span>
+      </div>
+      <div class="sidebar-action-item ${path === '/tools/screen' ? 'active' : ''}" onclick="App.navigate('#/tools/screen')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </span>
+        <span class="sidebar-item-text">3:2 黄金比例对比器</span>
       </div>
 
-      <div class="sidebar-group">
-        <div class="sidebar-group-title">特色辅助分析工具</div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools' || this.activeRoute.path === '/tools/guide' ? 'active' : ''}" onclick="App.navigate('#/tools/guide')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🎯</span>
-            <span class="nav-item-label">场景智能选型向导</span>
-          </div>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/weight' ? 'active' : ''}" onclick="App.navigate('#/tools/weight')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🎒</span>
-            <span class="nav-item-label">差旅背包负重测算</span>
-          </div>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/upgrade' ? 'active' : ''}" onclick="App.navigate('#/tools/upgrade')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">⚖️</span>
-            <span class="nav-item-label">跨代升级价值评估</span>
-          </div>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/storage' ? 'active' : ''}" onclick="App.navigate('#/tools/storage')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">🛠️</span>
-            <span class="nav-item-label">固态硬盘省钱指南</span>
-          </div>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/screen' ? 'active' : ''}" onclick="App.navigate('#/tools/screen')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">📐</span>
-            <span class="nav-item-label">3:2 黄金比例对比器</span>
-          </div>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/tools/compat' ? 'active' : ''}" onclick="App.navigate('#/tools/compat')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">⌨️</span>
-            <span class="nav-item-label">配件双向兼容矩阵</span>
-          </div>
-        </div>
-        <div class="sidebar-nav-item ${this.activeRoute.path === '/timeline' ? 'active' : ''}" onclick="App.navigate('#/timeline')">
-          <div class="nav-item-left">
-            <span class="nav-item-icon">⏳</span>
-            <span class="nav-item-label">2012-2026 编年史</span>
-          </div>
-        </div>
+      <!-- 分组：资源 (对齐设计稿第三组) -->
+      <div class="sidebar-section-title" style="margin-top:14px;">资源</div>
+
+      <div class="sidebar-action-item ${path === '/audit' ? 'active' : ''}" onclick="App.navigate('#/audit')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </span>
+        <span class="sidebar-item-text">官方文档核验中枢</span>
+      </div>
+      <div class="sidebar-action-item ${path.includes('chips') ? 'active' : ''}" onclick="App.navigate('#/tools/chips')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </span>
+        <span class="sidebar-item-text">定制芯片架构库</span>
+      </div>
+      <div class="sidebar-action-item ${path === '/compare' ? 'active' : ''}" onclick="App.navigate('#/compare')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="3" width="7" height="18" rx="1"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="10" y1="16" x2="14" y2="16"/></svg>
+        </span>
+        <span class="sidebar-item-text">全机型规格对比</span>
+      </div>
+      <div class="sidebar-action-item ${path === '/timeline' ? 'active' : ''}" onclick="App.navigate('#/timeline')">
+        <span class="sidebar-action-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </span>
+        <span class="sidebar-item-text">常见问题与编年史</span>
       </div>
     `;
 
@@ -2111,10 +2810,18 @@ const App = {
   },
 
   switchDetailColor(deviceId, colorName, btnEl) {
+    const dev = this.getDevice(deviceId);
     const imgEl = document.getElementById('detail-main-img');
     const labelEl = document.getElementById('detail-active-color-label');
-    const shot = this.shot(this.getDevice(deviceId), colorName);
+    const shot = this.shot(dev, colorName);
     if (imgEl && shot.src) {
+      delete imgEl.dataset.retryClean;
+      delete imgEl.dataset.retryFallback;
+      const box = imgEl.closest ? imgEl.closest('.detail-hero-img-box, .device-img-wrap') : null;
+      if (box) {
+        const fallback = box.querySelector('div');
+        if (fallback) fallback.style.display = 'none';
+      }
       imgEl.style.opacity = '0.3';
       imgEl.style.transform = 'scale(0.97)';
       setTimeout(() => {
@@ -2125,7 +2832,32 @@ const App = {
       }, 150);
     }
     const mark = document.getElementById('portrait-mark-detail');
-    if (mark) mark.hidden = shot.identity !== 'shared';
+    if (mark) {
+      mark.textContent = Catalog.portraitLabel(shot);
+      mark.hidden = !mark.textContent;
+    }
+    const railImg = document.getElementById('detail-rail-main-img');
+    if (railImg && shot.src) {
+      Catalog.paint(railImg, shot, 'detail');
+    }
+    const shotIdentityLabel = shot.identity === 'official' ? '官方图像' : (Catalog.portraitLabel(shot) || '同系列示意');
+    const shotRoleLabel = colorName ? `${colorName} 配色图` : '代表图';
+
+    const railLabel = document.getElementById('detail-rail-image-label');
+    if (railLabel) {
+      railLabel.textContent = shotRoleLabel;
+    }
+    const railColorLabel = document.getElementById('detail-rail-color-label');
+    if (railColorLabel) {
+      railColorLabel.textContent = shotIdentityLabel;
+    }
+    const railMetaIdentity = document.getElementById('detail-rail-meta-identity');
+    if (railMetaIdentity) {
+      railMetaIdentity.textContent = shotIdentityLabel;
+    }
+    document.querySelectorAll('.utility-image-thumb').forEach(thumb => {
+      thumb.classList.toggle('active', thumb.title === colorName);
+    });
     if (labelEl) {
       labelEl.textContent = colorName;
     }
@@ -2138,6 +2870,25 @@ const App = {
     }
   },
 
+  nextDetailImage(deviceId) {
+    const dev = this.getDevice(deviceId);
+    if (!dev) return;
+    const colors = this.spec(dev, 'colors');
+    const colorRows = Array.isArray(colors) ? colors : [];
+    if (colorRows.length <= 1) return;
+    const activeThumb = document.querySelector('.utility-image-thumb.active');
+    let nextIdx = 0;
+    if (activeThumb) {
+      const currentName = activeThumb.title;
+      const curIdx = colorRows.findIndex(c => c.name === currentName);
+      nextIdx = (curIdx + 1) % colorRows.length;
+    }
+    const nextColor = colorRows[nextIdx];
+    if (nextColor) {
+      this.switchDetailColor(deviceId, nextColor.name, null);
+    }
+  },
+
   previewCardColor(deviceId, colorName, dotEl) {
     const shot = this.shot(this.getDevice(deviceId), colorName);
     if (!shot.src) return;
@@ -2146,7 +2897,10 @@ const App = {
       Catalog.paint(thumbEl, shot, 'card');
     }
     const mark = document.getElementById(`portrait-mark-${deviceId}`);
-    if (mark) mark.hidden = shot.identity !== 'shared';
+    if (mark) {
+      mark.textContent = Catalog.portraitLabel(shot);
+      mark.hidden = !mark.textContent;
+    }
     if (dotEl) {
       const parent = dotEl.parentElement;
       if (parent) {
@@ -2235,10 +2989,13 @@ const App = {
 };
 
 if (typeof document !== 'undefined') {
-  document.addEventListener('DOMContentLoaded', () => {
-    // 立即同步启动应用（零延迟秒开）：使用随包内置的高质量全量基线数据
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      App.init();
+    });
+  } else {
     App.init();
-  });
+  }
 }
 
 if (typeof window !== 'undefined') {

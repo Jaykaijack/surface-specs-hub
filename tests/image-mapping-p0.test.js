@@ -22,12 +22,7 @@ const PRO_34578_HEROES = [
   'surface-pro-8-hero.png'
 ];
 
-const PRO_126X_HEROES = [
-  'surface-pro-1-hero.png',
-  'surface-pro-2-hero.png',
-  'surface-pro-6-hero.png',
-  'surface-pro-x-hero.png'
-];
+const PRO_126X_IDS = ['pro-1', 'pro-2', 'pro-6', 'pro-x'];
 
 const FAKE_DUAL_COLOR_IDS = [
   'pro-7-plus',
@@ -38,7 +33,12 @@ const FAKE_DUAL_COLOR_IDS = [
   'pro-9-biz',
   'pro-8-biz',
   'laptop-5-biz',
-  'go-3-biz'
+  'go-3-biz',
+  'laptop-13-inch-intel-biz',
+  'book-3-biz',
+  'go-2-biz',
+  'pro-6-biz',
+  'laptop-13-inch'
 ];
 
 const COMMERCIAL_GEN8_IDS = [
@@ -107,10 +107,12 @@ function runImageMappingP0Tests(helpers) {
   assert(unique34578.size === PRO_34578_HEROES.length, `IMG-P0-02: surface-pro-{3,4,5,7,8}-hero.png 两两 MD5 不全相同且各自独立 (unique=${unique34578.size}/${PRO_34578_HEROES.length})`);
   const pro13BlackMd5 = fileMd5(assetAbs('surface-pro-13-black.png'));
   assert(Boolean(pro13BlackMd5), 'IMG-P0-03: surface-pro-13-black.png 存在');
-  PRO_126X_HEROES.forEach((name) => {
-    const md5 = fileMd5(assetAbs(name));
-    assert(Boolean(md5), `IMG-P0-03: 文件存在 ${name}`);
-    assert(md5 !== pro13BlackMd5, `IMG-P0-03: ${name} MD5 ≠ surface-pro-13-black.png（禁止现代黑 Pro 冒充旧代/Pro X）`);
+  PRO_126X_IDS.forEach((id) => {
+    const device = SURFACE_DATA.devices.find((d) => d.id === id);
+    const name = mappedFileName(device && device.heroImage);
+    const md5 = fileMd5(resolveMappedFile(device && device.heroImage));
+    assert(Boolean(md5), `IMG-P0-03: ${id} 当前映射文件存在 ${name}`);
+    assert(md5 !== pro13BlackMd5, `IMG-P0-03: ${id} 当前映射文件 MD5 ≠ surface-pro-13-black.png（禁止现代黑 Pro 冒充旧代/Pro X）`);
   });
   const newLaptopHeroMd5 = fileMd5(assetAbs('surface-new-laptop-hero.png'));
   assert(Boolean(newLaptopHeroMd5), 'IMG-P0-04: surface-new-laptop-hero.png 存在');
@@ -155,6 +157,11 @@ function runImageMappingP0Tests(helpers) {
     const device = SURFACE_DATA.devices.find((d) => d.id === id);
     assert(Boolean(device), `IMG-P0-06b: 收录 ${id}`);
     if (!device) return;
+    if (device.imageVerification && device.imageVerification.status === 'diagram') {
+      assert(device.specs.colors.every((color) => !color.image),
+        `IMG-P0-06b: ${id} 未确认配色照片时不得伪造双色图片路径`);
+      return;
+    }
     const { platinum, black } = dualColorPair(device);
     assert(Boolean(platinum && platinum.image), `IMG-P0-06b: ${id} 有亮铂金/铂金图`);
     assert(Boolean(black && black.image), `IMG-P0-06b: ${id} 有典雅黑/典黑图`);

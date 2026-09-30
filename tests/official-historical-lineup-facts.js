@@ -251,10 +251,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       wifiMustInclude: 'Wi-Fi 7',
       repairabilityState: 'NOT_DISCLOSED',
       keyboardWeightState: 'NOT_DISCLOSED',
-      warrantyState: 'NOT_DISCLOSED',
+      warrantyState: 'NULL',
       osMustInclude: 'Windows 11',
       frontCameraContains: ['1080', 'Studio'],
-      speakersState: 'NOT_DISCLOSED',
+      speakersState: 'NULL',
       cellularState: 'NOT_APPLICABLE',
       learnDocUrl: 'https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs',
       specContains: {
@@ -278,10 +278,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "expandableStorage": "MicroSD"
       ,
             "cpuArch": ["Oryon","4nm"],
-            "fastCharging": "60",
             "chargingPower": "65",},
       specState: {
-            "kickstandType": "NOT_APPLICABLE"
+            "kickstandType": "NOT_APPLICABLE",
+            "fastCharging": "NULL"
       },
 },
     'sls-2': {
@@ -305,7 +305,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       weightContains: '1890',
       repairabilityState: 'NOT_DISCLOSED',
       keyboardWeightState: 'NOT_DISCLOSED',
-      warrantyState: 'NOT_DISCLOSED',
+      warrantyContains: '1 年',
       osMustInclude: '家庭',
       osMustNotInclude: '专业',
       frontCameraContains: '1080',
@@ -1069,14 +1069,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       usbMustInclude: 'Mini DisplayPort',
       refreshRateState: 'NOT_DISCLOSED',
       repairabilityState: 'NOT_DISCLOSED',
-      warrantyState: 'NOT_DISCLOSED',
+      warrantyContains: '1 年',
       osMustInclude: '专业',
       frontCameraContains: '500',
       rearCameraContains: '800',
       speakersContains: '1.6W',
       speakersMustNotInclude: '全景声',
       cellularState: 'NOT_APPLICABLE',
-      learnDocUrl: 'https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features',
+      learnDocUrl: 'https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features',
       specContains: {
             "gpuModel": "UHD",
             "ppi": "267",
@@ -1402,7 +1402,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "kickstandType": "165"
       ,
             "cpuArch": ["64","Intel 7"],
-            "fastCharging": "30",},
+            "fastCharging": "not_disclosed",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -1494,7 +1494,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "chassisMaterial": "镁"
       ,
             "cpuArch": ["64","14 nm"],
-            "fastCharging": "30",},
+            "fastCharging": "not_disclosed",},
       specState: {
             "thunderboltSupport": "NOT_APPLICABLE"
       },
@@ -1539,9 +1539,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
             "chassisMaterial": "镁"
       ,
             "cpuArch": ["64","14 nm"],
-            "fastCharging": "30",},
+            },
       specState: {
-            "thunderboltSupport": "NOT_APPLICABLE"
+            "thunderboltSupport": "NOT_APPLICABLE",
+            "fastCharging": "NULL"
       },
 },
     'pro-5': {
@@ -2001,7 +2002,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       refreshRateState: 'NOT_DISCLOSED',
       ramMustInclude: '32',
       repairabilityState: 'NOT_DISCLOSED',
-      warrantyState: 'NOT_DISCLOSED',
+      warrantyContains: '1 年',
       keyboardWeightContains: '1905',
       osMustInclude: '专业',
       frontCameraContains: '500',
@@ -2122,11 +2123,11 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       warrantyState: 'NOT_DISCLOSED',
       repairabilityState: 'NOT_DISCLOSED',
       keyboardWeightState: 'NOT_DISCLOSED',
-      osState: 'NOT_DISCLOSED',
-      frontCameraState: 'NOT_DISCLOSED',
-      rearCameraState: 'NOT_DISCLOSED',
-      speakersState: 'NOT_DISCLOSED',
-      learnDocUrl: 'https://support.microsoft.com/en-us/surface/models/surface-pro-2-specs-and-features',
+      osMustInclude: 'Windows 8.1 专业版',
+      frontCameraContains: '720p',
+      rearCameraContains: '720p',
+      speakersContains: 'Dolby',
+      learnDocUrl: 'https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features',
       specContains: {
             "gpuModel": "4400",
             "headphoneJack": "耳机",
@@ -2165,11 +2166,11 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       warrantyState: 'NOT_DISCLOSED',
       keyboardWeightState: 'NOT_DISCLOSED',
       repairabilityState: 'NOT_DISCLOSED',
-      osState: 'NOT_DISCLOSED',
-      frontCameraState: 'NOT_DISCLOSED',
-      rearCameraState: 'NOT_DISCLOSED',
-      speakersState: 'NOT_DISCLOSED',
-      learnDocUrl: 'https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications',
+      osMustInclude: 'Windows 8 专业版',
+      frontCameraContains: '720p',
+      rearCameraContains: '720p',
+      speakersContains: '立体声',
+      learnDocUrl: 'https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications',
       specContains: {
             "headphoneJack": "耳机",
             "expandableStorage": "MicroSD",

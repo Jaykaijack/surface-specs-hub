@@ -10,3 +10,14 @@ __pycache__/
 .scratch/
 .workbuddy/
 .wbapp_*.genie
+.agent/
+.impeccable/
+scripts/local/
+
+
+# 本地构建中间目录与自动化视觉审计截图
+dist/site/
+dist/_*.html
+dist/deploy-manifest.json
+releases/verification-*
+

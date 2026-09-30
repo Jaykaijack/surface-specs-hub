@@ -162,7 +162,6 @@ function runDeploySeamTests(helpers) {
     .map((device) => device.id)
     .sort();
   assertEqual(recentIds.join(','), [
-    'laptop-13-inch-2',
     'laptop-8-138',
     'laptop-8-138-intel',
     'laptop-8-138-snap',
@@ -171,8 +170,7 @@ function runDeploySeamTests(helpers) {
     'laptop-8-150-snap',
     'pro-12-13',
     'pro-12-13-intel',
-    'pro-12-13-snap',
-    'pro-12-inch-2'
+    'pro-12-13-snap'
   ].sort().join(','), '2026 年 9 月 25 日往前 6 个月内发售的机型标为新品');
   assert(!Catalog.isRecentLaunch(Catalog.getDevice('pro-12-inch'), asOf), '只写了年份、没有月份的 12 英寸第 1 代不标新品');
   assert(!Catalog.isRecentLaunch(Catalog.getDevice('laptop-13-inch'), asOf), '2025 年 10 月的 13 英寸第 1 代已超过半年，不标新品');
@@ -189,13 +187,13 @@ function runDeploySeamTests(helpers) {
   };
   const home = { innerHTML: '' };
   App.renderHomeView(home);
-  assert(deviceCardHtml(home.innerHTML, 'pro-12-inch-2').includes('>新品<'), '首页 12 英寸 Pro 第 2 代要标新品');
+  assert(!deviceCardHtml(home.innerHTML, 'pro-12-inch-2').includes('>新品<'), '10 月 19 日才预售的 Pro 第 2 代不得提前标已发售新品');
   assert(deviceCardHtml(home.innerHTML, 'laptop-8-138').includes('>新品<'), '首页 13.8 英寸 Laptop 第 8 代要标新品');
   assert(!deviceCardHtml(home.innerHTML, 'pro-12-inch').includes('>新品<'), '首页 12 英寸 Pro 第 1 代不标新品');
 
   const series = { innerHTML: '' };
   App.renderSeriesView(series, 'pro', 'consumer');
-  assert(deviceCardHtml(series.innerHTML, 'pro-12-inch-2').includes('>新品<'), '系列页里近半年的机型要标新品');
+  assert(!deviceCardHtml(series.innerHTML, 'pro-12-inch-2').includes('>新品<'), '系列页未到预售日期的机型不标已发售新品');
   assert(!deviceCardHtml(series.innerHTML, 'pro-12-inch').includes('>新品<'), '系列页里超过半年的机型不标新品');
 
   const table = ComparisonEngine.renderComparisonTable([
@@ -204,7 +202,7 @@ function runDeploySeamTests(helpers) {
   ]);
   const columns = table.split('<th>').slice(1);
   const columnFor = (id) => columns.find((col) => new RegExp(`table-thumb-${id}-\\d+(?![\\d-])`).test(col)) || '';
-  assert(columnFor('pro-12-inch-2').includes('>新品<'), '对比表里近半年的机型要标新品');
+  assert(!columnFor('pro-12-inch-2').includes('>新品<'), '对比表未到预售日期的机型不标已发售新品');
   assert(!columnFor('pro-12-inch').includes('>新品<'), '对比表里第 1 代不标新品');
 }
 

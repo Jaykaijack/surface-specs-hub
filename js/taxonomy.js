@@ -83,6 +83,14 @@ const Taxonomy = (function () {
       };
     }
 
+    if (clean.startsWith('/accessories')) {
+      return {
+        kind: 'accessories',
+        canonical: '#' + clean,
+        rewritten: false
+      };
+    }
+
     if (clean === '/xbox') {
       return {
         kind: 'series',

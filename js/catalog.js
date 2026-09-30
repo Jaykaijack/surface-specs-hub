@@ -68,7 +68,9 @@ const Catalog = (function () {
   }
 
   function deliveryUrl(src, kind, width) {
-    return './assets/delivery/' + kind + '/w' + width + '/' + fileStem(src) + '.' + kind + '?v=' + DELIVERY_REV;
+    const isFileProto = (typeof location !== 'undefined' && location.protocol === 'file:');
+    const ver = isFileProto ? '' : ('?v=' + DELIVERY_REV);
+    return './assets/delivery/' + kind + '/w' + width + '/' + fileStem(src) + '.' + kind + ver;
   }
 
   function srcsetFor(src, kind, widths) {
@@ -206,9 +208,41 @@ const Catalog = (function () {
     return devices().find(function (d) { return d.id === id; }) || null;
   }
 
+  function compareDeviceRecency(a, b) {
+    const yearA = parseInt(a.year, 10) || 0;
+    const yearB = parseInt(b.year, 10) || 0;
+    if (yearB !== yearA) return yearB - yearA;
+
+    const statusRank = { upcoming: 3, current_cn: 2, current_global: 2, discontinued: 1, legacy: 1 };
+    const rankA = statusRank[a.status] || 1;
+    const rankB = statusRank[b.status] || 1;
+    if (rankB !== rankA) return rankB - rankA;
+
+    const dateStrA = (a.specs && (a.specs.releaseDate || a.specs.releaseDateCny)) || '';
+    const dateStrB = (b.specs && (b.specs.releaseDate || b.specs.releaseDateCny)) || '';
+    const monthA = (dateStrA.match(/(\d{1,2})\s*月/) || [])[1] || 0;
+    const monthB = (dateStrB.match(/(\d{1,2})\s*月/) || [])[1] || 0;
+    if (Number(monthB) !== Number(monthA)) return Number(monthB) - Number(monthA);
+
+    const flagshipWeight = (dev) => {
+      let w = 0;
+      const id = dev.id || '';
+      if (id.includes('pro-12-13') || id.includes('laptop-8-138') || id.includes('laptop-8-150')) w += 25;
+      if (id.includes('pro-12-inch-2') || id.includes('laptop-13-inch-2')) w += 20;
+      if (id.includes('pro-12-inch') || id.includes('laptop-13-inch')) w += 18;
+      if (id.includes('pro-11') || id.includes('laptop-7')) w += 15;
+      if (id.includes('snap') || id.includes('intel')) w += 5;
+      return w;
+    };
+    const weightDiff = flagshipWeight(b) - flagshipWeight(a);
+    if (weightDiff !== 0) return weightDiff;
+
+    return (a.id || '').localeCompare(b.id || '');
+  }
+
   function listDevices(query) {
     const q = query || {};
-    return devices().filter(function (d) {
+    const filtered = devices().filter(function (d) {
       if (q.segment && segmentOf(d) !== q.segment) return false;
       if (q.seriesId) {
         if (q.seriesId === 'hub') return d.categoryId === 'studio' || d.categoryId === 'hub';
@@ -217,6 +251,8 @@ const Catalog = (function () {
       }
       return true;
     });
+    if (q.sort === false || q.sort === 'raw') return filtered;
+    return filtered.slice().sort(compareDeviceRecency);
   }
 
   function listSeries(segment) {
@@ -489,13 +525,29 @@ const Catalog = (function () {
       if (device.categoryId === 'xbox') return { src: '', identity: 'missing' };
       return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
     }
-    return { src: withPortraitRev(raw), identity: isStandIn(device, raw) ? 'shared' : 'official' };
+    const review = device.imageVerification || {};
+    const explicitIdentity = ['pending', 'diagram', 'shared'].indexOf(review.status) !== -1;
+    return {
+      src: withPortraitRev(raw),
+      identity: explicitIdentity ? review.status : (isStandIn(device, raw) ? 'shared' : 'official'),
+      kind: review.kind || (review.status === 'diagram' ? 'diagram' : '')
+    };
+  }
+
+  function portraitLabel(shot) {
+    if (!shot) return '';
+    if (shot.identity === 'pending') return '图片待核验';
+    if (shot.identity === 'diagram') return '官方结构图（非配色照片）';
+    if (shot.identity === 'shared') {
+      return shot.kind === 'diagram' ? '其他机型结构图示意' : '同系列示意';
+    }
+    return '';
   }
 
   function portraitMark(device, colorName) {
     const shot = portrait(device, colorName);
-    if (shot.identity !== 'shared') return '';
-    return '<span class="portrait-stand-in">同系列示意</span>';
+    const label = portraitLabel(shot);
+    return label ? '<span class="portrait-stand-in">' + label + '</span>' : '';
   }
 
   function frame(shot, options) {
@@ -504,6 +556,8 @@ const Catalog = (function () {
     const slotName = IMAGE_SLOTS[opts.slot] ? opts.slot : 'card';
     const slot = IMAGE_SLOTS[slotName];
     const src = shot && shot.src ? shot.src : withPortraitRev(PORTRAIT_FALLBACK);
+    const isData = String(src).indexOf('data:') === 0;
+    const cleanSrc = isData ? '' : String(src).split('?')[0];
     const loading = opts.loading || (slotName === 'detail' ? 'eager' : 'lazy');
     const priority = (slotName === 'detail' || opts.priority === 'high') ? ' fetchpriority="high"' : '';
     const decoding = slotName === 'detail' ? 'auto' : 'async';
@@ -511,16 +565,17 @@ const Catalog = (function () {
     const cls = opts.className ? ' class="' + escAttr(opts.className) + '"' : '';
     const alt = escAttr(opts.alt || '');
     const onerror = opts.onerror ? ' onerror="' + opts.onerror + '"' : '';
+    const rawAttr = cleanSrc ? ' data-fallback-path="' + escAttr(cleanSrc) + '"' : '';
     const sizes = opts.sizes || slot.sizes;
     const widths = deliveryWidths(src);
     if (!widths) {
-      return '<img' + id + cls + ' src="' + escAttr(src) + '" alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>';
+      return '<img' + id + cls + ' src="' + escAttr(src) + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>';
     }
     const fallback = deliveryUrl(src, 'webp', pickWidth(widths, slotName));
     return '<picture>'
       + '<source type="image/avif" srcset="' + srcsetFor(src, 'avif', widths) + '" sizes="' + sizes + '">'
       + '<source type="image/webp" srcset="' + srcsetFor(src, 'webp', widths) + '" sizes="' + sizes + '">'
-      + '<img' + id + cls + ' src="' + fallback + '" alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>'
+      + '<img' + id + cls + ' src="' + fallback + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>'
       + '</picture>';
   }
 
@@ -555,6 +610,7 @@ const Catalog = (function () {
   }
 
   function isRecentLaunch(device, asOf) {
+    if (device && device.status === 'upcoming') return false;
     const text = String(getSpec(device, 'releaseDate') || '');
     const match = text.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
     if (!match) return false;
@@ -606,6 +662,7 @@ const Catalog = (function () {
     acceptsCloudVersion: acceptsCloudVersion,
     onChange: onChange,
     portrait: portrait,
+    portraitLabel: portraitLabel,
     portraitMark: portraitMark,
     isRecentLaunch: isRecentLaunch,
     audience: audience,

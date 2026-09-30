@@ -216,10 +216,11 @@ const ComparisonEngine = {
     }
 
     const isSingleDevice = devicesToCompare.length === 1;
+    const applyDiffOnly = this.diffOnly && !isSingleDevice;
 
     let html = `
       <div class="spec-table-container">
-        <table class="spec-table ${this.highlightDiff ? 'highlight-diff' : ''} ${this.diffOnly ? 'diff-only' : ''}">
+        <table class="spec-table ${this.highlightDiff ? 'highlight-diff' : ''} ${applyDiffOnly ? 'diff-only' : ''}">
           <thead>
             <tr>
               <th class="corner-header ${isSingleDevice ? 'single-mode' : ''}">
@@ -261,7 +262,7 @@ const ComparisonEngine = {
                   loading: 'eager',
                   onerror: 'App.hideBrokenImage(this)'
                 })}
-                ${Catalog.portrait(dev).identity === 'shared' ? '<span class="portrait-stand-in" id="portrait-mark-' + dev.id + '-' + colIdx + '">同系列示意</span>' : '<span class="portrait-stand-in" id="portrait-mark-' + dev.id + '-' + colIdx + '" hidden>同系列示意</span>'}
+                <span class="portrait-stand-in" id="portrait-mark-${dev.id}-${colIdx}"${Catalog.portraitLabel(Catalog.portrait(dev)) ? '' : ' hidden'}>${Catalog.portraitLabel(Catalog.portrait(dev))}</span>
                 <div style="display:none; width:100%; height:100%;">
                   ${this.getDeviceSvgIcon(dev.categoryId)}
                 </div>
@@ -503,14 +504,102 @@ const ComparisonEngine = {
     if (icon) icon.textContent = isHidden ? '▶' : '▼';
   },
 
+  toggleAccordionGroup(groupId) {
+    const groupEl = document.getElementById(`accordion-group-${groupId}`);
+    const arrow = document.getElementById(`accordion-arrow-${groupId}`);
+    if (!groupEl) return;
+    const isCollapsed = groupEl.classList.toggle('collapsed');
+    if (arrow) arrow.textContent = isCollapsed ? '▶' : '▼';
+  },
+
   expandAllGroups() {
     document.querySelectorAll('.field-row').forEach(r => r.style.display = '');
     document.querySelectorAll('[id^="group-icon-"]').forEach(i => i.textContent = '▼');
+    document.querySelectorAll('.spec-accordion-group').forEach(g => g.classList.remove('collapsed'));
+    document.querySelectorAll('[id^="accordion-arrow-"]').forEach(i => i.textContent = '▼');
   },
 
   collapseAllGroups() {
     document.querySelectorAll('.field-row').forEach(r => r.style.display = 'none');
     document.querySelectorAll('[id^="group-icon-"]').forEach(i => i.textContent = '▶');
+    document.querySelectorAll('.spec-accordion-group').forEach(g => g.classList.add('collapsed'));
+    document.querySelectorAll('[id^="accordion-arrow-"]').forEach(i => i.textContent = '▶');
+  },
+
+  renderDetailAccordion(dev) {
+    if (!dev) return '';
+
+    const groupIcons = {
+      basic: '📋',
+      performance: '⚡',
+      memory_storage: '💾',
+      display: '🖥',
+      camera_video: '📷',
+      audio: '🔊',
+      ports: '🔌',
+      battery: '🔋',
+      input: '🖊',
+      security: '🛡',
+      dimensions: '📐',
+      service: '🔧',
+      sources: '📄'
+    };
+
+    let html = '<div class="spec-accordion-container" id="spec-accordion-container">';
+
+    (SURFACE_DATA.specGroups || []).forEach(group => {
+      const icon = groupIcons[group.id] || '📑';
+
+      let hasValid = false;
+      group.fields.forEach(field => {
+        const val = Catalog.getSpec(dev, field.key);
+        if (val !== undefined && val !== null && val !== '' && val !== 'null' && val !== 'not_disclosed' && val !== 'not_applicable') {
+          hasValid = true;
+        }
+      });
+
+      const badgeHtml = hasValid
+        ? '<span class="spec-accordion-badge verified"><span class="badge-icon">✔</span> 已验证</span>'
+        : '<span class="spec-accordion-badge pending"><span class="badge-icon">!</span> 待核验</span>';
+
+      html += `
+        <div class="spec-accordion-group" id="accordion-group-${group.id}">
+          <div class="spec-accordion-header" onclick="ComparisonEngine.toggleAccordionGroup('${group.id}')" role="button" tabindex="0">
+            <div class="accordion-header-left">
+              <span class="accordion-arrow" id="accordion-arrow-${group.id}">▼</span>
+              <span class="accordion-icon">${icon}</span>
+              <span class="accordion-title">${group.name}</span>
+            </div>
+            <div class="accordion-header-right">
+              ${badgeHtml}
+            </div>
+          </div>
+          <div class="spec-accordion-body" id="accordion-body-${group.id}">
+            <table class="spec-accordion-table">
+              <tbody>
+      `;
+
+      group.fields.forEach(field => {
+        const rawVal = Catalog.getSpec(dev, field.key);
+        const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
+        html += `
+          <tr class="spec-accordion-row">
+            <td class="spec-param-name">${field.label}</td>
+            <td class="spec-val-cell">${formattedVal}</td>
+          </tr>
+        `;
+      });
+
+      html += `
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    });
+
+    html += '</div>';
+    return html;
   },
 
   getDeviceSvgIcon(categoryId) {
@@ -624,7 +713,10 @@ const ComparisonEngine = {
       Catalog.paint(imgEl, shot, 'table');
     }
     const mark = document.getElementById(`portrait-mark-${devId}-${colIdx}`);
-    if (mark) mark.hidden = shot.identity !== 'shared';
+    if (mark) {
+      mark.textContent = Catalog.portraitLabel(shot);
+      mark.hidden = !mark.textContent;
+    }
     if (dotEl) {
       const parent = dotEl.parentElement;
       if (parent) {

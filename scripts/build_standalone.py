@@ -3,6 +3,7 @@ import os
 import re
 import io
 import base64
+import argparse
 from PIL import Image
 
 # 保证 Windows 控制台输出 UTF-8
@@ -17,9 +18,9 @@ DIST_DIR = os.path.join(WORKSPACE, 'dist')
 RELEASES_DIR = os.path.join(WORKSPACE, 'releases')
 
 # 版本规范
-VERSION = "v1.5.0"
-DATE_STR = "20260929"
-DESCRIPTOR = "xbox-lineup-hub"
+VERSION = "v1.6.0"
+DATE_STR = "20260930"
+DESCRIPTOR = "awwwards-accessories-fluid-sync"
 
 STANDALONE_ROOT = os.path.join(WORKSPACE, 'surface-specs-hub-standalone.html')
 STANDALONE_DIST = os.path.join(DIST_DIR, 'surface-specs-hub-standalone.html')
@@ -72,7 +73,9 @@ def scan_and_encode_directory(dir_path, label):
     print(f"   原始: {orig_size / (1024*1024):.2f} MB -> WebP Base64: {webp_size / (1024*1024):.2f} MB")
     return mapping, orig_size, webp_size
 
-def build():
+def build(snapshot_only=False):
+    if snapshot_only and os.path.exists(STANDALONE_RELEASE):
+        raise FileExistsError(f"不可覆盖核验快照: {STANDALONE_RELEASE}")
     print(f"🚀 开始构建完全离线独立封装版 Surface Specs Hub HTML ({VERSION} - {DATE_STR})...")
     
     # 1. 扫描机型图片
@@ -149,8 +152,12 @@ def build():
     os.makedirs(RELEASES_DIR, exist_ok=True)
 
     # 不可变发布快照
-    with open(STANDALONE_RELEASE, 'w', encoding='utf-8') as f:
+    with open(STANDALONE_RELEASE, 'x' if snapshot_only else 'w', encoding='utf-8') as f:
         f.write(html)
+
+    if snapshot_only:
+        print(f"核验快照已生成（未覆盖已有交付物）: {STANDALONE_RELEASE}")
+        return
 
     # 根目录稳定指针
     with open(STANDALONE_ROOT, 'w', encoding='utf-8') as f:
@@ -168,4 +175,13 @@ def build():
     print(f"   💡 该文件为 100% 离线自给自足 SPA，全系 23 款配件图与机型图均已完成 WebP Base64 内嵌。")
 
 if __name__ == '__main__':
-    build()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--snapshot-only', action='store_true')
+    parser.add_argument('--release', help='核验快照路径；只允许 releases/ 内的 .html 文件')
+    args = parser.parse_args()
+    if args.release:
+        target = os.path.abspath(args.release)
+        if not args.snapshot_only or os.path.commonpath([target, RELEASES_DIR]) != RELEASES_DIR or not target.endswith('.html'):
+            parser.error('--release 必须配合 --snapshot-only，且路径位于 releases/ 内')
+        STANDALONE_RELEASE = target
+    build(snapshot_only=args.snapshot_only)
