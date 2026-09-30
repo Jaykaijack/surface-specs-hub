@@ -208,28 +208,46 @@ const Catalog = (function () {
     return devices().find(function (d) { return d.id === id; }) || null;
   }
 
-  function compareDeviceRecency(a, b) {
-    const yearA = parseInt(a.year, 10) || 0;
-    const yearB = parseInt(b.year, 10) || 0;
-    if (yearB !== yearA) return yearB - yearA;
+  function parseReleaseTimestamp(dev) {
+    const dateStr = String((dev.specs && (dev.specs.releaseDate || dev.specs.releaseDateCny)) || '');
+    let y = 0, m = 1, d = 1;
+    const ymMatch = dateStr.match(/(\d{4})\s*年\s*(\d{1,2})\s*月(?:\s*(\d{1,2})\s*日)?/);
+    if (ymMatch) {
+      y = parseInt(ymMatch[1], 10);
+      m = parseInt(ymMatch[2], 10);
+      d = ymMatch[3] ? parseInt(ymMatch[3], 10) : 1;
+    } else {
+      const yMatch = dateStr.match(/(\d{4})\s*年/);
+      if (yMatch) {
+        y = parseInt(yMatch[1], 10);
+      } else {
+        y = parseInt(dev.year, 10) || 2000;
+      }
+      if (/秋季/i.test(dateStr)) m = 9;
+      else if (/春季/i.test(dateStr)) m = 3;
+      else if (/夏季/i.test(dateStr)) m = 6;
+      else if (/冬季/i.test(dateStr)) m = 12;
+    }
+    return y * 10000 + m * 100 + d;
+  }
 
-    const statusRank = { upcoming: 3, current_cn: 2, current_global: 2, discontinued: 1, legacy: 1 };
+  function compareDeviceRecency(a, b) {
+    const timeA = parseReleaseTimestamp(a);
+    const timeB = parseReleaseTimestamp(b);
+    if (timeB !== timeA) return timeB - timeA;
+
+    const statusRank = { upcoming: 4, current_cn: 3, current_global: 2, discontinued: 1, legacy: 1 };
     const rankA = statusRank[a.status] || 1;
     const rankB = statusRank[b.status] || 1;
     if (rankB !== rankA) return rankB - rankA;
 
-    const dateStrA = (a.specs && (a.specs.releaseDate || a.specs.releaseDateCny)) || '';
-    const dateStrB = (b.specs && (b.specs.releaseDate || b.specs.releaseDateCny)) || '';
-    const monthA = (dateStrA.match(/(\d{1,2})\s*月/) || [])[1] || 0;
-    const monthB = (dateStrB.match(/(\d{1,2})\s*月/) || [])[1] || 0;
-    if (Number(monthB) !== Number(monthA)) return Number(monthB) - Number(monthA);
-
     const flagshipWeight = (dev) => {
       let w = 0;
       const id = dev.id || '';
-      if (id.includes('pro-12-13') || id.includes('laptop-8-138') || id.includes('laptop-8-150')) w += 25;
-      if (id.includes('pro-12-inch-2') || id.includes('laptop-13-inch-2')) w += 20;
-      if (id.includes('pro-12-inch') || id.includes('laptop-13-inch')) w += 18;
+      if (id.includes('surface-laptop-ultra')) w += 40;
+      if (id.includes('pro-12-13') || id.includes('laptop-8-138') || id.includes('laptop-8-150')) w += 35;
+      if (id.includes('pro-12-inch-2') || id.includes('laptop-13-inch-2')) w += 30;
+      if (id.includes('pro-12-inch') || id.includes('laptop-13-inch')) w += 20;
       if (id.includes('pro-11') || id.includes('laptop-7')) w += 15;
       if (id.includes('snap') || id.includes('intel')) w += 5;
       return w;
@@ -668,7 +686,8 @@ const Catalog = (function () {
     audience: audience,
     highlights: highlights,
     frame: frame,
-    paint: paint
+    paint: paint,
+    parseReleaseTimestamp: parseReleaseTimestamp
   };
 })();
 

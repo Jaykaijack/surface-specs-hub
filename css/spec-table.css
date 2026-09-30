@@ -392,3 +392,35 @@
   color: var(--ms-text-secondary);
   margin-bottom: 8px;
 }
+
+/* ==================================================================== */
+/* Awwwards / FWA Grade Mobile Table Proportions Harmonization         */
+/* ==================================================================== */
+@media (max-width: 640px) {
+  .spec-table thead th.corner-header,
+  .spec-table tbody th.corner-cell {
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+    font-size: 12px !important;
+    padding: 10px 8px !important;
+  }
+
+  .spec-table td,
+  .spec-table thead th:not(.corner-header) {
+    min-width: 140px !important;
+    max-width: 180px !important;
+    padding: 10px 8px !important;
+    font-size: 12px !important;
+  }
+
+  .spec-table th.table-single-header-th {
+    padding: 10px 12px !important;
+  }
+
+  .spec-table-container {
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+}
+

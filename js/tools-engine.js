@@ -719,9 +719,22 @@ const ToolsEngine = {
       if (this.guideIsSnapdragon(device)) score += 80;
     }
     if (scene === 'engineering') {
-      if (device.categoryId === 'sls') score += 120;
+      if (device.categoryId === 'sls' || device.id === 'surface-laptop-ultra') score += 140;
       if (String(device.name).includes('15') || String(device.name).includes('14.4')) score += 50;
-      if (/Ultra|i7|RTX|dGPU/i.test(this.guideCpuText(device))) score += 80;
+      if (/Ultra|i7|RTX|dGPU|Blackwell/i.test(this.guideCpuText(device))) score += 80;
+    }
+    if (scene === 'media_3d') {
+      if (device.id === 'surface-laptop-ultra' || device.categoryId === 'sls' || device.categoryId === 'studio') score += 150;
+      if (/RTX|Blackwell|dGPU/i.test(this.guideCpuText(device))) score += 90;
+    }
+    if (scene === 'finance') {
+      if (device.categoryId === 'laptop' && (String(device.name).includes('15') || String(device.name).includes('13.8'))) score += 100;
+      if (device.segment === 'commercial') score += 50;
+    }
+    if (scene === 'cloud_gaming') {
+      const hz = String(Catalog.getSpec(device, 'refreshRate') || '');
+      if (hz.includes('120')) score += 110;
+      if (device.categoryId === 'xbox') score += 150;
     }
     if (scene === 'medical_field') {
       if (device.categoryId === 'pro' || device.categoryId === 'go') score += 120;
@@ -752,14 +765,17 @@ const ToolsEngine = {
       commute: '极轻差旅与全天移动外勤',
       office: '现代商务行政与高负荷多任务',
       enterprise_it: '企业 IT 统采与高等级安全信创',
-      ai_copilot: 'Copilot+ 本地 AI 生产力旗舰',
+      ai_copilot: 'Copilot+ 本地端侧 AI 生产力旗舰',
       design: '原笔迹触控手绘与数码创作',
       creative_pen: '原笔迹触控手绘与数码创作',
       conference: '高清音视频会务与跨国协作',
       engineering: '专业工程研发、编译与重度建模',
+      media_3d: '3D 建模渲染与影视后期创作',
+      finance: '金融投研分析与巨幅报表处理',
       study: '高校学习考研与无纸化自习',
       study_exam: '高校学习考研与无纸化自习',
-      medical_field: '医疗查房、车间现场与特种巡检'
+      medical_field: '医疗查房、车间现场与特种巡检',
+      cloud_gaming: '掌上轻差旅与沉浸影音娱乐'
     };
     const ranked = Catalog.listDevices()
       .filter(device => this.guidePassesFilters(device))
@@ -803,15 +819,18 @@ const ToolsEngine = {
     ];
 
     const scenes = [
-      { id: 'commute', label: '🚄 极轻差旅外勤', desc: '全天超长续航与轻薄携带' },
-      { id: 'office', label: '💼 现代商务行政', desc: '高负荷多任务与稳定键程' },
-      { id: 'enterprise_it', label: '🛡️ 企业统采与安全信创', desc: 'vPro 统管与商用服务' },
-      { id: 'ai_copilot', label: '🤖 Copilot+ 本地 AI', desc: '40~80 TOPS 强劲端侧算力' },
-      { id: 'design', label: '🎨 原笔迹触控手绘', desc: '超薄笔 2 零延迟与 120Hz 纸感' },
-      { id: 'conference', label: '🎙️ 高清音视频会务', desc: 'Studio 双摄与降噪矩阵' },
-      { id: 'engineering', label: '⚡ 专业工程与重度研发', desc: '强悍 CPU/GPU 算力与散热冗余' },
-      { id: 'study', label: '📚 高校备考无纸化', desc: '轻巧长续航、静音打字与批注' },
-      { id: 'medical_field', label: '🏥 医疗巡检与特种现场', desc: '防尘耐用平板形态、轻量单手操作' }
+      { id: 'commute', label: '🚄 极轻差旅商旅', desc: '羽量便携随行、超长续航与可选 5G' },
+      { id: 'office', label: '💼 现代行政办公', desc: '轻薄一体形态、高舒适全尺寸键程' },
+      { id: 'enterprise_it', label: '🛡️ 企业统采与信创合规', desc: 'Intel vPro 硬件盾与 Secured-core' },
+      { id: 'ai_copilot', label: '🤖 Copilot+ 本地 AI', desc: '40~1000 TOPS 强劲本地端侧模型算力' },
+      { id: 'design', label: '🎨 原笔迹手绘数码设计', desc: 'PixelSense 4096 级压感与触感笔反馈' },
+      { id: 'engineering', label: '⚡ 专业软件研发与重度工程', desc: '强悍 CPU 多核算力与高速编译散热冗余' },
+      { id: 'media_3d', label: '🔬 3D 渲染与影视特效后期', desc: 'NVIDIA 独立显卡与超高色准 Mini-LED 屏' },
+      { id: 'finance', label: '📊 金融投研与巨幅报表分析', desc: '3:2 纵向视界、多任务快速核算比对' },
+      { id: 'conference', label: '🎙️ 高清音视频会务与协同', desc: 'Studio 远场双摄与 AI 双向降噪' },
+      { id: 'study', label: '📚 高教学术与无纸化研读', desc: '轻巧长续航、静音打字与 PDF 手写批注' },
+      { id: 'medical_field', label: '🏥 智慧医疗与特种现场巡检', desc: '二合一分离平板、防尘坚固、单手巡查' },
+      { id: 'cloud_gaming', label: '🎮 掌上影音娱乐与云游戏', desc: '120Hz 高刷屏、杜比全景声、Xbox 手柄直连' }
     ];
 
     const forms = [

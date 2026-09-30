@@ -1533,7 +1533,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
       },
-      "heroImage": "./assets/products/surface-pro-7-plus-official-diagram.png",
+      "heroImage": "./assets/products/surface-pro-7-plus-hero.png",
       "name": "Surface Pro 7+",
       "nameEn": "Surface Pro 7+ for Business",
       "generation": "第 7+ 代 (2021)",
@@ -2105,7 +2105,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
       },
-      "heroImage": "./assets/products/surface-pro-2-official-diagram.png",
+      "heroImage": "./assets/products/surface-pro-2-hero.png",
       "name": "Surface Pro 2",
       "nameEn": "Surface Pro 2",
       "generation": "第 2 代 (2013)",
@@ -2204,7 +2204,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
       },
-      "heroImage": "./assets/products/surface-pro-2-official-diagram.png",
+      "heroImage": "./assets/products/surface-pro-1-hero.png",
       "name": "Surface Pro 初代 (Original)",
       "nameEn": "Surface Pro (Original)",
       "generation": "初代 (2013)",
@@ -2790,6 +2790,111 @@ const SURFACE_DATA = {
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
       "segment": "commercial"
     },
+    {
+      "id": "surface-laptop-ultra",
+      "categoryId": "laptop",
+      "heroImage": "./assets/products/surface-laptop-ultra-hero.png",
+      "name": "Surface Laptop Ultra",
+      "nameEn": "Surface Laptop Ultra (15-inch, RTX Spark)",
+      "generation": "旗舰级 AI 工作站 (2026)",
+      "year": 2026,
+      "status": "upcoming",
+      "targetAudience": "consumer",
+      "flagship": true,
+      "tagline": "NVIDIA RTX Spark 芯片与 15 英寸 Mini-LED 屏，1 PFLOPS 顶级本地 AI 算力工作站",
+      "aliases": [
+            "Surface Laptop Ultra",
+            "Laptop Ultra",
+            "RTX Spark",
+            "15寸 Ultra",
+            "15-inch Ultra",
+            "Spark Ultra"
+      ],
+      "prevGenerationId": null,
+      "nextGenerationId": null,
+      "specs": {
+            "fastCharging": "标配 140W USB-C PD 快充，支持 30 分钟充至 50%",
+            "touchAndPenProtocol": "10 点触控 PixelSense Ultra，支持触控笔低延迟书写",
+            "thunderboltSupport": "USB4® / 高速全功能拓展",
+            "audioTech": "Dolby Atmos® 空间音效",
+            "windowsHello": "Windows Hello 红外人脸识别",
+            "releaseDate": "2026 年 5 月公布 / 2026 年秋季上市",
+            "generation": "第 1 代 Ultra",
+            "status": "upcoming",
+            "targetAudience": "AI 开发者、3D 设计创作者、数据科学家与高性能工作站用户",
+            "tagline": "NVIDIA Grace + Blackwell 架构超级芯片，最高 128GB 统一内存与 1 PFLOPS AI 算力",
+            "colors": [
+                  {
+                        "name": "典雅黑",
+                        "hex": "#1a1a1a",
+                        "image": "./assets/products/surface-laptop-ultra-hero.png"
+                  },
+                  {
+                        "name": "亮铂金",
+                        "hex": "#d8d8d8",
+                        "image": "./assets/products/surface-laptop-ultra-hero.png"
+                  }
+            ],
+            "chassisMaterial": "全 CNC 精密阳极氧化铝合金机身",
+            "kickstandType": "not_applicable",
+            "osAtLaunch": "Windows 11 专业版 / 工作站版 (ARM64)",
+            "cpuModel": "NVIDIA RTX Spark (20 核心 NVIDIA Grace CPU，Arm 架构)",
+            "cpuArch": "NVIDIA Grace 架构 (Arm v9)",
+            "cpuCores": "20 核",
+            "gpuModel": "NVIDIA Blackwell RTX (最高 6,144 CUDA 核心)",
+            "npuModel": "NVIDIA Tensor Core AI 加速引擎 (NVLink-C2C 统一架构)",
+            "npuTops": "1000 TOPS (1 PFLOPS FP4 算力)",
+            "copilotPlus": "支持 (Copilot+ PC 旗舰认证，支持本地运行 120B 大模型)",
+            "ramSpec": "最高 128GB LPDDR5X 统一内存 (Unified Memory)",
+            "storageOptions": "1TB / 2TB / 4TB PCIe 5.0 NVMe SSD",
+            "ssdRemovable": "支持可拆卸升级设计",
+            "expandableStorage": "全尺寸高速 SDXC 读卡器",
+            "screenSize": "15 英寸",
+            "aspectRatio": "3:2",
+            "panelTech": "Mini-LED PixelSense™ Ultra 触控屏",
+            "resolution": "3264 × 2176",
+            "ppi": "262 PPI",
+            "refreshRate": "120Hz 动态自适应刷新率",
+            "brightness": "最高 2,000 尼特 HDR 峰值亮度 (SDR 典型 600 尼特)",
+            "colorSupport": "100% sRGB, 100% DCI-P3 广色域，Dolby Vision IQ®",
+            "frontCamera": "全高清 1080p Studio 摄像头，带 AI 视线校正与背景虚化",
+            "rearCamera": "not_applicable",
+            "videoFeatures": "Windows Studio 特效 (视线校正、自动取景、人像虚化、声音聚焦)",
+            "microphones": "双重远场录音室级麦克风",
+            "speakers": "四重 Omnisonic 扬声器系统，支持杜比全景声 Dolby Atmos®",
+            "headphoneJack": "3.5mm 耳机麦克风插孔",
+            "usbPorts": "2 × USB-C (USB4®/全功能), 1 × USB-A 3.2, 1 × HDMI 2.1, 1 × 全尺寸 SD 槽",
+            "surfaceConnect": "保留 Surface Connect 拓展端口",
+            "wireless": "Wi-Fi 7 (802.11be), 蓝牙® 5.4",
+            "cellular": "可选 5G 全网通",
+            "batteryCapacityWh": "88 Wh",
+            "batteryLifeOffice": "官方典型使用长达 20 小时",
+            "batteryLifeVideo": "本地视频播放长达 22 小时",
+            "chargingPower": "标配 140W USB-C PD 快速充电器",
+            "compatibleKeyboard": "集成防泼溅背光键盘，全域触觉压感触控板 (Haptic Touchpad)",
+            "penHapticFeedback": "支持超低延迟触控笔反馈",
+            "penChargingType": "磁吸无线充电与收纳",
+            "trackpadType": "全域触觉触控板 (支持多级压感与触觉振动反馈)",
+            "tpmChip": "Microsoft Pluton 安全处理器 / TPM 2.0",
+            "securedCorePc": "Secured-core PC 安全核心认证",
+            "biometrics": "Windows Hello 红外人脸识别 + 指纹电源键双重生物认证",
+            "enterpriseManage": "支持 Microsoft Endpoint Manager 与 Windows Autopilot 企业级管理",
+            "dimensionsMm": "338 × 236 × 17.8 mm",
+            "weightGrams": "约 1,980g",
+            "totalWeightWithKeyboard": "1,980g (传统笔记本形态)",
+            "thermalDesign": "双风扇逆流散热架构，超薄均热板高风压静音散热",
+            "repairabilityScore": "9/10",
+            "replaceableParts": "支持更换 SSD、电池、主板、屏幕模块与触控板",
+            "warranty": "2 年有限硬件保修",
+            "startingPriceCny": "not_disclosed",
+            "sourceReliability": "microsoft_official",
+            "lastVerified": "2026-09-30",
+            "officialDocUrl": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+            "officialConfigureUrl": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra"
+      },
+      "isCommercial": false,
+      "segment": "consumer"
+},
     {
       "id": "laptop-8-138",
       "categoryId": "laptop",
@@ -6998,7 +7103,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
       },
-      "heroImage": "./assets/products/surface-go-3-official-diagram.png",
+      "heroImage": "./assets/products/surface-go-3-hero.png",
       "name": "Surface Go 3 商用版",
       "nameEn": "Surface Go 3 for Business",
       "systemSku": "Surface_Go_3_1926",
@@ -7200,7 +7305,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch05/image-review.json"
       },
-      "heroImage": "./assets/products/surface-laptop-13-consumer-official-diagram.png",
+      "heroImage": "./assets/products/surface-laptop-13-hero.png",
       "name": "Surface Laptop, 13 英寸 (第 1 代)",
       "nameEn": "Surface Laptop, 13-inch (1st Edition)",
       "generation": "第 1 代 (2025/2026)",
@@ -7507,7 +7612,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
       },
-      "heroImage": "./assets/products/surface-laptop-13-official-diagram.png",
+      "heroImage": "./assets/products/surface-laptop-13-hero.png",
       "name": "Surface Laptop 13 英寸 商用版 - Intel 版",
       "nameEn": "Surface Laptop for Business 13-inch (Intel)",
       "generation": "第 1 代 (2025/2026)",
@@ -7605,7 +7710,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
       },
-      "heroImage": "./assets/products/surface-book-3-official-diagram.png",
+      "heroImage": "./assets/products/surface-book-3-hero.png",
       "name": "Surface Book 3 商用版 (13.5\" & 15\")",
       "nameEn": "Surface Book 3 for Business",
       "generation": "第 3 代 (2020)",
@@ -7703,7 +7808,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
       },
-      "heroImage": "./assets/products/surface-go-2-official-diagram.png",
+      "heroImage": "./assets/products/surface-go-2-hero.png",
       "name": "Surface Go 2 商用版",
       "nameEn": "Surface Go 2 for Business",
       "generation": "第 2 代 (2020)",
@@ -7801,7 +7906,7 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch05/image-review.json"
       },
-      "heroImage": "./assets/products/surface-pro-6-official-diagram.png",
+      "heroImage": "./assets/products/surface-pro-6-hero.png",
       "name": "Surface Pro 6 商用版",
       "nameEn": "Surface Pro 6 for Business",
       "generation": "第 6 代 (2018)",
@@ -8512,6 +8617,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -8899,6 +9009,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一生产力桌面拓展主力鼠标"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -9286,6 +9401,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "轻薄便携差旅办公"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -9673,6 +9793,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "桌面拓展办公首选"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -10060,6 +10185,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -10447,6 +10577,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (接口物理不兼容)"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -10834,6 +10969,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "完美原生支持"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -11221,6 +11361,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -11608,6 +11753,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -11995,6 +12145,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一主机桌面办公利器"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -12382,6 +12537,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "PARTIAL",
           "note": "支持书写绘图，无触觉震动，需外置充电座"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -12769,6 +12929,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "PARTIAL",
           "note": "支持正常书写，需配外置充电盒"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -13156,6 +13321,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "完美原生支持"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -13543,6 +13713,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持现代机型高级倾斜与高阶压感"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -13930,6 +14105,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -14317,6 +14497,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸口)"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -14704,6 +14889,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (早期机型无 USB-C / 雷电接口)"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -15091,6 +15281,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一外出开会与出差黄金转接头"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -15478,6 +15673,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -15865,6 +16065,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "全系蓝牙免驱配对，高保真办公与会议降噪"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -16252,6 +16457,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "出差差旅与移动会议绝配"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -16639,6 +16849,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一电脑桌面工位拓展利器"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -17026,6 +17241,11 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持"
+        },
+        {
+          "deviceId": "surface-laptop-ultra",
+          "status": "FULL",
+          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     }

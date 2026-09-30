@@ -2279,6 +2279,16 @@ const App = {
     sort: 'default'
   },
 
+  toggleDetailCatalogGroup(headingEl) {
+    const group = headingEl.closest('.detail-catalog-group');
+    if (!group) return;
+    group.classList.toggle('collapsed');
+    const icon = headingEl.querySelector('.group-chevron-icon');
+    if (icon) {
+      icon.style.transform = group.classList.contains('collapsed') ? 'rotate(-90deg)' : 'rotate(0deg)';
+    }
+  },
+
   updateDetailFilter(key, val) {
     if (key === 'keyword') this.detailFilterState.keyword = String(val || '').trim().toLowerCase();
     if (key === 'series') this.detailFilterState.series = String(val || 'all');
@@ -2308,20 +2318,22 @@ const App = {
         item.hidden = !(matchesKeyword && matchesSeries && matchesStatus);
       });
 
-      // 排序
-      if (sort === '最新优先' || sort === 'newest') {
-        items.sort((a, b) => (Number(b.dataset.year) || 0) - (Number(a.dataset.year) || 0));
+      // 排序：基于 YYYYMMDD 时间戳精准排序
+      if (sort === '最新优先' || sort === 'newest' || sort === 'default') {
+        items.sort((a, b) => (Number(b.dataset.timestamp) || 0) - (Number(a.dataset.timestamp) || 0));
         items.forEach(el => container.appendChild(el));
       } else if (sort === '最早优先' || sort === 'oldest') {
-        items.sort((a, b) => (Number(a.dataset.year) || 9999) - (Number(b.dataset.year) || 9999));
-        items.forEach(el => container.appendChild(el));
-      } else {
-        items.sort((a, b) => (Number(a.dataset.order) || 0) - (Number(b.dataset.order) || 0));
+        items.sort((a, b) => (Number(a.dataset.timestamp) || 99999999) - (Number(b.dataset.timestamp) || 99999999));
         items.forEach(el => container.appendChild(el));
       }
 
       const visible = items.some(item => !item.hidden);
       group.hidden = !visible;
+      const countSpan = group.querySelector('.detail-catalog-group-heading .group-count-text');
+      if (countSpan) {
+        const visibleCount = items.filter(item => !item.hidden).length;
+        countSpan.textContent = `${visibleCount} 款产品`;
+      }
     });
   },
 
@@ -2347,9 +2359,12 @@ const App = {
       const isActiveGroup = cat.seriesId === activeSeriesId;
       return `
         <section class="detail-catalog-group ${isActiveGroup ? 'active' : ''}">
-          <div class="detail-catalog-group-heading">
-            <strong>${this.escapeText(cat.name)}</strong>
-            <span>${devices.length} 款产品</span>
+          <div class="detail-catalog-group-heading" onclick="App.toggleDetailCatalogGroup(this)" role="button" tabindex="0" title="点击折叠或展开本系列">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <svg class="group-chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition:transform 0.2s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <strong>${this.escapeText(cat.name)}</strong>
+            </div>
+            <span class="group-count-text">${devices.length} 款产品</span>
           </div>
           <div class="detail-catalog-items">
             ${devices.map((dev, devIdx) => {
@@ -2360,6 +2375,9 @@ const App = {
               const cleanYear = String(year).slice(0, 4);
               const itemSub = `${catLabel} · ${cleanYear}`;
               const aliases = Array.isArray(dev.aliases) ? dev.aliases.join(' ') : '';
+              const timestamp = (typeof Catalog !== 'undefined' && Catalog.parseReleaseTimestamp)
+                ? Catalog.parseReleaseTimestamp(dev)
+                : (parseInt(dev.year, 10) * 10000 + 101);
               return `
                 <button type="button"
                   class="detail-catalog-item ${active ? 'active' : ''}"
@@ -2367,6 +2385,7 @@ const App = {
                   data-series="${this.escapeText(cat.name)}"
                   data-status="${dev.status}"
                   data-year="${cleanYear}"
+                  data-timestamp="${timestamp}"
                   data-order="${devIdx}"
                   onclick="App.navigateToDetail('${cat.seriesId}', '${dev.id}')">
                   <span class="detail-catalog-item-image">
@@ -2417,12 +2436,12 @@ const App = {
             </select>
             <select aria-label="按状态筛选" onchange="App.updateDetailFilter('status', this.value)">
               <option value="all" ${this.detailFilterState.status === 'all' ? 'selected' : ''}>所有状态</option>
-              <option value="已发布" ${this.detailFilterState.status === '已发布' || this.detailFilterState.status === 'current_cn' ? 'selected' : ''}>已发布</option>
-              <option value="已停止销售" ${this.detailFilterState.status === '已停止销售' || this.detailFilterState.status === 'discontinued' ? 'selected' : ''}>已停止销售</option>
-              <option value="即将推出" ${this.detailFilterState.status === '即将推出' || this.detailFilterState.status === 'upcoming' ? 'selected' : ''}>即将推出</option>
+              <option value="current_cn" ${this.detailFilterState.status === 'current_cn' || this.detailFilterState.status === '已发布' ? 'selected' : ''}>国行在售</option>
+              <option value="upcoming" ${this.detailFilterState.status === 'upcoming' || this.detailFilterState.status === '即将推出' ? 'selected' : ''}>即将推出</option>
+              <option value="discontinued" ${this.detailFilterState.status === 'discontinued' || this.detailFilterState.status === '已停止销售' ? 'selected' : ''}>停产/经典</option>
             </select>
             <select aria-label="按发布时间筛选" onchange="App.updateDetailFilter('sort', this.value)">
-              <option value="default" ${this.detailFilterState.sort === 'default' ? 'selected' : ''}>发布时间排序</option>
+              <option value="default" ${this.detailFilterState.sort === 'default' ? 'selected' : ''}>发布时间排序 (最新)</option>
               <option value="最新优先" ${this.detailFilterState.sort === '最新优先' || this.detailFilterState.sort === 'newest' ? 'selected' : ''}>最新优先</option>
               <option value="最早优先" ${this.detailFilterState.sort === '最早优先' || this.detailFilterState.sort === 'oldest' ? 'selected' : ''}>最早优先</option>
             </select>

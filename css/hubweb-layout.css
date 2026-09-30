@@ -2388,9 +2388,25 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 7px 12px 6px;
+  padding: 8px 12px;
   color: var(--ms-text-primary);
   font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.detail-catalog-group-heading:hover {
+  background-color: var(--ms-bg-subtle, rgba(0, 0, 0, 0.04));
+}
+
+.detail-catalog-group.collapsed .detail-catalog-items {
+  display: none !important;
+}
+
+.detail-catalog-group.collapsed .group-chevron-icon {
+  transform: rotate(-90deg) !important;
 }
 
 .detail-catalog-group-heading span {
@@ -2518,10 +2534,23 @@ body {
   gap: 0;
   align-items: start;
   min-height: calc(100vh - 56px);
+  width: 100%;
+}
+
+.catalog-detail-layout:not(:has(.detail-utility-rail)) {
+  grid-template-columns: 1fr !important;
+}
+
+@media (max-width: 980px) {
+  .catalog-detail-layout {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .catalog-detail-main {
   min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0 28px 130px;
 }
 

@@ -1202,6 +1202,17 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       cellularState: 'NOT_APPLICABLE',
       colorNames: ['罗兰紫', '亮铂金', '典雅黑'],
       officialDocUrl: 'https://www.microsoftstore.com.cn/surface/surface-laptop'
+    },
+    'surface-laptop-ultra': {
+      specState: { startingPriceCny: 'NOT_DISCLOSED', rearCamera: 'NOT_APPLICABLE' },
+      cpuMustInclude: ['NVIDIA', 'RTX Spark'],
+      screenSizeContains: '15',
+      resolutionContains: '3264',
+      refreshRateContains: '120',
+      ramMustInclude: ['128GB'],
+      wifiMustInclude: 'Wi-Fi 7',
+      colorNames: ['典雅黑', '亮铂金'],
+      officialDocUrl: 'https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra'
     }
   }
 };
