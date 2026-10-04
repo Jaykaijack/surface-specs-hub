@@ -685,13 +685,18 @@ const App = {
     currentCnDevices.forEach((dev, index) => {
       const devShot = this.shot(dev);
       const homeColors = this.spec(dev, 'colors');
+      const defaultColor = (Array.isArray(homeColors) && homeColors.length > 0) ? homeColors[0] : null;
+      const defaultColorLabel = defaultColor ? `${defaultColor.name}${defaultColor.material ? ' · ' + defaultColor.material.replace(/®|合金/g, '') : ''}` : '';
       const colorDotsHtml = (Array.isArray(homeColors) && homeColors.length > 1) ? `
         <div class="card-color-swatches" onclick="event.stopPropagation();">
-          ${homeColors.map((c, idx) => `
-            <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}"
-              onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
-              onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
-          `).join('')}
+          <div class="card-color-dots-row">
+            ${homeColors.map((c, idx) => `
+              <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
+                onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
+                onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
+            `).join('')}
+          </div>
+          <span class="card-active-color-name" id="color-name-${dev.id}">${defaultColorLabel}</span>
         </div>
       ` : '';
 
@@ -1076,13 +1081,18 @@ const App = {
             const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
             const devShot = this.shot(dev);
             const galleryColors = this.spec(dev, 'colors');
+            const defaultColor = (Array.isArray(galleryColors) && galleryColors.length > 0) ? galleryColors[0] : null;
+            const defaultColorLabel = defaultColor ? `${defaultColor.name}${defaultColor.material ? ' · ' + defaultColor.material.replace(/®|合金/g, '') : ''}` : '';
             const colorDotsHtml = (Array.isArray(galleryColors) && galleryColors.length > 1) ? `
               <div class="card-color-swatches" onclick="event.stopPropagation();" style="margin-bottom:12px;">
-                ${galleryColors.map((c, idx) => `
-                  <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}"
-                    onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
-                    onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
-                `).join('')}
+                <div class="card-color-dots-row">
+                  ${galleryColors.map((c, idx) => `
+                    <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
+                      onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
+                      onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
+                  `).join('')}
+                </div>
+                <span class="card-active-color-name" id="color-name-${dev.id}">${defaultColorLabel}</span>
               </div>
             ` : '';
 
@@ -1681,13 +1691,18 @@ const App = {
           const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
           const devShot = this.shot(dev);
           const galleryColors = this.spec(dev, 'colors');
+          const defaultColor = (Array.isArray(galleryColors) && galleryColors.length > 0) ? galleryColors[0] : null;
+          const defaultColorLabel = defaultColor ? `${defaultColor.name}${defaultColor.material ? ' · ' + defaultColor.material.replace(/®|合金/g, '') : ''}` : '';
           const colorDotsHtml = (Array.isArray(galleryColors) && galleryColors.length > 1) ? `
             <div class="card-color-swatches" onclick="event.stopPropagation();" style="margin-bottom:12px;">
-              ${galleryColors.map((c, idx) => `
-                <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}"
-                  onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
-                  onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
-              `).join('')}
+              <div class="card-color-dots-row">
+                ${galleryColors.map((c, idx) => `
+                  <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
+                    onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
+                    onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
+                `).join('')}
+              </div>
+              <span class="card-active-color-name" id="color-name-${dev.id}">${defaultColorLabel}</span>
             </div>
           ` : '';
 
@@ -2052,16 +2067,18 @@ const App = {
           ${hasColors ? `
             <div class="detail-color-panel">
               <div class="detail-color-header">
-                <span>🎨 外观配色视角展示</span>
-                <span class="detail-color-active-name" id="detail-active-color-label">${activeColorName}</span>
+                <span style="font-weight:600;">🎨 外观配色与材质工学</span>
+                <span class="detail-color-active-name" id="detail-active-color-label">${activeColorName}${colorRows[0] && colorRows[0].material ? ' · ' + colorRows[0].material : ''}</span>
               </div>
               <div class="detail-color-options">
                 ${colorRows.map((c, idx) => `
                   <button type="button" class="color-choice-btn ${idx === 0 ? 'active' : ''}" 
                     data-color="${c.name}"
+                    title="${c.name}${c.material ? ' · ' + c.material : ''}"
                     onclick="App.switchDetailColor('${dev.id}', '${c.name}', this)">
                     <span class="color-choice-dot" style="background:${c.hex};"></span>
-                    <span>${c.name}</span>
+                    <span class="color-choice-name">${c.name}</span>
+                    ${c.material ? `<span class="color-material-chip">${c.material}</span>` : ''}
                   </button>
                 `).join('')}
               </div>
@@ -3260,7 +3277,13 @@ const App = {
       thumb.classList.toggle('active', thumb.title === colorName);
     });
     if (labelEl) {
-      labelEl.textContent = colorName;
+      const colors = this.spec(dev, 'colors') || [];
+      const foundColor = colors.find(c => c.name === colorName);
+      if (foundColor && foundColor.material) {
+        labelEl.textContent = `${colorName} · ${foundColor.material}`;
+      } else {
+        labelEl.textContent = colorName;
+      }
     }
     if (btnEl) {
       const parent = btnEl.closest('.detail-color-options');
@@ -3291,7 +3314,9 @@ const App = {
   },
 
   previewCardColor(deviceId, colorName, dotEl) {
-    const shot = this.shot(this.getDevice(deviceId), colorName);
+    const dev = this.getDevice(deviceId);
+    if (!dev) return;
+    const shot = this.shot(dev, colorName);
     if (!shot.src) return;
     const thumbEl = document.getElementById(`thumb-${deviceId}`);
     if (thumbEl) {
@@ -3307,6 +3332,16 @@ const App = {
       if (parent) {
         parent.querySelectorAll('.card-color-dot').forEach(d => d.classList.remove('active'));
         dotEl.classList.add('active');
+      }
+    }
+    const lblEl = document.getElementById(`color-name-${deviceId}`);
+    if (lblEl) {
+      const colors = this.spec(dev, 'colors') || [];
+      const cObj = colors.find(c => c.name === colorName);
+      if (cObj && cObj.material) {
+        lblEl.textContent = `${colorName} · ${cObj.material.replace(/®|合金/g, '')}`;
+      } else {
+        lblEl.textContent = colorName;
       }
     }
   },

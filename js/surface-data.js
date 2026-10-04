@@ -1447,12 +1447,14 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "特种阳极氧化铝",
             "image": "./assets/products/surface-pro-8-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-8-hero.png"
+            "material": "特种阳极氧化铝 (石墨黑)",
+            "image": "./assets/products/surface-pro-13-black.png"
           }
         ],
         "chassisMaterial": "签名氧化铝",
@@ -1543,11 +1545,13 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8"
+            "hex": "#d8d8d8",
+            "material": "特制镁合金 VaporMg"
           },
           {
             "name": "典黑",
-            "hex": "#262626"
+            "hex": "#262626",
+            "material": "特制镁合金 (哑光黑涂层)"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -1644,12 +1648,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "特制镁合金 VaporMg",
             "image": "./assets/products/surface-pro-7-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-7-hero.png"
+            "material": "特制镁合金 (哑光黑涂层)"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -1741,12 +1746,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "特制镁合金 VaporMg",
             "image": "./assets/products/surface-pro-6-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-6-hero.png"
+            "material": "特制镁合金 (哑光黑涂层)"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -2296,12 +2302,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "特种阳极氧化铝",
             "image": "./assets/products/surface-pro-x-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-x-hero.png"
+            "material": "特种阳极氧化铝 (哑光黑)"
           }
         ],
         "chassisMaterial": "氧化铝",
@@ -3134,12 +3141,14 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "阳极氧化铝一体机身",
             "image": "./assets/products/surface-laptop-6-biz-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-6-biz-hero.png"
+            "material": "阳极氧化铝一体机身",
+            "image": "./assets/products/surface-laptop-black.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -3231,22 +3240,26 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-5-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-5-hero.png"
+            "material": "阳极氧化铝金属掌托",
+            "image": "./assets/products/surface-laptop-black.png"
           },
           {
             "name": "森野绿",
             "hex": "#3b5323",
+            "material": "阳极氧化铝金属掌托",
             "image": "./assets/products/surface-laptop-sage.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-5-hero.png"
+            "material": "阳极氧化铝金属掌托",
+            "image": "./assets/products/surface-laptop-dune.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -3338,22 +3351,26 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-4-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-4-hero.png"
+            "material": "阳极氧化铝金属掌托",
+            "image": "./assets/products/surface-laptop-black.png"
           },
           {
             "name": "冰晶蓝",
             "hex": "#a4c2f4",
-            "image": "./assets/products/surface-laptop-4-hero.png"
+            "material": "Alcantara® 欧缔兰织物掌托",
+            "image": "./assets/products/surface-laptop-sapphire.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-4-hero.png"
+            "material": "阳极氧化铝金属掌托",
+            "image": "./assets/products/surface-laptop-dune.png"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -3445,22 +3462,26 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-3-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-3-hero.png"
+            "material": "阳极氧化铝金属掌托",
+            "image": "./assets/products/surface-laptop-black.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-3-hero.png"
+            "material": "阳极氧化铝金属掌托",
+            "image": "./assets/products/surface-laptop-dune.png"
           },
           {
             "name": "钴蓝色",
             "hex": "#0047ab",
-            "image": "./assets/products/surface-laptop-3-hero.png"
+            "material": "Alcantara® 欧缔兰织物掌托",
+            "image": "./assets/products/surface-laptop-1-cobalt.png"
           }
         ],
         "chassisMaterial": "铝",
@@ -3552,22 +3573,26 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-2-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-2-hero.png"
+            "material": "Alcantara® 欧缔兰织物掌托",
+            "image": "./assets/products/surface-laptop-black.png"
           },
           {
             "name": "勃艮第红",
             "hex": "#800020",
-            "image": "./assets/products/surface-laptop-2-hero.png"
+            "material": "Alcantara® 欧缔兰织物掌托",
+            "image": "./assets/products/surface-laptop-1-burgundy.png"
           },
           {
             "name": "深钴蓝",
             "hex": "#0047ab",
-            "image": "./assets/products/surface-laptop-2-hero.png"
+            "material": "Alcantara® 欧缔兰织物掌托",
+            "image": "./assets/products/surface-laptop-1-cobalt.png"
           }
         ],
         "chassisMaterial": "铝",
@@ -3658,21 +3683,25 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-1-hero.png"
           },
           {
             "name": "石墨金",
             "hex": "#cfb53b",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-1-gold.png"
           },
           {
             "name": "勃艮第红",
             "hex": "#800020",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-1-burgundy.png"
           },
           {
             "name": "深钴蓝",
             "hex": "#0047ab",
+            "material": "Alcantara® 欧缔兰织物掌托",
             "image": "./assets/products/surface-laptop-1-cobalt.png"
           }
         ],
@@ -4038,11 +4067,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-go-3-hero.png"
-          },
-          {
-            "name": "典黑",
-            "hex": "#262626",
+            "material": "特制镁合金",
             "image": "./assets/products/surface-go-3-hero.png"
           }
         ],
@@ -4965,22 +4990,26 @@ const SURFACE_DATA = {
           {
             "name": "仙踪绿",
             "hex": "#8a9a86",
+            "material": "阳极氧化铝 + 复合材质基座",
             "image": "./assets/products/surface-laptop-sage.png"
           },
           {
             "name": "冰晶蓝",
             "hex": "#a4c2d6",
-            "image": "./assets/products/surface-laptop-go-3-hero.png"
+            "material": "阳极氧化铝 + 复合材质基座",
+            "image": "./assets/products/surface-laptop-sapphire.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-go-3-hero.png"
+            "material": "阳极氧化铝 + 复合材质基座",
+            "image": "./assets/products/surface-laptop-dune.png"
           },
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-go-3-hero.png"
+            "material": "阳极氧化铝 + 复合材质基座",
+            "image": "./assets/products/surface-laptop-platinum.png"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -5070,17 +5099,20 @@ const SURFACE_DATA = {
           {
             "name": "冰晶蓝",
             "hex": "#a4c2d6",
-            "image": "./assets/products/surface-laptop-go-3-hero.png"
+            "material": "阳极氧化铝 + 复合材质基座",
+            "image": "./assets/products/surface-laptop-sapphire.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-go-3-hero.png"
+            "material": "阳极氧化铝 + 复合材质基座",
+            "image": "./assets/products/surface-laptop-dune.png"
           },
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-go-3-hero.png"
+            "material": "阳极氧化铝 + 复合材质基座",
+            "image": "./assets/products/surface-laptop-platinum.png"
           }
         ],
         "chassisMaterial": "铝 / 聚碳酸酯",
@@ -6722,11 +6754,13 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8"
+            "hex": "#d8d8d8",
+            "material": "阳极氧化铝金属机身"
           },
           {
             "name": "典雅黑",
-            "hex": "#262626"
+            "hex": "#262626",
+            "material": "阳极氧化铝金属机身"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -7019,11 +7053,8 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8"
-          },
-          {
-            "name": "典雅黑",
-            "hex": "#262626"
+            "hex": "#d8d8d8",
+            "material": "特制镁合金"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -7811,11 +7842,13 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8"
+            "hex": "#d8d8d8",
+            "material": "特制镁合金"
           },
           {
             "name": "典雅黑",
-            "hex": "#262626"
+            "hex": "#262626",
+            "material": "特制镁合金"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -8008,11 +8041,13 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "典雅冷白 Chill White",
-            "hex": "#e2e8f0"
+            "hex": "#e2e8f0",
+            "image": "./assets/products/xbox-360-original-hero.png"
           },
           {
             "name": "精英黑 Elite Matte Black",
-            "hex": "#1e293b"
+            "hex": "#1e293b",
+            "image": "./assets/products/xbox-360-elite-hero.png"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -8104,11 +8139,13 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮面钢琴黑 Liquid Black",
-            "hex": "#0a0a0a"
+            "hex": "#0a0a0a",
+            "image": "./assets/products/xbox-360-s-hero.png"
           },
           {
             "name": "哑光黑 Matte Black",
-            "hex": "#1e2229"
+            "hex": "#1e2229",
+            "image": "./assets/products/xbox-360-s-hero.png"
           }
         ],
         "chassisMaterial": "新设计（公告原文 New design）",
@@ -8568,11 +8605,13 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "哑光深空黑 Matte Space Black",
-            "hex": "#1c1917"
+            "hex": "#1c1917",
+            "image": "./assets/products/xbox-one-x-hero.png"
           },
           {
             "name": "机器人白 Robot White",
-            "hex": "#f8fafc"
+            "hex": "#f8fafc",
+            "image": "./assets/products/xbox-series-x-digital-white-hero.png"
           }
         ],
         "chassisMaterial": "黑色。可横放，或用另购支架竖放。",
@@ -8756,11 +8795,13 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "碳黑 Carbon Black",
-            "hex": "#1c1c1c"
+            "hex": "#1c1c1c",
+            "image": "./assets/products/xbox-series-s-transparent.png"
           },
           {
             "name": "机器人白 Robot White",
-            "hex": "#f8fafc"
+            "hex": "#f8fafc",
+            "image": "./assets/products/xbox-series-s-512-hero.png"
           }
         ],
         "chassisMaterial": "not_disclosed",

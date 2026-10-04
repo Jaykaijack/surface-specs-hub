@@ -5,6 +5,47 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.4] - 2026-10-04
+
+### Changed
+- **全系机型多外观配色与材质差异化全面治理（终结“选黑图仍银”与“多色同一图”）**：
+  - **Surface Pro 8 / Pro 7 / Pro 6 / Pro X 真实黑色版独立图鉴绑定**：
+    - `pro-8`：亮铂金绑定 `surface-pro-8-hero.png`，典黑（石墨黑）绑定真实专属大图 `surface-pro-13-black.png`；
+    - `pro-7` / `pro-6` / `pro-7-plus`：亮铂金与典黑分离，明确区分镁合金原色与哑光黑涂层工学；
+    - 终结点击“典黑”后图片纹丝不动、依旧展示银白色的体验断层。
+  - **Surface Laptop 系列（Laptop 1~6）多配色独立图鉴与掌托材质一体化治理**：
+    - `laptop-5`：亮铂金（Alcantara® 欧缔兰）、典黑（阳极氧化铝）、森野绿（阳极氧化铝）、砂岩金（阳极氧化铝）四色大图与材质参数 100% 独立绑定；
+    - `laptop-4`：亮铂金、典黑、冰晶蓝、砂岩金四色分别绑定对应真机色彩大图，告别全员共用银色图；
+    - `laptop-3` / `laptop-2` / `laptop-1`：分别绑定专属的典黑、砂岩金、勃艮第红、深钴蓝大图，并标明 Alcantara 欧缔兰 vs 全铝掌托材质；
+    - `laptop-go-1` / `laptop-go-2`：仙踪绿、冰晶蓝、砂岩金、亮铂金全量绑定对应真实色彩大图；
+    - `go-3` / `go-3-biz`：正本清源，纠正历史残留的虚假“典黑”机身选项，恢复为微软官方唯一的特制镁合金“亮铂金”单色。
+  - **Xbox 主机多配色独立图鉴全量入库**：
+    - `xbox-360`：典雅冷白（Chill White）绑定 `xbox-360-original-hero.png`，精英黑（Elite）绑定专属 `xbox-360-elite-hero.png`；
+    - `xbox-series-s-1tb`：碳黑（Carbon Black）绑定 `xbox-series-s-transparent.png`，机器人白（Robot White）绑定 `xbox-series-s-512-hero.png`；
+    - `xbox-one-x`：深空黑与机器人白独立分流；
+    - `xbox-360-s`：高光与哑光双色规范入库。
+
+### Added
+- **交互与视觉层全场景配色高显反馈体系**：
+  - **卡片配色动态状态与名称显性化 (`js/app.js`, `css/hubweb-layout.css`)**：
+    - 卡片色块圆点升级为 13px 带有深浅色自适应描边；
+    - 增加动态文字标签 `#color-name-${dev.id}`，用户悬浮或点击色块时，标签即刻显示当前配色全名与掌托材质（如 `典黑 · 金属`、`亮铂金 · 欧缔兰`）；
+    - 色块获得 `.active` 高亮圆环与发光投影，选定状态一目了然。
+  - **详情页配色与工学材质一体化展示 (`App.renderDeviceDetail`)**：
+    - 升级为带材质胶囊的药丸选择按钮（如 `[色块] 冰晶蓝 [欧缔兰织物]`）；
+    - 标题区动态联动更新所选配色的材质说明。
+  - **横向对比大表配色联动强化 (`js/comparison-engine.js`, `css/spec-table.css`)**：
+    - 表头机型卡片增加动态选中配色标签；
+    - “机身外观与配色”参数行采用圆角色卡并外挂材质角标，点击任一色卡即时切图。
+- **不可变版本快照与构建产物**：
+  - 输出不可变版本快照：`releases/surface-specs-hub-standalone-v2.2.4-20261004-color-differentiation-and-material-fidelity.html`。
+  - 根目录稳定指针同步更新：`surface-specs-hub-standalone.html` 与 `dist/surface-specs-hub-standalone.html`。
+
+### Why (决策理由)
+- 老大指正：“不同配色你也没很好的区分”。
+- 经严谨审计，发现全站此前有 10 款机型虽然在数据层声明了多个颜色，但图片 URL 全部指向了同一张默认银白色图，导致用户点击其它颜色时毫无视觉变化；且卡片上仅有毫无文字说明的 11px 小圆点，无法得知选中颜色。
+- 此次升级从“数据图源真实绑定”、“材质工学显性化”、“卡片即时动态标签”、“对比表双向联动”四大维度彻底重塑，确保全站多配色机型每一处交互都具备分明的色彩差异与真实图鉴呈现。
+
 ## [v2.2.3] - 2026-10-04
 
 ### Fixed

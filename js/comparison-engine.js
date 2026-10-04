@@ -276,11 +276,14 @@ const ComparisonEngine = {
 
               <!-- 表头多配色快速预览 -->
               ${(Array.isArray(Catalog.getSpec(dev, 'colors')) && Catalog.getSpec(dev, 'colors').length > 1) ? `
-                <div class="table-color-dots" onclick="event.stopPropagation();">
-                  ${Catalog.getSpec(dev, 'colors').map(c => `
-                    <span class="table-color-dot" style="background:${c.hex};" title="${c.name}"
-                      onclick="ComparisonEngine.switchTableDeviceColor('${dev.id}', ${colIdx}, '${c.name}', this)"></span>
-                  `).join('')}
+                <div class="table-color-swatches-wrap" onclick="event.stopPropagation();">
+                  <div class="table-color-dots">
+                    ${Catalog.getSpec(dev, 'colors').map((c, idx) => `
+                      <span class="table-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' · ' + c.material : ''}"
+                        onclick="ComparisonEngine.switchTableDeviceColor('${dev.id}', ${colIdx}, '${c.name}', this)"></span>
+                    `).join('')}
+                  </div>
+                  <span class="table-header-color-name" id="table-color-name-${dev.id}-${colIdx}">${Catalog.getSpec(dev, 'colors')[0].name}</span>
                 </div>
               ` : ''}
 
@@ -410,10 +413,12 @@ const ComparisonEngine = {
     if (type === 'colors' && Array.isArray(val)) {
       let colorDots = '<div class="color-palette-wrap">';
       val.forEach(c => {
+        const matTag = c.material ? `<span class="color-mat-badge">${c.material}</span>` : '';
         colorDots += `
-          <div class="color-dot-item" title="${c.name}">
+          <div class="color-dot-item" title="${c.name}${c.material ? ' · ' + c.material : ''}">
             <span class="color-dot" style="background-color:${c.hex};"></span>
-            <span>${c.name}</span>
+            <span class="color-dot-name">${c.name}</span>
+            ${matTag}
           </div>
         `;
       });
@@ -777,7 +782,9 @@ const ComparisonEngine = {
   },
 
   switchTableDeviceColor(devId, colIdx, colorName, dotEl) {
-    const shot = Catalog.portrait(Catalog.getDevice(devId), colorName);
+    const dev = Catalog.getDevice(devId);
+    if (!dev) return;
+    const shot = Catalog.portrait(dev, colorName);
     if (!shot.src) return;
     const imgEl = document.getElementById(`table-thumb-${devId}-${colIdx}`);
     if (imgEl) {
@@ -793,6 +800,16 @@ const ComparisonEngine = {
       if (parent) {
         parent.querySelectorAll('.table-color-dot').forEach(d => d.classList.remove('active'));
         dotEl.classList.add('active');
+      }
+    }
+    const nameEl = document.getElementById(`table-color-name-${devId}-${colIdx}`);
+    if (nameEl) {
+      const colors = Catalog.getSpec(dev, 'colors') || [];
+      const foundColor = colors.find(c => c.name === colorName);
+      if (foundColor && foundColor.material) {
+        nameEl.textContent = `${colorName} (${foundColor.material.replace(/®|合金/g, '')})`;
+      } else {
+        nameEl.textContent = colorName;
       }
     }
   },

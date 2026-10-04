@@ -161,8 +161,8 @@ var XBOX_LINEUP = (function () {
       releaseDate: '2005 年 8 月 17 日公布价格，当年假期在北美、欧洲、日本上市（美国 Xbox Wire）',
       salesRegion: '硬件规格来自微软 Xbox 官网托管的 2008 年主机规格页。该文件的保修法律范围写的是墨西哥和哥伦比亚。上市套装来自美国 Xbox Wire。不是当前国行在售。',
       colors: [
-        { name: '典雅冷白 Chill White', hex: '#e2e8f0' },
-        { name: '精英黑 Elite Matte Black', hex: '#1e293b' }
+        { name: '典雅冷白 Chill White', hex: '#e2e8f0', image: './assets/products/xbox-360-original-hero.png' },
+        { name: '精英黑 Elite Matte Black', hex: '#1e293b', image: './assets/products/xbox-360-elite-hero.png' }
       ],
       cpuModel: '定制 PowerPC',
       cpuArch: '3 个对称核心，3.2 GHz；每核 2 个硬件线程（共 6 线程）；1 MB 二级缓存；前端总线 2.7 GHz',
@@ -196,8 +196,8 @@ var XBOX_LINEUP = (function () {
       releaseDate: '2010 年 6 月 14 日公布，当时可预订（美国 Xbox Wire）',
       salesRegion: '美国 Xbox Wire，2010 年 6 月 14 日。公告里的美国标价是 299 美元。不是当前国行在售。这篇公告没有重写处理器和内存，那些格子保持未披露。',
       colors: [
-        { name: '亮面钢琴黑 Liquid Black', hex: '#0a0a0a' },
-        { name: '哑光黑 Matte Black', hex: '#1e2229' }
+        { name: '亮面钢琴黑 Liquid Black', hex: '#0a0a0a', image: './assets/products/xbox-360-s-hero.png' },
+        { name: '哑光黑 Matte Black', hex: '#1e2229', image: './assets/products/xbox-360-s-hero.png' }
       ],
       chassisMaterial: '新设计（公告原文 New design）',
       storageOptions: '250 GB 硬盘',
@@ -328,8 +328,8 @@ var XBOX_LINEUP = (function () {
       releaseDate: '2017 年 11 月 7 日起在当时的 Xbox One 市场发售（美国 Xbox Wire）',
       salesRegion: '美国 Xbox Wire。公告里的美国标价是 499 美元。不是当前国行在售。',
       colors: [
-        { name: '哑光深空黑 Matte Space Black', hex: '#1c1917' },
-        { name: '机器人白 Robot White', hex: '#f8fafc' }
+        { name: '哑光深空黑 Matte Space Black', hex: '#1c1917', image: './assets/products/xbox-one-x-hero.png' },
+        { name: '机器人白 Robot White', hex: '#f8fafc', image: './assets/products/xbox-series-x-digital-white-hero.png' }
       ],
       chassisMaterial: '黑色。可横放，或用另购支架竖放。',
       cpuModel: '8 核定制 AMD，2.3 GHz',
@@ -390,8 +390,8 @@ var XBOX_LINEUP = (function () {
       releaseDate: '2023 年 9 月 1 日全球发售',
       salesRegion: '美国 xbox.com 规格页把碳黑 1TB 和机器人白 1TB 写成两台全数字 Series S。美国微软商店也能看到 1TB。国行商城的 Series S 页面没有单独写出 1TB。上市月份规格页没有写。',
       colors: [
-        { name: '碳黑 Carbon Black', hex: '#1c1c1c' },
-        { name: '机器人白 Robot White', hex: '#f8fafc' }
+        { name: '碳黑 Carbon Black', hex: '#1c1c1c', image: './assets/products/xbox-series-s-transparent.png' },
+        { name: '机器人白 Robot White', hex: '#f8fafc', image: './assets/products/xbox-series-s-512-hero.png' }
       ],
       cpuModel: seriesCpu,
       cpuArch: 'Custom Zen 2',

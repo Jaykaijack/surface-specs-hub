@@ -1031,23 +1031,56 @@ body {
 
 .card-color-swatches {
   display: flex;
-  gap: 5px;
   align-items: center;
-  margin-top: 6px;
-  height: 18px;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  min-height: 24px;
+}
+[data-theme="dark"] .card-color-swatches {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.card-color-dots-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .card-color-dot {
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  flex-shrink: 0;
 }
-.card-color-dot:hover, .card-color-dot.active {
-  transform: scale(1.35);
-  border-color: var(--ms-accent);
-  box-shadow: 0 0 0 1.5px var(--ms-accent);
+[data-theme="dark"] .card-color-dot {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.card-color-dot:hover {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 2px var(--ms-accent);
+}
+.card-color-dot.active {
+  transform: scale(1.3);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px var(--ms-accent), 0 2px 6px rgba(0, 120, 212, 0.4);
+}
+.card-active-color-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ms-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
 }
 
 .device-card-mini .device-name {
@@ -1321,7 +1354,7 @@ body {
 .color-choice-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   padding: 6px 12px;
   border-radius: 8px;
   background: var(--ms-bg-card);
@@ -1342,11 +1375,24 @@ body {
   font-weight: 600;
 }
 .color-choice-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
+}
+[data-theme="dark"] .color-choice-dot {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.color-material-chip {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(0, 120, 212, 0.1);
+  color: var(--ms-accent);
+  border: 1px solid rgba(0, 120, 212, 0.2);
+  font-weight: 500;
+  margin-left: 2px;
 }
 .detail-hero-right {
   flex: 1;
