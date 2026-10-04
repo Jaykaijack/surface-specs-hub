@@ -157,7 +157,7 @@ function runImageMappingP0Tests(helpers) {
     const device = SURFACE_DATA.devices.find((d) => d.id === id);
     assert(Boolean(device), `IMG-P0-06b: 收录 ${id}`);
     if (!device) return;
-    if (device.imageVerification && device.imageVerification.status === 'diagram') {
+    if (device.imageVerification && (device.imageVerification.status === 'diagram' || device.imageVerification.colorStatus === 'pending')) {
       assert(device.specs.colors.every((color) => !color.image),
         `IMG-P0-06b: ${id} 未确认配色照片时不得伪造双色图片路径`);
       return;

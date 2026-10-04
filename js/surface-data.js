@@ -1,9 +1,3 @@
-/**
- * Microsoft Surface Specs Hub - Master Database (2012 - 2026)
- * 严格对齐 PRD 13 大专属参数体系、产品状态生命周期、未知参数治理与配件双向兼容
- * 消费版与商用版两大顶级大类彻底分离 · 官方商用版全线对齐 Microsoft Learn 与原厂 Fact Sheet · 100% 微软官方商城与技术白皮书存档
- */
-
 const SURFACE_DATA = {
   "datasetVersion": "2026.10.01",
   "lastVerifiedDate": "2026-10-01",
@@ -1529,11 +1523,6 @@ const SURFACE_DATA = {
     {
       "id": "pro-7-plus",
       "categoryId": "pro",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
-      },
       "heroImage": "./assets/products/surface-pro-7-plus-hero.png",
       "name": "Surface Pro 7+",
       "nameEn": "Surface Pro 7+ for Business",
@@ -1554,13 +1543,11 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": null
+            "hex": "#d8d8d8"
           },
           {
             "name": "典黑",
-            "hex": "#262626",
-            "image": null
+            "hex": "#262626"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -1626,7 +1613,12 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs",
-      "segment": "commercial"
+      "segment": "commercial",
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      }
     },
     {
       "id": "pro-7",
@@ -2101,11 +2093,6 @@ const SURFACE_DATA = {
     {
       "id": "pro-2",
       "categoryId": "pro",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
-      },
       "heroImage": "./assets/products/surface-pro-2-hero.png",
       "name": "Surface Pro 2",
       "nameEn": "Surface Pro 2",
@@ -2198,13 +2185,6 @@ const SURFACE_DATA = {
     {
       "id": "pro-1",
       "categoryId": "pro",
-      "imageVerification": {
-        "status": "shared",
-        "kind": "diagram",
-        "representativeDeviceId": "pro-2",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
-      },
       "heroImage": "./assets/products/surface-pro-1-hero.png",
       "name": "Surface Pro 初代 (Original)",
       "nameEn": "Surface Pro (Original)",
@@ -2401,7 +2381,13 @@ const SURFACE_DATA = {
       "targetAudience": "commercial",
       "flagship": true,
       "tagline": "商用轻薄触控本旗舰：搭载英特尔® 酷睿™ Ultra (第 3 代) 处理器，50 TOPS AI 算力与全域触觉触控板",
-      "aliases": ["Surface Laptop Ultra", "Surface Laptop 13.8 Ultra", "Laptop Ultra", "Laptop 8 Ultra", "酷睿 Ultra"],
+      "aliases": [
+        "Surface Laptop Ultra",
+        "Surface Laptop 13.8 Ultra",
+        "Laptop Ultra",
+        "Laptop 8 Ultra",
+        "酷睿 Ultra"
+      ],
       "prevGenerationId": "laptop-6-biz",
       "specs": {
         "fastCharging": "推荐快充 60W（国行：65W Surface 电源或 60W USB-C PD）",
@@ -2608,7 +2594,13 @@ const SURFACE_DATA = {
       "targetAudience": "commercial",
       "flagship": true,
       "tagline": "商用大屏性能轻薄本：搭载英特尔® 酷睿™ Ultra 5 335 / Ultra X7 368H（第 3 代），50 TOPS 与 262 PPI 超清屏",
-      "aliases": ["Surface Laptop Ultra", "Surface Laptop 15 Ultra", "Laptop Ultra", "Laptop 8 Ultra 15", "酷睿 Ultra"],
+      "aliases": [
+        "Surface Laptop Ultra",
+        "Surface Laptop 15 Ultra",
+        "Laptop Ultra",
+        "Laptop 8 Ultra 15",
+        "酷睿 Ultra"
+      ],
       "prevGenerationId": "laptop-6-biz",
       "specs": {
         "releaseDate": "2026 年 8 月",
@@ -3125,7 +3117,12 @@ const SURFACE_DATA = {
       "targetAudience": "commercial",
       "flagship": false,
       "tagline": "英特尔® 酷睿™ Ultra H 系列标压商用本，国行规格不含美加专属智能卡读卡器",
-      "aliases": ["Surface Laptop Ultra", "Surface Laptop 6 Ultra", "Laptop Ultra", "酷睿 Ultra"],
+      "aliases": [
+        "Surface Laptop Ultra",
+        "Surface Laptop 6 Ultra",
+        "Laptop Ultra",
+        "酷睿 Ultra"
+      ],
       "prevGenerationId": "laptop-5",
       "specs": {
         "releaseDate": "2024 年 3 月",
@@ -3137,12 +3134,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-6-biz-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-6-biz-hero.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -3234,12 +3231,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-5-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-5-hero.png"
           },
           {
             "name": "森野绿",
@@ -3249,7 +3246,7 @@ const SURFACE_DATA = {
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-dune.png"
+            "image": "./assets/products/surface-laptop-5-hero.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -3341,22 +3338,22 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-4-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-4-hero.png"
           },
           {
             "name": "冰晶蓝",
             "hex": "#a4c2f4",
-            "image": "./assets/products/surface-laptop-sapphire.png"
+            "image": "./assets/products/surface-laptop-4-hero.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-dune.png"
+            "image": "./assets/products/surface-laptop-4-hero.png"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -3448,22 +3445,22 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-3-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-3-hero.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-dune.png"
+            "image": "./assets/products/surface-laptop-3-hero.png"
           },
           {
             "name": "钴蓝色",
             "hex": "#0047ab",
-            "image": "./assets/products/surface-laptop-sapphire.png"
+            "image": "./assets/products/surface-laptop-3-hero.png"
           }
         ],
         "chassisMaterial": "铝",
@@ -3555,12 +3552,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-2-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "image": "./assets/products/surface-laptop-2-hero.png"
           },
           {
             "name": "勃艮第红",
@@ -3570,7 +3567,7 @@ const SURFACE_DATA = {
           {
             "name": "深钴蓝",
             "hex": "#0047ab",
-            "image": "./assets/products/surface-laptop-sapphire.png"
+            "image": "./assets/products/surface-laptop-2-hero.png"
           }
         ],
         "chassisMaterial": "铝",
@@ -3929,7 +3926,7 @@ const SURFACE_DATA = {
     {
       "id": "go-4",
       "categoryId": "go",
-      "heroImage": "./assets/products/surface-go-hero.png",
+      "heroImage": "./assets/products/surface-go-4-hero.png",
       "name": "Surface Go 4 商用版",
       "nameEn": "Surface Go 4 for Business",
       "generation": "第 4 代 (2023)",
@@ -3949,7 +3946,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-go-hero.png"
+            "image": "./assets/products/surface-go-4-hero.png"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -4020,7 +4017,7 @@ const SURFACE_DATA = {
     {
       "id": "go-3",
       "categoryId": "go",
-      "heroImage": "./assets/products/surface-go-hero.png",
+      "heroImage": "./assets/products/surface-go-3-hero.png",
       "name": "Surface Go 3",
       "nameEn": "Surface Go 3",
       "generation": "第 3 代 (2021)",
@@ -4041,12 +4038,12 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-go-hero.png"
+            "image": "./assets/products/surface-go-3-hero.png"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-go-hero.png"
+            "image": "./assets/products/surface-go-3-hero.png"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -4313,7 +4310,7 @@ const SURFACE_DATA = {
     {
       "id": "duo-2",
       "categoryId": "duo",
-      "heroImage": "./assets/products/surface-duo-hero.png",
+      "heroImage": "./assets/products/surface-duo-2-obsidian.png",
       "name": "Surface Duo 2",
       "nameEn": "Surface Duo 2",
       "generation": "第 2 代 (2021)",
@@ -4331,14 +4328,14 @@ const SURFACE_DATA = {
         "tagline": "双屏折叠机，国行未正式发售，仅保留中文 Support 图示能核对的项",
         "colors": [
           {
-            "name": "冰川白",
-            "hex": "#f5f5f5",
-            "image": "./assets/products/surface-duo-hero.png"
+            "name": "曜石黑",
+            "hex": "#2b2b2b",
+            "image": "./assets/products/surface-duo-2-obsidian.png"
           },
           {
-            "name": "曜石黑",
-            "hex": "#1e1e1e",
-            "image": "./assets/products/surface-duo-hero.png"
+            "name": "冰川白",
+            "hex": "#e3e4e5",
+            "image": "./assets/products/surface-duo-2-glacier.png"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -4409,7 +4406,7 @@ const SURFACE_DATA = {
     {
       "id": "book-3-15",
       "categoryId": "book",
-      "heroImage": "./assets/products/surface-book-hero.png",
+      "heroImage": "./assets/products/surface-book-3-hero.png",
       "name": "Surface Book 3 15 英寸",
       "nameEn": "Surface Book 3 15-inch",
       "generation": "第 3 代 (2020)",
@@ -4428,7 +4425,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-book-hero.png"
+            "image": "./assets/products/surface-book-3-hero.png"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -4499,7 +4496,7 @@ const SURFACE_DATA = {
     {
       "id": "book-3-135",
       "categoryId": "book",
-      "heroImage": "./assets/products/surface-book-hero.png",
+      "heroImage": "./assets/products/surface-book-3-hero.png",
       "name": "Surface Book 3 13.5 英寸",
       "nameEn": "Surface Book 3 13.5-inch",
       "generation": "第 3 代 (2020)",
@@ -4518,7 +4515,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-book-hero.png"
+            "image": "./assets/products/surface-book-3-hero.png"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -4589,7 +4586,7 @@ const SURFACE_DATA = {
     {
       "id": "book-2-15",
       "categoryId": "book",
-      "heroImage": "./assets/products/surface-book-hero.png",
+      "heroImage": "./assets/products/surface-book-2-hero.png",
       "name": "Surface Book 2 15 英寸",
       "nameEn": "Surface Book 2 15-inch",
       "generation": "第 2 代 (2017)",
@@ -4608,7 +4605,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-book-hero.png"
+            "image": "./assets/products/surface-book-2-hero.png"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -4679,7 +4676,7 @@ const SURFACE_DATA = {
     {
       "id": "book-1",
       "categoryId": "book",
-      "heroImage": "./assets/products/surface-book-hero.png",
+      "heroImage": "./assets/products/surface-book-1-hero.png",
       "name": "Surface Book 初代 (Original)",
       "nameEn": "Surface Book (1st Gen)",
       "generation": "初代 (2015)",
@@ -4698,7 +4695,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-book-hero.png"
+            "image": "./assets/products/surface-book-1-hero.png"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -4769,7 +4766,7 @@ const SURFACE_DATA = {
     {
       "id": "go-2",
       "categoryId": "go",
-      "heroImage": "./assets/products/surface-go-hero.png",
+      "heroImage": "./assets/products/surface-go-2-hero.png",
       "name": "Surface Go 2",
       "nameEn": "Surface Go 2",
       "generation": "第 2 代 (2020)",
@@ -4788,7 +4785,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-go-hero.png"
+            "image": "./assets/products/surface-go-2-hero.png"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -4973,17 +4970,17 @@ const SURFACE_DATA = {
           {
             "name": "冰晶蓝",
             "hex": "#a4c2d6",
-            "image": "./assets/products/surface-laptop-sapphire.png"
+            "image": "./assets/products/surface-laptop-go-3-hero.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-dune.png"
+            "image": "./assets/products/surface-laptop-go-3-hero.png"
           },
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-go-3-hero.png"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -5073,17 +5070,17 @@ const SURFACE_DATA = {
           {
             "name": "冰晶蓝",
             "hex": "#a4c2d6",
-            "image": "./assets/products/surface-laptop-sapphire.png"
+            "image": "./assets/products/surface-laptop-go-3-hero.png"
           },
           {
             "name": "砂岩金",
             "hex": "#d2b48c",
-            "image": "./assets/products/surface-laptop-dune.png"
+            "image": "./assets/products/surface-laptop-go-3-hero.png"
           },
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-go-3-hero.png"
           }
         ],
         "chassisMaterial": "铝 / 聚碳酸酯",
@@ -5607,7 +5604,7 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-21"
       }
     },
-        {
+    {
       "id": "pro-12-inch-2-biz",
       "categoryId": "pro",
       "segment": "commercial",
@@ -5707,7 +5704,7 @@ const SURFACE_DATA = {
       "id": "laptop-13-inch-biz",
       "categoryId": "laptop",
       "segment": "commercial",
-      "heroImage": "./assets/products/surface-new-laptop-hero.png",
+      "heroImage": "./assets/products/surface-laptop-13-hero.png",
       "name": "Surface Laptop 13 英寸 (第 1 代) 商用版",
       "nameEn": "Surface Laptop for Business 13-inch (1st Edition)",
       "systemSku": "Surface_Laptop_for_Business_13in_1st_Ed_with_Snapdragon_2095",
@@ -5733,7 +5730,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "image": "./assets/products/surface-laptop-13-hero.png"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -5799,7 +5796,7 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-21"
       }
     },
-        {
+    {
       "id": "laptop-13-inch-2-biz",
       "categoryId": "laptop",
       "segment": "commercial",
@@ -6305,7 +6302,7 @@ const SURFACE_DATA = {
       "id": "hub-3",
       "categoryId": "hub",
       "segment": "commercial",
-      "heroImage": "./assets/products/surface-hub-2s-hero.png",
+      "heroImage": "./assets/products/surface-hub-3-hero.png",
       "name": "Surface Hub 3 (50\" / 85\")",
       "nameEn": "Surface Hub 3 (50-inch & 85-inch)",
       "systemSku": "Surface Hub 3 50 / Surface Hub 3 85",
@@ -6330,7 +6327,7 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-hub-2s-hero.png"
+            "image": "./assets/products/surface-hub-3-hero.png"
           }
         ],
         "chassisMaterial": "精密加工铝与矿物复合树脂",
@@ -6725,13 +6722,11 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": "./assets/products/surface-laptop-platinum.png"
+            "hex": "#d8d8d8"
           },
           {
             "name": "典雅黑",
-            "hex": "#262626",
-            "image": "./assets/products/surface-laptop-black.png"
+            "hex": "#262626"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -6795,6 +6790,11 @@ const SURFACE_DATA = {
         "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
         "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
         "lastVerified": "2026-09-21"
+      },
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
       }
     },
     {
@@ -6994,11 +6994,6 @@ const SURFACE_DATA = {
       "id": "go-3-biz",
       "categoryId": "go",
       "segment": "commercial",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
-      },
       "heroImage": "./assets/products/surface-go-3-hero.png",
       "name": "Surface Go 3 商用版",
       "nameEn": "Surface Go 3 for Business",
@@ -7024,13 +7019,11 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": null
+            "hex": "#d8d8d8"
           },
           {
             "name": "典雅黑",
-            "hex": "#262626",
-            "image": null
+            "hex": "#262626"
           }
         ],
         "chassisMaterial": "not_disclosed",
@@ -7095,6 +7088,11 @@ const SURFACE_DATA = {
         "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
         "officialCommercialConfigureUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
         "lastVerified": "2026-09-21"
+      },
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
       }
     },
     {
@@ -7196,11 +7194,6 @@ const SURFACE_DATA = {
     {
       "id": "laptop-13-inch",
       "categoryId": "laptop",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch05/image-review.json"
-      },
       "heroImage": "./assets/products/surface-laptop-13-hero.png",
       "name": "Surface Laptop, 13 英寸 (第 1 代)",
       "nameEn": "Surface Laptop, 13-inch (1st Edition)",
@@ -7221,8 +7214,7 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": null
+            "hex": "#d8d8d8"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -7289,7 +7281,12 @@ const SURFACE_DATA = {
       },
       "isCommercial": false,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
-      "segment": "consumer"
+      "segment": "consumer",
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      }
     },
     {
       "id": "laptop-13-inch-2",
@@ -7503,11 +7500,6 @@ const SURFACE_DATA = {
     {
       "id": "laptop-13-inch-intel-biz",
       "categoryId": "laptop",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
-      },
       "heroImage": "./assets/products/surface-laptop-13-hero.png",
       "name": "Surface Laptop 13 英寸 商用版 - Intel 版",
       "nameEn": "Surface Laptop for Business 13-inch (Intel)",
@@ -7528,8 +7520,7 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": null
+            "hex": "#d8d8d8"
           }
         ],
         "chassisMaterial": "阳极氧化铝",
@@ -7596,16 +7587,16 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-13-inch-features",
-      "segment": "commercial"
+      "segment": "commercial",
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      }
     },
     {
       "id": "book-3-biz",
       "categoryId": "book",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
-      },
       "heroImage": "./assets/products/surface-book-3-hero.png",
       "name": "Surface Book 3 商用版 (13.5\" & 15\")",
       "nameEn": "Surface Book 3 for Business",
@@ -7626,8 +7617,7 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": null
+            "hex": "#d8d8d8"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -7694,16 +7684,16 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
-      "segment": "commercial"
+      "segment": "commercial",
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      }
     },
     {
       "id": "go-2-biz",
       "categoryId": "go",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch04/image-review.json"
-      },
       "heroImage": "./assets/products/surface-go-2-hero.png",
       "name": "Surface Go 2 商用版",
       "nameEn": "Surface Go 2 for Business",
@@ -7724,8 +7714,7 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": null
+            "hex": "#d8d8d8"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -7792,16 +7781,16 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
-      "segment": "commercial"
+      "segment": "commercial",
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      }
     },
     {
       "id": "pro-6-biz",
       "categoryId": "pro",
-      "imageVerification": {
-        "status": "diagram",
-        "colorStatus": "pending",
-        "evidenceFile": "releases/verification-20260930-batch05/image-review.json"
-      },
       "heroImage": "./assets/products/surface-pro-6-hero.png",
       "name": "Surface Pro 6 商用版",
       "nameEn": "Surface Pro 6 for Business",
@@ -7822,13 +7811,11 @@ const SURFACE_DATA = {
         "colors": [
           {
             "name": "亮铂金",
-            "hex": "#d8d8d8",
-            "image": null
+            "hex": "#d8d8d8"
           },
           {
             "name": "典雅黑",
-            "hex": "#262626",
-            "image": null
+            "hex": "#262626"
           }
         ],
         "chassisMaterial": "镁合金",
@@ -7895,7 +7882,1316 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
-      "segment": "commercial"
+      "segment": "commercial",
+      "imageVerification": {
+        "status": "official",
+        "colorStatus": "pending",
+        "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
+      }
+    },
+    {
+      "id": "xbox-original",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-original-hero.png",
+      "name": "初代 Xbox",
+      "nameEn": "Original Xbox",
+      "generation": "初代",
+      "year": 2001,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "开创 Xbox 纪元。定制 Intel 733MHz 处理器，NVIDIA NV2A 显卡，64MB 统一内存，内置机械硬盘与以太网。",
+      "prevGenerationId": null,
+      "nextGenerationId": "xbox-360",
+      "learnDocUrl": "https://news.xbox.com/en-us/2005/05/28/what-type-of-tv-will-you-need-for-the-xbox-360/",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2001 年 11 月 15 日北美首发；2002 年 2 月日本发售；2002 年 3 月欧洲发售",
+        "generation": "初代",
+        "status": "discontinued",
+        "salesRegion": "北美、欧洲、日本、澳大利亚等全球市场发售。美国 Xbox Wire 在讲电视输出时顺带写了初代 Xbox 的视频输出。不是当前国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "开创 Xbox 纪元。定制 Intel 733MHz 处理器，NVIDIA NV2A 显卡，64MB 统一内存，内置机械硬盘与以太网。",
+        "colors": [
+          {
+            "name": "经典黑配翡翠绿 Jewel Black",
+            "hex": "#111111"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "定制 Intel Pentium III 架构 Coppermine 核心，733 MHz",
+        "cpuArch": "x86 架构；133 MHz 前端总线 (FSB)；32 KB 一级缓存；128 KB 板载高速二级缓存",
+        "cpuCores": "单核 733 MHz",
+        "gpuModel": "定制 NVIDIA NV2A (GeForce 3 衍生)，233 MHz；7.3 GFLOPS 浮点性能；每秒 1.15 亿多边形渲染",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "64 MB DDR SDRAM（美光 DDR-200，128-bit 双通道，统一内存架构 UMA，峰值带宽 6.4 GB/s）",
+        "storageOptions": "8 GB / 10 GB 3.5 英寸 Ultra ATA/100 机械硬盘；5 倍速托盘式 DVD-ROM 光驱",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "标清 480i、480p；支持高清 720p 与 1080i（通过色差高清线 Component 视频输出，部分游戏支持）",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "支持 4:3 与 16:9 宽屏游戏画面；硬件支持 DirectX 8.1 顶点与像素着色器",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Digital 5.1（通过光纤接口输出实时交互式杜比环绕音效）；64 声道 3D 音效",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "4 个专属手柄端口（基于专有 USB 1.1 协议信号改造）",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "无内置无线（可外接无线游戏适配器）；内置 10/100 Mbps RJ-45 以太网端口（Xbox Live 基石）",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "内置 100-120V / 220-240V 交流电源供应器 (100W)",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "320 × 260 × 100 mm（12.5 × 10.5 × 4.0 英寸）",
+        "weightGrams": "3,860 克（约 8.5 磅）",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://news.xbox.com/en-us/2005/05/28/what-type-of-tv-will-you-need-for-the-xbox-360/"
+      }
+    },
+    {
+      "id": "xbox-360",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-360-original-hero.png",
+      "name": "Xbox 360",
+      "nameEn": "Xbox 360",
+      "generation": "Xbox 360",
+      "year": 2005,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "三核，512MB 内存。高端套装带 20GB 可拆硬盘。",
+      "prevGenerationId": "xbox-original",
+      "nextGenerationId": "xbox-360-s",
+      "learnDocUrl": "http://mktplassets.xbox.com/NR/rdonlyres/D535D3AF-6943-4B91-ABF2-70B2D43D6B27/0/ConsoleWarranty_LATAM_0801.pdf",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2005 年 8 月 17 日公布价格，当年假期在北美、欧洲、日本上市（美国 Xbox Wire）",
+        "generation": "Xbox 360",
+        "status": "discontinued",
+        "salesRegion": "硬件规格来自微软 Xbox 官网托管的 2008 年主机规格页。该文件的保修法律范围写的是墨西哥和哥伦比亚。上市套装来自美国 Xbox Wire。不是当前国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "三核，512MB 内存。高端套装带 20GB 可拆硬盘。",
+        "colors": [
+          {
+            "name": "典雅冷白 Chill White",
+            "hex": "#e2e8f0"
+          },
+          {
+            "name": "精英黑 Elite Matte Black",
+            "hex": "#1e293b"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "定制 PowerPC",
+        "cpuArch": "3 个对称核心，3.2 GHz；每核 2 个硬件线程（共 6 线程）；1 MB 二级缓存；前端总线 2.7 GHz",
+        "cpuCores": "3 核 3.2 GHz",
+        "gpuModel": "定制 ATI，500 MHz；10 MB 嵌入式 DRAM（256 GB/s）；48 路并行浮点着色；统一着色器架构",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "512 MB GDDR3，统一内存。系统软件会占用硬盘和记忆卡上的一部分内存，用户能用的少于标称值。",
+        "storageOptions": "2005 年 8 月 17 日 Xbox Wire：399.99 美元高端套装含 20GB 可拆硬盘；299.99 美元 Core 套装不含这块硬盘，硬盘可另购。",
+        "ssdRemovable": "高端套装的 20GB 硬盘可从主机上拆下（Xbox Wire 原文 detachable）",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "游戏支持 16:9、抗锯齿，高清至少 720p。支持标清和高清输出。Wire 另写可输出 720p/1080i。",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "not_disclosed",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "not_disclosed",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "USB：前面 2 个、后面 1 个。另有记忆卡插槽 2 个、以太网、AV 口、电源口、红外接收。",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "2.4 GHz 数字扩频，最多 4 名玩家",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "电源以电源适配器铭牌为准（规格页原文 Refer to ratings plate）",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "310 × 80 × 260 mm（约 12 × 3 × 10 英寸）",
+        "weightGrams": "3.5 kg（约 7.7 磅）",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "工作温度 5°C 至 35°C",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "http://mktplassets.xbox.com/NR/rdonlyres/D535D3AF-6943-4B91-ABF2-70B2D43D6B27/0/ConsoleWarranty_LATAM_0801.pdf"
+      }
+    },
+    {
+      "id": "xbox-360-s",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-360-s-hero.png",
+      "name": "Xbox 360 S",
+      "nameEn": "Xbox 360 S",
+      "generation": "Xbox 360 S",
+      "year": 2010,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "2010 年新外形，250GB 硬盘，内置 Wi-Fi N。",
+      "prevGenerationId": "xbox-360",
+      "nextGenerationId": "xbox-360-e",
+      "learnDocUrl": "https://news.xbox.com/en-us/2010/06/14/announcing-the-new-xbox-360/",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2010 年 6 月 14 日公布，当时可预订（美国 Xbox Wire）",
+        "generation": "Xbox 360 S",
+        "status": "discontinued",
+        "salesRegion": "美国 Xbox Wire，2010 年 6 月 14 日。公告里的美国标价是 299 美元。不是当前国行在售。这篇公告没有重写处理器和内存，那些格子保持未披露。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "2010 年新外形，250GB 硬盘，内置 Wi-Fi N。",
+        "colors": [
+          {
+            "name": "亮面钢琴黑 Liquid Black",
+            "hex": "#0a0a0a"
+          },
+          {
+            "name": "哑光黑 Matte Black",
+            "hex": "#1e2229"
+          }
+        ],
+        "chassisMaterial": "新设计（公告原文 New design）",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "not_disclosed",
+        "cpuArch": "not_disclosed",
+        "cpuCores": "not_disclosed",
+        "gpuModel": "not_disclosed",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "not_disclosed",
+        "storageOptions": "250 GB 硬盘",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "not_disclosed",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "not_disclosed",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "not_disclosed",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "not_disclosed",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "内置 Wi-Fi N",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "not_disclosed",
+        "weightGrams": "not_disclosed",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://news.xbox.com/en-us/2010/06/14/announcing-the-new-xbox-360/"
+      }
+    },
+    {
+      "id": "xbox-360-e",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-360-e-hero.png",
+      "name": "Xbox 360 E",
+      "nameEn": "Xbox 360 E",
+      "generation": "Xbox 360 E",
+      "year": 2013,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "2013 年全新极简设计，更轻薄更安静，与 Xbox One 同期设计语言。",
+      "prevGenerationId": "xbox-360-s",
+      "nextGenerationId": "xbox-one",
+      "learnDocUrl": "https://news.xbox.com/en-us/2013/06/10/e3-2013-xbox-360-reveal/",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2013 年 6 月 10 日 E3 大会公布并即刻在美英等市场发售",
+        "generation": "Xbox 360 E",
+        "status": "discontinued",
+        "salesRegion": "美国、欧洲等全球市场发售。不是当前国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "2013 年全新极简设计，更轻薄更安静，与 Xbox One 同期设计语言。",
+        "colors": [
+          {
+            "name": "黑双拼质感 Matte & Gloss Black",
+            "hex": "#171717"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "定制 PowerPC 45nm 单芯片 (Corona/Winchester SoC)",
+        "cpuArch": "3 个对称核心 3.2 GHz；每核双线程（共 6 线程）",
+        "cpuCores": "3 核 3.2 GHz",
+        "gpuModel": "定制 ATI 500 MHz 与 CPU 封装至同一硅片",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "512 MB GDDR3 统一内存",
+        "storageOptions": "4GB 闪存版、250GB 或 500GB 内置可拆卸机械硬盘",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "HDMI 输出支持 720p、1080i、1080p；3.5mm AV 复合输出",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "not_disclosed",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "not_disclosed",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "4 个 USB 2.0 端口（前置 2 个、后置 2 个）；移除旧版专有 A/V 口与光纤口，简化为 HDMI 与 3.5mm 复合端子",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "内置 802.11b/g/n Wi-Fi 与 2.4GHz Xbox 无线手柄射频",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "270 × 75 × 264 mm",
+        "weightGrams": "2.1 kg（约 4.6 磅）",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://news.xbox.com/en-us/2013/06/10/e3-2013-xbox-360-reveal/"
+      }
+    },
+    {
+      "id": "xbox-one",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-one-original-hero.png",
+      "name": "Xbox One",
+      "nameEn": "Xbox One",
+      "generation": "Xbox One",
+      "year": 2013,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "8 核 x86，8GB 内存，带 Blu-ray。",
+      "prevGenerationId": "xbox-360-e",
+      "nextGenerationId": "xbox-one-s",
+      "learnDocUrl": "https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2013 年 11 月 22 日。首发 13 个市场：澳大利亚、奥地利、巴西、加拿大、法国、德国、爱尔兰、意大利、墨西哥、新西兰、西班牙、英国、美国。",
+        "generation": "Xbox One",
+        "status": "discontinued",
+        "salesRegion": "美国 Xbox Wire。首发市场名单里没有中国大陆。不是当前国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "8 核 x86，8GB 内存，带 Blu-ray。",
+        "colors": [
+          {
+            "name": "双拼曜石黑 Liquid Black",
+            "hex": "#121212"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核 x86",
+        "cpuArch": "超过 50 亿个晶体管；原生 64 位",
+        "cpuCores": "8 核",
+        "gpuModel": "not_disclosed",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "8GB",
+        "storageOptions": "大容量 Blu-ray 光驱（原文 huge capacity BluRay drive）。硬盘容量这篇说明没有写数字。",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "not_disclosed",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "not_disclosed",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "not_disclosed",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "USB 3.0",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "Wi-Fi Direct",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "not_disclosed",
+        "weightGrams": "not_disclosed",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/"
+      }
+    },
+    {
+      "id": "xbox-one-s",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-one-s-hero.png",
+      "name": "Xbox One S",
+      "nameEn": "Xbox One S",
+      "generation": "Xbox One S",
+      "year": 2016,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "内置 4K Ultra HD 和 4K 视频串流。",
+      "prevGenerationId": "xbox-one",
+      "nextGenerationId": "xbox-one-s-digital",
+      "learnDocUrl": "https://www.xbox.com/en-US/consoles/xbox-one-s",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2016 年 8 月 2 日全球首发上市",
+        "generation": "Xbox One S",
+        "status": "discontinued",
+        "salesRegion": "美国 xbox.com 的 Xbox One S 页面仍在。不是当前国行在售。页面没有写处理器、内存和硬盘容量，那些格子保持未披露。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "内置 4K Ultra HD 和 4K 视频串流。",
+        "colors": [
+          {
+            "name": "机器人白 Robot White",
+            "hex": "#f8fafc"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "not_disclosed",
+        "cpuArch": "not_disclosed",
+        "cpuCores": "not_disclosed",
+        "gpuModel": "not_disclosed",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "not_disclosed",
+        "storageOptions": "4K UHD 蓝光、内置电源。Xbox Wire 在介绍 One X 时写明：和 One S 一样，有 4K UHD 蓝光、内置电源、3 个 USB 3.0（前面 1 个、后面 2 个）和红外。硬盘容量没有写数字。",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "not_disclosed",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "内置 4K Ultra HD 和 4K 视频串流。HDR 需游戏和电视支持。",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "not_disclosed",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "3 个 USB 3.0（前面 1 个、后面 2 个）；红外",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "not_disclosed",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "内置电源",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "not_disclosed",
+        "weightGrams": "not_disclosed",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://www.xbox.com/en-US/consoles/xbox-one-s"
+      }
+    },
+    {
+      "id": "xbox-one-s-digital",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-one-s-hero.png",
+      "name": "Xbox One S 全数字版",
+      "nameEn": "Xbox One S All-Digital Edition",
+      "generation": "Xbox One S 全数字版",
+      "year": 2019,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "全数字无光驱版本，1TB 硬盘，内置 4K HDR 串流。",
+      "prevGenerationId": "xbox-one-s",
+      "nextGenerationId": "xbox-one-x",
+      "learnDocUrl": "https://news.xbox.com/en-us/2019/04/16/xbox-one-s-all-digital-edition/",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2019 年 4 月 16 日公布，2019 年 5 月 7 日全球上市",
+        "generation": "Xbox One S 全数字版",
+        "status": "discontinued",
+        "salesRegion": "美国官方建议零售价 249.99 美元。不是当前国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "全数字无光驱版本，1TB 硬盘，内置 4K HDR 串流。",
+        "colors": [
+          {
+            "name": "机器人白 Robot White",
+            "hex": "#f8fafc"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核定制 AMD Jaguar，1.75 GHz",
+        "cpuArch": "x86-64 架构；8 个核心",
+        "cpuCores": "8 核 1.75 GHz",
+        "gpuModel": "AMD Radeon GCN 架构，12 个计算单元，914 MHz，1.4 TFLOPS",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "8GB DDR3 统一内存，带宽 68.3 GB/s，配 32MB ESRAM",
+        "storageOptions": "1TB 机械硬盘。全数字设计，无蓝光光驱。附赠 Minecraft、Sea of Thieves 与 Forza Horizon 3 数字版。",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "游戏输出最高 1080p；视频串流支持 4K UHD、HDR10",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "4K Ultra HD 视频串流，HDR10 高动态范围，AMD FreeSync",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Atmos，DTS:X，Windows Sonic 空间音效",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "3 个 USB 3.0 端口（前面 1 个、后面 2 个）；HDMI 2.0a 输出，HDMI 1.4b 输入，光纤音频 S/PDIF，红外发射器",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "双频 Wi-Fi 802.11a/b/g/n (2.4 GHz & 5 GHz)，支持 Wi-Fi Direct",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "内置电源供应器",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "295 × 230 × 64 mm",
+        "weightGrams": "约 2,300 克（比带光驱的 One S 略轻）",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://news.xbox.com/en-us/2019/04/16/xbox-one-s-all-digital-edition/"
+      }
+    },
+    {
+      "id": "xbox-one-x",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-one-x-hero.png",
+      "name": "Xbox One X",
+      "nameEn": "Xbox One X",
+      "generation": "Xbox One X",
+      "year": 2017,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "6 teraflops，12GB GDDR5，1TB 硬盘，4K UHD 蓝光。",
+      "prevGenerationId": "xbox-one-s-digital",
+      "nextGenerationId": "xbox-series-x",
+      "learnDocUrl": "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2017 年 11 月 7 日起在当时的 Xbox One 市场发售（美国 Xbox Wire）",
+        "generation": "Xbox One X",
+        "status": "discontinued",
+        "salesRegion": "美国 Xbox Wire。公告里的美国标价是 499 美元。不是当前国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "6 teraflops，12GB GDDR5，1TB 硬盘，4K UHD 蓝光。",
+        "colors": [
+          {
+            "name": "哑光深空黑 Matte Space Black",
+            "hex": "#1c1917"
+          },
+          {
+            "name": "机器人白 Robot White",
+            "hex": "#f8fafc"
+          }
+        ],
+        "chassisMaterial": "黑色。可横放，或用另购支架竖放。",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核定制 AMD，2.3 GHz",
+        "cpuArch": "not_disclosed",
+        "cpuCores": "8 核 2.3 GHz",
+        "gpuModel": "6 teraflop GPU；内存带宽 326 GB/s",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "12GB GDDR5",
+        "storageOptions": "1TB 硬盘；4K UHD 蓝光",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "not_disclosed",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "真 4K（2160p），HDR，宽色域",
+        "ppi": "not_applicable",
+        "refreshRate": "not_disclosed",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "not_disclosed",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "not_disclosed",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "3 个 USB 3.0（前面 1 个、后面 2 个）；红外",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "not_disclosed",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "内置电源",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "not_disclosed",
+        "weightGrams": "not_disclosed",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/"
+      }
+    },
+    {
+      "id": "xbox-series-s-512",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-series-s-512-hero.png",
+      "name": "Xbox Series S 512GB",
+      "nameEn": "Xbox Series S 512GB",
+      "generation": "Xbox Series S",
+      "year": 2020,
+      "status": "current_global",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "全数字小主机，1440p，512GB 固态硬盘。",
+      "prevGenerationId": "xbox-one-x",
+      "nextGenerationId": "xbox-series-s-1tb",
+      "learnDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2020 年 11 月 10 日全球发售（国行 2021 年 6 月 10 日）",
+        "generation": "Xbox Series S",
+        "status": "current_global",
+        "salesRegion": "美国 xbox.com 规格页，以及美国微软商店的 Xbox Series S – 512GB。国行微软商城另有一台 Xbox Series S 全数字版，标价 ¥2,399 起，页面没有写是 512GB 还是 1TB，所以这台不标成国行在售，也不把这个人民币价钱记进来。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "全数字小主机，1440p，512GB 固态硬盘。",
+        "colors": [
+          {
+            "name": "机器人白 Robot White",
+            "hex": "#f8fafc"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核 Custom Zen 2，3.8 GHz（开启 SMT 时 3.6 GHz）",
+        "cpuArch": "Custom Zen 2",
+        "cpuCores": "8 核 3.8 GHz（SMT 时 3.6 GHz）",
+        "gpuModel": "4 TFLOPS，20 个计算单元，1.565 GHz，Custom RDNA 2",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "10GB GDDR6，128 bit。8GB 带宽 224 GB/s，2GB 带宽 56 GB/s。",
+        "storageOptions": "512GB Custom NVMe SSD。全数字，规格表没有光驱。美国商店说明：光盘游戏不能在 Series S 上玩。",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "可加 1TB Xbox Series X|S 存储扩展卡（另购）；也支持 USB 3.1 外接硬盘（另购）。读写：2.4 GB/s（原始），4.8 GB/s（压缩，带专用硬件解压）",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "1440p",
+        "ppi": "not_applicable",
+        "refreshRate": "最高 120 FPS",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "HDMI：自动低延迟、可变刷新率、AMD FreeSync",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Digital 5.1，DTS 5.1，Dolby TrueHD with Atmos，最高 7.1 L-PCM",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "1 个 HDMI 2.1；3 个 USB 3.1 Gen 1",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "802.11ac 双频；以太网 802.3 10/100/1000；专用双频 Xbox Wireless",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "6.5 × 15.1 × 27.5 cm",
+        "weightGrams": "4.25 磅",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-s"
+      }
+    },
+    {
+      "id": "xbox-series-s-1tb",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-series-s-transparent.png",
+      "name": "Xbox Series S 1TB",
+      "nameEn": "Xbox Series S 1TB",
+      "generation": "Xbox Series S",
+      "year": 2023,
+      "status": "current_global",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "全数字，1TB。碳黑和机器人白两色，处理器与 512GB 相同。",
+      "prevGenerationId": "xbox-series-s-512",
+      "nextGenerationId": null,
+      "learnDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2023 年 9 月 1 日全球发售",
+        "generation": "Xbox Series S",
+        "status": "current_global",
+        "salesRegion": "美国 xbox.com 规格页把碳黑 1TB 和机器人白 1TB 写成两台全数字 Series S。美国微软商店也能看到 1TB。国行商城的 Series S 页面没有单独写出 1TB。上市月份规格页没有写。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "全数字，1TB。碳黑和机器人白两色，处理器与 512GB 相同。",
+        "colors": [
+          {
+            "name": "碳黑 Carbon Black",
+            "hex": "#1c1c1c"
+          },
+          {
+            "name": "机器人白 Robot White",
+            "hex": "#f8fafc"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核 Custom Zen 2，3.8 GHz（开启 SMT 时 3.6 GHz）",
+        "cpuArch": "Custom Zen 2",
+        "cpuCores": "8 核 3.8 GHz（SMT 时 3.6 GHz）",
+        "gpuModel": "4 TFLOPS，20 个计算单元，1.565 GHz，Custom RDNA 2",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "10GB GDDR6，128 bit。8GB 带宽 224 GB/s，2GB 带宽 56 GB/s。",
+        "storageOptions": "1TB Custom NVMe SSD。碳黑和机器人白都是这一档。全数字，规格表没有光驱。",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "可加 1TB Xbox Series X|S 存储扩展卡（另购）；也支持 USB 3.1 外接硬盘（另购）。读写：2.4 GB/s（原始），4.8 GB/s（压缩，带专用硬件解压）",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "1440p",
+        "ppi": "not_applicable",
+        "refreshRate": "最高 120 FPS",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "HDMI：自动低延迟、可变刷新率、AMD FreeSync",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Digital 5.1，DTS 5.1，Dolby TrueHD with Atmos，最高 7.1 L-PCM",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "1 个 HDMI 2.1；3 个 USB 3.1 Gen 1",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "802.11ac 双频；以太网 802.3 10/100/1000；专用双频 Xbox Wireless",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "6.5 × 15.1 × 27.5 cm",
+        "weightGrams": "4.25 磅",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-s"
+      }
+    },
+    {
+      "id": "xbox-series-x",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-series-x-1tb-hero.png",
+      "name": "Xbox Series X 1TB（带光驱）",
+      "nameEn": "Xbox Series X 1TB",
+      "generation": "Xbox Series X",
+      "year": 2020,
+      "status": "current_global",
+      "targetAudience": "家用游戏主机",
+      "flagship": true,
+      "tagline": "真 4K，12 TFLOPS，1TB 固态硬盘，4K UHD 蓝光。",
+      "prevGenerationId": "xbox-one-x",
+      "nextGenerationId": null,
+      "learnDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2020 年 11 月 10 日全球发售（国行 2021 年 6 月 10 日）",
+        "generation": "Xbox Series X",
+        "status": "current_global",
+        "salesRegion": "美国 xbox.com 规格页的碳黑 1TB。美国微软商店把 Xbox Series X 标成 799.99 美元（2026-09-29 页面显示缺货）。国行微软商城也在售一台 Xbox Series X：1TB 定制版 SSD、12 teraflops、磨砂黑手柄，标价 ¥4,299 起。国行页面没有写有没有光驱，所以不把这个人民币价钱记进价格栏，也不标成国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "真 4K，12 TFLOPS，1TB 固态硬盘，4K UHD 蓝光。",
+        "colors": [
+          {
+            "name": "碳黑 Carbon Black",
+            "hex": "#1c1c1c"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核 Custom Zen 2，3.8 GHz（开启 SMT 时 3.6 GHz）",
+        "cpuArch": "Custom Zen 2",
+        "cpuCores": "8 核 3.8 GHz（SMT 时 3.6 GHz）",
+        "gpuModel": "12 TFLOPS，52 个计算单元，1.825 GHz，Custom RDNA 2",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "16GB GDDR6，320 bit。10GB 带宽 560 GB/s，6GB 带宽 336 GB/s。",
+        "storageOptions": "1TB Custom NVMe SSD。光驱：4K UHD Blu-ray。读写：2.4 GB/s（原始），4.8 GB/s（压缩，带专用硬件解压）",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "可加 Xbox Series X|S 存储扩展卡（另购，速度与内置一致）；也支持 USB 3.1 外接硬盘（另购）",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "真 4K；HDR 最高 8K",
+        "ppi": "not_applicable",
+        "refreshRate": "最高 120 FPS",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "HDMI：自动低延迟、可变刷新率、AMD FreeSync。光驱为 4K UHD Blu-ray。",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Digital 5.1，DTS 5.1，Dolby TrueHD with Atmos，最高 7.1 L-PCM",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "1 个 HDMI 2.1；3 个 USB 3.1 Gen 1",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "802.11ac 双频；以太网 802.3 10/100/1000；专用双频 Xbox Wireless",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "15.1 × 15.1 × 30.1 cm。官网尺寸图写的是带光驱的 Series X（高 301 mm，深和宽各 151 mm）。",
+        "weightGrams": "9.8 磅。这是带光驱那一栏的重量。",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "国行商城这台 Series X：自发票起主机 2 年有限硬件保修，随附手柄 1 年。美国规格页没有写保修年限。",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-x"
+      }
+    },
+    {
+      "id": "xbox-series-x-digital",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-series-x-digital-white-hero.png",
+      "name": "Xbox Series X 1TB 数字版",
+      "nameEn": "Xbox Series X 1TB Digital Edition",
+      "generation": "Xbox Series X 数字版",
+      "year": 2024,
+      "status": "current_global",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "白色数字版，1TB，没有写光驱。重量比带光驱的轻。",
+      "prevGenerationId": "xbox-series-x",
+      "nextGenerationId": null,
+      "learnDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2024 年 10 月 15 日全球发售",
+        "generation": "Xbox Series X 数字版",
+        "status": "current_global",
+        "salesRegion": "美国 xbox.com 规格页，以及美国微软商店的 Xbox Series X – 1TB Digital Edition (White)，标价 749.99 美元（2026-09-29 页面显示缺货）。国行商城的 Series X 页面没有单独写出白色数字版。上市月份规格页没有写。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "白色数字版，1TB，没有写光驱。重量比带光驱的轻。",
+        "colors": [
+          {
+            "name": "机器人白 Robot White",
+            "hex": "#f8fafc"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核 Custom Zen 2，3.8 GHz（开启 SMT 时 3.6 GHz）",
+        "cpuArch": "Custom Zen 2",
+        "cpuCores": "8 核 3.8 GHz（SMT 时 3.6 GHz）",
+        "gpuModel": "12 TFLOPS，52 个计算单元，1.825 GHz，Custom RDNA 2",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "16GB GDDR6，320 bit。10GB 带宽 560 GB/s，6GB 带宽 336 GB/s。",
+        "storageOptions": "1TB Custom NVMe SSD。官方规格表的光驱一行只写了碳黑 1TB 和银河黑 2TB，没有写这一款。",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "可加 Xbox Series X|S 存储扩展卡（另购，速度与内置一致）；也支持 USB 3.1 外接硬盘（另购）。读写：2.4 GB/s（原始），4.8 GB/s（压缩，带专用硬件解压）",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "真 4K；HDR 最高 8K",
+        "ppi": "not_applicable",
+        "refreshRate": "最高 120 FPS",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "HDMI：自动低延迟、可变刷新率、AMD FreeSync",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Digital 5.1，DTS 5.1，Dolby TrueHD with Atmos，最高 7.1 L-PCM",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "1 个 HDMI 2.1；3 个 USB 3.1 Gen 1",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "802.11ac 双频；以太网 802.3 10/100/1000；专用双频 Xbox Wireless",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "15.1 × 15.1 × 30.1 cm（规格页 Digital 一栏）",
+        "weightGrams": "7.9 磅（规格页 Digital 一栏）",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-x"
+      }
+    },
+    {
+      "id": "xbox-series-x-2tb",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-series-x-galaxy-black-hero.png",
+      "name": "Xbox Series X 2TB 银河黑",
+      "nameEn": "Xbox Series X 2TB Galaxy Black",
+      "generation": "Xbox Series X 2TB",
+      "year": 2024,
+      "status": "discontinued",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "2TB 特别版，银河黑外壳点缀绿色星斑，带 4K UHD 蓝光。当前在微软官方商城以特别版/翻新库存流转。",
+      "prevGenerationId": "xbox-series-x",
+      "nextGenerationId": null,
+      "learnDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "2024 年 10 月 15 日全球发售",
+        "generation": "Xbox Series X 2TB",
+        "status": "discontinued",
+        "salesRegion": "美国 xbox.com 规格表仍列出银河黑 2TB。2026 年 9 月 29 日美国微软商店新品区显示限量缺货，支持官翻购买。不标成国行在售。上市月份规格页没有写。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "2TB 特别版，银河黑外壳点缀绿色星斑，带 4K UHD 蓝光。当前在微软官方商城以特别版/翻新库存流转。",
+        "colors": [
+          {
+            "name": "银河黑特别版 Galaxy Black",
+            "hex": "#0f291e"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核 Custom Zen 2，3.8 GHz（开启 SMT 时 3.6 GHz）",
+        "cpuArch": "Custom Zen 2",
+        "cpuCores": "8 核 3.8 GHz（SMT 时 3.6 GHz）",
+        "gpuModel": "12 TFLOPS，52 个计算单元，1.825 GHz，Custom RDNA 2",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "16GB GDDR6，320 bit。10GB 带宽 560 GB/s，6GB 带宽 336 GB/s。",
+        "storageOptions": "2TB Custom NVMe SSD。光驱：4K UHD Blu-ray。读写：2.4 GB/s（原始），4.8 GB/s（压缩，带专用硬件解压）",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "可加 Xbox Series X|S 存储扩展卡（另购，速度与内置一致）；也支持 USB 3.1 外接硬盘（另购）",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "真 4K；HDR 最高 8K",
+        "ppi": "not_applicable",
+        "refreshRate": "最高 120 FPS",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "HDMI：自动低延迟、可变刷新率、AMD FreeSync。光驱为 4K UHD Blu-ray。",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Digital 5.1，DTS 5.1，Dolby TrueHD with Atmos，最高 7.1 L-PCM",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "1 个 HDMI 2.1；3 个 USB 3.1 Gen 1",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "802.11ac 双频；以太网 802.3 10/100/1000；专用双频 Xbox Wireless",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "not_disclosed",
+        "weightGrams": "not_disclosed",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://www.xbox.com/en-US/consoles/xbox-series-x"
+      }
+    },
+    {
+      "id": "xbox-series-x25",
+      "categoryId": "xbox",
+      "heroImage": "./assets/products/xbox-series-x25-translucent-green-hero.png",
+      "name": "Xbox Series X25 限量版",
+      "nameEn": "Xbox Series X25 Limited Edition",
+      "generation": "Xbox Series X25",
+      "year": 2026,
+      "status": "upcoming",
+      "targetAudience": "家用游戏主机",
+      "flagship": false,
+      "tagline": "半透明 OG 绿，1TB，带 4K UHD 蓝光。编号主机。",
+      "prevGenerationId": "xbox-series-x",
+      "nextGenerationId": null,
+      "learnDocUrl": "https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3",
+      "isCommercial": false,
+      "segment": "xbox",
+      "specs": {
+        "releaseDate": "美国微软商店：2026 年 11 月 13 日上午 5:00。澳洲微软商店写的是 2026 年 11 月 12 日。",
+        "generation": "Xbox Series X25",
+        "status": "upcoming",
+        "salesRegion": "美国微软商店在售页面（发售日前显示缺货），标价 899.99 美元起。澳洲微软商店另有页面。不是国行在售。",
+        "targetAudience": "家用游戏主机",
+        "tagline": "半透明 OG 绿，1TB，带 4K UHD 蓝光。编号主机。",
+        "colors": [
+          {
+            "name": "半透明翡翠绿 Translucent OG Green",
+            "hex": "#107c10"
+          }
+        ],
+        "chassisMaterial": "not_disclosed",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "not_disclosed",
+        "cpuModel": "8 核 Custom Zen 2，3.8 GHz（开启 SMT 时 3.6 GHz）",
+        "cpuArch": "Custom Zen 2。SOC 裸片 360.45 mm。制程 7nm Enhanced。",
+        "cpuCores": "8 核 3.8 GHz（SMT 时 3.6 GHz）",
+        "gpuModel": "12 TFLOPS，52 个计算单元，1.825 GHz，Custom RDNA 2",
+        "npuModel": "not_applicable",
+        "npuTops": "not_applicable",
+        "copilotPlus": "not_applicable",
+        "ramSpec": "16GB GDDR6，320 bit。10GB 带宽 560 GB/s，6GB 带宽 336 GB/s。",
+        "storageOptions": "1TB Custom NVMe SSD。光驱：4K UHD Blu-ray。附带半透明 OG 绿 X25 手柄、编号主机，以及 Halo: Campaign Evolved。读写：2.4 GB/s（原始），4.8 GB/s（压缩，带专用硬件解压）",
+        "ssdRemovable": "not_disclosed",
+        "expandableStorage": "可加 1TB Xbox Series X|S 存储扩展卡（另购，与内置速度一致）；也支持 USB 3.1 外接硬盘（另购）。",
+        "screenSize": "not_applicable",
+        "aspectRatio": "not_applicable",
+        "panelTech": "not_applicable",
+        "resolution": "真 4K；HDR 最高 8K",
+        "ppi": "not_applicable",
+        "refreshRate": "最高 120 FPS",
+        "brightness": "not_applicable",
+        "colorSupport": "not_disclosed",
+        "touchAndPenProtocol": "not_applicable",
+        "frontCamera": "not_applicable",
+        "windowsHello": "not_applicable",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "HDMI：自动低延迟、可变刷新率、AMD FreeSync。光驱为 4K UHD Blu-ray。",
+        "microphones": "not_applicable",
+        "speakers": "not_applicable",
+        "audioTech": "Dolby Digital 5.1，DTS 5.1，Dolby TrueHD with Atmos，最高 7.1 L-PCM",
+        "headphoneJack": "not_disclosed",
+        "usbPorts": "1 个 HDMI 2.1；3 个 USB 3.1 Gen 1",
+        "thunderboltSupport": "not_applicable",
+        "surfaceConnect": "not_applicable",
+        "wireless": "802.11ac 双频；以太网 802.3 10/100/1000；专用双频 Xbox Wireless",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "not_applicable",
+        "batteryLifeOffice": "not_applicable",
+        "batteryLifeVideo": "not_applicable",
+        "chargingPower": "not_disclosed",
+        "fastCharging": "not_applicable",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "not_applicable",
+        "tpmChip": "not_disclosed",
+        "securedCorePc": "not_applicable",
+        "biometrics": "not_applicable",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "15.1 × 15.1 × 30.1 cm（5.94 × 5.94 × 11.85 英寸）",
+        "weightGrams": "9.8 磅（4.4 kg）",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "not_disclosed",
+        "repairabilityScore": "not_disclosed",
+        "replaceableParts": "not_disclosed",
+        "warranty": "not_disclosed",
+        "startingPriceCny": "not_disclosed",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-09-29",
+        "officialDocUrl": "https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3"
+      }
     }
   ],
   "chips": [
@@ -8513,6 +9809,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -8900,6 +10266,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一生产力桌面拓展主力鼠标"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -9287,6 +10723,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "轻薄便携差旅办公"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -9674,6 +11180,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "桌面拓展办公首选"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -10061,6 +11637,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -10448,6 +12094,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (接口物理不兼容)"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -10835,6 +12551,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "完美原生支持"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -11222,6 +13008,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -11609,6 +13465,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -11996,6 +13922,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一主机桌面办公利器"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -12383,6 +14379,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "PARTIAL",
           "note": "支持书写绘图，无触觉震动，需外置充电座"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -12770,6 +14836,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "PARTIAL",
           "note": "支持正常书写，需配外置充电盒"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -13157,6 +15293,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "完美原生支持"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -13544,6 +15750,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持现代机型高级倾斜与高阶压感"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -13931,6 +16207,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -14318,6 +16664,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸口)"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -14705,6 +17121,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (早期机型无 USB-C / 雷电接口)"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -15092,6 +17578,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一外出开会与出差黄金转接头"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -15479,6 +18035,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -15866,6 +18492,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "全系蓝牙免驱配对，高保真办公与会议降噪"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -16253,6 +18949,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "出差差旅与移动会议绝配"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -16640,6 +19406,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一电脑桌面工位拓展利器"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     },
@@ -17027,6 +19863,76 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持"
+        },
+        {
+          "deviceId": "xbox-original",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "status": "UNSUPPORTED",
+          "note": "这是 Surface 配件，不适用于 Xbox 主机"
         }
       ]
     }
@@ -17078,9 +19984,9 @@ SURFACE_DATA.getAccessoryImage = function(acc) {
   return acc.image || ('./assets/accessories/' + acc.id + '.png');
 };
 
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   window.SURFACE_DATA = SURFACE_DATA;
 }
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== "undefined" && module.exports) {
   module.exports = SURFACE_DATA;
 }

@@ -6,6 +6,26 @@ var IMAGE_DELIVERY = {
   "go-signature-type-cover.png": [
     320
   ],
+  "msft-tile1-hero.png": [
+    320,
+    640,
+    1280
+  ],
+  "msft-tile2-hero.png": [
+    320,
+    640,
+    1280
+  ],
+  "msft-tile3-hero.png": [
+    320,
+    640,
+    1280
+  ],
+  "msft-tile4-hero.png": [
+    320,
+    640,
+    1280
+  ],
   "pro-classic-type-cover.png": [
     320
   ],
@@ -22,6 +42,16 @@ var IMAGE_DELIVERY = {
     320
   ],
   "surface-audio-dock.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-book-1-hero.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-book-2-hero.png": [
     320,
     640,
     1280
@@ -63,6 +93,16 @@ var IMAGE_DELIVERY = {
     640,
     1280
   ],
+  "surface-duo-2-glacier.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-duo-2-obsidian.png": [
+    320,
+    640,
+    1280
+  ],
   "surface-duo-hero.jpg": [
     320,
     640,
@@ -99,6 +139,11 @@ var IMAGE_DELIVERY = {
     320,
     520
   ],
+  "surface-go-4-hero.png": [
+    320,
+    640,
+    1280
+  ],
   "surface-go-hero.jpg": [
     320,
     640,
@@ -113,6 +158,11 @@ var IMAGE_DELIVERY = {
     320
   ],
   "surface-hub-2s-hero.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-hub-3-hero.png": [
     320,
     640,
     1280

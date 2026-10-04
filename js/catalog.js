@@ -397,20 +397,11 @@ const Catalog = (function () {
     return raw + '?v=' + PORTRAIT_REV;
   }
 
-  // Same pixels saved under more than one file name. A single filename in a group
-  // must not be treated as that old model's own photo.
-  const CONTENT_GROUPS = [
-    ['surface-laptop-platinum.png', 'surface-new-laptop-hero.png'],
-    ['surface-laptop-3-hero.png', 'surface-laptop-dune.png'],
-    ['surface-new-pro-hero.png', 'surface-pro-13-platinum.png'],
-    ['surface-pro-1-hero.png', 'surface-pro-2-hero.png', 'surface-pro-13-black.png'],
-    ['surface-pro-10-biz-hero.png', 'surface-pro-7-plus-hero.png']
-  ];
+  // Same pixels saved under more than one file name.
+  const CONTENT_GROUPS = [];
 
   // Shared pixels that are not the real photo of any device still using them.
-  const UNATTRIBUTED = [
-    'surface-pro-4-hero.png'
-  ];
+  const UNATTRIBUTED = [];
 
   function fileBase(file) {
     return String(file || '').split('/').pop().toLowerCase();

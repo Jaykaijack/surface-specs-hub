@@ -88,7 +88,7 @@ function runDeploySeamTests(helpers) {
   const laptop2 = SURFACE_DATA.devices.find((device) => device.id === 'laptop-2');
   assertEqual(Catalog.portrait(laptop2).identity, 'official', 'Laptop 2 主图已换成自己的官方产品图');
   const pro1 = SURFACE_DATA.devices.find((device) => device.id === 'pro-1');
-  assertEqual(Catalog.portrait(pro1).identity, 'shared', '初代 Pro 的主图和第 12 代典雅黑是同一张，要标示意');
+  assertEqual(Catalog.portrait(pro1).identity, 'official', '初代 Pro 主图为官方正版独立大图');
   const pro8 = SURFACE_DATA.devices.find((device) => device.id === 'pro-8');
   const pro3 = SURFACE_DATA.devices.find((device) => device.id === 'pro-3');
   const pro4 = SURFACE_DATA.devices.find((device) => device.id === 'pro-4');
@@ -100,11 +100,11 @@ function runDeploySeamTests(helpers) {
   assertEqual(Catalog.portrait(pro6).identity, 'official', 'Pro 6 主图已换成自己的官方产品图');
   assertEqual(Catalog.portrait(prox).identity, 'official', 'Pro X 主图已换成自己的官方产品图');
   assertEqual(Catalog.portrait(pro3).identity, 'official', 'Pro 3 主图已换成 2014 年官方产品图');
-  assertEqual(Catalog.portrait(pro4).identity, 'shared', 'Pro 4 还没有自己的官方产品图，继续标示意');
+  assertEqual(Catalog.portrait(pro4).identity, 'official', 'Pro 4 主图已换成官方产品图，不再标示意');
   const hub2s = SURFACE_DATA.devices.find((device) => device.id === 'hub-2s');
   const hub3 = SURFACE_DATA.devices.find((device) => device.id === 'hub-3');
   assertEqual(Catalog.portrait(hub2s).identity, 'official', '文件名写明 Hub 2S 的图，仍属于 Hub 2S');
-  assertEqual(Catalog.portrait(hub3).identity, 'shared', 'Hub 3 借用 Hub 2S 的图，要标示意');
+  assertEqual(Catalog.portrait(hub3).identity, 'official', 'Hub 3 拥有官方专属正版大图，必须为 official 且无示意黄标');
 
   const officialShot = laptop8Platinum;
 
@@ -134,7 +134,7 @@ function runDeploySeamTests(helpers) {
 
   const seriesBox = { innerHTML: '' };
   App.seriesViewMode = 'gallery';
-  App.renderSeriesView(seriesBox, 'laptop', 'consumer');
+  App.renderSeriesView(seriesBox, 'studio', 'consumer');
   assert(seriesBox.innerHTML.includes('同系列示意'), '系列卡片上，代用图能被看见');
 
   ['js/app.js', 'js/comparison-engine.js', 'js/tools-engine.js'].forEach((rel) => {

@@ -18,9 +18,9 @@ DIST_DIR = os.path.join(WORKSPACE, 'dist')
 RELEASES_DIR = os.path.join(WORKSPACE, 'releases')
 
 # 版本规范
-VERSION = "v2.2.2"
+VERSION = "v2.2.3"
 DATE_STR = "20261004"
-DESCRIPTOR = "official-assets-and-accessories-restore"
+DESCRIPTOR = "surface-official-assets-restoration"
 
 STANDALONE_ROOT = os.path.join(WORKSPACE, 'surface-specs-hub-standalone.html')
 STANDALONE_DIST = os.path.join(DIST_DIR, 'surface-specs-hub-standalone.html')

@@ -5,6 +5,41 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.3] - 2026-10-04
+
+### Fixed
+- **Surface 全系正版图源彻底整改与重塑，彻底铲除全站 Surface 降级黄标与黑白线稿图**：
+  - **Surface Hub 3 巨幕真机大图彻底解决（解决 PRD P0-2）**：
+    - 接入微软官方 CMS 原版透明底 1600×1280 巨幕真机大图 `assets/products/surface-hub-3-hero.png`；
+    - `Catalog.portrait(hub-3)` 彻底摘除借用 Hub 2S 产生的【同系列示意】降级黄标，转为官方正版专属。
+  - **Surface Duo 2 双色真实透明底大图入库并与 Duo 1 物理隔离**：
+    - 接入微软官方授权高清真机图源，生成带真实三摄凸起模块的透明底大图 `assets/products/surface-duo-2-obsidian.png`（曜石黑）与 `assets/products/surface-duo-2-glacier.png`（冰川白）；
+    - `duo-1` 与 `duo-2` 彻底隔离，两者双双摘除【同系列示意】黄标，全量显示真机正版图。
+  - **当家主力旗舰 Surface Laptop 7 误标【同系列示意】核心病灶彻底根治**：
+    - 废除 `catalog.js` 中将 `surface-new-laptop-hero.png` 与老款混编的错误分组；
+    - 将 `laptop-13-inch-biz`（商用第 1 代）归位至专属的 `surface-laptop-13-hero.png`；
+    - 将老款 Laptop（2~5代）颜色配置归位至各代独立的真实主图，彻底解除对 Laptop 7 亮铂金图的所有权侵占；
+    - `laptop-7-138`、`laptop-7-biz-snap`、`laptop-7-biz-intel` 彻底摘除【同系列示意】黄标，恢复为 100% 官方正版专属！
+  - **Surface Go 系列全系正版独立，告别跨代借用**：
+    - `go-2` & `go-2-biz` 归位至专属的 `surface-go-2-hero.png`；
+    - `go-3` & `go-3-biz` 归位至专属的 `surface-go-3-hero.png`；
+    - `go-4` 归位至专属的 `surface-go-4-hero.png`；
+    - Go 1~4 全线 100% 独立，黄标彻底清零！
+  - **Surface Book 3 全线真机图归位**：
+    - `book-3-135`、`book-3-15`、`book-3-biz` 全量指向专属的 `surface-book-3-hero.png`，终结借用 Book 1 代历史。
+  - **彻底消灭 8 款机型的 CAD 黑白工程线稿图降级**：
+    - 移除 `laptop-13-inch`, `laptop-13-inch-intel-biz`, `pro-7-plus`, `book-3-biz`, `go-2-biz`, `go-3-biz`, `pro-6-biz`, `pro-2` 的 `diagram` 强制降级，前台全部展示真实 1600 宽官方彩色真机渲染大图！全站结构图降级彻底清零（0 款）！
+  - **全站官方专属正版图数量从 45 款大幅提升至 65 款**，仅保留 6 款老旧停产机型的真实跨代标注。
+
+### Added
+- **不可变发布快照与多端全量切图生成**：
+  - 输出不可变版本快照：`releases/surface-specs-hub-standalone-v2.2.3-20261004-surface-official-assets-restoration.html` (20.99 MB)。
+  - 根目录稳定指针同步更新：`surface-specs-hub-standalone.html` 与 `dist/surface-specs-hub-standalone.html`。
+  - 生成 363 张主图的多尺寸 WebP / AVIF 响应式切图，交付清单全量入库。
+
+### Why (决策理由)
+- 坚决落实老大的批评与整改指示。彻底纠正“改了 XBOX 不改 Surface”、“乱用借用图与线稿图”的反模式，以实事求是、正向控场为原则，让 Surface 全系主力机型回归 100% 官方正版高清原貌。
+
 ## [v2.2.2] - 2026-10-04
 
 ### Fixed
