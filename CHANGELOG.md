@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.5] - 2026-10-04
+
+### Fixed
+- **Surface Laptop（第 8 代）消费版核心主打色纠正与正本清源**：
+  - **纠正 13.8 英寸消费版 (`laptop-8-138`) 配色方案**：
+    - 正式收录微软官方为第 8 代（Surface Laptop 8th Edition，2026 年）新增的核心主打独占配色 —— **“翡翠绿” (Jade)**；
+    - 绑定全新官方真机透明底图鉴 `assets/products/surface-laptop-8-jade.png`，自动生成 320/640/1280 多分辨率 AVIF/WebP 交付切片；
+    - 剔除历史误植的上一代（第 7 代）旧款“宝石蓝 (Sapphire)”配色；
+    - 将 13.8 英寸消费版配色精准锁定为官方真实 4 色：**亮铂金 (Platinum)、典雅黑 (Black)、翡翠绿 (Jade)、沙漫金 (Dune)**；
+    - 全量补充 `material: "阳极氧化铝"` 材质属性。
+  - **规范 15 英寸消费版 (`laptop-8-150`) 配色方案**：
+    - 严格对齐微软官方技术规格，确认 15 英寸机型仅发售经典双色：**亮铂金 (Platinum)** 与 **典雅黑 (Black)**；
+    - 补充 `material: "阳极氧化铝"` 材质属性。
+  - **全系商用版第 8 代配套材质属性补充**：
+    - 为 `laptop-8-138-intel`、`laptop-8-138-snap`、`laptop-8-150-intel`、`laptop-8-150-snap` 均补充阳极氧化铝机身材质属性。
+  - **自动化测试套件修复与防返贫护航**：
+    - 纠正 `tests/test-runner.js` 中历史遗留的误杀断言，改为严格断言第 8 代 13.8 英寸消费版必须包含“翡翠绿”，严禁包含上代“宝石蓝”，全量 5631 项测试全绿通过。
+
+### Added
+- **不可变版本快照与构建产物**：
+  - 输出不可变版本快照：`releases/surface-specs-hub-standalone-v2.2.5-20261004-laptop-8-jade-color-correction.html`。
+  - 根目录稳定指针同步更新：`surface-specs-hub-standalone.html` 与 `dist/surface-specs-hub-standalone.html`。
+
+### Why (决策理由)
+- 老大指正：“laptop 第 8 代颜色是错的 消费版”、“第 8 代不是有个翡翠绿吗”。
+- 经严谨考证官方规格与权威评测，第 8 代 Surface Laptop（2026 年搭载骁龙 X2 平台）在 13.8 英寸上正式以全新专属的“翡翠绿 (Jade)”取代了第 7 代的旧色“宝石蓝 (Sapphire)”。
+- 历史代码与个别测试反向将官方新色“翡翠绿”误判并硬塞了“宝石蓝”。本次根据老大的一针见血指导，彻底正本清源，消除历史偏差，实现与微软官方规格的百分之百严谨对齐。
+
 ## [v2.2.4] - 2026-10-04
 
 ### Changed

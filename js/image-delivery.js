@@ -262,6 +262,11 @@ var IMAGE_DELIVERY = {
     640,
     1280
   ],
+  "surface-laptop-8-jade.png": [
+    320,
+    640,
+    1280
+  ],
   "surface-laptop-8-platinum.png": [
     320,
     640,

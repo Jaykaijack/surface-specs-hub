@@ -2411,11 +2411,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
@@ -2514,11 +2516,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
@@ -2619,11 +2623,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
@@ -2716,11 +2722,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],
@@ -2819,21 +2827,25 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-black.png"
           },
           {
-            "name": "宝石蓝",
-            "hex": "#2e5a88",
-            "image": "./assets/products/surface-laptop-8-sapphire.png"
+            "name": "翡翠绿",
+            "hex": "#4a7476",
+            "material": "阳极氧化铝",
+            "image": "./assets/products/surface-laptop-8-jade.png"
           },
           {
             "name": "沙漫金",
             "hex": "#d2b48c",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-dune.png"
           }
         ],
@@ -2933,11 +2945,13 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-platinum.png"
           },
           {
             "name": "典雅黑",
             "hex": "#262626",
+            "material": "阳极氧化铝",
             "image": "./assets/products/surface-laptop-8-black.png"
           }
         ],

@@ -620,11 +620,12 @@ assert(Boolean(pro12_13_cons), '全系参数库正式收录 Surface Pro 13 英�
 assert(!pro12_13_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Pro 13 消费版第 12 代严格零宝石蓝 (对齐官方评测指南三款经典配色)');
 assertEqual(pro12_13_cons.specs.colors.length, 3, 'Pro 13 消费版第 12 代严格三款配色: 亮铂金、典雅黑、沙漫金');
 
-// 检验消费版旗舰 Laptop 13.8 (第 8 代) 官方配色（亮铂金、典雅黑、宝石蓝、沙漫金）
+// 检验消费版旗舰 Laptop 13.8 (第 8 代) 官方配色（亮铂金、典雅黑、翡翠绿、沙漫金）
 const laptop8_138_cons = SURFACE_DATA.devices.find(d => d.id === 'laptop-8-138');
 assert(Boolean(laptop8_138_cons), '全系参数库正式收录 Surface Laptop 13.8 英寸 (第 8 代) 消费版');
-assert(laptop8_138_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Laptop 13.8 第 8 代收录官方宝石蓝 (Sapphire) 经典配色');
-assert(!laptop8_138_cons.specs.colors.some(c => c.name === '翡翠绿'), 'Laptop 13.8 第 8 代消除杜撰的翡翠绿配色');
+assert(laptop8_138_cons.specs.colors.some(c => c.name === '翡翠绿'), 'Laptop 13.8 第 8 代收录官方主打翡翠绿 (Jade) 独占配色');
+assert(!laptop8_138_cons.specs.colors.some(c => c.name === '宝石蓝'), 'Laptop 13.8 第 8 代剔除上一代旧款宝石蓝 (Sapphire) 配色');
+assertEqual(laptop8_138_cons.specs.colors.length, 4, 'Laptop 13.8 第 8 代消费版拥有 4 款配色: 亮铂金、典雅黑、翡翠绿、沙漫金');
 
 // 检验找回并录入的消费版 13 英寸机型 (Surface Laptop 13 英寸 第 1 代)
 const laptop13Inch = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch');

@@ -69,6 +69,7 @@ src = replaceInDeviceBlock(src, 'pro-9', b => {
 src = replaceInDeviceBlock(src, 'laptop-8-138', b => {
   b = setColorImage(b, ['亮铂金', '铂金'], './assets/products/surface-laptop-8-platinum.png');
   b = setColorImage(b, ['典雅黑', '典黑'], './assets/products/surface-laptop-8-black.png');
+  b = setColorImage(b, ['翡翠绿', '森野绿', '绿色'], './assets/products/surface-laptop-8-jade.png');
   b = setColorImage(b, ['沙漫金', '沙丘', '砂岩金'], './assets/products/surface-laptop-8-dune.png');
   return b;
 });
