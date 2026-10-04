@@ -19,6 +19,11 @@ const OFFICIAL_XBOX_LINEUP_FACTS = require('./official-xbox-lineup-facts.js');
 const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js');
 const { runDeploySeamTests } = require('./deploy-seams.test.js');
 const { runP0SpecBatteryRegressionTests } = require('./p0-spec-battery-regression.test.js');
+const { runG0StopBleedingTests } = require('./g0-stop-bleeding.test.js');
+const { runG1StandardsBaselineTests } = require('./g1-standards-baseline.test.js');
+const { runG2StrengtheningTests } = require('./g2-strengthening.test.js');
+const { runG3RedesignTests } = require('./g3-redesign.test.js');
+const { runG4AntiRegressionTests } = require('./g4-anti-regression.test.js');
 // 挂载到全局环境供 Node.js 测试执行
 global.SURFACE_DATA = SURFACE_DATA;
 global.Catalog = Catalog;
@@ -864,7 +869,7 @@ assertEqual(Catalog.listDevices().length, SURFACE_DATA.devices.length, 'resetToB
 assert(!!SURFACE_DATA.datasetVersion, '本地基线必须带 datasetVersion，才能拒绝过期云端快照');
 assertEqual(Catalog.acceptsCloudVersion('2026.09.18'), false, '过期云端 v2026.09.18 不得覆盖本地核验基线');
 assertEqual(Catalog.acceptsCloudVersion(SURFACE_DATA.datasetVersion), true, '同版本云端可以覆盖');
-assertEqual(Catalog.acceptsCloudVersion('2026.09.22'), true, '更新的云端可以覆盖');
+assertEqual(Catalog.acceptsCloudVersion('2026.10.02'), true, '更新的云端可以覆盖');
 assertEqual(Catalog.acceptsCloudVersion(''), false, '云端缺版本号时不得覆盖本地核验基线');
 
 assert(typeof App.listDevices === 'function', 'App 只通过 Catalog 取机型，禁止直读 SURFACE_DATA.devices');
@@ -1538,6 +1543,58 @@ assert(!Catalog.portrait(seriesX).src.includes('surface'), '不用 Surface 的�
 assertEqual(ToolsEngine.guidePassesFilters(x25), false, '选机向导不把 Xbox 主机混进 Surface 推荐');
 assert(!App.homeShelfDevices('upcoming').some(d => d.id === 'xbox-series-x25'),
   '首页即将发售不把美国限量主机写进国行说明');
+
+// ----------------------------------------------------
+// Xbox 主机与手柄配色及图片保真度专项测试
+// ----------------------------------------------------
+console.log('\n🎯 Test Suite: Xbox 主机与控制器官方配色及图鉴保真度专项');
+
+// 1. 14 款 Xbox 主机必须 100% 具备合法官方配色 (PRD 数据治理)
+const XBOX_CONSOLES_LIST = Catalog.listDevices().filter(d => d.categoryId === 'xbox');
+assertEqual(XBOX_CONSOLES_LIST.length, 14, 'Xbox 收录主机总数必须为 14 款');
+XBOX_CONSOLES_LIST.forEach(dev => {
+  const colors = Catalog.getSpec(dev, 'colors');
+  assert(Array.isArray(colors) && colors.length > 0,
+    `Xbox 主机 [${dev.id} - ${dev.name}] 必须包含官方机身配色数据，不得为空`);
+  colors.forEach(c => {
+    assert(c.name && c.hex && c.hex.startsWith('#'),
+      `Xbox 主机 [${dev.id}] 配色必须包含名称与合法 16 进制色值 (实际: ${JSON.stringify(c)})`);
+  });
+});
+
+// 2. 差异化型号必须配专属配图，禁止用普通黑 Series X 顶替
+const xDigital = Catalog.getDevice('xbox-series-x-digital');
+const xGalaxy = Catalog.getDevice('xbox-series-x-2tb');
+const x25Console = Catalog.getDevice('xbox-series-x25');
+
+assert(xDigital.heroImage.includes('digital-white'),
+  `xbox-series-x-digital 必须使用全数字白色专属大图，不得指向普通黑光驱版 (实际: ${xDigital.heroImage})`);
+assert(xGalaxy.heroImage.includes('galaxy-black'),
+  `xbox-series-x-2tb 必须使用银河黑星屑特别版专属大图，不得指向普通黑版 (实际: ${xGalaxy.heroImage})`);
+assert(x25Console.heroImage.includes('translucent-green'),
+  `xbox-series-x25 必须使用 25 周年翡翠绿限量版专属大图，不得指向普通黑版 (实际: ${x25Console.heroImage})`);
+
+// 3. 手柄专区配图与色号严格纠偏
+const xboxControllers = (typeof XBOX_CONTROLLERS !== 'undefined' ? XBOX_CONTROLLERS : require('../js/xbox-lineup.js').controllers);
+const ghostCipher = xboxControllers.find(c => c.id === 'series-ghost-cipher');
+const arcticCamo = xboxControllers.find(c => c.id === 'series-arctic-camo');
+const daystrikeCamo = xboxControllers.find(c => c.id === 'series-daystrike-camo');
+const forza5 = xboxControllers.find(c => c.id === 'series-forza-5');
+const starfield = xboxControllers.find(c => c.id === 'series-starfield');
+const gears5 = xboxControllers.find(c => c.id === 'series-gears-5');
+const stormcloud = xboxControllers.find(c => c.id === 'series-storm-breaker');
+
+assert(ghostCipher.image.includes('ghost-cipher'), '幽灵特工必须使用专属透明探索手柄图，严禁错用纯白手柄图');
+assert(arcticCamo.image.includes('arctic-camo'), '北极迷彩必须使用专属数码迷彩图，严禁错用纯白手柄图');
+assert(daystrikeCamo.image.includes('daystrike-camo'), '炽烈迷彩必须使用专属战术迷彩图，严禁错用纯红手柄图');
+assert(forza5.colorHex.toLowerCase().startsWith('#fa') || forza5.colorHex.toLowerCase().startsWith('#ff'),
+  `地平线 5 狂飙黄手柄色块必须为黄色系，严禁错填红色 (实际: ${forza5.colorHex})`);
+assert(!starfield.colorHex.includes('e11d48'),
+  `星空手柄色块必须为宇航科技白系，严禁错填红色 (实际: ${starfield.colorHex})`);
+assert(!gears5.colorHex.includes('451a03'),
+  `战争机器 5 凯特战损手柄色块必须为雪原灰白系，严禁错填深棕色 (实际: ${gears5.colorHex})`);
+assert(stormcloud.colorHex === '#1e40af' || stormcloud.colorHex.includes('blue'),
+  `风暴蓝手柄色块必须为风暴蓝深色系，严禁错填深灰黑 (实际: ${stormcloud.colorHex})`);
 assert(App.homeShelfDevices('upcoming').some(d => d.id === 'pro-12-inch-2-biz'),
   '首页即将发售仍保留国行商用新品');
 assert(!App.homeShelfDevices('current').some(d => d.categoryId === 'xbox'),
@@ -1614,6 +1671,11 @@ FOREIGN_STORE_MARKERS.forEach((marker) => {
 runP0SpecBatteryRegressionTests({ assert, assertEqual });
   runImageMappingP0Tests({ assert, assertEqual });
   runDeploySeamTests({ assert, assertEqual });
+  runG0StopBleedingTests({ assert, assertEqual });
+  runG1StandardsBaselineTests({ assert, assertEqual });
+  runG2StrengtheningTests({ assert, assertEqual });
+  runG3RedesignTests({ assert, assertEqual });
+  runG4AntiRegressionTests({ assert, assertEqual });
 
 // ----------------------------------------------------
 // 最终汇总

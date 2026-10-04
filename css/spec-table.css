@@ -223,8 +223,9 @@
   border-color: #d13438;
 }
 
-/* 首列粘性固定 (Sticky Parameter Name Column) */
-.spec-table tbody td.spec-param-name {
+/* 首列粘性固定 (Sticky Parameter Name Column: 支持 td 与语义化 th) */
+.spec-table tbody td.spec-param-name,
+.spec-table tbody th.spec-param-name {
   position: sticky;
   left: 0;
   z-index: 10;
@@ -256,7 +257,8 @@
 }
 
 /* 斑马纹悬浮 */
-.spec-table tbody tr:hover td.spec-param-name {
+.spec-table tbody tr:hover td.spec-param-name,
+.spec-table tbody tr:hover th.spec-param-name {
   background: var(--ms-bg-card-hover);
 }
 .spec-table tbody tr:hover td.spec-val-cell {
@@ -264,7 +266,8 @@
 }
 
 /* 分组行 (Group Headers) */
-.spec-group-row td {
+.spec-group-row td,
+.spec-group-row th {
   background-color: var(--ms-bg-card-secondary);
   padding: 11px 14px;
   font-weight: 700;
@@ -275,7 +278,8 @@
   border-top: 1px solid var(--ms-border-strong);
   border-bottom: 1px solid var(--ms-border-strong);
 }
-.spec-group-row td.spec-param-name {
+.spec-group-row td.spec-param-name,
+.spec-group-row th.spec-param-name {
   background-color: var(--ms-bg-card-secondary);
   color: var(--ms-text-brand);
 }
@@ -292,7 +296,8 @@
 .spec-table.highlight-diff tbody tr.row-diff td.spec-val-cell {
   background-color: var(--ms-highlight-diff);
 }
-.spec-table.highlight-diff tbody tr.row-diff td.spec-param-name {
+.spec-table.highlight-diff tbody tr.row-diff td.spec-param-name,
+.spec-table.highlight-diff tbody tr.row-diff th.spec-param-name {
   color: var(--ms-text-brand);
   font-weight: 700;
   background-color: var(--ms-highlight-diff);

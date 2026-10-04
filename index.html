@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Microsoft Surface 产品参数中心 | Surface Product Hub (HubWeb 复刻版)</title>
+  <title>Surface 参数中心 · 民间资料库 | 全系列技术规格与深度对比</title>
   <meta name="description" content="专业 Surface 产品参数数据库与历代机型横向对比平台。收录 Surface Pro、Laptop、Studio、Go、Book 等全系产品详细规格、高通骁龙 X 与 Intel 芯片架构、NPU 算力天梯及双向配件兼容矩阵。">
   <meta name="keywords" content="Surface参数, Surface Pro 12参数, Surface Laptop 8参数, 微软Surface全系对比, NPU TOPS, Copilot+ PC, Surface配件兼容">
   <link rel="canonical" href="https://hubweb.cn/surface/">
@@ -12,7 +12,7 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230078D4'/%3E%3Crect x='7' y='9' width='18' height='3' rx='1.5' fill='%23fff'/%3E%3Crect x='7' y='14.5' width='18' height='3' rx='1.5' fill='%23fff' fill-opacity='.75'/%3E%3Crect x='7' y='20' width='11' height='3' rx='1.5' fill='%23fff' fill-opacity='.55'/%3E%3C/svg%3E">
   
   <!-- OpenGraph 元数据 (PRD 第二十三章) -->
-  <meta property="og:title" content="Microsoft Surface 产品参数中心 | Surface Product Hub">
+  <meta property="og:title" content="Surface 参数中心 · 民间资料库 | Surface Specs Hub">
   <meta property="og:description" content="查阅、筛选和横向比较历代 Microsoft Surface 产品全维度规格参数。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="./assets/delivery/webp/w1280/surface-new-pro-hero.webp">
@@ -22,8 +22,40 @@
   <link rel="stylesheet" href="./css/hubweb-layout.css?v=20260930-v3">
   <link rel="stylesheet" href="./css/spec-table.css?v=20260930-v3">
   <link rel="stylesheet" href="./css/tools.css?v=20260930-v3">
+
+  <!-- 结构化数据：schema.org (PRD P2-3 / T-5) -->
+  <script type="application/ld+json" id="structured-data-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://hubweb.cn/surface/#website",
+        "url": "https://hubweb.cn/surface/",
+        "name": "Surface 参数中心 · 民间资料库",
+        "description": "专业 Surface 产品参数数据库与历代机型横向对比平台。收录 Surface Pro、Laptop、Studio、Go、Book 等全系产品详细规格、高通骁龙 X 与 Intel 芯片架构、NPU 算力天梯及双向配件兼容矩阵。",
+        "inLanguage": "zh-CN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://hubweb.cn/surface/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://hubweb.cn/surface/#/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- 无障碍跳跃导航 (WCAG 2.2 AA / PRD T-3) -->
+  <a href="#hub-main-content" class="skip-to-content sr-only">跳至主要内容</a>
 
   <!-- 顶部 Fluent 导航栏 -->
   <header class="hub-header">
@@ -39,10 +71,10 @@
           <div class="ms-logo-tile blue"></div>
           <div class="ms-logo-tile yellow"></div>
         </div>
-        <span class="ms-wordmark">Microsoft</span>
+        <span class="ms-wordmark">Surface</span>
         <span class="brand-divider" aria-hidden="true"></span>
-        <span class="catalog-wordmark">Catalog Explorer</span>
-        <span class="header-sub-tag">Surface 官方资料库 <span class="version-badge" style="font-size:10.5px; opacity:0.85; padding:1px 5px; border-radius:4px; background:var(--ms-bg-subtle); margin-left:4px;">v1.6.0 · 20260930</span></span>
+        <span class="catalog-wordmark">参数中心</span>
+        <span class="header-sub-tag">民间资料库（非官方） <span class="version-badge" style="font-size:10.5px; opacity:0.85; padding:1px 5px; border-radius:4px; background:var(--ms-bg-subtle); margin-left:4px;">v2.2.1 · 20261001</span></span>
       </div>
     </div>
 
@@ -70,7 +102,7 @@
         <span class="btn-label">自由对比台</span>
       </button>
 
-      <button class="header-btn" onclick="App.navigate('#/timeline')" title="查看 2012~2026 编年时间线">
+      <button class="header-btn" onclick="App.navigate('#/timeline')" title="查看 2013~2026 编年时间线">
         <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
           <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
           <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
@@ -138,10 +170,16 @@
 
   <!-- 权威法务与版权声明页脚 (PRD 第二十九章: 明确品牌与第三方非官方边界) -->
   <footer class="hub-footer">
-    <div><strong>免责与版权声明：</strong>本网站为民间独立维护的 Surface 硬件产品技术资料与规格数据库，并非 Microsoft 官方网站。</div>
-    <div>Microsoft、Surface、Windows、PixelSense、Xbox 及相关产品标识均为微软公司 (Microsoft Corporation) 在美国和/或其他国家地区的注册商标。</div>
-    <div>数据采编自微软官方商城公开技术白皮书与技术支持文档，严禁用于虚假商业宣传。最后核验时间：2026-09-16 · 遵守 WCAG 2.2 AA 无障碍标准。</div>
+    <div><strong>民间非官方声明：</strong>本站为民间独立维护的 Surface 硬件产品技术资料与规格数据库，非 Microsoft 官方站点。</div>
+    <div>“Surface”、“Microsoft”、“Windows”、“PixelSense”、“Xbox”等商标及标识归微软公司所有。</div>
+    <div>数据采编自公开技术白皮书与技术支持文档，严禁用于虚假商业宣传。最后核验时间：<span id="footer-verification-date">2026-10-01</span> · 遵守 WCAG 2.2 AA 无障碍标准。</div>
   </footer>
+
+  <!-- 离线与断网状态反馈浮窗 (PRD 第二十二章 / P1-4) -->
+  <div id="offline-toast" class="offline-toast hidden" role="status" aria-live="polite">
+    <span class="offline-icon">⚡</span>
+    <span class="offline-msg">当前处于离线状态，已切换为完全离线工作模式，全量参数与内嵌图鉴均可畅快浏览。</span>
+  </div>
 
   <!-- 核心数据源与业务引擎脚本 (严格按依赖顺序加载) -->
   <script src="./js/xbox-lineup.js?v=20260930-v3"></script>

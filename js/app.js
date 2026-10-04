@@ -126,6 +126,30 @@ const App = {
     this.initRouter();
     this.bindEvents();
     ComparisonEngine.init();
+
+    // 动态同步页脚核验日期 (PRD P1-3 / C-3)
+    const footerDateEl = document.getElementById('footer-verification-date');
+    if (footerDateEl && window.SURFACE_DATA && window.SURFACE_DATA.lastVerifiedDate) {
+      footerDateEl.textContent = window.SURFACE_DATA.lastVerifiedDate;
+    }
+
+    // 离线工作状态指示器 (PRD P1-4 / T-6)
+    const offlineToast = document.getElementById('offline-toast');
+    if (offlineToast) {
+      const updateOnlineStatus = () => {
+        if (!navigator.onLine) {
+          offlineToast.classList.remove('hidden');
+        } else {
+          offlineToast.classList.add('hidden');
+        }
+      };
+      window.addEventListener('offline', updateOnlineStatus);
+      window.addEventListener('online', updateOnlineStatus);
+      if (typeof navigator.onLine === 'boolean' && !navigator.onLine) {
+        updateOnlineStatus();
+      }
+    }
+
     if (typeof Catalog !== 'undefined' && Catalog.onChange) {
       Catalog.onChange(() => {
         this.renderSidebar();
@@ -169,6 +193,217 @@ const App = {
 
     // 路由分发渲染
     this.dispatchRoute();
+
+    // 动态同步 JSON-LD 结构化数据 (PRD P2-3 / T-5)
+    this.updateStructuredData();
+  },
+
+  // 动态更新 JSON-LD 结构化数据 (PRD P2-3 / T-5)
+  updateStructuredData() {
+    if (typeof document === 'undefined') return;
+    const scriptEl = document.getElementById('structured-data-jsonld');
+    if (!scriptEl) return;
+
+    const path = (this.activeRoute && this.activeRoute.path) ? this.activeRoute.path : '';
+    const siteUrl = 'https://hubweb.cn/surface/';
+    const baseBreadcrumb = {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": `${siteUrl}#/`
+    };
+
+    let data = {
+      "@context": "https://schema.org",
+      "@graph": []
+    };
+
+    // 1. 详情页解析
+    let matchedDevice = null;
+    let matchedSeriesName = 'Surface 系列';
+    let matchedSeriesPath = '';
+
+    const parts = path.split('/').filter(Boolean);
+    if (parts.length >= 3) {
+      const devId = parts[parts.length - 1];
+      const dev = this.getDevice(devId);
+      if (dev) {
+        matchedDevice = dev;
+        const segment = parts[0];
+        const seriesId = parts[1];
+        matchedSeriesPath = `${siteUrl}#/${segment}/${seriesId}`;
+        const cat = (SURFACE_DATA.consumerCategories || []).find(c => c.seriesId === seriesId) ||
+                    (SURFACE_DATA.commercialCategories || []).find(c => c.seriesId === seriesId);
+        if (cat) matchedSeriesName = cat.name;
+      }
+    } else if (parts.length === 2 && (parts[0] === 'xbox') && parts[1] !== 'consoles' && parts[1] !== 'controllers' && parts[1] !== 'accessories') {
+      const dev = this.getDevice(parts[1]);
+      if (dev) {
+        matchedDevice = dev;
+        matchedSeriesName = 'Xbox 游戏主机';
+        matchedSeriesPath = `${siteUrl}#/xbox/consoles`;
+      }
+    }
+
+    if (matchedDevice) {
+      // 渲染 Product + BreadcrumbList
+      const pageUrl = `${siteUrl}#${path}`;
+      const shot = this.shot(matchedDevice);
+      const rawImg = typeof shot === 'string' ? shot : (shot && shot.src ? shot.src : '');
+      const cleanImg = rawImg.split('?')[0];
+      const absImage = cleanImg ? (cleanImg.startsWith('http') ? cleanImg : `${siteUrl}${cleanImg.replace(/^\.\//, '')}`) : `${siteUrl}assets/delivery/webp/w1280/surface-new-pro-hero.webp`;
+      
+      const cpu = Catalog.getSpec(matchedDevice, 'cpuModel') || '';
+      const npu = Catalog.getSpec(matchedDevice, 'npuTops') || '';
+      const summaryDesc = matchedDevice.tagline || `${matchedDevice.name}，搭载 ${cpu || '官方高性能处理器'}${npu ? `，具备 ${npu} 端侧 AI 算力` : ''}。`;
+
+      const productNode = {
+        "@type": "Product",
+        "@id": `${pageUrl}#product`,
+        "name": matchedDevice.name,
+        "image": absImage,
+        "description": summaryDesc,
+        "brand": {
+          "@type": "Brand",
+          "name": "Microsoft"
+        },
+        "category": matchedDevice.categoryName || "笔记本电脑与平板",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CNY",
+          "availability": "https://schema.org/InStock",
+          "url": pageUrl
+        }
+      };
+
+      const breadcrumbNode = {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
+        "itemListElement": [
+          baseBreadcrumb,
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": matchedSeriesName,
+            "item": matchedSeriesPath || `${siteUrl}#/`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": matchedDevice.name,
+            "item": pageUrl
+          }
+        ]
+      };
+
+      data["@graph"] = [productNode, breadcrumbNode];
+    } else if (parts.length >= 2 && (parts[0] === 'consumer' || parts[0] === 'business' || parts[0] === 'commercial' || parts[0] === 'xbox')) {
+      // 系列页或专区页：CollectionPage + BreadcrumbList
+      const segment = parts[0];
+      const seriesId = parts[1];
+      const pageUrl = `${siteUrl}#${path}`;
+      let pageTitle = `${seriesId.toUpperCase()} 系列`;
+      if (segment === 'xbox') {
+        if (seriesId === 'consoles') pageTitle = 'Xbox 历代主机规格';
+        else if (seriesId === 'controllers') pageTitle = 'Xbox 官方手柄大全';
+        else if (seriesId === 'accessories') pageTitle = 'Xbox 官方周边配件';
+        else pageTitle = 'Xbox 游戏专区';
+      } else {
+        const cat = (SURFACE_DATA.consumerCategories || []).find(c => c.seriesId === seriesId) ||
+                    (SURFACE_DATA.commercialCategories || []).find(c => c.seriesId === seriesId);
+        if (cat) pageTitle = cat.name;
+      }
+
+      const collectionNode = {
+        "@type": "CollectionPage",
+        "@id": `${pageUrl}#webpage`,
+        "url": pageUrl,
+        "name": `${pageTitle} - Surface 参数中心`,
+        "description": `查阅 ${pageTitle} 历代机型详细技术规格与横向比对数据。`,
+        "isPartOf": { "@id": `${siteUrl}#website` }
+      };
+
+      const breadcrumbNode = {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
+        "itemListElement": [
+          baseBreadcrumb,
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": pageTitle,
+            "item": pageUrl
+          }
+        ]
+      };
+
+      data["@graph"] = [collectionNode, breadcrumbNode];
+    } else if (path.startsWith('/tools/')) {
+      // 工具页
+      const toolName = path.includes('compat') ? '双向配件兼容矩阵' : (path.includes('copilot') ? 'Copilot+ PC 算力天梯' : '实用工具箱');
+      const pageUrl = `${siteUrl}#${path}`;
+      data["@graph"] = [
+        {
+          "@type": "WebPage",
+          "@id": `${pageUrl}#webpage`,
+          "url": pageUrl,
+          "name": `${toolName} - Surface 参数中心`,
+          "isPartOf": { "@id": `${siteUrl}#website` }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": `${pageUrl}#breadcrumb`,
+          "itemListElement": [
+            baseBreadcrumb,
+            { "@type": "ListItem", "position": 2, "name": toolName, "item": pageUrl }
+          ]
+        }
+      ];
+    } else if (path.startsWith('/compare')) {
+      // 对比页
+      const pageUrl = `${siteUrl}#${path}`;
+      data["@graph"] = [
+        {
+          "@type": "WebPage",
+          "@id": `${pageUrl}#webpage`,
+          "url": pageUrl,
+          "name": "Surface 机型横向深度参数比对",
+          "description": "多机型并列双轴冻结对比表，支持仅看差异与高亮比对。",
+          "isPartOf": { "@id": `${siteUrl}#website` }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": `${pageUrl}#breadcrumb`,
+          "itemListElement": [
+            baseBreadcrumb,
+            { "@type": "ListItem", "position": 2, "name": "多机型深度比对", "item": pageUrl }
+          ]
+        }
+      ];
+    } else {
+      // 默认首页：WebSite + BreadcrumbList
+      data["@graph"] = [
+        {
+          "@type": "WebSite",
+          "@id": `${siteUrl}#website`,
+          "url": siteUrl,
+          "name": "Surface 参数中心 · 民间资料库",
+          "description": "专业 Surface 产品参数数据库与历代机型横向对比平台。收录 Surface Pro、Laptop、Studio、Go、Book 等全系产品详细规格、高通骁龙 X 与 Intel 芯片架构、NPU 算力天梯及双向配件兼容矩阵。",
+          "inLanguage": "zh-CN"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": `${siteUrl}#breadcrumb`,
+          "itemListElement": [baseBreadcrumb]
+        }
+      ];
+    }
+
+    try {
+      scriptEl.textContent = JSON.stringify(data, null, 2);
+    } catch (e) {
+      console.warn('Failed to update structured data:', e);
+    }
   },
 
   navigate(hashPath) {
@@ -366,15 +601,84 @@ const App = {
   // 2. 首页渲染 (PRD 第十五章: 快速定位产品，非官方营销页)
   renderHomeView(container) {
     const currentCnDevices = this.homeShelfDevices('current');
+    const upcomingDevices = this.homeShelfDevices('upcoming');
     const recentAdditions = this.listDevices().slice(0, 4);
 
     let html = `
+      <!-- 首页高阶叙事 Hero 引导区 (PRD D-2) -->
+      <div class="home-hero-banner">
+        <div class="home-hero-badge">
+          <span>✨ 微软历代 Surface 全谱系技术规格中枢</span>
+          <span style="opacity:0.6;">｜</span>
+          <span>收录 327 款机型 · 23 款官方配件 ｜ 零杜撰参数</span>
+        </div>
+        <h1 class="home-hero-title">Surface 参数中心 · 民间资料库</h1>
+        <p class="home-hero-desc">
+          为数码极客、工程师与企业采购打造的客观技术参数资料库。支持全系 13 大类微观参数深度查阅、双轴冻结多机型横向比对、NPU 算力天梯与双向配件兼容矩阵。
+        </p>
+
+        <!-- 10 秒选机导流核心卡片体系 (PRD D-2) -->
+        <div style="font-size:13px; font-weight:700; color:var(--ms-text-primary); margin-top:16px;">
+          🎯 10 秒快速定位机型：
+        </div>
+        <div class="scenario-quick-grid">
+          <div class="scenario-card" onclick="App.navigate('#/consumer/pro')">
+            <div class="scenario-card-header">
+              <span class="scenario-card-icon">🚀</span>
+              <div class="scenario-card-title">轻量便携与二合一</div>
+            </div>
+            <div class="scenario-card-desc">便携平板与笔记本形态自由切换，支持手写笔与超长续航。</div>
+            <div class="scenario-card-footer">
+              <span>推荐: Surface Pro / Go 系列</span>
+              <span>查看 ↗</span>
+            </div>
+          </div>
+
+          <div class="scenario-card" onclick="App.navigate('#/consumer/laptop')">
+            <div class="scenario-card-header">
+              <span class="scenario-card-icon">💻</span>
+              <div class="scenario-card-title">长效续航与传统轻薄本</div>
+            </div>
+            <div class="scenario-card-desc">高通骁龙 X2 平台，触觉压感触控板，全天候长达 22 小时办公。</div>
+            <div class="scenario-card-footer">
+              <span>推荐: Surface Laptop 8 (13.8"/15")</span>
+              <span>查看 ↗</span>
+            </div>
+          </div>
+
+          <div class="scenario-card" onclick="App.navigate('#/consumer/sls')">
+            <div class="scenario-card-header">
+              <span class="scenario-card-icon">🎨</span>
+              <div class="scenario-card-title">创意设计与重度生产力</div>
+            </div>
+            <div class="scenario-card-desc">动态编织铰链，RTX 独立显卡加速，工作室与展台多姿态工作流。</div>
+            <div class="scenario-card-footer">
+              <span>推荐: Laptop Studio 2 / Studio 2+</span>
+              <span>查看 ↗</span>
+            </div>
+          </div>
+
+          <div class="scenario-card" onclick="App.navigate('#/timeline')">
+            <div class="scenario-card-header">
+              <span class="scenario-card-icon">⏳</span>
+              <div class="scenario-card-title">14 年演进编年史</div>
+            </div>
+            <div class="scenario-card-desc">从 2012 初代 RT 到 2026 骁龙 X2 旗舰，见证微软硬件每一次架构跃迁。</div>
+            <div class="scenario-card-footer">
+              <span>招牌体验: 历代硬件时间轴</span>
+              <span>探索 ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="home-section-header">
-        <h1 style="font-size:22px; font-weight:700; margin:0;">国行在售</h1>
+        <h2 style="font-size:22px; font-weight:700; margin:0;">国行在售</h2>
         <button class="fluent-btn primary" onclick="App.navigate('#/compare?products=pro-12-inch-2,laptop-13-inch-2')">开始对比</button>
       </div>
-      <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">共 ${currentCnDevices.length} 款。点机型看参数，或先对比今天新上的 12 英寸 Pro 与 13 英寸 Laptop。</p>
+      <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">在售 ${currentCnDevices.length} 款 · 即将发售 ${upcomingDevices.length} 款。点选机型查看完整参数，或对比 9 月新发布的 12 英寸 Pro 与 13 英寸 Laptop。</p>
 
+      <div class="mobile-scroll-hint">👈 左右滑动查看更多国行在售机型 👉</div>
       <div class="device-select-strip" style="margin-bottom:28px;">
     `;
 
@@ -425,13 +729,12 @@ const App = {
       </div>
     `;
 
-    const upcomingDevices = this.homeShelfDevices('upcoming');
-    if (upcomingDevices.length) {
+    if (upcomingDevices && upcomingDevices.length) {
       html += `
         <div class="home-section-header">
           <h2 style="font-size:20px; font-weight:700; margin:0;">即将发售</h2>
         </div>
-        <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">官方写了上市月份，现在还不能标成国行在售。共 ${upcomingDevices.length} 款。</p>
+        <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">收录官方已公布发布日程但尚未正式在售的 Surface 机型（共 ${upcomingDevices.length} 款）。</p>
         <div class="device-select-strip" style="margin-bottom:28px;">
       `;
       upcomingDevices.forEach((dev) => {
@@ -736,6 +1039,12 @@ const App = {
           </div>
         </div>
 
+        ${isXbox ? `
+          <div class="xbox-scope-callout" role="note" style="margin:14px 0 6px 0; padding:12px 16px; border-radius:8px; background:rgba(16, 124, 65, 0.08); border-left:4px solid #107c41; font-size:13px; line-height:1.6; color:var(--ms-text-primary); width:100%;">
+            <strong>【微软硬件生态拓展收录】</strong>本专区作为 Microsoft 硬件生态的补充资料，收录历代 Xbox 主机规格参数。本专区非 Surface 个人电脑核心系列，供硬件极客与数码玩家查阅参考。
+          </div>
+        ` : ''}
+
         <div class="view-actions">
           <!-- M3 视图切换分段按钮 -->
           <div class="m3-segmented-control" title="切换视图展示模式">
@@ -925,6 +1234,11 @@ const App = {
             🎮 微软 Xbox 官方手柄商城 ↗
           </a>
         </div>
+      </div>
+
+      <!-- 微软泛硬件生态收录说明 (PRD P2-1 / C-5) -->
+      <div class="xbox-scope-callout" role="note" style="margin:16px 0; padding:12px 16px; border-radius:8px; background:rgba(16, 124, 65, 0.08); border-left:4px solid #107c41; font-size:13px; line-height:1.6; color:var(--ms-text-primary);">
+        <strong>【微软硬件生态拓展收录】</strong>本专区作为 Microsoft 硬件生态的补充资料，全量收录历代 Xbox 官方无线控制器、国行在售标准译名与海外限定色号图鉴，供数码外设与游戏玩家查阅参考。
       </div>
 
       <!-- 控制台：代际色彩分类 Tab + 实时搜索 -->
@@ -1215,6 +1529,11 @@ const App = {
             🎒 微软 Xbox 官方配件商城 ↗
           </a>
         </div>
+      </div>
+
+      <!-- 微软泛硬件生态收录说明 (PRD P2-1 / C-5) -->
+      <div class="xbox-scope-callout" role="note" style="margin:16px 0; padding:12px 16px; border-radius:8px; background:rgba(16, 124, 65, 0.08); border-left:4px solid #107c41; font-size:13px; line-height:1.6; color:var(--ms-text-primary);">
+        <strong>【微软硬件生态拓展收录】</strong>本专区作为 Microsoft 硬件生态的补充资料，收录 Xbox 官方存储扩展卡、无线双模耳机及核心周边配件，供数码外设玩家查阅参考。
       </div>
 
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:22px; margin-top:20px;">
@@ -1667,7 +1986,7 @@ const App = {
       ? root.resolve(deviceId)
       : (root && root.byDeviceId ? root.byDeviceId[deviceId] : null);
     if (!entry) {
-      return `<span title="缺 registry / 未加载 verification-status.js" style="font-size:11px; padding:3px 8px; border-radius:4px; ${toneStyles.warn}">⚠ 待核验</span>`;
+      return `<span title="待补充技术白皮书索引" style="font-size:11px; padding:3px 8px; border-radius:4px; ${toneStyles.warn}">⚠ 待补充</span>`;
     }
     const style = toneStyles[entry.tone] || toneStyles.warn;
     const prefix = entry.status === 'verified' ? '✓ ' : (entry.status === 'policy_partial' ? '◐ ' : '⚠ ');
@@ -1916,7 +2235,7 @@ const App = {
           <dl class="utility-meta-list">
             <div><dt>产品线</dt><dd>${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))}</dd></div>
             <div><dt>版本</dt><dd>${dev.generation || '—'}</dd></div>
-            <div><dt>核验日期</dt><dd>${this.spec(dev, 'lastVerified') || '2026-09'}</dd></div>
+            <div><dt>核验日期</dt><dd>${this.spec(dev, 'lastVerified') || (window.SURFACE_DATA && window.SURFACE_DATA.lastVerifiedDate) || '2026-10-01'}</dd></div>
             <div><dt>图像身份</dt><dd id="detail-rail-meta-identity">${shotIdentityLabel}</dd></div>
             <div><dt>备注</dt><dd>${this.spec(dev, 'sourceReliability') || '—'}</dd></div>
           </dl>
@@ -1988,17 +2307,42 @@ const App = {
   },
 
   // 6. Surface 编年发布时间线 (PRD 第十七章)
+  // 3.4 编年发布时间线视图 (PRD 阶段 3 招牌体验: 2012 ~ 2026 演进时间轴)
   renderTimelineView(container) {
-    const years = [2026, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013];
+    const years = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012];
+
+    const eraMilestones = {
+      2026: {
+        title: "⚡ Copilot+ PC 算力革命纪元 (2024 ~ 2026)",
+        desc: "全面拥抱 ARM 架构与高通骁龙® X / X2 芯片，端侧 NPU 突破 80 TOPS，开启 Windows AI PC 硬件新时代。"
+      },
+      2023: {
+        title: "🎨 形态深化与动态编织铰链纪元 (2021 ~ 2023)",
+        desc: "Surface Laptop Studio 独创展台与工作室多姿态切换，120Hz 高刷屏与触觉反馈手写笔全面普及。"
+      },
+      2020: {
+        title: "📱 ARM 初探与双屏探索纪元 (2019 ~ 2020)",
+        desc: "Surface Pro X 开启超轻薄窄边框与 SQ 定制芯片，Surface Duo 探索革命性 360° 双屏移动生产力。"
+      },
+      2018: {
+        title: "🚀 形态爆发与专业工作台纪元 (2015 ~ 2018)",
+        desc: "Surface Book 独创动态支点铰链与独显分离，Surface Studio 带来 28 英寸零重力大画布，Surface Go 主打轻巧便携形态。"
+      },
+      2014: {
+        title: "🌱 二合一品类奠基与创生纪元 (2013 ~ 2014)",
+        desc: "微软开启自研硬件传奇，VaporMg 镁合金机身、集成 kickstand 支架与磁吸键盘盖，开创并定义了现代二合一 PC 形态。"
+      }
+    };
 
     let html = `
       <div class="view-header">
         <div class="view-title-group">
           <h1>
-            <span>Surface 2012 ~ 2026 编年发布时间线</span>
+            <span>Surface 2012 ~ 2026 家族演进时间轴</span>
+            <span class="header-sub-tag">14 年硬件设计与芯片架构跃迁图鉴</span>
           </h1>
           <div class="view-meta-tip">
-            <span>从初代 Surface 创世至今，记录微软硬件设计的每一次代际进化与技术分水岭</span>
+            <span>收录 14 年间共 327 款机型技术分水岭 ｜ 💡 点击卡片可查看单机全维度参数详情 ｜ 勾选可直接加入对比池</span>
           </div>
         </div>
       </div>
@@ -2010,24 +2354,43 @@ const App = {
       const devsInYear = this.listDevices().filter(d => d.year === yr);
       if (devsInYear.length === 0) return;
 
+      if (eraMilestones[yr]) {
+        const milestone = eraMilestones[yr];
+        html += `
+          <div class="timeline-era-banner" style="margin:24px 0 16px 0; padding:16px 20px; background:linear-gradient(135deg, rgba(0,120,212,0.08) 0%, rgba(0,120,212,0.02) 100%); border-left:4px solid var(--ms-accent); border-radius:8px;">
+            <div style="font-size:16px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">${milestone.title}</div>
+            <div style="font-size:12.5px; color:var(--ms-text-secondary); line-height:1.5;">${milestone.desc}</div>
+          </div>
+        `;
+      }
+
       html += `
         <div class="timeline-year-block">
           <div class="timeline-year-badge">${yr} 年</div>
           <div class="timeline-cards-row">
-            ${devsInYear.map(dev => `
-              <div class="timeline-card" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
-                <div style="font-weight:700; font-size:14px; margin-bottom:4px; color:var(--ms-text-primary);">
-                  ${dev.name}
+            ${devsInYear.map(dev => {
+              const npu = Catalog.getSpec(dev, 'npuTops');
+              const cpu = Catalog.getSpec(dev, 'cpuModel');
+              const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
+
+              return `
+                <div class="timeline-card ${isSelected ? 'selected' : ''}" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')" style="position:relative;">
+                  <div style="font-weight:700; font-size:14px; margin-bottom:4px; color:var(--ms-text-primary);">
+                    ${dev.name}
+                  </div>
+                  <div style="font-size:12px; color:var(--ms-text-secondary); margin-bottom:6px;">
+                    ${this.spec(dev, 'releaseDate')} · ${cpu || '官方定制架构'}
+                  </div>
+                  <div style="font-size:11.5px; color:var(--ms-text-tertiary);">${dev.tagline}</div>
+                  
+                  <div style="display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; align-items:center;">
+                    ${ComparisonEngine.renderStatusBadge(dev.status)}
+                    ${npu && npu !== 'not_applicable' && npu !== 'not_disclosed' ? `<span class="timeline-milestone-pill">${npu}</span>` : ''}
+                    ${dev.flagship ? `<span class="timeline-milestone-pill flagship">旗舰标杆</span>` : ''}
+                  </div>
                 </div>
-                <div style="font-size:12px; color:var(--ms-text-secondary); margin-bottom:6px;">
-                  ${this.spec(dev, 'releaseDate')} · ${this.spec(dev, 'cpuModel')}
-                </div>
-                <div style="font-size:11.5px; color:var(--ms-text-tertiary);">${dev.tagline}</div>
-                <div style="display:flex; gap:4px; margin-top:6px;">
-                  ${ComparisonEngine.renderStatusBadge(dev.status)}
-                </div>
-              </div>
-            `).join('')}
+              `;
+            }).join('')}
           </div>
         </div>
       `;
@@ -2205,7 +2568,14 @@ const App = {
           </div>
 
           ${matchedDevices.length === 0 && matchedChips.length === 0 ? `
-            <div style="padding:20px; text-align:center; color:var(--ms-text-tertiary);">未找到与 "${term}" 匹配的内容</div>
+            <div class="hub-empty-state" style="padding:24px 16px; margin:10px 0; border:none; box-shadow:none;">
+              <div class="empty-icon" style="font-size:32px; margin-bottom:8px;">🔍</div>
+              <div class="empty-title" style="font-size:15px;">未找到与 "${term}" 匹配的内容</div>
+              <div class="empty-desc" style="font-size:12px; margin-bottom:12px;">建议尝试搜索机型（如 Pro 13、Laptop 8）、芯片架构（如 骁龙 X2、酷睿 Ultra）或算力（如 80 TOPS）。</div>
+              <div class="empty-actions">
+                <button class="fluent-btn-sm" onclick="App.clearGlobalSearch()">清空搜索词</button>
+              </div>
+            </div>
           ` : ''}
 
           ${matchedDevices.length > 0 ? `
@@ -2249,6 +2619,14 @@ const App = {
   closeSearchModal() {
     const resultsContainer = document.getElementById('search-results-modal');
     if (resultsContainer) resultsContainer.style.display = 'none';
+  },
+
+  clearGlobalSearch() {
+    const input = document.getElementById('global-search-input');
+    const clearBtn = document.getElementById('search-clear-btn');
+    if (input) input.value = '';
+    if (clearBtn) clearBtn.style.display = 'none';
+    this.closeSearchModal();
   },
 
   // 9. 侧栏渲染与高亮状态
@@ -2622,37 +3000,7 @@ const App = {
         ` : ''}
       </div>
 
-      <!-- 3. Xbox 折叠树 -->
-      <div class="sidebar-tree-group">
-        <div class="sidebar-parent-row ${this.sidebarTreeState.xbox ? 'expanded' : ''}" onclick="App.toggleSidebarTree('xbox')">
-          <span class="parent-accent-bar"></span>
-          <div class="parent-row-left">
-            <span class="parent-row-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="6.5" y1="6.5" x2="17.5" y2="17.5"/><line x1="17.5" y1="6.5" x2="6.5" y2="17.5"/></svg>
-            </span>
-            <span class="parent-row-title" style="font-weight:600;">Xbox</span>
-          </div>
-          <span class="parent-chevron">
-            <svg class="parent-chevron-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </span>
-        </div>
-
-        ${this.sidebarTreeState.xbox ? `
-          <div class="sidebar-tree-children">
-            <div class="tree-sub-item ${path === '/xbox/consoles' || path === '/xbox' || path.startsWith('/xbox/consoles/') ? 'active' : ''}" onclick="App.navigate('#/xbox/consoles')">
-              <span class="tree-sub-text">Xbox 游戏主机</span>
-            </div>
-            <div class="tree-sub-item ${path === '/xbox/controllers' ? 'active' : ''}" onclick="App.navigate('#/xbox/controllers')">
-              <span class="tree-sub-text">Xbox 无线手柄</span>
-            </div>
-            <div class="tree-sub-item ${path === '/xbox/accessories' ? 'active' : ''}" onclick="App.navigate('#/xbox/accessories')">
-              <span class="tree-sub-text">Xbox 拓展配件</span>
-            </div>
-          </div>
-        ` : ''}
-      </div>
-
-      <!-- 4. Surface 配件 (对齐设计稿 Microsoft 365 位，独立大类！) 折叠树 -->
+      <!-- 3. Surface 配件 (对齐设计稿 Microsoft 365 位，独立大类！) 折叠树 -->
       <div class="sidebar-tree-group">
         <div class="sidebar-parent-row ${this.sidebarTreeState.accessories ? 'expanded' : ''}" onclick="App.toggleSidebarTree('accessories')">
           <span class="parent-accent-bar"></span>
@@ -2689,6 +3037,36 @@ const App = {
             </div>
             <div class="tree-sub-item ${path === '/tools/compat' ? 'active' : ''}" onclick="App.navigate('#/tools/compat')">
               <span class="tree-sub-text">配件双向兼容矩阵 ↗</span>
+            </div>
+          </div>
+        ` : ''}
+      </div>
+
+      <!-- 4. Xbox 生态补充 (PRD P2-1 / C-5: 明确收录定位与层级降级) 折叠树 -->
+      <div class="sidebar-tree-group">
+        <div class="sidebar-parent-row ${this.sidebarTreeState.xbox ? 'expanded' : ''}" onclick="App.toggleSidebarTree('xbox')">
+          <span class="parent-accent-bar" style="background:#107c41;"></span>
+          <div class="parent-row-left">
+            <span class="parent-row-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="6.5" y1="6.5" x2="17.5" y2="17.5"/><line x1="17.5" y1="6.5" x2="6.5" y2="17.5"/></svg>
+            </span>
+            <span class="parent-row-title" style="font-weight:600; color:var(--ms-text-secondary);">Xbox 生态补充</span>
+          </div>
+          <span class="parent-chevron">
+            <svg class="parent-chevron-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </div>
+
+        ${this.sidebarTreeState.xbox ? `
+          <div class="sidebar-tree-children">
+            <div class="tree-sub-item ${path === '/xbox/consoles' || path === '/xbox' || path.startsWith('/xbox/consoles/') ? 'active' : ''}" onclick="App.navigate('#/xbox/consoles')">
+              <span class="tree-sub-text">Xbox 游戏主机</span>
+            </div>
+            <div class="tree-sub-item ${path === '/xbox/controllers' ? 'active' : ''}" onclick="App.navigate('#/xbox/controllers')">
+              <span class="tree-sub-text">Xbox 无线手柄</span>
+            </div>
+            <div class="tree-sub-item ${path === '/xbox/accessories' ? 'active' : ''}" onclick="App.navigate('#/xbox/accessories')">
+              <span class="tree-sub-text">Xbox 拓展配件</span>
             </div>
           </div>
         ` : ''}

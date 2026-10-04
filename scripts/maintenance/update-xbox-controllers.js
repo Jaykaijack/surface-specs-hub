@@ -64,46 +64,53 @@ controllers.forEach(ctrl => {
   } else if (ctrl.id === 'series-ghost-cipher') {
     ctrl.name = 'Xbox 无线控制器 - 幽灵特工特别版';
     ctrl.colorName = '幽灵特工 (Ghost Cipher Special Edition)';
-    ctrl.image = './assets/products/xbox-wireless-controller-white.png';
+    ctrl.colorHex = '#d1d5db';
+    ctrl.image = './assets/products/xbox-ghost-cipher-special-edition.png';
   } else if (ctrl.id === 'series-arctic-camo') {
     ctrl.name = 'Xbox 无线控制器 - 北极迷彩特别版';
     ctrl.colorName = '北极迷彩 (Arctic Camo Special Edition)';
-    ctrl.image = './assets/products/xbox-wireless-controller-white.png';
+    ctrl.colorHex = '#e0e7ec';
+    ctrl.image = './assets/products/xbox-arctic-camo-special-edition.png';
   } else if (ctrl.id === 'series-daystrike-camo') {
     ctrl.name = 'Xbox 无线控制器 - 炽烈迷彩特别版';
     ctrl.colorName = '炽烈迷彩 (Daystrike Camo Special Edition)';
-    ctrl.image = './assets/products/xbox-series-controller-red.png';
+    ctrl.colorHex = '#b91c1c';
+    ctrl.image = './assets/products/xbox-daystrike-camo-special-edition.png';
   } else if (ctrl.id === 'series-storm-breaker') {
     ctrl.name = 'Xbox 无线控制器 - 风暴蓝特别版';
     ctrl.nameEn = 'Xbox Wireless Controller - Stormcloud Vapor Special Edition';
     ctrl.colorName = '风暴蓝 (Stormcloud Vapor Special Edition)';
+    ctrl.colorHex = '#1e40af';
     ctrl.image = './assets/products/xbox-storm-breaker-special-edition.png';
   }
 
   // 2. 真实限定款替换虚构版本
-  if (ctrl.id === 'series-forza-6') {
+  if (ctrl.id === 'series-forza-6' || ctrl.id === 'series-forza-5') {
     ctrl.id = 'series-forza-5';
     ctrl.name = 'Xbox 无线控制器 -《极限竞速：地平线 5》限量版';
     ctrl.nameEn = 'Xbox Wireless Controller - Forza Horizon 5 Limited Edition';
     ctrl.colorName = '地平线 5 狂飙黄透明款 (Forza Horizon 5)';
+    ctrl.colorHex = '#facc15';
     ctrl.image = './assets/products/xbox-forza-horizon-5-controller.png';
     ctrl.year = 2021;
     ctrl.description = '微软官方推出的高人气限量版控制器。采用亮黄色半透明定制外壳、首次引入的方向盘打孔赛车纹理握把与天蓝色底壳撞色，高度还原墨西哥开放世界的速度与狂欢。';
     ctrl.salesRegion = 'cn_official';
-  } else if (ctrl.id === 'series-gears-e-day') {
+  } else if (ctrl.id === 'series-gears-e-day' || ctrl.id === 'series-gears-5') {
     ctrl.id = 'series-gears-5';
     ctrl.name = 'Xbox 无线控制器 -《战争机器 5》凯特·迪亚兹限量版';
     ctrl.nameEn = 'Xbox Wireless Controller - Gears 5 Kait Diaz Limited Edition';
     ctrl.colorName = '雪原战甲战损风 (Gears 5 Kait Diaz)';
+    ctrl.colorHex = '#94a3b8';
     ctrl.image = './assets/products/xbox-gears-5-kait-controller.png';
     ctrl.year = 2019;
     ctrl.description = '微软官方发售的硬派限定手柄。以女主角凯特·迪亚兹防寒装甲为灵感，呈现极地冰雪战损风蚀刻质感，背部雕刻有猩红齿轮标记，配备橡胶防滑握把。';
     ctrl.salesRegion = 'cn_official';
-  } else if (ctrl.id === 'series-heart-breaker') {
+  } else if (ctrl.id === 'series-heart-breaker' || ctrl.id === 'series-starfield') {
     ctrl.id = 'series-starfield';
     ctrl.name = 'Xbox 无线控制器 -《星空》官方限量版';
     ctrl.nameEn = 'Xbox Wireless Controller - Starfield Limited Edition';
     ctrl.colorName = '群星宇航科技白 (Starfield Limited Edition)';
+    ctrl.colorHex = '#f8fafc';
     ctrl.image = './assets/products/xbox-starfield-controller.png';
     ctrl.year = 2023;
     ctrl.description = '微软近年口碑顶峰的重磅限量版手柄。全透明扳机键内嵌青铜震动马达、飞船驾驶舱仪表盘式科技丝印、群星彩色星座条带标与双色科技握把。';

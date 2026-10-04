@@ -10,7 +10,7 @@ window.VERIFICATION_STATUS = {
   meta: {
     V: { status: "verified", label: "已核验", tone: "ok" },
     S: { status: "policy_partial", label: "部分可讲/政策禁讲", tone: "policy" },
-    P: { status: "pending", label: "待核验", tone: "warn" }
+    P: { status: "pending", label: "待完善", tone: "warn" }
   },
   resolve(deviceId) {
     const code = (this.codes && this.codes[deviceId]) || "P";

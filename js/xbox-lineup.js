@@ -128,6 +128,7 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2001 年 11 月 15 日北美首发；2002 年 2 月日本发售；2002 年 3 月欧洲发售',
       salesRegion: '北美、欧洲、日本、澳大利亚等全球市场发售。美国 Xbox Wire 在讲电视输出时顺带写了初代 Xbox 的视频输出。不是当前国行在售。',
+      colors: [{ name: '经典黑配翡翠绿 Jewel Black', hex: '#111111' }],
       cpuModel: '定制 Intel Pentium III 架构 Coppermine 核心，733 MHz',
       cpuArch: 'x86 架构；133 MHz 前端总线 (FSB)；32 KB 一级缓存；128 KB 板载高速二级缓存',
       cpuCores: '单核 733 MHz',
@@ -159,6 +160,10 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2005 年 8 月 17 日公布价格，当年假期在北美、欧洲、日本上市（美国 Xbox Wire）',
       salesRegion: '硬件规格来自微软 Xbox 官网托管的 2008 年主机规格页。该文件的保修法律范围写的是墨西哥和哥伦比亚。上市套装来自美国 Xbox Wire。不是当前国行在售。',
+      colors: [
+        { name: '典雅冷白 Chill White', hex: '#e2e8f0' },
+        { name: '精英黑 Elite Matte Black', hex: '#1e293b' }
+      ],
       cpuModel: '定制 PowerPC',
       cpuArch: '3 个对称核心，3.2 GHz；每核 2 个硬件线程（共 6 线程）；1 MB 二级缓存；前端总线 2.7 GHz',
       cpuCores: '3 核 3.2 GHz',
@@ -190,6 +195,10 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2010 年 6 月 14 日公布，当时可预订（美国 Xbox Wire）',
       salesRegion: '美国 Xbox Wire，2010 年 6 月 14 日。公告里的美国标价是 299 美元。不是当前国行在售。这篇公告没有重写处理器和内存，那些格子保持未披露。',
+      colors: [
+        { name: '亮面钢琴黑 Liquid Black', hex: '#0a0a0a' },
+        { name: '哑光黑 Matte Black', hex: '#1e2229' }
+      ],
       chassisMaterial: '新设计（公告原文 New design）',
       storageOptions: '250 GB 硬盘',
       wireless: '内置 Wi-Fi N',
@@ -210,6 +219,7 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2013 年 6 月 10 日 E3 大会公布并即刻在美英等市场发售',
       salesRegion: '美国、欧洲等全球市场发售。不是当前国行在售。',
+      colors: [{ name: '黑双拼质感 Matte & Gloss Black', hex: '#171717' }],
       cpuModel: '定制 PowerPC 45nm 单芯片 (Corona/Winchester SoC)',
       cpuArch: '3 个对称核心 3.2 GHz；每核双线程（共 6 线程）',
       cpuCores: '3 核 3.2 GHz',
@@ -238,6 +248,7 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2013 年 11 月 22 日。首发 13 个市场：澳大利亚、奥地利、巴西、加拿大、法国、德国、爱尔兰、意大利、墨西哥、新西兰、西班牙、英国、美国。',
       salesRegion: '美国 Xbox Wire。首发市场名单里没有中国大陆。不是当前国行在售。',
+      colors: [{ name: '双拼曜石黑 Liquid Black', hex: '#121212' }],
       cpuModel: '8 核 x86',
       cpuArch: '超过 50 亿个晶体管；原生 64 位',
       cpuCores: '8 核',
@@ -262,6 +273,7 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2016 年 8 月 2 日全球首发上市',
       salesRegion: '美国 xbox.com 的 Xbox One S 页面仍在。不是当前国行在售。页面没有写处理器、内存和硬盘容量，那些格子保持未披露。',
+      colors: [{ name: '机器人白 Robot White', hex: '#f8fafc' }],
       videoFeatures: '内置 4K Ultra HD 和 4K 视频串流。HDR 需游戏和电视支持。',
       storageOptions: '4K UHD 蓝光、内置电源。Xbox Wire 在介绍 One X 时写明：和 One S 一样，有 4K UHD 蓝光、内置电源、3 个 USB 3.0（前面 1 个、后面 2 个）和红外。硬盘容量没有写数字。',
       usbPorts: '3 个 USB 3.0（前面 1 个、后面 2 个）；红外',
@@ -283,7 +295,7 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2019 年 4 月 16 日公布，2019 年 5 月 7 日全球上市',
       salesRegion: '美国官方建议零售价 249.99 美元。不是当前国行在售。',
-      colors: [{ name: '机器人白 Robot White', hex: '#f8f9fa' }],
+      colors: [{ name: '机器人白 Robot White', hex: '#f8fafc' }],
       cpuModel: '8 核定制 AMD Jaguar，1.75 GHz',
       cpuArch: 'x86-64 架构；8 个核心',
       cpuCores: '8 核 1.75 GHz',
@@ -315,6 +327,10 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2017 年 11 月 7 日起在当时的 Xbox One 市场发售（美国 Xbox Wire）',
       salesRegion: '美国 Xbox Wire。公告里的美国标价是 499 美元。不是当前国行在售。',
+      colors: [
+        { name: '哑光深空黑 Matte Space Black', hex: '#1c1917' },
+        { name: '机器人白 Robot White', hex: '#f8fafc' }
+      ],
       chassisMaterial: '黑色。可横放，或用另购支架竖放。',
       cpuModel: '8 核定制 AMD，2.3 GHz',
       cpuCores: '8 核 2.3 GHz',
@@ -341,7 +357,7 @@ var XBOX_LINEUP = (function () {
     }, {
       releaseDate: '2020 年 11 月 10 日全球发售（国行 2021 年 6 月 10 日）',
       salesRegion: '美国 xbox.com 规格页，以及美国微软商店的 Xbox Series S – 512GB。国行微软商城另有一台 Xbox Series S 全数字版，标价 ¥2,399 起，页面没有写是 512GB 还是 1TB，所以这台不标成国行在售，也不把这个人民币价钱记进来。',
-      colors: [{ name: '机器人白 Robot White', hex: '#f2f2f2' }],
+      colors: [{ name: '机器人白 Robot White', hex: '#f8fafc' }],
       cpuModel: seriesCpu,
       cpuArch: 'Custom Zen 2',
       cpuCores: '8 核 3.8 GHz（SMT 时 3.6 GHz）',
@@ -374,8 +390,8 @@ var XBOX_LINEUP = (function () {
       releaseDate: '2023 年 9 月 1 日全球发售',
       salesRegion: '美国 xbox.com 规格页把碳黑 1TB 和机器人白 1TB 写成两台全数字 Series S。美国微软商店也能看到 1TB。国行商城的 Series S 页面没有单独写出 1TB。上市月份规格页没有写。',
       colors: [
-        { name: '碳黑 Carbon Black', hex: '#2a2a2a' },
-        { name: '机器人白 Robot White', hex: '#f2f2f2' }
+        { name: '碳黑 Carbon Black', hex: '#1c1c1c' },
+        { name: '机器人白 Robot White', hex: '#f8fafc' }
       ],
       cpuModel: seriesCpu,
       cpuArch: 'Custom Zen 2',
@@ -436,14 +452,14 @@ var XBOX_LINEUP = (function () {
       generation: 'Xbox Series X 数字版',
       year: 2024,
       status: 'current_global',
-      heroImage: './assets/products/xbox-series-x-1tb-hero.png',
+      heroImage: './assets/products/xbox-series-x-digital-white-hero.png',
       tagline: '白色数字版，1TB，没有写光驱。重量比带光驱的轻。',
       prev: 'xbox-series-x',
       url: 'https://www.xbox.com/en-US/consoles/xbox-series-x'
     }, {
       releaseDate: '2024 年 10 月 15 日全球发售',
       salesRegion: '美国 xbox.com 规格页，以及美国微软商店的 Xbox Series X – 1TB Digital Edition (White)，标价 749.99 美元（2026-09-29 页面显示缺货）。国行商城的 Series X 页面没有单独写出白色数字版。上市月份规格页没有写。',
-      colors: [{ name: '白色 White', hex: '#f7f7f7' }],
+      colors: [{ name: '机器人白 Robot White', hex: '#f8fafc' }],
       cpuModel: seriesCpu,
       cpuArch: 'Custom Zen 2',
       cpuCores: '8 核 3.8 GHz（SMT 时 3.6 GHz）',
@@ -468,14 +484,14 @@ var XBOX_LINEUP = (function () {
       generation: 'Xbox Series X 2TB',
       year: 2024,
       status: 'discontinued',
-      heroImage: './assets/products/xbox-series-x-1tb-hero.png',
+      heroImage: './assets/products/xbox-series-x-galaxy-black-hero.png',
       tagline: '2TB 特别版，银河黑外壳点缀绿色星斑，带 4K UHD 蓝光。当前在微软官方商城以特别版/翻新库存流转。',
       prev: 'xbox-series-x',
       url: 'https://www.xbox.com/en-US/consoles/xbox-series-x'
     }, {
       releaseDate: '2024 年 10 月 15 日全球发售',
       salesRegion: '美国 xbox.com 规格表仍列出银河黑 2TB。2026 年 9 月 29 日美国微软商店新品区显示限量缺货，支持官翻购买。不标成国行在售。上市月份规格页没有写。',
-      colors: [{ name: '银河黑 Galaxy Black', hex: '#161616' }],
+      colors: [{ name: '银河黑特别版 Galaxy Black', hex: '#0f291e' }],
       cpuModel: seriesCpu,
       cpuArch: 'Custom Zen 2',
       cpuCores: '8 核 3.8 GHz（SMT 时 3.6 GHz）',
@@ -500,14 +516,14 @@ var XBOX_LINEUP = (function () {
       generation: 'Xbox Series X25',
       year: 2026,
       status: 'upcoming',
-      heroImage: './assets/products/xbox-series-x-1tb-hero.png',
+      heroImage: './assets/products/xbox-series-x25-translucent-green-hero.png',
       tagline: '半透明 OG 绿，1TB，带 4K UHD 蓝光。编号主机。',
       prev: 'xbox-series-x',
       url: 'https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3'
     }, {
       releaseDate: '美国微软商店：2026 年 11 月 13 日上午 5:00。澳洲微软商店写的是 2026 年 11 月 12 日。',
       salesRegion: '美国微软商店在售页面（发售日前显示缺货），标价 899.99 美元起。澳洲微软商店另有页面。不是国行在售。',
-      colors: [{ name: '半透明 OG 绿 translucent OG Green', hex: '#3d7a45' }],
+      colors: [{ name: '半透明翡翠绿 Translucent OG Green', hex: '#107c10' }],
       cpuModel: seriesCpu,
       cpuArch: 'Custom Zen 2。SOC 裸片 360.45 mm。制程 7nm Enhanced。',
       cpuCores: '8 核 3.8 GHz（SMT 时 3.6 GHz）',
@@ -787,13 +803,13 @@ var XBOX_CONTROLLERS = [
     "name": "Xbox 无线控制器 - 幽灵特工特别版",
     "nameEn": "Xbox Wireless Controller - Ghost Cipher Special Edition",
     "colorName": "幽灵特工 (Ghost Cipher Special Edition)",
-    "colorHex": "#6b7280",
-    "textColor": "#ffffff",
+    "colorHex": "#d1d5db",
+    "textColor": "#111111",
     "year": 2024,
     "status": "active",
     "statusLabel": "官方在售",
     "salesRegion": "cn_official",
-    "image": "./assets/products/xbox-wireless-controller-white.png",
+    "image": "./assets/products/xbox-ghost-cipher-special-edition.png",
     "dpad": "青铜金属质感 8 向十字键",
     "triggers": "青铜金属色防滑纹理扳机键",
     "connectivity": "Xbox 无线协议 + 蓝牙低功耗 (BLE) + USB-C",
@@ -820,7 +836,7 @@ var XBOX_CONTROLLERS = [
     "status": "active",
     "statusLabel": "官方在售",
     "salesRegion": "cn_official",
-    "image": "./assets/products/xbox-wireless-controller-white.png",
+    "image": "./assets/products/xbox-arctic-camo-special-edition.png",
     "dpad": "混合式 8 向圆盘方向键 (冰川灰白)",
     "triggers": "微点防滑纹理扳机键",
     "connectivity": "Xbox 无线协议 + 蓝牙低功耗 (BLE) + USB-C",
@@ -874,7 +890,7 @@ var XBOX_CONTROLLERS = [
     "status": "active",
     "statusLabel": "官方在售",
     "salesRegion": "cn_official",
-    "image": "./assets/products/xbox-series-controller-red.png",
+    "image": "./assets/products/xbox-daystrike-camo-special-edition.png",
     "dpad": "混合式 8 向圆盘方向键 (火红)",
     "triggers": "纹理防滑全黑扳机键",
     "connectivity": "Xbox 无线协议 + 蓝牙低功耗 (BLE) + USB-C",
@@ -895,8 +911,8 @@ var XBOX_CONTROLLERS = [
     "name": "Xbox 无线控制器 -《星空》官方限量版",
     "nameEn": "Xbox Wireless Controller - Starfield Limited Edition",
     "colorName": "群星宇航科技白 (Starfield Limited Edition)",
-    "colorHex": "#e11d48",
-    "textColor": "#ffffff",
+    "colorHex": "#f8fafc",
+    "textColor": "#111111",
     "year": 2023,
     "status": "active",
     "statusLabel": "官方在售",
@@ -949,7 +965,7 @@ var XBOX_CONTROLLERS = [
     "name": "Xbox 无线控制器 - 风暴蓝特别版",
     "nameEn": "Xbox Wireless Controller - Stormcloud Vapor Special Edition",
     "colorName": "风暴蓝 (Stormcloud Vapor Special Edition)",
-    "colorHex": "#1e293b",
+    "colorHex": "#1e40af",
     "textColor": "#ffffff",
     "year": 2024,
     "status": "active",
@@ -1084,8 +1100,8 @@ var XBOX_CONTROLLERS = [
     "name": "Xbox 无线控制器 -《极限竞速：地平线 5》限量版",
     "nameEn": "Xbox Wireless Controller - Forza Horizon 5 Limited Edition",
     "colorName": "地平线 5 狂飙黄透明款 (Forza Horizon 5)",
-    "colorHex": "#e11d48",
-    "textColor": "#ffffff",
+    "colorHex": "#facc15",
+    "textColor": "#111111",
     "year": 2021,
     "status": "upcoming",
     "statusLabel": "即将发售",
@@ -1111,8 +1127,8 @@ var XBOX_CONTROLLERS = [
     "name": "Xbox 无线控制器 -《战争机器 5》凯特·迪亚兹限量版",
     "nameEn": "Xbox Wireless Controller - Gears 5 Kait Diaz Limited Edition",
     "colorName": "雪原战甲战损风 (Gears 5 Kait Diaz)",
-    "colorHex": "#451a03",
-    "textColor": "#ffffff",
+    "colorHex": "#94a3b8",
+    "textColor": "#111111",
     "year": 2019,
     "status": "upcoming",
     "statusLabel": "官方预告",
@@ -1208,7 +1224,7 @@ var XBOX_CONTROLLERS = [
     "weight": "287 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
     "msrp": "¥599 / $79.99",
-    "description": "Koei Tecmo Team Ninja 传奇动作硬派名作官方手柄。以隼龙战袍哑黑为主色调，点缀鲜血与刃芒金纹，极致凌厉。【发售区域说明】本款式为美国微软商店与海外地区独占发售，微软中国大陆官方未正式引进销售。"
+    "description": "Koei Tecmo Team Ninja 传奇动作硬派名作官方手柄。以隼龙战袍哑黑为主色调，点缀鲜血与刃芒金纹，凌厉利落。【发售区域说明】本款式为美国微软商店与海外地区独占发售，微软中国大陆官方未正式引进销售。"
   },
   {
     "id": "series-outerworlds-2",
@@ -1289,7 +1305,7 @@ var XBOX_CONTROLLERS = [
     "weight": "345 克（装配 4 拨片与多面十字键时）",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、macOS、iOS、Android",
     "msrp": "¥1,398 / $179.99",
-    "description": "微软竞技游戏外设巅峰之作。全包覆防滑橡胶握把，摇杆张力阻尼 3 档无级可调，附带收纳硬包、4 枚不锈钢可拆背部拨片与磁吸充电底座。"
+    "description": "微软竞技游戏外设旗舰专业之作。全包覆防滑橡胶握把，摇杆张力阻尼 3 档无级可调，附带收纳硬包、4 枚不锈钢可拆背部拨片与磁吸充电底座。"
   },
   {
     "id": "elite-series-2-core-white",
@@ -1343,7 +1359,7 @@ var XBOX_CONTROLLERS = [
     "weight": "330 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、macOS、iOS、Android",
     "msrp": "¥1,099 / $139.99",
-    "description": "炽烈激昂的深红主色面壳，与黑色全包覆环绕握把形成鲜明对比，展现极致电竞血统。"
+    "description": "炽烈激昂的深红主色面壳，与黑色全包覆环绕握把形成鲜明对比，展现专业电竞质感。"
   },
   {
     "id": "elite-series-2-core-blue",
@@ -1505,7 +1521,7 @@ var XBOX_CONTROLLERS = [
     "weight": "345 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11",
     "msrp": "¥1,699 / $199.99",
-    "description": "硬核动作动作天花板联名。极致短行程扳机锁配合背面自定义四拨片，完美执行饭纲落与绝啸热血连段。【发售区域说明】本款式为美国微软商店与海外地区独占发售，微软中国大陆官方未正式引进销售。"
+    "description": "硬核动作游戏联名典藏款。短行程微动扳机锁配合背面自定义四拨片，舒适执行各类组合连段。【发售区域说明】本款式为美国微软商店与海外地区独占发售，微软中国大陆官方未正式引进销售。"
   },
   {
     "id": "elite-series-2-outerworlds",

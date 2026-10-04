@@ -5,7 +5,8 @@
  */
 
 const SURFACE_DATA = {
-  "datasetVersion": "2026.09.21.ports",
+  "datasetVersion": "2026.10.01",
+  "lastVerifiedDate": "2026-10-01",
   "categories": [
     {
       "id": "pro",
@@ -39,7 +40,7 @@ const SURFACE_DATA = {
       "id": "go",
       "name": "Surface Go 系列",
       "icon": "tablet-mini",
-      "desc": "轻巧极致便携二合一 (10.0\" - 10.5\")",
+      "desc": "轻巧便携二合一 (10.0\" - 10.5\")",
       "defaultModel": "go-4"
     },
     {
@@ -114,7 +115,7 @@ const SURFACE_DATA = {
       "segment": "consumer",
       "name": "Surface Go 消费系列",
       "icon": "tablet-mini",
-      "desc": "极致便携学生/轻便二合一 (10.0\" - 10.5\")",
+      "desc": "便携学生与轻便二合一 (10.0\" - 10.5\")",
       "defaultModel": "go-3"
     },
     {
@@ -614,7 +615,7 @@ const SURFACE_DATA = {
         "generation": "第 12 代",
         "status": "current_cn",
         "targetAudience": "商业政企与高端职场精英",
-        "tagline": "英特尔酷睿 Ultra 5/7 (第3代，50 TOPS)，防反射 LCD 与双层串联 OLED 屏幕可选，商务双色精工铝合金机身",
+        "tagline": "英特尔® 酷睿™ Ultra 5/7 (第 3 代，50 TOPS)，防反射 LCD 与双层串联 OLED 屏幕可选，商务双色精工铝合金机身",
         "colors": [
           {
             "name": "亮铂金",
@@ -705,14 +706,14 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "commercial",
       "flagship": true,
-      "tagline": "商用 ARM AI PC 巅峰：搭载高通骁龙 X2 (Snapdragon® X2 Elite 处理器)，80 TOPS 巅峰 AI 算力与双层串联 OLED 屏幕",
+      "tagline": "商用 ARM AI PC：搭载高通骁龙® X2 Elite 处理器，80 TOPS 端侧 AI 算力与双层串联 OLED 屏幕",
       "prevGenerationId": "pro-10-biz",
       "specs": {
         "releaseDate": "2026 年 8 月",
         "generation": "第 12 代",
         "status": "current_cn",
         "targetAudience": "商业政企与前沿移动办公",
-        "tagline": "高通全新 Oryon™ V2 架构与 80 TOPS Hexagon NPU，双层串联 OLED 屏幕与全天候超长续航",
+        "tagline": "全新 Oryon™ V2 架构与 80 TOPS Hexagon NPU，双层串联 OLED 屏幕与超长续航",
         "colors": [
           {
             "name": "亮铂金",
@@ -906,7 +907,7 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "12 英寸便携羽量级 Copilot+ PC，高通骁龙 X Plus 8 核",
+      "tagline": "12 英寸便携羽量级 Copilot+ PC，高通骁龙® X Plus 8 核",
       "prevGenerationId": null,
       "nextGenerationId": "pro-12-inch-2",
       "specs": {
@@ -938,7 +939,7 @@ const SURFACE_DATA = {
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "一体式支架，165 度全阻尼铰链",
         "osAtLaunch": "Windows 11 家庭版",
-        "cpuModel": "高通骁龙 X Plus (8 核心 X1P-42-100)",
+        "cpuModel": "高通骁龙® X Plus (8 核心 X1P-42-100)",
         "cpuArch": "Qualcomm Oryon™ 64 位",
         "cpuCores": "8 核",
         "gpuModel": "Qualcomm Adreno™ GPU",
@@ -1019,7 +1020,7 @@ const SURFACE_DATA = {
       "status": "upcoming",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "6 核骁龙 X2 Plus，12 英寸 500 尼特屏",
+      "tagline": "搭载骁龙® X2 Plus 6 核处理器，12 英寸 500 尼特屏",
       "prevGenerationId": "pro-12-inch",
       "nextGenerationId": null,
       "specs": {
@@ -1030,7 +1031,7 @@ const SURFACE_DATA = {
         "generation": "第 2 代",
         "status": "upcoming",
         "targetAudience": "面向个人移动创作与轻薄便携",
-        "tagline": "6 核骁龙 X2 Plus，屏幕亮度优于前代",
+        "tagline": "搭载骁龙® X2 Plus 6 核处理器，屏幕亮度较前代提升",
         "colors": [
           {
             "name": "亮铂金",
@@ -1128,7 +1129,7 @@ const SURFACE_DATA = {
       "status": "discontinued",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "首款 Copilot+ PC 二合一，高通骁龙 X 架构",
+      "tagline": "首款 Copilot+ PC 二合一，高通骁龙® X 架构",
       "prevGenerationId": "pro-9",
       "nextGenerationId": "pro-12-13",
       "specs": {
@@ -1136,7 +1137,7 @@ const SURFACE_DATA = {
         "generation": "第 11 代",
         "status": "discontinued",
         "targetAudience": "主流消费者与移动办公群体",
-        "tagline": "高通 Snapdragon X 平台开山之作，长效续航与 OLED 选项",
+        "tagline": "搭载高通骁龙® X 平台，长效续航与 OLED 选项",
         "colors": [
           {
             "name": "亮铂金",
@@ -1236,14 +1237,14 @@ const SURFACE_DATA = {
       "status": "discontinued",
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "Intel Core Ultra 架构商用先锋，专用 NFC 登录",
+      "tagline": "英特尔® 酷睿™ Ultra 架构商用机型，专用 NFC 登录",
       "prevGenerationId": "pro-9",
       "specs": {
         "releaseDate": "2024 年 3 月",
         "generation": "第 10 代 (商用专属)",
         "status": "discontinued",
         "targetAudience": "企业客户、IT 部门与商业专业人士",
-        "tagline": "专为商业企业打造，搭载 Intel Core Ultra 与反射抑制屏",
+        "tagline": "专为商业企业打造，搭载英特尔® 酷睿™ Ultra 与反射抑制屏",
         "colors": [
           {
             "name": "亮铂金",
@@ -2372,7 +2373,7 @@ const SURFACE_DATA = {
         "securedCorePc": "支持",
         "biometrics": "人脸识别",
         "enterpriseManage": "支持商业管理",
-        "dimensionsMm": "287 × 208 × 7.3 (史上最薄 Pro)",
+        "dimensionsMm": "287 × 208 × 7.3 (厚度仅 7.3mm)",
         "weightGrams": "774g",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "完全无风扇零噪音极静音被动导热",
@@ -2412,7 +2413,7 @@ const SURFACE_DATA = {
         "generation": "第 8 代",
         "status": "current_cn",
         "targetAudience": "主流商务与高端职场精英",
-        "tagline": "英特尔酷睿 Ultra 5/7 (第3代，50 TOPS)，触觉反馈精准触控板与 120Hz 极窄边框",
+        "tagline": "英特尔® 酷睿™ Ultra 5/7 (第 3 代，50 TOPS)，触觉反馈触控板与 120Hz 极窄边框",
         "colors": [
           {
             "name": "亮铂金",
@@ -2503,7 +2504,7 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "commercial",
       "flagship": true,
-      "tagline": "商用轻薄本续航巅峰：搭载高通骁龙 X2 (Snapdragon® X2 Elite 处理器)，80 TOPS 巅峰 AI 算力与 20 小时续航",
+      "tagline": "商用长续航轻薄本：搭载高通骁龙® X2 Elite 处理器，80 TOPS 端侧 AI 算力与 20 小时续航",
       "prevGenerationId": "laptop-6-biz",
       "specs": {
         "fastCharging": "推荐快充 60W（国行：65W Surface 电源或 60W USB-C PD）",
@@ -2515,7 +2516,7 @@ const SURFACE_DATA = {
         "generation": "第 8 代",
         "status": "current_cn",
         "targetAudience": "商务差旅与高端移动办公精英",
-        "tagline": "高通骁龙 X2 平台与 80 TOPS Hexagon NPU，20 小时长效续航与极致静音设计",
+        "tagline": "高通骁龙® X2 平台与 80 TOPS Hexagon NPU，20 小时长效续航与被动静音设计",
         "colors": [
           {
             "name": "亮铂金",
@@ -2614,7 +2615,7 @@ const SURFACE_DATA = {
         "generation": "第 8 代",
         "status": "current_cn",
         "targetAudience": "大屏生产力、企业财务与工程技术人员",
-        "tagline": "英特尔酷睿 Ultra 5 335 / Ultra X7 368H（第 3 代），50 TOPS，本地视频续航长达 21 小时",
+        "tagline": "英特尔® 酷睿™ Ultra 5 335 / Ultra X7 368H（第 3 代），50 TOPS，本地视频续航长达 21 小时",
         "colors": [
           {
             "name": "亮铂金",
@@ -2791,111 +2792,6 @@ const SURFACE_DATA = {
       "segment": "commercial"
     },
     {
-      "id": "surface-laptop-ultra",
-      "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-laptop-ultra-hero.png",
-      "name": "Surface Laptop Ultra",
-      "nameEn": "Surface Laptop Ultra (15-inch, RTX Spark)",
-      "generation": "旗舰级 AI 工作站 (2026)",
-      "year": 2026,
-      "status": "upcoming",
-      "targetAudience": "consumer",
-      "flagship": true,
-      "tagline": "NVIDIA RTX Spark 芯片与 15 英寸 Mini-LED 屏，1 PFLOPS 顶级本地 AI 算力工作站",
-      "aliases": [
-            "Surface Laptop Ultra",
-            "Laptop Ultra",
-            "RTX Spark",
-            "15寸 Ultra",
-            "15-inch Ultra",
-            "Spark Ultra"
-      ],
-      "prevGenerationId": null,
-      "nextGenerationId": null,
-      "specs": {
-            "fastCharging": "标配 140W USB-C PD 快充，支持 30 分钟充至 50%",
-            "touchAndPenProtocol": "10 点触控 PixelSense Ultra，支持触控笔低延迟书写",
-            "thunderboltSupport": "USB4® / 高速全功能拓展",
-            "audioTech": "Dolby Atmos® 空间音效",
-            "windowsHello": "Windows Hello 红外人脸识别",
-            "releaseDate": "2026 年 5 月公布 / 2026 年秋季上市",
-            "generation": "第 1 代 Ultra",
-            "status": "upcoming",
-            "targetAudience": "AI 开发者、3D 设计创作者、数据科学家与高性能工作站用户",
-            "tagline": "NVIDIA Grace + Blackwell 架构超级芯片，最高 128GB 统一内存与 1 PFLOPS AI 算力",
-            "colors": [
-                  {
-                        "name": "典雅黑",
-                        "hex": "#1a1a1a",
-                        "image": "./assets/products/surface-laptop-ultra-hero.png"
-                  },
-                  {
-                        "name": "亮铂金",
-                        "hex": "#d8d8d8",
-                        "image": "./assets/products/surface-laptop-ultra-hero.png"
-                  }
-            ],
-            "chassisMaterial": "全 CNC 精密阳极氧化铝合金机身",
-            "kickstandType": "not_applicable",
-            "osAtLaunch": "Windows 11 专业版 / 工作站版 (ARM64)",
-            "cpuModel": "NVIDIA RTX Spark (20 核心 NVIDIA Grace CPU，Arm 架构)",
-            "cpuArch": "NVIDIA Grace 架构 (Arm v9)",
-            "cpuCores": "20 核",
-            "gpuModel": "NVIDIA Blackwell RTX (最高 6,144 CUDA 核心)",
-            "npuModel": "NVIDIA Tensor Core AI 加速引擎 (NVLink-C2C 统一架构)",
-            "npuTops": "1000 TOPS (1 PFLOPS FP4 算力)",
-            "copilotPlus": "支持 (Copilot+ PC 旗舰认证，支持本地运行 120B 大模型)",
-            "ramSpec": "最高 128GB LPDDR5X 统一内存 (Unified Memory)",
-            "storageOptions": "1TB / 2TB / 4TB PCIe 5.0 NVMe SSD",
-            "ssdRemovable": "支持可拆卸升级设计",
-            "expandableStorage": "全尺寸高速 SDXC 读卡器",
-            "screenSize": "15 英寸",
-            "aspectRatio": "3:2",
-            "panelTech": "Mini-LED PixelSense™ Ultra 触控屏",
-            "resolution": "3264 × 2176",
-            "ppi": "262 PPI",
-            "refreshRate": "120Hz 动态自适应刷新率",
-            "brightness": "最高 2,000 尼特 HDR 峰值亮度 (SDR 典型 600 尼特)",
-            "colorSupport": "100% sRGB, 100% DCI-P3 广色域，Dolby Vision IQ®",
-            "frontCamera": "全高清 1080p Studio 摄像头，带 AI 视线校正与背景虚化",
-            "rearCamera": "not_applicable",
-            "videoFeatures": "Windows Studio 特效 (视线校正、自动取景、人像虚化、声音聚焦)",
-            "microphones": "双重远场录音室级麦克风",
-            "speakers": "四重 Omnisonic 扬声器系统，支持杜比全景声 Dolby Atmos®",
-            "headphoneJack": "3.5mm 耳机麦克风插孔",
-            "usbPorts": "2 × USB-C (USB4®/全功能), 1 × USB-A 3.2, 1 × HDMI 2.1, 1 × 全尺寸 SD 槽",
-            "surfaceConnect": "保留 Surface Connect 拓展端口",
-            "wireless": "Wi-Fi 7 (802.11be), 蓝牙® 5.4",
-            "cellular": "可选 5G 全网通",
-            "batteryCapacityWh": "88 Wh",
-            "batteryLifeOffice": "官方典型使用长达 20 小时",
-            "batteryLifeVideo": "本地视频播放长达 22 小时",
-            "chargingPower": "标配 140W USB-C PD 快速充电器",
-            "compatibleKeyboard": "集成防泼溅背光键盘，全域触觉压感触控板 (Haptic Touchpad)",
-            "penHapticFeedback": "支持超低延迟触控笔反馈",
-            "penChargingType": "磁吸无线充电与收纳",
-            "trackpadType": "全域触觉触控板 (支持多级压感与触觉振动反馈)",
-            "tpmChip": "Microsoft Pluton 安全处理器 / TPM 2.0",
-            "securedCorePc": "Secured-core PC 安全核心认证",
-            "biometrics": "Windows Hello 红外人脸识别 + 指纹电源键双重生物认证",
-            "enterpriseManage": "支持 Microsoft Endpoint Manager 与 Windows Autopilot 企业级管理",
-            "dimensionsMm": "338 × 236 × 17.8 mm",
-            "weightGrams": "约 1,980g",
-            "totalWeightWithKeyboard": "1,980g (传统笔记本形态)",
-            "thermalDesign": "双风扇逆流散热架构，超薄均热板高风压静音散热",
-            "repairabilityScore": "9/10",
-            "replaceableParts": "支持更换 SSD、电池、主板、屏幕模块与触控板",
-            "warranty": "2 年有限硬件保修",
-            "startingPriceCny": "not_disclosed",
-            "sourceReliability": "microsoft_official",
-            "lastVerified": "2026-09-30",
-            "officialDocUrl": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
-            "officialConfigureUrl": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra"
-      },
-      "isCommercial": false,
-      "segment": "consumer"
-},
-    {
       "id": "laptop-8-138",
       "categoryId": "laptop",
       "heroImage": "./assets/products/surface-laptop-8-platinum.png",
@@ -2906,7 +2802,7 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "consumer",
       "flagship": true,
-      "tagline": "80 TOPS 超长 20 小时续航，极致触觉触控板轻薄本",
+      "tagline": "80 TOPS 超长 20 小时续航，触觉压感触控板轻薄本",
       "prevGenerationId": "laptop-7-138",
       "nextGenerationId": null,
       "specs": {
@@ -3020,7 +2916,7 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "consumer",
       "flagship": true,
-      "tagline": "15 英寸 HDR 触控屏，骁龙 X2，官方本地视频续航最长 19 小时",
+      "tagline": "15 英寸 HDR 触控屏，搭载骁龙® X2，官方本地视频续航最长 19 小时",
       "prevGenerationId": "laptop-7-138",
       "nextGenerationId": null,
       "specs": {
@@ -3121,7 +3017,7 @@ const SURFACE_DATA = {
       "status": "discontinued",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "极窄边框与高通骁龙 X Elite，触觉反馈触控板革新",
+      "tagline": "极窄边框与高通骁龙® X Elite，触觉反馈触控板革新",
       "prevGenerationId": "laptop-5",
       "nextGenerationId": "laptop-8-138",
       "specs": {
@@ -3228,7 +3124,7 @@ const SURFACE_DATA = {
       "status": "discontinued",
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "Intel Core Ultra H 系列标压商用本，国行规格不含美加专属智能卡读卡器",
+      "tagline": "英特尔® 酷睿™ Ultra H 系列标压商用本，国行规格不含美加专属智能卡读卡器",
       "aliases": ["Surface Laptop Ultra", "Surface Laptop 6 Ultra", "Laptop Ultra", "酷睿 Ultra"],
       "prevGenerationId": "laptop-5",
       "specs": {
@@ -4041,7 +3937,7 @@ const SURFACE_DATA = {
       "status": "discontinued",
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "521g 极致羽量级二合一，四核 Intel N200 生产力飞跃",
+      "tagline": "521g 羽量级二合一，四核 Intel N200 性能升级",
       "prevGenerationId": "go-3",
       "specs": {
         "releaseDate": "2023 年 9 月",
@@ -4881,7 +4777,7 @@ const SURFACE_DATA = {
       "status": "legacy",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "边框收窄升级 10.5 英寸全高清屏，544g 极致轻巧二合一",
+      "tagline": "边框收窄升级 10.5 英寸全高清屏，544g 轻巧便携二合一",
       "specs": {
         "releaseDate": "2020 年 5 月",
         "generation": "第 2 代",
@@ -5166,7 +5062,7 @@ const SURFACE_DATA = {
       "status": "legacy",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "1.1kg 极致轻量化触控轻薄本，年轻人第一台 Surface",
+      "tagline": "1.1kg 轻量化触控轻薄本，便携入门款 Surface",
       "specs": {
         "releaseDate": "2020 年 10 月",
         "generation": "初代",
@@ -6015,7 +5911,7 @@ const SURFACE_DATA = {
       "isCommercial": true,
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "企业 AI PC 创新先锋：高通骁龙 X 架构、45 TOPS 端侧 AI 算力与防眩光 OLED 触控屏",
+      "tagline": "企业 AI PC：高通骁龙® X 架构、45 TOPS 端侧 AI 算力与防眩光 OLED 触控屏",
       "prevGenerationId": null,
       "nextGenerationId": null,
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
@@ -6116,7 +6012,7 @@ const SURFACE_DATA = {
       "isCommercial": true,
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "企业级标压 x86 生产力旗舰：搭载英特尔酷睿 Ultra 处理器，支持雷电 4 与 NFC 免密打卡",
+      "tagline": "企业级标压 x86 生产力旗舰：搭载英特尔® 酷睿™ Ultra 处理器，支持雷电 4 与 NFC 免密打卡",
       "prevGenerationId": null,
       "nextGenerationId": null,
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel",
@@ -6217,7 +6113,7 @@ const SURFACE_DATA = {
       "isCommercial": true,
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "企业触控本革新之作：超窄边框 120Hz 触控屏、高通骁龙 X 架构与长达 22 小时日常续航",
+      "tagline": "企业触控本：超窄边框 120Hz 触控屏、高通骁龙® X 架构与长达 22 小时日常续航",
       "prevGenerationId": null,
       "nextGenerationId": null,
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business",
@@ -6318,7 +6214,7 @@ const SURFACE_DATA = {
       "isCommercial": true,
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "企业级全功能触控轻薄本：英特尔酷睿 Ultra 处理器、雷电 4 高速拓展与可选智能卡读卡器",
+      "tagline": "企业级全功能触控轻薄本：英特尔® 酷睿™ Ultra 处理器、雷电 4 高速拓展与可选智能卡读卡器",
       "prevGenerationId": null,
       "nextGenerationId": null,
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel",
@@ -7321,7 +7217,7 @@ const SURFACE_DATA = {
         "generation": "第 1 代",
         "status": "current_cn",
         "targetAudience": "面向学生、职场新人与追求轻量化极简便携办公的用户",
-        "tagline": "搭载高通骁龙 X Plus 8核处理器，1.22kg 轻巧铝合金机身与 23 小时续航",
+        "tagline": "搭载高通骁龙® X Plus 8 核处理器，1.22kg 轻巧铝合金机身与 23 小时续航",
         "colors": [
           {
             "name": "亮铂金",
@@ -7410,7 +7306,7 @@ const SURFACE_DATA = {
       "status": "upcoming",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "6 核骁龙 X2 Plus，本地视频最长 22.5 小时",
+      "tagline": "搭载骁龙® X2 Plus 6 核处理器，本地视频续航长达 22.5 小时",
       "prevGenerationId": "laptop-13-inch",
       "nextGenerationId": null,
       "specs": {
@@ -7418,7 +7314,7 @@ const SURFACE_DATA = {
         "generation": "第 2 代",
         "status": "upcoming",
         "targetAudience": "面向日常轻薄本用户",
-        "tagline": "全新 13 英寸，6 核骁龙 X2 Plus",
+        "tagline": "全新 13 英寸机身，搭载骁龙® X2 Plus 6 核",
         "colors": [
           {
             "name": "罗兰紫",
@@ -7517,7 +7413,7 @@ const SURFACE_DATA = {
       "status": "discontinued",
       "targetAudience": "consumer",
       "flagship": true,
-      "tagline": "15 英寸大视野超长续航旗舰轻薄本，高通骁龙 X Elite 极速性能",
+      "tagline": "15 英寸大视野长续航轻薄本，高通骁龙® X Elite 强劲性能",
       "prevGenerationId": "laptop-5",
       "nextGenerationId": "laptop-8-150",
       "specs": {
@@ -7525,7 +7421,7 @@ const SURFACE_DATA = {
         "generation": "第 7 代",
         "status": "discontinued",
         "targetAudience": "面向需要超大屏幕与长效续航的内容创作者、商务白领与工程开发人员",
-        "tagline": "高通骁龙 X Elite 平台带来超强性能，22 小时超长视频续航与 120Hz 大屏",
+        "tagline": "搭载高通骁龙® X Elite 平台，22 小时视频续航与 120Hz 大屏",
         "colors": [
           {
             "name": "亮铂金",
@@ -7620,7 +7516,7 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "business",
       "flagship": false,
-      "tagline": "搭载英特尔酷睿 Ultra 5 处理器 325（第 3 代），47 TOPS，本地视频续航长达 22 小时",
+      "tagline": "搭载英特尔® 酷睿™ Ultra 5 处理器 325（第 3 代），47 TOPS，本地视频续航长达 22 小时",
       "prevGenerationId": null,
       "nextGenerationId": null,
       "specs": {
@@ -7628,7 +7524,7 @@ const SURFACE_DATA = {
         "generation": "第 1 代",
         "status": "current_cn",
         "targetAudience": "面向政企机构采购、商务精英与专业办公用户",
-        "tagline": "搭载英特尔酷睿 Ultra 5 处理器 325（第 3 代），47 TOPS 与 Windows 11 专业版",
+        "tagline": "搭载英特尔® 酷睿™ Ultra 5 处理器 325（第 3 代），47 TOPS 与 Windows 11 专业版",
         "colors": [
           {
             "name": "亮铂金",
@@ -8229,7 +8125,7 @@ const SURFACE_DATA = {
       "equippedDevices": [
         "Surface Go 4 商用版"
       ],
-      "highlights": "6W 极致无风扇低功耗，比前代 Go 3 性能飞跃提升 80%，一线巡检与轻度办公神器"
+      "highlights": "6W 无风扇低功耗，比前代 Go 3 性能提升 80%，适合一线巡检与移动办公"
     }
   ],
   "accessories": [
@@ -8617,11 +8513,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "原生免驱蓝牙直连，轻薄差旅黄金搭档"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -9009,11 +8900,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一生产力桌面拓展主力鼠标"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -9401,11 +9287,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "轻薄便携差旅办公"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -9793,11 +9674,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "桌面拓展办公首选"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -10185,11 +10061,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (物理磁吸接口与尺寸不兼容)"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -10577,11 +10448,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (接口物理不兼容)"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -10969,11 +10835,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "完美原生支持"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -11361,11 +11222,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Surface Go 10.5 英寸机身系列)"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -11376,7 +11232,7 @@ const SURFACE_DATA = {
       "category": "keyboard",
       "categoryName": "键盘与保护盖",
       "icon": "⌨️",
-      "tagline": "Surface 创世开山配件：3.2mm 极致轻薄压感感应键盘，见证二合一历史开端",
+      "tagline": "Surface 早期经典配件：3.2mm 超薄压感感应键盘，见证二合一历史开端",
       "features": [
         "革命性 3.2mm 极薄机身",
         "压感电容感应输入 (无实体机械活动部件)",
@@ -11753,11 +11609,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (仅适用于 Pro 1/2 及初代 RT 机型)"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -12145,11 +11996,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一主机桌面办公利器"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -12537,11 +12383,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "PARTIAL",
           "note": "支持书写绘图，无触觉震动，需外置充电座"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -12929,11 +12770,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "PARTIAL",
           "note": "支持正常书写，需配外置充电盒"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -13321,11 +13157,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "完美原生支持"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -13713,11 +13544,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持现代机型高级倾斜与高阶压感"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -14105,11 +13931,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸接口或物理尺寸不匹配)"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -14497,11 +14318,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (无 Surface Connect 磁吸口)"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -14889,11 +14705,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持 (早期机型无 USB-C / 雷电接口)"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -15281,11 +15092,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一外出开会与出差黄金转接头"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -15673,11 +15479,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "现代机型已原生标配全功能 Type-C / USB4，无需此转接器"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -16065,11 +15866,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "全系蓝牙免驱配对，高保真办公与会议降噪"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -16457,11 +16253,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "出差差旅与移动会议绝配"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -16849,11 +16640,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "FULL",
           "note": "二合一电脑桌面工位拓展利器"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     },
@@ -17241,11 +17027,6 @@ const SURFACE_DATA = {
           "deviceId": "pro-6-biz",
           "status": "UNSUPPORTED",
           "note": "不支持"
-        },
-        {
-          "deviceId": "surface-laptop-ultra",
-          "status": "FULL",
-          "note": "原生免驱兼容，提供完整性能拓展"
         }
       ]
     }

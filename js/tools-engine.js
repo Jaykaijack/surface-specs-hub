@@ -719,13 +719,13 @@ const ToolsEngine = {
       if (this.guideIsSnapdragon(device)) score += 80;
     }
     if (scene === 'engineering') {
-      if (device.categoryId === 'sls' || device.id === 'surface-laptop-ultra') score += 140;
+      if (device.categoryId === 'sls') score += 140;
       if (String(device.name).includes('15') || String(device.name).includes('14.4')) score += 50;
-      if (/Ultra|i7|RTX|dGPU|Blackwell/i.test(this.guideCpuText(device))) score += 80;
+      if (/Ultra|i7|RTX|dGPU/i.test(this.guideCpuText(device))) score += 80;
     }
     if (scene === 'media_3d') {
-      if (device.id === 'surface-laptop-ultra' || device.categoryId === 'sls' || device.categoryId === 'studio') score += 150;
-      if (/RTX|Blackwell|dGPU/i.test(this.guideCpuText(device))) score += 90;
+      if (device.categoryId === 'sls' || device.categoryId === 'studio') score += 150;
+      if (/RTX|dGPU/i.test(this.guideCpuText(device))) score += 90;
     }
     if (scene === 'finance') {
       if (device.categoryId === 'laptop' && (String(device.name).includes('15') || String(device.name).includes('13.8'))) score += 100;
@@ -1060,7 +1060,7 @@ const ToolsEngine = {
     let tier = 'A 级 · 轻装差旅';
     let tierColor = '#107c41';
     if (totalWeightG <= 1100) {
-      tier = 'S 级 · 极致羽量出行 (单手托持无感)';
+      tier = 'S 级 · 超轻羽量出行 (单手托持无感)';
       tierColor = '#0078d4';
     } else if (totalWeightG > 1800) {
       tier = 'C 级 · 重装工作站 (建议双肩背包携带)';
@@ -1470,7 +1470,7 @@ const ToolsEngine = {
                   <span class="step-time-tag">耗时约 5~8 分钟</span>
                 </div>
                 <div class="step-body">
-                  <p>将刚刚下载完成的 <code>.zip</code> 压缩包解压。<strong>注意解压层级：</strong></p>
+                  <p>将已下载完成的 <code>.zip</code> 压缩包解压。<strong>注意解压层级：</strong></p>
                   <p>打开解压后的文件夹，选中里面的所有文件和子文件夹（包含 <code>bootmgr</code>、<code>bootmgr.efi</code>、<code>EFI</code> 文件夹、<code>sources</code> 文件夹等），<strong>直接复制拖拽到 U 盘的根目录下</strong>！</p>
                   <div class="tip-callout warning">
                     ⚠️ <strong>高频翻车检查</strong>：双击打开 U 盘后，必须一眼就能看到 <code>bootmgr</code> 等核心文件！如果 U 盘根目录下套了一层类似 <code>SurfacePro9_BMR_xxx</code> 的外层文件夹，Surface 开机引导程序将无法读取，导致黑屏提示找不到启动介质！

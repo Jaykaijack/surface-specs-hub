@@ -207,10 +207,14 @@ const ComparisonEngine = {
   renderComparisonTable(devicesToCompare) {
     if (!devicesToCompare || devicesToCompare.length === 0) {
       return `
-        <div class="spec-table-empty">
-          <div style="font-size:32px; margin-bottom:12px;">📊</div>
-          <h3>未选择任何 Surface 设备</h3>
-          <p>请点击上方机型卡片或在左侧导航选择设备加入对比，最多支持 5 款跨品类同屏深度比对。</p>
+        <div class="hub-empty-state">
+          <div class="empty-icon">📊</div>
+          <div class="empty-title">未选择任何比对设备</div>
+          <div class="empty-desc">请在任意机型卡片勾选右上角加入对比，最多支持 5 款跨品类、跨代际机型同屏深度比对。</div>
+          <div class="empty-actions">
+            <button class="fluent-btn primary" onclick="ComparisonEngine.selectDevice('pro-12-13-snap'); ComparisonEngine.selectDevice('laptop-8-138-snap');">一键比对双旗舰 (Pro 13 vs Laptop 8)</button>
+            <button class="fluent-btn" onclick="App.navigate('#/')">返回首页浏览机型</button>
+          </div>
         </div>
       `;
     }
@@ -219,11 +223,13 @@ const ComparisonEngine = {
     const applyDiffOnly = this.diffOnly && !isSingleDevice;
 
     let html = `
+      ${!isSingleDevice ? '<div class="mobile-scroll-hint">👈 左右滑动查看更多对比机型 👉</div>' : ''}
       <div class="spec-table-container">
         <table class="spec-table ${this.highlightDiff ? 'highlight-diff' : ''} ${applyDiffOnly ? 'diff-only' : ''}">
+          <caption class="sr-only">${isSingleDevice ? `${devicesToCompare[0].name} 官方技术规格全览表` : `Surface 历代机型横向技术规格对比表（共 ${devicesToCompare.length} 款设备）`}</caption>
           <thead>
             <tr>
-              <th class="corner-header ${isSingleDevice ? 'single-mode' : ''}">
+              <th scope="col" class="corner-header ${isSingleDevice ? 'single-mode' : ''}">
                 <div style="font-weight:700; font-size:13px; color:var(--ms-text-brand); margin-bottom:4px;">
                   ${isSingleDevice ? '技术规格分类' : '参数规格索引'}
                 </div>
@@ -237,7 +243,7 @@ const ComparisonEngine = {
     devicesToCompare.forEach((dev, colIdx) => {
       if (isSingleDevice) {
         html += `
-          <th class="table-single-header-th">
+          <th scope="col" class="table-single-header-th">
             <div class="table-single-header-wrap">
               <div class="table-single-header-title">${dev.name} 官方技术规格全览</div>
               <div class="table-single-header-sub">
@@ -249,7 +255,7 @@ const ComparisonEngine = {
         `;
       } else {
         html += `
-          <th>
+          <th scope="col">
             <div class="table-device-card">
               <button class="table-device-remove-btn" onclick="ComparisonEngine.removeDevice('${dev.id}')" title="从对比中移除">✕</button>
               
@@ -296,6 +302,27 @@ const ComparisonEngine = {
                 ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS</span>' : ''}
                 ${String(Catalog.getSpec(dev, 'panelTech') || '').includes('OLED') ? '<span class="spec-badge green">OLED</span>' : ''}
               </div>
+
+              <!-- 3 行核心决策摘要 (PRD P2-2 / D-3: 续航 / 算力 / 重量) -->
+              ${(() => {
+                const summary = this.getDecisionSummary(dev);
+                return `
+                  <div class="table-device-decision-summary" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--ms-border-subtle); font-size:11.5px; line-height:1.5; text-align:left; color:var(--ms-text-secondary);">
+                    <div class="summary-line" style="display:flex; align-items:center; gap:5px; margin-bottom:2px;" title="续航标称">
+                      <span style="opacity:0.85;">🔋</span>
+                      <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${summary.batText}</span>
+                    </div>
+                    <div class="summary-line" style="display:flex; align-items:center; gap:5px; margin-bottom:2px;" title="处理器与端侧算力">
+                      <span style="opacity:0.85;">⚡</span>
+                      <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${summary.coreText}</span>
+                    </div>
+                    <div class="summary-line" style="display:flex; align-items:center; gap:5px;" title="整机便携规格">
+                      <span style="opacity:0.85;">⚖️</span>
+                      <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${summary.portText}</span>
+                    </div>
+                  </div>
+                `;
+              })()}
             </div>
           </th>
         `;
@@ -312,12 +339,12 @@ const ComparisonEngine = {
     SURFACE_DATA.specGroups.forEach(group => {
       html += `
         <tr class="spec-group-row" id="group-row-${group.id}">
-          <td colspan="${devicesToCompare.length + 1}">
+          <th colspan="${devicesToCompare.length + 1}" scope="colgroup">
             <div class="spec-group-toggle" onclick="ComparisonEngine.toggleGroup('${group.id}')">
               <span id="group-icon-${group.id}">▼</span>
               <span>${group.name}</span>
             </div>
-          </td>
+          </th>
         </tr>
       `;
 
@@ -329,7 +356,7 @@ const ComparisonEngine = {
 
         html += `
           <tr class="field-row field-row-${group.id} ${rowClass}">
-            <td class="spec-param-name">${field.label}</td>
+            <th scope="row" class="spec-param-name">${field.label}</th>
         `;
 
         devicesToCompare.forEach(dev => {
@@ -488,6 +515,49 @@ const ComparisonEngine = {
     }
   },
 
+  // 提取 3 行核心决策摘要 (PRD P2-2 / D-3: 续航 / 动力与算力 / 便携规格)
+  getDecisionSummary(dev) {
+    if (!dev) return { batText: '—', coreText: '—', portText: '—' };
+
+    // 1. 续航指标
+    const videoBat = Catalog.getSpec(dev, 'batteryLifeVideo') || Catalog.getSpec(dev, 'batteryLife');
+    const officeBat = Catalog.getSpec(dev, 'batteryLifeOffice');
+    let batText = '续航未披露';
+    if (videoBat && videoBat !== 'not_disclosed' && videoBat !== 'not_applicable') {
+      const vMatch = String(videoBat).match(/(\d+(?:\.\d+)?)\s*小时/);
+      batText = vMatch ? `视频长达 ${vMatch[1]}h` : String(videoBat).replace('长达', '').trim();
+    } else if (officeBat && officeBat !== 'not_disclosed' && officeBat !== 'not_applicable') {
+      const oMatch = String(officeBat).match(/(\d+(?:\.\d+)?)\s*小时/);
+      batText = oMatch ? `办公约 ${oMatch[1]}h` : String(officeBat).trim();
+    }
+
+    // 2. 动力芯片与 NPU 端侧算力
+    const cpu = Catalog.getSpec(dev, 'cpuModel') || '';
+    const npu = Catalog.getSpec(dev, 'npuTops') || '';
+    let cpuShort = '处理器未披露';
+    if (cpu) {
+      if (cpu.includes('骁龙® X2') || cpu.includes('Snapdragon® X2')) cpuShort = '骁龙® X2';
+      else if (cpu.includes('骁龙® X Plus')) cpuShort = '骁龙® X Plus';
+      else if (cpu.includes('骁龙® X Elite')) cpuShort = '骁龙® X Elite';
+      else if (cpu.includes('酷睿™ Ultra')) cpuShort = '酷睿™ Ultra';
+      else if (cpu.includes('Intel')) cpuShort = cpu.split('(')[0].trim();
+      else cpuShort = cpu.split(' ')[0];
+    }
+    let npuShort = (npu && npu !== 'not_applicable' && npu !== 'not_disclosed') ? npu : '';
+    const coreText = npuShort ? `${cpuShort} · ${npuShort}` : cpuShort;
+
+    // 3. 机身重量与屏幕尺寸
+    const weight = Catalog.getSpec(dev, 'weightGrams') || Catalog.getSpec(dev, 'weight') || '';
+    const screen = Catalog.getSpec(dev, 'screenSize') || '';
+    const wMatch = String(weight).match(/(\d+(?:\.\d+)?)\s*(?:g|克|kg|千克)/i);
+    let wText = wMatch ? wMatch[0] : (weight ? String(weight).split('(')[0].trim() : '重量未披露');
+    const sMatch = String(screen).match(/(\d+(?:\.\d+)?)\s*英寸/);
+    let sText = sMatch ? `${parseFloat(sMatch[1])}"` : '';
+    const portText = sText ? `${wText} · ${sText}` : wText;
+
+    return { batText, coreText, portText };
+  },
+
   toggleGroup(groupId) {
     const rows = document.querySelectorAll(`.field-row-${groupId}`);
     const icon = document.getElementById(`group-icon-${groupId}`);
@@ -560,7 +630,7 @@ const ComparisonEngine = {
 
       const badgeHtml = hasValid
         ? '<span class="spec-accordion-badge verified"><span class="badge-icon">✔</span> 已验证</span>'
-        : '<span class="spec-accordion-badge pending"><span class="badge-icon">!</span> 待核验</span>';
+        : '<span class="spec-accordion-badge pending"><span class="badge-icon">!</span> 官方未披露</span>';
 
       html += `
         <div class="spec-accordion-group" id="accordion-group-${group.id}">
@@ -576,6 +646,7 @@ const ComparisonEngine = {
           </div>
           <div class="spec-accordion-body" id="accordion-body-${group.id}">
             <table class="spec-accordion-table">
+              <caption class="sr-only">${dev.name} - ${group.name} 技术规格参数</caption>
               <tbody>
       `;
 
@@ -584,7 +655,7 @@ const ComparisonEngine = {
         const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
         html += `
           <tr class="spec-accordion-row">
-            <td class="spec-param-name">${field.label}</td>
+            <th scope="row" class="spec-param-name">${field.label}</th>
             <td class="spec-val-cell">${formattedVal}</td>
           </tr>
         `;

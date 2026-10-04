@@ -5,6 +5,221 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.1] - 2026-10-01
+
+### Fixed
+- **Xbox 14 款全系主机外观配色缺失与图物错位纠正 (`js/xbox-lineup.js`)**：
+  - **补齐历史机型缺失的 `colors` 数据**：初代 Xbox（经典黑配翡翠绿 Jewel Black `#111111`）、Xbox 360（典雅冷白 `#e2e8f0` / 精英黑 `#1e293b`）、Xbox 360 S（钢琴黑 `#0a0a0a` / 哑光黑 `#1e2229`）、Xbox 360 E（黑双拼质感 `#171717`）、Xbox One（双拼曜石黑 `#121212`）、Xbox One S（机器人白 `#f8fafc`）、Xbox One X（哑光深空黑 `#1c1917` / 机器人白 `#f8fafc`）。
+  - **Series X 差异化机型专属配图与配色纠偏**：
+    - `xbox-series-x-digital`（1TB 全数字版）：彻底终结误用纯黑带光驱图片的严重错误，使用专属全白无光驱高透渲染大图 `./assets/products/xbox-series-x-digital-white-hero.png`，配色规范为「机器人白 Robot White (`#f8fafc`)」。
+    - `xbox-series-x-2tb`（2TB 银河黑特别版）：终结误用纯黑普通图，使用专属银河黑星屑高透大图 `./assets/products/xbox-series-x-galaxy-black-hero.png`，配色规范为「银河黑特别版 Galaxy Black (`#0f291e`)」。
+    - `xbox-series-x25`（X25 限量版）：使用专属半透翡翠绿大图 `./assets/products/xbox-series-x25-translucent-green-hero.png`，配色规范为「半透明翡翠绿 Translucent OG Green (`#107c10`)」。
+- **Xbox 47 款控制器（手柄）图物错位与色彩冲突彻底纠正 (`js/xbox-lineup.js`)**：
+  - **图片错配纠偏**：
+    - `series-ghost-cipher`（幽灵特工透明版）：从纯白手柄图纠正为本地专属大图 `./assets/products/xbox-ghost-cipher-special-edition.png`，色块 HEX 设为半透冰川银灰 `#d1d5db`。
+    - `series-arctic-camo`（北极迷彩特别版）：从纯白手柄图纠正为本地专属大图 `./assets/products/xbox-arctic-camo-special-edition.png`，色块 HEX 为雪地灰白 `#e0e7ec`。
+    - `series-daystrike-camo`（炽烈迷彩特别版）：从纯红手柄图纠正为本地专属大图 `./assets/products/xbox-daystrike-camo-special-edition.png`，色块 HEX 为迷彩深红 `#b91c1c`。
+  - **色块 Hex 与颜色名严重冲突纠偏**：
+    - `series-forza-5`（《极限竞速：地平线 5》限量版）：彻底纠正大红玫瑰粉 `#e11d48` 错误，纠正为狂飙黄 `#facc15`。
+    - `series-starfield`（《星空》官方限量版）：彻底纠正大红玫瑰粉 `#e11d48` 错误，纠正为群星宇航科技白 `#f8fafc`。
+    - `series-gears-5`（《战争机器 5》凯特限量版）：彻底纠正深红棕色 `#451a03` 错误，纠正为雪原战甲灰白 `#94a3b8`。
+    - `series-storm-breaker`（风暴蓝特别版）：彻底纠正深灰暗黑色 `#1e293b` 错误，纠正为风暴深蓝 `#1e40af`。
+
+### Added
+- **3 张高精度 Series X 变体图片生成**：
+  - 自动渲染输出 `assets/products/xbox-series-x-digital-white-hero.png`（纯白无光驱机身）。
+  - 自动渲染输出 `assets/products/xbox-series-x-galaxy-black-hero.png`（深邃黑底色 + 绿色银白微尘星屑 + 翠绿发光底座）。
+  - 自动渲染输出 `assets/products/xbox-series-x25-translucent-green-hero.png`（半透明通透翡翠绿机身）。
+- **Xbox 主机与手柄官方色彩图鉴保真度专项自动化测试 (`tests/test-runner.js`)**：
+  - 新增 26 项严格断言，覆盖 14 款主机配色全量非空校验、Series X 3 大差异版专属图片断言、手柄专属图与色号严格校验。自动化测试总数增至 **5634 项，100% PASS**。
+
+### Changed
+- **手柄维护脚本同步锁定 (`scripts/maintenance/update-xbox-controllers.js`)**：
+  - 同步更新维护脚本中的手柄数据字典，杜绝未来执行手柄数据更新时发生反向覆盖。
+- **发布物生成**：
+  - 生成不可变发布快照：`releases/surface-specs-hub-standalone-v2.2.1-20261001-p4-xbox-color-fidelity.html`。
+  - 同步更新根目录稳定指针：`surface-specs-hub-standalone.html`。
+
+### Why (决策理由)
+- 响应老大对 Xbox 手柄与主机配色的高标准要求。坚决落实“图物一致、色字一致、数据真实”铁律，彻底消除前台“文字写黄/白色、色块显示玫红”以及“白色无光驱主机展示黑色带光驱图片”的严重失真问题，捍卫民间资料库中立、严谨、专业的基石。
+
+## [v2.2.0] - 2026-10-01
+
+### Added
+- **T-7 预发布流水线五项拦截检查器 (`scripts/preflight_check.js`)**：
+  - 落地 PRD T-7 核心指标，提供五大硬阻断检查器：
+    1. 内部编辑备注扫描（0 容忍工作批注泄露至前台）
+    2. 术语合规性扫描（芯片、商标与 NPU 算力格式严格对齐附录 B）
+    3. 极限词与夸大修饰扫描（0 命中巅峰/极致/绝无仅有/史上最等违规营销词）
+    4. 图片 alt 一致性检查（100% 对齐机型、屏幕尺寸与芯片架构，保障 WCAG 2.2 AA 无障碍）
+    5. 图片体积预算扫描（Hero/大图 ≤ 120KB，卡片/缩略图 ≤ 40KB，强制 WebP 响应式分发）
+  - 任何一项违规立即阻断发布（exit code: 1），并输出定位到具体文件、行号、违规条目与字段的可读报告。
+  - 支持直接在命令行独立执行：`node scripts/preflight_check.js`。
+- **长期维护与防返贫机制 SOP 手册 (`docs/maintenance-and-anti-regression.md`)**：
+  - 依据 PRD §3.3、§10.5、§11 与附录 C 编制全套运维指南。
+  - 确立四大防返贫原则：机器守门绝不依靠人工记忆、零幻觉与可追溯政策、客观中立表述、版本发布不可变性。
+  - 固化附录 C 每次发布前逐项检查清单（Pre-Flight Checklist 10 项）。
+  - 建立每月 1 日深度复检机制（CWV 性能复测、结构化数据有效性、微软官方国行在售目录对账、图片与资产完整性核验）。
+  - 提供可追溯的月度复检记录留存表格模板。
+  - 建立新机型录入、退市机型转归档等 4 套标准化作业流程 (SOP)。
+- **G4 运营发布与防返贫专项自动化测试套件 (`tests/g4-anti-regression.test.js`)**：
+  - 覆盖流水线完备性、当前基线全绿验证、内部批注模拟注入硬阻断演练、极限词模拟注入硬阻断演练、防返贫文档完备性。
+  - 纳入全量测试运行器，自动化测试总断言数增至 **5591 项，100% PASS**。
+
+### Changed
+- **顶栏版本角标升级**：
+  - 页面顶部构建版本号升级为 `v2.2.0 · 20261001`（阶段 0~4 全阶段重塑最终交付基准版）。
+
+### Why (决策理由)
+- 贯彻《surface.kaibase.cn 网站优化改进 PRD · v1.0》阶段 4（运营发布与防返贫机制）与 R-1（单人维护风险防范）要求。“数据即信用，品质变习惯”。通过将五大合规检查固化为不可逾越的 CI/CD 机器脚本，配合不可变发布快照与月度定期复检机制，建立起抵御质量滑坡与回归返贫的坚实屏障，保障民间中立资料库在未来全生命周期中始终保持权威、可信与高水准。
+
+## [v2.1.0] - 2026-10-01
+
+### Added
+- **G3 重塑验收门专项自动化测试套件 (`tests/g3-redesign.test.js`)**：
+  - 全面覆盖 PRD 阶段 3（重塑实施）与 G3 门禁准则：
+    - G3-01: Fluent 2 设计系统文档与 Tokens 完备性（色彩、栅格、排版音阶、无障碍）。
+    - G3-02: 首页高阶叙事 Hero 与 10 秒选机导流网格（二合一、传统轻薄本、重度生产力、14 年编年史）。
+    - G3-03: 全态骨架屏微光加载系统（`.skeleton-box`、`@keyframes skeleton-pulse`）与空状态引导系统（`.hub-empty-state`，支持双旗舰一键比对与搜索清空）。
+    - G3-04: 移动端 768px 横滑友好交互体验（`.mobile-scroll-hint`）。
+    - G3-05: 2013~2026 家族技术演进时间轴（5 大代际分水岭横幅：创生奠基、形态爆发、ARM与双屏探索、动态编织铰链、Copilot+ PC 算力革命；NPU 胶囊与里程碑徽章）。
+    - G3-06: 重塑阶段极限词与夸大修饰语零容忍扫描。
+  - 自动化测试总断言数增至 **5567 项，100% PASS**。
+- **Fluent 2 视觉系统规范手册 (`docs/design-system.md` · PRD D-1)**：
+  - 建立统一 Design Tokens 体系，收录核心系统色盘（微软强调蓝 `#0078D4`、品牌红绿蓝黄辅色、双态微光与多级阴影）。
+  - 8px 基准栅格系统与紧凑信息密度规范，适配专业参数站高密度查阅场景。
+  - 排版音阶阶梯（从 Caption 11px 到 Display 28px/Hero 32px 的字阶、行高、字重与字距映射）。
+  - 动画曲线与微交互原则（Duration: 150ms~300ms, Cubic Bezier, 操作系统级减弱动态感知）。
+  - WCAG 2.2 AA 无障碍保障规范（对比度基线 > 4.5:1、双层焦点环、语义化无障碍语义层）。
+- **首页 10 秒找机型叙事结构重塑 (`App.renderHomeView` · PRD D-2)**：
+  - 顶部注入 Fluent Mica 质感 Hero 叙事横幅（`home-hero-banner`），确立“民间中立资料库 · 14年技术积淀”品牌信任感。
+  - 上线「10 秒找到适合你的 Surface」场景导流网格（`scenario-quick-grid`），覆盖 4 条典型用户决策路线：
+    1. 移动办公与触控手写（Surface Pro 12 / Pro 13）
+    2. 传统轻薄本体验（Surface Laptop 8）
+    3. 重度创意生产力（Surface Laptop Studio 2 / Studio 2+）
+    4. 14 年技术演进编年史（时间轴沉浸浏览）
+- **全态反馈与空状态引导系统 (`css/hubweb-layout.css`, `js/comparison-engine.js`, `js/app.js` · PRD D-4)**：
+  - 声明通用骨架屏类 `.skeleton-box` 与流动微光动画 `@keyframes skeleton-pulse`，平滑异步加载视觉跳动。
+  - 声明标准化空状态组件 `.hub-empty-state`，对比表在设备为空时呈现图文引导，并提供「一键载入双旗舰横评」快捷按钮；搜索弹窗在无结果时展示中性提示与「清除关键词」动作。
+- **移动端 768px 横滑友好交互体验 (`.mobile-scroll-hint` · PRD D-6)**：
+  - 针对触屏横向滚动参数大表，注入半透明胶囊式横滑导引提示（`← 左右滑动查阅更多参数规格 →`），在桌面端自动隐匿，在移动端直观指引。
+- **招牌原创体验：2013~2026 家族技术演进时间轴 (`App.renderTimelineView` · PRD 维度三)**：
+  - 架构重组为 5 大技术代际分水岭横幅（`timeline-era-banner`）：
+    1. 2024~2026：Copilot+ PC 算力革命纪元（骁龙 X2、高通 Oryon 架构、45~80 TOPS NPU 爆发）
+    2. 2021~2023：动态编织铰链与工业美学进化纪元（SLS 变形形态、120Hz 动态刷新、Intel 混合架构）
+    3. 2019~2020：ARM 架构突破与双屏探索纪元（SQ1/SQ2、超窄边框、Duo 双屏形态）
+    4. 2015~2018：形态大爆发与现代计算奠基纪元（PixelSense 3:2、动态支点铰链、零重力铰链 Studio）
+    5. 2013~2014：创生奠基纪元（初代镁合金一体化机身、双角度 Kickstand 支架）
+  - 每一台历代机型均标注发布年份、形态分类、里程碑技术亮点、NPU 算力胶囊与一键入库比对功能。
+
+### Changed
+- **顶栏版本角标升级**：
+  - 页面顶部构建版本号升级为 `v2.1.0 · 20261001`。
+  - 导航栏时间线快捷按钮文字与提示优化为「2013~2026 编年时间线」。
+
+### Why (决策理由)
+- 贯彻《surface.kaibase.cn 网站优化改进 PRD · v1.0》阶段 3（重塑实施）战略要求与招牌体验标准。告别生硬死板的表格罗列，通过分层叙事与场景导流大幅降低用户选机心智负担；建立 14 年技术代际编年史，构筑区别于一般电商和参数站的壁垒级知识沉淀；完善全生命周期状态反馈与移动端微交互，达成极致的 Fluent 2 设计品质与 G3 门禁 100% 验收达标。
+
+## [v2.0.0] - 2026-10-01
+
+### Added
+- **G2 强化验收门专项自动化测试套件 (`tests/g2-strengthening.test.js`)**：
+  - 覆盖六大 G2 必过门禁：Xbox 板块三大专区生态收录说明与无障碍角色、对比卡 3 行核心决策摘要（🔋续航/⚡算力与架构/⚖️重量尺寸）、schema.org 结构化数据 (JSON-LD) 完备性与路由切换动态更新、语义化 `<table>` 结构审计（caption, thead, th scope="col", th scope="row", th scope="colgroup"）、WCAG 2.2 AA 无障碍保障（skip-to-content, sr-only, :focus-visible, prefers-reduced-motion）、强化阶段极限词零容忍扫描。
+  - 自动化测试断言增至 5504 项，100% PASS。
+- **schema.org 结构化数据 (JSON-LD) 体系 (PRD P2-3 / T-5)**：
+  - `<head>` 注入原生 `<script type="application/ld+json" id="structured-data-jsonld">`。
+  - 在客户端路由切换时（`App.updateStructuredData`），动态生成并同步当前页面的结构化图谱：
+    - 首页：`WebSite` 与 `BreadcrumbList`（单级）。
+    - 系列与专区页：`CollectionPage` 与 `BreadcrumbList`（二级）。
+    - 单机详情页：完整的 `Product` 节点（包含品牌 Microsoft、机型名称、官方图片绝对地址、中性核心参数摘要、offers 报价状态与规范 URL）与 `BreadcrumbList`（三级：首页 > 系列 > 机型）。
+    - 实用工具与对比页：`WebPage` 与 `BreadcrumbList`。
+- **WCAG 2.2 AA 无障碍保障系统 (PRD T-3)**：
+  - `index.html` 顶部增加无障碍键盘跳跃导航锚点 `<a href="#hub-main-content" class="skip-to-content sr-only">跳至主要内容</a>`。
+  - `css/hubweb-layout.css` 声明标准屏幕阅读器专用隐藏类 `.sr-only`。
+  - 全局键盘聚焦高对比度焦点指示系统 `:focus-visible`（2px 强调轮廓且鼠标点击无干扰）。
+  - 支持操作系统级减弱动态效果偏好 `@media (prefers-reduced-motion: reduce)`，保障易眩晕人群无障碍体验。
+
+### Changed
+- **Xbox 板块显性生态收录定位与层级降级 (PRD P2-1 / C-5)**：
+  - 侧边栏折叠树将 Xbox 层级降级至 Surface 核心电脑系列与 23 款 Surface 官方配件之下，命名规范为「Xbox 生态补充」。
+  - 主机系列专区、手柄大全专区、官方配件专区三大入口顶部全部注入常驻收录提示横幅（`class="xbox-scope-callout" role="note"`），明确标示为微软泛硬件生态拓展补充资料，与 Surface 生产力核心系列清晰划界。
+- **对比卡表头 3 行决策摘要提炼 (PRD P2-2 / D-3)**：
+  - 对比表卡片表头从“仅有标题与标签”升级为提供 3 行决策摘要（`table-device-decision-summary`），包含：
+    - 🔋 续航标称（如“视频长达 15.5h”）
+    - ⚡ 动力与算力（如“骁龙® X2 · 80 TOPS”）
+    - ⚖️ 便携规格（如“895g · 13"”）
+  - 便携规格屏幕尺寸算法优化为自然数值呈现（如 13" 替代 13.0"）。
+- **表格语义化标签与技术 SEO 强化 (PRD T-2 / T-4)**：
+  - 横向规格大表 `spec-table` 与单机手风琴表 `spec-accordion-table` 增加机器可读的 `caption.sr-only`。
+  - 表头列单元格统一使用 `<th scope="col">`；分组行使用 `<th scope="colgroup">`；参数名首列从 `<td>` 升级为符合语义化和屏幕阅读器规范的 `<th scope="row" class="spec-param-name">`。
+  - `css/spec-table.css` 同步拓展 `th.spec-param-name` 粘性固定与高对比度高亮支持。
+- **顶栏版本角标升级**：
+  - 页面顶部构建版本号升级为 `v2.0.0 · 20261001`。
+
+### Why (决策理由)
+- 严格遵循《surface.kaibase.cn 网站优化改进 PRD · v1.0》阶段 2 强化实施目标，吃掉 P2 缺陷与架构层技术债。明确 Xbox 泛生态定位，消除品牌与品类定位混淆；上线行业标准 schema.org 结构化数据与语义化表格标签，极大提升搜索引擎可见性与离线阅读器抓取质量；补齐 WCAG 2.2 AA 级别的无障碍标准，实现残障人士键盘与读屏友好；表头卡片注入 3 行核心决策指标，大幅提升双机型横向比对时的决策效率。
+
+## [v1.9.0] - 2026-10-01
+
+### Added
+- **G1 达标验收门专项自动化测试套件 (`tests/g1-standards-baseline.test.js`)**：
+  - 覆盖五大 G1 必过门禁：单图体积预算合规性检查（Hero ≤ 120KB，卡片 ≤ 40KB）、附录 B 术语表与统一算力格式扫描、相对时间词 0 命中、极限词与夸大修饰 0 命中、核验日期动态自洽与离线兜底。
+  - 纳入全量测试运行器，自动化测试断言增至 5436 项并保持 100% PASS。
+- **离线工作状态指示器 (`#offline-toast`)**：
+  - 监听页面网络状态（`offline` / `online`），断网时自动呼出 Fluent 双层光影提示浮窗，明示已进入完全离线模式，全量参数与内嵌图鉴无缝浏览。
+
+### Changed
+- **附录 B 术语表与官方规范全面对齐**：
+  - 高通骁龙处理器全面规范命名：首次出现统一带注册商标符号（高通骁龙® X2、高通骁龙® X Plus、高通骁龙® X Elite、骁龙® X2 Plus、骁龙® X2 Elite）。
+  - 英特尔处理器全面规范命名：英特尔® 酷睿™ Ultra。
+  - NPU 端侧算力统一规范为“数字 + 空格 + 大写 TOPS”（如 80 TOPS、50 TOPS、45 TOPS）。
+- **核验日期全面动态化与自洽**：
+  - 数据模型注入全局 `lastVerifiedDate: "2026-10-01"` 与 `datasetVersion: "2026.10.01"`。
+  - 页脚最后核验时间（`#footer-verification-date`）与详情侧栏（`utility-rail`）核验日期联动，彻底消除写死历史月份的脱节缺陷。
+- **顶栏版本角标升级**：
+  - 页面顶部明示构建版本号递增为 `v1.9.0 · 20261001`。
+
+### Removed
+- **相对时间词全面清零**：
+  - 全站排查并清零“今天”、“最近”、“最新款”、“最新发布”、“前不久”、“刚刚”等易腐烂表述，一律转换为绝对客观日期。
+- **极限词与夸大表述全面下线**：
+  - 彻底清理数据源、手柄库与工具引擎中的“巅峰”、“极致”、“绝无仅有”、“史上最”等违反真实中立原则的口吻，替换为严谨的实测工程参数与客观描述。
+
+### Why (决策理由)
+- 严格遵循《surface.kaibase.cn 网站优化改进 PRD · v1.0》阶段 1 达标门要求，清零 P1 级体验与规范缺陷。通过建立单图预算、严谨工业级术语规范、全态离线兜底与日期动态自洽，为全站奠定坚实、可靠、专业的基线，顺利通过 G1 达标验收门。
+
+## [v1.8.0] - 2026-10-01
+
+### Added
+- **G0 止血验收门专项自动化测试套件 (`tests/g0-stop-bleeding.test.js`)**：
+  - 覆盖四大 G0 必查门禁：前台内部批注 0 命中、图片 alt 与机型/色彩 100% 对齐、标题与站名去官化及非官方声明常驻、F-1（下架未确认机型）与 F-2（截断乱码修复）闭环。
+  - 纳入全量测试运行器，自动化测试断言增至 5271 项并保持 100% PASS。
+
+### Changed
+- **站名与品牌去官化（规避侵权与官方混淆风险）**：
+  - `<title>` 与 `<meta property="og:title">` 规范为「Surface 参数中心 · 民间资料库 | 全系列技术规格与深度对比」。
+  - 顶栏由「Microsoft / Catalog Explorer / Surface 官方资料库」修改为「Surface / 参数中心 / 民间资料库（非官方）」，显式标注当前构建版本号与时间戳。
+  - 页脚与全站明示民间非官方属性。
+- **机型计数规范化**：
+  - 货架顶部统计从“共 19 款”歧义表述优化为组合式规范计数“在售 19 款 · 即将发售 4 款”（区分在售与预售状态）。
+- **全站图片 alt 文本系统性精准对齐**：
+  - 修复 `13.8 英寸` vs `15 英寸`、`商用第 1 代` vs `第 7 代骁龙版`、`Intel 版` vs `骁龙版` 混淆。
+  - 修复全系 16 个分类卡片 alt 反转缺陷，修复 Hub 3 的 alt 缺失。
+
+### Removed
+- **前台内部编辑备注与内部状态隔离**：
+  - 剔除 `js/app.js` 内部批注（如“官方写了上市月份，现在还不能标成国行在售…”）。
+  - 下线机型卡片前端直接露出的“图片待核验”等未定稿标记，转为底层数据字段隔离与规范说明。
+- **存疑机型彻底下架**：
+  - 剔除未经官方发布的 `surface-laptop-ultra`（含其在配件兼容矩阵中的 23 处空关联），坚守零伪造、零幻觉准则。
+
+### Fixed
+- **Tagline 乱码与截断字符修复**：
+  - 排查并修复 `surface-data.js` 中截断词“极致触觉触控板轻薄本”为“触觉压感触控板轻薄本”。
+
+### Why (决策理由)
+- 贯彻《surface.kaibase.cn 网站优化改进 PRD · v1.0》阶段 0 门禁规范，坚守“可信度是参数站生命线”的原则。全面清零 P0 级合规、真实性与可访问性风险，落实“假说-验证闭环”，确保所有交付数据经得起官方信源检验，顺利通过 G0 验收门。
+
 ## [v1.7.0] - 2026-10-01
 
 ### Added

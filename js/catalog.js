@@ -96,7 +96,13 @@ const Catalog = (function () {
   let portraitIndex = null;
 
   function baseline() {
-    return (typeof SURFACE_DATA !== 'undefined') ? SURFACE_DATA : null;
+    if (typeof SURFACE_DATA !== 'undefined' && SURFACE_DATA) return SURFACE_DATA;
+    if (typeof global !== 'undefined' && global.SURFACE_DATA) return global.SURFACE_DATA;
+    if (typeof window !== 'undefined' && window.SURFACE_DATA) return window.SURFACE_DATA;
+    if (typeof require === 'function') {
+      try { return require('./surface-data.js'); } catch (err) { return null; }
+    }
+    return null;
   }
 
   function store() {
@@ -244,7 +250,6 @@ const Catalog = (function () {
     const flagshipWeight = (dev) => {
       let w = 0;
       const id = dev.id || '';
-      if (id.includes('surface-laptop-ultra')) w += 40;
       if (id.includes('pro-12-13') || id.includes('laptop-8-138') || id.includes('laptop-8-150')) w += 35;
       if (id.includes('pro-12-inch-2') || id.includes('laptop-13-inch-2')) w += 30;
       if (id.includes('pro-12-inch') || id.includes('laptop-13-inch')) w += 20;
@@ -529,9 +534,16 @@ const Catalog = (function () {
     return homes.indexOf(mine) === -1;
   }
 
+  function deviceAlt(device, colorName) {
+    if (!device) return '';
+    const name = String(device.name || '').trim();
+    const colorPart = colorName ? ` (${colorName})` : '';
+    return `${name}${colorPart}`;
+  }
+
   function portrait(device, colorName) {
     if (!device) {
-      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
+      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing', alt: '' };
     }
     let raw = '';
     if (colorName) {
@@ -540,21 +552,22 @@ const Catalog = (function () {
     }
     if (!raw) raw = device.heroImage || '';
     if (!raw) {
-      if (device.categoryId === 'xbox') return { src: '', identity: 'missing' };
-      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing' };
+      if (device.categoryId === 'xbox') return { src: '', identity: 'missing', alt: deviceAlt(device, colorName) };
+      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing', alt: deviceAlt(device, colorName) };
     }
     const review = device.imageVerification || {};
     const explicitIdentity = ['pending', 'diagram', 'shared'].indexOf(review.status) !== -1;
     return {
       src: withPortraitRev(raw),
       identity: explicitIdentity ? review.status : (isStandIn(device, raw) ? 'shared' : 'official'),
-      kind: review.kind || (review.status === 'diagram' ? 'diagram' : '')
+      kind: review.kind || (review.status === 'diagram' ? 'diagram' : ''),
+      alt: deviceAlt(device, colorName)
     };
   }
 
   function portraitLabel(shot) {
     if (!shot) return '';
-    if (shot.identity === 'pending') return '图片待核验';
+    if (shot.identity === 'pending') return '';
     if (shot.identity === 'diagram') return '官方结构图（非配色照片）';
     if (shot.identity === 'shared') {
       return shot.kind === 'diagram' ? '其他机型结构图示意' : '同系列示意';
@@ -581,7 +594,10 @@ const Catalog = (function () {
     const decoding = slotName === 'detail' ? 'auto' : 'async';
     const id = opts.id ? ' id="' + escAttr(opts.id) + '"' : '';
     const cls = opts.className ? ' class="' + escAttr(opts.className) + '"' : '';
-    const alt = escAttr(opts.alt || '');
+    const effectiveAlt = (opts.alt !== undefined && opts.alt !== null && opts.alt !== '')
+      ? opts.alt
+      : (shot && shot.alt ? shot.alt : '');
+    const alt = escAttr(effectiveAlt);
     const onerror = opts.onerror ? ' onerror="' + opts.onerror + '"' : '';
     const rawAttr = cleanSrc ? ' data-fallback-path="' + escAttr(cleanSrc) + '"' : '';
     const sizes = opts.sizes || slot.sizes;
@@ -687,7 +703,8 @@ const Catalog = (function () {
     highlights: highlights,
     frame: frame,
     paint: paint,
-    parseReleaseTimestamp: parseReleaseTimestamp
+    parseReleaseTimestamp: parseReleaseTimestamp,
+    deviceAlt: deviceAlt
   };
 })();
 
