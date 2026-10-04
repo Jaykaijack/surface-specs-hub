@@ -86,7 +86,8 @@ function stripPublishedMasters(dir) {
   }
 }
 stripPublishedMasters(path.join(OUT, 'assets', 'products'));
-stripPublishedMasters(path.join(OUT, 'assets', 'accessories'));
+// 配件原图严禁删除，确保旧端或直接引用时绝对不会 404
+// stripPublishedMasters(path.join(OUT, 'assets', 'accessories'));
 
 function coveredByDelivery(ref) {
   const base = path.basename(ref.split('?')[0]);

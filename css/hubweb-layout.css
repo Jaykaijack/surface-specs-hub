@@ -3903,5 +3903,37 @@ select:focus-visible,
   color: #d87d15;
 }
 
+/* 6. 官方配件图鉴卡片图片包装器与响应式 picture */
+.accessory-img-wrap {
+  width: 100%;
+  height: 160px;
+  background: var(--ms-bg-subtle);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
+.accessory-img-wrap picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 
+.accessory-img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.08));
+  transition: transform 0.2s ease;
+}
+
+.device-card-mini:hover .accessory-img-wrap img {
+  transform: scale(1.03);
+}

@@ -1443,9 +1443,13 @@ const App = {
                 <span class="spec-badge" style="font-size:11px; padding:2px 8px; background:var(--ms-bg-card-secondary); color:var(--ms-text-secondary);">${acc.categoryName || '官方原装'}</span>
               </div>
 
-              <!-- 产品官方大图展示区 -->
-              <div style="width:100%; height:160px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:12px; box-sizing:border-box; overflow:hidden;">
-                <img src="${acc.image}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.08));" loading="lazy" onerror="App.hideBrokenImage(this)">
+              <!-- 产品官方大图展示区 (响应式 WebP/AVIF + 优雅兜底) -->
+              <div class="accessory-img-wrap">
+                ${Catalog.frame({ src: acc.image, alt: acc.name }, {
+                  slot: 'card',
+                  className: 'accessory-card-img',
+                  onerror: 'App.hideBrokenImage(this)'
+                })}
               </div>
 
               <!-- 标题与特性导语 -->
