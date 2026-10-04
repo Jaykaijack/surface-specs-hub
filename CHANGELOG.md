@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.2] - 2026-10-04
+
+### Fixed
+- **彻底铲除 Xbox Series X 差异化机型伪造图与“同系列示意”占位降级图 (`assets/products/`, `js/xbox-lineup.js`)**：
+  - `xbox-series-x25`（25 周年限量版）：接入微软官方 Scene7 原版透明底资产 `XSX25-LE_MS-Store_Image-Buy-Box-0_01_2000x2000_01`（1600x1600），呈现真实高透 OG 绿机壳、内部骨架机械透视、XBOX 25 铭文与专属半透手柄，**彻底铲除此前用 Python 脚本粗暴涂荧光绿伪造的假图**！
+  - `xbox-series-x-digital`（1TB 全数字版）：接入微软官方 Scene7 原版透明底资产 `66743890_Image-Buy-Box-0_2000x2000`，呈现无光驱纯白机身配白色手柄。
+  - `xbox-series-x-2tb`（2TB 银河黑特别版）：接入微软官方授权 2000x2000 高清资产，呈现真实绿色星斑、绿色底座通风口与 Velocity Green 翡翠绿手柄背板。
+- **Xbox 幽灵特工（Ghost Cipher）特别版手柄图物不符纠正**：
+  - 接入微软官方授权高清透明底资产（1754x1217），呈现正面透明水晶外壳、银色内胆机械构件、奢华青铜十字键与灰白防滑握把，**彻底废黜此前用纯白磨砂手柄冒充的假图**！
+- **Surface 23 款官方配件图鉴彻底修复与显示恢复 (`js/app.js`, `scripts/deploy/build-site.js`)**：
+  - 配件专区全面接入 `Catalog.frame` 响应式 `<picture>` 体系；
+  - 修复构建脚本 `stripPublishedMasters` 误删配件物理原图的缺陷；
+  - 经公网真实探测，全站 23 款配件图片全部返回 HTTP 200，彻底消除图片 404 与前台隐藏现象。
+- **解决客户端浏览器强缓存与 304 导致无法查看最新配色的死锁问题**：
+  - 页面顶部构建版本号角标全面升级为 `v2.2.2 · 20261004`；
+  - 服务器 Nginx 配置针对 `.html` 文件强制下发 `no-cache, must-revalidate` 响应头，确保老大与用户打开即获取最新版本。
+
+### Added
+- **不可变发布快照生成**：
+  - 输出不可变版本快照：`releases/surface-specs-hub-standalone-v2.2.2-20261004-official-assets-and-accessories-restore.html`。
+  - 同步更新根目录稳定指针：`surface-specs-hub-standalone.html` 与 `dist/surface-specs-hub-standalone.html`。
+
+### Why (决策理由)
+- 直面并深刻反省此前乱用图片与脚本伪造素材的恶劣技术失误。坚决执行“零幻觉、零人工涂色、100% 微软官方正版素材溯源”铁律，保障资料库的权威、严谨与公信力。
+
 ## [v2.2.1] - 2026-10-01
 
 ### Fixed

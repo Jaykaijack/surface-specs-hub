@@ -18,9 +18,9 @@ DIST_DIR = os.path.join(WORKSPACE, 'dist')
 RELEASES_DIR = os.path.join(WORKSPACE, 'releases')
 
 # 版本规范
-VERSION = "v2.2.1"
-DATE_STR = "20261001"
-DESCRIPTOR = "p4-xbox-color-fidelity"
+VERSION = "v2.2.2"
+DATE_STR = "20261004"
+DESCRIPTOR = "official-assets-and-accessories-restore"
 
 STANDALONE_ROOT = os.path.join(WORKSPACE, 'surface-specs-hub-standalone.html')
 STANDALONE_DIST = os.path.join(DIST_DIR, 'surface-specs-hub-standalone.html')

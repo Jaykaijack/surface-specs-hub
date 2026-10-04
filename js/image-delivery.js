@@ -1453,17 +1453,17 @@ var IMAGE_DELIVERY = {
   "xbox-series-x-digital-white-hero.png": [
     320,
     640,
-    960
+    927
   ],
   "xbox-series-x-galaxy-black-hero.png": [
     320,
     640,
-    960
+    1249
   ],
   "xbox-series-x25-translucent-green-hero.png": [
     320,
     640,
-    960
+    1280
   ],
   "xbox-spongebob-movie-standard-xdl.jpg": [
     320,
