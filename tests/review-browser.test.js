@@ -77,6 +77,7 @@ const base=process.env.TEST_BASE || 'http://127.0.0.1:8765';
  assert.equal(await page.evaluate(()=>window.pwned),undefined);
  assert.equal(await correction.locator('img').count(),0);
  await page.keyboard.press('Escape');
+ await correction.waitFor({state:'detached'});
  assert.equal(await correction.count(),0);
  assert.equal(await page.evaluate(()=>document.activeElement.textContent),'报告参数问题');
  assert.match(await page.locator('#hub-main-content').innerText(),/海外\/全球来源，非国行认证/);
