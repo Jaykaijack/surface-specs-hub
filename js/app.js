@@ -267,13 +267,7 @@ const App = {
           "@type": "Brand",
           "name": "Microsoft"
         },
-        "category": matchedDevice.categoryName || "笔记本电脑与平板",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "CNY",
-          "availability": "https://schema.org/InStock",
-          "url": pageUrl
-        }
+        "category": matchedDevice.categoryName || "笔记本电脑与平板"
       };
 
       const breadcrumbNode = {
@@ -610,7 +604,7 @@ const App = {
         <div class="home-hero-badge">
           <span>✨ 微软历代 Surface 全谱系技术规格中枢</span>
           <span style="opacity:0.6;">｜</span>
-          <span>收录 327 款机型 · 23 款官方配件 ｜ 零杜撰参数</span>
+          <span>收录 ${this.listDevices().length} 条设备记录 · ${Catalog.accessories().length} 条 Surface 配件记录（不等于 SKU 数，未全量核验）</span>
         </div>
         <h1 class="home-hero-title">Surface 参数中心 · 民间资料库</h1>
         <p class="home-hero-desc">
@@ -2196,7 +2190,7 @@ const App = {
           <button class="fluent-btn primary utility-primary-action" onclick="ComparisonEngine.toggleDevice('${dev.id}')">
             ${isSelected ? '✓ 已加入对比' : '+ 加入对比'}
           </button>
-          <button class="fluent-btn utility-secondary-action" type="button" title="收藏功能待接入">
+          <button class="fluent-btn utility-secondary-action" type="button" hidden title="收藏功能待接入">
             ♡ 收藏产品
           </button>
         </div>
@@ -2364,7 +2358,7 @@ const App = {
             <span class="header-sub-tag">14 年硬件设计与芯片架构跃迁图鉴</span>
           </h1>
           <div class="view-meta-tip">
-            <span>收录 14 年间共 327 款机型技术分水岭 ｜ 💡 点击卡片可查看单机全维度参数详情 ｜ 勾选可直接加入对比池</span>
+            <span>收录 ${this.listDevices().length} 条设备记录（不含配件、控制器或 SKU 变体） ｜ 💡 点击卡片可查看单机全维度参数详情 ｜ 勾选可直接加入对比池</span>
           </div>
         </div>
       </div>
@@ -2561,7 +2555,7 @@ const App = {
   },
 
   normalizeSearchText(text) {
-    return String(text || '').toLowerCase().replace(/[®™©]/g, '').replace(/\s+/g, ' ').trim();
+    return String(text || '').toLowerCase().replace(/[®™©]/g, '').replace(/第十一[代版]/g, '第11代').replace(/第\s*(\d+)\s*[代版]/g, ' $1 ').replace(/(pro|laptop)(\d+)/g, '$1 $2').replace(/\s+/g, ' ').trim();
   },
 
   handleGlobalSearch(query) {
@@ -2589,12 +2583,13 @@ const App = {
 
     let html = `
       <div class="search-modal-backdrop" onclick="App.closeSearchModal()">
-        <div class="search-modal-card" onclick="event.stopPropagation()">
+        <div class="search-modal-card" role="dialog" aria-modal="true" aria-labelledby="search-dialog-title" onkeydown="App.onSearchDialogKey(event)" onclick="event.stopPropagation()">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <span style="font-weight:700; font-size:15px;">搜索结果 (${matchedDevices.length + matchedChips.length})</span>
-            <button class="dock-item-remove" onclick="App.closeSearchModal()">✕</button>
+            <span id="search-dialog-title" style="font-weight:700; font-size:15px;">搜索结果 (${matchedDevices.length + matchedChips.length})</span>
+            <button class="dock-item-remove" aria-label="关闭搜索" onclick="App.closeSearchModal()">✕</button>
           </div>
 
+          <input id="dialog-search-input" type="search" aria-label="搜索产品与参数" value="${this.escapeText(query)}" oninput="App.handleGlobalSearch(this.value)">
           ${matchedDevices.length === 0 && matchedChips.length === 0 ? `
             <div class="hub-empty-state" style="padding:24px 16px; margin:10px 0; border:none; box-shadow:none;">
               <div class="empty-icon" style="font-size:32px; margin-bottom:8px;">🔍</div>
@@ -2640,13 +2635,25 @@ const App = {
       </div>
     `;
 
+    if (resultsContainer.style.display !== 'block') this.searchReturnFocus = document.activeElement;
     resultsContainer.innerHTML = html;
     resultsContainer.style.display = 'block';
+    resultsContainer.querySelector?.('#dialog-search-input')?.focus();
+  },
+
+  onSearchDialogKey(event) {
+    if (event.key === 'Escape') { event.preventDefault(); this.closeSearchModal(); return; }
+    if (event.key !== 'Tab') return;
+    const controls = [...event.currentTarget.querySelectorAll('input,button,[tabindex="0"]')];
+    const first = controls[0], last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   },
 
   closeSearchModal() {
     const resultsContainer = document.getElementById('search-results-modal');
     if (resultsContainer) resultsContainer.style.display = 'none';
+    this.searchReturnFocus?.focus?.();
   },
 
   clearGlobalSearch() {
@@ -2826,14 +2833,14 @@ const App = {
           <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" onclick="App.navigate('#/compare')">
             <span class="catalog-tab-icon">▣</span>对比 (${ComparisonEngine.selectedIds.length})
           </button>
-          <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" title="收藏功能待接入">
+          <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" hidden title="收藏功能待接入">
             <span class="catalog-tab-icon">♡</span>收藏 (0)
           </button>
         </div>
         <div class="detail-catalog-controls">
           <label class="detail-catalog-search">
             <span aria-hidden="true">⌕</span>
-            <input type="search" placeholder="搜索产品、型号或关键词" aria-label="搜索产品、型号或关键词" value="${this.detailFilterState.keyword}" oninput="App.updateDetailFilter('keyword', this.value)">
+            <input type="search" placeholder="搜索产品、型号或关键词" aria-label="搜索产品、型号或关键词" value="${this.escapeText(this.detailFilterState.keyword)}" oninput="App.updateDetailFilter('keyword', this.value)">
           </label>
           <div class="detail-catalog-selects">
             <select aria-label="按系列筛选" onchange="App.updateDetailFilter('series', this.value)">
@@ -2943,7 +2950,7 @@ const App = {
 
       <!-- 1. Surface 消费版 折叠树 -->
       <div class="sidebar-tree-group">
-        <div class="sidebar-parent-row ${this.sidebarTreeState.surface ? 'expanded' : ''}" onclick="App.toggleSidebarTree('surface')">
+        <div role="button" tabindex="0" class="sidebar-parent-row ${this.sidebarTreeState.surface ? 'expanded' : ''}" onclick="App.toggleSidebarTree('surface')">
           <span class="parent-accent-bar"></span>
           <div class="parent-row-left">
             <span class="parent-row-icon">
@@ -2988,7 +2995,7 @@ const App = {
 
       <!-- 2. Surface 商用版 (对齐设计稿 Windows 设备位) 折叠树 -->
       <div class="sidebar-tree-group">
-        <div class="sidebar-parent-row ${this.sidebarTreeState.commercial ? 'expanded' : ''}" onclick="App.toggleSidebarTree('commercial')">
+        <div role="button" tabindex="0" class="sidebar-parent-row ${this.sidebarTreeState.commercial ? 'expanded' : ''}" onclick="App.toggleSidebarTree('commercial')">
           <span class="parent-accent-bar"></span>
           <div class="parent-row-left">
             <span class="parent-row-icon">
@@ -3030,7 +3037,7 @@ const App = {
 
       <!-- 3. Surface 配件 (对齐设计稿 Microsoft 365 位，独立大类！) 折叠树 -->
       <div class="sidebar-tree-group">
-        <div class="sidebar-parent-row ${this.sidebarTreeState.accessories ? 'expanded' : ''}" onclick="App.toggleSidebarTree('accessories')">
+        <div role="button" tabindex="0" class="sidebar-parent-row ${this.sidebarTreeState.accessories ? 'expanded' : ''}" onclick="App.toggleSidebarTree('accessories')">
           <span class="parent-accent-bar"></span>
           <div class="parent-row-left">
             <span class="parent-row-icon">
@@ -3072,7 +3079,7 @@ const App = {
 
       <!-- 4. Xbox 生态补充 (PRD P2-1 / C-5: 明确收录定位与层级降级) 折叠树 -->
       <div class="sidebar-tree-group">
-        <div class="sidebar-parent-row ${this.sidebarTreeState.xbox ? 'expanded' : ''}" onclick="App.toggleSidebarTree('xbox')">
+        <div role="button" tabindex="0" class="sidebar-parent-row ${this.sidebarTreeState.xbox ? 'expanded' : ''}" onclick="App.toggleSidebarTree('xbox')">
           <span class="parent-accent-bar" style="background:#107c41;"></span>
           <div class="parent-row-left">
             <span class="parent-row-icon">
@@ -3103,31 +3110,31 @@ const App = {
       <!-- 分组：使用场景 (对齐设计稿第二组) -->
       <div class="sidebar-section-title" style="margin-top:14px;">使用场景</div>
 
-      <div class="sidebar-action-item ${path === '/tools' || path === '/tools/guide' ? 'active' : ''}" onclick="App.navigate('#/tools/guide')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/tools' || path === '/tools/guide' ? 'active' : ''}" onclick="App.navigate('#/tools/guide')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         </span>
         <span class="sidebar-item-text">场景智能选型向导</span>
       </div>
-      <div class="sidebar-action-item ${path === '/tools/upgrade' ? 'active' : ''}" onclick="App.navigate('#/tools/upgrade')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/tools/upgrade' ? 'active' : ''}" onclick="App.navigate('#/tools/upgrade')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
         </span>
         <span class="sidebar-item-text">跨代升级价值评估</span>
       </div>
-      <div class="sidebar-action-item ${path === '/tools/weight' ? 'active' : ''}" onclick="App.navigate('#/tools/weight')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/tools/weight' ? 'active' : ''}" onclick="App.navigate('#/tools/weight')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2z"/><line x1="10" y1="3" x2="14" y2="3"/><line x1="12" y1="12" x2="12" y2="15"/></svg>
         </span>
         <span class="sidebar-item-text">差旅背包负重测算</span>
       </div>
-      <div class="sidebar-action-item ${path === '/tools/storage' ? 'active' : ''}" onclick="App.navigate('#/tools/storage')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/tools/storage' ? 'active' : ''}" onclick="App.navigate('#/tools/storage')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
         </span>
         <span class="sidebar-item-text">固态硬盘省钱指南</span>
       </div>
-      <div class="sidebar-action-item ${path === '/tools/screen' ? 'active' : ''}" onclick="App.navigate('#/tools/screen')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/tools/screen' ? 'active' : ''}" onclick="App.navigate('#/tools/screen')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </span>
@@ -3137,25 +3144,25 @@ const App = {
       <!-- 分组：资源 (对齐设计稿第三组) -->
       <div class="sidebar-section-title" style="margin-top:14px;">资源</div>
 
-      <div class="sidebar-action-item ${path === '/audit' ? 'active' : ''}" onclick="App.navigate('#/audit')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/audit' ? 'active' : ''}" onclick="App.navigate('#/audit')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </span>
         <span class="sidebar-item-text">官方文档核验中枢</span>
       </div>
-      <div class="sidebar-action-item ${path.includes('chips') ? 'active' : ''}" onclick="App.navigate('#/tools/chips')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path.includes('chips') ? 'active' : ''}" onclick="App.navigate('#/tools/chips')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </span>
         <span class="sidebar-item-text">定制芯片架构库</span>
       </div>
-      <div class="sidebar-action-item ${path === '/compare' ? 'active' : ''}" onclick="App.navigate('#/compare')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/compare' ? 'active' : ''}" onclick="App.navigate('#/compare')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="3" width="7" height="18" rx="1"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="10" y1="16" x2="14" y2="16"/></svg>
         </span>
         <span class="sidebar-item-text">全机型规格对比</span>
       </div>
-      <div class="sidebar-action-item ${path === '/timeline' ? 'active' : ''}" onclick="App.navigate('#/timeline')">
+      <div role="button" tabindex="0" class="sidebar-action-item ${path === '/timeline' ? 'active' : ''}" onclick="App.navigate('#/timeline')">
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </span>
@@ -3172,6 +3179,13 @@ const App = {
 
   // 10. 全局事件绑定
   bindEvents() {
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        const sidebar = document.querySelector('.hub-sidebar.open');
+        if (sidebar) { sidebar.classList.remove('open'); const btn = document.getElementById('mobile-menu-btn'); btn?.setAttribute('aria-expanded','false'); btn?.focus(); }
+      }
+      if ((event.key === 'Enter' || event.key === ' ') && event.target.matches('div[role="button"]:not([onkeydown])')) { event.preventDefault(); event.target.click(); }
+    });
     const searchInput = document.getElementById('global-search-input');
     const searchClear = document.getElementById('search-clear-btn');
     if (searchInput) {
@@ -3196,7 +3210,9 @@ const App = {
     const sidebar = document.querySelector('.hub-sidebar');
     if (mobileBtn && sidebar) {
       mobileBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('open');
+        const open = sidebar.classList.toggle('open');
+        mobileBtn.setAttribute('aria-expanded', String(open));
+        if (open) sidebar.querySelector('[tabindex],button,a')?.focus();
       });
     }
   },

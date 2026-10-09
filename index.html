@@ -61,7 +61,7 @@
   <header class="hub-header">
     <div class="header-left">
       <!-- 移动端汉堡抽屉开关按钮 -->
-      <button class="header-btn" id="mobile-menu-btn" title="展开分类">☰</button>
+      <button class="header-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="hub-sidebar-content" title="展开分类">☰</button>
 
       <!-- 微软官方四色徽标与品牌入口 -->
       <div class="header-brand-text" onclick="App.navigate('#/')">
@@ -85,7 +85,7 @@
         <input 
           type="text" 
           class="hub-search-input" 
-          id="global-search-input" 
+          id="global-search-input" aria-label="搜索 Surface 产品、型号或参数" aria-haspopup="dialog" aria-controls="search-results-modal" 
           placeholder="搜索 Surface 产品、型号或参数关键词"
           autocomplete="off"
         >
@@ -126,7 +126,7 @@
     <div class="catalog-header-context" aria-label="目录上下文">
       <button type="button" class="catalog-context-btn">◉ 全部市场⌄</button>
       <button type="button" class="catalog-context-btn">◎ 简体中文⌄</button>
-      <button type="button" class="catalog-avatar" aria-label="当前用户">JL</button>
+      
     </div>
   </header>
 
@@ -178,7 +178,7 @@
   <!-- 离线与断网状态反馈浮窗 (PRD 第二十二章 / P1-4) -->
   <div id="offline-toast" class="offline-toast hidden" role="status" aria-live="polite">
     <span class="offline-icon">⚡</span>
-    <span class="offline-msg">当前处于离线状态，已切换为完全离线工作模式，全量参数与内嵌图鉴均可畅快浏览。</span>
+    <span class="offline-msg">当前网络不可用；已加载的内容可能继续使用，未加载的页面或图片可能不可用。</span>
   </div>
 
   <!-- 核心数据源与业务引擎脚本 (严格按依赖顺序加载) -->

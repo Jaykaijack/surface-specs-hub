@@ -456,7 +456,7 @@ const ComparisonEngine = {
 
     // 用户群体标签
     if (type === 'audience_badge') {
-      if (val.includes('商业') || val === 'commercial') return '<span class="spec-badge" style="background:#e8edf5; color:#1a5fb4;">商业与政企</span>';
+      if (dev && Catalog.segmentOf(dev) === 'commercial' || /商业|商用|政企/.test(String(val)) || val === 'commercial') return '<span class="spec-badge" style="background:#e8edf5; color:#1a5fb4;">商业与政企</span>';
       return '<span class="spec-badge" style="background:#eef6ee; color:#26a269;">个人与消费者</span>';
     }
 

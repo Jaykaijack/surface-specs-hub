@@ -11,7 +11,7 @@ const ToolsEngine = {
   parseMass(value) {
     if (value && typeof value === 'object') {
       if (!Number.isFinite(value.value) || value.value < 0) return null;
-      const factor = { g: 1, kg: 1000, '克': 1, '千克': 1000 }[value.unit];
+      const factor = { g: 1, kg: 1000, lb: 453.59237, lbs: 453.59237, '磅': 453.59237, '克': 1, '千克': 1000 }[value.unit];
       return factor ? value.value * factor : null;
     }
     // 多配置、范围及没有单位的值不能选一个数字冒充整机重量。
@@ -22,7 +22,7 @@ const ToolsEngine = {
       const second = this.parseMass(equivalent[2]);
       return first !== null && second !== null && Math.abs(first - second) < 0.01 ? first : null;
     }
-    const match = text.match(/^(?:约\s*)?(\d+(?:\.\d+)?)\s*(kg|g|千克|克)$/i);
+    const match = text.match(/^(?:约\s*)?(\d+(?:\.\d+)?)\s*(kg|g|lb|lbs|千克|克|磅)$/i);
     return match ? this.parseMass({ value: Number(match[1]), unit: match[2].toLowerCase() }) : null;
   },
 
@@ -85,7 +85,7 @@ const ToolsEngine = {
 
     const areaDiffPercent = (((area32 - areaComp) / areaComp) * 100).toFixed(1);
     const heightDiffPercent = (((h32_cm - hComp_cm) / hComp_cm) * 100).toFixed(1);
-    const excelRowsGain = Math.round(heightDiffPercent * 1.15);
+
 
     const scale = 8.5;
     const stageW32 = Math.round(w32_cm * scale);
@@ -151,13 +151,13 @@ const ToolsEngine = {
                 <div class="metric-label">纵向可视高度多出</div>
               </div>
               <div class="metric-box">
-                <div class="metric-val">+${excelRowsGain}%</div>
-                <div class="metric-label">网页/Excel多显行数</div>
+                <div class="metric-val">几何计算</div>
+                <div class="metric-label">同对角线、矩形显示区域；不推导办公收益</div>
               </div>
             </div>
 
             <div style="font-size:12.5px; line-height:1.55; color:var(--ms-text-secondary); background:var(--ms-bg-card-secondary); padding:12px; border-radius:var(--ms-radius-md); ">
-              <strong>💡 直播培训核心论点：</strong> 同为 ${diag.toFixed(1)} 英寸，Surface 的 3:2 屏幕纵向高度足足高出了 <strong>${(h32_cm - hComp_cm).toFixed(1)} 厘米</strong>！看财报表格和Word文档少滑滚动条，这才是专为严肃办公定制的“黄金长宽比”！
+              计算方法：宽 = 对角线 × 宽比例 / √(宽比例² + 高比例²)，高同理，面积 = 宽 × 高。忽略圆角、系统缩放和应用界面；不能据此推出 Excel 行数或生产力提升。
             </div>
           </div>
 
@@ -486,8 +486,8 @@ const ToolsEngine = {
                     ${dev ? dev.name : item.deviceId}
                     ${dev ? `<div style="font-size:11px; color:var(--ms-text-tertiary); font-weight:normal;">${dev.generation}</div>` : ''}
                   </td>
-                  <td>${this.formatBadgeByStatus(item.status)}</td>
-                  <td style="text-align:left; color:var(--ms-text-secondary); font-size:12.5px;">${item.note}</td>
+                  <td>${this.formatBadgeByStatus(this.getCompatStatus(acc.id, item.deviceId).status)}</td>
+                  <td style="text-align:left; color:var(--ms-text-secondary); font-size:12.5px;">${this.getCompatStatus(acc.id, item.deviceId).note}</td>
                 </tr>
               `;
             }).join('')}
@@ -574,7 +574,7 @@ const ToolsEngine = {
                 </thead>
                 <tbody>
                   ${accs.map(acc => {
-                    const match = (acc.compatibilityList || []).find(c => c.deviceId === dev.id);
+                    const match = this.getCompatStatus(acc.id, dev.id);
                     const status = match ? match.status : 'UNKNOWN';
                     const note = match ? match.note : '官方白皮书暂未列入适配名单';
                     return `
@@ -628,7 +628,12 @@ const ToolsEngine = {
   getCompatStatus(accId, devId) {
     const acc = Catalog.accessories().find(a => a.id === accId);
     if (!acc) return null;
-    return (acc.compatibilityList || []).find(c => c.deviceId === devId) || { status: 'UNKNOWN', note: '未找到该配件与机型的适用证据' };
+    const row = (acc.compatibilityList || []).find(c => c.deviceId === devId);
+    const e = row && row.evidence;
+    if (!e || e.deviceId !== devId || e.accessoryId !== accId || e.status !== row.status || !e.verifiedAt || !/^https:\/\//.test(e.sourceUrl || '')) {
+      return {status:'UNKNOWN', note:'尚无绑定此型号、配件和配置的有效证据，无法判断兼容；历史说明不作结论'};
+    }
+    return row;
   },
 
   formatStatusObj(obj) {
