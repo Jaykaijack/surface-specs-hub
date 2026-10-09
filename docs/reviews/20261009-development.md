@@ -54,7 +54,7 @@
 - `node scripts/deploy/build-site.js`：通过，包含上述主测试/新回归/五项预检；静态资源引用检查通过。
 - `node scripts/deploy/smoke-test.js`：**14/14 请求通过**。
 - `node tests/review-browser.test.js`：通过。桌面 1280px 和移动 390px、真实预算点击、键盘搜索、XSS 不执行、1220g 算术、无水平溢出、Pro 1/2/Xbox 比例、Ultra 商用/消费者详情及静态页、canonical/robots/sitemap、无 pageerror。
-- 单文件快照：已构建多个不可变开发快照，最终交付为 `releases/verification-20261009-delivery.html`；未覆盖原稳定交付物。file:// 被浏览器管理策略阻止，采用本地 HTTP 只允许加载快照、阻断所有附加请求的方式验证；不等同所有浏览器 file:// 验收。
+- 单文件快照：已构建多个不可变开发快照，最终交付为 `releases/verification-20261009-delivery-v2.html`；未覆盖原稳定交付物。file:// 被浏览器管理策略阻止，采用本地 HTTP 只允许加载快照、阻断所有附加请求的方式验证；不等同所有浏览器 file:// 验收。
 - `node scripts/verification/audit-library.js` 已运行，发现型报告不算真实性通过。
 - `node tests/verification-batch02.test.js`：**失败启动/材料受阻**，缺少被忽略的历史文件 `releases/verification-20260930-batch02/evidence/surface-pro.json` 等。没有伪造证据或跳过断言冒充通过。
 - `git diff --check`：通过。
@@ -68,7 +68,8 @@
 3. NPU 搜索结果不显示 null TOPS；缺失芯片制程不默认“先进制程”。
 4. 商用官方参数中未证实的指纹、3nm、修复评分、价格不再展示；充电器适用市场和配置限定保留。
 5. 核验重建必须匹配值、记录、来源和非屏蔽状态；新增字段缺证据即 PENDING。
-6. 比较额外覆盖 x/× 和 PPI 说明的等价分辨率，避免纯说明造成假差异。
+6. 详情页增加逐字段未完成核验说明，移除缺失日期时回退旧核验日期的逻辑；日期仅作为历史记录日期展示。
+7. 比较额外覆盖 x/× 和 PPI 说明的等价分辨率，避免纯说明造成假差异。
 
 ## 剩余工作与发布条件
 

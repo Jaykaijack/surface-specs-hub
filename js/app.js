@@ -2038,6 +2038,7 @@ const App = {
     let html = `
       <div class="catalog-detail-layout">
       <section class="catalog-detail-main">
+      <p class="spec-evidence-note">参数记录尚未完成逐字段真实性核验；来源链接与历史记录日期不代表当前配置已确认。</p>
       <div class="catalog-breadcrumb">
         <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}">产品目录</a>
         <span>›</span>
@@ -2256,7 +2257,7 @@ const App = {
           <dl class="utility-meta-list">
             <div><dt>产品线</dt><dd>${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))}</dd></div>
             <div><dt>版本</dt><dd>${dev.generation || '—'}</dd></div>
-            <div><dt>核验日期</dt><dd>${this.spec(dev, 'lastVerified') || (window.SURFACE_DATA && window.SURFACE_DATA.lastVerifiedDate) || '2026-10-01'}</dd></div>
+            <div><dt>历史记录日期</dt><dd>${this.spec(dev, 'lastVerified') || '待核验'}（非全字段核验）</dd></div>
             <div><dt>图像身份</dt><dd id="detail-rail-meta-identity">${shotIdentityLabel}</dd></div>
             <div><dt>备注</dt><dd>${this.spec(dev, 'sourceReliability') || '—'}</dd></div>
           </dl>

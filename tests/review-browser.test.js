@@ -36,7 +36,7 @@ const assert=require('node:assert/strict');
  assert.doesNotMatch(bizText,/1000 TOPS|3nm|8 \/ 10|27,588/);
  await page.goto('http://127.0.0.1:8765/dist/site/#/consumer/laptop/laptop-ultra');
  const consumerText=await page.locator('#hub-main-content').innerText();
- assert.match(consumerText,/尚未核验/);assert.doesNotMatch(consumerText,/3120|3270|90 Wh|92 Wh|1000 TOPS|21,988/);
+ assert.match(consumerText,/尚未核验/);assert.match(consumerText,/不代表当前配置已确认/);assert.doesNotMatch(consumerText,/核验日期/);assert.doesNotMatch(consumerText,/3120|3270|90 Wh|92 Wh|1000 TOPS|21,988/);
  await page.goto('http://127.0.0.1:8765/dist/site/products/laptop-ultra/');
  assert.doesNotMatch(await page.locator('main').innerText(),/3120|3270|90 Wh|92 Wh|1000 TOPS|21,988/);
  await page.goto('http://127.0.0.1:8765/dist/site/products/pro-1/');
