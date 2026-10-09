@@ -659,8 +659,8 @@ const ComparisonEngine = {
       });
 
       const badgeHtml = hasValid
-        ? '<span class="spec-accordion-badge verified"><span class="badge-icon">✔</span> 已验证</span>'
-        : '<span class="spec-accordion-badge pending"><span class="badge-icon">!</span> 官方未披露</span>';
+        ? '<span class="spec-accordion-badge pending">有记录，未全组核验</span>'
+        : '<span class="spec-accordion-badge pending">暂无已确认参数</span>';
 
       html += `
         <div class="spec-accordion-group" id="accordion-group-${group.id}">
