@@ -107,3 +107,5 @@ assert.match(Catalog.portraitLabel(Catalog.portrait(Catalog.getDevice('laptop-8-
 assert.doesNotMatch(fs.readFileSync('css/specs-layout.css','utf8'),/<<<<<<<|>>>>>>>/);
 assert.match(fs.readFileSync('css/specs-layout.css','utf8'),/guide-container select/);
 console.log('Upstream/report regression PASS: unique IDs, safe updater, search aliases, atomic snapshot rejection, image hashes/blocked rendering/pending state, active narrow-screen CSS');
+
+assert.equal(Catalog.portrait({id:'pro-1',name:'Pro 初代',heroImage:'data:image/png;base64,AAA',specs:{}}).identity,'blocked','inline build must preserve mapping block');

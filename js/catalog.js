@@ -581,7 +581,9 @@ const Catalog = (function () {
       if (device.categoryId === 'xbox') return { src: '', identity: 'missing', alt: deviceAlt(device, colorName) };
       return { src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName) };
     }
-    if (BLOCKED_IMAGES.includes(raw.split('/').pop().split('?')[0])) return {src: IMAGE_PLACEHOLDER, identity: 'blocked', alt: deviceAlt(device, colorName) + '：图片存在错配或裁切问题，暂不展示'};
+    // Keep the same block in single-file builds, where original paths become data URIs.
+    const blockedMapping = ['pro-1','pro-2','hub-3'].includes(device.id) || (device.id === 'pro-9' && colorName === '森野绿');
+    if (blockedMapping || BLOCKED_IMAGES.includes(raw.split('/').pop().split('?')[0])) return {src: IMAGE_PLACEHOLDER, identity: 'blocked', alt: deviceAlt(device, colorName) + '：图片存在错配或裁切问题，暂不展示'};
     const review = device.imageVerification || {};
     const explicitIdentity = ['pending', 'diagram', 'shared'].indexOf(review.status) !== -1;
     return {
