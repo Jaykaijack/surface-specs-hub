@@ -1,0 +1,27 @@
+{
+  "observedAt": "2026-10-09",
+  "method": "Manually scoped observations from readable numbered official page; not raw HTML",
+  "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
+  "facts": [
+    {
+      "field": "copilotPlus",
+      "locator": "L194–197",
+      "observation": "FAQ将中国商用版称为Windows 11 AI+ PC；不证明每项AI功能在每地区都可用"
+    },
+    {
+      "field": "panelTech",
+      "locator": "L115–119",
+      "observation": "15英寸Mini-LED PixelSense Ultra触控显示屏；局部调光"
+    },
+    {
+      "field": "trackpadType",
+      "locator": "L157–159、329",
+      "observation": "精准触觉触控板；面积比Surface Laptop第8代增大30%以上"
+    },
+    {
+      "field": "thermalDesign",
+      "locator": "L87–90",
+      "observation": "官方称相较Surface Laptop第8代散热能力提升2.5倍；未说明风扇数量或均热板结构"
+    }
+  ]
+}

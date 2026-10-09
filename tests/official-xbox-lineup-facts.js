@@ -1,5 +1,5 @@
-/** Regression expectations revised from individually scoped 2026-10-09 official-source review.
- * GLOBAL fields are not China SKU certification; conflicts are NULL. See full-model-source-review-20261009.json. */
+/** Historical expectations retained only where not superseded by the explicit 2026-10-09 field audit.
+ * Audited fields are checked exhaustively in field-audit-completion.test.js, including unknown masking. */
 const OFFICIAL_XBOX_LINEUP_FACTS = {
   "fetchedAt": "2026-09-29",
   "devices": {
@@ -21,16 +21,11 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
           "美国",
           "墨西哥"
         ],
-        "cpuArch": [
-          "3.2 GHz"
-        ],
-        "ramSpec": [
-          "512 MB"
-        ],
         "storageOptions": [
           "20GB"
         ]
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "xbox-360-s": {
       "specContains": {
@@ -47,7 +42,8 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
       },
       "specState": {
         "cpuModel": "NOT_DISCLOSED"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "xbox-one": {
       "specContains": {
@@ -59,11 +55,9 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
         ],
         "ramSpec": [
           "8GB"
-        ],
-        "cpuModel": [
-          "8 核"
         ]
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "xbox-one-s": {
       "specContains": {
@@ -87,9 +81,6 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
           "美国",
           "499 美元"
         ],
-        "ramSpec": [
-          "12GB"
-        ],
         "gpuModel": "6 TFLOPS",
         "storageOptions": [
           "1TB",
@@ -98,7 +89,8 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
         "opticalDrive": [
           "4K UHD"
         ]
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "xbox-series-s-512": {
       "specContains": {
@@ -148,7 +140,8 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
         "weightGrams": [
           "9.8"
         ]
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "xbox-series-x-digital": {
       "specContains": {
@@ -189,14 +182,9 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
         ],
         "releaseDate": [
           "2013年6月10日"
-        ],
-        "cpuModel": [
-          "定制 PowerPC"
-        ],
-        "usbPorts": [
-          "USB 2.0"
         ]
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "xbox-one-s-digital": {
       "specContains": {
@@ -204,13 +192,9 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
           "不是当前国行在售",
           "249.99"
         ],
-        "storageOptions": [
-          "1TB",
-          "全数字"
-        ],
         "videoFeatures": "4K HDR"
       },
-      "storageMustNotInclude": "Blu-ray"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "xbox-series-x25": {
       "specContains": {

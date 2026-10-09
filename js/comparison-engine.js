@@ -428,9 +428,9 @@ const ComparisonEngine = {
     } else if (val === undefined || val === null || val === '' || val === 'null') {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
     } else if (val === 'not_disclosed') {
-      return '<span class="spec-state not-disclosed" title="微软官方白皮书从未对外正式披露">官方未披露</span>';
+      return '<span class="spec-state not-disclosed">未知（原记录：未披露，待核验）</span>';
     } else if (val === 'not_applicable') {
-      return '<span class="spec-state not-applicable" title="该产品物理形态不具备此属性">不适用</span>';
+      return '<span class="spec-state not-applicable">未知（原记录：不适用，待核验）</span>';
     }
 
     // 配色调色盘

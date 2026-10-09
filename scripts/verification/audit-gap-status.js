@@ -4,6 +4,8 @@ const data=require('../../js/surface-data');
 const Catalog=require('../../js/catalog');
 const registry=require('../../docs/full-library-verification-registry.json');
 const review=require('../../docs/evidence/full-model-source-review-20261009.json');
+const decisions=require('../../docs/evidence/field-audit-1131-decisions-20261009.json');
+const decisionByField=new Map(decisions.entries.map(e=>[`${e.deviceId}:${e.field}`,e]));
 const metadata=new Set(['lastVerified','sourceReliability','officialDocUrl','officialConfigureUrl','officialCommercialConfigureUrl','targetAudience','tagline','generation']);
 const count=rows=>rows.reduce((a,r)=>(a[r.reason]=(a[r.reason]||0)+1,a),{});
 const rows=registry.entries.filter(e=>e.verdict!=='VERIFIED').map(e=>{
@@ -21,11 +23,12 @@ const rows=registry.entries.filter(e=>e.verdict!=='VERIFIED').map(e=>{
  if(metadata.has(e.field))reason='NON_SPEC_METADATA';
  if(conflict)reason='EXPLICIT_CONFIGURATION_OR_SOURCE_CONFLICT';
  const shown=Catalog.getSpec(d,e.field);
- return {deviceId:d.id,field:e.field,reason,detail:conflict?.reason||null,valueHash:e.valueHash,display:shown==null?'MASKED_OR_EMPTY':typeof shown==='object'?'OBJECT_RECORD_PENDING':'RECORD_WITH_PENDING_LABEL',numericInferenceAllowed:false,readableModelSources:readable.map(a=>({url:a.url,sourceIndex:a.sourceIndex??null})),modelPassSources:[...new Set(passes.map(p=>p.sourceIndex))],individualFieldReviewCompleted:false};
+ const decision=decisionByField.get(`${d.id}:${e.field}`);
+ return {deviceId:d.id,field:e.field,reason,detail:conflict?.reason||decision?.finding||null,valueHash:e.valueHash,display:shown==null?'MASKED_OR_EMPTY':typeof shown==='object'?'OBJECT_RECORD_PENDING':'RECORD_WITH_PENDING_LABEL',numericInferenceAllowed:false,readableModelSources:readable.map(a=>({url:a.url,sourceIndex:a.sourceIndex??null})),modelPassSources:[...new Set(passes.map(p=>p.sourceIndex??p.sourceSnapshot).filter(Boolean))],individualFieldReviewCompleted:!!decision,fieldReviewResult:decision?.result||null,checkedSources:decision?.checkedSources||[]};
 });
 const images=require('../../docs/evidence/image-verification-20261009.json').records;
 const imageExtra=require('../../docs/evidence/accessory-and-ultra-images-20261009.json');
 const imageFailures=[...require('../../docs/evidence/ultra-global-image-sources-20261009.json'),...require('../../docs/evidence/official-image-access-20261009.json').attempts];
-const out={checkedAt:'2026-10-09',notice:'实际证据状态清单，不是完成逐字段审阅的声明。CURRENT_VALUE_EVIDENCE_INSUFFICIENT仅表示现有证据未支持完整当前值；不能归因网络失败。individualFieldReviewCompleted=false保留未完成认证边界。型号有可读原文不等于每个字段已审阅。',totalFields:registry.entries.length,verified:registry.entries.length-rows.length,remaining:rows.length,reasonCounts:count(rows),displayCounts:rows.reduce((a,r)=>(a[r.display]=(a[r.display]||0)+1,a),{}),imageAudit:{deviceMappings:images.length,blockedMappings:images.filter(r=>r.status==='BLOCKED').length,pendingMappings:images.filter(r=>r.status==='PENDING').length,deviceMappingsWithoutBoundOfficialImageUrl:images.filter(r=>!r.sourceUrl).length,accessoryFiles:imageExtra.accessories.length,ultraAdditionalFiles:imageExtra.ultraAssets.length,exactOfficialImageDownloadFailures:imageFailures.length,officialPixelCertifications:0,note:'4条具体官方URL下载失败（Ultra2、Go2两条），不等于所有待核验图片都下载失败；缺原图绑定与缺像素认证分开记录。'},entries:rows};
+const out={checkedAt:'2026-10-09',notice:'固定1131项已逐项检查；检查完成不等于参数认证。每项具体结论见field-audit-1131-decisions。其他分类不自动视为已审查，旧占位值统一未知。',totalFields:registry.entries.length,verified:registry.entries.length-rows.length,remaining:rows.length,reasonCounts:count(rows),displayCounts:rows.reduce((a,r)=>(a[r.display]=(a[r.display]||0)+1,a),{}),imageAudit:{deviceMappings:images.length,blockedMappings:images.filter(r=>r.status==='BLOCKED').length,pendingMappings:images.filter(r=>r.status==='PENDING').length,deviceMappingsWithoutBoundOfficialImageUrl:images.filter(r=>!r.sourceUrl).length,accessoryFiles:imageExtra.accessories.length,ultraAdditionalFiles:imageExtra.ultraAssets.length,exactOfficialImageDownloadFailures:imageFailures.length,officialPixelCertifications:0,note:'4条具体官方URL下载失败（Ultra2、Go2两条），不等于所有待核验图片都下载失败；缺原图绑定与缺像素认证分开记录。'},entries:rows};
 fs.writeFileSync('docs/evidence/gap-status-audit-20261009.json',JSON.stringify(out,null,2)+'\n');
 console.log(JSON.stringify({...out,entries:undefined},null,2));

@@ -199,10 +199,10 @@ const Catalog = (function () {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
     }
     if (state === 'NOT_DISCLOSED') {
-      return '<span class="spec-state not-disclosed" title="原记录标为未披露；须由适用来源逐项核验，抓取失败不能证明未披露">官方未披露（原记录，待核验）</span>';
+      return '<span class="spec-state not-disclosed" title="旧占位值未获适用证据支持；抓取失败不能证明官方未披露">未知（原记录：未披露，待核验）</span>';
     }
     if (state === 'NOT_APPLICABLE') {
-      return '<span class="spec-state not-applicable" title="记录状态；是否适用于具体配置须查对应字段证据">不适用（原记录，待核验）</span>';
+      return '<span class="spec-state not-applicable" title="旧占位值未获适用证据支持；是否适用仍须核验">未知（原记录：不适用，待核验）</span>';
     }
     return val;
   }

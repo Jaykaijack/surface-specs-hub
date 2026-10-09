@@ -633,7 +633,7 @@ assertEqual(laptop13Inch.specs.weightGrams, '1220g (1.22 kg)', '保留消费者�
 const laptop7_150 = SURFACE_DATA.devices.find(d => d.id === 'laptop-7-150');
 assert(Boolean(laptop7_150), '全系参数库正式收录官方 Surface Laptop (第 7 代) 15 英寸 消费版');
 assertEqual(parseFloat(laptop7_150.specs.screenSize), 15, 'Laptop 7 屏幕尺寸归一化为 15 英寸');
-assert(laptop7_150.specs.cpuModel.includes('高通骁龙® X Elite'), 'Laptop 7 15 英寸搭载骁龙 X Elite 旗舰核心');
+assert(laptop7_150.specs.cpuModel.includes('X Elite'), 'Laptop 7 15 英寸搭载骁龙 X Elite 旗舰核心');
 
 // 检验商用版新增机型: Surface Laptop 13 英寸 商用版 - Intel 版
 const laptop13_intel_biz = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch-intel-biz');

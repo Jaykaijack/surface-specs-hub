@@ -60,7 +60,7 @@ function walkFiles(dir, base = dir, acc = []) {
 }
 
 // 构建前执行门禁；这些检查不代表参数真实性认证。
-for (const script of ['tests/test-runner.js', 'tests/review-regression.test.js', 'tests/evidence-delivery.test.js', 'scripts/preflight_check.js']) {
+for (const script of ['tests/test-runner.js', 'tests/review-regression.test.js', 'tests/field-audit-completion.test.js', 'tests/evidence-delivery.test.js', 'scripts/preflight_check.js']) {
   require('child_process').execFileSync(process.execPath, [path.join(ROOT, script)], {cwd: ROOT, stdio: 'inherit'});
 }
 

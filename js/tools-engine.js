@@ -880,7 +880,7 @@ const ToolsEngine = {
       const specOf = (key) => this.spec(dev, key);
       const shot = Catalog.portrait(dev);
       const price = specOf('startingPriceCny');
-      const priceLabel = !price || price === 'not_disclosed' || price === 'not_applicable' ? '官方未标价' : price;
+      const priceLabel = !price || price === 'not_disclosed' || price === 'not_applicable' ? '价格待核验' : price;
       const points = (typeof Catalog.highlights === 'function' ? Catalog.highlights(dev) : []).map(item => `<li>${item}</li>`).join('');
       const audience = typeof Catalog.audience === 'function' ? Catalog.audience(dev) : '';
       const caveat = this.guideCaveat(dev);
@@ -909,7 +909,7 @@ const ToolsEngine = {
           <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px;">
             ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge" style="background:var(--ms-accent-subtle); color:var(--ms-accent); border:1px solid var(--ms-accent-border);">
-              ${specOf('cpuModel') || '处理器官方未披露'}
+              ${specOf('cpuModel') || '处理器待核验'}
             </span>
             ${specOf('npuTops') && specOf('npuTops') !== '—' ? `<span class="spec-badge">NPU ${specOf('npuTops')}</span>` : ''}
           </div>
@@ -1072,7 +1072,7 @@ const ToolsEngine = {
             <span style="font-size:13px; font-weight:600;">选择主力机型：</span>
             <select class="fluent-btn" style="padding:6px 12px; font-size:13px; cursor:pointer;" onchange="ToolsEngine.onWeightOptionChange('device', this.value)">
               ${devices.map(d => `
-                <option value="${d.id}" ${d.id === currentDev.id ? 'selected' : ''}>${d.name} (${this.spec(d, 'weight') || '约900g'})</option>
+                <option value="${d.id}" ${d.id === currentDev.id ? 'selected' : ''}>${d.name} (${this.spec(d, 'weight') || '重量待核验'})</option>
               `).join('')}
             </select>
           </div>
@@ -1255,8 +1255,8 @@ const ToolsEngine = {
             </tr>
             <tr>
               <td class="compat-device-label">外勤续航时间</td>
-              <td>${oldOf('batteryLifeOffice') || oldOf('batteryLifeVideo') || '官方未披露'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('batteryLifeOffice') || newOf('batteryLifeVideo') || '官方未披露'}</td>
+              <td>${oldOf('batteryLifeOffice') || oldOf('batteryLifeVideo') || '待核验'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('batteryLifeOffice') || newOf('batteryLifeVideo') || '待核验'}</td>
               <td style="text-align:left; color:#107c41; font-weight:600;">🔋 按官方续航口径比较，实际表现会受设置和使用方式影响</td>
             </tr>
             <tr>

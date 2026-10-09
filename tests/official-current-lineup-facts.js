@@ -1,5 +1,4 @@
-/** Regression expectations revised from individually scoped 2026-10-09 official-source review.
- * GLOBAL fields are not China SKU certification; conflicts are NULL. See full-model-source-review-20261009.json. */
+/** Audited fields use exhaustive frozen decision tests; remaining expectations below retain prior scope. */
 const OFFICIAL_CURRENT_LINEUP_FACTS = {
   "fetchedAt": "2026-09-21",
   "sources": {
@@ -65,167 +64,58 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "Intel",
         "酷睿"
       ],
-      "npuTopsContains": "80",
-      "batteryLifeVideoContains": "15.5",
-      "batteryLifeOfficeContains": "11.5",
-      "chargingPowerContains": "39",
-      "brightnessContains": "900",
       "storageMustInclude": "512",
       "colorNames": [
         "亮铂金",
         "典雅黑",
         "沙漫金"
       ],
-      "dimensionsContains": "209",
-      "weightContains": "895",
-      "resolutionContains": "2880",
-      "refreshRateContains": "120",
       "screenSizeContains": "13",
       "ramMustInclude": [
         "16",
         "24",
         "64"
       ],
-      "usbMustInclude": "USB-C",
-      "wifiMustInclude": "Wi-Fi 7",
-      "osMustInclude": "家庭",
-      "osMustNotInclude": [
-        "x86-64",
-        "专业"
-      ],
-      "warrantyContains": "2",
-      "rearCameraContains": "1000",
-      "rearCameraMustNotInclude": "1200",
-      "frontCameraContains": "1440",
-      "speakersContains": "2",
-      "cellularContains": "5G",
-      "cellularMustNotInclude": [
-        "双 eSIM",
-        "Sub-6"
-      ],
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
       "specContains": {
-        "copilotPlus": "Copilot",
-        "ppi": "267",
-        "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "Vivid"
-        ],
-        "windowsHello": "Hello",
-        "microphones": "Studio",
-        "audioTech": "Atmos",
-        "surfaceConnect": "Connect",
-        "ssdRemovable": "可拆卸",
-        "chassisMaterial": "阳极氧化",
-        "kickstandType": "165",
-        "touchAndPenProtocol": [
-          "10",
-          "MPP"
-        ],
-        "gpuModel": "Adreno",
-        "npuModel": "Hexagon",
-        "fastCharging": [
-          "60",
-          "65"
-        ],
         "cpuCores": [
           "10",
           "12"
-        ],
-        "usbPorts": [
-          "USB-C",
-          "USB4",
-          "DisplayPort"
-        ],
-        "thunderboltSupport": "USB4",
-        "chargingPower": "39"
+        ]
       },
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
-        "expandableStorage": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
+        "expandableStorage": "NOT_APPLICABLE"
       },
-      "batteryCapacityState": "NULL"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-12-inch": {
       "startingPriceContains": "6,788",
       "cpuMustInclude": [
         "X Plus"
       ],
-      "npuTopsContains": "45",
-      "batteryLifeVideoContains": "16",
-      "batteryLifeOfficeContains": "12",
-      "batteryCapacityContains": "38",
-      "brightnessContains": "400",
-      "chargingPowerContains": "27",
-      "dimensionsContains": "274",
-      "weightContains": "686",
-      "resolutionContains": "2196",
-      "refreshRateContains": "90",
-      "screenSizeContains": "12",
       "ramMustInclude": [
         "8",
         "16"
       ],
       "ramMustNotInclude": "24",
       "storageMustInclude": "256",
-      "usbMustInclude": "USB-C",
-      "wifiMustInclude": "Wi-Fi 7",
-      "osMustInclude": "家庭",
-      "osMustNotInclude": "专业",
-      "warrantyContains": "2",
-      "rearCameraContains": "1000",
-      "frontCameraContains": "1080",
       "cellularState": "NOT_APPLICABLE",
       "keyboardWeightState": "NOT_DISCLOSED",
       "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
-      "speakersContains": "2",
       "repairabilityState": "NOT_DISCLOSED",
-      "specContains": {
-        "copilotPlus": "Copilot",
-        "ppi": "220",
-        "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "增强"
-        ],
-        "windowsHello": "Hello",
-        "microphones": "Studio",
-        "audioTech": "Atmos",
-        "chassisMaterial": "阳极氧化",
-        "kickstandType": "165",
-        "touchAndPenProtocol": "10",
-        "gpuModel": "Adreno",
-        "npuModel": "Hexagon",
-        "fastCharging": "45",
-        "cpuCores": "8",
-        "panelTech": "LCD",
-        "usbPorts": [
-          "USB-C",
-          "USB 3.2",
-          "DisplayPort"
-        ],
-        "chargingPower": [
-          "27",
-          "45"
-        ]
-      },
+      "specContains": {},
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE",
         "surfaceConnect": "NOT_APPLICABLE",
-        "thunderboltSupport": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
+        "thunderboltSupport": "NOT_APPLICABLE"
       },
-      "usbMustNotInclude": [
-        "USB4",
-        "雷电"
-      ]
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-12-13-intel": {
       "startingPriceContains": "16,888",
@@ -268,7 +158,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "267",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -303,7 +192,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-12-13-snap": {
       "startingPriceContains": "15,488",
@@ -343,7 +233,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "keyboardWeightState": "NOT_DISCLOSED",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "267",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -376,13 +265,13 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
           "USB4",
           "DisplayPort"
         ],
-        "thunderboltSupport": "USB4",
         "chargingPower": "39"
       },
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-8-138": {
       "startingPriceContains": "11,488",
@@ -397,72 +286,38 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       ],
       "npuTopsContains": "80",
       "batteryLifeVideoContains": "20",
-      "batteryLifeOfficeContains": "16",
-      "chargingPowerContains": "39",
-      "batteryCapacityContains": "54",
-      "brightnessContains": "600",
       "storageMustInclude": "512",
       "ramMustInclude": [
         "16",
         "24",
         "64"
       ],
-      "resolutionContains": "2304",
       "refreshRateContains": "120",
       "screenSizeContains": "13.8",
-      "usbMustInclude": "USB-A",
-      "wifiMustInclude": "Wi-Fi 7",
-      "dimensionsContains": "301",
       "weightState": "NOT_DISCLOSED",
-      "osMustInclude": "家庭",
-      "osMustNotInclude": "x86-64",
-      "warrantyContains": "2",
-      "frontCameraContains": "1080",
       "cellularState": "NOT_APPLICABLE",
       "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
-      "speakersContains": "Omnisonic",
       "repairabilityState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "201",
         "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "Vivid"
-        ],
         "headphoneJack": "3.5",
-        "windowsHello": "Hello",
-        "microphones": "Studio",
-        "audioTech": "Atmos",
         "surfaceConnect": "Connect",
-        "ssdRemovable": "可拆卸",
-        "chassisMaterial": "阳极氧化",
         "touchAndPenProtocol": [
           "触控",
           "不支持触控笔"
         ],
-        "gpuModel": "Adreno",
         "npuModel": "Hexagon",
-        "thunderboltSupport": "USB4",
-        "fastCharging": [
-          "60",
-          "65"
-        ],
         "cpuCores": [
           "10",
           "12"
-        ],
-        "usbPorts": [
-          "USB4",
-          "USB-A",
-          "Surface Connect"
-        ],
-        "chargingPower": "39"
+        ]
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-8-150": {
       "startingPriceContains": "12,888",
@@ -477,143 +332,59 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       ],
       "npuTopsContains": "80",
       "batteryLifeVideoContains": "19",
-      "batteryLifeOfficeContains": "14",
-      "chargingPowerContains": "65",
-      "batteryCapacityContains": "66",
-      "brightnessContains": "600",
       "ramMustInclude": "32",
       "storageMustInclude": "512",
       "storageMustNotInclude": "256",
       "refreshRateContains": "120",
       "screenSizeContains": "15",
-      "usbMustInclude": [
-        "USB-A",
-        "MicroSD"
-      ],
-      "wifiMustInclude": "Wi-Fi 7",
-      "dimensionsContains": "329",
       "weightState": "NOT_DISCLOSED",
-      "osMustInclude": "家庭",
-      "osMustNotInclude": "x86-64",
-      "warrantyContains": "2",
-      "frontCameraContains": "1080",
       "cellularState": "NOT_APPLICABLE",
       "officialDocUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
-      "speakersContains": "Omnisonic",
       "repairabilityState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "262",
         "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "Vivid"
-        ],
         "headphoneJack": "3.5",
-        "windowsHello": "Hello",
-        "microphones": "Studio",
-        "audioTech": "Atmos",
         "surfaceConnect": "Connect",
-        "ssdRemovable": "可拆卸",
-        "chassisMaterial": "阳极氧化",
         "touchAndPenProtocol": [
           "触控",
           "不支持触控笔"
         ],
-        "gpuModel": "Adreno",
         "npuModel": "Hexagon",
-        "thunderboltSupport": "USB4",
         "expandableStorage": "MicroSD",
-        "fastCharging": [
-          "60",
-          "65"
-        ],
         "cpuCores": [
           "10",
           "12"
-        ],
-        "usbPorts": [
-          "USB4",
-          "USB-A",
-          "Surface Connect"
-        ],
-        "chargingPower": "65"
+        ]
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE"
       },
-      "resolutionState": "NULL"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-13-inch": {
       "startingPriceContains": "7,788",
       "cpuMustInclude": [
         "X Plus"
       ],
-      "npuTopsContains": "45",
-      "batteryLifeVideoContains": "23",
-      "batteryLifeOfficeContains": "16",
       "surfaceConnectState": "NOT_APPLICABLE",
-      "batteryCapacityContains": "50",
-      "brightnessContains": "400",
-      "dimensionsContains": "285.65",
-      "weightContains": "1220",
-      "resolutionContains": "1920",
-      "refreshRateContains": "60",
-      "screenSizeContains": "13",
-      "usbMustInclude": "USB-A",
-      "wifiMustInclude": "Wi-Fi 7",
       "ramMustInclude": [
         "8",
         "16"
       ],
       "storageMustInclude": "256",
-      "chargingPowerContains": "45",
-      "osMustInclude": "家庭",
-      "warrantyContains": "2",
-      "frontCameraContains": "1080",
       "cellularState": "NOT_APPLICABLE",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
-      "speakersContains": "Omnisonic",
-      "speakersMustNotInclude": [
-        "Atmos",
-        "全景声"
-      ],
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
-      "specContains": {
-        "copilotPlus": "Copilot",
-        "ppi": "178",
-        "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "增强"
-        ],
-        "headphoneJack": "3.5",
-        "windowsHello": "Hello",
-        "microphones": "Studio",
-        "audioTech": "Audio",
-        "chassisMaterial": "阳极氧化",
-        "touchAndPenProtocol": "10",
-        "gpuModel": "Adreno",
-        "npuModel": "Hexagon",
-        "fastCharging": "60",
-        "cpuCores": "8",
-        "ssdRemovable": "可拆",
-        "usbPorts": [
-          "USB-C",
-          "USB 3.2",
-          "USB-A",
-          "DisplayPort"
-        ],
-        "chargingPower": "45"
-      },
+      "specContains": {},
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE",
         "surfaceConnect": "NOT_APPLICABLE",
-        "thunderboltSupport": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
-      }
+        "thunderboltSupport": "NOT_APPLICABLE"
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-8-138-intel": {
       "startingPriceContains": "16,888",
@@ -642,8 +413,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "resolutionContains": "2304",
       "refreshRateContains": "120",
       "screenSizeContains": "13.8",
-      "usbMustInclude": "USB-A",
-      "wifiMustInclude": "Wi-Fi 7",
       "ramMustInclude": [
         "16",
         "64"
@@ -657,13 +426,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "201",
         "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "Vivid"
-        ],
         "headphoneJack": "3.5",
         "windowsHello": "Hello",
         "microphones": "Studio",
@@ -674,23 +438,17 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "touchAndPenProtocol": "10",
         "gpuModel": "图形处理器",
         "npuModel": "AI Boost",
-        "thunderboltSupport": "Thunderbolt",
         "fastCharging": [
           "60",
           "65"
-        ],
-        "usbPorts": [
-          "USB-C",
-          "USB-A",
-          "Thunderbolt",
-          "DisplayPort"
         ],
         "chargingPower": "39"
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-8-138-snap": {
       "startingPriceContains": "14,888",
@@ -701,8 +459,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "npuTopsContains": "80",
       "batteryLifeVideoContains": "20",
       "batteryLifeOfficeContains": "16",
-      "chargingPowerContains": "39",
-      "batteryCapacityContains": "54",
       "brightnessContains": "600",
       "storageMustInclude": "256",
       "colorNames": [
@@ -714,27 +470,19 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "resolutionContains": "2304",
       "refreshRateContains": "120",
       "screenSizeContains": "13.8",
-      "usbMustInclude": "USB-A",
-      "wifiMustInclude": "Wi-Fi 7",
       "ramMustInclude": [
         "16",
         "64"
       ],
       "osMustInclude": "专业",
-      "warrantyContains": "3",
       "frontCameraContains": "1080",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
       "speakersContains": "Omnisonic",
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "201",
         "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "Vivid"
-        ],
         "headphoneJack": "3.5",
         "windowsHello": "Hello",
         "microphones": "Studio",
@@ -745,27 +493,16 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "touchAndPenProtocol": "10",
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
-        "thunderboltSupport": "USB4",
         "fastCharging": [
           "60",
           "65"
-        ],
-        "cpuCores": [
-          "10",
-          "12"
-        ],
-        "usbPorts": [
-          "USB-C",
-          "USB4",
-          "USB-A",
-          "DisplayPort"
-        ],
-        "chargingPower": "39"
+        ]
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-8-150-intel": {
       "startingPriceState": "NOT_DISCLOSED",
@@ -804,7 +541,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "262",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -821,8 +557,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "touchAndPenProtocol": "10",
         "gpuModel": "图形处理器",
         "npuModel": "AI Boost",
-        "thunderboltSupport": "Thunderbolt",
-        "expandableStorage": "MicroSD",
         "fastCharging": [
           "60",
           "65"
@@ -837,7 +571,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-8-150-snap": {
       "startingPriceState": "NOT_DISCLOSED",
@@ -848,8 +583,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "npuTopsContains": "80",
       "batteryLifeVideoContains": "19",
       "batteryLifeOfficeContains": "14",
-      "chargingPowerContains": "65",
-      "batteryCapacityContains": "66",
       "brightnessContains": "600",
       "storageMustInclude": "256",
       "resolutionContains": "3270",
@@ -867,14 +600,12 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "64"
       ],
       "osMustInclude": "专业",
-      "warrantyContains": "3",
       "frontCameraContains": "1080",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
       "speakersContains": "Omnisonic",
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "262",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -891,26 +622,20 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "touchAndPenProtocol": "10",
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
-        "thunderboltSupport": "USB4",
-        "expandableStorage": "MicroSD",
         "fastCharging": [
           "60",
           "65"
-        ],
-        "cpuCores": [
-          "10",
-          "12"
         ],
         "usbPorts": [
           "USB-C",
           "USB4",
           "USB-A"
-        ],
-        "chargingPower": "65"
+        ]
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-12-inch-biz": {
       "startingPriceContains": "9,788",
@@ -920,8 +645,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "npuTopsContains": "45",
       "batteryLifeVideoContains": "16",
       "batteryLifeOfficeContains": "12",
-      "batteryCapacityContains": "38",
-      "chargingPowerContains": "45",
       "brightnessContains": "400",
       "dimensionsContains": "274",
       "weightContains": "686",
@@ -930,18 +653,15 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "refreshRateContains": "90",
       "screenSizeContains": "12",
       "storageMustInclude": "1TB",
-      "usbMustInclude": "USB-C",
       "wifiMustInclude": "Wi-Fi 7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
-      "warrantyContains": "3",
       "osMustInclude": "专业",
       "frontCameraContains": "1080",
       "rearCameraContains": "1000",
       "speakersContains": "2",
       "cellularState": "NOT_APPLICABLE",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "220",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -951,33 +671,21 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "windowsHello": "Hello",
         "microphones": "Studio",
         "audioTech": "Atmos",
-        "chassisMaterial": "阳极氧化",
-        "kickstandType": "165",
         "touchAndPenProtocol": "10",
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
         "fastCharging": "45",
         "cpuCores": "8",
-        "panelTech": "LCD",
-        "usbPorts": [
-          "USB-C 3.2",
-          "DisplayPort 2.1",
-          "16GB"
-        ],
-        "chargingPower": "45"
+        "panelTech": "LCD"
       },
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE",
         "surfaceConnect": "NOT_APPLICABLE",
         "thunderboltSupport": "NOT_APPLICABLE",
-        "ssdRemovable": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
+        "ssdRemovable": "NOT_APPLICABLE"
       },
-      "usbMustNotInclude": [
-        "USB4",
-        "雷电"
-      ]
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-13-inch-biz": {
       "startingPriceContains": "10,788",
@@ -988,14 +696,12 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "batteryLifeVideoContains": "23",
       "batteryLifeOfficeContains": "16",
       "batteryCapacityContains": "50",
-      "chargingPowerContains": "45",
       "brightnessContains": "400",
       "dimensionsContains": "285.65",
       "weightContains": "1.22",
       "resolutionContains": "1920",
       "refreshRateContains": "60",
       "screenSizeContains": "13",
-      "usbMustInclude": "USB-A",
       "wifiMustInclude": "Wi-Fi 7",
       "ramMustInclude": "24",
       "storageMustInclude": "256",
@@ -1010,7 +716,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "全景声"
       ],
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "178",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -1031,20 +736,17 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "cpuCores": "8",
         "usbPorts": [
           "USB-C",
-          "USB 3.2",
-          "USB-A",
-          "DisplayPort"
-        ],
-        "chargingPower": "45"
+          "USB3.2"
+        ]
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE",
         "surfaceConnect": "NOT_APPLICABLE",
         "thunderboltSupport": "NOT_APPLICABLE",
-        "cpuArch": "NULL",
         "ssdRemovable": "NULL"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-13-inch-intel-biz": {
       "startingPriceContains": "10,188",
@@ -1067,7 +769,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "resolutionContains": "1920",
       "refreshRateContains": "60",
       "screenSizeContains": "13",
-      "usbMustInclude": "USB-A",
       "wifiMustInclude": "Wi-Fi 7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13-inch-for-business",
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-13-inch-features",
@@ -1082,33 +783,13 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "178",
         "aspectRatio": "3:2",
-        "colorSupport": [
-          "sRGB",
-          "增强"
-        ],
-        "headphoneJack": "3.5",
         "windowsHello": "Hello",
-        "microphones": "Studio",
-        "audioTech": "Audio",
-        "chassisMaterial": "阳极氧化",
         "touchAndPenProtocol": "10",
         "gpuModel": "图形处理器",
         "npuModel": "AI Boost",
-        "ssdRemovable": "可拆",
         "fastCharging": "60",
-        "cpuArch": [
-          "64",
-          "18A"
-        ],
-        "usbPorts": [
-          "USB-C",
-          "USB 3.2",
-          "USB-A",
-          "DisplayPort"
-        ],
         "chargingPower": "45"
       },
       "specState": {
@@ -1117,7 +798,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "surfaceConnect": "NOT_APPLICABLE",
         "thunderboltSupport": "NOT_APPLICABLE",
         "ramSpec": "NULL"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-11-biz-snap": {
       "startingPriceContains": "11,239",
@@ -1130,11 +812,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "135U"
       ],
       "npuTopsContains": "45",
-      "batteryLifeVideoContains": "14",
-      "batteryLifeOfficeContains": "10",
       "batteryCapacityContains": "47",
-      "chargingPowerContains": "39",
-      "brightnessContains": "600",
       "dimensionsContains": "287",
       "weightContains": "895",
       "resolutionContains": "2880",
@@ -1143,7 +821,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "ramMustInclude": "16",
       "ramMustNotInclude": "64",
       "storageMustInclude": "256",
-      "usbMustInclude": "USB-C",
       "wifiMustInclude": "Wi-Fi 7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs",
@@ -1155,7 +832,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "cellularContains": "5G",
       "cellularMustNotInclude": "eSIM",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "267",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -1166,7 +842,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "microphones": "麦克",
         "audioTech": "Atmos",
         "surfaceConnect": "Surface Connect",
-        "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "kickstandType": "165",
         "touchAndPenProtocol": "10",
@@ -1176,20 +851,13 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "cpuCores": [
           "10",
           "12"
-        ],
-        "usbPorts": [
-          "USB-C",
-          "USB4",
-          "DisplayPort"
-        ],
-        "thunderboltSupport": "USB4",
-        "chargingPower": "39"
+        ]
       },
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
-        "expandableStorage": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
-      }
+        "expandableStorage": "NOT_APPLICABLE"
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-11-biz-intel": {
       "startingPriceContains": "14,488",
@@ -1202,10 +870,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "11.5"
       ],
       "npuTopsContains": "40",
-      "batteryLifeVideoContains": "14",
-      "batteryLifeOfficeContains": "10",
       "batteryCapacityContains": "47",
-      "chargingPowerContains": "39",
       "brightnessContains": "600",
       "dimensionsContains": "287",
       "weightContains": "872",
@@ -1214,7 +879,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "screenSizeContains": "13",
       "ramMustInclude": "16",
       "storageMustInclude": "256",
-      "usbMustInclude": "USB-C",
       "wifiMustInclude": "Wi-Fi7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs",
@@ -1225,7 +889,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "speakersContains": "2",
       "cellularState": "NOT_DISCLOSED",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "267",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -1236,25 +899,19 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "microphones": "Studio",
         "audioTech": "Atmos",
         "surfaceConnect": "Surface Connect",
-        "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "kickstandType": "165",
         "touchAndPenProtocol": "10",
         "gpuModel": "Arc",
         "npuModel": "AI Boost",
         "thunderboltSupport": "Thunderbolt",
-        "usbPorts": [
-          "USB-C",
-          "Thunderbolt4"
-        ],
-        "chargingPower": "39",
         "fastCharging": "60W"
       },
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
-        "expandableStorage": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
-      }
+        "expandableStorage": "NOT_APPLICABLE"
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-7-biz-snap": {
       "startingPriceContains": "11,329",
@@ -1270,8 +927,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "batteryLifeVideoContains": "20",
       "batteryLifeOfficeContains": "13",
       "batteryCapacityContains": "54",
-      "chargingPowerContains": "39",
-      "brightnessContains": "600",
       "dimensionsContains": "301",
       "weightContains": "1.34",
       "resolutionContains": "2304",
@@ -1280,7 +935,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "ramMustInclude": "16",
       "ramMustNotInclude": "64",
       "storageMustInclude": "256",
-      "usbMustInclude": "USB-A",
       "wifiMustInclude": "Wi-Fi7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
@@ -1292,7 +946,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "Atmos"
       ],
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "201",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -1304,29 +957,21 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "microphones": "麦克",
         "audioTech": "Atmos",
         "surfaceConnect": "Surface Connect",
-        "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "touchAndPenProtocol": "10",
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
-        "thunderboltSupport": "USB4",
         "expandableStorage": "MicroSD",
-        "fastCharging": "65",
         "cpuCores": [
           "10",
           "12"
-        ],
-        "usbPorts": [
-          "USB-C",
-          "USB4",
-          "USB-A",
-          "DisplayPort"
         ]
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
-      }
+        "fastCharging": "NULL"
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-7-biz-intel": {
       "startingPriceContains": "14,488",
@@ -1342,7 +987,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "batteryLifeVideoContains": "20",
       "batteryLifeOfficeContains": "12",
       "batteryCapacityContains": "54",
-      "chargingPowerContains": "39",
       "brightnessContains": "600",
       "dimensionsContains": "301",
       "weightContains": "1.35",
@@ -1352,7 +996,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "ramMustInclude": "16",
       "ramMustNotInclude": "64",
       "storageMustInclude": "256",
-      "usbMustInclude": "USB-A",
       "wifiMustInclude": "Wi-Fi7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs",
@@ -1361,7 +1004,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "frontCameraContains": "1080",
       "speakersContains": "Omnisonic",
       "specContains": {
-        "copilotPlus": "Copilot",
         "ppi": "201",
         "aspectRatio": "3:2",
         "colorSupport": [
@@ -1373,7 +1015,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "microphones": "Studio",
         "audioTech": "Atmos",
         "surfaceConnect": "Surface Connect",
-        "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "touchAndPenProtocol": "10",
         "gpuModel": "Arc",
@@ -1383,15 +1024,14 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "fastCharging": "60W",
         "usbPorts": [
           "USB-C",
-          "Thunderbolt",
-          "USB-A",
-          "DisplayPort"
+          "USB4",
+          "DP 2.1"
         ]
       },
       "specState": {
-        "kickstandType": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
-      }
+        "kickstandType": "NOT_APPLICABLE"
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "hub-3": {
       "startingPriceState": "NOT_DISCLOSED",
@@ -1401,7 +1041,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "batteryCapacityState": "NOT_APPLICABLE",
       "batteryLifeOfficeState": "NOT_APPLICABLE",
       "batteryLifeVideoState": "NOT_APPLICABLE",
-      "chargingPowerContains": "445",
       "dimensionsContains": "741",
       "weightContains": "28",
       "ramMustInclude": "32",
@@ -1412,7 +1051,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "wifiMustInclude": "Wi-Fi 5",
       "officialDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-      "warrantyContains": "1",
       "osMustInclude": "Windows 11",
       "frontCameraContains": "4K",
       "speakersContains": "三",
@@ -1431,7 +1069,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "npuModel": "NOT_APPLICABLE",
         "copilotPlus": "NOT_APPLICABLE",
         "fastCharging": "NOT_APPLICABLE"
-      }
+      },
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-12-inch-2": {
       "specState": {
@@ -1481,13 +1120,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       ],
       "npuTopsContains": "80",
       "batteryLifeVideoContains": "22.5",
-      "batteryLifeOfficeContains": "18",
-      "batteryCapacityContains": "50",
-      "brightnessContains": "500",
       "chargingPowerContains": "45",
-      "dimensionsContains": "285.65",
-      "weightContains": "1.22",
-      "resolutionContains": "1920",
       "refreshRateContains": "60",
       "screenSizeContains": "13",
       "ramMustInclude": [
@@ -1505,30 +1138,20 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
           "USB 3.2",
           "USB-A"
         ],
-        "fastCharging": [
-          "60W"
-        ],
         "storageOptions": [
           "256 GB",
           "512 GB"
-        ],
-        "ssdRemovable": [
-          "可拆卸",
-          "256GB",
-          "512GB"
         ]
       },
       "usbMustInclude": "USB 3.2",
-      "wifiMustInclude": "Wi-Fi 7",
-      "osMustInclude": "家庭",
-      "frontCameraContains": "1080",
       "cellularState": "NOT_APPLICABLE",
       "colorNames": [
         "罗兰紫",
         "亮铂金",
         "典雅黑"
       ],
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop"
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop",
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "laptop-ultra": {
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra"
@@ -1543,8 +1166,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "128"
       ],
       "warrantyContains": "3",
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business"
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
+      "fieldAudit": "field-audit-1131-decisions-20261009.json"
     }
   }
 };
-if(typeof module!=="undefined"&&module.exports)module.exports=OFFICIAL_CURRENT_LINEUP_FACTS;
+module.exports=OFFICIAL_CURRENT_LINEUP_FACTS;

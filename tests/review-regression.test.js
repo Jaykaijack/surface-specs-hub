@@ -222,6 +222,6 @@ for (const d of Catalog.listDevices()) for (const conflict of d.dataConflicts ||
  assert.equal(t.spec(d,conflict.field),null);
  assert.equal(App.spec(d,conflict.field),null);
 }
-assert.match(App.spec(Catalog.getDevice('laptop-13-inch'),'weightGrams'),/待核验/);
+assert.equal(App.spec(Catalog.getDevice('laptop-13-inch'),'weightGrams'),null,'逐项审查未支持的重量必须屏蔽');
 assert.equal(Catalog.getSpec({specs:{wifi:'wrong'},dataConflicts:[{field:'wifi'}]},'wireless'),undefined);
 console.log('Uncertainty paths PASS: conflicts masked, pending labels, no unverified numeric differences, bounded summaries preserved');
