@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T10:04:18.845Z",
+  "generatedAt": "2026-10-09T10:10:23.874Z",
   "datasetVersion": "2026.10.09.source-review",
   "canClaimSafe100Percent": false,
   "scope": "90 devices; 6106 spec fields; snapshot only",
@@ -56431,16 +56431,16 @@
     },
     {
       "deviceId": "pro-8-biz",
-      "field": "cpuModel",
-      "value": "第 11 代英特尔® 酷睿™ i5-1135G7 / i7-1185G7",
-      "valueHash": "fd59204e4ce9b1362e19a35e2fc160918988bf92539fdd002838986914a1dc1e",
-      "region": "CN",
       "configuration": "pro-8-biz",
-      "configurationScope": "设备记录；具体 SKU 适用性未逐项核验",
-      "reviewedAt": null,
-      "verdict": "PENDING",
-      "sourceUrl": null,
-      "reason": "未绑定当前值的逐字段证据；旧来源链接不构成真实性核验"
+      "field": "cpuModel",
+      "value": "商用：i3-1115G4（Wi-Fi）；i5-1145G7 / i7-1185G7（Wi-Fi或LTE，地区上市另核验）",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+      "sourceLocator": "PDF page2, Commercial CPU lines56–60",
+      "region": "GLOBAL",
+      "configurationScope": "全球2021 Pro8事实表第2页Commercial CPU栏，非国行SKU销售认证",
+      "reviewedAt": "2026-10-09",
+      "verdict": "VERIFIED",
+      "valueHash": "25b6d6df2cf0b37000b465aed8784c6a405b4786a6ace78f775a9119f3e0ca9f"
     },
     {
       "deviceId": "pro-8-biz",

@@ -3,8 +3,8 @@
   "devices": 90,
   "modelsWithSourceChecks": 90,
   "total": 6106,
-  "verified": 1032,
-  "pending": 5074,
+  "verified": 1033,
+  "pending": 5073,
   "records": [
     {
       "deviceId": "laptop-ultra-biz",
@@ -6459,8 +6459,8 @@
       "deviceId": "pro-8-biz",
       "name": "Surface Pro 8 商用版",
       "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "verified": 1,
+      "pending": 67,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -6472,7 +6472,6 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",

@@ -530,7 +530,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
     },
     "pro-8-biz": {
       "cpuMustInclude": [
-        "1135G7",
+        "1115G4",
+        "1145G7",
         "1185G7"
       ],
       "ramMustInclude": "LPDDR4x",

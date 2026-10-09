@@ -1,9 +1,9 @@
 {
   "notice": "逐字段待办与材料缺口；不是已逐项完成事实认证。原文捕获失败不代表网页不存在，部分web文字仍可读取；未把待办伪装成已核验。",
-  "generatedAt": "2026-10-09T10:05:42.245Z",
+  "generatedAt": "2026-10-09T10:10:23.980Z",
   "total": 6106,
-  "verified": 1032,
-  "remaining": 5074,
+  "verified": 1033,
+  "remaining": 5073,
   "entries": [
     {
       "deviceId": "laptop-ultra-biz",
@@ -60999,21 +60999,6 @@
       "deviceId": "pro-8-biz",
       "field": "osAtLaunch",
       "valueHash": "5db3ed4b0e373807db7140016a1d76708b2fe2e4b4a6ab1e6fb74c67bd4bb88f",
-      "state": "NOT_REVIEWED_FIELD",
-      "sourceReviewRef": "full-model-source-review-20261009.json#pro-8-biz",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-8-biz",
-      "field": "cpuModel",
-      "valueHash": "fd59204e4ce9b1362e19a35e2fc160918988bf92539fdd002838986914a1dc1e",
       "state": "NOT_REVIEWED_FIELD",
       "sourceReviewRef": "full-model-source-review-20261009.json#pro-8-biz",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",

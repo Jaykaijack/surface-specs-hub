@@ -7670,6 +7670,18 @@
       "configurationScope": "美国官方页面指定SeriesX容量/光驱SKU；不认证中国销售",
       "reviewedAt": "2026-10-09",
       "verdict": "VERIFIED"
+    },
+    {
+      "deviceId": "pro-8-biz",
+      "configuration": "pro-8-biz",
+      "field": "cpuModel",
+      "value": "商用：i3-1115G4（Wi-Fi）；i5-1145G7 / i7-1185G7（Wi-Fi或LTE，地区上市另核验）",
+      "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+      "sourceLocator": "PDF page2, Commercial CPU lines56–60",
+      "region": "GLOBAL",
+      "configurationScope": "全球2021 Pro8事实表第2页Commercial CPU栏，非国行SKU销售认证",
+      "reviewedAt": "2026-10-09",
+      "verdict": "VERIFIED"
     }
   ],
   "attempts": [

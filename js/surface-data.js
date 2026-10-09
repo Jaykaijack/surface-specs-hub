@@ -14832,7 +14832,7 @@ const SURFACE_DATA = {
         "chassisMaterial": "签名氧化铝",
         "kickstandType": "not_disclosed",
         "osAtLaunch": "Windows 11 专业版",
-        "cpuModel": "第 11 代英特尔® 酷睿™ i5-1135G7 / i7-1185G7",
+        "cpuModel": "商用：i3-1115G4（Wi-Fi）；i5-1145G7 / i7-1185G7（Wi-Fi或LTE，地区上市另核验）",
         "cpuArch": "64 位 / 10 nm SuperFin",
         "cpuCores": "not_disclosed",
         "gpuModel": "Intel® Iris® Xe Graphics",
@@ -14891,7 +14891,20 @@ const SURFACE_DATA = {
         "officialCommercialConfigureUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
         "lastVerified": "2026-09-21"
       },
-      "unverifiedFields": []
+      "unverifiedFields": [],
+      "evidenceSources": [
+        "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf"
+      ],
+      "specEvidence": {
+        "cpuModel": {
+          "configuration": "pro-8-biz",
+          "value": "商用：i3-1115G4（Wi-Fi）；i5-1145G7 / i7-1185G7（Wi-Fi或LTE，地区上市另核验）",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球2021 Pro8事实表第2页Commercial CPU栏，非国行SKU销售认证",
+          "reviewedAt": "2026-10-09"
+        }
+      }
     },
     {
       "id": "laptop-5-biz",
