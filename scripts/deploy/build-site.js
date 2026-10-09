@@ -60,7 +60,7 @@ function walkFiles(dir, base = dir, acc = []) {
 }
 
 // 构建前执行门禁；这些检查不代表参数真实性认证。
-for (const script of ['tests/test-runner.js', 'tests/review-regression.test.js', 'tests/field-audit-completion.test.js', 'tests/evidence-delivery.test.js', 'scripts/preflight_check.js']) {
+for (const script of ['tests/test-runner.js', 'tests/review-regression.test.js', 'tests/field-audit-completion.test.js', 'tests/evidence-delivery.test.js', 'tests/standalone-release.test.js', 'scripts/preflight_check.js']) {
   require('child_process').execFileSync(process.execPath, [path.join(ROOT, script)], {cwd: ROOT, stdio: 'inherit'});
 }
 
@@ -82,6 +82,7 @@ if (missingTop.length) {
 
 require('./generate-indexable')(OUT);
 const evidenceDelivery = require('./split-runtime-evidence')(OUT);
+require('./prepare-standalone').prepareStandalone(OUT);
 
 const delivery = require(path.join(ROOT, 'js', 'image-delivery.js'));
 
@@ -128,7 +129,9 @@ function collect(file, text, pattern) {
 for (const rel of files) {
   const abs = path.join(OUT, rel);
   if (/\.html$/i.test(rel)) {
-    const text = fs.readFileSync(abs, 'utf8');
+    // Inline JS contains HTML template strings; those are not document resource URLs.
+    // Keep script opening tags so real external src attributes are still checked.
+    const text = fs.readFileSync(abs, 'utf8').replace(/(<script\b[^>]*>)[\s\S]*?<\/script>/gi, '$1</script>');
     collect(rel, text, /<link[^>]+href=["']([^"']+)["']/gi);
     collect(rel, text, /<script[^>]+src=["']([^"']+)["']/gi);
     collect(rel, text, /<img[^>]+src=["']([^"']+)["']/gi);

@@ -5,7 +5,7 @@
  *   1. 运行 build-site.js 构建 dist/site/
  *   2. 运行 smoke-test.js 进行本地 HTTP 冒烟测试
  *   3. 打包 dist/site 并通过 SSH/SCP 同步到 grow-server (/opt/surface-specs-hub/site/)
- *   4. 同步更新离线单文件 surface-specs-hub-standalone.html
+ *   4. 离线单文件作为已校验的 dist/site 产物一并同步
  *   5. 验证远程 HTTPS 响应状态为 200
  *
  * 用法：
@@ -57,12 +57,8 @@ runRemote(`scp -O -o ConnectTimeout=15 -o ServerAliveInterval=5 "${tarPath}" gro
 console.log('\n🔄 [4/5] 服务器解压部署并更新文件权限...');
 runRemote('ssh -o ConnectTimeout=10 grow-server "tar -xzf /tmp/deploy-site.tar.gz -C /opt/surface-specs-hub/site && chmod -R 755 /opt/surface-specs-hub/site && rm -f /tmp/deploy-site.tar.gz"', '服务器解压部署');
 
-const standalonePath = path.join(ROOT, 'surface-specs-hub-standalone.html');
-if (fs.existsSync(standalonePath)) {
-  console.log('📄 同步更新单文件离线包至线上目录...');
-  runRemote(`scp -O -o ConnectTimeout=15 -o ServerAliveInterval=5 "${standalonePath}" grow-server:/opt/surface-specs-hub/site/surface-specs-hub-standalone.html`, '上传单文件离线包');
-  runRemote('ssh -o ConnectTimeout=10 grow-server "chmod 644 /opt/surface-specs-hub/site/surface-specs-hub-standalone.html"', '离线包权限设置');
-}
+// 离线文件已在构建时按源码/数据/证据哈希校验，随 dist/site 同包上传。
+// 不再单独上传可能陈旧的根目录稳定指针。
 
 if (fs.existsSync(tarPath)) fs.unlinkSync(tarPath);
 
