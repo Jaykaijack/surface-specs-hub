@@ -5,6 +5,7 @@ const registry = require('../../docs/full-library-verification-registry.json');
 const scoped = require('../../docs/evidence/review-batch-current-20261009.json');
 const access = require('../../docs/evidence/source-access-20261009.json');
 const readable = new Set(scoped.entries.map(e => e.sourceUrl));
+const full = require('../../docs/evidence/full-model-source-review-20261009.json');
 const devices = data.devices.map(d => {
   const rows = registry.entries.filter(e => e.deviceId === d.id);
   const pending = rows.filter(e => e.verdict !== 'VERIFIED');
@@ -15,13 +16,13 @@ const devices = data.devices.map(d => {
     remainingAvailability: readable.has(url) ? 'Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence' : 'No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability'
   }));
   return {deviceId:d.id, name:d.name, total:rows.length, verified:rows.length-pending.length,
-    pending:pending.length, pendingFields:pending.map(e => e.field), sources,
+    pending:pending.length, pendingFields:pending.map(e => e.field), sources, sourceChecks:full.attempts.filter(a=>a.deviceId===d.id),
     conflicts:d.dataConflicts || [], maskedFields:d.unverifiedFields || [],
     productFamilyEvidence:d.productFamilyEvidence || null};
 });
 fs.writeFileSync('docs/evidence/product-review-inventory-20261009.json', JSON.stringify({
   notice:'All device records inventoried, not all facts certified. Pending fields remain work items; source access failure is not nondisclosure or proof of incompatibility.',
-  devices:devices.length, total:registry.entries.length,
+  devices:devices.length, modelsWithSourceChecks:new Set(full.attempts.map(a=>a.deviceId)).size, total:registry.entries.length,
   verified:registry.entries.filter(e=>e.verdict==='VERIFIED').length,
   pending:registry.entries.filter(e=>e.verdict!=='VERIFIED').length,
   records:devices

@@ -365,7 +365,7 @@ const ComparisonEngine = {
         devicesToCompare.forEach(dev => {
           const rawVal = Catalog.getSpec(dev, field.key);
           const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
-          html += `<td class="spec-val-cell">${formattedVal}</td>`;
+          html += `<td class="spec-val-cell">${formattedVal}${Catalog.evidenceMarkup(dev, field.key)}</td>`;
         });
 
         html += `</tr>`;
@@ -687,7 +687,7 @@ const ComparisonEngine = {
         html += `
           <tr class="spec-accordion-row">
             <th scope="row" class="spec-param-name">${field.label}</th>
-            <td class="spec-val-cell">${formattedVal}</td>
+            <td class="spec-val-cell">${formattedVal}${Catalog.evidenceMarkup(dev, field.key)}</td>
           </tr>
         `;
       });

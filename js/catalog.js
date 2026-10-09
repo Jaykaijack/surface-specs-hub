@@ -715,6 +715,32 @@ const Catalog = (function () {
     img.src = deliveryUrl(shot.src, 'webp', pickWidth(widths, name));
   }
 
+  function evidenceFor(device, field) {
+    if (!device) return null;
+    const value = getSpec(device, field);
+    if (value == null) return null;
+    const keys = [field].concat(SPEC_ALIASES[field] || []);
+    for (const key of keys) {
+      const e = (device.specEvidence || {})[key];
+      if (!e || JSON.stringify(e.value) !== JSON.stringify(value)) continue;
+      if (e.sourceUrl !== device.specs.officialDocUrl && !(device.evidenceSources || []).includes(e.sourceUrl)) continue;
+      try {
+        const url = new URL(e.sourceUrl);
+        if (url.protocol !== 'https:' || !/^(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)$/.test(url.hostname)) continue;
+      } catch (_) { continue; }
+      return e;
+    }
+    return null;
+  }
+
+  function evidenceMarkup(device, field) {
+    const e = evidenceFor(device, field);
+    if (!e) return '<small class="field-evidence pending">当前值待绑定证据</small>';
+    const escape = value => String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const region = e.region === 'CN' ? '中国来源' : '海外/全球来源，非国行认证';
+    return `<details class="field-evidence"><summary>${region} · 已核对限定值</summary><p>${escape(e.configurationScope)}</p><a href="${escape(e.sourceUrl)}" target="_blank" rel="noopener noreferrer">官方来源</a> · ${escape(e.reviewedAt)}</details>`;
+  }
+
   return {
     version: function () { return version; },
     getDevice: getDevice,
@@ -722,6 +748,10 @@ const Catalog = (function () {
     listSeries: listSeries,
     accessories: accessories,
     getSpec: getSpec,
+    specKeys: device => Object.keys((device && device.specs) || {}),
+    rawSpec: (device, field) => device && device.specs ? device.specs[field] : undefined,
+    evidenceFor: evidenceFor,
+    evidenceMarkup: evidenceMarkup,
     specState: specState,
     presentSpec: presentSpec,
     presentDeviceSpec: presentDeviceSpec,

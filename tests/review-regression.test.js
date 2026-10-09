@@ -40,7 +40,7 @@ for(const budget of ['budget_entry','budget_mid','budget_high','budget_pro']) {
 const registry=JSON.parse(fs.readFileSync('docs/full-library-verification-registry.json'));
 const fields=SURFACE_DATA.devices.flatMap(d=>Object.entries(d.specs).map(([field,value])=>({d,field,value})));
 assert.equal(registry.entries.length,fields.length);
-for(const {d,field,value} of fields){const e=registry.entries.find(e=>e.deviceId===d.id&&e.field===field);assert.ok(e);assert.equal(e.valueHash,crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex'));assert.equal(e.region,e.verdict === 'VERIFIED' ? e.region : d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN'));assert.equal(e.configuration,d.id);if(e.verdict==='VERIFIED'){assert.ok(['CN','GLOBAL'].includes(e.region));assert.ok(e.reviewedAt&&e.sourceUrl);assert.equal(e.sourceUrl,d.specs.officialDocUrl);assert.ok(!(d.unverifiedFields || []).includes(field))}}
+for(const {d,field,value} of fields){const e=registry.entries.find(e=>e.deviceId===d.id&&e.field===field);assert.ok(e);assert.equal(e.valueHash,crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex'));assert.equal(e.region,e.verdict === 'VERIFIED' ? e.region : d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN'));assert.equal(e.configuration,d.id);if(e.verdict==='VERIFIED'){assert.ok(['CN','GLOBAL'].includes(e.region));assert.ok(e.reviewedAt&&e.sourceUrl);assert.ok(e.sourceUrl===d.specs.officialDocUrl||(d.evidenceSources||[]).includes(e.sourceUrl));assert.ok(!(d.unverifiedFields || []).includes(field))}}
 assert.equal(require('../js/verification-status').resolve('pro-12-13-intel').status,'pending');
 const evidence=require('../docs/evidence/ultra-business-cn-20261009.json');
 assert.equal(evidence.region,'CN');assert.equal(evidence.consumerOrOtherRegionApplicable,false);assert.equal(evidence.values.batteryCapacityWh.minimum,89);assert.equal(evidence.values.npuInt8Tops,null);
@@ -145,3 +145,23 @@ App.renderSurfaceAccessoriesView(accessoryView,"all");
 assert.doesNotMatch(accessoryView.innerHTML,/官方认证全量|零杜撰参数|完美支持/);
 const claimedIds=[...accessoryView.innerHTML.matchAll(/App.navigateToDetail\('', '([^']+)'\)/g)].map(m=>m[1]);
 for(const id of claimedIds)assert.ok(Catalog.accessories().some(a=>t.getCompatStatus(a.id,id).status==="FULL"));
+
+// Current-value certification must expire when the value or its allowed source changes.
+const fullReview=require('../docs/evidence/full-model-source-review-20261009.json');
+assert.equal(new Set(fullReview.attempts.map(a=>a.deviceId)).size,90);
+for(const d of Catalog.listDevices()) assert.ok(fullReview.attempts.some(a=>a.deviceId===d.id));
+for(const e of fullReview.entries){const d=Catalog.getDevice(e.deviceId);assert.deepEqual(d.specs[e.field],e.value);assert.ok(!(d.unverifiedFields||[]).includes(e.field));assert.ok(Catalog.evidenceFor(d,e.field));}
+const reviewedDevice=Catalog.getDevice('pro-7');
+const reviewFixture=JSON.parse(JSON.stringify(reviewedDevice));
+assert.match(Catalog.evidenceMarkup(reviewFixture,'cpuModel'),/海外\/全球来源，非国行认证/);
+reviewFixture.specs.cpuModel='changed';assert.equal(Catalog.evidenceFor(reviewFixture,'cpuModel'),null);
+reviewFixture.specs.cpuModel=reviewedDevice.specs.cpuModel;reviewFixture.evidenceSources=[];reviewFixture.specs.officialDocUrl='https://example.org';assert.equal(Catalog.evidenceFor(reviewFixture,'cpuModel'),null);
+for(const bound of ['最大9.56 kg','起重522g','i5：1534g；i7：1642g','1.2–1.4kg'])assert.equal(t.parseMass(bound),null);
+assert.equal(Catalog.getSpec(Catalog.getDevice('book-3-15'),'cpuModel'),null);
+assert.equal(Catalog.getSpec(Catalog.getDevice('laptop-go-3'),'cpuModel'),null);
+assert.match(Catalog.getSpec(Catalog.getDevice('pro-12-inch'),'ramSpec'),/12GB/);
+const correction=App.createCorrectionDraft('pro-7','resolution','https://support.microsoft.com/test','<img src=x onerror=alert(1)>');
+assert.equal(correction.status,'USER_DRAFT_NOT_VERIFIED');assert.equal(correction.currentRawValue,Catalog.getDevice('pro-7').specs.resolution);
+assert.throws(()=>App.createCorrectionDraft('pro-7','resolution','javascript:alert(1)','bad'));
+assert.throws(()=>App.createCorrectionDraft('pro-7','invented','https://example.org','bad'));
+console.log('Full source review PASS: 90 attempted models, scoped value binding expiry, configuration conflicts, safe correction drafts');

@@ -494,3 +494,13 @@
   }
 }
 
+
+/* Evidence stays attached to each value; overseas scope is never a China badge. */
+.field-evidence { display:block; font-size:12px; line-height:1.5; margin-top:6px; overflow-wrap:anywhere; color:var(--text-secondary,#555); }
+.field-evidence summary { cursor:pointer; }
+.field-evidence p { margin:6px 0; }
+.correction-dialog { max-width:560px; width:calc(100% - 32px); max-height:85vh; overflow:auto; border:1px solid #888; border-radius:12px; background:var(--bg-card,#fff); color:var(--text-primary,#222); padding:20px; box-sizing:border-box; }
+.correction-dialog::backdrop { background:#0007; }
+.correction-dialog label { display:block; margin:12px 0; }
+.correction-dialog input,.correction-dialog select,.correction-dialog textarea { display:block; box-sizing:border-box; width:100%; padding:8px; background:inherit; color:inherit; border:1px solid #888; }
+.correction-dialog textarea { min-height:100px; }

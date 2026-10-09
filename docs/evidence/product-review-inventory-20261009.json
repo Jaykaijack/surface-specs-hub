@@ -1,9 +1,10 @@
 {
   "notice": "All device records inventoried, not all facts certified. Pending fields remain work items; source access failure is not nondisclosure or proof of incompatibility.",
   "devices": 90,
-  "total": 6057,
-  "verified": 393,
-  "pending": 5664,
+  "modelsWithSourceChecks": 90,
+  "total": 6106,
+  "verified": 1032,
+  "pending": 5074,
   "records": [
     {
       "deviceId": "laptop-ultra-biz",
@@ -52,6 +53,16 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-ultra-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "ultra-business-cn-field-ledger.json"
         }
       ],
       "conflicts": [],
@@ -173,6 +184,15 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-ultra",
+          "url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "checkedAt": "2026-10-09",
+          "scope": "全球产品家族页可读，但不能认证中国消费者SKU；见ultra-global-product-scope-20261009.json"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [
         "releaseDate",
@@ -290,6 +310,16 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-12-13-intel",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [
         "thermalDesign",
@@ -343,6 +373,16 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-12-13-snap",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
+        }
+      ],
       "conflicts": [
         {
           "field": "batteryCapacityWh",
@@ -364,8 +404,8 @@
       "deviceId": "pro-12-13",
       "name": "Surface Pro 13 英寸 (第 12 代)",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 5,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -376,20 +416,15 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
-        "panelTech",
         "resolution",
         "ppi",
         "refreshRate",
@@ -449,16 +484,40 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-12-13",
+          "url": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
+          "result": "READABLE",
+          "sourceIndex": 0,
+          "captureSha256": "f57dea04c014ef49b64efdfde5581abfba87d1af093f6e127f08ce668607b744",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-12-13",
+          "url": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国消费者配置页已列SKU，不代表穷尽未来或其他地区选项；不从商用页移植电池",
+          "note": "Old256GB not supported by current listed SKUs; RAM24GB was missing",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 0,
+          "captureSha256": "f57dea04c014ef49b64efdfde5581abfba87d1af093f6e127f08ce668607b744"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "batteryCapacityWh",
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-12-inch",
       "name": "Surface Pro, 12 英寸 (第 1 代)",
       "total": 73,
-      "verified": 0,
-      "pending": 73,
+      "verified": 3,
+      "pending": 70,
       "pendingFields": [
         "fastCharging",
         "thunderboltSupport",
@@ -472,15 +531,12 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -548,8 +604,31 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-12-inch",
+          "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 1,
+          "captureSha256": "08cde53f79c4381898ced307da5904a31de619fc40d351313143595dc529f524",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-12-inch",
+          "url": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国消费者配置页当前SKU容量；不推断存储技术、工艺或商用配置",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 70,
+          "captureSha256": "31e3ad32275fbdd2a11b2bb75e31ce6e14fadfd7b655f9110fb272fa644a0fd6"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -639,6 +718,26 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-12-inch-2",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro",
+          "result": "SOURCE_NOT_COVERED",
+          "sourceIndex": 2,
+          "captureSha256": "f78c4d1581a7a7e46b56937590cd5acd94914c756d27aff9254c77ab7de75cea",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "页面只返回导航及商店外壳，无法确定第2代适用技术规格",
+          "note": "SOURCE_NOT_COVERED: shell-only response, not proof model absent",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 2,
+          "captureSha256": "f78c4d1581a7a7e46b56937590cd5acd94914c756d27aff9254c77ab7de75cea"
         }
       ],
       "conflicts": [],
@@ -734,6 +833,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-11-13",
+          "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 3,
+          "captureSha256": "8d08c2c5d60474d27c080d4a479d16481dbb85a31a669859832db5ce724e593a",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-11-13",
+          "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-11th-edition",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "中国消费者认证翻新营销页",
+          "note": "SOURCE_NOT_COVERED: mixed12/13inch marketing cannot bind full model/SKU table",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 71,
+          "captureSha256": "76bc0271e432dea23f94072439d9848e6a0707ba348401893ee8baaf9cf551ee"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -742,8 +861,8 @@
       "deviceId": "pro-10-biz",
       "name": "Surface Pro 10 商用版",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -754,27 +873,17 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
-        "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -782,10 +891,8 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -796,11 +903,9 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -826,16 +931,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-10-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "result": "READABLE",
+          "sourceIndex": 4,
+          "captureSha256": "e727c97e8fb3f2adeb86f7f32bc81e280dced54f93c360cec091629743d80667",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-10-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国认证翻新商用页硬件规格；保修/价格/包装条件不外推全新机",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 4,
+          "captureSha256": "e727c97e8fb3f2adeb86f7f32bc81e280dced54f93c360cec091629743d80667"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-9",
       "name": "Surface Pro 9",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 10,
+      "pending": 56,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -846,23 +974,17 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
@@ -874,12 +996,10 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
         "cellular",
-        "batteryCapacityWh",
         "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
@@ -892,8 +1012,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -918,16 +1036,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-9",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "result": "READABLE",
+          "sourceIndex": 5,
+          "captureSha256": "f4779ad308e00909e0f603e100c53f6d9400d61c0c9347d0d1644c4ee7f3a403",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-9",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 5,
+          "captureSha256": "f4779ad308e00909e0f603e100c53f6d9400d61c0c9347d0d1644c4ee7f3a403"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-8",
       "name": "Surface Pro 8",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 15,
+      "pending": 51,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -938,23 +1079,16 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
@@ -966,26 +1100,18 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
-        "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
-        "penHapticFeedback",
-        "penChargingType",
         "trackpadType",
         "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -1010,8 +1136,31 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-8",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
+          "result": "READABLE",
+          "sourceIndex": 6,
+          "captureSha256": "06098ea5b134a7690ccc93ac122207332330dd3fe9cca482a3648ca25cbd0eff",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-8",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 6,
+          "captureSha256": "06098ea5b134a7690ccc93ac122207332330dd3fe9cca482a3648ca25cbd0eff"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -1096,6 +1245,36 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-7-plus",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs",
+          "result": "READABLE",
+          "sourceIndex": 7,
+          "captureSha256": "a2f6041ef9a43a44bac877c345bc4c9ea28d1cace5150d01a0aa0126a68962e2",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-7-plus",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "该页为Windows11 Home零售配置，不足以认证数据库商用配置",
+          "note": "SCOPE_MISMATCH: 8GB/128GB i3/i5零售子集不能否认或确认商用i7/32GB等选项",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 7,
+          "captureSha256": "a2f6041ef9a43a44bac877c345bc4c9ea28d1cace5150d01a0aa0126a68962e2"
+        },
+        {
+          "deviceId": "pro-7-plus",
+          "url": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "result": "READABLE_REVIEWED",
+          "scope": "美国Pro7+商用产品页，可读，型号与商用适用性已确认",
+          "note": "不再把已有家庭版技术表当商用配置；该页为后续逐字段核验来源",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 81,
+          "captureSha256": "69164b4beca9274c7385e978d37cecccfde86da5660bc0ae96aaadc285de6cd3"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -1104,8 +1283,8 @@
       "deviceId": "pro-7",
       "name": "Surface Pro 7",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 13,
+      "pending": 53,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1116,21 +1295,13 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
-        "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -1144,13 +1315,10 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -1162,8 +1330,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -1188,16 +1354,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-7",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 8,
+          "captureSha256": "7acc53eb6aa0dc8dd038c89f880fe39069a0387950961dd38a2355b102845aab",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-7",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 8,
+          "captureSha256": "7acc53eb6aa0dc8dd038c89f880fe39069a0387950961dd38a2355b102845aab"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-6",
       "name": "Surface Pro 6",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 12,
+      "pending": 54,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1208,21 +1397,14 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -1239,23 +1421,18 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -1280,16 +1457,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-6",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 9,
+          "captureSha256": "82d1f50d3966265a25d5b40a5426583d5d3694f7aa60f371f9ddf2a621c195ba",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-6",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "同页明确区分消费版i5-8250U与商用版i5-8350U；其余为共同硬件，不证明中国销售配置",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 9,
+          "captureSha256": "82d1f50d3966265a25d5b40a5426583d5d3694f7aa60f371f9ddf2a621c195ba"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-5",
       "name": "Surface Pro (第 5 代 / 2017)",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 13,
+      "pending": 53,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1300,29 +1500,20 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
-        "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
@@ -1331,11 +1522,9 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
@@ -1346,8 +1535,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -1372,16 +1559,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-5",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 10,
+          "captureSha256": "889a3699d59edcd0e2241da43bff5f947b87ce91393b5aebda616aad3037582b",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-5",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 10,
+          "captureSha256": "889a3699d59edcd0e2241da43bff5f947b87ce91393b5aebda616aad3037582b"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-4",
       "name": "Surface Pro 4",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1390,37 +1600,24 @@
         "tagline",
         "colors",
         "chassisMaterial",
-        "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
         "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -1438,7 +1635,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -1464,16 +1660,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-4",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 11,
+          "captureSha256": "2b8e91d4feadc084fc051687524b6e788a64267a9599a52dc9af5a708fc66564",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-4",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 11,
+          "captureSha256": "2b8e91d4feadc084fc051687524b6e788a64267a9599a52dc9af5a708fc66564"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-3",
       "name": "Surface Pro 3",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 17,
+      "pending": 49,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1484,43 +1703,28 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
-        "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
@@ -1530,8 +1734,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -1550,8 +1752,31 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-3",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 12,
+          "captureSha256": "57063c7029725e5e2b61ca5a028f361075aba9dc3784a1b4687ced2bbae474ce",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-3",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 12,
+          "captureSha256": "57063c7029725e5e2b61ca5a028f361075aba9dc3784a1b4687ced2bbae474ce"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -1610,6 +1835,16 @@
           "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-2",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
         }
       ],
       "conflicts": [],
@@ -1681,6 +1916,16 @@
           "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [
         "thermalDesign",
@@ -1693,8 +1938,8 @@
       "deviceId": "pro-x",
       "name": "Surface Pro X",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1705,21 +1950,14 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -1733,13 +1971,9 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
-        "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -1751,10 +1985,7 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
-        "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
         "warranty",
@@ -1777,8 +2008,30 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-x",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "result": "READABLE",
+          "sourceIndex": 13,
+          "captureSha256": "2367aadd45c79c9c20638a75f2f422d92dee430e7e25d4cbd19b4e1c251dc19a",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-x",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 13,
+          "captureSha256": "2367aadd45c79c9c20638a75f2f422d92dee430e7e25d4cbd19b4e1c251dc19a"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -1838,6 +2091,16 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-8-138-intel",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
         }
       ],
       "conflicts": [],
@@ -1909,6 +2172,16 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-8-138-snap",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [
         "thermalDesign",
@@ -1963,6 +2236,16 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-8-150-intel",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
         }
       ],
       "conflicts": [],
@@ -2024,6 +2307,16 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-8-150-snap",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [
         "thermalDesign",
@@ -2035,8 +2328,8 @@
       "deviceId": "laptop-8-138",
       "name": "Surface Laptop 13.8 英寸 (第 8 代)",
       "total": 73,
-      "verified": 0,
-      "pending": 73,
+      "verified": 4,
+      "pending": 69,
       "pendingFields": [
         "fastCharging",
         "touchAndPenProtocol",
@@ -2052,18 +2345,14 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
@@ -2126,10 +2415,30 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-8-138",
+          "url": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
+          "result": "READABLE",
+          "sourceIndex": 14,
+          "captureSha256": "948b81d2f82ddbb8450fa3bb9dc9f651505f390926bb61aff5237483689d50f8",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-8-138",
+          "url": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国13.8英寸第8代消费者配置页；不外推15英寸或商用",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 14,
+          "captureSha256": "948b81d2f82ddbb8450fa3bb9dc9f651505f390926bb61aff5237483689d50f8"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [
-        "thermalDesign",
         "cpuArch",
+        "thermalDesign",
         "trackpadType"
       ],
       "productFamilyEvidence": null
@@ -2138,8 +2447,8 @@
       "deviceId": "laptop-8-150",
       "name": "Surface Laptop 15 英寸 (第 8 代)",
       "total": 70,
-      "verified": 0,
-      "pending": 70,
+      "verified": 1,
+      "pending": 69,
       "pendingFields": [
         "fastCharging",
         "touchAndPenProtocol",
@@ -2155,7 +2464,6 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
@@ -2226,10 +2534,31 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-8-150",
+          "url": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "result": "READABLE",
+          "sourceIndex": 15,
+          "captureSha256": "e1568ba8e579a38ce6a459607b4508da9aa3d16ce3d4f393f8b44c3df14ee2b5",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-8-150",
+          "url": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "中国官方购买汇总FAQ明确列15英寸CPU；其它15英寸详细参数未见于此提取",
+          "note": "SOURCE_NOT_COVERED: existing3270x2180 lacks applicable15-inch evidence, not replaced from13.8-inch",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 15,
+          "captureSha256": "e1568ba8e579a38ce6a459607b4508da9aa3d16ce3d4f393f8b44c3df14ee2b5"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [
-        "thermalDesign",
         "cpuArch",
+        "resolution",
+        "thermalDesign",
         "trackpadType"
       ],
       "productFamilyEvidence": null
@@ -2322,6 +2651,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-7-138",
+          "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 16,
+          "captureSha256": "a97230244bbeaf6e135ebe2e6f45102da1ed1720f03f8fd155d26b9f19ab009d",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-7-138",
+          "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "中国消费者认证翻新营销页",
+          "note": "SOURCE_NOT_COVERED: mixed13/13.8/15inch marketing cannot bind complete SKU table",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 72,
+          "captureSha256": "358d0178be83bba39ce9cd065ff8b11e8533cd517ae83279e37d99f99b52437d"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -2330,8 +2679,8 @@
       "deviceId": "laptop-6-biz",
       "name": "Surface Laptop 6 商用版 (13.5\" & 15\")",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 12,
+      "pending": 54,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2342,27 +2691,19 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
-        "npuModel",
         "npuTops",
         "copilotPlus",
         "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -2370,10 +2711,8 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -2384,11 +2723,9 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -2414,16 +2751,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-6-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "result": "READABLE",
+          "sourceIndex": 17,
+          "captureSha256": "8e7edadaa2b4741e00c59b4e64303a5a821b462b9eacbf604efc83f3d3933c65",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-6-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国认证翻新商用页硬件规格；不将其保修、价格或包装电源外推到全新机",
+          "note": "RAM scope conflict: technical memory lists16/32/64GB while GPU line mentions8GB; needs SKU confirmation",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 17,
+          "captureSha256": "8e7edadaa2b4741e00c59b4e64303a5a821b462b9eacbf604efc83f3d3933c65"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-5",
       "name": "Surface Laptop 5 (13.5\" & 15\")",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 13,
+      "pending": 53,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2434,27 +2794,18 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -2462,13 +2813,10 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -2480,7 +2828,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -2506,16 +2853,47 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-5",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 18,
+          "captureSha256": "b215b5a01f4a60b0432201279696404c201596764c7a43628bc85b620423bcb5",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-5",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "",
+          "note": "CONFIGURATION_CONFLICT: 15-inch weight table lists 3.44 lb and1545g, units do not agree; exact mass pending",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 18,
+          "captureSha256": "b215b5a01f4a60b0432201279696404c201596764c7a43628bc85b620423bcb5"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "weightGrams",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: 15-inch weight table lists 3.44 lb and1545g, units do not agree; exact mass pending"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign",
+        "weightGrams"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-4",
       "name": "Surface Laptop 4 (13.5\" & 15\")",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 5,
+      "pending": 61,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2525,7 +2903,6 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -2537,7 +2914,6 @@
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
@@ -2546,15 +2922,12 @@
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -2598,16 +2971,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-4",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-4-features",
+          "result": "READABLE",
+          "sourceIndex": 19,
+          "captureSha256": "5d4a608ce8074cdf76213ccb185e9899c1fd7513073f3851e7af413ed9e4550f",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-4",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-4-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "Feature page lacks complete hardware table; linked detailed specs not yet available in extracted body",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 19,
+          "captureSha256": "5d4a608ce8074cdf76213ccb185e9899c1fd7513073f3851e7af413ed9e4550f"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-3",
       "name": "Surface Laptop 3 (13.5\" & 15\")",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 12,
+      "pending": 54,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2618,27 +3014,20 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -2646,13 +3035,10 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -2664,8 +3050,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -2690,16 +3074,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-3",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 20,
+          "captureSha256": "5a8593c0e1ae935144191c82a1b0f1a3a8c4821c9723c51352086209bf4e8c2d",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-3",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 20,
+          "captureSha256": "5a8593c0e1ae935144191c82a1b0f1a3a8c4821c9723c51352086209bf4e8c2d"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-2",
       "name": "Surface Laptop 2",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2710,27 +3117,18 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -2741,23 +3139,18 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -2782,16 +3175,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-2",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 21,
+          "captureSha256": "42e22d332fb53b47a633bf73ac134a4102b0d3b903b4a4df27486019fdfe4434",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-2",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 21,
+          "captureSha256": "42e22d332fb53b47a633bf73ac134a4102b0d3b903b4a4df27486019fdfe4434"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-1",
       "name": "Surface Laptop 初代 (Original)",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2802,27 +3218,17 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -2833,11 +3239,9 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
@@ -2848,8 +3252,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -2868,16 +3270,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 22,
+          "captureSha256": "a41d38d011e293fa6cd4beef855ab331aa361b71aa1eee1e5a325aa0f9e03786",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 22,
+          "captureSha256": "a41d38d011e293fa6cd4beef855ab331aa361b71aa1eee1e5a325aa0f9e03786"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "sls-2",
       "name": "Surface Laptop Studio 2",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 15,
+      "pending": 51,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2888,27 +3313,19 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -2919,23 +3336,16 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
-        "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
-        "penHapticFeedback",
         "penChargingType",
-        "trackpadType",
         "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -2960,16 +3370,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "sls-2",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "result": "READABLE",
+          "sourceIndex": 23,
+          "captureSha256": "5d04b4a5f76dde68d59d40a95e637132ccb77bcceb2284c4c63a29df8a88f423",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "sls-2",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "同一支持页明确区分消费/商用CPU；其余共有硬件仅按明确列出的配置，不证明中国售价保修",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 23,
+          "captureSha256": "5d04b4a5f76dde68d59d40a95e637132ccb77bcceb2284c4c63a29df8a88f423"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "sls-1",
       "name": "Surface Laptop Studio 初代",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 3,
+      "pending": 63,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2979,7 +3412,6 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -3001,14 +3433,12 @@
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -3052,16 +3482,45 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "sls-1",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "result": "READABLE",
+          "sourceIndex": 24,
+          "captureSha256": "cdf7f79f94442af5b69ce51f870bd69d17ba34718676f56602c020eab8377147",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "sls-1",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "支持页明确列消费与商用系统；规格详情链接已404",
+          "note": "SOURCE_NOT_COVERED: linked detailed specs returns404",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 24,
+          "captureSha256": "cdf7f79f94442af5b69ce51f870bd69d17ba34718676f56602c020eab8377147"
+        },
+        {
+          "deviceId": "sls-1",
+          "url": "See official linked-details source record",
+          "result": "HTTP_404",
+          "checkedAt": "2026-10-09"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "go-4",
       "name": "Surface Go 4 商用版",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3070,7 +3529,6 @@
         "tagline",
         "colors",
         "chassisMaterial",
-        "kickstandType",
         "osAtLaunch",
         "cpuModel",
         "cpuArch",
@@ -3082,31 +3540,21 @@
         "ramSpec",
         "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
-        "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
-        "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -3114,12 +3562,9 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -3144,16 +3589,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "go-4",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "result": "READABLE",
+          "sourceIndex": 25,
+          "captureSha256": "df8411273c5809b33f890292f4fb7fa30316821e64c6e73f5a1e4fb200a42d9e",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "go-4",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国认证翻新Go4商用硬件规格；不外推销售包装与保修",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 25,
+          "captureSha256": "df8411273c5809b33f890292f4fb7fa30316821e64c6e73f5a1e4fb200a42d9e"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "go-3",
       "name": "Surface Go 3",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 5,
+      "pending": 61,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3163,7 +3631,6 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -3174,7 +3641,6 @@
         "ramSpec",
         "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
         "screenSize",
         "aspectRatio",
         "panelTech",
@@ -3185,14 +3651,11 @@
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -3236,16 +3699,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "go-3",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
+          "result": "READABLE",
+          "sourceIndex": 26,
+          "captureSha256": "0b493a9181a19b6c827764e2e40dcbf5b9d30cec1ab7f6b80dc56250036e406c",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "go-3",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "官方功能页明确消费与商用系统；未从通用营销段落推CPU与电池容量",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 26,
+          "captureSha256": "0b493a9181a19b6c827764e2e40dcbf5b9d30cec1ab7f6b80dc56250036e406c"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-go-3",
       "name": "Surface Laptop Go 3",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 5,
+      "pending": 61,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3267,7 +3753,6 @@
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
@@ -3276,15 +3761,12 @@
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -3303,7 +3785,6 @@
         "biometrics",
         "enterpriseManage",
         "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -3328,16 +3809,47 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-go-3",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
+          "result": "READABLE",
+          "sourceIndex": 27,
+          "captureSha256": "d839aaa1a69ef1beec905fb5f8638d6875ce7d358fb796ed5592c7ab20c16615",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-go-3",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "",
+          "note": "CONFIGURATION_CONFLICT: Chinese feature text says11th-gen CPU; retained CPU requires exact SKU source",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 27,
+          "captureSha256": "d839aaa1a69ef1beec905fb5f8638d6875ce7d358fb796ed5592c7ab20c16615"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "cpuModel",
+          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: Chinese feature text says11th-gen CPU; retained CPU requires exact SKU source"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "cpuModel",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "studio-2-plus",
       "name": "Surface Studio 2+",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 13,
+      "pending": 53,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3347,28 +3859,19 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -3376,10 +3879,8 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -3390,12 +3891,10 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
         "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -3420,16 +3919,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "studio-2-plus",
+          "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-studio-2-plus",
+          "result": "NETWORK_FAILURE",
+          "sourceIndex": 28,
+          "captureSha256": "7258206a974ca915cc9012eef7cef6f1c7c21ed2eb3cd27b07f1796ff7980d4e",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "studio-2-plus",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "官方Studio2+全球硬件；没有用Studio2替代，不认证中国地区销售条件",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 74,
+          "captureSha256": "afe738e669dc31ac5fb9d99471d7b131a8439372036af6613b5c0760530ad155"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "duo-2",
       "name": "Surface Duo 2",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 3,
+      "pending": 63,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3451,7 +3973,6 @@
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
@@ -3468,7 +3989,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -3484,7 +4004,6 @@
         "trackpadType",
         "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "dimensionsMm",
         "weightGrams",
@@ -3506,16 +4025,45 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "duo-2",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features",
+          "result": "READABLE",
+          "sourceIndex": 29,
+          "captureSha256": "4465d1efd1640c51cac65a15470ae13c2330bf369aacbdda8bc542532fef0444",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "duo-2",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "Detailed specs link redirects to accessories storefront, not Duo2 specs",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 29,
+          "captureSha256": "4465d1efd1640c51cac65a15470ae13c2330bf369aacbdda8bc542532fef0444"
+        },
+        {
+          "deviceId": "duo-2",
+          "url": "https://www.microsoft.com/d/surface-duo-2/9408kgxp4xjl",
+          "result": "REDIRECT_WRONG_PRODUCT",
+          "checkedAt": "2026-10-09"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "book-3-15",
       "name": "Surface Book 3 15 英寸",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 10,
+      "pending": 56,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3536,11 +4084,7 @@
         "ramSpec",
         "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -3554,13 +4098,10 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -3572,9 +4113,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
-        "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
@@ -3598,16 +4136,54 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "book-3-15",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 30,
+          "captureSha256": "c5120bbd19c4fa9cee1bfa2aa2687a236455dc87292dc36a5ab364ac99fa026c",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "book-3-15",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "",
+          "note": "CONFIGURATION_CONFLICT: official Processor row is copied from Laptop3; RAM row also mislabeled; CPU/RAM not certified",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 30,
+          "captureSha256": "c5120bbd19c4fa9cee1bfa2aa2687a236455dc87292dc36a5ab364ac99fa026c"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "cpuModel",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: official Processor row is copied from Laptop3; RAM row also mislabeled; CPU/RAM not certified"
+        },
+        {
+          "field": "ramSpec",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: official Processor row is copied from Laptop3; RAM row also mislabeled; CPU/RAM not certified"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "cpuModel",
+        "ramSpec",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "book-3-135",
       "name": "Surface Book 3 13.5 英寸",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 10,
+      "pending": 56,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3628,11 +4204,7 @@
         "ramSpec",
         "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -3646,13 +4218,10 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -3664,9 +4233,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
-        "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
@@ -3690,16 +4256,54 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "book-3-135",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 30,
+          "captureSha256": "c5120bbd19c4fa9cee1bfa2aa2687a236455dc87292dc36a5ab364ac99fa026c",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "book-3-135",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "",
+          "note": "CONFIGURATION_CONFLICT: official Processor row is copied from Laptop3; RAM row also mislabeled; CPU/RAM not certified",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 30,
+          "captureSha256": "c5120bbd19c4fa9cee1bfa2aa2687a236455dc87292dc36a5ab364ac99fa026c"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "cpuModel",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: official Processor row is copied from Laptop3; RAM row also mislabeled; CPU/RAM not certified"
+        },
+        {
+          "field": "ramSpec",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: official Processor row is copied from Laptop3; RAM row also mislabeled; CPU/RAM not certified"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "cpuModel",
+        "ramSpec",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "book-2-15",
       "name": "Surface Book 2 15 英寸",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 11,
+      "pending": 55,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3717,14 +4321,8 @@
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -3741,11 +4339,9 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
@@ -3756,9 +4352,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
-        "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
@@ -3782,16 +4375,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "book-2-15",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 31,
+          "captureSha256": "a14b98ffa6277a14b13fd52206ea4214fe3306a02316f3827482bd62031aa4de",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "book-2-15",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 31,
+          "captureSha256": "a14b98ffa6277a14b13fd52206ea4214fe3306a02316f3827482bd62031aa4de"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "book-1",
       "name": "Surface Book 初代 (Original)",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 10,
+      "pending": 56,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3802,21 +4418,14 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -3833,11 +4442,9 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
@@ -3848,7 +4455,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -3868,16 +4474,54 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "book-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 32,
+          "captureSha256": "858e83a0a1cddec60ed6aa0034dfda094725dac60825c48c841924909142ac2a",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "book-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "",
+          "note": "CONFIGURATION_CONFLICT: Performance Base source3.68lb/1647g units disagree; no exact mass asserted",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 32,
+          "captureSha256": "858e83a0a1cddec60ed6aa0034dfda094725dac60825c48c841924909142ac2a"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "weightGrams",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: Performance Base source3.68lb/1647g units disagree; no exact mass asserted"
+        },
+        {
+          "field": "totalWeightWithKeyboard",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: Performance Base source3.68lb/1647g units disagree; no exact mass asserted"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign",
+        "totalWeightWithKeyboard",
+        "weightGrams"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "go-2",
       "name": "Surface Go 2",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 12,
+      "pending": 54,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3888,29 +4532,21 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
-        "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
@@ -3919,10 +4555,8 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -3934,8 +4568,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -3960,16 +4592,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "go-2",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 33,
+          "captureSha256": "5279cdce675555bd9334dbf10e28c6ed4b72a7d832d016f2bb99f16caf7225a2",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "go-2",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 33,
+          "captureSha256": "5279cdce675555bd9334dbf10e28c6ed4b72a7d832d016f2bb99f16caf7225a2"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "go-1",
       "name": "Surface Go 初代 (Original)",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 11,
+      "pending": 55,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3980,21 +4635,15 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -4004,18 +4653,15 @@
         "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
@@ -4026,8 +4672,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -4046,16 +4690,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "go-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 34,
+          "captureSha256": "9f76c81a2c6bf6da4c30b2b5785229d9f8702feeaa826ef787eba58e171ee36b",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "go-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 34,
+          "captureSha256": "9f76c81a2c6bf6da4c30b2b5785229d9f8702feeaa826ef787eba58e171ee36b"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-go-2",
       "name": "Surface Laptop Go 2",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 2,
+      "pending": 64,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4077,7 +4744,6 @@
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
@@ -4113,7 +4779,6 @@
         "biometrics",
         "enterpriseManage",
         "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -4138,16 +4803,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-go-2",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-2-features",
+          "result": "READABLE",
+          "sourceIndex": 35,
+          "captureSha256": "778f78cb02ae845f828f62e8e4e7f1dea702e112eeb30c3f4bb2440623266114",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-go-2",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-2-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "Feature page lacks complete technical table",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 35,
+          "captureSha256": "778f78cb02ae845f828f62e8e4e7f1dea702e112eeb30c3f4bb2440623266114"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-go-1",
       "name": "Surface Laptop Go 初代",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4158,41 +4846,30 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
@@ -4202,10 +4879,7 @@
         "trackpadType",
         "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -4230,16 +4904,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-go-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 36,
+          "captureSha256": "237c09b32ba1b9989539777e146760a5afad3594e6cd43c0e468837cc9a7aed8",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-go-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 36,
+          "captureSha256": "237c09b32ba1b9989539777e146760a5afad3594e6cd43c0e468837cc9a7aed8"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "studio-2",
       "name": "Surface Studio 2",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 11,
+      "pending": 55,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4250,21 +4947,13 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -4278,10 +4967,8 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -4297,7 +4984,6 @@
         "biometrics",
         "enterpriseManage",
         "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -4322,16 +5008,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "studio-2",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "result": "READABLE",
+          "sourceIndex": 37,
+          "captureSha256": "6c52bbe5cc2b81066efc1b851a56fd1023840835a6816e1963e12c4ac92c2b2a",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "studio-2",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 37,
+          "captureSha256": "6c52bbe5cc2b81066efc1b851a56fd1023840835a6816e1963e12c4ac92c2b2a"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "studio-1",
       "name": "Surface Studio 初代 (Original)",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 8,
+      "pending": 58,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4342,17 +5051,14 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
         "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
         "screenSize",
         "aspectRatio",
         "panelTech",
@@ -4362,18 +5068,13 @@
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -4408,16 +5109,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "studio-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "result": "READABLE",
+          "sourceIndex": 38,
+          "captureSha256": "dbb1e739968db3d1707b775a3a1126c567bf69d30d9e222dfddc9d7cbf303ae3",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "studio-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 38,
+          "captureSha256": "dbb1e739968db3d1707b775a3a1126c567bf69d30d9e222dfddc9d7cbf303ae3"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "hub-2s",
       "name": "Surface Hub 2S (50\" / 85\")",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 12,
+      "pending": 54,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4428,27 +5152,18 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
-        "aspectRatio",
-        "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
-        "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -4459,7 +5174,6 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -4474,8 +5188,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -4494,16 +5206,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "hub-2s",
+          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs",
+          "result": "READABLE",
+          "sourceIndex": 39,
+          "captureSha256": "7a4ef15ed456d98d9ef3aaea70144da838235c946a8a13bfa7f14d7d574ac41a",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "hub-2s",
+          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs",
+          "result": "READABLE_REVIEWED",
+          "scope": "该技术页50英寸配置；不外推85英寸",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 39,
+          "captureSha256": "7a4ef15ed456d98d9ef3aaea70144da838235c946a8a13bfa7f14d7d574ac41a"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "duo-1",
       "name": "Surface Duo 初代 (Original)",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 14,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4513,22 +5248,15 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -4542,15 +5270,11 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
@@ -4558,10 +5282,7 @@
         "trackpadType",
         "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -4580,16 +5301,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "duo-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs",
+          "result": "READABLE",
+          "sourceIndex": 40,
+          "captureSha256": "3f8f85ad99dc5d32ea45a4eb98a4c27575dfe56f39ce187be7462996a2124802",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "duo-1",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "官方美国Duo1产品硬件；不证明中国销售和网络运营商适配",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 40,
+          "captureSha256": "3f8f85ad99dc5d32ea45a4eb98a4c27575dfe56f39ce187be7462996a2124802"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-12-inch-biz",
       "name": "Surface Pro 12 英寸 (第 1 代) 商用版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 72,
+      "verified": 15,
+      "pending": 57,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -4601,23 +5345,16 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
@@ -4632,7 +5369,6 @@
         "usbCPorts",
         "usbAPorts",
         "surfaceConnect",
-        "videoOut",
         "cellular",
         "wifi",
         "bluetooth",
@@ -4641,7 +5377,6 @@
         "batteryLifeVideo",
         "batteryLifeOffice",
         "charger",
-        "fastCharging",
         "keyboardCompat",
         "penCompat",
         "dialCompat",
@@ -4649,8 +5384,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -4674,16 +5407,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-12-inch-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "result": "READABLE",
+          "sourceIndex": 41,
+          "captureSha256": "09335805c2f5d2287fda3b95ec7c6cfb524ac5af826529c3622d3f8243250928",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-12-inch-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 41,
+          "captureSha256": "09335805c2f5d2287fda3b95ec7c6cfb524ac5af826529c3622d3f8243250928"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-12-inch-2-biz",
       "name": "Surface Pro 商用版, 12 英寸 (第 2 代)",
-      "total": 64,
-      "verified": 0,
-      "pending": 64,
+      "total": 67,
+      "verified": 15,
+      "pending": 52,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4694,24 +5450,17 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
-        "brightness",
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
@@ -4731,17 +5480,12 @@
         "bluetooth",
         "nfc",
         "batteryCapacity",
-        "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
-        "fastCharging",
         "keyboardCompat",
         "penCompat",
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "warranty",
         "replaceableParts",
         "startingPriceCny",
@@ -4758,16 +5502,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-12-inch-2-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "result": "READABLE",
+          "sourceIndex": 42,
+          "captureSha256": "aa3d5d01226894e4ecc325363a339c1fc85a1c487daf85782a2a67ba6e5e168c",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 42,
+          "captureSha256": "aa3d5d01226894e4ecc325363a339c1fc85a1c487daf85782a2a67ba6e5e168c"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-13-inch-biz",
       "name": "Surface Laptop 13 英寸 (第 1 代) 商用版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 71,
+      "verified": 18,
+      "pending": 53,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -4779,28 +5546,19 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
-        "brightness",
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
@@ -4815,9 +5573,6 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
-        "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
@@ -4825,10 +5580,7 @@
         "dialCompat",
         "dockCompat",
         "tpm",
-        "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -4852,16 +5604,47 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-13-inch-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "result": "READABLE",
+          "sourceIndex": 43,
+          "captureSha256": "986b762a5939d0a48b536a3bfcb60365eba6ac5ab6be2ce2d128e56dafc83b19",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-13-inch-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "CONFIGURATION_CONFLICT: storage removability qualifiers differ between table and footnote; not certified",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 43,
+          "captureSha256": "986b762a5939d0a48b536a3bfcb60365eba6ac5ab6be2ce2d128e56dafc83b19"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "ssdRemovable",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: storage removability qualifiers differ between table and footnote; not certified"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "ssdRemovable",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-13-inch-2-biz",
       "name": "Surface Laptop 商用版, 13 英寸 (第 2 代)",
-      "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "total": 69,
+      "verified": 18,
+      "pending": 51,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4872,28 +5655,19 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
-        "brightness",
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
@@ -4909,19 +5683,13 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
-        "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
         "penCompat",
         "trackpadType",
         "tpm",
-        "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "warranty",
         "replaceableParts",
         "startingPriceCny",
@@ -4938,16 +5706,47 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-13-inch-2-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "result": "READABLE",
+          "sourceIndex": 44,
+          "captureSha256": "3dc14a26ddd7c04716ea50ee7d5480eae1106499a04d5bfdd1ef05924fc5a686",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-13-inch-2-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "CONFIGURATION_CONFLICT: storage removability qualifiers differ between table and footnote; not certified",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 44,
+          "captureSha256": "3dc14a26ddd7c04716ea50ee7d5480eae1106499a04d5bfdd1ef05924fc5a686"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "ssdRemovable",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: storage removability qualifiers differ between table and footnote; not certified"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "ssdRemovable",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-11-biz-snap",
       "name": "Surface Pro (第 11 代) 商用版 - 骁龙版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 71,
+      "verified": 13,
+      "pending": 58,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -4959,23 +5758,16 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
@@ -4995,7 +5787,6 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
         "batteryLifeVideo",
         "batteryLifeOffice",
         "charger",
@@ -5007,8 +5798,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -5032,16 +5821,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-11-biz-snap",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "result": "READABLE",
+          "sourceIndex": 45,
+          "captureSha256": "41e0a8531436c8f92ca8adcc7ab53eb2d47125b75331b2d9544f73e25d6b0f80",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-11-biz-snap",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 45,
+          "captureSha256": "41e0a8531436c8f92ca8adcc7ab53eb2d47125b75331b2d9544f73e25d6b0f80"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-11-biz-intel",
       "name": "Surface Pro (第 11 代) 商用版 - Intel 版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 71,
+      "verified": 13,
+      "pending": 58,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5053,23 +5865,16 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
@@ -5089,7 +5894,6 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
         "batteryLifeVideo",
         "batteryLifeOffice",
         "charger",
@@ -5101,8 +5905,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -5126,16 +5928,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-11-biz-intel",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel",
+          "result": "READABLE",
+          "sourceIndex": 46,
+          "captureSha256": "45756ced3516aab017b135a6717d910f98200a5aa9686ee4539e1cb02baa0b84",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-11-biz-intel",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 46,
+          "captureSha256": "45756ced3516aab017b135a6717d910f98200a5aa9686ee4539e1cb02baa0b84"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-7-biz-snap",
       "name": "Surface Laptop (第 7 代) 商用版 - 骁龙版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 71,
+      "verified": 15,
+      "pending": 56,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5147,23 +5972,16 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
@@ -5183,9 +6001,6 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
-        "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
@@ -5195,8 +6010,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -5220,16 +6033,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-7-biz-snap",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business",
+          "result": "READABLE",
+          "sourceIndex": 47,
+          "captureSha256": "fb5c913b84f362f9502f3053519c2c518cf1e4d7538938c9e9899d9629ea9b13",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-7-biz-snap",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 47,
+          "captureSha256": "fb5c913b84f362f9502f3053519c2c518cf1e4d7538938c9e9899d9629ea9b13"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-7-biz-intel",
       "name": "Surface Laptop (第 7 代) 商用版 - Intel 版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 71,
+      "verified": 15,
+      "pending": 56,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5241,23 +6077,16 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
@@ -5277,9 +6106,6 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
-        "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
@@ -5289,8 +6115,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -5314,8 +6138,31 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-7-biz-intel",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel",
+          "result": "READABLE",
+          "sourceIndex": 48,
+          "captureSha256": "2a1508c61a887a0cd3478bae3ed507f19c9a75abcc0de0a765ec35fea945b692",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-7-biz-intel",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 48,
+          "captureSha256": "2a1508c61a887a0cd3478bae3ed507f19c9a75abcc0de0a765ec35fea945b692"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -5374,6 +6221,16 @@
           "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "hub-3",
+          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -5381,9 +6238,9 @@
     {
       "deviceId": "laptop-go-3-biz",
       "name": "Surface Laptop Go 3 商用版",
-      "total": 69,
-      "verified": 0,
-      "pending": 69,
+      "total": 71,
+      "verified": 13,
+      "pending": 58,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5395,28 +6252,22 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
@@ -5429,12 +6280,9 @@
         "videoOut",
         "cellular",
         "wifi",
-        "wireless",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
         "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
@@ -5444,8 +6292,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -5469,16 +6315,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-go-3-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-go-3-for-business",
+          "result": "READABLE",
+          "sourceIndex": 49,
+          "captureSha256": "307f1dc7b5619d91cc96bc5e6e25f30963160e88a4f8a0fb7429cd07ca875455",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-go-3-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-go-3-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国认证翻新商用页面硬件配置；不认证全新产品包装/保修，不外推消费者",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 49,
+          "captureSha256": "307f1dc7b5619d91cc96bc5e6e25f30963160e88a4f8a0fb7429cd07ca875455"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-9-biz",
       "name": "Surface Pro 9 商用版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 72,
+      "verified": 8,
+      "pending": 64,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -5489,7 +6358,6 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
@@ -5497,7 +6365,6 @@
         "npuTops",
         "copilotPlus",
         "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -5526,9 +6393,7 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
         "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
@@ -5563,8 +6428,31 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-9-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-9-for-business",
+          "result": "READABLE",
+          "sourceIndex": 50,
+          "captureSha256": "b1de462305aff6931096887f4cca60a087ca04d297955e904aa646bb372fe174",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-9-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-9-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国认证翻新商用页面硬件配置；不认证全新产品包装/保修，不外推消费者；本批仅Intel栏目",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 50,
+          "captureSha256": "b1de462305aff6931096887f4cca60a087ca04d297955e904aa646bb372fe174"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -5651,6 +6539,36 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-8-biz",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
+          "result": "READABLE",
+          "sourceIndex": 6,
+          "captureSha256": "06098ea5b134a7690ccc93ac122207332330dd3fe9cca482a3648ca25cbd0eff",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-8-biz",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
+          "result": "READABLE_REVIEWED",
+          "scope": "该页为Windows11 Home消费者配置，未明确商用CPU/SKU",
+          "note": "SCOPE_MISMATCH: commercial SKU needs its own source",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 6,
+          "captureSha256": "06098ea5b134a7690ccc93ac122207332330dd3fe9cca482a3648ca25cbd0eff"
+        },
+        {
+          "deviceId": "pro-8-biz",
+          "url": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "result": "READABLE_REVIEWED",
+          "scope": "全球Pro8事实表明确区分消费者和商用CPU；第2页商业CPU、第3页接口",
+          "note": "商用i3-1115G4、i5-1145G7、i7-1185G7，LTE限制须按SKU；当前未逐字段覆盖",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 80,
+          "captureSha256": "a9e9dddbc9a98783db79fef105a018b8a4c676c0d126df9692694da02b2129a0"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -5658,9 +6576,9 @@
     {
       "deviceId": "laptop-5-biz",
       "name": "Surface Laptop 5 商用版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 72,
+      "verified": 13,
+      "pending": 59,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5672,21 +6590,16 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -5708,9 +6621,7 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
         "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
@@ -5720,8 +6631,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -5745,16 +6654,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-5-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
+          "result": "READABLE",
+          "sourceIndex": 51,
+          "captureSha256": "44483f2e6df2ce23cb49d2ea8ebb8e3244f32237cd856e2eda176d144306da22",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-5-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国认证翻新商用页面硬件配置；不认证全新产品包装/保修，不外推消费者",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 51,
+          "captureSha256": "44483f2e6df2ce23cb49d2ea8ebb8e3244f32237cd856e2eda176d144306da22"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "sls-2-biz",
       "name": "Surface Laptop Studio 2 商用版",
-      "total": 69,
-      "verified": 0,
-      "pending": 69,
+      "total": 74,
+      "verified": 17,
+      "pending": 57,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5766,28 +6698,20 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "sdSlot",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -5803,9 +6727,7 @@
         "wifi",
         "bluetooth",
         "nfc",
-        "batteryCapacity",
         "batteryLifeVideo",
-        "batteryLifeOffice",
         "charger",
         "fastCharging",
         "keyboardCompat",
@@ -5815,8 +6737,6 @@
         "tpm",
         "biometrics",
         "securityFeatures",
-        "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -5840,16 +6760,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "sls-2-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-studio-2-for-business",
+          "result": "READABLE",
+          "sourceIndex": 52,
+          "captureSha256": "5b7b8f0fb44aaee4f08300a6c6f1edec71a9bfd53abf4e0cffa47d9c72412fe7",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "sls-2-biz",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "同一支持页明确区分消费/商用CPU；其余共有硬件仅按明确列出的配置，不证明中国售价保修",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 23,
+          "captureSha256": "5d04b4a5f76dde68d59d40a95e637132ccb77bcceb2284c4c63a29df8a88f423"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "sls-1-biz",
       "name": "Surface Laptop Studio 初代商用版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 69,
+      "verified": 3,
+      "pending": 66,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5860,7 +6803,6 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -5882,7 +6824,6 @@
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
         "microphones",
@@ -5934,16 +6875,45 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "sls-1-biz",
+          "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-studio",
+          "result": "NETWORK_FAILURE",
+          "sourceIndex": 53,
+          "captureSha256": "2e55e9ebe6581c725442a9acfcc921a3853897f01184e3a6e80cf48e5dd7334d",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "sls-1-biz",
+          "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "支持页明确列消费与商用系统；规格详情链接已404",
+          "note": "SOURCE_NOT_COVERED: linked detailed specs returns404",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 24,
+          "captureSha256": "cdf7f79f94442af5b69ce51f870bd69d17ba34718676f56602c020eab8377147"
+        },
+        {
+          "deviceId": "sls-1-biz",
+          "url": "See official linked-details source record",
+          "result": "HTTP_404",
+          "checkedAt": "2026-10-09"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "go-3-biz",
       "name": "Surface Go 3 商用版",
-      "total": 69,
-      "verified": 0,
-      "pending": 69,
+      "total": 70,
+      "verified": 5,
+      "pending": 65,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5954,7 +6924,6 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -5965,7 +6934,6 @@
         "ramSpec",
         "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
         "screenSize",
         "aspectRatio",
         "panelTech",
@@ -5976,10 +6944,8 @@
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
@@ -6023,16 +6989,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "go-3-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
+          "result": "READABLE",
+          "sourceIndex": 26,
+          "captureSha256": "0b493a9181a19b6c827764e2e40dcbf5b9d30cec1ab7f6b80dc56250036e406c",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "go-3-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "官方功能页明确消费与商用系统；未从通用营销段落推CPU与电池容量",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 26,
+          "captureSha256": "0b493a9181a19b6c827764e2e40dcbf5b9d30cec1ab7f6b80dc56250036e406c"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "studio-2-plus-biz",
       "name": "Surface Studio 2+ 商用版",
-      "total": 68,
-      "verified": 0,
-      "pending": 68,
+      "total": 71,
+      "verified": 13,
+      "pending": 58,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -6043,28 +7032,19 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
@@ -6093,7 +7073,6 @@
         "biometrics",
         "securityFeatures",
         "dimensions",
-        "weightGrams",
         "packagingWeight",
         "serviceabilityScore",
         "warranty",
@@ -6117,16 +7096,39 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "studio-2-plus-biz",
+          "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-studio-2-plus",
+          "result": "NETWORK_FAILURE",
+          "sourceIndex": 28,
+          "captureSha256": "7258206a974ca915cc9012eef7cef6f1c7c21ed2eb3cd27b07f1796ff7980d4e",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "studio-2-plus-biz",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "官方Studio2+全球硬件；没有用Studio2替代，不认证中国地区销售条件",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 74,
+          "captureSha256": "afe738e669dc31ac5fb9d99471d7b131a8439372036af6613b5c0760530ad155"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "laptop-13-inch",
       "name": "Surface Laptop, 13 英寸 (第 1 代)",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 3,
+      "pending": 64,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -6137,15 +7139,12 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -6210,8 +7209,31 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-13-inch",
+          "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 54,
+          "captureSha256": "94da20af7ab36072c854273d751c73228f2f2c76d8f9bd2fe73fbeef4106beeb",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-13-inch",
+          "url": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-inch",
+          "result": "READABLE_REVIEWED",
+          "scope": "中国消费者配置页当前SKU容量；不推断存储技术、工艺或商用配置",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 73,
+          "captureSha256": "e257c9ddf9cc87afc86358e1565749b171951644f499eb6473fb845f607dfebf"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -6295,6 +7317,26 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-13-inch-2",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop",
+          "result": "SOURCE_NOT_COVERED",
+          "sourceIndex": 55,
+          "captureSha256": "afa8452e8bf7634538de23579c49cded0c32aea024a9efb2b2afd2c9ff4956b4",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-13-inch-2",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "中国消费者产品页",
+          "note": "SOURCE_NOT_COVERED: retrieved page is navigation shell without applicable specification table",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 55,
+          "captureSha256": "afa8452e8bf7634538de23579c49cded0c32aea024a9efb2b2afd2c9ff4956b4"
         }
       ],
       "conflicts": [],
@@ -6390,6 +7432,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-7-150",
+          "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 16,
+          "captureSha256": "a97230244bbeaf6e135ebe2e6f45102da1ed1720f03f8fd155d26b9f19ab009d",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "laptop-7-150",
+          "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "中国消费者认证翻新营销页",
+          "note": "SOURCE_NOT_COVERED: mixed13/13.8/15inch marketing cannot bind complete SKU table",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 72,
+          "captureSha256": "358d0178be83bba39ce9cd065ff8b11e8533cd517ae83279e37d99f99b52437d"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -6455,6 +7517,16 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "laptop-13-inch-intel-biz",
+          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13-inch-for-business",
+          "result": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "scope": "复用本轮前批已读取的适用官方页与逐字段账，不重复请求",
+          "evidenceLedger": "review-batch-current-20261009.json"
         }
       ],
       "conflicts": [
@@ -6557,8 +7629,56 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "book-3-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 56,
+          "captureSha256": "e436fd728299f27ee98be2def804e099ccdf03a0060b391634d68da29d124e08",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "book-3-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "所读页面标Windows家庭版，不能认证商用SKU",
+          "note": "SOURCE_SCOPE_MISMATCH; CONFIGURATION_CONFLICT: CPU table copies Laptop3",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 56,
+          "captureSha256": "e436fd728299f27ee98be2def804e099ccdf03a0060b391634d68da29d124e08"
+        },
+        {
+          "deviceId": "book-3-biz",
+          "url": "https://learn.microsoft.com/en-us/surface/surface-book-quadro",
+          "result": "READABLE_REVIEWED",
+          "scope": "Learn明确Book3商用15英寸Quadro RTX3000子配置，表4",
+          "note": "i7-1065G7/32GB/512GB或1TB只适用该子配置；未据此解除整个13.5/15英寸家族CPU冲突",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 83,
+          "captureSha256": "6ca12138d2cda2570bdeb11d96550495918334796d6c833eeaf70b1a298a5018"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "cpuModel",
+          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "SOURCE_SCOPE_MISMATCH; CONFIGURATION_CONFLICT: CPU table copies Laptop3"
+        },
+        {
+          "field": "ramSpec",
+          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
+          "reviewedAt": "2026-10-09",
+          "reason": "SOURCE_SCOPE_MISMATCH; CONFIGURATION_CONFLICT: CPU table copies Laptop3"
+        }
+      ],
+      "maskedFields": [
+        "cpuArch",
+        "cpuModel",
+        "ramSpec",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -6650,16 +7770,49 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "go-2-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-2-specs-and-features",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 57,
+          "captureSha256": "697523b66206c29a65b48ce78319bde920d7164eb4e4645fdbf65e5500e6bcab",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "go-2-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-2-specs-and-features",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "scope": "所读页面为家庭版，不能认证商用配置",
+          "note": "SOURCE_SCOPE_MISMATCH",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 57,
+          "captureSha256": "697523b66206c29a65b48ce78319bde920d7164eb4e4645fdbf65e5500e6bcab"
+        },
+        {
+          "deviceId": "go-2-biz",
+          "url": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "result": "READABLE_REVIEWED",
+          "scope": "菲律宾2021商用发布公告，明确Go2商用Core m3/8GB/128GB配置",
+          "note": "只证明该地区所列SKU，不能证明中国全部选项",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 82,
+          "captureSha256": "0b4510bba07a52247d6ce71931f0555763020e82192f3e13d610b5376469ee53"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "pro-6-biz",
       "name": "Surface Pro 6 商用版",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 12,
+      "pending": 55,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -6670,21 +7823,14 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
         "ppi",
         "refreshRate",
         "brightness",
@@ -6701,23 +7847,18 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -6737,8 +7878,41 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "pro-6-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
+          "result": "READABLE",
+          "sourceIndex": 58,
+          "captureSha256": "1ffbc9915f748b401605785505751501b77d37a8c642ca2406dc0564d3dec7e7",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "pro-6-biz",
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "同页明确区分消费版i5-8250U与商用版i5-8350U；其余为共同硬件，不证明中国销售配置",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 9,
+          "captureSha256": "82d1f50d3966265a25d5b40a5426583d5d3694f7aa60f371f9ddf2a621c195ba"
+        },
+        {
+          "deviceId": "pro-6-biz",
+          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
+          "result": "READABLE_REVIEWED",
+          "scope": "中文页明确列商用CPU，与已读取英文页一致；字段采用英文页绑定",
+          "note": "READABLE_REVIEWED",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 58,
+          "captureSha256": "1ffbc9915f748b401605785505751501b77d37a8c642ca2406dc0564d3dec7e7"
+        }
+      ],
       "conflicts": [],
-      "maskedFields": [],
+      "maskedFields": [
+        "cpuArch",
+        "thermalDesign"
+      ],
       "productFamilyEvidence": null
     },
     {
@@ -6824,6 +7998,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-original",
+          "url": "https://news.xbox.com/en-us/2005/05/28/what-type-of-tv-will-you-need-for-the-xbox-360/",
+          "result": "SOURCE_SCOPE_MISMATCH",
+          "sourceIndex": 59,
+          "captureSha256": "eaaed9f932a51c6c4a21fdfc2343558e92f87e2a36de795bdb6aed3919b97dec",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-original",
+          "url": "https://news.microsoft.com/source/2001/01/06/much-anticipated-xbox-game-console-along-with-xbox-controller-and-game-demonstrations-headline-consumer-electronics-show/",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "2001预发布公告明确声明规格可能改变，不能替代零售版规格",
+          "note": "SOURCE_NOT_COVERED: prerelease, retail confirmation outstanding",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 77,
+          "captureSha256": "6638dc9392ebc57ace04d6ed144ba34c0523f7bf449176fdacda61c74739a0d7"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -6832,8 +8026,8 @@
       "deviceId": "xbox-360",
       "name": "Xbox 360",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 1,
+      "pending": 66,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -6853,7 +8047,6 @@
         "npuTops",
         "copilotPlus",
         "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -6911,6 +8104,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-360",
+          "url": "http://mktplassets.xbox.com/NR/rdonlyres/D535D3AF-6943-4B91-ABF2-70B2D43D6B27/0/ConsoleWarranty_LATAM_0801.pdf",
+          "result": "NETWORK_FAILURE",
+          "sourceIndex": 60,
+          "captureSha256": "f55da39998eaf8d4cedf397d3d33109ac0680a94bf1c6aa83888b80fded693e5",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-360",
+          "url": "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/",
+          "result": "READABLE_REVIEWED",
+          "scope": "2005年欧美公告首发配置；不覆盖所有后续容量、地区或改款",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 78,
+          "captureSha256": "d870894d563862c3a3c364018cd593f7329f4c72a54f7596344ccf571de51812"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -6919,8 +8132,8 @@
       "deviceId": "xbox-360-s",
       "name": "Xbox 360 S",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 2,
+      "pending": 65,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -6940,7 +8153,6 @@
         "npuTops",
         "copilotPlus",
         "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -6963,7 +8175,6 @@
         "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -6998,6 +8209,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-360-s",
+          "url": "https://news.xbox.com/en-us/2010/06/14/announcing-the-new-xbox-360/",
+          "result": "READABLE",
+          "sourceIndex": 61,
+          "captureSha256": "dde11be6cd6932858211836dd30910728d6098b40b3f221111b61a7c4a8ea11a",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "url": "https://news.xbox.com/en-us/2010/06/14/announcing-the-new-xbox-360/",
+          "result": "READABLE_REVIEWED",
+          "scope": "2010年6月美国公布配置；不证明所有后续容量与中国销售",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 61,
+          "captureSha256": "dde11be6cd6932858211836dd30910728d6098b40b3f221111b61a7c4a8ea11a"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -7006,8 +8237,8 @@
       "deviceId": "xbox-360-e",
       "name": "Xbox 360 E",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 1,
+      "pending": 66,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7027,7 +8258,6 @@
         "npuTops",
         "copilotPlus",
         "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7085,6 +8315,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-360-e",
+          "url": "https://news.xbox.com/en-us/2013/06/10/e3-2013-xbox-360-reveal/",
+          "result": "NETWORK_FAILURE",
+          "sourceIndex": 62,
+          "captureSha256": "ec8bc9ab3e42a1bb8925f32d5bbea6fd979db422ec55ecb912c160ff2ee49f4f",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "url": "https://news.microsoft.com/source/2013/06/10/microsoft-invites-everyone-to-join-the-fun-with-a-brand-new-xbox-360/",
+          "result": "READABLE_REVIEWED",
+          "scope": "2013年6月新设计Xbox360公告套装；不证明其他容量与中国销售",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 79,
+          "captureSha256": "4489bf87f54a03d136b6af7a17f7d7625ecbb5bc86a799a4fe25ef10b7a62d7e"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -7093,8 +8343,8 @@
       "deviceId": "xbox-one",
       "name": "Xbox One",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 2,
+      "pending": 65,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7113,7 +8363,6 @@
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
@@ -7134,7 +8383,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7170,6 +8418,26 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-one",
+          "url": "https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/",
+          "result": "READABLE",
+          "sourceIndex": 63,
+          "captureSha256": "39f29e10c1de0eb829b60a3088d879da32f8641a705f1e989709c7c388de8a6a",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-one",
+          "url": "https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/",
+          "result": "READABLE_REVIEWED",
+          "scope": "2013年Xbox One架构公告；未从该文推断内存类型、容量组合或工艺",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 63,
+          "captureSha256": "39f29e10c1de0eb829b60a3088d879da32f8641a705f1e989709c7c388de8a6a"
         }
       ],
       "conflicts": [],
@@ -7259,6 +8527,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-one-s",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-one-s",
+          "result": "SOURCE_NOT_COVERED",
+          "sourceIndex": 64,
+          "captureSha256": "cdc3b07c2bbf7d6a5496b0a6177ad120c9f3c1988008190f9f3568d9e49623a6",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-one-s",
+          "result": "SOURCE_NOT_COVERED",
+          "scope": "当前Xbox One S官方功能页",
+          "note": "SOURCE_NOT_COVERED: no complete hardware table; not copying Series specs",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 64,
+          "captureSha256": "cdc3b07c2bbf7d6a5496b0a6177ad120c9f3c1988008190f9f3568d9e49623a6"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -7266,8 +8554,8 @@
     {
       "deviceId": "xbox-one-s-digital",
       "name": "Xbox One S 全数字版",
-      "total": 67,
-      "verified": 0,
+      "total": 68,
+      "verified": 1,
       "pending": 67,
       "pendingFields": [
         "releaseDate",
@@ -7346,6 +8634,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-one-s-digital",
+          "url": "https://news.xbox.com/en-us/2019/04/16/xbox-one-s-all-digital-edition/",
+          "result": "READABLE",
+          "sourceIndex": 65,
+          "captureSha256": "33728a30f0021bd8f7a001787bd06f51db5ba7e7401811d2b030595360871364",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "url": "https://news.xbox.com/en-us/2019/04/16/xbox-one-s-all-digital-edition/",
+          "result": "READABLE_REVIEWED",
+          "scope": "2019年All-Digital发布公告",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 65,
+          "captureSha256": "33728a30f0021bd8f7a001787bd06f51db5ba7e7401811d2b030595360871364"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -7353,9 +8661,9 @@
     {
       "deviceId": "xbox-one-x",
       "name": "Xbox One X",
-      "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "total": 68,
+      "verified": 3,
+      "pending": 65,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7375,7 +8683,6 @@
         "npuTops",
         "copilotPlus",
         "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7395,7 +8702,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7433,6 +8739,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-one-x",
+          "url": "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/",
+          "result": "READABLE",
+          "sourceIndex": 66,
+          "captureSha256": "755274595b5f2be4397f47ea1cdb5cef6c12aab3ee8941586ca7f3b72d03ba5d",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "url": "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/",
+          "result": "READABLE_REVIEWED",
+          "scope": "2017首发官方公告；不证明中国价格或其他年份套装",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 66,
+          "captureSha256": "755274595b5f2be4397f47ea1cdb5cef6c12aab3ee8941586ca7f3b72d03ba5d"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -7440,9 +8766,9 @@
     {
       "deviceId": "xbox-series-s-512",
       "name": "Xbox Series S 512GB",
-      "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "total": 68,
+      "verified": 6,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7457,12 +8783,9 @@
         "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7482,7 +8805,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7500,7 +8822,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -7520,16 +8841,45 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-series-s-512",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+          "result": "READABLE",
+          "sourceIndex": 67,
+          "captureSha256": "88a5e525d3e8fd239f9fb73734c3372c0397a74a603d5947f86b94b7eb3c18f1",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "美国SeriesS页明确区分512GB/1TB；不认证中国销售",
+          "note": "CONFIGURATION_CONFLICT: current page CPU3.8/3.6GHz differs from stored3.6/3.4; CPU requires second applicable official source",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 67,
+          "captureSha256": "88a5e525d3e8fd239f9fb73734c3372c0397a74a603d5947f86b94b7eb3c18f1"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "cpuModel",
+          "sourceUrl": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: current page CPU3.8/3.6GHz differs from stored3.6/3.4; CPU requires second applicable official source"
+        }
+      ],
+      "maskedFields": [
+        "cpuModel"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "xbox-series-s-1tb",
       "name": "Xbox Series S 1TB",
-      "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "total": 68,
+      "verified": 6,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7544,12 +8894,9 @@
         "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7569,7 +8916,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7587,7 +8933,6 @@
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -7607,16 +8952,45 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
-      "conflicts": [],
-      "maskedFields": [],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+          "result": "READABLE",
+          "sourceIndex": 67,
+          "captureSha256": "88a5e525d3e8fd239f9fb73734c3372c0397a74a603d5947f86b94b7eb3c18f1",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+          "result": "CONFIGURATION_CONFLICT",
+          "scope": "美国SeriesS页明确区分512GB/1TB；不认证中国销售",
+          "note": "CONFIGURATION_CONFLICT: current page CPU3.8/3.6GHz differs from stored3.6/3.4; CPU requires second applicable official source",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 67,
+          "captureSha256": "88a5e525d3e8fd239f9fb73734c3372c0397a74a603d5947f86b94b7eb3c18f1"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "cpuModel",
+          "sourceUrl": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+          "reviewedAt": "2026-10-09",
+          "reason": "CONFIGURATION_CONFLICT: current page CPU3.8/3.6GHz differs from stored3.6/3.4; CPU requires second applicable official source"
+        }
+      ],
+      "maskedFields": [
+        "cpuModel"
+      ],
       "productFamilyEvidence": null
     },
     {
       "deviceId": "xbox-series-x",
       "name": "Xbox Series X 1TB（带光驱）",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 5,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7628,15 +9002,11 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7656,7 +9026,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7692,6 +9061,26 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-series-x",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+          "result": "READABLE",
+          "sourceIndex": 68,
+          "captureSha256": "5f5d2981cb81154c14db8c56bf00aff8afaef9199e2761e8d0a8ef0287d300d8",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+          "result": "READABLE_REVIEWED",
+          "scope": "美国官方页面指定SeriesX容量/光驱SKU；不认证中国销售",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 68,
+          "captureSha256": "5f5d2981cb81154c14db8c56bf00aff8afaef9199e2761e8d0a8ef0287d300d8"
         }
       ],
       "conflicts": [],
@@ -7702,8 +9091,8 @@
       "deviceId": "xbox-series-x-digital",
       "name": "Xbox Series X 1TB 数字版",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 5,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7715,15 +9104,11 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7743,7 +9128,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7779,6 +9163,26 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-series-x-digital",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+          "result": "READABLE",
+          "sourceIndex": 68,
+          "captureSha256": "5f5d2981cb81154c14db8c56bf00aff8afaef9199e2761e8d0a8ef0287d300d8",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+          "result": "READABLE_REVIEWED",
+          "scope": "美国官方页面指定SeriesX容量/光驱SKU；不认证中国销售",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 68,
+          "captureSha256": "5f5d2981cb81154c14db8c56bf00aff8afaef9199e2761e8d0a8ef0287d300d8"
         }
       ],
       "conflicts": [],
@@ -7789,8 +9193,8 @@
       "deviceId": "xbox-series-x-2tb",
       "name": "Xbox Series X 2TB 银河黑",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 5,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7802,15 +9206,11 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7830,7 +9230,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7868,6 +9267,26 @@
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
         }
       ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+          "result": "READABLE",
+          "sourceIndex": 68,
+          "captureSha256": "5f5d2981cb81154c14db8c56bf00aff8afaef9199e2761e8d0a8ef0287d300d8",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+          "result": "READABLE_REVIEWED",
+          "scope": "美国官方页面指定SeriesX容量/光驱SKU；不认证中国销售",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 68,
+          "captureSha256": "5f5d2981cb81154c14db8c56bf00aff8afaef9199e2761e8d0a8ef0287d300d8"
+        }
+      ],
       "conflicts": [],
       "maskedFields": [],
       "productFamilyEvidence": null
@@ -7876,8 +9295,8 @@
       "deviceId": "xbox-series-x25",
       "name": "Xbox Series X25 限量版",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 5,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7889,15 +9308,11 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7917,7 +9332,6 @@
         "speakers",
         "audioTech",
         "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
         "surfaceConnect",
         "wireless",
@@ -7953,6 +9367,26 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        }
+      ],
+      "sourceChecks": [
+        {
+          "deviceId": "xbox-series-x25",
+          "url": "https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3",
+          "result": "READABLE",
+          "sourceIndex": 69,
+          "captureSha256": "b2b4e082ceb657cc516c6b9d9efc8d9b9f06f0ae7c0be5e57b3e0450f41f66c9",
+          "checkedAt": "2026-10-09"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "url": "https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3",
+          "result": "READABLE_REVIEWED",
+          "scope": "美国官方页面指定SeriesX容量/光驱SKU；不认证中国销售",
+          "note": "",
+          "checkedAt": "2026-10-09",
+          "sourceIndex": 69,
+          "captureSha256": "b2b4e082ceb657cc516c6b9d9efc8d9b9f06f0ae7c0be5e57b3e0450f41f66c9"
         }
       ],
       "conflicts": [],

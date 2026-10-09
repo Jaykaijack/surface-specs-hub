@@ -2007,6 +2007,63 @@ const App = {
     return `<span title="${title}" style="font-size:11px; padding:3px 8px; border-radius:4px; ${style}">${prefix}${entry.label}</span>`;
   },
 
+  createCorrectionDraft(deviceId, field, sourceUrl, note) {
+    const device = Catalog.getDevice(deviceId);
+    if (!device || !Catalog.specKeys(device).includes(field)) throw new Error('请选择有效参数');
+    let url;
+    try { url = new URL(sourceUrl); } catch (_) { throw new Error('请填写完整的 HTTPS 来源链接'); }
+    if (url.protocol !== 'https:') throw new Error('来源链接必须使用 HTTPS');
+    if (!String(note || '').trim() || String(note).length > 2000) throw new Error('请填写 1–2000 字的问题说明');
+    return {schemaVersion:1,deviceId,field,currentRawValue:Catalog.rawSpec(device,field),displayedValue:Catalog.getSpec(device,field),datasetVersion:SURFACE_DATA.datasetVersion,
+      sourceUrl:url.href,note:String(note).trim(),createdAt:new Date().toISOString(),status:'USER_DRAFT_NOT_VERIFIED'};
+  },
+
+  openCorrectionDialog(deviceId) {
+    const device = Catalog.getDevice(deviceId);
+    if (!device) return;
+    const previous = document.activeElement;
+    const dialog = document.createElement('dialog');
+    dialog.className = 'correction-dialog';
+    dialog.setAttribute('aria-labelledby','correction-title');
+    const fields = Catalog.specKeys(device).map(key => {
+      const field = (SURFACE_DATA.specGroups || []).flatMap(g=>g.fields || []).find(f=>f.key===key);
+      return `<option value="${this.escapeText(key)}">${this.escapeText(field ? field.label : key)}</option>`;
+    }).join('');
+    dialog.innerHTML = `<form><h2 id="correction-title">报告参数问题</h2><p>${this.escapeText(device.name)}。生成可下载的纠错草稿，由你检查后交给维护者；此处不会自动发送。</p>
+      <label>参数<select name="field">${fields}</select></label><label>官方来源链接<input name="source" type="url" required placeholder="https://" maxlength="2000"></label>
+      <label>问题与适用配置<textarea name="note" required maxlength="2000" placeholder="注明地区、内存/处理器等配置，以及原文与当前值的差异"></textarea></label>
+      <p role="status" class="correction-status"></p><button type="submit" class="fluent-btn">生成纠错草稿</button>
+      <label hidden class="correction-output-label">草稿预览<textarea class="correction-output" readonly></textarea></label>
+      <button type="button" class="fluent-btn correction-download" hidden>下载 JSON 草稿</button>
+      <button type="button" class="fluent-btn correction-close">关闭</button></form>`;
+    let draft = null;
+    const form = dialog.querySelector('form');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      try {
+        draft = this.createCorrectionDraft(deviceId,form.elements.field.value,form.elements.source.value,form.elements.note.value);
+        dialog.querySelector('.correction-output').value = JSON.stringify(draft,null,2);
+        dialog.querySelector('.correction-output-label').hidden = false;
+        dialog.querySelector('.correction-download').hidden = false;
+        dialog.querySelector('.correction-status').textContent = '草稿已生成，尚未提交或核验。';
+      } catch (error) { dialog.querySelector('.correction-status').textContent = error.message; }
+    });
+    form.addEventListener('input', () => {
+      draft = null;
+      dialog.querySelector('.correction-download').hidden = true;
+      dialog.querySelector('.correction-output-label').hidden = true;
+    });
+    dialog.querySelector('.correction-download').addEventListener('click', () => {
+      if (!draft) return;
+      const url = URL.createObjectURL(new Blob([JSON.stringify(draft,null,2)],{type:'application/json'}));
+      const link = document.createElement('a');link.href=url;link.download=`surface-correction-${deviceId}.json`;link.click();
+      setTimeout(()=>URL.revokeObjectURL(url),1000);
+    });
+    dialog.querySelector('.correction-close').addEventListener('click',()=>dialog.close());
+    dialog.addEventListener('close',()=>{dialog.remove(); if(previous && previous.isConnected)previous.focus();});
+    document.body.appendChild(dialog);dialog.showModal();
+  },
+
   // 4. 单机独立详情页 (PRD 第十二章 - 完整13大类规格直出)
   renderProductDetailView(container, seriesId, deviceId) {
     const dev = this.getDevice(deviceId);
@@ -2033,6 +2090,7 @@ const App = {
       <div class="catalog-detail-layout">
       <section class="catalog-detail-main">
       <p class="spec-evidence-note">参数记录尚未完成逐字段真实性核验；来源链接与历史记录日期不代表当前配置已确认。</p>
+      <button class="fluent-btn" onclick="App.openCorrectionDialog('${this.escapeText(dev.id)}')">报告参数问题</button>
       ${dev.productFamilyEvidence && /^https:\/\/www\.microsoft\.com\//.test(dev.productFamilyEvidence.url) ? `<p class="spec-evidence-note">独立产品级来源（${this.escapeText(dev.productFamilyEvidence.locale)}）：${this.escapeText(dev.productFamilyEvidence.scope)} <a href="${this.escapeText(dev.productFamilyEvidence.url)}" target="_blank" rel="noopener noreferrer">查看官方产品说明</a></p>` : ''}
       ${(dev.dataConflicts || []).map(conflict => `<p class="spec-evidence-note" role="note">来源冲突 · ${this.escapeText(conflict.field)}：${this.escapeText(conflict.reason)}。争议部分待核验，不作为配置结论。</p>`).join('')}
       <div class="catalog-breadcrumb">
