@@ -1,16 +1,25 @@
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
+const base=process.env.TEST_BASE || 'http://127.0.0.1:8765';
 (async()=>{
  const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',args:['--no-sandbox']});
  const page=await browser.newPage({viewport:{width:1280,height:800}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('http://127.0.0.1:8765/dist/site/#/tools/guide');
+ await page.goto(base+'/dist/site/#/tools/guide');
  await page.getByRole('button',{name:'入门便携',exact:false}).click();
  assert.equal(await page.evaluate(()=>ToolsEngine.guideBudget),'budget_entry');
  assert.match(await page.locator('#tool-smart-guide-container').innerText(),/符合条件 0 款/);
  await page.getByRole('button',{name:'主流进阶',exact:false}).click();
  assert.equal(await page.evaluate(()=>ToolsEngine.guideBudget),'budget_mid');
  assert.ok(await page.locator('.guide-card').count()>0);
+ await page.locator('#global-search-input').focus();
  await page.evaluate(()=>App.handleGlobalSearch('Pro 11'));
+ await page.keyboard.press('Escape');
+ assert.equal(await page.evaluate(()=>document.activeElement.id),'global-search-input');
+ await page.evaluate(()=>App.handleGlobalSearch('Pro 11'));
+ assert.equal(await page.getByRole('dialog').count(),1);
+ await page.locator('#dialog-search-input').focus();
+ await page.keyboard.press('Tab');
+ assert.ok(await page.evaluate(()=>document.activeElement.closest('[role=dialog]') !== null));
  assert.ok(await page.locator('.search-result-item').count()>0);
  await page.locator('.search-result-item').first().focus();await page.keyboard.press('Enter');
  assert.match(page.url(),/pro-11/);
@@ -18,31 +27,34 @@ const assert=require('node:assert/strict');
  assert.equal(await page.evaluate(()=>window.pwned),undefined);
  assert.equal(await page.locator('#search-results-modal img').count(),0);
  await page.evaluate(()=>App.closeSearchModal());
- await page.goto('http://127.0.0.1:8765/dist/site/#/tools/weight');
+ await page.goto(base+'/dist/site/#/tools/weight');
  await page.evaluate(()=>{ToolsEngine.weightDeviceId='laptop-13-inch';ToolsEngine.weightWithKeyboard=false;ToolsEngine.weightWithPen=false;ToolsEngine.weightWithMouse=false;ToolsEngine.weightCharger='none';ToolsEngine.onWeightOptionChange('device','laptop-13-inch')});
  assert.match(await page.locator('.weight-big-num').innerText(),/1220/);
  await page.setViewportSize({width:390,height:844});
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth <= innerWidth), 'mobile must not overflow horizontally');
  await page.screenshot({path:'/tmp/surface-mobile-weight.png',fullPage:true});
- await page.goto('http://127.0.0.1:8765/dist/site/#/audit');
+ await page.goto(base+'/dist/site/#/audit');
  await page.evaluate(()=>{App.auditFilter='all';App.renderAuditView(document.getElementById('hub-main-content'))});
  for(const name of ['Surface Pro 初代', 'Surface Pro 2']) {
   const row=page.locator('tr').filter({hasText:name});assert.ok(await row.count()>0);assert.match(await row.first().innerText(),/16:9/);
  }
  const xbox=page.locator('tr').filter({hasText:'Xbox Series X 1TB（带光驱）'});assert.ok(await xbox.count()>0);assert.doesNotMatch(await xbox.first().innerText(),/3:2/);
- await page.goto('http://127.0.0.1:8765/dist/site/#/business/laptop/laptop-ultra-biz');
+ await page.goto(base+'/dist/site/#/business/laptop/laptop-ultra-biz');
  const bizText=await page.locator('#hub-main-content').innerText();
  assert.match(bizText,/3270/);assert.match(bizText,/92 Wh/);assert.match(bizText,/17.99/);assert.match(bizText,/3 年/);
  assert.doesNotMatch(bizText,/1000 TOPS|3nm|8 \/ 10|27,588/);
- await page.goto('http://127.0.0.1:8765/dist/site/#/consumer/laptop/laptop-ultra');
+ await page.goto(base+'/dist/site/#/consumer/laptop/laptop-ultra');
  const consumerText=await page.locator('#hub-main-content').innerText();
  assert.match(consumerText,/尚未核验/);assert.match(consumerText,/不代表当前配置已确认/);assert.match(await page.locator('.utility-meta-list').innerText(),/历史记录日期\n待核验/);assert.doesNotMatch(consumerText,/已验证|官方未披露/);assert.doesNotMatch(consumerText,/3120|3270|90 Wh|92 Wh|1000 TOPS|21,988/);
- await page.goto('http://127.0.0.1:8765/dist/site/products/laptop-ultra/');
+ await page.goto(base+'/dist/site/products/laptop-ultra/');
  assert.doesNotMatch(await page.locator('main').innerText(),/3120|3270|90 Wh|92 Wh|1000 TOPS|21,988/);
- await page.goto('http://127.0.0.1:8765/dist/site/products/pro-1/');
+ await page.goto(base+'/dist/site/products/pro-1/');
  assert.match(await page.locator('main').innerText(),/16:9/);
  assert.match(await page.locator('link[rel=canonical]').getAttribute('href'),/products\/pro-1\//);
- for(const file of ['robots.txt','sitemap.xml','build-info.json']){const r=await page.request.get('http://127.0.0.1:8765/dist/site/'+file);assert.equal(r.status(),200);assert.doesNotMatch(await r.text(),/<!doctype html>/i)}
+ for(const file of ['robots.txt','sitemap.xml','build-info.json']){const r=await page.request.get(base+'/dist/site/'+file);assert.equal(r.status(),200);assert.doesNotMatch(await r.text(),/<!doctype html>/i)}
+ await page.goto(base+'/dist/site/#/surface/pro/pro-1');
+ assert.match(await page.locator('#hub-main-content').innerText(),/图片待核验，暂不展示/);
+ assert.equal(await page.locator('#hub-main-content img[src*="surface-pro-1-hero"]').count(),0);
  assert.deepEqual(errors,[]);
  await browser.close();console.log('Browser PASS: desktop/mobile, real budget clicks, search keyboard + XSS, weight arithmetic, static detail/canonical/robots/sitemap/build metadata; no page errors');
 })().catch(e=>{console.error(e);process.exit(1)});

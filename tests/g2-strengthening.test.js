@@ -105,7 +105,7 @@ function runG2StrengtheningTests(helpers) {
     assert(Boolean(product), 'G2-03: 详情页路由必须生成 Product 节点');
     assert(product.name.includes('Surface Pro 13 英寸') && product.name.includes('第 12 代'), 'G2-03: Product 节点 name 必须准确');
     assertEqual(product.brand && product.brand.name, 'Microsoft', 'G2-03: Product 节点品牌必须为 Microsoft');
-    assert(Boolean(product.offers), 'G2-03: Product 节点必须包含 offers 报价定义');
+    assert(!product.offers, 'G2-03: 非电商资料库不得虚构报价及库存');
     const detailBreadcrumb = productParsed['@graph'].find(n => n['@type'] === 'BreadcrumbList');
     assert(Boolean(detailBreadcrumb) && detailBreadcrumb.itemListElement.length === 3,
       'G2-03: 详情页路由必须生成包含 3 级项的面包屑导航 (首页 > 系列 > 机型)');

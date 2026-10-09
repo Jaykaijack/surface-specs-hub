@@ -2564,7 +2564,7 @@ const App = {
     if (!resultsContainer) return;
 
     if (!term) {
-      resultsContainer.style.display = 'none';
+      this.closeSearchModal();
       return;
     }
 
@@ -2696,6 +2696,7 @@ const App = {
     const group = headingEl.closest('.detail-catalog-group');
     if (!group) return;
     group.classList.toggle('collapsed');
+    headingEl.setAttribute('aria-expanded', String(!group.classList.contains('collapsed')));
     const icon = headingEl.querySelector('.group-chevron-icon');
     if (icon) {
       icon.style.transform = group.classList.contains('collapsed') ? 'rotate(-90deg)' : 'rotate(0deg)';
@@ -2772,7 +2773,7 @@ const App = {
       const isActiveGroup = cat.seriesId === activeSeriesId;
       return `
         <section class="detail-catalog-group ${isActiveGroup ? 'active' : ''}">
-          <div class="detail-catalog-group-heading" onclick="App.toggleDetailCatalogGroup(this)" role="button" tabindex="0" title="点击折叠或展开本系列">
+          <div class="detail-catalog-group-heading" aria-expanded="true" onclick="App.toggleDetailCatalogGroup(this)" role="button" tabindex="0" title="点击折叠或展开本系列">
             <div style="display:flex; align-items:center; gap:8px;">
               <svg class="group-chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition:transform 0.2s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
               <strong>${this.escapeText(cat.name)}</strong>

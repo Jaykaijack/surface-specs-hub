@@ -609,6 +609,7 @@ const ComparisonEngine = {
     const arrow = document.getElementById(`accordion-arrow-${groupId}`);
     if (!groupEl) return;
     const isCollapsed = groupEl.classList.toggle('collapsed');
+    groupEl.querySelector('.spec-accordion-header')?.setAttribute('aria-expanded', String(!isCollapsed));
     if (arrow) arrow.textContent = isCollapsed ? '▶' : '▼';
   },
 
@@ -664,7 +665,7 @@ const ComparisonEngine = {
 
       html += `
         <div class="spec-accordion-group" id="accordion-group-${group.id}">
-          <div class="spec-accordion-header" onclick="ComparisonEngine.toggleAccordionGroup('${group.id}')" role="button" tabindex="0">
+          <div class="spec-accordion-header" aria-expanded="true" onclick="ComparisonEngine.toggleAccordionGroup('${group.id}')" role="button" tabindex="0">
             <div class="accordion-header-left">
               <span class="accordion-arrow" id="accordion-arrow-${group.id}">▼</span>
               <span class="accordion-icon">${icon}</span>

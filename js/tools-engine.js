@@ -630,7 +630,7 @@ const ToolsEngine = {
     if (!acc) return null;
     const row = (acc.compatibilityList || []).find(c => c.deviceId === devId);
     const e = row && row.evidence;
-    if (!e || e.deviceId !== devId || e.accessoryId !== accId || e.status !== row.status || !e.verifiedAt || !/^https:\/\//.test(e.sourceUrl || '')) {
+    if (!e || e.deviceId !== devId || e.accessoryId !== accId || e.status !== row.status || e.note !== row.note || !e.configuration || !e.verifiedAt || !/^https:\/\//.test(e.sourceUrl || '')) {
       return {status:'UNKNOWN', note:'尚无绑定此型号、配件和配置的有效证据，无法判断兼容；历史说明不作结论'};
     }
     return row;
@@ -1007,7 +1007,7 @@ const ToolsEngine = {
           </div>
         </div>
 
-        <p style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${rule.title}。符合条件 ${matches.length} 款，下面按官方参数排序，不只给两台旧机型。</p>
+        <p role="status" aria-live="polite" style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${rule.title}。符合条件 ${matches.length} 款，下面按官方参数排序，不只给两台旧机型。</p>
         ${emptyNote ? `<p style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${emptyNote}</p>` : ''}
 
         <!-- 推荐结果卡片区 -->

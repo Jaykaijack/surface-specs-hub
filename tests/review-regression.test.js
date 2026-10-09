@@ -80,3 +80,30 @@ console.log('Real Ultra import PASS: 90 records, China-business facts corrected,
 
 assert.equal(ComparisonEngine.checkFieldDiff([{specs:{resolution:'3270 x 2180 (262 PPI)'}},{specs:{resolution:'3270 × 2180'}}],'resolution'),false);
 assert.equal(ComparisonEngine.checkFieldDiff([{specs:{aspectRatio:'3:2 黄金生产力比例'}},{specs:{aspectRatio:'3:2'}}],'aspectRatio'),false);
+// Full-report and upstream reconciliation regressions.
+assert.equal(new Set(SURFACE_DATA.devices.map(d=>d.id)).size,90);
+assert.equal(new Set(SURFACE_DATA.chips.map(d=>d.id)).size,SURFACE_DATA.chips.length);
+assert.equal(t.parseMass('1 lb'),453.59237);
+for (const term of ['pro11','Pro 11','Pro 第11代','Pro 第十一版']) { App.handleGlobalSearch(term); assert.match(modal.innerHTML,/pro-11-13/); }
+for (const bad of [{devices:[{id:'x',status:'invented'}]},{devices:[{id:'x',officialDocUrl:'javascript:alert(1)'}]},{devices:{}},{devices:[{id:'x',specs:[]}]},{devices:[{id:'x'},{id:'x'}]},{devices:[{id:'x',name:'<img src=x onerror=alert(1)>'}]}]) {
+ const before=Catalog.getSnapshot(); assert.equal(Catalog.applySnapshot(bad),false); assert.equal(Catalog.getSnapshot(),before);
+}
+const {updateUltra}=require('../scripts/update-surface-laptop-ultra');
+const updated=updateUltra(SURFACE_DATA);
+assert.deepEqual(updated.devices.find(d=>d.id==='laptop-ultra'),JSON.parse(JSON.stringify(ultraConsumer)));
+assert.equal(updated.devices.find(d=>d.id==='laptop-ultra-biz').specs.resolution,'3270 × 2180');
+assert.equal(updated.chips.find(c=>c.id==='nvidia-rtx-spark-n1x').npuTops,null);
+assert.deepEqual(updateUltra(updated),updated,'scoped updater must be idempotent');
+const images=require('../docs/evidence/image-verification-20261009.json');
+for(const row of images.records) {
+ assert.equal(crypto.createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256,'image evidence invalidated when pixels change');
+ if(row.status==='BLOCKED') {
+  const shot=Catalog.portrait(Catalog.getDevice(row.deviceId),row.color);
+  assert.equal(shot.identity,'blocked'); assert.match(shot.src,/^data:image\/svg/); assert.doesNotMatch(Catalog.frame(shot),/assets\//);
+ }
+ for(const child of row.derivatives) assert.equal(crypto.createHash('sha256').update(fs.readFileSync(child.path)).digest('hex'),child.sha256);
+}
+assert.match(Catalog.portraitLabel(Catalog.portrait(Catalog.getDevice('laptop-8-138'))),/待核验/);
+assert.doesNotMatch(fs.readFileSync('css/specs-layout.css','utf8'),/<<<<<<<|>>>>>>>/);
+assert.match(fs.readFileSync('css/specs-layout.css','utf8'),/guide-container select/);
+console.log('Upstream/report regression PASS: unique IDs, safe updater, search aliases, atomic snapshot rejection, image hashes/blocked rendering/pending state, active narrow-screen CSS');

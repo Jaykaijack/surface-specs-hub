@@ -21,7 +21,6 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const INTERNAL_NOTE_KEYWORDS = [
   '官方写了上市月份',
   '现在还不能标成国行在售',
-  '图片待核验',
   '内部备注',
   '工单状态',
   '草稿未确认'

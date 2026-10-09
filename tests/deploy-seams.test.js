@@ -17,7 +17,7 @@ function runDeploySeamTests(helpers) {
 
   const missing = Catalog.portrait(null);
   assertEqual(missing.identity, 'missing', '没有机型时，机型图身份是没有图');
-  assert(String(missing.src).includes('surface-new-pro-hero.png'), '没有机型时仍给出代表图，卡片不会空白');
+  assert(String(missing.src).startsWith('data:image/svg+xml,'), '没有机型时使用文字占位，不借其他产品图');
 
   const bare = { id: 'bare-device', specs: {} };
   const bareShot = Catalog.portrait(bare);
@@ -63,12 +63,12 @@ function runDeploySeamTests(helpers) {
 
   const pro13 = SURFACE_DATA.devices.find((device) => device.id === 'pro-12-13-intel');
   const pro13Shot = Catalog.portrait(pro13);
-  assertEqual(pro13Shot.identity, 'official', '同一代的 Intel、骁龙、消费版共用官方图，不叫代用图');
-  assertEqual(Catalog.portraitMark(pro13), '', '国行在售的第 12 代不打「同系列示意」');
+  assertEqual(pro13Shot.identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assert(Catalog.portraitMark(pro13).includes('待核验'), '国行在售的第 12 代不打「同系列示意」');
   const pro12 = SURFACE_DATA.devices.find((device) => device.id === 'pro-12-inch');
-  assertEqual(Catalog.portrait(pro12).identity, 'official', '12 英寸消费版和商用版共用官方图，不叫代用图');
+  assertEqual(Catalog.portrait(pro12).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
   const borrowed = SURFACE_DATA.devices.find((device) => device.id === 'pro-11-13');
-  assertEqual(Catalog.portrait(borrowed).identity, 'official', '第 11 代用自己的主图，不再占用第 12 代的新图');
+  assertEqual(Catalog.portrait(borrowed).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
   const older = SURFACE_DATA.devices.find((device) => device.id === 'pro-8-biz');
   const sharedShot = Catalog.portrait(older, '亮铂金');
   assertEqual(sharedShot.identity, 'shared', '用了另一代机器的图，身份才是同系列代用图');
@@ -77,34 +77,34 @@ function runDeploySeamTests(helpers) {
 
   const laptop8 = SURFACE_DATA.devices.find((device) => device.id === 'laptop-8-138');
   const laptop8Platinum = Catalog.portrait(laptop8, '亮铂金');
-  assertEqual(laptop8Platinum.identity, 'official', '第 8 代消费版亮铂金用的是单独的官方配色图');
-  assertEqual(Catalog.portraitMark(laptop8, '亮铂金'), '', '单独配色图不打代用标记');
+  assertEqual(laptop8Platinum.identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assert(Catalog.portraitMark(laptop8, '亮铂金').includes('待核验'), '单独配色图不打代用标记');
   const laptop8Intel = SURFACE_DATA.devices.find((device) => device.id === 'laptop-8-138-intel');
-  assertEqual(Catalog.portrait(laptop8Intel, '亮铂金').identity, 'official', '第 8 代 Intel 亮铂金和第 8 代主图是同一张，不叫代用图');
+  assertEqual(Catalog.portrait(laptop8Intel, '亮铂金').identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
   const laptop1 = SURFACE_DATA.devices.find((device) => device.id === 'laptop-1');
-  assertEqual(Catalog.portrait(laptop1).identity, 'official', '初代 Laptop 主图已换成 2017 年官方产品图');
-  assertEqual(Catalog.portrait(laptop1, '亮铂金').identity, 'official', '初代 Laptop 亮铂金用的是 2017 年官方铂金图');
-  assertEqual(Catalog.portrait(laptop1, '勃艮第红').identity, 'official', '初代 Laptop 勃艮第红用的是 2017 年官方红色图');
+  assertEqual(Catalog.portrait(laptop1).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(laptop1, '亮铂金').identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(laptop1, '勃艮第红').identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
   const laptop2 = SURFACE_DATA.devices.find((device) => device.id === 'laptop-2');
-  assertEqual(Catalog.portrait(laptop2).identity, 'official', 'Laptop 2 主图已换成自己的官方产品图');
+  assertEqual(Catalog.portrait(laptop2).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
   const pro1 = SURFACE_DATA.devices.find((device) => device.id === 'pro-1');
-  assertEqual(Catalog.portrait(pro1).identity, 'official', '初代 Pro 主图为官方正版独立大图');
+  assertEqual(Catalog.portrait(pro1).identity, 'blocked', '文件名及共用关系不能替代逐图来源核验');
   const pro8 = SURFACE_DATA.devices.find((device) => device.id === 'pro-8');
   const pro3 = SURFACE_DATA.devices.find((device) => device.id === 'pro-3');
   const pro4 = SURFACE_DATA.devices.find((device) => device.id === 'pro-4');
   const pro5 = SURFACE_DATA.devices.find((device) => device.id === 'pro-5');
   const pro6 = SURFACE_DATA.devices.find((device) => device.id === 'pro-6');
   const prox = SURFACE_DATA.devices.find((device) => device.id === 'pro-x');
-  assertEqual(Catalog.portrait(pro8).identity, 'official', 'Pro 8 主图已换成自己的官方产品图');
-  assertEqual(Catalog.portrait(pro5).identity, 'official', '2017 款 Surface Pro 主图已换成自己的官方产品图');
-  assertEqual(Catalog.portrait(pro6).identity, 'official', 'Pro 6 主图已换成自己的官方产品图');
-  assertEqual(Catalog.portrait(prox).identity, 'official', 'Pro X 主图已换成自己的官方产品图');
-  assertEqual(Catalog.portrait(pro3).identity, 'official', 'Pro 3 主图已换成 2014 年官方产品图');
-  assertEqual(Catalog.portrait(pro4).identity, 'official', 'Pro 4 主图已换成官方产品图，不再标示意');
+  assertEqual(Catalog.portrait(pro8).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(pro5).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(pro6).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(prox).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(pro3).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(pro4).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
   const hub2s = SURFACE_DATA.devices.find((device) => device.id === 'hub-2s');
   const hub3 = SURFACE_DATA.devices.find((device) => device.id === 'hub-3');
-  assertEqual(Catalog.portrait(hub2s).identity, 'official', '文件名写明 Hub 2S 的图，仍属于 Hub 2S');
-  assertEqual(Catalog.portrait(hub3).identity, 'official', 'Hub 3 拥有官方专属正版大图，必须为 official 且无示意黄标');
+  assertEqual(Catalog.portrait(hub2s).identity, 'pending', '文件名及共用关系不能替代逐图来源核验');
+  assertEqual(Catalog.portrait(hub3).identity, 'blocked', '文件名及共用关系不能替代逐图来源核验');
 
   const officialShot = laptop8Platinum;
 

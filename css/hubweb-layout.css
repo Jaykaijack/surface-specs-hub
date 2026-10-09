@@ -3983,19 +3983,3 @@ select:focus-visible,
 .device-card-mini:hover .accessory-img-wrap img {
   transform: scale(1.03);
 }
-
-/* Review: keyboard focus and small-screen clearance */
-:focus-visible { outline: 3px solid var(--ms-accent, #0078d4); outline-offset: 3px; }
-.search-result-item { cursor: pointer; }
-.search-modal-card { max-height: 85dvh; overflow-y: auto; }
-@media (max-width: 640px) {
-  #hub-main-content { padding-bottom: 180px; min-width: 0; }
-  .guide-card, .guide-panel { min-width: 0; overflow-wrap: anywhere; }
-  .weight-item-row { flex-wrap: wrap; gap: 8px; }
-  .guide-filter-label { white-space: normal; }
-}
-
-@media (max-width: 640px) {
-  .guide-container select { min-width: 0; max-width: 100%; width: 100%; box-sizing: border-box; }
-  .weight-item-row > div, .weight-item-row label { min-width: 0; max-width: 100%; }
-}

@@ -32,7 +32,10 @@ const Catalog = (function () {
     weight: ['weightGrams']
   };
 
-  const PORTRAIT_REV = '20260923';
+  // Visual review: docs/evidence/image-verification-20261009.json. Never substitute another product.
+  const BLOCKED_IMAGES = ['surface-pro-1-hero.png', 'surface-pro-2-hero.png', 'surface-hub-3-hero.png', 'surface-pro-9-forest.png'];
+  const IMAGE_PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220"><rect width="320" height="220" fill="#eee"/><text x="160" y="110" text-anchor="middle" fill="#555" font-size="16">图片待核验，暂不展示</text></svg>');
+  const PORTRAIT_REV = '20261009-review';
   const DELIVERY_REV = '20260925pic2';
   const PORTRAIT_FALLBACK = './assets/products/surface-new-pro-hero.png';
 
@@ -317,7 +320,26 @@ const Catalog = (function () {
 
   function applySnapshot(payload) {
     const base = baseline();
-    if (!base || !payload) return false;
+    if (!base || !payload || typeof payload !== 'object' || Array.isArray(payload)) return false;
+    // Reject malformed/untrusted snapshots atomically before changing the active catalog.
+    try {
+      const json = JSON.stringify(payload);
+      if (json.length > 10 * 1024 * 1024 || /"(?:__proto__|prototype|constructor)"\s*:/.test(json) || /<\s*\/?[a-z!]|javascript:/i.test(json)) return false;
+      for (const key of DATA_KEYS) {
+        if (payload[key] === undefined) continue;
+        if (!Array.isArray(payload[key])) return false;
+        const ids = new Set();
+        for (const row of payload[key]) {
+          if (!row || typeof row !== 'object' || Array.isArray(row) || typeof row.id !== 'string' || !/^[a-zA-Z0-9_-]+$/.test(row.id) || ids.has(row.id)) return false;
+          ids.add(row.id);
+          if (key === 'devices' && row.status !== undefined && !['current_cn','current_global','discontinued','legacy','upcoming','pending'].includes(row.status)) return false;
+          for (const source of [row.sourceUrl, row.officialDocUrl, row.specs && row.specs.officialDocUrl]) {
+            if (source !== undefined && source !== null && source !== '' && (typeof source !== 'string' || !/^https:\/\/[^\s<>]+$/.test(source))) return false;
+          }
+          if (row.specs !== undefined && (!row.specs || typeof row.specs !== 'object' || Array.isArray(row.specs))) return false;
+        }
+      }
+    } catch (_) { return false; }
     const current = store();
     let applied = 0;
     const next = {};
@@ -547,7 +569,7 @@ const Catalog = (function () {
 
   function portrait(device, colorName) {
     if (!device) {
-      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing', alt: '' };
+      return { src: IMAGE_PLACEHOLDER, identity: 'missing', alt: '' };
     }
     let raw = '';
     if (colorName) {
@@ -557,13 +579,14 @@ const Catalog = (function () {
     if (!raw) raw = device.heroImage || '';
     if (!raw) {
       if (device.categoryId === 'xbox') return { src: '', identity: 'missing', alt: deviceAlt(device, colorName) };
-      return { src: withPortraitRev(PORTRAIT_FALLBACK), identity: 'missing', alt: deviceAlt(device, colorName) };
+      return { src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName) };
     }
+    if (BLOCKED_IMAGES.includes(raw.split('/').pop().split('?')[0])) return {src: IMAGE_PLACEHOLDER, identity: 'blocked', alt: deviceAlt(device, colorName) + '：图片存在错配或裁切问题，暂不展示'};
     const review = device.imageVerification || {};
     const explicitIdentity = ['pending', 'diagram', 'shared'].indexOf(review.status) !== -1;
     return {
       src: withPortraitRev(raw),
-      identity: explicitIdentity ? review.status : (isStandIn(device, raw) ? 'shared' : 'official'),
+      identity: explicitIdentity ? review.status : (isStandIn(device, raw) ? 'shared' : 'pending'),
       kind: review.kind || (review.status === 'diagram' ? 'diagram' : ''),
       alt: deviceAlt(device, colorName)
     };
@@ -571,10 +594,11 @@ const Catalog = (function () {
 
   function portraitLabel(shot) {
     if (!shot) return '';
-    if (shot.identity === 'pending') return '';
-    if (shot.identity === 'diagram') return '官方结构图（非配色照片）';
+    if (shot.identity === 'blocked' || shot.identity === 'missing') return '图片待核验，暂不展示';
+    if (shot.identity === 'pending') return '图片型号、配色与视角待核验';
+    if (shot.identity === 'diagram') return '结构图待核验（非配色照片）';
     if (shot.identity === 'shared') {
-      return shot.kind === 'diagram' ? '其他机型结构图示意' : '同系列示意';
+      return shot.kind === 'diagram' ? '其他机型结构图示意，待核验' : '同系列示意，型号与配色待核验';
     }
     return '';
   }
@@ -666,6 +690,8 @@ const Catalog = (function () {
     const name = IMAGE_SLOTS[slotName] ? slotName : 'card';
     const widths = deliveryWidths(shot.src);
     if (!widths || String(shot.src).indexOf('data:') === 0) {
+      const picture = img.closest ? img.closest('picture') : null;
+      if (picture) picture.querySelectorAll('source').forEach(source => source.remove());
       img.removeAttribute('srcset');
       img.src = shot.src;
       return;

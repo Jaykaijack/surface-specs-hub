@@ -31,7 +31,6 @@ function runG0StopBleedingTests(helpers) {
   const bannedKeywords = [
     '官方写了上市月份',
     '现在还不能标成国行在售',
-    '图片待核验',
     '还不能标'
   ];
 
@@ -44,9 +43,9 @@ function runG0StopBleedingTests(helpers) {
     assert(!indexHtmlContent.includes(kw), `G0-01: index.html 严禁包含内部编辑批注「${kw}」`);
   });
 
-  // 测试 Catalog.portraitLabel 对 pending 状态绝不吐出 "图片待核验"
+  // 不再隐藏图片的未核验状态
   const pendingShot = { identity: 'pending', src: './assets/test.png' };
-  assertEqual(Catalog.portraitLabel(pendingShot), '', 'G0-01: Catalog.portraitLabel(pending) 前台徽标必须返回空字符串');
+  assert(Catalog.portraitLabel(pendingShot).includes('待核验'), 'G0-01: 未核验图片必须明确标注');
 
   // ----------------------------------------------------
   // G0-02: 全站 alt 与标题逐一对齐 (P0-2 & T-3 & C-6)
