@@ -165,3 +165,5 @@ assert.equal(correction.status,'USER_DRAFT_NOT_VERIFIED');assert.equal(correctio
 assert.throws(()=>App.createCorrectionDraft('pro-7','resolution','javascript:alert(1)','bad'));
 assert.throws(()=>App.createCorrectionDraft('pro-7','invented','https://example.org','bad'));
 console.log('Full source review PASS: 90 attempted models, scoped value binding expiry, configuration conflicts, safe correction drafts');
+
+const wrongConfig=JSON.parse(JSON.stringify(reviewedDevice));wrongConfig.id='another-sku';assert.equal(Catalog.evidenceFor(wrongConfig,'cpuModel'),null);

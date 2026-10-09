@@ -722,7 +722,7 @@ const Catalog = (function () {
     const keys = [field].concat(SPEC_ALIASES[field] || []);
     for (const key of keys) {
       const e = (device.specEvidence || {})[key];
-      if (!e || JSON.stringify(e.value) !== JSON.stringify(value)) continue;
+      if (!e || e.configuration !== device.id || JSON.stringify(e.value) !== JSON.stringify(value)) continue;
       if (e.sourceUrl !== device.specs.officialDocUrl && !(device.evidenceSources || []).includes(e.sourceUrl)) continue;
       try {
         const url = new URL(e.sourceUrl);
