@@ -163,20 +163,20 @@ const Catalog = (function () {
   function getSpec(device, fieldKey) {
     if (!device || !device.specs || !fieldKey) return undefined;
     const specs = device.specs;
-    const blocked = device.unverifiedFields || [];
+    const blocked = [...(device.unverifiedFields || []), ...(device.dataConflicts || []).map(c => c.field)];
     if (blocked.includes(fieldKey)) return null;
     if (fieldKey === 'usbPorts') {
       if (!isEmpty(specs.usbPorts) || specs.usbPorts === 'not_disclosed' || specs.usbPorts === 'not_applicable') {
         return specs.usbPorts;
       }
-      const composed = composePorts(specs);
+      const composed = composePorts(Object.fromEntries(Object.entries(specs).filter(([key]) => !blocked.includes(key))));
       if (composed) return composed;
     }
     if (fieldKey === 'wireless') {
       if (!isEmpty(specs.wireless) || specs.wireless === 'not_disclosed' || specs.wireless === 'not_applicable') {
         return specs.wireless;
       }
-      const composed = composeWireless(specs);
+      const composed = composeWireless(Object.fromEntries(Object.entries(specs).filter(([key]) => !blocked.includes(key))));
       if (composed) return composed;
     }
     if (!isEmpty(specs[fieldKey]) || specs[fieldKey] === 'not_disclosed' || specs[fieldKey] === 'not_applicable') {
@@ -202,13 +202,13 @@ const Catalog = (function () {
       return '<span class="spec-state not-disclosed" title="原记录标为未披露；须由适用来源逐项核验，抓取失败不能证明未披露">官方未披露（原记录，待核验）</span>';
     }
     if (state === 'NOT_APPLICABLE') {
-      return '<span class="spec-state not-applicable" title="记录状态；是否适用于具体配置须查对应字段证据">不适用</span>';
+      return '<span class="spec-state not-applicable" title="记录状态；是否适用于具体配置须查对应字段证据">不适用（原记录，待核验）</span>';
     }
     return val;
   }
 
   function presentDeviceSpec(device, fieldKey) {
-    return presentSpec(getSpec(device, fieldKey));
+    return presentSpec(getSpec(device, fieldKey)) + evidenceMarkup(device, fieldKey);
   }
 
   function npuScore(val) {
@@ -660,7 +660,7 @@ const Catalog = (function () {
 
   function highlights(device) {
     const plain = function (key) {
-      const value = getSpec(device, key);
+      const value = confirmedSpec(device, key);
       if (specState(value) !== 'VALID' || Array.isArray(value)) return '';
       return String(value);
     };
@@ -682,7 +682,7 @@ const Catalog = (function () {
 
   function isRecentLaunch(device, asOf) {
     if (device && device.status === 'upcoming') return false;
-    const text = String(getSpec(device, 'releaseDate') || '');
+    const text = String(confirmedSpec(device, 'releaseDate') || '');
     const match = text.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
     if (!match) return false;
     const month = Number(match[2]);
@@ -734,6 +734,17 @@ const Catalog = (function () {
     return null;
   }
 
+  function chipNpuScore(chip) {
+    const e = chip && chip.npuEvidence;
+    if (!e || e.configuration !== chip.id || e.value !== chip.npuTops || e.scope !== 'npu' || e.precision !== 'INT8' || !e.reviewedAt) return null;
+    try { if (!/^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|qualcomm\.com|intel\.com)\//.test(e.sourceUrl)) return null; } catch (_) { return null; }
+    return npuScore(chip.npuTops);
+  }
+
+  function confirmedSpec(device, key) {
+    return evidenceFor(device, key) ? getSpec(device, key) : null;
+  }
+
   function pendingEvidenceAsset() {
     const data = baseline();
     if (!data || !data.evidenceDeferred) return null;
@@ -765,6 +776,8 @@ const Catalog = (function () {
     listSeries: listSeries,
     accessories: accessories,
     getSpec: getSpec,
+    confirmedSpec: confirmedSpec,
+    chipNpuScore: chipNpuScore,
     specKeys: device => Object.keys((device && device.specs) || {}),
     rawSpec: (device, field) => device && device.specs ? device.specs[field] : undefined,
     evidenceFor: evidenceFor,

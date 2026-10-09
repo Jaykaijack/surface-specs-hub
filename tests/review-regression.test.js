@@ -24,7 +24,7 @@ const device = Catalog.getDevice('pro-7');const saved=device.specs.refreshRate;d
 assert.doesNotMatch(t.renderUpgradeAdvisor(),/120Hz/);device.specs.refreshRate=saved;
 const d = v => ({specs:{weightGrams:v}});
 assert.equal(ComparisonEngine.checkFieldDiff([d('1.22 千克'),d('1220 g')],'weight'),false);
-assert.equal(ComparisonEngine.checkFieldDiff([d(null),d('1220 g')],'weight'),true);
+assert.equal(ComparisonEngine.checkFieldDiff([d(null),d('1220 g')],'weight'),false,'未知不能推断为差异');
 assert.equal(Catalog.npuScore('1 petaflop FP4'),null);
 assert.equal(t.chipNpuScore({name:'RTX Spark',npuTops:1000,highlights:'1 petaflop FP4'}),null);
 assert.equal(Catalog.npuScore({value:1000,scope:'platform',precision:'FP4',unit:'TOPS'}),null);
@@ -116,7 +116,9 @@ const scoped=require('../docs/evidence/review-batch-current-20261009.json');
 for(const e of scoped.entries) {
  const d=Catalog.getDevice(e.deviceId), current=Catalog.getSpec(d,e.field);
  if(JSON.stringify(current)===JSON.stringify(e.value)) assert.deepEqual(current,e.value);
- else {
+ else if ((d.dataConflicts || []).some(c=>c.field===e.field)) {
+  assert.equal(current,null);assert.equal(Catalog.evidenceFor(d,e.field),null);
+ } else {
   const replacement=require('../docs/evidence/full-model-source-review-20261009.json').entries.find(n=>n.deviceId===e.deviceId&&n.field===e.field);
   assert.ok(replacement, '旧核验改变后必须有新的字段证据');
   assert.deepEqual(current,replacement.value);
@@ -204,3 +206,22 @@ for (const d of Catalog.listDevices().filter(d=>d.id.startsWith('xbox-series-s')
   assert.equal(Catalog.getSpec(d,'cpuCores'),null,'conflicting CPU clocks must not leak through an alias');
 }
 console.log('Scoped corrections PASS: Intel battery, uncertain jack size, conflicting Series S clocks');
+
+assert.equal(Catalog.getSpec(Catalog.getDevice('laptop-13-inch-intel-biz'),'ramSpec'),null);
+assert.equal(Catalog.confirmedSpec({specs:{npuTops:'80 TOPS'}},'npuTops'),null);
+assert.equal(t.chipNpuScore({id:'unverified',npuTops:80}),null);
+assert.match(ComparisonEngine.getDecisionSummary({specs:{weight:'最低900克',batteryLifeOffice:'12小时'}}).portText,/待核验/);
+const certifiedFixture = (id,key,value) => ({id,specs:{[key]:value,officialDocUrl:'https://www.microsoft.com/fixture'},specEvidence:{[key]:{configuration:id,value,sourceUrl:'https://www.microsoft.com/fixture',region:'GLOBAL',reviewedAt:'2026-10-09'}}});
+assert.equal(ComparisonEngine.checkFieldDiff([certifiedFixture('a','weight','1.22 千克'),certifiedFixture('b','weight','1220 g')],'weight'),false);
+assert.equal(ComparisonEngine.checkFieldDiff([certifiedFixture('a','weight','1.22 千克'),certifiedFixture('b','weight','1300 g')],'weight'),true);
+const bounded=certifiedFixture('bounded','weightGrams','轻至879克（不含键盘）');
+assert.match(ComparisonEngine.getDecisionSummary(bounded).portText,/轻至879克（不含键盘）/);
+for (const d of Catalog.listDevices()) for (const conflict of d.dataConflicts || []) {
+ assert.equal(Catalog.getSpec(d,conflict.field),null);
+ assert.equal(Catalog.evidenceFor(d,conflict.field),null);
+ assert.equal(t.spec(d,conflict.field),null);
+ assert.equal(App.spec(d,conflict.field),null);
+}
+assert.match(App.spec(Catalog.getDevice('laptop-13-inch'),'weightGrams'),/待核验/);
+assert.equal(Catalog.getSpec({specs:{wifi:'wrong'},dataConflicts:[{field:'wifi'}]},'wireless'),undefined);
+console.log('Uncertainty paths PASS: conflicts masked, pending labels, no unverified numeric differences, bounded summaries preserved');

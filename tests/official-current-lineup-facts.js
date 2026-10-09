@@ -437,7 +437,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "surfaceConnect": "Connect",
         "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
-        "touchAndPenProtocol": "10",
+        "touchAndPenProtocol": [
+          "触控",
+          "不支持触控笔"
+        ],
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
         "thunderboltSupport": "USB4",
@@ -450,10 +453,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
           "12"
         ],
         "usbPorts": [
-          "USB-C",
           "USB4",
           "USB-A",
-          "DisplayPort"
+          "Surface Connect"
         ],
         "chargingPower": "39"
       },
@@ -514,7 +516,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "surfaceConnect": "Connect",
         "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
-        "touchAndPenProtocol": "10",
+        "touchAndPenProtocol": [
+          "触控",
+          "不支持触控笔"
+        ],
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
         "thunderboltSupport": "USB4",
@@ -528,10 +533,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
           "12"
         ],
         "usbPorts": [
-          "USB-C",
           "USB4",
           "USB-A",
-          "MicroSDXC"
+          "Surface Connect"
         ],
         "chargingPower": "65"
       },
@@ -1059,10 +1063,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "brightnessContains": "500",
       "dimensionsContains": "285.65",
       "weightContains": "1.24",
-      "ramMustInclude": [
-        "8",
-        "24"
-      ],
       "storageMustInclude": "256",
       "resolutionContains": "1920",
       "refreshRateContains": "60",
@@ -1115,7 +1115,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE",
         "surfaceConnect": "NOT_APPLICABLE",
-        "thunderboltSupport": "NOT_APPLICABLE"
+        "thunderboltSupport": "NOT_APPLICABLE",
+        "ramSpec": "NULL"
       }
     },
     "pro-11-biz-snap": {
@@ -1490,26 +1491,26 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "refreshRateContains": "60",
       "screenSizeContains": "13",
       "ramMustInclude": [
-        "8",
-        "16",
-        "24"
+        "16 GB",
+        "24 GB"
       ],
-      "storageMustInclude": "UFS",
+      "storageMustInclude": "256 GB",
       "storageMustNotInclude": "1TB",
       "specContains": {
         "headphoneJack": [
           "3.5"
         ],
         "usbPorts": [
-          "USB-A 3.2"
+          "USB-C",
+          "USB 3.2",
+          "USB-A"
         ],
         "fastCharging": [
           "60W"
         ],
         "storageOptions": [
-          "可拆卸式",
-          "256GB",
-          "512GB"
+          "256 GB",
+          "512 GB"
         ],
         "ssdRemovable": [
           "可拆卸",

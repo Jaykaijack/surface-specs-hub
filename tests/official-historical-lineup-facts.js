@@ -366,7 +366,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "weightContains": "1.89",
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
-      "warrantyContains": "1 年",
+      "warrantyContains": "非中国地区保修认证",
       "osMustInclude": "家庭",
       "osMustNotInclude": "专业",
       "frontCameraContains": "1080",
@@ -412,7 +412,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "specState": {
         "kickstandType": "VALID",
         "cpuArch": "NULL"
-      }
+      },
+      "warrantyState": "VALID"
     },
     "sls-2-biz": {
       "cpuMustInclude": [
@@ -981,10 +982,6 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "165H"
       ],
       "npuTopsState": "NOT_DISCLOSED",
-      "ramMustInclude": [
-        "16GB",
-        "64"
-      ],
       "ramMustNotInclude": "8GB",
       "storageMustInclude": "256",
       "wifiMustInclude": "Wi-Fi 6E",
@@ -1007,7 +1004,6 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "keyboardWeightState": "NOT_DISCLOSED",
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-6-for-business-features",
       "specContains": {
-        "gpuModel": "显卡",
         "ppi": "201",
         "colorSupport": [
           "sRGB",
@@ -1028,7 +1024,9 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
+        "cpuArch": "NULL",
+        "ramSpec": "NULL",
+        "gpuModel": "NULL"
       }
     },
     "pro-10-biz": {
@@ -1093,8 +1091,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       }
     },
     "book-3-15": {
-      "storageMustInclude": "2TB",
-      "storageMustNotInclude": "1TB",
+      "storageMustInclude": "2 TB",
       "wifiMustInclude": "Wi-Fi 6",
       "batteryLifeOfficeContains": "17.5",
       "batteryCapacityState": "NOT_DISCLOSED",
@@ -1253,7 +1250,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "usbMustInclude": "Mini DisplayPort",
       "refreshRateState": "NOT_DISCLOSED",
       "repairabilityState": "NOT_DISCLOSED",
-      "warrantyContains": "1 年",
+      "warrantyContains": "不能作为中国地区保修承诺",
       "osMustInclude": "专业",
       "frontCameraContains": "500",
       "rearCameraContains": "800",

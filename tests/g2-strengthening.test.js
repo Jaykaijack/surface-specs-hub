@@ -54,14 +54,14 @@ function runG2StrengtheningTests(helpers) {
   const proSummary = ComparisonEngine.getDecisionSummary(proDev);
   assert(proSummary.batText && proSummary.batText !== '续航未披露', 'G2-02: Pro 13 决策摘要续航必须披露');
   assert(proSummary.coreText.includes('骁龙® X2') && proSummary.coreText.includes('80 TOPS'), 'G2-02: Pro 13 决策摘要必须含高通骁龙 X2 与 80 TOPS');
-  assert(proSummary.portText.includes('13"') && proSummary.portText.includes('g'), 'G2-02: Pro 13 决策摘要必须含 13" 屏幕与机身重量');
+  assert(proSummary.portText.includes('13') && proSummary.portText.includes('895g（不含键盘）'), 'G2-02: Pro 13 决策摘要必须含 13" 屏幕与机身重量');
 
   const laptopDev = Catalog.getDevice('laptop-8-138-snap');
   assert(Boolean(laptopDev), 'G2-02: Catalog 必须能查到 Surface Laptop 8 13.8寸 (laptop-8-138-snap)');
   const laptopSummary = ComparisonEngine.getDecisionSummary(laptopDev);
   assert(laptopSummary.batText && laptopSummary.batText !== '续航未披露', 'G2-02: Laptop 8 13.8寸 决策摘要续航必须披露');
   assert(laptopSummary.coreText.includes('骁龙® X2') && laptopSummary.coreText.includes('80 TOPS'), 'G2-02: Laptop 8 13.8寸 决策摘要必须含高通骁龙 X2 与 80 TOPS');
-  assert(laptopSummary.portText.includes('13.8"'), 'G2-02: Laptop 8 13.8寸 决策摘要必须含 13.8" 屏幕');
+  assert(laptopSummary.portText.includes('13.8'), 'G2-02: Laptop 8 13.8寸 决策摘要必须含 13.8" 屏幕');
 
   assert(comparisonJs.includes('table-device-decision-summary'), 'G2-02: 对比表表头卡片必须包含 table-device-decision-summary 样式结构');
   assert(comparisonJs.includes('🔋') && comparisonJs.includes('⚡') && comparisonJs.includes('⚖️'),

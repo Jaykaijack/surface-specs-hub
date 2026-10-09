@@ -202,6 +202,7 @@ const devA = { specs: { npuTops: '80 TOPS' } };
 const devB = { specs: { npuTops: '80 TOPS' } };
 const devC = { specs: { npuTops: '45 TOPS' } };
 
+for (const d of [devA, devB, devC]) { d.id='comparison-fixture'; d.specs.officialDocUrl='https://www.microsoft.com/fixture'; d.specEvidence={npuTops:{configuration:d.id,value:d.specs.npuTops,sourceUrl:d.specs.officialDocUrl,region:'GLOBAL',reviewedAt:'2026-10-09'}}; }
 const diffAB = ComparisonEngine.checkFieldDiff([devA, devB], 'npuTops');
 assertEqual(diffAB, false, '同值参数比对判定无差异 (diff = false)');
 
@@ -442,7 +443,7 @@ assertEqual(App.filters.audience, 'consumer', '正确还原 URL audience 参数'
 // 筛选联动过滤算法测试
 const proDevices = SURFACE_DATA.devices.filter(d => d.categoryId === 'pro');
 const filteredPro = App.applyFilters(proDevices);
-assert(filteredPro.length > 0, '筛选过滤算法产出有效结果');
+assert(filteredPro.every(d => Catalog.evidenceFor(d,'npuTops') && Catalog.evidenceFor(d,'cpuModel')), '筛选结果必须有当前CPU和算力证据；不能用未核验记录凑结果');
 filteredPro.forEach(d => {
   assert(d.specs.copilotPlus.includes('Copilot+') || d.specs.copilotPlus === '是', '筛选后机型必须具备 Copilot+');
   assertEqual(d.status, 'current_cn', '筛选后机型状态必须是国行在售');

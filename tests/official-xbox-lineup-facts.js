@@ -185,10 +185,10 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
       "specContains": {
         "salesRegion": [
           "美国",
-          "不是当前国行在售"
+          "并非中国大陆上市证明"
         ],
         "releaseDate": [
-          "2013 年 6 月 10 日"
+          "2013年6月10日"
         ],
         "cpuModel": [
           "定制 PowerPC"

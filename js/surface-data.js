@@ -2225,7 +2225,7 @@ const SURFACE_DATA = {
         "osAtLaunch": "Windows 11 家庭版",
         "cpuModel": "Snapdragon X2 Plus（10核LCD配置）/ X2 Elite（12核OLED配置）",
         "cpuArch": "第 3 代 Qualcomm Oryon™（ARM64）",
-        "cpuCores": "10 核 / 12 核",
+        "cpuCores": "Snapdragon X2 Plus：10 核；X2 Elite：12 核",
         "gpuModel": "Qualcomm® Adreno™ GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "80 TOPS",
@@ -2261,10 +2261,10 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "本地视频播放长达 15.5 小时",
         "chargingPower": "标配 39W Surface Connect 电源（特定配置，型号 1963）；最低充电 39W",
         "fastCharging": "推荐快充 60W（国行：65W Surface 电源或 60W USB-C PD）",
-        "compatibleKeyboard": "Surface Pro Flex 键盘 (蓝牙离机无线输入)",
+        "compatibleKeyboard": "该配置页列出 Surface Pro 13 英寸键盘盖、带触控笔存储位版本及 Flex 键盘盖（另购）",
         "penHapticFeedback": "完美支持 (仿真触觉纸感震动)",
-        "penChargingType": "键盘折叠笔槽磁吸无线补电",
-        "trackpadType": "触觉反馈精准触控板",
+        "penChargingType": "该页带触控笔存储位键盘盖及 Flex 键盘盖可为 Surface 超薄触控笔 2 存放和充电；非机身内置",
+        "trackpadType": "该页普通键盘盖列明大尺寸玻璃触控板；键盘另购",
         "tpmChip": "Microsoft Pluton 安全处理器",
         "securedCorePc": "认证 Secured-core PC",
         "biometrics": "Windows Hello 人脸识别",
@@ -2333,8 +2333,41 @@ const SURFACE_DATA = {
           "configurationScope": "中国消费者配置页已列SKU，不代表穷尽未来或其他地区选项；不从商用页移植电池",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-12-13"
+        },
+        "cpuCores": {
+          "configuration": "pro-12-13",
+          "value": "Snapdragon X2 Plus：10 核；X2 Elite：12 核",
+          "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
+          "region": "CN",
+          "configurationScope": "中国消费者 Pro13 第12代配置器；只证明所列主机与另购键盘，不推定全部配置功能",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-12-13",
+          "value": "该配置页列出 Surface Pro 13 英寸键盘盖、带触控笔存储位版本及 Flex 键盘盖（另购）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
+          "region": "CN",
+          "configurationScope": "中国消费者 Pro13 第12代配置器；只证明所列主机与另购键盘，不推定全部配置功能",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "pro-12-13",
+          "value": "该页带触控笔存储位键盘盖及 Flex 键盘盖可为 Surface 超薄触控笔 2 存放和充电；非机身内置",
+          "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
+          "region": "CN",
+          "configurationScope": "中国消费者 Pro13 第12代配置器；只证明所列主机与另购键盘，不推定全部配置功能",
+          "reviewedAt": "2026-10-09"
+        },
+        "trackpadType": {
+          "configuration": "pro-12-13",
+          "value": "该页普通键盘盖列明大尺寸玻璃触控板；键盘另购",
+          "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
+          "region": "CN",
+          "configurationScope": "中国消费者 Pro13 第12代配置器；只证明所列主机与另购键盘，不推定全部配置功能",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-12-inch",
@@ -2637,7 +2670,7 @@ const SURFACE_DATA = {
         "chassisMaterial": "外壳采用100%再生铝合金（该页面13英寸描述）",
         "kickstandType": "一体式支架，165 度全阻尼铰链",
         "osAtLaunch": "Windows 11 家庭版 / 专业版 (ARM64)",
-        "cpuModel": "Snapdragon® X Plus（10 核，X1P64100） / Snapdragon® X Elite（12 核，X1E80100）",
+        "cpuModel": "Snapdragon X Elite 或 X Plus",
         "cpuArch": "Qualcomm Oryon™ 64 位",
         "cpuCores": "not_disclosed",
         "gpuModel": "Qualcomm® Adreno™ GPU",
@@ -2756,6 +2789,22 @@ const SURFACE_DATA = {
           "region": "CN",
           "configurationScope": "中国翻新Pro11页面的13英寸栏目；页面混入12英寸内容，未标尺寸段落不绑定",
           "reviewedAt": "2026-10-09"
+        },
+        "npuTops": {
+          "configuration": "pro-11-13",
+          "value": "45 TOPS",
+          "sourceUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-11th-edition",
+          "region": "CN",
+          "configurationScope": "中国消费者13英寸Pro11对应区块；不绑定12英寸其他字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "cpuModel": {
+          "configuration": "pro-11-13",
+          "value": "Snapdragon X Elite 或 X Plus",
+          "sourceUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-11th-edition",
+          "region": "CN",
+          "configurationScope": "中国消费者13英寸Pro11对应区块；不绑定12英寸其他字段",
+          "reviewedAt": "2026-10-09"
         }
       },
       "evidenceSources": [
@@ -2844,7 +2893,7 @@ const SURFACE_DATA = {
         "biometrics": "Windows Hello人脸识别；NFC身份认证",
         "enterpriseManage": "企业级 vPro 管理与设备固件更新",
         "dimensionsMm": "287 × 208.6 × 9.3 mm",
-        "weightGrams": "879g",
+        "weightGrams": "轻至879克（不含键盘；页面未将所有配置统一为精确879克）",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "主动低噪静音风扇",
         "repairabilityScore": "not_disclosed",
@@ -3128,6 +3177,14 @@ const SURFACE_DATA = {
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
           "region": "CN",
           "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "weightGrams": {
+          "configuration": "pro-10-biz",
+          "value": "轻至879克（不含键盘；页面未将所有配置统一为精确879克）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国Pro10商用翻新版；最低重量不当作所有配置精确重量",
           "reviewedAt": "2026-10-09"
         }
       },
@@ -8652,7 +8709,7 @@ const SURFACE_DATA = {
       "nextGenerationId": null,
       "specs": {
         "fastCharging": "推荐快充 60W（国行：65W Surface 电源或 60W USB-C PD）",
-        "touchAndPenProtocol": "10 点多点触控，不支持触控笔",
+        "touchAndPenProtocol": "支持触控；该页面当前 Laptop 系列不支持触控笔输入（包括 Surface 超薄触控笔）",
         "thunderboltSupport": "USB4®（兼容 Surface Thunderbolt™ 4 扩展坞）",
         "audioTech": "Dolby Atmos®",
         "windowsHello": "Windows Hello 面部识别",
@@ -8692,9 +8749,9 @@ const SURFACE_DATA = {
         "osAtLaunch": "Windows 11 家庭版",
         "cpuModel": "Snapdragon X2 Plus（10核）/ X2 Elite（12核）",
         "cpuArch": "第 3 代 Qualcomm Oryon™（ARM64）",
-        "cpuCores": "10 核 / 12 核",
+        "cpuCores": "Snapdragon X2 Plus：10 核；X2 Elite：12 核",
         "gpuModel": "Qualcomm Adreno™ GPU",
-        "npuModel": "Qualcomm® Hexagon™ NPU (80 TOPS)",
+        "npuModel": "Qualcomm Hexagon",
         "npuTops": "80 TOPS",
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "已列SKU：16GB / 24GB / 32GB / 64GB（配置依SKU）",
@@ -8702,11 +8759,11 @@ const SURFACE_DATA = {
         "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
         "expandableStorage": "not_applicable",
         "screenSize": "13.8 英寸",
-        "aspectRatio": "3:2 黄金比例",
+        "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "2304 × 1536",
         "ppi": "201 PPI",
-        "refreshRate": "120Hz 动态刷新率 (Dynamic Refresh)",
+        "refreshRate": "动态刷新率最高120 Hz",
         "brightness": "600 尼特峰值亮度 (支持 HDR 与杜比视界)",
         "colorGamut": "sRGB 和 Vivid",
         "displayProtection": "康宁大猩猩玻璃 Victus",
@@ -8720,14 +8777,14 @@ const SURFACE_DATA = {
         "usbC": "2 × USB-C® / USB4®：充电、数据、DisplayPort 2.1（最多三台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞；1 × USB-A 3.2",
         "usbA": "1 × USB-A 3.2",
         "audioJack": "3.5 毫米耳机插孔",
-        "surfaceConnect": "1 × Surface Connect 磁吸专用充电接口",
+        "surfaceConnect": "配备 Surface Connect 充电与扩展坞端口",
         "sdSlot": "not_applicable",
         "simSlot": "not_applicable",
         "wifi": "Wi-Fi 7 (802.11be)",
         "bluetooth": "蓝牙 5.4",
         "cellular": "not_applicable",
         "batteryWh": "54 Wh",
-        "batteryLifeLocalVideo": "最长 20 小时本地视频播放",
+        "batteryLifeLocalVideo": "本地视频播放长达20小时（官方页面测试口径，非办公实测）",
         "batteryLifeWeb": "网页浏览长达 16 小时",
         "chargingSpeed": "标配 39W Surface Connect 电源（特定配置，型号 1963）；最低充电 39W",
         "keyboardCompatibility": "一体化静音剪刀脚键盘 (1.3mm 键程，内置 Copilot 独立按键)",
@@ -8748,7 +8805,11 @@ const SURFACE_DATA = {
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
         "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
-        "officialConfigureUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition"
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
+        "usbPorts": "2 个 USB-C（USB4）、1 个 USB-A、3.5 毫米耳机插孔、Surface Connect",
+        "headphoneJack": "3.5 毫米耳机插孔",
+        "batteryLifeVideo": "本地视频播放长达20小时（官方页面测试口径，非办公实测）",
+        "chargingPower": "附带39 W电源适配器；支持Surface Connect及USB-C充电"
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
@@ -8759,6 +8820,7 @@ const SURFACE_DATA = {
         "trackpadType"
       ],
       "evidenceSources": [
+        "https://www.microsoftstore.com.cn/buy-surface-laptop",
         "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition"
       ],
       "specEvidence": {
@@ -8787,14 +8849,127 @@ const SURFACE_DATA = {
           "configuration": "laptop-8-138"
         },
         "screenSize": {
+          "configuration": "laptop-8-138",
           "value": "13.8 英寸",
-          "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
           "region": "CN",
-          "configurationScope": "中国13.8英寸第8代消费者配置页；不外推15英寸或商用",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-8-138"
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "cpuCores": {
+          "configuration": "laptop-8-138",
+          "value": "Snapdragon X2 Plus：10 核；X2 Elite：12 核",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-8-138",
+          "value": "支持触控；该页面当前 Laptop 系列不支持触控笔输入（包括 Surface 超薄触控笔）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "laptop-8-138",
+          "value": "2 个 USB-C（USB4）、1 个 USB-A、3.5 毫米耳机插孔、Surface Connect",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-8-138",
+          "value": "3.5 毫米耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-8-138",
+          "value": "配备 Surface Connect 充电与扩展坞端口",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "aspectRatio": {
+          "configuration": "laptop-8-138",
+          "value": "3:2",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-8-138",
+          "value": "201 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "refreshRate": {
+          "configuration": "laptop-8-138",
+          "value": "动态刷新率最高120 Hz",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeVideo": {
+          "configuration": "laptop-8-138",
+          "value": "本地视频播放长达20小时（官方页面测试口径，非办公实测）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "laptop-8-138",
+          "value": "附带39 W电源适配器；支持Surface Connect及USB-C充电",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuModel": {
+          "configuration": "laptop-8-138",
+          "value": "Qualcomm Hexagon",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuTops": {
+          "configuration": "laptop-8-138",
+          "value": "80 TOPS",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeLocalVideo": {
+          "configuration": "laptop-8-138",
+          "value": "本地视频播放长达20小时（官方页面测试口径，非办公实测）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioJack": {
+          "configuration": "laptop-8-138",
+          "value": "3.5 毫米耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 13.8英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-8-150",
@@ -8812,7 +8987,7 @@ const SURFACE_DATA = {
       "nextGenerationId": null,
       "specs": {
         "fastCharging": "推荐快充 60W（国行：65W Surface 电源或 60W USB-C PD）",
-        "touchAndPenProtocol": "10 点多点触控，不支持触控笔",
+        "touchAndPenProtocol": "支持触控；该页面当前 Laptop 系列不支持触控笔输入（包括 Surface 超薄触控笔）",
         "thunderboltSupport": "USB4®（兼容 Surface Thunderbolt™ 4 扩展坞）",
         "audioTech": "Dolby Atmos®",
         "windowsHello": "Windows Hello 面部识别",
@@ -8840,21 +9015,21 @@ const SURFACE_DATA = {
         "osAtLaunch": "Windows 11 家庭版",
         "cpuModel": "Snapdragon X2 Plus（10核）/ X2 Elite（12核）",
         "cpuArch": "第 3 代 Qualcomm Oryon™（ARM64）",
-        "cpuCores": "10 核 / 12 核",
+        "cpuCores": "Snapdragon X2 Plus：10 核；X2 Elite：12 核",
         "gpuModel": "Qualcomm Adreno™ GPU",
-        "npuModel": "Qualcomm® Hexagon™ NPU (80 TOPS)",
+        "npuModel": "Qualcomm Hexagon",
         "npuTops": "80 TOPS",
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
-        "ramSpec": "16GB / 32GB LPDDR5x",
-        "storageOptions": "512GB / 1TB",
+        "ramSpec": "起始16 GB，最高32 GB（页面未列全部中间配置）",
+        "storageOptions": "起始512 GB，最高1 TB（页面未列全部中间配置）",
         "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
-        "expandableStorage": "配备 MicroSDXC Express 读卡器",
-        "screenSize": "15.0 英寸 PixelSense™ Flow",
-        "aspectRatio": "3:2 黄金比例",
+        "expandableStorage": "MicroSDXC Express 读卡器",
+        "screenSize": "15 英寸",
+        "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "3270 × 2180",
         "ppi": "262 PPI",
-        "refreshRate": "120Hz 动态刷新率 (Dynamic Refresh)",
+        "refreshRate": "动态刷新率最高120 Hz",
         "brightness": "600 尼特峰值亮度 (支持 HDR 与杜比视界)",
         "colorGamut": "sRGB 和 Vivid",
         "displayProtection": "康宁大猩猩玻璃 Victus",
@@ -8867,13 +9042,13 @@ const SURFACE_DATA = {
         "usbC": "2 × USB-C® / USB4®：充电、数据、DisplayPort 2.1（最多三台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞；1 × USB-A 3.2；MicroSDXC Express 读卡器",
         "usbA": "1 × USB-A 3.2",
         "audioJack": "3.5 毫米耳机插孔",
-        "surfaceConnect": "1 × Surface Connect 磁吸专用充电接口",
+        "surfaceConnect": "配备 Surface Connect 充电与扩展坞端口",
         "sdSlot": "MicroSDXC Express 读卡器",
         "wifi": "Wi-Fi 7 (802.11be)",
         "bluetooth": "蓝牙 5.4",
         "cellular": "not_applicable",
         "batteryWh": "66 Wh",
-        "batteryLifeLocalVideo": "最长 19 小时本地视频播放",
+        "batteryLifeLocalVideo": "本地视频播放长达19小时（官方页面测试口径，非办公实测）",
         "batteryLifeWeb": "网页浏览长达 14 小时",
         "chargingSpeed": "标配 65W Surface Connect 电源（特定配置）；最低充电 45W",
         "keyboardCompatibility": "一体化静音剪刀脚键盘 (内置 Copilot 独立按键)",
@@ -8893,7 +9068,11 @@ const SURFACE_DATA = {
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
         "officialDocUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
-        "officialConfigureUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop"
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+        "usbPorts": "2 个 USB-C（USB4）、1 个 USB-A、3.5 毫米耳机插孔、Surface Connect；MicroSDXC Express 读卡器",
+        "headphoneJack": "3.5 毫米耳机插孔",
+        "batteryLifeVideo": "本地视频播放长达19小时（官方页面测试口径，非办公实测）",
+        "chargingPower": "附带65 W电源适配器；支持Surface Connect及USB-C充电"
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
@@ -8915,8 +9094,161 @@ const SURFACE_DATA = {
           "configurationScope": "中国官方购买汇总FAQ明确列15英寸CPU；其它15英寸详细参数未见于此提取",
           "reviewedAt": "2026-10-09",
           "configuration": "laptop-8-150"
+        },
+        "cpuCores": {
+          "configuration": "laptop-8-150",
+          "value": "Snapdragon X2 Plus：10 核；X2 Elite：12 核",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "screenSize": {
+          "configuration": "laptop-8-150",
+          "value": "15 英寸",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-8-150",
+          "value": "支持触控；该页面当前 Laptop 系列不支持触控笔输入（包括 Surface 超薄触控笔）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "laptop-8-150",
+          "value": "2 个 USB-C（USB4）、1 个 USB-A、3.5 毫米耳机插孔、Surface Connect；MicroSDXC Express 读卡器",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-8-150",
+          "value": "3.5 毫米耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-8-150",
+          "value": "配备 Surface Connect 充电与扩展坞端口",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "aspectRatio": {
+          "configuration": "laptop-8-150",
+          "value": "3:2",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "laptop-8-150",
+          "value": "MicroSDXC Express 读卡器",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "ramSpec": {
+          "configuration": "laptop-8-150",
+          "value": "起始16 GB，最高32 GB（页面未列全部中间配置）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "laptop-8-150",
+          "value": "起始512 GB，最高1 TB（页面未列全部中间配置）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-8-150",
+          "value": "262 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "refreshRate": {
+          "configuration": "laptop-8-150",
+          "value": "动态刷新率最高120 Hz",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeVideo": {
+          "configuration": "laptop-8-150",
+          "value": "本地视频播放长达19小时（官方页面测试口径，非办公实测）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "laptop-8-150",
+          "value": "附带65 W电源适配器；支持Surface Connect及USB-C充电",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuModel": {
+          "configuration": "laptop-8-150",
+          "value": "Qualcomm Hexagon",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuTops": {
+          "configuration": "laptop-8-150",
+          "value": "80 TOPS",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeLocalVideo": {
+          "configuration": "laptop-8-150",
+          "value": "本地视频播放长达19小时（官方页面测试口径，非办公实测）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioJack": {
+          "configuration": "laptop-8-150",
+          "value": "3.5 毫米耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "sdSlot": {
+          "configuration": "laptop-8-150",
+          "value": "MicroSDXC Express 读卡器",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 消费者 Laptop 15英寸；不扩展至其他代际或 Intel 商用",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-7-138",
@@ -9073,6 +9405,14 @@ const SURFACE_DATA = {
           "region": "CN",
           "configurationScope": "中国Laptop7认证翻新页面；混合13/13.8/15英寸，仅取明确尺寸段落",
           "reviewedAt": "2026-10-09"
+        },
+        "npuTops": {
+          "configuration": "laptop-7-138",
+          "value": "45 TOPS",
+          "sourceUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
+          "region": "CN",
+          "configurationScope": "该页13/13.8/15英寸对应区块均列45 TOPS；仅绑定一致的NPU算力，不扩大其他混排规格",
+          "reviewedAt": "2026-10-09"
         }
       },
       "evidenceSources": [
@@ -9185,7 +9525,9 @@ const SURFACE_DATA = {
       "segment": "commercial",
       "unverifiedFields": [
         "cpuArch",
-        "thermalDesign"
+        "thermalDesign",
+        "ramSpec",
+        "gpuModel"
       ],
       "evidenceSources": [
         "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business"
@@ -9408,7 +9750,20 @@ const SURFACE_DATA = {
           "reviewedAt": "2026-10-09"
         }
       },
-      "dataConflicts": []
+      "dataConflicts": [
+        {
+          "field": "ramSpec",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "reviewedAt": "2026-10-09",
+          "reason": "营销段称最高32GB，技术表列16/32/64GB且未列LPDDR代际；当前完整字符串不能认证"
+        },
+        {
+          "field": "gpuModel",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "reviewedAt": "2026-10-09",
+          "reason": "显卡行只列8GB内存配置的Intel显卡，内存表却未列8GB；不能扩展至所有配置"
+        }
+      ]
     },
     {
       "id": "laptop-5",
@@ -10999,7 +11354,7 @@ const SURFACE_DATA = {
         "thermalDesign": "双风扇大尺寸热管强压直吹散热",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "SSD、电池、屏幕总成、主板端口",
-        "warranty": "1 年有限硬件保修",
+        "warranty": "全球支持页：1年有限硬件保修；非中国地区保修认证",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
@@ -11319,6 +11674,14 @@ const SURFACE_DATA = {
           "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
           "region": "GLOBAL",
           "configurationScope": "全球官方规格限定；非国行销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "sls-2",
+          "value": "全球支持页：1年有限硬件保修；非中国地区保修认证",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球SLS2支持表；不扩展为中国消费者保修",
           "reviewedAt": "2026-10-09"
         }
       },
@@ -12150,7 +12513,7 @@ const SURFACE_DATA = {
         "microphones": "双远场Studio麦克风",
         "speakers": "Omnisonic扬声器",
         "audioTech": "not_disclosed",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "headphoneJack": "3.5毫米耳机插孔",
         "usbPorts": "USB-A；USB-C；Surface Connect；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "配备Surface Connect；支持USB-C或Surface Connect充电",
@@ -12167,7 +12530,7 @@ const SURFACE_DATA = {
         "trackpadType": "机械触控板",
         "tpmChip": "固件 TPM",
         "securedCorePc": "否",
-        "biometrics": "指纹识别",
+        "biometrics": "部分型号带指纹电源按钮，支持Windows Hello；该段未列完整适用SKU",
         "enterpriseManage": "支持基础管理",
         "dimensionsMm": "not_disclosed",
         "weightGrams": "2.49 磅",
@@ -12271,6 +12634,22 @@ const SURFACE_DATA = {
           "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
           "region": "GLOBAL",
           "configurationScope": "微软中文支持页限定功能；语言不是中国销售SKU认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-go-3",
+          "value": "3.5毫米耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
+          "region": "GLOBAL",
+          "configurationScope": "LaptopGo3支持页；指纹只限部分型号，CPU错误段不作证据",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "laptop-go-3",
+          "value": "部分型号带指纹电源按钮，支持Windows Hello；该段未列完整适用SKU",
+          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
+          "region": "GLOBAL",
+          "configurationScope": "LaptopGo3支持页；指纹只限部分型号，CPU错误段不作证据",
           "reviewedAt": "2026-10-09"
         }
       }
@@ -12794,12 +13173,12 @@ const SURFACE_DATA = {
         "cpuModel": "Intel® 第 10 代酷睿™ i7-1065G7",
         "cpuArch": "64 位 / 10 nm",
         "cpuCores": "not_disclosed",
-        "gpuModel": "NVIDIA GeForce GTX 1660 Ti Max-Q",
+        "gpuModel": "i7-1065G7配置：NVIDIA GeForce GTX 1660 Ti Max-Q，6GB GDDR6",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB LPDDR4x (3733 MT/s)",
-        "storageOptions": "256GB / 512GB / 2TB PCIe SSD",
+        "storageOptions": "256 GB、512 GB 或 2 TB PCIe SSD（该表未列1TB）",
         "ssdRemovable": "not_disclosed",
         "expandableStorage": "全尺寸SDXC，UHS-I/UHS-II",
         "screenSize": "15 英寸 PixelSense",
@@ -13091,6 +13470,22 @@ const SURFACE_DATA = {
           "region": "GLOBAL",
           "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
           "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "book-3-15",
+          "value": "i7-1065G7配置：NVIDIA GeForce GTX 1660 Ti Max-Q，6GB GDDR6",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3对应尺寸的显卡和存储行；Processor/RAM错误行仍有冲突，不据此证明CPU全配置",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "book-3-15",
+          "value": "256 GB、512 GB 或 2 TB PCIe SSD（该表未列1TB）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3对应尺寸的显卡和存储行；Processor/RAM错误行仍有冲突，不据此证明CPU全配置",
+          "reviewedAt": "2026-10-09"
         }
       }
     },
@@ -13125,12 +13520,12 @@ const SURFACE_DATA = {
         "cpuModel": "Intel® 第 10 代酷睿™ i5-1035G7 / i7-1065G7",
         "cpuArch": "64 位 / 10 nm",
         "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® Iris™ Plus / NVIDIA GeForce GTX 1650 Max-Q",
+        "gpuModel": "i5-1035G7：Intel Iris Plus；i7-1065G7：NVIDIA GeForce GTX 1650 Max-Q，4GB GDDR5",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB / 32GB LPDDR4x",
-        "storageOptions": "256GB / 512GB / 1TB PCIe NVMe SSD",
+        "storageOptions": "256 GB、512 GB 或 1 TB PCIe SSD",
         "ssdRemovable": "not_disclosed",
         "expandableStorage": "全尺寸SDXC，UHS-I/UHS-II",
         "screenSize": "13.5 英寸 PixelSense",
@@ -13421,6 +13816,22 @@ const SURFACE_DATA = {
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
           "region": "GLOBAL",
           "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "book-3-135",
+          "value": "i5-1035G7：Intel Iris Plus；i7-1065G7：NVIDIA GeForce GTX 1650 Max-Q，4GB GDDR5",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3对应尺寸的显卡和存储行；Processor/RAM错误行仍有冲突，不据此证明CPU全配置",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "book-3-135",
+          "value": "256 GB、512 GB 或 1 TB PCIe SSD",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3对应尺寸的显卡和存储行；Processor/RAM错误行仍有冲突，不据此证明CPU全配置",
           "reviewedAt": "2026-10-09"
         }
       }
@@ -17168,7 +17579,8 @@ const SURFACE_DATA = {
       },
       "unverifiedFields": [
         "cpuArch",
-        "thermalDesign"
+        "thermalDesign",
+        "surfaceConnect"
       ],
       "evidenceSources": [
         "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business"
@@ -17583,7 +17995,14 @@ const SURFACE_DATA = {
           "reviewedAt": "2026-10-09"
         }
       },
-      "dataConflicts": []
+      "dataConflicts": [
+        {
+          "field": "surfaceConnect",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "reviewedAt": "2026-10-09",
+          "reason": "旧字段将Surface Pro12键盘连接器写作Surface Connect充电/扩展端口；键盘连接器不是该接口，不能据此声称支持Surface Connect电源或扩展坞"
+        }
+      ]
     },
     {
       "id": "laptop-13-inch-biz",
@@ -18102,7 +18521,7 @@ const SURFACE_DATA = {
         "audioTech": "Dolby Audio；蓝牙LE音频",
         "headphoneJack": "3.5mm耳机插孔",
         "usbCPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）",
-        "usbAPorts": "USB-A 3.2",
+        "usbAPorts": "1个USB-A 3.2端口",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "not_applicable",
         "videoOut": "DisplayPort 1.4a，最多两台 4K 60Hz",
@@ -18496,6 +18915,14 @@ const SURFACE_DATA = {
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
           "region": "CN",
           "configurationScope": "中国该页面商用SKU；不外推其他代际、地区或消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbAPorts": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "1个USB-A 3.2端口",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国第二代Laptop13商用页面；只绑定USB-A端口",
           "reviewedAt": "2026-10-09"
         }
       }
@@ -22069,7 +22496,7 @@ const SURFACE_DATA = {
         "audioTech": "Dolby Atmos",
         "headphoneJack": "3.5mm耳机插孔",
         "usbCPorts": "1 个 USB-C® (USB 4.0 / Thunderbolt™ 4)",
-        "usbAPorts": "1 个 USB-A 3.1",
+        "usbAPorts": "1个USB-A 3.1端口",
         "surfaceConnect": "配备Surface Connect",
         "videoOut": "支持外部 4K 60Hz 显示器",
         "cellular": "not_applicable",
@@ -22404,6 +22831,14 @@ const SURFACE_DATA = {
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
           "region": "CN",
           "configurationScope": "中国该认证翻新版配置",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbAPorts": {
+          "configuration": "laptop-5-biz",
+          "value": "1个USB-A 3.1端口",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
+          "region": "CN",
+          "configurationScope": "中国Laptop5商用翻新版",
           "reviewedAt": "2026-10-09"
         }
       },
@@ -23802,26 +24237,26 @@ const SURFACE_DATA = {
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "not_applicable",
         "osAtLaunch": "Windows 11 家庭版；附带 Office 家庭版 2024",
-        "cpuModel": "Snapdragon® X2 Plus（6 核）",
+        "cpuModel": "Snapdragon X2 Plus（6 核）",
         "cpuArch": "not_disclosed",
         "cpuCores": "6 核",
         "gpuModel": "Qualcomm® Adreno™ GPU",
-        "npuModel": "Qualcomm® Hexagon™",
+        "npuModel": "Qualcomm Hexagon",
         "npuTops": "80 TOPS",
         "copilotPlus": "16GB 及以上为 Copilot+ PC / Windows 11 AI+ PC（8GB 不适用）",
-        "ramSpec": "8GB / 16GB / 24GB LPDDR5x",
-        "storageOptions": "可拆卸式 256GB、512GB（UFS）",
+        "ramSpec": "起始16 GB，最高24 GB（页面未列全部中间配置）",
+        "storageOptions": "起始256 GB，最高512 GB（页面未列全部中间配置）",
         "ssdRemovable": "可拆卸式：256GB、512GB（UFS）",
         "expandableStorage": "not_applicable",
-        "screenSize": "13.0 英寸 PixelSense™ LCD 触控屏",
+        "screenSize": "13 英寸",
         "aspectRatio": "3:2",
         "panelTech": "LCD",
         "resolution": "1920 × 1280",
         "ppi": "178 PPI",
-        "refreshRate": "最高 60Hz",
+        "refreshRate": "最高60 Hz",
         "brightness": "最大 500 尼特（典型值）",
         "colorSupport": "sRGB 和增强型，对比度 1000:1",
-        "touchAndPenProtocol": "仅触控，不支持触控笔",
+        "touchAndPenProtocol": "支持触控；不支持触控笔输入（包括 Surface 超薄触控笔）",
         "frontCamera": "1080p 全高清前置 Surface Studio 摄像头",
         "windowsHello": "指纹电源按钮",
         "rearCamera": "not_applicable",
@@ -23830,15 +24265,15 @@ const SURFACE_DATA = {
         "speakers": "Omnisonic® 扬声器，搭载杜比音效™",
         "audioTech": "杜比音效™",
         "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞；USB-A 3.2",
+        "usbPorts": "2 个 USB-C（USB 3.2）、1 个 USB-A、3.5 毫米耳机插孔",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "not_applicable",
         "wireless": "Wi-Fi 7 + 蓝牙 5.4",
         "cellular": "not_applicable",
         "batteryCapacityWh": "50 Wh（额定；最小 48 Wh）",
         "batteryLifeOffice": "最长 18 小时网页浏览",
-        "batteryLifeVideo": "最长 22.5 小时本地视频播放",
-        "chargingPower": "标配 Surface 45W USB-C 壁式充电器，附 USB-C 充电线",
+        "batteryLifeVideo": "本地视频播放长达22.5小时（官方页面测试口径，非办公实测）",
+        "chargingPower": "附带45 W USB-C电源适配器",
         "fastCharging": "USB-C 最低 60W 可快充",
         "compatibleKeyboard": "集成键盘",
         "penHapticFeedback": "not_applicable",
@@ -23864,7 +24299,133 @@ const SURFACE_DATA = {
       "isCommercial": false,
       "learnDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop",
       "segment": "consumer",
-      "unverifiedFields": []
+      "unverifiedFields": [],
+      "specEvidence": {
+        "cpuModel": {
+          "configuration": "laptop-13-inch-2",
+          "value": "Snapdragon X2 Plus（6 核）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 13英寸消费者版；非上一代及商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "cpuCores": {
+          "configuration": "laptop-13-inch-2",
+          "value": "6 核",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 13英寸消费者版；非上一代及商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "screenSize": {
+          "configuration": "laptop-13-inch-2",
+          "value": "13 英寸",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 13英寸消费者版；非上一代及商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-13-inch-2",
+          "value": "支持触控；不支持触控笔输入（包括 Surface 超薄触控笔）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 13英寸消费者版；非上一代及商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "laptop-13-inch-2",
+          "value": "2 个 USB-C（USB 3.2）、1 个 USB-A、3.5 毫米耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 13英寸消费者版；非上一代及商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-13-inch-2",
+          "value": "3.5 毫米耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 13英寸消费者版；非上一代及商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "aspectRatio": {
+          "configuration": "laptop-13-inch-2",
+          "value": "3:2",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览当前 Snapdragon X2 13英寸消费者版；非上一代及商用",
+          "reviewedAt": "2026-10-09"
+        },
+        "ramSpec": {
+          "configuration": "laptop-13-inch-2",
+          "value": "起始16 GB，最高24 GB（页面未列全部中间配置）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "laptop-13-inch-2",
+          "value": "起始256 GB，最高512 GB（页面未列全部中间配置）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-13-inch-2",
+          "value": "178 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "refreshRate": {
+          "configuration": "laptop-13-inch-2",
+          "value": "最高60 Hz",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeVideo": {
+          "configuration": "laptop-13-inch-2",
+          "value": "本地视频播放长达22.5小时（官方页面测试口径，非办公实测）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "laptop-13-inch-2",
+          "value": "附带45 W USB-C电源适配器",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuModel": {
+          "configuration": "laptop-13-inch-2",
+          "value": "Qualcomm Hexagon",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuTops": {
+          "configuration": "laptop-13-inch-2",
+          "value": "80 TOPS",
+          "sourceUrl": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+          "region": "CN",
+          "configurationScope": "中国购买概览明确标注的当前X2消费者尺寸；续航是官方本地视频条件；内存/存储只证明范围端点",
+          "reviewedAt": "2026-10-09"
+        }
+      },
+      "evidenceSources": [
+        "https://www.microsoftstore.com.cn/buy-surface-laptop"
+      ],
+      "dataConflicts": []
     },
     {
       "id": "laptop-7-150",
@@ -23999,6 +24560,14 @@ const SURFACE_DATA = {
           "sourceUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
           "region": "CN",
           "configurationScope": "中国Laptop7认证翻新页面；混合13/13.8/15英寸，仅取明确尺寸段落",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuTops": {
+          "configuration": "laptop-7-150",
+          "value": "45 TOPS",
+          "sourceUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
+          "region": "CN",
+          "configurationScope": "该页13/13.8/15英寸对应区块均列45 TOPS；仅绑定一致的NPU算力，不扩大其他混排规格",
           "reviewedAt": "2026-10-09"
         }
       },
@@ -24723,7 +25292,7 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "本地视频播放最长13.5小时（官方测试）",
         "chargingPower": "最低充电 39W；标配 39W（型号 1800）",
         "fastCharging": "not_applicable",
-        "compatibleKeyboard": "Surface Pro 专业键盘盖",
+        "compatibleKeyboard": "Surface Pro 专业键盘盖（另售）",
         "penHapticFeedback": "not_applicable",
         "penChargingType": "AAAA 电池供电 / 磁吸机身侧边",
         "trackpadType": "大尺寸精准玻璃触控板",
@@ -24737,7 +25306,7 @@ const SURFACE_DATA = {
         "thermalDesign": "i5 无风扇静音被动散热 / i7 超薄静音主动风扇",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "官方售后整机置换",
-        "warranty": "1 年有限硬件保修",
+        "warranty": "全球支持资料列1年有限硬件保修；不能作为中国地区保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-30",
@@ -24757,7 +25326,8 @@ const SURFACE_DATA = {
         "thermalDesign"
       ],
       "evidenceSources": [
-        "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features"
+        "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+        "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features"
       ],
       "specEvidence": {
         "cpuModel": {
@@ -24982,6 +25552,22 @@ const SURFACE_DATA = {
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
           "region": "GLOBAL",
           "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "pro-6-biz",
+          "value": "全球支持资料列1年有限硬件保修；不能作为中国地区保修承诺",
+          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "支持资料包含商用Pro6 CPU/OS但保修未限定中国；仅全球资料口径",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-6-biz",
+          "value": "Surface Pro 专业键盘盖（另售）",
+          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "支持资料包含商用Pro6 CPU/OS但保修未限定中国；仅全球资料口径",
           "reviewedAt": "2026-10-09"
         }
       },
@@ -25364,10 +25950,10 @@ const SURFACE_DATA = {
       "isCommercial": false,
       "segment": "xbox",
       "specs": {
-        "releaseDate": "2013 年 6 月 10 日 E3 大会公布并即刻在美英等市场发售",
+        "releaseDate": "2013年6月10日（美国、英国、加拿大、爱尔兰、澳大利亚开始发货；其他地区随后数月）",
         "generation": "Xbox 360 E",
         "status": "discontinued",
-        "salesRegion": "美国、欧洲等全球市场发售。不是当前国行在售。",
+        "salesRegion": "发布公告首批美国、英国、加拿大、爱尔兰、澳大利亚；并非中国大陆上市证明",
         "targetAudience": "家用游戏主机",
         "tagline": "2013 年全新极简设计，更轻薄更安静，与 Xbox One 同期设计语言。",
         "colors": [
@@ -25449,8 +26035,25 @@ const SURFACE_DATA = {
           "configurationScope": "2013年6月新设计Xbox360公告套装；不证明其他容量与中国销售",
           "reviewedAt": "2026-10-09",
           "configuration": "xbox-360-e"
+        },
+        "releaseDate": {
+          "configuration": "xbox-360-e",
+          "value": "2013年6月10日（美国、英国、加拿大、爱尔兰、澳大利亚开始发货；其他地区随后数月）",
+          "sourceUrl": "https://news.microsoft.com/source/2013/06/10/microsoft-invites-everyone-to-join-the-fun-with-a-brand-new-xbox-360/",
+          "region": "GLOBAL",
+          "configurationScope": "2013年新设计Xbox360发布公告；仅列明首批地区及时间，非当前销售状态",
+          "reviewedAt": "2026-10-09"
+        },
+        "salesRegion": {
+          "configuration": "xbox-360-e",
+          "value": "发布公告首批美国、英国、加拿大、爱尔兰、澳大利亚；并非中国大陆上市证明",
+          "sourceUrl": "https://news.microsoft.com/source/2013/06/10/microsoft-invites-everyone-to-join-the-fun-with-a-brand-new-xbox-360/",
+          "region": "GLOBAL",
+          "configurationScope": "2013年新设计Xbox360发布公告；仅列明首批地区及时间，非当前销售状态",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "xbox-one",

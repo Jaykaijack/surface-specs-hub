@@ -248,7 +248,7 @@ const ComparisonEngine = {
               <div class="table-single-header-title">${dev.name} 官方技术规格全览</div>
               <div class="table-single-header-sub">
                 <span class="table-single-meta-pill">${dev.generation}</span>
-                <span class="table-single-meta-desc">${Catalog.getSpec(dev, 'cpuModel') ? `架构：${Catalog.getSpec(dev, 'cpuModel')}` : (dev.tagline || '')}</span>
+                <span class="table-single-meta-desc">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
               </div>
             </div>
           </th>
@@ -302,8 +302,8 @@ const ComparisonEngine = {
                 ${Catalog.isRecentLaunch(dev) ? '<span class="spec-badge new">新品</span>' : ''}
                 ${this.renderStatusBadge(dev.status)}
                 ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
-                ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS</span>' : ''}
-                ${String(Catalog.getSpec(dev, 'panelTech') || '').includes('OLED') ? '<span class="spec-badge green">OLED</span>' : ''}
+                ${String(Catalog.confirmedSpec(dev, 'npuTops') || '').includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS</span>' : ''}
+                ${String(Catalog.confirmedSpec(dev, 'panelTech') || '').includes('OLED') ? '<span class="spec-badge green">OLED</span>' : ''}
               </div>
 
               <!-- 3 行核心决策摘要 (PRD P2-2 / D-3: 续航 / 算力 / 重量) -->
@@ -406,6 +406,7 @@ const ComparisonEngine = {
 
   checkFieldDiff(devices, fieldKey) {
     if (!devices || devices.length <= 1) return false;
+    if (devices.some(d => !Catalog.evidenceFor(d, fieldKey))) return false;
     const values = devices.map(d => {
       const raw = Catalog.getSpec(d, fieldKey);
       return this.normalizeComparable(raw, fieldKey);
@@ -459,6 +460,9 @@ const ComparisonEngine = {
       if (dev && Catalog.segmentOf(dev) === 'commercial' || /商业|商用|政企/.test(String(val)) || val === 'commercial') return '<span class="spec-badge" style="background:#e8edf5; color:#1a5fb4;">商业与政企</span>';
       return '<span class="spec-badge" style="background:#eef6ee; color:#26a269;">个人与消费者</span>';
     }
+
+    // Unverified badge text remains a pending record, not a certification highlight.
+    if (dev && ['npu_badge','copilot_badge'].includes(type) && !Catalog.evidenceFor(dev, fieldKey)) return String(val).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 
     // NPU 算力高亮
     if (type === 'npu_badge') {
@@ -549,41 +553,11 @@ const ComparisonEngine = {
   getDecisionSummary(dev) {
     if (!dev) return { batText: '—', coreText: '—', portText: '—' };
 
-    // 1. 续航指标
-    const videoBat = Catalog.getSpec(dev, 'batteryLifeVideo') || Catalog.getSpec(dev, 'batteryLife');
-    const officeBat = Catalog.getSpec(dev, 'batteryLifeOffice');
-    let batText = '续航未披露';
-    if (videoBat && videoBat !== 'not_disclosed' && videoBat !== 'not_applicable') {
-      const vMatch = String(videoBat).match(/(\d+(?:\.\d+)?)\s*小时/);
-      batText = vMatch ? `视频长达 ${vMatch[1]}h` : String(videoBat).replace('长达', '').trim();
-    } else if (officeBat && officeBat !== 'not_disclosed' && officeBat !== 'not_applicable') {
-      const oMatch = String(officeBat).match(/(\d+(?:\.\d+)?)\s*小时/);
-      batText = oMatch ? `办公约 ${oMatch[1]}h` : String(officeBat).trim();
-    }
-
-    // 2. 动力芯片与 NPU 端侧算力
-    const cpu = Catalog.getSpec(dev, 'cpuModel') || '';
-    const npu = Catalog.getSpec(dev, 'npuTops') || '';
-    let cpuShort = '处理器未披露';
-    if (cpu) {
-      if (cpu.includes('骁龙® X2') || cpu.includes('Snapdragon® X2')) cpuShort = '骁龙® X2';
-      else if (cpu.includes('骁龙® X Plus')) cpuShort = '骁龙® X Plus';
-      else if (cpu.includes('骁龙® X Elite')) cpuShort = '骁龙® X Elite';
-      else if (cpu.includes('酷睿™ Ultra')) cpuShort = '酷睿™ Ultra';
-      else if (cpu.includes('Intel')) cpuShort = cpu.split('(')[0].trim();
-      else cpuShort = cpu.split(' ')[0];
-    }
-    let npuShort = (npu && npu !== 'not_applicable' && npu !== 'not_disclosed') ? npu : '';
-    const coreText = npuShort ? `${cpuShort} · ${npuShort}` : cpuShort;
-
-    // 3. 机身重量与屏幕尺寸
-    const weight = Catalog.getSpec(dev, 'weightGrams') || Catalog.getSpec(dev, 'weight') || '';
-    const screen = Catalog.getSpec(dev, 'screenSize') || '';
-    const wMatch = String(weight).match(/(\d+(?:\.\d+)?)\s*(?:g|克|kg|千克)/i);
-    let wText = wMatch ? wMatch[0] : (weight ? String(weight).split('(')[0].trim() : '重量未披露');
-    const sMatch = String(screen).match(/(\d+(?:\.\d+)?)\s*英寸/);
-    let sText = sMatch ? `${parseFloat(sMatch[1])}"` : '';
-    const portText = sText ? `${wText} · ${sText}` : wText;
+    // Preserve SKU/test-condition qualifiers; never reduce a range or minimum to one number.
+    const known = key => Catalog.confirmedSpec(dev, key);
+    const batText = known('batteryLifeVideo') || known('batteryLifeOffice') || '续航待核验';
+    const coreText = [known('cpuModel'), known('npuTops')].filter(Boolean).join(' · ') || '处理器与算力待核验';
+    const portText = [known('weightGrams') || known('weight'), known('screenSize')].filter(Boolean).join(' · ') || '重量与尺寸待核验';
 
     return { batText, coreText, portText };
   },

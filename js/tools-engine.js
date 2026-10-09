@@ -190,7 +190,7 @@ const ToolsEngine = {
 
   chipNpuScore(chip) {
     if (/FP4|petaflop|RTX Spark/i.test([chip.name, chip.npuDesc, chip.highlights, chip.precision].join(' '))) return null;
-    return Catalog.npuScore(chip.npuTops);
+    return Catalog.chipNpuScore(chip);
   },
 
   // 2. 渲染微软定制芯片架构与 NPU AI 算力天梯图
@@ -198,7 +198,7 @@ const ToolsEngine = {
     let chips = [...SURFACE_DATA.chips];
     if (this.chipFilter === 'arm') chips = chips.filter(c => c.architecture.includes('ARM'));
     else if (this.chipFilter === 'x86') chips = chips.filter(c => c.architecture.includes('x86'));
-    else if (this.chipFilter === 'copilot') chips = chips.filter(c => c.copilotPlus);
+    else if (this.chipFilter === 'copilot') chips = chips.filter(c => (this.chipNpuScore(c) ?? -1) >= 40);
 
     chips.sort((a, b) => (this.chipNpuScore(b) ?? -1) - (this.chipNpuScore(a) ?? -1));
     const maxTops = Math.max(...chips.map(chip => this.chipNpuScore(chip) || 0), 80);
@@ -213,7 +213,7 @@ const ToolsEngine = {
             微软定制处理器架构与 NPU AI 硬件算力天梯榜 (TOPS)
           </div>
           <div class="tool-desc">
-            全面解析 Surface 搭载的高通骁龙 X 平台、微软 SQ 系列以及 Intel / AMD 处理器的 CPU 架构、GPU 浮点与 NPU 硬件算力。
+            芯片历史记录尚未逐字段绑定证据；未核验 NPU 数值不参与排序或筛选，其他文字仅作待核验记录。
           </div>
         </div>
 
@@ -229,7 +229,7 @@ const ToolsEngine = {
 
     chips.forEach(chip => {
       const npuTops = this.chipNpuScore(chip);
-      const fillPercent = Math.max(3, (npuTops / maxTops) * 100);
+      const fillPercent = npuTops === null ? 0 : Math.max(3, (npuTops / maxTops) * 100);
       const isTop = npuTops >= 80;
       const isX86 = (chip.architecture || '').includes('x86');
 

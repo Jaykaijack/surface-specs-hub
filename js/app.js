@@ -43,7 +43,10 @@ const App = {
   },
 
   spec(device, key) {
-    return Catalog.getSpec(device, key);
+    const value = Catalog.getSpec(device, key);
+    if (/Url$/.test(key) || Array.isArray(value) || value == null) return value;
+    if (!Catalog.evidenceFor(device, key)) return Catalog.specState(value) === 'VALID' ? `${value}（待核验）` : '待核验';
+    return value;
   },
 
   shot(device, colorName) {
@@ -763,13 +766,13 @@ const App = {
                   </div>
                 </div>
                 <div class="device-name">${dev.name}</div>
-          <div class="device-tagline">${dev.tagline}</div>
+          <div class="device-tagline">${dev.tagline}</div><small class="field-evidence pending">历史参数记录；未绑定证据项待核验</small>
           ${this.audienceHtml(dev)}
           ${colorDotsHtml}
           <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
             ${this.recentLaunchBadge(dev)}
             <span class="spec-badge green">国行在售</span>
-            ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge gold">80 TOPS</span>' : ''}
+            ${String(Catalog.confirmedSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge gold">80 TOPS</span>' : ''}
           </div>
         </div>
       `;
@@ -804,7 +807,7 @@ const App = {
               ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
             </div>
             <div class="device-name">${dev.name}</div>
-            <div class="device-tagline">${dev.tagline}</div>
+            <div class="device-tagline">${dev.tagline}</div><small class="field-evidence pending">历史参数记录；未绑定证据项待核验</small>
             ${this.audienceHtml(dev)}
             <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
               ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -1174,9 +1177,9 @@ const App = {
                 ${colorDotsHtml}
                 <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                   ${this.recentLaunchBadge(dev)}
-                  <span class="spec-badge">${this.spec(dev, 'cpuModel')}</span>
-                  ${Catalog.isNpuDisplayable(this.spec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
-                  <span class="spec-badge">${this.spec(dev, 'screenSize')}</span>
+                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
+                  ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
+                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '尺寸待核验'}</span>
                 </div>
                 <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                   <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -1783,9 +1786,9 @@ const App = {
               ${colorDotsHtml}
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                 ${this.recentLaunchBadge(dev)}
-                <span class="spec-badge">${this.spec(dev, 'cpuModel')}</span>
-                ${Catalog.isNpuDisplayable(this.spec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
-                <span class="spec-badge">${this.spec(dev, 'screenSize')}</span>
+                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
+                ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
+                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '尺寸待核验'}</span>
               </div>
               <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                 <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -1901,7 +1904,7 @@ const App = {
               <th style="padding:12px 14px; text-align:center; width:50px;">序号</th>
               <th style="padding:12px 14px; text-align:left; width:250px;">产品名称 / 代际</th>
               <th style="padding:12px 14px; text-align:center; width:90px;">销售状态</th>
-              <th style="padding:12px 14px; text-align:right; width:110px;">官方起售价</th>
+              <th style="padding:12px 14px; text-align:right; width:110px;">价格记录</th>
               <th style="padding:12px 14px; text-align:left; width:190px;">官方机身配色</th>
               <th style="padding:12px 14px; text-align:left; width:180px;">核心芯片 / NPU</th>
               <th style="padding:12px 14px; text-align:left; width:180px;">屏幕规格</th>
@@ -1940,10 +1943,10 @@ const App = {
                     ${ComparisonEngine.renderStatusBadge(dev.status)}
                   </td>
                   <td style="padding:10px 14px; text-align:right; font-weight:700; color:var(--ms-text-primary); font-size:13.5px;">
-                    ${specOf('startingPriceCny') || '—'}
+                    ${Catalog.confirmedSpec(dev, 'startingPriceCny') || '历史价格待核验'}
                   </td>
                   <td style="padding:10px 14px;">
-                    ${colors.length > 0 ? `
+                    ${Catalog.evidenceMarkup(dev, 'colors')}${colors.length > 0 ? `
                       <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
                         ${colors.map(c => `
                           <span style="display:inline-flex; align-items:center; gap:4px; font-size:11.5px; background:var(--ms-bg-subtle, #f0f0f0); padding:2px 6px; border-radius:4px; border:1px solid var(--ms-border-subtle);">
@@ -1952,17 +1955,17 @@ const App = {
                           </span>
                         `).join('')}
                       </div>
-                    ` : '<span style="color:var(--ms-text-tertiary); font-size:12px;">官方单色</span>'}
+                    ` : '<span style="color:var(--ms-text-tertiary); font-size:12px;">配色待核验</span>'}
                   </td>
                   <td style="padding:10px 14px; font-size:12px;">
-                    <div style="font-weight:600; color:var(--ms-text-primary);">${specOf('cpuModel') || '—'}</div>
+                    <div style="font-weight:600; color:var(--ms-text-primary);">${Catalog.presentDeviceSpec(dev, 'cpuModel')}</div>
                     ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `
-                      <div style="color:#0078d4; font-size:11px;">⚡ ${Catalog.getSpec(dev, 'npuTops')}</div>
+                      <div style="color:#0078d4; font-size:11px;">⚡ ${Catalog.presentDeviceSpec(dev, 'npuTops')}</div>
                     ` : ''}
                   </td>
                   <td style="padding:10px 14px; font-size:12px; color:var(--ms-text-secondary);">
-                    <div>${Catalog.presentSpec(specOf('screenSize'))} ${Catalog.presentSpec(specOf('aspectRatio'))}</div>
-                    <div style="font-size:11px; color:var(--ms-text-tertiary);">${specOf('resolution') || ''} ${specOf('refreshRate') || ''}</div>
+                    <div>${Catalog.presentDeviceSpec(dev, 'screenSize')} ${Catalog.presentDeviceSpec(dev, 'aspectRatio')}</div>
+                    <div style="font-size:11px; color:var(--ms-text-tertiary);">${Catalog.presentDeviceSpec(dev, 'resolution')} ${Catalog.presentDeviceSpec(dev, 'refreshRate')}</div>
                   </td>
                   <td style="padding:10px 14px; text-align:center;">
                     <div style="display:inline-flex; gap:6px; flex-wrap:wrap; justify-content:center;">
@@ -2019,7 +2022,7 @@ const App = {
         </div>
         <div class="metric-box">
           <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'screenSize')}</div>
-          <div class="metric-label">屏幕尺寸 (3:2)</div>
+          <div class="metric-label">屏幕尺寸</div>
         </div>
         <div class="metric-box">
           <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'refreshRate')}</div>
@@ -2027,7 +2030,7 @@ const App = {
         </div>
         <div class="metric-box">
           <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'batteryLifeOffice')}</div>
-          <div class="metric-label">日常办公续航</div>
+          <div class="metric-label">官方续航口径（非办公实测）</div>
         </div>
         <div class="metric-box">
           <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'weightGrams')}</div>
@@ -2198,7 +2201,7 @@ const App = {
             ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge">${dev.generation}</span>
             ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
-            ${String(Catalog.getSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge copilot">80 TOPS AI</span>' : ''}
+            ${String(Catalog.confirmedSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge copilot">80 TOPS AI</span>' : ''}
           </div>
 
           <h1 class="detail-hero-title">
@@ -2496,8 +2499,8 @@ const App = {
           <div class="timeline-year-badge">${yr} 年</div>
           <div class="timeline-cards-row">
             ${devsInYear.map(dev => {
-              const npu = Catalog.getSpec(dev, 'npuTops');
-              const cpu = Catalog.getSpec(dev, 'cpuModel');
+              const npu = Catalog.confirmedSpec(dev, 'npuTops');
+              const cpu = Catalog.confirmedSpec(dev, 'cpuModel');
               const isSelected = ComparisonEngine.selectedIds.includes(dev.id);
 
               return `
@@ -2506,7 +2509,7 @@ const App = {
                     ${dev.name}
                   </div>
                   <div style="font-size:12px; color:var(--ms-text-secondary); margin-bottom:6px;">
-                    ${this.spec(dev, 'releaseDate')} · ${cpu || '官方定制架构'}
+                    ${this.spec(dev, 'releaseDate')} · ${cpu || '处理器待核验'}
                   </div>
                   <div style="font-size:11.5px; color:var(--ms-text-tertiary);">${dev.tagline}</div>
                   
@@ -2609,15 +2612,15 @@ const App = {
 
       // CPU 过滤
       if (this.filters.cpu === 'snapdragon') {
-        const cpu = String(this.spec(d, 'cpuModel') || '').toLowerCase();
+        const cpu = String(Catalog.confirmedSpec(d, 'cpuModel') || '').toLowerCase();
         if (!cpu.includes('snapdragon') && !cpu.includes('sq') && !cpu.includes('高通')) return false;
       }
       if (this.filters.cpu === 'intel') {
-        const cpu = String(this.spec(d, 'cpuModel') || '').toLowerCase();
+        const cpu = String(Catalog.confirmedSpec(d, 'cpuModel') || '').toLowerCase();
         if (!cpu.includes('intel') && !cpu.includes('酷睿') && !cpu.includes('奔腾')) return false;
       }
       if (this.filters.cpu === 'amd') {
-        const cpu = String(this.spec(d, 'cpuModel') || '').toLowerCase();
+        const cpu = String(Catalog.confirmedSpec(d, 'cpuModel') || '').toLowerCase();
         if (!cpu.includes('amd') && !cpu.includes('ryzen')) return false;
       }
 
@@ -2630,7 +2633,7 @@ const App = {
 
       // Copilot+ 过滤
       if (this.filters.copilotOnly) {
-        const topsStr = this.spec(d, 'npuTops') || '';
+        const topsStr = Catalog.confirmedSpec(d, 'npuTops') || '';
         const num = Catalog.npuScore(topsStr);
         if (num === null || num < 40) return false;
       }
@@ -2719,7 +2722,7 @@ const App = {
                 <div class="search-result-item" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" onclick="App.navigateToDetail('${d.categoryId}', '${d.id}'); App.closeSearchModal();">
                   <div>
                     <div style="font-weight:600; font-size:13.5px;">${d.name}</div>
-                    <div style="font-size:11.5px; color:var(--ms-text-secondary);">${this.spec(d, 'cpuModel')} · ${this.spec(d, 'npuTops')} · ${this.spec(d, 'releaseDate')}</div>
+                    <div style="font-size:11.5px; color:var(--ms-text-secondary);">${Catalog.confirmedSpec(d, 'cpuModel') || '处理器待核验'} · ${Catalog.confirmedSpec(d, 'npuTops') || '算力待核验'} · ${Catalog.confirmedSpec(d, 'releaseDate') || '日期待核验'}</div>
                   </div>
                   ${this.recentLaunchBadge(d)}
                   <span class="spec-badge">${d.generation}</span>
@@ -2737,7 +2740,7 @@ const App = {
                     <div style="font-weight:600; font-size:13.5px;">${c.name}</div>
                     <div style="font-size:11.5px; color:var(--ms-text-secondary);">${c.vendor} · ${c.npuDesc}</div>
                   </div>
-                  <span class="spec-badge gold">${Catalog.npuScore(c.npuTops) === null ? 'NPU 算力待核验' : Catalog.npuScore(c.npuTops) + ' TOPS'}</span>
+                  <span class="spec-badge gold">${Catalog.chipNpuScore(c) === null ? 'NPU 算力待核验' : Catalog.chipNpuScore(c) + ' TOPS'}</span>
                 </div>
               `).join('')}
             </div>

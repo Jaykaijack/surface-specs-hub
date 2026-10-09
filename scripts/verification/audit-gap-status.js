@@ -1,0 +1,31 @@
+// Inventory evidence conditions; never promote a model-level read to a field review.
+const fs=require('node:fs');
+const data=require('../../js/surface-data');
+const Catalog=require('../../js/catalog');
+const registry=require('../../docs/full-library-verification-registry.json');
+const review=require('../../docs/evidence/full-model-source-review-20261009.json');
+const metadata=new Set(['lastVerified','sourceReliability','officialDocUrl','officialConfigureUrl','officialCommercialConfigureUrl','targetAudience','tagline','generation']);
+const count=rows=>rows.reduce((a,r)=>(a[r.reason]=(a[r.reason]||0)+1,a),{});
+const rows=registry.entries.filter(e=>e.verdict!=='VERIFIED').map(e=>{
+ const d=data.devices.find(d=>d.id===e.deviceId),raw=d.specs[e.field];
+ const attempts=review.attempts.filter(a=>a.deviceId===d.id);
+ const passes=(review.fieldReviewPasses||[]).filter(p=>p.deviceId===d.id);
+ const readable=attempts.filter(a=>['READABLE','READABLE_REVIEWED','CONFIGURATION_CONFLICT'].includes(a.result));
+ const conflict=(d.dataConflicts||[]).find(c=>c.field===e.field);
+ let reason='CURRENT_VALUE_EVIDENCE_INSUFFICIENT';
+ if(!readable.length&&!passes.length) reason=attempts.some(a=>a.result==='SOURCE_SCOPE_MISMATCH')?'ONLY_MISMATCHED_SCOPE':attempts.some(a=>a.result==='SOURCE_NOT_COVERED')?'NO_APPLICABLE_SPEC_IN_CAPTURE':'ONLY_FAILED_ACCESS';
+ if(['releaseDate','status','startingPriceCny','salesRegion'].includes(e.field))reason='REGIONAL_OR_DATED_CLAIM_NOT_BOUND';
+ if(e.field==='colors')reason='COLOR_SKU_AND_SWATCH_NOT_BOUND';
+ if(raw==='not_disclosed'||raw==='not_applicable')reason='LEGACY_PLACEHOLDER_NOT_PROVEN';
+ if(raw===null)reason='NO_ASSERTED_VALUE';
+ if(metadata.has(e.field))reason='NON_SPEC_METADATA';
+ if(conflict)reason='EXPLICIT_CONFIGURATION_OR_SOURCE_CONFLICT';
+ const shown=Catalog.getSpec(d,e.field);
+ return {deviceId:d.id,field:e.field,reason,detail:conflict?.reason||null,valueHash:e.valueHash,display:shown==null?'MASKED_OR_EMPTY':typeof shown==='object'?'OBJECT_RECORD_PENDING':'RECORD_WITH_PENDING_LABEL',numericInferenceAllowed:false,readableModelSources:readable.map(a=>({url:a.url,sourceIndex:a.sourceIndex??null})),modelPassSources:[...new Set(passes.map(p=>p.sourceIndex))],individualFieldReviewCompleted:false};
+});
+const images=require('../../docs/evidence/image-verification-20261009.json').records;
+const imageExtra=require('../../docs/evidence/accessory-and-ultra-images-20261009.json');
+const imageFailures=[...require('../../docs/evidence/ultra-global-image-sources-20261009.json'),...require('../../docs/evidence/official-image-access-20261009.json').attempts];
+const out={checkedAt:'2026-10-09',notice:'实际证据状态清单，不是完成逐字段审阅的声明。CURRENT_VALUE_EVIDENCE_INSUFFICIENT仅表示现有证据未支持完整当前值；不能归因网络失败。individualFieldReviewCompleted=false保留未完成认证边界。型号有可读原文不等于每个字段已审阅。',totalFields:registry.entries.length,verified:registry.entries.length-rows.length,remaining:rows.length,reasonCounts:count(rows),displayCounts:rows.reduce((a,r)=>(a[r.display]=(a[r.display]||0)+1,a),{}),imageAudit:{deviceMappings:images.length,blockedMappings:images.filter(r=>r.status==='BLOCKED').length,pendingMappings:images.filter(r=>r.status==='PENDING').length,deviceMappingsWithoutBoundOfficialImageUrl:images.filter(r=>!r.sourceUrl).length,accessoryFiles:imageExtra.accessories.length,ultraAdditionalFiles:imageExtra.ultraAssets.length,exactOfficialImageDownloadFailures:imageFailures.length,officialPixelCertifications:0,note:'4条具体官方URL下载失败（Ultra2、Go2两条），不等于所有待核验图片都下载失败；缺原图绑定与缺像素认证分开记录。'},entries:rows};
+fs.writeFileSync('docs/evidence/gap-status-audit-20261009.json',JSON.stringify(out,null,2)+'\n');
+console.log(JSON.stringify({...out,entries:undefined},null,2));
