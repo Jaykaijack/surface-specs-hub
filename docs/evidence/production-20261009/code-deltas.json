@@ -1,0 +1,17 @@
+{
+  "source": "parent delegation, semantic differences from fixed baseline to review-time production; not a current live synchronization",
+  "app.js": {"siteUrlBefore":"https://hubweb.cn/surface/","siteUrlAfter":"https://surface.kaibase.cn/","resolution":"applied"},
+  "tools-engine.js": {"productionBehavior":"numeric sorting and dynamic chart maximum, minimum 80","resolution":"retained with dedicated NPU metric validation; FP4 excluded"},
+  "image-delivery.js": {
+    "resolution":"deferred: production original/new derivative assets unavailable; keep existing valid AVIF/WebP chain instead of introducing broken references",
+    "productionMappings":{
+      "surface-laptop-ultra-gallery-1.png":[320,640,1024],
+      "surface-laptop-ultra-gallery-2.png":[320,400],
+      "surface-laptop-ultra-hero.png":[320,640,1024],
+      "surface-laptop-ultra-midnight.png":[320,400],
+      "surface-laptop-ultra-platinum.png":[320,640,1280],
+      "surface-laptop-ultra-ports.png":[320,640,1280]
+    },
+    "newlineOnlyChange":"LF to CRLF intentionally not reproduced"
+  }
+}

@@ -3,6 +3,7 @@ const path = require('path');
 const crypto = require('crypto');
 const cp = require('child_process');
 const data = require('../../js/surface-data');
+const Catalog = require('../../js/catalog');
 const escape = s => String(s ?? '待核验').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 module.exports = function generate(out) {
   const base = 'https://surface.kaibase.cn';
@@ -14,6 +15,7 @@ module.exports = function generate(out) {
     const rows = Object.entries(d.specs || {}).filter(([,v])=>typeof v !== 'object' || v === null).map(([key,val])=> {
       const field = data.specGroups.flatMap(g=>g.fields || []).find(f=>f.key===key);
       const label = field ? (field.label || field.name || key) : key;
+      val = Catalog.getSpec(d, key);
       const shown = val === 'not_applicable' ? '不适用' : val === 'not_disclosed' ? '官方未披露（原数据口径）' : val;
       return `<tr><th scope="row">${escape(label)}</th><td>${escape(shown)}</td></tr>`;
     }).join('');
@@ -23,5 +25,5 @@ module.exports = function generate(out) {
   fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`);
   fs.writeFileSync(path.join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[base+'/',...urls].map(url=>`<url><loc>${url}</loc></url>`).join('')}</urlset>`);
   const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
-  fs.writeFileSync(path.join(out,'build-info.json'),JSON.stringify({gitSha:cp.execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),dirty:!!cp.execFileSync('git',['status','--porcelain'],{encoding:'utf8'}).trim(),datasetVersion:data.datasetVersion,dataSha256:crypto.createHash('sha256').update(JSON.stringify({devices:data.devices,chips:data.chips,accessories:data.accessories})).digest('hex'),evidenceSha256:crypto.createHash('sha256').update(hash('docs/full-library-verification-registry.json') + hash('docs/evidence/ultra-business-cn-20261009.json')).digest('hex'),sourceSha256:crypto.createHash('sha256').update(['index.html',...fs.readdirSync('js').sort().map(f=>'js/'+f),...fs.readdirSync('css').sort().map(f=>'css/'+f)].map(hash).join('')).digest('hex'),builtAt:new Date().toISOString(),deviceCount:data.devices.length,fullFactCertification:false},null,2));
+  fs.writeFileSync(path.join(out,'build-info.json'),JSON.stringify({gitSha:cp.execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),dirty:!!cp.execFileSync('git',['status','--porcelain'],{encoding:'utf8'}).trim(),datasetVersion:data.datasetVersion,dataSha256:crypto.createHash('sha256').update(JSON.stringify({devices:data.devices,chips:data.chips,accessories:data.accessories})).digest('hex'),evidenceSha256:crypto.createHash('sha256').update(hash('docs/full-library-verification-registry.json') + hash('docs/evidence/ultra-business-cn-20261009.json') + hash('docs/evidence/ultra-business-cn-field-ledger.json')).digest('hex'),sourceSha256:crypto.createHash('sha256').update(['index.html',...fs.readdirSync('js').sort().map(f=>'js/'+f),...fs.readdirSync('css').sort().map(f=>'css/'+f)].map(hash).join('')).digest('hex'),builtAt:new Date().toISOString(),deviceCount:data.devices.length,fullFactCertification:false},null,2));
 };

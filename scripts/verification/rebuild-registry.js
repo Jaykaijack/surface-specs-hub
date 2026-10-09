@@ -4,11 +4,14 @@ const crypto = require('crypto');
 const data = require('../../js/surface-data');
 const target = 'docs/full-library-verification-registry.json';
 const previous = JSON.parse(fs.readFileSync(target, 'utf8'));
+const official = require('../../docs/evidence/ultra-business-cn-field-ledger.json').entries;
 const entries = data.devices.flatMap(d => Object.entries(d.specs || {}).map(([field,value]) => {
-  const region = d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN');
+  const confirmed = official.find(e => e.deviceId === d.id && e.configuration === d.id && d.isCommercial === true && e.sourceUrl === d.specs.officialDocUrl && e.field === field && JSON.stringify(e.value) === JSON.stringify(value) && !(d.unverifiedFields || []).includes(field));
+  const region = confirmed ? confirmed.region : d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN');
   const hash = crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
   const old = (previous.entries || []).find(e => e.deviceId === d.id && e.field === field);
-  const preserved = old && old.valueHash === hash && old.region === region && old.configuration === d.id && old.reviewedAt && old.sourceUrl;
+  const preserved = old && old.valueHash === hash && old.region === region && old.configuration === d.id && old.reviewedAt && old.sourceUrl === d.specs.officialDocUrl && !(d.unverifiedFields || []).includes(field);
+  if (confirmed) return {...confirmed, valueHash:hash};
   return {deviceId:d.id, field, value, valueHash:hash, region, configuration:d.id, configurationScope:'设备记录；具体 SKU 适用性未逐项核验',
     reviewedAt: preserved ? old.reviewedAt : null,
     verdict: preserved ? old.verdict : 'PENDING',

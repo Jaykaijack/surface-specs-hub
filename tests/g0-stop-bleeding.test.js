@@ -6,7 +6,7 @@
  * 1. 内部备注扫描 (零命中)
  * 2. alt-标题一致性 (100% 对齐，特别是 5 处历史错位场景)
  * 3. 标题与品牌去官化合规 (无 Microsoft 领衔，明示民间资料库)
- * 4. F-1 / F-2 事实闭环 (下架 RTX Spark，修复截断乱码)
+ * 4. F-1 / F-2 事实闭环 (限定 RTX Spark 算力口径，修复截断乱码)
  */
 
 const fs = require('fs');
@@ -128,15 +128,10 @@ function runG0StopBleedingTests(helpers) {
   // ----------------------------------------------------
   // G0-04: F-1 与 F-2 事实闭环
   // ----------------------------------------------------
-  // F-1: surface-laptop-ultra 必须从全库彻底下架
-  const ultraInDb = SURFACE_DATA.devices.find(d => d.id === 'surface-laptop-ultra');
-  assert(!ultraInDb, 'G0-04: F-1「surface-laptop-ultra」已彻底从机型数据库下架');
-
-  const ultraInCatalog = Catalog.getDevice('surface-laptop-ultra');
-  assert(!ultraInCatalog, 'G0-04: Catalog.getDevice("surface-laptop-ultra") 必须返回 null');
-
-  const ultraMatchesInJs = (appJsContent + catalogJsContent).match(/surface-laptop-ultra/g);
-  assert(!ultraMatchesInJs, 'G0-04: 核心逻辑代码中无 surface-laptop-ultra 残留');
+  // 2026-10-09 官方商用页面已收录，旧的名称禁令不能删除线上新增产品。
+  const spark = SURFACE_DATA.chips.find(c => /RTX Spark/i.test(c.name || ''));
+  if (spark) assert(spark.npuTops == null || spark.npuTops === 'not_disclosed', 'G0-04: 平台 FP4 不冒充专用 NPU INT8 TOPS');
+  assert(!/1000\s*TOPS/.test(String(spark && spark.npuTops)), 'G0-04: 不把平台 1 petaflop 放入 NPU 排序');
 
   // F-2: 截断乱码与极限词修复
   const dataJsContent = fs.readFileSync(path.join(REPO_ROOT, 'js', 'surface-data.js'), 'utf8');

@@ -3,7 +3,7 @@
   "reviewedAt": "2026-10-09",
   "region": "CN",
   "product": "Surface Laptop Ultra 商用版",
-  "status": "official-page-reviewed; awaiting live record identity and merge",
+  "status": "official-page-reviewed; merged into laptop-ultra-biz on 2026-10-09",
   "consumerOrOtherRegionApplicable": false,
   "values": {
     "resolution": "3270 × 2180 (262 PPI)",
@@ -18,5 +18,5 @@
     "npuInt8Tops": null,
     "platformAiPeak": {"value": 1, "unit": "petaflop", "precision": "FP4", "configuration": "特定配置，不能换算为专用 NPU INT8 TOPS"}
   },
-  "note": "官方页证据用于后续定向合入，不向旧数据集创建猜测 ID，不改消费者版；发布日期、发货日期与销售状态不能混用。"
+  "note": "官方页证据已用于原始 ID laptop-ultra-biz 的定向合入；消费者版原值保留在输入快照与记录，未证实字段通过 Catalog 隔离展示；发布日期、发货日期与销售状态不能混用。"
 }

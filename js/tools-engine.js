@@ -201,7 +201,7 @@ const ToolsEngine = {
     else if (this.chipFilter === 'copilot') chips = chips.filter(c => c.copilotPlus);
 
     chips.sort((a, b) => (this.chipNpuScore(b) ?? -1) - (this.chipNpuScore(a) ?? -1));
-    const maxTops = 80;
+    const maxTops = Math.max(...chips.map(chip => this.chipNpuScore(chip) || 0), 80);
 
     let html = `
       <div class="tool-view-card">
@@ -244,11 +244,11 @@ const ToolsEngine = {
         <div class="chip-ladder-row">
           <div class="chip-name-cell">
             <span class="chip-model">${chip.name}</span>
-            <span class="chip-meta">${chip.vendor || '芯片'} · ${chip.processNode || chip.process || '先进制程'}</span>
+            <span class="chip-meta">${chip.vendor || '芯片'} · ${chip.processNode || chip.process || '制程待核验'}</span>
           </div>
 
           <div class="chip-bar-track">
-            <div class="chip-baseline-marker" style="left:50%;" title="Copilot+ PC 官方 40 TOPS 准入门槛"></div>
+            <div class="chip-baseline-marker" style="left:${40 / maxTops * 100}%;" title="Copilot+ PC 官方 40 TOPS 准入门槛"></div>
             <div class="${barClass}" style="width:${fillPercent}%;"></div>
           </div>
 
@@ -1180,8 +1180,8 @@ const ToolsEngine = {
     const oldDev = Catalog.getDevice(this.upgradeOldId) || devices.find(d => d.id === 'pro-7') || devices[0];
     const newDev = Catalog.getDevice(this.upgradeNewId) || devices.find(d => d.id === 'pro-11-13') || devices[1];
 
-    const oldOf = (key) => this.spec(oldDev, key);
-    const newOf = (key) => this.spec(newDev, key);
+    const oldOf = (key) => Catalog.presentSpec(this.spec(oldDev, key));
+    const newOf = (key) => Catalog.presentSpec(this.spec(newDev, key));
 
     return `
       <div class="guide-container">

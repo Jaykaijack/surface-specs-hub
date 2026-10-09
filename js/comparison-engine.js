@@ -393,6 +393,10 @@ const ComparisonEngine = {
       const m = text.match(/^(\d+)\s*:\s*(\d+)(?:\s.*)?$/);
       if (m) return Number(m[1]) / Number(m[2]);
     }
+    if (key === 'resolution') {
+      const m = text.match(/^(\d+)\s*[×x]\s*(\d+)(?:\s*\(\d+\s*PPI\))?$/i);
+      if (m) return [Number(m[1]), Number(m[2])];
+    }
     if (['refreshRate', 'batteryCapacityWh'].includes(key)) {
       const m = text.match(/^(\d+(?:\.\d+)?)\s*(Hz|赫兹|Wh|瓦时)$/i);
       if (m) return Number(m[1]);
@@ -524,6 +528,8 @@ const ComparisonEngine = {
 
   renderStatusBadge(status) {
     switch (status) {
+      case 'pending':
+        return '<span class="spec-badge">销售状态待核验</span>';
       case 'current_cn':
         return '<span class="spec-badge green">国行在售</span>';
       case 'current_global':

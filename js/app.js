@@ -1818,8 +1818,8 @@ const App = {
           <div class="metric-label">商用企业级支持机型</div>
         </div>
         <div class="metric-box">
-          <div class="metric-val" style="color:#d83b01;">按 registry</div>
-          <div class="metric-label">核验列读 VERIFICATION_STATUS（禁写死已核验）</div>
+          <div class="metric-val" style="color:#d83b01;">逐字段</div>
+          <div class="metric-label">来源索引不代表全库已核验</div>
         </div>
       </div>
 
@@ -2630,7 +2630,7 @@ const App = {
                     <div style="font-weight:600; font-size:13.5px;">${c.name}</div>
                     <div style="font-size:11.5px; color:var(--ms-text-secondary);">${c.vendor} · ${c.npuDesc}</div>
                   </div>
-                  <span class="spec-badge gold">${c.npuTops} TOPS</span>
+                  <span class="spec-badge gold">${Catalog.npuScore(c.npuTops) === null ? 'NPU 算力待核验' : Catalog.npuScore(c.npuTops) + ' TOPS'}</span>
                 </div>
               `).join('')}
             </div>

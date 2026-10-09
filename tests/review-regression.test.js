@@ -40,7 +40,7 @@ for(const budget of ['budget_entry','budget_mid','budget_high','budget_pro']) {
 const registry=JSON.parse(fs.readFileSync('docs/full-library-verification-registry.json'));
 const fields=SURFACE_DATA.devices.flatMap(d=>Object.entries(d.specs).map(([field,value])=>({d,field,value})));
 assert.equal(registry.entries.length,fields.length);
-for(const {d,field,value} of fields){const e=registry.entries.find(e=>e.deviceId===d.id&&e.field===field);assert.ok(e);assert.equal(e.valueHash,crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex'));assert.equal(e.region,d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN'));assert.equal(e.configuration,d.id);if(e.verdict==='VERIFIED'){assert.ok(e.reviewedAt&&e.sourceUrl)}}
+for(const {d,field,value} of fields){const e=registry.entries.find(e=>e.deviceId===d.id&&e.field===field);assert.ok(e);assert.equal(e.valueHash,crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex'));assert.equal(e.region,e.verdict === 'VERIFIED' ? 'CN' : d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN'));assert.equal(e.configuration,d.id);if(e.verdict==='VERIFIED'){assert.ok(e.reviewedAt&&e.sourceUrl);assert.equal(e.sourceUrl,d.specs.officialDocUrl);assert.ok(!(d.unverifiedFields || []).includes(field))}}
 assert.equal(require('../js/verification-status').resolve('pro-12-13-intel').status,'pending');
 const evidence=require('../docs/evidence/ultra-business-cn-20261009.json');
 assert.equal(evidence.region,'CN');assert.equal(evidence.consumerOrOtherRegionApplicable,false);assert.equal(evidence.values.batteryCapacityWh.minimum,89);assert.equal(evidence.values.npuInt8Tops,null);
@@ -58,3 +58,25 @@ assert.equal(corrected.dataset.devices[2].availability.shippingStarts,'2026-10-1
 assert.throws(()=>correctUltraBusiness({devices:[]}),/唯一/);
 assert.throws(()=>correctUltraBusiness({devices:[cn,cn]}),/唯一/);
 console.log('Ultra correction fixture PASS: exact China business source, consumer/other region preserved, no guessed IDs');
+const ultra=Catalog.getDevice('laptop-ultra-biz');const ultraConsumer=Catalog.getDevice('laptop-ultra');
+assert.equal(SURFACE_DATA.devices.length,90);
+assert.equal(Catalog.getSpec(ultra,'resolution'),'3270 × 2180');
+assert.equal(Catalog.getSpec(ultra,'weight'),'2.0 kg');
+assert.equal(Catalog.getSpec(ultra,'npuTops'),null);
+assert.match(Catalog.getSpec(ultra,'batteryCapacityWh'),/92.*89/);
+assert.match(Catalog.getSpec(ultra,'dimensionsMm'),/328.8.*238.7.*17.99.*19.16/);
+assert.match(Catalog.getSpec(ultra,'ramSpec'),/24 GB/);
+assert.match(Catalog.getSpec(ultra,'storageOptions'),/512 GB 第 4 代.*1 TB.*2 TB 第 5 代/);
+assert.match(Catalog.getSpec(ultra,'warranty'),/3 年/);
+assert.equal(ultra.status,'upcoming');assert.equal(ultra.availability.shippingStarts,'2026-10-16');
+assert.equal(Catalog.getSpec(ultra,'repairabilityScore'),null);
+assert.equal(Catalog.getSpec(ultra,'cpuArch'),null);
+assert.equal(Catalog.getSpec(ultraConsumer,'resolution'),null);
+assert.equal(ultraConsumer.specs.resolution,require('../docs/evidence/production-20261009/ultra-input.json').devices[1].specs.resolution);
+assert.equal(Catalog.getSpec(ultraConsumer,'warranty'),null);
+assert.equal(Catalog.getSpec(ultraConsumer,'npuTops'),null);
+for(const acc of Catalog.accessories())assert.equal(t.getCompatStatus(acc.id,ultra.id).status,'UNKNOWN');
+console.log('Real Ultra import PASS: 90 records, China-business facts corrected, consumer raw values retained but not asserted, unknown configuration compatibility');
+
+assert.equal(ComparisonEngine.checkFieldDiff([{specs:{resolution:'3270 x 2180 (262 PPI)'}},{specs:{resolution:'3270 × 2180'}}],'resolution'),false);
+assert.equal(ComparisonEngine.checkFieldDiff([{specs:{aspectRatio:'3:2 黄金生产力比例'}},{specs:{aspectRatio:'3:2'}}],'aspectRatio'),false);

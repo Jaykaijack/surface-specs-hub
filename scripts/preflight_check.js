@@ -113,7 +113,14 @@ function checkTerminology() {
     });
   }
 
-  // 3. 微软官方 2026-10-08 正式发布 Surface Laptop Ultra (搭载 NVIDIA RTX Spark™ 平台)，该商标获官方认证
+  // 2026-10-09 中国商用页面已列出 RTX Spark；不能继续按名称一律下架。
+  // 仍禁止把平台 FP4 的数值用作专用 NPU TOPS。
+  const dataset = require('../js/surface-data.js');
+  for (const chip of dataset.chips.filter(c => /RTX Spark/i.test(c.name || ''))) {
+    if (chip.npuTops !== null && chip.npuTops !== undefined && chip.npuTops !== 'not_disclosed') {
+      violations.push({file:'js/surface-data.js', error:'RTX Spark 专用 NPU INT8 TOPS 未核实，不能录入平台 FP4 数值'});
+    }
+  }
 
   return {
     name: '术语与命名合规性扫描 (PRD P1-2 / C-2)',

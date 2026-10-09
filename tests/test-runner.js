@@ -861,7 +861,7 @@ assertEqual(Catalog.listDevices().length, SURFACE_DATA.devices.length, 'resetToB
 assert(!!SURFACE_DATA.datasetVersion, '本地基线必须带 datasetVersion，才能拒绝过期云端快照');
 assertEqual(Catalog.acceptsCloudVersion('2026.09.18'), false, '过期云端 v2026.09.18 不得覆盖本地核验基线');
 assertEqual(Catalog.acceptsCloudVersion(SURFACE_DATA.datasetVersion), true, '同版本云端可以覆盖');
-assertEqual(Catalog.acceptsCloudVersion('2026.10.02'), true, '更新的云端可以覆盖');
+assertEqual(Catalog.acceptsCloudVersion('2099.01.01'), true, '更新的云端可以覆盖');
 assertEqual(Catalog.acceptsCloudVersion(''), false, '云端缺版本号时不得覆盖本地核验基线');
 
 assert(typeof App.listDevices === 'function', 'App 只通过 Catalog 取机型，禁止直读 SURFACE_DATA.devices');
@@ -1612,15 +1612,21 @@ const officialLockedIds = new Set([
   ...Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices),
   ...Object.keys(OFFICIAL_XBOX_LINEUP_FACTS.devices)
 ]);
+for (const id of ['laptop-ultra-biz', 'laptop-ultra']) {
+  const imported = Catalog.getDevice(id);
+  assert(imported && Array.isArray(imported.unverifiedFields), `${id} 导入记录必须明确标记未核验字段`);
+  assert(imported.unverifiedFields.every(key => Catalog.getSpec(imported, key) === null), `${id} 未核验字段不得直接展示为真值`);
+  officialLockedIds.add(id);
+}
 Catalog.listDevices().forEach(dev => {
-  assert(officialLockedIds.has(dev.id), `${dev.id} 必须有现网或历史官方事实锁，不得只靠档案自述`);
+  assert(officialLockedIds.has(dev.id), `${dev.id} 必须有事实回归或显式待核验隔离，不得只靠档案自述`);
 });
 assertEqual(officialLockedIds.size, Catalog.listDevices().length,
-  '官方事实锁必须覆盖全量设备，一台都不能少');
+  '事实回归与待核验隔离必须覆盖全量设备');
 
 Catalog.listDevices().forEach(dev => {
   if (dev.status === 'current_cn') return;
-  if (['pro-12-inch-2', 'laptop-13-inch-2'].includes(dev.id)) {
+  if (['pro-12-inch-2', 'laptop-13-inch-2', 'laptop-ultra-biz', 'laptop-ultra'].includes(dev.id)) {
     assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'NULL',
       `${dev.id} 专属产品列仅列预售日期，价格待核验而非断言官方未披露`);
     return;

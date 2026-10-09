@@ -160,6 +160,8 @@ const Catalog = (function () {
   function getSpec(device, fieldKey) {
     if (!device || !device.specs || !fieldKey) return undefined;
     const specs = device.specs;
+    const blocked = device.unverifiedFields || [];
+    if (blocked.includes(fieldKey) || (SPEC_ALIASES[fieldKey] || []).some(key => blocked.includes(key))) return null;
     if (fieldKey === 'usbPorts') {
       if (!isEmpty(specs.usbPorts) || specs.usbPorts === 'not_disclosed' || specs.usbPorts === 'not_applicable') {
         return specs.usbPorts;

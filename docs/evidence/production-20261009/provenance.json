@@ -1,0 +1,8 @@
+{
+  "source": "delegation message: public production records extracted by parent, not independently fetched",
+  "receivedAt": "2026-10-09",
+  "sha256": "fba65330e55a95046826288c848b22757c9620dbc10e278ce818e5b5136d9687",
+  "serialization": "JSON values preserved; whitespace reformatted",
+  "verifiedFacts": false,
+  "fullProductionSync": false
+}
