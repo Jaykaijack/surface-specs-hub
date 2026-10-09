@@ -1,0 +1,343 @@
+Surface Book 2 specs and features | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features)
+citeturn48view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features","lineno":200}); Total lines: 506
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Book 2 specs and features
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Book 2 Surface Book 2 - 15 inch
+L126: 
+L127: Note
+L128: 
+L129:   * Incredible speed and battery life come together with next-level AI experiences and signature Surface design.
+L130:   * cite75†Explore the newest Surface PCs†www.microsoft.com L131: ## Get to know Surface Book 2
+L132: 
+L133: cite76†Image: Picture of a Surface Books with call out numbers identifying the SD™ card reader, the USB 3.0, the Rear-facing camera, the Power button, Volume, Windows Hello with face sign-in, the Front-facing camera, the Headset jack, the Detach key, the Surface Connect, and the USB-C. L134:   1. SDXC™ card reader
+L135:   2. USB 3.0
+L136:   3. Rear-facing camera
+L137:   4. Power button
+L138:   5. Volume
+L139:   6. Windows Hello with face sign-in
+L140:   7. Front-facing camera
+L141:   8. Headset jack
+L142:   9. Detach key
+L143:   10. Surface Connect
+L144:   11. USB-C
+L145: ## Surface Book 2 and Windows 10
+L146: 
+L147: Surface Book 2 comes with Windows 10 Pro edition. For Surface Book 2 models that have the 8th Gen Intel® Core™ i5-8350U or i7-8650U processor only, you can upgrade your Surface Book 2 from Windows 10 to Windows 11. For more info, see cite77†Which Surface devices can be upgraded to Windows 11? L148: 
+L149: ## Charging your Surface
+L150: 
+L151: You can charge your Surface using USB-C or Surface Connect. For more information, see cite78†How to charge Surface. L152: ## Surface Book 2 tips
+L153: 
+L154: If you just got a new Surface Book, congrats! Here are a few tips to get you started.
+L155: 
+L156: cite79†Image: Side view picture of an open Surface Book 2 Hero. L157: 
+L158: ### Detach the display for four different modes
+L159: 
+L160: Surface Book is a versatile laptop, a powerful tablet, and a portable studio that adapts to the ways you work and create.
+L161: ### How to detach the display
+L162: 
+L163: Press and hold the Detach key until the light on the key turns green and you see the Ready to Detach message on the screen. Then pull the display off of the keyboard.
+L164: 
+L165: Now you can put Surface Book in any mode, depending on what you want to do.
+L166: 
+L167: cite80†Image: Picture of the Surface Book 2 screen being pulled up and detached from the keyboard. L168: ### Use Surface Book as a tablet
+L169: 
+L170: Surface Book is a tablet that you can take anywhere. Just press and hold the Detach key on the keyboard, remove the display, and you’re ready to go.
+L171: 
+L172: cite81†Image: Picture of Surface Book 2 being held in Tablet mode. L173: Tip: If you’re traveling and don’t need the keyboard, just bring the display and your power cord. There’s a power charging port on the bottom center of the display. Just be sure to protect the screen with a padded case or some other sort of protection if you’re not bringing the keyboard along.
+L174: #### Watch movies and share photos in View Mode
+L175: 
+L176: View Mode is perfect for when you want to:
+L177: 
+L178:   * Binge watch your favorite show.
+L179:   * Share photos at a family gathering.
+L180:   * Present ideas to a few colleagues or classmates.
+L181:   * Follow a recipe you found online.
+L182:   * Play Xbox games with an Xbox wireless controller (learn more about cite82†playing games on Surface ).
+L183: To put Surface Book into View Mode, first press and hold the Detach key on the keyboard to remove the display. Flip the screen around, line up the tabs on the keyboard to the slots on the display, and press the display down. It’ll lock into place and you’ll see an Attached message on the screen.
+L184: 
+L185: cite83†Image: Picture of a hands opening a Surface Book 2 while in View mode. L186: 
+L187: The keyboard is now a stable stand for the display for hands-free watching.
+L188: #### Sketch, write, and create naturally in Studio Mode
+L189: 
+L190: With Surface Book in View Mode, fold the display down so you have a horizontal surface to write on. Use touch or Surface Pen to draw or take notes, just like on paper. And if you want a truly immersive creative experience, add cite84†Surface Dial .
+L191: 
+L192: cite85†Image: Side view picture of a Surface Book 2 screen being opened in Studio mode. L193: 
+L194: Get more info on cite86†how to use your Surface Pen L195: #### Use Surface Book as a laptop
+L196: 
+L197: cite87†Image: Above view picture of an open Surface Book 2. L198: 
+L199: Of course, Surface Book 2 is a powerful laptop—it runs professional-grade software with high-speed Intel processors, blazing NVIDIA graphics, lighting-fast storage, and delivers up to 17 hours of battery life, so you can get things done.
+L200: #### Write and draw naturally with Surface Pen
+L201: 
+L202: Surface Pen is the perfect accessory for Surface Book. Take notes in meetings or class, draw, and edit Word documents. Make a mistake? Flip it over and use the eraser. Surface Pen attaches magnetically to the side of your screen, so it’s ready whenever you are.
+L203: 
+L204: cite88†Image: Picture of the Surface Pen. L205: #### Sketch and draw
+L206: 
+L207: With precision ink, tilt for shading, and virtually no lag, Surface Pen is perfect for anyone, from graphic designers to avid doodlers. To try it out, click the top button on Surface Pen once to open Windows Ink Workspace, then select Sketchpad and start drawing. Surface Pen also works with professional graphics software too.
+L208: 
+L209: cite89†Image: Sketchpad and ruler L210: ### Edit Word documents
+L211: 
+L212: Use Surface Pen to edit and add comments to Word documents.
+L213: 
+L214: cite90†Image: Picture of the Surface Pen marking up a document. L215: 
+L216: Here’s how:
+L217:   * Select text
+L218: Select Draw > Ink Editor, then use Surface Pen to circle a word, phrase, or paragraph, then cut, copy, or paste.
+L219:   * Delete text
+L220: Select Draw > Ink Editor, then use Surface Pen to draw a diagonal line through words, phrases, or paragraphs.
+L221:   * Highlight text
+L222: Select Draw > Highlighter, then use Surface Pen to select the text for perfect highlighting.
+L223:   * Replay pen strokes
+L224: Select Draw > Ink Replay to see a replay of all of the markups people have made in the document.
+L225: ### Remember with a Sticky Note
+L226: 
+L227: Click and hold the top button on Surface Pen to open Sticky Notes, then jot down reminders, to-do lists, phone numbers, or anything else you want to remember.
+L228: 
+L229: cite91†Image: Reminders from Sticky Notes L230: ### Take a screenshot, then draw on it
+L231: 
+L232: Click the top button twice to take a screenshot and it’ll open automatically in Screen sketch, where you can draw on the picture or add notes – perfect when you want to share something you find online or doodle on a friend’s profile picture.
+L233: 
+L234: cite92†Image: Resume a previous screen sketch L235: 
+L236: ### Erase just like a pencil
+L237: 
+L238: Flip Surface Pen over and use the top button to erase.
+L239: ### Customize the Surface Pen top button
+L240: 
+L241: Select Start > Settings > Devices > Pen & Windows Ink. Under Pen shortcuts, choose the app you want to open when you click or double click the top button.
+L242: 
+L243: ### Connect all of your devices with USB-C
+L244: 
+L245: Surface Book 2 has USB-C for charging devices, transferring files, and displaying your video on external monitors.
+L246: 
+L247: The USB-C to HDMI and USB-C to VGA adapters are perfect for when you want to share pictures or videos on a larger screen.
+L248: #### USB-C to HDMI adapter
+L249: 
+L250: cite93†Image: Picture of the USB-C HDMI adapter with a USB cable curved next to it. L251: 
+L252: #### USB-C to VGA adapter
+L253: 
+L254: cite94†Image: Picture of the USB-C VGA adapter with a USB cable curved next to it. L255: 
+L256: cite95†Surface accessories help L257: 
+L258: ### Transform into a desktop workstation with Surface Dock
+L259: 
+L260: Plug in the Surface Dock to charge your Surface Book and use two external 4K monitors, a keyboard, mouse, printer, and more.
+L261: 
+L262: cite96†Image: Surface Dock L263: 
+L264: cite97†More info about Surface Dock L265: ### Want more tips?
+L266: 
+L267: You can open Tips, which is on your Surface. Select Start, then select Tips from the list of apps. cite98†More info about Tips L268: 
+L269: cite99†Image: Picture of the Tips Apps screen. L270: ## Surface Book 2 Tech specs
+L271:    |
+L272: --- | ---
+L273: Dimensions  | Surface Book 2 13.5"
+L274: i5: 12.3" x 9.14" x 0.51"-0.90" (312 mm x 232 mm x 13 mm-23 mm)
+L275: i7: 12.3" x 9.14" x 0.59"-0.90" (312 mm x 232 mm x 15 mm-23 mm)
+L276: Surface Book 2 15"
+L277: 13.5" x 9.87" x 0.568-0.90" (343 mm x 251 mm x 15 mm-23 mm)
+L278: Display  | Surface Book 2 13.5” PixelSense™ Display
+L279: Screen: 13.5” PixelSense™ Display
+L280: Resolution: 3000 x 2000 (267 PPI)
+L281: Aspect ratio: 3:2
+L282: Contrast ratio: 1600:1
+L283: Touch: 10 point multi-touch G5
+L284: Surface Book 2 15” PixelSense™ Display
+L285: Screen: 15” PixelSense™ Display
+L286: Resolution: 3240 x 2160, (260 PPI)
+L287: 10 point multi-touch G5
+L288: Aspect ratio: 3:2
+L289: Contrast ratio: 1600:1
+L290: Memory  | Surface Book 2 13.5”
+L291: 8GB or 16GB RAM 1866Mhz LPDDR3
+L292: Surface Book 2 15”
+L293: 16GB RAM 1866Mhz LPDDR3
+L294: Processor  | Surface Book 2 13.5”
+L295: 7th Gen Intel® Core™ i5-7300U dual-core processor, 3.5GHz Max Turbo
+L296: 8th Gen Intel® Core™ i5-8350U quad-core processor, 3.6GHz Max Turbo
+L297: 8th Gen Intel® Core™ i7-8650U quad-core processor, 4.2GHz Max Turbo
+L298: Surface Book 2 15”
+L299: 8th Gen Intel® Core™ i5-8350U quad-core processor, 3.6GHz Max Turbo
+L300: 8th Gen Intel® Core™ i7-8650U quad-core processor, 4.2GHz Max Turbo
+L301: Security  | HW TPM 2.0 chip for enterprise security
+L302: Enterprise-grade protection with Windows Hello face sign-in
+L303: Software  | Book 2
+L304: Windows 10 Pro Creators Update 64-bit
+L305: Microsoft 365 30-day trial
+L306: Book 2 for Business
+L307: Windows 10 Pro Creators Update 64-bit
+L308: Microsoft 365 30-day trial
+L309: Sensors  | Ambient light sensor
+L310: Proximity sensor
+L311: Accelerometer
+L312: Gyroscope
+L313: Magnetometer
+L314: What's in the box  | Surface Book 2 13.5” PixelSense™ Display
+L315: 44W (integrated GPU) or 102W (discrete GPU) Surface Power Supply w/USB-A (5W) charging port
+L316: Quick Start Guide
+L317: Safety and warranty documents
+L318: Surface Book 2 15” PixelSense™ Display
+L319: 102W Surface Power Supply w/USB-A (5W) charging port
+L320: Quick Start Guide
+L321: Safety and warranty documents
+L322: Weight  | Surface Book 2 13.5” PixelSense™ Display
+L323: Intel® Core™ i5: 3.38 lbs (1,534 g) including keyboard
+L324: Intel® Core™ i7: 3.62 lbs (1,642 g) including keyboard
+L325: Surface Book 215” PixelSense™ Display
+L326: Intel® Core™ i7: 4.20 lbs (1,905 g) including keyboard
+L327: Storage ^{2}  | Solid state drive (SSD) options: 256GB, 512GB, or 1TB PCIe SSD
+L328: Battery Life  | Up to 17 hours of video playback^{1}
+L329: Graphics  | Surface Book 2 13.5” PixelSense™ Display
+L330: Intel® HD Graphics 620 integrated GPU (on Intel® i5-7300U model)
+L331: Intel® HD Graphics 620 integrated GPU (on Intel® i5-8350U model)
+L332: NVIDIA® GeForce® GTX 1050 discrete GPU w/2GB GDDR5 graphics memory (on Intel® i7-8650U models)
+L333: Surface Book 2 15” PixelSense™ Display
+L334: Intel® HD Graphics 620 integrated GPU (on Intel® i5-8350U model)
+L335: NVIDIA® GeForce® GTX 1060 discrete GPU w/6GB GDDR5 graphics memory
+L336: Connections  | 2 x USB type-A (version 3.1 Gen 1)
+L337: 1 x USB type-C (version 3.1 Gen 1 with USB Power Delivery revision 3.0)
+L338: 3.5mm headphone jack
+L339: 2 x Surface Connect ports
+L340: Full-size SDXC card reader (UHS-I / UHS-II)
+L341: Compatible with Surface Dial* on- and off-screen interaction
+L342: Cameras, video, and audio  | Windows Hello face authentication camera (front-facing)
+L343: 5.0MP front-facing camera with 1080p HD video
+L344: 8.0MP rear-facing autofocus camera with 1080p HD video
+L345: Dual microphones
+L346: Front-facing stereo speakers with Dolby® Audio™
+L347: Support for Windows Sonic for Headphones
+L348: Wireless  | Wi-Fi: IEEE 802.11 a/b/g/n/ac compatible
+L349: Bluetooth Wireless 4.1 technology
+L350: Xbox Wireless built-in (15” only)
+L351: Exterior  | Casing: Magnesium
+L352: Color: Silver
+L353: Physical buttons: Volume, Power
+L354: Warranty  | 1-year limited hardware warranty
+L355: * Microsoft 365, Surface Pen, and some software and accessories sold separately.
+L356: [1] Surface Book 2 battery life:
+L357: Surface Book 2 13.5”: Up to 17 hours of video playback. Testing conducted by Microsoft in October 2017 using preproduction Intel® Core™ i5, 256GB, 8 GB RAM device. Testing consisted of full battery discharge during video playback. All settings were default except: Wi-Fi was associated with a network and Auto-Brightness disabled. Battery life varies significantly with settings, usage and other factors.
+L358: Surface Book 2 15”: Up to 17 hours of video playback. Testing conducted by Microsoft in October 2017 using preproduction Intel® Core™ i7, 512GB, 16 GB RAM dGPU device. Testing consisted of full battery discharge during video playback. All settings were default except: Wi-Fi was associated with a network and Auto-Brightness disabled. Battery life varies significantly with settings, usage and other factors.
+L359: [2] System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB= 1 billion bytes. See cite100†Surface.com/Storage for more details.
+L360: 
+L361: "Most powerful Surface laptop" claim refers to processing power.
+L362: ## Related topics
+L363: 
+L364:   * cite84†Meet Surface Dial L365:   * cite101†Surface Pen†www.microsoft.com L366:   * cite102†Windows accessibility features†www.microsoft.com L367:   * cite103†Windows 11 features and tips†www.microsoft.com L368: ## Need more help?
+L369: 
+L370:   * cite104†Personal accounts L371:   * cite105†Work/school accounts L372: 
+L373: Technical support
+L374: 
+L375: For technical support, cite106†open the Surface app†go.microsoft.com or cite107†web browser†go.microsoft.com , describe your problem and select Get Help.
+L376: 
+L377: Community support
+L378: 
+L379: Communities can help you ask questions, and hear from experts with rich knowledge. cite108†Ask the Community†go.microsoft.com .
+L380: 
+L381: Other support
+L382: If you can't use your Surface or have a question about something else, cite109†open Get Help†go.microsoft.com to get other support online.
+L383: 
+L384: cite110†Image: Need more help grid spacer. L385: 
+L386: Technical support
+L387: 
+L388: You can get self-help support from cite106†the Surface app†go.microsoft.com or cite107†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L389: 
+L390: Service & repair
+L391: For Surface for Business, visit cite111†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L392: 
+L393: For IT Admins
+L394: 
+L395: IT Admins should view cite112†Surface for Business†go.microsoft.com and cite113†Support for Business & Education customers†go.microsoft.com .
+L396: 
+L397: cite110†Image: Need more help grid spacer. L398: ## Was this information helpful?
+L399: 
+L400: [Button: Yes] [Button: No]
+L401: 
+L402: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L403: 
+L404: What affected your experience?
+L405: 
+L406: [Input] Resolved my issue
+L407: 
+L408: [Input] Clear instructions
+L409: 
+L410: [Input] Easy to follow
+L411: 
+L412: [Input] No jargon
+L413: 
+L414: [Input] Pictures helped
+L415: 
+L416: [Input] Other
+L417: 
+L418: [Input] Didn't match my screen
+L419: 
+L420: [Input] Incorrect instructions
+L421: 
+L422: [Input] Too technical
+L423: 
+L424: [Input] Not enough information
+L425: 
+L426: [Input] Not enough pictures
+L427: 
+L428: [Input] Other
+L429: 
+L430: Any additional feedback? (Optional)
+L431: [Button: Submit feedback]
+L432: 
+L433: By pressing submit, your feedback will be used to improve Microsoft products and services. cite114†Privacy Statement.†privacy.microsoft.com L434: 
+L435: What's new
+L436: 
+L437:   * cite115†Surface Laptop Ultra†www.microsoft.com L438:   * cite116†Surface Pro†www.microsoft.com L439:   * cite117†Surface Laptop†www.microsoft.com L440:   * cite118†Surface RTX Spark Dev Box†www.microsoft.com L441:   * cite119†Explore Copilot†www.microsoft.com L442:   * cite120†Explore Microsoft products†www.microsoft.com L443:   * cite121†Windows 11 apps†www.microsoft.com L444: Microsoft Store
+L445: 
+L446:   * cite122†Account profile†account.microsoft.com L447:   * cite69†Download Center†www.microsoft.com L448:   * cite123†Microsoft Store support†go.microsoft.com L449:   * cite124†Returns†www.microsoft.com L450:   * cite125†Order tracking†www.microsoft.com L451:   * cite46†Certified Refurbished†www.microsoft.com L452:   * cite126†Microsoft Store Promise†www.microsoft.com L453:   * cite127†Flexible Payments†www.microsoft.com L454: 
+L455: Education
+L456:   * cite70†Microsoft in education†www.microsoft.com L457:   * cite128†Devices for education†www.microsoft.com L458:   * cite129†Microsoft Teams for Education†www.microsoft.com L459:   * cite130†Microsoft 365 Education†www.microsoft.com L460:   * cite131†How to buy for your school†www.microsoft.com L461:   * cite132†Educator training and development†education.microsoft.com L462:   * cite133†Deals for students and parents†www.microsoft.com L463:   * cite134†AI for education†www.microsoft.com L464: 
+L465: Business
+L466:   * cite135†Microsoft AI†www.microsoft.com L467:   * cite53†Microsoft Security†www.microsoft.com L468:   * cite54†Dynamics 365†www.microsoft.com L469:   * cite55†Microsoft 365†www.microsoft.com L470:   * cite56†Microsoft Power Platform†www.microsoft.com L471:   * cite38†Microsoft Teams†www.microsoft.com L472:   * cite136†Microsoft Copilot†www.microsoft.com L473:   * cite58†Small Business†www.microsoft.com L474: 
+L475: Developer & IT
+L476:   * cite60†Azure†azure.microsoft.com L477:   * cite61†Microsoft Developer†developer.microsoft.com L478:   * cite62†Microsoft Learn†learn.microsoft.com L479:   * cite137†Support for AI marketplace apps†www.microsoft.com L480:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L481:   * cite138†Microsoft Marketplace†marketplace.microsoft.com L482:   * cite139†Software companies†www.microsoft.com L483:   * cite67†Visual Studio†visualstudio.microsoft.com L484: 
+L485: Company
+L486:   * cite140†Careers†careers.microsoft.com L487:   * cite141†About Microsoft†www.microsoft.com L488:   * cite142†Company news†news.microsoft.com L489:   * cite143†Privacy at Microsoft†www.microsoft.com L490:   * cite144†Investors†www.microsoft.com L491:   * cite145†Diversity and inclusion†www.microsoft.com L492:   * cite146†Accessibility†www.microsoft.com L493:   * cite147†Sustainability†www.microsoft.com L494: 
+L495: cite148†English (United States) cite149†Your Privacy Choices†aka.ms cite149†Your Privacy Choices†aka.ms cite150†Consumer Health Privacy†go.microsoft.com L496:   * cite151†Sitemap†www.microsoft.com L497:   * cite152†Contact Microsoft L498:   * cite153†Privacy†go.microsoft.com L499:   * cite154†Manage cookies L500:   * cite155†Terms of use†go.microsoft.com L501:   * cite156†Trademarks†go.microsoft.com L502:   * cite157†Safety & eco†go.microsoft.com L503:   * cite158†Recycling†www.microsoft.com L504:   * cite159†About our ads†choice.microsoft.com L505:   * © Microsoft 2026
+

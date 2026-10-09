@@ -1,0 +1,205 @@
+Surface Book 3 Quadro RTX 3000 overview - Surface | Microsoft Learn (https://learn.microsoft.com/en-us/surface/surface-book-quadro)
+citeturn104view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://learn.microsoft.com/en-us/surface/surface-book-quadro","lineno":null}); Total lines: 207
+L0: cite0†Skip to main content cite1†Skip to Ask Learn chat experience L1: 
+L2: This browser is no longer supported.
+L3: 
+L4: Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+L5: 
+L6: cite2†Download Microsoft Edge†go.microsoft.com cite3†More info about Internet Explorer and Microsoft Edge L7: 
+L8: Table of contents Exit editor mode
+L9: 
+L10: Ask Learn Ask Learn
+L11: 
+L12: Reading mode Table of contents cite1†Read in English Add Add to Plans cite4†Edit†github.com L13: 
+L14: * * *
+L15: 
+L16: Copy Markdown Print
+L17: 
+L18: * * *
+L19: 
+L20: Note
+L21: Access to this page requires authorization. You can try cite1†signing in or changing directories.
+L22: 
+L23: Access to this page requires authorization. You can try changing directories.
+L24: # Surface Book 3 Quadro RTX 3000 overview
+L25: 
+L26: Feedback
+L27: 
+L28: Summarize this article for me
+L29: ## In this article
+L30: 
+L31: Surface Book 3 for Business, powered by the NVIDIA Quadro RTX 3000 GPU, is built for professionals who need real-time rendering, AI acceleration, advanced graphics, and compute performance in a portable form factor. Quadro RTX 3000 fundamentally changes what you can do with Surface Book 3:
+L32:   * Ray Tracing - Produce stunning renders, designs and animations faster than ever with 30 RT Cores for hardware-accelerated ray tracing.
+L33:   * Artificial Intelligence - Remove redundant, tedious tasks and compute-intensive work with 240 Tensor Cores for GPU-accelerated AI.
+L34:   * Advanced Graphics and Compute Technology - Experience remarkable speed and interactivity during your most taxing graphics and compute workloads with 1,920 CUDA Cores and 6 GB of GDDR6 memory.
+L35: ## Enterprise-grade solution
+L36: 
+L37: Of paramount importance to commercial customers, Quadro RTX 3000 brings a fully professional-grade solution that combines accelerated ray tracing and deep learning capabilities with an integrated enterprise-level management and support solution. Quadro drivers are tested and certified for more than 100 professional applications by leading ISVs, providing an extra layer of quality assurance to validate stability, reliability, and performance.
+L38: Quadro includes dedicated enterprise tools for remote management of Surface Book 3 devices with Quadro RTX 3000. IT admins can remotely configure graphics systems, save/restore configurations, continuously monitor graphics systems, and perform remote troubleshooting if necessary. These capabilities and deployment tools help maximize uptime and minimize IT support requirements.
+L39: NVIDIA develops and maintains Quadro Optimal Drivers for Enterprise (ODE) that are tuned, tested, and validated to provide enterprise-level stability, reliability, availability, and support with extended product availability. Each driver release involves more than 2,000 person-days of testing with professional applications, test suites and test cases, and WHQL certification.
+L40: Security threats are continually monitored, and regular security updates are released to protect against newly discovered vulnerabilities. In addition, Quadro drivers undergo another layer of testing by Surface Engineering before release via Windows Update.
+L41: ## Built for compute-intensive workloads
+L42: 
+L43: The Surface Book 3 with Quadro RTX 3000 delivers the best graphics performance of any Surface laptop, enabling advanced professionals to work from anywhere.
+L44:   * Creative professionals such as designers and animators. Quadro RTX enables real-time cinematic-quality rendering through Turing-optimized ray tracing APIs such as NVIDIA OptiX, Microsoft DXR, and Vulkan.
+L45:   * Architects and engineers using large, complex computer-aided design (CAD) models and assemblies. The RTX platform features the new NGX SDK to infuse powerful AI-enhanced capabilities into visual applications. This frees up time and resources through intelligent manipulation of images, automation of repetitive tasks, and optimization of compute-intensive processes.
+L46:   * Software developers across manufacturing, media and entertainment, medical, and other industries. Quadro RTX speeds application development with ray tracing, deep learning, and rasterization capabilities through industry-leading software SDKs and APIs.
+L47:   * Data scientists using Tensor Cores and CUDA cores to accelerate computationally intensive tasks and other deep learning operations. By using sensors, increased connectivity, and deep learning, researchers and developers can enable AI applications for everything from autonomous vehicles to scientific research.
+L48: Table 1. Quadro RTX 3000 performance features
+L49: Component  | Description
+L50: --- | ---
+L51: RT cores  | Dedicated hardware-based ray-tracing technology allows the GPU to render film quality, photorealistic objects and environments with physically accurate shadows, reflections, and refractions. The real-time ray-tracing engine works with NVIDIA OptiX, Microsoft DXR, and Vulkan APIs to deliver realism far beyond what is possible using traditional rendering techniques.
+L52: RT cores accelerate the Bounding Volume Hierarchy (BVH) traversal and ray casting functions using a low number of rays cast through a pixel.
+L53: Enhanced tensor cores  | Mixed-precision cores purpose-built for deep learning matrix arithmetic deliver 8x TFLOPS for training compared with the previous generation. Quadro RTX 3000 utilizes 240 Tensor Cores; each Tensor Core performs 64 floating-point fused multiply add (FMA) operations per clock, and each streaming multiprocessor (SM) performs 1,024 individual floating-point operations per clock.
+L54: In addition to supporting FP16/FP32 matrix operations, new Tensor Cores added INT8 (2,048 integer operations per clock) and experimental INT4 and INT1 (binary) precision modes for matrix operations.
+L55: Turing optimized software  | Deep learning frameworks such as the Microsoft Cognitive Toolkit (CNTK), Caffe2, MXNet, TensorFlow, and others deliver significantly faster training times and higher multi-node training performance. GPU-accelerated libraries such as cuDNN, cuBLAS, and TensorRT deliver higher performance for deep learning inference and High-Performance Computing (HPC) applications.
+L56: NVIDIA CUDA parallel computing platform  | Natively run standard programming languages like C/C++ and Fortran, and APIs like OpenCL, OpenACC and Direct Compute to accelerate techniques like ray tracing, video and image processing, and computation fluid dynamics.
+L57: Advanced streaming multiprocessor (SM) architecture  | Combined shared memory and L1 cache improve performance significantly while simplifying programming and reducing the tuning required to attain the best application performance.
+L58: High-performance GDDR6 Memory  | Quadro RTX 3000 features 6 GB of frame buffer, making it the ideal platform for handling large datasets and latency-sensitive applications.
+L59: Single instruction, multiple thread (SIMT)  | New independent thread scheduling capability enables finer-grain synchronization and cooperation between parallel threads by sharing resources among small jobs.
+L60: Mixed-precision computing  | 16-bit floating-point precision computing enables the training and deployment of larger neural networks. With independent parallel integer and floating-point data paths, the Turing SM handles workloads more efficiently using a mix of computation and addressing calculations.
+L61: Dynamic load balancing  | Provides dynamic allocation capabilities of GPU resources for graphics and compute tasks as needed to maximize resource utilization.
+L62: Compute preemption  | Preemption at the instruction level provides finer-grain control over compute tasks to prevent long-running applications from monopolizing system resources or timing out.
+L63: H.264, H.265 and HEVC encode/decode engines  | Enables faster than real-time performance for transcoding, video editing, and other encoding applications with two dedicated H.264 and HEVC encode engines and a dedicated decode engine that is independent of the 3D/compute pipeline.
+L64: NVIDIA GPU boost 4.0  | Maximizes application performance automatically without exceeding the power and thermal envelope of the GPU. Allows applications to stay within the boost clock state longer under a higher temperature threshold before dropping to a secondary temperature setting base clock.
+L65: Table 2. Quadro RTX tech specs
+L66: Component  | Description
+L67: --- | ---
+L68: NVIDIA CUDA processing cores  | 1,920
+L69: NVIDIA RT Cores  | 30
+L70: Tensor Cores  | 240
+L71: GPU memory  | 6 GB
+L72: Memory bandwidth  | 288 Gbps
+L73: Memory type  | GDDR6
+L74: Memory interface  | 192-bit
+L75: TGP max power consumption  | 65 W
+L76: Display port  | 1.4
+L77: OpenGL  | 4.6
+L78: Shader model  | 5.1
+L79: DirectX  | 12.1
+L80: PCIe generation  | 3
+L81: Single precision floating point performance (TFLOPS, Peak)  | 5.4
+L82: Tensor performance (TOPS, Peak)  | 42.9
+L83: NVIDIA FXAA/TX AA antialiasing  | Yes
+L84: GPU direct for video  | Yes
+L85: Vulkan support  | Yes
+L86: NVIDIA 3D vision Pro  | Yes
+L87: NVIDIA Optimus  | Yes
+L88: ## ISV testing & app acceleration
+L89: 
+L90: As shown in Table 3, Surface Book 3 with Quadro RTX 3000 is tested and approved by leading ISVs and provides significantly faster acceleration across professional applications. SPECview perf 13 benchmark test results compare Surface Book 3 15-inch with NVIDIA Quadro RTX 3000 vs. the Surface Book 2 15-inch with NVIDIA GeForce GTX 1060 devices.
+L91: 
+L92: Table 3. ISV testing & app acceleration on Surface Book 3 with Quadro RTX 3000
+L93: App  | Description
+L94: --- | ---
+L95: Adobe Dimension  | Adobe-tested and approved for Surface Book 3 with Quadro RTX 3000
+L96: - RTX-accelerated ray tracing delivers photorealistic 3D rendering to 2D artists and designers.
+L97: Adobe Illustrator  | - Pan and zoom with GPU-accelerated canvas faster, which enables graphic designers and illustrators to pan across and zoom in and out of complex vector graphics smoothly and interactively.
+L98: Adobe Lightroom  | Adobe-tested and approved for Surface Book 3 with Quadro RTX 3000
+L99: - Faster editing of res images with GPU-accelerated viewport, which enables the modeling of larger 3D scenes, and the rigging of more complex animations.
+L100: - GPU-accelerated image processing enables dramatically more responsive adjustments, especially on 4K or higher resolution displays.
+L101: - GPU-accelerated AI-powered "Enhance Details" for refining fine color detail of RAW images.
+L102: Adobe Photoshop  | Adobe-tested and approved for Surface Book 3 with Quadro RTX 3000
+L103: - CUDA core acceleration enables faster editing with 30+ GPU-accelerated features such as blur gallery, liquify, smart sharpen, and perspective warp, enabling photographers and designers to modify images smoothly and quickly.
+L104: Adobe
+L105: Premiere Pro  | Adobe-tested and approved for Surface Book 3 with Quadro RTX 3000
+L106: - Significantly faster editing and rendering video with GPU-accelerated effects vs. CPU.
+L107: - GPU-accelerated effects with NVIDIA CUDA technology for real-time video editing and faster final frame rendering.
+L108: - GPU-accelerated AI Auto Reframe feature for intelligently converting landscape video to dynamically tracked portrait or square video.
+L109: Adobe Substance Alchemist  | - Create and easily blend materials featuring RTX-accelerated AI.
+L110: Adobe Substance Painter  | Adobe-tested and approved for Surface Book 3 with Quadro RTX 3000
+L111: - Paint materials onto 3D models, featuring RTX accelerated bakers and Iray RTX rendering, which generates photorealistic imagery for interactive and batch rendering workflows.
+L112: Adobe Substance Designer  | - Author procedural materials featuring RTX accelerated bakers.
+L113: - Uses NVIDIA Iray rendering, including textures/substances and bitmap texture export to render in any Iray compatible with MDL.
+L114: - DXR-accelerated light and ambient occlusion baking.
+L115: ANSYS  | ANSYS-tested and approved for Surface Book 3 with Quadro RTX 3000
+L116: - ANSYS real-time engineering simulation tool built on CUDA.
+L117: Autodesk
+L118: Revit  | Autodesk-tested and approved for Surface Book 3 with Quadro RTX 3000
+L119: - GPU-accelerated viewport for a smoother, more interactive design experience.
+L120: - Supports third party GPU-accelerated 3D renderers such as V-Ray and Enscape.
+L121: Autodesk
+L122: AutoCad  | Autodesk-tested and approved for Surface Book 3 with Quadro RTX 3000
+L123: - GPU-accelerated viewport graphics for fast, interactive 3D modeling and design.
+L124: - RTX-accelerated ray tracing and AI denoising with the default Arnold renderer.
+L125: - More than 70 percent faster compared with Surface Book 2 15".
+L126: Autodesk
+L127: Maya  | Autodesk-tested and approved for Surface Book 3 with Quadro RTX 3000
+L128: - RTX-accelerated ray tracing and AI denoising with the default Arnold renderer.
+L129: - OpenGL Viewport Acceleration.
+L130: Bentley MicroStation  | Bentley-tested and approved for Surface Book 3 with Quadro RTX 3000
+L131: Dassault Systemes
+L132: 3D Experience platform  | - CATIA Interactive Ray Tracer (Live Rendering) accelerated by RT Cores.
+L133: - Catia runs more than 100% faster compared with Surface Book 2 15".
+L134: Dassault Systemes
+L135: Solidworks  | - Solidworks Interactive Ray Tracer (Visualize) accelerated by both RT Cores and Tensor Cores; AI-accelerated denoiser.
+L136: - Runs more than 50% faster compared with Surface Book 2 15".
+L137: ImageVis3D  | - Runs more than 2x faster compared with Surface Book 2 15”.
+L138: Esri ArcGIS Pro  | Esri-tested and approved for Surface Book 3 with Quadro RTX 3000
+L139: 3D Analysis and real-time visualization workflow performed much better than the previous generation and leverage RayTracing capability for Voxel layer visualization
+L140: Luxion KeyShot  | - Third-party Interactive Ray Tracer used by Solidworks, Creo, and Rhino. Accelerated by RT Cores, OptiX AI-accelerated denoising.
+L141: McNeel & Associates
+L142: Rhino 3D  | Rhino-tested and approved for Surface Book 3 with Quadro RTX 3000
+L143: - GPU-accelerated viewport for a smooth and interactive modeling and design experience.
+L144: - Supports Cycles for GPU-accelerated 3D rendering.
+L145: PTC Creo  | PTC-tested and approved for Surface Book 3 with Quadro RTX 3000
+L146: - Creo's real-time engineering simulation tool (Creo Simulation Live) built on CUDA.
+L147: - Runs more than 15% faster compared with Surface Book 2 15".
+L148: Siemens SolidEdge 2020  | Siemens-tested and approved for Surface Book 3 with Quadro RTX 3000
+L149: Siemens NX  | - Siemens NX Interactive Ray Tracer (Ray Traced Studio) accelerated by RT Cores.
+L150: - Runs more than 10 times faster compared with Surface Book 2 15”.
+L151: ## SKUs
+L152: 
+L153: Table 4. Surface Book 3 with Quadro RTX 3000 SKUs
+L154: 
+L155: Display  | Processor  | GPU  | RAM  | Storage
+L156: --- | --- | --- | --- | ---
+L157: 15-inch  | Quad-core 10th Gen Core i7-1065G7  | Intel Iris Plus Graphics
+L158: NVIDIA Quadro RTX 3000. Max-Q Design with 6 GB GDDR6 graphics memory  | 32 LPDDR4x  | 512 GB
+L159: 15-inch  | Quad-core 10th Gen Core i7-1065G7  | Intel Iris Plus Graphics
+L160: NVIDIA Quadro RTX 3000. Max-Q Design with 6 GB GDDR6 graphics memory  | 32 LPDDR4x  | 1 TB
+L161: ## Summary
+L162: 
+L163: The Surface Book 3 with Quadro RTX 3000 delivers the best graphics performance of any Surface laptop, providing architects, engineers, developers, and data scientists with the tools they need to work efficiently from anywhere:
+L164: 
+L165:   * RTX acceleration across multiple workflows like design, animation, video production, and more.
+L166:   * Desktop-grade performance in a mobile form factor.
+L167:   * Enterprise-class features, reliability, and support for mission-critical projects.
+L168: ## Learn more
+L169: 
+L170:   * cite5†Surface for Business†www.microsoft.com L171:   * cite6†Microsoft Cognitive Toolkit (CNTK) L172: 
+L173: * * *
+L174: 
+L175: ## Feedback
+L176: 
+L177: Was this page helpful?
+L178: 
+L179: Yes No No
+L180: 
+L181: Need help with this topic?
+L182: 
+L183: Want to try using Ask Learn to clarify or guide you through this topic?
+L184: 
+L185: Ask Learn Ask Learn
+L186: 
+L187: Suggest a fix?
+L188: 
+L189: * * *
+L190: 
+L191: ## Additional resources
+L192: 
+L193: * * *
+L194: 
+L195:   * Last updated on 2026-07-14
+L196: ### In this article
+L197: 
+L198: Was this page helpful?
+L199: 
+L200: Need help with this topic?
+L201: 
+L202: Want to try using Ask Learn to clarify or guide you through this topic?
+L203: 
+L204: Ask Learn Ask Learn
+L205: 
+L206: Suggest a fix?
+

@@ -1,0 +1,254 @@
+Surface Studio 2 features and specs | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs)
+citeturn53view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs","lineno":200}); Total lines: 400
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Studio 2 features and specs
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Studio 2
+L126: 
+L127: Note
+L128: 
+L129:   * Incredible speed and battery life come together with next-level AI experiences and signature Surface design.
+L130:   * cite75†Explore the newest Surface PCs†www.microsoft.com L131: 
+L132: ## Get to know Surface Studio 2
+L133: 
+L134: Surface Studio 2 has powerful performance designed to help you create, work, and more.
+L135: 
+L136: ### Volume and Power buttons
+L137: 
+L138: cite76†Image: SurfaceStudio-diagram-side_en L139: ### Ports and audio
+L140: 
+L141: Surface Studio 2 comes with various ports that can be found at the back of the base:
+L142: 
+L143:   * 1 High power USB 3.0 port
+L144:   * 3 additional USB 3.0 ports
+L145:   * 1 Ethernet port
+L146:   * Power port for included power cable
+L147:   * 1 USB-C port
+L148:   * 1 SDXC card reader
+L149:   * 1 auxiliary audio in/out port
+L150: 
+L151: Note
+L152: When you unplug the power cable, unplug it from the wall first. The plug that’s attached to the base has a lock to keep it in place when you move your Surface Studio 2. If you need to unplug the power cable from the base, slide the plug away from the base to release the lock.
+L153: ### Cameras
+L154: 
+L155: Surface Studio 2 has a 1080p camera and a Windows Hello sign-in camera.
+L156: 
+L157: cite77†Image: A picture of the Surface Studio display, with labels identifying the position of the two cameras near the center at the top L158: 
+L159: Note
+L160: 
+L161: The serial number for your Surface Studio 2 is located on the bottom of the base.
+L162: 
+L163: ## Surface Studio 2 features
+L164: ### A brilliant screen for your ideas
+L165: 
+L166: cite78†Image: Surface Studio 2 screen L167: 
+L168: Surface Studio 2 has a 28-inch, adjustable PixelSense^{TM} Display with 13.5 million pixels to bring your ideas, images, and drawings to life. Touch it. Draw on it. Visualize and develop your ideas like you would on a sheet of paper.
+L169: ### Transforms from Desktop to Studio
+L170: 
+L171: Whether you’re sketching your next great idea, collaborating with a team, or pitching your work, Surface Studio 2 is ready to adapt to wherever you are in the creative process.
+L172: 
+L173: cite79†Image: Surface Studio 2 transforming from Desktop to Studio Mode L174: 
+L175: Hold the side of the screen and use the Zero Gravity Hinge to transform Surface Studio 2 from Desktop to Studio Mode. It’s the perfect height to write, draw, or doodle on your screen.
+L176: When you’re ready for a desktop again, lift the screen back up.
+L177: ### Professional-grade power and performance
+L178: 
+L179: cite80†Image: Photo of Surface Studio, with Surface Mouse and Keyboard L180: 
+L181: Surface Studio 2 is up for anything. Our most powerful Surface yet, it has an Intel® Core™ i7 processor and a discrete NVIDIA® GeForce® GPU.  You can run professional-grade software like Adobe Premiere Pro, Solidworks, and Autodesk, and use unique tools like Surface Pen and Surface Dial to reinvent the way you create.
+L182: In addition to Surface Pen, Surface Studio 2 comes with a Bluetooth mouse and keyboard. They’re pre-paired and ready to go whenever you are.
+L183: ### Sign in with Windows Hello
+L184: 
+L185: cite81†Image: Start screen with Windows Hello greeting L186: 
+L187: Say goodbye to your password. The front-facing infrared camera on your Surface Studio 2 is ready to use with Windows Hello – it’s faster and more secure than typing a password. Once it’s set up, your Surface Studio 2 will recognize your face, and only yours, almost instantly.
+L188: 
+L189: ## Make it your own
+L190: ### Write and draw naturally with the newest Surface Pen
+L191: We all think differently when we’re holding a pen. With 4,096 pressure points that respond to your touch, tilt for shading, and a natural-feeling rubber eraser, the newest Surface Pen and Surface Studio 2 work together to harness that change in perspective. Click the top of the Pen to launch Windows Ink Workspace, a place where you can take notes, sketch, and draw on your screen. Surface Pen attaches magnetically to the side of the display, so it’s always there when you need it.
+L192: ### Highest quality mouse and keyboard
+L193: 
+L194: Design is in the details, and it’s no different for the Surface Keyboard and Surface Mouse.
+L195: 
+L196: Surface Keyboard is built with a strong, soft-finished aluminum top case, and it pairs automatically with your Surface Studio 2 without wires getting in the way. Typing is fast, quiet, and responsive.
+L197: 
+L198: cite82†Image: Surface Keyboard L199: To change keyboard settings, select the Start cite83†Image: icon for Windows logo icon button, and then select Settings > Devices > Typing.
+L200: Surface Mouse is also wireless, with a 24-detent metal scroll wheel. Click and scrolling sounds were crafted to be quiet enough not to disturb, but distinct enough to hear.
+L201: 
+L202: cite84†Image: Surface Mouse L203: 
+L204: To change mouse settings, select the Start cite83†Image: icon for Windows logo icon button, and then select Settings > Devices > Mouse.
+L205: ### Surface Dial: A tool for the creative process
+L206: 
+L207: cite85†Image: meet-car-img8_en L208: 
+L209: Surface Dial is a new way to interact with your Surface Studio 2 – change drawing tools like ink color and thickness without interrupting your creative flow.
+L210: 
+L211: Surface Dial is an optional accessory. Get one at a Microsoft Store near you.
+L212: 
+L213: Want to know more? cite86†Meet Surface Dial .
+L214: ## Tech specs
+L215: Dimensions  | Display: 25.1” x 17.3” x 0.5” (637.35 mm x 438.90 mm x 12.50 mm)
+L216: Base: 9.8” x 8.7” x 1.3” (250.00 mm x 220.00 mm x 32.20 mm)
+L217: --- | ---
+L218: Storage^{1}  | 1TB or 2TB solid-state drive (SSD)
+L219: Memory  | 16GB or 32GB (DDR4)
+L220: Processor  | Intel® Core™ i7-7820HQ
+L221: Display  | Screen: 28” PixelSense™ Display
+L222: Resolution: 4500 x 3000 (192 PPI)
+L223: Color settings: sRGB, DCI-P3, and Vivid
+L224: Individually color-calibrated display
+L225: Aspect Ratio: 3:2
+L226: Touch: 10 point multi-touch
+L227: Supports Surface Pen with tilt activation, Surface Dial* on-screen interaction, and Zero Gravity Hinge
+L228: External display support  | Up to two 4K UHD (@30Hz) or single 4K UHD (@60Hz)
+L229: Graphics  | NVIDIA® GeForce® GTX 1060 6GB GDDR5 memory (with i7/16/1TB configuration)
+L230: NVIDIA® GeForce® GTX 1070 8GB GDDR5 memory (with i7/32/1TB and i7/32/2TB configurations)
+L231: Connections  | 4 x USB 3.0 (one high power port)
+L232: Full-size SDXC™ card reader (UHS-I) compatible
+L233: 1 x USB-C
+L234: 3.5 mm headphone jack
+L235: Compatible with Surface Dial* on-screen interaction
+L236: 1 Gigabit Ethernet port
+L237: Security  | TPM 2.0 chip for enterprise security
+L238: Enterprise-grade protection with Windows Hello face sign-in
+L239: Cameras, video, and audio  | Windows Hello face authentication camera (front-facing)
+L240: 5.0MP front-facing camera with 1080p HD video
+L241: Dual microphones
+L242: Stereo 2.1 speakers with Dolby® Audio™
+L243: Software  | Windows 10 Pro
+L244: FREE upgrade to Windows 11 when available³
+L245: Wireless  | Wi-Fi: 802.11ac Wi-Fi wireless networking, IEEE 802.11 a/b/g/n compatible
+L246: Bluetooth Wireless 4.1 technology
+L247: Xbox Wireless built-in2
+L248: Exterior  | Physical buttons: Volume, Power
+L249: What’s in the box  | Surface Studio 2
+L250: Surface Pen
+L251: Surface Keyboard
+L252: Surface Mouse
+L253: Power cord with grip-release cable
+L254: Quick start guide
+L255: Safety and warranty guide
+L256: Warranty  | 1-year limited hardware warranty
+L257: Weight  | 21 lbs max (9.56 kg max)
+L258: [1] System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB= 1 billion bytes. See cite87†Surface storage for more details.
+L259: 
+L260: [2] Xbox Wireless controller support available in select global markets.
+L261: [3] Surface Studio 2 comes with Windows 10 Pro. Free upgrade to Windows 11 when available. The Windows 11 upgrade will be delivered late 2021 into 2022. Timing varies by device. Certain features require specific hardware. See cite88†aka.ms/windows11-spec†aka.ms .
+L262: ## Need more help?
+L263: 
+L264:   * cite89†Personal accounts L265:   * cite90†Work/school accounts L266: 
+L267: Technical support
+L268: 
+L269: For technical support, cite91†open the Surface app†go.microsoft.com or cite92†web browser†go.microsoft.com , describe your problem and select Get Help.
+L270: 
+L271: Community support
+L272: 
+L273: Communities can help you ask questions, and hear from experts with rich knowledge. cite93†Ask the Community†go.microsoft.com .
+L274: 
+L275: Other support
+L276: If you can't use your Surface or have a question about something else, cite94†open Get Help†go.microsoft.com to get other support online.
+L277: 
+L278: cite95†Image: Need more help grid spacer. L279: 
+L280: Technical support
+L281: 
+L282: You can get self-help support from cite91†the Surface app†go.microsoft.com or cite92†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L283: 
+L284: Service & repair
+L285: For Surface for Business, visit cite96†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L286: 
+L287: For IT Admins
+L288: 
+L289: IT Admins should view cite97†Surface for Business†go.microsoft.com and cite98†Support for Business & Education customers†go.microsoft.com .
+L290: 
+L291: cite95†Image: Need more help grid spacer. L292: ## Was this information helpful?
+L293: 
+L294: [Button: Yes] [Button: No]
+L295: 
+L296: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L297: 
+L298: What affected your experience?
+L299: 
+L300: [Input] Resolved my issue
+L301: 
+L302: [Input] Clear instructions
+L303: 
+L304: [Input] Easy to follow
+L305: 
+L306: [Input] No jargon
+L307: 
+L308: [Input] Pictures helped
+L309: 
+L310: [Input] Other
+L311: 
+L312: [Input] Didn't match my screen
+L313: 
+L314: [Input] Incorrect instructions
+L315: 
+L316: [Input] Too technical
+L317: 
+L318: [Input] Not enough information
+L319: 
+L320: [Input] Not enough pictures
+L321: 
+L322: [Input] Other
+L323: 
+L324: Any additional feedback? (Optional)
+L325: [Button: Submit feedback]
+L326: 
+L327: By pressing submit, your feedback will be used to improve Microsoft products and services. cite99†Privacy Statement.†privacy.microsoft.com L328: 
+L329: What's new
+L330: 
+L331:   * cite100†Surface Laptop Ultra†www.microsoft.com L332:   * cite101†Surface Pro†www.microsoft.com L333:   * cite102†Surface Laptop†www.microsoft.com L334:   * cite103†Surface RTX Spark Dev Box†www.microsoft.com L335:   * cite104†Explore Copilot†www.microsoft.com L336:   * cite105†Explore Microsoft products†www.microsoft.com L337:   * cite106†Windows 11 apps†www.microsoft.com L338: Microsoft Store
+L339: 
+L340:   * cite107†Account profile†account.microsoft.com L341:   * cite69†Download Center†www.microsoft.com L342:   * cite108†Microsoft Store support†go.microsoft.com L343:   * cite109†Returns†www.microsoft.com L344:   * cite110†Order tracking†www.microsoft.com L345:   * cite46†Certified Refurbished†www.microsoft.com L346:   * cite111†Microsoft Store Promise†www.microsoft.com L347:   * cite112†Flexible Payments†www.microsoft.com L348: 
+L349: Education
+L350:   * cite70†Microsoft in education†www.microsoft.com L351:   * cite113†Devices for education†www.microsoft.com L352:   * cite114†Microsoft Teams for Education†www.microsoft.com L353:   * cite115†Microsoft 365 Education†www.microsoft.com L354:   * cite116†How to buy for your school†www.microsoft.com L355:   * cite117†Educator training and development†education.microsoft.com L356:   * cite118†Deals for students and parents†www.microsoft.com L357:   * cite119†AI for education†www.microsoft.com L358: 
+L359: Business
+L360:   * cite120†Microsoft AI†www.microsoft.com L361:   * cite53†Microsoft Security†www.microsoft.com L362:   * cite54†Dynamics 365†www.microsoft.com L363:   * cite55†Microsoft 365†www.microsoft.com L364:   * cite56†Microsoft Power Platform†www.microsoft.com L365:   * cite38†Microsoft Teams†www.microsoft.com L366:   * cite121†Microsoft Copilot†www.microsoft.com L367:   * cite58†Small Business†www.microsoft.com L368: 
+L369: Developer & IT
+L370:   * cite60†Azure†azure.microsoft.com L371:   * cite61†Microsoft Developer†developer.microsoft.com L372:   * cite62†Microsoft Learn†learn.microsoft.com L373:   * cite122†Support for AI marketplace apps†www.microsoft.com L374:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L375:   * cite123†Microsoft Marketplace†marketplace.microsoft.com L376:   * cite124†Software companies†www.microsoft.com L377:   * cite67†Visual Studio†visualstudio.microsoft.com L378: 
+L379: Company
+L380:   * cite125†Careers†careers.microsoft.com L381:   * cite126†About Microsoft†www.microsoft.com L382:   * cite127†Company news†news.microsoft.com L383:   * cite128†Privacy at Microsoft†www.microsoft.com L384:   * cite129†Investors†www.microsoft.com L385:   * cite130†Diversity and inclusion†www.microsoft.com L386:   * cite131†Accessibility†www.microsoft.com L387:   * cite132†Sustainability†www.microsoft.com L388: 
+L389: cite133†English (United States) cite134†Your Privacy Choices†aka.ms cite134†Your Privacy Choices†aka.ms cite135†Consumer Health Privacy†go.microsoft.com L390:   * cite136†Sitemap†www.microsoft.com L391:   * cite137†Contact Microsoft L392:   * cite138†Privacy†go.microsoft.com L393:   * cite139†Manage cookies L394:   * cite140†Terms of use†go.microsoft.com L395:   * cite141†Trademarks†go.microsoft.com L396:   * cite142†Safety & eco†go.microsoft.com L397:   * cite143†Recycling†www.microsoft.com L398:   * cite144†About our ads†choice.microsoft.com L399:   * © Microsoft 2026
+

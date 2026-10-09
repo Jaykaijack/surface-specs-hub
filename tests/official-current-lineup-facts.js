@@ -1164,7 +1164,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "windowsHello": "Hello",
         "microphones": "麦克",
         "audioTech": "Atmos",
-        "surfaceConnect": "支持",
+        "surfaceConnect": "Surface Connect",
         "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "kickstandType": "165",

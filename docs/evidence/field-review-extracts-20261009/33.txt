@@ -1,0 +1,254 @@
+Surface Go 2 specs and features | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features)
+citeturn49view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features","lineno":200}); Total lines: 403
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Go 2 specs and features
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Go 2 Surface Go 2 with LTE Advanced
+L126: 
+L127: Note
+L128: 
+L129:   * Incredible speed and battery life come together with next-level AI experiences and signature Surface design.
+L130:   * cite75†Explore the newest Surface PCs†www.microsoft.com L131: ## Get to know Surface Go 2
+L132: 
+L133: Surface Go 2 is portable and helps you get your tasks done, every day and anywhere.
+L134: 
+L135: Not sure where to plug something in or how to turn up the volume? Here's a diagram to help you out.
+L136: 
+L137: cite76†Image: Surface Go 2 with numbers identifying each feature. L138: 
+L139:   1. Volume
+L140:   2. Power button
+L141:   3. Windows Hello camera
+L142:   4. Studio Mics (dual microphones)
+L143:   5. Headset and microphone jack
+L144:   6. USB-C port
+L145:   7. Kickstand
+L146:   8. Surface Connect port
+L147:   9. microSD™ card reader
+L148: ## Surface Go 2 and Windows
+L149: 
+L150: Surface Go 2 comes with:
+L151: 
+L152:   * Windows 10 Home edition in S mode (consumer customers)
+L153:   * Windows 10 Pro edition (commercial customers)
+L154: 
+L155: You can switch from Windows 10 S to Windows 10 at no additional charge. Once you switch out of S mode, you can't switch back. For more info, see cite77†Switching out of S mode in Windows 10 .
+L156: 
+L157: Not sure which version of Windows you have? See cite78†Which Windows operating system am I running? L158: If you're not sure which Surface model you're using, see cite79†Which Surface model do I have? L159: 
+L160: Note
+L161: 
+L162: You can upgrade your Surface Go 2 to Windows 11. For more info, see cite80†Windows 11 System Requirements .
+L163: ## Charging your Surface
+L164: 
+L165: You can charge your Surface using USB-C or Surface Connect. For more information, see cite81†How to charge Surface. L166: 
+L167: ## Surface Go 2 features
+L168: 
+L169: ### Connect your device anywhere
+L170: 
+L171: Get laptop versatility with the built-in Kickstand and Signature Type Cover. With WiFi and optional LTE Advanced, you’ll be able to work anywhere you need to.
+L172: ### Performance from day to night
+L173: 
+L174: Run Office 365, apps, Netflix, and more with the Intel® Pentium® Gold and Pentium® M processors available for Surface Go 2.
+L175: 
+L176: ### Browse and play on your PixelSense™ Display
+L177: 
+L178: Your screen has a higher resolution on its 10.5 inch display. The PixelSense Display makes your movies and shows look great, while the built in Dolby® Audio makes it sound great too.
+L179: ### Seamless, safe, and secure
+L180: 
+L181: Sharing Surface Go 2 with your family is easy and safe with multiple-user logins, screen time limits, and content filtering. You’ll have space for your photos, documents, and other files on Surface Go 2. If you need more storage, use an SD card or get 5 GB of free storage of OneDrive with a Microsoft account.
+L182: ## Make it your own
+L183: 
+L184: Learn more about the optional accessories that work with your Surface Go 2.
+L185: 
+L186:   * cite82†Surface Pen L187:   * cite83†Surface Signature Type Cover L188:   * cite84†Surface Arc Mouse L189:   * cite85†Surface Dock L190: ## Surface Go 2 tech specs
+L191: Feature  | Details
+L192: --- | ---
+L193: Scenarios  | Improved speed for everyday tasks, streaming movies, music, and TV shows, shopping, browsing, emails, and homework
+L194: Dimensions  | 9.65" x 6.9" x 0.33" (245 mm x 175 mm x 8.3 mm)
+L195: Display  | Screen: 10.5" PixelSense™ Display
+L196: Resolution: 1920 x 1280 (220 PPI) resolution
+L197: Aspect ratio: 3:2
+L198: Contrast ratio: 1500:1
+L199: Touch: 10 point multi-touch
+L200: Corning® Gorilla® Glass 3
+L201: Memory  | 4 GB or 8 GB RAM
+L202: Processor  | Intel® Pentium® Gold Processor 4425Y
+L203: 8th Gen Intel® Core m3 Processor
+L204: Battery Life^{1}  | WiFi: Up to 10 hours of typical device usage
+L205: LTE Advanced:^{3} Up to 10 hours of typical device usage
+L206: Graphics  | Intel® UHD Graphics 615
+L207: Storage ^{4}  | eMMC drive: 64 GB
+L208: Solid-state drive (SSD): 128 GB
+L209: Connections  | 1 x USB-C®
+L210: 3.5 mm headphone jack
+L211: 1 x Surface Connect port
+L212: Surface Type Cover Port
+L213: MicroSDXC Card Reader (UHS-I)
+L214: Compatible with Surface Dial*
+L215: Network  | Nano SIM Tray 4G LTE Advanced (Bands 1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 66) GPS/GLONASS: Standalone and assisted GNSS, accuracy up to 3 meters
+L216: Cameras, video, and audio  | Windows Hello face authentication camera (front-facing)
+L217: 5.0 MP front-facing camera with 1080p Skype HD video
+L218: 8.0 MP rear-facing auto-focus camera with 1080p HD video
+L219: Dual Studio Mics
+L220: 2W stereo speakers with Dolby® Audio™
+L221: Software  | Windows 10 Home in S mode^{2}
+L222: Microsoft 365 Family one month trial
+L223: Wireless  | WiFi: IEEE 802.11a/b/g/n/ac/ax
+L224: Bluetooth Wireless 5.0 technology
+L225: LTE Advanced^{3}: Qualcomm® Snapdragon™ X16 LTE Modem
+L226: Sensors  | Ambient light sensor
+L227: Accelerometer
+L228: Gyroscope
+L229: Magnetometer
+L230: Exterior  | Casing: Magnesium
+L231: Color: Platinum
+L232: Physical buttons: Volume, Power
+L233: What's in the box  | Surface Go 2
+L234: Power Supply
+L235: Quick Start Guide
+L236: Safety and warranty documents
+L237: Warranty^{5}  | 1-year limited hardware warranty
+L238: Weight  | Wi-Fi: 1.2 lb (544 grams)
+L239: LTE Advanced: 1.22 lb (553 grams)
+L240: Security  | Firmware TPM
+L241: Enterprise-grade protection with Windows Hello face sign-in
+L242: Best-in-class support from Microsoft Store  | 60-day return policy
+L243: 90 days of free technical phone support
+L244: 12 months in-store support and technical assistance
+L245: 1 free training session to transfer data and optimize performance
+L246: [1] Surface Go 2 battery life
+L247: Surface Go 2: Up to 10 hours of battery life based on typical Surface device usage. Testing conducted by Microsoft in February 2020 using preproduction software and preproduction configurations of Surface Go 2. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L248: The active use portion consists of (1) a web browsing test accessing 8 popular websites over multiple open tabs, (2) a productivity test utilizing Microsoft Word, PowerPoint, Excel and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness disabled. Wi-Fi was connected to a network. Battery life varies significantly with settings, usage, and other factors.
+L249: Surface Go 2 with 4G Advanced: Up to 10 hours of battery life based on typical Surface device usage. Testing conducted by Microsoft in February 2020 using preproduction software and preproduction configurations of Surface Go 2. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L250: The active use portion consists of (1) a web browsing test accessing 8 popular websites over multiple open tabs, (2) a productivity test utilizing Microsoft Word, PowerPoint, Excel and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness disabled. Wi-Fi was connected to a network. Battery life varies significantly with settings, usage, and other factors.
+L251: [2] Surface Go 2 for consumers comes with Windows 10 Home in S mode to bring you the powerful Windows features you use most at exceptional value. If you need additional enterprise management and security tools for the workplace, you can switch to Windows 10 Pro or purchase Surface Go 2 for Business.  Windows 10 Home in S mode works exclusively with apps from the Microsoft Store within Windows and accessories that are compatible with Windows 10 Home in S mode. A one-way switch out of S mode is available.
+L252: Learn more at cite86†Windows 10 frequently asked questions .
+L253: [3] LTE functionality available on selected configurations only. Service availability and performance subject to service provider’s network. Contact your service provider for details, compatibility, pricing, SIM card and activation. See all specs and frequencies at surface.com.
+L254: [4] System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB = 1 billion bytes. 1 TB = 1,000 GB. See  cite87†Surface storage options for more details.
+L255: 
+L256: [5] Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L257: 
+L258: [6] Geekbench multi-core score comparison of Surface Go 2 M3 (Microsoft Windows Version 1909) versus Surface Go.
+L259: ## Related topics
+L260: 
+L261:   * cite88†How to adjust settings for the Omnisonic speakers on Surface L262:   * cite89†Adjust settings for Studio Mics L263:   * cite79†Which Surface model do I have? L264:   * cite78†Which Windows operating system am I running? L265: ## Need more help?
+L266: 
+L267:   * cite90†Personal accounts L268:   * cite91†Work/school accounts L269: 
+L270: Technical support
+L271: 
+L272: For technical support, cite92†open the Surface app†go.microsoft.com or cite93†web browser†go.microsoft.com , describe your problem and select Get Help.
+L273: 
+L274: Community support
+L275: 
+L276: Communities can help you ask questions, and hear from experts with rich knowledge. cite94†Ask the Community†go.microsoft.com .
+L277: 
+L278: Other support
+L279: If you can't use your Surface or have a question about something else, cite95†open Get Help†go.microsoft.com to get other support online.
+L280: 
+L281: cite96†Image: Need more help grid spacer. L282: 
+L283: Technical support
+L284: 
+L285: You can get self-help support from cite92†the Surface app†go.microsoft.com or cite93†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L286: 
+L287: Service & repair
+L288: For Surface for Business, visit cite97†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L289: 
+L290: For IT Admins
+L291: 
+L292: IT Admins should view cite98†Surface for Business†go.microsoft.com and cite99†Support for Business & Education customers†go.microsoft.com .
+L293: 
+L294: cite96†Image: Need more help grid spacer. L295: ## Was this information helpful?
+L296: 
+L297: [Button: Yes] [Button: No]
+L298: 
+L299: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L300: 
+L301: What affected your experience?
+L302: 
+L303: [Input] Resolved my issue
+L304: 
+L305: [Input] Clear instructions
+L306: 
+L307: [Input] Easy to follow
+L308: 
+L309: [Input] No jargon
+L310: 
+L311: [Input] Pictures helped
+L312: 
+L313: [Input] Other
+L314: 
+L315: [Input] Didn't match my screen
+L316: 
+L317: [Input] Incorrect instructions
+L318: 
+L319: [Input] Too technical
+L320: 
+L321: [Input] Not enough information
+L322: 
+L323: [Input] Not enough pictures
+L324: 
+L325: [Input] Other
+L326: 
+L327: Any additional feedback? (Optional)
+L328: [Button: Submit feedback]
+L329: 
+L330: By pressing submit, your feedback will be used to improve Microsoft products and services. cite100†Privacy Statement.†privacy.microsoft.com L331: 
+L332: What's new
+L333: 
+L334:   * cite101†Surface Laptop Ultra†www.microsoft.com L335:   * cite102†Surface Pro†www.microsoft.com L336:   * cite103†Surface Laptop†www.microsoft.com L337:   * cite104†Surface RTX Spark Dev Box†www.microsoft.com L338:   * cite105†Explore Copilot†www.microsoft.com L339:   * cite106†Explore Microsoft products†www.microsoft.com L340:   * cite107†Windows 11 apps†www.microsoft.com L341: Microsoft Store
+L342: 
+L343:   * cite108†Account profile†account.microsoft.com L344:   * cite69†Download Center†www.microsoft.com L345:   * cite109†Microsoft Store support†go.microsoft.com L346:   * cite110†Returns†www.microsoft.com L347:   * cite111†Order tracking†www.microsoft.com L348:   * cite46†Certified Refurbished†www.microsoft.com L349:   * cite112†Microsoft Store Promise†www.microsoft.com L350:   * cite113†Flexible Payments†www.microsoft.com L351: 
+L352: Education
+L353:   * cite70†Microsoft in education†www.microsoft.com L354:   * cite114†Devices for education†www.microsoft.com L355:   * cite115†Microsoft Teams for Education†www.microsoft.com L356:   * cite116†Microsoft 365 Education†www.microsoft.com L357:   * cite117†How to buy for your school†www.microsoft.com L358:   * cite118†Educator training and development†education.microsoft.com L359:   * cite119†Deals for students and parents†www.microsoft.com L360:   * cite120†AI for education†www.microsoft.com L361: 
+L362: Business
+L363:   * cite121†Microsoft AI†www.microsoft.com L364:   * cite53†Microsoft Security†www.microsoft.com L365:   * cite54†Dynamics 365†www.microsoft.com L366:   * cite55†Microsoft 365†www.microsoft.com L367:   * cite56†Microsoft Power Platform†www.microsoft.com L368:   * cite38†Microsoft Teams†www.microsoft.com L369:   * cite122†Microsoft Copilot†www.microsoft.com L370:   * cite58†Small Business†www.microsoft.com L371: 
+L372: Developer & IT
+L373:   * cite60†Azure†azure.microsoft.com L374:   * cite61†Microsoft Developer†developer.microsoft.com L375:   * cite62†Microsoft Learn†learn.microsoft.com L376:   * cite123†Support for AI marketplace apps†www.microsoft.com L377:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L378:   * cite124†Microsoft Marketplace†marketplace.microsoft.com L379:   * cite125†Software companies†www.microsoft.com L380:   * cite67†Visual Studio†visualstudio.microsoft.com L381: 
+L382: Company
+L383:   * cite126†Careers†careers.microsoft.com L384:   * cite127†About Microsoft†www.microsoft.com L385:   * cite128†Company news†news.microsoft.com L386:   * cite129†Privacy at Microsoft†www.microsoft.com L387:   * cite130†Investors†www.microsoft.com L388:   * cite131†Diversity and inclusion†www.microsoft.com L389:   * cite132†Accessibility†www.microsoft.com L390:   * cite133†Sustainability†www.microsoft.com L391: 
+L392: cite134†English (United States) cite135†Your Privacy Choices†aka.ms cite135†Your Privacy Choices†aka.ms cite136†Consumer Health Privacy†go.microsoft.com L393:   * cite137†Sitemap†www.microsoft.com L394:   * cite138†Contact Microsoft L395:   * cite139†Privacy†go.microsoft.com L396:   * cite140†Manage cookies L397:   * cite141†Terms of use†go.microsoft.com L398:   * cite142†Trademarks†go.microsoft.com L399:   * cite143†Safety & eco†go.microsoft.com L400:   * cite144†Recycling†www.microsoft.com L401:   * cite145†About our ads†choice.microsoft.com L402:   * © Microsoft 2026
+

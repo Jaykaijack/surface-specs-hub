@@ -1,0 +1,380 @@
+Surface Pro 9 features and specs | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs)
+citeturn26view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs","lineno":175}); Total lines: 535
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Pro 9 features and specs
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Pro 9 with Intel Surface Pro 9 with ARM
+L126: 
+L127: Note
+L128: 
+L129:   * Get tablet-to-laptop flexibility in one powerful PC. With AI-accelerated Copilot+ PC experiences and all-day battery life, Surface Pro is built to keep you on the go.
+L130:   * cite75†Explore the newest Surface devices†www.microsoft.com L131: 
+L132:  Wherever the day takes you, you'll be ready with the new slim and sleek Surface Pro 9.
+L133: ## Get to know Surface Pro 9
+L134: 
+L135: Not sure where to plug something in or how to turn up the volume? We've got you covered. Here are a few diagrams to help you.
+L136: 
+L137: cite76†Image: Surface Pro 9 labeled with 1: Windows Hello and front-facing camera, 2: Studio Mics, 3: Charging port L138: 
+L139:   1. Windows Hello facial-recognition camera and front-facing camera
+L140:   2. Studio Mics (dual microphones)
+L141:   3. Surface Connect port
+L142: cite77†Image: Surface Pro 9 labeled with 1: back camera, 2: Volume buttons, 3: Power button, 4: USB-C ports (2), 5: SD card door L143: 
+L144:   1. Back-facing camera
+L145:   2. Volume
+L146:   3. Power button
+L147:   4. USB-C ports (2)
+L148:   5. SIM door
+L149: ## Windows 11 and available processors
+L150: 
+L151: There are different processors available for the Surface Pro 9:
+L152: 
+L153:   * 12th Gen Intel® Core processors
+L154:   * Microsoft SQ® 3 processor
+L155: 
+L156: The version of Windows installed on your Surface Pro 9 will depend on the processor you purchased it with.
+L157: Model  | Processor  | Windows version
+L158: --- | --- | ---
+L159: Surface Pro 9  | 12th Gen Intel® Core processors  | Windows 11 Home (consumer customers)
+L160: Windows 11 Pro (commercial customers)
+L161: Surface Pro 9 with 5G  | Microsoft SQ® 3 processor  | Windows 11 Home for ARM-based PCs (consumer customers)
+L162: Windows 11 Pro for ARM-based PCs (commercial customers)
+L163: 
+L164: If you have questions about how the ARM processor works, go to cite78†Windows Arm-based PCs FAQ .
+L165: If you have Windows 11 Home on your Surface, you can upgrade to Windows 11 Pro for an additional cost. For more info, cite79†Upgrade Windows Home to Windows Pro .
+L166: ## Charging your Surface
+L167: 
+L168: You can charge your Surface using USB-C or Surface Connect. For more information, see cite80†How to charge Surface. L169: ## Available features
+L170:   * Full laptop power and the versatility of a tablet with choice of quad-core Intel® Evo™ or Microsoft SQ® 3 with 5G.
+L171:   * Stunning, virtually edge-to-edge 13” PixelSense™ touchscreen designed for pen and Windows 11.
+L172:   * Sign, sketch, or navigate with the optional Surface Slim Pen 2, securely stored and charging wirelessly in Surface Pro Signature Keyboard.
+L173:   * Surface Pro 9 with Intel® Evo™ 12th Gen processor and Thunderbolt™ 4 ports, delivers blazing fast performance.
+L174:   * Optional 5G connectivity and enhanced video calling experiences available on Surface Pro 9 with Microsoft SQ® 3.
+L175: ## Make it your own
+L176: 
+L177: Personalize your Surface Pro 9 with these optional accessories and learn about how to use them.
+L178: 
+L179:   * cite81†Surface Slim Pen L180:   * cite82†Surface Pro Signature Keyboard L181:   * cite83†Surface Arc Mouse L182:   * cite84†Surface Dock L183:   * cite85†Surface USB-C to 3.5mm Audio Adapter L184: ## Get the most out of your Surface
+L185: 
+L186: Learn more about your Surface and customize it with the Surface app. To open it, select Start cite86†Image: icon for Windows logo icon , enter Surface, and select it to open the app. If the app doesn't open, get it from the cite87†Microsoft Store†go.microsoft.com .
+L187: 
+L188: Open the Surface app
+L189: ## A more repairable device design
+L190: 
+L191: Many components can be replaced by cite88†authorized service providers or skilled technicians — supporting a more repairable device design. Replacement components are available for out-of-warranty repair. Availability and service options may vary by product, market, and over time.
+L192: 
+L193: To learn more, see cite89†Self-repair information for your Surface device. L194: ## Surface Pro 9 Tech specs
+L195:    |
+L196: --- | ---
+L197: Processor  | Surface Pro 9:
+L198: 12th Gen Intel® Core™ i5-1235U processor
+L199: 12th Gen Intel® Core™ i7-1255U processor
+L200: Options with storage 256 GB and above built on the Intel® Evo™ platform
+L201: Surface Pro 9 with 5G:
+L202: Microsoft SQ® 3 processor
+L203: Neural Processing Unit (NPU)
+L204: Graphics  | Surface Pro 9: Intel® Iris® Xe Graphics
+L205: Surface Pro 9 with 5G: Microsoft SQ® 3 Adreno™ 8CX Gen 3
+L206: Memory and Storage^{6}  | Surface Pro 9: 8GB, 16GB, 32GB (LPDDR5 RAM)
+L207: Surface Pro 9 with 5G: 8GB or 16GB LPDDR4x RAM
+L208: Surface Pro 9 (Intel/Wifi): Removable^{7} drive (SSD) options: 128GB, 256GB, 512GB, 1TB
+L209: Surface Pro 9 (SQ® 3/5G): Removable^{7} drive (SSD) options: 128GB, 256GB, 512GB
+L210: Display  | Surface Pro 9 (Intel/Wifi):
+L211: Screen: 13” PixelSense™ Flow Display
+L212: Resolution: 2880 X 1920 (267 PPI)
+L213: Color profile: sRGB and Vivid Refresh rate up to 120Hz (Dynamic refresh rate supported)
+L214: Aspect ratio: 3:2
+L215: Contrast ratio: 1200:1
+L216: Adaptive Color
+L217: Auto Color Management supported
+L218: Touch: 10-point multi-touch
+L219: Dolby Vision IQ™ support^{17}
+L220: Gorilla® Glass 5
+L221: Surface Pro 9 (SQ® 3/5G):
+L222: Screen: 13” PixelSense™ Flow Display
+L223: Resolution: 2880 X 1920 (267 PPI)
+L224: Color profile: sRGB and Vivid
+L225: Dynamic refresh rate up to 120Hz
+L226: Aspect ratio: 3:2
+L227: Contrast ratio: 1200:1
+L228: Adaptive Color
+L229: Touch: 10-point multi-touch
+L230: Gorilla® Glass 5
+L231: Battery^{3}  | Surface Pro 9 (Intel/Wifi):
+L232: Up to 15.5 hours of typical device usage
+L233: Surface Pro 9 (SQ®3/5G):
+L234: Up to 19 hours of typical device usage
+L235: Size and Weight^{1}  | Surface Pro 9 (Intel/Wifi):
+L236: Length: 11.3”(287 mm)
+L237: Width: 8.2” (209 mm)
+L238: Height: 0.37” (9.3 mm)
+L239: Weight^{1}: 1.94 lb (879 g)
+L240: Surface Pro 9 (SQ® 3/5G):
+L241: Length: 11.3” (287 mm)
+L242: Width: 8.2” (209 mm)
+L243: Height: 0.37” (9.3 mm)
+L244: Weight^{1}: 1.95 lb (883 g) (mmWave)
+L245: Security  | Surface Pro 9 (Intel/Wifi):
+L246: Firmware TPM 2.0 is a security processor that is designed to give you peace of mind
+L247: Windows Hello face sign-in
+L248: Surface Pro 9 (SQ® 3/5G):
+L249: Enhanced security with Microsoft Pluton
+L250: Windows Hello face sign-in
+L251: Video/Cameras  | Surface Pro 9 (Intel/Wifi):
+L252: Windows Hello face authentication camera (front-facing)
+L253: Front-facing camera with 1080p full HD video
+L254: 10.0MP rear-facing autofocus camera with 1080p HD and 4k video
+L255: Surface Pro 9 (SQ® 3/5G):
+L256: Windows Hello face authentication camera (front-facing)
+L257: Front-facing camera with 1080p full HD video
+L258: 10.0 MP rear-facing autofocus camera with 1080p HD and 4k video
+L259: Windows Studio Effects with Eye Contact, Portrait Background Blur and Automatic Framing
+L260: Audio  | Surface Pro 9 (Intel/Wifi)
+L261: 2W stereo speakers with Dolby® Atmos®^{8}
+L262: Surface Pro 9 (SQ® 3/5G)
+L263: 2W stereo speakers with Dolby® Atmos®^{8}
+L264: Windows Studio Effects with Voice Focus
+L265: Mics  | Dual far field studio microphones
+L266: Connections  | Surface Pro 9 (Intel/Wifi):
+L267: 2 x USB-C® with USB 4.0/ Thunderbolt™ 4
+L268: 1 x Surface Connect port
+L269: 1 x Surface Type Cover port
+L270: Surface Pro 9 (SQ® 3/5G):
+L271: 2 x USB-C® 3.2
+L272: 1 x Surface Connect port
+L273: Surface Keyboard port
+L274: 1 x nano SIM
+L275: Network and connectivity  | Surface Pro 9 (Intel/Wifi):
+L276: Wi-Fi 6E: 802.11ax compatible
+L277: Bluetooth® Wireless 5.1 technology
+L278: Surface Pro 9 (SQ® 3/5G):
+L279: Wi-Fi 6E: 802.11ax compatible
+L280: Bluetooth® Wireless 5.1 technology
+L281: Location: GPS, Glonass, Galileo and Beidou Support
+L282: NanoSIM and eSIM support
+L283: Supports 5G^{4}
+L284: 5G-NR NSA (mmWave): Release 15 DL 64 QAM up to 4.2 Gbps 4xDL CA (400MHz), 2x2 MIMO
+L285: 5G-NR NSA (mmWave): Release 15 UL 64 QAM, 2xUL CA (200MHz), 2x2 MIMO
+L286: 5G-NR NSA (mmWave) Bands: n257, n260, n261
+L287: Gigabit LTE - A Pro Release 15 with 4x4 MIMO and LAA
+L288: LTE DL Cat 20, 256 QAM up to 2Gbps, 5xDL CA
+L289: LTE UL Cat 13, 64 QAM Contiguous 2X ULCA
+L290: LTE Bands: 1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 42, 46, 48, 66, 71
+L291: WCDMA: 1,2,5,8
+L292: Pen and accessories compatibility  | Surface Pro 9 (Intel/Wifi):
+L293: Designed for Surface Slim Pen 2^{2}
+L294: Integrated storage and wireless charging for Surface Slim Pen 2 with Surface Pro Signature Keyboard^{2}
+L295: Supports tactile signals^{9} with Surface Slim Pen 2
+L296: Supports Microsoft Pen Protocol (MPP)
+L297: Surface Pro 9 (SQ® 3/5G):
+L298: Designed for Surface Slim Pen 2^{2}
+L299: Integrated storage and wireless charging for Surface Slim Pen 2 with Surface Pro Signature Keyboard^{2}
+L300: Supports tactile signals^{9} with Surface Slim Pen 2
+L301: Supports Microsoft Pen Protocol (MPP)
+L302: Accessories support:^{2}
+L303: Surface Pro Keyboard
+L304: Surface Pro Signature Keyboard
+L305: Surface Pro X Keyboard
+L306: Surface Pro X Signature Keyboard
+L307: Software  | Surface Pro 9 (Intel/Wifi):
+L308: Windows 11 Home
+L309: Preloaded Microsoft 365 Apps^{10}
+L310: Microsoft 365 Family 30-day trial^{11}
+L311: Preloaded Xbox app
+L312: Xbox Game Pass Ultimate 30-day trial^{12}
+L313: Surface Pro 9 (SQ® 3/5G):
+L314: Windows 11 Home on ARM^{15}
+L315: Preloaded Microsoft 365 Apps^{10}
+L316: Microsoft 365 Family 30-day trial^{11}
+L317: Xbox Game Pass Ultimate 30-day trial^{12} (accessible through cite90†Xbox Cloud Gaming†www.xbox.com )
+L318: Accessibility  | Compatible with Surface Adaptive Kit
+L319: Compatible with Microsoft Adaptive Accessories
+L320: Include Windows Accessibility Feature, learn more at cite91†Accessibility Features | Microsoft Accessibility†www.microsoft.com L321: Discover more Microsoft Accessible Devices & Products -cite92†Accessible Devices & Products for PC & Gaming | Assistive Tech Accessories - Microsoft Store†www.microsoft.com L322: Sustainability^{18}  | Surface Pro 9:
+L323: Meets ENERGY STAR® requirements
+L324: Registered EPEAT® Gold in the US and Canada^{19}
+L325: cite93†Sustainable Products & Solutions | Microsoft CSR†www.microsoft.com L326: Surface Pro 9 with 5G:
+L327: Meets ENERGY STAR® requirements
+L328: Registered EPEAT® Gold in the US and Canada^{19}cite93†Sustainable Products & Solutions | Microsoft CSR†www.microsoft.com L329: Exterior  | Surface Pro 9 (Intel/Wifi):
+L330: Casing: Aluminum
+L331: Colors:^{13} Sapphire, Forest, Platinum, Graphite
+L332: Physical buttons: Volume, power
+L333: Surface Pro 9 (SQ® 3/5G):
+L334: Casing: Aluminum
+L335: Colors:^{13} Platinum
+L336: Physical buttons: Volume, power
+L337: Sensors  | Accelerometer
+L338: Gyroscope
+L339: Magnetometer
+L340: Ambient Color sensor
+L341: What’s in the box  | Surface Pro 9 (Intel/Wifi):
+L342: Surface Pro 9 (Intel/Wifi)
+L343: Power supply
+L344: Quick Start Guide Safety and warranty documents
+L345: Surface Pro 9 (SQ® 3/5G):
+L346: Surface Pro 9 (SQ® 3/5G)
+L347: Power supply
+L348: Quick Start Guide Safety and warranty documents
+L349: SIM Card access tool
+L350: Warranty^{14}  | 1-year limited hardware warranty
+L351: Battery capacities  | Surface Pro 9 (Intel/Wifi):
+L352: Battery Capacity Nominal (WH) 47.7 Wh
+L353: Battery Capacity Min (WH) 46.5 Wh
+L354: Surface Pro 9 (SQ® 3/5G):
+L355: Battery Capacity Nominal (WH) 47.7 Wh
+L356: Battery Capacity Min (WH) 46.5Wh
+L357: *Subscription Required. Sold separately.
+L358: 
+L359: [1] Weight not including Surface Pro Signature Keyboard and Surface Slim Pen 2 (sold separately).
+L360: 
+L361: [2] Chargers, software, accessories, and devices sold separately. Availability may vary by market. Surface Slim Pen 2 does not come with a charger. Surface Slim Pen 2 can charge with Surface Slim Pen Charger, Surface Pro Signature Keyboard, Surface Laptop Studio, and Surface Duo 2 Pen Cover. All are sold separately.
+L362: [3] Battery life varies significantly based on device configuration, usage, network and feature configuration, signal strength, settings, and other factors. See cite94†Surface Battery Performance for details.
+L363: 
+L364: Surface Pro 9:
+L365: Up to 15.5 hours of battery life based on typical Surface device usage. Testing conducted by Microsoft in August 2022 using preproduction software and preproduction Intel®12th Gen Core™ i5, 256GB, 8GB RAM device. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L366: The active use portion consists of (1) a web browsing test accessing eight popular websites over multiple open tabs, (2) a productivity test utilizing Microsoft Word, PowerPoint, Excel, OneNote and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness and Adaptive Color disabled. Wi-Fi was connected to a network. Tested with Windows Version 11.0.22621 (21H2).
+L367: Battery life varies significantly with settings, usage and other factors.
+L368: Wi-Fi: Up to 19 hours of battery life based on typical Surface device usage. Testing conducted by Microsoft in August 2022 using preproduction software and preproduction SQ® 3, 128/256/512GB, 8/16GB RAM device. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L369: The active use portion consists of (1) a web browsing test accessing eight popular websites over multiple open tabs, (2) a productivity test utilizing Microsoft Word, PowerPoint, Excel, OneNote and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness and Adaptive Color disabled. Wi-Fi was connected to a network. Tested with Windows Version 11.0.22621 (21H2).
+L370: Battery life varies significantly with settings, usage and other factors.
+L371: [4] 5G not available in all areas, mmWave in US only. Supports Sub-6 GHz. 5G not available in all areas; compatibility and performance depend on carrier network, plan and other factors. See carrier for details and pricing.
+L372: 
+L373: [5] Surface Pro 9 options with 12th Gen Intel processor and a storage of 256GB and above are built on the Intel® Evo™ platform.
+L374: [6] System software and updates use significant storage space. Available storage is subject to change based on system software and updates and apps usage. 1 GB = 1 billion bytes. 1 TB = 1,000 GB. See cite95†Surface Storage for more details.
+L375: [7] Customer Replaceable Units (CRUs) are components available for purchase through your Surface Commercial Authorized Device Reseller. Components can be replaced on-site by a skilled technician following Microsoft’s Service Guide. Opening and/or repairing your device can present electric shock, fire and personal injury risks and other hazards. Use caution if undertaking do-it-yourself repairs. Device damage caused during repair will not be covered under Microsoft’s Hardware Warranty or protection plans.
+L376: Components will be available shortly after initial launch; timing of availability varies by component and market.
+L377: [8] Requires Dolby Atmos® encoded content and audio.
+L378: 
+L379: [9] Tactile signals with Surface Slim Pen 2 can be experienced on some applications on Surface Pro 9 running Windows 11. Surface Slim Pen 2 sold separately.
+L380: 
+L381: [10] Requires license or subscription (sold separately) to activate and use
+L382: [11] Activation required. After 30 days, you will be charged the applicable monthly or annual subscription fee. Credit card required. Cancel any time to stop future charges. See cite96†Free Trial - Try Microsoft 365 for a month - Microsoft Store†www.microsoft.com .
+L383: [12] Activation required for Xbox Game Pass Ultimate. Xbox Game Pass ultimate 30-day trial accessible through cite90†Xbox Cloud Gaming†www.xbox.com . You can use it to play games on Xbox One and Xbox Series Consoles, and stream select games where available to Surface Pro 9 through cite90†Xbox Cloud Gaming†www.xbox.com and other supported devices. Not currently available in China.
+L384: [13] Colors available on selected models only. Available colors, sizes, finishes, and processors may vary by store, market, and configuration.
+L385: 
+L386: [14] Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L387: [15] Surface Pro 9 (SQ® 3/5G) comes with Windows 11 Home on ARM. At this time, Surface Pro 9 (SQ® 3/5G) with Windows 11 Home on ARM will not install some games and CAD software, and some third-party drivers or anti-virus software. Certain features require specific hardware (see cite97†Windows 11 Specs and System Requirements†aka.ms ). Find out more in the FAQ.
+L388: 
+L389: [17] Requires Dolby Vision® encoded content and video.
+L390: [18] Download the full Eco profiles see – cite98†Surface Pro (SQ3/5G) Eco Profile†aka.ms and cite99†Surface Pro 9 (Intel/Wifi) Eco Profile†aka.ms L391: 
+L392: [19] For more information on registration in other markets check – cite100†Surface Pro 9 EPEA†epeat.net L393: ## Related topics
+L394: 
+L395:   * cite101†Which Surface model do I have? L396:   * cite102†Which Windows operating system am I running? L397: ## Need more help?
+L398: 
+L399:   * cite103†Personal accounts L400:   * cite104†Work/school accounts L401: 
+L402: Technical support
+L403: 
+L404: For technical support, cite105†open the Surface app†go.microsoft.com or cite106†web browser†go.microsoft.com , describe your problem and select Get Help.
+L405: 
+L406: Community support
+L407: 
+L408: Communities can help you ask questions, and hear from experts with rich knowledge. cite107†Ask the Community†go.microsoft.com .
+L409: 
+L410: Other support
+L411: If you can't use your Surface or have a question about something else, cite108†open Get Help†go.microsoft.com to get other support online.
+L412: 
+L413: cite109†Image: Need more help grid spacer. L414: 
+L415: Technical support
+L416: 
+L417: You can get self-help support from cite105†the Surface app†go.microsoft.com or cite106†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L418: 
+L419: Service & repair
+L420: For Surface for Business, visit cite110†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L421: 
+L422: For IT Admins
+L423: 
+L424: IT Admins should view cite111†Surface for Business†go.microsoft.com and cite112†Support for Business & Education customers†go.microsoft.com .
+L425: 
+L426: cite109†Image: Need more help grid spacer. L427: ## Was this information helpful?
+L428: 
+L429: [Button: Yes] [Button: No]
+L430: 
+L431: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L432: 
+L433: What affected your experience?
+L434: 
+L435: [Input] Resolved my issue
+L436: 
+L437: [Input] Clear instructions
+L438: 
+L439: [Input] Easy to follow
+L440: 
+L441: [Input] No jargon
+L442: 
+L443: [Input] Pictures helped
+L444: 
+L445: [Input] Other
+L446: 
+L447: [Input] Didn't match my screen
+L448: 
+L449: [Input] Incorrect instructions
+L450: 
+L451: [Input] Too technical
+L452: 
+L453: [Input] Not enough information
+L454: 
+L455: [Input] Not enough pictures
+L456: 
+L457: [Input] Other
+L458: 
+L459: Any additional feedback? (Optional)
+L460: [Button: Submit feedback]
+L461: 
+L462: By pressing submit, your feedback will be used to improve Microsoft products and services. cite113†Privacy Statement.†privacy.microsoft.com L463: 
+L464: What's new
+L465: 
+L466:   * cite114†Surface Laptop Ultra†www.microsoft.com L467:   * cite115†Surface Pro†www.microsoft.com L468:   * cite116†Surface Laptop†www.microsoft.com L469:   * cite117†Surface RTX Spark Dev Box†www.microsoft.com L470:   * cite118†Explore Copilot†www.microsoft.com L471:   * cite119†Explore Microsoft products†www.microsoft.com L472:   * cite120†Windows 11 apps†www.microsoft.com L473: Microsoft Store
+L474: 
+L475:   * cite121†Account profile†account.microsoft.com L476:   * cite69†Download Center†www.microsoft.com L477:   * cite122†Microsoft Store support†go.microsoft.com L478:   * cite123†Returns†www.microsoft.com L479:   * cite124†Order tracking†www.microsoft.com L480:   * cite46†Certified Refurbished†www.microsoft.com L481:   * cite125†Microsoft Store Promise†www.microsoft.com L482:   * cite126†Flexible Payments†www.microsoft.com L483: 
+L484: Education
+L485:   * cite70†Microsoft in education†www.microsoft.com L486:   * cite127†Devices for education†www.microsoft.com L487:   * cite128†Microsoft Teams for Education†www.microsoft.com L488:   * cite129†Microsoft 365 Education†www.microsoft.com L489:   * cite130†How to buy for your school†www.microsoft.com L490:   * cite131†Educator training and development†education.microsoft.com L491:   * cite132†Deals for students and parents†www.microsoft.com L492:   * cite133†AI for education†www.microsoft.com L493: 
+L494: Business
+L495:   * cite134†Microsoft AI†www.microsoft.com L496:   * cite53†Microsoft Security†www.microsoft.com L497:   * cite54†Dynamics 365†www.microsoft.com L498:   * cite55†Microsoft 365†www.microsoft.com L499:   * cite56†Microsoft Power Platform†www.microsoft.com L500:   * cite38†Microsoft Teams†www.microsoft.com L501:   * cite135†Microsoft Copilot†www.microsoft.com L502:   * cite58†Small Business†www.microsoft.com L503: 
+L504: Developer & IT
+L505:   * cite60†Azure†azure.microsoft.com L506:   * cite61†Microsoft Developer†developer.microsoft.com L507:   * cite62†Microsoft Learn†learn.microsoft.com L508:   * cite136†Support for AI marketplace apps†www.microsoft.com L509:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L510:   * cite137†Microsoft Marketplace†marketplace.microsoft.com L511:   * cite138†Software companies†www.microsoft.com L512:   * cite67†Visual Studio†visualstudio.microsoft.com L513: 
+L514: Company
+L515:   * cite139†Careers†careers.microsoft.com L516:   * cite140†About Microsoft†www.microsoft.com L517:   * cite141†Company news†news.microsoft.com L518:   * cite142†Privacy at Microsoft†www.microsoft.com L519:   * cite143†Investors†www.microsoft.com L520:   * cite144†Diversity and inclusion†www.microsoft.com L521:   * cite145†Accessibility†www.microsoft.com L522:   * cite146†Sustainability†www.microsoft.com L523: 
+L524: cite147†English (United States) cite148†Your Privacy Choices†aka.ms cite148†Your Privacy Choices†aka.ms cite149†Consumer Health Privacy†go.microsoft.com L525:   * cite150†Sitemap†www.microsoft.com L526:   * cite151†Contact Microsoft L527:   * cite152†Privacy†go.microsoft.com L528:   * cite153†Manage cookies 

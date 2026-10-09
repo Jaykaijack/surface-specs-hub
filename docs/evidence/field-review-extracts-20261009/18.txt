@@ -1,0 +1,304 @@
+Surface Laptop 5 specs and features | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features)
+citeturn37view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features","lineno":200}); Total lines: 451
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Laptop 5 specs and features
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Laptop 5 - 15 inch Surface Laptop 5 - 13 inch
+L126: 
+L127: Note
+L128: 
+L129:   * Surface Laptops are sleek, light, and fast. With built-in AI, Copilot+ PC experiences, and all-day battery, they’re built to keep up from anywhere.
+L130:   * cite75†Explore the newest Surface devices†www.microsoft.com L131: 
+L132: Surface Laptop 5 combines power and sleek design to let you multitask throughout your day in style.
+L133: ## Get to know Surface Laptop 5
+L134: 
+L135: Not sure where to plug something in or how to turn up the volume? We've got you covered. Here are a few diagrams to help you.
+L136: 
+L137: cite76†Image: Shows the front of the Surface Laptop 5, with callouts for included features. L138: 
+L139:   1. Windows Hello camera
+L140:   2. Front-facing camera
+L141:   3. Studio Mics
+L142:   4. Surface Connect port
+L143: 
+L144: cite77†Image: Shows the side of the Surface Laptop 5, with callouts for included features. L145: 
+L146:   1. USB-A port
+L147:   2. USB-C port with Thunderbolt™ 4
+L148:   3. Headphones jack
+L149: ## Surface Laptop 5 and Windows 11
+L150: 
+L151: Surface Laptop 5 comes with:
+L152: 
+L153:   * Windows 11 Home edition (for consumer customers)
+L154:   * Windows 11 Pro edition (for business customers)
+L155: 
+L156: If you have Windows 11 Home on your device, you can upgrade to Windows 11 Pro for an additional cost. For more info, see cite78†Upgrade Windows 11 Home to Windows 11 Pro .
+L157: 
+L158: ## Charging your Surface
+L159: 
+L160: You can charge your Surface using USB-C or Surface Connect. For more information, see cite79†How to charge Surface. L161: ## Highlighted Surface Laptop 5 features
+L162:   * Sleek and light weight touchscreen laptop with a comfortable keyboard.
+L163:   * Choose the 13.5” PixelSense™ touchscreen for portable productivity, or larger 15” for split-screen multitasking. In warm Alcantara® (13.5” touchscreen only) or cool metal, and new colors including Sage.^{1}
+L164:   * Surface Laptop 5 is made for multitasking across multiple tabs and apps with powerful 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform.
+L165:   * Versatile Thunderbolt™ 4 connectivity and reliable all-day battery.^{2}
+L166:   * Look and sound your best on calls with Studio Mics and enhanced camera experiences, powered by Windows 11.
+L167:   * Ultra-vivid colors with Dolby Vision®^{3} and sound that moves around you with Dolby Atmos®.^{4}
+L168:   * Peace of mind with Windows Hello sign-in, built-in Windows 11 security, and secured OneDrive cloud storage for your Microsoft 365 files.^{5}
+L169: Note
+L170: 
+L171: Disclaimers
+L172:   1. Colors available on selected models only. Available colors, sizes, finishes, and processors may vary by store, market, and configuration.
+L173:   2. Battery life varies significantly based on usage, network and feature configuration, signal strength, settings and other factors. See cite80†https:⁠//aka.ms/SurfaceBatteryPerformance†aka.ms for details.
+L174:   3. Requires Dolby Vision® encoded content and video.
+L175:   4. Requires Dolby Atmos® encoded content and audio.
+L176:   5. Subscription required. Sold separately.
+L177: ## Make it yours
+L178: 
+L179: Customize the way you use Surface Laptop 5. Explore the full range of Microsoft Surface accessories. Shop the latest keyboard covers, cases, mice, pens, hubs and more. cite81†Browse the official Microsoft Store†www.microsoft.com L180: ## Get the most out of your Surface
+L181: 
+L182: Learn more about your Surface and customize it with the Surface app. To open it, select Start  cite82†Image: icon for Windows logo icon , enter Surface, and select it to open the app. If the app doesn't open, get it from cite83†Microsoft Store†go.microsoft.com .
+L183: 
+L184: Open the Surface app
+L185: ## A more repairable device design
+L186: 
+L187: Many components can be replaced by cite84†authorized service providers or skilled technicians — supporting a more repairable device design. Replacement components, such as cite85†laptop feet , are available for out-of-warranty repair. Availability and service options may vary by product, market, and over time.
+L188: 
+L189: To learn more, see cite86†Self-repair information for your Surface device. L190: ## Surface Laptop 5 Tech specs
+L191: Feature  | Details
+L192: --- | ---
+L193: Processor  | Surface Laptop 5 13.5”:
+L194: 12th Gen Intel® Core™ i5-1235U processor
+L195: 12th Gen Intel® Core™ i7-1255U processor
+L196: Built on the Intel® Evo™ platform
+L197: Surface Laptop 5 15”:
+L198: 12th Gen Intel® Core™ i7-1255U processor
+L199: Built on the Intel® Evo™ platform
+L200: Graphics  | Intel® Iris® Xe Graphics
+L201: Memory and Storage^{8}  | Surface Laptop 5 13.5”
+L202: 8GB, 16GB LPDDR5x RAM
+L203: Removable^{9} solid-state drive (SSD) options: 256GB, 512GB
+L204: Surface Laptop 5 15”
+L205: 8GB, 16GB, or 32GB LPDDR5x RAM
+L206: Removable^{9} solid-state drive (SSD) options: 256GB, 512GB, or 1TB
+L207: Display  | Surface Laptop 5 13.5”:
+L208: Screen: 13.5” PixelSense™ Display
+L209: Resolution: 2256 x 1504 (201 PPI)
+L210: Aspect ratio: 3:2
+L211: Contrast ratio 1300:1
+L212: Color profile: sRGB, and Vivid
+L213: Individually color-calibrated display
+L214: Dolby Vision IQ™^{3} support
+L215: Touch: 10-point multi-touch
+L216: Gorilla® Glass 3 display on laptop with Alcantara® palm rest
+L217: Gorilla® Glass 5 display on laptop with metal palm rest
+L218: Surface Laptop 5 15”:
+L219: Screen: 15” PixelSense™ Display
+L220: Resolution: 2496 x 1664 (201 PPI)
+L221: Aspect ratio: 3:2
+L222: Contrast ratio 1300:1
+L223: Color profile: sRGB, and Vivid
+L224: Individually color-calibrated display
+L225: Dolby Vision IQ™^{3} support
+L226: Touch: 10-point multi-touch
+L227: Gorilla® Glass 5
+L228: Battery^{2}  | Surface Laptop 5 13.5”:
+L229: Up to 18 hours of typical device usage
+L230: Surface Laptop 5 15”:
+L231: Up to 17 hours of typical device usage
+L232: Size and Weight  | Surface Laptop 5 13.5”:
+L233: Length: 12.1” (308 mm)
+L234: Width: 8.8” (223 mm)
+L235: Height: .57” (14.5 mm)
+L236: Weight: Fabric: 2.80 lbs (1,272 g)
+L237: Metal: 2.86 lbs (1,297 g)
+L238: Surface Laptop 5 15”:
+L239: Length: 13.4” (340 mm)
+L240: Width: 9.6” (244 mm)
+L241: Height: .58” (14.7 mm)
+L242: Weight: 3.44 lbs (1,545 g)
+L243: Security  | Firmware TPM 2.0 is a security processor that is designed to give you peace of mind.
+L244: Windows Hello face sign-in
+L245: Video/Cameras  | Windows Hello Face Authentication camera
+L246: 720p HD front facing camera
+L247: Audio  | Omnisonic® Speakers with Dolby® Atmos™^{4}
+L248: Mics  | Dual far-field Studio microphones
+L249: Connections  | 1 x USB-C® with USB 4.0/Thunderbolt™ 4
+L250: 1 x USB-A 3.1
+L251: 3.5mm headphone jack
+L252: 1 x Surface Connect port
+L253: Network and connectivity  | Wi-Fi 6: 802.11ax compatible
+L254: Bluetooth® Wireless 5.1 technology
+L255: Pen and accessories compatibility  | Designed for Surface Pen*
+L256: Compatible with Microsoft Pen Protocol (MPP)
+L257: Software  | Windows 11 Home
+L258: Preloaded Microsoft 365 Apps^{5}
+L259: Microsoft 365 Family 30-day trial^{6}
+L260: Xbox Game Pass Ultimate 30-day trial^{7}
+L261: Accessibility  | Compatible with Surface Adaptive Kit
+L262: Compatible with Microsoft Adaptive Accessories
+L263: Include Windows Accessibility Feature – Learn More cite87†Accessibility Features | Microsoft Accessibility†www.microsoft.com L264: Discover more Microsoft Accessible Devices & Products - cite88†Accessible Devices & Products for PC & Gaming | Assistive Tech Accessories - Microsoft Store†www.microsoft.com L265: Sustainability^{12}  | Meets ENERGY STAR® requirements
+L266: Registered EPEAT® Gold in the US and Canada^{11}
+L267: cite89†Sustainable Products & Solutions | Microsoft CSR†www.microsoft.com L268: Exterior  | Casing: Aluminum
+L269: Power and Volume buttons on keyboard
+L270: Surface Laptop 5 13.5” colors:
+L271: Platinum with Alcantara® material palm rest
+L272: Matte Black with metal palm rest
+L273: Sage with metal palm rest
+L274: Sandstone with metal palm rest
+L275: Surface Laptop 5 15” colors:^{1}
+L276: Platinum with metal palm rest
+L277: Matte Black with metal palm rest
+L278: Sensors  | Ambient light sensor
+L279: What’s in the box  | Surface Laptop 5 13.5” and 15”:
+L280: Power Supply
+L281: Quick Start Guide
+L282: Safety and warranty documents
+L283: Keyboard Compatibility  | Activation: Moving keys
+L284: Backlight
+L285: Layout: English, full row of function keys (F1 – F12)
+L286: Windows key and dedicated buttons for media controls, screen brightness
+L287: Warranty^{10}  | 1-year limited hardware warranty
+L288: *Some accessories, software, Microsoft 365 subscriptions and services sold separately.
+L289: 
+L290: [1] Colors available on selected models only. Available colors, sizes, finishes, and processors may vary by store, market, and configuration.
+L291: [2] Up to 18 hours of battery life based on typical Surface device usage on Surface Laptop 5 13.5”
+L292: Testing conducted by Microsoft in August 2022 using preproduction software and preproduction 13.5” Intel® Core™ i5, 256GB, 8GB RAM device. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L293:  The active use portion consists of (1) a web browsing test accessing eight popular websites over multiple open tabs, (2) a productivity test utilizing Microsoft Word, PowerPoint, Excel, OneNote and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness disabled.  Wi-Fi was connected to a network.  Tested with Windows Version 11.0.22621 (21H2).
+L294:  Battery life varies significantly with settings, usage and other factors.
+L295: Up to 17 hours of battery life based on typical Surface device usage on Surface Laptop 5 15”
+L296: Testing conducted by Microsoft in August 2022 using preproduction software and preproduction 15” Intel® Core™ i7, 256GB, 8GB RAM device. Testing consisted of full battery discharge with a mixture of active use and modern standby.  The active use portion consists of (1) a web browsing test accessing eight popular websites over multiple open tabs, (2) a productivity test utilizing Microsoft Word, PowerPoint, Excel, OneNote and Outlook, and (3) a portion of time with the device in use with idle applications.
+L297: All settings were default except screen brightness was set to 150 nits with Auto-Brightness disabled.  Wi-Fi was connected to a network.  Tested with Windows Version 11.0.22621 (21H2). Battery life varies significantly with settings, usage and other factors.
+L298: [3] Requires Dolby Vision® and Dolby Vision IQ™ encoded content and video.
+L299: 
+L300: [4] Requires Dolby Atmos® encoded content and audio.
+L301: 
+L302: [5] Requires license or subscription (sold separately) to activate and use.
+L303: [6] Activation required. After your 1-month free trial, Microsoft 365 Family is $99.99 per year. Credit card required. Cancel anytime to stop future charges. You are asked to provide credit card information to help ensure that you do not experience any interruptions with your service once your trial ends. Your credit card will not be billed until the end of the trial period. You can cancel any time during the trial period by clicking Turn off recurring billing in cite90†My Account†go.microsoft.com .
+L304: [7] Activation required for Xbox Game Pass Ultimate. Xbox Game Pass ultimate 30 day trial accessible through cite91†Xbox Cloud Gaming†www.xbox.com . You can use it to play games on Xbox One and Xbox Series Consoles, and stream select games where available to Surface Laptop 5 through cite91†Xbox Cloud Gaming†www.xbox.com and other supported devices. Not currently available in China.
+L305: [8] System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB = 1 billion bytes. 1 TB = 1,000 GB. See cite92†Surface storage†surface.com for more details.
+L306: [9] Customer Replaceable Units (CRUs) are components available for purchase through your Surface Commercial Authorized Device Reseller. Components can be replaced on-site by a skilled technician following Microsoft’s cite93†Service Guide†www.microsoft.com . Opening and/or repairing your device can present electric shock, fire and personal injury risks and other hazards. Use caution if undertaking do-it-yourself repairs.
+L307: Device damage caused during repair will not be covered under Microsoft’s Hardware Warranty or protection plans. Components will be available shortly after initial launch; timing of availability varies by component and market.
+L308: [10] Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L309: 
+L310: [11] Download the full Eco profiles see –  cite94†EcoProfile Surface Laptop 5 13.5"†aka.ms and cite95†EcoProfile Surface Laptop 5 15"†aka.ms L311: 
+L312: [12] For more information on registration in other markets check – cite95†EcoProfile Surface Laptop 5 15"†aka.ms L313: ## Need more help?
+L314: 
+L315:   * cite96†Personal accounts L316:   * cite97†Work/school accounts L317: 
+L318: Technical support
+L319: 
+L320: For technical support, cite98†open the Surface app†go.microsoft.com or cite99†web browser†go.microsoft.com , describe your problem and select Get Help.
+L321: 
+L322: Community support
+L323: 
+L324: Communities can help you ask questions, and hear from experts with rich knowledge. cite100†Ask the Community†go.microsoft.com .
+L325: 
+L326: Other support
+L327: If you can't use your Surface or have a question about something else, cite101†open Get Help†go.microsoft.com to get other support online.
+L328: 
+L329: cite102†Image: Need more help grid spacer. L330: 
+L331: Technical support
+L332: 
+L333: You can get self-help support from cite98†the Surface app†go.microsoft.com or cite99†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L334: 
+L335: Service & repair
+L336: For Surface for Business, visit cite103†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L337: 
+L338: For IT Admins
+L339: 
+L340: IT Admins should view cite104†Surface for Business†go.microsoft.com and cite105†Support for Business & Education customers†go.microsoft.com .
+L341: 
+L342: cite102†Image: Need more help grid spacer. L343: ## Was this information helpful?
+L344: 
+L345: [Button: Yes] [Button: No]
+L346: 
+L347: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L348: 
+L349: What affected your experience?
+L350: 
+L351: [Input] Resolved my issue
+L352: 
+L353: [Input] Clear instructions
+L354: 
+L355: [Input] Easy to follow
+L356: 
+L357: [Input] No jargon
+L358: 
+L359: [Input] Pictures helped
+L360: 
+L361: [Input] Other
+L362: 
+L363: [Input] Didn't match my screen
+L364: 
+L365: [Input] Incorrect instructions
+L366: 
+L367: [Input] Too technical
+L368: 
+L369: [Input] Not enough information
+L370: 
+L371: [Input] Not enough pictures
+L372: 
+L373: [Input] Other
+L374: 
+L375: Any additional feedback? (Optional)
+L376: [Button: Submit feedback]
+L377: 
+L378: By pressing submit, your feedback will be used to improve Microsoft products and services. cite106†Privacy Statement.†privacy.microsoft.com L379: 
+L380: What's new
+L381: 
+L382:   * cite107†Surface Laptop Ultra†www.microsoft.com L383:   * cite108†Surface Pro†www.microsoft.com L384:   * cite109†Surface Laptop†www.microsoft.com L385:   * cite110†Surface RTX Spark Dev Box†www.microsoft.com L386:   * cite111†Explore Copilot†www.microsoft.com L387:   * cite112†Explore Microsoft products†www.microsoft.com L388:   * cite113†Windows 11 apps†www.microsoft.com L389: Microsoft Store
+L390: 
+L391:   * cite114†Account profile†account.microsoft.com L392:   * cite69†Download Center†www.microsoft.com L393:   * cite115†Microsoft Store support†go.microsoft.com L394:   * cite116†Returns†www.microsoft.com L395:   * cite117†Order tracking†www.microsoft.com L396:   * cite46†Certified Refurbished†www.microsoft.com L397:   * cite118†Microsoft Store Promise†www.microsoft.com L398:   * cite119†Flexible Payments†www.microsoft.com L399: 
+L400: Education
+L401:   * cite70†Microsoft in education†www.microsoft.com L402:   * cite120†Devices for education†www.microsoft.com L403:   * cite121†Microsoft Teams for Education†www.microsoft.com L404:   * cite122†Microsoft 365 Education†www.microsoft.com L405:   * cite123†How to buy for your school†www.microsoft.com L406:   * cite124†Educator training and development†education.microsoft.com L407:   * cite125†Deals for students and parents†www.microsoft.com L408:   * cite126†AI for education†www.microsoft.com L409: 
+L410: Business
+L411:   * cite127†Microsoft AI†www.microsoft.com L412:   * cite53†Microsoft Security†www.microsoft.com L413:   * cite54†Dynamics 365†www.microsoft.com L414:   * cite55†Microsoft 365†www.microsoft.com L415:   * cite56†Microsoft Power Platform†www.microsoft.com L416:   * cite38†Microsoft Teams†www.microsoft.com L417:   * cite128†Microsoft Copilot†www.microsoft.com L418:   * cite58†Small Business†www.microsoft.com L419: 
+L420: Developer & IT
+L421:   * cite60†Azure†azure.microsoft.com L422:   * cite61†Microsoft Developer†developer.microsoft.com L423:   * cite62†Microsoft Learn†learn.microsoft.com L424:   * cite129†Support for AI marketplace apps†www.microsoft.com L425:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L426:   * cite130†Microsoft Marketplace†marketplace.microsoft.com L427:   * cite131†Software companies†www.microsoft.com L428:   * cite67†Visual Studio†visualstudio.microsoft.com L429: 
+L430: Company
+L431:   * cite132†Careers†careers.microsoft.com L432:   * cite133†About Microsoft†www.microsoft.com L433:   * cite134†Company news†news.microsoft.com L434:   * cite135†Privacy at Microsoft†www.microsoft.com L435:   * cite136†Investors†www.microsoft.com L436:   * cite137†Diversity and inclusion†www.microsoft.com L437:   * cite138†Accessibility†www.microsoft.com L438:   * cite139†Sustainability†www.microsoft.com L439: 
+L440: cite140†English (United States) cite141†Your Privacy Choices†aka.ms cite141†Your Privacy Choices†aka.ms cite142†Consumer Health Privacy†go.microsoft.com L441:   * cite143†Sitemap†www.microsoft.com L442:   * cite144†Contact Microsoft L443:   * cite145†Privacy†go.microsoft.com L444:   * cite146†Manage cookies L445:   * cite147†Terms of use†go.microsoft.com L446:   * cite148†Trademarks†go.microsoft.com L447:   * cite149†Safety & eco†go.microsoft.com L448:   * cite150†Recycling†www.microsoft.com L449:   * cite151†About our ads†choice.microsoft.com L450:   * © Microsoft 2026
+

@@ -418,11 +418,38 @@ const App = {
     this.navigate(`#/${prefix}/${cleanSeries}/${deviceId}`);
   },
 
+  ensureToolsLoaded() {
+    if (typeof ToolsEngine !== 'undefined') return Promise.resolve();
+    if (this._toolsLoading) return this._toolsLoading;
+    this._toolsLoading = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = './js/tools-engine.js?v=20261009-review';
+      script.onload = () => {
+        if (typeof ToolsEngine !== 'undefined') resolve();
+        else { script.remove(); this._toolsLoading = null; reject(new Error('工具引擎未就绪')); }
+      };
+      script.onerror = () => { script.remove(); this._toolsLoading = null; reject(new Error('工具引擎加载失败')); };
+      document.head.appendChild(script);
+    });
+    return this._toolsLoading;
+  },
+
   dispatchRoute() {
     if (typeof document === 'undefined') return;
     const path = this.activeRoute.path;
     const main = document.getElementById('hub-main-content');
     if (!main) return;
+    const needsTools = /^\/tools(?:\/|$)/.test(path) || path === '/chips' || /^\/(?:surface\/)?accessories(?:\/|$)/.test(path);
+    if (needsTools && typeof ToolsEngine === 'undefined') {
+      main.innerHTML = '<p role="status">正在加载工具…</p>';
+      this.ensureToolsLoaded().then(() => {
+        // 加载期间用户可能已切换到其他页面，不能覆盖新页面。
+        if (this.activeRoute.path === path) this.dispatchRoute();
+      }).catch(() => {
+        if (this.activeRoute.path === path) main.innerHTML = '<p role="alert">工具未能加载，请检查连接后重试。</p><button class="fluent-btn-sm" onclick="App.dispatchRoute()">重新加载工具</button>';
+      });
+      return;
+    }
 
     // 滚动回顶部
     if (typeof window !== 'undefined' && window.scrollTo) {

@@ -1,0 +1,204 @@
+Surface Pro (5th Gen) specs and features | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features)
+citeturn88view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn21view2","lineno":180}); Total lines: 344
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Pro (5th Gen) specs and features
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Pro (5th Gen)
+L126: 
+L127: Note
+L128: 
+L129:   * Get tablet-to-laptop flexibility in one powerful PC. With AI-accelerated Copilot+ PC experiences and all-day battery life, Surface Pro is built to keep you on the go.
+L130:   * cite75†Explore the newest Surface devices†www.microsoft.com L131: ## Get to know Surface Pro (5th Gen)
+L132: 
+L133: Not sure where to plug something in or how to turn up the volume? We've got you covered. Here are a few diagrams to help you find your way around.
+L134: 
+L135: cite76†Image: Shows the screen of a Surface Pro 6 with 5 buttons and ports called out with numbers L136: 
+L137:   1. Headset jack
+L138:   2. Power button
+L139:   3. Volume
+L140:   4. Windows Hello with face sign-in
+L141:   5. Front-facing camera
+L142: 
+L143: cite77†Image: Image of Surface Pro 6 angled to the side with 5 features called out by number L144:   1. Mini DisplayPort (version 1.2)
+L145:   2. USB 3.0
+L146:   3. SurfaceConnect
+L147:   4. Kickstand
+L148:   5. microSDXC™card reader
+L149: ## Surface Pro (5th Gen) tech specs
+L150: Dimensions  | 11.5” x 7.9” x 0.33” (292 mm x 201 mm x 8.5 mm)
+L151: --- | ---
+L152: Display  | Screen: 12.3” PixelSense™ Display
+L153: Resolution: 2736 x 1824 (267 PPI)
+L154: Aspect Ratio: 3:2
+L155: Touch: 10 point multi-touch
+L156: Memory  | 4GB, 8GB, or 16GB RAM
+L157: Processor  | Intel® Core™ 7th-generation m3, i5, or i7
+L158: Security  | TPM chip for enterprise security
+L159: Enterprise-grade protection with Windows Hello face sign-in
+L160: Software  | Windows 10 Pro (i5,i7)
+L161: Windows 10 Home (m3)
+L162: Office 30-day trial
+L163: Sensors  | Ambient light sensor
+L164: Accelerometer
+L165: Gyroscope
+L166: Storage  | Solid state drive (SSD) options: 128GB, 256GB, 512GB, or 1TB
+L167: What's in the box  | Surface Pro
+L168: Power supply
+L169: Quick Start Guide
+L170: Safety and warranty documents
+L171: Network  | 4G LTE Cat 9 modem up to 450Mbps
+L172: GPS / GLONASS: Standalone and Assisted GNSS, accuracy up to 3 meters
+L173: Nano SIM Tray and Embedded SIM (eSIM)
+L174: 4G (Bands 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 19, 20, 26, 28, 29, 30, 38, 39, 40, 41)
+L175: Battery Life  | Up to 13.5 hours of local video playback^{1} (Wi-Fi)
+L176: Up to 12.5 hours of local video playback^{1} (4G)
+L177: Graphics  | Intel® HD Graphics 615 (m3)
+L178: Intel® HD Graphics 620 (i5)
+L179: Intel® Iris™ Plus Graphics 640 (i7)
+L180: Connections  | 1 x Full-size USB 3.0
+L181: microSDXC card reader (UHS-I)
+L182: Surface Connect
+L183: 3.5mm Headphone jack
+L184: Mini DisplayPort
+L185: Cover port
+L186: Cameras, video, and audio  | Windows Hello face authentication camera (front-facing)
+L187: 5.0MP front-facing camera with 1080p Skype HD video
+L188: 8.0MP rear-facing autofocus camera with 1080p Full HD video
+L189: Dual microphones
+L190: 1.6W Stereo speakers with Dolby® Audio™ Premium
+L191: Wireless  | Wi-Fi: IEEE 802.11 a/b/g/n/ac compatible
+L192: Bluetooth Wireless 4.1 technology
+L193: Exterior  | Surface Pen
+L194: Surface Keyboard
+L195: Surface Mouse
+L196: Warranty  | 1-year limited hardware warranty
+L197: Weight  | m3: 1.69 lbs (768 g)
+L198: i5: 1.70 lbs (770 g)
+L199: i5 with 4G: 812 g
+L200: i7: 1.73 lbs (784 g)
+L201: Model number  | 1796 (Wi-Fi)
+L202: 1807 (4G)
+L203: ## Related topic
+L204: 
+L205:   * cite78†Find out which Surface model you have L206: ## Need more help?
+L207: 
+L208:   * cite79†Personal accounts L209:   * cite80†Work/school accounts L210: 
+L211: Technical support
+L212: 
+L213: For technical support, cite81†open the Surface app†go.microsoft.com or cite82†web browser†go.microsoft.com , describe your problem and select Get Help.
+L214: 
+L215: Community support
+L216: 
+L217: Communities can help you ask questions, and hear from experts with rich knowledge. cite83†Ask the Community†go.microsoft.com .
+L218: 
+L219: Other support
+L220: If you can't use your Surface or have a question about something else, cite84†open Get Help†go.microsoft.com to get other support online.
+L221: 
+L222: cite85†Image: Need more help grid spacer. L223: 
+L224: Technical support
+L225: 
+L226: You can get self-help support from cite81†the Surface app†go.microsoft.com or cite82†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L227: 
+L228: Service & repair
+L229: For Surface for Business, visit cite86†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L230: 
+L231: For IT Admins
+L232: 
+L233: IT Admins should view cite87†Surface for Business†go.microsoft.com and cite88†Support for Business & Education customers†go.microsoft.com .
+L234: 
+L235: cite85†Image: Need more help grid spacer. L236: ## Was this information helpful?
+L237: 
+L238: [Button: Yes] [Button: No]
+L239: 
+L240: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L241: 
+L242: What affected your experience?
+L243: 
+L244: [Input] Resolved my issue
+L245: 
+L246: [Input] Clear instructions
+L247: 
+L248: [Input] Easy to follow
+L249: 
+L250: [Input] No jargon
+L251: 
+L252: [Input] Pictures helped
+L253: 
+L254: [Input] Other
+L255: 
+L256: [Input] Didn't match my screen
+L257: 
+L258: [Input] Incorrect instructions
+L259: 
+L260: [Input] Too technical
+L261: 
+L262: [Input] Not enough information
+L263: 
+L264: [Input] Not enough pictures
+L265: 
+L266: [Input] Other
+L267: 
+L268: Any additional feedback? (Optional)
+L269: [Button: Submit feedback]
+L270: 
+L271: By pressing submit, your feedback will be used to improve Microsoft products and services. cite89†Privacy Statement.†privacy.microsoft.com L272: 
+L273: What's new
+L274: 
+L275:   * cite90†Surface Laptop Ultra†www.microsoft.com L276:   * cite91†Surface Pro†www.microsoft.com L277:   * cite92†Surface Laptop†www.microsoft.com L278:   * cite93†Surface RTX Spark Dev Box†www.microsoft.com L279:   * cite94†Explore Copilot†www.microsoft.com L280:   * cite95†Explore Microsoft products†www.microsoft.com L281:   * cite96†Windows 11 apps†www.microsoft.com L282: Microsoft Store
+L283: 
+L284:   * cite97†Account profile†account.microsoft.com L285:   * cite69†Download Center†www.microsoft.com L286:   * cite98†Microsoft Store support†go.microsoft.com L287:   * cite99†Returns†www.microsoft.com L288:   * cite100†Order tracking†www.microsoft.com L289:   * cite46†Certified Refurbished†www.microsoft.com L290:   * cite101†Microsoft Store Promise†www.microsoft.com L291:   * cite102†Flexible Payments†www.microsoft.com L292: 
+L293: Education
+L294:   * cite70†Microsoft in education†www.microsoft.com L295:   * cite103†Devices for education†www.microsoft.com L296:   * cite104†Microsoft Teams for Education†www.microsoft.com L297:   * cite105†Microsoft 365 Education†www.microsoft.com L298:   * cite106†How to buy for your school†www.microsoft.com L299:   * cite107†Educator training and development†education.microsoft.com L300:   * cite108†Deals for students and parents†www.microsoft.com L301:   * cite109†AI for education†www.microsoft.com L302: 
+L303: Business
+L304:   * cite110†Microsoft AI†www.microsoft.com L305:   * cite53†Microsoft Security†www.microsoft.com L306:   * cite54†Dynamics 365†www.microsoft.com L307:   * cite55†Microsoft 365†www.microsoft.com L308:   * cite56†Microsoft Power Platform†www.microsoft.com L309:   * cite38†Microsoft Teams†www.microsoft.com L310:   * cite111†Microsoft Copilot†www.microsoft.com L311:   * cite58†Small Business†www.microsoft.com L312: 
+L313: Developer & IT
+L314:   * cite60†Azure†azure.microsoft.com L315:   * cite61†Microsoft Developer†developer.microsoft.com L316:   * cite62†Microsoft Learn†learn.microsoft.com L317:   * cite112†Support for AI marketplace apps†www.microsoft.com L318:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L319:   * cite113†Microsoft Marketplace†marketplace.microsoft.com L320:   * cite114†Software companies†www.microsoft.com L321:   * cite67†Visual Studio†visualstudio.microsoft.com L322: 
+L323: Company
+L324:   * cite115†Careers†careers.microsoft.com L325:   * cite116†About Microsoft†www.microsoft.com L326:   * cite117†Company news†news.microsoft.com L327:   * cite118†Privacy at Microsoft†www.microsoft.com L328:   * cite119†Investors†www.microsoft.com L329:   * cite120†Diversity and inclusion†www.microsoft.com L330:   * cite121†Accessibility†www.microsoft.com L331:   * cite122†Sustainability†www.microsoft.com L332: 
+L333: cite123†English (United States) cite124†Your Privacy Choices†aka.ms cite124†Your Privacy Choices†aka.ms cite125†Consumer Health Privacy†go.microsoft.com L334:   * cite126†Sitemap†www.microsoft.com L335:   * cite127†Contact Microsoft L336:   * cite128†Privacy†go.microsoft.com L337:   * cite129†Manage cookies L338:   * cite130†Terms of use†go.microsoft.com L339:   * cite131†Trademarks†go.microsoft.com L340:   * cite132†Safety & eco†go.microsoft.com L341:   * cite133†Recycling†www.microsoft.com L342:   * cite134†About our ads†choice.microsoft.com L343:   * © Microsoft 2026
+

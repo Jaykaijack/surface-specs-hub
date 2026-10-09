@@ -154,7 +154,9 @@ function runDeploySeamTests(helpers) {
   const packed = [];
   const fileRe = /'(js\/[^']+)'/g;
   while ((match = fileRe.exec(listMatch[1])) !== null) packed.push(match[1]);
-  assertEqual(packed.join('|'), pageScripts.join('|'), 'U 盘单文件的脚本清单与网站入口一致');
+  assertEqual(packed.filter(p => p !== 'js/tools-engine.js').join('|'), pageScripts.join('|'), '离线包含全部首屏脚本且顺序一致');
+  assert(packed.includes('js/tools-engine.js'), '离线必须内嵌按需工具引擎');
+  assert(!pageScripts.includes('js/tools-engine.js'), '在线首页不预加载工具引擎');
 
   const asOf = new Date(2026, 8, 25);
   const recentIds = Catalog.listDevices()

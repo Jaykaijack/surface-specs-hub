@@ -1,0 +1,74 @@
+Microsoft Launches Surface Pro 7+ for Business, Surface Laptop Go for Business and Surface Go 2 for Business in the Philippines: Purpose-built to empower people, teams, and classrooms in the new digital age – Microsoft News Center Philippines (https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/)
+citeturn105view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/","lineno":null}); Total lines: 75
+L0: # Microsoft Launches Surface Pro 7+ for Business, Surface Laptop Go for Business and Surface Go 2 for Business in the Philippines: Purpose-built to empower people, teams, and classrooms in the new digital age
+L1: 
+L2: Jan 21, 2021  (January 21, 2021)  |   cite0†Microsoft Philippines Communications Team L3: 
+L4: cite1†Image: Surface Device 2†msftstories.thesourcemediaassets.com L5: ## Surface Pro 7+, Surface Laptop Go and Surface Go 2 joins the Surface for Business portfolio – offering the versatility, connectivity, and security that enterprises and educational institutions need to adapt to the changing landscape.
+L6: PHILIPPINES, JANUARY 20, 2021 – Microsoft today introduced Surface Pro 7+ for Business, Surface Laptop Go for Business and Surface Go 2 for Business for commercial and education customers in the Philippines to support business productivity and continuity in remote and hybrid working environments. Surface Laptop Go and Surface Go 2 will start shipping today and Surface Pro 7+ for Business wil l start shipping from 8 th February 2021 via Surface C ommercial Authorized R esellers cite2†Phil-Data Business Systems, Inc.,†www.phildata.com cite3†Nexus Technologies Inc.†nexustech.com.ph , cite4†Accent Micro Technologies Inc.†amti.com.ph , cite5†Advance Solutions Inc.†myasiph.com , and cite6†ePLDT Inc. †www.epldt.com L7: “Surface is more than a device — it is a strategic enabler for businesses. We are committed to designing technology that fosters productivity, creativity, and connection to empower people to be successful. We have spoken at length with many of our customers in the last year, listening to their journeys into remote everything. These discussions combined with cite7†extensive commissioned research†www.microsoft.com and the work done by our Applied Sciences group, have helped us understand their rapidly evolving needs,” said Andres Ortola, Microsoft Philippines Country General Manager. “This was a critical part of our development process for Surface – ensuring commercial customer voices are not only heard but brought directly into our product development.”
+L8: Microsoft found four key learnings during customer conversations and from research:
+L9:   1. The future of working and learning is hybrid and requires more flexibility: Views on remote work have changed, cite8†82% of managers say they will have more flexible work from home policies post pandemic, and 71%†www.microsoft.com of employees want to continue work from home at least part time. People are sharing spaces throughout their home and are moving locations more throughout their days to stay productive and accommodate others.
+L10:   1. Connectivity is critical to uninterrupted business operations: With multiple people in a household now connecting from home, it is putting a strain on bandwidth – where people are using their cell phones more often as hot spots for online meetings due to poor internet connectivity.
+L11:   1. Camera to camera is the new face to face: cite8†Microsoft has learnt through research†www.microsoft.com that people are feeling more empathetic to one another now, and through the lens of a video call they have a better view of life at home and even feel more valued and included as a remote contributor in meetings with everyone being in the same virtual room.
+L12:   1. End to end security from chip to cloud is more critical than ever before: Organizations need their data and workflows to be secure to enable remote and hybrid work. Devices need end to end security features to enable the productivity needed to maintain business continuity.
+L13: 
+L14: Surface Pro 7+ for Business
+L15: 
+L16: Surface Pro is by far the most widely adopted Surface device across enterprise and education customers and Microsoft continues to be inspired by its customers and their use of Surface.
+L17: Surface Pro 7+ also comes with the latest 11 th Gen Intel Core Processors, 2.1 times faster performance, and longer battery life of up to 15 hours. The device offers the versatility people need to work wherever, whenever they want. In addition, with both USB-A and USB-C ports, Surface Pro 7+ offers the adaptability to dock into external displays and leverage the needed peripherals for a full workstation set up.
+L18: Microsoft has also integrated front and rear facing cameras into Pro 7+ with 1080p full HD video along with Dolby Atmos speakers and dual far-field Studio Mics so people can be seen and heard.
+L19: Surface Pro 7+ will come with a lightweight, sustainable commercial packaging that is 23% lighter than the previous generation and made from 99% natural fiber-based material, of which 64% is post-consumer recycled content. These updates are also reflective of Microsoft’s continued commitment to sustainability.
+L20: 
+L21: The Surface Pro 7+ for Business is priced at PHP 74,690.00.00.
+L22: 
+L23: Security, D eployment, and M anageability by d esign with Surface Pro 7+
+L24: For the first time, Surface Pro 7+ will ship with Windows Enhanced Hardware Security features enabled out of the box. The devices can be managed and updated through the cloud from the first moment the device is turned on and throughout the device lifecycle without IT having to physically touch the device. Customers can have peace of mind in knowing they get great security without compromising employee or student experiences. Microsoft has accomplish ed this through tight integration between the UEFI (modern BIOS), firmware, and the Windows operating system stack and have shared their implementation of the Microsoft UEFI as open source on GitHub as Project Mu.
+L25: Surface will also use the latest Microsoft deployment capabilities like Windows Autopilot to enable devices to ship directly from the factory to people’s homes and be ready to go with security policies, applications, and settings applied. Windows Autopilot gets people online, connected, and productive as quickly as possible, and eliminates time consuming re-imaging and manual device set up for IT departments.
+L26: Finally, Microsoft recognizes the importance for customers to be in control of their data. Surface Pro 7+ will also feature a removable SSD for data retention, to support the security and privacy needs of commercial and education organizations. This feature, combined with Microsoft BitLocker protection, makes it easy for customers to retain sensitive data if something happens to their device.
+L27: 
+L28: Surface Laptop Go for Business
+L29: Surface Laptop Go has a beautiful 12.4” PixelSense touchscreen display 1, large precision trackpad and a full-size keyboard with 1.3mm key travel for an accurate and comfortable typing experience. The sleek, streamlined design comes in three durable and lightweight metal finishes in Platinum.
+L30: Surface Laptop Go is powered by Intel’s 10th generation i5 Quad-Core processor with 8 GB RAM and 128 GB storage 2 and is optimized for performance and battery life.  For a quick and secure sign-in, the Surface Laptop Go 10th Gen Intel® Core i5, 8GB RAM, 128GB SSD ha s a Fingerprint Power Button with One Touch sign-in through Windows Hello. One Touch sign-in also provides fast, secured access to OneDrive for Business Vault files and more, so users can jump in quickly and be productive.
+L31: Surface Laptop Go feel s snappy and fast taking full advantage of cloud connected experiences like Microsoft 365 and online storage. With up to 13 hours of battery life 3 plus Fast Charging, it will keep up with enterprise and education organisations’ users all day.
+L32: Whether learning or working, people are using their camera, speakers, and mics more now than ever before. Surface Laptop Go has a built-in 720p HD camera and Studio Mics, enabling classmates and colleagues to see and hear each other clearly. Omnisonic Speakers and Dolby® Audio surround users with amazing sound – whether on a video call, watching a movie, listening to music and more. To help users connect, there are both USB A and USB C ports, an audio jack, and the Surface connector.
+L33: The Surface Laptop Go for Business is priced at PHP 46,400.00.00.
+L34: 
+L35: Surface Go 2 for Business
+L36: Surface Go 2 has a thin, lightweight design with a 10.5-inch PixelSense display, improved battery life and a model with up to 64% faster performance than the original with 8 th Generation Intel® Core™ M options for the first time. It has added Studio Mics, dual microphone solution, to increase voice clarity and reduce background noise for Microsoft Teams meetings or video chats, and a 5MP front-facing camera delivers sharp video even in low light. Additionally, the new Camera app for the rear-facing camera makes it easy to scan documents and whiteboards – whether users are sharing notes from a meeting or turning in homework.
+L37: Paired with Surface Pen, Surface Go 2 allows distance learners and remote workers to stay digital, while unlocking the power of natural ink for things like drawing diagrams, marking up documents or working through math equations. The Surface Go can be paired with a Platinum Type Cover.
+L38: Surface Go 2 for Business is priced at PHP 39,990.00.00.
+L39: 
+L40: 
+L41: 
+L42: Surface for Business Accessories
+L43: Complete the experience on Surface Pro 7+ for Business with the new and improved Signature Type Cover (Black color), Arc Mouse (Platinum color) and Pen (Black color) that complement for enterprise customers. For Surface Go 2 for Business, pai r with the Type Cover (Platinum color). The Surface Dock 2 transforms the Surface device into a desktop PC with a 199W power supply to charge Surface devices, plus USB-C® ports that support dual 4K monitors at 60Hz.
+L44: 
+L45: 
+L46: 
+L47: Surface for Business
+L48: Surface for Business devices provides specific experiences and features built especially for commercial customers including enterprise-grade security, and leading modern management with Autopilot, Surface Enterprise Management Mode (SEMM) and Microsoft Intune. Windows 10 Pro comes standard on Surface for Business devices, offering additional built-in security and management features that lets our customers focus on running their business.
+L49: In addition to the standard hardware warranty, Surface for Business customers get free Advanced Exchange – a warranty service with expedited device replacement, at no additional cost.
+L50: +++
+L51: 
+L52: The latest Surface for Business devices will be available in the following configurations in the Philippines:
+L53: Model   | Suggested Retail Price (in PHP)
+L54: Surface Pro 7+ for Business 11th Gen Intel® Core i5,
+L55: 8GB RAM, 256GB SSD (Available in Platinum)    | PHP 74,690.00.00
+L56: Surface Laptop Go 10th Gen Intel® Core i5, 8GB RAM, 128GB SSD   (Available in Platinum)     | PHP 46,400.00.00
+L57: Surface Go 2 8th Gen Intel® Core m3 Processor, 8GB RAM, 128GB SSD   (Available in Platinum)     | PHP 39,990.00.00
+L58:   * Surface Type Cover for Surface Pro (Available in Black)
+L59:   * Surface Type Cover for Surface Go (Available in Platinum)
+L60:   * Surface Arc Mouse (Available in Platinum)
+L61:   * Surface Pen (Available in Black)
+L62:   * Surface Dock 2
+L63:  |     PHP 7,290.00
+L64: PHP 5,790.00
+L65: PHP 5,150.00
+L66: PHP 5,075.00
+L67: PHP 14,999.00
+L68: 
+L69: *all prices indicated are inclusive of 12% VAT
+L70: 
+L71: About Microsoft
+L72: Microsoft (Nasdaq “MSFT” @microsoft) enables digital transformation for the era of an intelligent cloud and an intelligent edge. Its mission is to empower every person and every organization on the planet to achieve more.
+L73: 
+L74: cite9†iframe†www.googletagmanager.com 

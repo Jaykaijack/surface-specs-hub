@@ -1,0 +1,287 @@
+Surface Book 3 specs and features | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features)
+citeturn45view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features","lineno":200}); Total lines: 436
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Book 3 specs and features
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Book 3 - 15 inch Surface Book 3
+L126: 
+L127: Note
+L128: 
+L129:   * Incredible speed and battery life come together with next-level AI experiences and signature Surface design.
+L130:   * cite75†Explore the newest Surface PCs†www.microsoft.com L131: ## Get to know Surface Book 3
+L132: 
+L133: Meet the laptop that can handle your biggest demands. Surface Book 3 brings together powerhouse performance and high-end graphics in a robust book that can also turn into a tablet or a portable studio.
+L134: 
+L135: Here's some of the top features and details that can help you get familiar with Surface Book 3:
+L136: 
+L137: cite76†Image: J 1 L138: 
+L139: cite77†Image: J 2 L140:   1. Power button
+L141:   2. Volume Up + and Volume Down -
+L142:   3. Front-facing camera
+L143:   4. Windows Hello with face sign-in
+L144:   5. USB 3.1
+L145:   6. SDXC™ card reader
+L146:   7. Headset jack
+L147:   8. Surface Connect
+L148:   9. USB-C
+L149: ## Surface Book 3 and Windows 10
+L150: 
+L151: Surface Book 3 comes with
+L152: 
+L153:   * Windows 10 Home edition (consumer customers)
+L154:   * Windows 10 Pro edition (commercial customers)
+L155: 
+L156: If you have Windows 10 Home on your device, you can upgrade to Windows 10 Pro for an additional cost. For more info, see cite78†Upgrade Windows Home to Windows Pro .
+L157: 
+L158: You can upgrade your Surface Book 3 from Windows 10 to Windows 11. For more info, see cite79†Which Surface devices can be upgraded to Windows 11? L159: To find out which version of Windows you have, see cite80†Which Windows operating system am I running? L160: ## Charging your Surface
+L161: 
+L162: You can charge your Surface using USB-C or Surface Connect. For more information, see cite81†How to charge Surface. L163: 
+L164: ## Surface Book 3 features
+L165: 
+L166: ### Work your way, anywhere
+L167: 
+L168: Work your way with three versatile modes of use: Surface Book 3 is a robust laptop, powerful tablet, and portable studio in one.
+L169: ### Unleash your best ideas
+L170: 
+L171: Surface Book 3 features the best graphics on any Surface laptop, powered by the latest NVIDIA®  GTX GeForce GPU, up to 2TB of storage, and up to 32GB RAM.
+L172: 
+L173: ### All the connections you need for multiple devices and accessories
+L174: 
+L175: Surface Book 3 comes with all the connections you need, including USB-A and versatile USB-C™ ports, plus a full-size SD card slot.
+L176: ### Breathe new life into your creations
+L177: 
+L178: Use touch, Surface Pen, and Surface Dial on the vibrant PixelSense™ touchscreen display. Available in two sizes: 13.5" or 15".
+L179: 
+L180: ### Make it your own
+L181: 
+L182: Learn more about optional accessories that work with your Surface Book 3.
+L183: 
+L184:   * cite82†Surface Pen L185:   * cite83†Surface Arc Mouse L186:   * cite84†Surface Dock L187: ## Get the most out of your Surface
+L188: 
+L189: Learn more about your Surface and customize it with the Surface app. To open it, select Start cite85†Image: icon for Windows logo icon , enter Surface, and select it to open the app. If the app doesn't open, get it from the cite86†Microsoft Store†go.microsoft.com .
+L190: 
+L191: Open the Surface app
+L192: ## Surface Book 3 Tech specs
+L193:    |
+L194: --- | ---
+L195: Scenarios  | Next-gen, pro-grade performance for graphic design, app development, video and social content creation—and the best, most immersive gaming on a Surface laptop
+L196: Dimensions  | Surface Book 3 13.5”
+L197: Intel® Core™ i5: 12.3” x 9.14” x 0.51”-0.90” (312 mm x 232 mm x 13 mm-23 mm)
+L198: Intel® Core™ i7: 12.3” x 9.14” x 0.59”-0.90” (312 mm x 232 mm x 15 mm-23 mm)
+L199: Surface Book 3 15”
+L200: 13.5” x 9.87” x 0.568-0.90” (343 mm x 251 mm x 15 mm-23 mm)
+L201: Display  | Surface Book 3 13.5” PixelSense™ Display
+L202: Screen: 13.5” PixelSense™ Display
+L203: Resolution: 3000 x 2000 (267 PPI)
+L204: Aspect ratio: 3:2
+L205: Contrast ratio: 1600:1
+L206: Touch: 10 point multi-touch G5
+L207: Surface Book 3 15” PixelSense™ Display
+L208: Screen: 15” PixelSense™ Display
+L209: Resolution: 3240 x 2160, (260 PPI)
+L210: 10 point multi-touch G5
+L211: Aspect ratio: 3:2
+L212: Contrast ratio: 1600:1
+L213: Memory  | Surface Book 3 13.5”
+L214: Quad-core 10th Gen Intel® Core™ i5-1035G7 Processor
+L215: Quad-core 10th Gen Intel® Core™ i7-1065G7 Processor
+L216: Surface Book 3 15”
+L217: Quad-core 10th Gen Intel® Core™ i7-1065G7 Processor
+L218: Processor  | Surface Laptop 3 13.5”
+L219: Quad-core 10th Gen Intel® Core™ i5-1035G7 Processor
+L220: Quad-core 10th Gen Intel® Core™ i7-1065G7 Processor
+L221: Surface Laptop 3 15”
+L222: AMD Ryzen™ 5 3580U Mobile Processor with Radeon™ Vega 9 Graphics Microsoft Surface® Edition
+L223: AMD Ryzen™ 7 3780U Mobile Processor with Radeon™ RX Vega 11 Graphics Microsoft Surface® Edition
+L224: Battery Life^{1}  | Surface Book 3 13.5" connected to keyboard base: Up to 15.5 hours of typical device usage
+L225: Surface Book 3 15" connected to keyboard base: Up to 17.5 hours of typical device usage
+L226: Graphics  | Surface Book 3 13.5”
+L227: Intel® Core™ i5-1035G7 models: Intel® Iris™ Plus Graphics
+L228: Intel® Core™ i7-1065G7 models: NVIDIA GeForce GTX 1650 with Max-Q Design w/4GB GDDR5 graphics memory
+L229: Surface Book 3 15”
+L230: Intel® Core™ i7-1065G7 models: NVIDIA GeForce GTX 1660 Ti with Max-Q Design w/6GB GDDR6 graphics memory
+L231: Storage ^{2}  | Surface Book 3 13.5”
+L232: Solid-state drive (SSD) options: 256 GB, 512 GB, or 1 TB PCIe SSD
+L233: Surface Book 3 15”
+L234: Solid-state drive (SSD) options: 256 GB, 512 GB, or 2 TB PCIe SSD
+L235: Connections  | 2 x USB-A (version 3.1 Gen 2)
+L236: 1 x USB-C® (version 3.1 Gen 2 with USB Power Delivery revision 3.0)
+L237: 3.5mm headphone jack
+L238: 2 x Surface Connect ports (one on base, one on tablet)
+L239: Full-size SDXC card reader (UHS-I / UHS-II)
+L240: Compatible with Surface Dial off-screen interaction*
+L241: Cameras, video, and audio  | Windows Hello face authentication camera (front-facing)
+L242: 5.0 MP front-facing camera with 1080p HD video
+L243: 8.0 MP rear-facing auto-focus camera with 1080p HD video
+L244: Dual far-field Studio Mics
+L245: Front-facing stereo speakers with Dolby Atmos®
+L246: Software  | Windows 10 Home^{5}
+L247: Microsoft 365 Family one month trial
+L248: Wireless  | Wi-Fi 6: 802.11ax compatible
+L249: Bluetooth Wireless 5.0 technology
+L250: Xbox Wireless built-in (15” only)^{3}
+L251: Sensors  | Ambient light sensor
+L252: Proximity sensor
+L253: Accelerometer
+L254: Gyroscope
+L255: Magnetometer
+L256: Exterior  | Casing: Magnesium
+L257: Color: Platinum
+L258: Physical buttons: Volume, Power
+L259: What's in the box  | Surface Book 3 13.5”
+L260: Intel® Core™ i5: 65W Surface Power Supply w/USB-A (5W) charging port
+L261: Intel® Core™ i7: 102W Surface Power Supply w/USB-A (7W) charging port
+L262: Quick Start Guide
+L263: Safety and warranty documents
+L264: Surface Book 3 15”
+L265: Intel® Core™ i7: 127W Surface Power Supply w/USB-A (7W) charging port
+L266: Quick Start Guide
+L267: Safety and warranty documents
+L268: Warranty^{4}  | 1-year limited hardware warranty
+L269: Weight  | Surface Book 3 13.5”
+L270: Intel® Core™ i5: 3.38 lbs (1,534 g) including keyboard
+L271: Intel® Core™ i7: 3.62 lbs (1,642 g) including keyboard
+L272: Surface Book 3 15”
+L273: Intel® Core™ i7: 4.20 lbs (1,905 g) including keyboard
+L274: Security  | TPM 2.0 chip for enterprise security
+L275: Enterprise-grade protection with Windows Hello face sign-in
+L276: Best-in-class support from Microsoft Store  | 60-day return policy
+L277: 90 days of free technical phone support
+L278: 12 months in-store support and technical assistance
+L279: 1 free training session to transfer data and optimize performance
+L280: * Some accessories and software sold separately.
+L281: [1] Battery life:
+L282: Surface Book 3 13.5” on base: Up to 15.5 hours of battery life based on typical Surface device usage. Testing conducted by Microsoft in April 2020 using preproduction software and preproduction configurations of Surface Book 3 13.5” Intel® Core™ i5, 256 GB, 8 GB RAM. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L283: The active use portion consists of (1) a web browsing test accessing 8 popular websites over multiple open tabs, (2) a productivity test utilising Microsoft Word, PowerPoint, Excel and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness disabled. Wi-Fi was connected to a network. Battery life varies significantly with settings, usage and other factors.
+L284: Surface Book 3 15” on base: Up to 17.5 hours of battery life based on typical Surface device usage. Testing conducted by Microsoft in April 2020 using preproduction software and preproduction configurations of Surface Book 3 15” Intel® Core™ i7, 256 GB, 16 GB RAM. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L285: The active use portion consists of (1) a web browsing test accessing 8 popular websites over multiple open tabs, (2) a productivity test utilising Microsoft Word, PowerPoint, Excel and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness disabled. Wi-Fi was connected to a network. Battery life varies significantly with settings, usage and other factors.
+L286: [2] System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB = 1 Gigabyte. 1 TB = 1,000 GB. See cite87†Surface Storage for more details.
+L287: 
+L288: [3] Xbox Wireless controller support available in selected global markets.
+L289: 
+L290: [4] Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L291: [5] Surface Book 3 for consumers comes with Windows 10 Home to bring you the powerful Windows features you use most at exceptional value. If you need additional enterprise management and security tools for the workplace, you can switch to Windows 10 Pro or purchase Surface Book 3 for Business.
+L292: ## Related topics
+L293: 
+L294:   * cite88†How to adjust settings for the Omnisonic speakers on Surface L295:   * cite89†How to adjust settings for Studio Mics on Surface L296:   * cite90†Find out which Surface model you have L297:   * cite91†Which Windows operating system am I running? L298: ## Need more help?
+L299: 
+L300:   * cite92†Personal accounts L301:   * cite93†Work/school accounts L302: 
+L303: Technical support
+L304: 
+L305: For technical support, cite94†open the Surface app†go.microsoft.com or cite95†web browser†go.microsoft.com , describe your problem and select Get Help.
+L306: 
+L307: Community support
+L308: 
+L309: Communities can help you ask questions, and hear from experts with rich knowledge. cite96†Ask the Community†go.microsoft.com .
+L310: 
+L311: Other support
+L312: If you can't use your Surface or have a question about something else, cite97†open Get Help†go.microsoft.com to get other support online.
+L313: 
+L314: cite98†Image: Need more help grid spacer. L315: 
+L316: Technical support
+L317: 
+L318: You can get self-help support from cite94†the Surface app†go.microsoft.com or cite95†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L319: 
+L320: Service & repair
+L321: For Surface for Business, visit cite99†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L322: 
+L323: For IT Admins
+L324: 
+L325: IT Admins should view cite100†Surface for Business†go.microsoft.com and cite101†Support for Business & Education customers†go.microsoft.com .
+L326: 
+L327: cite98†Image: Need more help grid spacer. L328: ## Was this information helpful?
+L329: 
+L330: [Button: Yes] [Button: No]
+L331: 
+L332: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L333: 
+L334: What affected your experience?
+L335: 
+L336: [Input] Resolved my issue
+L337: 
+L338: [Input] Clear instructions
+L339: 
+L340: [Input] Easy to follow
+L341: 
+L342: [Input] No jargon
+L343: 
+L344: [Input] Pictures helped
+L345: 
+L346: [Input] Other
+L347: 
+L348: [Input] Didn't match my screen
+L349: 
+L350: [Input] Incorrect instructions
+L351: 
+L352: [Input] Too technical
+L353: 
+L354: [Input] Not enough information
+L355: 
+L356: [Input] Not enough pictures
+L357: 
+L358: [Input] Other
+L359: 
+L360: Any additional feedback? (Optional)
+L361: [Button: Submit feedback]
+L362: 
+L363: By pressing submit, your feedback will be used to improve Microsoft products and services. cite102†Privacy Statement.†privacy.microsoft.com L364: 
+L365: What's new
+L366: 
+L367:   * cite103†Surface Laptop Ultra†www.microsoft.com L368:   * cite104†Surface Pro†www.microsoft.com L369:   * cite105†Surface Laptop†www.microsoft.com L370:   * cite106†Surface RTX Spark Dev Box†www.microsoft.com L371:   * cite107†Explore Copilot†www.microsoft.com L372:   * cite108†Explore Microsoft products†www.microsoft.com L373:   * cite109†Windows 11 apps†www.microsoft.com L374: Microsoft Store
+L375: 
+L376:   * cite110†Account profile†account.microsoft.com L377:   * cite69†Download Center†www.microsoft.com L378:   * cite111†Microsoft Store support†go.microsoft.com L379:   * cite112†Returns†www.microsoft.com L380:   * cite113†Order tracking†www.microsoft.com L381:   * cite46†Certified Refurbished†www.microsoft.com L382:   * cite114†Microsoft Store Promise†www.microsoft.com L383:   * cite115†Flexible Payments†www.microsoft.com L384: 
+L385: Education
+L386:   * cite70†Microsoft in education†www.microsoft.com L387:   * cite116†Devices for education†www.microsoft.com L388:   * cite117†Microsoft Teams for Education†www.microsoft.com L389:   * cite118†Microsoft 365 Education†www.microsoft.com L390:   * cite119†How to buy for your school†www.microsoft.com L391:   * cite120†Educator training and development†education.microsoft.com L392:   * cite121†Deals for students and parents†www.microsoft.com L393:   * cite122†AI for education†www.microsoft.com L394: 
+L395: Business
+L396:   * cite123†Microsoft AI†www.microsoft.com L397:   * cite53†Microsoft Security†www.microsoft.com L398:   * cite54†Dynamics 365†www.microsoft.com L399:   * cite55†Microsoft 365†www.microsoft.com L400:   * cite56†Microsoft Power Platform†www.microsoft.com L401:   * cite38†Microsoft Teams†www.microsoft.com L402:   * cite124†Microsoft Copilot†www.microsoft.com L403:   * cite58†Small Business†www.microsoft.com L404: 
+L405: Developer & IT
+L406:   * cite60†Azure†azure.microsoft.com L407:   * cite61†Microsoft Developer†developer.microsoft.com L408:   * cite62†Microsoft Learn†learn.microsoft.com L409:   * cite125†Support for AI marketplace apps†www.microsoft.com L410:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L411:   * cite126†Microsoft Marketplace†marketplace.microsoft.com L412:   * cite127†Software companies†www.microsoft.com L413:   * cite67†Visual Studio†visualstudio.microsoft.com L414: 
+L415: Company
+L416:   * cite128†Careers†careers.microsoft.com L417:   * cite129†About Microsoft†www.microsoft.com L418:   * cite130†Company news†news.microsoft.com L419:   * cite131†Privacy at Microsoft†www.microsoft.com L420:   * cite132†Investors†www.microsoft.com L421:   * cite133†Diversity and inclusion†www.microsoft.com L422:   * cite134†Accessibility†www.microsoft.com L423:   * cite135†Sustainability†www.microsoft.com L424: 
+L425: cite136†English (United States) cite137†Your Privacy Choices†aka.ms cite137†Your Privacy Choices†aka.ms cite138†Consumer Health Privacy†go.microsoft.com L426:   * cite139†Sitemap†www.microsoft.com L427:   * cite140†Contact Microsoft L428:   * cite141†Privacy†go.microsoft.com L429:   * cite142†Manage cookies L430:   * cite143†Terms of use†go.microsoft.com L431:   * cite144†Trademarks†go.microsoft.com L432:   * cite145†Safety & eco†go.microsoft.com L433:   * cite146†Recycling†www.microsoft.com L434:   * cite147†About our ads†choice.microsoft.com L435:   * © Microsoft 2026
+

@@ -112,7 +112,17 @@ console.log('Upstream/report regression PASS: unique IDs, safe updater, search a
 assert.equal(Catalog.portrait({id:'pro-1',name:'Pro 初代',heroImage:'data:image/png;base64,AAA',specs:{}}).identity,'blocked','inline build must preserve mapping block');
 
 const scoped=require('../docs/evidence/review-batch-current-20261009.json');
-for(const e of scoped.entries) { const d=Catalog.getDevice(e.deviceId); assert.deepEqual(Catalog.getSpec(d,e.field),e.value); }
+for(const e of scoped.entries) {
+ const d=Catalog.getDevice(e.deviceId), current=Catalog.getSpec(d,e.field);
+ if(JSON.stringify(current)===JSON.stringify(e.value)) assert.deepEqual(current,e.value);
+ else {
+  const replacement=require('../docs/evidence/full-model-source-review-20261009.json').entries.find(n=>n.deviceId===e.deviceId&&n.field===e.field);
+  assert.ok(replacement, '旧核验改变后必须有新的字段证据');
+  assert.deepEqual(current,replacement.value);
+  assert.deepEqual(Catalog.evidenceFor(d,e.field).value,current);
+  assert.notDeepEqual(current,e.value, '旧值不得继续为新值背书');
+ }
+}
 for(const e of scoped.compatibility)assert.equal(t.getCompatStatus(e.accessoryId,e.deviceId).status,e.status);
 assert.equal(Catalog.getSpec(Catalog.getDevice('pro-12-13-snap'),'batteryCapacityWh'),null);
 assert.doesNotMatch(Catalog.getSpec(Catalog.getDevice('laptop-8-150-snap'),'usbPorts'),/MicroSD/);
@@ -167,3 +177,14 @@ assert.throws(()=>App.createCorrectionDraft('pro-7','invented','https://example.
 console.log('Full source review PASS: 90 attempted models, scoped value binding expiry, configuration conflicts, safe correction drafts');
 
 const wrongConfig=JSON.parse(JSON.stringify(reviewedDevice));wrongConfig.id='another-sku';assert.equal(Catalog.evidenceFor(wrongConfig,'cpuModel'),null);
+
+// Independently transcribed regression anchors for new, explicitly scoped evidence.
+assert.match(Catalog.getSpec(Catalog.getDevice('pro-7-plus'),'ramSpec'), /32GB/);
+assert.match(Catalog.getSpec(Catalog.getDevice('pro-7-plus'),'batteryCapacityWh'), /47.4.*45.8/);
+assert.match(Catalog.getSpec(Catalog.getDevice('go-2-biz'),'cpuModel'), /菲律宾.*m3/);
+assert.match(Catalog.getSpec(Catalog.getDevice('book-3-biz'),'gpuModel'), /RTX.*3000/);
+assert.match(Catalog.getSpec(Catalog.getDevice('sls-2'),'usbPorts'), /MicroSDXC/);
+assert.match(Catalog.getSpec(Catalog.getDevice('laptop-3'),'ssdRemovable'), /不供用户自行拆卸.*技术人员/);
+assert.match(Catalog.evidenceFor(Catalog.getDevice('go-4'),'warranty').configurationScope, /翻新版/);
+for(const source of fullReview.fieldReviewExtracts) assert.equal(crypto.createHash('sha256').update(fs.readFileSync(source.path)).digest('hex'),source.sha256);
+console.log('Expanded field review PASS: SKU-limited data, service restrictions, preserved source extract hashes');

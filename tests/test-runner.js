@@ -387,7 +387,8 @@ assert(String(Catalog.getSpec(laptopBiz2, 'weightGrams')).includes('1.23'), '商
 assert(String(Catalog.getSpec(laptopBiz2, 'batteryLifeVideo')).includes('22.5'), '商用 Laptop 第 2 代本地视频 22.5 小时');
 assert(String(Catalog.getSpec(laptopBiz2, 'headphoneJack')).includes('3.5'), '商用 Laptop 第 2 代有 3.5 毫米耳机孔');
 assert(Catalog.getSpec(laptopBiz2, 'thunderboltSupport') === 'not_applicable', '商用 Laptop 第 2 代官方页没有雷电扩展坞');
-assert(String(Catalog.getSpec(laptopBiz2, 'touchAndPenProtocol')).includes('不支持触控笔'), '商用 Laptop 第 2 代不支持触控笔');
+assert(String(Catalog.getSpec(laptopBiz2, 'touchAndPenProtocol')).includes('10点触控'), '商用 Laptop 第2代官方确认10点触控');
+assert(!/MPP|支持触控笔/.test(String(Catalog.getSpec(laptopBiz2, 'touchAndPenProtocol'))), '未提到笔协议的触控规格不得当作笔支持证据');
 assert(Catalog.getDevice('pro-12-inch-biz').nextGenerationId === 'pro-12-inch-2-biz', '12 英寸商用第 1 代要指向第 2 代');
 assert(Catalog.audience(proBiz2).includes('企业'), '商用 Pro 第 2 代要能看到推荐人群');
 assert(Catalog.highlights(proBiz2).length >= 3, '商用 Pro 第 2 代要有官方参数亮点');

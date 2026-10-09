@@ -1,0 +1,424 @@
+微软认证翻新Surface Go 4商用版-商务平板二合一电脑-微软官方商城 (https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business)
+citeturn39view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business","lineno":200}); Total lines: 545
+L35: # 微软认证翻新 Surface Go 4 商用版
+L36: 
+L37: Surface Go 4 商用版仅有 521 克重^{1}，它是我们便携性最高的二合一设备，专为混合办公而设计。使用可享受到完整的 Windows 11 专业版体验且设计灵活的设备来圆满完成工作。将内置一体式支架调整至最佳角度，以方便使用 Surface 触控笔商用版^{2} 记录笔记，或搭配Surface Go 专业键盘盖商用版^{2} 以获得完整的笔记本电脑体验。
+L38: 
+L39: 此设备已预装 Windows 11 专业版或 Windows 10 专业版。cite14†了解详情 >†www.microsoft.com L40: 购买提示：设备可能包含外观上的瑕疵，不属于产品质量问题，不适用标准的退换货政策。微软认证翻新 Surface 不适用以旧换新优惠券；亦不适用微软官方商城任何其他优惠券。
+L41: 发货提示：该产品预计在付款后2个工作日内发货。
+L42: 
+L43: [Input][Input][Input][Input][Input][Input][Input]
+L44: 
+L52: ## 微软认证的翻新 Surface
+L53: 
+L54: 每一部翻新 Surface 都经过微软严苛的翻新流程，包括硬件损坏修复和外观品质检查，加上安全的数据擦除，软件升级和诊断测试。翻新设备享有两年有限硬件质保。
+L55: 
+L56: cite16†Image†cdn.microsoftstore.com.cn L57: 
+L58: ## Surface 商用版的强劲性能
+L59: 
+L60: Surface 商用版设备内置专业级安全功能，易于维修，并能提供从芯片到云端的全程保护。
+L61: 
+L62: cite17†Image: 一个使用 Surface Go 4 商用版的人，此设备由完整的 Windows 11 专业版体验提供支持。†cdn.microsoftstore.com.cn L63: 
+L64: ### 预装 Windows 11 专业版
+L65: 
+L66: Windows 11 专业版旨在让你和你的团队随时随地自在开展工作。开箱即用的强大安全保护，例如增强的钓鱼保护和免密安全登录等功能，确保你的信息得到全面保护，让你可以安心处理最重要的事务。
+L67: 
+L68: cite18†Image: 某人使用 Surface Go 4 商用版和各种配件来完成与某客户的信用卡交易。†cdn.microsoftstore.com.cn L69: ### 经久耐用，易于维修
+L70: 
+L71: Surface Go 4 商用版经过精心设计，更易于维修和维护。此外，主要组件（包括主板、电池等）可通过授权服务提供商进行更换，或由技术娴熟的技术人员进行现场更换。^{3}
+L72: 
+L73: ## 专为混合办公打造的超高品质和可靠性
+L74: 
+L75: 这是我们便携性最高的商用版笔记本电脑和平板二合一设备，凭借其速度更快的处理器、全天电池续航时间以及在通话中协作所需的硬件，可助力员工在任何地方完成工作。
+L76: 
+L77: cite19†Image†cdn.microsoftstore.com.cn L78: 
+L79: ### 处理器性能较上一代提升 80%
+L80: 
+L81: 借助全新英特尔^{®} 处理器 N200，你可以快速处理电子邮件、访问记录并回复客户。
+L82: 
+L83: cite20†Image†cdn.microsoftstore.com.cn L84: 
+L85: ### 长达 12.5 小时的^{4} 电池续航时间
+L86: 
+L87: 全天电池续航时间，随时随地保持高工作效率。此外，Surface Connect 和 USB-C^{®} 技术可实现快速充电。^{5}
+L88: 
+L89: cite21†Image†cdn.microsoftstore.com.cn L90: ### 无与伦比的便携性，重量仅 521 克^{1}
+L91: 
+L92: Surface Go 4 商用版配备 10.5 英寸触控屏，重量仅为 521 克，^{1} 它是我们最小巧、便携性最强的 Surface 电脑。
+L93: 
+L94: cite22†Image†cdn.microsoftstore.com.cn L95: 
+L96: ### Dolby^{®} Audio™，配备矩阵式远场双麦克风
+L97: 
+L98: 2W 立体声扬声器，采用Dolby^{®} Audio™ 技术和矩阵式远场双麦克风，能让您与最重要的人进行清晰通话。
+L99: 
+L100: ## 强劲性能，助您高效完成各项任务
+L101: 
+L102: 通过基本的 Microsoft 应用访问你的业务所需的信息。^{6} Surface Go 4 商用版提供更好的性能和完整的 Windows 11 专业版操作系统体验。
+L103: 
+L104:   * cite23†Image†cdn.microsoftstore.com.cn L105: 
+L106: #### 安全登录
+L107: 
+L108: 使用 Windows Hello 通过面部识别、安全 PIN、NFC 徽章或 Windows Hello 的多因素身份验证立即登录。
+L109: 
+L110:   * cite24†Image†cdn.microsoftstore.com.cn L111: #### 基于浏览器的更优异的性能表现
+L112: 
+L113: Surface Go 4 商用版能够更快地处理基于浏览器的应用和任务，让你的团队与所需的数据、见解和人员保持联系。
+L114: 
+L115:   * cite25†Image†cdn.microsoftstore.com.cn L116: 
+L117: #### Windows 11 专业版专为触控和触控笔打造
+L118: 
+L119: 使用 Windows 11 专业版和 Microsoft 365 应用^{6}加快完成基于平板电脑和触控笔的任务，它们已完成优化，旨在于 Surface Go 4 商用版上获得最佳性能。
+L120: 
+L121: ## 在旅途中和在办公室中最大限度地提高安全性
+L122: 
+L123: 借助现代化的设备管理、可更换的硬件和内置由云提供支持的安全性来节省时间和资金。^{7}
+L124: 
+L125: cite26†Image: Surface Go 4 商用版与 Surface Go 专业键盘盖商用版搭配使用，可提供完整的笔记本电脑体验†cdn.microsoftstore.com.cn L126: ### 具有“芯片到云端”安全性的安全核心PC
+L127: 
+L128: Surface Go 4 商用版是一款安全核心 PC，该设备提升了 Windows 11 专业版安全功能所提供的优势，同时可提供更强大的硬件和软件保护能力，让你在处理敏感信息时安全无忧。
+L129: 
+L130: cite27†Image: 医生在与患者交谈时使用 Surface 触控笔商用版与 Surface Go 4 商用版的触控屏进行交互。†cdn.microsoftstore.com.cn L131: 
+L132: ### 随时随地进行远程更新
+L133: 
+L134: 使用 Microsoft Endpoint Manager 和 DFCI，可通过云部署并向下管理到固件级别。通过 Windows Autopilot，可将 Surface 商用版设备直接部署到员工处以降低 IT 复杂性。^{7}
+L135: 
+L136: cite28†Image: 两个人注视着一台 Surface Go 4 商用版的屏幕，其中一个人用 Surface 触控笔商用版在触控屏上写字。†cdn.microsoftstore.com.cn L137: ### 开箱即用的安全功能
+L138: 
+L139: 全新 Windows 11 专业版设备集成了硬件和软件，可提供强大的开箱即用的保护，其中，报告的固件攻击减少 3.1 倍。^{8}
+L140: 
+L141: ## 包容性设计，面面俱到
+L142: 
+L143: ## 从概念到创作的包容
+L144: 
+L145: 我们致力于确保每一位用户都能获得可帮助他们实现更多目标的 Surface 设备和配件。我们并不是在努力制造一款适合所有人的 Surface，而是在尝试努力确保 Surface 系列产品中有专门适合您的设备。
+L146: 
+L147: cite29†Image: 一个人用 3D 打印附件设置 Microsoft 自适应配件。†cdn.microsoftstore.com.cn L148: 
+L149: ## Surface 产品对比
+L150: 
+L151: 无论是卓越的性能还是时尚的外观，总有一款 Surface 适合你。
+L152: 
+L153: cite1†查看所有 Surface 商用版设备 > L154: 
+L155: cite30†Image: 一台 Surface Go 4 商用版。†cdn.microsoftstore.com.cn L156: ### Surface Go 4 商用版
+L157: 
+L158:   * 处理器：英特尔^{®} 处理器 N200
+L159:   * 屏幕尺寸：10.5 英寸 PixelSense™ 显示屏
+L160:   * 重量^{1}：521克（1.15 磅）
+L161:   * 存储：驱动器（UFS）：128GB
+L162:   * 内存：8GB LPDDR5 内存
+L163: 
+L164: cite31†立即配置 > L165: 
+L166: cite32†Image: 一台 Surface Pro 9 商用版。†cdn.microsoftstore.com.cn L167: ### Surface Pro 9 商用版
+L168: 
+L169:   * 处理器：基于英特尔^{®} Evo™ 平台的第 12 代英特尔^{®} 酷睿™ i5-1245U 或 i7-1265U 处理器，可选 256GB 甚至更大的存储空间
+L170:   * 屏幕尺寸：13 英寸 PixelSense™ Flow 显示屏
+L171:   * 重量：879 克（1.94 磅）或 878 克（1.94 磅）(Sub6 5G)
+L172:   * 存储：可拆卸式^{9} 硬盘 (SSD)，可选配置：128GB、256GB、512GB 或 1TB
+L173:   * 内存：8GB、16GB 或 32GB LPDDR5 内存
+L174:   * 网络和连接：支持 5G
+L175: 
+L176: cite33†了解更多 > L177: 
+L178: cite34†Image: 一台 Surface Go 3 商用版。†cdn.microsoftstore.com.cn L179: ### Surface Go 3 商用版
+L180: 
+L181:   * 处理器：第10代英特尔^{®} 酷睿™ i3-10100Y 双核处理器
+L182:   * 屏幕尺寸：10.5 英寸 PixelSense™ 显示屏
+L183:   * 重量^{1}：Wi-Fi 版：544 克（1.2 磅）、4G LTE 增强版：553 克（1.22 磅）
+L184:   * 存储：eMMC 驱动器：64GB，可拆卸式^{9} 驱动器 (SSD) 可选配置：128GB 或 256GB (LTE)
+L185:   * 内存：4GB 或 8GB LPDDR3 内存
+L186:   * 网络和连接：支持 LTE
+L187: 
+L188: cite35†了解更多 > L189: 
+L190: cite36†Image: 一台 Surface Laptop Go 3 商用版。†cdn.microsoftstore.com.cn L191: ### Surface Laptop Go 3 商用版
+L192: 
+L193:   * 处理器：第 12 代英特尔^{®} 酷睿™ i5-1235U 处理器
+L194:   * 屏幕尺寸：12.4 英寸 PixelSense™ 显示屏
+L195:   * 重量：1.13 千克（2.49 磅）
+L196:   * 存储：可拆卸式^{9} UFS 驱动器：128GB 或可拆卸式^{9} 固态硬盘 (SSD)，可选配置：256GB 或 512GB
+L197:   * 内存：8GB 或 16GB LPDDR5 内存
+L198: 
+L199: cite37†了解更多 > L200: 
+L201: cite38†Image: 一个人使用 Surface 超薄触控笔 2 商用版在 Surface 设备的屏幕上编辑图像。†cdn.microsoftstore.com.cn L202: 
+L203: cite39†Image†cdn.microsoftstore.com.cn L204: ## 优选配件
+L205: 
+L206: 借助旨在提高工作效率和简化工作流程的配件，在 Surface 上成就更多。
+L207: 
+L208: cite40†全部商品 L209: 
+L210: cite41†Image: 一只弧形形态的 Surface Arc 鼠标商用版和一只平面形态的 Surface Arc 鼠标商用版。†cdn.microsoftstore.com.cn L211: 
+L212: cite42†Image: Surface Thunderbolt™ 4 扩展坞商用版上的朝向后方的端口。†cdn.microsoftstore.com.cn L213: 
+L214: ### 常见问题
+L215: 
+L216: 展开全部 | 收缩全部
+L217: 
+L218: ### 什么是微软认证的翻新设备？
+L219: 
+L220: 微软认证的翻新 Surface 设备是经过严格翻新流程以便重新销售的二手设备。经翻新的 Surface 产品是被完全清理且功能完全正常的设备。
+L221: 
+L222: 每一台微软认证的翻新产品都具有如下特性：
+L223: 
+L224: • 经筛选和测试，功能完全正常。
+L225: 
+L226: • 重新安装 Windows 操作系统和软件升级。
+L227: 
+L228: • 通过外观清洁流程并通过外观检测。
+L229: 
+L230: • 经重新包装，新的包装盒，包括说明文档、线缆和电源适配器。
+L231: ### 当我购买翻新产品时应期待获得何种体验？
+L232: 
+L233: 您会得到具有价格折扣、包装内含完整物料的全功能产品。我们保障经替换的部件均为 Surface 原厂部件，您的设备将满足我们的高质量标准。
+L234: 
+L235: ### 微软认证的翻新产品提供怎样的质保？
+L236: 
+L237: 所有微软认证的翻新产品在中国大陆将享受两年有限硬件质保。
+L238: ### 微软认证的翻新 Surface 退换货政策如何？
+L239: 
+L240: 微软认证的翻新设备退换货政策与全新 Surface 相同。详情请参见《微软官方商城退换货政策》。
+L241: 
+L242: * 以上所提及 AI 的功能，各区域此功能体验会有不同。
+L243: 
+L244: [1] 重量不包含 Surface Go 专业键盘盖。
+L245: 
+L246: [2] 单独出售。
+L247: 
+L248: [3] 客户可更换组件 (CRU) 是指可通过您的 Surface 商业授权设备经销商购买的组件。可以由熟练的技术人员按照微软的cite43†服务指南†www.microsoft.com 在现场更换组件。拆开和/或修理您的设备都有导致触电、火灾和/或人身伤害的风险和其他危险。如果自行维修，请多加小心。维修期间造成的设备损坏不在 Microsoft 硬件保修或保护计划范围内。可更换组件和服务选项的可用性可能因市场和/或产品首次发布而异。
+L249: 
+L250: [4] 电池使用时间会因设备使用、网络或功能配置、信号强度、设置和其他因素而有显著差异。请参阅 cite44†Surface 电池性能†support.microsoft.com 了解更多信息。
+L251: [5] Surface Go 4 商用版在与额定功率为 60W 或更高功率的电源或 USB Type-C PD 充电器（单独出售）配合使用时，可支持快速充电（箱内 PSU 不支持快速充电）。
+L252: 
+L253: [6] 单独出售。某些功能需要有软件许可证。
+L254: 
+L255: [7] 某些支持云的特性和功能需要付费订阅和/或符合要求的批量许可证。
+L256: 
+L257: [8] Windows 11 调查报告。Techaisle（2022 年 2 月）。Windows 11 的结果正在与 Windows 10 设备进行比较。
+L258: 
+L259: [9] 驱动器 (SSD) 保留仅适用于根据技术规格固态硬盘可拆卸下来进行销售的 Microsoft Surface 设备。驱动器 (SSD) 保留属于商业 Microsoft Complete 增强版服务计划涵盖的服务，在购买 Microsoft 延期硬件服务和商业 Microsoft Complete 服务计划时可作为可选的附加项来获取。除了 Surface Pro X 和 Surface Pro 7+，移除固态硬盘后返回到 Microsoft 的设备需要支付固态硬盘更换费用，除非用户已注册了驱动器 (SSD) 保留服务。
+L260: 功能和应用程序可用情况可能因地区而异。
+L261: 
+L262: USB Type-C^{®} 和USB-C^{®} 是 USB Implementers Forum 的注册商标。
+L263: ### 技术规格
+L264: 
+L265: #### 处理器
+L266: 
+L267:  | 英特尔^{®} 处理器 N200
+L268: 
+L269: #### 显卡
+L270: 
+L271:  |
+L272: 
+L273:   * 英特尔^{®} UHD 显卡
+L274: 
+L275: #### 内存和存储^{1}
+L276: 
+L277:  |
+L278: 
+L279:   * 内存选项：
+L280:   * 8GB LPDDR5 内存
+L281:   * 存储选项：
+L282:   * 驱动器（UFS）：64GB、128GB、256GB
+L283: 
+L284: #### 显示屏
+L285: 
+L286:  |
+L287: 
+L288:   * 触控屏：10.5 英寸 PixelSense™ 显示屏
+L289:   * 分辨率：1920 x 1280 (220 PPI)
+L290:   * 屏幕比例：3:2
+L291:   * 对比度：1500:1
+L292:   * 色彩配置：sRGB 和 Enhanced
+L293:   * 独立的颜色校准屏幕
+L294:   * 触控：10 点触控
+L295:   * 第 3 代康宁^{®}大猩猩^{®} 玻璃面板
+L296: 
+L297: #### 尺寸和重量
+L298: 
+L299:  |
+L300: 
+L301:   * 长：245 毫米（9.65 英寸）
+L302:   * 宽：175 毫米（6.9 英寸）
+L303:   * 高：8.3 毫米（0.33 英寸）
+L304:   * 重量^{2}：521 克（1.15 磅）
+L305: 
+L306: #### 电池续航时间^{3}
+L307: 
+L308:  | 常规使用时间最长可达 12.5 小时
+L309: #### 安全性
+L310: 
+L311:  |
+L312: 
+L313:   * 固件级 TPM 2.0 芯片可提供企业级安全性，并提供 BitLocker 支持
+L314:   * 通过 Windows Hello 面部识别登录实现企业级保护
+L315:   * Windows 11 安全核心 PC
+L316: 
+L317: #### 摄像头
+L318: 
+L319:  |
+L320: 
+L321:   * 前置 1080p 全高清摄像头
+L322:   * 800 万像素 1080p 全高清后置摄像头
+L323:   * Windows Hello人脸识别摄像头
+L324: 
+L325: #### 音频
+L326: 
+L327:  |
+L328: 
+L329:   * 矩阵式远场双麦克风，具有语音清晰度功能^{4}
+L330:   *   * 采用 Dolby^{®} Audio™ Premium 音效的 2W 功耗立体声扬声器
+L331: 
+L332: #### 接口
+L333: 
+L334:  |
+L335: 
+L336:   * USB-C^{®} 3.1（数据传输、视频输出和供电）
+L337:   * MicroSDXC 读卡器
+L338:   * 3.5 毫米耳机插孔
+L339:   * Surface 专业键盘盖端口
+L340:   * Surface Connect 端口
+L341: 
+L342: #### 网络和连接
+L343: 
+L344:  |
+L345: 
+L346:   * Wi-Fi 6：802.11ax 兼容
+L347:   * 蓝牙^{®} 无线 5.1 技术
+L348: #### 触控笔和配件兼容性
+L349: 
+L350:  |
+L351: 
+L352:   * 触控笔兼容性：
+L353:   * 专为 Surface 触控笔、Microsoft Classroom Pen 2、Microsoft 触控笔商用版^{5} 设计
+L354:   * 集成有 Surface 触控笔^{5} 磁吸存储器
+L355:   * 支持 Microsoft 触控笔协议 (MPP)
+L356:   * 键盘兼容性：
+L357:   * Surface Go 特制版专业键盘盖
+L358:   * Surface Go 专业键盘盖
+L359: 
+L360: #### 软件
+L361: 
+L362:  |
+L363: 
+L364:   * Windows 11 专业版或 Windows 10 专业版
+L365:   * 预装 Microsoft 365 应用^{6}
+L366:   * Microsoft 365 商业标准版、Microsoft 365 商业高级版、Microsoft 365 应用版（30 天试用）^{7}
+L367: 
+L368: #### 辅助功能
+L369: 
+L370:  |
+L371: 
+L372:   * 与 Surface 适配套件兼容^{8}
+L373:   * 与 Microsoft 自适应配件兼容
+L374: 
+L375: #### 外观
+L376: 
+L377:  |
+L378: 
+L379:   * 机身材质：镁合金
+L380:   * 颜色：亮铂金
+L381:   * 实体按键：音量、电源
+L382: #### 一体式支架
+L383: 
+L384:  |
+L385: 
+L386:   * 一体式支架，配备 165 度全阻尼铰链
+L387: 
+L388: #### 传感器
+L389: 
+L390:  |
+L391: 
+L392:   * 环境光传感器
+L393:   * 加速计
+L394:   * 陀螺仪
+L395:   * 磁力计
+L396:   * NFC
+L397: 
+L398: #### 包装清单
+L399: 
+L400:  |
+L401: 
+L402:   * 微软认证翻新 Surface Go 4 商用版
+L403:   * 24W 电源适配器
+L404:   * 快速入门指南
+L405:   * 安全、健康、符合性指南和有限保修条款等文件
+L406: 
+L407: #### 保修^{9}
+L408: 
+L409:  |
+L410: 
+L411:   * 自购买凭证（发票）标注时间起，Surface 主机2年有限硬件保修，Surface 配件视品类而定。详情以所购产品包装盒内相关信息为准。
+L412: #### 电池容量^{10}
+L413: 
+L414:  |
+L415: 
+L416:   * 标准电池容量（WH） 29
+L417:   * 最小电池容量（WH）28
+L418: 
+L419: [1] 系统软件会占用大量的存储空间。可用存储空间会根据系统软件更新和应用的使用情况而改变。1GB = 10 亿字节。1 TB = 1,000 GB。有关详细信息，请参阅 cite45†Surface 存储†support.microsoft.com 。
+L420: 
+L421: [2] 重量不包含专业键盘盖。
+L422: [3] 电池使用时间会因设备配置、使用情况、网络和功能配置、信号强度、设置和其他因素而有显著差异。请参阅 cite44†Surface 电池性能†support.microsoft.com 了解更多信息。
+L423: Surface Go 4 商用版搭载英特尔^{®} 处理器 N200, 128GB, 8GB RAM 版本的电脑由 Microsoft 在 2023年 5月间使用试制的软件和试制的配置进行了测试。测试包括在主动使用和待机状态下将满电量电池的电量耗尽。主动使用部分包括（1）在多个标签页下浏览 8 个流行网站的网页，（2）使用 Microsoft Word、PowerPoint、Excel、OneNote 和 Outlook 进行的生产力测试，以及（3）设备上应用软件在闲置状态下运行一段时间。测试过程中所有设置均为默认值，但下列设置除外：屏幕亮度被设定为 [150尼特]，且自动调整亮度，自动调整色彩被禁用。Wi-Fi 保持联网状态。使用Windows 11的10.0.22621.1485（22H2）版本进行测试。电池续航时间会因设置、使用方式及其他因素而存在显著差异。
+L424: [4] 语音清晰度功能需要 Windows 11 支持，并且在使用集成设备麦克风和使用特定 Windows 音频处理模式的应用中可用。
+L425: 
+L426: [5] 单独出售。
+L427: 
+L428: [6] 需要许可或订阅（单独出售）才能激活和使用。
+L429: 
+L430: [7] 需要激活。若你的设备由所在组织的 IT 部门管理，请联系 IT 管理员激活。30 天后，我们会向你收取适用的每月或每年订阅费用。需要信用卡。随时取消即可停止扣费。具体请参阅 cite46†m365businesstrialinfo†learn.microsoft.com 。
+L431: 
+L432: [8] 键帽标签可以安装在 Surface Go 专业键盘盖和 Surface Laptop Go 的按键上，但由于按键尺寸的原因，需要更精确地安装。
+L433: 
+L434: [9] Microsoft 的有限担保是对当地消费者权益法定的额外补充。
+L435: 
+L436: [10] 可能因制造工艺而异。
+L437: {"components":{"stockNotificationPopup":{"component":"IsobarCommerce_BuyBox\/js\/stock-notify-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"}},"mainProductId":"2302"}}}
+L438: 
+L439: *划线价格均为微软建议零售价。
+L440: 
+L441:   * 产品类别
+L442: 
+L443:     * cite47†Surface L444:     * cite48†Microsoft 365 L445:     * cite49†XBOX L446:     * cite50†Office L447:     * cite51†Windows L448:     * cite52†Visual Studio L449:     * cite53†混合现实 L450:     * cite54†其他软件与服务 L451:     * cite55†配件 L452:     * cite56†其他微软站点†www.microsoft.com L453:   * 账户信息
+L454:     * cite4†账户信息 L455:     * cite5†订单跟踪 L456:     * cite57†订单历史 L457:     * cite4†软件密钥和下载 L458:   * 支持与帮助
+L459: 
+L460:     * cite58†产品支持信息 L461:     * cite59†退换货政策 L462:     * cite60†常见问题 L463:     * cite61†软件产品问题 L464:     * cite62†教育优惠相关问题 L465:     * cite63†购物流程 L466:     * cite64†支付与配送 L467:     * cite65†售后服务 L468:     * cite66†专栏博客 L469:   * 热门资源
+L470: 
+L471:     * cite67†Surface Pro L472:     * cite68†Surface Laptop L473:     * cite69†优惠信息 L474:     * cite70†教育专区 L475:     * cite71†以旧换新 L476:     * cite1†商务专区 L477:   * 关于我们
+L478: 
+L479:     * cite72†查找店铺 L480:     * cite73†网站地图 L481:     * cite74†商城承诺 L482:     * cite75†商城首页 L483:   * 关注我们
+L484: 
+L485:     * 官方微博
+L486: 
+L487:     * 微软官方商城
+L488:     *     * 微信小店
+L489: cite76†Image: Wechatstore QRCode†cdn.microsoftstore.com.cn L490: 
+L491: cite56†其他微软站点†www.microsoft.com L492: 
+L493: cite77†中国 - 简体中文†www.microsoft.com L494: 
+L495: cite78†使用条款 cite79†销售条款 cite80†隐私权声明†go.microsoft.com 管理 Cookie cite81†商标†www.microsoft.com cite82†沪 ICP备12038052号-4†beian.miit.gov.cn L496: 
+L497: cite83†沪公网安备 31010402009788号†www.beian.gov.cn L498: 
+L499: cite84†公司证件†cdn.microsoftstore.com.cn © 2024 Microsoft
+L500: 
+L501: cite85†Image†cdn.microsoftstore.com.cn L502: 
+L503: 扫码小程序
+L504: 
+L505: 进行购买
+L506: cite86†Image: Contact customer service†cdn.microsoftstore.com.cn cite87†Image: Contact customer service†cdn.microsoftstore.com.cn L507: 
+L508: cite88†Image: miniapp_qrcode†cdn.microsoftstore.com.cn L509: 
+L510: cite89†Image: contact sales†cdn.microsoftstore.com.cn cite90†Image: contact sales†cdn.microsoftstore.com.cn cite91†Image: Contact customer service†cdn.microsoftstore.com.cn L511: 
+L512: cite92†Image: QR Code†cdn.microsoftstore.com.cn L513: 
+L514: cite93†Image: contact sales†cdn.microsoftstore.com.cn L515: 
+L516: cite85†Image: wechat qrcode†cdn.microsoftstore.com.cn L517: 截图保存后微信扫码进入小程序
+L518: 
+L519: 联系客服 · 咨询优惠
+L520: 
+L521: 在线聊天
+L522: 
+L523: [Button: 开始在线聊天]
+L524: 
+L525: 电话联系
+L526: 
+L527:   * 微软官方商城销售服务热线:
+L528: 400 999 9938
+L529: 工作时间：法定工作日 9:00–18:00
+L530: 
+L531: cite94†Image: 联系销售†cdn.microsoftstore.com.cn 联系销售
+L532: 
+L533: [Button: 联系客服 享专属优惠]
+L534: 
+L535: 非工作时间请联系： RDSSMB@microsoft.com
+L536: 
+L537: cite95†Intentionally blank†publisher.liveperson.net L538: cite96†Surface Pro cite97†Surface Laptop cite98†Surface Laptop Ultra†www.microsoft.com cite99†探索 Copilot†www.microsoft.com cite100†Microsoft 365†www.microsoft.com cite101†探索 Microsoft 产品†www.microsoft.com cite102†Windows 11 应用程序†www.microsoft.com cite103†帐户个人资料†account.microsoft.com cite104†下载中心†www.microsoft.com cite105†订单跟踪†account.microsoft.com cite106†Microsoft 教育版†www.microsoft.com cite107†教育设备†www.microsoft.com cite108†Microsoft Teams 教育版†www.microsoft.com cite109†Microsoft 365 教育版†www.microsoft.com cite110†Office 教育版†www.microsoft.com cite111†教育工作者培训和开发†education.microsoft.com cite112†面向学生和家长的优惠†www.microsoft.com cite113†面向学生的 Azure†azure.microsoft.com L539: cite114†Microsoft AI†www.microsoft.com cite115†Microsoft 安全†www.microsoft.com cite116†Azure†azure.microsoft.com cite117†Dynamics 365†www.microsoft.com cite118†Microsoft 365†www.microsoft.com cite119†Microsoft Advertising†about.ads.microsoft.com cite120†Microsoft Copilot†www.microsoft.com cite121†Microsoft Teams†www.microsoft.com cite122†Microsoft 开发人员†developer.microsoft.com cite123†Microsoft Learn†learn.microsoft.com cite124†支持 AI 商城应用†www.microsoft.com cite125†Microsoft 技术社区†techcommunity.microsoft.com cite126†Microsoft Marketplace†marketplace.microsoft.com cite127†Microsoft Power Platform†www.microsoft.com cite128†软件公司†www.microsoft.com cite129†Visual Studio†visualstudio.microsoft.com cite130†招贤纳士†careers.microsoft.com cite131†关于 Microsoft†www.microsoft.com cite132†公司新闻†news.microsoft.com cite133†Microsoft 隐私†www.microsoft.com cite134†投资人†www.microsoft.com 

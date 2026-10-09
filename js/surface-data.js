@@ -2733,12 +2733,12 @@ const SURFACE_DATA = {
           }
         ],
         "chassisMaterial": "阳极氧化铝",
-        "kickstandType": "一体式支架，165 度全阻尼铰链",
-        "osAtLaunch": "Windows 11 专业版",
+        "kickstandType": "165度全阻尼一体式支架",
+        "osAtLaunch": "Windows11专业版或Windows10专业版",
         "cpuModel": "Intel Core Ultra 5 135U / Ultra 7 165U",
         "cpuArch": "64 位 / Intel 4",
         "cpuCores": "not_disclosed",
-        "gpuModel": "Intel 图形处理器",
+        "gpuModel": "Intel图形处理器（Intel Graphics）",
         "npuModel": "Intel AI Boost",
         "npuTops": "not_disclosed",
         "copilotPlus": "not_disclosed",
@@ -2753,33 +2753,33 @@ const SURFACE_DATA = {
         "ppi": "267 PPI",
         "refreshRate": "动态刷新率最高120Hz",
         "brightness": "not_disclosed",
-        "colorSupport": "sRGB 和 Vivid",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
+        "colorSupport": "1300:1；sRGB、Vivid；独立校色、自适应颜色；Dolby Vision IQ",
+        "touchAndPenProtocol": "10点触控；MPP；Gorilla Glass5",
         "frontCamera": "1440p超广角Surface Studio摄像头",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "1000 万像素 Ultra HD 后置摄像头",
-        "videoFeatures": "Windows Studio 效果",
-        "microphones": "矩阵式远场双麦克风",
-        "speakers": "2W 立体声扬声器，支持 Dolby® Atmos®",
-        "audioTech": "Dolby Atmos®",
+        "windowsHello": "Windows Hello人脸识别；NFC身份认证",
+        "rearCamera": "1000万像素，4K后置摄像头",
+        "videoFeatures": "Windows Studio Effects：自动取景、眼神交流、背景模糊",
+        "microphones": "矩阵式远场双麦克风，具有音质处理功能",
+        "speakers": "2W立体声扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos；蓝牙LE Audio",
         "headphoneJack": "not_applicable",
         "usbPorts": "2个USB-C（USB4/Thunderbolt 4，DisplayPort 2.1）；Surface Connect；键盘接口",
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
-        "surfaceConnect": "配备 Surface Connect",
+        "thunderboltSupport": "2个USB-C USB4/Thunderbolt4；DisplayPort2.1，最多1台8K显示器",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6E (802.11ax)；蓝牙5.3",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "最长 19 小时典型使用",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "最低充电 39W；标配 39W（型号 1963）",
+        "chargingPower": "该认证翻新版包装附带39W电源；非最低输入功率",
         "fastCharging": "推荐快充 45W",
-        "compatibleKeyboard": "Surface Pro 特制版专业键盘盖 (带 Copilot 键)",
+        "compatibleKeyboard": "Surface Pro商用版键盘盖、Surface Pro特制版专业键盘盖商用版",
         "penHapticFeedback": "支持触觉震动",
         "penChargingType": "笔槽无线充电",
         "trackpadType": "传统机械精准触控板",
-        "tpmChip": "硬件TPM 2.0",
-        "securedCorePc": "认证 Secured-core PC",
-        "biometrics": "Windows Hello 人脸识别 + 智能卡/NFC",
+        "tpmChip": "硬件TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心电脑",
+        "biometrics": "Windows Hello人脸识别；NFC身份认证",
         "enterpriseManage": "企业级 vPro 管理与设备固件更新",
         "dimensionsMm": "287 × 208.6 × 9.3 mm",
         "weightGrams": "879g",
@@ -2787,7 +2787,7 @@ const SURFACE_DATA = {
         "thermalDesign": "主动低噪静音风扇",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "SSD、主板、支架、屏幕、电池、支架铰链",
-        "warranty": "2 年有限硬件保修",
+        "warranty": "该中国认证翻新版：主机2年有限硬件保修；配件按品类及包装条款",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
@@ -2813,20 +2813,20 @@ const SURFACE_DATA = {
           "configuration": "pro-10-biz"
         },
         "npuModel": {
+          "configuration": "pro-10-biz",
           "value": "Intel AI Boost",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新商用页硬件规格；保修/价格/包装条件不外推全新机",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-10-biz"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         },
         "gpuModel": {
-          "value": "Intel 图形处理器",
+          "configuration": "pro-10-biz",
+          "value": "Intel图形处理器（Intel Graphics）",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新商用页硬件规格；保修/价格/包装条件不外推全新机",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-10-biz"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         },
         "ramSpec": {
           "value": "8GB / 16GB / 32GB / 64GB LPDDR5x",
@@ -2909,14 +2909,167 @@ const SURFACE_DATA = {
           "configuration": "pro-10-biz"
         },
         "tpmChip": {
-          "value": "硬件TPM 2.0",
+          "configuration": "pro-10-biz",
+          "value": "硬件TPM2.0，支持BitLocker",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新商用页硬件规格；保修/价格/包装条件不外推全新机",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-10-biz"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-10-biz",
+          "value": "267 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "pro-10-biz",
+          "value": "1300:1；sRGB、Vivid；独立校色、自适应颜色；Dolby Vision IQ",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-10-biz",
+          "value": "10点触控；MPP；Gorilla Glass5",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-10-biz",
+          "value": "Windows Hello人脸识别；NFC身份认证",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-10-biz",
+          "value": "Windows Hello人脸识别；NFC身份认证",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "pro-10-biz",
+          "value": "Windows11安全核心电脑",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-10-biz",
+          "value": "1000万像素，4K后置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-10-biz",
+          "value": "Windows Studio Effects：自动取景、眼神交流、背景模糊",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-10-biz",
+          "value": "矩阵式远场双麦克风，具有音质处理功能",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-10-biz",
+          "value": "2W立体声扬声器，Dolby Atmos",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-10-biz",
+          "value": "Dolby Atmos；蓝牙LE Audio",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-10-biz",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "pro-10-biz",
+          "value": "2个USB-C USB4/Thunderbolt4；DisplayPort2.1，最多1台8K显示器",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-10-biz",
+          "value": "Surface Pro商用版键盘盖、Surface Pro特制版专业键盘盖商用版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-10-biz",
+          "value": "Windows11专业版或Windows10专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-10-biz",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "pro-10-biz",
+          "value": "165度全阻尼一体式支架",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "pro-10-biz",
+          "value": "该认证翻新版包装附带39W电源；非最低输入功率",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "pro-10-biz",
+          "value": "该中国认证翻新版：主机2年有限硬件保修；配件按品类及包装条款",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-9",
@@ -2960,54 +3113,54 @@ const SURFACE_DATA = {
             "image": "./assets/products/surface-pro-9-forest.png"
           }
         ],
-        "chassisMaterial": "阳极氧化铝",
+        "chassisMaterial": "铝",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "Windows 11 家庭版",
+        "osAtLaunch": "Intel：Windows11家庭版；SQ3：ARM版Windows11家庭版",
         "cpuModel": "Intel i5-1235U / i7-1255U；5G版Microsoft SQ3",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
-        "gpuModel": "英特尔® Iris® Xe 或 Microsoft SQ® 3 Adreno™",
-        "npuModel": "not_disclosed",
+        "gpuModel": "Intel Iris Xe；SQ3 Adreno 8CX Gen3",
+        "npuModel": "SQ3配置有NPU；此页未给出型号或TOPS",
         "npuTops": "not_disclosed",
         "copilotPlus": "not_disclosed",
         "ramSpec": "Intel：8/16/32GB LPDDR5；SQ3：8/16GB LPDDR4x",
         "storageOptions": "Intel：128/256/512GB/1TB；SQ3：128/256/512GB，均为可拆卸SSD",
-        "ssdRemovable": "可拆卸式固态硬盘",
+        "ssdRemovable": "可拆卸SSD，须按官方维修要求操作",
         "expandableStorage": "not_applicable",
-        "screenSize": "13.0 英寸 PixelSense™ Flow",
+        "screenSize": "13英寸 PixelSense Flow",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "2880 × 1920",
         "ppi": "267 PPI",
         "refreshRate": "动态刷新率最高120Hz",
         "brightness": "not_disclosed",
-        "colorSupport": "sRGB 和 Vivid",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
-        "frontCamera": "1080p 全高清 Windows Hello 镜头",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "1000 万像素 4K 视频录制",
-        "videoFeatures": "Windows Studio 特效 (仅 SQ3 5G版支持)",
-        "microphones": "not_disclosed",
-        "speakers": "2W 双扬声器，杜比全景声",
-        "audioTech": "not_disclosed",
+        "colorSupport": "sRGB和Vivid；1200:1；自适应颜色",
+        "touchAndPenProtocol": "10点触控；MPP",
+        "frontCamera": "1080p全高清",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "1000万像素自动对焦，1080p及4K视频",
+        "videoFeatures": "SQ3：Windows Studio眼神接触、背景虚化、自动构图及语音聚焦",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "2W立体声，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
         "headphoneJack": "not_applicable",
         "usbPorts": "Intel：2个USB-C（USB4/Thunderbolt 4）；SQ3：2个USB-C 3.2；均有Surface Connect和键盘接口",
-        "thunderboltSupport": "not_disclosed",
-        "surfaceConnect": "配备 Surface Connect",
-        "wireless": "Wi-Fi 6E + 蓝牙 5.1",
-        "cellular": "可选 5G（NanoSIM）",
+        "thunderboltSupport": "Intel配置支持Thunderbolt4；SQ3接口按USB-C3.2列示",
+        "surfaceConnect": "配备Surface Connect",
+        "wireless": "Wi-Fi6E；蓝牙5.1",
+        "cellular": "SQ3配置支持5G、nano SIM和eSIM；频段按地区另核验",
         "batteryCapacityWh": "额定47.7 Wh；最小46.5 Wh",
-        "batteryLifeOffice": "Intel版约 15.5 小时 / 5G版约 19 小时",
+        "batteryLifeOffice": "Intel最长15.5小时；SQ3最长19小时（典型设备使用，非办公实测）",
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "Wi-Fi 版最低/标配 60W（型号 1706）；5G 版最低充电 39W、标配 39W（型号 1963）",
         "fastCharging": "推荐快充 60W",
-        "compatibleKeyboard": "Surface Pro 特制专业键盘盖",
-        "penHapticFeedback": "支持",
-        "penChargingType": "磁吸笔槽无线充电",
+        "compatibleKeyboard": "Pro Keyboard、Pro Signature Keyboard、Pro X Keyboard、Pro X Signature Keyboard",
+        "penHapticFeedback": "支持Slim Pen2触觉信号",
+        "penChargingType": "另售Pro Signature Keyboard提供Slim Pen2存储及无线充电",
         "trackpadType": "机械触控板",
-        "tpmChip": "固件 TPM 2.0 / 商业版配备硬件 TPM",
+        "tpmChip": "Intel：固件TPM2.0；SQ3：Microsoft Pluton",
         "securedCorePc": "支持",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持 Intune",
         "dimensionsMm": "287 × 209 × 9.3 mm",
         "weightGrams": "Intel 879g；SQ3毫米波配置883g（毫米波仅美国，不代表所有5G配置）",
@@ -3111,8 +3264,217 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-9"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-9",
+          "value": "铝",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-9",
+          "value": "Intel：Windows11家庭版；SQ3：ARM版Windows11家庭版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-9",
+          "value": "Intel Iris Xe；SQ3 Adreno 8CX Gen3",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "npuModel": {
+          "configuration": "pro-9",
+          "value": "SQ3配置有NPU；此页未给出型号或TOPS",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ssdRemovable": {
+          "configuration": "pro-9",
+          "value": "可拆卸SSD，须按官方维修要求操作",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "screenSize": {
+          "configuration": "pro-9",
+          "value": "13英寸 PixelSense Flow",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-9",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "pro-9",
+          "value": "sRGB和Vivid；1200:1；自适应颜色",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-9",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-9",
+          "value": "1080p全高清",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-9",
+          "value": "1000万像素自动对焦，1080p及4K视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-9",
+          "value": "SQ3：Windows Studio眼神接触、背景虚化、自动构图及语音聚焦",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-9",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-9",
+          "value": "2W立体声，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-9",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-9",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-9",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-9",
+          "value": "Intel：固件TPM2.0；SQ3：Microsoft Pluton",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "pro-9",
+          "value": "Intel配置支持Thunderbolt4；SQ3接口按USB-C3.2列示",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-9",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "wireless": {
+          "configuration": "pro-9",
+          "value": "Wi-Fi6E；蓝牙5.1",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "pro-9",
+          "value": "SQ3配置支持5G、nano SIM和eSIM；频段按地区另核验",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeOffice": {
+          "configuration": "pro-9",
+          "value": "Intel最长15.5小时；SQ3最长19小时（典型设备使用，非办公实测）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "penHapticFeedback": {
+          "configuration": "pro-9",
+          "value": "支持Slim Pen2触觉信号",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "pro-9",
+          "value": "另售Pro Signature Keyboard提供Slim Pen2存储及无线充电",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-9",
+          "value": "Pro Keyboard、Pro Signature Keyboard、Pro X Keyboard、Pro X Signature Keyboard",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-8",
@@ -3148,13 +3510,13 @@ const SURFACE_DATA = {
             "image": "./assets/products/surface-pro-13-black.png"
           }
         ],
-        "chassisMaterial": "签名氧化铝",
-        "kickstandType": "not_disclosed",
+        "chassisMaterial": "阳极氧化铝",
+        "kickstandType": "全阻尼支架，最高165度",
         "osAtLaunch": "Windows 11 家庭版",
         "cpuModel": "Intel Core i5-1135G7 / i7-1185G7（四核）",
         "cpuArch": "64 位 / 10 nm SuperFin",
-        "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® Iris® Xe Graphics",
+        "cpuCores": "四核",
+        "gpuModel": "Intel Iris Xe",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
@@ -3170,18 +3532,18 @@ const SURFACE_DATA = {
         "refreshRate": "最高120Hz，默认60Hz",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
-        "frontCamera": "500 万像素 1080p 镜头",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "1000 万像素自动对焦后摄",
-        "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "2W 立体声扬声器，杜比全景声",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p全高清",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "1000万像素自动对焦，1080p及4K视频",
+        "videoFeatures": "前置1080p；后置1080p/4K",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "2W立体声，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "2个USB-C（USB4/Thunderbolt 4）；Surface Connect；键盘接口",
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
-        "surfaceConnect": "配备 Surface Connect",
+        "thunderboltSupport": "2个USB-C支持USB4/Thunderbolt4",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6 (802.11ax)；蓝牙5.1",
         "cellular": "可选 LTE Advanced",
         "batteryCapacityWh": "额定51.5 Wh；最小50.2 Wh",
@@ -3189,13 +3551,13 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "最低充电 60W；标配 60W（型号 1706）",
         "fastCharging": "推荐快充 60W",
-        "compatibleKeyboard": "Surface Pro 特制键盘盖 (首次采用隐藏式笔槽)",
-        "penHapticFeedback": "支持Slim Pen 2触觉信号",
-        "penChargingType": "须使用支持收纳充电的Surface Pro Signature Keyboard等另售配件",
+        "compatibleKeyboard": "Surface Pro Signature Keyboard（另售）",
+        "penHapticFeedback": "Windows 11下支持Slim Pen 2触觉信号；笔另售",
+        "penChargingType": "另售Signature Keyboard提供Slim Pen 2存储与无线充电",
         "trackpadType": "机械触控板",
         "tpmChip": "TPM 2.0",
         "securedCorePc": "部分机型支持",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持",
         "dimensionsMm": "287 × 208 × 9.3 mm",
         "weightGrams": "891 g（不含键盘）",
@@ -3217,6 +3579,7 @@ const SURFACE_DATA = {
         "thermalDesign"
       ],
       "evidenceSources": [
+        "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
         "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs"
       ],
       "specEvidence": {
@@ -3325,22 +3688,175 @@ const SURFACE_DATA = {
           "configuration": "pro-8"
         },
         "penHapticFeedback": {
-          "value": "支持Slim Pen 2触觉信号",
-          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
+          "configuration": "pro-8",
+          "value": "Windows 11下支持Slim Pen 2触觉信号；笔另售",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-8"
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
         },
         "penChargingType": {
-          "value": "须使用支持收纳充电的Surface Pro Signature Keyboard等另售配件",
-          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
+          "configuration": "pro-8",
+          "value": "另售Signature Keyboard提供Slim Pen 2存储与无线充电",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-8"
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-8",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "pro-8",
+          "value": "全阻尼支架，最高165度",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "cpuCores": {
+          "configuration": "pro-8",
+          "value": "四核",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-8",
+          "value": "Intel Iris Xe",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-8",
+          "value": "267 PPI",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-8",
+          "value": "10点触控",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-8",
+          "value": "500万像素，1080p全高清",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-8",
+          "value": "1000万像素自动对焦，1080p及4K视频",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-8",
+          "value": "前置1080p；后置1080p/4K",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-8",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-8",
+          "value": "2W立体声，Dolby Atmos",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-8",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-8",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "pro-8",
+          "value": "2个USB-C支持USB4/Thunderbolt4",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-8",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-8",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-8",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-8",
+          "value": "TPM 2.0",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-8",
+          "value": "Surface Pro Signature Keyboard（另售）",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-7-plus",
@@ -3374,21 +3890,21 @@ const SURFACE_DATA = {
             "material": "特制镁合金 (哑光黑涂层)"
           }
         ],
-        "chassisMaterial": "镁合金",
+        "chassisMaterial": "镁合金一体机身",
         "kickstandType": "not_disclosed",
         "osAtLaunch": "not_disclosed",
-        "cpuModel": "Intel 11代酷睿 i3-1115G4 / i5-1135G7 / i7-1165G7",
+        "cpuModel": "i3-1115G4（Wi-Fi）；i5-1135G7（Wi-Fi/LTE）；i7-1165G7（Wi-Fi）",
         "cpuArch": "64 位 / 10 nm SuperFin",
-        "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® UHD Graphics (i3) / Intel® Iris® Xe Graphics (i5)",
+        "cpuCores": "i3双核；i5/i7四核",
+        "gpuModel": "i3：Intel UHD Graphics；i5/i7：Iris Xe",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
-        "ramSpec": "8GB / 16GB / 32GB LPDDR4x",
-        "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
-        "ssdRemovable": "可拆卸式固态硬盘",
-        "expandableStorage": "not_disclosed",
-        "screenSize": "12.3 英寸 PixelSense™",
+        "ramSpec": "8GB/16GB LPDDR4x（Wi-Fi/LTE）；32GB（Wi-Fi）",
+        "storageOptions": "128GB/256GB SSD（Wi-Fi/LTE）；512GB/1TB（Wi-Fi）",
+        "ssdRemovable": "可拆卸SSD；仅限熟练技术人员按微软说明操作，非用户自行拆卸",
+        "expandableStorage": "Wi-Fi版MicroSDXC；LTE版nano SIM插槽",
+        "screenSize": "12.3英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "2736 × 1824",
@@ -3396,39 +3912,39 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
-        "frontCamera": "not_disclosed",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "not_disclosed",
-        "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "1 × USB-C 3.1 + 1 × USB-A 3.0",
+        "touchAndPenProtocol": "10点触控；Microsoft Pen Protocol（MPP）",
+        "frontCamera": "500万像素，1080p全高清",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p全高清",
+        "videoFeatures": "前后摄像头支持1080p全高清视频",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "1.6W立体声扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "USB-C；全尺寸USB-A；Surface Connect；键盘盖接口",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
-        "wireless": "Wi-Fi 6 + 蓝牙 5.0",
-        "cellular": "not_disclosed",
-        "batteryCapacityWh": "47.4 Wh",
-        "batteryLifeOffice": "长达 15 小时典型使用",
+        "surfaceConnect": "配备Surface Connect",
+        "wireless": "Wi-Fi 6（802.11ax）；蓝牙5.0",
+        "cellular": "可选LTE Advanced；Snapdragon X20；实体SIM和eSIM",
+        "batteryCapacityWh": "额定47.4 Wh；最小45.8 Wh",
+        "batteryLifeOffice": "Wi-Fi最长15小时；LTE最长13.5小时（典型设备使用，非办公实测）",
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "最低充电 60W；标配 60W（型号 1706）",
         "fastCharging": "not_applicable",
-        "compatibleKeyboard": "经典 Surface Pro 专业键盘盖",
+        "compatibleKeyboard": "仅Surface Pro Type Cover及Signature Type Cover（另售）",
         "penHapticFeedback": "不支持 (无震动马达)",
         "penChargingType": "AAAA 电池供电 (侧边磁吸)",
         "trackpadType": "传统机械触控板",
         "tpmChip": "TPM 2.0",
         "securedCorePc": "支持",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "商业版 Intune 与 Autopilot",
-        "dimensionsMm": "292 × 201 × 8.5",
-        "weightGrams": "770g (i5)",
+        "dimensionsMm": "292 × 201 × 8.5 mm",
+        "weightGrams": "不含键盘：i3/i5 Wi-Fi770g；i5 LTE796g；i7 Wi-Fi784g",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "i3/i5 无风扇静音，i7 主动风扇",
         "repairabilityScore": "not_disclosed",
-        "replaceableParts": "SSD 固态硬盘",
+        "replaceableParts": "SSD须由熟练技术人员按官方要求拆卸",
         "warranty": "not_disclosed",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
@@ -3443,7 +3959,277 @@ const SURFACE_DATA = {
         "colorStatus": "pending",
         "evidenceFile": "releases/verification-20260930-batch03/image-review.json"
       },
-      "unverifiedFields": []
+      "unverifiedFields": [],
+      "specEvidence": {
+        "cpuModel": {
+          "configuration": "pro-7-plus",
+          "value": "i3-1115G4（Wi-Fi）；i5-1135G7（Wi-Fi/LTE）；i7-1165G7（Wi-Fi）",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "cpuCores": {
+          "configuration": "pro-7-plus",
+          "value": "i3双核；i5/i7四核",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "ramSpec": {
+          "configuration": "pro-7-plus",
+          "value": "8GB/16GB LPDDR4x（Wi-Fi/LTE）；32GB（Wi-Fi）",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "pro-7-plus",
+          "value": "128GB/256GB SSD（Wi-Fi/LTE）；512GB/1TB（Wi-Fi）",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "ssdRemovable": {
+          "configuration": "pro-7-plus",
+          "value": "可拆卸SSD；仅限熟练技术人员按微软说明操作，非用户自行拆卸",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "screenSize": {
+          "configuration": "pro-7-plus",
+          "value": "12.3英寸 PixelSense",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "resolution": {
+          "configuration": "pro-7-plus",
+          "value": "2736 × 1824",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-7-plus",
+          "value": "267 PPI",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "aspectRatio": {
+          "configuration": "pro-7-plus",
+          "value": "3:2",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-7-plus",
+          "value": "10点触控；Microsoft Pen Protocol（MPP）",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-7-plus",
+          "value": "500万像素，1080p全高清",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-7-plus",
+          "value": "800万像素自动对焦，1080p全高清",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-7-plus",
+          "value": "前后摄像头支持1080p全高清视频",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-7-plus",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-7-plus",
+          "value": "1.6W立体声扬声器，Dolby Atmos",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-7-plus",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-7-plus",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "pro-7-plus",
+          "value": "USB-C；全尺寸USB-A；Surface Connect；键盘盖接口",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-7-plus",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "pro-7-plus",
+          "value": "Wi-Fi版MicroSDXC；LTE版nano SIM插槽",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "wireless": {
+          "configuration": "pro-7-plus",
+          "value": "Wi-Fi 6（802.11ax）；蓝牙5.0",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "pro-7-plus",
+          "value": "可选LTE Advanced；Snapdragon X20；实体SIM和eSIM",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryCapacityWh": {
+          "configuration": "pro-7-plus",
+          "value": "额定47.4 Wh；最小45.8 Wh",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeOffice": {
+          "configuration": "pro-7-plus",
+          "value": "Wi-Fi最长15小时；LTE最长13.5小时（典型设备使用，非办公实测）",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "dimensionsMm": {
+          "configuration": "pro-7-plus",
+          "value": "292 × 201 × 8.5 mm",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "weightGrams": {
+          "configuration": "pro-7-plus",
+          "value": "不含键盘：i3/i5 Wi-Fi770g；i5 LTE796g；i7 Wi-Fi784g",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-7-plus",
+          "value": "i3：Intel UHD Graphics；i5/i7：Iris Xe",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-7-plus",
+          "value": "镁合金一体机身",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-7-plus",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-7-plus",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-7-plus",
+          "value": "TPM 2.0",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-7-plus",
+          "value": "仅Surface Pro Type Cover及Signature Type Cover（另售）",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        },
+        "replaceableParts": {
+          "configuration": "pro-7-plus",
+          "value": "SSD须由熟练技术人员按官方要求拆卸",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "region": "GLOBAL",
+          "configurationScope": "美国Pro7+商用规格页；按Wi-Fi/LTE与CPU限定，不证明中国售价/保修或最初出厂系统",
+          "reviewedAt": "2026-10-09"
+        }
+      },
+      "evidenceSources": [
+        "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/"
+      ],
+      "dataConflicts": []
     },
     {
       "id": "pro-7",
@@ -3478,13 +4264,13 @@ const SURFACE_DATA = {
             "material": "特制镁合金 (哑光黑涂层)"
           }
         ],
-        "chassisMaterial": "镁合金",
+        "chassisMaterial": "镁合金一体机身",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "Windows 10 家庭版",
+        "osAtLaunch": "Windows 10家庭版",
         "cpuModel": "Intel Core i3-1005G1 / i5-1035G4 / i7-1065G7",
         "cpuArch": "64 位 / 10 nm",
         "cpuCores": "i3双核；i5/i7四核",
-        "gpuModel": "Intel® UHD Graphics / Intel® Iris™ Plus Graphics",
+        "gpuModel": "i3：Intel UHD Graphics；i5/i7：Intel Iris Plus",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
@@ -3500,18 +4286,18 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "500 万像素 1080p",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "800 万像素",
-        "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "1.6W 杜比扬声器",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p全高清",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p全高清",
+        "videoFeatures": "前后摄像头1080p视频",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "1.6W立体声，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "1个USB-C；1个USB-A；Surface Connect；键盘接口",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6 (802.11ax)；蓝牙5.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -3523,9 +4309,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "不支持",
         "penChargingType": "磁吸附侧边 (AAAA 电池)",
         "trackpadType": "机械触控板",
-        "tpmChip": "固件 TPM",
+        "tpmChip": "固件TPM（该页未说明版本）",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "基础管理",
         "dimensionsMm": "292 × 201 × 8.5 mm",
         "weightGrams": "i3/i5 775g；i7 790g（不含键盘）",
@@ -3533,7 +4319,7 @@ const SURFACE_DATA = {
         "thermalDesign": "i3/i5 无风扇，i7 风扇主动散热",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；非中国保修认证",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
@@ -3653,8 +4439,145 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-7"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-7",
+          "value": "镁合金一体机身",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-7",
+          "value": "Windows 10家庭版",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-7",
+          "value": "i3：Intel UHD Graphics；i5/i7：Intel Iris Plus",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-7",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-7",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-7",
+          "value": "500万像素，1080p全高清",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-7",
+          "value": "800万像素自动对焦，1080p全高清",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-7",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-7",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-7",
+          "value": "1.6W立体声，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-7",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-7",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-7",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-7",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-7",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-7",
+          "value": "固件TPM（该页未说明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "pro-7",
+          "value": "全球支持页：1年有限硬件保修；非中国保修认证",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-6",
@@ -3689,9 +4612,9 @@ const SURFACE_DATA = {
             "material": "特制镁合金 (哑光黑涂层)"
           }
         ],
-        "chassisMaterial": "镁合金",
+        "chassisMaterial": "镁合金一体机身",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "Windows 10 家庭版",
+        "osAtLaunch": "Windows 10家庭版（消费者）",
         "cpuModel": "Intel Core i5-8250U / i7-8650U",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
@@ -3702,7 +4625,7 @@ const SURFACE_DATA = {
         "ramSpec": "8GB / 16GB",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "配备 MicroSDXC 读卡器",
+        "expandableStorage": "microSDXC UHS-I",
         "screenSize": "12.3 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -3711,18 +4634,18 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "500 万像素 1080p",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "800 万像素自动对焦",
-        "videoFeatures": "not_disclosed",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p视频",
+        "videoFeatures": "前后摄像头1080p视频",
         "microphones": "双麦克风",
-        "speakers": "1.6W 立体声扬声器",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "1 × USB 3.0 + 1 × Mini DisplayPort",
+        "speakers": "1.6W立体声，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "全尺寸USB3.0；Mini DisplayPort；Surface Connect；键盘盖接口",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.1",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -3736,7 +4659,7 @@ const SURFACE_DATA = {
         "trackpadType": "机械触控板",
         "tpmChip": "TPM 2.0",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "基础管理",
         "dimensionsMm": "292 × 201 × 8.5 mm",
         "weightGrams": "i5 770g；i7 784g（不含键盘）",
@@ -3856,8 +4779,137 @@ const SURFACE_DATA = {
           "configurationScope": "同页明确区分消费版i5-8250U与商用版i5-8350U；其余为共同硬件，不证明中国销售配置",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-6"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-6",
+          "value": "镁合金一体机身",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-6",
+          "value": "Windows 10家庭版（消费者）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-6",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-6",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "pro-6",
+          "value": "microSDXC UHS-I",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-6",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-6",
+          "value": "800万像素自动对焦，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-6",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-6",
+          "value": "双麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-6",
+          "value": "1.6W立体声，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-6",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-6",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "pro-6",
+          "value": "全尺寸USB3.0；Mini DisplayPort；Surface Connect；键盘盖接口",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-6",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-6",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-6",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-5",
@@ -3888,7 +4940,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "not_disclosed",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "i5/i7：Windows 10专业版；m3：家庭版",
         "cpuModel": "Intel 第7代 Core m3 / i5 / i7",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
@@ -3899,7 +4951,7 @@ const SURFACE_DATA = {
         "ramSpec": "4GB / 8GB / 16GB",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "配备 MicroSDXC 读卡器",
+        "expandableStorage": "microSDXC UHS-I",
         "screenSize": "12.3 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -3908,20 +4960,20 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
+        "touchAndPenProtocol": "10点触控",
         "frontCamera": "500万像素，1080p视频",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "800万像素自动对焦，1080p视频",
-        "videoFeatures": "not_disclosed",
+        "videoFeatures": "前后摄像头1080p视频",
         "microphones": "双麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "1 × 全尺寸 USB 3.0 + 1 × Mini DisplayPort",
+        "speakers": "1.6W立体声扬声器，Dolby Audio Premium",
+        "audioTech": "Dolby Audio Premium",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "USB3.0；Mini DisplayPort；Surface Connect；键盘接口",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.1",
-        "cellular": "not_disclosed",
+        "cellular": "LTE配置：Cat9，最高450Mbps；nano SIM和eSIM，地区频段另核验",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "not_disclosed",
         "batteryLifeVideo": "Wi-Fi最长13.5小时；4G最长12.5小时（官方本地视频测试）",
@@ -3931,9 +4983,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "不支持",
         "penChargingType": "侧边磁吸 (AAAA 电池)",
         "trackpadType": "机械触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "TPM芯片（未在此表确认版本）",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "基础企业管理",
         "dimensionsMm": "292 × 201 × 8.5 mm",
         "weightGrams": "m3 768g；i5 Wi-Fi 770g；i5 LTE 812g；i7 784g",
@@ -3941,7 +4993,7 @@ const SURFACE_DATA = {
         "thermalDesign": "m3 与 i5 全面无风扇零静音",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
+        "warranty": "该全球支持页：1年有限硬件保修；非中国保修认证",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-16",
@@ -4061,8 +5113,137 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-5"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-5",
+          "value": "i5/i7：Windows 10专业版；m3：家庭版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-5",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-5",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-5",
+          "value": "TPM芯片（未在此表确认版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-5",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-5",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "pro-5",
+          "value": "LTE配置：Cat9，最高450Mbps；nano SIM和eSIM，地区频段另核验",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "pro-5",
+          "value": "microSDXC UHS-I",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "pro-5",
+          "value": "USB3.0；Mini DisplayPort；Surface Connect；键盘接口",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-5",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-5",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-5",
+          "value": "双麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-5",
+          "value": "1.6W立体声扬声器，Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-5",
+          "value": "Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-5",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "pro-5",
+          "value": "该全球支持页：1年有限硬件保修；非中国保修认证",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-4",
@@ -4093,18 +5274,18 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "最大150度支架",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows 10专业版",
         "cpuModel": "Intel 第6代 Core m3 / i5 / i7",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® HD Graphics 515 / HD Graphics 520 / Iris™ Graphics",
+        "gpuModel": "m3：HD515；i5：HD520；i7：Intel Iris",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
         "ramSpec": "4GB / 8GB / 16GB",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "配备 MicroSDXC 读卡器",
+        "expandableStorage": "microSD UHS-I读卡器",
         "screenSize": "12.3 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -4117,31 +5298,31 @@ const SURFACE_DATA = {
         "frontCamera": "500万像素，1080p视频",
         "windowsHello": "红外人脸识别",
         "rearCamera": "800万像素自动对焦，1080p视频",
-        "videoFeatures": "not_disclosed",
-        "microphones": "立体麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
+        "videoFeatures": "前后摄像头1080p视频",
+        "microphones": "立体声麦克风",
+        "speakers": "立体声扬声器，Dolby Audio Premium",
+        "audioTech": "Dolby Audio Premium",
         "headphoneJack": "3.5 mm耳机插孔",
         "usbPorts": "全尺寸USB 3.0；Mini DisplayPort 1.2",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
-        "wireless": "Wi-Fi 5 (ac) + 蓝牙 4.0",
+        "surfaceConnect": "配备Surface Connect",
+        "wireless": "Wi-Fi 802.11ac，兼容a/b/g/n；蓝牙4.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "not_disclosed",
-        "batteryLifeVideo": "最长 9 小时本地视频播放",
+        "batteryLifeVideo": "本地视频播放最长9小时（官方测试）",
         "chargingPower": "最低充电 31W；标配 31W（型号 1625）；Core M 最低/标配 24W（型号 1735）",
         "fastCharging": "not_applicable",
-        "compatibleKeyboard": "扩大玻璃触控板的 Pro 4 专业键盘盖",
+        "compatibleKeyboard": "Surface Pro4 Type Cover（另售）",
         "penHapticFeedback": "不支持",
-        "penChargingType": "侧边强磁吸附 (AAAA 电池)",
+        "penChargingType": "机身侧面磁吸存储；该页未证明充电方式",
         "trackpadType": "机械触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "TPM芯片（该表未说明版本）",
         "securedCorePc": "否",
         "biometrics": "Windows Hello 人脸识别",
         "enterpriseManage": "支持",
         "dimensionsMm": "292.10 × 201.42 × 8.45 mm",
-        "weightGrams": "766g (m3) / 786g (i5/i7)",
+        "weightGrams": "m3：766g；i5/i7：786g",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "混合冷却系统",
         "repairabilityScore": "not_disclosed",
@@ -4274,8 +5455,137 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-4"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-4",
+          "value": "镁合金",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-4",
+          "value": "Windows 10专业版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-4",
+          "value": "TPM芯片（该表未说明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "weightGrams": {
+          "configuration": "pro-4",
+          "value": "m3：766g；i5/i7：786g",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "pro-4",
+          "value": "128GB / 256GB / 512GB / 1TB SSD",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-4",
+          "value": "m3：HD515；i5：HD520；i7：Intel Iris",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryLifeVideo": {
+          "configuration": "pro-4",
+          "value": "本地视频播放最长9小时（官方测试）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "pro-4",
+          "value": "microSD UHS-I读卡器",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-4",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-4",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-4",
+          "value": "立体声麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-4",
+          "value": "立体声扬声器，Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-4",
+          "value": "Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "wireless": {
+          "configuration": "pro-4",
+          "value": "Wi-Fi 802.11ac，兼容a/b/g/n；蓝牙4.0",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "pro-4",
+          "value": "机身侧面磁吸存储；该页未证明充电方式",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-4",
+          "value": "Surface Pro4 Type Cover（另售）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-3",
@@ -4306,7 +5616,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "not_disclosed",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows 8.1专业版或Windows 10，取决于购买时间",
         "cpuModel": "Intel 第4代 Core i3 / i5 / i7",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
@@ -4326,15 +5636,15 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "not_disclosed",
+        "touchAndPenProtocol": "多点触控；支持Surface Pen",
         "frontCamera": "500万像素",
         "windowsHello": "not_applicable",
         "rearCamera": "500万像素",
         "videoFeatures": "not_applicable",
         "microphones": "立体声麦克风",
         "speakers": "立体声扬声器，Dolby音效",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "耳机/音频插孔",
         "usbPorts": "全尺寸USB 3.0；Mini DisplayPort 1.2",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "not_disclosed",
@@ -4511,8 +5821,41 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-3"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-3",
+          "value": "Windows 8.1专业版或Windows 10，取决于购买时间",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-3",
+          "value": "多点触控；支持Surface Pen",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-3",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-3",
+          "value": "耳机/音频插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-2",
@@ -5103,19 +6446,19 @@ const SURFACE_DATA = {
             "material": "特种阳极氧化铝 (哑光黑)"
           }
         ],
-        "chassisMaterial": "氧化铝",
+        "chassisMaterial": "阳极氧化铝，碳复合材料无风扇散热",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Wi-Fi：ARM版Windows11家庭版；LTE：ARM版Windows10家庭版，可升级Windows11",
         "cpuModel": "Microsoft SQ1 / SQ2",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
-        "gpuModel": "SQ1：Adreno 685；SQ2：Adreno 690",
+        "gpuModel": "SQ1：Adreno685；SQ2：Adreno690",
         "npuModel": "not_disclosed",
         "npuTops": "not_disclosed",
         "copilotPlus": "not_disclosed",
         "ramSpec": "8GB / 16GB LPDDR4x",
         "storageOptions": "128GB / 256GB / 512GB 可拆卸SSD",
-        "ssdRemovable": "可拆卸式固态硬盘；用户不可自行拆卸，仅可由技术人员按微软说明拆卸",
+        "ssdRemovable": "可拆卸SSD；不供用户自行拆卸，仅限熟练技术人员依微软说明操作",
         "expandableStorage": "not_applicable",
         "screenSize": "13 英寸 PixelSense",
         "aspectRatio": "3:2",
@@ -5125,32 +6468,32 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
-        "frontCamera": "not_disclosed",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "not_disclosed",
-        "videoFeatures": "AI 人眼视线自动校正",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
+        "touchAndPenProtocol": "10点触控；MPP",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "1000万像素自动对焦，1080p及4K视频",
+        "videoFeatures": "前置1080p；后置1080p/4K",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "2W立体声，Dolby Audio",
+        "audioTech": "Dolby Audio",
         "headphoneJack": "not_applicable",
         "usbPorts": "2个USB-C；Surface Connect；键盘接口；LTE配置nanoSIM",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 5 (802.11ac)；蓝牙5.0",
-        "cellular": "not_disclosed",
+        "cellular": "LTE配置：Snapdragon X24，nano SIM/eSIM，GPS/GLONASS；地区频段另核验",
         "batteryCapacityWh": "额定39.2 Wh；最小38.2 Wh",
         "batteryLifeOffice": "Wi-Fi/LTE典型设备使用最长15小时（官方测试，非办公实测）",
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "最低充电 60W；标配 60W（型号 1706）",
         "fastCharging": "推荐快充 60W",
-        "compatibleKeyboard": "Surface Pro X 特制签名版键盘盖",
+        "compatibleKeyboard": "Surface Pro Signature Keyboard或Surface Pro X Keyboard",
         "penHapticFeedback": "初代 Slim Pen (无震动马达)",
         "penChargingType": "键盘笔槽磁吸无线充电",
         "trackpadType": "机械触控板",
-        "tpmChip": "固件 TPM",
+        "tpmChip": "固件TPM（该页未注明版本）",
         "securedCorePc": "支持",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持商业管理",
         "dimensionsMm": "287 × 208 × 7.3 mm",
         "weightGrams": "774 g",
@@ -5247,12 +6590,12 @@ const SURFACE_DATA = {
           "configuration": "pro-x"
         },
         "gpuModel": {
-          "value": "SQ1：Adreno 685；SQ2：Adreno 690",
+          "configuration": "pro-x",
+          "value": "SQ1：Adreno685；SQ2：Adreno690",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-x"
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         },
         "batteryLifeOffice": {
           "value": "Wi-Fi/LTE典型设备使用最长15小时（官方测试，非办公实测）",
@@ -5285,8 +6628,145 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-x"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-x",
+          "value": "阳极氧化铝，碳复合材料无风扇散热",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-x",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-x",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-x",
+          "value": "固件TPM（该页未注明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-x",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-x",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-x",
+          "value": "Wi-Fi：ARM版Windows11家庭版；LTE：ARM版Windows10家庭版，可升级Windows11",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ssdRemovable": {
+          "configuration": "pro-x",
+          "value": "可拆卸SSD；不供用户自行拆卸，仅限熟练技术人员依微软说明操作",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-x",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-x",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-x",
+          "value": "1000万像素自动对焦，1080p及4K视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-x",
+          "value": "前置1080p；后置1080p/4K",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-x",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-x",
+          "value": "2W立体声，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-x",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "pro-x",
+          "value": "LTE配置：Snapdragon X24，nano SIM/eSIM，GPS/GLONASS；地区频段另核验",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-x",
+          "value": "Surface Pro Signature Keyboard或Surface Pro X Keyboard",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-8-138-intel",
@@ -7495,7 +8975,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 11 专业版",
+        "osAtLaunch": "Windows11专业版或Windows10专业版",
         "cpuModel": "Intel Core Ultra 5 135H / Ultra 7 165H",
         "cpuArch": "64 位 / Intel 4",
         "cpuCores": "not_disclosed",
@@ -7511,36 +8991,36 @@ const SURFACE_DATA = {
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "13.5英寸：2256 × 1504；15英寸：2496 × 1664",
-        "ppi": "201 PPI",
+        "ppi": "201 PPI（13.5/15英寸）",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "sRGB 和增强型",
-        "touchAndPenProtocol": "10点触控；支持MPP",
+        "colorSupport": "1300:1；sRGB、增强型；独立校色、自适应颜色；Dolby Vision IQ",
+        "touchAndPenProtocol": "10点触控；MPP；Gorilla Glass5",
         "frontCamera": "1080p Surface Studio前置摄像头",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
         "videoFeatures": "Windows Studio 特效",
-        "microphones": "矩阵式远场双麦克风",
-        "speakers": "Omnisonic® 扬声器，支持 Dolby® Atmos®",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "矩阵式远场双麦克风，具有音质处理功能",
+        "speakers": "Omnisonic扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos；蓝牙LE Audio",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "13.5英寸1个USB-C、15英寸2个USB-C（USB4/Thunderbolt 4）；均有USB-A 3.1、耳机插孔、Surface Connect",
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
-        "surfaceConnect": "配备 Surface Connect",
+        "thunderboltSupport": "13.5英寸1个、15英寸2个USB-C USB4/Thunderbolt4，支持DisplayPort2.1",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6E (802.11ax)；蓝牙5.3",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "最长 18.5 小时典型使用",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "13.5 英寸最低/标配 39W（型号 1963）；15 英寸最低 45W、标配 65W",
+        "chargingPower": "该认证翻新版包装：13.5英寸39W、15英寸65W；非最低输入功率",
         "fastCharging": "推荐快充 60W",
         "compatibleKeyboard": "背光键盘 + 机械触控板",
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
         "trackpadType": "机械触控板",
-        "tpmChip": "硬件TPM 2.0",
-        "securedCorePc": "认证 Secured-core PC",
-        "biometrics": "人脸识别 + 智能卡",
+        "tpmChip": "硬件TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心电脑",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持 vPro 与企业级固件锁",
         "dimensionsMm": "13.5英寸：308 × 223 × 16.7 mm；15英寸：340 × 244 × 16.9 mm",
         "weightGrams": "1380g (13.5\") / 1680g (15\")",
@@ -7548,7 +9028,7 @@ const SURFACE_DATA = {
         "thermalDesign": "高效双热管主动风冷",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "SSD、键盘、主板、电池",
-        "warranty": "2 年有限硬件保修",
+        "warranty": "该中国认证翻新版：主机2年有限硬件保修；配件按品类及包装条款",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
@@ -7574,12 +9054,12 @@ const SURFACE_DATA = {
           "configuration": "laptop-6-biz"
         },
         "npuModel": {
+          "configuration": "laptop-6-biz",
           "value": "Intel AI Boost",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新商用页硬件规格；不将其保修、价格或包装电源外推到全新机",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-6-biz"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         },
         "storageOptions": {
           "value": "256GB / 512GB / 1TB 可拆卸第4代SSD",
@@ -7638,30 +9118,151 @@ const SURFACE_DATA = {
           "configuration": "laptop-6-biz"
         },
         "frontCamera": {
+          "configuration": "laptop-6-biz",
           "value": "1080p Surface Studio前置摄像头",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新商用页硬件规格；不将其保修、价格或包装电源外推到全新机",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-6-biz"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         },
         "touchAndPenProtocol": {
-          "value": "10点触控；支持MPP",
+          "configuration": "laptop-6-biz",
+          "value": "10点触控；MPP；Gorilla Glass5",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新商用页硬件规格；不将其保修、价格或包装电源外推到全新机",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-6-biz"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         },
         "tpmChip": {
-          "value": "硬件TPM 2.0",
+          "configuration": "laptop-6-biz",
+          "value": "硬件TPM2.0，支持BitLocker",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新商用页硬件规格；不将其保修、价格或包装电源外推到全新机",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-6-biz"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-6-biz",
+          "value": "201 PPI（13.5/15英寸）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "laptop-6-biz",
+          "value": "1300:1；sRGB、增强型；独立校色、自适应颜色；Dolby Vision IQ",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "laptop-6-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "laptop-6-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "laptop-6-biz",
+          "value": "Windows11安全核心电脑",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-6-biz",
+          "value": "矩阵式远场双麦克风，具有音质处理功能",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-6-biz",
+          "value": "Omnisonic扬声器，Dolby Atmos",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-6-biz",
+          "value": "Dolby Atmos；蓝牙LE Audio",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-6-biz",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-6-biz",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "laptop-6-biz",
+          "value": "13.5英寸1个、15英寸2个USB-C USB4/Thunderbolt4，支持DisplayPort2.1",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-6-biz",
+          "value": "Windows11专业版或Windows10专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-6-biz",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "laptop-6-biz",
+          "value": "该认证翻新版包装：13.5英寸39W、15英寸65W；非最低输入功率",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "laptop-6-biz",
+          "value": "该中国认证翻新版：主机2年有限硬件保修；配件按品类及包装条款",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-5",
@@ -7709,9 +9310,9 @@ const SURFACE_DATA = {
             "image": "./assets/products/surface-laptop-dune.png"
           }
         ],
-        "chassisMaterial": "阳极氧化铝",
+        "chassisMaterial": "铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 11 家庭版",
+        "osAtLaunch": "Windows11家庭版",
         "cpuModel": "13.5英寸：Intel i5-1235U / i7-1255U；15英寸：i7-1255U",
         "cpuArch": "64 位 / Intel 7",
         "cpuCores": "not_disclosed",
@@ -7721,7 +9322,7 @@ const SURFACE_DATA = {
         "copilotPlus": "not_disclosed",
         "ramSpec": "13.5英寸：8/16GB；15英寸：8/16/32GB，LPDDR5x",
         "storageOptions": "13.5英寸：256/512GB；15英寸：256/512GB/1TB，可拆卸SSD",
-        "ssdRemovable": "可拆卸式固态硬盘",
+        "ssdRemovable": "可拆卸SSD，须遵循官方维修要求",
         "expandableStorage": "not_applicable",
         "screenSize": "13.5 / 15 英寸 PixelSense",
         "aspectRatio": "3:2",
@@ -7730,19 +9331,19 @@ const SURFACE_DATA = {
         "ppi": "201 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "sRGB 和 Vivid",
+        "colorSupport": "sRGB、Vivid；1300:1，独立校色",
         "touchAndPenProtocol": "10点多点触控；支持MPP与Surface Pen",
         "frontCamera": "720p HD",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
         "videoFeatures": "not_disclosed",
-        "microphones": "矩阵式远场双麦克风",
-        "speakers": "Omnisonic 杜比全景声扬声器",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "Omnisonic扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "USB-C（USB4/Thunderbolt 4）；USB-A 3.1；Surface Connect",
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
-        "surfaceConnect": "配备 Surface Connect",
+        "thunderboltSupport": "USB-C支持USB4/Thunderbolt4",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6 (802.11ax)；蓝牙5.1",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -7754,9 +9355,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
         "trackpadType": "机械触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "固件TPM2.0",
         "securedCorePc": "支持",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持",
         "dimensionsMm": "13.5英寸：308 × 223 × 14.5 mm；15英寸：340 × 244 × 14.7 mm",
         "weightGrams": "1272g (欧缔兰) / 1297g (金属) / 1545g (15寸)",
@@ -7863,12 +9464,12 @@ const SURFACE_DATA = {
           "configuration": "laptop-5"
         },
         "gpuModel": {
+          "configuration": "laptop-5",
           "value": "Intel Iris Xe",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-5"
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         },
         "usbPorts": {
           "value": "USB-C（USB4/Thunderbolt 4）；USB-A 3.1；Surface Connect",
@@ -7893,6 +9494,118 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "laptop-5"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-5",
+          "value": "铝",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-5",
+          "value": "201 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "laptop-5",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "laptop-5",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-5",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-5",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "laptop-5",
+          "value": "sRGB、Vivid；1300:1，独立校色",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-5",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-5",
+          "value": "Omnisonic扬声器，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-5",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "laptop-5",
+          "value": "固件TPM2.0",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-5",
+          "value": "Windows11家庭版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ssdRemovable": {
+          "configuration": "laptop-5",
+          "value": "可拆卸SSD，须遵循官方维修要求",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "laptop-5",
+          "value": "USB-C支持USB4/Thunderbolt4",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         }
       }
     },
@@ -8104,17 +9817,17 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 10 家庭版",
+        "osAtLaunch": "Windows10家庭版",
         "cpuModel": "13.5英寸：Intel i5-1035G7 / i7-1065G7；15英寸消费版：AMD Ryzen 5 3580U / Ryzen 7 3780U Surface Edition",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® Iris™ Plus / AMD Radeon™ Vega",
+        "gpuModel": "13.5英寸Intel Iris Plus；15英寸AMD Vega9/RX Vega11 Surface Edition",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
         "ramSpec": "13.5英寸：8/16GB LPDDR4x；15英寸AMD：8/16GB DDR4",
         "storageOptions": "128GB / 256GB / 512GB / 1TB 可拆卸SSD",
-        "ssdRemovable": "可拆卸式固态硬盘；用户不可自行拆卸，仅可由技术人员按微软说明拆卸",
+        "ssdRemovable": "可拆卸SSD；不供用户自行拆卸，仅限熟练技术人员依微软说明操作",
         "expandableStorage": "not_applicable",
         "screenSize": "13.5 / 15 英寸 PixelSense",
         "aspectRatio": "3:2",
@@ -8124,18 +9837,18 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控，支持 Surface 触控笔",
+        "touchAndPenProtocol": "10点触控；支持Surface Pen",
         "frontCamera": "720p HD",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
         "videoFeatures": "not_applicable",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "Omnisonic 杜比音效扬声器",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "Omnisonic扬声器，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "1个USB-C；1个USB-A；Surface Connect",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "13.5英寸Wi-Fi 6；15英寸AMD Wi-Fi 5；蓝牙5.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -8147,9 +9860,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
         "trackpadType": "机械触控板 (面积增大 20%)",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "固件TPM（未注明版本）",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持",
         "dimensionsMm": "13.5英寸：308 × 223 × 14.5 mm；15英寸：339.5 × 244 × 14.69 mm",
         "weightGrams": "13.5英寸砂岩金/雅黑1288g，钴蓝/铂金1265g；15英寸1542g",
@@ -8269,8 +9982,121 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "laptop-3"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-3",
+          "value": "铝",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-3",
+          "value": "201 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "laptop-3",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "laptop-3",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-3",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-3",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-3",
+          "value": "10点触控；支持Surface Pen",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-3",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-3",
+          "value": "Omnisonic扬声器，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-3",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "laptop-3",
+          "value": "固件TPM（未注明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-3",
+          "value": "Windows10家庭版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ssdRemovable": {
+          "configuration": "laptop-3",
+          "value": "可拆卸SSD；不供用户自行拆卸，仅限熟练技术人员依微软说明操作",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "laptop-3",
+          "value": "13.5英寸Intel Iris Plus；15英寸AMD Vega9/RX Vega11 Surface Edition",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-2",
@@ -8320,7 +10146,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 10 家庭版",
+        "osAtLaunch": "Windows10家庭版（消费者）；专业版（商业客户）",
         "cpuModel": "Intel 第8代 Core i5 / i7",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
@@ -8340,18 +10166,18 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控，支持 Surface 触控笔",
+        "touchAndPenProtocol": "10点触控；支持Surface Pen",
         "frontCamera": "720p HD",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
         "videoFeatures": "not_applicable",
-        "microphones": "立体麦克风",
-        "speakers": "Omnisonic 杜比音效扬声器",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "立体声麦克风",
+        "speakers": "Omnisonic扬声器，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "1 × 全尺寸 USB 3.0 + 1 × Mini DisplayPort",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.1",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -8363,9 +10189,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
         "trackpadType": "机械触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "TPM2.0",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "基础管理",
         "dimensionsMm": "308.1 × 223.27 × 14.48 mm",
         "weightGrams": "i5 1252g；i7 1283g",
@@ -8431,12 +10257,12 @@ const SURFACE_DATA = {
           "configuration": "laptop-2"
         },
         "ppi": {
+          "configuration": "laptop-2",
           "value": "201 PPI",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-2"
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         },
         "aspectRatio": {
           "value": "3:2",
@@ -8495,14 +10321,95 @@ const SURFACE_DATA = {
           "configuration": "laptop-2"
         },
         "tpmChip": {
-          "value": "TPM 2.0",
+          "configuration": "laptop-2",
+          "value": "TPM2.0",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-2"
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-2",
+          "value": "铝",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "laptop-2",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "laptop-2",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-2",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-2",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-2",
+          "value": "10点触控；支持Surface Pen",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-2",
+          "value": "立体声麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-2",
+          "value": "Omnisonic扬声器，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-2",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-2",
+          "value": "Windows10家庭版（消费者）；专业版（商业客户）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-1",
@@ -8551,7 +10458,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows10 S模式",
         "cpuModel": "Intel 第7代 Core i5 / i7",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
@@ -8571,18 +10478,18 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10点多点触控；支持Surface Pen",
+        "touchAndPenProtocol": "10点触控；支持Surface Pen",
         "frontCamera": "720p HD",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
         "videoFeatures": "not_applicable",
-        "microphones": "立体麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "立体声麦克风",
+        "speakers": "Omnisonic扬声器，Dolby Audio Premium",
+        "audioTech": "Dolby Audio Premium",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "1 × 全尺寸 USB 3.0 + 1 × Mini DisplayPort",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.0 LE",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -8594,9 +10501,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
         "trackpadType": "机械触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "TPM芯片（未注明版本）",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "基础管理",
         "dimensionsMm": "308.1 × 223.27 × 14.48 mm",
         "weightGrams": "i5 1252g；i7 1283g",
@@ -8662,12 +10569,12 @@ const SURFACE_DATA = {
           "configuration": "laptop-1"
         },
         "ppi": {
+          "configuration": "laptop-1",
           "value": "201 PPI",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-1"
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         },
         "aspectRatio": {
           "value": "3:2",
@@ -8726,14 +10633,95 @@ const SURFACE_DATA = {
           "configuration": "laptop-1"
         },
         "touchAndPenProtocol": {
-          "value": "10点多点触控；支持Surface Pen",
+          "configuration": "laptop-1",
+          "value": "10点触控；支持Surface Pen",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-1"
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-1",
+          "value": "铝",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "laptop-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "laptop-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-1",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-1",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-1",
+          "value": "立体声麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-1",
+          "value": "Omnisonic扬声器，Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-1",
+          "value": "Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "laptop-1",
+          "value": "TPM芯片（未注明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-1",
+          "value": "Windows10 S模式",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格；非中国SKU销售认证，配置限制按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "sls-2",
@@ -8763,12 +10751,12 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 11 家庭版",
+        "osAtLaunch": "Windows11家庭版（消费者）",
         "cpuModel": "Intel Core i7-13700H（消费者）",
         "cpuArch": "64 位 / Intel 7",
         "cpuCores": "not_disclosed",
         "gpuModel": "NVIDIA® GeForce RTX™ 4050 / 4060 或 NVIDIA® RTX™ 2000 Ada",
-        "npuModel": "not_disclosed",
+        "npuModel": "Intel Gen3 Movidius3700VC VPU AI加速器；不可据此推NPU TOPS",
         "npuTops": "not_disclosed",
         "copilotPlus": "not_disclosed",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
@@ -8782,33 +10770,33 @@ const SURFACE_DATA = {
         "ppi": "200 PPI",
         "refreshRate": "最高120Hz",
         "brightness": "SDR 最大 500 nits（典型值）；HDR 峰值 650 nits",
-        "colorSupport": "sRGB 和 Vivid",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
+        "colorSupport": "sRGB、Vivid；1500:1；独立校色",
+        "touchAndPenProtocol": "10点触控；MPP",
         "frontCamera": "1080p广角Surface Studio摄像头",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello2.0人脸识别",
         "rearCamera": "not_applicable",
-        "videoFeatures": "Windows Studio 特效",
-        "microphones": "矩阵式远场双麦克风",
-        "speakers": "支持 Dolby® Atmos® 音效的四声道 Omnisonic® 扬声器",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "2 × 雷电 4 (USB-C) + 1 × USB-A 3.1 + MicroSD 卡槽",
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
-        "surfaceConnect": "配备 Surface Connect",
+        "videoFeatures": "Windows Studio自动构图、眼神接触和背景虚化",
+        "microphones": "双远场Studio麦克风；Voice Clarity需Windows11及兼容应用",
+        "speakers": "四Omnisonic扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "2个USB-C USB4/Thunderbolt4；USB-A3.1；MicroSDXC；Surface Connect；3.5mm耳机插孔",
+        "thunderboltSupport": "USB4/Thunderbolt4，支持DisplayPort和Power Delivery",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6E；蓝牙5.3",
         "cellular": "not_applicable",
         "batteryCapacityWh": "额定58 Wh；最小56 Wh",
         "batteryLifeOffice": "集显最长19小时；独显非2TB最长18小时；独显2TB最长16小时（典型设备使用，非办公实测）",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "集显最低/标配 95W（型号 1798）；独显最低/标配 120W（型号 1932）",
+        "chargingPower": "该页附带：集显102W；NVIDIA独显120W（不是最低充电功率）",
         "fastCharging": "推荐快充 95W（集显）/ 120W（独显）",
         "compatibleKeyboard": "大面积触觉反馈触控板 + 沉浸背光键盘",
         "penHapticFeedback": "支持Slim Pen 2触觉信号",
-        "penChargingType": "掌托下方前沿磁吸无线充笔槽",
+        "penChargingType": "键盘下方Slim Pen2存储与充电",
         "trackpadType": "精准触觉反馈触控板，支持自适应触控模式",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "固件TPM2.0（消费者）",
         "securedCorePc": "认证 Secured-core PC",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello2.0人脸识别",
         "enterpriseManage": "支持企业级集中管理",
         "dimensionsMm": "323 × 230 × 22 mm",
         "weightGrams": "集显1.89kg；NVIDIA独显1.98kg",
@@ -8952,8 +10940,161 @@ const SURFACE_DATA = {
           "configurationScope": "同一支持页明确区分消费/商用CPU；其余共有硬件仅按明确列出的配置，不证明中国售价保修",
           "reviewedAt": "2026-10-09",
           "configuration": "sls-2"
+        },
+        "npuModel": {
+          "configuration": "sls-2",
+          "value": "Intel Gen3 Movidius3700VC VPU AI加速器；不可据此推NPU TOPS",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "sls-2",
+          "value": "200 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "sls-2",
+          "value": "sRGB、Vivid；1500:1；独立校色",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "sls-2",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "sls-2",
+          "value": "固件TPM2.0（消费者）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "sls-2",
+          "value": "Windows Hello2.0人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "sls-2",
+          "value": "Windows Hello2.0人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "sls-2",
+          "value": "Windows Studio自动构图、眼神接触和背景虚化",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "sls-2",
+          "value": "双远场Studio麦克风；Voice Clarity需Windows11及兼容应用",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "sls-2",
+          "value": "四Omnisonic扬声器，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "sls-2",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "sls-2",
+          "value": "2个USB-C USB4/Thunderbolt4；USB-A3.1；MicroSDXC；Surface Connect；3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "sls-2",
+          "value": "USB4/Thunderbolt4，支持DisplayPort和Power Delivery",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "sls-2",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "sls-2",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "sls-2",
+          "value": "键盘下方Slim Pen2存储与充电",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "sls-2",
+          "value": "Windows11家庭版（消费者）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "sls-2",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "sls-2",
+          "value": "该页附带：集显102W；NVIDIA独显120W（不是最低充电功率）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "sls-1",
@@ -8995,12 +11136,12 @@ const SURFACE_DATA = {
         "storageOptions": "256GB / 512GB / 1TB / 2TB SSD",
         "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
-        "screenSize": "14.4 英寸 PixelSense™ Flow",
+        "screenSize": "14.4英寸 PixelSense Flow触控屏",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "2400 × 1600",
         "ppi": "201 PPI",
-        "refreshRate": "最高 120Hz 刷新率",
+        "refreshRate": "最高120Hz",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
         "touchAndPenProtocol": "10 点触控，支持 Microsoft 触控笔协议（MPP）",
@@ -9008,13 +11149,13 @@ const SURFACE_DATA = {
         "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
         "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
+        "microphones": "Studio麦克风",
         "speakers": "四声道 Omnisonic™ 扬声器，支持杜比全景声 (Dolby Atmos®)",
         "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "headphoneJack": "耳机插孔",
         "usbPorts": "2个USB-C（USB4/Thunderbolt 4）；Surface Connect；耳机插孔",
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
-        "surfaceConnect": "配备 Surface Connect",
+        "thunderboltSupport": "2个USB-C USB4/Thunderbolt4",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6 + 蓝牙 5.1",
         "cellular": "not_applicable",
         "batteryCapacityWh": "58.0 Wh（额定；最小 56.3 Wh）",
@@ -9024,8 +11165,8 @@ const SURFACE_DATA = {
         "fastCharging": "推荐快充 60W（集显）/ 95W（独显）",
         "compatibleKeyboard": "全新大尺寸触觉反馈触控板 + 背光键盘",
         "penHapticFeedback": "支持",
-        "penChargingType": "前沿下凹槽磁吸无线充电",
-        "trackpadType": "触觉触控板",
+        "penChargingType": "Slim Pen2在键盘前部下方磁吸存储和充电（笔另售）",
+        "trackpadType": "大尺寸精准触觉触控板",
         "tpmChip": "TPM 2.0",
         "securedCorePc": "支持",
         "biometrics": "人脸识别",
@@ -9040,7 +11181,8 @@ const SURFACE_DATA = {
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-studio"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-studio",
+        "penCompat": "支持Surface Slim Pen2（另售）"
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
@@ -9076,8 +11218,81 @@ const SURFACE_DATA = {
           "configurationScope": "支持页明确列消费与商用系统；规格详情链接已404",
           "reviewedAt": "2026-10-09",
           "configuration": "sls-1"
+        },
+        "screenSize": {
+          "configuration": "sls-1",
+          "value": "14.4英寸 PixelSense Flow触控屏",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "refreshRate": {
+          "configuration": "sls-1",
+          "value": "最高120Hz",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "trackpadType": {
+          "configuration": "sls-1",
+          "value": "大尺寸精准触觉触控板",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "sls-1",
+          "value": "Slim Pen2在键盘前部下方磁吸存储和充电（笔另售）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "sls-1",
+          "value": "支持Surface Slim Pen2（另售）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "sls-1",
+          "value": "Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "sls-1",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "sls-1",
+          "value": "耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "sls-1",
+          "value": "2个USB-C USB4/Thunderbolt4",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "go-4",
@@ -9107,16 +11322,16 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "165度全阻尼铰链",
-        "osAtLaunch": "Windows 11 专业版",
-        "cpuModel": "Intel® 处理器 N200",
+        "osAtLaunch": "Windows11专业版或Windows10专业版",
+        "cpuModel": "Intel N200",
         "cpuArch": "64 位 / Intel 7",
         "cpuCores": "not_disclosed",
-        "gpuModel": "英特尔® UHD 显卡",
+        "gpuModel": "Intel UHD Graphics",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
-        "ramSpec": "8GB LPDDR5 (全系标配 8G 淘汰前代短板)",
-        "storageOptions": "64GB UFS / 128GB / 256GB SSD",
+        "ramSpec": "8GB LPDDR5",
+        "storageOptions": "64GB、128GB、256GB UFS",
         "ssdRemovable": "not_disclosed",
         "expandableStorage": "microSDXC读卡器",
         "screenSize": "10.5 英寸 PixelSense",
@@ -9126,33 +11341,33 @@ const SURFACE_DATA = {
         "ppi": "220 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "典型 350 nits",
-        "colorSupport": "sRGB 和 Enhanced",
+        "colorSupport": "1500:1；sRGB、Enhanced；独立校色",
         "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
         "frontCamera": "1080p Full HD",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "800万像素，1080p视频",
         "videoFeatures": "not_disclosed",
-        "microphones": "矩阵式远场双麦克风",
-        "speakers": "2W 立体声扬声器，杜比音效",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "矩阵式远场双麦克风，具有语音清晰度功能",
+        "speakers": "2W立体声扬声器，Dolby Audio Premium",
+        "audioTech": "Dolby Audio Premium",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "USB-C 3.1；Surface Connect；键盘接口；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6；蓝牙5.1",
         "cellular": "not_applicable",
         "batteryCapacityWh": "标准29 Wh；最小28 Wh",
         "batteryLifeOffice": "常规设备使用最长12.5小时（官方测试，非办公实测）",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "最低充电 24W；标配 24W（型号 1735 / 1736）",
+        "chargingPower": "该认证翻新版包装附带24W电源；非最低输入功率",
         "fastCharging": "not_disclosed",
-        "compatibleKeyboard": "Surface Go 专业键盘盖 (欧缔兰或黑色)",
+        "compatibleKeyboard": "Surface Go特制版专业键盘盖、Surface Go专业键盘盖",
         "penHapticFeedback": "不支持",
-        "penChargingType": "笔侧磁吸在机身边框",
+        "penChargingType": "Surface触控笔磁吸存放；不表示充电",
         "trackpadType": "机械触控板",
-        "tpmChip": "固件TPM 2.0",
-        "securedCorePc": "认证 Secured-core PC",
-        "biometrics": "人脸识别",
+        "tpmChip": "固件TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心PC",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持 Autopilot 云端部署",
         "dimensionsMm": "245 × 175 × 8.3 mm",
         "weightGrams": "521 g（不含键盘）",
@@ -9160,11 +11375,12 @@ const SURFACE_DATA = {
         "thermalDesign": "完全无风扇零噪音被动冷却",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "屏幕、支架、电池",
-        "warranty": "2 年有限硬件保修",
+        "warranty": "该中国认证翻新版：主机2年有限硬件保修；配件按品类及包装条款",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_datasheet",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+        "penCompat": "Surface触控笔、Microsoft Classroom Pen2、Microsoft触控笔商用版；MPP"
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-4-features",
@@ -9266,20 +11482,20 @@ const SURFACE_DATA = {
           "configuration": "go-4"
         },
         "expandableStorage": {
+          "configuration": "go-4",
           "value": "microSDXC读卡器",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新Go4商用硬件规格；不外推销售包装与保修",
-          "reviewedAt": "2026-10-09",
-          "configuration": "go-4"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         },
         "tpmChip": {
-          "value": "固件TPM 2.0",
+          "configuration": "go-4",
+          "value": "固件TPM2.0，支持BitLocker",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
           "region": "CN",
-          "configurationScope": "中国认证翻新Go4商用硬件规格；不外推销售包装与保修",
-          "reviewedAt": "2026-10-09",
-          "configuration": "go-4"
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         },
         "kickstandType": {
           "value": "165度全阻尼铰链",
@@ -9288,8 +11504,177 @@ const SURFACE_DATA = {
           "configurationScope": "中国认证翻新Go4商用硬件规格；不外推销售包装与保修",
           "reviewedAt": "2026-10-09",
           "configuration": "go-4"
+        },
+        "cpuModel": {
+          "configuration": "go-4",
+          "value": "Intel N200",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "go-4",
+          "value": "Intel UHD Graphics",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ramSpec": {
+          "configuration": "go-4",
+          "value": "8GB LPDDR5",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "go-4",
+          "value": "64GB、128GB、256GB UFS",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "go-4",
+          "value": "220 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "go-4",
+          "value": "1500:1；sRGB、Enhanced；独立校色",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "go-4",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "go-4",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "go-4",
+          "value": "Windows11安全核心PC",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "go-4",
+          "value": "矩阵式远场双麦克风，具有语音清晰度功能",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "go-4",
+          "value": "2W立体声扬声器，Dolby Audio Premium",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "go-4",
+          "value": "Dolby Audio Premium",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "go-4",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "go-4",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "go-4",
+          "value": "Surface触控笔、Microsoft Classroom Pen2、Microsoft触控笔商用版；MPP",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "go-4",
+          "value": "Surface触控笔磁吸存放；不表示充电",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "go-4",
+          "value": "Surface Go特制版专业键盘盖、Surface Go专业键盘盖",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "go-4",
+          "value": "Windows11专业版或Windows10专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "go-4",
+          "value": "镁合金",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "go-4",
+          "value": "该认证翻新版包装附带24W电源；非最低输入功率",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "go-4",
+          "value": "该中国认证翻新版：主机2年有限硬件保修；配件按品类及包装条款",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+          "region": "CN",
+          "configurationScope": "中国微软认证翻新版技术表；只适用于该页列出配置；包装和保修仅翻新版",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "go-3",
@@ -9623,7 +12008,7 @@ const SURFACE_DATA = {
           }
         ],
         "chassisMaterial": "not_disclosed",
-        "kickstandType": "not_applicable",
+        "kickstandType": "Zero Gravity铰链",
         "osAtLaunch": "Windows11专业版",
         "cpuModel": "Intel 第11代 Core i7-H",
         "cpuArch": "64 位 / 10 nm SuperFin",
@@ -9643,18 +12028,18 @@ const SURFACE_DATA = {
         "ppi": "192 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "sRGB 和 Vivid",
-        "touchAndPenProtocol": "10 点触控，支持 Microsoft 触控笔协议（MPP）",
+        "colorSupport": "sRGB、Vivid，独立校色；10亿色、自动色彩管理；1200:1；Dolby Vision",
+        "touchAndPenProtocol": "10点触控；MPP",
         "frontCamera": "1080p Full HD",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
-        "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "杜比全景声 (Dolby Atmos®)",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "videoFeatures": "前置1080p视频",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "2.1立体声扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "3个USB-C（USB4/Thunderbolt4）；2个USB-A3.1；千兆以太网；3.5mm耳机插孔",
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
+        "thunderboltSupport": "3个USB-C USB4/Thunderbolt4；原生支持3台4K60Hz外接显示器",
         "surfaceConnect": "not_applicable",
         "wireless": "Wi-Fi6；蓝牙5.1",
         "cellular": "not_applicable",
@@ -9665,23 +12050,24 @@ const SURFACE_DATA = {
         "fastCharging": "not_applicable",
         "compatibleKeyboard": "随附 Surface 蓝牙键盘、精密鼠标、触控笔",
         "penHapticFeedback": "支持手写",
-        "penChargingType": "屏幕边框磁吸收纳",
+        "penChargingType": "Surface Pen集成磁吸存放；此项不表示充电",
         "trackpadType": "外接蓝牙鼠标/触控板",
         "tpmChip": "TPM2.0",
         "securedCorePc": "认证 Secured-core PC",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持完整商业管理",
-        "dimensionsMm": "637.35 × 438.90 × 12.50；底座 250.00 × 220.00 × 31.45",
+        "dimensionsMm": "显示屏637.35×438.90×12.5mm；底座250×220×31.45mm",
         "weightGrams": "最大9.56 kg（上限，不是精确重量）",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "底座三风扇独立双风道冷却",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "SSD、底座风扇、电源模块",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；不是中国保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-studio-2-plus"
+        "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-studio-2-plus",
+        "penCompat": "Surface Pen；Surface Dial屏上交互"
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-studio-2-features",
@@ -9783,22 +12169,151 @@ const SURFACE_DATA = {
           "configuration": "studio-2-plus"
         },
         "tpmChip": {
+          "configuration": "studio-2-plus",
           "value": "TPM2.0",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
           "region": "GLOBAL",
-          "configurationScope": "官方Studio2+全球硬件；没有用Studio2替代，不认证中国地区销售条件",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-2-plus"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         },
         "osAtLaunch": {
+          "configuration": "studio-2-plus",
           "value": "Windows11专业版",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
           "region": "GLOBAL",
-          "configurationScope": "官方Studio2+全球硬件；没有用Studio2替代，不认证中国地区销售条件",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-2-plus"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "studio-2-plus",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "studio-2-plus",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "studio-2-plus",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "studio-2-plus",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "studio-2-plus",
+          "value": "2.1立体声扬声器，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "studio-2-plus",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "studio-2-plus",
+          "value": "前置1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "studio-2-plus",
+          "value": "全球支持页：1年有限硬件保修；不是中国保修承诺",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "studio-2-plus",
+          "value": "192 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "studio-2-plus",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "studio-2-plus",
+          "value": "sRGB、Vivid，独立校色；10亿色、自动色彩管理；1200:1；Dolby Vision",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "studio-2-plus",
+          "value": "Surface Pen；Surface Dial屏上交互",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "studio-2-plus",
+          "value": "Zero Gravity铰链",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "dimensionsMm": {
+          "configuration": "studio-2-plus",
+          "value": "显示屏637.35×438.90×12.5mm；底座250×220×31.45mm",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "studio-2-plus",
+          "value": "3个USB-C USB4/Thunderbolt4；原生支持3台4K60Hz外接显示器",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "studio-2-plus",
+          "value": "Surface Pen集成磁吸存放；此项不表示充电",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "duo-2",
@@ -9956,7 +12471,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 10 家庭版",
+        "osAtLaunch": "Windows10家庭版",
         "cpuModel": "Intel® 第 10 代酷睿™ i7-1065G7",
         "cpuArch": "64 位 / 10 nm",
         "cpuCores": "not_disclosed",
@@ -9975,33 +12490,33 @@ const SURFACE_DATA = {
         "ppi": "260 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "500 万像素 1080p 全高清前置镜头",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "800 万像素 1080p 自动对焦后置镜头",
-        "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "带杜比全景声 (Dolby Atmos®) 前向立体扬声器",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "colorSupport": "对比度1600:1",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p视频",
+        "videoFeatures": "前后摄像头1080p视频",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "前置立体声，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "2个USB-A 3.1 Gen2；USB-C 3.1 Gen2；2个Surface Connect（平板/底座各1）；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "2个Surface Connect接口",
         "wireless": "Wi-Fi 6；蓝牙5.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "连接键盘底座，典型设备使用最长17.5小时（非办公实测）",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "最低充电 120W；标配 120W（型号 1932）",
+        "chargingPower": "该页15英寸附带127W电源（含USB-A 7W）；不是最低输入",
         "fastCharging": "推荐快充 120W",
         "compatibleKeyboard": "全尺寸背光独立物理键盘 (带动力肌肉解耦锁)",
         "penHapticFeedback": "不支持",
         "penChargingType": "磁吸在屏幕侧边 (AAAA 电池供电)",
         "trackpadType": "大面积高精度玻璃触控板",
-        "tpmChip": "硬件级 TPM 2.0",
+        "tpmChip": "TPM2.0",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持完整商业管理",
         "dimensionsMm": "343 × 251 × 15–23 mm",
         "weightGrams": "1905 g（含键盘底座）",
@@ -10121,6 +12636,142 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "book-3-15"
+        },
+        "chassisMaterial": {
+          "configuration": "book-3-15",
+          "value": "镁合金",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "book-3-15",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "book-3-15",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "book-3-15",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "book-3-15",
+          "value": "800万像素自动对焦，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "book-3-15",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "book-3-15",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "book-3-15",
+          "value": "2个Surface Connect接口",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "book-3-15",
+          "value": "Windows10家庭版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "book-3-15",
+          "value": "260 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "book-3-15",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "book-3-15",
+          "value": "TPM2.0",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "book-3-15",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "book-3-15",
+          "value": "前置立体声，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "book-3-15",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "book-3-15",
+          "value": "对比度1600:1",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "book-3-15",
+          "value": "该页15英寸附带127W电源（含USB-A 7W）；不是最低输入",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
         }
       }
     },
@@ -10151,7 +12802,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 10 家庭版",
+        "osAtLaunch": "Windows10家庭版",
         "cpuModel": "Intel® 第 10 代酷睿™ i5-1035G7 / i7-1065G7",
         "cpuArch": "64 位 / 10 nm",
         "cpuCores": "not_disclosed",
@@ -10170,33 +12821,33 @@ const SURFACE_DATA = {
         "ppi": "267 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "500 万像素 1080p 全高清前置镜头",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "800 万像素 1080p 自动对焦后置镜头",
-        "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "前向立体声扬声器，支持杜比全景声",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "colorSupport": "对比度1600:1",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p视频",
+        "videoFeatures": "前后摄像头1080p视频",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "前置立体声，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "2个USB-A 3.1 Gen2；USB-C 3.1 Gen2；2个Surface Connect（平板/底座各1）；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "2个Surface Connect接口",
         "wireless": "Wi-Fi 6；蓝牙5.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "连接键盘底座，典型设备使用最长15.5小时（非办公实测）",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "集显最低 60W、标配 60W（型号 1706）；独显最低/标配 95W（型号 1798）",
+        "chargingPower": "该页13.5英寸附带：i5为65W（含USB-A 5W）；i7为102W（含USB-A 7W）",
         "fastCharging": "集显推荐快充 80W；独显 95W",
         "compatibleKeyboard": "全尺寸背光物理键盘",
         "penHapticFeedback": "不支持",
         "penChargingType": "屏幕侧边磁吸",
         "trackpadType": "玻璃精密触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "TPM2.0",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持标准管理",
         "dimensionsMm": "i5：312 × 232 × 13–23 mm；i7：312 × 232 × 15–23 mm",
         "weightGrams": "i5：1534g；i7：1642g（均含键盘底座）",
@@ -10316,6 +12967,142 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "book-3-135"
+        },
+        "chassisMaterial": {
+          "configuration": "book-3-135",
+          "value": "镁合金",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "book-3-135",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "book-3-135",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "book-3-135",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "book-3-135",
+          "value": "800万像素自动对焦，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "book-3-135",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "book-3-135",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "book-3-135",
+          "value": "2个Surface Connect接口",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "book-3-135",
+          "value": "Windows10家庭版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "book-3-135",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "book-3-135",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "book-3-135",
+          "value": "TPM2.0",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "book-3-135",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "book-3-135",
+          "value": "前置立体声，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "book-3-135",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "book-3-135",
+          "value": "对比度1600:1",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "book-3-135",
+          "value": "该页13.5英寸附带：i5为65W（含USB-A 5W）；i7为102W（含USB-A 7W）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
         }
       }
     },
@@ -10346,7 +13133,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows10专业版",
         "cpuModel": "第 8 代英特尔® 酷睿™ i5-8350U / i7-8650U",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
@@ -10365,33 +13152,33 @@ const SURFACE_DATA = {
         "ppi": "260 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "not_disclosed",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "not_disclosed",
-        "videoFeatures": "not_disclosed",
+        "colorSupport": "对比度1600:1",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p视频",
+        "videoFeatures": "前后摄像头1080p视频",
         "microphones": "双麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "2 × USB-A 3.1 + 1 × USB-C 3.1 Gen 1 + SDXC 卡槽",
+        "speakers": "前置立体声，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "2个USB-A3.1 Gen1；USB-C3.1 Gen1 PD3.0；2个Surface Connect；耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "2个Surface Connect接口",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.1；内置Xbox Wireless",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "not_disclosed",
         "batteryLifeVideo": "视频播放最长17小时（官方测试）",
-        "chargingPower": "最低充电 95W；标配 95W（型号 1798）",
+        "chargingPower": "该页15英寸附带102W电源，含USB-A 5W输出；不是最低输入",
         "fastCharging": "not_applicable",
         "compatibleKeyboard": "全尺寸背光物理键盘",
         "penHapticFeedback": "不支持",
         "penChargingType": "屏幕磁吸",
         "trackpadType": "玻璃精密触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "硬件TPM2.0",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持标准商业管理",
         "dimensionsMm": "343 × 251 × 15–23 mm",
         "weightGrams": "i7：1905 g（含键盘底座）",
@@ -10503,8 +13290,153 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "book-2-15"
+        },
+        "chassisMaterial": {
+          "configuration": "book-2-15",
+          "value": "镁合金",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "book-2-15",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "book-2-15",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "book-2-15",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "book-2-15",
+          "value": "800万像素自动对焦，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "book-2-15",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "book-2-15",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "book-2-15",
+          "value": "2个Surface Connect接口",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "book-2-15",
+          "value": "Windows10专业版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "book-2-15",
+          "value": "260 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "book-2-15",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "book-2-15",
+          "value": "硬件TPM2.0",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "book-2-15",
+          "value": "双麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "book-2-15",
+          "value": "前置立体声，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "book-2-15",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "book-2-15",
+          "value": "对比度1600:1",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "book-2-15",
+          "value": "2个USB-A3.1 Gen1；USB-C3.1 Gen1 PD3.0；2个Surface Connect；耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "book-2-15",
+          "value": "该页15英寸附带102W电源，含USB-A 5W输出；不是最低输入",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "book-1",
@@ -10533,7 +13465,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows10专业版",
         "cpuModel": "Intel 第6代 Core i5 / i7",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
@@ -10544,7 +13476,7 @@ const SURFACE_DATA = {
         "ramSpec": "8GB / 16GB",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "全尺寸 SDXC 读卡器",
+        "expandableStorage": "全尺寸SD读卡器，兼容SDXC",
         "screenSize": "13.5 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -10552,19 +13484,19 @@ const SURFACE_DATA = {
         "ppi": "267 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "not_disclosed",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "not_disclosed",
-        "videoFeatures": "not_disclosed",
+        "colorSupport": "对比度1700:1",
+        "touchAndPenProtocol": "10点触控；支持Surface Pen",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p视频",
+        "videoFeatures": "前后摄像头1080p视频",
         "microphones": "双麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "2 × USB-A 3.0 + Mini DisplayPort + SD 卡槽",
+        "speakers": "立体声，Dolby Audio Premium",
+        "audioTech": "Dolby Audio Premium",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "2个USB3.0；Mini DisplayPort；2个Surface Connect；耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "2个Surface Connect接口",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -10576,9 +13508,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "不支持",
         "penChargingType": "侧边磁吸 (AAAA 电池)",
         "trackpadType": "高精度玻璃触控板",
-        "tpmChip": "TPM 2.0",
+        "tpmChip": "TPM芯片（未注明版本）",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持标准管理",
         "dimensionsMm": "标准底座：312.3 × 232.1 × 13–22.8 mm；Performance Base：312.3 × 232.1 × 14.9–22.8 mm",
         "weightGrams": "起步 1516g；Performance Base 1647g",
@@ -10698,6 +13630,150 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "book-1"
+        },
+        "chassisMaterial": {
+          "configuration": "book-1",
+          "value": "镁合金",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "book-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "book-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "book-1",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "book-1",
+          "value": "800万像素自动对焦，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "book-1",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "book-1",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "book-1",
+          "value": "2个Surface Connect接口",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "book-1",
+          "value": "Windows10专业版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "book-1",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "book-1",
+          "value": "10点触控；支持Surface Pen",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "book-1",
+          "value": "TPM芯片（未注明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "book-1",
+          "value": "双麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "book-1",
+          "value": "立体声，Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "book-1",
+          "value": "Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "book-1",
+          "value": "对比度1700:1",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "book-1",
+          "value": "2个USB3.0；Mini DisplayPort；2个Surface Connect；耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "book-1",
+          "value": "全尺寸SD读卡器，兼容SDXC",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证；不解除来源错误的CPU/RAM/重量字段",
+          "reviewedAt": "2026-10-09"
         }
       }
     },
@@ -10728,18 +13804,18 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "Windows 10 家庭版 S 模式",
+        "osAtLaunch": "Windows10家庭版S模式",
         "cpuModel": "Intel Pentium Gold 4425Y / 第8代Core m3",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® UHD Graphics 615",
+        "gpuModel": "Intel UHD Graphics615",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
         "ramSpec": "4GB / 8GB",
         "storageOptions": "64GB eMMC；128GB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "配备 MicroSDXC 读卡器",
+        "expandableStorage": "microSDXC（UHS-I）",
         "screenSize": "10.5 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -10747,21 +13823,21 @@ const SURFACE_DATA = {
         "ppi": "220 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
+        "colorSupport": "对比度1500:1",
+        "touchAndPenProtocol": "10点触控；Gorilla Glass3",
         "frontCamera": "500万像素，1080p视频",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "800万像素自动对焦，1080p视频",
-        "videoFeatures": "not_disclosed",
-        "microphones": "双工作室麦克风",
-        "speakers": "2W 立体声扬声器，支持杜比音效",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "1 × USB-C + 1 × MicroSDXC 卡槽",
+        "videoFeatures": "前后摄像头1080p视频",
+        "microphones": "双Studio麦克风",
+        "speakers": "2W立体声扬声器，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "USB-C；Surface Connect；Surface Type Cover；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac/ax；蓝牙5.0",
-        "cellular": "支持可选 4G LTE Advanced 频段",
+        "cellular": "LTE配置：Snapdragon X16 LTE；nanoSIM、GPS/GLONASS",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "典型设备使用最长10小时（非办公实测）",
         "batteryLifeVideo": "not_disclosed",
@@ -10771,9 +13847,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "不支持",
         "penChargingType": "边框磁吸 (AAAA 电池)",
         "trackpadType": "机械触控板",
-        "tpmChip": "固件 TPM",
+        "tpmChip": "固件TPM（未注明版本）",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持标准管理",
         "dimensionsMm": "245 × 175 × 8.3 mm",
         "weightGrams": "Wi-Fi 544g；LTE 553g",
@@ -10781,7 +13857,7 @@ const SURFACE_DATA = {
         "thermalDesign": "全被动无风扇静音散热",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；不是中国保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
@@ -10879,22 +13955,175 @@ const SURFACE_DATA = {
           "configuration": "go-2"
         },
         "frontCamera": {
+          "configuration": "go-2",
           "value": "500万像素，1080p视频",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "go-2"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         },
         "rearCamera": {
+          "configuration": "go-2",
           "value": "800万像素自动对焦，1080p视频",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "go-2"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "go-2",
+          "value": "220 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "go-2",
+          "value": "对比度1500:1",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "go-2",
+          "value": "10点触控；Gorilla Glass3",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "go-2",
+          "value": "Intel UHD Graphics615",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "go-2",
+          "value": "USB-C；Surface Connect；Surface Type Cover；3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "go-2",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "go-2",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "go-2",
+          "value": "microSDXC（UHS-I）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "go-2",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "go-2",
+          "value": "双Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "go-2",
+          "value": "2W立体声扬声器，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "go-2",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "go-2",
+          "value": "镁合金",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "go-2",
+          "value": "固件TPM（未注明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "go-2",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "go-2",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "go-2",
+          "value": "LTE配置：Snapdragon X16 LTE；nanoSIM、GPS/GLONASS",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "go-2",
+          "value": "全球支持页：1年有限硬件保修；不是中国保修承诺",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "go-2",
+          "value": "Windows10家庭版S模式",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "go-1",
@@ -10927,14 +14156,14 @@ const SURFACE_DATA = {
         "cpuModel": "Intel Pentium Gold 4415Y",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® HD Graphics 615",
+        "gpuModel": "Intel HD Graphics615",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
         "ramSpec": "4GB / 8GB",
         "storageOptions": "64GB eMMC；128GB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "配备 MicroSDXC 读卡器",
+        "expandableStorage": "microSDXC（UHS-I）",
         "screenSize": "10 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -10942,21 +14171,21 @@ const SURFACE_DATA = {
         "ppi": "217 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "not_disclosed",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "not_disclosed",
-        "videoFeatures": "not_disclosed",
+        "colorSupport": "对比度1500:1",
+        "touchAndPenProtocol": "10点触控；Gorilla Glass3",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p视频",
+        "videoFeatures": "前后摄像头1080p视频",
         "microphones": "单麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "1 × USB-C 3.1 + 1 × MicroSDXC 卡槽",
+        "speakers": "2W立体声扬声器，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "USB-C；Surface Connect；Surface Type Cover；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.1",
-        "cellular": "not_disclosed",
+        "cellular": "LTE配置：nanoSIM、GPS/GLONASS；消费者LTE限4415Y/8GB/128GB",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "not_disclosed",
         "batteryLifeVideo": "Wi-Fi最长9小时；LTE最长8.5小时（本地视频测试）",
@@ -10966,9 +14195,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "不支持",
         "penChargingType": "边框磁吸 (AAAA 电池)",
         "trackpadType": "机械触控板",
-        "tpmChip": "固件 TPM",
+        "tpmChip": "TPM2.0",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持标准管理",
         "dimensionsMm": "245 × 175 × 8.30 mm",
         "weightGrams": "Wi-Fi起重522g；LTE起重532g（不含键盘，非所有配置精确重量）",
@@ -10976,7 +14205,7 @@ const SURFACE_DATA = {
         "thermalDesign": "全被动无风扇静音散热",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；不是中国保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
@@ -11074,14 +14303,167 @@ const SURFACE_DATA = {
           "configuration": "go-1"
         },
         "microphones": {
+          "configuration": "go-1",
           "value": "单麦克风",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "go-1"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "go-1",
+          "value": "217 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "go-1",
+          "value": "对比度1500:1",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "go-1",
+          "value": "10点触控；Gorilla Glass3",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "go-1",
+          "value": "Intel HD Graphics615",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "go-1",
+          "value": "USB-C；Surface Connect；Surface Type Cover；3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "go-1",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "go-1",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "go-1",
+          "value": "microSDXC（UHS-I）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "go-1",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "go-1",
+          "value": "800万像素自动对焦，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "go-1",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "go-1",
+          "value": "2W立体声扬声器，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "go-1",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "go-1",
+          "value": "镁合金",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "go-1",
+          "value": "TPM2.0",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "go-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "go-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "go-1",
+          "value": "LTE配置：nanoSIM、GPS/GLONASS；消费者LTE限4415Y/8GB/128GB",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "go-1",
+          "value": "全球支持页：1年有限硬件保修；不是中国保修承诺",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-go-2",
@@ -11255,13 +14637,13 @@ const SURFACE_DATA = {
             "image": "./assets/products/surface-laptop-platinum.png"
           }
         ],
-        "chassisMaterial": "铝 / 聚碳酸酯",
+        "chassisMaterial": "顶部铝；底部聚碳酸酯复合树脂、玻璃纤维及30%消费后回收材料",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows10家庭版S模式",
         "cpuModel": "Intel Core i5-1035G1（第10代）",
         "cpuArch": "64 位 / 10 nm",
         "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® UHD Graphics",
+        "gpuModel": "Intel UHD Graphics",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_disclosed",
@@ -11277,30 +14659,30 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "720p HD f/2.0",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "720p HD，f/2.0前置摄像头",
         "windowsHello": "指纹电源按钮；i5/4GB/64GB配置不配备",
         "rearCamera": "not_applicable",
         "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "not_disclosed",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "Omnisonic扬声器，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "USB-C；USB-A；Surface Connect；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 6；蓝牙5.0",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "典型设备使用最长13小时（非办公实测）",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "最低充电 39W；标配 39W（型号 1963）",
+        "chargingPower": "该页附带39W电源；不是最低输入功率",
         "fastCharging": "推荐快充 39W",
         "compatibleKeyboard": "全尺寸键盘 (无背光)",
         "penHapticFeedback": "not_applicable",
         "penChargingType": "not_applicable",
         "trackpadType": "大面积触控板",
-        "tpmChip": "固件 TPM",
+        "tpmChip": "固件TPM（未注明版本）",
         "securedCorePc": "否",
         "biometrics": "指纹电源按钮；i5/4GB/64GB配置不配备",
         "enterpriseManage": "支持标准管理",
@@ -11310,7 +14692,7 @@ const SURFACE_DATA = {
         "thermalDesign": "主动单风扇冷却",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；不是中国保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
@@ -11424,22 +14806,127 @@ const SURFACE_DATA = {
           "configuration": "laptop-go-1"
         },
         "frontCamera": {
-          "value": "720p HD f/2.0",
+          "configuration": "laptop-go-1",
+          "value": "720p HD，f/2.0前置摄像头",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-go-1"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         },
         "usbPorts": {
+          "configuration": "laptop-go-1",
           "value": "USB-C；USB-A；Surface Connect；3.5mm耳机插孔",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-go-1"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-go-1",
+          "value": "148 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-go-1",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "laptop-go-1",
+          "value": "Intel UHD Graphics",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-go-1",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "laptop-go-1",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "laptop-go-1",
+          "value": "固件TPM（未注明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-go-1",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-go-1",
+          "value": "Omnisonic扬声器，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-go-1",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-go-1",
+          "value": "Windows10家庭版S模式",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-go-1",
+          "value": "顶部铝；底部聚碳酸酯复合树脂、玻璃纤维及30%消费后回收材料",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "laptop-go-1",
+          "value": "该页附带39W电源；不是最低输入功率",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "laptop-go-1",
+          "value": "全球支持页：1年有限硬件保修；不是中国保修承诺",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "studio-2",
@@ -11467,8 +14954,8 @@ const SURFACE_DATA = {
           }
         ],
         "chassisMaterial": "not_disclosed",
-        "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 10 专业版",
+        "kickstandType": "Zero Gravity铰链",
+        "osAtLaunch": "Windows10专业版",
         "cpuModel": "Intel Core i7-7820HQ",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
@@ -11479,7 +14966,7 @@ const SURFACE_DATA = {
         "ramSpec": "16GB / 32GB DDR4",
         "storageOptions": "1TB / 2TB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "全尺寸SDXC UHS-I",
+        "expandableStorage": "全尺寸SDXC读卡器（UHS-I）",
         "screenSize": "28 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -11487,17 +14974,17 @@ const SURFACE_DATA = {
         "ppi": "192 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "sRGB、DCI-P3 与 Vivid",
-        "touchAndPenProtocol": "10 点多点触控",
+        "colorSupport": "sRGB、DCI-P3、Vivid；独立校色",
+        "touchAndPenProtocol": "10点触控；支持Surface Pen倾斜",
         "frontCamera": "500 万像素 1080p 全高清前置镜头",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
-        "videoFeatures": "not_disclosed",
+        "videoFeatures": "前置1080p视频",
         "microphones": "双麦克风",
-        "speakers": "带杜比®音频™的立体声 2.1 扬声器",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "4个USB3.0；USB-C；千兆以太网；3.5mm耳机插孔",
+        "speakers": "2.1立体声扬声器，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "4个USB3.0（一个高功率）；USB-C；3.5mm耳机；千兆以太网",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "not_applicable",
         "wireless": "Wi-Fi802.11a/b/g/n/ac；蓝牙4.1",
@@ -11511,21 +14998,22 @@ const SURFACE_DATA = {
         "penHapticFeedback": "不支持",
         "penChargingType": "屏幕侧边强力磁吸",
         "trackpadType": "外接触控板/鼠标",
-        "tpmChip": "TPM 2.0 硬件安全芯片",
+        "tpmChip": "TPM2.0",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持完整商业管理",
-        "dimensionsMm": "屏幕 637.35 × 438.90 × 12.50 / 底座 250.00 × 220.00 × 32.20",
+        "dimensionsMm": "显示屏637.35×438.90×12.50mm；底座250×220×32.20mm",
         "weightGrams": "最大9.56 kg（上限，不是精确重量）",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "底座低噪音三风扇分离散热系统",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；不是中国保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-16",
-        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-studio-2-%E7%89%B9%E6%80%A7-f0b12bc1-0268-4505-ba38-e6d7a46977ef"
+        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/surface-studio-2-%E7%89%B9%E6%80%A7-f0b12bc1-0268-4505-ba38-e6d7a46977ef",
+        "penCompat": "Surface Pen；Surface Dial屏上交互"
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
@@ -11611,22 +15099,151 @@ const SURFACE_DATA = {
           "configuration": "studio-2"
         },
         "usbPorts": {
-          "value": "4个USB3.0；USB-C；千兆以太网；3.5mm耳机插孔",
+          "configuration": "studio-2",
+          "value": "4个USB3.0（一个高功率）；USB-C；3.5mm耳机；千兆以太网",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-2"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         },
         "expandableStorage": {
-          "value": "全尺寸SDXC UHS-I",
+          "configuration": "studio-2",
+          "value": "全尺寸SDXC读卡器（UHS-I）",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-2"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "studio-2",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "studio-2",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "studio-2",
+          "value": "TPM2.0",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "studio-2",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "studio-2",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "studio-2",
+          "value": "2.1立体声扬声器，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "studio-2",
+          "value": "双麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "studio-2",
+          "value": "Windows10专业版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "studio-2",
+          "value": "前置1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "studio-2",
+          "value": "全球支持页：1年有限硬件保修；不是中国保修承诺",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "studio-2",
+          "value": "192 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "studio-2",
+          "value": "10点触控；支持Surface Pen倾斜",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "studio-2",
+          "value": "sRGB、DCI-P3、Vivid；独立校色",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "studio-2",
+          "value": "Surface Pen；Surface Dial屏上交互",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "studio-2",
+          "value": "Zero Gravity铰链",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "dimensionsMm": {
+          "configuration": "studio-2",
+          "value": "显示屏637.35×438.90×12.50mm；底座250×220×32.20mm",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "studio-1",
@@ -11655,7 +15272,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "not_disclosed",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "not_disclosed",
+        "osAtLaunch": "Windows10专业版",
         "cpuModel": "Intel 第6代 Core i5 / i7",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
@@ -11677,13 +15294,13 @@ const SURFACE_DATA = {
         "colorSupport": "sRGB、DCI-P3 与鲜艳色彩",
         "touchAndPenProtocol": "10 点多点触控",
         "frontCamera": "500万像素，1080p视频",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
-        "videoFeatures": "not_disclosed",
+        "videoFeatures": "前置1080p视频",
         "microphones": "双麦克风",
-        "speakers": "2.1立体声，Dolby Audio Premium",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "speakers": "2.1立体声扬声器，Dolby Audio Premium",
+        "audioTech": "Dolby Audio Premium",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbPorts": "4个USB3.0；Mini DisplayPort；千兆以太网；3.5mm耳机插孔",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "not_applicable",
@@ -11698,9 +15315,9 @@ const SURFACE_DATA = {
         "penHapticFeedback": "不支持",
         "penChargingType": "屏幕磁吸",
         "trackpadType": "外接鼠标",
-        "tpmChip": "TPM 2.0 硬件芯片",
+        "tpmChip": "TPM芯片（未注明版本）",
         "securedCorePc": "否",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持标准商业管理",
         "dimensionsMm": "屏幕 637.35 × 438.90 × 12.5 / 底座 250 × 220 × 32.2",
         "weightGrams": "9560g (9.56 kg)",
@@ -11708,7 +15325,7 @@ const SURFACE_DATA = {
         "thermalDesign": "底座静音双风扇独立风道散热",
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "not_disclosed",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；不是中国保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
@@ -11758,20 +15375,20 @@ const SURFACE_DATA = {
           "configuration": "studio-1"
         },
         "microphones": {
+          "configuration": "studio-1",
           "value": "双麦克风",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-1"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         },
         "speakers": {
-          "value": "2.1立体声，Dolby Audio Premium",
+          "configuration": "studio-1",
+          "value": "2.1立体声扬声器，Dolby Audio Premium",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
           "region": "GLOBAL",
-          "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-1"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         },
         "usbPorts": {
           "value": "4个USB3.0；Mini DisplayPort；千兆以太网；3.5mm耳机插孔",
@@ -11788,8 +15405,73 @@ const SURFACE_DATA = {
           "configurationScope": "全球硬件规格；不证明中国销售、价格、保修；各配置限制按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "studio-1"
+        },
+        "windowsHello": {
+          "configuration": "studio-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "studio-1",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "studio-1",
+          "value": "TPM芯片（未注明版本）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "studio-1",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "studio-1",
+          "value": "Dolby Audio Premium",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "studio-1",
+          "value": "Windows10专业版",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "studio-1",
+          "value": "前置1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "studio-1",
+          "value": "全球支持页：1年有限硬件保修；不是中国保修承诺",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "hub-2s",
@@ -12232,11 +15914,11 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "一体式支架，165 度全阻尼铰链",
-        "osAtLaunch": "Windows 11 专业版",
+        "osAtLaunch": "Windows11专业版",
         "cpuModel": "Snapdragon X Plus（8核）",
         "cpuArch": "Qualcomm Oryon™ 64 位",
         "cpuCores": "8 核",
-        "gpuModel": "Qualcomm® Adreno™ GPU",
+        "gpuModel": "Qualcomm Adreno GPU",
         "npuModel": "Qualcomm® Hexagon™ (45 TOPS)",
         "npuTops": "45 TOPS",
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
@@ -12251,15 +15933,15 @@ const SURFACE_DATA = {
         "ppi": "220 PPI",
         "refreshRate": "最高90Hz，默认60Hz",
         "brightness": "SDR 最大 400 尼特（典型值）",
-        "colorSupport": "sRGB 与增强型，对比度 1200:1",
-        "touchAndPenProtocol": "10 点触控，Microsoft Pen Protocol，支持超薄触控笔触觉反馈",
-        "frontCamera": "1080p 全高清 Surface Studio 镜头",
-        "windowsHello": "支持 Windows Hello 人脸识别与 ESS",
-        "rearCamera": "1000 万像素 Ultra HD 后置摄像头",
-        "videoFeatures": "Windows Studio 特效 (自动构图、背景虚化、语音聚焦)",
-        "microphones": "双 Studio Mics，支持语音聚焦",
-        "speakers": "2W 立体声扬声器，支持杜比全景声",
-        "audioTech": "Dolby Atmos®",
+        "colorSupport": "1300:1；sRGB、增强型；独立校色、自适应颜色及对比度",
+        "touchAndPenProtocol": "10点触控；MPP；强化玻璃",
+        "frontCamera": "1080p Surface Studio前置摄像头",
+        "windowsHello": "Windows Hello人脸识别，增强登录安全性",
+        "rearCamera": "1000万像素Ultra HD后置摄像头",
+        "videoFeatures": "Windows工作室效果：自动取景、人像模糊、创意滤镜、眼神交流、人像光效",
+        "microphones": "双Studio Mics，增强语音聚焦",
+        "speakers": "2W立体声扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos；蓝牙LE音频",
         "headphoneJack": "not_applicable",
         "usbCPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞",
         "usbAPorts": "not_applicable",
@@ -12273,13 +15955,13 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "本地视频播放长达 16 小时",
         "batteryLifeOffice": "网页浏览长达 12 小时",
         "charger": "最低充电 27W USB-C；选配/标配 45W USB-C（型号 2105）",
-        "fastCharging": "45W快速充电",
+        "fastCharging": "USB-C快速充电需最小45W充电器",
         "keyboardCompat": "Surface Pro 12 英寸键盘盖",
-        "penCompat": "Surface 超薄触控笔（第 2 版），机身背面吸附充电",
+        "penCompat": "Surface超薄触控笔第2版；MPP",
         "dialCompat": "仅屏外交互",
         "dockCompat": "Surface 雷电 4 扩展坞",
         "tpm": "Microsoft Pluton TPM 2.0",
-        "biometrics": "Windows Hello 人脸识别；NFC 身份认证",
+        "biometrics": "Windows Hello人脸识别；NFC身份认证",
         "securityFeatures": "Secured-core PC，微软 Pluton 安全处理器，企业级 BitLocker",
         "dimensions": "274 × 190 × 7.8 mm",
         "weightGrams": "686 g",
@@ -12294,7 +15976,11 @@ const SURFACE_DATA = {
         "wireless": "Wi-Fi 7；蓝牙5.4",
         "dimensionsMm": "274 × 190 × 7.8 mm",
         "usbPorts": "2个USB-C 3.2；DisplayPort 2.1；16GB及以上内存配置最多支持两台4K 60Hz显示器",
-        "penHapticFeedback": "支持Slim Pen 2触觉反馈，背面吸附和无线充电"
+        "penHapticFeedback": "支持Surface超薄触控笔触觉反馈",
+        "tpmChip": "Microsoft Pluton TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心PC",
+        "compatibleKeyboard": "Surface Pro12英寸键盘盖",
+        "penChargingType": "机身背面存储和无线充电（Surface超薄触控笔）"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -12409,22 +16095,167 @@ const SURFACE_DATA = {
           "configuration": "pro-12-inch-biz"
         },
         "fastCharging": {
-          "value": "45W快速充电",
+          "configuration": "pro-12-inch-biz",
+          "value": "USB-C快速充电需最小45W充电器",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
           "region": "CN",
-          "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-12-inch-biz"
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
         },
         "penHapticFeedback": {
-          "value": "支持Slim Pen 2触觉反馈，背面吸附和无线充电",
+          "configuration": "pro-12-inch-biz",
+          "value": "支持Surface超薄触控笔触觉反馈",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
           "region": "CN",
-          "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-12-inch-biz"
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Qualcomm Adreno GPU",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-12-inch-biz",
+          "value": "220 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "pro-12-inch-biz",
+          "value": "1300:1；sRGB、增强型；独立校色、自适应颜色及对比度",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-12-inch-biz",
+          "value": "10点触控；MPP；强化玻璃",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Microsoft Pluton TPM2.0，支持BitLocker",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Windows Hello人脸识别，增强登录安全性",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Windows Hello人脸识别；NFC身份认证",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Windows11安全核心PC",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-12-inch-biz",
+          "value": "1080p Surface Studio前置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-12-inch-biz",
+          "value": "1000万像素Ultra HD后置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Windows工作室效果：自动取景、人像模糊、创意滤镜、眼神交流、人像光效",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-12-inch-biz",
+          "value": "双Studio Mics，增强语音聚焦",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-12-inch-biz",
+          "value": "2W立体声扬声器，Dolby Atmos",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Dolby Atmos；蓝牙LE音频",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Surface Pro12英寸键盘盖",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Surface超薄触控笔第2版；MPP",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "pro-12-inch-biz",
+          "value": "机身背面存储和无线充电（Surface超薄触控笔）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-12-inch-biz",
+          "value": "Windows11专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国商用12英寸第一代，非消费者版或第二代",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-12-inch-2-biz",
@@ -12463,12 +16294,12 @@ const SURFACE_DATA = {
           }
         ],
         "chassisMaterial": "阳极氧化铝",
-        "kickstandType": "一体式支架，配备 165 度全阻尼铰链",
-        "osAtLaunch": "Windows 11 专业版；预装 Microsoft 365 应用版",
+        "kickstandType": "165度全阻尼一体式支架",
+        "osAtLaunch": "Windows11专业版",
         "cpuModel": "Snapdragon X2 Plus（6核）",
         "cpuArch": "not_disclosed",
         "cpuCores": "6 核",
-        "gpuModel": "Qualcomm® Adreno™ GPU",
+        "gpuModel": "Qualcomm Adreno GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "80 TOPS",
         "copilotPlus": "Windows 11 AI+ PC（内存配置为 16GB、24GB）",
@@ -12483,21 +16314,21 @@ const SURFACE_DATA = {
         "ppi": "220 PPI",
         "refreshRate": "最高90Hz，默认60Hz",
         "brightness": "最大500尼特（典型值）",
-        "colorSupport": "sRGB 和增强型，对比度 1400:1，防反光（ISO 9241-307）",
-        "touchAndPenProtocol": "10 点多点触控；专为 Surface 超薄触控笔 2 设计，支持触觉反馈与 Microsoft Pen Protocol（MPP）",
-        "frontCamera": "1080p 全高清前置 Surface Studio 摄像头",
-        "windowsHello": "Windows Hello 面部识别，配备增强的登录安全性",
-        "rearCamera": "1000 万像素 Ultra HD 后置摄像头",
+        "colorSupport": "1400:1；sRGB、增强型；独立校色，自适应颜色及对比度",
+        "touchAndPenProtocol": "10点触控；MPP",
+        "frontCamera": "1080p Surface Studio前置摄像头",
+        "windowsHello": "Windows Hello人脸识别，增强登录安全性",
+        "rearCamera": "1000万像素Ultra HD后置摄像头",
         "videoFeatures": "Windows 工作室效果（自动取景、人像模糊、创意滤镜、眼神交流、人像光效）",
-        "microphones": "具有语音聚焦功能的双录音室麦克风",
-        "speakers": "支持 Dolby Atmos 的 2W 立体扬声器",
-        "audioTech": "Dolby Atmos®",
+        "microphones": "双Studio麦克风，语音聚焦",
+        "speakers": "2W立体声扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos；蓝牙LE Audio",
         "headphoneJack": "not_applicable",
         "usbCPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞",
         "usbAPorts": "not_applicable",
         "surfaceConnect": "Surface Pro 12 英寸键盘连接器",
         "videoOut": "DisplayPort 1.4a，最多两台 4K 60Hz",
-        "cellular": "可选 Wi-Fi+5G。5G 型号：NanoSIM 与 eSIM，GNSS（GPS、Galileo、北斗、QZSS、NAVIC），热点最多 8 台；5G-NR SA/NSA Rel 16 最高 2.9 Gbps。5G 频段 n1、n2、n3、n5、n7、n8、n12、n14、n20、n25、n26、n28、n29、n30、n38、n40、n41、n48、n66、n71、n77、n78。LTE 频段 1、2、3、4、5、7、8、12、13、14、19、20、25、26、28、29、30、38、39、40、41、42、48、66、71。WCDMA 频段 1、2、4、5、8",
+        "cellular": "Wi-Fi+5G配置：nanoSIM、eSIM；5G-NR SA/NSA、4G LTE Advanced Pro；GNSS L1",
         "wifi": "Wi-Fi 7",
         "bluetooth": "蓝牙 Core 5.4",
         "nfc": "支持 NFC 身份验证",
@@ -12505,15 +16336,15 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "Wi-Fi最长15.5小时；5G最长13小时（本地视频测试）",
         "batteryLifeOffice": "Wi-Fi最长13小时；5G最长10小时（网页浏览测试，非办公实测）",
         "charger": "USB-C 最低 60W 可快充；Surface 45W USB-C 充电器仅特定市场的特定配置随附",
-        "fastCharging": "60W快速充电",
+        "fastCharging": "USB-C快速充电需最小60W充电器",
         "keyboardCompat": "Surface Pro 12 英寸键盘（另售）",
-        "penCompat": "专为 Surface 超薄触控笔 2 设计；机背磁吸收纳并无线充电",
+        "penCompat": "Surface超薄触控笔2；MPP",
         "tpm": "Microsoft Pluton TPM 2.0",
-        "biometrics": "Windows Hello 面部识别；NFC 身份验证",
+        "biometrics": "Windows Hello人脸识别",
         "securityFeatures": "Windows 11 安全核心 PC，Microsoft Pluton，BitLocker",
         "dimensions": "274 × 190 × 7.8 mm",
         "weightGrams": "Wi-Fi 686g；5G 707g",
-        "warranty": "3 年有限硬件保修（自发票日期起）",
+        "warranty": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
         "replaceableParts": "显示屏、电池、主板（含处理器、内存和存储）、散热、USB-C、麦克风、红外摄像头、扬声器、外壳、前后摄像头、电源和音量键、一体式支架；5G 型号另含 5G 模块与 Nano SIM 卡托",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
@@ -12522,7 +16353,14 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-29",
         "wireless": "Wi-Fi 7；蓝牙5.4",
         "dimensionsMm": "274 × 190 × 7.8 mm",
-        "usbPorts": "2个USB-C 3.2；DisplayPort 1.4a，最多两台4K 60Hz"
+        "usbPorts": "2个USB-C 3.2；DisplayPort 1.4a，最多两台4K 60Hz",
+        "tpmChip": "Microsoft Pluton TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心PC",
+        "chargingPower": "45W USB-C充电器仅特定市场及配置附带；不是快充最低功率",
+        "penHapticFeedback": "支持Surface超薄触控笔2触觉反馈",
+        "penChargingType": "机身背面存储和无线充电（Surface超薄触控笔）",
+        "compatibleKeyboard": "Surface Pro12英寸键盘",
+        "batteryCapacityWh": "Wi-Fi及Wi-Fi+5G：额定38 Wh；最小37 Wh"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -12645,14 +16483,207 @@ const SURFACE_DATA = {
           "configuration": "pro-12-inch-2-biz"
         },
         "fastCharging": {
-          "value": "60W快速充电",
+          "configuration": "pro-12-inch-2-biz",
+          "value": "USB-C快速充电需最小60W充电器",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
           "region": "CN",
-          "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "pro-12-inch-2-biz"
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Qualcomm Adreno GPU",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "220 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "1400:1；sRGB、增强型；独立校色，自适应颜色及对比度",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Microsoft Pluton TPM2.0，支持BitLocker",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Windows11安全核心PC",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Windows Hello人脸识别，增强登录安全性",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "1080p Surface Studio前置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "双Studio麦克风，语音聚焦",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "2W立体声扬声器，Dolby Atmos",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Dolby Atmos；蓝牙LE Audio",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Windows11专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "45W USB-C充电器仅特定市场及配置附带；不是快充最低功率",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "1000万像素Ultra HD后置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Surface超薄触控笔2；MPP",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penHapticFeedback": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "支持Surface超薄触控笔2触觉反馈",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "机身背面存储和无线充电（Surface超薄触控笔）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Surface Pro12英寸键盘",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "165度全阻尼一体式支架",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Wi-Fi+5G配置：nanoSIM、eSIM；5G-NR SA/NSA、4G LTE Advanced Pro；GNSS L1",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "batteryCapacityWh": {
+          "configuration": "pro-12-inch-2-biz",
+          "value": "Wi-Fi及Wi-Fi+5G：额定38 Wh；最小37 Wh",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-13-inch-biz",
@@ -12689,11 +16720,11 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 11 专业版",
+        "osAtLaunch": "Windows11专业版",
         "cpuModel": "Snapdragon X Plus（8核）",
         "cpuArch": "Qualcomm Oryon™ 64 位",
         "cpuCores": "8 核",
-        "gpuModel": "Qualcomm® Adreno™ GPU",
+        "gpuModel": "Qualcomm Adreno GPU",
         "npuModel": "Qualcomm® Hexagon™ (45 TOPS)",
         "npuTops": "45 TOPS",
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
@@ -12708,16 +16739,16 @@ const SURFACE_DATA = {
         "ppi": "178 PPI",
         "refreshRate": "最高60Hz",
         "brightness": "最大400尼特（典型值）",
-        "colorSupport": "sRGB 与增强型，对比度 1000:1",
-        "touchAndPenProtocol": "10 点触控，不支持触控笔",
-        "frontCamera": "1080p 全高清 Surface Studio 镜头",
-        "windowsHello": "指纹电源按钮",
+        "colorSupport": "1000:1；sRGB、增强型；独立校色，自适应颜色及对比度",
+        "touchAndPenProtocol": "10点触控；强化玻璃",
+        "frontCamera": "1080p Surface Studio前置摄像头",
+        "windowsHello": "指纹电源按钮，增强登录安全性",
         "rearCamera": "not_applicable",
         "videoFeatures": "Windows Studio 特效 (自动构图、背景虚化、语音聚焦)",
-        "microphones": "双 Studio Mics，支持语音聚焦",
-        "speakers": "Omnisonic® 扬声器，Dolby Audio™",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机音频孔",
+        "microphones": "双Studio麦克风，语音聚焦",
+        "speakers": "Omnisonic扬声器，Dolby Audio",
+        "audioTech": "Dolby Audio；蓝牙LE音频",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbCPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）、兼容 Surface Thunderbolt™ 4 扩展坞；1 × USB-A 3.1",
         "usbAPorts": "1 个 USB-A 3.1 端口",
         "surfaceConnect": "not_applicable",
@@ -12730,19 +16761,19 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "本地视频播放最长23小时",
         "batteryLifeOffice": "网页浏览最长16小时（非办公实测）",
         "charger": "标配 45W USB-C（型号 2105）；最低充电 45W",
-        "fastCharging": "推荐快充 60W",
+        "fastCharging": "USB-C快速充电需最小60W充电器",
         "keyboardCompat": "一体式背光键盘",
         "penCompat": "not_applicable",
         "dialCompat": "仅屏外交互",
         "dockCompat": "Surface 雷电 4 扩展坞",
         "tpm": "Microsoft Pluton TPM 2.0",
-        "biometrics": "指纹电源按钮",
+        "biometrics": "指纹电源按钮，增强登录安全性",
         "securityFeatures": "Secured-core PC，微软 Pluton 安全处理器，企业级 BitLocker",
         "dimensions": "285.65 × 214.14 × 15.6 mm",
         "weightGrams": "1.22 kg",
         "packagingWeight": "not_disclosed",
         "serviceabilityScore": "9/10 (支持备件现场更换)",
-        "warranty": "3 年有限硬件保修",
+        "warranty": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
         "startingPriceCny": "¥10,788 起 (商用版)",
         "sourceReliability": "microsoft_official",
         "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
@@ -12750,7 +16781,11 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-21",
         "wireless": "Wi-Fi 7；蓝牙5.4",
         "dimensionsMm": "285.65 × 214.14 × 15.6 mm",
-        "batteryCapacityWh": "额定50 Wh；最小48 Wh"
+        "batteryCapacityWh": "额定50 Wh；最小48 Wh",
+        "tpmChip": "Microsoft Pluton TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心PC",
+        "chargingPower": "包装附带45W USB-C充电器；快速充电需另满足60W条件",
+        "trackpadType": "精准式触控板"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -12898,20 +16933,156 @@ const SURFACE_DATA = {
           "configuration": "laptop-13-inch-biz"
         },
         "windowsHello": {
-          "value": "指纹电源按钮",
+          "configuration": "laptop-13-inch-biz",
+          "value": "指纹电源按钮，增强登录安全性",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
           "region": "CN",
-          "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-13-inch-biz"
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
         },
         "biometrics": {
-          "value": "指纹电源按钮",
+          "configuration": "laptop-13-inch-biz",
+          "value": "指纹电源按钮，增强登录安全性",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
           "region": "CN",
-          "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-13-inch-biz"
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "Qualcomm Adreno GPU",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "178 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "1000:1；sRGB、增强型；独立校色，自适应颜色及对比度",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "10点触控；强化玻璃",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "Microsoft Pluton TPM2.0，支持BitLocker",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "Windows11安全核心PC",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "1080p Surface Studio前置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "双Studio麦克风，语音聚焦",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "Omnisonic扬声器，Dolby Audio",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "Dolby Audio；蓝牙LE音频",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "Windows11专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "包装附带45W USB-C充电器；快速充电需另满足60W条件",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "fastCharging": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "USB-C快速充电需最小60W充电器",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "trackpadType": {
+          "configuration": "laptop-13-inch-biz",
+          "value": "精准式触控板",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
         }
       }
     },
@@ -12953,11 +17124,11 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 11 专业版；预装 Microsoft 365 应用版",
+        "osAtLaunch": "Windows11专业版",
         "cpuModel": "Snapdragon X2 Plus（6核）",
         "cpuArch": "not_disclosed",
         "cpuCores": "6 核",
-        "gpuModel": "Qualcomm® Adreno™ GPU",
+        "gpuModel": "Qualcomm Adreno GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "80 TOPS",
         "copilotPlus": "Windows 11 AI+ PC（内存配置为 16GB、24GB）",
@@ -12972,16 +17143,16 @@ const SURFACE_DATA = {
         "ppi": "178 PPI",
         "refreshRate": "最高60Hz",
         "brightness": "最大500尼特（典型值）",
-        "colorSupport": "sRGB 和增强型，对比度 1000:1，防反光（ISO 9241-307）",
-        "touchAndPenProtocol": "10 点多点触控；仅触控，不支持触控笔，不兼容 Surface 触控笔或超薄触控笔",
-        "frontCamera": "1080p 全高清前置 Surface Studio 摄像头",
-        "windowsHello": "指纹电源按钮",
+        "colorSupport": "1000:1；sRGB、增强型；独立校色，自适应颜色及对比度",
+        "touchAndPenProtocol": "10点触控；强化玻璃",
+        "frontCamera": "1080p Surface Studio前置摄像头",
+        "windowsHello": "指纹电源按钮，增强登录安全性",
         "rearCamera": "not_applicable",
         "videoFeatures": "Windows 工作室效果（自动取景、人像模糊、创意滤镜、眼神交流、人像光效）",
-        "microphones": "具有语音聚焦功能的双录音室麦克风",
-        "speakers": "Omnitonic 扬声器，搭载杜比音效",
-        "audioTech": "杜比音效",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "microphones": "双Studio麦克风，语音聚焦",
+        "speakers": "Omnitonic扬声器，杜比音效（按该页名称）",
+        "audioTech": "Dolby Audio；蓝牙LE音频",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbCPorts": "2 × USB-C® / USB 3.2：充电、数据、DisplayPort 1.4a（最多两台 4K 60Hz）",
         "usbAPorts": "USB-A 3.2",
         "thunderboltSupport": "not_applicable",
@@ -12995,16 +17166,16 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "本地视频播放最长22.5小时",
         "batteryLifeOffice": "网页浏览最长18小时（非办公实测）",
         "charger": "USB-C 最低 60W 可快充；Surface 45W USB-C 充电器仅特定市场的特定配置随附",
-        "fastCharging": "USB-C 最低 60W",
+        "fastCharging": "USB-C快速充电需最小60W充电器",
         "keyboardCompat": "机械按键，QWERTY，整行功能键 F1–F12，背光",
         "penCompat": "not_applicable",
-        "trackpadType": "精确式触摸板，带自适应触控模式",
+        "trackpadType": "精准触控板，带自适应触控模式",
         "tpm": "Microsoft Pluton TPM 2.0",
-        "biometrics": "指纹电源按钮",
+        "biometrics": "指纹电源按钮，增强登录安全性",
         "securityFeatures": "Windows 11 安全核心 PC，Microsoft Pluton，BitLocker",
         "dimensions": "285.65 × 214.14 × 15.6 mm",
         "weightGrams": "1.23 kg",
-        "warranty": "3 年有限硬件保修（自发票日期起）",
+        "warranty": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
         "replaceableParts": "显示组件（含摄像头）、键盘、触摸板、可拆卸固态硬盘、电池、主板（含处理器和内存）、散热、扬声器、外壳、USB-C、USB-A、耳机插孔、风扇、支脚",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
@@ -13013,7 +17184,10 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-29",
         "wireless": "Wi-Fi 7；蓝牙5.4",
         "dimensionsMm": "285.65 × 214.14 × 15.6 mm",
-        "batteryCapacityWh": "额定50 Wh；最小48 Wh"
+        "batteryCapacityWh": "额定50 Wh；最小48 Wh",
+        "tpmChip": "Microsoft Pluton TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心PC",
+        "chargingPower": "45W USB-C充电器仅特定市场及配置附带；不是快充最低功率"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -13161,20 +17335,156 @@ const SURFACE_DATA = {
           "configuration": "laptop-13-inch-2-biz"
         },
         "windowsHello": {
-          "value": "指纹电源按钮",
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "指纹电源按钮，增强登录安全性",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
           "region": "CN",
-          "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-13-inch-2-biz"
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
         },
         "biometrics": {
-          "value": "指纹电源按钮",
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "指纹电源按钮，增强登录安全性",
           "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
           "region": "CN",
-          "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
-          "reviewedAt": "2026-10-09",
-          "configuration": "laptop-13-inch-2-biz"
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "Qualcomm Adreno GPU",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "178 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "1000:1；sRGB、增强型；独立校色，自适应颜色及对比度",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "10点触控；强化玻璃",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "Microsoft Pluton TPM2.0，支持BitLocker",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "Windows11安全核心PC",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "1080p Surface Studio前置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "双Studio麦克风，语音聚焦",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "Omnitonic扬声器，杜比音效（按该页名称）",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "Dolby Audio；蓝牙LE音频",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "Windows11专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "45W USB-C充电器仅特定市场及配置附带；不是快充最低功率",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "fastCharging": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "USB-C快速充电需最小60W充电器",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "trackpadType": {
+          "configuration": "laptop-13-inch-2-biz",
+          "value": "精准触控板，带自适应触控模式",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
         }
       }
     },
@@ -13217,12 +17527,12 @@ const SURFACE_DATA = {
           }
         ],
         "chassisMaterial": "阳极氧化铝",
-        "kickstandType": "一体式支架，165 度全阻尼铰链",
-        "osAtLaunch": "Windows 11 专业版",
+        "kickstandType": "165度全阻尼一体式支架",
+        "osAtLaunch": "Windows11专业版",
         "cpuModel": "Snapdragon X Plus（10核）；X Elite（12核）",
         "cpuArch": "Qualcomm Oryon™ 64 位",
         "cpuCores": "10 核 / 12 核",
-        "gpuModel": "Qualcomm® Adreno™ GPU",
+        "gpuModel": "Qualcomm Adreno GPU",
         "npuModel": "Qualcomm® Hexagon™ (45 TOPS)",
         "npuTops": "45 TOPS",
         "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
@@ -13237,21 +17547,21 @@ const SURFACE_DATA = {
         "ppi": "267 PPI",
         "refreshRate": "最高120Hz",
         "brightness": "600 nits / 900 nits HDR",
-        "colorSupport": "sRGB 和 Vivid",
-        "touchAndPenProtocol": "10 点触控，Microsoft Pen Protocol",
-        "frontCamera": "1440p 四倍高清超广角 Surface Studio 镜头",
-        "windowsHello": "支持 Windows Hello 人脸识别与 ESS",
-        "rearCamera": "1000 万像素超高清镜头",
+        "colorSupport": "LCD 1200:1；OLED 1000000:1；sRGB、Vivid；独立校色；Dolby Vision IQ",
+        "touchAndPenProtocol": "10点触控；MPP",
+        "frontCamera": "1440p超广角Surface Studio前置摄像头",
+        "windowsHello": "Windows Hello人脸识别，增强登录安全性",
+        "rearCamera": "1000万像素Ultra HD后置摄像头",
         "videoFeatures": "Windows Studio 特效 (自动构图、背景虚化、语音聚焦)",
-        "microphones": "矩阵式远场双麦克风",
-        "speakers": "支持 Dolby Atmos® 的 2W 立体声扬声器",
-        "audioTech": "Dolby Atmos®",
+        "microphones": "具有音质处理功能的矩阵式远场双麦克风",
+        "speakers": "2W立体声扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos；蓝牙LE Audio",
         "headphoneJack": "not_applicable",
         "usbCPorts": "2 × USB-C® / USB4®：充电、数据、DisplayPort 1.4a、兼容 Surface Thunderbolt™ 4 扩展坞",
         "usbAPorts": "not_applicable",
-        "surfaceConnect": "支持",
+        "surfaceConnect": "配备Surface Connect",
         "videoOut": "支持外部 4K 显示器",
-        "cellular": "可选 5G 或 Wi-Fi",
+        "cellular": "Wi-Fi+5G配置：nanoSIM；5G-NR SA/NSA、4G LTE Advanced Pro；GNSS L1",
         "wifi": "Wi-Fi 7 (802.11be)",
         "bluetooth": "Bluetooth® 5.4",
         "nfc": "支持（传感器级 NFC）",
@@ -13259,19 +17569,19 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "本地视频播放长达 14 小时（Wi-Fi）",
         "batteryLifeOffice": "网页浏览长达 10 小时（Wi-Fi）",
         "charger": "标配 39W Surface Connect 电源（特定配置，型号 1963）；最低充电 39W",
-        "fastCharging": "推荐快充 65W（国行第 11 代骁龙表）",
+        "fastCharging": "Surface Connect或USB-C快速充电需最小65W电源",
         "keyboardCompat": "Surface Pro 键盘盖",
-        "penCompat": "Surface 超薄触控笔",
+        "penCompat": "Surface超薄触控笔2；MPP",
         "dialCompat": "仅屏外交互",
         "dockCompat": "Surface 雷电 4 扩展坞",
         "tpm": "Microsoft Pluton / TPM 2.0",
-        "biometrics": "Windows Hello 人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "securityFeatures": "Secured-core PC，微软 Pluton 安全处理器，企业级 BitLocker",
         "dimensions": "287 × 209 × 9.3 mm",
         "weightGrams": "895 g（该页Wi-Fi配置）",
         "packagingWeight": "not_disclosed",
         "serviceabilityScore": "9/10 (支持备件现场更换)",
-        "warranty": "3 年有限硬件保修",
+        "warranty": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
         "startingPriceCny": "¥11,239 起 (商用版)",
         "sourceReliability": "microsoft_official",
         "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
@@ -13279,7 +17589,13 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-21",
         "wireless": "Wi-Fi 7；蓝牙5.4",
         "dimensionsMm": "287 × 209 × 9.3 mm",
-        "batteryCapacityWh": "LCD额定47 Wh、最小46 Wh；OLED额定53 Wh、最小51 Wh"
+        "batteryCapacityWh": "LCD额定47 Wh、最小46 Wh；OLED额定53 Wh、最小51 Wh",
+        "tpmChip": "Microsoft Pluton TPM2.0，支持BitLocker",
+        "securedCorePc": "Windows11安全核心PC",
+        "chargingPower": "39W电源（仅特定市场及配置附带）；不是快充最低功率",
+        "penHapticFeedback": "支持Surface超薄触控笔2触觉反馈",
+        "penChargingType": "兼容Surface Pro键盘内置Surface超薄触控笔2存储位及充电功能",
+        "compatibleKeyboard": "Surface Pro Flex键盘商用版、商用键盘盖带笔存储位、特制版专业键盘盖商用版、Surface Pro商用键盘"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -13392,8 +17708,209 @@ const SURFACE_DATA = {
           "configurationScope": "中国官方商用产品技术规格；不外推消费者或海外版本；配置范围按字段限定",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-11-biz-snap"
+        },
+        "gpuModel": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Qualcomm Adreno GPU",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-11-biz-snap",
+          "value": "267 PPI",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "pro-11-biz-snap",
+          "value": "LCD 1200:1；OLED 1000000:1；sRGB、Vivid；独立校色；Dolby Vision IQ",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-11-biz-snap",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Microsoft Pluton TPM2.0，支持BitLocker",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "securedCorePc": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Windows11安全核心PC",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Windows Hello人脸识别，增强登录安全性",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-11-biz-snap",
+          "value": "1440p超广角Surface Studio前置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-11-biz-snap",
+          "value": "具有音质处理功能的矩阵式远场双麦克风",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-11-biz-snap",
+          "value": "2W立体声扬声器，Dolby Atmos",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Dolby Atmos；蓝牙LE Audio",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Windows11专业版",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-11-biz-snap",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "pro-11-biz-snap",
+          "value": "中国该商用版：主机3年有限硬件保修；配件按品类及包装条款",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "pro-11-biz-snap",
+          "value": "39W电源（仅特定市场及配置附带）；不是快充最低功率",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-11-biz-snap",
+          "value": "1000万像素Ultra HD后置摄像头",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Surface超薄触控笔2；MPP",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penHapticFeedback": {
+          "configuration": "pro-11-biz-snap",
+          "value": "支持Surface超薄触控笔2触觉反馈",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "pro-11-biz-snap",
+          "value": "兼容Surface Pro键盘内置Surface超薄触控笔2存储位及充电功能",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Surface Pro Flex键盘商用版、商用键盘盖带笔存储位、特制版专业键盘盖商用版、Surface Pro商用键盘",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "pro-11-biz-snap",
+          "value": "165度全阻尼一体式支架",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "fastCharging": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Surface Connect或USB-C快速充电需最小65W电源",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "cellular": {
+          "configuration": "pro-11-biz-snap",
+          "value": "Wi-Fi+5G配置：nanoSIM；5G-NR SA/NSA、4G LTE Advanced Pro；GNSS L1",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-11-biz-snap",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+          "region": "CN",
+          "configurationScope": "中国该页面商用型号；网络/显示屏及包装配置限制见字段；不外推消费者版",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "pro-11-biz-intel",
@@ -14811,7 +19328,7 @@ const SURFACE_DATA = {
       "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
       "specs": {
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
+        "thunderboltSupport": "2个USB-C支持USB4/Thunderbolt4",
         "releaseDate": "2021 年 9 月",
         "generation": "第 8 代 (2021)",
         "status": "discontinued",
@@ -14829,13 +19346,13 @@ const SURFACE_DATA = {
             "image": "./assets/products/surface-pro-13-black.png"
           }
         ],
-        "chassisMaterial": "签名氧化铝",
-        "kickstandType": "not_disclosed",
+        "chassisMaterial": "阳极氧化铝",
+        "kickstandType": "全阻尼支架，最高165度",
         "osAtLaunch": "Windows 11 专业版",
         "cpuModel": "商用：i3-1115G4（Wi-Fi）；i5-1145G7 / i7-1185G7（Wi-Fi或LTE，地区上市另核验）",
         "cpuArch": "64 位 / 10 nm SuperFin",
-        "cpuCores": "not_disclosed",
-        "gpuModel": "Intel® Iris® Xe Graphics",
+        "cpuCores": "商用i3双核；i5/i7四核",
+        "gpuModel": "商用i3：Intel UHD；i5/i7：Iris Xe",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_applicable",
@@ -14851,18 +19368,18 @@ const SURFACE_DATA = {
         "refreshRate": "最高 120Hz（默认 60Hz）",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
-        "frontCamera": "500 万像素 1080p 前置 + Windows Hello",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "1000 万像素后置自动对焦，支持 4K",
-        "videoFeatures": "not_applicable",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "2W 立体声扬声器，Dolby Atmos®",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p全高清",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "1000万像素自动对焦，1080p及4K视频",
+        "videoFeatures": "前置1080p；后置1080p/4K",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "2W立体声，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbCPorts": "2 个 USB-C® (USB 4.0 / Thunderbolt™ 4)",
         "usbAPorts": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "videoOut": "支持外部显示器",
         "cellular": "可选 LTE Advanced",
         "wifi": "Wi-Fi 6 (802.11ax)",
@@ -14878,7 +19395,7 @@ const SURFACE_DATA = {
         "dialCompat": "仅屏外交互",
         "dockCompat": "Surface 雷电 4 扩展坞",
         "tpm": "硬件级 TPM 2.0 芯片",
-        "biometrics": "Windows Hello 增强型登录安全 (ESS)",
+        "biometrics": "Windows Hello人脸识别",
         "securityFeatures": "Secured-core PC，微软 Pluton 安全处理器，企业级 BitLocker",
         "dimensions": "287 mm × 208 mm × 9.3 mm",
         "weightGrams": "891 克",
@@ -14889,7 +19406,11 @@ const SURFACE_DATA = {
         "sourceReliability": "microsoft_official",
         "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
         "officialCommercialConfigureUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
-        "lastVerified": "2026-09-21"
+        "lastVerified": "2026-09-21",
+        "tpmChip": "TPM 2.0",
+        "compatibleKeyboard": "Surface Pro Signature Keyboard（另售）",
+        "penHapticFeedback": "Windows 11下支持Slim Pen 2触觉信号；笔另售",
+        "penChargingType": "另售Signature Keyboard提供Slim Pen 2存储与无线充电"
       },
       "unverifiedFields": [],
       "evidenceSources": [
@@ -14903,8 +19424,177 @@ const SURFACE_DATA = {
           "region": "GLOBAL",
           "configurationScope": "全球2021 Pro8事实表第2页Commercial CPU栏，非国行SKU销售认证",
           "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-8-biz",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "pro-8-biz",
+          "value": "全阻尼支架，最高165度",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "cpuCores": {
+          "configuration": "pro-8-biz",
+          "value": "商用i3双核；i5/i7四核",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "pro-8-biz",
+          "value": "商用i3：Intel UHD；i5/i7：Iris Xe",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-8-biz",
+          "value": "267 PPI",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-8-biz",
+          "value": "10点触控",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-8-biz",
+          "value": "500万像素，1080p全高清",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-8-biz",
+          "value": "1000万像素自动对焦，1080p及4K视频",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-8-biz",
+          "value": "前置1080p；后置1080p/4K",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-8-biz",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-8-biz",
+          "value": "2W立体声，Dolby Atmos",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-8-biz",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-8-biz",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "pro-8-biz",
+          "value": "2个USB-C支持USB4/Thunderbolt4",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-8-biz",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-8-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-8-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "pro-8-biz",
+          "value": "TPM 2.0",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "pro-8-biz",
+          "value": "Surface Pro Signature Keyboard（另售）",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "penHapticFeedback": {
+          "configuration": "pro-8-biz",
+          "value": "Windows 11下支持Slim Pen 2触觉信号；笔另售",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "pro-8-biz",
+          "value": "另售Signature Keyboard提供Slim Pen 2存储与无线充电",
+          "sourceUrl": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定；附表明确区分商业CPU，未把预告LTE上市日套入中国",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-5-biz",
@@ -15149,7 +19839,7 @@ const SURFACE_DATA = {
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-studio-2-for-business",
       "learnDocUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
       "specs": {
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
+        "thunderboltSupport": "USB4/Thunderbolt4，支持DisplayPort和Power Delivery",
         "releaseDate": "2023 年 10 月",
         "generation": "第 2 代 (2023)",
         "status": "discontinued",
@@ -15164,12 +19854,12 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "阳极氧化铝",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 11 专业版",
+        "osAtLaunch": "Windows10/11专业版（商用）",
         "cpuModel": "Intel Core i7-13800H（商用）",
         "cpuArch": "64 位 / Intel 7",
         "cpuCores": "not_disclosed",
         "gpuModel": "NVIDIA® GeForce RTX™ 4050/4060 或 NVIDIA® RTX™ 2000 Ada",
-        "npuModel": "not_disclosed",
+        "npuModel": "Intel Gen3 Movidius3700VC VPU AI加速器；不可据此推NPU TOPS",
         "npuTops": "not_disclosed",
         "copilotPlus": "not_applicable",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
@@ -15184,19 +19874,19 @@ const SURFACE_DATA = {
         "ppi": "200 PPI",
         "refreshRate": "最高120Hz",
         "brightness": "SDR 最大 500 nits（典型值）；HDR 峰值 650 nits",
-        "colorSupport": "sRGB 和 Vivid",
-        "touchAndPenProtocol": "10 点多点触控，支持 Microsoft Pen Protocol (MPP)",
+        "colorSupport": "sRGB、Vivid；1500:1；独立校色",
+        "touchAndPenProtocol": "10点触控；MPP",
         "frontCamera": "1080p广角Surface Studio摄像头",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello2.0人脸识别",
         "rearCamera": "not_applicable",
-        "videoFeatures": "Windows Studio 特效 (自动构图、背景虚化、语音聚焦)",
-        "microphones": "矩阵式远场双麦克风",
-        "speakers": "支持 Dolby® Atmos® 音效的四声道 Omnisonic® 扬声器",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "videoFeatures": "Windows Studio自动构图、眼神接触和背景虚化",
+        "microphones": "双远场Studio麦克风；Voice Clarity需Windows11及兼容应用",
+        "speakers": "四Omnisonic扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbCPorts": "2 个 USB-C® (Thunderbolt™ 4)",
         "usbAPorts": "1 个 USB-A 3.1",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "videoOut": "支持外部 4K 60Hz 显示器",
         "cellular": "not_applicable",
         "wifi": "Wi-Fi 6E (802.11ax)",
@@ -15212,7 +19902,7 @@ const SURFACE_DATA = {
         "dialCompat": "仅屏外交互",
         "dockCompat": "Surface 雷电 4 扩展坞",
         "tpm": "硬件级 TPM 2.0 芯片",
-        "biometrics": "Windows Hello 增强型登录安全 (ESS)",
+        "biometrics": "Windows Hello2.0人脸识别",
         "securityFeatures": "Secured-core PC，微软 Pluton 安全处理器，企业级 BitLocker",
         "dimensions": "323 × 230 × 22 mm",
         "weightGrams": "集显1.89kg；NVIDIA独显1.98kg",
@@ -15228,7 +19918,11 @@ const SURFACE_DATA = {
         "batteryCapacityWh": "额定58 Wh；最小56 Wh",
         "wireless": "Wi-Fi 6E；蓝牙5.3",
         "penHapticFeedback": "支持Slim Pen 2触觉信号",
-        "trackpadType": "精准触觉反馈触控板，支持自适应触控模式"
+        "trackpadType": "精准触觉反馈触控板，支持自适应触控模式",
+        "tpmChip": "硬件TPM2.0（商用）",
+        "usbPorts": "2个USB-C USB4/Thunderbolt4；USB-A3.1；MicroSDXC；Surface Connect；3.5mm耳机插孔",
+        "penChargingType": "键盘下方Slim Pen2存储与充电",
+        "chargingPower": "该页附带：集显102W；NVIDIA独显120W（不是最低充电功率）"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -15373,8 +20067,161 @@ const SURFACE_DATA = {
           "configurationScope": "同一支持页明确区分消费/商用CPU；其余共有硬件仅按明确列出的配置，不证明中国售价保修",
           "reviewedAt": "2026-10-09",
           "configuration": "sls-2-biz"
+        },
+        "npuModel": {
+          "configuration": "sls-2-biz",
+          "value": "Intel Gen3 Movidius3700VC VPU AI加速器；不可据此推NPU TOPS",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "sls-2-biz",
+          "value": "200 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "sls-2-biz",
+          "value": "sRGB、Vivid；1500:1；独立校色",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "sls-2-biz",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "tpmChip": {
+          "configuration": "sls-2-biz",
+          "value": "硬件TPM2.0（商用）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "sls-2-biz",
+          "value": "Windows Hello2.0人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "sls-2-biz",
+          "value": "Windows Hello2.0人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "sls-2-biz",
+          "value": "Windows Studio自动构图、眼神接触和背景虚化",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "sls-2-biz",
+          "value": "双远场Studio麦克风；Voice Clarity需Windows11及兼容应用",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "sls-2-biz",
+          "value": "四Omnisonic扬声器，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "sls-2-biz",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "sls-2-biz",
+          "value": "2个USB-C USB4/Thunderbolt4；USB-A3.1；MicroSDXC；Surface Connect；3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "sls-2-biz",
+          "value": "USB4/Thunderbolt4，支持DisplayPort和Power Delivery",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "sls-2-biz",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "sls-2-biz",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "sls-2-biz",
+          "value": "键盘下方Slim Pen2存储与充电",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "sls-2-biz",
+          "value": "Windows10/11专业版（商用）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chassisMaterial": {
+          "configuration": "sls-2-biz",
+          "value": "阳极氧化铝",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "chargingPower": {
+          "configuration": "sls-2-biz",
+          "value": "该页附带：集显102W；NVIDIA独显120W（不是最低充电功率）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "sls-1-biz",
@@ -15396,7 +20243,7 @@ const SURFACE_DATA = {
       "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-studio",
       "learnDocUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
       "specs": {
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
+        "thunderboltSupport": "2个USB-C USB4/Thunderbolt4",
         "releaseDate": "2021 年 9 月",
         "generation": "第 1 代 (2021)",
         "status": "discontinued",
@@ -15423,12 +20270,12 @@ const SURFACE_DATA = {
         "storageOptions": "256GB / 512GB / 1TB / 2TB SSD",
         "ssdRemovable": "可拆卸式固态硬盘",
         "expandableStorage": "not_applicable",
-        "screenSize": "14.4 英寸 PixelSense™ Flow",
+        "screenSize": "14.4英寸 PixelSense Flow触控屏",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "2400 × 1600",
         "ppi": "201 PPI",
-        "refreshRate": "最高 120Hz",
+        "refreshRate": "最高120Hz",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
         "touchAndPenProtocol": "10 点触控，支持 Microsoft 触控笔协议（MPP）",
@@ -15436,13 +20283,13 @@ const SURFACE_DATA = {
         "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
         "videoFeatures": "not_disclosed",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
+        "microphones": "Studio麦克风",
         "speakers": "四声道 Omnisonic™ 扬声器，支持杜比全景声 (Dolby Atmos®)",
         "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "headphoneJack": "耳机插孔",
         "usbCPorts": "2 个 USB-C® (USB 4.0 / Thunderbolt™ 4)",
         "usbAPorts": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "videoOut": "not_disclosed",
         "cellular": "not_applicable",
         "wifi": "Wi-Fi 6 (802.11ax)",
@@ -15454,7 +20301,7 @@ const SURFACE_DATA = {
         "charger": "集显最低/标配 60W（型号 1706）；独显最低/标配 95W（型号 1798）",
         "fastCharging": "推荐快充 60W（集显）/ 95W（独显）",
         "keyboardCompat": "一体式背光键盘",
-        "penCompat": "Surface Slim Pen 2（磁吸收纳充电）",
+        "penCompat": "支持Surface Slim Pen2（另售）",
         "dialCompat": "not_disclosed",
         "dockCompat": "not_disclosed",
         "tpm": "not_disclosed",
@@ -15470,7 +20317,9 @@ const SURFACE_DATA = {
         "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-studio",
         "officialCommercialConfigureUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
         "lastVerified": "2026-09-21",
-        "usbPorts": "2个USB-C（USB4/Thunderbolt 4）；Surface Connect；耳机插孔"
+        "usbPorts": "2个USB-C（USB4/Thunderbolt 4）；Surface Connect；耳机插孔",
+        "trackpadType": "大尺寸精准触觉触控板",
+        "penChargingType": "Slim Pen2在键盘前部下方磁吸存储和充电（笔另售）"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -15503,8 +20352,81 @@ const SURFACE_DATA = {
           "configurationScope": "支持页明确列消费与商用系统；规格详情链接已404",
           "reviewedAt": "2026-10-09",
           "configuration": "sls-1-biz"
+        },
+        "screenSize": {
+          "configuration": "sls-1-biz",
+          "value": "14.4英寸 PixelSense Flow触控屏",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "refreshRate": {
+          "configuration": "sls-1-biz",
+          "value": "最高120Hz",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "trackpadType": {
+          "configuration": "sls-1-biz",
+          "value": "大尺寸精准触觉触控板",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "sls-1-biz",
+          "value": "Slim Pen2在键盘前部下方磁吸存储和充电（笔另售）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "sls-1-biz",
+          "value": "支持Surface Slim Pen2（另售）",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "sls-1-biz",
+          "value": "Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "sls-1-biz",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "sls-1-biz",
+          "value": "耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "sls-1-biz",
+          "value": "2个USB-C USB4/Thunderbolt4",
+          "sourceUrl": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "go-3-biz",
@@ -15678,7 +20600,7 @@ const SURFACE_DATA = {
       "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-studio-2-plus",
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-studio-2-features",
       "specs": {
-        "thunderboltSupport": "USB4 / Thunderbolt™ 4",
+        "thunderboltSupport": "3个USB-C USB4/Thunderbolt4；原生支持3台4K60Hz外接显示器",
         "releaseDate": "2022 年 10 月",
         "generation": "第 2+ 代 (2022)",
         "status": "discontinued",
@@ -15692,7 +20614,7 @@ const SURFACE_DATA = {
           }
         ],
         "chassisMaterial": "not_disclosed",
-        "kickstandType": "not_applicable",
+        "kickstandType": "Zero Gravity铰链",
         "osAtLaunch": "Windows11专业版",
         "cpuModel": "Intel 第11代 Core i7-H",
         "cpuArch": "64 位 / 10 nm SuperFin",
@@ -15712,16 +20634,16 @@ const SURFACE_DATA = {
         "ppi": "192 PPI",
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
-        "colorSupport": "sRGB 和 Vivid",
-        "touchAndPenProtocol": "10 点触控，支持 Microsoft 触控笔协议（MPP）",
+        "colorSupport": "sRGB、Vivid，独立校色；10亿色、自动色彩管理；1200:1；Dolby Vision",
+        "touchAndPenProtocol": "10点触控；MPP",
         "frontCamera": "1080p Full HD",
-        "windowsHello": "Windows Hello 面部识别",
+        "windowsHello": "Windows Hello人脸识别",
         "rearCamera": "not_applicable",
-        "videoFeatures": "Windows Studio 特效 (自动构图、背景虚化、语音聚焦)",
-        "microphones": "双 Studio Mics / 摄影棚麦克风",
-        "speakers": "杜比全景声 (Dolby Atmos®)",
-        "audioTech": "Dolby Atmos®",
-        "headphoneJack": "3.5 毫米耳机插孔",
+        "videoFeatures": "前置1080p视频",
+        "microphones": "双远场Studio麦克风",
+        "speakers": "2.1立体声扬声器，Dolby Atmos",
+        "audioTech": "Dolby Atmos",
+        "headphoneJack": "3.5mm耳机插孔",
         "usbCPorts": "3 个 USB-C® (Thunderbolt™ 4)",
         "usbAPorts": "2 个 USB-A 3.1",
         "surfaceConnect": "not_applicable",
@@ -15736,17 +20658,17 @@ const SURFACE_DATA = {
         "charger": "随附交流电源线供电（官方：USB-C 不接收入站电源）",
         "fastCharging": "not_applicable",
         "keyboardCompat": "Surface 键盘（另售）",
-        "penCompat": "Surface 触控笔 / Surface 超薄触控笔",
+        "penCompat": "Surface Pen；Surface Dial屏上交互",
         "dialCompat": "Surface Dial 屏上交互",
         "dockCompat": "not_applicable",
         "tpm": "TPM 2.0",
-        "biometrics": "Windows Hello 人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "securityFeatures": "TPM 2.0，BitLocker",
         "dimensions": "637.35 × 438.90 × 12.50；底座 250.00 × 220.00 × 31.45",
         "weightGrams": "最大9.56 kg（上限，不是精确重量）",
         "packagingWeight": "not_disclosed",
         "serviceabilityScore": "9/10 (支持备件现场更换)",
-        "warranty": "not_disclosed",
+        "warranty": "全球支持页：1年有限硬件保修；不是中国保修承诺",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-studio-2-plus",
@@ -15754,7 +20676,9 @@ const SURFACE_DATA = {
         "lastVerified": "2026-09-21",
         "usbPorts": "3个USB-C（USB4/Thunderbolt4）；2个USB-A3.1；千兆以太网；3.5mm耳机插孔",
         "wireless": "Wi-Fi6；蓝牙5.1",
-        "tpmChip": "TPM2.0"
+        "tpmChip": "TPM2.0",
+        "dimensionsMm": "显示屏637.35×438.90×12.5mm；底座250×220×31.45mm",
+        "penChargingType": "Surface Pen集成磁吸存放；此项不表示充电"
       },
       "unverifiedFields": [
         "cpuArch",
@@ -15853,22 +20777,151 @@ const SURFACE_DATA = {
           "configuration": "studio-2-plus-biz"
         },
         "tpmChip": {
+          "configuration": "studio-2-plus-biz",
           "value": "TPM2.0",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
           "region": "GLOBAL",
-          "configurationScope": "官方Studio2+全球硬件；没有用Studio2替代，不认证中国地区销售条件",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-2-plus-biz"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         },
         "osAtLaunch": {
+          "configuration": "studio-2-plus-biz",
           "value": "Windows11专业版",
           "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
           "region": "GLOBAL",
-          "configurationScope": "官方Studio2+全球硬件；没有用Studio2替代，不认证中国地区销售条件",
-          "reviewedAt": "2026-10-09",
-          "configuration": "studio-2-plus-biz"
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "studio-2-plus-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "studio-2-plus-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "studio-2-plus-biz",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "studio-2-plus-biz",
+          "value": "Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "studio-2-plus-biz",
+          "value": "2.1立体声扬声器，Dolby Atmos",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "studio-2-plus-biz",
+          "value": "双远场Studio麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "studio-2-plus-biz",
+          "value": "前置1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "warranty": {
+          "configuration": "studio-2-plus-biz",
+          "value": "全球支持页：1年有限硬件保修；不是中国保修承诺",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "studio-2-plus-biz",
+          "value": "192 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "studio-2-plus-biz",
+          "value": "10点触控；MPP",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "colorSupport": {
+          "configuration": "studio-2-plus-biz",
+          "value": "sRGB、Vivid，独立校色；10亿色、自动色彩管理；1200:1；Dolby Vision",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "studio-2-plus-biz",
+          "value": "Surface Pen；Surface Dial屏上交互",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "kickstandType": {
+          "configuration": "studio-2-plus-biz",
+          "value": "Zero Gravity铰链",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "dimensionsMm": {
+          "configuration": "studio-2-plus-biz",
+          "value": "显示屏637.35×438.90×12.5mm；底座250×220×31.45mm",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "thunderboltSupport": {
+          "configuration": "studio-2-plus-biz",
+          "value": "3个USB-C USB4/Thunderbolt4；原生支持3台4K60Hz外接显示器",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
+        },
+        "penChargingType": {
+          "configuration": "studio-2-plus-biz",
+          "value": "Surface Pen集成磁吸存放；此项不表示充电",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页限定规格；非中国销售/保修认证",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "laptop-13-inch",
@@ -16556,15 +21609,15 @@ const SURFACE_DATA = {
         "chassisMaterial": "镁合金",
         "kickstandType": "not_applicable",
         "osAtLaunch": "Windows 10 专业版 (可免费升至 Windows 11 专业版)",
-        "cpuModel": "英特尔® 酷睿™ 第 10 代 i5-1035G7 / i7-1065G7",
+        "cpuModel": "已核对15英寸Quadro子配置：四核第10代Core i7-1065G7；其他配置待核验",
         "cpuArch": "64 位 / 10 nm",
-        "cpuCores": "not_disclosed",
-        "gpuModel": "13.5 英寸：Intel Iris Plus Graphics 或 NVIDIA GeForce GTX 1650 Max-Q 4GB；15 英寸：NVIDIA GeForce GTX 1660 Ti Max-Q 6GB",
+        "cpuCores": "15英寸Quadro子配置：4核",
+        "gpuModel": "15英寸Quadro子配置：Intel Iris Plus + Quadro RTX3000 Max-Q，6GB GDDR6、1920 CUDA核、30 RT核、240 Tensor核；其他配置待核验",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_applicable",
-        "ramSpec": "8GB / 16GB / 32GB 3733Mhz LPDDR4x",
-        "storageOptions": "256GB / 512GB / 1TB / 2TB PCIe NVMe SSD",
+        "ramSpec": "15英寸Quadro子配置：32GB LPDDR4x；其他配置待核验",
+        "storageOptions": "15英寸Quadro子配置：512GB / 1TB；其他配置待核验",
         "ssdRemovable": "not_disclosed",
         "expandableStorage": "全尺寸 SDXC 读卡器",
         "screenSize": "13.5 英寸 (3000×2000) / 15.0 英寸 (3240×2160)",
@@ -16625,23 +21678,53 @@ const SURFACE_DATA = {
       },
       "unverifiedFields": [
         "cpuArch",
-        "cpuModel",
-        "ramSpec",
         "thermalDesign"
       ],
-      "dataConflicts": [
-        {
-          "field": "cpuModel",
-          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
-          "reviewedAt": "2026-10-09",
-          "reason": "SOURCE_SCOPE_MISMATCH; CONFIGURATION_CONFLICT: CPU table copies Laptop3"
+      "dataConflicts": [],
+      "specEvidence": {
+        "cpuModel": {
+          "configuration": "book-3-biz",
+          "value": "已核对15英寸Quadro子配置：四核第10代Core i7-1065G7；其他配置待核验",
+          "sourceUrl": "https://learn.microsoft.com/en-us/surface/surface-book-quadro",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3商用15英寸Quadro RTX3000子配置；不能推及13.5英寸、GeForce版本或中国销售",
+          "reviewedAt": "2026-10-09"
         },
-        {
-          "field": "ramSpec",
-          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
-          "reviewedAt": "2026-10-09",
-          "reason": "SOURCE_SCOPE_MISMATCH; CONFIGURATION_CONFLICT: CPU table copies Laptop3"
+        "cpuCores": {
+          "configuration": "book-3-biz",
+          "value": "15英寸Quadro子配置：4核",
+          "sourceUrl": "https://learn.microsoft.com/en-us/surface/surface-book-quadro",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3商用15英寸Quadro RTX3000子配置；不能推及13.5英寸、GeForce版本或中国销售",
+          "reviewedAt": "2026-10-09"
+        },
+        "gpuModel": {
+          "configuration": "book-3-biz",
+          "value": "15英寸Quadro子配置：Intel Iris Plus + Quadro RTX3000 Max-Q，6GB GDDR6、1920 CUDA核、30 RT核、240 Tensor核；其他配置待核验",
+          "sourceUrl": "https://learn.microsoft.com/en-us/surface/surface-book-quadro",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3商用15英寸Quadro RTX3000子配置；不能推及13.5英寸、GeForce版本或中国销售",
+          "reviewedAt": "2026-10-09"
+        },
+        "ramSpec": {
+          "configuration": "book-3-biz",
+          "value": "15英寸Quadro子配置：32GB LPDDR4x；其他配置待核验",
+          "sourceUrl": "https://learn.microsoft.com/en-us/surface/surface-book-quadro",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3商用15英寸Quadro RTX3000子配置；不能推及13.5英寸、GeForce版本或中国销售",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "book-3-biz",
+          "value": "15英寸Quadro子配置：512GB / 1TB；其他配置待核验",
+          "sourceUrl": "https://learn.microsoft.com/en-us/surface/surface-book-quadro",
+          "region": "GLOBAL",
+          "configurationScope": "全球Book3商用15英寸Quadro RTX3000子配置；不能推及13.5英寸、GeForce版本或中国销售",
+          "reviewedAt": "2026-10-09"
         }
+      },
+      "evidenceSources": [
+        "https://learn.microsoft.com/en-us/surface/surface-book-quadro"
       ]
     },
     {
@@ -16672,19 +21755,19 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "镁合金",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "Windows 10 专业版 (支持升级 Windows 11 专业版)",
-        "cpuModel": "英特尔® 奔腾® 黄金处理器 4425Y / 酷睿™ m3-8100Y",
+        "osAtLaunch": "Windows 10专业版（2021菲律宾商用公告）",
+        "cpuModel": "该菲律宾商用SKU：第8代Core m3（其他地区配置待核验）",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
         "gpuModel": "Intel® UHD Graphics 615",
         "npuModel": "not_applicable",
         "npuTops": "not_applicable",
         "copilotPlus": "not_applicable",
-        "ramSpec": "4GB / 8GB LPDDR3",
-        "storageOptions": "64GB eMMC / 128GB SSD",
+        "ramSpec": "该菲律宾商用SKU：8GB",
+        "storageOptions": "该菲律宾商用SKU：128GB SSD",
         "ssdRemovable": "not_disclosed",
         "expandableStorage": "配备 MicroSDXC 读卡器",
-        "screenSize": "10.5 英寸 PixelSense™ 触控屏",
+        "screenSize": "10.5英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
         "resolution": "1920 × 1280",
@@ -16693,11 +21776,11 @@ const SURFACE_DATA = {
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
         "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "500 万像素 1080p 全高清镜头",
+        "frontCamera": "500万像素前置摄像头",
         "windowsHello": "Windows Hello 面部识别",
         "rearCamera": "800 万像素 1080p 自动对焦后置镜头",
         "videoFeatures": "全高清视频",
-        "microphones": "双工作室麦克风",
+        "microphones": "双Studio麦克风",
         "speakers": "2W 立体声扬声器，支持杜比音效 (Dolby Audio)",
         "audioTech": "Dolby Audio™",
         "headphoneJack": "3.5 毫米耳机插孔",
@@ -16711,7 +21794,7 @@ const SURFACE_DATA = {
         "batteryLifeVideo": "not_disclosed",
         "chargingPower": "最低充电 24W；标配 24W（型号 1735 / 1736）",
         "fastCharging": null,
-        "compatibleKeyboard": "Surface Go 专业键盘盖",
+        "compatibleKeyboard": "Surface Go Type Cover（该公告亮铂金）",
         "penHapticFeedback": "not_applicable",
         "penChargingType": "磁吸附机身侧边",
         "trackpadType": "大尺寸精准触控板",
@@ -16730,7 +21813,8 @@ const SURFACE_DATA = {
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-30",
         "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-go-2-specs-and-features",
-        "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/surface-go-2"
+        "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/surface-go-2",
+        "penCompat": "支持Surface Pen"
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
@@ -16743,7 +21827,85 @@ const SURFACE_DATA = {
       "unverifiedFields": [
         "cpuArch",
         "thermalDesign"
-      ]
+      ],
+      "specEvidence": {
+        "cpuModel": {
+          "configuration": "go-2-biz",
+          "value": "该菲律宾商用SKU：第8代Core m3（其他地区配置待核验）",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "ramSpec": {
+          "configuration": "go-2-biz",
+          "value": "该菲律宾商用SKU：8GB",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "storageOptions": {
+          "configuration": "go-2-biz",
+          "value": "该菲律宾商用SKU：128GB SSD",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "screenSize": {
+          "configuration": "go-2-biz",
+          "value": "10.5英寸 PixelSense",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "go-2-biz",
+          "value": "500万像素前置摄像头",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "go-2-biz",
+          "value": "双Studio麦克风",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "penCompat": {
+          "configuration": "go-2-biz",
+          "value": "支持Surface Pen",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "compatibleKeyboard": {
+          "configuration": "go-2-biz",
+          "value": "Surface Go Type Cover（该公告亮铂金）",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "go-2-biz",
+          "value": "Windows 10专业版（2021菲律宾商用公告）",
+          "sourceUrl": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "region": "GLOBAL",
+          "configurationScope": "菲律宾商用公告明确的m3/8GB/128GB子配置，非中国SKU认证；其他商用配置未由此文确认",
+          "reviewedAt": "2026-10-09"
+        }
+      },
+      "evidenceSources": [
+        "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/"
+      ],
+      "dataConflicts": []
     },
     {
       "id": "pro-6-biz",
@@ -16777,9 +21939,9 @@ const SURFACE_DATA = {
             "material": "特制镁合金"
           }
         ],
-        "chassisMaterial": "镁合金",
+        "chassisMaterial": "镁合金一体机身",
         "kickstandType": "not_disclosed",
-        "osAtLaunch": "Windows 10 专业版",
+        "osAtLaunch": "Windows 10专业版（商用）",
         "cpuModel": "Intel Core i5-8350U / i7-8650U",
         "cpuArch": "64 位 / 14 nm",
         "cpuCores": "not_disclosed",
@@ -16790,7 +21952,7 @@ const SURFACE_DATA = {
         "ramSpec": "8GB / 16GB",
         "storageOptions": "128GB / 256GB / 512GB / 1TB SSD",
         "ssdRemovable": "not_disclosed",
-        "expandableStorage": "配备 MicroSDXC 读卡器",
+        "expandableStorage": "microSDXC UHS-I",
         "screenSize": "12.3 英寸 PixelSense",
         "aspectRatio": "3:2",
         "panelTech": "not_disclosed",
@@ -16799,18 +21961,18 @@ const SURFACE_DATA = {
         "refreshRate": "not_disclosed",
         "brightness": "not_disclosed",
         "colorSupport": "not_disclosed",
-        "touchAndPenProtocol": "10 点多点触控",
-        "frontCamera": "500 万像素 1080p 全高清前置摄像头",
-        "windowsHello": "Windows Hello 面部识别",
-        "rearCamera": "800 万像素 1080p 自动对焦后置镜头",
-        "videoFeatures": "全高清视频通话",
+        "touchAndPenProtocol": "10点触控",
+        "frontCamera": "500万像素，1080p视频",
+        "windowsHello": "Windows Hello人脸识别",
+        "rearCamera": "800万像素自动对焦，1080p视频",
+        "videoFeatures": "前后摄像头1080p视频",
         "microphones": "双麦克风",
-        "speakers": "1.6W 立体声扬声器，支持杜比音效 (Dolby Audio)",
-        "audioTech": "Dolby Audio™",
-        "headphoneJack": "3.5 毫米耳机插孔",
-        "usbPorts": "1 × 全尺寸 USB-A 3.0 + 1 × Mini DisplayPort + 1 × Surface Connect",
+        "speakers": "1.6W立体声，Dolby Audio",
+        "audioTech": "Dolby Audio",
+        "headphoneJack": "3.5mm耳机插孔",
+        "usbPorts": "全尺寸USB3.0；Mini DisplayPort；Surface Connect；键盘盖接口",
         "thunderboltSupport": "not_applicable",
-        "surfaceConnect": "配备 Surface Connect",
+        "surfaceConnect": "配备Surface Connect",
         "wireless": "Wi-Fi 802.11a/b/g/n/ac；蓝牙4.1",
         "cellular": "not_applicable",
         "batteryCapacityWh": "not_disclosed",
@@ -16824,7 +21986,7 @@ const SURFACE_DATA = {
         "trackpadType": "大尺寸精准玻璃触控板",
         "tpmChip": "TPM 2.0",
         "securedCorePc": "not_applicable",
-        "biometrics": "Windows Hello 人脸识别",
+        "biometrics": "Windows Hello人脸识别",
         "enterpriseManage": "支持 Intel vPro 技术与企业域管理",
         "dimensionsMm": "292 × 201 × 8.5 mm",
         "weightGrams": "i5 770g；i7 784g（不含键盘）",
@@ -16950,8 +22112,137 @@ const SURFACE_DATA = {
           "configurationScope": "同页明确区分消费版i5-8250U与商用版i5-8350U；其余为共同硬件，不证明中国销售配置",
           "reviewedAt": "2026-10-09",
           "configuration": "pro-6-biz"
+        },
+        "chassisMaterial": {
+          "configuration": "pro-6-biz",
+          "value": "镁合金一体机身",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "osAtLaunch": {
+          "configuration": "pro-6-biz",
+          "value": "Windows 10专业版（商用）",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "ppi": {
+          "configuration": "pro-6-biz",
+          "value": "267 PPI",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "touchAndPenProtocol": {
+          "configuration": "pro-6-biz",
+          "value": "10点触控",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "expandableStorage": {
+          "configuration": "pro-6-biz",
+          "value": "microSDXC UHS-I",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "frontCamera": {
+          "configuration": "pro-6-biz",
+          "value": "500万像素，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "rearCamera": {
+          "configuration": "pro-6-biz",
+          "value": "800万像素自动对焦，1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "videoFeatures": {
+          "configuration": "pro-6-biz",
+          "value": "前后摄像头1080p视频",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "microphones": {
+          "configuration": "pro-6-biz",
+          "value": "双麦克风",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "speakers": {
+          "configuration": "pro-6-biz",
+          "value": "1.6W立体声，Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "audioTech": {
+          "configuration": "pro-6-biz",
+          "value": "Dolby Audio",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "headphoneJack": {
+          "configuration": "pro-6-biz",
+          "value": "3.5mm耳机插孔",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "usbPorts": {
+          "configuration": "pro-6-biz",
+          "value": "全尺寸USB3.0；Mini DisplayPort；Surface Connect；键盘盖接口",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "surfaceConnect": {
+          "configuration": "pro-6-biz",
+          "value": "配备Surface Connect",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "windowsHello": {
+          "configuration": "pro-6-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
+        },
+        "biometrics": {
+          "configuration": "pro-6-biz",
+          "value": "Windows Hello人脸识别",
+          "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "region": "GLOBAL",
+          "configurationScope": "全球官方支持页技术规格，非中国SKU销售认证；配置差异按字段限定",
+          "reviewedAt": "2026-10-09"
         }
-      }
+      },
+      "dataConflicts": []
     },
     {
       "id": "xbox-original",

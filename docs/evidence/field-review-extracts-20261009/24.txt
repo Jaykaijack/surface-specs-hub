@@ -1,0 +1,185 @@
+Surface Laptop Studio features | Microsoft Support (https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features)
+citeturn40view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features","lineno":200}); Redirected to URL: https://support.microsoft.com/en-us/surface/models/surface-laptop-studio-features; Total lines: 331
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Laptop Studio features
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Laptop Studio
+L126: 
+L127: Surface Laptop Studio is a powerful laptop and portable studio in one. It adapts to you and all the different things you do during the day, whether for work, school, or play.
+L128: ## Get to know Surface Laptop Studio
+L129: 
+L130: Note
+L131: 
+L132:   * Surface Laptops are sleek, light, and fast. With built-in AI, Copilot+ PC experiences, and all-day battery, they’re built to keep up from anywhere.
+L133:   * cite75†Explore the newest Surface devices†www.microsoft.com L134: 
+L135: Here's some of the top features and details that can help you get familiar with Surface Laptop Studio:
+L136: 
+L137: cite76†Image: Callouts for Surface Laptop Studio L138:   1. Windows Hello camera
+L139:   2. Front-facing camera
+L140:   3. Studio Mics
+L141:   4. Surface Connect port
+L142:   5. Headphones jack
+L143: 
+L144: cite77†Image: Callouts for USB-C ports on Surface Laptop Studio L145: 
+L146:   1. Two USB-C ports with USB 4.0/Thunderbolt^{TM} 4
+L147: ## Surface Laptop Studio and Windows 11
+L148: 
+L149: Surface Laptop Studio comes with:
+L150: 
+L151:   * Windows 11 Home edition (for consumer customers)
+L152:   * Windows 10/11 Pro edition (for business customers)
+L153: 
+L154: If you have Windows 11 Home on your device, you can upgrade to Windows 11 Pro for an additional cost. For more info, see cite78†Upgrade Windows Home to Windows Pro .
+L155: 
+L156: To find out which version of Windows you have, see cite79†Which Windows operating system am I running? L157: ## Charging your Surface
+L158: 
+L159: You can charge your Surface using USB-C or Surface Connect. For more information, see cite80†How to charge Surface. L160: 
+L161: ## Surface Laptop Studio features
+L162: ### Surface Laptop Studio adapts to you
+L163: Surface Laptop Studio transforms from a laptop to an angled stage to a portable canvas, so you can get things done throughout your day. Start by using it like a laptop. When you're ready to collaborate with colleagues, watch a show online or play Xbox games online, pull the screen forward so it's angled in stage mode.
+L164: When inspiration strikes, pull the screen forward all the way down, so it's the perfect height to use as a portable studio to write, draw, or just doodle with Surface Slim Pen 2 (sold separately). For more info, see cite81†Different ways to use Surface Laptop Studio .
+L165: cite82†Image: Surface Laptop Studio in laptop mode, stage mode, and studio mode L166: ### Large Precision Haptic touchpad
+L167: 
+L168: Surface Laptop Studio has a large haptic touchpad that gives you realistic feedback when you tap it—you'll hear it click when you're using it. With its large size, you have more room to work. And because it runs on Windows 11, you can customize the touchpad gestures. For more info see, cite83†Surface touchpad use and settings .
+L169: 
+L170: cite84†Image: Large haptic touchpad on Surface Laptop Studio L171: ### Wake on Touch
+L172: 
+L173: When your Surface Laptop Studio goes to sleep, you can quickly wake it—just tap the screen when you're in stage or studio mode to get back to what you were doing.
+L174: ### Surface Slim Pen 2 is the perfect companion for Surface Laptop Studio
+L175: Surface Slim Pen 2 (sold separately) is made for Surface Laptop Studio. Just fold the screen down to use it in studio mode for a great, realistic writing and drawing experience. When drawing on the vibrant PixelSense^{TM} Flow 14.4" touch display that has a refresh rate up to 120Hz, you'll feel like you're drawing on paper. Whether you're drawing a masterpiece or just sketching things out, Surface Laptop Studio and Surface Slim Pen 2 will help you get it done when you want.
+L176: When you're finished, just put Surface Slim Pen 2 under the front of the keyboard of Surface Laptop Studio—it attaches magnetically to securely store it and charge. For more info about Surface Slim Pen 2, see cite85†Use Surface Slim Pen 2 .
+L177: 
+L178: cite86†Image: Pen storage under the front of the keyboard on Surface Laptop Studio L179: ## Get the most out of your Surface
+L180: 
+L181: Learn more about your Surface and customize it with the Surface app. To open it, select Start cite87†Image: icon for Windows logo icon , enter Surface, and select it to open the app. If the app doesn't open, get it from the cite88†Microsoft Store†go.microsoft.com .
+L182: 
+L183: Open the Surface app
+L184: ## A more repairable device design
+L185: 
+L186: Many components can be replaced by cite89†authorized service providers or skilled technicians — supporting a more repairable device design. Replacement components, such as cite90†laptop feet , are available for out-of-warranty repair. Availability and service options may vary by product, market, and over time.
+L187: 
+L188: To learn more, see cite91†Self-repair information for your Surface device. L189: 
+L190: ## Related topic
+L191: 
+L192:   * cite92†Surface Laptop Studio tech specs†www.microsoft.com L193: ## Need more help?
+L194: 
+L195:   * cite93†Personal accounts L196:   * cite94†Work/school accounts L197: 
+L198: Technical support
+L199: 
+L200: For technical support, cite95†open the Surface app†go.microsoft.com or cite96†web browser†go.microsoft.com , describe your problem and select Get Help.
+L201: 
+L202: Community support
+L203: 
+L204: Communities can help you ask questions, and hear from experts with rich knowledge. cite97†Ask the Community†go.microsoft.com .
+L205: 
+L206: Other support
+L207: If you can't use your Surface or have a question about something else, cite98†open Get Help†go.microsoft.com to get other support online.
+L208: 
+L209: cite99†Image: Need more help grid spacer. L210: 
+L211: Technical support
+L212: 
+L213: You can get self-help support from cite95†the Surface app†go.microsoft.com or cite96†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L214: 
+L215: Service & repair
+L216: For Surface for Business, visit cite100†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L217: 
+L218: For IT Admins
+L219: 
+L220: IT Admins should view cite101†Surface for Business†go.microsoft.com and cite102†Support for Business & Education customers†go.microsoft.com .
+L221: 
+L222: cite99†Image: Need more help grid spacer. L223: ## Was this information helpful?
+L224: 
+L225: [Button: Yes] [Button: No]
+L226: 
+L227: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L228: 
+L229: What affected your experience?
+L230: 
+L231: [Input] Resolved my issue
+L232: 
+L233: [Input] Clear instructions
+L234: 
+L235: [Input] Easy to follow
+L236: 
+L237: [Input] No jargon
+L238: 
+L239: [Input] Pictures helped
+L240: 
+L241: [Input] Other
+L242: 
+L243: [Input] Didn't match my screen
+L244: 
+L245: [Input] Incorrect instructions
+L246: 
+L247: [Input] Too technical
+L248: 
+L249: [Input] Not enough information
+L250: 
+L251: [Input] Not enough pictures
+L252: 
+L253: [Input] Other
+L254: 
+L255: Any additional feedback? (Optional)
+L256: [Button: Submit feedback]
+L257: 
+L258: By pressing submit, your feedback will be used to improve Microsoft products and services. cite103†Privacy Statement.†privacy.microsoft.com L259: 
+L260: What's new
+L261: 
+L262:   * cite104†Surface Laptop Ultra†www.microsoft.com L263:   * cite105†Surface Pro†www.microsoft.com L264:   * cite106†Surface Laptop†www.microsoft.com L265:   * cite107†Surface RTX Spark Dev Box†www.microsoft.com L266:   * cite108†Explore Copilot†www.microsoft.com L267:   * cite109†Explore Microsoft products†www.microsoft.com L268:   * cite110†Windows 11 apps†www.microsoft.com L269: Microsoft Store
+L270: 
+L271:   * cite111†Account profile†account.microsoft.com L272:   * cite69†Download Center†www.microsoft.com L273:   * cite112†Microsoft Store support†go.microsoft.com L274:   * cite113†Returns†www.microsoft.com L275:   * cite114†Order tracking†www.microsoft.com L276:   * cite46†Certified Refurbished†www.microsoft.com L277:   * cite115†Microsoft Store Promise†www.microsoft.com L278:   * cite116†Flexible Payments†www.microsoft.com L279: 
+L280: Education
+L281:   * cite70†Microsoft in education†www.microsoft.com L282:   * cite117†Devices for education†www.microsoft.com L283:   * cite118†Microsoft Teams for Education†www.microsoft.com L284:   * cite119†Microsoft 365 Education†www.microsoft.com L285:   * cite120†How to buy for your school†www.microsoft.com L286:   * cite121†Educator training and development†education.microsoft.com L287:   * cite122†Deals for students and parents†www.microsoft.com L288:   * cite123†AI for education†www.microsoft.com L289: 
+L290: Business
+L291:   * cite124†Microsoft AI†www.microsoft.com L292:   * cite53†Microsoft Security†www.microsoft.com L293:   * cite54†Dynamics 365†www.microsoft.com L294:   * cite55†Microsoft 365†www.microsoft.com L295:   * cite56†Microsoft Power Platform†www.microsoft.com L296:   * cite38†Microsoft Teams†www.microsoft.com L297:   * cite125†Microsoft Copilot†www.microsoft.com L298:   * cite58†Small Business†www.microsoft.com L299: 
+L300: Developer & IT
+L301:   * cite60†Azure†azure.microsoft.com L302:   * cite61†Microsoft Developer†developer.microsoft.com L303:   * cite62†Microsoft Learn†learn.microsoft.com L304:   * cite126†Support for AI marketplace apps†www.microsoft.com L305:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L306:   * cite127†Microsoft Marketplace†marketplace.microsoft.com L307:   * cite128†Software companies†www.microsoft.com L308:   * cite67†Visual Studio†visualstudio.microsoft.com L309: 
+L310: Company
+L311:   * cite129†Careers†careers.microsoft.com L312:   * cite130†About Microsoft†www.microsoft.com L313:   * cite131†Company news†news.microsoft.com L314:   * cite132†Privacy at Microsoft†www.microsoft.com L315:   * cite133†Investors†www.microsoft.com L316:   * cite134†Diversity and inclusion†www.microsoft.com L317:   * cite135†Accessibility†www.microsoft.com L318:   * cite136†Sustainability†www.microsoft.com L319: 
+L320: cite137†English (United States) cite138†Your Privacy Choices†aka.ms cite138†Your Privacy Choices†aka.ms cite139†Consumer Health Privacy†go.microsoft.com L321:   * cite140†Sitemap†www.microsoft.com L322:   * cite141†Contact Microsoft L323:   * cite142†Privacy†go.microsoft.com L324:   * cite143†Manage cookies L325:   * cite144†Terms of use†go.microsoft.com L326:   * cite145†Trademarks†go.microsoft.com L327:   * cite146†Safety & eco†go.microsoft.com L328:   * cite147†Recycling†www.microsoft.com L329:   * cite148†About our ads†choice.microsoft.com L330:   * © Microsoft 2026
+

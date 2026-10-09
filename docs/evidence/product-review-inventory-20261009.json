@@ -2,9 +2,9 @@
   "notice": "All device records inventoried, not all facts certified. Pending fields remain work items; source access failure is not nondisclosure or proof of incompatibility.",
   "devices": 90,
   "modelsWithSourceChecks": 90,
-  "total": 6106,
-  "verified": 1033,
-  "pending": 5073,
+  "total": 6147,
+  "verified": 1685,
+  "pending": 4462,
   "records": [
     {
       "deviceId": "laptop-ultra-biz",
@@ -473,9 +473,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
@@ -593,9 +593,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
@@ -861,8 +861,8 @@
       "deviceId": "pro-10-biz",
       "name": "Surface Pro 10 商用版",
       "total": 66,
-      "verified": 14,
-      "pending": 52,
+      "verified": 33,
+      "pending": 33,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -870,9 +870,6 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
-        "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuTops",
@@ -880,38 +877,22 @@
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
         "headphoneJack",
-        "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -920,9 +901,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-10-for-business-features",
@@ -962,8 +943,8 @@
       "deviceId": "pro-9",
       "name": "Surface Pro 9",
       "total": 66,
-      "verified": 10,
-      "pending": 56,
+      "verified": 36,
+      "pending": 30,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -971,46 +952,20 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
-        "npuModel",
         "npuTops",
         "copilotPlus",
-        "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "panelTech",
-        "ppi",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
         "headphoneJack",
-        "thunderboltSupport",
-        "surfaceConnect",
-        "wireless",
-        "cellular",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
-        "penHapticFeedback",
-        "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -1031,9 +986,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1067,8 +1022,8 @@
       "deviceId": "pro-8",
       "name": "Surface Pro 8",
       "total": 66,
-      "verified": 15,
-      "pending": 51,
+      "verified": 34,
+      "pending": 32,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1076,41 +1031,22 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
-        "kickstandType",
         "osAtLaunch",
         "cpuArch",
-        "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -1131,9 +1067,15 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
+        },
+        {
+          "url": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1167,8 +1109,8 @@
       "deviceId": "pro-7-plus",
       "name": "Surface Pro 7+",
       "total": 66,
-      "verified": 0,
-      "pending": 66,
+      "verified": 33,
+      "pending": 33,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1176,61 +1118,28 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
-        "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
-        "ssdRemovable",
-        "expandableStorage",
-        "screenSize",
-        "aspectRatio",
         "panelTech",
-        "resolution",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
-        "wireless",
-        "cellular",
-        "batteryCapacityWh",
-        "batteryLifeOffice",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
-        "replaceableParts",
         "warranty",
         "startingPriceCny",
         "sourceReliability",
@@ -1243,6 +1152,12 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/d/surface-pro-7-for-business/8p43n3k93409/",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1283,8 +1198,8 @@
       "deviceId": "pro-7",
       "name": "Surface Pro 7",
       "total": 66,
-      "verified": 13,
-      "pending": 53,
+      "verified": 30,
+      "pending": 36,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1292,31 +1207,17 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeVideo",
@@ -1326,15 +1227,12 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -1349,9 +1247,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1385,8 +1283,8 @@
       "deviceId": "pro-6",
       "name": "Surface Pro 6",
       "total": 66,
-      "verified": 12,
-      "pending": 54,
+      "verified": 28,
+      "pending": 38,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1394,33 +1292,18 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
-        "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -1431,7 +1314,6 @@
         "penChargingType",
         "trackpadType",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -1452,9 +1334,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1488,8 +1370,8 @@
       "deviceId": "pro-5",
       "name": "Surface Pro (第 5 代 / 2017)",
       "total": 66,
-      "verified": 13,
-      "pending": 53,
+      "verified": 29,
+      "pending": 37,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1499,30 +1381,17 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
-        "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
-        "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
         "chargingPower",
@@ -1531,15 +1400,12 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -1554,9 +1420,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1590,8 +1456,8 @@
       "deviceId": "pro-4",
       "name": "Surface Pro 4",
       "total": 66,
-      "verified": 14,
-      "pending": 52,
+      "verified": 30,
+      "pending": 36,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1599,43 +1465,27 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "storageOptions",
         "ssdRemovable",
-        "expandableStorage",
         "panelTech",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
         "thunderboltSupport",
-        "surfaceConnect",
-        "wireless",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
         "penHapticFeedback",
-        "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "biometrics",
         "enterpriseManage",
-        "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
@@ -1655,9 +1505,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1691,8 +1541,8 @@
       "deviceId": "pro-3",
       "name": "Surface Pro 3",
       "total": 66,
-      "verified": 17,
-      "pending": 49,
+      "verified": 21,
+      "pending": 45,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1702,7 +1552,6 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "gpuModel",
@@ -1715,11 +1564,8 @@
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
         "windowsHello",
         "videoFeatures",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
         "surfaceConnect",
         "cellular",
@@ -1747,9 +1593,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -1938,8 +1784,8 @@
       "deviceId": "pro-x",
       "name": "Surface Pro X",
       "total": 66,
-      "verified": 14,
-      "pending": 52,
+      "verified": 31,
+      "pending": 35,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -1947,43 +1793,26 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
         "headphoneJack",
         "thunderboltSupport",
-        "surfaceConnect",
-        "cellular",
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "repairabilityScore",
@@ -2003,9 +1832,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -2404,9 +2233,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
@@ -2523,9 +2352,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/buy-surface-laptop",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
@@ -2679,8 +2508,8 @@
       "deviceId": "laptop-6-biz",
       "name": "Surface Laptop 6 商用版 (13.5\" & 15\")",
       "total": 66,
-      "verified": 12,
-      "pending": 54,
+      "verified": 27,
+      "pending": 39,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2688,9 +2517,7 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "gpuModel",
@@ -2700,38 +2527,25 @@
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "weightGrams",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -2740,9 +2554,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-6-for-business-features",
@@ -2782,8 +2596,8 @@
       "deviceId": "laptop-5",
       "name": "Surface Laptop 5 (13.5\" & 15\")",
       "total": 66,
-      "verified": 13,
-      "pending": 53,
+      "verified": 27,
+      "pending": 39,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -2791,30 +2605,18 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeVideo",
@@ -2824,9 +2626,7 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "weightGrams",
         "totalWeightWithKeyboard",
@@ -2848,9 +2648,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -2966,9 +2766,9 @@
         },
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-4-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3002,8 +2802,8 @@
       "deviceId": "laptop-3",
       "name": "Surface Laptop 3 (13.5\" & 15\")",
       "total": 66,
-      "verified": 12,
-      "pending": 54,
+      "verified": 26,
+      "pending": 40,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3011,32 +2811,20 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeVideo",
@@ -3046,9 +2834,7 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -3069,9 +2855,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3105,8 +2891,8 @@
       "deviceId": "laptop-2",
       "name": "Surface Laptop 2",
       "total": 66,
-      "verified": 14,
-      "pending": 52,
+      "verified": 24,
+      "pending": 42,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3114,9 +2900,7 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
@@ -3128,17 +2912,10 @@
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -3149,7 +2926,6 @@
         "penChargingType",
         "trackpadType",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -3170,9 +2946,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3206,8 +2982,8 @@
       "deviceId": "laptop-1",
       "name": "Surface Laptop 初代 (Original)",
       "total": 66,
-      "verified": 14,
-      "pending": 52,
+      "verified": 24,
+      "pending": 42,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3215,9 +2991,7 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
@@ -3229,16 +3003,10 @@
         "refreshRate",
         "brightness",
         "colorSupport",
-        "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -3248,9 +3016,7 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -3265,9 +3031,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3301,8 +3067,8 @@
       "deviceId": "sls-2",
       "name": "Surface Laptop Studio 2",
       "total": 66,
-      "verified": 15,
-      "pending": 51,
+      "verified": 34,
+      "pending": 32,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3310,41 +3076,22 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "gpuModel",
-        "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
         "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
-        "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
-        "penChargingType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -3365,9 +3112,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3400,9 +3147,9 @@
     {
       "deviceId": "sls-1",
       "name": "Surface Laptop Studio 初代",
-      "total": 66,
-      "verified": 3,
-      "pending": 63,
+      "total": 67,
+      "verified": 12,
+      "pending": 55,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3423,24 +3170,18 @@
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
         "rearCamera",
         "videoFeatures",
-        "microphones",
         "speakers",
         "audioTech",
-        "headphoneJack",
-        "thunderboltSupport",
-        "surfaceConnect",
         "wireless",
         "cellular",
         "batteryCapacityWh",
@@ -3450,8 +3191,6 @@
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
-        "penChargingType",
-        "trackpadType",
         "tpmChip",
         "securedCorePc",
         "biometrics",
@@ -3477,9 +3216,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3518,9 +3257,9 @@
     {
       "deviceId": "go-4",
       "name": "Surface Go 4 商用版",
-      "total": 66,
-      "verified": 14,
-      "pending": 52,
+      "total": 67,
+      "verified": 35,
+      "pending": 32,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3528,48 +3267,28 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
-        "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
         "touchAndPenProtocol",
-        "windowsHello",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
         "penHapticFeedback",
-        "penChargingType",
         "trackpadType",
-        "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -3578,9 +3297,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-go-4-features",
@@ -3694,9 +3413,9 @@
         },
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3804,9 +3523,9 @@
         },
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -3847,9 +3566,9 @@
     {
       "deviceId": "studio-2-plus",
       "name": "Surface Studio 2+",
-      "total": 66,
-      "verified": 13,
-      "pending": 53,
+      "total": 67,
+      "verified": 29,
+      "pending": 38,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -3858,7 +3577,6 @@
         "tagline",
         "colors",
         "chassisMaterial",
-        "kickstandType",
         "cpuArch",
         "cpuCores",
         "npuModel",
@@ -3867,19 +3585,9 @@
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
         "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "thunderboltSupport",
         "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
@@ -3889,17 +3597,13 @@
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
-        "penChargingType",
         "trackpadType",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -3917,6 +3621,12 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        },
+        {
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4020,9 +3730,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4062,8 +3772,8 @@
       "deviceId": "book-3-15",
       "name": "Surface Book 3 15 英寸",
       "total": 66,
-      "verified": 10,
-      "pending": 56,
+      "verified": 27,
+      "pending": 39,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4071,9 +3781,7 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -4085,33 +3793,18 @@
         "storageOptions",
         "ssdRemovable",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "thermalDesign",
         "repairabilityScore",
@@ -4131,9 +3824,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4182,8 +3875,8 @@
       "deviceId": "book-3-135",
       "name": "Surface Book 3 13.5 英寸",
       "total": 66,
-      "verified": 10,
-      "pending": 56,
+      "verified": 27,
+      "pending": 39,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4191,9 +3884,7 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -4205,33 +3896,18 @@
         "storageOptions",
         "ssdRemovable",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "thermalDesign",
         "repairabilityScore",
@@ -4251,9 +3927,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4302,8 +3978,8 @@
       "deviceId": "book-2-15",
       "name": "Surface Book 2 15 英寸",
       "total": 66,
-      "verified": 11,
-      "pending": 55,
+      "verified": 29,
+      "pending": 37,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4311,9 +3987,7 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuModel",
         "cpuArch",
         "cpuCores",
@@ -4323,34 +3997,18 @@
         "copilotPlus",
         "ssdRemovable",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "thermalDesign",
         "repairabilityScore",
@@ -4370,9 +4028,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4406,8 +4064,8 @@
       "deviceId": "book-1",
       "name": "Surface Book 初代 (Original)",
       "total": 66,
-      "verified": 10,
-      "pending": 56,
+      "verified": 28,
+      "pending": 38,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4415,33 +4073,17 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
-        "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -4451,9 +4093,7 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "weightGrams",
         "totalWeightWithKeyboard",
@@ -4469,9 +4109,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4520,8 +4160,8 @@
       "deviceId": "go-2",
       "name": "Surface Go 2",
       "total": 66,
-      "verified": 12,
-      "pending": 54,
+      "verified": 31,
+      "pending": 35,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4529,33 +4169,17 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
-        "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
-        "cellular",
         "batteryCapacityWh",
         "batteryLifeVideo",
         "chargingPower",
@@ -4564,15 +4188,12 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -4587,9 +4208,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4623,8 +4244,8 @@
       "deviceId": "go-1",
       "name": "Surface Go 初代 (Original)",
       "total": 66,
-      "verified": 11,
-      "pending": 55,
+      "verified": 30,
+      "pending": 36,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4632,34 +4253,18 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
-        "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
-        "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
         "chargingPower",
@@ -4668,15 +4273,12 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -4685,9 +4287,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4798,9 +4400,9 @@
         },
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-2-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4834,8 +4436,8 @@
       "deviceId": "laptop-go-1",
       "name": "Surface Laptop Go 初代",
       "total": 66,
-      "verified": 14,
-      "pending": 52,
+      "verified": 27,
+      "pending": 39,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4843,48 +4445,35 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeVideo",
-        "chargingPower",
         "fastCharging",
         "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -4899,9 +4488,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -4934,9 +4523,9 @@
     {
       "deviceId": "studio-2",
       "name": "Surface Studio 2",
-      "total": 66,
-      "verified": 11,
-      "pending": 55,
+      "total": 67,
+      "verified": 27,
+      "pending": 40,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -4945,8 +4534,6 @@
         "tagline",
         "colors",
         "chassisMaterial",
-        "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
@@ -4954,19 +4541,10 @@
         "copilotPlus",
         "ssdRemovable",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
         "frontCamera",
-        "windowsHello",
         "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
         "surfaceConnect",
         "cellular",
@@ -4979,16 +4557,12 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
-        "dimensionsMm",
         "totalWeightWithKeyboard",
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -5003,9 +4577,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -5039,8 +4613,8 @@
       "deviceId": "studio-1",
       "name": "Surface Studio 初代 (Original)",
       "total": 66,
-      "verified": 8,
-      "pending": 58,
+      "verified": 16,
+      "pending": 50,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -5050,7 +4624,6 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "gpuModel",
@@ -5068,11 +4641,7 @@
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "windowsHello",
         "rearCamera",
-        "videoFeatures",
-        "audioTech",
-        "headphoneJack",
         "thunderboltSupport",
         "surfaceConnect",
         "cellular",
@@ -5085,9 +4654,7 @@
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
-        "tpmChip",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "dimensionsMm",
         "weightGrams",
@@ -5095,7 +4662,6 @@
         "thermalDesign",
         "repairabilityScore",
         "replaceableParts",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "lastVerified",
@@ -5104,9 +4670,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -5201,9 +4767,9 @@
       "sources": [
         {
           "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -5296,9 +4862,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -5331,9 +4897,9 @@
     {
       "deviceId": "pro-12-inch-biz",
       "name": "Surface Pro 12 英寸 (第 1 代) 商用版",
-      "total": 72,
-      "verified": 15,
-      "pending": 57,
+      "total": 76,
+      "verified": 33,
+      "pending": 43,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5344,27 +4910,15 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
         "headphoneJack",
         "usbCPorts",
         "usbAPorts",
@@ -5378,11 +4932,9 @@
         "batteryLifeOffice",
         "charger",
         "keyboardCompat",
-        "penCompat",
         "dialCompat",
         "dockCompat",
         "tpm",
-        "biometrics",
         "securityFeatures",
         "packagingWeight",
         "serviceabilityScore",
@@ -5396,9 +4948,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
@@ -5437,9 +4989,9 @@
     {
       "deviceId": "pro-12-inch-2-biz",
       "name": "Surface Pro 商用版, 12 英寸 (第 2 代)",
-      "total": 67,
-      "verified": 15,
-      "pending": 52,
+      "total": 74,
+      "verified": 39,
+      "pending": 35,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -5447,12 +4999,8 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
-        "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
@@ -5460,33 +5008,20 @@
         "expandableStorage",
         "screenSize",
         "panelTech",
-        "ppi",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
         "headphoneJack",
         "usbCPorts",
         "usbAPorts",
         "surfaceConnect",
         "videoOut",
-        "cellular",
         "wifi",
         "bluetooth",
         "nfc",
         "batteryCapacity",
         "charger",
         "keyboardCompat",
-        "penCompat",
         "tpm",
-        "biometrics",
         "securityFeatures",
-        "warranty",
         "replaceableParts",
         "startingPriceCny",
         "sourceReliability",
@@ -5497,9 +5032,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -5532,9 +5067,9 @@
     {
       "deviceId": "laptop-13-inch-biz",
       "name": "Surface Laptop 13 英寸 (第 1 代) 商用版",
-      "total": 71,
-      "verified": 18,
-      "pending": 53,
+      "total": 75,
+      "verified": 35,
+      "pending": 40,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5543,28 +5078,17 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "usbCPorts",
         "usbAPorts",
         "surfaceConnect",
@@ -5574,7 +5098,6 @@
         "bluetooth",
         "nfc",
         "charger",
-        "fastCharging",
         "keyboardCompat",
         "penCompat",
         "dialCompat",
@@ -5583,7 +5106,6 @@
         "securityFeatures",
         "packagingWeight",
         "serviceabilityScore",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "officialDocUrl",
@@ -5593,9 +5115,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
@@ -5642,9 +5164,9 @@
     {
       "deviceId": "laptop-13-inch-2-biz",
       "name": "Surface Laptop 商用版, 13 英寸 (第 2 代)",
-      "total": 69,
-      "verified": 18,
-      "pending": 51,
+      "total": 72,
+      "verified": 35,
+      "pending": 37,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -5652,28 +5174,17 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
         "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "usbCPorts",
         "usbAPorts",
         "thunderboltSupport",
@@ -5684,13 +5195,10 @@
         "bluetooth",
         "nfc",
         "charger",
-        "fastCharging",
         "keyboardCompat",
         "penCompat",
-        "trackpadType",
         "tpm",
         "securityFeatures",
-        "warranty",
         "replaceableParts",
         "startingPriceCny",
         "sourceReliability",
@@ -5701,9 +5209,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -5744,9 +5252,9 @@
     {
       "deviceId": "pro-11-biz-snap",
       "name": "Surface Pro (第 11 代) 商用版 - 骁龙版",
-      "total": 71,
-      "verified": 13,
-      "pending": 58,
+      "total": 77,
+      "verified": 38,
+      "pending": 39,
       "pendingFields": [
         "thunderboltSupport",
         "releaseDate",
@@ -5755,52 +5263,33 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
-        "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
         "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
         "headphoneJack",
         "usbCPorts",
         "usbAPorts",
-        "surfaceConnect",
         "videoOut",
-        "cellular",
         "wifi",
         "bluetooth",
         "nfc",
         "batteryLifeVideo",
         "batteryLifeOffice",
         "charger",
-        "fastCharging",
         "keyboardCompat",
-        "penCompat",
         "dialCompat",
         "dockCompat",
         "tpm",
-        "biometrics",
         "securityFeatures",
         "packagingWeight",
         "serviceabilityScore",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "officialDocUrl",
@@ -5810,9 +5299,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs",
@@ -5917,9 +5406,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs",
@@ -6022,9 +5511,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
@@ -6127,9 +5616,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs",
@@ -6304,15 +5793,15 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-go-3-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -6417,9 +5906,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-9-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/en-US/surface/models/surface-pro-9-features-and-specs",
@@ -6458,23 +5947,18 @@
     {
       "deviceId": "pro-8-biz",
       "name": "Surface Pro 8 商用版",
-      "total": 68,
-      "verified": 1,
-      "pending": 67,
+      "total": 72,
+      "verified": 22,
+      "pending": 50,
       "pendingFields": [
-        "thunderboltSupport",
         "releaseDate",
         "generation",
         "status",
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
-        "kickstandType",
         "osAtLaunch",
         "cpuArch",
-        "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
@@ -6486,22 +5970,11 @@
         "aspectRatio",
         "panelTech",
         "resolution",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "usbCPorts",
         "usbAPorts",
-        "surfaceConnect",
         "videoOut",
         "cellular",
         "wifi",
@@ -6517,7 +5990,6 @@
         "dialCompat",
         "dockCompat",
         "tpm",
-        "biometrics",
         "securityFeatures",
         "dimensions",
         "weightGrams",
@@ -6535,7 +6007,13 @@
           "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
+        },
+        {
+          "url": "https://news.microsoft.com/wp-content/uploads/prod/sites/617/2021/09/Surface-Pro-8-Fact-Sheet.pdf",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -6642,15 +6120,15 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -6683,44 +6161,30 @@
     {
       "deviceId": "sls-2-biz",
       "name": "Surface Laptop Studio 2 商用版",
-      "total": 74,
-      "verified": 17,
-      "pending": 57,
+      "total": 78,
+      "verified": 36,
+      "pending": 42,
       "pendingFields": [
-        "thunderboltSupport",
         "releaseDate",
         "generation",
         "status",
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "gpuModel",
-        "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
         "expandableStorage",
         "sdSlot",
         "panelTech",
-        "ppi",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
         "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "usbCPorts",
         "usbAPorts",
-        "surfaceConnect",
         "videoOut",
         "cellular",
         "wifi",
@@ -6734,7 +6198,6 @@
         "dialCompat",
         "dockCompat",
         "tpm",
-        "biometrics",
         "securityFeatures",
         "packagingWeight",
         "serviceabilityScore",
@@ -6754,9 +6217,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -6789,11 +6252,10 @@
     {
       "deviceId": "sls-1-biz",
       "name": "Surface Laptop Studio 初代商用版",
-      "total": 69,
-      "verified": 3,
-      "pending": 66,
+      "total": 71,
+      "verified": 12,
+      "pending": 59,
       "pendingFields": [
-        "thunderboltSupport",
         "releaseDate",
         "generation",
         "status",
@@ -6813,25 +6275,20 @@
         "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
         "ppi",
-        "refreshRate",
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
         "frontCamera",
         "rearCamera",
         "videoFeatures",
-        "microphones",
         "speakers",
         "audioTech",
-        "headphoneJack",
         "usbCPorts",
         "usbAPorts",
-        "surfaceConnect",
         "videoOut",
         "cellular",
         "wifi",
@@ -6843,7 +6300,6 @@
         "charger",
         "fastCharging",
         "keyboardCompat",
-        "penCompat",
         "dialCompat",
         "dockCompat",
         "tpm",
@@ -6869,9 +6325,9 @@
         },
         {
           "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -6983,9 +6439,9 @@
       "sources": [
         {
           "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -7018,11 +6474,10 @@
     {
       "deviceId": "studio-2-plus-biz",
       "name": "Surface Studio 2+ 商用版",
-      "total": 71,
-      "verified": 13,
-      "pending": 58,
+      "total": 73,
+      "verified": 29,
+      "pending": 44,
       "pendingFields": [
-        "thunderboltSupport",
         "releaseDate",
         "generation",
         "status",
@@ -7030,7 +6485,6 @@
         "tagline",
         "colors",
         "chassisMaterial",
-        "kickstandType",
         "cpuArch",
         "cpuCores",
         "npuModel",
@@ -7039,18 +6493,9 @@
         "ssdRemovable",
         "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
-        "colorSupport",
-        "touchAndPenProtocol",
-        "windowsHello",
         "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
         "usbCPorts",
         "usbAPorts",
         "surfaceConnect",
@@ -7065,16 +6510,13 @@
         "charger",
         "fastCharging",
         "keyboardCompat",
-        "penCompat",
         "dialCompat",
         "dockCompat",
         "tpm",
-        "biometrics",
         "securityFeatures",
         "dimensions",
         "packagingWeight",
         "serviceabilityScore",
-        "warranty",
         "startingPriceCny",
         "sourceReliability",
         "officialDocUrl",
@@ -7093,6 +6535,12 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        },
+        {
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -7197,9 +6645,9 @@
       "sources": [
         {
           "url": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-inch",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         },
         {
           "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
@@ -7543,8 +6991,8 @@
       "deviceId": "book-3-biz",
       "name": "Surface Book 3 商用版 (13.5\" & 15\")",
       "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "verified": 5,
+      "pending": 62,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7555,15 +7003,10 @@
         "chassisMaterial",
         "kickstandType",
         "osAtLaunch",
-        "cpuModel",
         "cpuArch",
-        "cpuCores",
-        "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
         "screenSize",
@@ -7625,7 +7068,13 @@
           "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/surface/surface-book-quadro",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -7658,24 +7107,9 @@
           "captureSha256": "6ca12138d2cda2570bdeb11d96550495918334796d6c833eeaf70b1a298a5018"
         }
       ],
-      "conflicts": [
-        {
-          "field": "cpuModel",
-          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
-          "reviewedAt": "2026-10-09",
-          "reason": "SOURCE_SCOPE_MISMATCH; CONFIGURATION_CONFLICT: CPU table copies Laptop3"
-        },
-        {
-          "field": "ramSpec",
-          "sourceUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
-          "reviewedAt": "2026-10-09",
-          "reason": "SOURCE_SCOPE_MISMATCH; CONFIGURATION_CONFLICT: CPU table copies Laptop3"
-        }
-      ],
+      "conflicts": [],
       "maskedFields": [
         "cpuArch",
-        "cpuModel",
-        "ramSpec",
         "thermalDesign"
       ],
       "productFamilyEvidence": null
@@ -7683,9 +7117,9 @@
     {
       "deviceId": "go-2-biz",
       "name": "Surface Go 2 商用版",
-      "total": 67,
-      "verified": 0,
-      "pending": 67,
+      "total": 68,
+      "verified": 9,
+      "pending": 59,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7695,19 +7129,14 @@
         "colors",
         "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
-        "cpuModel",
         "cpuArch",
         "cpuCores",
         "gpuModel",
         "npuModel",
         "npuTops",
         "copilotPlus",
-        "ramSpec",
-        "storageOptions",
         "ssdRemovable",
         "expandableStorage",
-        "screenSize",
         "aspectRatio",
         "panelTech",
         "resolution",
@@ -7716,11 +7145,9 @@
         "brightness",
         "colorSupport",
         "touchAndPenProtocol",
-        "frontCamera",
         "windowsHello",
         "rearCamera",
         "videoFeatures",
-        "microphones",
         "speakers",
         "audioTech",
         "headphoneJack",
@@ -7734,7 +7161,6 @@
         "batteryLifeVideo",
         "chargingPower",
         "fastCharging",
-        "compatibleKeyboard",
         "penHapticFeedback",
         "penChargingType",
         "trackpadType",
@@ -7766,7 +7192,13 @@
           "url": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
+        },
+        {
+          "url": "https://news.microsoft.com/en-ph/2021/01/21/microsoft-launches-surface-pro-7-for-business-surface-laptop-go-for-business-and-surface-go-2-for-business-in-the-philippines-purpose-built-to-empower-people-teams-and-classrooms-in-the-new-digit/",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -7810,8 +7242,8 @@
       "deviceId": "pro-6-biz",
       "name": "Surface Pro 6 商用版",
       "total": 67,
-      "verified": 12,
-      "pending": 55,
+      "verified": 28,
+      "pending": 39,
       "pendingFields": [
         "releaseDate",
         "generation",
@@ -7819,33 +7251,18 @@
         "targetAudience",
         "tagline",
         "colors",
-        "chassisMaterial",
         "kickstandType",
-        "osAtLaunch",
         "cpuArch",
         "cpuCores",
         "npuModel",
         "npuTops",
         "copilotPlus",
         "ssdRemovable",
-        "expandableStorage",
         "panelTech",
-        "ppi",
         "refreshRate",
         "brightness",
         "colorSupport",
-        "touchAndPenProtocol",
-        "frontCamera",
-        "windowsHello",
-        "rearCamera",
-        "videoFeatures",
-        "microphones",
-        "speakers",
-        "audioTech",
-        "headphoneJack",
-        "usbPorts",
         "thunderboltSupport",
-        "surfaceConnect",
         "cellular",
         "batteryCapacityWh",
         "batteryLifeOffice",
@@ -7856,7 +7273,6 @@
         "penChargingType",
         "trackpadType",
         "securedCorePc",
-        "biometrics",
         "enterpriseManage",
         "totalWeightWithKeyboard",
         "thermalDesign",
@@ -7875,6 +7291,12 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        },
+        {
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "RAW_FETCH_FAILED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8101,6 +7523,12 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_HTTP_BLOCKED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8203,9 +7631,9 @@
       "sources": [
         {
           "url": "https://news.xbox.com/en-us/2010/06/14/announcing-the-new-xbox-360/",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8312,6 +7740,12 @@
           "readableEvidenceUsed": false,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
           "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+        },
+        {
+          "url": "https://news.microsoft.com/source/2013/06/10/microsoft-invites-everyone-to-join-the-fun-with-a-brand-new-xbox-360/",
+          "readableEvidenceUsed": true,
+          "rawCaptureStatus": "NOT_ATTEMPTED",
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8414,9 +7848,9 @@
       "sources": [
         {
           "url": "https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8628,9 +8062,9 @@
       "sources": [
         {
           "url": "https://news.xbox.com/en-us/2019/04/16/xbox-one-s-all-digital-edition/",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8733,9 +8167,9 @@
       "sources": [
         {
           "url": "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8835,9 +8269,9 @@
       "sources": [
         {
           "url": "https://www.xbox.com/en-US/consoles/xbox-series-s",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -8946,9 +8380,9 @@
       "sources": [
         {
           "url": "https://www.xbox.com/en-US/consoles/xbox-series-s",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -9057,9 +8491,9 @@
       "sources": [
         {
           "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -9159,9 +8593,9 @@
       "sources": [
         {
           "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -9261,9 +8695,9 @@
       "sources": [
         {
           "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
@@ -9363,9 +8797,9 @@
       "sources": [
         {
           "url": "https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3",
-          "readableEvidenceUsed": false,
+          "readableEvidenceUsed": true,
           "rawCaptureStatus": "RAW_FETCH_FAILED",
-          "remainingAvailability": "No readable extract reviewed in this batch; raw failure does not establish web-tool unavailability"
+          "remainingAvailability": "Existing extract reviewed; remaining fields need additional explicit paragraphs/SKU evidence"
         }
       ],
       "sourceChecks": [
