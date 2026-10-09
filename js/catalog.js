@@ -205,6 +205,17 @@ const Catalog = (function () {
     return presentSpec(getSpec(device, fieldKey));
   }
 
+  function npuScore(val) {
+    if (val && typeof val === 'object') {
+      return val.scope === 'npu' && val.precision === 'INT8' && val.unit === 'TOPS' && Number.isFinite(val.value) ? val.value : null;
+    }
+    if (typeof val === 'number') return Number.isFinite(val) && val >= 0 ? val : null;
+    const text = String(val || '');
+    if (/FP4|petaflop|平台|GPU/i.test(text)) return null;
+    const m = text.match(/^(\d+(?:\.\d+)?)\s*TOPS(?:\s*\(INT8\))?$/i);
+    return m ? Number(m[1]) : null;
+  }
+
   function isNpuDisplayable(val) {
     const state = specState(val);
     return state === 'VALID';
@@ -679,6 +690,7 @@ const Catalog = (function () {
     presentSpec: presentSpec,
     presentDeviceSpec: presentDeviceSpec,
     isNpuDisplayable: isNpuDisplayable,
+    npuScore: npuScore,
     segmentOf: segmentOf,
     getSnapshot: getSnapshot,
     applySnapshot: applySnapshot,

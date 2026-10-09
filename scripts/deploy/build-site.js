@@ -59,6 +59,11 @@ function walkFiles(dir, base = dir, acc = []) {
   return acc;
 }
 
+// 构建前执行门禁；这些检查不代表参数真实性认证。
+for (const script of ['tests/test-runner.js', 'tests/review-regression.test.js', 'scripts/preflight_check.js']) {
+  require('child_process').execFileSync(process.execPath, [path.join(ROOT, script)], {cwd: ROOT, stdio: 'inherit'});
+}
+
 // ---------------------------------------------------------------- 1. 同步
 rmrf(OUT);
 fs.mkdirSync(OUT, { recursive: true });
@@ -74,6 +79,8 @@ if (missingTop.length) {
   console.error('FAIL  缺少必需的顶层条目: ' + missingTop.join(', '));
   process.exit(1);
 }
+
+require('./generate-indexable')(OUT);
 
 const delivery = require(path.join(ROOT, 'js', 'image-delivery.js'));
 

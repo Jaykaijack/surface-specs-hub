@@ -8,6 +8,28 @@ const ToolsEngine = {
     return Catalog.getSpec(device, key);
   },
 
+  parseMass(value) {
+    if (value && typeof value === 'object') {
+      if (!Number.isFinite(value.value) || value.value < 0) return null;
+      const factor = { g: 1, kg: 1000, '克': 1, '千克': 1000 }[value.unit];
+      return factor ? value.value * factor : null;
+    }
+    // 多配置、范围及没有单位的值不能选一个数字冒充整机重量。
+    const text = String(value ?? '').trim();
+    const equivalent = text.match(/^(.+?)\s*[（(]\s*([\d.]+\s*(?:kg|g|千克|克))\s*[）)]$/i);
+    if (equivalent) {
+      const first = this.parseMass(equivalent[1]);
+      const second = this.parseMass(equivalent[2]);
+      return first !== null && second !== null && Math.abs(first - second) < 0.01 ? first : null;
+    }
+    const match = text.match(/^(?:约\s*)?(\d+(?:\.\d+)?)\s*(kg|g|千克|克)$/i);
+    return match ? this.parseMass({ value: Number(match[1]), unit: match[2].toLowerCase() }) : null;
+  },
+
+  sumMass(parts) {
+    return parts.every(v => Number.isFinite(v) && v >= 0) ? parts.reduce((a, b) => a + b, 0) : null;
+  },
+
   // 3:2 计算器状态
   screenSize: 13.0,
   compareRatio: '16:9',
@@ -166,6 +188,11 @@ const ToolsEngine = {
     if (container) container.innerHTML = this.renderScreenCalculator();
   },
 
+  chipNpuScore(chip) {
+    if (/FP4|petaflop|RTX Spark/i.test([chip.name, chip.npuDesc, chip.highlights, chip.precision].join(' '))) return null;
+    return Catalog.npuScore(chip.npuTops);
+  },
+
   // 2. 渲染微软定制芯片架构与 NPU AI 算力天梯图
   renderChipLadder() {
     let chips = [...SURFACE_DATA.chips];
@@ -173,8 +200,8 @@ const ToolsEngine = {
     else if (this.chipFilter === 'x86') chips = chips.filter(c => c.architecture.includes('x86'));
     else if (this.chipFilter === 'copilot') chips = chips.filter(c => c.copilotPlus);
 
-    chips.sort((a, b) => (Number(b.npuTops) || 0) - (Number(a.npuTops) || 0));
-    const maxTops = Math.max(...chips.map(c => Number(c.npuTops) || 0), 80);
+    chips.sort((a, b) => (this.chipNpuScore(b) ?? -1) - (this.chipNpuScore(a) ?? -1));
+    const maxTops = 80;
 
     let html = `
       <div class="tool-view-card">
@@ -201,7 +228,7 @@ const ToolsEngine = {
     `;
 
     chips.forEach(chip => {
-      const npuTops = Number(chip.npuTops) || 0;
+      const npuTops = this.chipNpuScore(chip);
       const fillPercent = Math.max(3, (npuTops / maxTops) * 100);
       const isTop = npuTops >= 80;
       const isX86 = (chip.architecture || '').includes('x86');
@@ -226,7 +253,7 @@ const ToolsEngine = {
           </div>
 
           <div class="chip-score-cell">
-            ${npuTops > 0 ? `${npuTops} <span style="font-size:11px; font-weight:normal;">TOPS</span>` : '<span style="font-size:11px; color:var(--ms-text-tertiary);">无独立NPU</span>'}
+            ${npuTops > 0 ? `${npuTops} <span style="font-size:11px; font-weight:normal;">TOPS</span>` : '<span style="font-size:11px; color:var(--ms-text-tertiary);">未确认专用 NPU INT8 算力</span>'}
           </div>
         </div>
 
@@ -548,7 +575,7 @@ const ToolsEngine = {
                 <tbody>
                   ${accs.map(acc => {
                     const match = (acc.compatibilityList || []).find(c => c.deviceId === dev.id);
-                    const status = match ? match.status : 'UNSUPPORTED';
+                    const status = match ? match.status : 'UNKNOWN';
                     const note = match ? match.note : '官方白皮书暂未列入适配名单';
                     return `
                       <tr>
@@ -601,7 +628,7 @@ const ToolsEngine = {
   getCompatStatus(accId, devId) {
     const acc = Catalog.accessories().find(a => a.id === accId);
     if (!acc) return null;
-    return (acc.compatibilityList || []).find(c => c.deviceId === devId) || { status: 'UNSUPPORTED', note: '不支持' };
+    return (acc.compatibilityList || []).find(c => c.deviceId === devId) || { status: 'UNKNOWN', note: '未找到该配件与机型的适用证据' };
   },
 
   formatStatusObj(obj) {
@@ -613,6 +640,7 @@ const ToolsEngine = {
   },
 
   formatBadgeByStatus(status) {
+    if (status === 'UNKNOWN') return '<span class="compat-status-partial">待核验</span>';
     if (status === 'FULL') return '<span class="compat-status-yes">✓ 完美支持</span>';
     if (status === 'PARTIAL') return '<span class="compat-status-partial">● 部分支持</span>';
     return '<span class="compat-status-no">✕ 不支持</span>';
@@ -662,12 +690,7 @@ const ToolsEngine = {
   },
 
   guideGrams(device) {
-    const text = String(Catalog.getSpec(device, 'weight') || Catalog.getSpec(device, 'weightGrams') || '');
-    const kg = text.match(/(\d+(?:\.\d+)?)\s*千克/);
-    if (kg) return Number(kg[1]) * 1000;
-    const grams = text.match(/(\d+(?:\.\d+)?)\s*克/);
-    if (grams) return Number(grams[1]);
-    return 2500;
+    return this.parseMass(Catalog.getSpec(device, 'weight'));
   },
 
   guidePassesFilters(device) {
@@ -703,7 +726,8 @@ const ToolsEngine = {
       medical_field: { pro: 200, go: 180, laptopgo: 40 }
     }[scene] || {};
     let score = categoryBoost[device.categoryId] || 0;
-    score += Math.max(0, 2200 - this.guideGrams(device)) / 10;
+    const mass = this.guideGrams(device);
+    if (mass !== null) score += Math.max(0, 2200 - mass) / 10;
     score += this.guideHours(device) * 4;
     if (device.status === 'current_cn') score += 30;
     if (scene === 'office' && this.guideIsIntel(device)) score += 80;
@@ -713,7 +737,7 @@ const ToolsEngine = {
       if (this.guideIsIntel(device)) score += 80;
     }
     if (scene === 'ai_copilot') {
-      const npuVal = parseInt(Catalog.getSpec(device, 'npuTops'), 10);
+      const npuVal = Catalog.npuScore(Catalog.getSpec(device, 'npuTops'));
       if (npuVal >= 80) score += 220;
       else if (npuVal >= 40) score += 140;
       if (this.guideIsSnapdragon(device)) score += 80;
@@ -741,7 +765,7 @@ const ToolsEngine = {
     }
     const pen = String(Catalog.getSpec(device, 'touchAndPenProtocol') || Catalog.getSpec(device, 'penSupport') || '');
     if ((scene === 'design' || scene === 'creative_pen' || scene === 'study' || scene === 'study_exam') && /触控笔|MPP/.test(pen) && !pen.includes('不支持')) score += 70;
-    const npu = parseInt(Catalog.getSpec(device, 'npuTops'), 10);
+    const npu = Catalog.npuScore(Catalog.getSpec(device, 'npuTops'));
     if (!isNaN(npu)) score += Math.min(npu, 80) / 10;
     score += (Number(device.year) || 0) / 100;
     return score;
@@ -822,7 +846,7 @@ const ToolsEngine = {
       { id: 'commute', label: '🚄 极轻差旅商旅', desc: '羽量便携随行、超长续航与可选 5G' },
       { id: 'office', label: '💼 现代行政办公', desc: '轻薄一体形态、高舒适全尺寸键程' },
       { id: 'enterprise_it', label: '🛡️ 企业统采与信创合规', desc: 'Intel vPro 硬件盾与 Secured-core' },
-      { id: 'ai_copilot', label: '🤖 Copilot+ 本地 AI', desc: '40~1000 TOPS 强劲本地端侧模型算力' },
+      { id: 'ai_copilot', label: '🤖 Copilot+ 本地 AI', desc: '专用 NPU 算力与适用功能须分别核验' },
       { id: 'design', label: '🎨 原笔迹手绘数码设计', desc: 'PixelSense 4096 级压感与触感笔反馈' },
       { id: 'engineering', label: '⚡ 专业软件研发与重度工程', desc: '强悍 CPU 多核算力与高速编译散热冗余' },
       { id: 'media_3d', label: '🔬 3D 渲染与影视特效后期', desc: 'NVIDIA 独立显卡与超高色准 Mini-LED 屏' },
@@ -1015,67 +1039,28 @@ const ToolsEngine = {
     const devices = Catalog.listDevices();
     const currentDev = Catalog.getDevice(this.weightDeviceId) || devices[0];
 
-    // 机身净重估算 (克)
-    let bodyWeight = 895;
-    const wStr = String(this.spec(currentDev, 'weight') || '');
-    const matchG = wStr.match(/(\d+)\s*g/i);
-    const matchKg = wStr.match(/([\d.]+)\s*kg/i);
-    if (matchG) bodyWeight = parseInt(matchG[1], 10);
-    else if (matchKg) bodyWeight = Math.round(parseFloat(matchKg[1]) * 1000);
-
-    // 配件重量计算
-    let kbWeight = 0;
-    if (this.weightWithKeyboard) {
-      if (currentDev.categoryId === 'go') kbWeight = 245;
-      else if (currentDev.categoryId === 'pro') kbWeight = 340;
-      else kbWeight = 0; // 自带键盘
-    }
-
-    let chargerWeight = 0;
-    let chargerName = '不携带充电器 (纯离电外勤)';
-    if (this.weightCharger === 'gan_65w') {
-      chargerWeight = 120;
-      chargerName = '第三方 65W 氮化镓轻量头 + Type-C 编织线';
-    } else if (this.weightCharger === 'orig_charger') {
-      chargerWeight = currentDev.categoryId === 'sls' || currentDev.categoryId === 'book' ? 420 : 260;
-      chargerName = '微软官方原装磁吸电源适配器 + 三脚电源线';
-    }
-
-    const penWeight = this.weightWithPen ? 14 : 0;
-    const mouseWeight = this.weightWithMouse ? 82 : 0;
-
-    const totalWeightG = bodyWeight + kbWeight + chargerWeight + penWeight + mouseWeight;
-    const totalWeightKg = (totalWeightG / 1000).toFixed(2);
-
-    // 只使用官方办公/网页续航；没有可解析的官方数值时不编造估算。
-    const officeBattery = String(this.spec(currentDev, 'batteryLifeOffice') || '');
-    const videoBattery = String(this.spec(currentDev, 'batteryLifeVideo') || '');
-    const claimedBat = parseFloat(officeBattery.match(/[\d.]+/)?.[0] || videoBattery.match(/[\d.]+/)?.[0] || '');
-    const realOfficeHours = Number.isFinite(claimedBat)
-      ? `约 ${(claimedBat * 0.68).toFixed(1)} 小时连贯外勤`
-      : '无法估算（官方续航未披露）';
-    const claimedBatteryLabel = officeBattery || videoBattery || '官方未披露';
-
-    // 便携等级评定
-    let tier = 'A 级 · 轻装差旅';
-    let tierColor = '#107c41';
-    if (totalWeightG <= 1100) {
-      tier = 'S 级 · 超轻羽量出行 (单手托持无感)';
-      tierColor = '#0078d4';
-    } else if (totalWeightG > 1800) {
-      tier = 'C 级 · 重装工作站 (建议双肩背包携带)';
-      tierColor = '#d83b01';
-    } else if (totalWeightG > 1400) {
-      tier = 'B 级 · 均衡便携 (适中通勤)';
-      tierColor = '#b75b00';
-    }
+    const bodyWeight = this.parseMass(this.spec(currentDev, 'weight'));
+    // 未指定配件型号、线材和适用配置时，不虚构重量或充电兼容性。
+    const kbWeight = this.weightWithKeyboard && ['pro', 'go'].includes(currentDev.categoryId) ? null : 0;
+    const chargerWeight = this.weightCharger === 'none' ? 0 : null;
+    const chargerName = '请按具体充电器型号、线材和设备配置核对';
+    const penWeight = this.weightWithPen ? null : 0;
+    const mouseWeight = this.weightWithMouse ? null : 0;
+    const parts = [bodyWeight, kbWeight, chargerWeight, penWeight, mouseWeight];
+    const total = this.sumMass(parts);
+    const totalWeightG = total === null ? '待确认配置' : total;
+    const totalWeightKg = total === null ? '—' : (total / 1000).toFixed(2);
+    const realOfficeHours = '暂无该配置办公实测，不由视频续航换算';
+    const claimedBatteryLabel = this.spec(currentDev, 'batteryLifeOffice') || this.spec(currentDev, 'batteryLifeVideo') || '待核验';
+    const tier = total === null ? '配件或机身重量待核验，无法计算总重' : '所选已知重量合计';
+    const tierColor = 'var(--ms-text-secondary)';
 
     return `
       <div class="guide-container">
         <div class="guide-panel">
           <h2 style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">🎒 差旅背包综合负重与外勤测算器 (Mobility Calculator)</h2>
           <p style="font-size:13px; color:var(--ms-text-secondary); margin-bottom:16px;">
-            买电脑不能只看裸机净重！结合键盘盖、充电器、鼠标与触控笔，实时测算整套装备的真实背包负重与全天离电续航。
+            买电脑不能只看裸机净重！结合键盘盖、充电器、鼠标与触控笔，仅在机身与配件配置重量均明确时计算合计；办公续航需独立实测。
           </p>
 
           <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
@@ -1098,7 +1083,7 @@ const ToolsEngine = {
                 <div style="font-weight:600;">Surface 主机裸机净重</div>
                 <div style="font-size:11px; color:var(--ms-text-tertiary);">${currentDev.name} 铝合金/镁合金一体机身</div>
               </div>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight === null ? '待核验' : bodyWeight} g</div>
             </div>
 
             <div class="weight-item-row">
@@ -1109,41 +1094,41 @@ const ToolsEngine = {
                   <div style="font-size:11px; color:var(--ms-text-tertiary);">${currentDev.categoryId === 'pro' ? '特制版专业键盘盖 / Flex 键盘' : (currentDev.categoryId === 'go' ? 'Go 特制专业键盘盖' : '翻盖机身自带键盘')}</div>
                 </div>
               </label>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${kbWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${kbWeight === null ? '待确认配置' : kbWeight} g</div>
             </div>
 
             <div class="weight-item-row">
               <div style="flex:1;">
                 <div style="font-weight:600; margin-bottom:4px;">电源适配器方案</div>
                 <select class="fluent-btn" style="padding:4px 8px; font-size:12px;" onchange="ToolsEngine.onWeightOptionChange('charger', this.value)">
-                  <option value="gan_65w" ${this.weightCharger === 'gan_65w' ? 'selected' : ''}>⚡ 第三方 65W GaN 氮化镓轻量头+线 (120g - 强烈推荐)</option>
-                  <option value="orig_charger" ${this.weightCharger === 'orig_charger' ? 'selected' : ''}>🔌 官方原装磁吸电源+线 (${chargerWeight}g)</option>
+                  <option value="gan_65w" ${this.weightCharger === 'gan_65w' ? 'selected' : ''}>⚡ 第三方 65W GaN 充电器（型号、线材、兼容性待确认）</option>
+                  <option value="orig_charger" ${this.weightCharger === 'orig_charger' ? 'selected' : ''}>🔌 官方原装磁吸电源+线 (${chargerWeight === null ? '待确认配置' : chargerWeight}g)</option>
                   <option value="none" ${this.weightCharger === 'none' ? 'selected' : ''}>❌ 不带充电器 (仅靠机身电池外勤)</option>
                 </select>
               </div>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${chargerWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${chargerWeight === null ? '待确认配置' : chargerWeight} g</div>
             </div>
 
             <div class="weight-item-row">
               <label style="display:flex; align-items:center; gap:8px; cursor:pointer; flex:1;">
                 <input type="checkbox" ${this.weightWithPen ? 'checked' : ''} onchange="ToolsEngine.onWeightOptionChange('pen', this.checked)">
                 <div>
-                  <div style="font-weight:600;">Surface 超感触控笔 (Slim Pen 2)</div>
-                  <div style="font-size:11px; color:var(--ms-text-tertiary);">收纳于键盘笔槽并无线补电</div>
+                  <div style="font-weight:600;">携带触控笔（型号待确认）</div>
+                  <div style="font-size:11px; color:var(--ms-text-tertiary);">型号、主机兼容性与充电方式须单独确认</div>
                 </div>
               </label>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${penWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${penWeight === null ? '待确认配置' : penWeight} g</div>
             </div>
 
             <div class="weight-item-row">
               <label style="display:flex; align-items:center; gap:8px; cursor:pointer; flex:1;">
                 <input type="checkbox" ${this.weightWithMouse ? 'checked' : ''} onchange="ToolsEngine.onWeightOptionChange('mouse', this.checked)">
                 <div>
-                  <div style="font-weight:600;">Surface Arc / 便携移动鼠标</div>
-                  <div style="font-size:11px; color:var(--ms-text-tertiary);">展平收纳 / 蓝牙免驱连接</div>
+                  <div style="font-weight:600;">携带鼠标（型号待确认）</div>
+                  <div style="font-size:11px; color:var(--ms-text-tertiary);">须确认具体型号及包含电池的重量</div>
                 </div>
               </label>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${mouseWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${mouseWeight === null ? '待确认配置' : mouseWeight} g</div>
             </div>
           </div>
 
@@ -1163,11 +1148,11 @@ const ToolsEngine = {
                 <span style="font-weight:700;">${claimedBatteryLabel}</span>
               </div>
               <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-                <span style="color:var(--ms-text-secondary);">真实办公续航估算：</span>
+                <span style="color:var(--ms-text-secondary);">办公实测状态：</span>
                 <span style="font-weight:700; color:#107c41;">${realOfficeHours}</span>
               </div>
               <div style="font-size:11.5px; color:var(--ms-text-tertiary); background:rgba(0,120,212,0.05); padding:8px 12px; border-radius:6px; ">
-                💡 导购建议：若日常通勤搭配第三方 65W GaN 充电头，比原装充电器立减约 140g，相当于包里少带了一台手机！
+                请核对配件具体型号、重量及设备所需功率；未确认的配件不会被计为零克。
               </div>
             </div>
           </div>
@@ -1253,14 +1238,14 @@ const ToolsEngine = {
             </tr>
             <tr>
               <td class="compat-device-label">端侧 AI / NPU 算力</td>
-              <td>${oldOf('npuTops') && oldOf('npuTops') !== '—' ? oldOf('npuTops') : '0 TOPS (无独立 NPU)'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('npuTops') && newOf('npuTops') !== '—' ? `${newOf('npuTops')}` : '升级款 NPU'}</td>
+              <td>${oldOf('npuTops') && oldOf('npuTops') !== '—' ? oldOf('npuTops') : '待核验'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('npuTops') && newOf('npuTops') !== '—' ? `${newOf('npuTops')}` : '待核验'}</td>
               <td style="text-align:left; color:#107c41; font-weight:600;">🤖 仅在目标设备官方参数明确提供 NPU / Copilot+ 信息时作出判断</td>
             </tr>
             <tr>
               <td class="compat-device-label">屏幕素质与刷新率</td>
-              <td>${oldOf('refreshRate') || '60Hz'} · ${oldOf('screenSize') || '—'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('refreshRate') || '120Hz'} · ${newOf('screenSize') || '—'}</td>
+              <td>${oldOf('refreshRate') || '待核验'} · ${oldOf('screenSize') || '—'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('refreshRate') || '待核验'} · ${newOf('screenSize') || '—'}</td>
               <td style="text-align:left; color:#107c41; font-weight:600;">👁️ 依据两台设备实际刷新率和屏幕规格比较</td>
             </tr>
             <tr>
@@ -1271,9 +1256,9 @@ const ToolsEngine = {
             </tr>
             <tr>
               <td class="compat-device-label">外设与手写笔震动</td>
-              <td>普通手写笔 (无触觉反馈)</td>
-              <td style="font-weight:700; color:var(--ms-accent);">Slim Pen 2 纸感震动马达</td>
-              <td style="text-align:left; color:#107c41; font-weight:600;">✍️ 内置触觉马达模拟真实铅笔书写阻尼感</td>
+              <td>${oldOf('penHapticFeedback') || '待核验'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('penHapticFeedback') || '待核验'}</td>
+              <td style="text-align:left; color:#107c41; font-weight:600;">${oldDev.id === newDev.id ? '同一设备，无升级差异' : '须结合具体触控笔、主机与应用兼容性核对'}</td>
             </tr>
           </tbody>
         </table>
@@ -1300,321 +1285,11 @@ const ToolsEngine = {
   },
 
   renderStorageGuide() {
-    const activeTab = this.storageTab || 'clone';
-
-    return `
-      <div class="guide-container">
-        <!-- 1. 顶部省钱收益核算账本 -->
-        <div class="savings-banner">
-          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
-            <div>
-              <div style="font-size:18px; font-weight:800; color:#107c41; margin-bottom:4px;">硬盘是否可拆卸，以各机型官方规格原文为准</div>
-              <div style="font-size:13px; color:var(--ms-text-primary); line-height:1.6;">
-                官方写「可拆卸式固态硬盘」才表示这台机器的硬盘被标成可拆卸。没有这句，就不能写成「支持」或「免工具快拆」。Pro X 与 Laptop 3 的官方说明是：用户不可自行拆卸，只能由技术人员按微软提供的说明操作。
-              </div>
-            </div>
-        </div>
-
-        <div class="guide-panel" style="margin-bottom:20px;">
-          <div style="font-weight:700; font-size:15px; margin-bottom:10px;">不要把一种拆法套到全部机型</div>
-          <p style="font-size:13px; color:var(--ms-text-secondary); line-height:1.6; margin:0;">
-            每台机器的硬盘说明在参数表「硬盘是否可拆卸」里，用的是该机官方规格原文。国行现售的 13 英寸、13.8 英寸和 15 英寸，官方写的是可拆卸式固态硬盘（第 4 代 SSD），或可拆卸式 UFS。12 英寸 Pro 的规格表没有写可拆卸，维修清单把存储器写在主板上。拆装步骤以微软该机型维修指南为准，本站不提供取卡针、磁吸盖门或螺丝规格。
-          </p>
-        </div>
-
-        <!-- 3. 核心重头戏：系统安装与迁移双轨实操指南 -->
-        <div class="guide-panel">
-          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-            <div>
-              <h3 style="font-size:16px; font-weight:700; margin:0 0 4px; color:var(--ms-text-primary);">💻 系统安装与数据迁移全流程实操指南</h3>
-              <p style="font-size:12.5px; color:var(--ms-text-secondary); margin:0;">根据您的手头工具与需求，挑选最适合您的装机路径：</p>
-            </div>
-            <span style="font-size:12px; color:var(--ms-text-tertiary);">三种方案均经过真机严谨验证，附带避坑口诀</span>
-          </div>
-
-          <!-- 方案切换 Tab -->
-          <div class="storage-tabs-bar">
-            <button class="storage-tab-btn ${activeTab === 'clone' ? 'active' : ''}" onclick="ToolsEngine.onStorageTabChange('clone')">
-              <span>🟢 方案 A：全盘 1:1 无损热克隆</span>
-              <span style="font-size:11px; opacity:0.85; padding:1px 6px; background:rgba(0,0,0,0.15); border-radius:10px;">最省心 · 保留全软件/微信</span>
-            </button>
-            <button class="storage-tab-btn ${activeTab === 'recovery' ? 'active' : ''}" onclick="ToolsEngine.onStorageTabChange('recovery')">
-              <span>🔵 方案 B：微软官方专用镜像恢复</span>
-              <span style="font-size:11px; opacity:0.85; padding:1px 6px; background:rgba(0,0,0,0.15); border-radius:10px;">最纯净 · 专机驱动出厂原装</span>
-            </button>
-            <button class="storage-tab-btn ${activeTab === 'generic' ? 'active' : ''}" onclick="ToolsEngine.onStorageTabChange('generic')">
-              <span>🟣 方案 C：通用 Win11 安装介质</span>
-              <span style="font-size:11px; opacity:0.85; padding:1px 6px; background:rgba(0,0,0,0.15); border-radius:10px;">应急备选 · 绕过联网激活</span>
-            </button>
-          </div>
-
-          <!-- Tab 内容区 -->
-          ${activeTab === 'clone' ? `
-            <!-- 方案 A: 全盘无损克隆 -->
-            <div class="step-flow-list">
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge warning">第 1 步 · 生死攸关</span>
-                  <span class="step-title">解除 Windows 全盘 BitLocker 设备加密</span>
-                  <span class="step-time-tag">耗时约 5~10 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p><strong>为什么必须先解密？</strong> Windows 11 默认对 Surface 全系列开机强制启用 BitLocker 硬盘硬件加密。如果<strong>未解密直接克隆</strong>，新盘安装到机身开机时，TPM 芯片检测到磁盘物理特征变化，必定触发<strong>蓝色 BitLocker 48 位数字恢复密钥锁死屏幕</strong>！若您未备份密钥，数据将彻底丢失！</p>
-                  <p><strong>实操解密路径：</strong></p>
-                  <ol style="margin:4px 0 8px; padding-left:20px;">
-                    <li>点击开始菜单 -> 打开「设置」 -> 进入「隐私和安全性」 -> 点击「设备加密」（或「BitLocker 驱动器加密」）。</li>
-                    <li>将设备加密开关从「开」切换为<strong>「关」</strong>，并在弹窗中确认关闭。</li>
-                    <li>系统将在后台全速解密磁盘（状态显示为“正在解密”，解密进度达到 100% 后显示为“已关闭”）。</li>
-                  </ol>
-                  <div class="tip-callout info">
-                    💡 <strong>双重保险备忘</strong>：建议访问微软官方账户中心 <a href="https://account.microsoft.com/devices/recoverykey" target="_blank" style="color:var(--ms-accent); font-weight:700;">account.microsoft.com/devices/recoverykey</a>，确认您账号中备份的 48 位恢复密钥以防万一。
-                  </div>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 2 步</span>
-                  <span class="step-title">将新买的 2230 SSD 装入移动硬盘盒并连机</span>
-                  <span class="step-time-tag">耗时 1 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>将新买的 M.2 2230 固态硬盘插入 NVMe 移动硬盘盒中固定好，使用 USB-C 数据线插入 Surface 的 Type-C 端口。Windows 系统右下角提示“发现新硬件”即可，此时<strong>无需去磁盘管理手动初始化或格式化</strong>。</p>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 3 步 · 核心技术</span>
-                  <span class="step-title">运行系统克隆工具并【等比自动扩容 C 盘】</span>
-                  <span class="step-time-tag">耗时约 10~15 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>推荐使用完全免费的 <strong>DiskGenius</strong> 或 <strong>傲梅轻松备份</strong>：</p>
-                  <ol style="margin:4px 0 8px; padding-left:20px;">
-                    <li>打开 DiskGenius，点击顶部菜单「工具」 -> 选择<strong>「系统迁移」</strong>。</li>
-                    <li><strong>选择目标盘</strong>：系统会自动选中当前 Surface 内置固态作为源盘，在弹出的目标盘列表中选择外接的 1TB/2TB 新固态硬盘。</li>
-                    <li><strong>至关重要的扩容设置（避坑！）</strong>：在目标盘分区布局预览图中，默认 C 盘可能仍是 256GB，剩余 750GB 会变成灰色未分配空间。<strong>请用鼠标按住 C 盘右侧边框，向右直接拖拽拉满整个磁盘</strong>！确保迁移完成后所有容量直接归入 C 盘，无需换盘后二次折腾扩容。</li>
-                    <li>点击「开始」按钮，选择「热迁移」（无需关机，在 Windows 后台即可高速镜像读写）。</li>
-                  </ol>
-                  <div class="tip-callout success">
-                    🎉 提示：迁移速度一般在 300~600 MB/s，通常仅需 10~15 分钟即可提示“系统迁移成功完成”！
-                  </div>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 4 步</span>
-                  <span class="step-title">物理更换固态硬盘</span>
-                  <span class="step-time-tag">耗时 1~2 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>关机并拔掉电源和外设之后，按该机型微软维修指南更换硬盘。不同机型的盖门、螺丝和能否由用户自行拆卸都不一样，不能套用同一种拆法。</p>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 5 步</span>
-                  <span class="step-title">开机进入全新大容量系统，重新开启加密</span>
-                  <span class="step-time-tag">耗时 1 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>按下机身电源键，Surface 的 UEFI 固件会自动识别引导分区，几秒钟后直接载入您熟悉的桌面！</p>
-                  <p>打开「此电脑」，您会发现 C 盘直接变成了 <strong>930 GB (1TB 规格)</strong> 或 <strong>1.86 TB (2TB 规格)</strong>，所有安装过的专业软件、微信聊天记录、桌面排布、浏览器收藏夹均 100% 完美保留！</p>
-                  <p>进系统确认一切正常后，建议回到「设置」->「隐私和安全性」->「设备加密」重新点击「开启」，恢复企业级安全防护。</p>
-                  <div class="tip-callout success">
-                    🎁 <strong>原装旧盘二次利用</strong>：将换下来的原装 256GB 固态装进刚才买的 M.2 硬盘盒中，秒变一个读写超 1000MB/s 的极速轻薄随身 U 盘，物尽其用！
-                  </div>
-                </div>
-              </div>
-            </div>
-          ` : activeTab === 'recovery' ? `
-            <!-- 方案 B: 微软官方专用出厂镜像恢复 -->
-            <div class="step-flow-list">
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 1 步 · 核心关键</span>
-                  <span class="step-title">准备一个 FAT32 格式的 16GB~32GB U 盘</span>
-                  <span class="step-time-tag">耗时 2 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p><strong>避坑铁律：</strong> Surface 的原生 UEFI 主板固件<strong>只认 FAT32 文件系统进行脱机引导</strong>，绝对不能格式化成 NTFS 或 exFAT！</p>
-                  <p>如果您的 U 盘大于 32GB（例如 64GB/128GB），Windows 11 右键菜单中默认不再提供 FAT32 格式化选项。<strong>解决方案：</strong>使用免费的 DiskGenius，右键点击该 U 盘选择「格式化当前分区」，在文件系统下拉菜单中强行选择 <strong>FAT32</strong> 并点击格式化，卷标命名为 <strong>SURFACE</strong> 即可。</p>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 2 步</span>
-                  <span class="step-title">凭机身序列号在微软官网下载出厂专配恢复镜像</span>
-                  <span class="step-time-tag">耗时约 10~20 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>1. 翻开 Surface 支架，在铰链内侧找到该机器专属的 <strong>12 位纯数字序列号 (Serial Number)</strong>。</p>
-                  <p>2. 在任意电脑浏览器中访问微软官方 Surface 恢复映像页面：<br>
-                    <a href="https://support.microsoft.com/zh-cn/surface-recovery-image" target="_blank" style="color:var(--ms-accent); font-weight:700; text-decoration:underline;">https://support.microsoft.com/zh-cn/surface-recovery-image</a>
-                  </p>
-                  <p>3. 登录微软个人账户，在下拉框选择您的产品型号，输入 12 位序列号，点击「继续」。系统将匹配出该机出厂专配的 Windows 版本恢复包（通常为 9GB ~ 13GB 的 <code>.zip</code> 压缩包），点击下载。</p>
-                  <div class="tip-callout info">
-                    💎 <strong>官方恢复镜像优势</strong>：此镜像不仅包含完整 Windows 系统，更预装了该机型出厂专配的 PixelSense 屏幕色彩 ICC 校准文件、触觉手写笔压感固件、定制电源能耗策略及 Dolby Atmos 音效驱动，原汁原味！
-                  </div>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 3 步 · 目录规范</span>
-                  <span class="step-title">解压恢复文件至 U 盘根目录（严禁套娃文件夹）</span>
-                  <span class="step-time-tag">耗时约 5~8 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>将已下载完成的 <code>.zip</code> 压缩包解压。<strong>注意解压层级：</strong></p>
-                  <p>打开解压后的文件夹，选中里面的所有文件和子文件夹（包含 <code>bootmgr</code>、<code>bootmgr.efi</code>、<code>EFI</code> 文件夹、<code>sources</code> 文件夹等），<strong>直接复制拖拽到 U 盘的根目录下</strong>！</p>
-                  <div class="tip-callout warning">
-                    ⚠️ <strong>高频翻车检查</strong>：双击打开 U 盘后，必须一眼就能看到 <code>bootmgr</code> 等核心文件！如果 U 盘根目录下套了一层类似 <code>SurfacePro9_BMR_xxx</code> 的外层文件夹，Surface 开机引导程序将无法读取，导致黑屏提示找不到启动介质！
-                  </div>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 4 步</span>
-                  <span class="step-title">物理更换新空白固态硬盘</span>
-                  <span class="step-time-tag">耗时 1 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>关机并拔掉电源和外设之后，按该机型微软维修指南更换硬盘。不同机型的盖门和能否由用户自行拆卸都不一样。</p>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 5 步 · 神仙手法</span>
-                  <span class="step-title">Surface 专属物理按键组合进入 U 盘恢复引导</span>
-                  <span class="step-time-tag">耗时 1 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>1. 将制作好的恢复 U 盘插入 Surface 的 USB 接口，并<strong>务必连接电源适配器</strong>防止刷写中断。</p>
-                  <p>2. <strong>微软标准硬件引导手势（请牢记按键顺序）：</strong></p>
-                  <div style="background:var(--ms-bg-card-secondary); padding:12px 16px; border-radius:8px;  margin:8px 0; font-size:13px; line-height:1.8;">
-                    ① 保持关机状态，用左手手指<strong>长按住机身上的【音量减键 (-)】不松开</strong>；<br>
-                    ② 右手轻按一下机身上的<strong>【电源键】</strong>立即松开；<br>
-                    ③ 眼睛盯紧屏幕，看到屏幕亮起白色 Microsoft 或 Surface 文字 Logo，且<strong>下方出现旋转的白色小圆点时，立即松开左手的【音量减键】</strong>！
-                  </div>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">第 6 步</span>
-                  <span class="step-title">全自动执行出厂级初始化部署与激活</span>
-                  <span class="step-time-tag">耗时约 15~25 分钟</span>
-                </div>
-                <div class="step-body">
-                  <p>稍等片刻，屏幕将载入蓝色经典 Windows 恢复环境（WinRE）：</p>
-                  <ol style="margin:4px 0 8px; padding-left:20px;">
-                    <li>选择显示语言（推荐选择「中文(简体)」），键盘布局选「微软拼音」。</li>
-                    <li>在蓝底选项菜单中点击<strong>「疑难解答 (Troubleshoot)」</strong>。</li>
-                    <li>点击<strong>「从驱动器恢复 (Recover from a drive)」</strong>。</li>
-                    <li>在清除选项中选择<strong>「仅删除我的文件」</strong>（因为新硬盘本来就是空的），点击「恢复」。</li>
-                  </ol>
-                  <p>Surface 将全自动完成新硬盘的分区初始化、出厂系统镜像写入及主板驱动部署。期间电脑会自动重启数次，最后直接进入原装 Windows 11 开箱配置向导（OOBE），联网自动通过主板数字许可证激活！</p>
-                </div>
-              </div>
-            </div>
-          ` : `
-            <!-- 方案 C: 通用 Win11 原版介质安装 -->
-            <div class="step-flow-list">
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">适用场景</span>
-                  <span class="step-title">使用微创官方 MediaCreationTool 制作的标准 Win11 U 盘</span>
-                </div>
-                <div class="step-body">
-                  <p>如果您手头没有原厂镜像，只有一个普通的 Windows 11 安装 U 盘，换上新固态后同样可以正常引导安装系统。但在新版 Surface 上安装通用系统存在一个<strong>极易卡死的知名陷阱</strong>，请按以下绝密技巧避坑：</p>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge warning">绝密秘籍</span>
-                  <span class="step-title">破解开箱阶段卡在“让我们为您连接到网络”无下一步问题</span>
-                </div>
-                <div class="step-body">
-                  <p><strong>致命痛点：</strong> 通用原版 Win11 镜像由于没有内置某些新型号 Surface 的 Wi-Fi 驱动和触控板驱动，安装完毕首次进入开箱向导时，系统强制要求连接网络，但屏幕上找不到任何 Wi-Fi 列表，界面又<strong>没有跳过按钮</strong>，直接卡死死循环！</p>
-                  <p><strong>一行命令神级破解术：</strong></p>
-                  <ol style="margin:4px 0 8px; padding-left:20px;">
-                    <li>在卡住的“让我们为您连接到网络”界面，按下键盘组合键：<br>
-                      <strong><code>Shift + F10</code></strong>（部分外接键盘或便携键盘可能需要按 <strong><code>Fn + Shift + F10</code></strong>）。
-                    </li>
-                    <li>屏幕中央会立即弹出一个黑色的 Command 命令行提示符窗口。</li>
-                    <li>在命令行中输入以下命令并按下回车键：</li>
-                  </ol>
-                  <div class="code-box">
-                    <span class="code-text">OOBE\\BYPASSNRO</span>
-                    <span style="font-size:11.5px; color:#888;">(不区分大小写，输入后回车)</span>
-                  </div>
-                  <ol start="4" style="margin:4px 0 8px; padding-left:20px;">
-                    <li>系统将全自动重启，再次来到网络连接页面时，右下角就会多出一个隐藏选项：<strong>「我没有 Internet 连接」</strong>！</li>
-                    <li>点击它，再点击「继续执行受限设置」，即可跳过强制联网，直接创建离线本地管理员账户进入桌面！</li>
-                  </ol>
-                </div>
-              </div>
-
-              <div class="step-card">
-                <div class="step-header">
-                  <span class="step-badge">最后一步</span>
-                  <span class="step-title">双击微软官方 MSI 驱动包一键补全硬件</span>
-                </div>
-                <div class="step-body">
-                  <p>跳过网络进桌面后，由于缺少专属驱动，屏幕可能没有触摸功能、按键没有亮度调节。用另一台电脑从微软官网下载对应机型的 Surface 固件与驱动包（例如 <code>SurfacePro9_Win11_xxxx.msi</code>），拷贝到 Surface 上双击运行，点击下一步全自动安装，重启后 Wi-Fi、触控屏、笔压感及摄像头即可 100% 满血复活！</p>
-                </div>
-              </div>
-            </div>
-          `}
-        </div>
-
-        <!-- 4. 换盘现场四大典型翻车事故急救指南 (FAQ) -->
-        <div class="guide-panel" style="margin-top:20px;">
-          <div style="font-weight:700; font-size:15px; margin-bottom:4px; color:#d83b01;">⚠️ 换盘现场四大高频翻车事故与急救指南 (FAQ)：</div>
-          <div class="faq-grid">
-            <div class="faq-card">
-              <div class="faq-question">🔴 事故 1：换完开机提示红色锁头 / Red Surface Logo？</div>
-              <div class="faq-answer">
-                <strong>病因</strong>：这是 UEFI 安全启动（Secure Boot）检测到启动链和硬盘签名变更的正常提醒。<br>
-                <strong>急救</strong>：开机长按【音量加键 (+)】进 UEFI BIOS，点击左侧「Security」，在「Secure Boot」项下选择「Microsoft only」或「Microsoft & 3rd party CA」，点击保存重启即可恢复正常。
-              </div>
-            </div>
-
-            <div class="faq-card">
-              <div class="faq-question">❌ 事故 2：换好开机直接进 BIOS，找不到固态硬盘？</div>
-              <div class="faq-answer">
-                <strong>病因</strong>：硬盘没有装到位时，开机可能进不了系统。<br>
-                <strong>处理</strong>：关机断电后，按该机型微软维修指南重新安装。不要套用别的机型的螺丝或插法。
-              </div>
-            </div>
-
-            <div class="faq-card">
-              <div class="faq-question">💾 事故 3：1TB 换好后系统里只显示 256GB，剩下的容量哪去了？</div>
-              <div class="faq-answer">
-                <strong>病因</strong>：克隆时未开启按比例扩容，导致多出的 750GB 变成了未分配空间。<br>
-                <strong>急救</strong>：按下 <code>Win + X</code> 打开「磁盘管理」，若 C 盘右侧隔着一个恢复分区无法直接扩展卷，只需下载免费的「傲梅分区助手」，右键 C 盘选择「调整/移动分区」，向右拉满未分配空间点击执行，10秒内无损合并！
-              </div>
-            </div>
-
-            <div class="faq-card">
-              <div class="faq-question">🔒 事故 4：克隆后开机提示输入 BitLocker 恢复密钥？</div>
-              <div class="faq-answer">
-                <strong>病因</strong>：换盘前未彻底解密 BitLocker，触发了 TPM 硬件安全锁死。<br>
-                <strong>急救</strong>：用手机登录微软官网 <a href="https://account.microsoft.com/devices/recoverykey" target="_blank" style="color:var(--ms-accent); font-weight:700;">account.microsoft.com/devices/recoverykey</a>，查阅并输入对应的 48 位数字恢复密钥即可解锁。若未绑定微软账号，则必须重新用方案 B 进行出厂恢复。
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
+    return `<div class="guide-container"><div class="savings-banner"><h2>SSD 与系统恢复指南</h2></div>
+      <div class="guide-panel"><p>可拆卸不等于用户可以自行更换。接口、尺寸、容量和维修资格须按具体机型官方维修说明核对。</p>
+      <p>操作前验证独立备份可恢复，并保存 BitLocker 恢复密钥。克隆、分区调整及恢复操作均可能丢失数据，本站不作无损保证。</p>
+      <p>不要照搬其他机型的启动按键、关闭安全启动或解密设置。企业设备应联系管理员。</p>
+      <p><a href="https://support.microsoft.com/zh-cn/surface" target="_blank" rel="noopener noreferrer">微软 Surface 支持：选择自己的机型后查阅维修与恢复说明</a></p></div></div>`;
   }
 };
 

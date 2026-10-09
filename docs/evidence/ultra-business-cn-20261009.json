@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
+  "reviewedAt": "2026-10-09",
+  "region": "CN",
+  "product": "Surface Laptop Ultra 商用版",
+  "status": "official-page-reviewed; awaiting live record identity and merge",
+  "consumerOrOtherRegionApplicable": false,
+  "values": {
+    "resolution": "3270 × 2180 (262 PPI)",
+    "batteryCapacityWh": {"rated": 92, "minimum": 89},
+    "dimensionsMm": {"length": 328.8, "width": 238.7, "thicknessWithoutFeet": 17.99, "thicknessWithFeet": 19.16},
+    "weight": {"value": 2.0, "unit": "kg"},
+    "memoryGB": [24, 32, 48, 64, 128],
+    "storage": [{"capacityGB": 512, "generation": 4}, {"capacityTB": 1, "generation": 5}, {"capacityTB": 2, "generation": 5}],
+    "limitedHardwareWarrantyYears": 3,
+    "shippingStarts": "2026-10-16",
+    "salePhase": "preorder",
+    "npuInt8Tops": null,
+    "platformAiPeak": {"value": 1, "unit": "petaflop", "precision": "FP4", "configuration": "特定配置，不能换算为专用 NPU INT8 TOPS"}
+  },
+  "note": "官方页证据用于后续定向合入，不向旧数据集创建猜测 ID，不改消费者版；发布日期、发货日期与销售状态不能混用。"
+}

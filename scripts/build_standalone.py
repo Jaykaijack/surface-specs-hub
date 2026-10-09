@@ -4,6 +4,7 @@ import re
 import io
 import base64
 import argparse
+import subprocess
 from PIL import Image
 
 # 保证 Windows 控制台输出 UTF-8
@@ -74,6 +75,8 @@ def scan_and_encode_directory(dir_path, label):
     return mapping, orig_size, webp_size
 
 def build(snapshot_only=False):
+    for check in ['tests/test-runner.js', 'tests/review-regression.test.js', 'scripts/preflight_check.js']:
+        subprocess.run(['node', os.path.join(WORKSPACE, check)], cwd=WORKSPACE, check=True)
     if snapshot_only and os.path.exists(STANDALONE_RELEASE):
         raise FileExistsError(f"不可覆盖核验快照: {STANDALONE_RELEASE}")
     print(f"🚀 开始构建完全离线独立封装版 Surface Specs Hub HTML ({VERSION} - {DATE_STR})...")

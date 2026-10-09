@@ -381,11 +381,30 @@ const ComparisonEngine = {
     return html;
   },
 
+  normalizeComparable(raw, key) {
+    if (Catalog.specState(raw) !== 'VALID') return Catalog.specState(raw);
+    const text = String(raw).normalize('NFKC').trim();
+    // 只标准化有明确量纲的单值；范围和配置说明必须保留。
+    if (['weight', 'weightGrams'].includes(key)) {
+      const m = text.match(/^(?:约\s*)?(\d+(?:\.\d+)?)\s*(kg|g|千克|克)$/i);
+      if (m) return Number(m[1]) * (/^(kg|千克)$/i.test(m[2]) ? 1000 : 1);
+    }
+    if (key === 'aspectRatio') {
+      const m = text.match(/^(\d+)\s*:\s*(\d+)(?:\s.*)?$/);
+      if (m) return Number(m[1]) / Number(m[2]);
+    }
+    if (['refreshRate', 'batteryCapacityWh'].includes(key)) {
+      const m = text.match(/^(\d+(?:\.\d+)?)\s*(Hz|赫兹|Wh|瓦时)$/i);
+      if (m) return Number(m[1]);
+    }
+    return typeof raw === 'string' ? text.replace(/\s*([×x:])\s*/g, '$1') : raw;
+  },
+
   checkFieldDiff(devices, fieldKey) {
     if (!devices || devices.length <= 1) return false;
     const values = devices.map(d => {
       const raw = Catalog.getSpec(d, fieldKey);
-      return raw !== undefined ? raw : 'null';
+      return this.normalizeComparable(raw, fieldKey);
     });
     const firstVal = JSON.stringify(values[0]);
     for (let i = 1; i < values.length; i++) {

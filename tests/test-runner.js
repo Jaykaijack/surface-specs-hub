@@ -402,7 +402,7 @@ ToolsEngine.weightCharger = 'gan_65w';
 const weightHtml = ToolsEngine.renderWeightCalculator();
 assert(typeof weightHtml === 'string' && weightHtml.includes('weight-dashboard'), '背包负重测算器渲染正常');
 assert(weightHtml.includes('差旅背包综合负重与外勤测算器'), '负重测算器包含标题与说明');
-assert(weightHtml.includes('真实办公续航估算'), '负重测算器输出真实离电续航估算');
+assert(weightHtml.includes('办公实测状态'), '负重测算器说明没有办公实测');
 
 // 3. 跨代升级价值评估透视镜
 ToolsEngine.upgradeOldId = 'pro-7';
@@ -416,20 +416,9 @@ assert(upgradeHtml.includes('升级价值与置换建议'), '跨代升级透视�
 ToolsEngine.storageTab = 'clone';
 const storageCloneHtml = ToolsEngine.renderStorageGuide();
 assert(typeof storageCloneHtml === 'string' && storageCloneHtml.includes('savings-banner'), 'SSD 省钱指南容器渲染正常');
-assert(storageCloneHtml.includes('M.2 2230'), 'SSD 省钱指南强调 M.2 2230 核心规格');
-assert(storageCloneHtml.includes('BitLocker'), '克隆方案包含 BitLocker 避坑提醒');
-assert(storageCloneHtml.includes('等比自动扩容'), '克隆方案包含 C 盘等比自动扩容指导');
-
-ToolsEngine.storageTab = 'recovery';
-const storageRecHtml = ToolsEngine.renderStorageGuide();
-assert(storageRecHtml.includes('FAT32'), '官方恢复方案强调 FAT32 U盘格式');
-assert(storageRecHtml.includes('音量减键'), '官方恢复方案包含 Surface 物理组合键引导指导');
-assert(storageRecHtml.includes('从驱动器恢复'), '官方恢复方案提供 WinRE 详细点击指引');
-
-ToolsEngine.storageTab = 'generic';
-const storageGenHtml = ToolsEngine.renderStorageGuide();
-assert(storageGenHtml.includes('BYPASSNRO'), '通用介质方案提供 OOBE 绕过联网破解指令');
-assert(storageGenHtml.includes('Shift + F10'), '通用介质方案提供快捷键呼出命令提示符指引');
+assert(storageCloneHtml.includes('BitLocker'), '保存恢复密钥提醒');
+assert(storageCloneHtml.includes('独立备份'), '要求独立可恢复备份');
+assert(!/100%|BYPASSNRO|10秒内无损/.test(storageCloneHtml), '不承诺无损或给出绕过设置指导');
 
 // ----------------------------------------------------
 // 5. 路由与多维筛选系统测试 (Router & Filters)

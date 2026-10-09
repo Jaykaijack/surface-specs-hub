@@ -1916,7 +1916,7 @@ const App = {
                     ` : ''}
                   </td>
                   <td style="padding:10px 14px; font-size:12px; color:var(--ms-text-secondary);">
-                    <div>${specOf('screenSize') || '—'} 3:2</div>
+                    <div>${Catalog.presentSpec(specOf('screenSize'))} ${Catalog.presentSpec(specOf('aspectRatio'))}</div>
                     <div style="font-size:11px; color:var(--ms-text-tertiary);">${specOf('resolution') || ''} ${specOf('refreshRate') || ''}</div>
                   </td>
                   <td style="padding:10px 14px; text-align:center;">
@@ -2525,8 +2525,8 @@ const App = {
       // Copilot+ 过滤
       if (this.filters.copilotOnly) {
         const topsStr = this.spec(d, 'npuTops') || '';
-        const num = parseInt(topsStr, 10);
-        if (isNaN(num) || num < 40) return false;
+        const num = Catalog.npuScore(topsStr);
+        if (num === null || num < 40) return false;
       }
 
       return true;
@@ -2555,6 +2555,10 @@ const App = {
   },
 
   // 8. 全局搜索系统 (PRD 第十六章)
+  escapeText(text) {
+    return String(text).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
+  },
+
   normalizeSearchText(text) {
     return String(text || '').toLowerCase().replace(/[®™©]/g, '').replace(/\s+/g, ' ').trim();
   },
@@ -2571,9 +2575,11 @@ const App = {
 
     const matchedDevices = this.listDevices().filter(d => {
       const fullText = this.normalizeSearchText(
-        `${d.name} ${d.nameEn} ${d.generation} ${this.spec(d, 'cpuModel')} ${this.spec(d, 'npuTops')} ${d.tagline} ${d.year}`
+        `${d.id.replace(/-/g, " ")} ${d.name} ${d.nameEn} ${d.generation} ${this.spec(d, 'cpuModel')} ${this.spec(d, 'npuTops')} ${d.tagline} ${d.year}`
       );
-      return fullText.includes(term);
+      const modelQuery = term.match(/^(?:surface\s+)?(pro|laptop)\s+(\d+)$/);
+      if (modelQuery) return new RegExp(`^${modelQuery[1]}-${modelQuery[2]}(?:-|$)`).test(d.id);
+      return term.split(/\s+/).every(token => fullText.includes(token));
     });
 
     const matchedChips = SURFACE_DATA.chips.filter(c => {
@@ -2591,7 +2597,7 @@ const App = {
           ${matchedDevices.length === 0 && matchedChips.length === 0 ? `
             <div class="hub-empty-state" style="padding:24px 16px; margin:10px 0; border:none; box-shadow:none;">
               <div class="empty-icon" style="font-size:32px; margin-bottom:8px;">🔍</div>
-              <div class="empty-title" style="font-size:15px;">未找到与 "${term}" 匹配的内容</div>
+              <div class="empty-title" style="font-size:15px;">未找到与 "${this.escapeText(term)}" 匹配的内容</div>
               <div class="empty-desc" style="font-size:12px; margin-bottom:12px;">建议尝试搜索机型（如 Pro 13、Laptop 8）、芯片架构（如 骁龙 X2、酷睿 Ultra）或算力（如 80 TOPS）。</div>
               <div class="empty-actions">
                 <button class="fluent-btn-sm" onclick="App.clearGlobalSearch()">清空搜索词</button>
@@ -2603,7 +2609,7 @@ const App = {
             <div style="font-size:12px; font-weight:700; color:var(--ms-text-brand); margin:8px 0 4px;">匹配 Surface 设备 (${matchedDevices.length})</div>
             <div style="display:flex; flex-direction:column; gap:6px; max-height:220px; overflow-y:auto;">
               ${matchedDevices.map(d => `
-                <div class="search-result-item" onclick="App.navigateToDetail('${d.categoryId}', '${d.id}'); App.closeSearchModal();">
+                <div class="search-result-item" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" onclick="App.navigateToDetail('${d.categoryId}', '${d.id}'); App.closeSearchModal();">
                   <div>
                     <div style="font-weight:600; font-size:13.5px;">${d.name}</div>
                     <div style="font-size:11.5px; color:var(--ms-text-secondary);">${this.spec(d, 'cpuModel')} · ${this.spec(d, 'npuTops')} · ${this.spec(d, 'releaseDate')}</div>
@@ -2619,7 +2625,7 @@ const App = {
             <div style="font-size:12px; font-weight:700; color:#8764b8; margin:12px 0 4px;">匹配处理器架构 (${matchedChips.length})</div>
             <div style="display:flex; flex-direction:column; gap:6px;">
               ${matchedChips.map(c => `
-                <div class="search-result-item" onclick="App.navigate('#/tools/chips'); App.closeSearchModal();">
+                <div class="search-result-item" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" onclick="App.navigate('#/tools/chips'); App.closeSearchModal();">
                   <div>
                     <div style="font-weight:600; font-size:13.5px;">${c.name}</div>
                     <div style="font-size:11.5px; color:var(--ms-text-secondary);">${c.vendor} · ${c.npuDesc}</div>

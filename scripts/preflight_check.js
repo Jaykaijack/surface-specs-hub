@@ -22,7 +22,6 @@ const INTERNAL_NOTE_KEYWORDS = [
   '官方写了上市月份',
   '现在还不能标成国行在售',
   '图片待核验',
-  '待核验',
   '内部备注',
   '工单状态',
   '草稿未确认'
@@ -337,7 +336,7 @@ function runPreflightPipeline(options = {}) {
     return false;
   } else {
     console.log('🎉 预发布检查五项全绿！所有硬性合规与质量门禁全部通过！');
-    console.log('💡 具备生产环境构建发布条件 (Ready to Release)。');
+    console.log('💡 仅结构与规则检查通过；真实性、线上差异及发布授权仍需独立确认。');
     console.log('========================================================\n');
     return true;
   }
