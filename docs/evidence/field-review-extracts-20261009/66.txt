@@ -1,0 +1,65 @@
+Introducing the World’s Most Powerful Console: Xbox One X - XBOX Wire (https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/)
+citeturn81view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/","lineno":150}); Total lines: 94
+L0: cite0†XBOX†www.xbox.com L1: 
+L2: [Input: Search the WIRE]
+L3: 
+L4: Close×
+L5: 
+L6: [Input: Search games, gear, stories...]
+L7: 
+L8: ## Trending now
+L9: 
+L10:   1. cite1†Coming to XBOX Game Pass: Battlefield 6, Valor Mortis, Forever Ago, and More L11:   2. cite2†Multiple Adventures Await as Stories: The Path of Destinies Arrives on Xbox One  L12:   3. cite3†Introducing XP L13:   4. cite4†New Leadership Appointments and XBOX Division L14:   5. cite5†Upcoming Changes to XBOX Cloud Gaming L15:   6. cite6†Indie Selects for October 2026: Discover and Progress Through Unforgettable Worlds L16: ## Browse by tag
+L17: 
+L18: cite7†Great Games cite8†Return of XBOX cite9†Future of Play cite10†Official XBOX Podcast cite11†XBOX Insider cite12†ID @ XBOX L19: 
+L20: ## Recent searches
+L21: 
+L22: Start typing to search
+L23: 
+L24: cite13†Home /Watch /Consoles
+L25: 
+L26: cite14†Image: Xbox One X Side image†xboxwire.thesourcemediaassets.com L27: 
+L28: Consoles 4K · HDR
+L29: 
+L30: 0:00/4:12 [Button: 1080p]
+L31: 
+L32: Consoles
+L33: # Introducing the World’s Most Powerful Console: Xbox One X
+L34: 
+L35: Premiered June 11, 2017 4:12 runtime
+L36: 
+L37: [Button: Share] cite15†Transcript L38: 
+L39: About this video
+L40: E3 marks the world premiere of cite16†Xbox One X†www.xbox.com , the world’s most powerful console designed for immersive true 4K gaming, ultimate compatibility, and unrivaled craftsmanship. As the newest member of the Xbox One family of devices, Xbox One X will offer gamers premier console performance for $499 USD / 449 GBP / 499 EUR / 599 CAD/ 649 AUD and begins rolling out to all Xbox One markets starting Nov. 7.
+L41: Every Xbox One X unit will come with a 1TB hard drive, a matching Xbox Wireless Controller, HDMI cable, power supply, a 1-month free Xbox Game Pass subscription and a 14-day free Xbox Live Gold membership.
+L42: Inspired by the sleek design elements of Xbox One S, now in black, Xbox One X is not only the most powerful console we’ve ever created, it’s also the smallest. Like the Xbox One S, it includes a 4K UHD Blu-ray player, built-in power supply, three USB 3.0 ports (one in the front and two in the back), and IR blaster. It can be placed horizontally or vertically with an optional stand.
+L43: For those who already own an Xbox One S, all the cables you own will transfer over, with port locations designed to be an easy plug-and-play swap in your existing gaming setup.
+L44: Games play better on Xbox One X
+L45: With 40 percent more power than any other console, Xbox One X is the world’s most powerful console. Games play better on Xbox One X. It’s the first time we’ve engineered a system around today’s cutting-edge engines and the blockbuster titles you already love. With the 6-teraflop Scorpio engine, developers can realize their biggest worlds in vibrant 4K and in a superior format for 1080p screens.
+L46: Built-in supersampling means more visible detail and smoother edges, and you’ll get into the action faster with more efficient loading times.
+L47: Xbox One X delivers immersive, true 4K gaming
+L48: Xbox One X is built for true 4K gaming, which combines 2160p frame buffers, High Dynamic Range and Wide Color Gamut into a pristine visual package. It also offers an immersive audio experience that puts you in the center of spatial sound. Your 4K experience includes recording game clips in 4K at 60 frames per second and 4K screenshots.
+L49: At launch, we’ll be offering Xbox One X Enhanced versions of existing Xbox One games including Gears of War 4, Forza Horizon 3, Minecraft, Resident Evil 7, Final Fantasy 15, Rocket League, each upgraded to take advantage of Xbox One X’s additional performance. In addition, some of this year’s biggest blockbuster will be launching in true 4K including Forza Motorsport 7.
+L50: Xbox One X is fully compatible across the Xbox One family of devices
+L51: 
+L52: With the Xbox One family of devices, our focus is on hardware innovation without sacrificing compatibility. That’s why all existing Xbox One games, including Xbox Play Anywhere titles, Backward Compatible Xbox 360 games and accessories, will be compatible with Xbox One X. And those games will load faster and look and play better, on Xbox One X.
+L53: 
+L54: Fans can enjoy all the same benefits of Xbox Live on Xbox One X
+L55: Xbox Live is the most advanced multiplayer network and all its benefits extend to the Xbox One family of devices, including Xbox One X. Those include dedicated servers to maximize performance, speed and reliability, cross-platform integration with gamers on Xbox One and Windows 10 devices, as well as two to four free games each month with Xbox Live Gold.
+L56: It’s an incredibly exciting time for the industry and for our fans, and we’re looking forward to launching the world’s most powerful console, Xbox One X, starting this November.
+L57: ## Up next
+L58: cite17†Watch Official XBOX Podcast · Official XBOX Podcast IKEA and XBOX YXSTABY Collection: How the Collaboration Came Together | Official XBOX Podcast cite18†Watch Official XBOX Podcast · Official XBOX Podcast Minecraft Dungeons II: The Sift, New Mechanics, Better Exploration, and More | Official XBOX Podcast cite19†Watch Official XBOX Podcast · Official XBOX Podcast Overwatch w/Devs: Doctrine, Grimsvötn, Reworks, and More | Official XBOX Podcast cite20†Watch Official XBOX Podcast · Official XBOX Podcast Diablo Discussion w/Devs: Diablo V, Season of Hell’s Legacy, and The Amazon | Official XBOX Podcast cite21†Watch Official XBOX Podcast · Official XBOX Podcast Fable: How Playground Games is Building Albion for a New Generation | Official XBOX Podcast L59: ## Browse
+L60: 
+L61:   * cite22†XBOX consoles†www.xbox.com L62:   * cite23†XBOX games†www.xbox.com L63:   * cite24†XBOX Game Pass†www.xbox.com L64:   * cite25†XBOX accessories†www.xbox.com L65: 
+L66: ## Resources
+L67: 
+L68:   * cite13†XBOX News L69:   * cite26†XBOX Support†support.xbox.com L70:   * cite27†Leadership Team L71:   * cite28†Feedback†support.xbox.com L72:   * cite29†Community Standards†www.xbox.com L73:   * cite30†Photosensitive Seizure Warning†support.xbox.com L74:   * cite31†User Research at XBOX†www.xbox.com L75: ## Microsoft Store
+L76: 
+L77:   * cite32†Microsoft account†account.microsoft.com L78:   * cite33†Microsoft Store Support†support.microsoft.com L79:   * cite34†Returns†support.microsoft.com L80:   * cite35†Orders tracking†account.microsoft.com L81:   * cite36†Store locations†www.microsoft.com L82: 
+L83: ## Rewards
+L84: 
+L85:   * cite37†Rewards†www.microsoft.com L86:   * cite38†XBOX Mastercard†www.xbox.com L87: ## For Developers
+L88: 
+L89:   * cite39†Games†developer.microsoft.com L90:   * cite40†Designed for XBOX†www.xbox.com L91: 
+L92: cite41†Image: Privacy options cite42†Your Privacy Choices†account.microsoft.com cite43†Consumer Health Privacy†go.microsoft.com L93: cite44†Sitemap†www.microsoft.com cite45†Contact Microsoft†support.microsoft.com cite46†Privacy & Cookies†go.microsoft.com cite47†Terms of use†go.microsoft.com cite48†Trademarks†www.microsoft.com cite49†Third Party Notices†www.xbox.com cite50†Safety & eco†www.microsoft.com cite51†About our ads†choice.microsoft.com © Microsoft 2026
+

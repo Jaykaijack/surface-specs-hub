@@ -1,0 +1,195 @@
+Surface Laptop 4 功能 | Microsoft Support (https://support.microsoft.com/zh-cn/surface/models/surface-laptop-4-features)
+citeturn38view0 [wordlim: 200] Crawled: 5 days ago; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/zh-cn/surface/models/surface-laptop-4-features","lineno":200}); Total lines: 320
+L0: 跳转至主内容
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: 支持
+L5: 
+L6: cite1†支持 L7: 
+L8: [Button: 支持 ]
+L9: 
+L10:   * cite1†主页 L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: 产品]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†更多信息 ... L22:   * [Button: 设备]
+L23:     * cite12†Surface L24:     * cite13†电脑配件 L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC 游戏†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†硬件保修 L30: 
+L31:   * cite19†帐户和计费 L32:   * [Button: 资源]
+L33:     * cite20†社区论坛†learn.microsoft.com L34:     * cite21†Microsoft 365 管理员†portal.office.com L35:     * cite22†开发人员†developer.microsoft.com L36:     * cite23†教育 L37:     * cite24†上报支持欺诈†www.microsoft.com L38:     * cite25†产品安全 L39: 
+L40:   * [Button: 更多]
+L41: 
+L42:   * cite26†购买 Microsoft 365†go.microsoft.com L43:   * 所有 Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Windows†www.microsoft.com L48:       * cite30†Surface†www.microsoft.com L49:       * cite31†XBOX†www.xbox.com L50:       * cite32†折扣专区†www.microsoftstore.com.cn L51:       * cite33†企业购†www.microsoftstore.com.cn L52:       * cite1†支持 L53:     * 软件 [Button: 软件]
+L54:       * cite34†Windows 应用†apps.microsoft.com L55:       * cite35†OneDrive†www.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†从 Skype 转到 Teams L58:       * cite38†OneNote†www.microsoft.com L59:       * cite39†Microsoft Teams†www.microsoft.com L60:     * PC 和设备 [Button: PC 和设备]
+L61:       * cite40†购买 XBOX†www.microsoft.com L62:       * cite41†PC 和平板电脑†www.microsoft.com L63:       * cite42†配件†www.microsoftstore.com.cn L64:     * 娱乐 [Button: 娱乐]
+L65:       * cite43†XBOX 与游戏†www.xbox.com L66:       * cite44†PC 游戏†apps.microsoft.com L67:     * 企业 [Button: 企业 ]
+L68:       * cite45†Microsoft AI†www.microsoft.com L69:       * cite46†Microsoft 安全†www.microsoft.com L70:       * cite47†Azure†azure.microsoft.com L71:       * cite48†Dynamics 365†www.microsoft.com L72:       * cite49†Microsoft 365 商业版†www.microsoft.com L73:       * cite50†Microsoft Power Platform†www.microsoft.com L74:       * cite51†数字主权†www.microsoft.com L75:     * 开发人员与 IT [Button: 开发人员与 IT]
+L76:       * cite52†Microsoft 开发人员†developer.microsoft.com L77:       * cite53†Microsoft Learn†learn.microsoft.com L78:       * cite54†支持 AI 商城应用†www.microsoft.com L79:       * cite55†Microsoft 技术社区†techcommunity.microsoft.com L80:       * cite56†Microsoft Marketplace†marketplace.microsoft.com L81:       * cite57†软件公司†www.microsoft.com L82:       * cite58†Visual Studio†visualstudio.microsoft.com L83:     * 其他 [Button: 其他]
+L84:       * cite59†免费下载与安全性†www.microsoft.com L85:       * cite60†教育†www.microsoft.com L86:     * cite61†查看站点地图†www.microsoft.com L87: [Input: 搜索帮助] 搜索 搜索帮助
+L88: 
+L89:   * 无结果
+L90: 
+L91: 取消
+L92: 
+L93: 登录
+L94: 
+L95: 使用 Microsoft 登录
+L96: 
+L97: 登录或创建帐户。
+L98: 
+L99: 你好，
+L100: 
+L101: 使用其他帐户。
+L102: 
+L103: 你有多个帐户
+L104: 
+L105: 选择要登录的帐户。
+L106: 
+L107: 相关主题
+L108: # Surface Laptop 4 功能
+L109: 
+L110: 应用对象
+L111: 
+L112: Surface Laptop 4 - 13.5 inch Surface Laptop 4 - 15 inch
+L113: 
+L114: 注意
+L115: 
+L116:   * Surface Laptop 时尚、轻巧、快速。 借助内置的 AI、AI+ PC 体验和可用一整天的电池，它们可以随时随地保持联系。
+L117:   * cite62†探索最新的 Surface 设备†www.microsoft.com L118: 
+L119: ## 开始了解 Surface Laptop 4
+L120: 
+L121: Surface Laptop 4 功能强大，外观时尚，可协助你按自己的方式完成全天的任务。
+L122: 
+L123: cite63†Image: 外盖开启的 Surface Laptop 4。 L124: 
+L125:   1. Windows Hello 摄像头
+L126:   2. 前置摄像头
+L127:   3. 摄影棚麦克风
+L128:   4. Surface Connect 端口
+L129: 
+L130: cite64†Image: 带有所示端口的 Surface Laptop 4 L131: 
+L132:   1. USB-A 端口
+L133:   2. USB-C 端口
+L134:   3. 耳机插孔
+L135: ## Surface Laptop 4 和 Windows 10
+L136: 
+L137: Surface Laptop 4 附带：
+L138: 
+L139:   * Windows 10 家庭版（适用于消费者客户）
+L140:   * Windows 10 专业版（适用于商业客户）
+L141: 
+L142: 如果你的设备配备 Windows 10 家庭版，你可以升级到 Windows 10 专业版，但需额外付费。 有关详细信息，请参阅cite65†将 Windows 10 家庭版升级到 Windows 10 专业版 。
+L143: 
+L144: 可以将 Surface Laptop 4 从 Windows 10 升级到 Windows 11。 有关详细信息，请参阅 cite66†哪些 Surface 设备可以升级到 Windows 11？ L145: 
+L146: 若要了解你的 Windows 是哪个版本，请参阅cite67†我运行的是哪个 Windows 操作系统？ L147: 
+L148: ## 为 Surface 充电
+L149: 
+L150: 可以使用 USB-C 或 Surface Connect 为 Surface 充电。 有关详细信息，请参阅 cite68†如何为 Surface 充电。 L151: 
+L152: ## Surface Laptop 4 功能
+L153: ### 光滑、典雅、安静
+L154: 
+L155: 使用 Surface Laptop 4，你可以在 13.5 英寸和 15英寸 PixelSense™ 触摸屏、多种颜色间进行选择。
+L156: 
+L157: ### 出色的多任务和娱乐性能
+L158: 
+L159: 如果是个人使用，请在第 11 代 Intel® Core™ 或 AMD Ryzen™ Microsoft Surface Edition 处理器之间进行选择，以获得更强大的多任务性能。 即使在昏暗的光线下，720p 前置摄像头也能使视频画质很棒。 录音室麦克风降低背景噪音，而 Omnisonic 扬声器创造沉浸式的通话或电影体验。
+L160: 
+L161: ### 获取所需的所有连接
+L162: 
+L163: 使用 USB-C 和 USB-A 端口，以及用于充电的 Surface Connect 和耳机插孔插入所需的配件。
+L164: 
+L165: ## 个性化定制
+L166: 
+L167: 定制将 Surface Laptop 4 与这些可选配件配合使用的方式：
+L168: 
+L169:   * cite69†Surface Arc 鼠标 L170:   * cite70†Surface 扩展坞 L171:   * cite71†Surface 触控笔 L172:   * cite72†Surface 旅行集线器 L173: ## 充分利用 Surface。
+L174: 
+L175: 了解更多有关 Surface 的信息，并使用 Surface 应用对其进行自定义。 若要将其打开，请选择 cite73†Image: Windows 徽标图标的 “开始”图标，输入 Surface，然后选择它以打开应用。 如果应用未打开，请从 cite74†Microsoft Store†go.microsoft.com 获取。
+L176: 
+L177: 打开 Surface 应用
+L178: 
+L179: ## 更易于修复的设备设计
+L180: 
+L181: 许多组件均可由cite75†授权服务提供商 或熟练的技术人员进行更换 - 支持更易于维修的设备设计。 笔记本电脑 cite76†脚 脚等替换组件可用于保修期外维修。 可用性和服务选项可能因产品、市场和时间而异。
+L182: 
+L183: 要了解详细信息，请参阅 cite77†Surface 设备的自性维修信息。 L184: 
+L185: ## 相关主题
+L186: 
+L187:   * cite78†轻松使用功能†www.microsoft.com L188: ## 需要更多帮助吗？
+L189: 
+L190:   * cite79†个人帐户 L191:   * cite80†工作/学校帐户 L192: 
+L193: 技术支持
+L194: 
+L195: 有关技术支持， cite81†请打开 Surface 应用†go.microsoft.com 或 cite82†Web 浏览器†go.microsoft.com ，描述你的问题，然后选择 “获取帮助”。
+L196: 
+L197: 社区支持
+L198: 
+L199: 社区可以帮助您提出问题，并听取具有丰富知识的专家的意见。 cite83†询问社区†go.microsoft.com 。
+L200: 
+L201: 其他支持选项
+L202: 
+L203: 如果无法使用 Surface 或对其他问题有疑问，请 cite84†打开“获取帮助†go.microsoft.com ”以联机获取其他支持。
+L204: 
+L205: cite85†Image: 需要更多帮助 网格垫片. L206: 
+L207: 技术支持
+L208: 
+L209: 你可以从 cite81†Surface 应用†go.microsoft.com 或 cite82†Web 浏览器†go.microsoft.com 获取自助支持。 如需技术帮助，请联系组织的 IT 支持人员或管理员。
+L210: 
+L211: 服务 & 维修
+L212: 对于 Surface for Business，请访问 cite86†Microsoft 授权服务提供商的 Surface 维修†go.microsoft.com 。
+L213: 
+L214: 对于 IT 管理员
+L215: 
+L216: IT 管理员应查看适用于企业 cite87†的 Surface†go.microsoft.com 和 cite88†面向企业 & 教育客户的支持†go.microsoft.com 。
+L217: 
+L218: cite85†Image: 需要更多帮助 网格垫片. L219: ## 此信息是否有用?
+L220: 
+L221: [Button: 是] [Button: 否]
+L222: 
+L223: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L224: 
+L225: How satisfied are you with the translation quality?
+L226: 
+L227: What affected your experience?
+L228: 
+L229: [Input] Resolved my issue
+L230: 
+L231: [Input] Clear instructions
+L232: 
+L233: [Input] Easy to follow
+L234: 
+L235: [Input] No jargon
+L236: 
+L237: [Input] Pictures helped
+L238: 
+L239: [Input] Translation quality
+L240: 
+L241: [Input] Didn't match my screen
+L242: 
+L243: [Input] Incorrect instructions
+L244: 
+L245: [Input] Too technical
+L246: 
+L247: [Input] Not enough information
+L248: 
+L249: [Input] Not enough pictures
+L250: [Input] Translation quality
+L251: 
+L252: Any additional feedback? (Optional)
+L253: 
+L254: [Button: Submit feedback]
+L255: 
+L256: By pressing submit, your feedback will be used to improve Microsoft products and services. cite89†Privacy Statement.†privacy.microsoft.com L257: 
+L258: 新增内容
+L259:   * cite90†Surface Pro†www.microsoftstore.com.cn L260:   * cite91†Surface Laptop†www.microsoftstore.com.cn L261:   * cite92†Surface Laptop Ultra†www.microsoft.com L262:   * cite93†探索 Copilot†www.microsoft.com L263:   * cite27†Microsoft 365†www.microsoft.com L264:   * cite94†探索 Microsoft 产品†www.microsoft.com L265:   * cite95†Windows 11 应用程序†www.microsoft.com L266: 
+L267: Microsoft Store
+L268: 
+L269:   * cite96†帐户个人资料†account.microsoft.com L270:   * cite59†下载中心†www.microsoft.com L271:   * cite97†订单跟踪†account.microsoft.com L272: 
+L273: 教育
+L274:   * cite98†Microsoft 教育版†www.microsoft.com L275:   * cite99†教育设备†www.microsoft.com L276:   * cite100†Microsoft Teams 教育版†www.microsoft.com L277:   * cite101†Microsoft 365 教育版†www.microsoft.com L278:   * cite102†Office 教育版†www.microsoft.com L279:   * cite103†教育工作者培训和开发†education.microsoft.com L280:   * cite104†面向学生和家长的优惠†www.microsoft.com L281:   * cite105†面向学生的 Azure†azure.microsoft.com L282: 
+L283: 企业
+L284:   * cite106†Microsoft AI†www.microsoft.com L285:   * cite46†Microsoft 安全†www.microsoft.com L286:   * cite47†Azure†azure.microsoft.com L287:   * cite48†Dynamics 365†www.microsoft.com L288:   * cite49†Microsoft 365†www.microsoft.com L289:   * cite107†Microsoft Advertising†about.ads.microsoft.com L290:   * cite108†Microsoft Copilot†www.microsoft.com L291:   * cite39†Microsoft Teams†www.microsoft.com L292: 
+L293: 开发人员与 IT
+L294:   * cite52†Microsoft 开发人员†developer.microsoft.com L295:   * cite53†Microsoft Learn†learn.microsoft.com L296:   * cite109†支持 AI 商城应用†www.microsoft.com L297:   * cite55†Microsoft 技术社区†techcommunity.microsoft.com L298:   * cite110†Microsoft Marketplace†marketplace.microsoft.com L299:   * cite50†Microsoft Power Platform†www.microsoft.com L300:   * cite111†软件公司†www.microsoft.com L301:   * cite58†Visual Studio†visualstudio.microsoft.com L302: 
+L303: 公司
+L304:   * cite112†招贤纳士†careers.microsoft.com L305:   * cite113†关于 Microsoft†www.microsoft.com L306:   * cite114†公司新闻†news.microsoft.com L307:   * cite115†Microsoft 隐私†www.microsoft.com L308:   * cite116†投资人†www.microsoft.com L309: 
+L310: cite117†中文(中国) cite118†你的隐私选择†aka.ms cite118†你的隐私选择†aka.ms cite119†消费者健康隐私†go.microsoft.com L311: 
+L312:   * cite120†与 Microsoft 联系 L313:   * cite121†隐私†go.microsoft.com L314:   * cite122†管理 Cookie L315:   * cite123†使用条款†go.microsoft.com L316:   * cite124†商标†go.microsoft.com L317:   * cite125†关于我们的广告†choice.microsoft.com L318:   * cite126†京ICP备09042378号-6†beian.miit.gov.cn L319:   * © Microsoft 2026
+

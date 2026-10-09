@@ -1,0 +1,82 @@
+Much-Anticipated Xbox Game Console, Along with Xbox Controller And Game Demonstrations, Headline Consumer Electronics Show - Source (https://news.microsoft.com/source/2001/01/06/much-anticipated-xbox-game-console-along-with-xbox-controller-and-game-demonstrations-headline-consumer-electronics-show/)
+citeturn98view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://news.microsoft.com/source/2001/01/06/much-anticipated-xbox-game-console-along-with-xbox-controller-and-game-demonstrations-headline-consumer-electronics-show/","lineno":null}); Total lines: 90
+L0: cite0†Source L1: 
+L2: cite1†Source L3: 
+L4: cite2†January 6, 2001 L5: 
+L6:   * cite3†Category: Company News L7: # Much-Anticipated Xbox Game Console, Along with Xbox Controller And Game Demonstrations, Headline Consumer Electronics Show
+L8: 
+L9:   * cite4†Microsoft Source L10: LAS VEGAS, Jan. 6, 2001 — Today at 2001 International CES, Microsoft Corp. Chairman and Chief Software Architect Bill Gates revealed to the world the highly anticipated Xbox™
+L11: video game console during his keynote address. As the finale of his keynote, Gates showed off the Xbox console and game controller and demonstrated two exclusive Xbox games that highlight the future-generation console’s rich and realistic graphics capabilities.
+L12: “Xbox is the future of video gaming,”
+L13: Gates said.
+L14: “With its breakthrough technology and incredible graphics capabilities, Xbox will set the standard in gaming for years to come. It enables game designers to create a whole new world of gameplaying experiences that will captivate the imagination and competitive spirit of gamers like no other console.”
+L15: “Xbox is on track for an awesome launch in fall 2001,”
+L16: said Robbie Bach, senior vice president and chief Xbox officer at Microsoft.
+L17: “With more than 200 game companies around the world creating Xbox games for launch and beyond, the unveiling of the Xbox design is just the start of great things to come.”
+L18: To emphasize the power of Xbox, Gates called on The Rock, World Wrestling Federation (WWF) superstar and star of the popular THQ Inc. and JAKKS Pacific Inc. video game
+L19: “WWF Smackdown! 2,”
+L20: to help unveil Microsoft’s new future-generation console.
+L21: 
+L22: The Future of Video Games
+L23: The Xbox console and controller are designed to capture the power and performance that Xbox will deliver and are based on the input of more than 5,000 gamers and games creators from around the world. Sleek and powerful in its look, in a rich shade of black, the Xbox console is emblazoned with a large
+L24: “X”
+L25: and a signature green Xbox
+L26: “jewel”
+L27: positioned in its center. The Xbox console includes the following:
+L28:   * Four game controller ports that allow easy multiplayer gaming and enable other peripherals, ranging from game pads to voice-activated headsets
+L29: 
+L30:   * A front-loading DVD tray
+L31: 
+L32:   * A multisignal audio-video connector that allows for easy hookup to televisions and home theater systems
+L33: 
+L34:   * An Ethernet port for rich, fast-action online gaming via a broadband connection
+L35: 
+L36:   * An NVIDIA graphics processing unit (GPU), delivering more than three times the graphics performance of other consoles
+L37:   * An Intel 733MHz processor , the most powerful CPU of any console
+L38: 
+L39:   * An 8GB hard drive, for massive storage of game information — a first in the console gaming industry
+L40: The Xbox game controller, which also sports the logo, is built for maximum control and comfort. Its design is the result of thousands of hours of usability testing. It features an eight-way directional pad (D-pad); left and right analog sticks; left and right shoulder triggers; six pressure-sensitive multicolored analog buttons; dual slots for memory cards and other peripherals; and a built-in
+L41: “rumble”
+L42: feature to increase gaming realism. The controller also features a cord over
+L43: 9.5 feet long to give gamers the freedom to sit nearly anywhere they want during gameplay.
+L44: Games on Xbox
+L45: 
+L46: Making good on its promise to deliver a new world of gameplay experiences, Microsoft showcased prerelease versions of two exclusive Xbox games. Shown on an Xbox containing only 20 percent of the horsepower of the final console, these games demonstrated some of the amazing experiences gamers will enjoy in fall 2001:
+L47:   * “
+L48: Oddworld: Munch’s Oddysee ,” published by Microsoft as an exclusive Xbox game, is the third installment of the best-selling
+L49: “Oddworld”
+L50: game series. It comes to Xbox after the creators abandoned another system nine months into development; it took
+L51: “Oddworld” artists only two weeks to get the game running on Microsoft® Xbox technology.
+L52:   * “
+L53: Malice,
+L54: ” developed by Argonaut Games PLC (developer of
+L55: “Croc”
+L56: and
+L57: “Croc 2”
+L58: ) exclusively for Xbox, uses the same rendering techniques that were used in the
+L59: “Toy Story”
+L60: movies. With a character-driven, quest-based plot rich in detail and sumptuous in visual humor,
+L61: “Malice”
+L62: is a unique, fast-paced and challenging 3-D action-adventure game.
+L63: During his keynote, Gates also confirmed that future versions of two of the world’s most popular video game franchises will be optimized for Xbox:
+L64: “WWF Raw is War,”
+L65: published by THQ with JAKKS Pacific, and
+L66: “Tony Hawk Pro Skater 2x,”
+L67: published by Activision.
+L68: 
+L69: About Xbox
+L70: Xbox ( cite5†http://www.xbox.com/†www.xbox.com ) is Microsoft’s future-generation video game console that delivers new and unforeseen gameplay experiences. With more than three times the graphics performance of the newest generation of game consoles, Xbox unleashes game designers’ creativity to produce games that are challenging, exhilarating, surprising and fun.
+L71: 
+L72: About Microsoft
+L73: Founded in 1975, Microsoft (Nasdaq
+L74: “MSFT”
+L75: ) is the worldwide leader in software, services and Internet technologies for personal and business computing. The company offers a wide range of products and services designed to empower people through great software — any time, any place and on any device.
+L76: The information contained in this document relates to a prerelease product that may be substantially modified before its first commercial release. Accordingly, the information may not accurately describe or reflect the product when first commercially released. This document is provided for informational purposes only, and Microsoft makes no warranties, express or implied, with respect to this document or the information contained in it.
+L77: Microsoft and Xbox are either registered trademarks or trademarks of Microsoft Corp. in the United States and/or other countries. The names of actual companies and products mentioned herein may be the trademarks of their respective owners.
+L78: 
+L79: Note to editors: If you are interested in viewing additional information on Microsoft, please visit the Microsoft Web page at cite6†http://www.microsoft.com/presspass/ on Microsoft’s corporate information pages.
+L80: #### Tags:
+L81: 
+L82:   * cite7†Press releases L83: cite8†Surface Laptop Ultra†www.microsoft.com cite9†Surface Pro†www.microsoft.com cite10†Surface Laptop†www.microsoft.com cite11†Surface RTX Spark Dev Box†www.microsoft.com cite12†Explore Copilot†www.microsoft.com cite13†Explore Microsoft products†www.microsoft.com cite14†Windows 11 apps†www.microsoft.com cite15†Account profile†account.microsoft.com cite16†Download Center†www.microsoft.com cite17†Microsoft Store support†go.microsoft.com cite18†Returns†www.microsoft.com cite19†Order tracking†www.microsoft.com cite20†Certified Refurbished†www.microsoft.com cite21†Microsoft Store Promise†www.microsoft.com cite22†Flexible Payments†www.microsoft.com cite23†Microsoft in education†www.microsoft.com cite24†Devices for education†www.microsoft.com cite25†Microsoft Teams for Education†www.microsoft.com cite26†Microsoft 365 Education†www.microsoft.com cite27†How to buy for your school†www.microsoft.com cite28†Educator training and development†education.microsoft.com cite29†Deals for students and parents†www.microsoft.com cite30†AI for education†www.microsoft.com L84: cite31†Microsoft AI†www.microsoft.com cite32†Microsoft Security†www.microsoft.com cite33†Dynamics 365†www.microsoft.com cite34†Microsoft 365†www.microsoft.com cite35†Microsoft Power Platform†www.microsoft.com cite36†Microsoft Teams†www.microsoft.com cite37†Microsoft Copilot†www.microsoft.com cite38†Small Business†www.microsoft.com cite39†Azure†azure.microsoft.com cite40†Microsoft Developer†developer.microsoft.com cite41†Microsoft Learn†learn.microsoft.com cite42†Support for AI marketplace apps†www.microsoft.com cite43†Microsoft Tech Community†techcommunity.microsoft.com cite44†Microsoft Marketplace†marketplace.microsoft.com cite45†Software companies†www.microsoft.com cite46†Visual Studio†visualstudio.microsoft.com cite47†Careers†careers.microsoft.com cite48†About Microsoft†www.microsoft.com cite49†Company news cite50†Privacy at Microsoft†www.microsoft.com cite51†Investors†www.microsoft.com cite52†Diversity and inclusion†www.microsoft.com cite53†Accessibility†www.microsoft.com cite54†Sustainability†www.microsoft.com L85: cite55†English (United States)†www.microsoft.com L86: 
+L87: cite56†Your Privacy Choices†aka.ms cite56†Your Privacy Choices†aka.ms L88: 
+L89: cite57†Consumer Health Privacy†go.microsoft.com cite58†Sitemap†www.microsoft.com cite59†Contact Microsoft†support.microsoft.com cite60†Privacy†go.microsoft.com cite61†Manage cookies cite62†Terms of use†go.microsoft.com cite63†Trademarks†go.microsoft.com cite64†Safety & eco†go.microsoft.com cite65†Recycling†www.microsoft.com cite66†About our ads†choice.microsoft.com 

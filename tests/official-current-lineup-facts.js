@@ -1214,7 +1214,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "ramMustInclude": "16",
       "storageMustInclude": "256",
       "usbMustInclude": "USB-C",
-      "wifiMustInclude": "Wi-Fi 7",
+      "wifiMustInclude": "Wi-Fi7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs",
       "warrantyContains": "3",
@@ -1234,7 +1234,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "windowsHello": "Hello",
         "microphones": "Studio",
         "audioTech": "Atmos",
-        "surfaceConnect": "支持",
+        "surfaceConnect": "Surface Connect",
         "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "kickstandType": "165",
@@ -1244,14 +1244,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "thunderboltSupport": "Thunderbolt",
         "usbPorts": [
           "USB-C",
-          "Thunderbolt",
-          "DisplayPort"
+          "Thunderbolt4"
         ],
         "chargingPower": "39",
-        "fastCharging": [
-          "60",
-          "65"
-        ]
+        "fastCharging": "60W"
       },
       "specState": {
         "headphoneJack": "NOT_APPLICABLE",
@@ -1284,7 +1280,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "ramMustNotInclude": "64",
       "storageMustInclude": "256",
       "usbMustInclude": "USB-A",
-      "wifiMustInclude": "Wi-Fi 7",
+      "wifiMustInclude": "Wi-Fi7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
       "warrantyContains": "3",
@@ -1306,7 +1302,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "windowsHello": "Hello",
         "microphones": "麦克",
         "audioTech": "Atmos",
-        "surfaceConnect": "支持",
+        "surfaceConnect": "Surface Connect",
         "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "touchAndPenProtocol": "10",
@@ -1356,7 +1352,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "ramMustNotInclude": "64",
       "storageMustInclude": "256",
       "usbMustInclude": "USB-A",
-      "wifiMustInclude": "Wi-Fi 7",
+      "wifiMustInclude": "Wi-Fi7",
       "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs",
       "warrantyContains": "3",
@@ -1375,7 +1371,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "windowsHello": "Hello",
         "microphones": "Studio",
         "audioTech": "Atmos",
-        "surfaceConnect": "支持",
+        "surfaceConnect": "Surface Connect",
         "ssdRemovable": "可拆卸",
         "chassisMaterial": "阳极氧化",
         "touchAndPenProtocol": "10",
@@ -1383,10 +1379,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "npuModel": "AI Boost",
         "thunderboltSupport": "Thunderbolt",
         "expandableStorage": "MicroSD",
-        "fastCharging": [
-          "60",
-          "65"
-        ],
+        "fastCharging": "60W",
         "usbPorts": [
           "USB-C",
           "Thunderbolt",

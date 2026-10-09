@@ -1,0 +1,58 @@
+Marc Whitten and Major Nelson Discuss Xbox One Architecture - XBOX Wire (https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/)
+citeturn82view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/","lineno":150}); Total lines: 89
+L0: cite0†XBOX†www.xbox.com L1: 
+L2: [Input: Search the WIRE]
+L3: 
+L4: Close×
+L5: 
+L6: [Input: Search games, gear, stories...]
+L7: 
+L8: ## Trending now
+L9: 
+L10:   1. cite1†Available for XBOX Insiders: Mythic Achievements, One of our Most Player-Requested Features L11:   2. cite2†Multiple Adventures Await as Stories: The Path of Destinies Arrives on Xbox One  L12:   3. cite3†Xbox One Achievements L13:   4. cite4†Upcoming Changes to XBOX Cloud Gaming L14:   5. cite5†Games with Gold for July 1: Defense Grid: The Awakening L15:   6. cite6†Your Discs. Now Also Digital. L16: ## Browse by tag
+L17: 
+L18: cite7†Great Games cite8†Return of XBOX cite9†Future of Play cite10†Official XBOX Podcast cite11†XBOX Insider cite12†ID @ XBOX L19: 
+L20: ## Recent searches
+L21: 
+L22: Start typing to search
+L23: 
+L24: cite13†Home /Watch /Consoles
+L25: 
+L26: cite14†Image†xboxwire.thesourcemediaassets.com L27: 
+L28: Consoles 4K · HDR
+L29: 
+L30: 0:00/4:12 [Button: 1080p]
+L31: 
+L32: Consoles
+L33: # Marc Whitten and Major Nelson Discuss Xbox One Architecture
+L34: 
+L35: Premiered May 23, 2013 4:12 runtime
+L36: 
+L37: [Button: Share] cite15†Transcript L38: 
+L39: About this video
+L40: At the Xbox Reveal event, Xbox Chief Product Officer Marc Whitten described the architecture behind Xbox One. In this video, our own Major Nelson interviews Whitten for more details. Watch the clip to see what Whitten has to say about the architecture of Xbox One, how the power of the cloud makes Xbox Live even better, the new Kinect, controller, SmartGlass and much more.
+L41: During the event, Whitten discussed the three ambitious investments Xbox made to deliver a new generation of entertainment – the console and revolutionary Xbox One architecture, advancements with the most important input devices – Kinect, the controller, and SmartGlass, and how Xbox Live is being reinvented by the power of the cloud.
+L42: At the heart of Xbox One is raw power. From 500 million transistors and 512MB of RAM in Xbox 360 to over 5 billion transistors and 8GB of RAM in Xbox One. Xbox One also has USB 3.0, WiFi direct, a huge capacity BluRay drive, native 64 bit architecture, and variable power states – all while delivering practically silent operation.
+L43: Whitten described how Xbox One’s architecture is built on three operating systems in one. The first is the best of our Xbox operating system made better by providing deep and instant access to the hardware so that creators have no limits in harnessing the power of Xbox One for cinematic realism. The second operating system is the kernel of Windows, providing consistent access to web-powered applications and experiences.
+L44: And the third operating system connects the first two operating systems to create instant switching, multi-tasking and effortless control.
+L45: This architecture enables a wide range of new experiences like no waiting on technology or services, switching to your games from TV just like changing a TV channel, or snapping Internet Explorer with the latest hit movie.
+L46: Whitten also described how the powerful new Kinect sensor will be paired with every Xbox One to put you at the center of your entertainment. Kinect is completely redesigned to respond instantly to you, your voice and your gestures. The new improvements make voice more conversations, faster, and able to support the entire family.
+L47: The new Xbox One controller has been updated with over 40 design innovations – ranging from updated ergonomics, to an integrated battery compartment that fits better for gamers of all ages. New dynamic impulse triggers allow creators to program feedback directly into the trigger and a newly designed Dpad creates precision for updated gaming – just to name a few.
+L48: Combined with new technology from SmartGlass, all of these devices will work together to create all new experiences. The new Kinect sensor is the binding power between the devices. For example, when you press power on, volume up, change channel on your SmartGlass device, Kinect seamlessly makes it work. Or, when you pick up a controller, Kinect recognizes you and the controller, getting you into your latest game save instantly.
+L49: The new Xbox Live was also featured – built on Xbox One to amplify an all new generation. Based on the same membership you have today, but now more powerful, more personal and more intelligent. You can read more about the all new Xbox Live cite16†here. L50: 
+L51: You can view Marc Whitten’s full presentation from the Xbox Reveal event cite17†here.†youtu.be L52: ## Up next
+L53: cite18†Watch Official XBOX Podcast · Official XBOX Podcast Minecraft Dungeons II: The Sift, New Mechanics, Better Exploration, and More | Official XBOX Podcast cite19†Watch Official XBOX Podcast · Official XBOX Podcast Overwatch w/Devs: Doctrine, Grimsvötn, Reworks, and More | Official XBOX Podcast cite20†Watch Official XBOX Podcast · Official XBOX Podcast Diablo Discussion w/Devs: Diablo V, Season of Hell’s Legacy, and The Amazon | Official XBOX Podcast cite21†Watch Official XBOX Podcast · Official XBOX Podcast Fable: How Playground Games is Building Albion for a New Generation | Official XBOX Podcast cite22†Watch Official XBOX Podcast · Official XBOX Podcast Gears of War: E-Day Campaign – Brotherhood and Hope in a Hopeless World | Official XBOX Podcast L54: ## Browse
+L55: 
+L56:   * cite23†XBOX consoles†www.xbox.com L57:   * cite24†XBOX games†www.xbox.com L58:   * cite25†XBOX Game Pass†www.xbox.com L59:   * cite26†XBOX accessories†www.xbox.com L60: 
+L61: ## Resources
+L62: 
+L63:   * cite13†XBOX News L64:   * cite27†XBOX Support†support.xbox.com L65:   * cite28†Leadership Team L66:   * cite29†Feedback†support.xbox.com L67:   * cite30†Community Standards†www.xbox.com L68:   * cite31†Photosensitive Seizure Warning†support.xbox.com L69:   * cite32†User Research at XBOX†www.xbox.com L70: ## Microsoft Store
+L71: 
+L72:   * cite33†Microsoft account†account.microsoft.com L73:   * cite34†Microsoft Store Support†support.microsoft.com L74:   * cite35†Returns†support.microsoft.com L75:   * cite36†Orders tracking†account.microsoft.com L76:   * cite37†Store locations†www.microsoft.com L77: 
+L78: ## Rewards
+L79: 
+L80:   * cite38†Rewards†www.microsoft.com L81:   * cite39†XBOX Mastercard†www.xbox.com L82: ## For Developers
+L83: 
+L84:   * cite40†Games†developer.microsoft.com L85:   * cite41†Designed for XBOX†www.xbox.com L86: 
+L87: cite42†Image: Privacy options cite43†Your Privacy Choices†account.microsoft.com cite44†Consumer Health Privacy†go.microsoft.com L88: cite45†Sitemap†www.microsoft.com cite46†Contact Microsoft†support.microsoft.com cite47†Privacy & Cookies†go.microsoft.com cite48†Terms of use†go.microsoft.com cite49†Trademarks†www.microsoft.com cite50†Third Party Notices†www.xbox.com cite51†Safety & eco†www.microsoft.com cite52†About our ads†choice.microsoft.com © Microsoft 2026
+

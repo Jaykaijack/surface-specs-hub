@@ -1,0 +1,595 @@
+XBOX Series X | XBOX (https://www.xbox.com/en-US/consoles/xbox-series-x)
+citeturn87view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.xbox.com/en-US/consoles/xbox-series-x","lineno":150}); Total lines: 745
+L0: [Button: XBOX Series X]
+L1: 
+L2:   * cite0†OVERVIEW L3:   * cite1†GAMES L4:   * cite2†SPECS L5:   * COMPARE
+L6: 
+L7: XBOX Series X
+L8: 
+L9:   * cite0†OVERVIEW L10:   * cite1†GAMES L11:   * cite2†SPECS L12:   * COMPARE
+L13: 
+L14: [Select]
+L15: 
+L16: PRE-ORDER
+L17: 
+L18: SEE OPTIONS
+L19: 
+L20: cite3†Image: Faint OG Translucent green glow with console and controller in front†cms-assets.xboxservices.com L21: 
+L22: NEW
+L23: # XBOX SERIES X
+L24: 
+L25: 
+L26: 
+L27: 25 years in the making
+L28: 
+L29: use the arrow keys to navigate through the pivots and tab to focus on focusable content inside a pivot section
+L30: 
+L31:   * 1TB | Disc Drive | X25 Limited Edition
+L32: 
+L33:   * 1TB | Disc Drive | Carbon Black
+L34: 
+L35:   * 1TB | All-Digital | Robot White
+L36: 
+L37:   * 2TB | Disc Drive | Galaxy Black
+L38: 
+L39: PRE-ORDER PLAY VIDEO
+L40: 
+L41: Engraved with an individual number. Includes: Halo Campaign Evolved^{cite4†1 }
+L42:   * cite5†Image: XBOX Series X25 Limited Edition with XBOX Wireless Controller X25 Special Edition†cms-assets.xboxservices.com L43:   * cite6†Image: XBOX Series X25 Limited Edition with XBOX Wireless Controller X25 Special Edition†cms-assets.xboxservices.com L44:   * cite7†Image: Back panel of the XBOX Series X25 Limited Edition†cms-assets.xboxservices.com L45:   * cite8†Image: XBOX Series X25 Limited Edition with XBOX Wireless Controller X25 Special Edition and Halo: Campaign Evolved†cms-assets.xboxservices.com L46: cite9†Image: Desert landscape at night†cms-assets.xboxservices.com L47: # XBOX SERIES X
+L48: 
+L49: 
+L50: 
+L51: Power your dreams
+L52: 
+L53: BUY NOW, PAY LATER
+L54: 
+L55:   * cite10†Image: XBOX Series X – 1TB Carbon Black with XBOX Wireless Controller – Carbon Black†cms-assets.xboxservices.com L56:   * cite11†Image: XBOX Series X – 1TB Carbon Black with XBOX Wireless Controller – Carbon Black†cms-assets.xboxservices.com L57:   * cite12†Image: Back panel of the XBOX Series X – 1TB Carbon Black †cms-assets.xboxservices.com L58:   * cite13†Image: XBOX Series X – 1TB Carbon Black box†cms-assets.xboxservices.com L59: cite14†Image: Desert landscape at night†cms-assets.xboxservices.com L60: # XBOX SERIES X
+L61: 
+L62: 
+L63: 
+L64: Power your dreams
+L65: 
+L66: BUY NOW, PAY LATER
+L67:   * cite15†Image: XBOX Series X – 1TB All-Digital Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L68:   * cite16†Image: XBOX Series X – 1TB All-Digital Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L69:   * cite17†Image: Back panel of the XBOX Series X – 1TB All-Digital Robot White†cms-assets.xboxservices.com L70:   * cite18†Image: XBOX Series X – 1TB All-Digital Robot White with XBOX Wireless Controller – Robot White box†cms-assets.xboxservices.com L71: cite9†Image: Desert landscape at night†cms-assets.xboxservices.com L72: # XBOX SERIES X
+L73: 
+L74: 
+L75: 
+L76: Power your dreams
+L77: 
+L78: BUY NOW, PAY LATER
+L79:   * cite19†Image: XBOX Series X – 2TB Galaxy Black Special Edition with XBOX Wireless Controller - Galaxy Black Special Edition†cms-assets.xboxservices.com L80:   * cite20†Image: XBOX Series X – 2TB Galaxy Black Special Edition with XBOX Wireless Controller - Galaxy Black Special Edition†cms-assets.xboxservices.com L81:   * cite21†Image: Back panel of XBOX Series X – 2TB Galaxy Black Special Edition†cms-assets.xboxservices.com L82:   * cite22†Image: XBOX Series X – 2TB Galaxy Black Special Edition with XBOX Wireless Controller - Galaxy Black Special Edition box†cms-assets.xboxservices.com L83:   * cite23†Image†cms-assets.xboxservices.com L84: ##
+L85: 
+L86: ###
+L87: 
+L88: cite23†Image†cms-assets.xboxservices.com |
+L89: 
+L90: ###
+L91: 
+L92: cite23†Image†cms-assets.xboxservices.com |
+L93: 
+L94: ###
+L95: 
+L96: cite23†Image†cms-assets.xboxservices.com |
+L97: 
+L98: ###
+L99: 
+L100: cite23†Image†cms-assets.xboxservices.com |
+L101: 
+L102: ###
+L103: 
+L104: cite23†Image†cms-assets.xboxservices.com |
+L105: 
+L106: ###
+L107: 
+L108: cite23†Image†cms-assets.xboxservices.com |
+L109: 
+L110: ###
+L111: 
+L112: cite23†Image†cms-assets.xboxservices.com |
+L113: 
+L114: ###
+L115: 
+L116: cite23†Image†cms-assets.xboxservices.com |
+L117: 
+L118: ###
+L119: 
+L120: cite23†Image†cms-assets.xboxservices.com |
+L121: ###
+L122: 
+L123: cite23†Image†cms-assets.xboxservices.com |
+L124: 
+L125: cite24†Image: Marcus and Dom hold their weapons, while the chaos of Emergence Day unfolds around them.†cms-assets.xboxservices.com L126: 
+L127: TRUE 4K
+L128: 
+L129: Gaming
+L130: 
+L131: UP TO 120 FPS
+L132: 
+L133: Frames per second
+L134: 
+L135: 8K HDR
+L136: 
+L137: High Dynamic Range
+L138: 
+L139: cite25†Image: XBOX velocity architecture logo†assets.xboxservices.com L140: 
+L141: XBOX Velocity Architecture
+L142: cite26†Image: XBOX Series X – 1TB Carbon Black, XBOX Series X25 Limited Edition with XBOX Wireless Controller X25 Special Edition, XBOX Series X – 1TB Digital Edition Robot White, XBOX Series X – 2TB Galaxy Black Special Edition with XBOX Wireless Controller†cms-assets.xboxservices.com L143: 
+L144: 
+L145: 
+L146: Own the timeless original style of the XBOX Series X in Carbon Black, complete with 1TB of SSD storage.
+L147: 
+L148: 
+L149: Includes XBOX Wireless Controller X25 Special Edition in translucent OG Green, engraved numbered console, and Halo: Campaign Evolved.^{cite4†1 }
+L150: 
+L151: 
+L152: 
+L153: Introducing the limited edition XBOX Series X25 in translucent OG Green with 1TB SSD storage. Watch the iconic 'X' light up in green.
+L154: 
+L155: 
+L156: 
+L157: Expand the possibilities of your playtime with a 2TB SSD in a special edition Galaxy Black XBOX Series X.
+L158: 
+L159: 
+L160: Hold on to the action with a matching XBOX Wireless Controller featuring a Galaxy Black D-pad and Velocity Green back case.
+L161: 
+L162: 
+L163: 
+L164: Experience the full power of XBOX Series X while going all-digital with a 1TB SSD in Robot White.
+L165: 
+L166: cite27†Image: TV showing the Quick Resume menu on the XBOX Series X†cms-assets.xboxservices.com L167: ### QUICK RESUME
+L168: 
+L169: Seamlessly switch between different titles and instantly resume from where you left off.
+L170: 
+L171: PLAY VIDEO
+L172: 
+L173: cite28†Image: Two TVs side by side depicting significantly reduced load times on the XBOX Series X.†cms-assets.xboxservices.com L174: ### FASTER LOAD TIMES
+L175: 
+L176: Games load significantly faster with the custom SSD and integrated software. While ultra-low latency improves the response time from your controller to your TV.
+L177: 
+L178: PLAY VIDEO
+L179: 
+L180: cite29†Image: Fortnite, Two characters in hand to hand combat, one swinging a sword and the other swinging a hammer†cms-assets.xboxservices.com L181: ### FASTER FRAMERATE
+L182: 
+L183: Higher, steadier framerates at up to 120FPS while playing.cite30†** L184: 
+L185:   * cite31†GEARS: E-DAY L186:   * cite32†CALL OF DUTY®: MODERN WARFARE® 4 L187:   * cite33†FABLE L188:   * cite34†HALO: CAMPAIGN EVOLVED L189:   * cite35†STATE OF DECAY 3 L190:   * cite36†CLOCKWORK REVOLUTION L191:   * cite37†MICROSOFT FLIGHT SIMULATOR L192: 
+L193: Gears of War: Reloaded, A crouching Marcus looks forward. Behind him, Damon, Dominic, and Augustus fend off the Locust in a burning city.
+L194: ## LOOKS BETTER, SOUNDS BETTER, PLAYS BETTER
+L195: 
+L196: Embark on new adventures the way they’re meant to be experienced on XBOX Series X.
+L197: 
+L198: cite38†Image: Series X and S optimized logo†cms-assets.xboxservices.com L199: 
+L200: ### Optimized gaming experience
+L201: 
+L202: Games built with the XBOX Series X|S development kit showcase unparalleled load times, visuals, and responsiveness.
+L203: 
+L204: cite39†LEARN MORE L205: 
+L206: cite40†Image: Visual fidelity logo†cms-assets.xboxservices.com L207: ### Amazing visual fidelity
+L208: 
+L209: Hardware-accelerated ray tracing gives your games a heightened level of realism.
+L210: 
+L211: cite41†Image: Smart delivery logo†cms-assets.xboxservices.com L212: 
+L213: ### Get it once
+L214: 
+L215: With Smart Delivery you can buy a supported game once and always save the best available version for whatever console you play on.
+L216: 
+L217: Three pieces of furniture are arranged around a TV. Animated sound waves bounce around the room, showing 3D Spatial Sound
+L218: ## LISTEN, YOU'RE BEING SURROUNDED.
+L219: 
+L220: 3D Spatial Sound is the next evolution in audio technology, using advanced algorithms to create immersive lifelike worlds that put you at the center of your experience.
+L221: 
+L222: EXPERIENCE SPATIAL SOUND
+L223: 
+L224: [Input] cite42†Image: open button†assets.xboxservices.com L225: 
+L226: EA SPORTS FC™ 27
+L227: ### EA SPORTS FC™ 27
+L228: 
+L229: Welcome to The World’s Game
+L230: 
+L231: cite43†GET MORE DETAILS L232: 
+L233: cite44†Image: EA SPORTS FC™ 27 logo†cms-assets.xboxservices.com L234: 
+L235: cite42†Image: open button†assets.xboxservices.com L236: 
+L237: GET DETAILS
+L238: 
+L239: [Input] cite42†Image: open button†assets.xboxservices.com L240: 
+L241: Minecraft Dungeons II
+L242: ### Minecraft Dungeons II
+L243: 
+L244: Drop the pickaxe, grab a sword, and charge into a new adventure in Minecraft Dungeons II.
+L245: 
+L246: cite45†GET MORE DETAILS L247: 
+L248: cite46†Image: Minecraft Dungeons II logo†cms-assets.xboxservices.com L249: 
+L250: cite42†Image: open button†assets.xboxservices.com L251: 
+L252: GET DETAILS
+L253: 
+L254: [Input] cite42†Image: open button†assets.xboxservices.com L255: 
+L256: NBA 2K27
+L257: ### NBA 2K27
+L258: 
+L259: The hustle doesn’t stop and the run never ends in NBA 2K27.
+L260: 
+L261: cite47†GET MORE DETAILS L262: 
+L263: cite48†Image: NBA 2K27 logo†cms-assets.xboxservices.com L264: 
+L265: cite42†Image: open button†assets.xboxservices.com L266: 
+L267: GET DETAILS
+L268: 
+L269: [Input] cite42†Image: open button†assets.xboxservices.com L270: 
+L271: METRO 2039
+L272: ### METRO 2039
+L273: 
+L274: Journey into the dark heart of post-apocalyptic Moscow in a harrowing conflict for the very soul of the Metro.
+L275: 
+L276: cite49†GET MORE DETAILS L277: 
+L278: cite50†Image: METRO 2039 logo†cms-assets.xboxservices.com L279: 
+L280: cite42†Image: open button†assets.xboxservices.com L281: 
+L282: GET DETAILS
+L283: 
+L284: [Input] cite42†Image: open button†assets.xboxservices.com L285: 
+L286: Star Wars Zero Company
+L287: ### Star Wars Zero Company
+L288: 
+L289: Command an elite squad through a gritty and authentic story in STAR WARS Zero Company™, a single-player turn-based tactics game set in the twilight of the Clone Wars™.
+L290: 
+L291: cite51†GET MORE DETAILS L292: 
+L293: cite52†Image: Star Wars Zero Company logo†cms-assets.xboxservices.com L294: 
+L295: cite42†Image: open button†assets.xboxservices.com L296: 
+L297: GET DETAILS
+L298: Series of game art depicting titles available with XBOX Game Pass including: Minecraft Legends, Sea of Thieves, Forza Motorsport, DOOM, Starfield, and Call of Duty: Black Ops 6.
+L299: 
+L300: cite53†Image: xbox game pass logo†cms-assets.xboxservices.com L301: ## INSTANT LIBRARY
+L302: 
+L303: Hundreds of games, day one releases, online multiplayer and more.
+L304: 
+L305: cite54†LEARN MORE L306: 
+L307: cite55†Image: Mosaic of XBOX backward compatible game titles†assets.xboxservices.com L308: ## BACKWARD COMPATIBLE WITH THOUSANDS OF GAMES
+L309: 
+L310: 
+L311: 
+L312: Get ready for faster load times, higher resolution, more stable frame rates, and better input latency on thousands of XBOX One, XBOX 360, and Original XBOX games.
+L313: 
+L314: cite56†Image: XBOX Series X25 Limited Edition and XBOX Wireless Controller X25 Special Edition with Master Chief. †cms-assets.xboxservices.com L315: ## COMPLETE CONTROL
+L316: 
+L317: 
+L318: 
+L319: Get hands-on with the XBOX Wireless Controller X25 Limited Edition, featuring our highest level of precision with a dedicated Share button and improved ergonomics.
+L320: 
+L321: cite57†CONTROLLER DETAILS L322: 
+L323: ACCESSORY DETAILS
+L324: 
+L325: ### 'X' MARKS THE MOMENT
+L326: 
+L327: XBOX button inspired by the first green X bursting through.
+L328: 
+L329: Animation of the XBOX Series X25 Limited Edition with XBOX Wireless Controller X25 Special Edition
+L330: 
+L331: ### TIMELESS TRIGGERS AND BUMPERS
+L332: 
+L333: Black triggers. White bumpers. Classic XBOX style.
+L334: ### PLAY WITH LEGACY
+L335: 
+L336: ABXY buttons in original XBOX controller colors.
+L337: 
+L338: cite58†Image: Storage Expansion Card†assets.xboxservices.com L339: ## INCREASED INVENTORY. UNCOMPROMISED PERFORMANCE.
+L340: 
+L341: Add more storage and match internal storage performance of the internal SSD with the Storage Expansion Cards for XBOX Series X|S. (Sold separately, available in various sizes). Support for USB 3.1 external HDD (sold separately).
+L342: 
+L343: Animation depicting the transfer of data between the Storage Expansion Card and the XBOX Series X.
+L344: cite59†Image: XBOX Series X with a woman in handmade leather clothes closes her eyes in the darkness as hands reach out to touch her face.†cms-assets.xboxservices.com L345: ## COMPLETE CONTROL
+L346: 
+L347: 
+L348: 
+L349: Get hands-on with the XBOX Wireless Controller, featuring our highest level of precision with a dedicated Share button and improved ergonomics.
+L350: 
+L351: cite60†CONTROLLER DETAILS L352: 
+L353: ACCESSORY DETAILS
+L354: 
+L355: cite61†Image: The Nexus, Start, Back, and the new Capture and Share button†assets.xboxservices.com L356: ### YOU WIN
+L357: 
+L358: Show off. Tap the share button to eternalize your conquest.
+L359: 
+L360: Left to right animation of the top of the XBOX Wireless controller
+L361: 
+L362: cite62†Image: Texture bumper and trigger on the XBOX Wireless Controller†assets.xboxservices.com L363: 
+L364: ### GET A GRIP
+L365: 
+L366: Textured triggers and bumpers hold tight to keep you from slipping.
+L367: 
+L368: cite63†Image: XBOX wireless controller updated D-pad†assets.xboxservices.com L369: ### FULL CIRCLE
+L370: 
+L371: Updated in every direction. The hybrid D-pad lets you crush combos without crossing fingers.
+L372: 
+L373: cite58†Image: Storage Expansion Card†assets.xboxservices.com L374: ## INCREASED INVENTORY. UNCOMPROMISED PERFORMANCE.
+L375: 
+L376: Add more storage and match internal storage performance of the internal SSD with the Storage Expansion Cards for XBOX Series X|S. (Sold separately, available in various sizes). Support for USB 3.1 external HDD (sold separately).
+L377: 
+L378: Animation depicting the transfer of data between the Storage Expansion Card and the XBOX Series X.
+L379: 
+L380: cite64†Image: XBOX Series X – 1TB White with two characters from Avowed looking beyond.†cms-assets.xboxservices.com L381: ## COMPLETE CONTROL
+L382: 
+L383: 
+L384: 
+L385: Get hands-on with the XBOX Wireless Controller, featuring our highest level of precision with a dedicated Share button and improved ergonomics.
+L386: 
+L387: cite60†CONTROLLER DETAILS L388: 
+L389: ACCESSORY DETAILS
+L390: 
+L391: cite65†Image: The Nexus, Start, Back, and the new Capture and Share button†cms-assets.xboxservices.com L392: ### YOU WIN
+L393: 
+L394: Show off. Tap the share button to eternalize your conquest.
+L395: 
+L396: Left to right animation of the top of the XBOX Wireless controller
+L397: 
+L398: cite66†Image: Texture bumper and trigger on the XBOX Wireless Controller†cms-assets.xboxservices.com L399: 
+L400: ### GET A GRIP
+L401: 
+L402: Textured triggers and bumpers hold tight to keep you from slipping.
+L403: 
+L404: cite67†Image: XBOX wireless controller updated D-pad†cms-assets.xboxservices.com L405: ### FULL CIRCLE
+L406: 
+L407: Updated in every direction. The hybrid D-pad lets you crush combos without crossing fingers.
+L408: 
+L409: cite58†Image: Storage Expansion Card†assets.xboxservices.com L410: ## INCREASED INVENTORY. UNCOMPROMISED PERFORMANCE.
+L411: 
+L412: Add more storage and match internal storage performance of the internal SSD with the Storage Expansion Cards for XBOX Series X|S. (Sold separately, available in various sizes). Support for USB 3.1 external HDD (sold separately).
+L413: 
+L414: Animation depicting the transfer of data between the Storage Expansion Card and the XBOX Series X.
+L415: cite68†Image: Kay Vess, with Nix on her shoulder, walk through a busy spaceport with ND-5 under a large red planet.†cms-assets.xboxservices.com L416: ## COMPLETE CONTROL
+L417: 
+L418: 
+L419: 
+L420: Get hands-on with the XBOX Wireless Controller, featuring our highest level of precision with a dedicated Share button and improved ergonomics.
+L421: 
+L422: cite60†CONTROLLER DETAILS L423: 
+L424: ACCESSORY DETAILS
+L425: 
+L426: cite69†Image: The Nexus, Start, Back, and the new Capture and Share button†cms-assets.xboxservices.com L427: ### YOU WIN
+L428: 
+L429: Show off. Tap the share button to eternalize your conquest.
+L430: 
+L431: Left to right animation of the top of the XBOX Wireless controller
+L432: 
+L433: cite70†Image: Texture bumper and trigger on the XBOX Wireless Controller†cms-assets.xboxservices.com L434: 
+L435: ### GET A GRIP
+L436: 
+L437: Textured triggers and bumpers hold tight to keep you from slipping.
+L438: 
+L439: cite71†Image: XBOX wireless controller updated D-pad†cms-assets.xboxservices.com L440: ### FULL CIRCLE
+L441: 
+L442: Updated in every direction. The hybrid D-pad lets you crush combos without crossing fingers.
+L443: 
+L444: cite58†Image: Storage Expansion Card†assets.xboxservices.com L445: ## INCREASED INVENTORY. UNCOMPROMISED PERFORMANCE.
+L446: 
+L447: Add more storage and match internal storage performance of the internal SSD with the Storage Expansion Cards for XBOX Series X|S. (Sold separately, available in various sizes). Support for USB 3.1 external HDD (sold separately).
+L448: 
+L449: Animation depicting the transfer of data between the Storage Expansion Card and the XBOX Series X.
+L450: 
+L451: MORE DETAILS
+L452: cite72†Image: A large circular Bigfoot gamerpic icon surrounded by an orbit of their network of friends' represented as different gamerpics.†cms-assets.xboxservices.com L453: ### Your games and friends carry over
+L454: 
+L455: Continue playing your XBOX One games on your XBOX Series X with your progress, achievements, and friends list automatically transferring over to the new system.
+L456: 
+L457: cite73†Image: XBOX One wireless controller and the XBOX Adaptive Controller†cms-assets.xboxservices.com L458: 
+L459: ### Compatible with XBOX One gaming accessories
+L460: 
+L461: Use your XBOX One gaming accessories—including controllers, headsets, and more—on XBOX Series X.
+L462: 
+L463: ALL TECH SPECS
+L464: 
+L465: ## TECH SPECS
+L466: 
+L467: * * *
+L468: ### PROCESSOR
+L469: 
+L470: CPU. 8X Cores @ 3.8 GHz (3.6 GHz w/SMT) Custom Zen 2 CPU
+L471: 
+L472: GPU. 12 TFLOPS, 52 CUs @1.825 GHz Custom RDNA 2 GPU
+L473: 
+L474: * * *
+L475: ### MEMORY & STORAGE
+L476: 
+L477: Memory. 16GB GDDR6 w/320 bit-wide bus
+L478: 
+L479: Memory Bandwidth. 10GB @ 560 GB/s, 6GB @ 336 GB/s.
+L480: 
+L481: Internal Storage.
+L482: XBOX Series X Carbon Black: 1TB Custom NVME SSD
+L483: XBOX Series X – 1TB Digital Edition: 1TB Custom NVME SSD
+L484: XBOX Series X – 2TB Galaxy Black Special Edition: 2TB Custom NVME SSD
+L485: 
+L486: I/O Throughput. 2.4 GB/s (Raw), 4.8 GB/s (Compressed, with custom hardware decompression block)
+L487: Expandable Storage. Support for Storage Expansion Cards for XBOX Series X|S which match internal storage performance (sold separately). Support for USB 3.1 external HDD (sold separately).
+L488: 
+L489: * * *
+L490: ### VIDEO CAPABILITIES
+L491: 
+L492: Gaming Resolution. True 4K
+L493: 
+L494: High Dynamic Range. Up to 8K HDR
+L495: 
+L496: Optical Drive.
+L497: XBOX Series X Carbon Black: 4K UHD Blu-Ray
+L498: XBOX Series X – 2TB Galaxy Black Special Edition: 4K UHD Blu-Ray
+L499: 
+L500: Performance Target. Up to 120 FPS
+L501: 
+L502: HDMI Features. Auto Low Latency Mode. HDMI Variable Refresh Rate. AMD FreeSync.
+L503: 
+L504: * * *
+L505: 
+L506: ### SOUND CAPABILITIES
+L507: 
+L508: Dolby Digital 5.1
+L509: 
+L510: DTS 5.1
+L511: 
+L512: Dolby TrueHD with Atmos
+L513: 
+L514: Up to 7.1 L-PCM
+L515: 
+L516: * * *
+L517: ### PORTS & CONNECTIVITY
+L518: 
+L519: HDMI. 1x HDMI 2.1 port
+L520: 
+L521: USB. 3x USB 3.1 Gen 1 ports
+L522: 
+L523: Wireless. 802.11ac dual band
+L524: 
+L525: Ethernet. 802.3 10/100/1000
+L526: 
+L527: Accessories radio. Dedicated dual band XBOX Wireless radio.
+L528: 
+L529: * * *
+L530: 
+L531: ### DESIGN
+L532: 
+L533: #### Disc
+L534: 
+L535: cite74†Image: Console sketch showing the dimensions of the XBOX Series X with disc drive: Height is 301 mm, depth is 151mm and breadth is 151mm†cms-assets.xboxservices.com L536: 
+L537: Dimensions 15.1cm x 15.1cm x 30.1cm
+L538: 
+L539: Weight 9.8 lbs.
+L540: #### Digital
+L541: 
+L542: cite75†Image: Console sketch showing the dimensions of the all digital XBOX Series X: Height is 301 mm, depth is 151mm and breadth is 151mm†cms-assets.xboxservices.com L543: 
+L544: Dimensions 15.1cm x 15.1cm x 30.1cm
+L545: 
+L546: Weight 7.9 lbs.
+L547: 
+L548: NEW
+L549: 
+L550: ## XBOX SERIES X
+L551: 
+L552: cite76†Image: Left angle of the XBOX Wireless Controller X25 Special Edition with an XBOX Wireless Controller X25 Special Edition†cms-assets.xboxservices.com L553: 
+L554: NEW
+L555: ## XBOX SERIES X
+L556: 
+L557: Includes:
+L558: 
+L559:   * XBOX Series X25 Limited Edition, engraved numbered console
+L560:   * XBOX Wireless Controller X25 Special Edition
+L561:   * Halo: Campaign Evolved^{cite4†1 }
+L562: 
+L563: * * *
+L564: 
+L565: $XXX
+L566: 
+L567: Microsoft Store
+L568: 
+L569: PRE-ORDER
+L570: 
+L571: $XXX ERP*
+L572: 
+L573: cite77†SELECT A RETAILER L574: 
+L575: ## XBOX SERIES X
+L576: 
+L577: cite10†Image: Left angle of the XBOX Series X with an XBOX wireless controller†cms-assets.xboxservices.com L578: ## XBOX SERIES X
+L579: 
+L580: Includes:
+L581: 
+L582:   * XBOX Series X – 1TB Carbon Black
+L583:   * XBOX Wireless Controller – Carbon Black
+L584: 
+L585: * * *
+L586: 
+L587: $XXX
+L588: 
+L589: Microsoft Store
+L590: 
+L591: BUY NOW, PAY LATER
+L592: 
+L593: $XXX ERP*
+L594: 
+L595: cite77†SELECT A RETAILER L596: 
+L597: ## XBOX SERIES X
+L598: 
+L599: cite15†Image: XBOX Series X – 1TB All-Digital Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L600: 
+L601: ## XBOX SERIES X
+L602: ### SELECT AN OPTION
+L603: 
+L604: Pay monthly with 0% interest with XBOX All Access. Or make a one-time payment today when buying from a retailer, including the Microsoft Store.
+L605: 
+L606: Includes:
+L607: 
+L608:   * XBOX Series X – 1TB Digital Edition (White)
+L609:   * XBOX Wireless Controller – Robot White
+L610: 
+L611: * * *
+L612: 
+L613: $XXX.XX
+L614: 
+L615: Microsoft Store
+L616: 
+L617: BUY NOW, PAY LATER
+L618: 
+L619: $XXX ERP*
+L620: 
+L621: cite77†SELECT A RETAILER L622: ## XBOX SERIES X
+L623: 
+L624: cite19†Image: XBOX Series X – 2TB Galaxy Black Special Edition with XBOX Wireless Controller - Galaxy Black Special Edition†cms-assets.xboxservices.com L625: 
+L626: ## XBOX SERIES X
+L627: ### SELECT AN OPTION
+L628: 
+L629: Pay monthly with 0% interest with XBOX All Access. Or make a one-time payment today when buying from a retailer, including the Microsoft Store.
+L630: 
+L631: Includes:
+L632: 
+L633:   * XBOX Series X – 2TB Galaxy Black Special Edition
+L634:   * XBOX Wireless Controller – Galaxy Black Special Edition
+L635: 
+L636: * * *
+L637: 
+L638: $XXX.XX
+L639: 
+L640: Microsoft Store
+L641: 
+L642: BUY NOW, PAY LATER
+L643: 
+L644: cite78†Image: XBOX Series X refurbished console and controller†cms-assets.xboxservices.com L645: ### XBOX Series X – Refurbished
+L646: 
+L647: cite79†LEARN MORE L648: 
+L649: cite80†Image: 25, Glowing green XBOX 25th Anniversary logo †cms-assets.xboxservices.com L650: 
+L651: ## Celebrate 25 years of play with XBOX
+L652: 
+L653: Explore the celebration with exclusive experiences, products, news, & more.
+L654: 
+L655: cite81†EXPLORE L656: 
+L657: cite82†Image: XBOX Elite Wireless Controller Series 2†assets.xboxservices.com L658: ### XBOX Elite Wireless Controller Series 2
+L659: 
+L660: Play like a pro with the unlimited customization of the XBOX Elite Wireless Controller Series 2.
+L661: 
+L662: cite83†LEARN MORE L663: 
+L664: cite84†Image: XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L665: 
+L666: ### XBOX Wireless Controller
+L667: 
+L668: Stay on target with the hybrid D-pad, textured grip on the triggers, bumpers, and back-case.
+L669: 
+L670: cite60†LEARN MORE L671: 
+L672: cite85†Image: XBOX Wireless Headset†cms-assets.xboxservices.com L673: ### XBOX Wireless Headset
+L674: 
+L675: Hear ‘em coming. Never miss a beat with the XBOX Wireless Headset.
+L676: 
+L677: cite86†LEARN MORE L678: ## Frequently asked questions
+L679: 
+L680: * * *
+L681: 
+L682: When did XBOX Series X launch?
+L683: 
+L684: XBOX Series X launched at participating retailers on November 10, 2020 and is available for purchase now.
+L685: 
+L686: Is XBOX Series X available in my market?
+L687: 
+L688: Visit cite87†xbox.com/regions for details on market availability and find a cite88†participating retailer .
+L689: 
+L690: What games can I play on XBOX Series X?
+L691: XBOX Series X is compatible with thousands of games across four generations of XBOX. And, with Smart Delivery games, you buy a digital game once and get the best version of that game for the console you’re playing on. To play a backward compatible game, insert the disc or search your library and select the game you want to play. Shop for games directly from your XBOX Series X console or online at Xbox.com.
+L692: 
+L693: Can you play XBOX One games on XBOX Series X?
+L694: Yes. The digital titles that you own and are part of the Back Compat game catalog will automatically show up in the “Ready to Install” section on your XBOX Series X console. For disc-based games that are part of the Back Compat game catalog, insert the disc and the console will begin downloading the game to your hard drive. After the game has downloaded to your hard drive, you will still need to keep the game disc in the drive to play. cite89†Browse back compat games .
+L695: Do XBOX One controllers work on XBOX Series X?
+L696: 
+L697: XBOX Series X|S consoles are compatible with most XBOX One controllers and gaming accessories. cite90†Learn more†support.xbox.com .
+L698: 
+L699: What’s included with XBOX Series X?
+L700: 
+L701: With XBOX Series X, an XBOX Series X console, controller, Ultra High Speed HDMI cable, and power cord are included. You can add standalone purchases of XBOX Game Pass and the Storage Expansion Cards for XBOX Series X|S for the complete experience.^{cite91†*** }
+

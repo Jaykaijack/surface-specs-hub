@@ -1,0 +1,510 @@
+微软认证翻新Surface Laptop 5 商用版 - Surface 触控高色域轻薄商务本-微软官方商城 (https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business)
+citeturn70view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business","lineno":200}); Total lines: 615
+L0: cite0†Image: Microsoft†uhf.microsoft.com cite1†企业购 L1: 
+L2: Search
+L3: 
+L4: Search
+L5: 
+L6: [Input]
+L7: 
+L8: cite2†Advanced Search L9: 
+L10: Search
+L11: 
+L12: [Button: 取消]
+L13: 
+L14: cite3†Image†cdn.microsoftstore.com.cn L15: 
+L16: cite3†Image†cdn.microsoftstore.com.cn L17: 
+L18:   * cite4†我的账户 L19:   * cite5†我的订单 L20:   * cite6†地址管理 L21:   * cite7†我的专区 L22:   * cite8†我的优惠券 L23:   * cite9†退出 cite10†登录 L24: 
+L25: 限时闪购 | 购指定认证翻新 Surface 商用版享 5.4 折起.
+L26: 
+L27: [Input]
+L28: 
+L29: cite11†Image: 微软认证翻新 Surface Laptop 5 商用版†cdn.microsoftstore.com.cn L30: 
+L31: 打开图片
+L32: 
+L33: 4张图片
+L34:   * cite12†Image: 微软认证翻新 Surface Laptop 5 商用版†cdn.microsoftstore.com.cn L35:   * cite13†Image: 微软认证翻新 Surface Laptop 5 商用版†cdn.microsoftstore.com.cn L36:   * cite14†Image: 微软认证翻新 Surface Laptop 5 商用版†cdn.microsoftstore.com.cn L37:   * cite15†Image: 微软认证翻新 Surface Laptop 5 商用版†cdn.microsoftstore.com.cn L38: # 微软认证翻新 Surface Laptop 5 商用版
+L39: 
+L40: 更快的运行速度，让您轻松度过紧张忙碌的日子。强劲实力，尽在时尚超薄设计中。矩阵式远场双麦克风让您在通话中保持全神贯注。内置安全性支持您随时随地开展工作。
+L41: 
+L42: 此设备已预装 Windows 11 专业版或 Windows 10 专业版。cite16†了解详情 >†www.microsoft.com L43: 购买提示：设备可能包含外观上的瑕疵，不属于产品质量问题，不适用标准的退换货政策。微软认证翻新 Surface 不适用以旧换新优惠券；亦不适用微软官方商城任何其他优惠券。
+L44: 发货提示：该产品预计在付款后2个工作日内发货。
+L45: 
+L46: [Input][Input][Input][Input][Input][Input][Input]
+L47: 
+L48: cite17†购买 （） L49: 
+L50: 产品概览
+L51: 
+L52: 技术规格
+L53: 
+L54: cite17†购买 （） L55: 
+L56: ## 微软认证的翻新 Surface
+L57: 
+L58: 每一部翻新 Surface 都经过微软严苛的翻新流程，包括硬件损坏修复和外观品质检查，加上安全的数据擦除，软件升级和诊断测试。翻新设备享有两年有限硬件质保。
+L59: 
+L60: cite18†Image†cdn.microsoftstore.com.cn L61: ## Surface 商用版的优势
+L62: 
+L63: cite19†Image: Surface Laptop 5 商用版笔记本†cdn.microsoftstore.com.cn L64: 
+L65: ### 预装 Windows 11 专业版
+L66: 
+L67: 专为混合工作设计的 Windows 11 专业版功能强大，搭配 Surface 商用版可使 IT 始终如一并提供安全保障。通过精简的界面提升员工的工作效率和专注度。
+L68: 
+L69: cite20†Image: Microsoft 365 应用图标。†cdn.microsoftstore.com.cn L70: 
+L71: ### Microsoft 365 商业版
+L72: 
+L73: 该集成解决方案将 Office 应用的出色工作效率与先进的安全性和设备管理能力融为一体，为企业提供安全保障。^{5}
+L74: 
+L75: cite21†查看计划和价格 >†www.microsoft.com L76: 
+L77: ## 为工作带来强大性能支持
+L78: 
+L79: 强大的处理性能支持和长效电池续航^{1}，让您的多任务处理变得高效轻松。
+L80: 
+L81: cite22†Image†cdn.microsoftstore.com.cn L82: ### 采用第12代英特尔^{®} 酷睿™ i5 或 i7 处理器
+L83: 
+L84: 获得可轻松应对多个选项卡和多个应用程序的强大多任务处理性能，经英特尔^{®} Evo™ 平台认证。
+L85: 
+L86: cite23†Image†cdn.microsoftstore.com.cn L87: 
+L88: ### 长效电池续航^{1}
+L89: 
+L90: 不插电也可以支持您随时随地工作。^{1}
+L91: 
+L92: cite24†Image†cdn.microsoftstore.com.cn L93: 
+L94: ### 13.5英寸或15英寸触控屏
+L95: 
+L96: Microsoft 365* 应用程序已针对 Surface 标志性的 3:2 屏幕比例进行了优化。
+L97: 
+L98: cite25†Image†cdn.microsoftstore.com.cn L99: ### Thunderbolt™ 4
+L100: 
+L101: 高速连接，充电、传输数据、连接外部显示器均不在话下。
+L102: 
+L103: cite26†Image†cdn.microsoftstore.com.cn L104: 
+L105: 1
+L106: 
+L107: 即时启动
+L108: 
+L109: 了解更多
+L110: 
+L111: 2
+L112: 
+L113: 出色的打字舒适度
+L114: 
+L115: 了解更多
+L116: 
+L117: 3
+L118: 
+L119: PixelSense™ 触控屏
+L120: 
+L121: 了解更多
+L122: 
+L123: 4
+L124: 
+L125: 优化的摄像头
+L126: 
+L127: 了解更多
+L128: 
+L129: 5
+L130: 
+L131: 超薄便携
+L132: 
+L133: 了解更多
+L134: 
+L135: 6
+L136: 
+L137: 一根线，两块屏
+L138: 
+L139: 了解更多
+L140: 
+L141: 滑动以翻转浏览 Surface Laptop 5 商用版的功能
+L142: 
+L143: 即时启动
+L144: 
+L145: 出色的打字舒适度
+L146: 
+L147: PixelSense™ 触控屏
+L148: 
+L149: 优化的摄像头
+L150: 
+L151: 超薄便携
+L152: 
+L153: 一根线，两块屏
+L154: ## 即时高效，灵活工作
+L155: 
+L156: cite27†Image: Surface Laptop 5 商用版屏幕中显示多个窗口，有条理的利用Snap (贴靠)†cdn.microsoftstore.com.cn L157: 
+L158: cite28†Image: Surface Laptop 5 商用版屏幕中显示 Microsoft PowerPoint。†cdn.microsoftstore.com.cn L159: 
+L160: cite29†Image: Surface Laptop 5 商用版屏幕中显示 Microsoft Teams。†cdn.microsoftstore.com.cn L161: 
+L162: 了解有关 Snap (贴靠) 的详细信息
+L163: 
+L164: 利用 Snap (贴靠) 功能的预设布局查看多个窗口。Windows 11 专业版全新的布局专门针对多任务处理而设计。
+L165: 
+L166: 了解有关 Microsoft PowerPoint 的详细信息
+L167: 
+L168: 使用 Microsoft PowerPoint^{2}，轻松创建脱颖而出的精美幻灯片。与您的同事实时协作，并追踪查看其他人近期在幻灯片中所做的更改。
+L169: 
+L170: 了解有关 Microsoft Teams 的详细信息
+L171: 通过内置于任务栏中的集成 Windows 11 专属体验，如一键呼叫和麦克风控制按钮，提高 Microsoft Teams^{2} 会议效率。
+L172: 
+L173: cite30†Image†cdn.microsoftstore.com.cn L174: 
+L175: cite31†Image†cdn.microsoftstore.com.cn L176: 
+L177: cite32†Image†cdn.microsoftstore.com.cn L178: 
+L179: cite33†Image†cdn.microsoftstore.com.cn L180: 
+L181: cite34†Image†cdn.microsoftstore.com.cn L182: 
+L183: cite35†Image†cdn.microsoftstore.com.cn L184: ## 随时随地部署、管理并保持安全
+L185: 
+L186: 通过简化的部署、现代设备管理和内置云端安全性，可节省时间和预算。
+L187: 
+L188: cite36†Image: 两位同事在 Surface Laptop 5 商用版上安全地检查工作。†cdn.microsoftstore.com.cn L189: 
+L190: ### 安全的 Windows 11 设备
+L191: 
+L192: Secured-core PCs 提升了 Windows 11 专业版安全功能的保护力，带来了更强大的硬件和软件保护能力，让您在处理敏感信息时安全无忧。
+L193: 
+L194: cite37†Image: 办公室中桌面上的 Surface Laptop 5 商用版已连接到两台显示器。†cdn.microsoftstore.com.cn L195: ### 云优先部署和管理
+L196: 
+L197: 借助 Microsoft Endpoint Manager 过云端进行部署和管理至固件层^{2} 和 DFCI^{3}。每台 Surface 商用版都随附 Windows Autopilot，可通过直接部署到员工来降低 IT 复杂性。
+L198: 
+L199: cite38†Image: 一个人在 Surface Laptop 5 商用版上使用 Microsoft 365。†cdn.microsoftstore.com.cn L200: 
+L201: ### 订阅 Microsoft 365
+L202: 
+L203: 借助 Windows 11 专业版的主要功能，以及您日常使用的 Office 365 ^{2}生产力应用程序组件。
+L204: 
+L205: cite39†Image: Surface Laptop 5 商用版自顶向下的视图。†cdn.microsoftstore.com.cn L206: 
+L207: ### 可移除硬盘^{4}
+L208: 
+L209: 使用可移除硬盘保存数据可帮助您管控敏感信息。^{4}
+L210: ## 比较 Surface Laptop 各机型
+L211: 
+L212: 无论是卓越的性能还是时尚的外观，总有一款 Surface 适合您。
+L213: 
+L214: cite40†查看所有 Surface 商用版设备 L215: 
+L216: cite41†Image: Surface Laptop 5 商用版正面视图。†cdn.microsoftstore.com.cn L217: 
+L218: ### Surface Laptop 5 商用版
+L219: 
+L220:   * 处理器：第 12 代英特尔^{®} 酷睿™ i5 或 i7 处理器
+L221:   * 屏幕尺寸：13.5英寸或15英寸
+L222:   * 重量：1,272克起
+L223:   * 存储：256GB、512GB 或 1TB
+L224:   * 内存：8GB、16GB 或 32GB
+L225: cite42†购买 > L226: 
+L227: cite43†Image: Surface Laptop Go 2 商用版正面视图。†cdn.microsoftstore.com.cn L228: ### Surface Laptop Go 2 商用版
+L229: 
+L230:   * 处理器: 第11代英特尔^{®} 酷睿™ i5 处理器
+L231:   * 屏幕尺寸: 12.4英寸
+L232:   * 重量: 1,127克
+L233:   * 存储: 128GB、256GB
+L234:   * 内存: 4GB、 8GB 或 16GB
+L235: cite44†了解更多 > L236: 
+L237: cite45†Image: Surface Laptop Studio商用版正面视图。†cdn.microsoftstore.com.cn L238: 
+L239: ### Surface Laptop Studio 商用版
+L240: 
+L241:   * 处理器：第11代英特尔^{®} 酷睿™ i5 或 i7处理器
+L242:   * 屏幕尺寸：14.4英寸
+L243:   * 重量：1742.9克或1820.2克
+L244:   * 存储：256GB、512GB、1TB 或 2TB
+L245:   * 内存：16GB 或 32GB
+L246: cite46†了解更多 > L247: 
+L248: cite47†Image: Surface Pro 9 商用版正面视图。†cdn.microsoftstore.com.cn L249: ### Surface Pro 9 商用版
+L250: 
+L251:   * 处理器：第 12 代英特尔^{®} 酷睿™ i5 或 i7 处理器
+L252:   * 屏幕尺寸：13英寸
+L253:   * 重量：879克
+L254:   * 存储：128GB、256GB、512GB 或 1TB
+L255:   * 内存：8GB、16GB 或 32GB
+L256: cite48†购买 > L257: 
+L258: cite49†Image: 使用Surface Laptop 5商用版笔记本与Surface配件办公†cdn.microsoftstore.com.cn L259: 
+L260: cite50†Image†cdn.microsoftstore.com.cn L261: 
+L262: ## 基本配件
+L263: 
+L264: 优质配件旨在提高工作效率并简化工作流程，让您充分利用 Surface。
+L265: 
+L266: cite51†全部商品 L267: 
+L268: cite52†Image: Surface Arc 鼠标†cdn.microsoftstore.com.cn L269: 
+L270: cite53†Image: Surface 拓展坞†cdn.microsoftstore.com.cn L271: 
+L272: ### 常见问题
+L273: 
+L274: 展开全部 | 收缩全部
+L275: ### 什么是微软认证的翻新设备？
+L276: 
+L277: 微软认证的翻新 Surface 设备是经过严格翻新流程以便重新销售的二手设备。经翻新的 Surface 产品是被完全清理且功能完全正常的设备。
+L278: 
+L279: 每一台微软认证的翻新产品都具有如下特性：
+L280: 
+L281: • 经筛选和测试，功能完全正常。
+L282: 
+L283: • 重新安装 Windows 操作系统和软件升级。
+L284: 
+L285: • 通过外观清洁流程并通过外观检测。
+L286: 
+L287: • 经重新包装，新的包装盒，包括说明文档、线缆和电源适配器。
+L288: 
+L289: ### 当我购买翻新产品时应期待获得何种体验？
+L290: 
+L291: 您会得到具有价格折扣、包装内含完整物料的全功能产品。我们保障经替换的部件均为 Surface 原厂部件，您的设备将满足我们的高质量标准。
+L292: 
+L293: ### 微软认证的翻新产品提供怎样的质保？
+L294: 
+L295: 所有微软认证的翻新产品在中国大陆将享受两年有限硬件质保。
+L296: ### 微软认证的翻新 Surface 退换货政策如何？
+L297: 
+L298: 微软认证的翻新设备退换货政策与全新 Surface 相同。详情请参见《微软官方商城退换货政策》。
+L299: 
+L300: * 部分配件和软件另售。
+L301: 
+L302: [1] 电池使用时间会因设备使用、网络或功能配置、信号强度、设置和其他因素而有显著差异。有关详细信息，请参阅 cite54†aka.ms/SurfaceBatteryPerformance†aka.ms 。
+L303: 
+L304: [2] 另售。某些功能需要有软件许可证。功能及应用程序的可用性，可能因销售区域而异。
+L305: 
+L306: [3] Surface Go 和 Surface Go 2 使用第三方 UEFI 且不支持 DFCI。目前支持 DFCI 的设备包括 Surface Go 3、Surface Pro 8、Surface Laptop Studio、Surface Laptop 4、Surface Pro 7+、Surface Laptop Go、Surface Book 3、Surface Laptop 3 和 Surface Pro X。
+L307: [4] 本设备不包含用户可维修组件。硬盘不可由用户自行拆卸。硬盘仅可由熟练的技术人员按照微软提供的说明进行拆卸。
+L308: 
+L309: [5] Microsoft 365 商业版，为不同企业客户提供多种订阅方式，可根据不同使用需求，单独订阅。具体版本及订阅方式，请点击参见cite21†产品细则†www.microsoft.com 。
+L310: 
+L311: 功能及应用程序的可用性，可能因销售区域而异。
+L312: 
+L313: USB Type-C^{®} 和 USB-C^{®} 均为 USB Implementers Forum 的注册商标。
+L314: ### 技术规格
+L315: 
+L316: #### 尺寸及重量
+L317: 
+L318:  |
+L319: 
+L320:   * Surface Laptop 5 商用版13.5英寸
+L321:   * 308毫米 x 223毫米 x 14.5毫米（12.1英寸 × 8.8英寸 × 0.57英寸）
+L322:   * 重量： Alcantara^{®} 欧缔兰^{®} 材质 1,272克（2.80 磅）
+L323:   * 金属材质 1,297克（2.86 磅）
+L324:   * Surface Laptop 5 商用版15英寸:
+L325:   * 340毫米 x 244毫米 x 14.7毫米（13.4英寸 × 9.6英寸 × 0.58英寸）
+L326:   * 重量：1,560 克（3.44 磅）
+L327: #### 显示屏
+L328: 
+L329:  |
+L330:   * Surface Laptop 5 商用版13.5英寸:
+L331:   * 屏幕：13.5 英寸 PixelSense™ 显示屏^{2}
+L332:   * 分辨率：2256 x 1504 (201 PPI)
+L333:   * 屏幕比例：3:2
+L334:   * 对比度：1300:1
+L335:   * 颜色配置：sRGB 和 Vivid
+L336:   * 独立的颜色校准屏幕
+L337:   * 支持 Dolby Vision IQ™^{3}
+L338:   * 触控：10 点触控
+L339:   * Alcantara^{®} 欧缔兰^{®} 材质键盘配备第 3 代康宁^{®} 大猩猩^{®} 玻璃面板
+L340:   * 金属材质键盘配备第 5 代康宁^{®} 大猩猩^{®} 玻璃面板
+L341:   * Surface Laptop 5 商用版15英寸:
+L342:   * 屏幕：15 英寸 PixelSense™ 显示屏^{2}
+L343:   * 分辨率：2496 x 1664 (201 PPI)
+L344:   * 屏幕比例：3:2
+L345:   * 对比度：1300:1
+L346:   * 颜色配置：sRGB 和 Vivid
+L347:   * 独立的颜色校准屏幕
+L348:   * 支持 Dolby Vision IQ™^{3}
+L349:   * 触控：10 点触控
+L350:   * 第 5 代康宁^{®} 大猩猩^{®} 玻璃面板
+L351: #### 内存
+L352: 
+L353:  | 8GB、16GB 或 32GB LPDDR5x RAM
+L354: 
+L355: #### 处理器
+L356: 
+L357:  |
+L358: 
+L359:   * Surface Laptop 5 商用版13.5英寸:
+L360:   * 第 12 代英特尔^{®} 酷睿™ i5-1245U 处理器
+L361:   * 第 12 代英特尔^{®} 酷睿™ i7-1265U 处理器
+L362:   * 经英特尔^{®} Evo™ 平台认证
+L363:   * Surface Laptop 5 商用版15英寸:
+L364:   * 第 12 代英特尔^{®} 酷睿™ i7-1265U 处理器
+L365:   * 经英特尔^{®} Evo™ 平台认证
+L366: 
+L367: #### 安全性
+L368: 
+L369:  |
+L370: 
+L371:   * 固件 TCM 2.0 提供企业级安全和 BitLocker 支持
+L372:   * 通过 Windows Hello 人脸识别登录实现企业级的防护
+L373:   * Windows 11 Secured-core PC
+L374: 
+L375: #### 音频
+L376: 
+L377:  |
+L378: 
+L379:   * 矩阵式远场双麦克风
+L380:   * 具有杜比全景声 Dolby Atmos^{®}^{7} 音效的 Omnisonic^{®} 扬声器
+L381: #### 软件
+L382: 
+L383:  |
+L384: 
+L385:   * Windows 11 专业版或 Windows 10 专业版
+L386:   * 预装 Microsoft 365 应用程序^{10}
+L387:   * 新用户注册，提供 Microsoft 365 30 天试用^{11}
+L388: 
+L389: #### 传感器
+L390: 
+L391:  | 氛围光传感器
+L392: 
+L393: #### 包装清单
+L394: 
+L395:  |
+L396: 
+L397:   * 微软认证翻新 Surface Laptop 5 商用版13.5英寸或15英寸
+L398:   * 电源适配器
+L399:   * 快速入门指南
+L400:   * 安全、健康、符合性指南和有限保修条款等文件
+L401: 
+L402: #### 键盘布局
+L403: 
+L404:  |
+L405: 
+L406:   * 激活：移动（机械）按键
+L407:   * 布局：QWERTY，全排功能键（F1-F12）
+L408:   * Windows 键和媒体控件、屏幕亮度专用按钮
+L409:   * 背光按键
+L410: 
+L411: #### 存储^{1}
+L412: 
+L413:  | 可拆卸^{8}固态硬盘 (SSD) 可选：256GB、512GB 或 1TB
+L414: #### 电池续航时间^{4}
+L415: 
+L416:  |
+L417: 
+L418:   * Surface Laptop 5 商用版 13.5 英寸
+L419:   * 常规使用，最长可达 18 小时
+L420:   * Surface Laptop 5 商用版 15 英寸
+L421:   * 常规使用，最长可达 17 小时
+L422: 
+L423: #### 显卡
+L424: 
+L425:  | 英特尔^{®} Iris^{®} X^{e} 显卡
+L426: 
+L427: #### 接口
+L428: 
+L429:  |
+L430: 
+L431:   * 1个 USB-C^{®} 接口，支持 USB 4.0/Thunderbolt™ 4
+L432:   * 1个USB-A 3.1接口
+L433:   * 3.5 毫米耳机插孔
+L434:   * 1个 Surface Connect 端口
+L435: 
+L436: #### 摄像头
+L437: 
+L438:  |
+L439: 
+L440:   * Windows Hello面部识别摄像头（前置）
+L441:   * 支持 720p 高清视频的前置摄像头
+L442: 
+L443: #### 触控笔兼容性
+L444: 
+L445:  |
+L446: 
+L447:   * 兼容 Surface 触控笔^{9}
+L448:   * 支持 Microsoft 触控笔协议 (MPP)
+L449: 
+L450: #### 无线
+L451: 
+L452:  |
+L453: 
+L454:   * Wi-Fi 6：兼容 802.11ax
+L455:   * 蓝牙^{®} 5.1 无线技术
+L456: #### 外观
+L457: 
+L458:  |
+L459: 
+L460:   * 机身材质：特制版阳极氧化铝
+L461:   * 电源键和音量键置于键盘上
+L462:   * Surface Laptop 5 商用版13.5英寸可选颜色^{6}
+L463:   * 亮铂金搭配 Alcantara^{®} 欧缔兰^{®} 材质键盘
+L464:   * 仙茶绿搭配金属键盘
+L465:   * 典雅黑搭配金属键盘
+L466:   * 砂岩金搭配金属键盘
+L467:   * Surface Laptop 5 商用版15英寸可选颜色^{6}
+L468:   * 亮铂金搭配金属键盘
+L469:   * 典雅黑搭配金属键盘
+L470: 
+L471: #### 保修^{5}
+L472: 
+L473:  | 自购买凭证（发票）标注时间起，Surface 主机2年有限硬件保修，Surface 配件视品类而定。详情以所购产品包装盒内相关信息为准。
+L474: 
+L475: #### 电池容量
+L476: 
+L477:  |
+L478: 
+L479:   * 标准电池容量（瓦时）47.4Wh
+L480:   * 最小电池容量（瓦时）45.8Wh
+L481: #### 中国能效标识
+L482: 
+L483:  | cite55†Image†cdn.microsoftstore.com.cn cite56†Image†cdn.microsoftstore.com.cn cite57†Image†cdn.microsoftstore.com.cn cite58†Image†cdn.microsoftstore.com.cn cite59†Image†cdn.microsoftstore.com.cn L484: 
+L485: * 部分配件和软件另售。
+L486: 
+L487: [1] 系统软件和更新占用大量存储空间。可用存储空间会根据系统软件和更新以及应用的使用情况而改变。1GB = 10 亿字节。1 TB = 1,000 GB。有关详细信息，请访问 cite60†Surface.com/Storage†support.microsoft.com 。
+L488: 
+L489: [2] Surface Laptop 5 商用版显示屏采用标准矩形搭配圆角的设计。
+L490: 
+L491: [3] 需要采用 Dolby Vision^{®} 编码的内容和音频。
+L492: [4] 电池使用时间会因使用情况、网络和功能配置、信号强度、设置以及其他因素而有显著差异。如需了解详情信息，请访问 cite54†aka.ms/SurfaceBatteryPerformance†aka.ms 。
+L493: 
+L494: [5] Microsoft 的有限担保是对消费者法定权利的额外补充。
+L495: 
+L496: [6] 所提供颜色仅针对特定型号。可选颜色、尺寸、键盘饰面材质及处理器可能因商店、产品销售区域和配置而异。
+L497: 
+L498: [7] 需要采用 Dolby Atmos^{®} 编码的内容和音频。
+L499: 
+L500: [8] 本设备不包含用户可维修组件。硬盘仅可由经过授权的技术人员按照 Microsoft 所提供的说明进行拆卸。
+L501: 
+L502: [9] 另售。
+L503: 
+L504: [10] 需要许可或订阅（另售）才能激活和使用。
+L505: 
+L506: [11] 需要激活。若您的设备由所在组织的 IT 部门管理，请联系 IT 管理员激活。激活30天后，如果您选择继续使用，我们将会向您收取适用的每月或每年订阅费。需要以信用卡支付费用。在您选择订阅后，随时取消订阅即可停止继续扣费。请访问 cite61†https://aka.ms/m365businesstrialinfo†aka.ms 。
+L507: {"components":{"stockNotificationPopup":{"component":"IsobarCommerce_BuyBox\/js\/stock-notify-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"}},"mainProductId":"1927"}}}
+L508: 
+L509: *划线价格均为微软建议零售价。
+L510: 
+L511:   * 产品类别
+L512: 
+L513:     * cite62†Surface L514:     * cite63†Microsoft 365 L515:     * cite64†XBOX L516:     * cite65†Office L517:     * cite66†Windows L518:     * cite67†Visual Studio L519:     * cite68†混合现实 L520:     * cite69†其他软件与服务 L521:     * cite51†配件 L522:     * cite70†其他微软站点†www.microsoft.com L523:   * 账户信息
+L524:     * cite4†账户信息 L525:     * cite5†订单跟踪 L526:     * cite71†订单历史 L527:     * cite4†软件密钥和下载 L528:   * 支持与帮助
+L529: 
+L530:     * cite72†产品支持信息 L531:     * cite73†退换货政策 L532:     * cite74†常见问题 L533:     * cite75†软件产品问题 L534:     * cite76†教育优惠相关问题 L535:     * cite77†购物流程 L536:     * cite78†支付与配送 L537:     * cite79†售后服务 L538:     * cite80†专栏博客 L539:   * 热门资源
+L540: 
+L541:     * cite81†Surface Pro L542:     * cite82†Surface Laptop L543:     * cite83†优惠信息 L544:     * cite84†教育专区 L545:     * cite85†以旧换新 L546:     * cite1†商务专区 L547:   * 关于我们
+L548: 
+L549:     * cite86†查找店铺 L550:     * cite87†网站地图 L551:     * cite88†商城承诺 L552:     * cite89†商城首页 L553:   * 关注我们
+L554: 
+L555:     * 官方微博
+L556: 
+L557:     * 微软官方商城
+L558:     *     * 微信小店
+L559: cite90†Image: Wechatstore QRCode†cdn.microsoftstore.com.cn L560: 
+L561: cite70†其他微软站点†www.microsoft.com L562: 
+L563: cite91†中国 - 简体中文†www.microsoft.com L564: 
+L565: cite92†使用条款 cite93†销售条款 cite94†隐私权声明†go.microsoft.com 管理 Cookie cite95†商标†www.microsoft.com cite96†沪 ICP备12038052号-4†beian.miit.gov.cn L566: 
+L567: cite97†沪公网安备 31010402009788号†www.beian.gov.cn L568: 
+L569: cite98†公司证件†cdn.microsoftstore.com.cn © 2024 Microsoft
+L570: 
+L571: cite99†Image†cdn.microsoftstore.com.cn L572: 
+L573: 扫码小程序
+L574: 
+L575: 进行购买
+L576: cite100†Image: Contact customer service†cdn.microsoftstore.com.cn cite101†Image: Contact customer service†cdn.microsoftstore.com.cn L577: 
+L578: cite102†Image: miniapp_qrcode†cdn.microsoftstore.com.cn L579: 
+L580: cite103†Image: contact sales†cdn.microsoftstore.com.cn cite104†Image: contact sales†cdn.microsoftstore.com.cn cite105†Image: Contact customer service†cdn.microsoftstore.com.cn L581: 
+L582: cite106†Image: QR Code†cdn.microsoftstore.com.cn L583: 
+L584: cite107†Image: contact sales†cdn.microsoftstore.com.cn L585: 
+L586: cite99†Image: wechat qrcode†cdn.microsoftstore.com.cn L587: 截图保存后微信扫码进入小程序
+L588: 
+L589: 联系客服 · 咨询优惠
+L590: 
+L591: 在线聊天
+L592: 
+L593: [Button: 开始在线聊天]
+L594: 
+L595: 电话联系
+L596: 
+L597:   * 微软官方商城销售服务热线:
+L598: 400 999 9938
+L599: 工作时间：法定工作日 9:00–18:00
+L600: 
+L601: cite108†Image: 联系销售†cdn.microsoftstore.com.cn 联系销售
+L602: 
+L603: [Button: 联系客服 享专属优惠]
+L604: 
+L605: 非工作时间请联系： RDSSMB@microsoft.com
+L606: 
+L607: cite109†Intentionally blank†publisher.liveperson.net 

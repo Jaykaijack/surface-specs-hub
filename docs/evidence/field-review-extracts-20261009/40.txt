@@ -1,0 +1,331 @@
+Surface Duo (1st Gen) features and specs | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs)
+citeturn57view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs","lineno":200}); Total lines: 476
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Duo (1st Gen) features and specs
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Duo
+L126: 
+L127: Note
+L128: 
+L129: This device has reached its end-of-servicing date based on the cite75†Surface Lifecycle for Android-based devices†learn.microsoft.com and will no longer receive newer Android version and security updates.
+L130: With two screens, Surface Duo helps you get more done in better ways. It’s a thin and light mobile device that folds and fits in your pocket, so you can always take it with you. Just open your Surface Duo to use the dual, high-resolution PixelSense™ Fusion Displays that give you 8.1” of space to work on the go throughout your day—whether it’s for work, school, or yourself.
+L131: ## Get to know Surface Duo
+L132: 
+L133: Find your way around Surface Duo by using the diagram below.
+L134: 
+L135: cite76†Image: Surface Duo with callouts for buttons and ports L136: 
+L137:   1. Earpiece for phone calls
+L138:   2. Camera
+L139:   3. Volume
+L140:   4. Power
+L141:   5. Fingerprint reader
+L142:   6. SIM card slot
+L143:   7. USB-C
+L144: ## The Android you know—with your favorite Microsoft apps built in
+L145: Surface Duo combines the Google Android^{TM} operating system with the best Microsoft 365 apps—including apps like Microsoft Office, Outlook, Microsoft Teams, OneDrive, Microsoft Edge, and more. Since it runs on Android, you can download any other apps and games you want from the Google Play Store. This combination helps you stay connected to people and be more productive, wherever you are. (Some apps and features may require a wireless plan, additional subscriptions, or fees.)
+L146: ## Two screens that adapt to you
+L147: 
+L148: Surface Duo has a revolutionary 360° hinge, so you can fold it however you want. It adapts to you. Hold it like a book and have two apps open side-by-side with one on each screen. No need to switch back and forth between two apps anymore.
+L149: 
+L150: Some apps are made for two screens. When you want more room to type, work, or browse your favorite sites, just drag one of these apps to the middle, then rotate your Surface Duo to enjoy the extra space.
+L151: Ready to talk on the phone or take pictures? Fold one screen back. And when it's time to watch your favorite shows or chat on a video call, just fold your Surface Duo like a tent, relax, and enjoy.
+L152: 
+L153: To learn more, see cite77†Different ways to use Surface Duo and open Tips on your Surface Duo.
+L154: 
+L155: cite78†Video Player†learn-video.azurefd.net L156: ## Get the most from Surface Duo with apps made for two screens
+L157: Some apps are already installed and made for two screens, such as Microsoft Office, Outlook, OneNote, OneDrive, and Microsoft Teams (just to name a few). Just drag the app to the middle and get a whole new view. For example, you’ll see an overview on one side with the details on the other. You don’t have to go back and forth in an app to get the info you need. For a detailed list of apps that are made for two screens, see cite77†Different ways to use Surface Duo .
+L158: 
+L159: cite79†Image: Outlook open on Surface Duo L160: ## Get calls, text messages, notifications and more on your PC
+L161: 
+L162: Your Surface Duo and PC go together. With Link to Windows built into Surface Duo, and the Your Phone app on your PC, you can access everything you need from either device. Ready to get going? Check out cite80†Link your Surface Duo to your PC to learn how to set it up.
+L163: 
+L164: ## Make it yours with Surface accessories
+L165: ### Surface Duo Bumper
+L166: 
+L167: The Surface Duo Bumper is included with your Surface Duo. Just peel off the stickers and attach both parts to help protect your Surface Duo. To learn how to put it on, see cite81†Attach the Surface Duo Bumper .
+L168: 
+L169: cite82†Image: Surface Duo with the bumper on L170: ### Surface Earbuds
+L171: 
+L172: Surface Earbuds (not included) pair quickly over Bluetooth and help you enjoy more—screen free. Use them to listen to music, chat with people, and accomplish more with Microsoft 365. To learn how to set them up, see cite83†Connect Surface Duo to your Surface Earbuds .
+L173: ### Surface Slim Pen
+L174: 
+L175: Use the Surface Slim Pen (not included) to take notes on Surface Duo, jot down ideas, or make quick sketches on the go. Check out cite84†Connect Surface Slim Pen to Surface Duo to learn how to get started.
+L176: 
+L177: cite85†Image: Surface Duo with Surface Earbuds and Surface Slim Pen L178: ## Surface Duo (1st Gen) Tech specs
+L179: 
+L180: cite86†Image: Shows Surface Duo dimensions and features, with device open. L181: 
+L182: cite87†Image: Shows Surface Duo dimensions and features, with device closed. L183: Feature  | Details
+L184: --- | ---
+L185: Dimensions  | Open: 145.2 mm (H) x 186.9 mm (W) x 4.8 mm (T)
+L186: Closed: 145.2 mm (H) x 93.3 mm (W) x 9.9 mm (T at hinge)
+L187: Weight ^{1}  | 250 grams
+L188: Display  | Dual PixelSense™ Fusion Displays open: 8.1” AMOLED, 2700x1800 (3:2), 401 PPI
+L189: Single PixelSense™ Display: 5.6” AMOLED, 1800x1350 (4:3), 401 PPI
+L190: Display Material: Corning® Gorilla® Glass
+L191: Battery Life  | Up to 15.5 hours of Local Video Playback^{2}
+L192: Up to 10 days of Standby Time^{2}
+L193: Up to 27 hours of Talk Time^{2}
+L194: Battery Capacity  | 3577mAh (typical) dual battery^{3}
+L195: Battery charging  | Battery charging using 18W in box power supply
+L196: Camera and video recording  | Adaptive camera 11MP, f/2.0, 1.0 µm, PDAF and 84.0° diagonal FOV optimized with AI for front and rear
+L197: Photos:
+L198:   * Auto mode with low-light & HDR multi-frame photo capture and dynamic range scene detection
+L199:   * Super resolution zoom, and super zoom up to 7x
+L200:   * Portrait mode with adjustable depth control
+L201:   * Panorama mode
+L202:   * Burst mode
+L203: Video recording:
+L204:   * 4K video recording at 30 fps and 60 fps
+L205:   * 1080p video recording at 30 fps and 60 fps
+L206:   * HEVC and H.264 video recording formats
+L207:   * Gyro-based digital video stabilization
+L208: Video conferencing  | Microsoft Teams and Skype video conferencing up to 1080p at 30fps
+L209: High CRI LED Flash for both front and world facing photo and video scenarios
+L210: Countries, carriers, and compatibility ^{4}  | Countries: U.S.
+L211: Unlocked device***⁠:⁠ AT&T, T-Mobile, Verizon Wireless
+L212: Locked device: AT&T
+L213: Networking and connectivity  | WiFi: WiFi-5 802.11ac (2.4/5GHz)
+L214: Bluetooth: Bluetooth® 5.0
+L215: LTE: 4x4 MIMO, Cat 20 DL / Cat 5 UL, 5CA, LAA. Up to 1.2Gbps Download / Up to 150Mbps Upload
+L216: Bands Supported
+L217: FDD-LTE: 1,2,3,4,5,7,8,12,13,14,19,20,25,26,28,29,30,66
+L218: TD-LTE: 38,39,40,41,46
+L219: WCDMA: 1,2,5,8
+L220: GSM/GPRS: GSM-850, E-GSM-900, DCS-1800, PCS-1900
+L221: Location: GPS, Galileo, GLONASS, BeiDou, QZSS
+L222: SIM  | One eSIM^{5} and one Nano SIM
+L223: Note: AT&T locked device will not support eSIM
+L224: Processor  | Qualcomm® Snapdragon™ 855 Mobile Platform optimized for the dual-screen experience
+L225: Connections  | USB-C® 3.1
+L226: Storage and memory ^{6}  | 128GB or 256GB UFS 3.0 of internal storage^{6}
+L227: 6GB DRAM
+L228: Audio  | Mono speaker, Dual Mic noise suppression and echo cancellation optimized for productive use in all postures
+L229: Best-in-class Full Duplex communication for voice calls in hands-free mode
+L230: Audio formats supported: 3GP, MP3, MP4, MKV, WAV, OGG, M4A, AAC, TS, AMR, FLAC, MID, MIDI, RTTL, RTX, OTA, IMY
+L231: Qualcomm® aptX™
+L232: Software ^{7}  | Microsoft built-in applications:
+L233:   * Microsoft Office: Word, Excel, PowerPoint, Office Lens, PDF Reader, and more
+L234:   * Microsoft Outlook
+L235:   * Microsoft Teams
+L236:   * Microsoft OneDrive
+L237:   * Microsoft Edge
+L238:   * Microsoft OneNote
+L239:   * Microsoft To Do
+L240:   * Microsoft News
+L241:   * Microsoft Authenticator
+L242:   * Microsoft Bing Search
+L243:   * Intune Company Portal
+L244:   * LinkedIn
+L245:   * Microsoft Solitaire Collection
+L246:   * Surface Audio
+L247: Microsoft Surface Duo UI core features:
+L248:   * Dual screen windowing
+L249:   * Adaptive modes
+L250:   * App Groups
+L251:   * Microsoft 365 Feed
+L252:   * Dynamic dock
+L253:   * Universal Search
+L254:   * Adaptive Camera
+L255:   * Microsoft SwiftKey Adaptive Keyboard
+L256:   * Your Phone Companion - Link to Windows
+L257: Other preinstalled apps:
+L258:   * Google Search
+L259:   * Google Assistant
+L260:   * Google Calendar
+L261:   * Google Drive
+L262:   * Google Duo
+L263:   * Google Photos
+L264:   * Google Play Movies & TV
+L265:   * Google Play Store
+L266:   * Google Maps
+L267:   * Chrome
+L268:   * Gmail
+L269:   * YouTube
+L270:   * YouTube Music
+L271:   * Contacts
+L272:   * Messages
+L273:   * Phone
+L274:   * Files
+L275:   * Clock
+L276:   * Calculator
+L277:   * Sound recorder
+L278:   * Spotify (Unlocked)
+L279:   * HBO MAX (AT&T)
+L280:   * AT&T TV (AT&T)
+L281:   * My AT&T (AT&T)
+L282:   * Call Protect (AT&T)
+L283:   * Amazon Shopping (AT&T)
+L284:   * NBA (AT&T)
+L285: Operating System: Android™ 10
+L286: Sensors  | Dual Accelerometer
+L287: Dual Gyroscope
+L288: Dual Magnetometer
+L289: Dual Ambient Light Sensor
+L290: Proximity Sensor
+L291: Hall Sensor
+L292: Fingerprint Sensor
+L293: Video playback  | Video Playback Formats: ^{8} MKV, MOV, MP4, H.265(HEVC), AVI, WMV, TS, 3GP, FLV, WEBM
+L294: Wireless: Chromecast support
+L295: Wired: DisplayPort over USB-C®. Supports video out when connecting via HDMI Adapter*
+L296: Exterior  | Exterior Material: Corning® Gorilla® Glass
+L297: Color: Glacier
+L298: Security and authentication  | Biometric lock type: Fingerprint reader (1:100K FAR <3% FRR)
+L299: Lock type: Swipe, PIN, password
+L300: Security applications pre-loaded on device: Microsoft Authenticator
+L301: Language support  | All supported languages (Android™ 10)
+L302: Pen and inking  | Supports all in market generations of Surface Slim Pen, Surface Pen and Surface Hub 2 Pen*
+L303: Simultaneous Pen and touch are supported
+L304: What’s in the box  |
+L305:   * Surface Duo
+L306:   * Surface Duo Bumper (Color: Glacier)
+L307:   * Surface Duo USB-C® Power Supply (18w)
+L308:   * Quick Start Guide
+L309:   * Warranty and Compliance Guide
+L310:   * SIM Ejector tool
+L311: Warranty ^{9}  | 1-year limited hardware warranty
+L312: The Microsoft Store Promise for Surface  | 60-day return policy
+L313: 90 days of free technical phone support
+L314: Free virtual workshops and training
+L315: 
+L316: Features and app availability may vary by region.
+L317: Your device contains magnets, which may damage objects such as credit cards, passbooks, access cards, boarding passes, or parking passes. Please keep a safe distance between your device and objects that are affected by magnets. Please review cite88†https:⁠//support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions for important safety information about your device.
+L318: ⁠*⁠ Some devices, accessories, and software sold separately. Additional fees and/or subscriptions required for some apps and features. Available apps may vary by carrier and over time. Calling requires data plan; see carrier for pricing and coverage details.
+L319: ⁠**⁠ Some devices, accessories, and software sold separately.
+L320: ⁠***⁠ T-Mobile customers coming from Sprint’s network require a T-Mobile SIM card.
+L321: 1 Excluding Surface Duo Bumper.
+L322: 2 Local Video Playback: Testing conducted by Microsoft in July 2020 using preproduction Surface Duo units and software. Testing consisted of full battery discharge during local video playback on a single screen. Video playback consisted of a repeated 30-minute .mp4 file in 1080p at 24 fps. All settings were default except: LTE and Wi-Fi were both associated with a network with ‘ask to join’ disabled and Adaptive Brightness was disabled, screen was set to 100 nits.
+L323: Battery life varies significantly with network and feature configuration, signal strength, settings, usage, and other factors. Battery has limited recharge cycles and cannot be replaced.
+L324: Standby Time: Testing conducted by Microsoft in July 2020 in an AT&T Validated Lab using preproduction Surface Duo units and software. Testing conducted in accordance with AT&T requirements and test specifications.  All settings were default, and network settings were: connected to LTE, and Wi-Fi was enabled but not connected. Battery life varies significantly with network and feature configuration, signal strength, settings, usage and other factors.
+L325: Battery has limited recharge cycles and cannot be replaced.
+L326: Talk Time: Testing conducted by Microsoft in July 2020 in an AT&T Validated Lab using preproduction Surface Duo units and software. Testing conducted in accordance with AT&T requirements and test specifications. All settings were default, and network settings were: connected to LTE, and Wi-Fi was enabled but not connected. Battery life varies significantly with network and feature configuration, signal strength, settings, usage and other factors. Battery has limited recharge cycles and cannot be replaced.
+L327: 3 Specified minimum dual battery capacity is 3462mAh.
+L328: 4 Network availability and coverage vary by carrier. See your carrier for details.
+L329: 5 Use of eSIM requires a wireless service plan (which may include restrictions on switching service providers and roaming, even after contract expiration). Not all carriers support eSIM. AT&T locked devices will not support eSIM. Use of eSIM in Surface Duo may be disabled when purchased from some carriers. See your carrier for details.
+L330: 6 System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB = 1 billion bytes. 1 TB = 1,000 GB. See cite89†Surface.com/Storage for more details.
+L331: 7 Some apps and features may require a wireless plan, additional subscriptions, or fees.
+L332: 8 Video playback formats will require 3rd party apps from the Google Play Store; fees may apply.
+L333: 9 Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L334: ## Related topics
+L335: 
+L336:   * cite90†Set up a mobile data connection L337:   * cite91†Connect to Wi-Fi L338: ## Need more help?
+L339: 
+L340:   * cite92†Personal accounts L341:   * cite93†Work/school accounts L342: 
+L343: Technical support
+L344: 
+L345: For technical support, cite94†open the Surface app†go.microsoft.com or cite95†web browser†go.microsoft.com , describe your problem and select Get Help.
+L346: 
+L347: Community support
+L348: 
+L349: Communities can help you ask questions, and hear from experts with rich knowledge. cite96†Ask the Community†go.microsoft.com .
+L350: 
+L351: Other support
+L352: If you can't use your Surface or have a question about something else, cite97†open Get Help†go.microsoft.com to get other support online.
+L353: 
+L354: cite98†Image: Need more help grid spacer. L355: 
+L356: Technical support
+L357: 
+L358: You can get self-help support from cite94†the Surface app†go.microsoft.com or cite95†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L359: 
+L360: Service & repair
+L361: For Surface for Business, visit cite99†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L362: 
+L363: For IT Admins
+L364: 
+L365: IT Admins should view cite100†Surface for Business†go.microsoft.com and cite101†Support for Business & Education customers†go.microsoft.com .
+L366: 
+L367: cite98†Image: Need more help grid spacer. L368: ## Was this information helpful?
+L369: 
+L370: [Button: Yes] [Button: No]
+L371: 
+L372: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L373: 
+L374: What affected your experience?
+L375: 
+L376: [Input] Resolved my issue
+L377: 
+L378: [Input] Clear instructions
+L379: 
+L380: [Input] Easy to follow
+L381: 
+L382: [Input] No jargon
+L383: 
+L384: [Input] Pictures helped
+L385: 
+L386: [Input] Other
+L387: 
+L388: [Input] Didn't match my screen
+L389: 
+L390: [Input] Incorrect instructions
+L391: 
+L392: [Input] Too technical
+L393: 
+L394: [Input] Not enough information
+L395: 
+L396: [Input] Not enough pictures
+L397: 
+L398: [Input] Other
+L399: 
+L400: Any additional feedback? (Optional)
+L401: [Button: Submit feedback]
+L402: 
+L403: By pressing submit, your feedback will be used to improve Microsoft products and services. cite102†Privacy Statement.†privacy.microsoft.com L404: 
+L405: What's new
+L406: 
+L407:   * cite103†Surface Laptop Ultra†www.microsoft.com L408:   * cite104†Surface Pro†www.microsoft.com L409:   * cite105†Surface Laptop†www.microsoft.com L410:   * cite106†Surface RTX Spark Dev Box†www.microsoft.com L411:   * cite107†Explore Copilot†www.microsoft.com L412:   * cite108†Explore Microsoft products†www.microsoft.com L413:   * cite109†Windows 11 apps†www.microsoft.com L414: Microsoft Store
+L415: 
+L416:   * cite110†Account profile†account.microsoft.com L417:   * cite69†Download Center†www.microsoft.com L418:   * cite111†Microsoft Store support†go.microsoft.com L419:   * cite112†Returns†www.microsoft.com L420:   * cite113†Order tracking†www.microsoft.com L421:   * cite46†Certified Refurbished†www.microsoft.com L422:   * cite114†Microsoft Store Promise†www.microsoft.com L423:   * cite115†Flexible Payments†www.microsoft.com L424: 
+L425: Education
+L426:   * cite70†Microsoft in education†www.microsoft.com L427:   * cite116†Devices for education†www.microsoft.com L428:   * cite117†Microsoft Teams for Education†www.microsoft.com L429:   * cite118†Microsoft 365 Education†www.microsoft.com L430:   * cite119†How to buy for your school†www.microsoft.com L431:   * cite120†Educator training and development†education.microsoft.com L432:   * cite121†Deals for students and parents†www.microsoft.com L433:   * cite122†AI for education†www.microsoft.com L434: 
+L435: Business
+L436:   * cite123†Microsoft AI†www.microsoft.com L437:   * cite53†Microsoft Security†www.microsoft.com L438:   * cite54†Dynamics 365†www.microsoft.com L439:   * cite55†Microsoft 365†www.microsoft.com L440:   * cite56†Microsoft Power Platform†www.microsoft.com L441:   * cite38†Microsoft Teams†www.microsoft.com L442:   * cite124†Microsoft Copilot†www.microsoft.com L443:   * cite58†Small Business†www.microsoft.com L444: 
+L445: Developer & IT
+L446:   * cite60†Azure†azure.microsoft.com L447:   * cite61†Microsoft Developer†developer.microsoft.com L448:   * cite62†Microsoft Learn†learn.microsoft.com L449:   * cite125†Support for AI marketplace apps†www.microsoft.com L450:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L451:   * cite126†Microsoft Marketplace†marketplace.microsoft.com L452:   * cite127†Software companies†www.microsoft.com L453:   * cite67†Visual Studio†visualstudio.microsoft.com L454: 
+L455: Company
+L456:   * cite128†Careers†careers.microsoft.com L457:   * cite129†About Microsoft†www.microsoft.com L458:   * cite130†Company news†news.microsoft.com L459:   * cite131†Privacy at Microsoft†www.microsoft.com L460:   * cite132†Investors†www.microsoft.com L461:   * cite133†Diversity and inclusion†www.microsoft.com L462:   * cite134†Accessibility†www.microsoft.com L463:   * cite135†Sustainability†www.microsoft.com L464: 
+L465: cite136†English (United States) cite137†Your Privacy Choices†aka.ms cite137†Your Privacy Choices†aka.ms cite138†Consumer Health Privacy†go.microsoft.com L466:   * cite139†Sitemap†www.microsoft.com L467:   * cite140†Contact Microsoft L468:   * cite141†Privacy†go.microsoft.com L469:   * cite142†Manage cookies L470:   * cite143†Terms of use†go.microsoft.com L471:   * cite144†Trademarks†go.microsoft.com L472:   * cite145†Safety & eco†go.microsoft.com L473:   * cite146†Recycling†www.microsoft.com L474:   * cite147†About our ads†choice.microsoft.com L475:   * © Microsoft 2026
+

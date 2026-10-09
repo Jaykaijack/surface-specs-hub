@@ -13,7 +13,8 @@ assert.equal(t.sumMass([1220,120,14,82]),1436);
 assert.equal(t.sumMass([1220,null]),null);
 assert.equal(t.sumMass([null,0]),null);
 t.weightDeviceId='laptop-13-inch';t.weightWithKeyboard=false;t.weightWithPen=false;t.weightWithMouse=false;t.weightCharger='none';
-assert.match(t.renderWeightCalculator(),/>1220 </);
+assert.match(t.renderWeightCalculator(),/待确认配置/,'未绑定的消费者旧重量不能用于计算');
+t.weightDeviceId='laptop-13-inch-biz';assert.match(t.renderWeightCalculator(),/>1220 </);
 t.weightWithPen=true;assert.match(t.renderWeightCalculator(),/待确认配置/);
 assert.doesNotMatch(t.renderWeightCalculator(),/0\.68|真实办公续航估算/);
 t.upgradeOldId='pro-7';t.upgradeNewId='pro-7';
@@ -188,3 +189,18 @@ assert.match(Catalog.getSpec(Catalog.getDevice('laptop-3'),'ssdRemovable'), /不
 assert.match(Catalog.evidenceFor(Catalog.getDevice('go-4'),'warranty').configurationScope, /翻新版/);
 for(const source of fullReview.fieldReviewExtracts) assert.equal(crypto.createHash('sha256').update(fs.readFileSync(source.path)).digest('hex'),source.sha256);
 console.log('Expanded field review PASS: SKU-limited data, service restrictions, preserved source extract hashes');
+
+// An explicit canonical value is not invalidated by an unrelated stale alias.
+assert.equal(Catalog.getSpec({specs:{batteryCapacityWh:'47 Wh',batteryWh:'wrong'},unverifiedFields:['batteryWh']},'batteryCapacityWh'),'47 Wh');
+assert.equal(Catalog.getSpec({specs:{batteryWh:'wrong'},unverifiedFields:['batteryWh']},'batteryCapacityWh'),undefined);
+assert.equal(t.guidePriceYuan(Catalog.getDevice('laptop-13-inch')),null,'unverified historic price must not drive recommendations');
+const priceFixture={id:'fixture',specs:{startingPriceCny:'8999元',officialDocUrl:'https://www.microsoftstore.com.cn/fixture'},specEvidence:{startingPriceCny:{configuration:'fixture',value:'8999元',sourceUrl:'https://www.microsoftstore.com.cn/fixture',region:'CN',reviewedAt:'2026-10-09'}}};
+assert.equal(t.guidePriceYuan(priceFixture),8999);
+priceFixture.specs.startingPriceCny='7999元';assert.equal(t.guidePriceYuan(priceFixture),null,'changed price expires old evidence');
+assert.match(Catalog.getSpec(Catalog.getDevice('pro-11-biz-intel'),'batteryCapacityWh'), /额定47 Wh；最小46 Wh/);
+assert.doesNotMatch(Catalog.getSpec(Catalog.getDevice('pro-11-biz-intel'),'batteryCapacityWh'), /53/);
+assert.match(Catalog.getSpec(Catalog.getDevice('laptop-go-2'),'headphoneJack'), /尺寸待核验/);
+for (const d of Catalog.listDevices().filter(d=>d.id.startsWith('xbox-series-s'))) {
+  assert.equal(Catalog.getSpec(d,'cpuCores'),null,'conflicting CPU clocks must not leak through an alias');
+}
+console.log('Scoped corrections PASS: Intel battery, uncertain jack size, conflicting Series S clocks');

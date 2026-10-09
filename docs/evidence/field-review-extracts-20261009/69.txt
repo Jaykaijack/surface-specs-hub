@@ -1,0 +1,338 @@
+XBOX Series X25 Special Edition Console | Microsoft Store  (https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3)
+citeturn83view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3","lineno":150}); Total lines: 394
+L0: This is the Trace Id: ef508687b21e63bbacec1fa0fa2ac686
+L1: 
+L2: Translate to English
+L3: 
+L4: ## You are shopping Microsoft Store in: {0}
+L5: 
+L6: Are you looking for Microsoft Store in: {0}?
+L7: 
+L8: [Button: ]
+L9: 
+L10: [Button: Stay in {0} ]
+L11: 
+L12: cite0†Go to {0} L13: 
+L14: ## Sign me up
+L15: ## Thank you!
+L16: 
+L17: Stay informed about special deals, the latest products, and more from Microsoft Store.
+L18: 
+L19: Email address (required) [Input]
+L20: 
+L21: Location (required)
+L22: 
+L23: [Select]
+L24: 
+L25: I would like information, tips, and offers about Microsoft Store and other Microsoft products and services. cite1†Privacy statement†go.microsoft.com .
+L26: 
+L27: By clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.
+L28: To withdraw consent or manage your contact preferences, visit the cite2†Promotional Communications Manager†go.microsoft.com .
+L29: 
+L30: cite1†Privacy statement†go.microsoft.com .
+L31: 
+L32: [Button: Sign Up ]
+L33: 
+L34: You’re now signed up to receive Microsoft Store emails. Thank you!
+L35: 
+L36: cite3†Gaming cite4†XBOX Wireless Controller – Gears of War: E-Day Limited Edition – with XBOX Design Lab†xboxdesignlab.xbox.com cite5†XBOX Wireless Controller – Gears of War: E-Day Limited Edition L37: cite6†Image: XBOX Series X25 Limited Edition and the XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com L38: 
+L39: New
+L40: 
+L41: XBOX Series X25 Limited Edition
+L42: 
+L43: 25 years in the making. Engraved with individual number.
+L44: Includes Halo: Campaign Evolved.^{cite7†1 }
+L45: 
+L46: cite8†Pre-order now L47: 
+L48: [Input] [Input]
+L49: 
+L50: [Input]
+L51: 
+L52: cite9†Image: Front angled view of the XBOX Series X25Limited Edition and the XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com L53: ## XBOX Series X25 Limited Edition
+L54: 
+L55: 5 images
+L56: cite10†Image: Front angled view of the XBOX Series X25Limited Edition and the XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com cite11†Image: Back view of the XBOX Series X25Limited Edition†cdn-dynmedia-1.microsoft.com cite12†Image: Left angle view of the XBOX Series X25Limited Edition and the XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com cite13†Image: Green-armored futuristic soldier holding a rifle in a sci-fi landscape with alien structures in the background. †cdn-dynmedia-1.microsoft.com cite14†Image: Front facing view of the XBOX Wireless Controller X25 Special Edition †cdn-dynmedia-1.microsoft.com L57: [Button: Open gallery]
+L58: 
+L59: NEW
+L60: # XBOX Series X25 Limited Edition
+L61: 
+L62: [Button: Add to wish list]
+L63: ## This was added to your wishlist.
+L64: 
+L65: You added XBOX Series X25 Limited Edition to your wish list. You can share this list with others.
+L66: 
+L67: [Button: Continue shopping]cite15†View wish list L68: 
+L69: Introducing the limited edition XBOX Series X25 and translucent OG Green with 1TB SSD storage. Includes XBOX Wireless Controller X25 Special Edition, engraved numbered console, and Halo: Campaign Evolved.¹
+L70: 
+L71: Starting From $899.99
+L72: 
+L73: Release date November 13, 2026 at 5:00 AM
+L74: 
+L75: Out of stock
+L76: 
+L77: Build your device
+L78: Free 2-3 day shipping. Free returns.
+L79: 
+L80: cite16†Halo†www.xbox.com : Campaign Evolved is rated M17+
+L81: 
+L82: cite17†Overview cite18†Tech specs L83: 
+L84: Previous Next
+L85: ## 25 years in the making
+L86: 
+L87: Experience the fastest, most powerful Xbox ever with Xbox Series X, now available with a 1TB SSD in translucent OG Green.
+L88: 
+L89:   * ### True 4K
+L90: 
+L91: Gaming and 8K ready
+L92: 
+L93:   * ### 120 FPS
+L94: 
+L95: Up to 120 FPS
+L96: 
+L97:   * ### 1TB
+L98: 
+L99: Custom SSD
+L100: 
+L101: Slide %{start} of %{total}. %{slideTitle}
+L102: 
+L103: cite19†Skip Features of Xbox Series X. L104: 
+L105: "Previous slide"
+L106: 
+L107:   1.   2.   3.   4.   5. "Next slide"
+L108: 
+L109: cite20†Image: Mosaic of XBOX backward compatible game titles†cdn-dynmedia-1.microsoft.com L110: ## Thousands of games across four generations
+L111: 
+L112: Enjoy thousands of digital games from four generations of XBOX, with hundreds of optimized titles that look and play better than ever.
+L113: 
+L114: cite21†Image: View of a city and a helicopter†cdn-dynmedia-1.microsoft.com L115: 
+L116: ## True 4K gaming
+L117: 
+L118: Immerse yourself with sharper characters, brighter worlds, and impossible details with true-to-life 4K.
+L119: 
+L120: cite22†Image: TV showing the Quick Resume menu on the XBOX Series X†cdn-dynmedia-1.microsoft.com L121: ## Change the game
+L122: 
+L123: Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS – all powered by XBOX Velocity Architecture.^{cite7†2 }
+L124: 
+L125: cite23†Image: Soldier in uniform carrying a gun†cdn-dynmedia-1.microsoft.com L126: ## Looks, sounds, plays better
+L127: 
+L128: DirectX ray tracing delivers a heightened sensory experience—and advantage—with hyper-dynamic living worlds full of true-to-life lighting, shadows, reflections, and acoustics.
+L129: 
+L130: cite24†Image: Three pieces of furniture are arranged around a TV. Animated sound waves bounce around the room, showing 3D Spatial Sound†cdn-dynmedia-1.microsoft.com L131: ## Listen, you’re being surrounded
+L132: 
+L133: Bring your games and movies to life with advanced 3D spatial sounds, which produces rich, dynamic audio environments.
+L134: 
+L135: End of Features of Xbox Series X. section
+L136: ## XBOX Game Pass Ultimate
+L137: 
+L138: Be the first to play new games on day one. Plus, enjoy hundreds of high-quality games with friends on console and PC. Tap into the heart of the XBOX community and join millions of players ready to play together.
+L139: 
+L140: cite25†Image: Images from several XBOX games.†cdn-dynmedia-1.microsoft.com L141: ## Meet the XBOX Wireless Controller X25 Special Edition
+L142: 
+L143: Experience the modernized XBOX Wireless Controller, designed for enhanced comfort during gameplay.^{cite7†2 }
+L144: 
+L145: cite26†LEARN MORE L146: 
+L147: cite27†Image: Front facing of XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com L148: 
+L149: cite28†Image: ABXY buttons of the XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com L150: ### Play with legacy
+L151: 
+L152: ABXY buttons in original XBOX controller colors.
+L153: 
+L154: cite29†Image: Close up of the share, menu, and XBOX button of the XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com L155: 
+L156: ### “X” marks the spot
+L157: 
+L158: XBOX button inspired by the first green X bursting through.
+L159: 
+L160: cite30†Image: Close up of the trigger and bumper on the XBOX Wireless Controller X25 Special Edition†cdn-dynmedia-1.microsoft.com L161: ### Timeless triggers and bumper
+L162: 
+L163: Black triggers. White bumper. Classic XBOX style.
+L164: 
+L165: cite31†Image: XBOX Wireless Controllers in various colors.†cdn-dynmedia-1.microsoft.com L166: 
+L167: cite32†Image: XBOX Rechargeable Battery + USB-C®.†cdn-dynmedia-1.microsoft.com L168: 
+L169: ## Game-changing gear
+L170: 
+L171: Enhance your experience with controllers, headsets, and more^{cite33†3 }
+L172: 
+L173: cite34†Shop accessories L174: 
+L175: cite35†Image: XBOX Wireless Headset.†cdn-dynmedia-1.microsoft.com L176: ## Shop other products
+L177: 
+L178: cite36†Skip Shop other products L179: 
+L180: Previous slide Next slide
+L181: 
+L182: cite37†Image†cdn-dynmedia-1.microsoft.com L183: 
+L184: ### cite38†XBOX Series X – 1TB Digital Edition (White) L185: 
+L186: $749.99
+L187: 
+L188: $749.99
+L189: 
+L190: Experience the fastest, most powerful XBOX ever with XBOX Series X, now all-digital...Select XBOX Series X – 1TB Digital Edition (White) for more information.
+L191: 
+L192: cite39†Image†cdn-dynmedia-1.microsoft.com L193: ### cite40†XBOX Series X L194: 
+L195: $799.99
+L196: 
+L197: $799.99
+L198: 
+L199: Introducing XBOX Series X, the fastest, most powerful XBOX ever. Play thousands of...Select XBOX Series X for more information.
+L200: 
+L201: cite41†Image†cdn-dynmedia-1.microsoft.com L202: 
+L203: ### cite42†XBOX Series S L204: 
+L205: $499.99
+L206: 
+L207: $499.99
+L208: 
+L209: Get the XBOX Series S, the smallest, sleekest XBOX ever. At 60% smaller than XBOX...Select XBOX Series S for more information.
+L210: 
+L211: cite39†Image†cdn-dynmedia-1.microsoft.com L212: 
+L213: Save up to $150.00
+L214: ### cite43†XBOX Series X (Certified Refurbished) L215: 
+L216: Originally $799.99 now $649.99
+L217: 
+L218: $799.99 $649.99
+L219: 
+L220: Introducing XBOX Series X (Certified Refurbished), the fastest, most powerful XBOX...Select XBOX Series X (Certified Refurbished) for more information.
+L221: 
+L222: cite37†Image†cdn-dynmedia-1.microsoft.com L223: 
+L224: Save up to $150.00
+L225: ### cite44†XBOX Series X – 1TB Digital Edition (Certified Refurbished) L226: 
+L227: Originally $749.99 now $599.99
+L228: 
+L229: $749.99 $599.99
+L230: 
+L231: Experience the fastest, most powerful XBOX ever with XBOX Series X (Certified...Select XBOX Series X – 1TB Digital Edition (Certified Refurbished) for more information.
+L232: 
+L233: cite41†Image†cdn-dynmedia-1.microsoft.com L234: 
+L235: Save up to $100.00
+L236: ### cite45†XBOX Series S – 1TB (Certified Refurbished) L237: 
+L238: Originally $599.99 now $499.99
+L239: 
+L240: $599.99 $499.99
+L241: 
+L242: Experience the best value in gaming with XBOX Series S (Certified Refurbished), now...Select XBOX Series S – 1TB (Certified Refurbished) for more information.
+L243: 
+L244: cite41†Image†cdn-dynmedia-1.microsoft.com L245: 
+L246: Save up to $100.00
+L247: ### cite46†XBOX Series S (Certified Refurbished) L248: 
+L249: Originally $499.99 now $399.99
+L250: 
+L251: $499.99 $399.99
+L252: 
+L253: Introducing XBOX Series S (Certified Refurbished), the smallest, sleekest XBOX ever...Select XBOX Series S (Certified Refurbished) for more information.
+L254: 
+L255: cite47†Image†cdn-dynmedia-1.microsoft.com L256: ### cite48†XBOX Series S – 1TB (White) L257: 
+L258: $599.99
+L259: 
+L260: $599.99
+L261: 
+L262: Experience the best value in gaming with XBOX Series S, now available with a 1TB SSD...Select XBOX Series S – 1TB (White) for more information.
+L263: 
+L264: cite49†Image†cdn-dynmedia-1.microsoft.com L265: 
+L266: Out of stock
+L267: ### cite50†XBOX Series X25 Limited Edition L268: 
+L269: $899.99
+L270: 
+L271: $899.99
+L272: 
+L273: Introducing the limited edition XBOX Series X25 and translucent OG Green with 1TB SSD...Select XBOX Series X25 Limited Edition for more information.
+L274: 
+L275: cite51†Back to Next and Previous controls L276: 
+L277: End of Shop other products
+L278: 
+L279: ##
+L280: 
+L281: Why buy from Microsoft Store
+L282: 
+L283: cite52†Image†cdn-dynmedia-1.microsoft.com L284: ### Trade in. Gift more.
+L285: 
+L286: When you trade in an eligible device, you get cash back to spend on gifts.
+L287: 
+L288: cite53†Learn more about shipping†support.microsoft.com L289: 
+L290: cite54†Image†cdn-dynmedia-1.microsoft.com L291: 
+L292: ### Sleigh now, pay later
+L293: 
+L294: From gifting to upgrading, find Surface and XBOX at prices and payment plans that work for you.
+L295: 
+L296: cite55†Learn about buy now, pay later options L297: 
+L298: cite56†Image†cdn-dynmedia-1.microsoft.com L299: ### Free returns through January 31, 2027
+L300: 
+L301: Don’t love it? Return almost any physical product by January 31, 2027, for a full refund. Some exclusions apply.
+L302: 
+L303: cite57†Learn about Microsoft Complete L304: 
+L305: cite58†Image†cdn-dynmedia-1.microsoft.com L306: ### Fast, free delivery
+L307: 
+L308: Get your gifts in just a few days with free delivery. No minimum purchase required.
+L309: 
+L310: cite59†Learn about returns L311: 
+L312: cite60†Learn about all the benefits of shopping at Microsoft Store​ L313: 
+L314: cite61†Microsoft’s Limited Warranty†support.microsoft.com is in addition to your consumer law rights.
+L315: [cite62†1 ]Available in select markets. Your digital content will be delivered directly to your console during setup; no codes required. All included digital content will be attached to the first Microsoft Account that redeems it. cite63†Learn More†www.xbox.com .
+L316:   * [cite64†2 ] See cite65†XBOX Controller Compatibility†www.xbox.com . Use with controller compatible games. XBOX Cloud Gaming requires Game Pass (XBOX Cloud Gaming not included with PC Game Pass) subscription and supported device (both sold separately). Cloud playable games not included with Game Pass are sold separately, and may be made available with Game Pass in the future. Game catalog varies.
+L317: Stream directly on cite66†XBOX play†www.xbox.com consoles, or with the XBOX app or at cite66†XBOX play†www.xbox.com on supported devices. Select cite67†regions†www.xbox.com (XBOX.com/regions) and devices at cite68†XBOX Cloud devices†www.xbox.com . See cloud gaming catalog (cite66†XBOX play†www.xbox.com ).
+L318:   * [cite69†3 ] XBOX Wireless Headset, XBOX Rechargeable Battery + USB-C®, XBOX Wireless Controller - Carbon Black, XBOX Wireless Controller - Deep Pink, XBOX Wireless Controller - Velocity Green, XBOX Wireless Controller - Robot White, XBOX Wireless Controller - Pulse Red, XBOX Wireless Controller - Shock Blue, XBOX Wireless Controller - Electric Volt sold separately.
+L319:   * A credit card is required for pre-order, but your card will not be charged until your order is shipped or the product is made available for download. However, an authorization hold or small temporary charge may be placed on your credit or debit card as a result of your pre-order. Note that we can't charge your card and complete your order if your card expires between the date you pre-ordered the item and the date the item becomes available.
+L320: Please ensure that your billing and contact information is current at all times. Pre-orders are covered by our cite70†Pre-order Policy†support.microsoft.com and can be reviewed, updated, or canceled at any time before pre-order items are released.
+L321: 
+L322: 
+L323: Discounts: Supplies limited. Actual savings depends on product availability.
+L324:   * Returns: Holiday extended return policy available with eligible physical products purchased between October 1, 2026 - December 2, 2026 from Microsoft Store online and Microsoft Experience Centers in select markets. Holiday purchases made during that window can be returned through January 31, 2027.
+L325: For purchases made outside the window of October 1, 2026 – December 2, 2026, returns are available with eligible physical products purchased from Microsoft Store online and Microsoft Experience Centers in select markets. Return process must be started within 60 days after customer receives the product. Limit 5 product returns per eligible customer purchase. Excludes ROG Xbox Ally X, ROG Xbox Ally, Surface Hub, HoloLens, and Windows DevKit. Applicable return policy applies.
+L326: For purchases made at Microsoft Store, see applicable cite71†Microsoft Terms of Sale for more information. For purchases made at a Microsoft Experience Center, see receipt for more information. Microsoft reserves the right to modify or discontinue offers at any time.
+L327:   * Price protection: Microsoft Store Price Adjustment: Holiday extended price protection valid on purchases of qualifying physical consumer products purchased from Microsoft Store online and Microsoft Experience centers in select markets between October 1, 2026 – December 2, 2026. Holiday purchase price adjustment may be requested until January 31, 2027.
+L328: Purchases made outside the window of October 1, 2026 – December 2, 2026: Price adjustment available on purchases of qualifying physical consumer products made at Microsoft Store and Microsoft Experience Centers in select markets for 60 days from the date product is received.
+L329: Eligible Retailer Price Adjustment: Valid on purchases of qualifying new consumer physical products from Microsoft Store and Microsoft Experience Centers in select markets for 60 days from the date product is received. Excludes ROG Xbox Ally, ROG Xbox Ally X, Surface for Business devices and accessories, and refurbished products. An Eligible Retailer Price Adjustment cannot be requested at time of purchase.
+L330: Microsoft reserves the right to verify an eligible retailer’s advertised price and availability of the product. The product sold by the eligible retailer must be identical to the product sold by Microsoft and must be in stock for purchase at the eligible retailer at the reduced price. Exclusions apply.
+L331: Both price adjustments: Customer is eligible only if the product is in stock for purchase at Microsoft Store or a Microsoft Experience Center. Customer must contact Microsoft to request the adjustment. For purchases from Microsoft Store, contact Microsoft Store Sales and Support with your Microsoft Account information and any other information requested by a representative. For purchases from a Microsoft Experience Center, you must return to the location with your receipt.
+L332: Limit 1 price adjustment total per product. Excludes Surface Hub, HoloLens, and Windows DevKit. See cite72†Microsoft Store Price Protection for full terms and full list of eligible retailers.
+L333:   * Trade-In: Available only through the Microsoft Store online in the United States. Offer valid for reimbursements after trade in of a qualifying device (PC, laptop, mobile phone, tablet, or video game console).
+L334: To be eligible for trade in, (i) you must own the qualifying device, (ii) the device must power on, (iii) the battery must hold a charge (the device must not be required to be plugged in to operate), and (iv) the device must be in fully-functional, working condition and not have broken or missing components, a cracked display or screen, liquid damage, modification(s) or the device warranty seal broken.
+L335: The device cannot be password protected and must include its original chargers, accessories, and hard drive. Customer must mail in the qualifying trade-in device to be eligible for reimbursement. Devices determined to not meet eligibility criteria may be shipped back to the customer or recycled. Recycled devices are not eligible for cash back. All trade-ins are final. Cannot be transferred or otherwise redeemed for cash or gift cards, or credit towards other devices or products.
+L336: May not be combined with other offers. Microsoft reserves the right to modify or discontinue offers at any time.
+L337: This offer is operated by Teladvance, LLC and is not sponsored by Microsoft. Any appraised value will be determined at trade in and provided by Teladvance. All trade-ins and reimbursements are subject to Teladvance’s sole discretion and approval.
+L338: ##
+L339: 
+L340: ## Processor
+L341: 
+L342:  | CPU: 8X Cores @ 3.8 GHz (3.6 GHz w/SMT) Custom Zen 2 CPU
+L343: GPU: 12 TFLOPS, 52 CUs @1.825 GHz Custom RDNA 2 GPU
+L344: SOC Die Size: 360.45 mm
+L345: Process: 7nm Enhanced
+L346: ## Memory & Storage
+L347: 
+L348:  | Memory: 16GB GDDR6 w/320 bit-wide bus
+L349: Memory bandwidth: 10GB @ 560 GB/s, 6GB @ 336 GB/s
+L350: Internal storage: 1TB Custom NVME SSD
+L351: I/O throughput: 2.4 GB/s (Raw), 4.8 GB/s (Compressed, with custom hardware decompression block)
+L352: Expandable storage: Support for 1TB Storage Expansion Cards for XBOX Series X|S matches internal storage exactly (sold separately). Support for USB 3.1 external HDD (sold separately).
+L353: ## Video Capabilities
+L354: 
+L355:  | Gaming resolution: True 4K
+L356: High Dynamic Range: Up to 8K HDR
+L357: Optical Drive: 4K UHD Blu-Ray
+L358: Performance target: Up to 120 FPS
+L359: HDMI features: Auto Low Latency Mode. HDMI Variable Refresh Rate. AMD FreeSync.
+L360: 
+L361: ## Sound Capabilities
+L362: 
+L363:  | Dolby Digital 5.1
+L364: DTS 5.1
+L365: Dolby TrueHD with Atmos
+L366: Up to 7.1 L-PCM
+L367: ## Ports & Connectivity
+L368: 
+L369:  | HDMI: 1x HDMI 2.1 port
+L370: USB: 3x USB 3.1 Gen 1 ports
+L371: Wireless: 802.11ac dual band
+L372: Ethernet: 802.3 10/100/1000
+L373: Accessories radio: Dedicated dual band XBOX Wireless radio
+L374: 
+L375: ## Dimensions
+L376: 
+L377:  | 5.94 x 5.94 x 11.85 in (15.1 x 15.1 x 30.1cm)
+L378: ## Weight
+L379: 
+L380:  | 9.8 lbs (4.4kg)
+L381: 
+L382: cite61†Microsoft’s Limited Warranty†support.microsoft.com is in addition to your consumer law rights.
+L383: 
+L384: Back to tabs
+L385: 
+L386: cite73†Back to top L387: cite74†Surface Laptop Ultra cite75†Surface Pro cite76†Surface Laptop cite77†Surface RTX Spark Dev Box cite78†Explore Copilot cite79†Explore Microsoft products cite80†Windows 11 apps cite81†Account profile†account.microsoft.com cite82†Download Center cite83†Microsoft Store support†go.microsoft.com cite84†Returns cite85†Order tracking cite86†Certified Refurbished cite87†Microsoft Store Promise cite88†Flexible Payments cite89†Microsoft in education cite90†Devices for education cite91†Microsoft Teams for Education cite92†Microsoft 365 Education cite93†How to buy for your school cite94†Educator training and development†education.microsoft.com cite95†Deals for students and parents cite96†AI for education L388: cite97†Microsoft AI cite98†Microsoft Security cite99†Dynamics 365 cite100†Microsoft 365 cite101†Microsoft Power Platform cite102†Microsoft Teams cite103†Microsoft Copilot cite104†Small Business cite105†Azure†azure.microsoft.com cite106†Microsoft Developer†developer.microsoft.com cite107†Microsoft Learn†learn.microsoft.com cite108†Support for AI marketplace apps cite109†Microsoft Tech Community†techcommunity.microsoft.com cite110†Microsoft Marketplace†marketplace.microsoft.com cite111†Software companies cite112†Visual Studio†visualstudio.microsoft.com cite113†Careers†careers.microsoft.com cite114†About Microsoft cite115†Company news†news.microsoft.com cite116†Privacy at Microsoft cite117†Investors cite118†Diversity and inclusion cite119†Accessibility cite120†Sustainability L389: cite121†English (United States) L390: 
+L391: cite122†Your Privacy Choices†aka.ms cite122†Your Privacy Choices†aka.ms L392: 
+L393: cite123†Consumer Health Privacy†go.microsoft.com cite124†Sitemap cite125†Contact Microsoft†support.microsoft.com cite1†Privacy†go.microsoft.com cite0†Manage cookies cite126†Terms of use†go.microsoft.com cite127†Trademarks†go.microsoft.com cite128†Safety & eco†go.microsoft.com cite129†Recycling cite130†About our ads†choice.microsoft.com 

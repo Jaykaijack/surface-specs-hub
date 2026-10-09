@@ -1,0 +1,205 @@
+Surface Laptop Go 3 功能 | Microsoft Support (https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features)
+citeturn47view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features","lineno":200}); Total lines: 334
+L0: 跳转至主内容
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: 支持
+L5: 
+L6: cite1†支持 L7: 
+L8: [Button: 支持 ]
+L9: 
+L10:   * cite1†主页 L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: 产品]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†更多信息 ... L22:   * [Button: 设备]
+L23:     * cite12†Surface L24:     * cite13†电脑配件 L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC 游戏†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†硬件保修 L30: 
+L31:   * cite19†帐户和计费 L32:   * [Button: 资源]
+L33:     * cite20†社区论坛†learn.microsoft.com L34:     * cite21†Microsoft 365 管理员†portal.office.com L35:     * cite22†开发人员†developer.microsoft.com L36:     * cite23†教育 L37:     * cite24†上报支持欺诈†www.microsoft.com L38:     * cite25†产品安全 L39: 
+L40:   * [Button: 更多]
+L41: 
+L42:   * cite26†购买 Microsoft 365†go.microsoft.com L43:   * 所有 Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Windows†www.microsoft.com L48:       * cite30†Surface†www.microsoft.com L49:       * cite31†XBOX†www.xbox.com L50:       * cite32†折扣专区†www.microsoftstore.com.cn L51:       * cite33†企业购†www.microsoftstore.com.cn L52:       * cite1†支持 L53:     * 软件 [Button: 软件]
+L54:       * cite34†Windows 应用†apps.microsoft.com L55:       * cite35†OneDrive†www.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†从 Skype 转到 Teams L58:       * cite38†OneNote†www.microsoft.com L59:       * cite39†Microsoft Teams†www.microsoft.com L60:     * PC 和设备 [Button: PC 和设备]
+L61:       * cite40†购买 XBOX†www.microsoft.com L62:       * cite41†PC 和平板电脑†www.microsoft.com L63:       * cite42†配件†www.microsoftstore.com.cn L64:     * 娱乐 [Button: 娱乐]
+L65:       * cite43†XBOX 与游戏†www.xbox.com L66:       * cite44†PC 游戏†apps.microsoft.com L67:     * 企业 [Button: 企业 ]
+L68:       * cite45†Microsoft AI†www.microsoft.com L69:       * cite46†Microsoft 安全†www.microsoft.com L70:       * cite47†Azure†azure.microsoft.com L71:       * cite48†Dynamics 365†www.microsoft.com L72:       * cite49†Microsoft 365 商业版†www.microsoft.com L73:       * cite50†Microsoft Power Platform†www.microsoft.com L74:       * cite51†数字主权†www.microsoft.com L75:     * 开发人员与 IT [Button: 开发人员与 IT]
+L76:       * cite52†Microsoft 开发人员†developer.microsoft.com L77:       * cite53†Microsoft Learn†learn.microsoft.com L78:       * cite54†支持 AI 商城应用†www.microsoft.com L79:       * cite55†Microsoft 技术社区†techcommunity.microsoft.com L80:       * cite56†Microsoft Marketplace†marketplace.microsoft.com L81:       * cite57†软件公司†www.microsoft.com L82:       * cite58†Visual Studio†visualstudio.microsoft.com L83:     * 其他 [Button: 其他]
+L84:       * cite59†免费下载与安全性†www.microsoft.com L85:       * cite60†教育†www.microsoft.com L86:     * cite61†查看站点地图†www.microsoft.com L87: [Input: 搜索帮助] 搜索 搜索帮助
+L88: 
+L89:   * 无结果
+L90: 
+L91: 取消
+L92: 
+L93: 登录
+L94: 
+L95: 使用 Microsoft 登录
+L96: 
+L97: 登录或创建帐户。
+L98: 
+L99: 你好，
+L100: 
+L101: 使用其他帐户。
+L102: 
+L103: 你有多个帐户
+L104: 
+L105: 选择要登录的帐户。
+L106: 
+L107: 相关主题
+L108: # Surface Laptop Go 3 功能
+L109: 
+L110: 应用对象
+L111: 
+L112: Surface Laptop Go 3
+L113: 
+L114: Surface Laptop Go 3 为你提供轻量级便携 Surface 触摸屏笔记本电脑，屏幕规格为 12.4 英寸 PixelSense™ 显示屏。 小巧轻便，仅重 2.49 磅，可以整天随身携带以完成更多工作，无论是工作、上学还是个人事务。
+L115: 
+L116: ## 开始了解 Surface Laptop Go 3
+L117: 
+L118: 不确定在何处插入电源？ 下面是一些可帮助你使用的图表。
+L119: 
+L120: cite62†Image: 显示在 Surface Laptop Go 3 上查找功能的位置。 L121: 
+L122:   1. 双通道远场摄影棚麦克风
+L123: 
+L124:   2. 720p HD f2.0 前置摄像头
+L125: 
+L126:   3. 配有 Windows Hello 一触登录功能的指纹电源按钮（部分机型）
+L127: 
+L128:   4. Surface Connect 端口
+L129: 
+L130: cite63†Image: 显示在何处查找 Surface Laptop Go 3 侧面的功能。 L131: 
+L132:   5. USB-A 端口
+L133: 
+L134:   6. USB-C 端口
+L135: 
+L136:   7. 3.5 毫米耳机插孔
+L137: ## Surface Laptop Go 3 和 Windows 10/11
+L138: 
+L139: Surface Laptop Go 3 附带：
+L140: 
+L141:   * Windows 11 家庭版（消费者客户）
+L142:   * Windows 11 专业版或 Windows 10 专业版（商务客户）
+L143: 
+L144: 不确定你安装的是哪个版本的 Windows？ 请参阅cite64†我运行的是哪个 Windows 操作系统？ L145: 
+L146: 如果不确定自己使用的是哪种 Surface 型号，请参阅 cite65†我的 Surface 是哪种型号？ L147: 
+L148: ## 为 Surface 充电
+L149: 
+L150: 可以使用 USB-C 或 Surface Connect 为 Surface 充电。 有关详细信息，请参阅 cite66†如何为 Surface 充电。 L151: 
+L152: ## 功能
+L153: 
+L154: 以下是使 Surface Laptop Go 3 适应性极强的一些功能。
+L155: ### 一键登录
+L156: 
+L157: 部分 Surface Laptop Go 3 型号具有指纹电源按钮，可通过 Windows Hello 进行一触登录。
+L158: 
+L159: 电源按钮周围的指示灯亮起时，只需将手指放在电源按钮上，即可通过一次触摸实现快速安全登录。 若要开始和进行设置，请打开cite67†Image: “设置”图标的 “设置”图标，然后选择cite68†Image: “联系人”图标 >的“帐户”图标 登录选项>指纹识别 (Windows Hello) >设置。
+L160: 
+L161: cite69†视频播放器†learn-video.azurefd.net L162: 
+L163: 注意
+L164: 
+L165: 该视频适用于 Surface Laptop Go 2 和 Surface Laptop Go 3。
+L166: ### 高效运行，无论日夜
+L167: 
+L168: 运行常用应用和其他喜爱的内容，同时全天关注社交媒体。 第 11 代英特尔®酷睿™处理器提供您所需的强劲功能和性能。 电池续航时间^{*}长达 15 小时，可以持续高效工作，或者放松身心并观看自己喜欢的节目。
+L169: 
+L170: * 电池使用时间因设备配置、使用情况、网络和功能配置、信号强度、设置和其他因素而有很大差异。有关详细信息，请参阅 cite70†https://aka.ms/SurfaceBatteryPerformance†aka.ms 。
+L171: 
+L172: ### 在视频通话中呈现最佳画质和声音
+L173: 
+L174: Surface Laptop Go 3 配有 12.4 英寸 PixelSense™ 触摸显示屏和 720p HD 前置摄像头，无论是用于学校、工作还是与朋友和家人保持联系，都可以在视频和会议通话中展现你的最佳状态。 该摄像头可提供逼真的视频，可根据光线和姿势变化进行调整，而 Studio Mics 和 Omnisonic 扬声器也将帮助呈现出色音质。
+L175: ## 自定义设置
+L176: 
+L177: 当你将 Surface Laptop Go 3 与这些可选配件一起使用时，可以充分利用它， (每个配件单独出售) 。 了解详细信息：
+L178: 
+L179:   * cite71†设置 Surface 移动鼠标 L180:   * cite72†使用 Surface 耳塞 L181:   * cite73†使用 Microsoft 或 Surface USB-C Travel Hub L182: 
+L183: ## 充分利用 Surface。
+L184: 
+L185: 了解更多有关 Surface 的信息，并使用 Surface 应用对其进行自定义。 若要将其打开，请选择 cite74†Image: Windows 徽标图标的 “开始”图标，输入 Surface，然后选择它以打开应用。 如果应用未打开，请从 cite75†Microsoft Store†go.microsoft.com 获取。
+L186: 
+L187: 打开 Surface 应用
+L188: ## 更易于修复的设备设计
+L189: 
+L190: 许多组件均可由cite76†授权服务提供商 或熟练的技术人员进行更换 - 支持更易于维修的设备设计。 笔记本电脑 cite77†脚 脚等替换组件可用于保修期外维修。 可用性和服务选项可能因产品、市场和时间而异。
+L191: 
+L192: 要了解详细信息，请参阅 cite78†Surface 设备的自性维修信息。 L193: 
+L194: ## 相关主题
+L195: 
+L196:   * cite79†Microsoft Complete - 面向 Surface or Xbox 的保护计划†www.microsoft.com L197:   * cite80†清洁和维护 Surface L198:   * cite81†将 Surface 连接到电视、监视器或投影仪 L199:   * cite82†Surface 声音、音量和音频配件 L200:   * cite83†如何在 Surface 上调整 Omnisonic 扬声器的设置 L201:   * cite84†调整摄影棚麦克风的设置 L202: ## 需要更多帮助吗？
+L203: 
+L204:   * cite85†个人帐户 L205:   * cite86†工作/学校帐户 L206: 
+L207: 技术支持
+L208: 
+L209: 有关技术支持， cite87†请打开 Surface 应用†go.microsoft.com 或 cite88†Web 浏览器†go.microsoft.com ，描述你的问题，然后选择 “获取帮助”。
+L210: 
+L211: 社区支持
+L212: 
+L213: 社区可以帮助您提出问题，并听取具有丰富知识的专家的意见。 cite89†询问社区†go.microsoft.com 。
+L214: 
+L215: 其他支持选项
+L216: 
+L217: 如果无法使用 Surface 或对其他问题有疑问，请 cite90†打开“获取帮助†go.microsoft.com ”以联机获取其他支持。
+L218: 
+L219: cite91†Image: 需要更多帮助 网格垫片. L220: 
+L221: 技术支持
+L222: 
+L223: 你可以从 cite87†Surface 应用†go.microsoft.com 或 cite88†Web 浏览器†go.microsoft.com 获取自助支持。 如需技术帮助，请联系组织的 IT 支持人员或管理员。
+L224: 
+L225: 服务 & 维修
+L226: 
+L227: 对于 Surface 商用版，请访问 cite92†Microsoft 授权服务提供商的 Surface 维修†go.microsoft.com 。
+L228: 对于 IT 管理员
+L229: 
+L230: IT 管理员应查看cite93†适用于企业 & 教育客户的†go.microsoft.com cite94†Surface 商用版†go.microsoft.com 和支持。
+L231: 
+L232: cite91†Image: 需要更多帮助 网格垫片. L233: ## 此信息是否有用?
+L234: 
+L235: [Button: 是] [Button: 否]
+L236: 
+L237: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L238: 
+L239: How satisfied are you with the translation quality?
+L240: 
+L241: What affected your experience?
+L242: 
+L243: [Input] Resolved my issue
+L244: 
+L245: [Input] Clear instructions
+L246: 
+L247: [Input] Easy to follow
+L248: 
+L249: [Input] No jargon
+L250: 
+L251: [Input] Pictures helped
+L252: 
+L253: [Input] Translation quality
+L254: 
+L255: [Input] Didn't match my screen
+L256: 
+L257: [Input] Incorrect instructions
+L258: 
+L259: [Input] Too technical
+L260: 
+L261: [Input] Not enough information
+L262: 
+L263: [Input] Not enough pictures
+L264: [Input] Translation quality
+L265: 
+L266: Any additional feedback? (Optional)
+L267: 
+L268: [Button: Submit feedback]
+L269: 
+L270: By pressing submit, your feedback will be used to improve Microsoft products and services. cite95†Privacy Statement.†privacy.microsoft.com L271: 
+L272: 新增内容
+L273:   * cite96†Surface Pro†www.microsoftstore.com.cn L274:   * cite97†Surface Laptop†www.microsoftstore.com.cn L275:   * cite98†Surface Laptop Ultra†www.microsoft.com L276:   * cite99†探索 Copilot†www.microsoft.com L277:   * cite27†Microsoft 365†www.microsoft.com L278:   * cite100†探索 Microsoft 产品†www.microsoft.com L279:   * cite101†Windows 11 应用程序†www.microsoft.com L280: 
+L281: Microsoft Store
+L282: 
+L283:   * cite102†帐户个人资料†account.microsoft.com L284:   * cite59†下载中心†www.microsoft.com L285:   * cite103†订单跟踪†account.microsoft.com L286: 
+L287: 教育
+L288:   * cite104†Microsoft 教育版†www.microsoft.com L289:   * cite105†教育设备†www.microsoft.com L290:   * cite106†Microsoft Teams 教育版†www.microsoft.com L291:   * cite107†Microsoft 365 教育版†www.microsoft.com L292:   * cite108†Office 教育版†www.microsoft.com L293:   * cite109†教育工作者培训和开发†education.microsoft.com L294:   * cite110†面向学生和家长的优惠†www.microsoft.com L295:   * cite111†面向学生的 Azure†azure.microsoft.com L296: 
+L297: 企业
+L298:   * cite112†Microsoft AI†www.microsoft.com L299:   * cite46†Microsoft 安全†www.microsoft.com L300:   * cite47†Azure†azure.microsoft.com L301:   * cite48†Dynamics 365†www.microsoft.com L302:   * cite49†Microsoft 365†www.microsoft.com L303:   * cite113†Microsoft Advertising†about.ads.microsoft.com L304:   * cite114†Microsoft Copilot†www.microsoft.com L305:   * cite39†Microsoft Teams†www.microsoft.com L306: 
+L307: 开发人员与 IT
+L308:   * cite52†Microsoft 开发人员†developer.microsoft.com L309:   * cite53†Microsoft Learn†learn.microsoft.com L310:   * cite115†支持 AI 商城应用†www.microsoft.com L311:   * cite55†Microsoft 技术社区†techcommunity.microsoft.com L312:   * cite116†Microsoft Marketplace†marketplace.microsoft.com L313:   * cite50†Microsoft Power Platform†www.microsoft.com L314:   * cite117†软件公司†www.microsoft.com L315:   * cite58†Visual Studio†visualstudio.microsoft.com L316: 
+L317: 公司
+L318:   * cite118†招贤纳士†careers.microsoft.com L319:   * cite119†关于 Microsoft†www.microsoft.com L320:   * cite120†公司新闻†news.microsoft.com L321:   * cite121†Microsoft 隐私†www.microsoft.com L322:   * cite122†投资人†www.microsoft.com L323: 
+L324: cite123†中文(中国) cite124†你的隐私选择†aka.ms cite124†你的隐私选择†aka.ms cite125†消费者健康隐私†go.microsoft.com L325: 
+L326:   * cite126†与 Microsoft 联系 L327:   * cite127†隐私†go.microsoft.com L328:   * cite128†管理 Cookie L329:   * cite129†使用条款†go.microsoft.com L330:   * cite130†商标†go.microsoft.com L331:   * cite131†关于我们的广告†choice.microsoft.com L332:   * cite132†京ICP备09042378号-6†beian.miit.gov.cn L333:   * © Microsoft 2026
+

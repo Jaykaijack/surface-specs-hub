@@ -75,7 +75,7 @@ def scan_and_encode_directory(dir_path, label):
     return mapping, orig_size, webp_size
 
 def build(snapshot_only=False):
-    for check in ['tests/test-runner.js', 'tests/review-regression.test.js', 'scripts/preflight_check.js']:
+    for check in ['tests/test-runner.js', 'tests/review-regression.test.js', 'tests/evidence-delivery.test.js', 'scripts/preflight_check.js']:
         subprocess.run(['node', os.path.join(WORKSPACE, check)], cwd=WORKSPACE, check=True)
     if snapshot_only and os.path.exists(STANDALONE_RELEASE):
         raise FileExistsError(f"不可覆盖核验快照: {STANDALONE_RELEASE}")

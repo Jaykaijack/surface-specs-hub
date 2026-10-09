@@ -1,0 +1,128 @@
+Surface Hub 2S tech specs - Surface Hub | Microsoft Learn (https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs)
+citeturn58view0 [wordlim: 200] Crawled: 3 days ago; Content type: text/html; Source: open({"ref_id":"https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs","lineno":200}); Total lines: 130
+L0: cite0†Skip to main content cite1†Skip to Ask Learn chat experience L1: 
+L2: This browser is no longer supported.
+L3: 
+L4: Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+L5: 
+L6: cite2†Download Microsoft Edge†go.microsoft.com cite3†More info about Internet Explorer and Microsoft Edge L7: 
+L8: Table of contents Exit editor mode
+L9: 
+L10: Ask Learn Ask Learn
+L11: 
+L12: Reading mode Table of contents cite1†Read in English Add Add to Plans cite4†Edit†github.com L13: 
+L14: * * *
+L15: 
+L16: Copy Markdown Print
+L17: 
+L18: * * *
+L19: 
+L20: Note
+L21: Access to this page requires authorization. You can try cite1†signing in or changing directories.
+L22: 
+L23: Access to this page requires authorization. You can try changing directories.
+L24: # Surface Hub 2S 50-inch tech specs
+L25: 
+L26: Feedback
+L27: 
+L28: Summarize this article for me
+L29: ## In this article
+L30: 
+L31: Important
+L32: 
+L33: Support for Surface Hub 2S devices running Windows 10 Team edition ends on October 14, 2025. To avoid service disruption, we recommend using the seamless cite5†software migration option to move to Microsoft Teams Rooms on Windows at any time before the end of support.
+L34: 
+L35: Unlike the standard versions of Windows 10, there's no extended support option for Windows 10 Team edition when support ends.
+L36: Item  | Details
+L37: --- | ---
+L38: Dimensions  | 29.2" x 43.2" x 3.0” (741 mm x 1,097 mm x 76 mm)
+L39: Shipping dimensions  | 47.64" x 36.89" x 9.92" (1,210 mm x 937 mm x 252 mm)
+L40: Weight  | 61.6 lbs. (28 kg)
+L41: Shipping Weight  | 81.08 lbs. (36.77 kg)
+L42: Display  | PixelSense Display, 3:2 aspect ratio, 8-bit color, 15.5-mm border, anti-glare, IPS LCD
+L43: Resolution  | 3840 x 2560 (4K UHD)
+L44: Contrast  | 1200:1 (typical), 1000:1 minimum
+L45: Brightness  | 350 nits (typical)
+L46: Processor  | Quad-core 8th Generation Intel Core i5 processor, 8-GB RAM, 128 GB SSD^{1}
+L47: Graphics  | Intel UHD Graphics 620
+L48: Wireless  | Wi-Fi 5 (IEEE 802.11 a/b/g/n/ac compatible) Bluetooth Wireless 4.1 technology
+L49: Miracast display
+L50: Connections  | USB-A
+L51: Mini-DisplayPort 1.2 video output
+L52: RJ45 gigabit Ethernet (1000/100/10 BaseT)
+L53: HDMI video input (HDMI 2.0, HDCP 2.2 /1.4)
+L54: USB-C with DisplayPort input
+L55: Four USB-C (on display)
+L56: Sensors  | Doppler occupancy^{2}
+L57: Accelerometer
+L58: Gyroscope
+L59: Audio/Video  | Full-range, front facing 3-way stereo speakers
+L60: 2x Full band 8-element MEMS microphone arrays certified for use with Microsoft Teams up to 2.3 meters away
+L61: Microsoft Surface Hub 2S Camera, 4K, USB-C connection, 90-degree HFOV
+L62: Pen  | Microsoft Surface Hub Pen (active)
+L63: Software^{3}  | Windows 10
+L64: Microsoft Teams for Surface Hub
+L65: Skype for Business
+L66: Microsoft Whiteboard
+L67: Microsoft Office (Mobile)
+L68: Microsoft Power BI
+L69: Exterior  | Casing: Precision machined aluminum with mineral-composite resin
+L70: Color: Platinum
+L71: Physical Buttons: Power, Volume, Source
+L72: What’s in the box  | One Surface Hub 2S
+L73: One Surface Hub Pen
+L74: One Surface Hub 2S Camera
+L75: 2.5 m AC Power Cable
+L76: Quick Start Guide
+L77: Warranty  | 1-year limited hardware warranty^{4}
+L78: BTU  | 1,518 BTU/hr
+L79: Input Voltage  | 50/60Hz 110/220v nominal, 90-265v max
+L80: Input Power, operating  | 445W (495W Surge Load)
+L81: Input Current  | 5.46A
+L82: Input Power, standby  | 5W max
+L83: Note
+L84: 
+L85: ^{1} System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB= 1 billion bytes. See Surface.com/Storage for more details.
+L86: ^{2} Doppler sensor not available in Hong Kong Special Administrative Region, India, Kuwait, and Oman due to local regulations.
+L87: ^{3} Software license required for some features. Sold separately.
+L88: ^{4} Microsoft's Limited Warranty is in addition to your consumer law rights.
+L89: 
+L90: Note
+L91: Surface Hub can be used continuously for a maximum of 18 hours a day. To optimize for efficiency, Surface Hub uses smart sensors to turn off the LED screen when presence is no longer detected, which means there's no need to power it down at the end of the day. If the unit is installed in a 24-hour workplace environment, the sensors can be disabled to comply with the 18 hour per day maximum use recommendation.
+L92: Prolonged display of a video signal might cause burned-in or image retention to occur on the screen. To learn more about managing power settings, see:
+L93:   * cite6†Local management Surface Hub settings L94:   * cite7†SurfaceHub CSP - Windows Client Management L95: 
+L96: * * *
+L97: ## Feedback
+L98: 
+L99: Was this page helpful?
+L100: 
+L101: Yes No No
+L102: 
+L103: Need help with this topic?
+L104: 
+L105: Want to try using Ask Learn to clarify or guide you through this topic?
+L106: 
+L107: Ask Learn Ask Learn
+L108: 
+L109: Suggest a fix?
+L110: 
+L111: * * *
+L112: 
+L113: ## Additional resources
+L114: 
+L115: * * *
+L116: 
+L117:   * Last updated on 2026-07-14
+L118: 
+L119: ### In this article
+L120: 
+L121: Was this page helpful?
+L122: 
+L123: Need help with this topic?
+L124: 
+L125: Want to try using Ask Learn to clarify or guide you through this topic?
+L126: 
+L127: Ask Learn Ask Learn
+L128: 
+L129: Suggest a fix?
+

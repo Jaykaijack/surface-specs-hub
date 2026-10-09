@@ -1,0 +1,183 @@
+Tech specs—Surface Pro for Business, Copilot+ PC 12-inch - Surface | Microsoft Learn (https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs)
+citeturn23view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs","lineno":300}); Total lines: 201
+L0: cite0†Skip to main content cite1†Skip to Ask Learn chat experience L1: 
+L2: This browser is no longer supported.
+L3: 
+L4: Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+L5: 
+L6: cite2†Download Microsoft Edge†go.microsoft.com cite3†More info about Internet Explorer and Microsoft Edge L7: 
+L8: Table of contents Exit editor mode
+L9: 
+L10: Ask Learn Ask Learn
+L11: 
+L12: Reading mode Table of contents cite1†Read in English Add Add to Plans cite4†Edit†github.com L13: 
+L14: * * *
+L15: 
+L16: Copy Markdown Print
+L17: 
+L18: * * *
+L19: 
+L20: Note
+L21: Access to this page requires authorization. You can try cite1†signing in or changing directories.
+L22: 
+L23: Access to this page requires authorization. You can try changing directories.
+L24: # Tech specs: Surface Pro for Business, Copilot+ PC 12-inch
+L25: 
+L26:   * Applies to: Windows 11
+L27: 
+L28: Feedback
+L29: 
+L30: Summarize this article for me
+L31: ## In this article
+L32: 
+L33: The new Surface Pro for Business, available to cite5†pre-order†www.microsoft.com , ships July 22 in select markets.
+L34: Feature  | Description
+L35: --- | ---
+L36: Processor  | - Snapdragon X Plus (8 Core) X1P-42-100
+L37: NPU  | - Qualcomm Hexagon with 45 TOPS
+L38: Graphics  | - Qualcomm Adreno GPU
+L39: Memory  | - 16GB, 24GB LPDDR5x RAM
+L40: Storagecite6†^{1} | - 256GB, 512GB, 1TBcite6†^{2} (UFS)
+L41: Display  | - Touchscreen: 12-inch PixelSense LCD displaycite6†^{3} L42: - Resolution: 2196 x 1464 (220 PPI)
+L43: - Aspect ratio: 3:2
+L44: - Contrast ratio: 1200:1
+L45: - Refresh rate: up to 90Hz (60Hz default)
+L46: - Color profile: sRGB and Enhanced
+L47: - Individually color-calibrated display
+L48: - Adaptive color and contrast
+L49: - Touch: 10-point multi-touch
+L50: - Strengthened glass display
+L51: - Brightness: 400 nits maximum (typical)
+L52: - Anti-reflective, ISO 9241-307 certifiedcite6†^{4} L53: Sizecite6†^{5} & weightcite6†^{6} | - Length: 10.8 inch (274 mm)
+L54: - Width: 7.47 inch (190 mm)
+L55: - Height: 0.30 inches (7.8 mm)
+L56: - Weight: 1.5 lbs. (686 g)
+L57: Battery life  | - Up to 16 hours of local video playbackcite6†^{7} L58: - Up to 12 hours of active web usagecite6†^{8} L59: Security  | - Enhanced security with Microsoft Pluton TPM 2.0 and BitLocker support
+L60: - Windows 11 Secured-core PC
+L61: - Windows Hello facial recognition with Enhanced Sign-in Security
+L62: - NFC authentication
+L63: Cameras  | - Full HD front-facing Surface Studio Camera (1080p)
+L64: - Windows Studio Effects: automatic framing, portrait blur, creative filters, eye contact, portrait light
+L65: - 10 MP Ultra HD rear-facing camera
+L66: - Windows Hello face authentication camera with Enhanced Sign-in Security
+L67: Audio  | - Dual Studio Mics with enhanced voice focuscite6†^{9} L68: - 2W stereo speakers with Dolby Atmoscite6†^{10} L69: - Support for Bluetooth LE Audio
+L70: Ports and charging  | - 2 × USB-C with USB4/Thunderbolt 4 ports:
+L71: - Charging
+L72: - Data transfer
+L73: - DisplayPort 1.4a (up to 2 × 4K @ 60Hz)
+L74: - Surface Thunderbolt 4 Dock support
+L75: - Fast charging with minimum 45W USB-C chargercite6†^{11} L76: - Surface Pro 12-inch keyboard connector
+L77: Network and connectivity  | - Wi-Fi 7cite6†^{12} L78: - Bluetooth Core 5.4 technology
+L79: Pen compatibilitycite6†^{13} | - Designed for Surface Slim Pen
+L80: - Integrated storage and wireless charging located on the back of the device
+L81: - Supports haptic feedback with Surface Slim Pen
+L82: - Supports Microsoft Pen Protocol (MPP)
+L83: Keyboard compatibility  | - Surface Pro 12-inch Keyboardcite6†^{14} L84: Software  | - Windows 11 Pro
+L85: - Preloaded Microsoft 365 Appscite6†^{15} L86: - Microsoft 365 Business Standard, Business Premium, or Microsoft 365 Apps 30-day trialcite6†^{16} L87: Accessibility  | - Optional bold keyset available on Surface Pro 12-inchcite6†^{17} L88: - Compatible with Surface Adaptive Kit and Microsoft Adaptive Accessories
+L89: - Includes Windows Accessibility Features – cite7†Learn more†www.microsoft.com L90: - cite8†Accessible devices & accessories - Microsoft Store†www.microsoft.com L91: - Discover more Microsoft Accessible Devices & Products - cite8†Accessible Devices & Products for PC & Gaming Assistive Tech Accessories - Microsoft Store†www.microsoft.com L92: Sustainabilitycite6†^{9} | Surface Pro for Business is designed with sustainability in mind
+L93: Recycled materials
+L94: - Enclosure is made from 82.9% recycled content, including 100% recycled aluminum alloy and rare earth metalscite6†^{18} L95: - Battery cell contains 100% recycled cobaltcite6†^{19} L96: Thoughtful packaging
+L97: - 75% recycled content in wood-based fiber commercial packaging
+L98: - Paper-based, minimizing plastic use
+L99: - 100% of our virgin paper sourced comes from responsibly managed forests
+L100: Energy efficient
+L101: - ENERGY STAR certified
+L102: Repairability
+L103: - Clear visual icons and built-in access to repair instructionscite6†^{20} L104: Surface Trade-in
+L105: - We make trade-in convenient and secure for our commercial customers in the USA at cite9†Microsoft Trade In Program†microsoft.devicereturns.com . Learn more about how we design with sustainability in mind at cite10†Microsoft Surface Sustainability†www.microsoft.com .
+L106: Serviceability  | Replacement componentscite6†^{20} include:
+L107: - Display module
+L108: - Battery
+L109: - Motherboard (processor, memory, storage)
+L110: - Thermal module
+L111: - USB-C module
+L112: - Microphone module
+L113: - IR camera
+L114: - Speakers
+L115: - Enclosure (bucket)
+L116: - Front and rear cameras
+L117: - Power and volume buttons
+L118: - Kickstand
+L119: - Device entry kit
+L120: Exterior  | - Casing: Anodized aluminum
+L121: - Colors: Platinum
+L122: - Physical Buttons: Volume, Power
+L123: Kickstand  | - Kickstand with 165-degree full-friction hinge
+L124: Sensors  | - Ambient color sensor
+L125: - Accelerometer
+L126: - Gyroscope
+L127: - Magnetometer
+L128: - NFC
+L129: What's in the box  | - Surface Pro for Business
+L130: - USB-C charging cable
+L131: - Surface 45W USB-C Wall Chargercite6†^{21} (optional in EMEA)
+L132: - Quick Start Guide
+L133: - Safety and warranty documents
+L134: Warrantycite6†^{22} | 1-year limited hardware warranty
+L135: Battery capacities  | - Battery Capacity Nominal (Wh): 38
+L136: - Battery Capacity Min (Wh): 37
+L137: ## References
+L138:   1. System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1GB = 1 billion bytes. 1TB = 1,000 GB. See cite11†Surface.com/Storage†support.microsoft.com for more details.
+L139:   2. 1TB available only in select markets through Microsoft Store.
+L140:   3. Surface Pro display has rounded corners within a standard rectangle. When measured as a standard rectangular shape the screen is 12” diagonally (actual viewable area is less).
+L141:   4. The Surface Pro for Business display has been designed to minimize unwanted reflections and has been certified by TÜV SÜD to meet the requirements of ISO 9241-307.
+L142:   5. Might vary depending on manufacturing processes.
+L143:   6. Weight not including keyboard.
+L144:   7. Based on local video playback test. Testing conducted by Microsoft in March 2025 using preproduction software and preproduction Surface Pro for Business, Copilot+ PC, Snapdragon® X Plus (8 Core) 256GB, 16GB RAM 1st Edition devices. Testing consisted of full battery discharge during video playback of an .mov file through the Windows Media Player application in 1080p at 24 FPS. All settings were default except screen brightness set to 150 nits with Autobrightness disabled.
+L145: Wi-Fi was connected to a network. Battery life varies significantly with settings, usage, and other factors.
+L146:   8. Based on a web browsing test. Testing conducted by Microsoft in March 2025 using preproduction software and preproduction Surface Pro for Business, Copilot+ PC, Snapdragon X Plus (8 Core) 256GB, 16GB RAM devices. Testing consisted of full battery discharge while accessing 12 popular websites over multiple open tabs through the browser. All settings were default except screen brightness set to 150 nits with Auto-Brightness disabled. Wi-Fi was connected to a network.
+L147: Battery life varies significantly with settings, usage, and other factors.
+L148:   9. Voice focus requires activation, requires Windows 11 and is available in apps which use integrated device microphones and use certain Windows audio processing modes.
+L149:   10. Requires Dolby Atmos encoded content/audio.
+L150:   11. In select markets, only specific configurations come with Surface 45W USB-C Wall Charger. Fast charging is supported with minimum 60W USB Type-C PD charger or higher (sold separately). Testing conducted by Microsoft in March 2025 For details on fast charging see - cite12†USB-C and Fast Charging for Surface - Microsoft Support†support.microsoft.com .
+L151:   12. 6GHz band not available in all regions.
+L152:   13. Accessories sold separately.
+L153:   14. Surface Slim Pen sold separately. Software license required for some features.
+L154:   15. Sold separately. Software license required for some features.
+L155:   16. Activation required. If your device is managed by your organization’s IT department, contact your IT administrator for activation. After 30 days, you'll be charged the applicable monthly or annual subscription fee. Credit card required. Cancel anytime to stop future charges. See cite13†https://aka.ms/m365businesstrialinfo†aka.ms .
+L156:   17. Bold keyset option available only in US English in select markets.
+L157:   18. Enclosure includes bucket and kickstand. 100% recycled aluminum alloy in bucket. 100% recycled rare earth metals in magnets. Based on validation performed by Underwriters Laboratories, Inc. using Environmental Claim Validation Procedure (ECVP) for Recycled Content, UL ECVP 2809-2, Second Edition, dated June 20, 2024.
+L158:   19. Excluding PSU. Contains 4.7% recycled cobalt, consisting of 100% recycled cobalt in the battery cell. Based on validation performed by Underwriters Laboratories, Inc. using Environmental Claim Validation Procedure (ECVP) for Recycled Content, UL ECVP-2809-2, Second Edition, dated June 20, 2024. Recycled Content is defined in accordance with ISO 14021.
+L159:   20. Replacement components available through Surface Commercial authorized device resellers. Components can be replaced on-site by a skilled technician following Microsoft’s Service Guide. Microsoft tools (sold separately) might also be required. Availability of replacement components and service options might vary by product, market and over time. See cite14†Surface service options - Surface | Microsoft Learn .
+L160: Caution
+L161: 
+L162: Opening and/or repairing a device can pose risks of electric shock, fire, personal injury, or damage to the device. Unless required by law, damage incurred during self-repair might not be covered by Microsoft’s Limited Hardware Warranty.
+L163: 
+L164:   21. Sold separately in certain markets.
+L165:   22. Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L166: 
+L167: * * *
+L168: ## Feedback
+L169: 
+L170: Was this page helpful?
+L171: 
+L172: Yes No No
+L173: 
+L174: Need help with this topic?
+L175: 
+L176: Want to try using Ask Learn to clarify or guide you through this topic?
+L177: 
+L178: Ask Learn Ask Learn
+L179: 
+L180: Suggest a fix?
+L181: 
+L182: * * *
+L183: 
+L184: ## Additional resources
+L185: 
+L186: * * *
+L187: 
+L188:   * Last updated on 2025-05-06
+L189: 
+L190: ### In this article
+L191: 
+L192: Was this page helpful?
+L193: 
+L194: Need help with this topic?
+L195: 
+L196: Want to try using Ask Learn to clarify or guide you through this topic?
+L197: 
+L198: Ask Learn Ask Learn
+L199: 
+L200: Suggest a fix?
+

@@ -418,6 +418,21 @@ const App = {
     this.navigate(`#/${prefix}/${cleanSeries}/${deviceId}`);
   },
 
+  ensureEvidenceLoaded() {
+    const asset = Catalog.pendingEvidenceAsset();
+    if (!asset) return Promise.resolve();
+    if (this._evidenceLoading) return this._evidenceLoading;
+    this._evidenceLoading = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = asset;
+      const fail = () => { script.remove(); this._evidenceLoading = null; reject(new Error('字段证据加载失败')); };
+      script.onload = () => Catalog.pendingEvidenceAsset() ? fail() : resolve();
+      script.onerror = fail;
+      document.head.appendChild(script);
+    });
+    return this._evidenceLoading;
+  },
+
   ensureToolsLoaded() {
     if (typeof ToolsEngine !== 'undefined') return Promise.resolve();
     if (this._toolsLoading) return this._toolsLoading;
@@ -439,6 +454,15 @@ const App = {
     const path = this.activeRoute.path;
     const main = document.getElementById('hub-main-content');
     if (!main) return;
+    if (path !== '/' && path !== '' && Catalog.pendingEvidenceAsset()) {
+      main.innerHTML = '<p role="status">正在加载字段证据…</p>';
+      this.ensureEvidenceLoaded().then(() => {
+        if (this.activeRoute.path === path) this.dispatchRoute();
+      }).catch(() => {
+        if (this.activeRoute.path === path) main.innerHTML = '<p role="alert">字段证据未能加载，请检查连接后重试。</p><button class="fluent-btn-sm" onclick="App.dispatchRoute()">重新加载证据</button>';
+      });
+      return;
+    }
     const needsTools = /^\/tools(?:\/|$)/.test(path) || path === '/chips' || /^\/(?:surface\/)?accessories(?:\/|$)/.test(path);
     if (needsTools && typeof ToolsEngine === 'undefined') {
       main.innerHTML = '<p role="status">正在加载工具…</p>';

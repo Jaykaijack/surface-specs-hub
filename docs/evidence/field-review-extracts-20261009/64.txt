@@ -1,0 +1,56 @@
+XBOX One S | XBOX (https://www.xbox.com/en-US/consoles/xbox-one-s)
+citeturn84view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.xbox.com/en-US/consoles/xbox-one-s","lineno":150}); Total lines: 73
+L0: cite0†Image: Front view of XBOX One S and XBOX One S All Digital Edition surrounded by Minecraft, Forza Horizon 4, Star Wars Jedi Fallen Order artwork†assets.xboxservices.com L1: # XBOX One S
+L2: 
+L3: cite1†Image: XBOX One S front corner†assets.xboxservices.com L4: 
+L5: cite2†Image: Detailed view of XBOX One S console from above†assets.xboxservices.com L6: 
+L7: cite3†Image: XBOX One S right corner and USB jack detail†assets.xboxservices.com L8: 
+L9: cite4†Image: Fortnite, Forza Horizon 4, Star Wars Jedi Fallen Order and NBA 2K20 graphics behind an XBOX One S and XBOX One S All Digital Edition†assets.xboxservices.com L10: 
+L11: cite5†Image†assets.xboxservices.com L12: ### Cloud storage
+L13: 
+L14: Your games, saves, and backups are safe in the cloud.
+L15: 
+L16: cite6†Image†assets.xboxservices.com L17: 
+L18: ### Digital Library
+L19: 
+L20: Your content travels with you, so you can play your games on any XBOX One.
+L21: 
+L22: cite7†Image†assets.xboxservices.com L23: ### Pre-install games
+L24: 
+L25: Pre-install new digital games so you can play the moment they launch.
+L26: 
+L27: cite8†Image: A selection of games available or coming soon with Game Pass including Beast of Reincarnation, Gears of War: E-Day, Hades II, and EA SPORTS College Football 26.†cms-assets.xboxservices.com L28: 
+L29: cite9†Image: XBOX Game Pass logo†cms-assets.xboxservices.com XBOX Game Pass logo
+L30: ## Discover your next favorite game
+L31: 
+L32: Enjoy a library of hundreds of games. With games added all the time, there’s always something new to play.
+L33: 
+L34: cite10†JOIN NOW L35: 
+L36: cite11†Image: XBOX One S white controller†assets.xboxservices.com L37: 
+L38: ## Elevate your game
+L39: 
+L40: Get an extra controller, headset to play with friends, or extra storage. All XBOX One gaming accessories are compatible.cite12†^{4} L41: 
+L42: cite13†SHOP XBOX ACCESSORIES L43: 
+L44: cite14†Image: XBOX Series X and XBOX Series S consoles side by side.†assets.xboxservices.com L45: ## UPGRADE TO XBOX SERIES X|S
+L46: 
+L47: 
+L48: 
+L49: Experience next-gen performance
+L50: 
+L51: cite15†LEARN MORE L52: 
+L53: • XBOX One S All-Digital Edition Console does not play physical discs.
+L54: 
+L55: • Dolby Atmos for Headphones requires additional purchase from Microsoft Store.
+L56: 
+L57: • Some apps require app provider-specific subscriptions and/or other requirements. See cite16†www.xbox.com/live .
+L58: • Excludes the XBOX One S stand that works exclusively with the XBOX One S. XBOX Kinect Adapter (sold separately) required for Kinect on XBOX One S and XBOX One X.
+L59: 
+L60: • Game Pass monthly subscription required; continues until cancelled. Game selection varies over time. Learn more at cite10†www.xbox.com/game-pass .
+L61: 
+L62: • HDR functionality available with supported games and TVs.
+L63: 
+L64: • PC hardware requirements may vary for games on Windows 10/11.
+L65: • XBOX One Backward Compatibility feature works with select XBOX 360 games, see cite17†www.xbox.com/backcompat . XBOX Live and broadband internet required for initial download of game to console.
+L66: cite18†XBOX consoles cite19†XBOX games cite20†XBOX Game Pass cite21†XBOX accessories cite22†XBOX News†news.xbox.com cite23†XBOX Support†support.xbox.com cite24†Feedback†aka.ms cite25†Community Standards cite26†Photosensitive Seizure Warning†support.xbox.com cite27†User Research at XBOX cite28†Microsoft account†account.microsoft.com cite29†Microsoft Store Support†support.microsoft.com cite30†Returns†support.microsoft.com cite31†Orders tracking†www.microsoft.com cite32†Store locations†www.microsoft.com L67: cite33†Rewards cite34†Games†developer.microsoft.com cite35†Designed for XBOX L68: 
+L69: cite36†English (United States) L70: 
+L71: cite37†Your Privacy Choices†aka.ms cite37†Your Privacy Choices†aka.ms L72: cite38†Consumer Health Privacy†go.microsoft.com cite39†Sitemap†www.microsoft.com cite40†Contact Microsoft†support.microsoft.com cite41†Privacy & Cookies†go.microsoft.com cite42†Manage cookies cite43†Terms of use†go.microsoft.com cite44†Trademarks†www.microsoft.com cite45†Third Party Notices cite46†Safety & eco†www.microsoft.com cite47†About our ads†choice.microsoft.com 

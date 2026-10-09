@@ -1,0 +1,381 @@
+Shop Surface Accessories - Keyboards, Pens, Covers, Docks, Headphones & more | Microsoft Store (https://www.microsoft.com/d/surface-duo-2/9408kgxp4xjl)
+citeturn96view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: click({"ref_id":"turn50view0","id":74}); Redirected to URL: https://www.microsoft.com/en-us/store/b/surface-accessories; Total lines: 461
+L0: This is the Trace Id: 7aed353c64c90d7d3ac28745f71b1707
+L1: 
+L2: Translate to English
+L3: 
+L4: ## You are shopping Microsoft Store in: {0}
+L5: 
+L6: Are you looking for Microsoft Store in: {0}?
+L7: 
+L8: [Button: ]
+L9: 
+L10: [Button: Stay in {0} ]
+L11: 
+L12: cite0†Go to {0} L13: 
+L14: ## Sign me up
+L15: ## Thank you!
+L16: 
+L17: Stay informed about special deals, the latest products, and more from Microsoft Store.
+L18: 
+L19: Email address (required) [Input]
+L20: 
+L21: Location (required)
+L22: 
+L23: [Select]
+L24: 
+L25: I would like information, tips, and offers about Microsoft Store and other Microsoft products and services. cite1†Privacy statement†go.microsoft.com .
+L26: 
+L27: By clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.
+L28: To withdraw consent or manage your contact preferences, visit the cite2†Promotional Communications Manager†go.microsoft.com .
+L29: 
+L30: cite1†Privacy statement†go.microsoft.com .
+L31: 
+L32: [Button: Sign Up ]
+L33: 
+L34: You’re now signed up to receive Microsoft Store emails. Thank you!
+L35: 
+L36: cite3†Discover Surface L37: #
+L38: 
+L39: Surface accessories
+L40: 
+L41: Free 2-3 day shipping, plus flexible payment options at checkout.
+L42: 
+L43:   * cite4†Image†cdn-dynmedia-1.microsoft.com cite5†Type Covers & Keyboards L44:   * cite6†Image†cdn-dynmedia-1.microsoft.com cite7†Pen, Dial & Mice L45:   * cite8†Image†cdn-dynmedia-1.microsoft.com cite9†Power & Dock L46:   * cite10†Image†cdn-dynmedia-1.microsoft.com cite11†Surface Repair Parts L47:   * cite12†Image†cdn-dynmedia-1.microsoft.com cite13†Accessibility L48: cite14†Image: A variety of Surface keyboards, some featuring pen storage and dedicated key to access Copilot.†cdn-dynmedia-1.microsoft.com L49: ## Surface Pro keyboards
+L50: 
+L51: Experience unrivaled versatility and AI at your fingertips with premium keyboards—including the new Surface Pro Flex with dedicated Copilot key.
+L52: 
+L53: cite15†Shop Surface Pro keyboards cite16†Learn more L54: 
+L55: cite17†Image: Two Surface Arc Mouse in the colors Ocean and Violet.†cdn-dynmedia-1.microsoft.com L56: ## Surface Arc Mouse
+L57: 
+L58: The travel mouse you’ll use every day—now in vibrant, new colors Violet and Ocean
+L59: 
+L60: cite18†Shop Surface Arc Mouse L61: 
+L62: cite19†Image: A Surface Mouse (2nd Edition) in the color Black. †cdn-dynmedia-1.microsoft.com L63: 
+L64: New
+L65: 
+L66: ## Surface Mouse (2nd Edition)
+L67: 
+L68: Precision feedback, advanced haptics, seamless device switching, and a customizable action button.*
+L69: 
+L70: cite20†Pre-order L71: 
+L72: cite21†Image: A Surface USB4 Dock and USB-C® cable.†cdn-dynmedia-1.microsoft.com L73: ## Surface USB4 Dock
+L74: 
+L75: Connect and power your device and all your favorite accessories with this new dock designed for Surface.
+L76: 
+L77: cite22†Shop now L78: 
+L79: cite23†Image: A Surface Thunderbolt™ 4 Dock.†cdn-dynmedia-1.microsoft.com L80: 
+L81: ## Surface Thunderbolt 4 Dock
+L82: 
+L83: Power all your favorite accessories with eight versatile connections featuring Thunderbolt 4 ports for ultra-high speed data transfer.
+L84: 
+L85: cite24†Shop Surface Thunderbolt 4 Dock L86: 
+L87: cite25†Image: Surface Slim Pen.†cdn-dynmedia-1.microsoft.com L88: ## Surface Slim Pen
+L89: 
+L90: Take notes, sketch, and navigate with our best performing pen yet—featuring pinpoint accuracy and incredible shading thanks to a sharper pen tip.
+L91: 
+L92: cite26†Shop Surface Slim Pen L93: 
+L94: cite27†Image: A variety of Surface device parts.†cdn-dynmedia-1.microsoft.com L95: 
+L96: ## Surface repair and replacement parts
+L97: 
+L98: Extend the lifespan of out-of-warranty Surface devices with genuine Microsoft parts.
+L99: 
+L100: cite28†Shop repair and replacement parts L101: 
+L102: cite29†Image: Adaptive Accessories†cdn-dynmedia-1.microsoft.com L103: ## Accessories designed for accessibility
+L104: 
+L105: Customize your workstation and gaming setup to fit your needs with Microsoft’s ecosystem of highly adaptable accessories.
+L106: 
+L107: cite30†Learn more cite31†Shop Now L108: 
+L109: ##
+L110: 
+L111: Shop accessories by Surface device
+L112: 
+L113: cite32†Surface Laptop accessories cite33†Surface Pro accessories L114: 
+L115: Previous Next
+L116: 
+L117: ### Surface Laptop accessories
+L118: 
+L119: cite34†Skip Surface Laptop accessories L120: 
+L121: Previous slide Next slide
+L122: 
+L123: cite35†Image†cdn-dynmedia-1.microsoft.com L124: 
+L125: Pre-order
+L126: #### cite36†Surface Mouse (2nd Edition) L127: 
+L128: From $79.99
+L129: 
+L130: From $79.99
+L131: 
+L132: Meet the mouse designed to complete your Surface experience. Surface Mouse (2nd...Select Surface Mouse (2nd Edition) for more information.
+L133: 
+L134: cite37†Image†cdn-dynmedia-1.microsoft.com L135: 
+L136: #### cite38†Surface Arc Mouse L137: 
+L138: $89.99
+L139: 
+L140: $89.99
+L141: 
+L142: Slim, light, and ready to travel, Surface Arc Mouse is designed to conform to your...Select Surface Arc Mouse for more information.
+L143: 
+L144: cite39†Image†cdn-dynmedia-1.microsoft.com L145: #### cite40†Surface Arc Mouse (Black) L146: 
+L147: $89.99
+L148: 
+L149: $89.99
+L150: 
+L151: Slim, light, and ready to travel, Surface Arc Mouse is designed to conform to your...Select Surface Arc Mouse (Black) for more information.
+L152: 
+L153: cite41†Image†cdn-dynmedia-1.microsoft.com L154: 
+L155: #### cite42†Surface Arc Mouse L156: 
+L157: From $89.99
+L158: 
+L159: From $89.99
+L160: 
+L161: Slim, light, and ready to travel, the battery-operated Surface Arc Mouse is designed...Select Surface Arc Mouse for more information.
+L162: 
+L163: cite43†Image†cdn-dynmedia-1.microsoft.com L164: 
+L165: Save $65.00
+L166: #### cite44†Surface Thunderbolt 4 Dock L167: 
+L168: Originally $299.99 now $234.99
+L169: 
+L170: $299.99 $234.99
+L171: 
+L172: Elevate your workspace with Surface Thunderbolt™ 4 Dock, delivering ultra-high speed...Select Surface Thunderbolt 4 Dock for more information.
+L173: 
+L174: cite45†Image†cdn-dynmedia-1.microsoft.com L175: 
+L176: #### cite46†Surface Slim Pen L177: 
+L178: $129.99
+L179: 
+L180: $129.99
+L181: 
+L182: Turn your ideas into reality with Surface Slim Pen. Take handwritten notes and draw...Select Surface Slim Pen for more information.
+L183: 
+L184: cite47†Image†cdn-dynmedia-1.microsoft.com L185: 
+L186: Save $46.00
+L187: #### cite48†Surface USB4 Dock L188: 
+L189: Originally $199.99 now $153.99
+L190: 
+L191: $199.99 $153.99
+L192: 
+L193: Ultrafast data transfer speeds, expanded port options for essential accessories, up to...Select Surface USB4 Dock for more information.
+L194: 
+L195: cite49†Image†cdn-dynmedia-1.microsoft.com L196: #### cite50†Surface Keyboard (2nd Edition) L197: 
+L198: $149.99
+L199: 
+L200: $149.99
+L201: 
+L202: The Copilot¹˒² key on Surface Keyboard brings the power of AI to your fingertips with...Select Surface Keyboard (2nd Edition) for more information.
+L203: 
+L204: cite51†Image†cdn-dynmedia-1.microsoft.com L205: 
+L206: Pre-order
+L207: 
+L208: #### cite52†Surface 140W USB-C Power Adapter L209: 
+L210: $99.99
+L211: 
+L212: $99.99
+L213: 
+L214: Serious power in a sleek design, small enough to fit in a jacket pocket. This...Select Surface 140W USB-C Power Adapter for more information.
+L215: 
+L216: cite53†Image†cdn-dynmedia-1.microsoft.com L217: #### cite54†Surface 45W USB-C Wall Charger L218: 
+L219: $69.99
+L220: 
+L221: $69.99
+L222: 
+L223: Charge Surface¹ or other USB-C® devices with the Surface 45W USB-C Wall Charger. Its...Select Surface 45W USB-C Wall Charger for more information.
+L224: 
+L225: cite55†Back to Next and Previous controls L226: 
+L227: End of Surface Laptop accessories
+L228: 
+L229: ### Surface Pro accessories
+L230: 
+L231: cite56†Skip Surface Pro accessories L232: 
+L233: Previous slide Next slide
+L234: 
+L235: cite35†Image†cdn-dynmedia-1.microsoft.com L236: 
+L237: Pre-order
+L238: #### cite36†Surface Mouse (2nd Edition) L239: 
+L240: From $79.99
+L241: 
+L242: From $79.99
+L243: 
+L244: Meet the mouse designed to complete your Surface experience. Surface Mouse (2nd...Select Surface Mouse (2nd Edition) for more information.
+L245: 
+L246: cite37†Image†cdn-dynmedia-1.microsoft.com L247: 
+L248: #### cite38†Surface Arc Mouse L249: 
+L250: $89.99
+L251: 
+L252: $89.99
+L253: 
+L254: Slim, light, and ready to travel, Surface Arc Mouse is designed to conform to your...Select Surface Arc Mouse for more information.
+L255: 
+L256: cite57†Image†cdn-dynmedia-1.microsoft.com L257: 
+L258: Save up to $30.00
+L259: #### cite58†Surface Pro 12-inch Keyboard L260: 
+L261: Originally From $149.99 now From $119.99
+L262: 
+L263: From $149.99 $119.99
+L264: 
+L265: Accessorize your 12-inch Surface Pro by pairing it with a sleek keyboard. Surface Pro...Select Surface Pro 12-inch Keyboard for more information.
+L266: 
+L267: cite59†Image†cdn-dynmedia-1.microsoft.com L268: 
+L269: Save up to $30.90
+L270: #### cite60†Surface Pro 12-inch Keyboard with Slim Pen L271: 
+L272: Originally From $249.99 now From $219.09
+L273: 
+L274: From $249.99 $219.09
+L275: 
+L276: Save by bundling together two complementary accessories. Surface Pro 12-inch Keyboard...Select Surface Pro 12-inch Keyboard with Slim Pen for more information.
+L277: 
+L278: cite61†Image†cdn-dynmedia-1.microsoft.com L279: #### cite62†Surface Pro 13-inch Flex Keyboard L280: 
+L281: From $399.99
+L282: 
+L283: From $399.99
+L284: 
+L285: Unlock new levels of flexibility with a keyboard designed to be used either attached...Select Surface Pro 13-inch Flex Keyboard for more information.
+L286: 
+L287: cite63†Image†cdn-dynmedia-1.microsoft.com L288: #### cite64†Surface Pro 13-inch Flex Keyboard with Slim Pen L289: 
+L290: From $499.99
+L291: 
+L292: From $499.99
+L293: 
+L294: Unrivaled flexibility comes in the perfect pair—Surface Slim Pen stores and recharges...Select Surface Pro 13-inch Flex Keyboard with Slim Pen for more information.
+L295: 
+L296: cite65†Image†cdn-dynmedia-1.microsoft.com L297: 
+L298: Save up to $51.00
+L299: #### cite66†Surface Pro 13-inch Keyboard with pen storage L300: 
+L301: Originally From $179.99 now From $128.99
+L302: 
+L303: From $179.99 $128.99
+L304: 
+L305: Next-level versatility comes in the perfect, premium keyboard, featuring a large glass...Select Surface Pro 13-inch Keyboard with pen storage for more information.
+L306: 
+L307: cite67†Image†cdn-dynmedia-1.microsoft.com L308: #### cite68†Surface Pro 13-inch Keyboard with Slim Pen L309: 
+L310: From $279.99
+L311: 
+L312: From $279.99
+L313: 
+L314: Next-level versatility comes in the perfect, premium keyboard, featuring a large glass...Select Surface Pro 13-inch Keyboard with Slim Pen for more information.
+L315: 
+L316: cite69†Image†cdn-dynmedia-1.microsoft.com L317: #### cite70†Surface Pro 13-inch Keyboard L318: 
+L319: $169.99
+L320: 
+L321: $169.99
+L322: 
+L323: Enjoy comfortable typing anywhere. Sleek and compact, this keyboard also features a...Select Surface Pro 13-inch Keyboard for more information.
+L324: 
+L325: cite71†Image†cdn-dynmedia-1.microsoft.com L326: #### cite72†Microsoft Surface 65W Power Supply L327: 
+L328: $99.99
+L329: 
+L330: $99.99
+L331: 
+L332: Made exclusively for Surface* and designed to match its look and feel, the 65W Power...Select Microsoft Surface 65W Power Supply for more information.
+L333: 
+L334: cite73†Back to Next and Previous controls L335: 
+L336: End of Surface Pro accessories
+L337: 
+L338: Back to tabs
+L339: 
+L340: ##
+L341: 
+L342: Why buy from Microsoft Store
+L343: 
+L344: cite74†Image†cdn-dynmedia-1.microsoft.com L345: ### Trade in. Gift more.
+L346: 
+L347: When you trade in an eligible device, you get cash back to spend on gifts.
+L348: 
+L349: cite75†Learn more about shipping†support.microsoft.com L350: 
+L351: cite76†Image†cdn-dynmedia-1.microsoft.com L352: 
+L353: ### Sleigh now, pay later
+L354: 
+L355: From gifting to upgrading, find Surface and XBOX at prices and payment plans that work for you.
+L356: 
+L357: cite77†Learn about flexible payment options L358: 
+L359: cite78†Image†cdn-dynmedia-1.microsoft.com L360: ### Free returns through January 31, 2027
+L361: 
+L362: Don’t love it? Return almost any physical product by January 31, 2027, for a full refund. Some exclusions apply.
+L363: 
+L364: cite79†Learn about Microsoft Complete L365: 
+L366: cite78†Image†cdn-dynmedia-1.microsoft.com L367: 
+L368: ### Free 60-day returns
+L369: 
+L370: Return almost any physical product within 60 days in like-new condition in its original packaging for a full refund. Some exclusions apply.
+L371: 
+L372: cite80†Learn about returns L373: 
+L374: cite81†Learn about all the benefits of shopping at Microsoft Store​ L375: ##
+L376: Frequently asked questions
+L377: 
+L378: Expand all | Collapse all
+L379: 
+L380:   * ### What’s Microsoft's return policy?
+L381: If you purchased a product from Microsoft Store, you can request a return. You'll then find out if your product is eligible for a return. If you purchased a product from another organization, you may contact that organization to inquire about returns or refunds (subject to their refund policy). You can check your cite82†Order history†login.microsoftonline.com to verify what you've ordered from Microsoft. Learn more cite83†here†support.microsoft.com .
+L382: 
+L383:   * ### Does Microsoft have a rewards program?
+L384: Yes. Earning rewards is simple, easy, and fun—just search, shop, or play with Microsoft and you’ll be on your way to earning more than ever. Learn more cite84†here .
+L385: 
+L386:   * ### Does Microsoft offer discounts on any of its products to employees at eligible companies?
+L387: Yes, employees at eligible companies save 30% on select Microsoft 365 subscriptions and up to 10% on select Surface devices and accessories through the Microsoft Workplace Discount Program. You can check your eligibility for the Workplace Discount Program cite85†here .
+L388: 
+L389:   * ### Does Microsoft sell refurbished products?
+L390: 
+L391: Yes. Our program offers the opportunity to own devices that are put through a rigorous testing and certification process—all at a discounted price. cite86†Learn more .
+L392:   * ### Are payment plans available in the U.S.?
+L393: 
+L394: Yes. Learn more about flexible payment options available in the U.S. cite87†here .
+L395: 
+L396:   * ### Are trade-in plans available? How do they work?
+L397: 
+L398: Yes—with the cite88†Microsoft Store Online Trade-in Program , you can trade in your used laptop, tablet, phone, or game console and get cash back. Trade-in program only available in select regions.
+L399: 
+L400:   * ### Do Bluetooth-enabled third-party accessories work with all Surface devices?
+L401: Yes, all Surface devices support Bluetooth-enabled accessories. Please check that your accessory manufacturer supports Windows.
+L402: 
+L403:   * ### Can I upgrade the SSD and RAM of my Surface device?
+L404: While technically possible, this is strongly discouraged. Microsoft rigorously tests hardware to ensure product quality­—installation of a non-Microsoft SSD, or a Microsoft SSD of a different volume than originally provided, may lead to reduced performance and unsupported configurations. Only install SSDs that have been tested for your specific device configuration.
+L405: 
+L406:   * ### Can I purchase a Surface device that supports Windows 10 instead of Windows 11?
+L407: Yes, certain Surface devices support Windows 10. Learn more about the versions of Windows that are supported on Surface devices and options for downgrading to Windows 10 cite89†here†support.microsoft.com .
+L408: 
+L409:   * ### Which devices are compatible with Surface Pen and Surface Slim Pen 2?
+L410: 
+L411: Surface Pen is designed for the following devices:
+L412: 
+L413:     * Surface Book 1 – 3
+L414:     * Surface Studio 1 – 2+
+L415:     * Surface Laptop 1 – 5
+L416:     * Surface Go 1 – 3
+L417:     * Surface Pro 3 – 7+
+L418:     * Surface Pen Tip Kit
+L419: Surface Slim Pen 2 is designed for the following devices:
+L420: 
+L421:     * Surface Laptop Studio
+L422:     * Surface Pro 8 – 9
+L423:     * Surface Pro X
+L424:     * Surface Slim Pen 2 Pen Tips
+L425:     * Surface Slim Pen Charger
+L426:     * Surface Duo 2
+L427:     * Surface Hub 2S
+L428: 
+L429:   * ### Will my Surface Pro 7 Type Cover work with my new Surface Pro 9?
+L430: No. Surface Pro 9 is only compatible with cite90†Surface Pro Keyboard , cite91†Surface Pro Signature Keyboard , cite92†Surface Pro Signature Keyboard with Slim Pen 2 , and cite93†Surface Pro Signature Keyboard with Fingerprint Reader .
+L431: 
+L432:   * ### What are the benefits of buying a Surface Laptop Studio configured with NVIDIA GeForce RTX graphics?
+L433: NVIDIA GeForce RTX graphics provide additional power to play AAA Xbox Game Pass games locally, at 1080p with a smooth 60fps frame rate. It also allows you to design, animate, and render content with apps like Adobe Premiere Pro.
+L434: 
+L435: Discounts: Supplies limited. Actual savings depends on product availability.
+L436:   * Returns: Holiday extended return policy available with eligible physical products purchased between October 1, 2026 - December 2, 2026 from Microsoft Store online and Microsoft Experience Centers in select markets. Holiday purchases made during that window can be returned through January 31, 2027.
+L437: For purchases made outside the window of October 1, 2026 – December 2, 2026, returns are available with eligible physical products purchased from Microsoft Store online and Microsoft Experience Centers in select markets. Return process must be started within 60 days after customer receives the product. Limit 5 product returns per eligible customer purchase. Excludes ROG Xbox Ally X, ROG Xbox Ally, Surface Hub, HoloLens, and Windows DevKit. Applicable return policy applies.
+L438: For purchases made at Microsoft Store, see applicable cite94†Microsoft Terms of Sale for more information. For purchases made at a Microsoft Experience Center, see receipt for more information. Microsoft reserves the right to modify or discontinue offers at any time.
+L439:   * Price protection: Microsoft Store Price Adjustment: Holiday extended price protection valid on purchases of qualifying physical consumer products purchased from Microsoft Store online and Microsoft Experience centers in select markets between October 1, 2026 – December 2, 2026. Holiday purchase price adjustment may be requested until January 31, 2027.
+L440: Purchases made outside the window of October 1, 2026 – December 2, 2026: Price adjustment available on purchases of qualifying physical consumer products made at Microsoft Store and Microsoft Experience Centers in select markets for 60 days from the date product is received.
+L441: Eligible Retailer Price Adjustment: Valid on purchases of qualifying new consumer physical products from Microsoft Store and Microsoft Experience Centers in select markets for 60 days from the date product is received. Excludes ROG Xbox Ally, ROG Xbox Ally X, Surface for Business devices and accessories, and refurbished products. An Eligible Retailer Price Adjustment cannot be requested at time of purchase.
+L442: Microsoft reserves the right to verify an eligible retailer’s advertised price and availability of the product. The product sold by the eligible retailer must be identical to the product sold by Microsoft and must be in stock for purchase at the eligible retailer at the reduced price. Exclusions apply.
+L443: Both price adjustments: Customer is eligible only if the product is in stock for purchase at Microsoft Store or a Microsoft Experience Center. Customer must contact Microsoft to request the adjustment. For purchases from Microsoft Store, contact Microsoft Store Sales and Support with your Microsoft Account information and any other information requested by a representative. For purchases from a Microsoft Experience Center, you must return to the location with your receipt.
+L444: Limit 1 price adjustment total per product. Excludes Surface Hub, HoloLens, and Windows DevKit. See cite95†Microsoft Store Price Protection for full terms and full list of eligible retailers.
+L445:   * Trade-In: Available only through the Microsoft Store online in the United States. Offer valid for reimbursements after trade in of a qualifying device (PC, laptop, mobile phone, tablet, or video game console).
+L446: To be eligible for trade in, (i) you must own the qualifying device, (ii) the device must power on, (iii) the battery must hold a charge (the device must not be required to be plugged in to operate), and (iv) the device must be in fully-functional, working condition and not have broken or missing components, a cracked display or screen, liquid damage, modification(s) or the device warranty seal broken.
+L447: The device cannot be password protected and must include its original chargers, accessories, and hard drive. Customer must mail in the qualifying trade-in device to be eligible for reimbursement. Devices determined to not meet eligibility criteria may be shipped back to the customer or recycled. Recycled devices are not eligible for cash back. All trade-ins are final. Cannot be transferred or otherwise redeemed for cash or gift cards, or credit towards other devices or products.
+L448: May not be combined with other offers. Microsoft reserves the right to modify or discontinue offers at any time.
+L449: This offer is operated by Teladvance, LLC and is not sponsored by Microsoft. Any appraised value will be determined at trade in and provided by Teladvance. All trade-ins and reimbursements are subject to Teladvance’s sole discretion and approval.
+L450: 
+L451: *Performance varies significantly by device and with settings, usage, and other factors. Multi-device functionality supports up to three devices; compatibility varies by device and configuration.
+L452: 
+L453: cite96†Back to top L454: cite97†Surface Laptop Ultra cite98†Surface Pro cite99†Surface Laptop cite100†Surface RTX Spark Dev Box cite101†Explore Copilot cite102†Explore Microsoft products cite103†Windows 11 apps cite104†Account profile†account.microsoft.com cite105†Download Center cite106†Microsoft Store support†go.microsoft.com cite107†Returns cite108†Order tracking cite86†Certified Refurbished cite109†Microsoft Store Promise cite110†Flexible Payments cite111†Microsoft in education cite112†Devices for education cite113†Microsoft Teams for Education cite114†Microsoft 365 Education cite115†How to buy for your school cite116†Educator training and development†education.microsoft.com cite117†Deals for students and parents cite118†AI for education L455: cite119†Microsoft AI cite120†Microsoft Security cite121†Dynamics 365 cite122†Microsoft 365 cite123†Microsoft Power Platform cite124†Microsoft Teams cite125†Microsoft Copilot cite126†Small Business cite127†Azure†azure.microsoft.com cite128†Microsoft Developer†developer.microsoft.com cite129†Microsoft Learn†learn.microsoft.com cite130†Support for AI marketplace apps cite131†Microsoft Tech Community†techcommunity.microsoft.com cite132†Microsoft Marketplace†marketplace.microsoft.com cite133†Software companies cite134†Visual Studio†visualstudio.microsoft.com cite135†Careers†careers.microsoft.com cite136†About Microsoft cite137†Company news†news.microsoft.com cite138†Privacy at Microsoft cite139†Investors cite140†Diversity and inclusion cite141†Accessibility cite142†Sustainability L456: cite143†English (United States) L457: 
+L458: cite144†Your Privacy Choices†aka.ms cite144†Your Privacy Choices†aka.ms L459: 
+L460: cite145†Consumer Health Privacy†go.microsoft.com cite146†Contact us†support.microsoft.com cite1†Privacy†go.microsoft.com cite0†Manage cookies cite147†Terms of use†go.microsoft.com cite148†Trademarks cite149†About our ads†choice.microsoft.com 

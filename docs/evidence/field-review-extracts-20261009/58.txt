@@ -1,0 +1,293 @@
+Surface Pro 6 规格和功能 | Microsoft Support (https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features)
+citeturn79view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features","lineno":150}); Total lines: 420
+L0: 跳转至主内容
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: 支持
+L5: 
+L6: cite1†支持 L7: 
+L8: [Button: 支持 ]
+L9: 
+L10:   * cite1†主页 L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: 产品]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†更多信息 ... L22:   * [Button: 设备]
+L23:     * cite12†Surface L24:     * cite13†电脑配件 L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC 游戏†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†硬件保修 L30: 
+L31:   * cite19†帐户和计费 L32:   * [Button: 资源]
+L33:     * cite20†社区论坛†learn.microsoft.com L34:     * cite21†Microsoft 365 管理员†portal.office.com L35:     * cite22†开发人员†developer.microsoft.com L36:     * cite23†教育 L37:     * cite24†上报支持欺诈†www.microsoft.com L38:     * cite25†产品安全 L39: 
+L40:   * [Button: 更多]
+L41: 
+L42:   * cite26†购买 Microsoft 365†go.microsoft.com L43:   * 所有 Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Windows†www.microsoft.com L48:       * cite30†Surface†www.microsoft.com L49:       * cite31†XBOX†www.xbox.com L50:       * cite32†折扣专区†www.microsoftstore.com.cn L51:       * cite33†企业购†www.microsoftstore.com.cn L52:       * cite1†支持 L53:     * 软件 [Button: 软件]
+L54:       * cite34†Windows 应用†apps.microsoft.com L55:       * cite35†OneDrive†www.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†从 Skype 转到 Teams L58:       * cite38†OneNote†www.microsoft.com L59:       * cite39†Microsoft Teams†www.microsoft.com L60:     * PC 和设备 [Button: PC 和设备]
+L61:       * cite40†购买 XBOX†www.microsoft.com L62:       * cite41†PC 和平板电脑†www.microsoft.com L63:       * cite42†配件†www.microsoftstore.com.cn L64:     * 娱乐 [Button: 娱乐]
+L65:       * cite43†XBOX 与游戏†www.xbox.com L66:       * cite44†PC 游戏†apps.microsoft.com L67:     * 企业 [Button: 企业 ]
+L68:       * cite45†Microsoft AI†www.microsoft.com L69:       * cite46†Microsoft 安全†www.microsoft.com L70:       * cite47†Azure†azure.microsoft.com L71:       * cite48†Dynamics 365†www.microsoft.com L72:       * cite49†Microsoft 365 商业版†www.microsoft.com L73:       * cite50†Microsoft Power Platform†www.microsoft.com L74:       * cite51†数字主权†www.microsoft.com L75:     * 开发人员与 IT [Button: 开发人员与 IT]
+L76:       * cite52†Microsoft 开发人员†developer.microsoft.com L77:       * cite53†Microsoft Learn†learn.microsoft.com L78:       * cite54†支持 AI 商城应用†www.microsoft.com L79:       * cite55†Microsoft 技术社区†techcommunity.microsoft.com L80:       * cite56†Microsoft Marketplace†marketplace.microsoft.com L81:       * cite57†软件公司†www.microsoft.com L82:       * cite58†Visual Studio†visualstudio.microsoft.com L83:     * 其他 [Button: 其他]
+L84:       * cite59†免费下载与安全性†www.microsoft.com L85:       * cite60†教育†www.microsoft.com L86:     * cite61†查看站点地图†www.microsoft.com L87: [Input: 搜索帮助] 搜索 搜索帮助
+L88: 
+L89:   * 无结果
+L90: 
+L91: 取消
+L92: 
+L93: 登录
+L94: 
+L95: 使用 Microsoft 登录
+L96: 
+L97: 登录或创建帐户。
+L98: 
+L99: 你好，
+L100: 
+L101: 使用其他帐户。
+L102: 
+L103: 你有多个帐户
+L104: 
+L105: 选择要登录的帐户。
+L106: 
+L107: 相关主题
+L108: # Surface Pro 6 规格和功能
+L109: 
+L110: 应用对象
+L111: 
+L112: Surface Pro 6
+L113: 
+L114: 注意
+L115: 
+L116:   * 在一台功能强大的电脑中实现平板电脑到笔记本电脑的灵活性。 借助 AI 加速的 AI+ PC 体验和全天电池使用时间，Surface Pro 可以让你随时随地工作。
+L117:   * cite62†探索最新的 Surface 设备†www.microsoft.com L118: ## 开始了解 Surface Pro 6
+L119: 
+L120: 不确定哪里是插入接口或如何调高音量？ 我们已准备好为你答疑解惑。 下面一些图示可以帮助你了解相关内容。
+L121: 
+L122: cite63†Image: 显示 Surface Pro 6 的屏幕，其有5个按钮和端口，分别用数字表示 L123: 
+L124:   1. 耳机和麦克风插孔
+L125:   2. 电源按钮
+L126:   3. 音量
+L127:   4. 带面部登录的 Windows Hello
+L128:   5. 前置摄像头
+L129: 
+L130: cite64†Image: 通过用数字叫出来的5个功能将 Surface Pro 6 的图像向侧面倾斜 L131: 
+L132:   1. Mini DisplayPort（1.2 版）
+L133:   2. USB 3.0
+L134:   3. SurfaceConnect
+L135:   4. 支架
+L136:   5. microSDXC^{™} 读卡器
+L137: 
+L138: ### 使用面部登录
+L139: 
+L140: 借助 Windows Hello，使用面部而非密码进行登录。 如此更快速，也更安全。  设置并浏览 cite65†Windows Hello†www.microsoft.com 。
+L141: ### 运行专业级软件和应用
+L142: 
+L143: Surface Pro 可运行工作所需的程序，高分辨率 PixelSense^{™} 显示器可将你的创意变成现实。 在休息放松的时候，Surface Pro 可以运行你喜爱的应用和游戏。
+L144: ### 自定义设置
+L145: 
+L146: 借助以下可选配件个性化设置 Surface Pro 6：
+L147: 
+L148: 特制版专业键盘盖
+L149: 
+L150: 使用 Surface Pro 获取真实的笔记本电脑体验。 有关详细信息，请参阅cite66†如何使用 Surface 专业键盘盖 。
+L151: 
+L152: cite67†Image: Surface_Pro_Signature_Type_Cover_Silver-520 L153: 
+L154: Surface 触控笔
+L155: 
+L156: 要设置 Surface 触控笔并用于记笔记或绘画，请参阅cite68†如何使用 Surface 触控笔 。
+L157: 
+L158: cite69†Image: Microsoft Surface 触控笔的图像 L159: 
+L160: Surface Arc 鼠标
+L161: 了解如何使用 cite70†Surface Arc 鼠标 。 它自然贴合您的手，并平放便于携带。cite71†Image: Microsoft Surface Arc 鼠标 520 L162: 
+L163: Surface Dial
+L164: 这一实现创意流程的全新工具可直接在 Surface Pro 6 的屏幕上工作。 要设置并使用，请参阅cite72†了解 Surface Dial 。
+L165: 
+L166: cite73†Image: 拨号工作室520 L167: Surface 扩展坞
+L168: 将 Surface Pro 6 转换为台式电脑。 要了解如何操作，请参阅cite74†使用 Surface 扩展坞 和 Surface 扩展坞 。
+L169: 
+L170: cite75†Image: Surface 扩展坞 L171: 
+L172: Xbox One 控制器
+L173: 你可在 Surface Pro 6 上玩最喜欢的 Xbox 游戏。 有关详细信息，请参阅cite76†Windows 10 上的游戏 。
+L174: 
+L175: cite77†Image: one-slim-browse-xbox-design-lab-s L176: ## 随时随地随心工作
+L177: 
+L178: Surface Pro 6 超薄超轻，因此便于随身携带。 无论你是在飞机上、在沙滩上放松身心或是在工作室中进行创意工作，Surface Pro 6 的铰链支架均可根据你所处的位置和所做的事情进行调整。
+L179: 
+L180: ### 笔记本电脑模式
+L181: 
+L182: cite78†Image: 带封面和Surface触控笔的 surface Pro 6 L183: 
+L184: 打开内置支架、增加一个可拆卸的 Surface Pro 特制版专业键盘盖，将 Surface Pro 6 转换为笔记本电脑模式。
+L185: 
+L186: ### Studio 模式
+L187: 
+L188: cite79†Image: 工作室模式下带有 Surface 触控笔的 Surface Pro 6 的图像 L189: 
+L190: 调低支架，将 Surface Pro 6 转换为 Studio 模式 - 这是完美的书写和绘画角度，你可以借助 Surface 触控笔和 Surface Dial 等可选配件完成创意工作。
+L191: ### 平板电脑模式
+L192: 
+L193: cite80†Image: 平板电脑模式下的 Surface Pro 6 的图像 L194: 
+L195: 关闭支架后，Surface Pro 6 就变成了轻巧便携、功能强大的平板电脑。 将 Surface Pro 与 Surface 触控笔搭配使用，轻松做笔记、记下想法或绘画。 或者播放最喜欢的电影，在一天结束时放松身心。
+L196: 
+L197: ### 强大的电源和性能
+L198: 
+L199: cite81†Image: 桌面上的 Surface Pro 6 的图像 L200: 
+L201: Surface Pro 6 足够轻薄，你可将它夹在臂下参加会议，但它配备了第 8 代 Intel® Core™ 处理器，其强大的电源和性能足以支持你运行完成任务所需的所有完整桌面软件。
+L202: 
+L203: ### 在视频通话中协作
+L204: 
+L205: Surface Pro 6 配备的前置 Skype HD 摄像头非常适合视频会议和通话。 cite82†在 Microsoft Store 获取 Skype†www.microsoft.com 。
+L206: ### 触控操作，更加快速
+L207: 
+L208: Surface Pro 6 配备出色的高分辨率 12.3 英寸 PixelSense^{™} 显示屏，能够栩栩如生地展示你的创意，并能快速响应触控操作。 要了解有关触摸屏或触摸板手势的信息，请参阅 cite83†Windows 的触摸手势 。
+L209: 
+L210: ### 无需随身携带电源线
+L211: 
+L212: 视频播放时间长达 13.5 小时*，因此无需担心电量耗尽或随身携带充电器。 要更改电池设置，请参阅cite84†节电使用技巧 。
+L213: 
+L214: * 视频播放时间长达 13.5 小时。 由 Microsoft 在 2017 年 4 月使用预生产的 Intel Core i5、256GB、8 GB RAM 设备进行测试。 测试包括视频播放期间的电池完全耗尽情况。 所有设置均为默认设置，除了：WLAN 与网络关联并且“自动亮度”禁用。 电池使用时间因设置、使用情况和其他因素而明显不同。
+L215: ## 使用 Windows、Microsoft Office 和 OneDrive 完成工作
+L216: 
+L217: Surface Pro 6 运行你所了解和信任的 Windows 以及 Word、Excel 和 PowerPoint 等 Microsoft Office，帮助你顺利完成工作。 此外还包含 OneDrive，因此你的文件可以安全存储在云中。 查看 cite85†Windows 帮助 以了解详细信息。
+L218: 
+L219: Surface Pro 6 附带：
+L220: 
+L221:   * Windows 10 家庭版（消费者客户）
+L222:   * Windows 10 专业版（商务客户）
+L223: 
+L224: 如果你的设备配备 Windows 10 家庭版，你可以升级到 Windows 10 专业版，但需额外付费。 有关详细信息，请参阅cite86†将 Windows 10 家庭版升级到 Windows 10 专业版 。
+L225: 
+L226: 要查看你使用的是哪个版本的 Windows，请参阅cite87†我运行的是哪个 Windows 操作系统？ 以了解详细信息。
+L227: 
+L228: 如果不确定自己使用的是哪种 Surface 型号，请参阅cite88†我的 Surface 是哪种型号？ 以了解详细信息。
+L229: 
+L230: 注意
+L231: 可以将 Surface Pro 6 升级到 Windows 11。 有关详细信息，请参阅 cite89†Windows 11 系统要求 。
+L232: ## 技术规格
+L233: 尺寸  | 292 毫米 x 201 毫米 x 8.5 毫米（11.5 英寸 x 7.9 英寸 x 0.33 英寸）
+L234: --- | ---
+L235: 存储^{3}  | 固态硬盘 (SSD) 选项：128GB、256GB、512GB 或 1TB
+L236: 显示  | 屏幕：12.3 英寸 PixelSense^{™}
+L237: 显示分辨率：2736 x 1824 (267 PPI)
+L238: 纵横比：3:2
+L239: 触控：10 点多点触控
+L240: 电池使用时间  | 支持本地视频播放长达 13.5 小时^{1}
+L241: 内存  | 8 GB 或 16 GB RAM
+L242: 显卡  | Intel® UHD Graphics 620 (i5)
+L243: Intel® UHD Graphics 620 (i7)
+L244: 处理器  | Surface Pro 6：i5-8250U、i7-8650U
+L245: Surface Pro 6 商业版：i5-8350U、i7-8650U
+L246: 连接  | 1 个全尺寸 USB 3.0
+L247: 3.5 毫米耳机插孔
+L248: 微型显示端口
+L249: 1 个 Surface Connect 端口
+L250: Surface 专业键盘盖端口^{4}
+L251: UHS-I) (MicroSDXC 卡读码器
+L252: 与 Surface Dial 兼容*
+L253: 安全性  | 用于企业安全的 TPM 2.0 芯片
+L254: 通过 Windows Hello 人脸登录提供企业级保护
+L255: 摄像头、视频和音频  | Windows Hello 人脸身份验证摄像头（前置）
+L256: 500 万像素前置摄像头，1080p Skype 高清视频
+L257: 800 万像素后置自动对焦摄像头，1080p 全高清视频
+L258: 两个麦克风
+L259: 带 Dolby® Audio™ 的 1.6W 立体声扬声器
+L260: 软件  | Surface Pro 6 - Windows 10 家庭版 Microsoft 365 30 天试用版
+L261: Surface Pro 6 商业版 - 适用于新 Microsoft 365 客户的 Windows 10 专业版 1 个月试用版
+L262: 无线  | Wi-Fi：IEEE 802.11 a/b/g/n/ac 兼容
+L263: 蓝牙无线 4.1 技术
+L264: 传感器  | 氛围光传感器
+L265: 加速计
+L266: 陀螺仪
+L267: 外部  | 外壳：标志性的一体式镁合金设计，带有隐藏的周边通风口
+L268: 颜色：铂金、黑色^{3}
+L269: 物理按钮：音量、电源
+L270: 包装盒中的内容  | Surface Pro 6
+L271: 电源
+L272: 快速入门指南
+L273: 安全手册及保修文档
+L274: 保修  | 1 年有限硬件保修
+L275: 重量（不包括专业键盘盖*）  | i5：1.70 磅 (770 克)
+L276: i7：784 克（1.73 磅）
+L277: * 专业键盘盖、Surface Dial、Microsoft 365、Surface 触控笔以及某些软件和配件单独出售。
+L278: 
+L279: [1] Surface Pro 6 电池使用时间：支持本地视频播放长达 13.5 小时。 测试是由 Microsoft 在 2018 年 9 月使用带 8 GB RAM 的 256 GB 预生产 Intel® 酷睿™ i5 设备进行。 测试包括视频播放期间的电池完全耗尽情况。 所有设置均为默认设置，除了：WLAN 与网络关联并且“自动亮度”禁用。 电池使用时间因设置、使用情况和其他因素而明显不同。 https://www.apple.com 时 Surface Pro 6 电池寿命和 MacBook 电池寿命的比较。
+L280: 
+L281: [2] 专业键盘盖（单独出售）和 Surface Pro 6 的可用颜色可能因市场和配置而异。
+L282: 
+L283: [3] 系统软件会占用大量存储空间。 可用存储随时发生改变，具体视系统软件更新和应用使用情况而定。 1 GB = 10 亿字节。 有关详细信息，请参阅 Surface.com/Storage。
+L284: [4] 仅与 Surface Pro 专业键盘盖和 Surface Pro 特制版专业键盘盖兼容。
+L285: ## 相关链接
+L286: 
+L287:   * cite88†了解你的 Surface 是哪种型号 L288: ## 需要更多帮助吗？
+L289: 
+L290:   * cite90†个人帐户 L291:   * cite91†工作/学校帐户 L292: 
+L293: 技术支持
+L294: 
+L295: 有关技术支持， cite92†请打开 Surface 应用†go.microsoft.com 或 cite93†Web 浏览器†go.microsoft.com ，描述你的问题，然后选择 “获取帮助”。
+L296: 
+L297: 社区支持
+L298: 
+L299: 社区可以帮助您提出问题，并听取具有丰富知识的专家的意见。 cite94†询问社区†go.microsoft.com 。
+L300: 
+L301: 其他支持选项
+L302: 
+L303: 如果无法使用 Surface 或对其他问题有疑问，请 cite95†打开“获取帮助†go.microsoft.com ”以联机获取其他支持。
+L304: 
+L305: cite96†Image: 需要更多帮助 网格垫片. L306: 
+L307: 技术支持
+L308: 
+L309: 你可以从 cite92†Surface 应用†go.microsoft.com 或 cite93†Web 浏览器†go.microsoft.com 获取自助支持。 如需技术帮助，请联系组织的 IT 支持人员或管理员。
+L310: 
+L311: 服务 & 维修
+L312: 
+L313: 对于 Surface 商用版，请访问 cite97†Microsoft 授权服务提供商的 Surface 维修†go.microsoft.com 。
+L314: 对于 IT 管理员
+L315: 
+L316: IT 管理员应查看cite98†适用于企业 & 教育客户的†go.microsoft.com cite99†Surface 商用版†go.microsoft.com 和支持。
+L317: 
+L318: cite96†Image: 需要更多帮助 网格垫片. L319: ## 此信息是否有用?
+L320: 
+L321: [Button: 是] [Button: 否]
+L322: 
+L323: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L324: 
+L325: How satisfied are you with the translation quality?
+L326: 
+L327: What affected your experience?
+L328: 
+L329: [Input] Resolved my issue
+L330: 
+L331: [Input] Clear instructions
+L332: 
+L333: [Input] Easy to follow
+L334: 
+L335: [Input] No jargon
+L336: 
+L337: [Input] Pictures helped
+L338: 
+L339: [Input] Translation quality
+L340: 
+L341: [Input] Didn't match my screen
+L342: 
+L343: [Input] Incorrect instructions
+L344: 
+L345: [Input] Too technical
+L346: 
+L347: [Input] Not enough information
+L348: 
+L349: [Input] Not enough pictures
+L350: [Input] Translation quality
+L351: 
+L352: Any additional feedback? (Optional)
+L353: 
+L354: [Button: Submit feedback]
+L355: 
+L356: By pressing submit, your feedback will be used to improve Microsoft products and services. cite100†Privacy Statement.†privacy.microsoft.com L357: 
+L358: 新增内容
+L359:   * cite101†Surface Laptop Ultra†www.microsoft.com L360:   * cite102†Surface Pro†www.microsoftstore.com.cn L361:   * cite103†Surface Laptop†www.microsoftstore.com.cn L362:   * cite104†探索 Copilot†www.microsoft.com L363:   * cite27†Microsoft 365†www.microsoft.com L364:   * cite105†探索 Microsoft 产品†www.microsoft.com L365:   * cite106†Windows 11 应用程序†www.microsoft.com L366: 
+L367: Microsoft Store
+L368: 
+L369:   * cite107†帐户个人资料†account.microsoft.com L370:   * cite59†下载中心†www.microsoft.com L371:   * cite108†订单跟踪†account.microsoft.com L372: 
+L373: 教育
+L374:   * cite109†Microsoft 教育版†www.microsoft.com L375:   * cite110†教育设备†www.microsoft.com L376:   * cite111†Microsoft Teams 教育版†www.microsoft.com L377:   * cite112†Microsoft 365 教育版†www.microsoft.com L378:   * cite113†Office 教育版†www.microsoft.com L379:   * cite114†教育工作者培训和开发†education.microsoft.com L380:   * cite115†面向学生和家长的优惠†www.microsoft.com L381:   * cite116†面向学生的 Azure†azure.microsoft.com L382: 
+L383: 企业
+L384:   * cite117†Microsoft AI†www.microsoft.com L385:   * cite46†Microsoft 安全†www.microsoft.com L386:   * cite47†Azure†azure.microsoft.com L387:   * cite48†Dynamics 365†www.microsoft.com L388:   * cite49†Microsoft 365†www.microsoft.com L389:   * cite118†Microsoft Advertising†about.ads.microsoft.com L390:   * cite119†Microsoft Copilot†www.microsoft.com L391:   * cite39†Microsoft Teams†www.microsoft.com L392: 
+L393: 开发人员与 IT
+L394:   * cite52†Microsoft 开发人员†developer.microsoft.com L395:   * cite53†Microsoft Learn†learn.microsoft.com L396:   * cite120†支持 AI 商城应用†www.microsoft.com L397:   * cite55†Microsoft 技术社区†techcommunity.microsoft.com L398:   * cite121†Microsoft Marketplace†marketplace.microsoft.com L399:   * cite50†Microsoft Power Platform†www.microsoft.com L400:   * cite122†软件公司†www.microsoft.com L401:   * cite58†Visual Studio†visualstudio.microsoft.com L402: 
+L403: 公司
+L404:   * cite123†招贤纳士†careers.microsoft.com L405:   * cite124†关于 Microsoft†www.microsoft.com L406:   * cite125†公司新闻†news.microsoft.com L407:   * cite126†Microsoft 隐私†www.microsoft.com L408:   * cite127†投资人†www.microsoft.com L409: 
+L410: cite128†中文(中国) cite129†你的隐私选择†aka.ms cite129†你的隐私选择†aka.ms cite130†消费者健康隐私†go.microsoft.com L411: 
+L412:   * cite131†与 Microsoft 联系 L413:   * cite132†隐私†go.microsoft.com L414:   * cite133†管理 Cookie L415:   * cite134†使用条款†go.microsoft.com L416:   * cite135†商标†go.microsoft.com L417:   * cite136†关于我们的广告†choice.microsoft.com L418:   * cite137†京ICP备09042378号-6†beian.miit.gov.cn L419:   * © Microsoft 2026
+

@@ -1,0 +1,311 @@
+购买 Surface Laptop - 对比最新型号、规格与价格 | 微软官方商城 (https://www.microsoftstore.com.cn/buy-surface-laptop)
+citeturn31view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/buy-surface-laptop","lineno":300}); Total lines: 387
+L0: JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser.
+L1: 
+L2: Menu
+L3: 
+L4: cite0†微软官方商城 L5: 
+L6: cite1†Menu L7:   * 硬件
+L8:     * Surface
+L9:       * 认证翻新 Surface
+L10:         * 认证翻新 Surface
+L11:         * 认证翻新 Surface 商用版
+L12:     * 特惠翻新 Surface
+L13:     * Xbox+游戏
+L14:       * 手柄及遥控器
+L15:       * Xbox 主机
+L16:       * 游戏机周边配件
+L17:       * 本周畅销游戏推荐
+L18:       * 光盘游戏
+L19:     * 配件
+L20:       * Surface配件
+L21:         * 键鼠+Dial
+L22:         * 触控笔
+L23:         * 保护类
+L24:         * 线材及适配器
+L25:         * 维修部件
+L26:       * Xbox 配件
+L27:         * 手柄及遥控器
+L28:         * 游戏机周边配件
+L29:       * 自适应配件
+L30:       * 键鼠
+L31:       * 线材及适配器
+L32:       * 其他配件
+L33:   * 软件
+L34:     * Microsoft 365
+L35:     * Office 2024
+L36:     * Windows
+L37:     * Apps与Windows 10游戏
+L38:     * Visual Studio
+L39:     * Microsoft Complete and EHS
+L40:     * 其他软件与服务
+L41:   * 折扣专区
+L42:   * Surface
+L43:   * 特惠翻新 Surface
+L44:   * 教育优惠
+L45:   * 企业购
+L46:   * 我的优惠券
+L47:   * 以旧换新
+L48:   * 商城承诺
+L49:   * 支持与帮助
+L50:   * 专栏博客
+L51:   * 更多
+L52: cite2†账户 L53: 
+L54: 搜索
+L55: 
+L56: cite3†My Cart L57: 
+L58: 登录
+L59: 
+L60: Search
+L61: 
+L62: Search
+L63: 
+L64: [Input]
+L65: 
+L66: cite4†Advanced Search L67: 
+L68: Search
+L69: 
+L70: [Button: 取消]
+L71: 
+L72: cite5†Image†cdn.microsoftstore.com.cn L73: 
+L74: cite5†Image†cdn.microsoftstore.com.cn L75: 
+L76:   * cite6†我的账户 L77:   * cite7†我的订单 L78:   * cite8†地址管理 L79:   * cite9†我的专区 L80:   * cite10†我的优惠券 L81:   * cite11†退出 cite12†登录 L82: 
+L83: [Input]
+L84: 
+L85: cite13†Image†cdn.microsoftstore.com.cn L86: 
+L87: 即将上市
+L88: ## Surface Laptop, 13 英寸 (第 2 代)
+L89: 
+L90: ### 亮点
+L91: 
+L92: 更适合 学生与移动专业人士
+L93: 无论是居家还是出行，都可用于记笔记、参加会议、流媒体播放，以及处理轻度创意工作。
+L94: 
+L95: 处理器 Snapdragon^{®} X2 Plus（6 核）
+L96: 
+L97: 显示屏 13 英寸触控屏显示屏，刷新频率最高可达 60 Hz，像素密度 178 PPI^{1,2}
+L98: 
+L99: 内存 起始容量为 16 GB，最高可达 24 GB
+L100: 
+L101: 存储空间 起始容量为 256 GB，最高可达 512 GB^{3，4}
+L102: 
+L103: 电池使用时间 支持长达 22.5 小时的本地视频播放^{5}
+L104: 
+L105: NPU Qualcomm^{®} Hexagon™（80 TOPS）
+L106: 
+L107: 端口 2 个 USB-C^{®}/USB 3.2 端口和 1 个 USB-A 端口
+L108: 
+L109: 包含电源 配备 45 W 电源适配器，支持 USB-C^{®} 充电^{6}
+L110: 
+L111: cite14†Image†cdn.microsoftstore.com.cn L112: 
+L113: 最多节省¥513.00
+L114: ## Surface Laptop, 13.8 英寸(第 8 代)
+L115: 
+L116: 起售价 ¥12,988.00
+L117: 
+L118: cite15†选择你的配置>> L119: ### 亮点
+L120: 
+L121: 更适合 日常办公人士与混合办公人群
+L122: 流畅高效的性能，可满足内容创作、照片与视频剪辑以及在线游戏需求。
+L123: 
+L124: 处理器 Snapdragon^{®} X2 Plus（10 核）或 Snapdragon^{®} X2 Elite（12 核）
+L125: 
+L126: 显示屏 13.8 英寸触控屏 PixelSense™ Flow 显示屏，动态的刷新频率最高可达 120 Hz，像素密度 201 PPI1^{1,7}
+L127: 
+L128: 内存 起始容量为 16 GB，最高可达 64 GB
+L129: 
+L130: 存储空间 起始容量为 256 GB，最高可选 1 TB^{3，4}
+L131: 
+L132: 电池使用时间 支持长达 20 小时的本地视频播放^{5}
+L133: 
+L134: NPU Qualcomm^{®} Hexagon™（80 TOPS）
+L135: 
+L136: 端口 2 个 USB-C^{®}/ USB4^{®} 和 1 个 USB-A
+L137: 
+L138: 包含电源 配备 39 W 电源适配器，支持 Surface Connect 及 USB-C^{®} 接口充电^{6}
+L139: 
+L140: 配置设备
+L141: 
+L142: cite16†Image†cdn.microsoftstore.com.cn L143: 
+L144: 最多节省¥513.00
+L145: ## Surface Laptop, 15 英寸(第 8 代)
+L146: 
+L147: 起售价 ¥14,388.00
+L148: 
+L149: cite17†选择你的配置>> L150: ### 亮点
+L151: 
+L152: 更适合 高性能用户、创意从业者与多任务处理者
+L153: 可在大屏上推进大型项目、设计视觉作品，同时运行多款应用程序。
+L154: 
+L155: 处理器 Snapdragon^{®} X2 Plus（10 核）或 Snapdragon^{®} X2 Elite（12 核）
+L156: 
+L157: 显示屏 15 英寸触控屏PixelSense™ Flow 显示屏，动态的刷新频率最高可达 120 Hz，像素密度 262 PPI^{1,7}
+L158: 
+L159: 内存 起始容量为 16 GB，最高可达 32 GB
+L160: 
+L161: 存储空间 起始容量为 512 GB，最高可选 1 TB^{3，4}
+L162: 
+L163: 电池使用时间 支持长达 19 小时的本地视频播放^{5}
+L164: 
+L165: NPU Qualcomm^{®} Hexagon™（80 TOPS）
+L166: 
+L167: 端口 2 个 USB-C^{®} / USB4^{®}、1 个 USB-A 和 1 个 MicroSDXC Express 读卡器
+L168: 
+L169: 包含电源 配备 65W 电源适配器，支持 Surface Connect 及 USB-C^{®} 接口充电^{6}
+L170: 
+L171: 配置设备
+L172: ## Surface Laptop, 13 英寸 (第 1 代)
+L173: 
+L174: 新增8GB和12GB配置，随单赠精美礼品
+L175: 
+L176: cite18†立即购买 L177: 
+L178: cite19†Image†cdn.microsoftstore.com.cn L179: 
+L180: ## Surface Laptop，13.8 英寸(第 7 代)和 15 英寸(第 7 代)
+L181: 
+L182: 随单享精美礼赠。
+L183: 
+L184: cite20†购买13.8英寸 cite21†购买15英寸 L185: 
+L186: cite22†Image†cdn.microsoftstore.com.cn L187: 
+L188: ## 了解有关设计规格的详细信息
+L189: 
+L190:   * cite23†Image†cdn.microsoftstore.com.cn L191: 
+L192: #### 处理器
+L193: 
+L194: 处理器就如同你设备的大脑，指挥其他组件开展工作。处理器的核心数越高，任务处理性能就越强。
+L195: 
+L196:   * cite24†Image†cdn.microsoftstore.com.cn L197: 
+L198: #### 内存
+L199: 
+L200: 设备的内存越大，它能同时处理的任务就越多，且性能不会下降。
+L201: 
+L202:   * cite25†Image†cdn.microsoftstore.com.cn L203: #### 存储空间
+L204: 
+L205: 设备的存储空间越大，可存放本地文件、应用和专业软件的空间就越多。
+L206: 
+L207:   * cite26†Image†cdn.microsoftstore.com.cn L208: 
+L209: #### 显示屏
+L210: 
+L211: 大屏视野，尽览和操作更多内容。刷新率越高，动态画面越流畅；PPI 越高，显示效果越清晰锐利。
+L212: 
+L213:   * cite27†Image†cdn.microsoftstore.com.cn L214: 
+L215: #### NPU
+L216: 
+L217: NPU（神经网络处理器）可增强 AI 处理能力，如 Windows 工作室效果，其能力以每秒万亿次运算（TOPS）来衡量。
+L218: 
+L219:   * cite28†Image†cdn.microsoftstore.com.cn L220: 
+L221: #### 颜色
+L222: 
+L223: 从多种亮丽或经典颜色中甄选自己心仪的那一款，这些设备采用经久耐用、酷爽的金属饰面，在日常使用中可保持常新。
+L224: 
+L225: ### 常见问题解答
+L226: 
+L227: 展开全部 | 收缩全部
+L228: ### 什么是 Surface Laptop？
+L229: 
+L230: Surface Laptop 是一款精工打造的高端笔记本电脑，旨在提供更佳的 Windows 使用体验。它的设计精益求精，拥有惊艳的触控屏^{1}、舒适的键盘、长效续航能力^{5}，以及满足日常办公及多种工作负载需求。Surface Laptop 提供多种屏幕尺寸和配置，是精致设计与高性能的结合。
+L231: ### 最新款 Surface Laptop 是什么？
+L232: 
+L233: 最新款 Surface Laptop 搭载全新 Snapdragon^{®} X2 系列处理器，提供 13 英寸、13.8 英寸和 15 英寸三种型号。13 英寸型号配备 Snapdragon^{®} X2 Plus（6 核）；13.8 英寸与 15 英寸型号可选 Snapdragon^{®} X2 Plus（10 核）或 Snapdragon^{®} X2 Elite（12 核）。该系列在性能、端侧 AI 加速和电池效率方面实现了重大飞跃，实际表现因配置与设备尺寸而异。新一代 Surface Laptop 提供多种内存和存储空间配置可选，专为专业人士、创作者与普通用户打造，可在 Windows 系统上带来强劲的 AI 体验。
+L234: ### 哪款 Surface Laptop 适合我？
+L235: 
+L236: 每台 Surface Laptop 都采用相同的高品质工艺打造，适合你的那一款取决于你的工作方式。选择 13 英寸款获得便携性，选择 13.8 英寸款获得屏幕空间与移动性的理想平衡，选择 15 英寸款获得更大工作空间。在此基础上，选择与你的工作负载相匹配的内存、存储空间和处理器配置。无论你专注于日常办公、创意项目还是多任务处理， Surface Laptop 满足不同使用需求。
+L237: 
+L238: ### Surface Laptop 配备触控屏吗？
+L239: 
+L240: 是的。每台 Surface Laptop 都配备反应灵敏的高分辨率触控屏，可轻松点击、滚动并直接与内容交互。触摸体验流畅精准，适合快速导航、查看文档和使用兼容的创意应用。Surface Laptop 针对触控交互做了专属优化，不支持触控笔输入，包括 Surface 超薄触控笔。
+L241: ### 哪款 Surface Laptop 更适合程序开发需求？
+L242: 
+L243: 对于编程和编码工作，Surface Laptop，13.8 英寸和 15 英寸型号满足不同使用偏好。可配置更大内存和 SSD 存储空间，支持在多个开发环境间流畅切换多任务；选择 Snapdragon^{®} X2 Elite 处理器，可在处理高负载工作和 AI 加速开发工具时获得更快性能。15 英寸款为并排代码视图提供更多屏幕空间，13.8 英寸款则在更便携的机身中提供强劲性能。面对本地 AI 模型运行、容器部署、重度多任务等高负载的开发工作，Surface Laptop Ultra 是性能更强之选。它搭载 NVIDIA RTX Spark™，专为对硬件性能有极致要求的开发人员与工程师打造。
+L244: ### Surface Laptop 适合玩游戏吗？
+L245: 
+L246: Surface Laptop 支持多种 PC 游戏体验。它能流畅运行休闲和主流游戏，同时支持流媒体播放、网页浏览等日常任务的顺畅体验。运行高负载游戏时，搭载 NVIDIA RTX Spark™ 的 Surface Laptop Ultra 可提供全系更强的图形性能。游戏性能因游戏和系统要求而异，建议查看游戏的推荐系统要求以获得合理预期。
+L247: 
+L248: ### Surface Laptop 适合学生使用吗？
+L249: 
+L250: 当然。Surface Laptop 是学生值得入手的笔记本电脑之一。其明亮美观的 3:2 比例显示屏，有助于看到更多文档、研究资料^{8} 和项目内容，减少频繁滚动即可保持高效。出色的摄像头和工作室级麦克风，让在线课程和小组会议成为享受而非负担。再加上轻巧的高端机身、支持端侧 AI 功能的内置 NPU^{9} 以及长效续航^{5}，Surface Laptop可支持学习与日常使用中的多种需求。
+L251: ### Surface Laptop 适合工科学生使用吗？
+L252: 
+L253: 是的。Surface Laptop 适合工程专业学生，可支持编码、研究和复杂课程作业等学习任务。其内置 NPU 可为高要求任务提供高效处理能力，配置更大内存和 SSD 存储空间可帮助在处理大型文件、数据集或 CAD 应用时保持流畅使用体验。应对高负载工程工作负载时，搭载 NVIDIA RTX Spark™ 的 Surface Laptop Ultra 可提供全系更高性能。
+L254: ### Surface Laptop 配备哪些端口？
+L255: 
+L256: Surface Laptop 提供针对不同屏幕尺寸量身定制的丰富接口。13 英寸机型配备两个 USB-C (USB 3.2) 端口、一个 USB-A 端口，以及一个 3.5 毫米耳机插孔。13.8 英寸与 15 英寸机型配备两个 USB-C (USB4) 端口、一个 USB-A 端口、一个 3.5 毫米耳机插孔，以及一个用于充电与扩展坞连接的 Surface Connect 端口。15 英寸型号还配备 MicroSDXC Express 读卡器，提供更大的存储空间扩展灵活性。Surface Laptop Ultra 是全系接口最丰富的型号，配备三个 USB-C 接口、一个 USB-A 接口、HDMI 接口、3.5 毫米耳机插孔与 SD 读卡器。
+L257: ### 8 GB、12 GB、16 GB 及更高内存配置有什么区别？
+L258: 
+L259: 配备 8 GB 或 12 GB 内存的设备，适用于网页浏览、流媒体播放、课业学习与办公软件等日常任务。16 GB 及以上内存的设备可提供更多性能余量，为多任务处理和高负载应用场景提供支持，同时支持 Windows 11 AI+ PC 体验，包括先进的端侧 AI 功能。所有配置均预装 Windows 11 系统，可通过云端体验获取 AI 辅助能力。
+L260: 
+L261: USB Type-C^{®} 和 USB-C^{®} 是 USB 开发者论坛的注册商标。
+L262: 
+L263: [1] 本产品仅针对触控交互进行优化。不支持触控笔输入，也不兼容 Surface 触控笔、Surface 超薄触控笔或同类附件。
+L264: 
+L265: [2] Surface Laptop, 13 英寸(第 2 代)显示屏采用标准矩形搭配圆角的设计。按照标准矩形测量时，屏幕的对角线尺寸为 13 英寸（实际可视区域略小）。
+L266: [3] 系统软件会占用大量的存储空间。可用存储空间会根据系统软件更新和应用的使用情况而改变。1 GB = 10 亿字节。1 TB = 1,000 GB。有关更多信息，请参阅 cite29†Surface 存储空间选项†support.microsoft.com 。
+L267: 
+L268: [4] 驱动器保留仅适用于技术规格中标注驱动器为可拆卸下来进行销售的微软 Surface 设备。退回设备时若未返还驱动器，可能会产生替换费用，除非设备享有单独购买的驱动器保留权益。可用的套餐与选项可能因设备型号和地区有所不同。更多详情请参阅cite30†《Surface 保修、保护计划和支持 – 微软 Surface 商用版》†www.microsoft.com 。
+L269: 
+L270: [5] 基于视频播放测试。电池续航时间会因设备使用情况、网络和功能配置、信号强度、设置和其他因素而存在显著差异。请参阅“cite31†Surface 电池性能†support.microsoft.com ”了解更多信息。
+L271: 
+L272: [6] 在特定市场中，只有特定配置才随附 Surface 电源。
+L273: [7] Surface 显示屏采用标准矩形搭配圆角的设计。按照标准矩形测量时，屏幕的对角线尺寸为 13.8 英寸或 15 英寸（实际可视区域略小）。
+L274: 
+L275: [8] 基于与采用 16:9 屏幕比例的常规 13 英寸或 15 英寸笔记本电脑的对角线测量对比得出。
+L276: 
+L277: [9] 部分 AI 驱动体验可在支持的设备与配置上本地运行。功能可用性因具体功能、设备、区域、语言与系统更新而异。
+L278: 
+L279: [10] Windows 11 AI+ PC 功能仅在配备 16 GB 及以上 RAM 的指定配置上提供；可能需满足其他系统需求。详细信息请访问“cite32†Windows 11 规格和系统要求 | Microsoft Windows†www.microsoft.com ”。
+L280: 
+L281: *划线价格均为微软建议零售价。
+L282: 
+L283:   * 产品类别
+L284:     * cite33†Surface L285:     * cite34†Microsoft 365 L286:     * cite35†XBOX L287:     * cite36†Office L288:     * cite37†Windows L289:     * cite38†Visual Studio L290:     * cite39†混合现实 L291:     * cite40†其他软件与服务 L292:     * cite41†配件 L293:     * cite42†其他微软站点†www.microsoft.com L294:   * 账户信息
+L295: 
+L296:     * cite6†账户信息 L297:     * cite7†订单跟踪 L298:     * cite43†订单历史 L299:     * cite6†软件密钥和下载 L300:   * 支持与帮助
+L301: 
+L302:     * cite44†产品支持信息 L303:     * cite45†退换货政策 L304:     * cite46†常见问题 L305:     * cite47†软件产品问题 L306:     * cite48†教育优惠相关问题 L307:     * cite49†购物流程 L308:     * cite50†支付与配送 L309:     * cite51†售后服务 L310:     * cite52†专栏博客 L311:   * 热门资源
+L312:     * cite53†Surface Pro L313:     * cite54†Surface Laptop L314:     * cite55†优惠信息 L315:     * cite56†教育专区 L316:     * cite57†以旧换新 L317:     * cite58†商务专区 L318:   * 关于我们
+L319: 
+L320:     * cite59†查找店铺 L321:     * cite60†网站地图 L322:     * cite61†商城承诺 L323:     * cite0†商城首页 L324:   * 关注我们
+L325: 
+L326:     * 官方微博
+L327: 
+L328:     * 微软官方商城
+L329:     *     * 微信小店
+L330: 
+L331: cite62†Image: Wechatstore QRCode†cdn.microsoftstore.com.cn L332: 
+L333: cite42†其他微软站点†www.microsoft.com L334: 
+L335: cite63†中国 - 简体中文†www.microsoft.com L336: 
+L337: cite64†使用条款 cite65†销售条款 cite66†隐私权声明†go.microsoft.com 管理 Cookie cite67†商标†www.microsoft.com cite68†沪 ICP备12038052号-4†beian.miit.gov.cn L338: cite69†沪公网安备 31010402009788号†www.beian.gov.cn L339: 
+L340: cite70†公司证件†cdn.microsoftstore.com.cn © 2024 Microsoft
+L341: 
+L342: cite71†Image†cdn.microsoftstore.com.cn L343: 
+L344: 扫码小程序
+L345: 
+L346: 进行购买
+L347: 
+L348: cite72†Image: Contact customer service†cdn.microsoftstore.com.cn cite73†Image: Contact customer service†cdn.microsoftstore.com.cn L349: 
+L350: cite74†Image: miniapp_qrcode†cdn.microsoftstore.com.cn L351: 
+L352: cite75†Image: contact sales†cdn.microsoftstore.com.cn cite76†Image: contact sales†cdn.microsoftstore.com.cn cite77†Image: Contact customer service†cdn.microsoftstore.com.cn L353: cite78†Image: QR Code†cdn.microsoftstore.com.cn L354: 
+L355: cite79†Image: contact sales†cdn.microsoftstore.com.cn L356: 
+L357: cite71†Image: wechat qrcode†cdn.microsoftstore.com.cn L358: 
+L359: 截图保存后微信扫码进入小程序
+L360: 
+L361: 联系客服 · 咨询优惠
+L362: 
+L363: 在线聊天
+L364: 
+L365: [Button: 开始在线聊天]
+L366: 
+L367: 电话联系
+L368: 
+L369:   * 微软官方商城销售服务热线:
+L370: 400 999 9938
+L371: 工作时间：法定工作日 9:00–18:00
+L372: 
+L373: cite80†Image: 联系销售†cdn.microsoftstore.com.cn 联系销售
+L374: 
+L375: [Button: 联系客服 享专属优惠]
+L376: 
+L377: 非工作时间请联系： RDSSMB@microsoft.com
+L378: 
+L379: cite81†Intentionally blank†publisher.liveperson.net L380: cite82†Surface Pro cite83†Surface Laptop cite84†Surface Laptop Ultra†www.microsoft.com cite85†探索 Copilot†www.microsoft.com cite86†Microsoft 365†www.microsoft.com cite87†探索 Microsoft 产品†www.microsoft.com cite88†Windows 11 应用程序†www.microsoft.com cite89†帐户个人资料†account.microsoft.com cite90†下载中心†www.microsoft.com cite91†订单跟踪†account.microsoft.com cite92†Microsoft 教育版†www.microsoft.com cite93†教育设备†www.microsoft.com cite94†Microsoft Teams 教育版†www.microsoft.com cite95†Microsoft 365 教育版†www.microsoft.com cite96†Office 教育版†www.microsoft.com cite97†教育工作者培训和开发†education.microsoft.com cite98†面向学生和家长的优惠†www.microsoft.com cite99†面向学生的 Azure†azure.microsoft.com L381: cite100†Microsoft AI†www.microsoft.com cite101†Microsoft 安全†www.microsoft.com cite102†Azure†azure.microsoft.com cite103†Dynamics 365†www.microsoft.com cite104†Microsoft 365†www.microsoft.com cite105†Microsoft Advertising†about.ads.microsoft.com cite106†Microsoft Copilot†www.microsoft.com cite107†Microsoft Teams†www.microsoft.com cite108†Microsoft 开发人员†developer.microsoft.com cite109†Microsoft Learn†learn.microsoft.com cite110†支持 AI 商城应用†www.microsoft.com cite111†Microsoft 技术社区†techcommunity.microsoft.com cite112†Microsoft Marketplace†marketplace.microsoft.com cite113†Microsoft Power Platform†www.microsoft.com cite114†软件公司†www.microsoft.com cite115†Visual Studio†visualstudio.microsoft.com cite116†招贤纳士†careers.microsoft.com cite117†关于 Microsoft†www.microsoft.com cite118†公司新闻†news.microsoft.com cite119†Microsoft 隐私†www.microsoft.com cite120†投资人†www.microsoft.com L382: cite121†中文（中国）†www.microsoft.com L383: 
+L384: cite122†你的隐私选择†aka.ms cite122†你的隐私选择†aka.ms L385: 
+L386: cite123†消费者健康隐私†go.microsoft.com cite124†与 Microsoft 联系†support.microsoft.com cite66†隐私†go.microsoft.com cite125†管理 Cookie cite126†使用条款†go.microsoft.com cite127†商标†go.microsoft.com cite128†关于我们的广告†choice.microsoft.com cite129†京ICP备09042378号-6†beian.miit.gov.cn 

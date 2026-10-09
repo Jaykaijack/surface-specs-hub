@@ -1,0 +1,431 @@
+XBOX Series S | XBOX (https://www.xbox.com/en-US/consoles/xbox-series-s)
+citeturn80view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.xbox.com/en-US/consoles/xbox-series-s","lineno":150}); Total lines: 515
+L0: [Button: XBOX Series S]
+L1: 
+L2:   * cite0†OVERVIEW L3:   * cite1†GAMES L4:   * cite2†SPECS L5:   * COMPARE
+L6: 
+L7: XBOX Series S
+L8: 
+L9:   * cite0†OVERVIEW L10:   * cite1†GAMES L11:   * cite2†SPECS L12:   * COMPARE
+L13: 
+L14: [Select]
+L15: 
+L16: SEE OPTIONS
+L17: 
+L18: cite3†Image: Desert landscape at night†cms-assets.xboxservices.com L19: # XBOX SERIES S
+L20: 
+L21: 
+L22: 
+L23: Best Value in Gaming
+L24: 
+L25: use the arrow keys to navigate through the pivots and tab to focus on focusable content inside a pivot section
+L26: 
+L27:   * 512GB | All-Digital | Robot White
+L28: 
+L29:   * 1TB | All-Digital | Carbon Black
+L30: 
+L31:   * 1TB | All-Digital | Robot White
+L32: 
+L33: BUY NOW, PAY LATER
+L34: 
+L35: 512GB
+L36:   * cite4†Image: Right angle view of the XBOX Series S – 512GB Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L37:   * cite5†Image: XBOX Series S – 512GB Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L38:   * cite6†Image: Side panel of the XBOX Series S – 512GB Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L39:   * cite7†Image: XBOX Series S – 512GB Robot White with XBOX Wireless Controller – Robot White box†cms-assets.xboxservices.com L40: cite3†Image: Desert landscape at night†cms-assets.xboxservices.com L41: # XBOX SERIES S
+L42: 
+L43: 
+L44: 
+L45: Best Value in Gaming
+L46: 
+L47: BUY NOW, PAY LATER
+L48: 
+L49: 1TB
+L50:   * cite8†Image: Bottom angle view of the XBOX Series S – 1TB Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L51:   * cite9†Image: XBOX Series S – 1TB Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L52:   * cite10†Image: Side panel view of the XBOX Series S – 1TB Robot White with XBOX Wireless Controller – Robot White†cms-assets.xboxservices.com L53:   * cite11†Image: XBOX Series S – 1TB Robot White with XBOX Wireless Controller – Robot White box†cms-assets.xboxservices.com L54: cite12†Image: Minecraft Dungeons II characters posing †cms-assets.xboxservices.com L55: ## VARIETY MEETS VALUE
+L56: 
+L57: 
+L58: 
+L59: Experience speed and performance with our largest digital game library and the best value in gaming.
+L60: 
+L61: Up to 120 FPS UP TO 120 FPS
+L62: 
+L63: Frames per second
+L64: 
+L65: cite13†Image: XBOX velocity architecture logo†cms-assets.xboxservices.com L66: 
+L67: XBOX Velocity Architecture
+L68: 
+L69: HDR
+L70: 
+L71: High Dynamic Range
+L72: 
+L73: cite14†Image: Screenshot of a television demonstrating the Quick Resume capabilities of the XBOX Series S.†cms-assets.xboxservices.com L74: ### QUICK RESUME
+L75: 
+L76: Seamlessly switch between different titles and instantly resume from where you left off.
+L77: 
+L78: PLAY VIDEO
+L79: 
+L80: cite15†Image: Screenshot of 2 televisions, the one on the left is still loading, while the one on the right has already loaded and gameplay has started.†cms-assets.xboxservices.com L81: ### FASTER LOAD TIMES
+L82: 
+L83: Games load significantly faster with the custom SSD and integrated software. While ultra-low latency improves the response time from your controller to your TV.
+L84: 
+L85: PLAY VIDEO
+L86: 
+L87: cite16†Image: Players battling in Fortnite†cms-assets.xboxservices.com L88: 
+L89: ### FASTER FRAMERATE
+L90: 
+L91: Higher, steadier framerates at up to 120FPS while playing.cite17†** L92: 
+L93: A crouching Marcus looks forward. Behind him, Damon, Dominic and Augustus fend off the Locust in a burning city.
+L94: ## LOOKS BETTER, SOUNDS BETTER, PLAYS BETTER
+L95: 
+L96: Embark on new adventures the way they’re meant to be experienced on XBOX Series S.
+L97: 
+L98: cite18†Image: Series X and S optimized logo†cms-assets.xboxservices.com L99: 
+L100: ### OPTIMIZED GAMING EXPERIENCE
+L101: 
+L102: Games built with the XBOX Series X|S development kit showcase unparalleled load times, visuals, and responsiveness.
+L103: 
+L104: cite19†LEARN MORE L105: 
+L106: cite20†Image: Visual fidelity logo†cms-assets.xboxservices.com L107: ### AMAZING VISUAL FIDELITY
+L108: 
+L109: Hardware-accelerated ray tracing gives your games a heightened level of realism.
+L110: 
+L111: cite21†Image: Smart delivery logo†cms-assets.xboxservices.com L112: 
+L113: ### GET IT ONCE
+L114: 
+L115: With Smart Delivery you can buy a supported game once and always save the best available version for whatever console you play on.
+L116: 
+L117: cite22†Image: All digital logo†cms-assets.xboxservices.com L118: ### ALL DIGITAL, ALL XBOX
+L119: 
+L120: Go all digital with the XBOX Series S and build a library of digital games.
+L121: 
+L122: Three pieces of furniture are arranged around a TV. Animated sound waves bounce around the room, showing 3D Spatial Sound
+L123: ## LISTEN, YOU ARE BEING SURROUNDED.
+L124: 
+L125: 3D Spatial Sound is the next evolution in audio technology, using advanced algorithms to create immersive lifelike worlds that put you at the center of your experience.
+L126: 
+L127: EXPERIENCE SPATIAL SOUND
+L128: 
+L129: cite23†Image: Characters from XBOX games Fortnite, Star Wars, Starfield, Forza Motorsport floating in bubbles †assets.xboxservices.com L130: 
+L131: [Input] cite24†Image: open button†assets.xboxservices.com L132: 
+L133: EA SPORTS FC™ 27
+L134: ### EA SPORTS FC™ 27
+L135: 
+L136: Welcome to The World’s Game
+L137: 
+L138: cite25†GET MORE DETAILS L139: 
+L140: cite26†Image: EA SPORTS FC 27 logo†cms-assets.xboxservices.com L141: 
+L142: cite24†Image: open button†assets.xboxservices.com L143: 
+L144: GET DETAILS
+L145: 
+L146: [Input] cite24†Image: open button†assets.xboxservices.com L147: 
+L148: Minecraft Dungeons II
+L149: ### Minecraft Dungeons II
+L150: 
+L151: Drop the pickaxe, grab a sword, and charge into a new adventure in Minecraft Dungeons II.
+L152: 
+L153: cite27†GET MORE DETAILS L154: 
+L155: cite28†Image: Minecraft Dungeons II logo†cms-assets.xboxservices.com L156: 
+L157: cite24†Image: open button†assets.xboxservices.com L158: 
+L159: GET DETAILS
+L160: 
+L161: [Input] cite24†Image: open button†assets.xboxservices.com L162: 
+L163: NBA 2K27
+L164: ### NBA 2K27
+L165: 
+L166: The hustle doesn’t stop and the run never ends in NBA 2K27.
+L167: 
+L168: cite29†GET MORE DETAILS L169: 
+L170: cite30†Image: NBA 2K27 logo†cms-assets.xboxservices.com L171: 
+L172: cite24†Image: open button†assets.xboxservices.com L173: 
+L174: GET DETAILS
+L175: 
+L176: [Input] cite24†Image: open button†assets.xboxservices.com L177: 
+L178: Call of Duty®: Modern Warfare® 4
+L179: ### Call of Duty®: Modern Warfare® 4
+L180: 
+L181: War erupts on the Korean Peninsula as North Korea launches a full-scale invasion that threatens to destabilize the world.
+L182: 
+L183: cite31†GET MORE DETAILS L184: 
+L185: cite32†Image: Call of Duty®: Modern Warfare® 4 logo†cms-assets.xboxservices.com L186: 
+L187: cite24†Image: open button†assets.xboxservices.com L188: 
+L189: GET DETAILS
+L190: 
+L191: [Input] cite24†Image: open button†assets.xboxservices.com L192: 
+L193: Halo: Campaign Evolved
+L194: ### Halo: Campaign Evolved
+L195: 
+L196: Halo: Campaign Evolved is a faithful yet modernized remake of Halo: Combat Evolved’s campaign, rebuilt from the ground up.
+L197: 
+L198: cite33†GET MORE DETAILS L199: 
+L200: cite34†Image: Halo: Campaign Evolved logo†cms-assets.xboxservices.com L201: 
+L202: cite24†Image: open button†assets.xboxservices.com L203: 
+L204: GET DETAILS
+L205: XBOX Series S and series of game art depicting titles available with XBOX Game Pass including: Starfield, Call of Duty: Black Ops 6, College Football 25, Sea of Thieves, Minecraft Legends, and Forza Motorsport
+L206: 
+L207: cite35†Image: XBOX game pass logo†cms-assets.xboxservices.com L208: ## INSTANT LIBRARY
+L209: 
+L210: Hundreds of games, day one releases, online multiplayer and more.
+L211: 
+L212: cite36†LEARN MORE L213: 
+L214: cite37†Image: Mosaic of XBOX backward compatible game titles†assets.xboxservices.com L215: 
+L216: ## BACKWARD COMPATIBLE WITH THOUSANDS OF GAMES
+L217: 
+L218: 
+L219: 
+L220: Get ready for faster load times, higher resolution, more stable frame rates, and better input latency on thousands of XBOX One, XBOX 360, and Original XBOX games.
+L221: 
+L222: cite38†Image: XBOX Series S next to a space ship on a Starfield planet†cms-assets.xboxservices.com L223: ## COMPLETE CONTROL
+L224: 
+L225: 
+L226: 
+L227: Get hands-on with the XBOX Wireless Controller, featuring our highest level of precision with a dedicated Share button and improved ergonomics.
+L228: 
+L229: cite39†CONTROLLER DETAILS L230: 
+L231: CONTROLLER DETAILS
+L232: 
+L233: cite40†Image: A close up of the new Capture and Share button†assets.xboxservices.com L234: 
+L235: ### YOU WIN
+L236: 
+L237: Show off. Tap the share button to eternalize your conquest.
+L238: 
+L239: cite41†Image: Texture bumper and trigger on the XBOX Wireless Controller†assets.xboxservices.com L240: ### GET A GRIP
+L241: 
+L242: Textured triggers and bumpers hold tight to keep you from slipping.
+L243: 
+L244: cite42†Image: XBOX wireless controller updated D-pad†assets.xboxservices.com L245: 
+L246: ### FULL CIRCLE
+L247: 
+L248: Updated in every direction. The hybrid D-pad lets you crush combos without crossing fingers.
+L249: 
+L250: cite43†Image: 1TB Storage Expansion Card.†assets.xboxservices.com L251: ## INCREASED INVENTORY. UNCOMPROMISED PERFORMANCE.
+L252: 
+L253: Add more storage and match the internal storage performance of the internal SSD with the Storage Expansion Cards for XBOX Series X|S. (Sold separately, available in various sizes). Support for USB 3.1 external HDD (sold separately).
+L254: 
+L255: cite44†Image: Back of the XBOX Series S†assets.xboxservices.com L256: 
+L257: cite45†Image: Mosaic of streaming and entertainments apps for XBOX†cms-assets.xboxservices.com L258: ## 4K streaming & entertainment
+L259: 
+L260: Access your favorite entertainment and stream 4K video on Disney+, Netflix, Amazon, Hulu, and more.
+L261: 
+L262: cite46†LEARN MORE L263: ## Peace of mind
+L264: 
+L265: use the arrow keys to navigate through the pivots and tab to focus on focusable content inside a pivot section
+L266: 
+L267:   * Safer gaming
+L268:   * Carbon aware
+L269: 
+L270: Easily manage your children’s console activities all from your phone in real time with the XBOX Family Settings app.
+L271: 
+L272: cite47†LEARN MORE L273: 
+L274: XBOX Series S is our first XBOX console ever to contain Post-Consumer Recycled (PCR) plastics, while energy-saving power modes fine-tune your console when it’s on or off.
+L275:   * cite48†Image: Minecraft characters next to a display from the family settings app†cms-assets.xboxservices.com L276:   * cite49†Image: XBOX Series S surrounded by leaves and plants†cms-assets.xboxservices.com L277: 
+L278: MORE DETAILS
+L279: 
+L280: cite50†Image: A large circular Bigfoot gamerpic icon surrounded by an orbit of their network of friends' represented as different gamerpics.†cms-assets.xboxservices.com L281: ### Your games and friends carry over
+L282: 
+L283: Continue playing your XBOX One games on your XBOX Series S with your progress, achievements, and friends list automatically transferring over to the new system.
+L284: 
+L285: cite51†Image: XBOX One wireless controller and the XBOX Adaptive Controller†assets.xboxservices.com L286: 
+L287: ### Compatible with XBOX One gaming accessories
+L288: 
+L289: Use your XBOX One gaming accessories—including controllers, headsets, and more—on XBOX Series S.
+L290: 
+L291: ALL TECH SPECS
+L292: 
+L293: ## TECH SPECS
+L294: 
+L295: * * *
+L296: ### PROCESSOR
+L297: 
+L298: CPU. 8X Cores @ 3.8 GHz (3.6 GHz w/SMT) Custom Zen 2 CPU
+L299: 
+L300: GPU. 4 TFLOPS, 20 CUs @1.565 GHz Custom RDNA 2 GPU
+L301: 
+L302: * * *
+L303: ### MEMORY & STORAGE
+L304: 
+L305: Memory. 10GB GDDR6 128 bit-wide bus
+L306: 
+L307: Memory Bandwidth. 8GB @ 224 GB/s, 2GB @ 56 GB/s.
+L308: 
+L309: Internal Storage.
+L310: XBOX Series S Robot White: 512GB Custom NVME SSD
+L311: XBOX Series S Carbon Black: 1TB Custom NVME SSD
+L312: XBOX Series S Robot White: 1TB Custom NVME SSD
+L313: 
+L314: I/O Throughput. 2.4 GB/s (Raw), 4.8 GB/s (Compressed, with custom hardware decompression block)
+L315: Expandable Storage. Support for 1TB Storage Expansion Cards for XBOX Series X|S match internal storage performance (sold separately). Support for USB 3.1 external HDD (sold separately).
+L316: 
+L317: * * *
+L318: ### VIDEO CAPABILITIES
+L319: 
+L320: Gaming Resolution. 1440p
+L321: 
+L322: Performance Target. Up to 120 FPS
+L323: 
+L324: HDMI Features. Auto Low Latency Mode. HDMI Variable Refresh Rate. AMD FreeSync.
+L325: 
+L326: * * *
+L327: 
+L328: ### SOUND CAPABILITIES
+L329: 
+L330: L-PCM, up to 7.1
+L331: 
+L332: Dolby Digital 5.1
+L333: 
+L334: DTS 5.1
+L335: 
+L336: Dolby TrueHD with Atmos
+L337: 
+L338: * * *
+L339: 
+L340: ### PORTS & CONNECTIVITY
+L341: 
+L342: HDMI. 1x HDMI 2.1 port
+L343: 
+L344: USB. 3x USB 3.1 Gen 1 ports
+L345: 
+L346: Wireless. 802.11ac dual band
+L347: 
+L348: Ethernet. 802.3 10/100/1000
+L349: 
+L350: Accessories radio. Dedicated dual band XBOX Wireless radio
+L351: 
+L352: * * *
+L353: ### DESIGN
+L354: 
+L355: cite52†Image: A diagram of the XBOX Series S showing the dimensions of the XBOX Series S: Height is 27.5 centimeters, width is 15.1 centimeters, and depth is 6.5 centimeters†assets.xboxservices.com L356: 
+L357: Dimensions. 6.5cm x 15.1cm x 27.5cm
+L358: 
+L359: Weight. 4.25 lbs.
+L360: 
+L361: ## XBOX SERIES S
+L362: 
+L363: ## XBOX SERIES S
+L364: ### SELECT AN OPTION
+L365: 
+L366: Pay monthly with 0% interest with XBOX All Access. Or make a one-time payment today when buying from a retailer, including the Microsoft Store.
+L367: 
+L368: Includes:
+L369: 
+L370:   * XBOX Series S console – 512GB
+L371:   * XBOX Wireless Controller – Robot White
+L372: 
+L373: * * *
+L374: 
+L375: Microsoft Store
+L376: 
+L377: BUY NOW, PAY LATER
+L378: 
+L379: cite53†SELECT A RETAILER L380: 
+L381: ## XBOX SERIES S
+L382: 
+L383: ## XBOX SERIES S
+L384: 
+L385: LIMITED TIME OFFER
+L386: 
+L387: cite54†Image: XBOX logo†assets.xboxservices.com L388: 
+L389: $50 off XBOX Series Scite55†^{1} L390: ### STANDALONE
+L391: 
+L392: Pay upfront
+L393: 
+L394: Includes:
+L395: 
+L396:   * XBOX Series S console – 512GB
+L397:   * XBOX Wireless Controller – Robot White
+L398: 
+L399: * * *
+L400: 
+L401: XXX
+L402: 
+L403: Microsoft Store
+L404: 
+L405: £XXX ERP*
+L406: 
+L407: *Prices may vary
+L408: 
+L409: cite56†SELECT A RETAILER L410: 
+L411: ## XBOX SERIES S
+L412: 
+L413: cite57†Image: Left angle of the XBOX Series S with an XBOX wireless controller†assets.xboxservices.com L414: 
+L415: ## XBOX SERIES S
+L416: ### SELECT AN OPTION
+L417: 
+L418: Pay monthly with 0% interest with XBOX All Access. Or make a one-time payment today when buying from a retailer, including the Microsoft Store.
+L419: 
+L420: Includes:
+L421: 
+L422:   * XBOX Series S console – 1TB
+L423:   * XBOX Wireless Controller – Robot White
+L424: 
+L425: * * *
+L426: 
+L427: Microsoft Store
+L428: 
+L429: BUY NOW, PAY LATER
+L430: 
+L431: cite53†SELECT A RETAILER L432: 
+L433: cite58†Image: XBOX Series S Refurbished†assets.xboxservices.com L434: 
+L435: ## XBOX Series S – Refurbished
+L436: 
+L437: cite59†LEARN MORE L438: 
+L439: cite60†Image: XBOX Wireless Controller Robot White†assets.xboxservices.com L440: ## XBOX Wireless Controller Robot White
+L441: 
+L442: Stay on target with the hybrid D-pad, textured grip on the triggers, bumpers, and back-case.
+L443: 
+L444: cite61†LEARN MORE L445: 
+L446: cite62†Image: Three XBOX Wireless Controllers customized with XBOX Design Lab†cms-assets.xboxservices.com L447: 
+L448: ## XBOX Design Lab
+L449: 
+L450: Design your own XBOX Wireless Controller and truly make it yours.
+L451: 
+L452: cite63†LEARN MORE†xboxdesignlab.xbox.com L453: 
+L454: cite64†Image: XBOX Wireless Headset†cms-assets.xboxservices.com L455: ## XBOX Wireless Headset
+L456: 
+L457: Hear ‘em coming. Never miss a beat with the XBOX Wireless Headset.
+L458: 
+L459: cite65†LEARN MORE L460: ## Frequently asked questions
+L461: 
+L462: * * *
+L463: 
+L464: When did XBOX Series S launch?
+L465: 
+L466: XBOX Series S launched at participating retailers on November 10, 2020 and is available for purchase now.
+L467: 
+L468: Is XBOX Series S available in my market?
+L469: 
+L470: Visit cite66†regions for details on market availability and cite53†find a participating retailer. L471: 
+L472: What games can I play on XBOX Series S?
+L473: XBOX Series S is compatible with thousands of games across four generations of XBOX. And, with Smart Delivery games, you buy a digital game once and get the best version of that game for the console you’re playing on. Because XBOX Series S is all digital, access your digital game library through the console and select the game you want to play. Shop for games directly from your XBOX Series S console or online at cite67†XBOX.com .
+L474: 
+L475: Can you play XBOX One games on XBOX Series S?
+L476: Yes. The digital titles that you own and are part of the Back Compat game catalog will automatically show up in the “Ready to Install” section on your XBOX Series S console. Disc-based games are not supported. cite68†Browse back compat games .
+L477: 
+L478: Will XBOX Series S play game discs?
+L479: 
+L480: No. XBOX Series S consoles are all-digital gaming consoles for disc-free gaming. Disc-based games are not compatible with the 512GB or 1TB XBOX Series S consoles.
+L481: 
+L482: Do XBOX One controllers work on the Series S?
+L483: XBOX Series X|S consoles are compatible with most XBOX One controllers and gaming accessories. cite69†Learn more†support.xbox.com .
+L484: 
+L485: What’s included with XBOX Series S?
+L486: 
+L487: With XBOX Series S, an XBOX Series S console, controller, Ultra High Speed HDMI cable, and power cord are included. You can add standalone purchases of XBOX Game Pass and the Storage Expansion Cards for XBOX Series X|S for the complete experience.^{cite70†*** }
+L488: 
+L489: Does XBOX Series S deliver on speed and performance?
+L490: Yes. XBOX Series S is powered by the XBOX Velocity Architecture, such as faster loading, the ability to seamlessly switch between multiple games with Quick Resume, richer and more dynamic worlds, and frame rates up to 120 FPS.
+L491: 
+L492: What’s the difference between XBOX Series S and XBOX Series X?
+L493: Both XBOX Series X|S consoles are powered by the XBOX Velocity Architecture, such as faster loading, the ability to seamlessly switch between multiple games with Quick Resume, richer and more dynamic worlds, and frame rates up to 120 FPS.
+L494: The primary difference between the two consoles is that the XBOX Series X displays games in native 4K, is available with a UHD Blu-ray Disc player, and you can choose between 1TB SSD or 2TB SSD. XBOX Series S is designed for disc-free gaming at 1440p (with the ability to upscale to 4K) and you can choose between 512GB SSD or 1TB SSD. And, of course, they're priced differently. Both consoles have the option to expand available custom storage via the Storage Expansion Card.
+L495: cite71†Compare XBOX consoles .^{cite72†**** }
+L496: cite73†FIND OUT MORE†support.xbox.com L497: 
+L498: Use with digital games only; console does not play physical discs.
+L499: 
+L500: *Prices and availability may vary by retailer.
+L501: 
+L502: **Up to 120 FPS: Requires supported content and display. Use on XBOX Series S as content becomes available.
+L503: 
+L504: ***Standalone product not included in console bundle.
+L505: 
+L506: ****Options and pricing vary by market availability.
+L507: † Dolby Vision Games is only available on XBOX Series X|S. Dolby Atmos and Dolby Vision Media Steaming is available on XBOX One, XBOX One S, XBOX One X and XBOX Series X|S.
+L508: cite74†XBOX consoles cite75†XBOX games cite76†XBOX Game Pass cite77†XBOX accessories cite78†XBOX News†news.xbox.com cite79†XBOX Support†support.xbox.com cite80†Feedback†aka.ms cite81†Community Standards cite82†Photosensitive Seizure Warning†support.xbox.com cite83†User Research at XBOX cite84†Microsoft account†account.microsoft.com cite85†Microsoft Store Support†support.microsoft.com cite86†Returns†support.microsoft.com cite87†Orders tracking†www.microsoft.com cite88†Store locations†www.microsoft.com L509: cite89†Rewards cite90†Games†developer.microsoft.com cite91†Designed for XBOX L510: 
+L511: cite92†English (United States) L512: 
+L513: cite93†Your Privacy Choices†aka.ms cite93†Your Privacy Choices†aka.ms L514: cite94†Consumer Health Privacy†go.microsoft.com cite95†Sitemap†www.microsoft.com cite96†Contact Microsoft†support.microsoft.com cite97†Privacy & Cookies†go.microsoft.com cite98†Manage cookies cite99†Terms of use†go.microsoft.com cite100†Trademarks†www.microsoft.com cite101†Third Party Notices cite102†Safety & eco†www.microsoft.com cite103†About our ads†choice.microsoft.com 

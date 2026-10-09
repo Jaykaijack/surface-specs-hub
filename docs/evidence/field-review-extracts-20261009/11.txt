@@ -1,0 +1,126 @@
+Surface Pro 4 specs and features | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features)
+citeturn21view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features","lineno":null}); Total lines: 374
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Pro 4 specs and features
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Pro 4
+L126: 
+L127: Note
+L128: 
+L129:   * Get tablet-to-laptop flexibility in one powerful PC. With AI-accelerated Copilot+ PC experiences and all-day battery life, Surface Pro is built to keep you on the go.
+L130:   * cite75†Explore the newest Surface devices†www.microsoft.com L131: ## Get to know Surface Pro 4
+L132: 
+L133: Not sure where to plug something in or how to turn up the volume? We've got you covered. Here are a couple of diagrams to help you.
+L134: 
+L135: cite76†Image: Surface Pro 4 with numbered callouts for features, docks, and ports. L136: 
+L137:   1. Touchscreen
+L138:   2. Speaker
+L139:   3. Power button
+L140:   4. Infrared camera
+L141:   5. Front camera
+L142:   6. Front privacy light
+L143:   7. Front microphone
+L144:   8. Mini DisplayPort
+L145:   9. USB 3.0
+L146:   10. Charging port
+L147:   11. MicroSDXC card slot
+L148:   12. Pen
+L149: cite77†Image: Surface Pro 4 from behind with callouts for features, ports, and docks. L150: 
+L151:   1. Back camera
+L152:   2. Back privacy light
+L153:   3. Back microphone
+L154:   4. Volume button
+L155:   5. Headphone jack
+L156:   6. Magnetic storage for pen
+L157:   7. Kickstand
+L158: ## Surface Pro 4 features
+L159: ### Express yourself
+L160: 
+L161: Enjoy a natural writing experience with a pen that feels like an actual pen. Use Surface Pen to launch Cortana (not available in all languages and countries/regions) or open OneNote and quickly jot down notes or take screenshots. Keep your pen handy with the convenient magnetic pen storage on the side of Surface Pro 4.
+L162: Surface Pro 4 features two cameras for taking photos and recording video: an 8-megapixel rear-facing camera with autofocus and a 5-megapixel, high-resolution, front-facing camera. Both cameras record video in 1080p, with a 16:9 aspect ratio. Privacy lights are located on the right side of both cameras.
+L163: 
+L164: Surface Pro 4 also features an infrared (IR) face-detection camera so you can sign in to Windows without typing a password. For more info, see cite78†Windows Hello .
+L165: For more camera info, see cite79†Take photos and videos with Surface .
+L166: ### Work, play, watch, listen
+L167: 
+L168: Flip out the 150-degree-angle kickstand and work or play comfortably at your desk, on the couch, or while giving a hands-free presentation.
+L169: 
+L170: Stereo front firing speakers provide immersive music and movie playback experience and are 20 percent louder compared to Surface Pro 3.
+L171: 
+L172: To learn more, see cite80†Surface sound, volume, and audio accessories .
+L173: ### Stay connected
+L174: 
+L175: Surface Pro 4 has the ports you expect in a full-feature laptop.
+L176:   * Full-size USB 3.0 port
+L177: Connect a USB accessory like a mouse, printer, Ethernet adapter, USB drive, or smartphone.
+L178:   * Surface Connect for charging
+L179: When your battery is low, attach the included power supply to the Surface Connect charging port. For more info, see cite81†How to charge Surface .
+L180:   * MicroSD card slot
+L181: Use the microSD card slot and a microSD card (sold separately) for file transfer and extra storage. For more info, see cite82†Find storage options for your Surface .
+L182:   * Mini DisplayPort version 1.2
+L183: Share what’s on your Surface screen by connecting it to an HDTV, monitor, or projector. (Video adapters are sold separately.)
+L184:   * 3.5 mm headset jack
+L185: Plug in your favorite headset for a little more privacy when listening to music or conference calls. For more info, see cite80†Surface sound, volume, and audio accessories .
+L186:   * Cover connectors
+L187: Click in the thin, light, Type Cover for Surface Pro 4 (sold separately) so you’ll always have a keyboard when you’re on the go. For more info, see cite83†Type Cover .
+L188: ## Hardware specifications
+L189: Dimensions  | 11.50” x 7.93” x 0.33” (292.10mm x 201.42mm x 8.45mm)
+L190: --- | ---
+L191: Display  | Screen: 12.3” PixelSense™ Display
+L192: Resolution: 2736 x 1824 (267 PPI)
+L193: Aspect Ratio: 3:2
+L194: Touch: 10 point multi-touch
+L195: Memory  | 4GB, 8GB, or 16GB RAM
+L196: Processor  | 6th Generation Intel® Core™ m3, i5, or i7
+L197: Security  | TPM chip for enterprise security Enterprise-grade protection with Windows Hellocite84†( cite84†1) face sign-in
+L198: Software  | Windows 10 Pro Office 30-day trial
+L199: Sensors  | Ambient light sensor Accelerometer Gyroscope
+L200: What's in the box  | Surface Pro 4
+L201: Surface Pencite85†* L202: Power Supply
+L203: Quick Start Guide
+L204: Safety and warranty documents

@@ -1,0 +1,193 @@
+Surface Duo 2 功能 | Microsoft Support (https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features)
+citeturn50view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features","lineno":200}); Total lines: 314
+L0: 跳转至主内容
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: 支持
+L5: 
+L6: cite1†支持 L7: 
+L8: [Button: 支持 ]
+L9: 
+L10:   * cite1†主页 L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: 产品]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†更多信息 ... L22:   * [Button: 设备]
+L23:     * cite12†Surface L24:     * cite13†电脑配件 L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC 游戏†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†硬件保修 L30: 
+L31:   * cite19†帐户和计费 L32:   * [Button: 资源]
+L33:     * cite20†社区论坛†learn.microsoft.com L34:     * cite21†Microsoft 365 管理员†portal.office.com L35:     * cite22†开发人员†developer.microsoft.com L36:     * cite23†教育 L37:     * cite24†上报支持欺诈†www.microsoft.com L38:     * cite25†产品安全 L39: 
+L40:   * [Button: 更多]
+L41: 
+L42:   * cite26†购买 Microsoft 365†go.microsoft.com L43:   * 所有 Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Windows†www.microsoft.com L48:       * cite30†Surface†www.microsoft.com L49:       * cite31†XBOX†www.xbox.com L50:       * cite32†折扣专区†www.microsoftstore.com.cn L51:       * cite33†企业购†www.microsoftstore.com.cn L52:       * cite1†支持 L53:     * 软件 [Button: 软件]
+L54:       * cite34†Windows 应用†apps.microsoft.com L55:       * cite35†OneDrive†www.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†从 Skype 转到 Teams L58:       * cite38†OneNote†www.microsoft.com L59:       * cite39†Microsoft Teams†www.microsoft.com L60:     * PC 和设备 [Button: PC 和设备]
+L61:       * cite40†购买 XBOX†www.microsoft.com L62:       * cite41†PC 和平板电脑†www.microsoft.com L63:       * cite42†配件†www.microsoftstore.com.cn L64:     * 娱乐 [Button: 娱乐]
+L65:       * cite43†XBOX 与游戏†www.xbox.com L66:       * cite44†PC 游戏†apps.microsoft.com L67:     * 企业 [Button: 企业 ]
+L68:       * cite45†Microsoft AI†www.microsoft.com L69:       * cite46†Microsoft 安全†www.microsoft.com L70:       * cite47†Azure†azure.microsoft.com L71:       * cite48†Dynamics 365†www.microsoft.com L72:       * cite49†Microsoft 365 商业版†www.microsoft.com L73:       * cite50†Microsoft Power Platform†www.microsoft.com L74:       * cite51†数字主权†www.microsoft.com L75:     * 开发人员与 IT [Button: 开发人员与 IT]
+L76:       * cite52†Microsoft 开发人员†developer.microsoft.com L77:       * cite53†Microsoft Learn†learn.microsoft.com L78:       * cite54†支持 AI 商城应用†www.microsoft.com L79:       * cite55†Microsoft 技术社区†techcommunity.microsoft.com L80:       * cite56†Microsoft Marketplace†marketplace.microsoft.com L81:       * cite57†软件公司†www.microsoft.com L82:       * cite58†Visual Studio†visualstudio.microsoft.com L83:     * 其他 [Button: 其他]
+L84:       * cite59†免费下载与安全性†www.microsoft.com L85:       * cite60†教育†www.microsoft.com L86:     * cite61†查看站点地图†www.microsoft.com L87: [Input: 搜索帮助] 搜索 搜索帮助
+L88: 
+L89:   * 无结果
+L90: 
+L91: 取消
+L92: 
+L93: 登录
+L94: 
+L95: 使用 Microsoft 登录
+L96: 
+L97: 登录或创建帐户。
+L98: 
+L99: 你好，
+L100: 
+L101: 使用其他帐户。
+L102: 
+L103: 你有多个帐户
+L104: 
+L105: 选择要登录的帐户。
+L106: 
+L107: 相关主题
+L108: # Surface Duo 2 功能
+L109: 
+L110: 应用对象
+L111: 
+L112: Surface Duo 2
+L113: 
+L114: 注意
+L115: 
+L116: 根据基于 cite62†Android 的设备的 Surface 生命周期†learn.microsoft.com ，此设备已达到其服务结束日期，将不再接收较新的 Android 版本和安全更新。
+L117: 
+L118: 使用 Surface Duo 2 随时随地以新方式完成工作。 这是一款轻薄的移动设备，可折叠，因此您可以随时随身携带。 只需打开 Surface Duo 即可使用高分辨率双 PixelSense^{TM} Fusion 显示器，它为你提供 8.3 英寸的工作或娱乐空间。
+L119: 
+L120: ## 开始了解 Surface Duo 2
+L121: 
+L122: 使用下图了解 Surface Duo 2 的使用方法。
+L123: 
+L124: cite63†Image: 带有按钮和端口标注的 Surface Duo 2 L125: 
+L126:   1. 前置摄像头
+L127:   2. 电话听筒
+L128:   3. 成交量
+L129:   4. 指纹电源按钮
+L130:   5. SIM 卡插槽
+L131:   6. USB-C 端口
+L132: ## 为两个屏幕构建的 Microsoft 应用
+L133: 
+L134: Surface Duo 将 Google Android^{TM} 操作系统与最好的 Microsoft 365 应用程序相结合，包括 Microsoft Office、Outlook、Microsoft Teams、OneDrive、Microsoft Edge 等应用程序。 所有这些 Microsoft 应用都是为 Surface Duo 构建的，可帮助你全天完成更多工作。
+L135: 
+L136: 由于它在 Android 上运行，因此您可以从 Google Play 商店下载您想要的任何其他应用程序和游戏。 (某些应用和功能可能需要无线套餐、额外订阅或费用。)
+L137: 
+L138: ## 两个适应你的屏幕
+L139: 
+L140: Surface Duo 具有革命铰链，因此你可以随心折叠。 它会适应你。 像书一样拿着它，让牵引应用程序并排打开，每个屏幕上都有一个。 无需再在两个应用之间来回切换。 若要了解详细信息，请参阅在 Surface cite64†Duo 上使用 Surface Duo 或打开 提示 的不同方法。
+L141: ## 即使设备已关闭，也可随时了解最新信息
+L142: 
+L143: 即使Surface Duo 2已关闭，你也可以始终掌控一切。 “概览栏”显示传入呼叫或消息，包括你可能错过的呼叫或消息。 插入 Surface Duo 时，你将看到当前电池电量。
+L144: 
+L145:   * cite65†Image: c297c43d-9577-40f6-acc5-6277079bb0de L146: 
+L147: ## 无论白天还是黑夜，都能拍摄出美观的照片
+L148: 
+L149: 不要错过动态三镜头相机的任何精彩瞬间。 无论是阳光明媚的日子还是漆黑的夜空，您的照片看起来都清晰而细致。 夜间模式可确保即使在光线不足的情况下也能让您的照片看起来很棒。 由于“相机”应用自动横跨两个屏幕，因此你可以边拍照边查看，确保获得所需的照片。 有关详细信息，请参阅 cite66†使用 Surface Duo 拍摄照片和录制视频 。
+L150: 
+L151: cite67†Image: Surface Duo 2s 相机的背面视图。 L152: 
+L153: ## 快速 5G 连接
+L154: 
+L155: Surface Duo 拥有快速的 5G 连接，因此你可以为所欲为，无论是在工作、观看流式传输视频还是玩 Xbox 游戏。 借助 5G，您可以获得闪电般的移动数据连接，以保持联系并随时随地执行操作。
+L156: ## 使用 Google Pay 和 Surface Duo 2 付款
+L157: 
+L158: 再也不用掏钱包了。 Surface Duo 2 具有 NFC，可在具有付款读卡器的商店中使用 Google Pay 进行非接触式付款。 有关如何进行设置的详细信息，请参阅使用 cite68†Surface Duo 2 付费 。
+L159: 
+L160: ## 使用 Surface 配件打造专属设备
+L161: 
+L162: ### Surface Duo 2 缓冲键
+L163: 
+L164: Surface Duo 2 缓冲键 (单独出售) 有助于保护设备并使其呈现最佳外观。 若要了解如何佩戴它，请参阅 cite69†安装 Surface Duo 缓冲键 。
+L165: 
+L166:   * cite70†Image: 带缓冲键的 Surface Duo 2。 L167: ### Surface Slim Pen 2
+L168: 
+L169: 使用) 单独出售的 Surface Slim 触控笔 2 (在 Surface Duo 上做笔记、记下想法或快速绘制草图。 它是 Surface Duo 的绝佳伴侣。 请查看将 cite71†Surface Slim 触控笔连接到 Surface Duo ，了解如何开始使用。
+L170: 
+L171: cite72†请参阅 Microsoft Store 中的 Surface Slim 触控笔 2†microsoft.com L172: 
+L173: ### Surface 耳塞
+L174: 
+L175: Surface 耳塞 (单独出售) 支持快速配对，可通过蓝牙快速配对，并帮助你免费享受 Surface Duo 屏幕。 使用它们来听音乐、与人聊天，以及通过 Microsoft 365 完成更多工作。 若要了解如何设置它们，请参阅 cite73†将 Surface Duo 连接到 Surface 耳塞 。
+L176: 
+L177: ### 相关主题
+L178: 
+L179:   * cite74†Surface Duo 2 技术规格†www.microsoft.com L180:   * cite75†设置移动数据连接 L181:   * cite76†连接到 WLAN L182: ## 需要更多帮助吗？
+L183: 
+L184:   * cite77†个人帐户 L185:   * cite78†工作/学校帐户 L186: 
+L187: 技术支持
+L188: 
+L189: 有关技术支持， cite79†请打开 Surface 应用†go.microsoft.com 或 cite80†Web 浏览器†go.microsoft.com ，描述你的问题，然后选择 “获取帮助”。
+L190: 
+L191: 社区支持
+L192: 
+L193: 社区可以帮助您提出问题，并听取具有丰富知识的专家的意见。 cite81†询问社区†go.microsoft.com 。
+L194: 
+L195: 其他支持选项
+L196: 
+L197: 如果无法使用 Surface 或对其他问题有疑问，请 cite82†打开“获取帮助†go.microsoft.com ”以联机获取其他支持。
+L198: 
+L199: cite83†Image: 需要更多帮助 网格垫片. L200: 
+L201: 技术支持
+L202: 
+L203: 你可以从 cite79†Surface 应用†go.microsoft.com 或 cite80†Web 浏览器†go.microsoft.com 获取自助支持。 如需技术帮助，请联系组织的 IT 支持人员或管理员。
+L204: 
+L205: 服务 & 维修
+L206: 
+L207: 对于 Surface 商用版，请访问 cite84†Microsoft 授权服务提供商的 Surface 维修†go.microsoft.com 。
+L208: 对于 IT 管理员
+L209: 
+L210: IT 管理员应查看cite85†适用于企业 & 教育客户的†go.microsoft.com cite86†Surface 商用版†go.microsoft.com 和支持。
+L211: 
+L212: cite83†Image: 需要更多帮助 网格垫片. L213: ## 此信息是否有用?
+L214: 
+L215: [Button: 是] [Button: 否]
+L216: 
+L217: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L218: 
+L219: How satisfied are you with the translation quality?
+L220: 
+L221: What affected your experience?
+L222: 
+L223: [Input] Resolved my issue
+L224: 
+L225: [Input] Clear instructions
+L226: 
+L227: [Input] Easy to follow
+L228: 
+L229: [Input] No jargon
+L230: 
+L231: [Input] Pictures helped
+L232: 
+L233: [Input] Translation quality
+L234: 
+L235: [Input] Didn't match my screen
+L236: 
+L237: [Input] Incorrect instructions
+L238: 
+L239: [Input] Too technical
+L240: 
+L241: [Input] Not enough information
+L242: 
+L243: [Input] Not enough pictures
+L244: [Input] Translation quality
+L245: 
+L246: Any additional feedback? (Optional)
+L247: 
+L248: [Button: Submit feedback]
+L249: 
+L250: By pressing submit, your feedback will be used to improve Microsoft products and services. cite87†Privacy Statement.†privacy.microsoft.com L251: 
+L252: 新增内容
+L253:   * cite88†Surface Pro†www.microsoftstore.com.cn L254:   * cite89†Surface Laptop†www.microsoftstore.com.cn L255:   * cite90†Surface Laptop Ultra†www.microsoft.com L256:   * cite91†探索 Copilot†www.microsoft.com L257:   * cite27†Microsoft 365†www.microsoft.com L258:   * cite92†探索 Microsoft 产品†www.microsoft.com L259:   * cite93†Windows 11 应用程序†www.microsoft.com L260: 
+L261: Microsoft Store
+L262: 
+L263:   * cite94†帐户个人资料†account.microsoft.com L264:   * cite59†下载中心†www.microsoft.com L265:   * cite95†订单跟踪†account.microsoft.com L266: 
+L267: 教育
+L268:   * cite96†Microsoft 教育版†www.microsoft.com L269:   * cite97†教育设备†www.microsoft.com L270:   * cite98†Microsoft Teams 教育版†www.microsoft.com L271:   * cite99†Microsoft 365 教育版†www.microsoft.com L272:   * cite100†Office 教育版†www.microsoft.com L273:   * cite101†教育工作者培训和开发†education.microsoft.com L274:   * cite102†面向学生和家长的优惠†www.microsoft.com L275:   * cite103†面向学生的 Azure†azure.microsoft.com L276: 
+L277: 企业
+L278:   * cite104†Microsoft AI†www.microsoft.com L279:   * cite46†Microsoft 安全†www.microsoft.com L280:   * cite47†Azure†azure.microsoft.com L281:   * cite48†Dynamics 365†www.microsoft.com L282:   * cite49†Microsoft 365†www.microsoft.com L283:   * cite105†Microsoft Advertising†about.ads.microsoft.com L284:   * cite106†Microsoft Copilot†www.microsoft.com L285:   * cite39†Microsoft Teams†www.microsoft.com L286: 
+L287: 开发人员与 IT
+L288:   * cite52†Microsoft 开发人员†developer.microsoft.com L289:   * cite53†Microsoft Learn†learn.microsoft.com L290:   * cite107†支持 AI 商城应用†www.microsoft.com L291:   * cite55†Microsoft 技术社区†techcommunity.microsoft.com L292:   * cite108†Microsoft Marketplace†marketplace.microsoft.com L293:   * cite50†Microsoft Power Platform†www.microsoft.com L294:   * cite109†软件公司†www.microsoft.com L295:   * cite58†Visual Studio†visualstudio.microsoft.com L296: 
+L297: 公司
+L298:   * cite110†招贤纳士†careers.microsoft.com L299:   * cite111†关于 Microsoft†www.microsoft.com L300:   * cite112†公司新闻†news.microsoft.com L301:   * cite113†Microsoft 隐私†www.microsoft.com L302:   * cite114†投资人†www.microsoft.com L303: 
+L304: cite115†中文(中国) cite116†你的隐私选择†aka.ms cite116†你的隐私选择†aka.ms cite117†消费者健康隐私†go.microsoft.com L305: 
+L306:   * cite118†与 Microsoft 联系 L307:   * cite119†隐私†go.microsoft.com L308:   * cite120†管理 Cookie L309:   * cite121†使用条款†go.microsoft.com L310:   * cite122†商标†go.microsoft.com L311:   * cite123†关于我们的广告†choice.microsoft.com L312:   * cite124†京ICP备09042378号-6†beian.miit.gov.cn L313:   * © Microsoft 2026
+

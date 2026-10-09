@@ -1,0 +1,272 @@
+Tech specs—Surface Pro for Business, Copilot+ PC, Snapdragon X Series processor, 11th Edition - Surface | Microsoft Learn (https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs)
+citeturn27view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs","lineno":300}); Total lines: 314
+L0: cite0†Skip to main content cite1†Skip to Ask Learn chat experience L1: 
+L2: This browser is no longer supported.
+L3: 
+L4: Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+L5: 
+L6: cite2†Download Microsoft Edge†go.microsoft.com cite3†More info about Internet Explorer and Microsoft Edge L7: 
+L8: Table of contents Exit editor mode
+L9: 
+L10: Ask Learn Ask Learn
+L11: 
+L12: Reading mode Table of contents cite1†Read in English Add Add to Plans cite4†Edit†github.com L13: 
+L14: * * *
+L15: 
+L16: Copy Markdown Print
+L17: 
+L18: * * *
+L19: 
+L20: Note
+L21: Access to this page requires authorization. You can try cite1†signing in or changing directories.
+L22: 
+L23: Access to this page requires authorization. You can try changing directories.
+L24: # Tech specs: Surface Pro for Business, Copilot+ PC, Snapdragon X Series processor, 11th Edition
+L25: 
+L26:   * Applies to: Windows 11
+L27: 
+L28: Feedback
+L29: 
+L30: Summarize this article for me
+L31: ## In this article
+L32: Feature  | Description
+L33: --- | ---
+L34: Processor  | - Snapdragon X Plus (10-core) (model number: X1P64100)
+L35: - Snapdragon X Elite (12-core) (model number: X1E80100)
+L36: NPU  | - Qualcomm Hexagon with 45 TOPS
+L37: Graphics  | - Qualcomm Adreno GPU
+L38: Memory  | - 16GB, 32GBcite5†^{1} LPDDR5x RAM
+L39: Storagecite5†^{2} | - Removablecite5†^{3} solid-state drive (Gen 4 SSD): 256GB, 512GB, 1TBcite5†^{1} L40: Display  | Surface Pro with OLED display:
+L41: - Touchscreen: 13” PixelSense Flow displaycite5†^{4} L42: - Resolution: 2880 x 1920 (267 PPI)
+L43: - Aspect ratio: 3:2
+L44: - Contrast ratio: 1,000,000:1
+L45: - Dynamic refresh rate: up to 120Hz
+L46: - Color profile: sRGB and Vivid
+L47: - Individually color-calibrated display
+L48: - Adaptive color
+L49: - Adaptive contrast
+L50: - Auto color management
+L51: - Touch: 10-point multi-touch
+L52: - Dolby Vision IQcite5†^{5} L53: - Corning Gorilla Glass 5
+L54: Brightness:
+L55: - SDR: 600 nits maximum (typical)
+L56: - HDR: 900 nits peak luminancecite5†^{6} :
+L57: Surface Pro with LCD display
+L58: - Touchscreen: 13” PixelSense Flow displaycite5†^{4} L59: - Resolution: 2880 x 1920 (267 PPI)
+L60: - Aspect ratio: 3:2
+L61: - Contrast ratio: 1200:1
+L62: - Dynamic refresh rate: up to 120Hz
+L63: - Color profile: sRGB and Vivid
+L64: - Individually color-calibrated display
+L65: - Adaptive color
+L66: - Adaptive contrast
+L67: - Auto color management
+L68: - Touch: 10-point multi-touch
+L69: - Dolby Vision IQ supportcite5†^{5} L70: - Corning Gorilla Glass 5
+L71: Brightness:
+L72: - SDR: 600 nits maximum (typical)
+L73: - HDR: 600 nits peak luminancecite5†^{6} L74: Size and Weightcite5†^{7} ,cite5†^{8} | - Length: 11.3 inch (287 mm)
+L75: - Width: 8.2 inch (209 mm)
+L76: - Height: 0.37 inches (9.3 mm)
+L77: - Weight: 1.97 lbs (895 g)
+L78: Battery life  | Wi-Fi–only models—connected using Wi-Fi
+L79: - Up to 14 hours of local video playbackcite5†^{9} L80: - Up to 10 hours of active web usagecite5†^{10} L81: Wi-Fi + 5G models—connected using cellular
+L82: - Up to 9 hours of active web usagecite5†^{11} L83: Security  | Consumer
+L84: - Enhanced security with Microsoft Pluton TPM 2.0
+L85: - Windows 11 Secured-core PC
+L86: - Windows Hello face authentication with Enhanced Sign-in Security
+L87: - Microsoft Defender—for enhanced identity and privacy protectioncite5†^{12} L88: Commercial
+L89: - Enterprise-grade security with TPM 2.0 chip and BitLocker support
+L90: - Windows 11 Secured-core PC
+L91: - Microsoft Pluton security processor
+L92: - Windows Hello face authentication with Enhanced Sign-in Security
+L93: Cameras  | - Quad HD front-facing Surface Studio Camera with ultrawide field of view
+L94: - Windows Studio Effects with automatic framing, portrait blur, creative filters (illustrated, animated, watercolor), eye contact, and portrait lighting
+L95: - 10 MP Ultra HD rear-facing camera
+L96: - Windows Hello face authentication camera
+L97: Audio  | - Dual Studio Mics with voice focuscite5†^{13} L98: - 2W stereo speakers with Dolby Atmoscite5†^{14} L99: - Support for Bluetooth LE Audio
+L100: Ports and charging  | 2 × USB-C/USB4 ports with support for:
+L101: - Charging
+L102: - Data transfer
+L103: - DisplayPort 1.4a
+L104: - Surface Thunderbolt 4 Dock and other accessories
+L105: - Supports fast charging with minimum 65W power supply via Surface Connect or USB-Ccite5†^{15} L106: - Surface Pro Keyboard port
+L107: - Surface Connect port
+L108: - Nano SIMcite5†^{16} L109: Network and connectivity  | Wi-Fi–only models
+L110: - Wi-Fi 7cite5†^{17} L111: - Bluetooth 5.4
+L112: Wi-Fi + 5G models
+L113: - Wi-Fi 7cite5†^{17} L114: - Bluetooth 5.4
+L115: - Location: GNSS L1, GPS, Galileo, BeiDou, QZSS, and NAVIC support
+L116: - Nano SIM and eSIM supportcite5†^{18} L117: - Supports 5Gcite5†^{19} L118: Cellular
+L119: - 5G-NR SA/NSA, Release 15, DL 256 QAM up to 2.9 Gbps, 4x4 MIMO, UL 256 QAM
+L120: - 4G Gigabit LTE – Advanced Pro, Release 15, DL Cat 19 up to 1.6 Gbps, 256 QAM, 4x4 MIMO, 5x DL CA, UL Cat 18, 256 QAM, Contiguous 2x ULCA
+L121: 5G NR Bands
+L122: - n1, n2, n3, n5, n7, n8, n12, n14, n20, n25, n26, n28, n29, n30, n38, n40, n41, n48, n66, n71, n77, n78, n79
+L123: LTE Bands
+L124: - 1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 42, 48, 66, 71
+L125: WCDMA Bands
+L126: - 1, 2, 4, 5, 8
+L127: Pen compatibilitycite5†^{20} | Designed for Surface Slim Pen (2nd Edition)
+L128: - Integrated storage and wireless charging for Surface Slim Pen (2nd Edition) with Surface Pro Keyboard and Surface Pro Flex Keyboardcite5†^{21} L129: - Supports tactile signals with Surface Slim Pen (2nd Edition)
+L130: - Supports Microsoft Pen Protocol (MPP)
+L131: Keyboard Compatibility  | - Surface Pro Flex Keyboard
+L132: - Surface Pro Keyboard with pen storage
+L133: - Surface Pro Signature Keyboard
+L134: - Surface Pro Keyboard
+L135: - Surface Pro X Signature Keyboard
+L136: - Surface Pro X Keyboard
+L137: Software  | Consumer
+L138: - Windows 11 Home
+L139: - Preloaded Microsoft 365 Appscite5†^{22} L140: - Microsoft 365 Family 30-day trialcite5†^{23} L141: - Microsoft Defender App
+L142: - Preloaded Xbox app
+L143: - Xbox Game Pass Ultimate 30-day trialcite5†^{24} (accessible through cite6†Xbox Cloud Gaming†www.xbox.com )
+L144: Commercial
+L145: - Windows 11 Pro
+L146: - Preloaded Microsoft 365 Appscite5†^{25} L147: - Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps 30-day trialcite5†^{26} L148: Accessibility  | - Compatible with the optional bold keyset version of Surface Pro Flex Keyboard and Surface Pro Keyboardcite5†^{27} L149: - Compatible with Surface precision haptic touchpad built into Surface Pro Flex Keyboardcite5†^{28} L150: - Compatible with Surface Adaptive Kit
+L151: - Compatible with Microsoft Adaptive Accessories
+L152: - Supports Microsoft Accessibility Features – cite7†Accessible Technology, Products & Innovation Microsoft Accessibility†www.microsoft.com L153: - Discover more Microsoft Accessible Devices & Products - cite8†Accessible Devices & Products for PC & Gaming Assistive Tech Accessories - Microsoft Store†www.microsoft.com L154: Sustainability  | Surface Pro is designed with sustainability in mind - see more on the cite9†Surface Pro Eco Profile†aka.ms L155: More recycled materials
+L156: - Enclosure is made with a minimum of 72% recycled content, including 100% recycled aluminum alloy and 100% recycled rare earth metalscite5†^{29} L157: Thoughtful packaging
+L158: Commercial
+L159: - 78% recycled content in wood-based fiber packagingcite5†^{30} L160: - Paper-based, minimizing plastic use
+L161: - 100% of our virgin paper is sourced from FSC-certified sources to be responsibly forested
+L162: Consumer
+L163: - 70% recycled content in wood-based fiber packaging
+L164: - Paper-based, minimizing plastic use
+L165: - 100% of our virgin paper is sourced from FSC-certified sources to be responsibly forested
+L166: More energy efficient
+L167: - ENERGY STAR certifiedcite5†^{31} L168: - Registered EPEAT Gold cite5†^{32} L169: More repairable
+L170: - Easier to repair, with clear visual icons and built-in access to repair instructionscite5†^{33} L171: Surface Trade-in
+L172: - Commercial: We make trade-in convenient and secure for our commercial customers in the USA at cite10†Microsoft Trade In Program†microsoft.devicereturns.com L173: - Consumer: We make trade-in and recycling convenient and secure with global programs. Learn more at cite11†Microsoft Trade In & Recycling Program - Microsoft Store†www.microsoft.com L174: Microsoft is committed to be carbon negative, water positive, and achieve zero waste by 2030. Learn more about how we design with sustainability in mind:
+L175: - cite12†Sustainable Products & Solutions Microsoft CSR†www.microsoft.com L176: - cite13†Microsoft Surface Sustainability - Microsoft Sustainability†www.microsoft.com L177: Serviceability  | Consumer
+L178: - cite14†Replaceable components and self-repair information†support.microsoft.com L179: Commercial
+L180: Replaceable components include:cite5†^{34} L181: - Display module
+L182: - Removable solid-state drive
+L183: - Battery
+L184: - Motherboard (including main processor and main memory)
+L185: - Surface Connect
+L186: - Thermal module
+L187: - Microphone module
+L188: - Solid-state drive door
+L189: - Speakers
+L190: - Enclosure (bucket)
+L191: - Front camera
+L192: - Rear camera
+L193: - Power and volume buttons
+L194: - Kickstand
+L195: - Device entry kit
+L196: - SIM card connectorcite5†^{16} L197: Exterior  | Consumer
+L198: - Casing: Anodized aluminum
+L199: - Colors:cite5†^{35} Platinum, Black, Sapphire, Dune
+L200: - Physical Buttons: Volume, Power
+L201: Commercial
+L202: - Casing: Anodized aluminum
+L203: - Colorscite5†^{36} : Platinum, Black
+L204: - Physical Buttons: Volume, Power
+L205: Kickstand  | Kickstand with 165-degrees full friction hinge
+L206: Sensors  | Consumer
+L207: - Accelerometer
+L208: - Gyroscope
+L209: - Magnetometer
+L210: - Ambient color sensor
+L211: -
+L212: - Commercial
+L213: Accelerometer
+L214: - Gyroscope
+L215: - Magnetometer
+L216: - Ambient color sensor
+L217: - NFCcite5†^{37} L218: What's in the box  | - Surface Pro (11th Edition)
+L219: - Quick Start Guide
+L220: - Safety and warranty documents
+L221: - 39W Power Supply (In select markets, available only with specific configurations)
+L222: - SIM card access toolcite5†^{16} L223: Hardware environmental testingcite5†^{36} | - Meets MIL-STD 810H including temperature, dust, humidity, and vibration
+L224: Warrantycite5†^{37} | 1-year limited hardware warranty
+L225: Battery Capacitiescite5†^{7} | Surface Pro with LCD display
+L226: - Battery capacity, nominal (Wh): 47
+L227: - Battery capacity, minimum (Wh): 46
+L228: Surface Pro with OLED display
+L229: - Battery capacity, nominal (Wh) 53
+L230: - Battery capacity, minimum (Wh)51
+L231: ## References
+L232:   1. 32GB memory and 1T storage option available for Surface Pro Wi-Fi–only models.
+L233:   2. System software uses significant storage space. Available storage is subject to change based on system software updates and apps usage. 1 GB = 1 billion bytes. 1 TB = 1,000 GB. See cite15†Surface.com/Storage†support.microsoft.com for more details.
+L234:   3. Solid State Drive (SSD) Retention is only available on Microsoft Surface devices in which the SSD is marketed as removable per the Technical Specifications. Solid State Drive (SSD) Retention is included in both Extended Hardware Service Plus and Microsoft Complete for Business Plus and is also available as an Optional Add-on when purchasing Microsoft Extended Hardware Service and Microsoft Complete for Business.
+L235: Devices returned to Microsoft with a missing Solid State Drive (SSD) are subject to a Solid State Drive (SSD) replacement fee unless the device is enrolled in the Drive (SSD) Retention offer.
+L236:   4. Surface Pro display has rounded corners within a standard rectangle. When measured as a standard rectangular shape the screen is 13” diagonally (actual viewable area is less).
+L237:   5. Requires Dolby Vision encoded content and video.
+L238:   6. HDR requires HDR content and enabling HDR in device settings.
+L239:   7. Might vary depending on manufacturing processes.
+L240:   8. Weight not including Type Cover.
+L241:   9. Wi-Fi–only models. Based on local video playback test. Testing conducted by Microsoft in April 2024 using preproduction software and preproduction Surface Pro Snapdragon X Plus C10 256GB and 512GB, 16GB RAM (LCD), Wi-Fi–only devices and Surface Pro Snapdragon X Elite C12 1TB 32GB RAM (OLED), Wi-Fi–only devices. Testing consisted of full battery discharge during video playback of a .mov file through the Windows Media Player application in 1080p at 24 FPS.
+L242: All settings were default except screen brightness set to 150 nits with Autobrightness disabled. Wi-Fi was connected to a network. Battery life varies significantly with settings, usage, and other factors.
+L243:   10. Wi-Fi–only models. Based on a web browsing test. Testing conducted by Microsoft in April 2024 using preproduction software and preproduction Surface Pro Snapdragon X Plus C10 256GB and 512GB, 16GB RAM (LCD), Wi-Fi–only devices and Surface Pro Snapdragon X Elite C12 1TB 32GB RAM (OLED), Wi-Fi–only devices. Testing consisted of full battery discharge while accessing eight popular websites over multiple open tabs through the browser.
+L244: All settings were default except screen brightness set to 150 nits with Auto-Brightness disabled. Wi-Fi was connected to a network. Battery life varies significantly with settings, usage, and other factors.
+L245:   11. Wi-Fi + 5G models. Based on a web browsing test. Testing conducted by Microsoft in August 2024 using preproduction software and preproduction Surface Pro Snapdragon X Plus C10 256GB, 16GB RAM (LCD) and Surface Pro Snapdragon X Elite C12 512GB, 16GB RAM (OLED) devices. Testing consisted of full battery discharge while accessing eight popular websites over multiple open tabs through the browser. All settings were default except screen brightness set to 150 nits with Auto-Brightness disabled.
+L246: Cellular enabled and device connected to a cellular network. Battery life varies significantly with settings, usage, and other factors.
+L247:   12. Microsoft 365 Personal or Family subscription required.
+L248:   13. Voice focus requires activation, requires Windows 11 and is available in apps which use integrated device microphones and use certain Windows audio processing modes.
+L249:   14. Requires Dolby Atmos encoded content/audio.
+L250:   15. In select markets, only specific configurations come with a 39W Surface power supply. Fast Charging (from 5% to 80%) is supported with minimum 65W Surface power supply or USB Type-C PD charger rated at 60W or higher, sold separately. Testing was conducted at Microsoft in March 2024, using preproduction devices, software, and minimum of 60W USB-C charger under controlled conditions. The device was powered on to the desktop screen with default display brightness settings.
+L251: Actual charge time varies based on operating conditions. Measured at typical office ambient temperature of 23C.
+L252:   16. Surface Pro with Wi-Fi + 5G models only.
+L253:   17. 6GHz band not available in all regions.
+L254:   18. eSIM support may vary by carrier.
+L255:   19. Surface Pro 11 Wi-Fi + 5G models only. 5G not available in all areas; compatibility and performance depend on carrier network, plan, and other factors. See carrier for details and pricing.
+L256:   20. Pen and keyboard sold separately.
+L257:   21. Applies to Surface Pro Keyboard with pen storage, Surface Pro Flex Keyboard, and Surface Pro Signature Keyboard.
+L258:   22. Requires license or subscription (sold separately) to activate and use.
+L259:   23. Activation required. After 30 days, you'll be charged the applicable monthly or annual subscription fee. Credit card required. Cancel anytime to stop future charges.
+L260:   24. Activation required for Xbox Game Pass Ultimate. Xbox Game Pass Ultimate 30 day trial accessible through Xbox.com/Play. You can use it to play games on Xbox One and Xbox Series Consoles, and stream select games where available to Surface Pro 9 through Xbox.com/Play and other supported devices. Not currently available in China.
+L261:   25. Requires license or subscription (sold separately) to activate and use.
+L262:   26. Activation required. If your device is managed by your organization’s IT department, contact your IT administrator for activation. After 30 days, you'll be charged the applicable monthly or annual subscription fee. Credit card required. Cancel anytime to stop future charges. See cite16†https://aka.ms/m365businesstrialinfo†aka.ms .
+L263:   27. Surface Pro Flex Keyboard and Surface Pro Keyboard with optional bold keyset available only in US English.
+L264:   28. Requires Windows 11.
+L265:   29. Enclosure includes Bucket and Kickstand. 100% recycled aluminum alloy in Bucket and Kickstand. 100% recycled rare earth metals in magnets. Based on validation performed by Underwriter Laboratories, Inc. using Environmental Claim Validation Procedure, UL 2809-2, Second Edition, November 7, 2023.
+L266:   30. For Surface Pro for Business (11th Edition) options with power supply included. For options without a power supply, packaging is UL Validated to contain a minimum of 72% recycled content. Based on Environmental Claim Validation Procedure (ECVP) for Recycled Content, UL ECVP 2809-2, Second Edition, dated November 7, 2023. Recycled Content is defined in accordance with ISO 14021.
+L267:   31. Computers that have earned the ENERGY STAR label are third-party certified to be energy efficient and use 25% - 40% less than conventional models by using the most efficient components and better managing energy use when idle.
+L268:   32. Refer to the EPEAT registry for current ratings. Ratings can vary by region, may change over time, and products are eventually archived.
+L269:   33. Consumer: Replacement components available through online cite17†Microsoft Store†www.microsoft.com and cite18†iFixIt†www.ifixit.com for out-of-warranty repair. Components can be replaced by individuals with the knowledge and experience to repair electronic devices following cite19†Microsoft’s Service Guide.†www.microsoft.com Microsoft tools (sold separately) may also be required. Availability of replacement components and service options may vary by product, market, and over time.
+L270: See cite14†Self-repair information for your Surface device - Microsoft Support†support.microsoft.com .
+L271:   34. Commercial: Replacement components available through Surface Commercial authorized device resellers. Components can be replaced on-site by a skilled technician following Microsoft’s Service Guide. Microsoft tools (sold separately) may also be required. Availability of replacement components and service options may vary by product, market, and over time. See cite20†Surface service options .
+L272: Caution
+L273: 
+L274: Opening and/or repairing a device can present electric shock, device damage, fire and personal injury risk, and other hazards. Use caution if undertaking self-service repairs. Unless required by law, damage caused during repair isn't covered under Microsoft’s Limited Hardware Warranty or protection plans.
+L275:   35. Colors available on selected models only. Available colors, sizes, finishes, and processors may vary by store, market, and configuration.
+L276:   36. Available for Surface Pro Wi-Fi–only models.
+L277:   37. MIL-STD 810H establishes a methodology for testing products against environmental stress conditions under controlled laboratory conditions. These test results are informational only and not a representation, promise, or guarantee of future performance under the same conditions in the real world. Customer-induced damage or use beyond normal use conditions, like that contained in MIL-STD 810G testing, isn't covered under Microsoft’s Limited Hardware Warranty.
+L278: Learn more at cite21†Surface hardware environmental test results .
+L279:   38. Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L280: * * *
+L281: ## Feedback
+L282: 
+L283: Was this page helpful?
+L284: 
+L285: Yes No No
+L286: 
+L287: Need help with this topic?
+L288: 
+L289: Want to try using Ask Learn to clarify or guide you through this topic?
+L290: 
+L291: Ask Learn Ask Learn
+L292: 
+L293: Suggest a fix?
+L294: 
+L295: * * *
+L296: 
+L297: ## Additional resources
+L298: 
+L299: * * *
+L300: 
+L301:   * Last updated on 2025-03-25
+L302: 
+L303: ### In this article
+L304: 
+L305: Was this page helpful?
+L306: 
+L307: Need help with this topic?
+L308: 
+L309: Want to try using Ask Learn to clarify or guide you through this topic?
+L310: 
+L311: Ask Learn Ask Learn
+L312: 
+L313: Suggest a fix?
+

@@ -1,0 +1,549 @@
+购买 12 英寸 Surface Pro：二合一 Windows 笔记本电脑 & Windows 11 AI+ PC (Snapdragon) - 微软官方商城 (https://www.microsoftstore.com.cn/configure/surface-pro-12-inch)
+citeturn90view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/configure/surface-pro-12-inch","lineno":200}); Total lines: 764
+L0: JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser.
+L1: 
+L2: Menu
+L3: 
+L4: cite0†微软官方商城 L5: 
+L6: cite1†Menu L7:   * 硬件
+L8:     * Surface
+L9:       * 认证翻新 Surface
+L10:         * 认证翻新 Surface
+L11:         * 认证翻新 Surface 商用版
+L12:     * 特惠翻新 Surface
+L13:     * Xbox+游戏
+L14:       * 手柄及遥控器
+L15:       * Xbox 主机
+L16:       * 游戏机周边配件
+L17:       * 本周畅销游戏推荐
+L18:       * 光盘游戏
+L19:     * 配件
+L20:       * Surface配件
+L21:         * 键鼠+Dial
+L22:         * 触控笔
+L23:         * 保护类
+L24:         * 线材及适配器
+L25:         * 维修部件
+L26:       * Xbox 配件
+L27:         * 手柄及遥控器
+L28:         * 游戏机周边配件
+L29:       * 自适应配件
+L30:       * 键鼠
+L31:       * 线材及适配器
+L32:       * 其他配件
+L33:   * 软件
+L34:     * Microsoft 365
+L35:     * Office 2024
+L36:     * Windows
+L37:     * Apps与Windows 10游戏
+L38:     * Visual Studio
+L39:     * Microsoft Complete and EHS
+L40:     * 其他软件与服务
+L41:   * 折扣专区
+L42:   * Surface
+L43:   * 特惠翻新 Surface
+L44:   * 教育优惠
+L45:   * 企业购
+L46:   * 我的优惠券
+L47:   * 以旧换新
+L48:   * 商城承诺
+L49:   * 支持与帮助
+L50:   * 专栏博客
+L51:   * 更多
+L52: cite2†账户 L53: 
+L54: 搜索
+L55: 
+L56: cite3†My Cart L57: 
+L58: 登录
+L59: 
+L60: Search
+L61: 
+L62: Search
+L63: 
+L64: [Input]
+L65: 
+L66: cite4†Advanced Search L67: 
+L68: Search
+L69: 
+L70: [Button: 取消]
+L71: 
+L72: cite5†Image†cdn.microsoftstore.com.cn L73: 
+L74: cite5†Image†cdn.microsoftstore.com.cn L75: 
+L76:   * cite6†我的账户 L77:   * cite7†我的订单 L78:   * cite8†地址管理 L79:   * cite9†我的专区 L80:   * cite10†我的优惠券 L81:   * cite11†退出 cite12†登录 L82: 
+L83: [Input]
+L84: 
+L85: Surface Pro, 12 英寸(第 1 代)
+L86: 
+L87: 加入购物车
+L88: 
+L89: （券后价：）
+L90: 
+L91: 预售商品起陆续发货。
+L92: 
+L93: 总计： ¥6,788.00 券后价：
+L94: # Surface Pro, 12 英寸(第 1 代)
+L95: 
+L96: cite13†Image: Surface Pro, 12 英寸(第 1 代)†cdn.microsoftstore.com.cn L97: 
+L98: 0张图片
+L99: 
+L100: cite14†返回了解详情 > L101: 
+L102: 60天退换货
+L103: 
+L104: 全场免运费
+L105: 
+L106: 在线聊天服务
+L107: 
+L108: 60天退换货
+L109: 
+L110: 在线聊天服务
+L111: 
+L112: 全场免运费
+L113: 
+L114: 促销期退换货期限延长至60天
+L115: 
+L116: 60天延长退货条款仅适用于促销期内成功订购 Surface 主机产品（不包括 Surface 认证翻新机系列，Surface 商业版）并完成支付的订单。60天从商品签收日期起算。促销期是指2026年09月30日09:00-2026年10月16日08:59。其他未尽事宜，以微软官方商城退换货政策为准。https://www.microsoftstore.com.cn/support-and-help-tabs。
+L117: 
+L118: 非商务专区个人客户
+L119: 
+L120: 微软品牌实体商品:在微软官方商城订购的微软品牌实体商品，客户可在签收后30天（自然日）内进行退货或换货。微软品牌实体商品包括微软 Surface/Xbox 主机及微软第一方配件。
+L121: 
+L122: 商品类别
+L123: 
+L124: 微软品牌实体商品
+L125: 
+L126: 退还类别
+L127: 功能性故障或商品质量问题
+L128: 
+L129: 客户个人原因
+L130: 
+L131: 退换货期限
+L132: 
+L133: 签收后30天内（含）可退、换或者维修
+L134: 
+L135: 签收后7天内（含）可退
+L136: 
+L137: 要求说明
+L138: 
+L139: 需联系商城客服人员提供相关证明材料
+L140: 
+L141: 个人原因导致的退货，须确保商品完好，不影响二次销售
+L142: 
+L143: 返回运费承担方
+L144: 
+L145: 商城承担（客户先行垫付*）
+L146: 
+L147: 客户自行承担*
+L148: 
+L149: *应由商城承担的运费，请您先行垫付，并切记务必保留寄回商品的快递面单，商城将根据面单金额退回对应运费。 应由客户自行承担的运费，如客户选择到付寄回，商城将拒签您的包裹。
+L150: 
+L151: cite15†了解更多 > L152: 
+L153: 我们的服务时间：
+L154: 微软官方商城在线聊天服务：周一至周日 9:00 - 24:00
+L155: 微软官方商城微信聊天服务：周一至周日9:00-21:00
+L156: 
+L157: 微软官方商城服务热线: 400 820 3800（售前咨询，订单状态与退款）：周一至周日9:00-21:00（节假日除外）
+L158: 
+L159: 微软中国技术支持热线: 400 820 3800（技术支持与保修）：周一至周五 9:00-21:00， 周六，周日 10:00-18:00（节假日除外）
+L160: 
+L161: 微软官方商城为大陆地区顾客提供全场包邮服务。
+L162: 温馨提示：服务类商品、数字化商品或虚拟商品等无需配送；请根据产品页面的提示，在付款后至订单详情页面获取产品密钥或兑换码。
+L163: 
+L164: Customize and Add to Cart
+L165: 
+L166: [Input][Input][Input][Input][Input][Input][Input]
+L167: 
+L168: 购买方式
+L169: 
+L170: 单机及配件
+L171: 
+L172: [Input]
+L173: 
+L174: 配置
+L175: 
+L176: 配置
+L177: 
+L178: [Input]
+L179: 
+L180: cite16†Image†cdn.microsoftstore.com.cn L181: 
+L182: 新配置
+L183: 
+L184: Surface Pro, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/8GB RAM/256GB SSD/亮铂金/12 英寸/Wi-Fi 版
+L185: 
+L186: 总计： ¥6,788.00 券后价：
+L187: 
+L188: 每月约¥188.56
+L189: 
+L190: [Input]
+L191: 
+L192: cite17†Image†cdn.microsoftstore.com.cn L193: 
+L194: 新配置
+L195: 
+L196: Surface Pro, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/12GB RAM/256GB SSD/亮铂金/12 英寸/Wi-Fi 版
+L197: 
+L198: 总计： ¥7,788.00 券后价：
+L199: 每月约¥216.33
+L200: 
+L201: [Input]
+L202: 
+L203: cite18†Image†cdn.microsoftstore.com.cn L204: 
+L205: 9.2折
+L206: 
+L207: Surface Pro, Windows 11 AI+ PC, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/256GB SSD/亮铂金/Wi-Fi 版
+L208: 
+L209: 9.2 折
+L210: 
+L211: 总计： ¥7,988.00 券后价： ¥8,688.00 ¥8,688.00
+L212: 
+L213: 每月约¥221.89
+L214: 
+L215: [Input]
+L216: 
+L217: cite18†Image†cdn.microsoftstore.com.cn L218: 
+L219: 9.3折
+L220: 
+L221: Surface Pro, Windows 11 AI+ PC, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/亮铂金/Wi-Fi 版
+L222: 
+L223: 9.3 折
+L224: 
+L225: 总计： ¥8,388.00 券后价： ¥8,988.00 ¥8,988.00
+L226: 
+L227: 每月约¥233.00
+L228: 
+L229: [Input]
+L230: 
+L231: cite19†Image†cdn.microsoftstore.com.cn L232: 
+L233: 9.3折
+L234: Surface Pro, Windows 11 AI+ PC, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/罗兰紫/Wi-Fi 版
+L235: 
+L236: 9.3 折
+L237: 
+L238: 总计： ¥8,388.00 券后价： ¥8,988.00 ¥8,988.00
+L239: 
+L240: 每月约¥233.00
+L241: 
+L242: [Input]
+L243: 
+L244: cite20†Image†cdn.microsoftstore.com.cn L245: 
+L246: 9.3折
+L247: 
+L248: Surface Pro, Windows 11 AI+ PC, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/碧海青/Wi-Fi 版
+L249: 
+L250: 9.3 折
+L251: 
+L252: 总计： ¥8,388.00 券后价： ¥8,988.00 ¥8,988.00
+L253: 
+L254: 每月约¥233.00
+L255: 
+L256: [Input]
+L257: 
+L258: cite21†Image†cdn.microsoftstore.com.cn L259: 
+L260: 9.3折
+L261: 
+L262: 单机+键盘套餐
+L263: Surface Pro, Windows 11 AI+ PC, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/亮铂金/Wi-Fi 版/ Pro 键盘盖，板岩灰
+L264: 
+L265: 9.3 折
+L266: 
+L267: 总计： ¥9,588.00 券后价： ¥10,276.00 ¥10,276.00
+L268: 
+L269: 每月约¥266.33
+L270: 
+L271: [Input]
+L272: 
+L273: cite22†Image†cdn.microsoftstore.com.cn L274: 
+L275: 9.3折
+L276: 
+L277: 单机+键盘套餐
+L278: 
+L279: Surface Pro, Windows 11 AI+ PC, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/碧海青/Wi-Fi 版/Pro 键盘盖，碧海青
+L280: 
+L281: 9.3 折
+L282: 
+L283: 总计： ¥9,588.00 券后价： ¥10,276.00 ¥10,276.00
+L284: 
+L285: 每月约¥266.33
+L286: 
+L287: [Input]
+L288: 
+L289: cite23†Image†cdn.microsoftstore.com.cn L290: 
+L291: 9.3折
+L292: 
+L293: 单机+键盘套餐
+L294: Surface Pro, Windows 11 AI+ PC, 12 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/罗兰紫/Wi-Fi 版/Pro 键盘盖，罗兰紫
+L295: 
+L296: 9.3 折
+L297: 
+L298: 总计： ¥9,588.00 券后价： ¥10,276.00 ¥10,276.00
+L299: 
+L300: 每月约¥266.33
+L301: 
+L302: Quantity
+L303: 
+L304: [Input]
+L305: 
+L306: 可选配件（可多选）
+L307: 
+L308: cite24†Image†cdn.microsoftstore.com.cn L309: 
+L310: cite25†Image†cdn.microsoftstore.com.cn L311: 
+L312: cite26†Image†cdn.microsoftstore.com.cn L313: 
+L314: Surface Arc 鼠标 碧海青 超薄轻盈，轻松携带出行，这款电池供电的 Surface Arc 鼠标专为贴合你的手型而设计，展平后能轻松放入包中。它的蓝牙^{®} 连接功能让你无论走到哪里都能随心携带，而且现有两种新颜色^{1} 可供选择，以彰显你的个人风采。
+L315: 
+L316: 8.6 折
+L317: 
+L318: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L319: 
+L320: 每月约¥16.61
+L321: cite27†Image†cdn.microsoftstore.com.cn L322: 
+L323: cite28†Image†cdn.microsoftstore.com.cn L324: 
+L325: cite29†Image†cdn.microsoftstore.com.cn L326: 
+L327: cite30†Image†cdn.microsoftstore.com.cn L328: 
+L329: Surface Pro 12 英寸键盘盖 (带超薄触控笔) 板岩灰 将两个互补的配件搭配在一起购买更划算。Surface Pro 12 英寸键盘盖让 Surface Pro, Windows 11 AI+ PC, 12 英寸成为完整的笔记本电脑，在使用 Surface 超薄触控笔时，畅享卓越的准确性、出色的阴影效果和优秀的压力敏感度。此外，Surface Pro 12 英寸键盘盖提供三种全新颜色选项：碧海青、板岩灰和罗兰紫。^{1}
+L330: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L331: 
+L332: 总计： ¥2,188.00 券后价：
+L333: 
+L334: 每月约¥60.78
+L335: 
+L336: cite31†Image†cdn.microsoftstore.com.cn L337: cite32†Image†cdn.microsoftstore.com.cn L338: 
+L339: cite33†Image†cdn.microsoftstore.com.cn L340: 
+L341: cite34†Image†cdn.microsoftstore.com.cn L342: 
+L343: Surface Pro 12 英寸键盘盖 板岩灰 通过搭配一款时尚的键盘来为 12 英寸 Surface Pro 增添魅力。Surface Pro 12 英寸键盘盖凭借其创新且耐用的设计，非常适合快节奏的生活方式。此外，它还提供三种全新颜色可供选择——碧海青、板岩灰和罗兰紫。^{2}
+L344: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L345: 
+L346: 总计： ¥1,288.00 券后价：
+L347: 
+L348: 每月约¥35.78
+L349: 
+L350: 9.4折
+L351: 
+L352: cite24†Image†cdn.microsoftstore.com.cn L353: 
+L354: Surface Arc 鼠标 碧海青 超薄轻盈，轻松携带出行，这款电池供电的 Surface Arc 鼠标专为贴合你的手型而设计，展平后能轻松放入包中。它的蓝牙^{®} 连接功能让你无论走到哪里都能随心携带，而且现有两种新颜色^{1} 可供选择，以彰显你的个人风采。
+L355: 
+L356: 8.6 折
+L357: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L358: 
+L359: 每月约¥16.61
+L360: 
+L361: 9.4折
+L362: 
+L363: cite35†Image†cdn.microsoftstore.com.cn L364: 
+L365: Surface Arc 鼠标 罗兰紫 超薄轻盈，轻松携带出行，这款电池供电的 Surface Arc 鼠标专为贴合你的手型而设计，展平后能轻松放入包中。它的蓝牙^{®} 连接功能让你无论走到哪里都能随心携带，而且现有两种新颜色^{1} 可供选择，以彰显你的个人风采。
+L366: 
+L367: 8.6 折
+L368: 
+L369: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L370: 
+L371: 每月约¥16.61
+L372: 
+L373: cite27†Image†cdn.microsoftstore.com.cn L374: Surface Pro 12 英寸键盘盖 (带超薄触控笔) 板岩灰 将两个互补的配件搭配在一起购买更划算。Surface Pro 12 英寸键盘盖让 Surface Pro, Windows 11 AI+ PC, 12 英寸成为完整的笔记本电脑，在使用 Surface 超薄触控笔时，畅享卓越的准确性、出色的阴影效果和优秀的压力敏感度。此外，Surface Pro 12 英寸键盘盖提供三种全新颜色选项：碧海青、板岩灰和罗兰紫。^{1}
+L375: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L376: 
+L377: 总计： ¥2,188.00 券后价：
+L378: 
+L379: 每月约¥60.78
+L380: 
+L381: cite36†Image†cdn.microsoftstore.com.cn L382: Surface Pro 12 英寸键盘盖 (带超薄触控笔) 碧海青 将两个互补的配件搭配在一起购买更划算。Surface Pro 12 英寸键盘盖让 Surface Pro, Windows 11 AI+ PC, 12 英寸成为完整的笔记本电脑，在使用 Surface 超薄触控笔时，畅享卓越的准确性、出色的阴影效果和优秀的压力敏感度。此外，Surface Pro 12 英寸键盘盖提供三种全新颜色选项：碧海青、板岩灰和罗兰紫。^{1}
+L383: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L384: 
+L385: 总计： ¥2,188.00 券后价：
+L386: 
+L387: 每月约¥60.78
+L388: 
+L389: cite37†Image†cdn.microsoftstore.com.cn L390: Surface Pro 12 英寸键盘盖 (带超薄触控笔) 罗兰紫 将两个互补的配件搭配在一起购买更划算。Surface Pro 12 英寸键盘盖让 Surface Pro, Windows 11 AI+ PC, 12 英寸成为完整的笔记本电脑，在使用 Surface 超薄触控笔时，畅享卓越的准确性、出色的阴影效果和优秀的压力敏感度。此外，Surface Pro 12 英寸键盘盖提供三种全新颜色选项：碧海青、板岩灰和罗兰紫。^{1}
+L391: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L392: 
+L393: 总计： ¥2,188.00 券后价：
+L394: 
+L395: 每月约¥60.78
+L396: 
+L397: cite31†Image†cdn.microsoftstore.com.cn L398: 
+L399: Surface Pro 12 英寸键盘盖 板岩灰 通过搭配一款时尚的键盘来为 12 英寸 Surface Pro 增添魅力。Surface Pro 12 英寸键盘盖凭借其创新且耐用的设计，非常适合快节奏的生活方式。此外，它还提供三种全新颜色可供选择——碧海青、板岩灰和罗兰紫。^{2}
+L400: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L401: 总计： ¥1,288.00 券后价：
+L402: 
+L403: 每月约¥35.78
+L404: 
+L405: cite38†Image†cdn.microsoftstore.com.cn L406: 
+L407: Surface Pro 12 英寸键盘盖 罗兰紫 通过搭配一款时尚的键盘来为 12 英寸 Surface Pro 增添魅力。Surface Pro 12 英寸键盘盖凭借其创新且耐用的设计，非常适合快节奏的生活方式。此外，它还提供三种全新颜色可供选择——碧海青、板岩灰和罗兰紫。^{2}
+L408: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L409: 
+L410: 总计： ¥1,288.00 券后价：
+L411: 
+L412: 每月约¥35.78
+L413: 
+L414: cite39†Image†cdn.microsoftstore.com.cn L415: 
+L416: Surface Pro 12 英寸键盘盖 碧海青 通过搭配一款时尚的键盘来为 12 英寸 Surface Pro 增添魅力。Surface Pro 12 英寸键盘盖凭借其创新且耐用的设计，非常适合快节奏的生活方式。此外，它还提供三种全新颜色可供选择——碧海青、板岩灰和罗兰紫。^{2}
+L417: 显示的图像仅用于说明目的。有关所订购键盘盖的详细信息，请查看技术规格。
+L418: 总计： ¥1,288.00 券后价：
+L419: 
+L420: 每月约¥35.78
+L421: 
+L422: 8.3折
+L423: 
+L424: cite40†Image†cdn.microsoftstore.com.cn L425: 
+L426: 微软 Surface 超薄触控笔 2 典雅黑 使用 Surface 超薄触控笔 2，将你的想法变为现实。使用手写笔记和纸上绘画的感觉，享受非凡的准确度、令人难以置信的阴影、优越的压力灵敏度和磁性存放处。
+L427: 
+L428: 8.3 折
+L429: 
+L430: 总计： ¥988.00 券后价： ¥1,188.00 ¥1,188.00
+L431: 
+L432: 每月约¥27.44
+L433: 
+L434: cite41†Image†cdn.microsoftstore.com.cn L435: 
+L436: 微软 Surface 超薄触控笔充电器 Surface 超薄触控笔 2 和超薄触控笔充电器。包括 USB-A 线缆，可连接 Surface 电脑或其他兼容设备进行充电。
+L437: 
+L438: 总计： ¥288.00 券后价：
+L439: 
+L440: 每月约¥8.00
+L441: 
+L442: cite42†Image†cdn.microsoftstore.com.cn L443: 微软 Surface USB-C 多功能扩展坞 黑色 通过此款典雅的多端口适配器（包含 USB-C^{®}）可将笔记本电脑转换为高效的多功能助手。支持兼容配件充电。不支持笔记本电脑充电。
+L444: 
+L445: 总计： ¥889.00 券后价：
+L446: 
+L447: 每月约¥24.69
+L448: 
+L449: 8.8折
+L450: 
+L451: cite43†Image†cdn.microsoftstore.com.cn L452: 
+L453: 微软 Surface Arc 鼠标 亮铂金
+L454: 
+L455:   * 微软 Surface Arc 鼠标，纤薄、轻巧，可以展平轻松放入口袋或背包
+L456:   * 创新的全滚动平面可随意垂直、水平滚动
+L457:   * 通过蓝牙无线连接到 Surface
+L458:   * 微软蓝影技术，可在多种表面实现出色跟踪
+L459:   * 多色可选，彰显个性自我
+L460: 
+L461: 8.1 折
+L462: 
+L463: 总计： ¥598.00 券后价： ¥678.00 ¥678.00
+L464: 
+L465: 每月约¥16.61
+L466: 
+L467: cite44†Image†cdn.microsoftstore.com.cn L468: 
+L469: 微软 Surface 鼠标
+L470: 
+L471:   * 如同 Surface 一般做工精良
+L472:   * 设计时尚简洁，左右手操作皆宜
+L473:   * 24 次触力反馈的金属滚轮
+L474:   * 蓝牙 4.0/4.1
+L475: 总计： ¥378.00 券后价：
+L476: 
+L477: 每月约¥10.50
+L478: 
+L479: cite45†Image†cdn.microsoftstore.com.cn L480: 
+L481: 微软 Surface Thunderbolt™ 4 扩展坞 使用具有超高速数据传输能力的 Surface Thunderbolt™ 4 扩展坞提升工作空间的工作效率。8 个多用途连接端口，支持连接网络摄像头、手机和其他配件，同时还能连接最多两台 4K 显示器。^{1}
+L482: 
+L483: 总计： ¥2,565.00 券后价：
+L484: 
+L485: 每月约¥71.25
+L486: 
+L487: cite46†Image†cdn.microsoftstore.com.cn L488: 
+L489: 微软 Surface Dial
+L490: 
+L491:   * 轻松访问快捷方式、控件、绘图工具及其他选项
+L492:   * 在 Spotify、Groove 和 Pandora 中为您喜爱的曲目调节音量
+L493:   * 在您喜爱的新闻网站上转动浏览文章
+L494:   * 轻轻转动，即可编辑、旋转和操作您的作品
+L495: 
+L496: 总计： ¥958.00 券后价：
+L497: 
+L498: 每月约¥26.61
+L499: 
+L500: 9.4折
+L501: 
+L502: cite47†Image†cdn.microsoftstore.com.cn L503: 
+L504: 微软 Surface Arc 鼠标 典雅黑
+L505:   * 微软 Surface Arc 鼠标，纤薄、轻巧，可以展平轻松放入口袋或背包
+L506:   * 创新的全滚动平面可随意垂直、水平滚动
+L507:   * 通过蓝牙无线连接到 Surface
+L508:   * 微软蓝影技术，可在多种表面实现出色跟踪
+L509:   * 多色可选，彰显个性自我
+L510: 
+L511: 8.6 折
+L512: 
+L513: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L514: 
+L515: 每月约¥16.61
+L516: 
+L517: 插座
+L518: 
+L519: [Input]
+L520: 
+L521: cite48†Image†cdn.microsoftstore.com.cn L522: 
+L523: Surface 45W USB-C 墙插充电器
+L524: 使用这款 Surface 45W USB-C 墙插充电器为 Surface^{1} 或其他 USB-C^{®} 设备充电。其可拆卸的 USB-C 数据线和 AC 插头^{2} 可让你随时随地在旅途中或家中充电。
+L525: Surface 45W USB-C 墙插充电器提供高效的充电功能，并且兼容多种 USB-C 设备。^{1} Surface 建议将此充电器与 Surface Pro 和 Surface Laptop 配合使用。在 12 英寸 Surface Pro 上使用，即可享受快速充电功能，大约在一小时内将电量从 5% 提升至 80%。^{3}
+L526: 
+L527: 总计： ¥488.00 券后价：
+L528: 
+L529: 每月约¥13.56
+L530: 
+L531: Quantity
+L532: 
+L533: [Input]
+L534: 
+L535: 可选配件2
+L536: 
+L537: 7.2折
+L538: 
+L539: cite49†Image†cdn.microsoftstore.com.cn L540: 
+L541: Microsoft 365 家庭版 - 1年
+L542: 
+L543: Microsoft 365 家庭版作为一款一体化计划，提供高达 2 TB的云存储空间、安全功能和应用。
+L544:   * 供 1 到 6 人共享使用
+L545:   * 每人可在最多 5 台设备上同时使用
+L546:   * 适用于 PC、Mac、iPhone、iPad 以及 Android 手机和平板电脑
+L547:   * 高达 2 TB 的安全云存储空间
+L548:   * 具有离线访问和高级功能的 Word、Excel、PowerPoint 和 OneNote
+L549:   * 针对个人数据和设备的 Microsoft Defender 高级安全保护功能
+L550:   * 无广告的 Outlook 安全电子邮件
+L551:   * Microsoft 编辑器高级拼写、语法和写作辅助
+L552:   * 高级自定义模板
+L553:   * 包含高品质照片、图标、字体、视频和音频的内容扩展库
+L554:   * 通过聊天或电子邮件联系支持人员，以在所需之时获取帮助
+L555: 
+L556: 应用的可用性因设备/语言而异。功能因平台而异。
+L557: 
+L558: 节省¥140.00
+L559: 
+L560: 总计： ¥358.00 券后价： ¥498.00 ¥498.00
+L561: 
+L562: 每月约¥9.94
+L563: 
+L564: 6.5折
+L565: 
+L566: cite50†Image†cdn.microsoftstore.com.cn L567: 
+L568: Microsoft 365 个人版 - 1年
+L569: Microsoft 365 个人版作为一款一体化计划，可提供 1 TB 的云存储空间、高级安全功能和创新型应用。
+L570: 
+L571:   * 限 1 人使用
+L572:   * 最多可在 5 台设备上同时使用
+L573:   * 适用于 PC、Mac、iPhone、iPad 以及 Android 手机和平板电脑
+L574:   * 1 TB (1,000 GB) 安全云存储空间
+L575:   * 具有离线访问和高级功能的 Word、Excel、PowerPoint 和 OneNote
+L576:   * 针对个人数据和设备的 Microsoft Defender 高级安全保护功能
+L577:   * 无广告的 Outlook 安全电子邮件
+L578:   * Microsoft 编辑器高级拼写、语法和写作辅助
+L579:   * 高级自定义模板
+L580:   * 包含高品质照片、图标、字体、视频和音频的内容扩展库
+L581:   * 通过聊天或电子邮件联系支持人员，以在所需之时获取帮助
+L582: 
+L583: 应用的可用性因设备/语言而异。功能因平台而异。
+L584: 
+L585: *应用可单独下载。
+L586: 
+L587: 节省¥140.00
+L588: 
+L589: 总计： ¥258.00 券后价： ¥398.00 ¥398.00
+L590: 
+L591: 每月约¥7.17
+L592: 
+L593: 增值保障
+L594: [Input]
+L595: 
+L596: 不添加增值保障 增值保障不可单独购买，需同主机一同下单购买。
+L597: 
+L598: [Input]
+L599: 
+L600: cite51†Image†cdn.microsoftstore.com.cn L601: 
+

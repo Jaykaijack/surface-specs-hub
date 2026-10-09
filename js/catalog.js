@@ -164,7 +164,7 @@ const Catalog = (function () {
     if (!device || !device.specs || !fieldKey) return undefined;
     const specs = device.specs;
     const blocked = device.unverifiedFields || [];
-    if (blocked.includes(fieldKey) || (SPEC_ALIASES[fieldKey] || []).some(key => blocked.includes(key))) return null;
+    if (blocked.includes(fieldKey)) return null;
     if (fieldKey === 'usbPorts') {
       if (!isEmpty(specs.usbPorts) || specs.usbPorts === 'not_disclosed' || specs.usbPorts === 'not_applicable') {
         return specs.usbPorts;
@@ -185,6 +185,7 @@ const Catalog = (function () {
     const aliases = SPEC_ALIASES[fieldKey] || [];
     for (let i = 0; i < aliases.length; i++) {
       const alt = aliases[i];
+      if (blocked.includes(alt)) continue;
       if (!isEmpty(specs[alt]) || specs[alt] === 'not_disclosed' || specs[alt] === 'not_applicable') {
         return specs[alt];
       }
@@ -733,6 +734,22 @@ const Catalog = (function () {
     return null;
   }
 
+  function pendingEvidenceAsset() {
+    const data = baseline();
+    if (!data || !data.evidenceDeferred) return null;
+    return /^\.\/js\/field-evidence\.[a-f0-9]{12}\.js$/.test(data.evidenceAsset || '') ? data.evidenceAsset : null;
+  }
+
+  function installEvidence(expectedVersion, evidence) {
+    const data = baseline();
+    if (!data || !data.evidenceDeferred || expectedVersion !== data.evidenceVersion || !evidence || typeof evidence !== 'object') return false;
+    // Reject a partial/mismatched chunk before changing any record.
+    if (!data.devices.every(d => Object.prototype.hasOwnProperty.call(evidence, d.id) && evidence[d.id] && typeof evidence[d.id] === 'object' && !Array.isArray(evidence[d.id]))) return false;
+    data.devices.forEach(d => { d.specEvidence = evidence[d.id]; });
+    data.evidenceDeferred = false;
+    return true;
+  }
+
   function evidenceMarkup(device, field) {
     const e = evidenceFor(device, field);
     if (!e) return '<small class="field-evidence pending">当前值待绑定证据</small>';
@@ -751,6 +768,8 @@ const Catalog = (function () {
     specKeys: device => Object.keys((device && device.specs) || {}),
     rawSpec: (device, field) => device && device.specs ? device.specs[field] : undefined,
     evidenceFor: evidenceFor,
+    pendingEvidenceAsset: pendingEvidenceAsset,
+    installEvidence: installEvidence,
     evidenceMarkup: evidenceMarkup,
     specState: specState,
     presentSpec: presentSpec,

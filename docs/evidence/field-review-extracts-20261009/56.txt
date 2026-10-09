@@ -1,0 +1,296 @@
+Surface Book 3 规格和功能 | Microsoft Support (https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features)
+citeturn75view0 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features","lineno":200}); Total lines: 422
+L0: 跳转至主内容
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: 支持
+L5: 
+L6: cite1†支持 L7: 
+L8: [Button: 支持 ]
+L9: 
+L10:   * cite1†主页 L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: 产品]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†更多信息 ... L22:   * [Button: 设备]
+L23:     * cite12†Surface L24:     * cite13†电脑配件 L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC 游戏†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†硬件保修 L30: 
+L31:   * cite19†帐户和计费 L32:   * [Button: 资源]
+L33:     * cite20†社区论坛†learn.microsoft.com L34:     * cite21†Microsoft 365 管理员†portal.office.com L35:     * cite22†开发人员†developer.microsoft.com L36:     * cite23†教育 L37:     * cite24†上报支持欺诈†www.microsoft.com L38:     * cite25†产品安全 L39: 
+L40:   * [Button: 更多]
+L41: 
+L42:   * cite26†购买 Microsoft 365†go.microsoft.com L43:   * 所有 Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Windows†www.microsoft.com L48:       * cite30†Surface†www.microsoft.com L49:       * cite31†XBOX†www.xbox.com L50:       * cite32†折扣专区†www.microsoftstore.com.cn L51:       * cite33†企业购†www.microsoftstore.com.cn L52:       * cite1†支持 L53:     * 软件 [Button: 软件]
+L54:       * cite34†Windows 应用†apps.microsoft.com L55:       * cite35†OneDrive†www.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†从 Skype 转到 Teams L58:       * cite38†OneNote†www.microsoft.com L59:       * cite39†Microsoft Teams†www.microsoft.com L60:     * PC 和设备 [Button: PC 和设备]
+L61:       * cite40†购买 XBOX†www.microsoft.com L62:       * cite41†PC 和平板电脑†www.microsoft.com L63:       * cite42†配件†www.microsoftstore.com.cn L64:     * 娱乐 [Button: 娱乐]
+L65:       * cite43†XBOX 与游戏†www.xbox.com L66:       * cite44†PC 游戏†apps.microsoft.com L67:     * 企业 [Button: 企业 ]
+L68:       * cite45†Microsoft AI†www.microsoft.com L69:       * cite46†Microsoft 安全†www.microsoft.com L70:       * cite47†Azure†azure.microsoft.com L71:       * cite48†Dynamics 365†www.microsoft.com L72:       * cite49†Microsoft 365 商业版†www.microsoft.com L73:       * cite50†Microsoft Power Platform†www.microsoft.com L74:       * cite51†数字主权†www.microsoft.com L75:     * 开发人员与 IT [Button: 开发人员与 IT]
+L76:       * cite52†Microsoft 开发人员†developer.microsoft.com L77:       * cite53†Microsoft Learn†learn.microsoft.com L78:       * cite54†支持 AI 商城应用†www.microsoft.com L79:       * cite55†Microsoft 技术社区†techcommunity.microsoft.com L80:       * cite56†Microsoft Marketplace†marketplace.microsoft.com L81:       * cite57†软件公司†www.microsoft.com L82:       * cite58†Visual Studio†visualstudio.microsoft.com L83:     * 其他 [Button: 其他]
+L84:       * cite59†免费下载与安全性†www.microsoft.com L85:       * cite60†教育†www.microsoft.com L86:     * cite61†查看站点地图†www.microsoft.com L87: [Input: 搜索帮助] 搜索 搜索帮助
+L88: 
+L89:   * 无结果
+L90: 
+L91: 取消
+L92: 
+L93: 登录
+L94: 
+L95: 使用 Microsoft 登录
+L96: 
+L97: 登录或创建帐户。
+L98: 
+L99: 你好，
+L100: 
+L101: 使用其他帐户。
+L102: 
+L103: 你有多个帐户
+L104: 
+L105: 选择要登录的帐户。
+L106: 
+L107: 相关主题
+L108: # Surface Book 3 规格和功能
+L109: 
+L110: 应用对象
+L111: 
+L112: Surface Book 3 - 15 inch Surface Book 3
+L113: 
+L114: 注意
+L115: 
+L116:   * 令人难以置信的速度和电池使用时间，与下一代 AI 体验和标志性的 Surface 设计完美结合。
+L117:   * cite62†探索最新的 Surface PC†www.microsoft.com L118: 
+L119: ## 了解 Surface Book 3
+L120: 
+L121: 了解可满足你最大需求的笔记本电脑。 Surface Book 3 将强大性能和高端显卡整合到一款功能强大的笔记本中，还可以充当平板电脑或便携式工作室。
+L122: 
+L123: 下面是可帮助你熟悉 Surface Book 3 的一些主要功能和详细信息：
+L124: 
+L125: cite63†Image: J 1 L126: 
+L127: cite64†Image: J 2 L128: 
+L129:   1. 电源按钮
+L130:   2. 调高音量 + 和调低音量 -
+L131:   3. 前置摄像头
+L132:   4. 带面部登录的 Windows Hello
+L133:   5. USB 3.1
+L134:   6. SDXC™ 读卡器
+L135:   7. 耳机插孔
+L136:   8. Surface Connect
+L137:   9. USB-C
+L138: ## Surface Book 3 和 Windows 10
+L139: 
+L140: Surface Book 3 随附
+L141: 
+L142:   * Windows 10 家庭版（消费者客户）
+L143:   * Windows 10 专业版（商务客户）
+L144: 
+L145: 如果你的设备配备 Windows 10 家庭版，你可以升级到 Windows 10 专业版，但需额外付费。 有关详细信息，请参阅 cite65†将 Windows 家庭版升级到 Windows 专业版 。
+L146: 
+L147: 可以将 Surface Book 3 从 Windows 10 升级到 Windows 11。 有关详细信息，请参阅cite66†哪些 Surface 设备可以升级到 Windows 11？ L148: 
+L149: 若要了解你的 Windows 是哪个版本，请参阅cite67†我运行的是哪个 Windows 操作系统？ L150: 
+L151: ## 为 Surface 充电
+L152: 
+L153: 可以使用 USB-C 或 Surface Connect 为 Surface 充电。 有关详细信息，请参阅 cite68†如何为 Surface 充电。 L154: 
+L155: ## Surface Book 3 功能
+L156: ### 随时随地以你的方式工作
+L157: 
+L158: 使用三种通用使用模式：Surface Book 3 是一款功能强大的笔记本电脑、功能强大的平板电脑和便携式工作室的合体。
+L159: 
+L160: ### 释放你的最佳创意
+L161: 
+L162: Surface Book 3 拥有任何 Surface 笔记本电脑上最好的图形，由最新的 NVIDIA® GTX GeForce GPU、高达 2TB 的存储空间和高达 32GB 的 RAM 提供支持。
+L163: 
+L164: ### 多个设备和附件所需的所有连接
+L165: 
+L166: Surface Book 3 提供你所需的所有连接，包括 USB-A 和通用 USB-C™ 端口，以及全尺寸 SD 卡插槽。
+L167: 
+L168: ### 为创作注入新的活力
+L169: 
+L170: 在色彩鲜艳的 PixelSense™ 触摸显示屏上使用 Surface 触控笔和 Surface Dial。 有两种尺寸可供选择：13.5 英寸或 15 英寸。
+L171: 
+L172: ### 自定义设置
+L173: 
+L174: 了解有关与 Surface Book 3 配合使用的可选配件的详细信息。
+L175: 
+L176:   * cite69†Surface 触控笔 L177:   * cite70†Surface Arc 鼠标 L178:   * cite71†Surface 扩展坞 L179: ## 充分利用 Surface。
+L180: 
+L181: 了解更多有关 Surface 的信息，并使用 Surface 应用对其进行自定义。 若要将其打开，请选择 cite72†Image: Windows 徽标图标的 “开始”图标，输入 Surface，然后选择它以打开应用。 如果应用未打开，请从 cite73†Microsoft Store†go.microsoft.com 获取。
+L182: 
+L183: 打开 Surface 应用
+L184: ## Surface Book 3 技术规格
+L185:    |
+L186: --- | ---
+L187: 方案  | 适用于图形设计、应用开发、视频和社交内容创建的下一代专业级性能，以及 Surface 笔记本电脑上最佳、最具沉浸感的游戏
+L188: 尺寸  | Surface Book 3 13.5 英寸
+L189: Intel® Core™ i5：12.3“ x 9.14” x 0.51“-0.90” (312 mm x 232 mm x 13 mm-23 mm)
+L190: Intel® Core™ i7：12.3“ x 9.14” x 0.59“-0.90” (312 mm x 232 mm x 15 mm-23 mm)
+L191: Surface Book 3 15 英寸
+L192: 13.5 英寸 x 9.87 英寸 x 0.568-0.90 英寸 (343 毫米 x 251 毫米 x 15 毫米-23 毫米)
+L193: 显示  | Surface Book 3 13.5 英寸 PixelSense™ 显示屏
+L194: 屏幕：13.5 英寸 PixelSense™ 显示屏
+L195: 分辨率：3000 x 2000 (267 PPI)
+L196: 纵横比：3:2
+L197: 对比度：1600：1
+L198: 触控：10 点多点触控 G5
+L199: Surface Book 3 15 英寸 PixelSense™ 显示屏
+L200: 屏幕：15 英寸 PixelSense™ 显示屏
+L201: 分辨率：3240 x 2160， (260 PPI)
+L202: 10 点多点触控 G5
+L203: 纵横比：3:2
+L204: 对比度：1600：1
+L205: 内存  | Surface Book 3 13.5 英寸
+L206: 四核第 10 代 Intel® 酷睿™ i5-1035G7 处理器
+L207: 四核第 10 代 Intel® Core™ i7-1065G7 处理器
+L208: Surface Book 3 15 英寸
+L209: 四核第 10 代 Intel® Core™ i7-1065G7 处理器
+L210: 处理器  | Surface Laptop 3 13.5 英寸
+L211: 四核第 10 代 Intel® 酷睿™ i5-1035G7 处理器
+L212: 四核第 10 代 Intel® Core™ i7-1065G7 处理器
+L213: Surface Laptop 3 15”
+L214: AMD Ryzen™ 5 3580U 移动处理器，Radeon™ Vega 9 显卡 Microsoft Surface® 版
+L215: AMD Ryzen™ 7 3780U 移动处理器，Radeon™ RX Vega 11 显卡 Microsoft Surface® 版
+L216: 电池使用时间^{1}  | Surface Book 3 13.5 英寸连接到键盘基座：典型设备使用时间长达 15.5 小时
+L217: Surface Book 3 15 英寸连接到键盘基座：典型设备使用时间长达 17.5 小时
+L218: 显卡  | Surface Book 3 13.5 英寸
+L219: Intel® Core™ i5-1035G7 型号：Intel® Iris™ Plus Graphics
+L220: 英特尔®酷睿™ i7-1065G7 型号：NVIDIA GeForce GTX 1650，采用 Max-Q 设计，配备 4GB GDDR5 显存
+L221: Surface Book 3 15 英寸
+L222: 英特尔®酷睿™ i7-1065G7 型号：NVIDIA GeForce GTX 1660 Ti，采用 Max-Q 设计，配备 6GB GDDR6 显存
+L223: 存储 ^{2}  | Surface Book 3 13.5 英寸
+L224: 固态硬盘 (SSD) 选项：256 GB、512 GB 或 1 TB PCIe SSD
+L225: Surface Book 3 15 英寸
+L226: 固态硬盘 (SSD) 选项：256 GB、512 GB 或 2 TB PCIe SSD
+L227: 连接  | 2 个 USB-A (版本 3.1 Gen 2)
+L228: 1 个 USB-C® (版本 3.1 Gen 2，带 USB Power Delivery 修订版 3.0)
+L229: 3.5 毫米耳机插孔
+L230: 2 个 Surface Connect 端口 (一个在底座上，一个在平板电脑上)
+L231: 全尺寸 SDXC 卡读卡器 (UHS-I / UHS-II)
+L232: 兼容 Surface Dial 离屏交互*
+L233: 摄像头、视频和音频  | Windows Hello 人脸身份验证摄像头（前置）
+L234: 5.0 MP 前置摄像头，1080p 高清视频
+L235: 8.0 MP 后置自动对焦摄像头，1080p 高清视频
+L236: 双通道远场摄影棚麦克风
+L237: 带 Dolby Atmos® 的前置立体声扬声器
+L238: 软件  | Windows 10 家庭版^{5}
+L239: Microsoft 365 家庭版一个月试用版
+L240: 无线  | Wi-Fi 6：兼容 802.11ax
+L241: 蓝牙无线 5.0 技术
+L242: Xbox 无线内置 (仅限 15 英寸) ^{3}
+L243: 传感器  | 氛围光传感器
+L244: 邻近感应传感器
+L245: 加速计
+L246: 陀螺仪
+L247: 磁力计
+L248: 外部  | 外壳：镁质
+L249: 颜色：铂金
+L250: 物理按钮：音量、电源
+L251: 包装盒中的内容  | Surface Book 3 13.5 英寸
+L252: Intel® Core™ i5：65W Surface 电源，带 USB-A (5W) 充电端口
+L253: Intel® Core™ i7：102W Surface 电源，带 USB-A (7W) 充电端口
+L254: 快速入门指南
+L255: 安全手册及保修文档
+L256: Surface Book 3 15 英寸
+L257: Intel® Core™ i7：127W Surface 电源，带 USB-A (7W) 充电端口
+L258: 快速入门指南
+L259: 安全手册及保修文档
+L260: 保修^{4}  | 1 年有限硬件保修
+L261: 重量  | Surface Book 3 13.5 英寸
+L262: Intel® Core™ i5：3.38 磅 (1,534 克) （包括键盘）
+L263: Intel® Core™ i7：3.62 磅 (1,642 克) （包括键盘）
+L264: Surface Book 3 15 英寸
+L265: Intel® Core™ i7：4.20 磅 (1,905 克) （包括键盘）
+L266: 安全性  | 用于企业安全的 TPM 2.0 芯片
+L267: 通过 Windows Hello 人脸登录提供企业级保护
+L268: 由 Microsoft Store 提供最佳支持  | 60 天退货政策
+L269: 90 天免费电话技术支持
+L270: 12 个月的店内支持和技术协助
+L271: 1 节免费培训课程，用于传输数据和优化性能
+L272: * 某些配件和软件单独出售。
+L273: 
+L274: [1] 电池寿命：
+L275: Surface Book 3 底座 13.5 英寸：根据典型的 Surface 设备使用情况，电池使用时间长达 15.5 小时。 Microsoft 在 2020 年 4 月使用 Surface Book 3 13.5 英寸 Intel® 酷睿™ i5,256 GB，8 GB RAM 的预生产软件和预生产配置进行了测试。 由满电放电以及活动使用和新式待机组成的测试。 活动使用部分包括 (1) 通过多个打开的选项卡访问 8 个热门网站的 Web 浏览测试， (2) 使用 Microsoft Word、PowerPoint、Excel 和 Outlook 进行工作效率测试，以及 (3) 设备的一部分时间与空闲应用程序一起使用。 除屏幕亮度设置为 150 nits（禁用自动亮度）外，所有设置均为默认设置。 Wi-fi 已连接到网络。 电池续航时间因设置、使用情况和其他因素而明显不同。
+L276: Surface Book 3 底座 15 英寸：根据典型的 Surface 设备使用情况，电池使用时间长达 17.5 小时。 Microsoft 在 2020 年 4 月使用 Surface Book 3 15 英寸 Intel® 酷睿™ i7,256 GB，16 GB RAM 的预生产软件和预生产配置进行了测试。 由满电放电以及活动使用和新式待机组成的测试。 活动使用部分包括 (1) 通过多个打开的选项卡访问 8 个热门网站的 Web 浏览测试， (2) 使用 Microsoft Word、PowerPoint、Excel 和 Outlook 进行工作效率测试，以及 (3) 设备的一部分时间与空闲应用程序一起使用。 除屏幕亮度设置为 150 nits（禁用自动亮度）外，所有设置均为默认设置。 Wi-fi 已连接到网络。 电池续航时间因设置、使用情况和其他因素而明显不同。
+L277: 
+L278: [2] 系统软件会占用大量存储空间。 可用存储随时发生改变，具体视系统软件更新和应用使用情况而定。 1 GB = 1 GB。 1 TB = 1,000 GB。 有关更多详细信息，请参阅 cite74†Surface 存储 。
+L279: [3] Xbox 无线控制器支持在所选全球市场中提供。
+L280: 
+L281: [4] Microsoft 有限保证是消费者法律权利的补充。
+L282: 
+L283: [5] Surface Book 3 消费者版附带 Windows 10 家庭版，以超值的价格为你带来最常用的强大 Windows 功能。 如果需要用于工作场所的其他企业管理和安全工具，可以切换到 Windows 10 专业版或购买 Surface Book 3 for Business。
+L284: ## 相关主题
+L285: 
+L286:   * cite75†如何在 Surface 上调整 Omnisonic 扬声器的设置 L287:   * cite76†如何在 Surface 上调整摄影棚麦克风的设置 L288:   * cite77†了解你的 Surface 是哪种型号 L289:   * cite78†我运行的是哪个 Windows 操作系统？ L290: ## 需要更多帮助吗？
+L291: 
+L292:   * cite79†个人帐户 L293:   * cite80†工作/学校帐户 L294: 
+L295: 技术支持
+L296: 
+L297: 有关技术支持， cite81†请打开 Surface 应用†go.microsoft.com 或 cite82†Web 浏览器†go.microsoft.com ，描述你的问题，然后选择 “获取帮助”。
+L298: 
+L299: 社区支持
+L300: 
+L301: 社区可以帮助您提出问题，并听取具有丰富知识的专家的意见。 cite83†询问社区†go.microsoft.com 。
+L302: 
+L303: 其他支持选项
+L304: 
+L305: 如果无法使用 Surface 或对其他问题有疑问，请 cite84†打开“获取帮助†go.microsoft.com ”以联机获取其他支持。
+L306: 
+L307: cite85†Image: 需要更多帮助 网格垫片. L308: 
+L309: 技术支持
+L310: 
+L311: 你可以从 cite81†Surface 应用†go.microsoft.com 或 cite82†Web 浏览器†go.microsoft.com 获取自助支持。 如需技术帮助，请联系组织的 IT 支持人员或管理员。
+L312: 
+L313: 服务 & 维修
+L314: 
+L315: 对于 Surface 商用版，请访问 cite86†Microsoft 授权服务提供商的 Surface 维修†go.microsoft.com 。
+L316: 对于 IT 管理员
+L317: 
+L318: IT 管理员应查看cite87†适用于企业 & 教育客户的†go.microsoft.com cite88†Surface 商用版†go.microsoft.com 和支持。
+L319: 
+L320: cite85†Image: 需要更多帮助 网格垫片. L321: ## 此信息是否有用?
+L322: 
+L323: [Button: 是] [Button: 否]
+L324: 
+L325: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L326: 
+L327: How satisfied are you with the translation quality?
+L328: 
+L329: What affected your experience?
+L330: 
+L331: [Input] Resolved my issue
+L332: 
+L333: [Input] Clear instructions
+L334: 
+L335: [Input] Easy to follow
+L336: 
+L337: [Input] No jargon
+L338: 
+L339: [Input] Pictures helped
+L340: 
+L341: [Input] Translation quality
+L342: 
+L343: [Input] Didn't match my screen
+L344: 
+L345: [Input] Incorrect instructions
+L346: 
+L347: [Input] Too technical
+L348: 
+L349: [Input] Not enough information
+L350: 
+L351: [Input] Not enough pictures
+L352: [Input] Translation quality
+L353: 
+L354: Any additional feedback? (Optional)
+L355: 
+L356: [Button: Submit feedback]
+L357: 
+L358: By pressing submit, your feedback will be used to improve Microsoft products and services. cite89†Privacy Statement.†privacy.microsoft.com L359: 
+L360: 新增内容
+L361:   * cite90†Surface Pro†www.microsoftstore.com.cn L362:   * cite91†Surface Laptop†www.microsoftstore.com.cn L363:   * cite92†Surface Laptop Ultra†www.microsoft.com L364:   * cite93†探索 Copilot†www.microsoft.com L365:   * cite27†Microsoft 365†www.microsoft.com L366:   * cite94†探索 Microsoft 产品†www.microsoft.com L367:   * cite95†Windows 11 应用程序†www.microsoft.com L368: 
+L369: Microsoft Store
+L370: 
+L371:   * cite96†帐户个人资料†account.microsoft.com L372:   * cite59†下载中心†www.microsoft.com L373:   * cite97†订单跟踪†account.microsoft.com L374: 
+L375: 教育
+L376:   * cite98†Microsoft 教育版†www.microsoft.com L377:   * cite99†教育设备†www.microsoft.com L378:   * cite100†Microsoft Teams 教育版†www.microsoft.com L379:   * cite101†Microsoft 365 教育版†www.microsoft.com L380:   * cite102†Office 教育版†www.microsoft.com L381:   * cite103†教育工作者培训和开发†education.microsoft.com L382:   * cite104†面向学生和家长的优惠†www.microsoft.com L383:   * cite105†面向学生的 Azure†azure.microsoft.com L384: 
+L385: 企业
+L386:   * cite106†Microsoft AI†www.microsoft.com L387:   * cite46†Microsoft 安全†www.microsoft.com L388:   * cite47†Azure†azure.microsoft.com L389:   * cite48†Dynamics 365†www.microsoft.com L390:   * cite49†Microsoft 365†www.microsoft.com L391:   * cite107†Microsoft Advertising†about.ads.microsoft.com L392:   * cite108†Microsoft Copilot†www.microsoft.com L393:   * cite39†Microsoft Teams†www.microsoft.com L394: 
+L395: 开发人员与 IT
+L396:   * cite52†Microsoft 开发人员†developer.microsoft.com L397:   * cite53†Microsoft Learn†learn.microsoft.com L398:   * cite109†支持 AI 商城应用†www.microsoft.com L399:   * cite55†Microsoft 技术社区†techcommunity.microsoft.com L400:   * cite110†Microsoft Marketplace†marketplace.microsoft.com L401:   * cite50†Microsoft Power Platform†www.microsoft.com L402:   * cite111†软件公司†www.microsoft.com L403:   * cite58†Visual Studio†visualstudio.microsoft.com L404: 
+L405: 公司
+L406:   * cite112†招贤纳士†careers.microsoft.com L407:   * cite113†关于 Microsoft†www.microsoft.com L408:   * cite114†公司新闻†news.microsoft.com L409:   * cite115†Microsoft 隐私†www.microsoft.com L410:   * cite116†投资人†www.microsoft.com L411: 
+L412: cite117†中文(中国) cite118†你的隐私选择†aka.ms cite118†你的隐私选择†aka.ms cite119†消费者健康隐私†go.microsoft.com L413: 
+L414:   * cite120†与 Microsoft 联系 L415:   * cite121†隐私†go.microsoft.com L416:   * cite122†管理 Cookie L417:   * cite123†使用条款†go.microsoft.com L418:   * cite124†商标†go.microsoft.com L419:   * cite125†关于我们的广告†choice.microsoft.com L420:   * cite126†京ICP备09042378号-6†beian.miit.gov.cn L421:   * © Microsoft 2026
+

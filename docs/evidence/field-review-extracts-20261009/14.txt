@@ -1,0 +1,622 @@
+购买Surface Laptop, 13.8 英寸(第 8 代) 价格、规格参数、Windows | 微软官方商城 (https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition)
+citeturn29view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition","lineno":300}); Total lines: 1415
+L52: cite2†账户 L53: 
+L54: 搜索
+L55: 
+L56: cite3†My Cart L57: 
+L58: 登录
+L59: 
+L60: Search
+L61: 
+L62: Search
+L63: 
+L64: [Input]
+L65: 
+L66: cite4†Advanced Search L67: 
+L68: Search
+L69: 
+L70: [Button: 取消]
+L71: 
+L72: cite5†Image†cdn.microsoftstore.com.cn L73: 
+L74: cite5†Image†cdn.microsoftstore.com.cn L75: 
+L76:   * cite6†我的账户 L77:   * cite7†我的订单 L78:   * cite8†地址管理 L79:   * cite9†我的专区 L80:   * cite10†我的优惠券 L81:   * cite11†退出 cite12†登录 L82: 
+L83: [Input]
+L84: 
+L94: # Surface Laptop, 13.8 英寸(第 8 代)
+L95: 
+L96: cite13†Image: Surface Laptop, 13.8 英寸(第 8 代)†cdn.microsoftstore.com.cn L97: 
+L98: 0张图片
+L99: 
+L100: cite14†返回了解详情 > L101: 
+L102: 60天退换货
+L103: 
+L104: 全场免运费
+L105: 
+L106: 在线聊天服务
+L107: 
+L108: 60天退换货
+L109: 
+L110: 在线聊天服务
+L111: 
+L112: 全场免运费
+L113: 
+L114: 促销期退换货期限延长至60天
+L115: 
+L116: 60天延长退货条款仅适用于促销期内成功订购 Surface 主机产品（不包括 Surface 认证翻新机系列，Surface 商业版）并完成支付的订单。60天从商品签收日期起算。促销期是指2026年09月30日09:00-2026年10月16日08:59。其他未尽事宜，以微软官方商城退换货政策为准。https://www.microsoftstore.com.cn/support-and-help-tabs。
+L117: 
+L118: 非商务专区个人客户
+L119: 
+L120: 微软品牌实体商品:在微软官方商城订购的微软品牌实体商品，客户可在签收后30天（自然日）内进行退货或换货。微软品牌实体商品包括微软 Surface/Xbox 主机及微软第一方配件。
+L121: 
+L122: 商品类别
+L123: 微软品牌实体商品
+L124: 
+L125: 退还类别
+L126: 
+L127: 功能性故障或商品质量问题
+L128: 
+L129: 客户个人原因
+L130: 
+L131: 退换货期限
+L132: 
+L133: 签收后30天内（含）可退、换或者维修
+L134: 
+L135: 签收后7天内（含）可退
+L136: 
+L137: 要求说明
+L138: 
+L139: 需联系商城客服人员提供相关证明材料
+L140: 
+L141: 个人原因导致的退货，须确保商品完好，不影响二次销售
+L142: 
+L143: 返回运费承担方
+L144: 
+L145: 商城承担（客户先行垫付*）
+L146: 
+L147: 客户自行承担*
+L148: 
+L149: *应由商城承担的运费，请您先行垫付，并切记务必保留寄回商品的快递面单，商城将根据面单金额退回对应运费。 应由客户自行承担的运费，如客户选择到付寄回，商城将拒签您的包裹。
+L150: 
+L151: cite15†了解更多 > L152: 
+L153: 我们的服务时间：
+L154: 微软官方商城在线聊天服务：周一至周日 9:00 - 24:00
+L155: 微软官方商城微信聊天服务：周一至周日9:00-21:00
+L156: 
+L157: 微软官方商城服务热线: 400 820 3800（售前咨询，订单状态与退款）：周一至周日9:00-21:00（节假日除外）
+L158: 
+L159: 微软中国技术支持热线: 400 820 3800（技术支持与保修）：周一至周五 9:00-21:00， 周六，周日 10:00-18:00（节假日除外）
+L160: 
+L161: 微软官方商城为大陆地区顾客提供全场包邮服务。
+L162: 温馨提示：服务类商品、数字化商品或虚拟商品等无需配送；请根据产品页面的提示，在付款后至订单详情页面获取产品密钥或兑换码。
+L163: 
+L164: Customize and Add to Cart
+L165: 
+L166: [Input][Input][Input][Input][Input][Input][Input]
+L167: 
+L168: 购买方式
+L169: 
+L170: Surface All Access
+L171: 
+L172: 优选套餐
+L173: 
+L174: 单机及配件
+L175: 
+L176: [Input]
+L177: 
+L178: 配置
+L179: 
+L180: [Input]
+L181: 
+L182: cite16†Image†cdn.microsoftstore.com.cn L183: 
+L184: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/亮铂金
+L185: 
+L186: 总计： ¥12,988.00 券后价：
+L187: 
+L188: 每月约¥541.17
+L189: 
+L190: [Input]
+L191: 
+L192: cite17†Image†cdn.microsoftstore.com.cn L193: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/典雅黑
+L194: 
+L195: 总计： ¥12,988.00 券后价：
+L196: 
+L197: 每月约¥541.17
+L198: 
+L199: [Input]
+L200: 
+L201: cite18†Image†cdn.microsoftstore.com.cn L202: 
+L203: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/沙漫金
+L204: 
+L205: 总计： ¥12,988.00 券后价：
+L206: 
+L207: 每月约¥541.17
+L208: 
+L209: [Input]
+L210: 
+L211: cite19†Image†cdn.microsoftstore.com.cn L212: 
+L213: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/翡翠绿
+L214: 
+L215: 总计： ¥12,988.00 券后价：
+L216: 
+L217: 每月约¥541.17
+L218: 
+L219: [Input]
+L220: cite16†Image†cdn.microsoftstore.com.cn L221: 
+L222: 商城独家机型
+L223: 
+L224: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/亮铂金
+L225: 
+L226: 总计： ¥16,488.00 券后价：
+L227: 
+L228: 每月约¥687.00
+L229: 
+L230: [Input]
+L231: 
+L232: cite17†Image†cdn.microsoftstore.com.cn L233: 
+L234: 商城独家机型
+L235: 
+L236: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/典雅黑
+L237: 
+L238: 总计： ¥16,488.00 券后价：
+L239: 
+L240: 每月约¥687.00
+L241: 
+L242: [Input]
+L243: 
+L244: cite18†Image†cdn.microsoftstore.com.cn L245: 
+L246: 商城独家机型
+L247: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/沙漫金
+L248: 
+L249: 总计： ¥16,488.00 券后价：
+L250: 
+L251: 每月约¥687.00
+L252: 
+L253: [Input]
+L254: 
+L255: cite19†Image†cdn.microsoftstore.com.cn L256: 
+L257: 商城独家机型
+L258: 
+L259: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/翡翠绿
+L260: 
+L261: 总计： ¥16,488.00 券后价：
+L262: 
+L263: 每月约¥687.00
+L264: 
+L265: [Input]
+L266: 
+L267: cite16†Image†cdn.microsoftstore.com.cn L268: 
+L269: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/亮铂金
+L270: 
+L271: 总计： ¥13,788.00 券后价：
+L272: 
+L273: 每月约¥574.50
+L274: [Input]
+L275: 
+L276: cite17†Image†cdn.microsoftstore.com.cn L277: 
+L278: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/典雅黑
+L279: 
+L280: 总计： ¥13,788.00 券后价：
+L281: 
+L282: 每月约¥574.50
+L283: 
+L284: [Input]
+L285: 
+L286: cite18†Image†cdn.microsoftstore.com.cn L287: 
+L288: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/沙漫金
+L289: 
+L290: 总计： ¥13,788.00 券后价：
+L291: 
+L292: 每月约¥574.50
+L293: 
+L294: [Input]
+L295: 
+L296: cite19†Image†cdn.microsoftstore.com.cn L297: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/翡翠绿
+L298: 
+L299: 总计： ¥13,788.00 券后价：
+L300: 
+L301: 每月约¥574.50
+L302: 
+L303: [Input]
+L304: 
+L305: cite16†Image†cdn.microsoftstore.com.cn L306: 
+L307: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/亮铂金
+L308: 
+L309: 总计： ¥15,988.00 券后价：
+L310: 
+L311: 每月约¥666.17
+L312: 
+L313: [Input]
+L314: 
+L315: cite17†Image†cdn.microsoftstore.com.cn L316: 
+L317: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/典雅黑
+L318: 
+L319: 总计： ¥15,988.00 券后价：
+L320: 
+L321: 每月约¥666.17
+L322: 
+L323: [Input]
+L324: cite18†Image†cdn.microsoftstore.com.cn L325: 
+L326: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/沙漫金
+L327: 
+L328: 总计： ¥15,988.00 券后价：
+L329: 
+L330: 每月约¥666.17
+L331: 
+L332: [Input]
+L333: 
+L334: cite19†Image†cdn.microsoftstore.com.cn L335: 
+L336: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/翡翠绿
+L337: 
+L338: 总计： ¥15,988.00 券后价：
+L339: 
+L340: 每月约¥666.17
+L341: 
+L342: [Input]
+L343: 
+L344: cite17†Image†cdn.microsoftstore.com.cn L345: 
+L346: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/32GB RAM/1TB SSD/典雅黑
+L347: 总计： ¥20,888.00 券后价：
+L348: 
+L349: 每月约¥870.33
+L350: 
+L351: [Input]
+L352: 
+L353: cite17†Image†cdn.microsoftstore.com.cn L354: 
+L355: 商城独家机型
+L356: 
+L357: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/64GB RAM/1TB SSD/典雅黑
+L358: 
+L359: 总计： ¥28,888.00 券后价：
+L360: 
+L361: 每月约¥1,203.67
+L362: 
+L363: Quantity
+L364: 
+L365: [Input]
+L366: 
+L367: 必选配件
+L368: 
+L369: [Input]
+L370: 
+L371: cite20†Image†cdn.microsoftstore.com.cn L372: 
+L373: 微软 Surface Arc 鼠标 亮铂金
+L374: 
+L375:   * 微软 Surface Arc 鼠标，纤薄、轻巧，可以展平轻松放入口袋或背包
+L376:   * 创新的全滚动平面可随意垂直、水平滚动
+L377:   * 通过蓝牙无线连接到 Surface
+L378:   * 微软蓝影技术，可在多种表面实现出色跟踪
+L379:   * 多色可选，彰显个性自我
+L380: 
+L381: 8.1 折
+L382: 
+L383: 总计： ¥678.00 券后价：
+L384: 
+L385: 每月约¥28.25
+L386: 
+L387: [Input]
+L388: cite21†Image†cdn.microsoftstore.com.cn L389: 
+L390: 微软 Surface Arc 鼠标 典雅黑
+L391: 
+L392:   * 微软 Surface Arc 鼠标，纤薄、轻巧，可以展平轻松放入口袋或背包
+L393:   * 创新的全滚动平面可随意垂直、水平滚动
+L394:   * 通过蓝牙无线连接到 Surface
+L395:   * 微软蓝影技术，可在多种表面实现出色跟踪
+L396:   * 多色可选，彰显个性自我
+L397: 
+L398: 8.6 折
+L399: 
+L400: 总计： ¥638.00 券后价：
+L401: 
+L402: 每月约¥26.58
+L403: 
+L404: [Input]
+L405: 
+L406: cite22†Image†cdn.microsoftstore.com.cn L407: 
+L408: 微软 Surface 鼠标
+L409: 
+L410:   * 如同 Surface 一般做工精良
+L411:   * 设计时尚简洁，左右手操作皆宜
+L412:   * 24 次触力反馈的金属滚轮
+L413:   * 蓝牙 4.0/4.1
+L414: 
+L415: 总计： ¥378.00 券后价：
+L416: 
+L417: 每月约¥15.75
+L418: 
+L419: Quantity
+L420: 
+L421: [Input]
+L422: 
+L423: 可选配件1
+L424: 
+L425: cite23†Image†cdn.microsoftstore.com.cn L426: 微软 Surface USB-C 多功能扩展坞 黑色 通过此款典雅的多端口适配器（包含 USB-C^{®}）可将笔记本电脑转换为高效的多功能助手。支持兼容配件充电。不支持笔记本电脑充电。
+L427: 
+L428: 总计： ¥889.00 券后价：
+L429: 
+L430: 每月约¥37.04
+L431: 
+L432: cite24†Image†cdn.microsoftstore.com.cn L433: 
+L434: 微软 Surface Thunderbolt™ 4 扩展坞 使用具有超高速数据传输能力的 Surface Thunderbolt™ 4 扩展坞提升工作空间的工作效率。8 个多用途连接端口，支持连接网络摄像头、手机和其他配件，同时还能连接最多两台 4K 显示器。^{1}
+L435: 
+L436: 总计： ¥2,565.00 券后价：
+L437: 
+L438: 每月约¥106.88
+L439: 
+L440: cite25†Image†cdn.microsoftstore.com.cn L441: 
+L442: Surface 65W 电源适配器 黑色 65W 电源适配器专为 Surface 而设计，快速为电池充电。带有 USB 端口，可同时为其他设备充电。
+L443: 
+L444: 总计： ¥628.00 券后价：
+L445: 
+L446: 每月约¥26.17
+L447: 
+L448: cite26†Image†cdn.microsoftstore.com.cn L449: 微软 Surface Dial
+L450: 
+L451:   * 轻松访问快捷方式、控件、绘图工具及其他选项
+L452:   * 在 Spotify、Groove 和 Pandora 中为您喜爱的曲目调节音量
+L453:   * 在您喜爱的新闻网站上转动浏览文章
+L454:   * 轻轻转动，即可编辑、旋转和操作您的作品
+L455: 
+L456: 总计： ¥958.00 券后价：
+L457: 
+L458: 每月约¥39.92
+L459: 
+L460: 可选配件2
+L461: 
+L462: cite27†Image†cdn.microsoftstore.com.cn L463: 
+L464: Microsoft 365 家庭版 - 1年
+L465: 
+L466: Microsoft 365 家庭版作为一款一体化计划，提供高达 2 TB的云存储空间、安全功能和应用。
+L467:   * 供 1 到 6 人共享使用
+L468:   * 每人可在最多 5 台设备上同时使用
+L469:   * 适用于 PC、Mac、iPhone、iPad 以及 Android 手机和平板电脑
+L470:   * 高达 2 TB 的安全云存储空间
+L471:   * 具有离线访问和高级功能的 Word、Excel、PowerPoint 和 OneNote
+L472:   * 针对个人数据和设备的 Microsoft Defender 高级安全保护功能
+L473:   * 无广告的 Outlook 安全电子邮件
+L474:   * Microsoft 编辑器高级拼写、语法和写作辅助
+L475:   * 高级自定义模板
+L476:   * 包含高品质照片、图标、字体、视频和音频的内容扩展库
+L477:   * 通过聊天或电子邮件联系支持人员，以在所需之时获取帮助
+L478: 
+L479: 应用的可用性因设备/语言而异。功能因平台而异。
+L480: 
+L481: 总计： ¥498.00 券后价：
+L482: 
+L483: 每月约¥20.75
+L484: 
+L485: cite28†Image†cdn.microsoftstore.com.cn L486: 
+L487: Microsoft 365 个人版 - 1年
+L488: Microsoft 365 个人版作为一款一体化计划，可提供 1 TB 的云存储空间、高级安全功能和创新型应用。
+L489: 
+L490:   * 限 1 人使用
+L491:   * 最多可在 5 台设备上同时使用
+L492:   * 适用于 PC、Mac、iPhone、iPad 以及 Android 手机和平板电脑
+L493:   * 1 TB (1,000 GB) 安全云存储空间
+L494:   * 具有离线访问和高级功能的 Word、Excel、PowerPoint 和 OneNote
+L495:   * 针对个人数据和设备的 Microsoft Defender 高级安全保护功能
+L496:   * 无广告的 Outlook 安全电子邮件
+L497:   * Microsoft 编辑器高级拼写、语法和写作辅助
+L498:   * 高级自定义模板
+L499:   * 包含高品质照片、图标、字体、视频和音频的内容扩展库
+L500:   * 通过聊天或电子邮件联系支持人员，以在所需之时获取帮助
+L501: 
+L502: 应用的可用性因设备/语言而异。功能因平台而异。
+L503: 
+L504: *应用可单独下载。
+L505: 
+L506: 总计： ¥398.00 券后价：
+L507: 
+L508: 每月约¥16.58
+L509: 
+L510: 增值保障
+L511: 
+L512: [Input]
+L513: 不添加增值保障 增值保障不可单独购买，需同主机一同下单购买。
+L514: 
+L515: [Input]
+L516: 
+L517: cite29†Image†cdn.microsoftstore.com.cn L518: 
+L519: 适用于 Surface Laptop 的微软硬件延长服务一年 cite30†了解更多> L520: 
+L521: 总计： ¥488.00 券后价：
+L522: 
+L523: 每月约¥20.33
+L524: 
+L525: [Input]
+L526: 
+L527: cite31†Image†cdn.microsoftstore.com.cn L528: 
+L529: 适用于 Surface Laptop 的 Microsoft Complete 全方位服务计划 两年 cite32†了解更多> L530: 
+L531: 总计： ¥1,088.00 券后价：
+L532: 
+L533: 每月约¥45.33
+L534: 
+L535: [Input]
+L536: 
+L537: cite33†Image†cdn.microsoftstore.com.cn L538: 
+L539: 适用于 Surface Laptop 的 Microsoft Complete 全方位服务计划 三年 cite34†了解更多> L540: 
+L541: 总计： ¥1,588.00 券后价：
+L542: 
+L543: 每月约¥66.17
+L544: 
+L545: [Input]
+L546: 
+L547: cite33†Image†cdn.microsoftstore.com.cn L548: 适用于 Surface Laptop 的 Microsoft Complete 全方位服务计划 四年 cite35†了解更多> L549: 
+L550: 总计： ¥2,188.00 券后价：
+L551: 
+L552: 每月约¥91.17
+L553: 
+L554: Quantity
+L555: 
+L556: [Input]
+L557: 
+L558: 配置
+L559: 
+L560: 配置
+L561: 
+L562: [Input]
+L563: 
+L564: cite16†Image†cdn.microsoftstore.com.cn L565: 
+L566: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/亮铂金
+L567: 
+L568: 总计： ¥12,988.00 券后价：
+L569: 
+L570: 每月约¥360.78
+L571: 
+L572: [Input]
+L573: 
+L574: cite17†Image†cdn.microsoftstore.com.cn L575: 
+L576: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/典雅黑
+L577: 
+L578: 总计： ¥12,988.00 券后价：
+L579: 
+L580: 每月约¥360.78
+L581: 
+L582: [Input]
+L583: cite18†Image†cdn.microsoftstore.com.cn L584: 
+L585: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/沙漫金
+L586: 
+L587: 总计： ¥12,988.00 券后价：
+L588: 
+L589: 每月约¥360.78
+L590: 
+L591: [Input]
+L592: 
+L593: cite19†Image†cdn.microsoftstore.com.cn L594: 
+L595: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/16GB RAM/512GB SSD/翡翠绿
+L596: 
+L597: 总计： ¥12,988.00 券后价：
+L598: 
+L599: 每月约¥360.78
+L600: 
+L601: [Input]
+L602: 
+L603: cite16†Image†cdn.microsoftstore.com.cn L604: 
+L605: 商城独家机型
+L606: 
+L607: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/亮铂金
+L608: 总计： ¥16,488.00 券后价：
+L609: 
+L610: 每月约¥458.00
+L611: 
+L612: [Input]
+L613: 
+L614: cite17†Image†cdn.microsoftstore.com.cn L615: 
+L616: 商城独家机型
+L617: 
+L618: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/典雅黑
+L619: 
+L620: 总计： ¥16,488.00 券后价：
+L621: 
+L622: 每月约¥458.00
+L623: 
+L624: [Input]
+L625: 
+L626: cite18†Image†cdn.microsoftstore.com.cn L627: 
+L628: 商城独家机型
+L629: 
+L630: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/沙漫金
+L631: 
+L632: 总计： ¥16,488.00 券后价：
+L633: 
+L634: 每月约¥458.00
+L635: 
+L636: [Input]
+L637: 
+L638: cite19†Image†cdn.microsoftstore.com.cn L639: 
+L640: 商城独家机型
+L641: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Plus (10 核)/13.8 英寸/24GB RAM/512GB SSD/翡翠绿
+L642: 
+L643: 总计： ¥16,488.00 券后价：
+L644: 
+L645: 每月约¥458.00
+L646: 
+L647: [Input]
+L648: 
+L649: cite16†Image†cdn.microsoftstore.com.cn L650: 
+L651: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/亮铂金
+L652: 
+L653: 总计： ¥13,788.00 券后价：
+L654: 
+L655: 每月约¥383.00
+L656: 
+L657: [Input]
+L658: 
+L659: cite17†Image†cdn.microsoftstore.com.cn L660: 
+L661: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/典雅黑
+L662: 
+L663: 总计： ¥13,788.00 券后价：
+L664: 
+L665: 每月约¥383.00
+L666: 
+L667: [Input]
+L668: cite18†Image†cdn.microsoftstore.com.cn L669: 
+L670: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/沙漫金
+L671: 
+L672: 总计： ¥13,788.00 券后价：
+L673: 
+L674: 每月约¥383.00
+L675: 
+L676: [Input]
+L677: 
+L678: cite19†Image†cdn.microsoftstore.com.cn L679: 
+L680: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/512GB SSD/翡翠绿
+L681: 
+L682: 总计： ¥13,788.00 券后价：
+L683: 
+L684: 每月约¥383.00
+L685: 
+L686: [Input]
+L687: 
+L688: cite16†Image†cdn.microsoftstore.com.cn L689: 
+L690: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/亮铂金
+L691: 总计： ¥15,988.00 券后价：
+L692: 
+L693: 每月约¥444.11
+L694: 
+L695: [Input]
+L696: 
+L697: cite17†Image†cdn.microsoftstore.com.cn L698: 
+L699: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/典雅黑
+L700: 
+L701: 总计： ¥15,988.00 券后价：
+L702: 
+L703: 每月约¥444.11
+L704: 
+L705: [Input]
+L706: 
+L707: cite18†Image†cdn.microsoftstore.com.cn L708: 
+L709: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/沙漫金
+L710: 
+L711: 总计： ¥15,988.00 券后价：
+L712: 
+L713: 每月约¥444.11
+L714: 
+L715: [Input]
+L716: 
+L717: cite19†Image†cdn.microsoftstore.com.cn L718: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/16GB RAM/1TB SSD/翡翠绿
+L719: 
+L720: 总计： ¥15,988.00 券后价：
+L721: 
+L722: 每月约¥444.11
+L723: 
+L724: [Input]
+L725: 
+L726: cite17†Image†cdn.microsoftstore.com.cn L727: 
+L728: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/32GB RAM/1TB SSD/典雅黑
+L729: 
+L730: 总计： ¥20,888.00 券后价：
+L731: 
+L732: 每月约¥580.22
+L733: 
+L734: [Input]
+L735: 
+L736: cite17†Image†cdn.microsoftstore.com.cn L737: 
+L738: 商城独家机型
+L739: 
+L740: Surface Laptop, 13.8 英寸(第 8 代) Snapdragon<sup>®</sup> X2 Elite (12 核)/13.8 英寸/64GB RAM/1TB SSD/典雅黑
+L741: 
+L742: 总计： ¥28,888.00 券后价：
+L743: 
+L744: 每月约¥802.44
+L745: 
+L746: Quantity
+

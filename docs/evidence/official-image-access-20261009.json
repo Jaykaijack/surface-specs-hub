@@ -1,0 +1,22 @@
+{
+  "reviewedAt": "2026-10-09",
+  "notice": "未取得可比对的官方图片字节；链接发现或搜索图像描述不是像素认证。以下是具体获取失败，不能推广为其他全部图片失败。未重试已知Ultra失败链接。",
+  "attempts": [
+    {
+      "pageUrl": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+      "imageUrl": "https://support.microsoft.com/en-us/surface/media/surface-go-2-call-out.png",
+      "discovery": "官方支持页图像链接",
+      "result": "EXECUTOR_CONNECT_PROXY_403",
+      "httpOriginStatus": null,
+      "pixelComparison": "NOT_RUN"
+    },
+    {
+      "pageUrl": "https://www.microsoft.com/en-gb/d/surface-go-2-for-business/8WZD6DHZJ7KV/DRJM",
+      "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Panel2-Surface-Go2-C-b00?fit=crop&hei=470&resSharp=1&wid=834",
+      "discovery": "图片搜索返回微软商品页面和微软CDN地址",
+      "result": "EXECUTOR_CONNECT_PROXY_403",
+      "httpOriginStatus": null,
+      "pixelComparison": "NOT_RUN"
+    }
+  ]
+}

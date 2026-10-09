@@ -90,9 +90,7 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
         "ramSpec": [
           "12GB"
         ],
-        "gpuModel": [
-          "6 teraflop"
-        ],
+        "gpuModel": "6 TFLOPS",
         "storageOptions": [
           "1TB",
           "HDD"
@@ -210,9 +208,7 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
           "1TB",
           "全数字"
         ],
-        "videoFeatures": [
-          "4K Ultra HD"
-        ]
+        "videoFeatures": "4K HDR"
       },
       "storageMustNotInclude": "Blu-ray"
     },

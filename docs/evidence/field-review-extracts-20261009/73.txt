@@ -1,0 +1,507 @@
+购买 13 英寸 Surface Laptop，搭载 Windows 系统的 Windows 11 AI+ PC (Snapdragon) - 微软官方商城 (https://www.microsoftstore.com.cn/configure/surface-laptop-13-inch)
+citeturn92view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/configure/surface-laptop-13-inch","lineno":200}); Total lines: 599
+L0: JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser.
+L1: 
+L2: Menu
+L3: 
+L4: cite0†微软官方商城 L5: 
+L6: cite1†Menu L7:   * 硬件
+L8:     * Surface
+L9:       * 认证翻新 Surface
+L10:         * 认证翻新 Surface
+L11:         * 认证翻新 Surface 商用版
+L12:     * 特惠翻新 Surface
+L13:     * Xbox+游戏
+L14:       * 手柄及遥控器
+L15:       * Xbox 主机
+L16:       * 游戏机周边配件
+L17:       * 本周畅销游戏推荐
+L18:       * 光盘游戏
+L19:     * 配件
+L20:       * Surface配件
+L21:         * 键鼠+Dial
+L22:         * 触控笔
+L23:         * 保护类
+L24:         * 线材及适配器
+L25:         * 维修部件
+L26:       * Xbox 配件
+L27:         * 手柄及遥控器
+L28:         * 游戏机周边配件
+L29:       * 自适应配件
+L30:       * 键鼠
+L31:       * 线材及适配器
+L32:       * 其他配件
+L33:   * 软件
+L34:     * Microsoft 365
+L35:     * Office 2024
+L36:     * Windows
+L37:     * Apps与Windows 10游戏
+L38:     * Visual Studio
+L39:     * Microsoft Complete and EHS
+L40:     * 其他软件与服务
+L41:   * 折扣专区
+L42:   * Surface
+L43:   * 特惠翻新 Surface
+L44:   * 教育优惠
+L45:   * 企业购
+L46:   * 我的优惠券
+L47:   * 以旧换新
+L48:   * 商城承诺
+L49:   * 支持与帮助
+L50:   * 专栏博客
+L51:   * 更多
+L52: cite2†账户 L53: 
+L54: 搜索
+L55: 
+L56: cite3†My Cart L57: 
+L58: 登录
+L59: 
+L60: Search
+L61: 
+L62: Search
+L63: 
+L64: [Input]
+L65: 
+L66: cite4†Advanced Search L67: 
+L68: Search
+L69: 
+L70: [Button: 取消]
+L71: 
+L72: cite5†Image†cdn.microsoftstore.com.cn L73: 
+L74: cite5†Image†cdn.microsoftstore.com.cn L75: 
+L76:   * cite6†我的账户 L77:   * cite7†我的订单 L78:   * cite8†地址管理 L79:   * cite9†我的专区 L80:   * cite10†我的优惠券 L81:   * cite11†退出 cite12†登录 L82: 
+L83: [Input]
+L84: 
+L85: Surface Laptop, 13 英寸 (第 1 代)
+L86: 
+L87: 加入购物车
+L88: 
+L89: （券后价：）
+L90: 
+L91: 预售商品起陆续发货。
+L92: 
+L93: 总计： ¥7,788.00 券后价：
+L94: # Surface Laptop, 13 英寸 (第 1 代)
+L95: 
+L96: cite13†Image: Surface Laptop, 13 英寸 (第 1 代)†cdn.microsoftstore.com.cn L97: 
+L98: 0张图片
+L99: 
+L100: cite14†返回了解详情 > L101: 
+L102: 60天退换货
+L103: 
+L104: 全场免运费
+L105: 
+L106: 在线聊天服务
+L107: 
+L108: 60天退换货
+L109: 
+L110: 在线聊天服务
+L111: 
+L112: 全场免运费
+L113: 
+L114: 促销期退换货期限延长至60天
+L115: 
+L116: 60天延长退货条款仅适用于促销期内成功订购 Surface 主机产品（不包括 Surface 认证翻新机系列，Surface 商业版）并完成支付的订单。60天从商品签收日期起算。促销期是指2026年09月30日09:00-2026年10月16日08:59。其他未尽事宜，以微软官方商城退换货政策为准。https://www.microsoftstore.com.cn/support-and-help-tabs。
+L117: 
+L118: 非商务专区个人客户
+L119: 
+L120: 微软品牌实体商品:在微软官方商城订购的微软品牌实体商品，客户可在签收后30天（自然日）内进行退货或换货。微软品牌实体商品包括微软 Surface/Xbox 主机及微软第一方配件。
+L121: 
+L122: 商品类别
+L123: 
+L124: 微软品牌实体商品
+L125: 退还类别
+L126: 
+L127: 功能性故障或商品质量问题
+L128: 
+L129: 客户个人原因
+L130: 
+L131: 退换货期限
+L132: 
+L133: 签收后30天内（含）可退、换或者维修
+L134: 
+L135: 签收后7天内（含）可退
+L136: 
+L137: 要求说明
+L138: 
+L139: 需联系商城客服人员提供相关证明材料
+L140: 
+L141: 个人原因导致的退货，须确保商品完好，不影响二次销售
+L142: 
+L143: 返回运费承担方
+L144: 
+L145: 商城承担（客户先行垫付*）
+L146: 
+L147: 客户自行承担*
+L148: 
+L149: *应由商城承担的运费，请您先行垫付，并切记务必保留寄回商品的快递面单，商城将根据面单金额退回对应运费。 应由客户自行承担的运费，如客户选择到付寄回，商城将拒签您的包裹。
+L150: 
+L151: cite15†了解更多 > L152: 
+L153: 我们的服务时间：
+L154: 微软官方商城在线聊天服务：周一至周日 9:00 - 24:00
+L155: 微软官方商城微信聊天服务：周一至周日9:00-21:00
+L156: 
+L157: 微软官方商城服务热线: 400 820 3800（售前咨询，订单状态与退款）：周一至周日9:00-21:00（节假日除外）
+L158: 
+L159: 微软中国技术支持热线: 400 820 3800（技术支持与保修）：周一至周五 9:00-21:00， 周六，周日 10:00-18:00（节假日除外）
+L160: 
+L161: 微软官方商城为大陆地区顾客提供全场包邮服务。
+L162: 温馨提示：服务类商品、数字化商品或虚拟商品等无需配送；请根据产品页面的提示，在付款后至订单详情页面获取产品密钥或兑换码。
+L163: 
+L164: Customize and Add to Cart
+L165: 
+L166: [Input][Input][Input][Input][Input][Input][Input]
+L167: 
+L168: 购买方式
+L169: 
+L170: 单机及配件
+L171: 
+L172: [Input]
+L173: 
+L174: 配置
+L175: 
+L176: 配置
+L177: 
+L178: [Input]
+L179: 
+L180: cite16†Image†cdn.microsoftstore.com.cn L181: 
+L182: 新配置
+L183: 
+L184: Surface Laptop, 13 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/8GB RAM/256GB SSD/亮铂金/13 英寸
+L185: 
+L186: 总计： ¥7,788.00 券后价：
+L187: 
+L188: 每月约¥216.33
+L189: 
+L190: [Input]
+L191: 
+L192: cite17†Image†cdn.microsoftstore.com.cn L193: 
+L194: 新配置
+L195: 
+L196: Surface Laptop, 13 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/12GB RAM/256GB SSD/亮铂金/13 英寸
+L197: 
+L198: 总计： ¥8,988.00 券后价：
+L199: 
+L200: 每月约¥249.67
+L201: [Input]
+L202: 
+L203: cite18†Image†cdn.microsoftstore.com.cn L204: 
+L205: Surface Laptop, Windows 11 AI+ PC, 13 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/256GB SSD/亮铂金/13 英寸
+L206: 
+L207: 总计： ¥9,688.00 券后价：
+L208: 
+L209: 每月约¥269.11
+L210: 
+L211: [Input]
+L212: 
+L213: cite19†Image†cdn.microsoftstore.com.cn L214: 
+L215: Surface Laptop, Windows 11 AI+ PC, 13 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/罗兰紫/13 英寸
+L216: 
+L217: 总计： ¥9,988.00 券后价：
+L218: 
+L219: 每月约¥277.44
+L220: 
+L221: [Input]
+L222: 
+L223: cite20†Image†cdn.microsoftstore.com.cn L224: Surface Laptop, Windows 11 AI+ PC, 13 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/碧海青/13 英寸
+L225: 
+L226: 总计： ¥9,988.00 券后价：
+L227: 
+L228: 每月约¥277.44
+L229: 
+L230: [Input]
+L231: 
+L232: cite18†Image†cdn.microsoftstore.com.cn L233: 
+L234: Surface Laptop, Windows 11 AI+ PC, 13 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/亮铂金/13 英寸
+L235: 
+L236: 总计： ¥9,988.00 券后价：
+L237: 
+L238: 每月约¥277.44
+L239: 
+L240: [Input]
+L241: 
+L242: cite21†Image†cdn.microsoftstore.com.cn L243: 
+L244: 单机+鼠标套餐
+L245: 
+L246: Surface Laptop, Windows 11 AI+ PC, 13 英寸 Snapdragon<sup>®</sup> X Plus（8 核）/16GB RAM/512GB SSD/碧海青/13 英寸+ Arc 鼠标，碧海青
+L247: 总计： ¥10,488.00 券后价：
+L248: 
+L249: 每月约¥291.33
+L250: 
+L251: Quantity
+L252: 
+L253: [Input]
+L254: 
+L255: 可选配件（可多选）
+L256: 
+L257: cite22†Image†cdn.microsoftstore.com.cn L258: 
+L259: cite23†Image†cdn.microsoftstore.com.cn L260: 
+L261: cite24†Image†cdn.microsoftstore.com.cn L262: 
+L263: Surface Arc 鼠标 碧海青 超薄轻盈，轻松携带出行，这款电池供电的 Surface Arc 鼠标专为贴合你的手型而设计，展平后能轻松放入包中。它的蓝牙^{®} 连接功能让你无论走到哪里都能随心携带，而且现有两种新颜色^{1} 可供选择，以彰显你的个人风采。
+L264: 
+L265: 8.6 折
+L266: 
+L267: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L268: 
+L269: 每月约¥16.61
+L270: 
+L271: cite25†Image†cdn.microsoftstore.com.cn L272: 
+L273: 微软 Surface USB-C 多功能扩展坞 黑色 通过此款典雅的多端口适配器（包含 USB-C^{®}）可将笔记本电脑转换为高效的多功能助手。支持兼容配件充电。不支持笔记本电脑充电。
+L274: 总计： ¥889.00 券后价：
+L275: 
+L276: 每月约¥24.69
+L277: 
+L278: cite26†Image†cdn.microsoftstore.com.cn L279: 
+L280: 微软 Surface Thunderbolt™ 4 扩展坞 使用具有超高速数据传输能力的 Surface Thunderbolt™ 4 扩展坞提升工作空间的工作效率。8 个多用途连接端口，支持连接网络摄像头、手机和其他配件，同时还能连接最多两台 4K 显示器。^{1}
+L281: 
+L282: 总计： ¥2,565.00 券后价：
+L283: 
+L284: 每月约¥71.25
+L285: 
+L286: 9.4折
+L287: 
+L288: cite22†Image†cdn.microsoftstore.com.cn L289: 
+L290: Surface Arc 鼠标 碧海青 超薄轻盈，轻松携带出行，这款电池供电的 Surface Arc 鼠标专为贴合你的手型而设计，展平后能轻松放入包中。它的蓝牙^{®} 连接功能让你无论走到哪里都能随心携带，而且现有两种新颜色^{1} 可供选择，以彰显你的个人风采。
+L291: 
+L292: 8.6 折
+L293: 
+L294: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L295: 
+L296: 每月约¥16.61
+L297: 
+L298: 9.4折
+L299: 
+L300: cite27†Image†cdn.microsoftstore.com.cn L301: Surface Arc 鼠标 罗兰紫 超薄轻盈，轻松携带出行，这款电池供电的 Surface Arc 鼠标专为贴合你的手型而设计，展平后能轻松放入包中。它的蓝牙^{®} 连接功能让你无论走到哪里都能随心携带，而且现有两种新颜色^{1} 可供选择，以彰显你的个人风采。
+L302: 
+L303: 8.6 折
+L304: 
+L305: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L306: 
+L307: 每月约¥16.61
+L308: 
+L309: 8.8折
+L310: 
+L311: cite28†Image†cdn.microsoftstore.com.cn L312: 
+L313: 微软 Surface Arc 鼠标 亮铂金
+L314: 
+L315:   * 微软 Surface Arc 鼠标，纤薄、轻巧，可以展平轻松放入口袋或背包
+L316:   * 创新的全滚动平面可随意垂直、水平滚动
+L317:   * 通过蓝牙无线连接到 Surface
+L318:   * 微软蓝影技术，可在多种表面实现出色跟踪
+L319:   * 多色可选，彰显个性自我
+L320: 
+L321: 8.1 折
+L322: 
+L323: 总计： ¥598.00 券后价： ¥678.00 ¥678.00
+L324: 
+L325: 每月约¥16.61
+L326: 
+L327: 9.4折
+L328: 
+L329: cite29†Image†cdn.microsoftstore.com.cn L330: 
+L331: 微软 Surface Arc 鼠标 典雅黑
+L332:   * 微软 Surface Arc 鼠标，纤薄、轻巧，可以展平轻松放入口袋或背包
+L333:   * 创新的全滚动平面可随意垂直、水平滚动
+L334:   * 通过蓝牙无线连接到 Surface
+L335:   * 微软蓝影技术，可在多种表面实现出色跟踪
+L336:   * 多色可选，彰显个性自我
+L337: 
+L338: 8.6 折
+L339: 
+L340: 总计： ¥598.00 券后价： ¥638.00 ¥638.00
+L341: 
+L342: 每月约¥16.61
+L343: 
+L344: cite30†Image†cdn.microsoftstore.com.cn L345: 
+L346: 微软 Surface 鼠标
+L347: 
+L348:   * 如同 Surface 一般做工精良
+L349:   * 设计时尚简洁，左右手操作皆宜
+L350:   * 24 次触力反馈的金属滚轮
+L351:   * 蓝牙 4.0/4.1
+L352: 
+L353: 总计： ¥378.00 券后价：
+L354: 
+L355: 每月约¥10.50
+L356: 
+L357: cite31†Image†cdn.microsoftstore.com.cn L358: 
+L359: 微软 Surface Dial
+L360: 
+L361:   * 轻松访问快捷方式、控件、绘图工具及其他选项
+L362:   * 在 Spotify、Groove 和 Pandora 中为您喜爱的曲目调节音量
+L363:   * 在您喜爱的新闻网站上转动浏览文章
+L364:   * 轻轻转动，即可编辑、旋转和操作您的作品
+L365: 总计： ¥958.00 券后价：
+L366: 
+L367: 每月约¥26.61
+L368: 
+L369: 可选配件2
+L370: 
+L371: 7.2折
+L372: 
+L373: cite32†Image†cdn.microsoftstore.com.cn L374: 
+L375: Microsoft 365 家庭版 - 1年
+L376: 
+L377: Microsoft 365 家庭版作为一款一体化计划，提供高达 2 TB的云存储空间、安全功能和应用。
+L378: 
+L379:   * 供 1 到 6 人共享使用
+L380:   * 每人可在最多 5 台设备上同时使用
+L381:   * 适用于 PC、Mac、iPhone、iPad 以及 Android 手机和平板电脑
+L382:   * 高达 2 TB 的安全云存储空间
+L383:   * 具有离线访问和高级功能的 Word、Excel、PowerPoint 和 OneNote
+L384:   * 针对个人数据和设备的 Microsoft Defender 高级安全保护功能
+L385:   * 无广告的 Outlook 安全电子邮件
+L386:   * Microsoft 编辑器高级拼写、语法和写作辅助
+L387:   * 高级自定义模板
+L388:   * 包含高品质照片、图标、字体、视频和音频的内容扩展库
+L389:   * 通过聊天或电子邮件联系支持人员，以在所需之时获取帮助
+L390: 
+L391: 应用的可用性因设备/语言而异。功能因平台而异。
+L392: 节省¥140.00
+L393: 
+L394: 总计： ¥358.00 券后价： ¥498.00 ¥498.00
+L395: 
+L396: 每月约¥9.94
+L397: 
+L398: 6.5折
+L399: 
+L400: cite33†Image†cdn.microsoftstore.com.cn L401: 
+L402: Microsoft 365 个人版 - 1年
+L403: 
+L404: Microsoft 365 个人版作为一款一体化计划，可提供 1 TB 的云存储空间、高级安全功能和创新型应用。
+L405:   * 限 1 人使用
+L406:   * 最多可在 5 台设备上同时使用
+L407:   * 适用于 PC、Mac、iPhone、iPad 以及 Android 手机和平板电脑
+L408:   * 1 TB (1,000 GB) 安全云存储空间
+L409:   * 具有离线访问和高级功能的 Word、Excel、PowerPoint 和 OneNote
+L410:   * 针对个人数据和设备的 Microsoft Defender 高级安全保护功能
+L411:   * 无广告的 Outlook 安全电子邮件
+L412:   * Microsoft 编辑器高级拼写、语法和写作辅助
+L413:   * 高级自定义模板
+L414:   * 包含高品质照片、图标、字体、视频和音频的内容扩展库
+L415:   * 通过聊天或电子邮件联系支持人员，以在所需之时获取帮助
+L416: 
+L417: 应用的可用性因设备/语言而异。功能因平台而异。
+L418: 
+L419: *应用可单独下载。
+L420: 
+L421: 节省¥140.00
+L422: 
+L423: 总计： ¥258.00 券后价： ¥398.00 ¥398.00
+L424: 
+L425: 每月约¥7.17
+L426: 
+L427: 增值保障
+L428: 
+L429: [Input]
+L430: 
+L431: 不添加增值保障 增值保障不可单独购买，需同主机一同下单购买。
+L432: 
+L433: [Input]
+L434: 
+L435: cite34†Image†cdn.microsoftstore.com.cn L436: 适用于 Surface Laptop, 13 英寸的微软硬件延长服务一年 cite35†了解更多> L437: 
+L438: 总计： ¥388.00 券后价：
+L439: 
+L440: 每月约¥10.78
+L441: 
+L442: [Input]
+L443: 
+L444: cite34†Image†cdn.microsoftstore.com.cn L445: 
+L446: 适用于 Surface Laptop, 13 英寸的 Microsoft Complete 全方位服务计划 两年 cite36†了解更多> L447: 
+L448: 总计： ¥888.00 券后价：
+L449: 
+L450: 每月约¥24.67
+L451: 
+L452: [Input]
+L453: 
+L454: cite34†Image†cdn.microsoftstore.com.cn L455: 
+L456: 适用于 Surface Laptop, 13 英寸的 Microsoft Complete 全方位服务计划 三年 cite37†了解更多> L457: 
+L458: 总计： ¥1,288.00 券后价：
+L459: 
+L460: 每月约¥35.78
+L461: 
+L462: [Input]
+L463: 
+L464: cite34†Image†cdn.microsoftstore.com.cn L465: 
+L466: 适用于 Surface Laptop, 13 英寸的 Microsoft Complete 全方位服务计划 四年 cite38†了解更多> L467: 
+L468: 总计： ¥1,788.00 券后价：
+L469: 每月约¥49.67
+L470: 
+L471: Quantity
+L472: 
+L473: [Input]
+L474: 
+L475: * Required Fields
+L476: 
+L477: 总计： ¥7,788.00 券后价：
+L478: 
+L479: 加入购物车
+L480: 
+L481: （券后价：）
+L482: 
+L483: 预售商品起陆续发货。
+L484: 
+L485: 备注：
+L486: 
+L487: 您可以通过本页面 “推荐套餐”和“单机”选项下的产品价格比较，查看同配置产品在以“推荐套餐”形式购买和单机购买时各自的价格比较信息。在进入后一页购物车结算页面后，您将仅能查看所有套餐整体的优惠后金额，敬请知晓。如果在进入后一页面后需要了解价格比较信息，您需要再次返回本页面查看。
+L488: 
+L489: {"components":{"stockNotificationPopup":{"component":"IsobarCommerce_BuyBox\/js\/stock-notify-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"}},"mainProductId":"2557"}}}
+L490: 
+L491: *划线价格均为微软建议零售价。
+L492: 
+L493:   * 产品类别
+L494:     * cite39†Surface L495:     * cite40†Microsoft 365 L496:     * cite41†XBOX L497:     * cite42†Office L498:     * cite43†Windows L499:     * cite44†Visual Studio L500:     * cite45†混合现实 L501:     * cite46†其他软件与服务 L502:     * cite47†配件 L503:     * cite48†其他微软站点†www.microsoft.com L504:   * 账户信息
+L505: 
+L506:     * cite6†账户信息 L507:     * cite7†订单跟踪 L508:     * cite49†订单历史 L509:     * cite6†软件密钥和下载 L510:   * 支持与帮助
+L511: 
+L512:     * cite50†产品支持信息 L513:     * cite15†退换货政策 L514:     * cite51†常见问题 L515:     * cite52†软件产品问题 L516:     * cite53†教育优惠相关问题 L517:     * cite54†购物流程 L518:     * cite55†支付与配送 L519:     * cite56†售后服务 L520:     * cite57†专栏博客 L521:   * 热门资源
+L522:     * cite58†Surface Pro L523:     * cite14†Surface Laptop L524:     * cite59†优惠信息 L525:     * cite60†教育专区 L526:     * cite61†以旧换新 L527:     * cite62†商务专区 L528:   * 关于我们
+L529: 
+L530:     * cite63†查找店铺 L531:     * cite64†网站地图 L532:     * cite65†商城承诺 L533:     * cite0†商城首页 L534:   * 关注我们
+L535: 
+L536:     * 官方微博
+L537: 
+L538:     * 微软官方商城
+L539:     *     * 微信小店
+L540: 
+L541: cite66†Image: Wechatstore QRCode†cdn.microsoftstore.com.cn L542: 
+L543: cite48†其他微软站点†www.microsoft.com L544: 
+L545: cite67†中国 - 简体中文†www.microsoft.com L546: 
+L547: cite68†使用条款 cite69†销售条款 cite70†隐私权声明†go.microsoft.com 管理 Cookie cite71†商标†www.microsoft.com cite72†沪 ICP备12038052号-4†beian.miit.gov.cn L548: cite73†沪公网安备 31010402009788号†www.beian.gov.cn L549: 
+L550: cite74†公司证件†cdn.microsoftstore.com.cn © 2024 Microsoft
+L551: 
+L552: cite75†Image†cdn.microsoftstore.com.cn L553: 
+L554: 扫码小程序
+L555: 
+L556: 进行购买
+L557: 
+L558: cite76†Image: Contact customer service†cdn.microsoftstore.com.cn cite77†Image: Contact customer service†cdn.microsoftstore.com.cn L559: 
+L560: cite78†Image: miniapp_qrcode†cdn.microsoftstore.com.cn L561: 
+L562: cite79†Image: contact sales†cdn.microsoftstore.com.cn cite80†Image: contact sales†cdn.microsoftstore.com.cn cite81†Image: Contact customer service†cdn.microsoftstore.com.cn L563: cite82†Image: QR Code†cdn.microsoftstore.com.cn L564: 
+L565: cite83†Image: contact sales†cdn.microsoftstore.com.cn L566: 
+L567: cite75†Image: wechat qrcode†cdn.microsoftstore.com.cn L568: 
+L569: 截图保存后微信扫码进入小程序
+L570: 
+L571: 联系客服 · 咨询优惠
+L572: 
+L573: 在线聊天
+L574: 
+L575: [Button: 开始在线聊天]
+L576: 
+L577: 电话联系
+L578: 
+L579:   * 微软官方商城销售服务热线:
+L580: 400 999 9938
+L581: 工作时间：法定工作日 9:00–18:00
+L582: 
+L583: cite84†Image: 联系销售†cdn.microsoftstore.com.cn 联系销售
+L584: 
+L585: [Button: 联系客服 享专属优惠]
+L586: 
+L587: 非工作时间请联系： RDSSMB@microsoft.com
+L588: 
+L589: cite85†Intentionally blank†publisher.liveperson.net L590: cite86†Surface Pro cite87†Surface Laptop cite88†Surface Laptop Ultra†www.microsoft.com cite89†探索 Copilot†www.microsoft.com cite90†Microsoft 365†www.microsoft.com cite91†探索 Microsoft 产品†www.microsoft.com cite92†Windows 11 应用程序†www.microsoft.com cite93†帐户个人资料†account.microsoft.com cite94†下载中心†www.microsoft.com cite95†订单跟踪†account.microsoft.com cite96†Microsoft 教育版†www.microsoft.com cite97†教育设备†www.microsoft.com cite98†Microsoft Teams 教育版†www.microsoft.com cite99†Microsoft 365 教育版†www.microsoft.com cite100†Office 教育版†www.microsoft.com cite101†教育工作者培训和开发†education.microsoft.com cite102†面向学生和家长的优惠†www.microsoft.com cite103†面向学生的 Azure†azure.microsoft.com L591: cite104†Microsoft AI†www.microsoft.com cite105†Microsoft 安全†www.microsoft.com cite106†Azure†azure.microsoft.com cite107†Dynamics 365†www.microsoft.com cite108†Microsoft 365†www.microsoft.com cite109†Microsoft Advertising†about.ads.microsoft.com cite110†Microsoft Copilot†www.microsoft.com cite111†Microsoft Teams†www.microsoft.com cite112†Microsoft 开发人员†developer.microsoft.com cite113†Microsoft Learn†learn.microsoft.com cite114†支持 AI 商城应用†www.microsoft.com cite115†Microsoft 技术社区†techcommunity.microsoft.com cite116†Microsoft Marketplace†marketplace.microsoft.com cite117†Microsoft Power Platform†www.microsoft.com cite118†软件公司†www.microsoft.com cite119†Visual Studio†visualstudio.microsoft.com cite120†招贤纳士†careers.microsoft.com cite121†关于 Microsoft†www.microsoft.com cite122†公司新闻†news.microsoft.com cite123†Microsoft 隐私†www.microsoft.com cite124†投资人†www.microsoft.com L592: cite125†中文（中国）†www.microsoft.com L593: 
+L594: cite126†你的隐私选择†aka.ms cite126†你的隐私选择†aka.ms L595: 
+L596: cite127†消费者健康隐私†go.microsoft.com cite128†与 Microsoft 联系†support.microsoft.com cite70†隐私†go.microsoft.com cite129†管理 Cookie cite130†使用条款†go.microsoft.com cite131†商标†go.microsoft.com cite132†关于我们的广告†choice.microsoft.com cite133†京ICP备09042378号-6†beian.miit.gov.cn L597: 
+L598: 订阅产品
+

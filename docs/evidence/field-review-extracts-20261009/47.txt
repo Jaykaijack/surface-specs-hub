@@ -1,0 +1,390 @@
+Surface Laptop 商用版-Windows 11 AI+ PC高性能笔记本-微软官方商城 (https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business)
+citeturn64view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business","lineno":300}); Total lines: 644
+L115: ### 视野更广，效率更高
+L116: 
+L117: Surface PixelSense™ Flow 触控屏采用超薄边框、3:2 屏幕比例^{5} 和高达 120 Hz 的刷新率，让非凡显示效果触手可及。
+L118: 
+L119: cite30†Image: Surface Laptop 商用版, Windows 11 AI PC屏幕†cdn.microsoftstore.com.cn L120: 
+L121: ### 绚丽、生动的显示体验
+L122: 
+L123: 借助高达 600 尼特的峰值亮度，HDR^{2} 和自适应颜色让色彩准确度和对比度跃迁至新水平。
+L124: 
+L125: cite31†Image: 两台不同尺寸的Surface Laptop 商用版, Windows 11 AI PC,13.8英寸的和15英寸的†cdn.microsoftstore.com.cn L126: 
+L127: ### 屏幕尺寸随心选
+L128: 
+L134: #### 随时随地尽享通畅联通
+L135: 
+L136: Wi-Fi 7^{6} 是最快的无线连接方式，具有更高效的带宽，可以实现同时流畅运行多款应用。
+L137: 
+L138:   * cite33†Image: 外接设备标识†cdn.microsoftstore.com.cn L139: 
+L140: #### 玩转多任务，你就是专家
+L141: 
+L142: 配备两个 USB-C^{®}/USB4 端口，支持充电和数据传输，最多可以通过兼容的扩展坞连接三台 4K 显示器（60 Hz 刷新率）。^{7}
+L143: 
+L144:   * cite34†Image: 超轻超便携如树叶†cdn.microsoftstore.com.cn L145: 
+L146: #### 超轻超便携
+L147: 
+L148: 这是一款时尚紧凑、灵巧轻盈的铝合金机身笔记本电脑，坚固耐用，便携性十分出色。
+L149: 
+L150:   * cite35†Image: 键盘标识†cdn.microsoftstore.com.cn L151: 
+L152: #### 非凡的打字舒适度
+L153: 
+L154: 轻松输入，畅享最佳键程体验；感受无可比拟的舒适性并见证快速、准确的输入效果。
+L155: ## 本着信任而生，同类产品中安全性更出色
+L156: 
+L157: cite36†Image: 一位女性用户正在使用Surface Laptop 商用版,Windows 11 AI PC亮铂金†cdn.microsoftstore.com.cn L158: 
+L159: ### 简单、安全，无密码登录
+L160: 
+L161: 借助具有面部识别功能的 Windows Hello，无需密码即可立即安全登录。
+L162: 
+L163: cite37†Image: Surface Laptop 商用版,Windows 11 AI PC亮铂金产品俯视图†cdn.microsoftstore.com.cn L164: 
+L165: ### 开箱即用的安全功能
+L166: 
+L167: Windows 11 专业版集成了内置的安全功能，如凭据保护、恶意软件防护和应用程序保护。
+L168: 
+L169: cite38†Image: Surface Laptop 商用版,Windows 11 AI PC亮铂金产品展开图†cdn.microsoftstore.com.cn L170: ### 通过 AI 增强的高级安全性
+L171: 
+L172: 通过 Microsoft Intune Windows 11 AI+ PC 来管理 Windows 11 专业版，满足安全策略的要求，提供先进的安全性和支持，并让你能享受到最新 AI 功能。
+L173: 
+L174: cite39†Image: Surface Laptop 商用版,Windows 11 AI PC外接两个显示器工作†cdn.microsoftstore.com.cn L175: 
+L176: ### 无懈可击的数据保护
+L177: 
+L178: 配备 Surface Laptop 商用版、Surface Thunderbolt™ 4 扩展坞^{8} 以及动态 USB-C^{®} 禁用功能，能够确保数据传输只能通过受信任的扩展坞和设备进行。
+L179: 
+L180: ## 包容性触控板，市场中的翘楚
+L181: 
+L182: cite40†Image: Surface Laptop 商用版键盘的特写视图†cdn.microsoftstore.com.cn L183: ### 自适应触控模式
+L184: 
+L185: 精准鼠控，宽域触控识别，精准触觉触控板可以使用手掌、脚或残肢来轻松操作。
+L186: 
+L187: cite41†Image: Surface Laptop 商用版键盘的俯视视图†cdn.microsoftstore.com.cn L188: 
+L189: ### 近乎真实的触觉反馈
+L190: 
+L191: 可自定义的触摸板能够创建触觉提示，让你能更轻松浏览内容和操控设备。
+L192: 
+L193: cite42†Image: 两个微软Arc鼠标†cdn.microsoftstore.com.cn L194: ## 优选配件
+L195: 
+L196: 借助旨在提高工作效率和简化工作流程的其他配件，在 Surface 上成就更多。
+L197: 
+L198: cite43†选购所有 > L199: 
+L200: [1] 基于视频播放测试。电池使用时间会因设备配置、使用情况、网络和功能配置、信号强度、设置和其他因素而有显著差异。有关详细信息，请参阅 cite44†Surface 电池性能†support.microsoft.com 。
+L201: 
+L202: [2] HDR 需要 HDR 内容，并在设备设置中启用 HDR。
+L203: 
+L204: [3] 13.8 英寸 Surface Laptop 商用版，Windows 11 AI+ PC 随附 39 W Surface 电源。最小功率为 65 W 的 Surface 电源或 USB-C^{®} PD 充电器（另售）支持快速充电（从 5% 快充至 80%）。测试于 2024 年 2 月在受控条件下使用试制设备、软件和功率最小为 65 W 的 USB-C^{®} 充电器在 Microsoft 进行。设备以默认显示亮度设置开启，并显示桌面屏幕。实际充电时间将根据运行条件而有所不同。在 23℃ 的典型办公室环境温度下进行测量。
+L205: [4] 音质处理功能需要激活，并需使用 Windows 11 操作系统，在使用集成式设备麦克风和使用某些 Windows 音频处理模式的应用中可以使用。
+L206: 
+L207: [5] 与纵横比为 16:10 或 16:9 的标准笔记本电脑上的可视区域相比。
+L208: 
+L209: [6] 6GHz 频带并非适用于所有地区。
+L210: 
+L211: [7] 支持 3 台外部显示器，需要将 2 台显示器连接到兼容的扩展坞或通过菊花链连接。
+L212: 
+L213: [8] 另售。某些功能需要拥有软件许可。
+L214: 
+L215: [9] 使用 CineBench 2024 多核基准测试于 2024 年 5 月进行测试。与采用 Snapdragon X Elite 12 核心的 15 英寸 Surface Laptop 和采用英特尔^{®} 酷睿™ i7 的 15 英寸 Surface Laptop 5 相比，速度提高了 86%。与采用 Snapdragon X Elite 12 核心的 13.8 英寸 Surface Laptop 和采用英特尔^{®} 酷睿™ i7 的 13.5 英寸 Surface Laptop 5 相比，速度提高了 73%。
+L216: 
+L217: 功能和应用的可用情况可能因地区而异。
+L218: USB Type-C^{®} 和 USB-C^{®} 是 USB Implementers Forum 的注册商标。
+L219: ### 技术规格
+L220: 
+L221: #### 版
+L222: 
+L223:  |
+L224: 
+L225:   * 第 7 代
+L226: 
+L227: #### 处理器
+L228: 
+L229:  |
+L230: 
+L231:   * Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸：
+L232:   * • Snapdragon^{®} X Plus（10 核）
+L233:   * • Snapdragon^{®} X Elite（12 核）
+L234:   *   * Surface Laptop 商用版, Windows 11 AI+ PC 15 英寸：
+L235:   * • Snapdragon^{®} X Elite（12 核）
+L236: 
+L237: #### NPU
+L238: 
+L239:  |
+L240: 
+L241:   * Qualcomm^{®} Hexagon™ (45 TOPs)
+L242: 
+L243: #### 显卡
+L244: 
+L245:  |
+L246: 
+L247:   * Qualcomm^{®} Adreno™ GPU
+L248: #### 内存和存储空间^{1}
+L249: 
+L250:  |
+L251: 
+L252:   * 内存可选配置：
+L253:   * • Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸：16 GB、32 GB LPDDR5x RAM
+L254:   * • Surface Laptop 商用版, Windows 11 AI+ PC 15 英寸：16 GB、32 GB LPDDR5x RAM
+L255:   *   * 存储空间可选配置：
+L256:   * • 可拆卸式^{2} 固态硬盘（第四代固态硬盘）256 GB、512 GB 或 1 TB
+L257: #### 显示屏
+L258: 
+L259:  |
+L260:   * Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸：
+L261:   * • 触控屏：13.8 英寸 PixelSense Flow™ 显示屏
+L262:   * • 分辨率：2304 x 1536 (201 PPI)
+L263:   * • 屏幕比例：3:2
+L264:   * • 对比度：1400:1
+L265:   * • 动态刷新频率：高达 120 Hz
+L266:   * • 颜色配置：sRGB 和 Vivid
+L267:   * • 经单独校色的显示屏
+L268:   * • 自适应颜色
+L269:   * • 自适应对比度
+L270:   * • 支持自动色彩管理
+L271:   * • 触控：10 点多点触控
+L272:   * • 支持 Dolby Vision IQ™^{3}
+L273:   * • 第 5 代康宁^{®} 大猩猩^{®} 玻璃面板
+L274:   *   * Surface Laptop 商用版, Windows 11 AI+ PC 15 英寸：
+L275:   * • 触控屏：15 英寸 PixelSense Flow™ 显示屏
+L276:   * • 分辨率：2496 x 1664 (201 PPI)
+L277:   * • 屏幕比例：3:2
+L278:   * • 对比度：1300:1
+L279:   * • 动态刷新频率：高达 120 Hz
+L280:   * • 颜色配置：sRGB 和 Vivid
+L281:   * • 经单独校色的显示屏
+L282:   * • 自适应颜色
+L283:   * • 自适应对比度
+L284:   * • 支持自动色彩管理
+L285:   * • 触控：10 点多点触控
+L286:   * • 支持 Dolby Vision IQ™^{3}
+L287:   * • 第 5 代康宁^{®} 大猩猩^{®} 玻璃面板
+L288: #### 尺寸和重量^{4}
+L289: 
+L290:  |
+L291: 
+L292:   * Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸：
+L293:   * 长度：301 毫米（11.85 英寸）
+L294:   * 宽度：220 毫米（8.67 英寸）
+L295:   * 高度：17.5 毫米（0.69 英寸）
+L296:   * 重量：1.34 千克（2.96 磅）
+L297:   *   * Surface Laptop 商用版, Windows 11 AI+ PC 15 英寸：
+L298:   * 长度：329 毫米（12.96 英寸）
+L299:   * 宽度：239 毫米（9.41 英寸）
+L300:   * 高度：18.29 毫米（0.72 英寸）
+L301:   * 重量：1.66 千克（3.67 磅）
+L302: #### 电池使用时间
+L303: 
+L304:  |
+L305: 
+L306:   * Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸：
+L307:   * • 支持长达 20 小时的本地视频播放^{5}
+L308:   * • 支持长达 13 小时的网页浏览^{6}
+L309:   *   * Surface Laptop 商用版, Windows 11 AI+ PC 15 英寸：
+L310:   * • 支持长达 22 小时的本地视频播放^{5}
+L311:   * • 支持长达 15 小时的网页浏览^{6}
+L312: 
+L313: #### 安全性
+L314: 
+L315:  |
+L316: 
+L317:   * • 通过 TPM 2.0 芯片实现的企业级安全性，以及 BitLocker 支持
+L318:   * • Windows 11 安全核心 PC
+L319:   * • Microsoft Pluton 技术
+L320:   * • Windows Hello 人脸识别登录功能，具备增强的登录安全性
+L321: 
+L322: #### 摄像头
+L323: 
+L324:  |
+L325: 
+L326:   * 全高清前置 Surface Studio 摄像头
+L327:   * • 1080p 全高清 (Full HD) 摄像头
+L328:   * Windows Hello 人脸识别身份验证摄像头
+L329: #### 音频
+L330: 
+L331:  |
+L332: 
+L333:   * • 具有音质处理功能的矩阵式远场双麦克风^{7}
+L334:   * • Omnisonic^{®} 扬声器，支持 Dolby^{®} Atmos^{®8}
+L335:   * • 支持蓝牙（Bluetooth^{®}）LE Audio
+L336: #### 端口和充电
+L337: 
+L338:  |
+L339:   * Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸：
+L340:   * • 2 个 USB-C^{®}/USB4 端口，支持：
+L341:   * o 充电
+L342:   * o 数据传输
+L343:   * o DisplayPort 2.1
+L344:   * o Surface Thunderbolt™ 4 扩展坞和其他配件
+L345:   * • 支持通过 Surface Connect 或 USB-C^{®} 端口使用最小 65 W 电源进行快速充电^{9}
+L346:   * • USB-A 3.1
+L347:   * • 3.5 毫米耳机插孔
+L348:   * • Surface Connect 端口
+L349:   *   * Surface Laptop 商用版, Windows 11 AI+ PC 15 英寸：
+L350:   * • 2 个 USB-C^{®}/USB4 端口，支持：
+L351:   * o 充电
+L352:   * o 数据传输
+L353:   * o DisplayPort 2.1
+L354:   * o Surface Thunderbolt™ 4 扩展坞和其他配件
+L355:   * • 支持通过 Surface Connect 或 USB-C^{®} 端口使用最小 65 W 电源进行快速充电^{9}
+L356:   * • USB-A 3.1
+L357:   * • MicroSDXC 读卡器
+L358:   * • 3.5 毫米耳机插孔
+L359:   * • Surface Connect 端口
+L360: #### 网络和连接性
+L361: 
+L362:  |
+L363: 
+L364:   * • Wi-Fi 7^{10}
+L365:   * • 蓝牙 (Bluetooth^{®}) 无线 5.4 技术
+L366: 
+L367: #### 软件
+L368: 
+L369:  |
+L370: 
+L371:   * • Windows 11 专业版
+L372:   * • 预装 Microsoft 365 应用^{11}
+L373:   * • Microsoft 365 商业标准版、Microsoft 365 商业高级版、Microsoft 365 应用（30 天试用）^{12}
+L374: 
+L375: #### 辅助功能
+L376: 
+L377:  |
+L378: 
+L379:   * • Surface 精准触觉触控板拥有可调节的点击敏感度/右键单击区域，以及自适应触摸模式^{13}
+L380:   * • 与 Surface 适配套件兼容
+L381:   * • 兼容 Microsoft 适配配件
+L382: 
+L383: #### 外观
+L384: 
+L385:  |
+L386: 
+L387:   * • 机身材质：阳极氧化铝
+L388:   * • 颜色^{14}：亮铂金和典雅黑
+L389: 
+L390: #### 传感器
+L391: 
+L392:  |
+L393: 
+L394:   * 环境颜色传感器
+L395: #### 包装清单
+L396: 
+L397:  |
+L398: 
+L399:   * Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸和 15 英寸
+L400:   * • 电源
+L401:   * o 13.8 英寸 39 W
+L402:   * o 15 英寸 65 W
+L403:   * • 快速入门指南
+L404:   * • 安全手册及保修文档
+L405: 
+L406: #### 键盘布局
+L407: 
+L408:  |
+L409: 
+L410:   * • 激活：触动按键
+L411:   * • 布局：QWERTY、整行功能键 (F1 - F12)
+L412:   * • Windows 键以及媒体控件和调节屏幕亮度的专用按钮
+L413:   * • 键盘背光
+L414:   * • Copilot 按键^{16}
+L415:   * • 精确式触觉触摸板
+L416: 
+L417: #### 保修^{15}
+L418: 
+L419:  | 自购买凭证（发票）标注时间起，Surface 主机3年有限硬件保修。Surface 配件视品类而定，详情以所购产品包装盒内相关信息为准。
+L420: #### 电池容量
+L421: 
+L422:  |
+L423: 
+L424:   * Surface Laptop 商用版, Windows 11 AI+ PC 13.8 英寸：
+L425:   * • 电池容量额定值（瓦时）：54
+L426:   * • 最小电池容量（瓦时）：52
+L427:   *   * Surface Laptop 商用版, Windows 11 AI+ PC 15 英寸：
+L428:   * • 电池容量额定值（瓦时）：66
+L429:   * • 最小电池容量（瓦时）：64
+L430: #### 中国能效标识
+L431: 
+L432:  | cite45†Image†cdn.microsoftstore.com.cn cite46†Image†cdn.microsoftstore.com.cn L433: 
+L434: [1] 系统软件会占用大量的存储空间。可用存储空间会根据系统软件更新和应用的使用情况而改变。1 GB = 10 亿字节。1 TB = 1,000 GB。有关详细信息，请参阅 cite47†Surface 存储空间†support.microsoft.com 。
+L435: 
+L436: [2]“驱动器 (SSD) 保留”仅适用于根据技术规格，固态硬盘可拆卸下来进行销售的 Microsoft Surface 设备。“驱动器 (SSD) 保留”属于“延期硬件服务增强版”和“商业 Microsoft Complete 增强版”涵盖的服务，在购买 Microsoft 延期硬件服务和商业 Microsoft Complete 服务计划时可作为可选的附加项。退回给 Microsoft 的缺少固态硬盘 (SSD) 的设备需要支付固态硬盘 (SSD) 更换费，若该设备已注册驱动器 (SSD) 保留优惠则无需支付此费用。
+L437: [3] 需要 Dolby Vision^{®} 编码的内容和视频。
+L438: 
+L439: [4] 可能因制造工艺而异。
+L440: [5] 基于本地视频播放测试。电池使用时间因使用情况、网络和功能配置、信号强度、设置和其他因素会有很大差异。有关详细信息，请参阅 cite44†Surface 电池性能†support.microsoft.com 。
+L441: 基于在 13.8 英寸 Surface Laptop 商用版，Windows 11 AI+ PC 上进行的本地视频播放测试，电池使用时间长达 20 小时
+L442: 测试由 Microsoft 在 2024 年 4 月使用试制软件和试制 Surface Laptop 商用版设备（采用 Snapdragon^{®} X Plus C10、256 GB、16 GB RAM）进行。测试项目包括在通过 Windows 媒体播放器应用程序以 24 FPS 的帧率播放 1080p 的 .mov 格式视频时使电池完全放电的情况。除屏幕亮度设置为 150 尼特和禁用自动亮度调节外，所有设置均为默认设置。Wi-Fi 保持联网状态。通过 Windows 11 进行测试。电池使用时间会因设置、使用情况及其他因素而有明显差异。
+L443: 基于在 15 英寸 Surface Laptop 商用版，Windows 11 AI+ PC 上进行的本地视频播放测试，电池使用时间长达 22 小时
+L444: 测试由 Microsoft 在 2024 年 4 月使用试制软件和试制 Surface Laptop 商用版设备（采用 Snapdragon^{®} X Elite C12、512 GB、16 GB RAM）进行。测试项目包括在通过 Windows 媒体播放器应用程序以 24 FPS 的帧率播放 1080p 的 .mov 格式视频时使电池完全放电的情况。除屏幕亮度设置为 150 尼特和禁用自动亮度调节外，所有设置均为默认设置。Wi-Fi 保持联网状态。通过 Windows 11 进行测试。电池使用时间会因设置、使用情况及其他因素而有明显差异。
+L445: [6] 基于浏览器测试。 电池使用时间因使用情况、网络和功能配置、信号强度、设置和其他因素会有很大差异。有关详细信息，请参阅 cite44†Surface 电池性能†support.microsoft.com 。
+L446: 基于在 13.8 英寸 Surface Laptop 商用版，Windows 11 AI+ PC 上进行的网页浏览测试，电池使用时间长达 13 小时
+L447: 基于浏览器测试。测试由 Microsoft 在 2024 年 4 月使用试制软件和试制 Surface Laptop 商用版设备（采用 Snapdragon^{®} X Plus C10、256 GB、16 GB RAM）进行。测试项目包含通过浏览器在多个打开的标签页上访问八个常用网站，并将电池电量完全耗尽的情况。除屏幕亮度设置为 150 尼特和禁用自动亮度调节外，所有设置均为默认设置。 Wi-Fi 保持联网状态。 通过 Windows 11 进行测试。电池使用时间会因设置、使用情况及其他因素而有明显差异。
+L448: 基于在 15 英寸 Surface Laptop 商用版，Windows 11 AI+ PC 上进行的网页浏览测试，电池使用时间长达 15 小时
+L449: 基于浏览器测试。测试由 Microsoft 在 2024 年 4 月使用试制软件和试制 Surface Laptop 商用版设备（采用 Snapdragon^{®} X Elite C12、512 GB、16 GB RAM）进行。测试项目包含通过浏览器在多个打开的标签页上访问八个常用网站，并将电池电量完全耗尽的情况。除屏幕亮度设置为 150 尼特和禁用自动亮度调节外，所有设置均为默认设置。 Wi-Fi 保持联网状态。 通过 Windows 11 进行测试。电池使用时间会因设置、使用情况及其他因素而有明显差异。
+L450: [7] 音质处理功能需要激活，并需使用 Windows 11 操作系统，在使用集成式设备麦克风和使用某些 Windows 音频处理模式的应用中可以使用。
+L451: 
+L452: [8] 需要 Dolby^{®} Atmos^{®} 编码的内容/音频。
+L453: 
+L454: [9] 13.8 英寸 Surface Laptop 商用版, Windows 11 AI+ PC 随附 39 W Surface 电源。最小功率为 45 W 的 Surface 电源或 USB-C^{®} PD 充电器（另售）支持快速充电（从 5% 快充至 80%）。测试于 2024 年 2 月在受控条件下使用试制设备、软件和功率最小为 45 W 的 USB-C^{®} 充电器在 Microsoft 进行。设备以默认显示亮度设置开启，并显示桌面屏幕。实际充电时间将根据运行条件而有所不同。在 23℃ 的典型办公室环境温度下进行测量。
+L455: 
+L456: [10] 6GHz 频带并非适用于所有地区。
+L457: 
+L458: [11] 另售。某些功能需要拥有软件许可。
+L459: [12] 需要激活。若设备由所在组织的 IT 部门管理，请联系 IT 管理员激活。如果在组织之外激活了试用，则 30 天后，我们会收取适用的每月或每年订阅费用。需要信用卡。随时取消即可停止扣费。请参阅 cite48†Microsoft 365 商用版试用信息†learn.microsoft.com 。
+L460: 
+L461: [13] 需运行 Windows 11 操作系统。
+L462: 
+L463: [14] 可选颜色仅针对特定型号。可选颜色、尺寸、饰面材质及处理器可能因商店、产品销售区域和配置而异。
+L464: 
+L465: [15] Microsoft 的有限保修是对消费者法定权利的额外补充。
+L466: 
+L467: [16] 功能的可用性因销售区域而异，请参阅 cite49†Windows AI 功能†www.microsoft.com 。当 Windows 版 Copilot 在设备上不可用或未启用时，按 Copilot 键将启动 Windows 搜索。
+L468: ## 比较 Surface 笔记本电脑
+L469: 
+L470: cite50†查看所有 Surface 商用版设备 > L471: 
+L472: cite51†Image: 一台 Surface Laptop 商用版 Windows 11 AI PC†cdn.microsoftstore.com.cn L473: ### Surface Laptop 商用版, Windows 11 AI+ PC (Snapdragon)
+L474: 
+L475: 非常适合需要高性能和仅在 Windows 11 AI+ PC 上提供的独特 AI 体验的多任务处理用户。
+L476:   * 处理器：13.8 英寸：Snapdragon^{®} X Plus 或 Snapdragon^{®} X Elite；15 英寸：Snapdragon^{®} X Elite；NPU：Qualcomm^{®} Hexagon™ （45 TOPs）
+L477:   * 屏幕尺寸：13.8 英寸或 15 英寸 PixelSense Flow™ 显示屏
+L478:   * 重量^{1}：13.8英寸：1.34 千克（2.96 磅）；15 英寸：1.66 千克（3.67 磅）
+L479:   * 存储空间^{2}：可拆卸式^{3} 固态硬盘（第 4 代 SSD）：256 GB、512 GB 或 1 TB
+L480:   * 内存：13.8 英寸：16 GB 或32 GB (LPDDR5x RAM)，15 英寸：16 GB 或32 GB (LPDDR5x RAM)
+L481:   * 电池使用时间：13.8 英寸：长达 20 小时^{4}；15 英寸：长达 22 小时^{4}
+L482:   * 版本：Surface Laptop 商用版，第 7 代
+L483: 
+L484: cite52†Image: 一台Surface Laptop 6 商用版†cdn.microsoftstore.com.cn L485: ### Surface Laptop 6 商用版
+L486: 
+L487: 非常适合需要超高性能、协作工具的商务专业人士，如高管、金融服务专业人士和开发人员。
+L488: 
+L489:   * 处理器：英特尔^{®} 酷睿™ Ultra 5 处理器 135H 或英特尔^{®} 酷睿™ Ultra 7 处理器 165H，NPU：英特尔^{®} AI Boost
+L490:   * 屏幕尺寸：13.5 英寸或 15 英寸 PixelSense™ 显示屏
+L491:   * 重量^{1}：13.5 英寸：1.38 千克（3.06 磅）；15 英寸：1.68 千克（3.70 磅）；15 英寸（带智能卡读卡器）^{5}： 1.68 千克（3.71 磅）
+L492:   * 存储空间^{2}：可拆卸式^{3} 固态硬盘（第 4 代 SSD）：256 GB、512 GB 或 1 TB
+L493:   * 内存：16 GB 或 32 GB
+L494:   * 电池使用时间：长达 18.5 小时^{4}
+L495: 
+L496: cite53†Image: 一台 Surface Pro 商用版,一台 Windows 11 AI PC†cdn.microsoftstore.com.cn L497: ### Surface Pro 商用版, Windows 11 AI+ PC (Snapdragon)
+L498: 
+L499: 非常适合既需要平板电脑的灵活性又需要笔记本电脑强大性能的用户，以及需要高性能和仅在 Windows 11 AI+ PC 上提供的专属 AI 体验的新技术使用者。
+L500: 
+L501:   * 处理器：Snapdragon^{®} X Plus 或 Snapdragon^{®} X Elite；NPU：Qualcomm^{®} Hexagon™ （45 TOPs）
+L502:   * 屏幕尺寸：13 英寸 PixelSense™ Flow 显示屏^{6}，采用 OLED 或 LCD 屏幕
+L503:   * 重量^{1,7}：895 克（1.97 磅）
+L504:   * 存储空间^{2}：可拆卸式^{3} 固态硬盘（第 4 代 SSD）：256 GB、512 GB 或 1 TB^{8}
+L505:   * 内存：16 GB 或 32 GB^{8} (LPDDR5x RAM)
+L506:   * 电池使用时间：最长可达 14 小时^{4}
+L507:   * 版本：Surface Pro 商用版，第 11 代
+L508: cite54†了解详细信息 > L509: cite55†Image: 一台 Surface Pro 10 商用版侧面图†cdn.microsoftstore.com.cn L510: ### Surface Pro 10 商用版
+L511: 
+L512: 非常适合商务专业人士，以及在连接性、安全性和由提供数据驱动的洞察的环境中工作，并希望将平板电脑的灵活性与笔记本电脑的强大性能相结合的人士。
+L513: 
+L514:   * 处理器：英特尔^{®} 酷睿™ Ultra 5 处理器 135U 或英特尔^{®} 酷睿™ Ultra 7 处理器 165U；NPU：英特尔^{®} AI Boost
+L515:   * 屏幕尺寸：13 英寸 PixelSense™ Flow 显示屏^{9}，采用 LCD 防反射屏幕
+L516:   * 重量^{1,7}：879 克 (1.94 磅)
+L517:   * 存储空间^{2}：可拆卸式^{3} 固态硬盘（第 4 代 SSD）：256 GB、512 GB、1 TB
+L518:   * 内存：8 GB、16 GB、32 GB、64 GB (LPDDR5x RAM)
+L519:   * 电池使用时间：长达 19 小时^{4}
+L520: 
+L521: [1] 可能因制造工艺而异。
+L522: [2] 系统软件和更新会占用大量的存储空间。可用存储空间会根据系统软件和更新以及应用的使用情况而改变。1 GB = 10 亿字节。1 TB = 1,000 GB。有关详细信息，请参阅 cite47†Surface 存储空间†support.microsoft.com 。
+L523: 
+L524: [3]“驱动器 (SSD) 保留”仅适用于根据技术规格，固态硬盘可拆卸下来进行销售的 Microsoft Surface 设备。“驱动器 (SSD) 保留”属于“延期硬件服务增强版”和“商业 Microsoft Complete 增强版”涵盖的服务，在购买 Microsoft 延期硬件服务和商业 Microsoft Complete 服务计划时可作为可选的附加项。退回给 Microsoft 的缺少固态硬盘 (SSD) 的设备需要支付固态硬盘 (SSD) 更换费，若该设备已注册驱动器 (SSD) 保留优惠则无需支付此费用。
+L525: 
+L526: [4] 基于视频播放测试。电池使用时间因使用情况、网络和功能配置、信号强度、设置和其他因素会有很大差异。有关详细信息，请参阅 cite44†Surface 电池性能†support.microsoft.com 。
+

@@ -1,0 +1,59 @@
+What type of TV will you need for the Xbox 360? - XBOX Wire (https://news.xbox.com/en-us/2005/05/28/what-type-of-tv-will-you-need-for-the-xbox-360/)
+citeturn77view0 [wordlim: 200] Crawled: 3 weeks ago; Content type: text/html; Source: open({"ref_id":"https://news.xbox.com/en-us/2005/05/28/what-type-of-tv-will-you-need-for-the-xbox-360/","lineno":150}); Total lines: 88
+L0: cite0†XBOX†www.xbox.com L1: 
+L2: [Input: Search the WIRE]
+L3: 
+L4: Close×
+L5: 
+L6: [Input: Search games, gear, stories...]
+L7: ## Trending now
+L8: 
+L9:   1. cite1†Coming to XBOX Game Pass: Gears of War: E-Day, Minecraft Dungeons II, Dune: Awakening, and More L10:   2. cite2†Multiple Adventures Await as Stories: The Path of Destinies Arrives on Xbox One  L11:   3. cite3†BlizzCon 2026 Opening Ceremony: Starcraft Returns, Diablo V Announced, Warcraft news and more L12:   4. cite4†Your Discs. Now Also Digital. L13:   5. cite5†XBOX @ Tokyo Game Show 2026 L14:   6. cite6†Upcoming Changes to XBOX Cloud Gaming L15: ## Browse by tag
+L16: 
+L17: cite7†Great Games cite8†Return of XBOX cite9†Future of Play cite10†Official XBOX Podcast cite11†XBOX Insider cite12†ID @ XBOX L18: 
+L19: ## Recent searches
+L20: 
+L21: Start typing to search
+L22: 
+L23: cite13†Home /XBOX Store
+L24: 
+L25: XBOX Store
+L26: # What type of TV will you need for the Xbox 360?
+L27: 
+L28: One of the top questions I have seen in the community is what type of TV will be needed for an XBox 360 ? I asked the team of engineers to give me the straight dope, and here is what I found out (this is directly copied from my email): //begin paste // Q: What […]
+L29: 
+L30: Major Nelson
+L31: 
+L32: May 28, 2005 · 1 min read
+L33: One of the top questions I have seen in the community is what type of TV will be needed for an XBox 360 ? I asked the team of engineers to give me the straight dope, and here is what I found out (this is directly copied from my email):
+L34: 
+L35: //begin paste //
+L36: 
+L37: Q: What type of television do I need to use an Xbox 360?
+L38: 
+L39: A: Xbox 360 will work great on all TVs
+L40: Just like the original Xbox, Xbox 360 will output to all major resolution standards found in TVs today ?” 480i, 480p, 720p, and 1080i. The key difference is that with Xbox 360 if someone has a 720p or 1080i capable TV and they choose that resolution in the dashboard, all Xbox 360 games will support it. Today, only a handful of Xbox titles support the higher resolutions.
+L41: The same thing goes for widescreen. You do not need a widescreen TV to run Xbox 360 but if you have one and you select the setting in the dashboard, all games will support it.
+L42: 
+L43: //end paste //
+L44: 
+L45: Filed under
+L46: 
+L47: cite14†XBOX Store L48: ## Keep reading
+L49: 
+L50: cite13†All stories→ L51: 
+L52: cite15†Read Consoles · Consoles Black Friday with Xbox: Our Biggest Season of Deals Returns, Including 2000+ Games on Sale cite16†Read Games · Games Ready to Play Anywhere? Players Can Now Pre-Order the ROG Xbox Ally X and ROG Xbox Ally In 38 Countries cite17†Read Games · Games Discover Unforgettable Experiences in the Square Enix Publisher Sale L53: ## Browse
+L54: 
+L55:   * cite18†XBOX consoles†www.xbox.com L56:   * cite19†XBOX games†www.xbox.com L57:   * cite20†XBOX Game Pass†www.xbox.com L58:   * cite21†XBOX accessories†www.xbox.com L59: 
+L60: ## Resources
+L61: 
+L62:   * cite13†XBOX News L63:   * cite22†XBOX Support†support.xbox.com L64:   * cite23†Leadership Team L65:   * cite24†Feedback†support.xbox.com L66:   * cite25†Community Standards†www.xbox.com L67:   * cite26†Photosensitive Seizure Warning†support.xbox.com L68:   * cite27†User Research at XBOX†www.xbox.com L69: ## Microsoft Store
+L70: 
+L71:   * cite28†Microsoft account†account.microsoft.com L72:   * cite29†Microsoft Store Support†support.microsoft.com L73:   * cite30†Returns†support.microsoft.com L74:   * cite31†Orders tracking†account.microsoft.com L75:   * cite32†Store locations†www.microsoft.com L76: 
+L77: ## Rewards
+L78: 
+L79:   * cite33†Rewards†www.microsoft.com L80:   * cite34†XBOX Mastercard†www.xbox.com L81: ## For Developers
+L82: 
+L83:   * cite35†Games†developer.microsoft.com L84:   * cite36†Designed for XBOX†www.xbox.com L85: 
+L86: cite37†Image: Privacy options cite38†Your Privacy Choices†account.microsoft.com cite39†Consumer Health Privacy†go.microsoft.com L87: cite40†Sitemap†www.microsoft.com cite41†Contact Microsoft†support.microsoft.com cite42†Privacy & Cookies†go.microsoft.com cite43†Terms of use†go.microsoft.com cite44†Trademarks†www.microsoft.com cite45†Third Party Notices†www.xbox.com cite46†Safety & eco†www.microsoft.com cite47†About our ads†choice.microsoft.com © Microsoft 2026
+

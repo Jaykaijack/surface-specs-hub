@@ -195,7 +195,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "audioTech": "Atmos",
         "npuModel": "Hexagon",
         "touchAndPenProtocol": "10",
-        "chassisMaterial": "阳极氧化",
+        "chassisMaterial": "再生铝合金",
         "kickstandType": "165",
         "cpuArch": [
           "Oryon",
@@ -257,12 +257,12 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "audioTech": "Atmos",
         "npuModel": "Hexagon",
         "touchAndPenProtocol": "10",
-        "chassisMaterial": "阳极氧化",
+        "chassisMaterial": "再生铝合金",
         "cpuArch": [
           "Oryon",
           "64"
         ],
-        "fastCharging": "60"
+        "fastCharging": "65W"
       },
       "specState": {
         "kickstandType": "NOT_APPLICABLE",
@@ -325,7 +325,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "audioTech": "Atmos",
         "npuModel": "Hexagon",
         "touchAndPenProtocol": "10",
-        "chassisMaterial": "阳极氧化",
+        "chassisMaterial": "再生铝合金",
         "expandableStorage": "MicroSD",
         "cpuArch": [
           "Oryon",
@@ -406,10 +406,11 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "fastCharging": [
           "95",
           "120"
-        ]
+        ],
+        "kickstandType": "铰链"
       },
       "specState": {
-        "kickstandType": "NOT_APPLICABLE",
+        "kickstandType": "VALID",
         "cpuArch": "NULL"
       }
     },
@@ -477,10 +478,11 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "fastCharging": [
           "95",
           "120"
-        ]
+        ],
+        "kickstandType": "铰链"
       },
       "specState": {
-        "kickstandType": "NOT_APPLICABLE",
+        "kickstandType": "VALID",
         "cpuArch": "NULL"
       }
     },
@@ -547,7 +549,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "ramMustInclude": "LPDDR4x",
       "ramMustNotInclude": "LPDDR5x",
       "storageMustInclude": "128",
-      "wifiMustInclude": "Wi-Fi 6",
+      "wifiMustInclude": "Wi-Fi6",
       "wifiMustNotInclude": "Wi-Fi 7",
       "bluetoothMustInclude": "5.1",
       "batteryCapacityContains": "51.5",
@@ -559,7 +561,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "refreshRateContains": "120",
       "screenSizeContains": "13",
       "usbMustInclude": "USB-C",
-      "warrantyState": "NOT_DISCLOSED",
+      "warrantyState": "VALID",
       "osMustInclude": "专业",
       "frontCameraContains": [
         "500",
@@ -588,12 +590,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "cpuArch": [
           "64",
           "SuperFin"
-        ],
-        "fastCharging": "60"
+        ]
       },
       "specState": {
-        "expandableStorage": "NOT_APPLICABLE"
-      }
+        "expandableStorage": "NOT_APPLICABLE",
+        "fastCharging": "NULL"
+      },
+      "warrantyContains": "非中国保修认证"
     },
     "pro-9-biz": {
       "cpuMustInclude": [
@@ -625,10 +628,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "cellularMustNotInclude": "eSIM",
       "learnDocUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-9-features-and-specs",
       "specContains": {
-        "gpuModel": [
-          "Iris",
-          "Adreno"
-        ],
+        "gpuModel": "Intel Iris Xe",
         "ppi": "267",
         "colorSupport": [
           "sRGB",
@@ -850,14 +850,17 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "frontCameraContains": "Hello",
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
       "specContains": {
-        "headphoneJack": "3.5",
+        "headphoneJack": "插孔",
         "expandableStorage": [
           "microSD"
         ],
         "surfaceConnect": "Connect",
         "windowsHello": "Hello",
         "microphones": "麦克",
-        "fastCharging": "30"
+        "fastCharging": [
+          "1.5小时",
+          "80%"
+        ]
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE",
@@ -956,9 +959,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "headphoneJack": "3.5",
         "surfaceConnect": "Connect",
         "windowsHello": [
-          "指纹",
-          "128GB",
-          "不包含"
+          "8GB/128GB",
+          "不含"
         ],
         "microphones": "麦克",
         "fastCharging": "39"
@@ -1453,7 +1455,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "1185G7"
       ],
       "ramMustInclude": "LPDDR4x",
-      "wifiMustInclude": "Wi-Fi 6",
+      "wifiMustInclude": "Wi-Fi6",
       "batteryLifeOfficeContains": "16",
       "batteryCapacityContains": "51.5",
       "batteryLifeVideoState": "NOT_DISCLOSED",
@@ -1468,7 +1470,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "usbMustInclude": "USB-C",
       "keyboardWeightState": "NOT_DISCLOSED",
       "repairabilityState": "NOT_DISCLOSED",
-      "warrantyState": "NOT_DISCLOSED",
+      "warrantyState": "VALID",
       "osMustInclude": "家庭",
       "osMustNotInclude": "专业",
       "frontCameraContains": [
@@ -1491,13 +1493,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "microphones": "麦克",
         "audioTech": "Atmos",
         "touchAndPenProtocol": "10点触控",
-        "chassisMaterial": "氧化铝",
-        "fastCharging": "60"
+        "chassisMaterial": "氧化铝"
       },
       "specState": {
         "expandableStorage": "NOT_APPLICABLE",
-        "cpuArch": "NULL"
-      }
+        "cpuArch": "NULL",
+        "fastCharging": "NULL"
+      },
+      "warrantyContains": "非中国保修认证"
     },
     "pro-9": {
       "cpuMustInclude": [
@@ -1934,7 +1937,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
     },
     "laptop-go-2": {
       "cpuMustInclude": [
-        "1135G7"
+        "第11代Intel Core"
       ],
       "batteryLifeOfficeContains": "13.5",
       "batteryCapacityState": "NOT_DISCLOSED",
@@ -1961,7 +1964,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "specContains": {
         "headphoneJack": "3.5",
         "surfaceConnect": "Connect",
-        "windowsHello": "Hello",
+        "windowsHello": [
+          "指纹",
+          "i5/4GB/128GB"
+        ],
         "microphones": "麦克",
         "fastCharging": "39"
       },
@@ -2262,14 +2268,17 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "speakersState": "NOT_DISCLOSED",
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
       "specContains": {
-        "headphoneJack": "3.5",
+        "headphoneJack": "插孔",
         "expandableStorage": [
           "microSD"
         ],
         "surfaceConnect": "Connect",
         "windowsHello": "Hello",
         "microphones": "麦克",
-        "fastCharging": "30"
+        "fastCharging": [
+          "1.5小时",
+          "80%"
+        ]
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE",
@@ -2329,8 +2338,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
     },
     "laptop-4": {
       "cpuMustInclude": [
-        "4680U",
-        "4980U"
+        "第11代Intel Core",
+        "AMD Ryzen"
       ],
       "batteryCapacityState": "NOT_DISCLOSED",
       "batteryLifeVideoState": "NOT_DISCLOSED",
@@ -2360,7 +2369,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "cellularState": "NOT_APPLICABLE",
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-4-features",
       "specContains": {
-        "headphoneJack": "3.5",
+        "headphoneJack": "插孔",
         "surfaceConnect": "Connect",
         "windowsHello": "Hello",
         "microphones": "麦克",
@@ -2675,22 +2684,28 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "screenSizeContains": "5.6",
       "usbMustInclude": "USB-C",
       "refreshRateState": "NOT_DISCLOSED",
-      "warrantyState": "NOT_DISCLOSED",
+      "warrantyState": "VALID",
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "osState": "VALID",
-      "frontCameraState": "NOT_DISCLOSED",
-      "rearCameraState": "NOT_DISCLOSED",
-      "speakersState": "NOT_DISCLOSED",
-      "cellularState": "NOT_DISCLOSED",
+      "frontCameraState": "VALID",
+      "rearCameraState": "VALID",
+      "speakersState": "VALID",
+      "cellularState": "VALID",
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs",
       "specContains": {
         "ppi": "401",
         "aspectRatio": "3:2",
         "windowsHello": "指纹",
         "microphones": "麦克",
-        "chassisMaterial": "康宁",
-        "panelTech": "AMOLED"
+        "chassisMaterial": "Corning",
+        "panelTech": "AMOLED",
+        "frontCamera": "1100万",
+        "rearCamera": "非独立后摄",
+        "cellular": [
+          "AT&T",
+          "不支持eSIM"
+        ]
       },
       "specState": {
         "expandableStorage": "NOT_APPLICABLE",
@@ -2698,7 +2713,8 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "surfaceConnect": "NOT_APPLICABLE",
         "kickstandType": "NOT_APPLICABLE",
         "cpuArch": "NULL"
-      }
+      },
+      "warrantyContains": "非中国保修认证"
     },
     "duo-2": {
       "batteryCapacityState": "NOT_DISCLOSED",
@@ -2719,12 +2735,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "keyboardWeightState": "NOT_DISCLOSED",
       "osState": "NOT_DISCLOSED",
       "frontCameraState": "NOT_DISCLOSED",
-      "rearCameraState": "NOT_DISCLOSED",
+      "rearCameraState": "VALID",
       "speakersState": "NOT_DISCLOSED",
-      "cellularState": "NOT_DISCLOSED",
+      "cellularState": "VALID",
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features",
       "specContains": {
-        "windowsHello": "Hello"
+        "windowsHello": "Hello",
+        "rearCamera": "三镜头",
+        "cellular": "5G"
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE",
@@ -2749,7 +2767,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "chargingPowerState": "NOT_DISCLOSED",
       "brightnessState": "NOT_DISCLOSED",
       "dimensionsContains": "637.35",
-      "weightContains": "9560",
+      "weightContains": "9.56",
       "resolutionContains": "4500",
       "screenSizeContains": "28",
       "usbMustInclude": [
@@ -2770,10 +2788,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
           "980"
         ],
         "ppi": "192",
-        "colorSupport": [
-          "sRGB",
-          "鲜艳"
-        ],
+        "colorSupport": "Vivid",
         "headphoneJack": "3.5",
         "expandableStorage": "SDXC",
         "aspectRatio": "3:2",
@@ -2781,12 +2796,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "microphones": "麦克",
         "audioTech": "Audio",
         "touchAndPenProtocol": "10",
-        "osAtLaunch": "Windows"
+        "osAtLaunch": "Windows",
+        "kickstandType": "铰链",
+        "weightGrams": "最大"
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE",
         "surfaceConnect": "NOT_APPLICABLE",
-        "kickstandType": "NOT_APPLICABLE",
+        "kickstandType": "VALID",
         "fastCharging": "NOT_APPLICABLE"
       },
       "warrantyContains": "不是中国保修承诺"
@@ -2811,23 +2828,25 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "screenSizeContains": "50",
       "usbMustInclude": "USB-C",
       "refreshRateState": "NOT_DISCLOSED",
-      "warrantyState": "NOT_DISCLOSED",
+      "warrantyState": "VALID",
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
-      "osState": "NOT_DISCLOSED",
+      "osState": "VALID",
       "frontCameraState": "VALID",
-      "speakersState": "NOT_DISCLOSED",
+      "speakersState": "VALID",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs",
       "specContains": {
         "gpuModel": "UHD",
         "aspectRatio": "3:2",
         "microphones": "麦克",
-        "chassisMaterial": "铝"
+        "chassisMaterial": "铝",
+        "osAtLaunch": "Windows10"
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE",
         "kickstandType": "NOT_APPLICABLE"
-      }
+      },
+      "warrantyContains": "非中国保修认证"
     }
   }
 };

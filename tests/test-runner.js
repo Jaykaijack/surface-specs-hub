@@ -626,12 +626,12 @@ assertEqual(laptop13Inch.specs.resolution, '1920 × 1280', 'Laptop 13 英寸机�
 assertEqual(laptop13Inch.specs.npuTops, '45 TOPS', 'Laptop 13 英寸机型搭载 45 TOPS 高通 NPU');
 assertEqual(laptop13Inch.specs.startingPriceCny, '¥7,788 起 (消费版)', 'Laptop 13 英寸机型官方商城起售价准确无误 (Actual: ¥7,788 起)');
 assert(laptop13Inch.specs.officialDocUrl.includes('configure/surface-laptop-13-inch'), 'Laptop 13 英寸官方商城直达选配页链接准确');
-assertEqual(laptop13Inch.specs.weightGrams, '1220g (1.22 kg)', 'Laptop 13 英寸机型裸机重量 1.22kg 准确无误');
+assertEqual(laptop13Inch.specs.weightGrams, '1220g (1.22 kg)', '保留消费者旧重量原始记录，是否可计算由独立证据门禁决定');
 
 // 检验消费版 Laptop 7 15 英寸机型
 const laptop7_150 = SURFACE_DATA.devices.find(d => d.id === 'laptop-7-150');
 assert(Boolean(laptop7_150), '全系参数库正式收录官方 Surface Laptop (第 7 代) 15 英寸 消费版');
-assert(laptop7_150.specs.screenSize.includes('15.0 英寸'), 'Laptop 7 15 英寸屏幕规格准确');
+assertEqual(parseFloat(laptop7_150.specs.screenSize), 15, 'Laptop 7 屏幕尺寸归一化为 15 英寸');
 assert(laptop7_150.specs.cpuModel.includes('高通骁龙® X Elite'), 'Laptop 7 15 英寸搭载骁龙 X Elite 旗舰核心');
 
 // 检验商用版新增机型: Surface Laptop 13 英寸 商用版 - Intel 版

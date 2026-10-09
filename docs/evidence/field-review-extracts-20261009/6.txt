@@ -1,0 +1,279 @@
+Surface Pro 8 features and specs | Microsoft Support (https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs)
+citeturn30view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs","lineno":175}); Total lines: 426
+L0: Skip to main content
+L1: 
+L2: cite0†Microsoft†www.microsoft.com L3: 
+L4: Support
+L5: 
+L6: cite1†Support L7: 
+L8: [Button: Support ]
+L9: 
+L10:   * cite1†Home L11:   * cite2†Microsoft 365†www.microsoft.com L12:   * cite3†Office†www.microsoft.com L13:   * [Button: Products]
+L14:     * cite4†Microsoft 365 L15:     * cite5†Outlook L16:     * cite6†Microsoft Teams L17:     * cite7†OneDrive L18:     * cite8†Microsoft Copilot L19:     * cite9†OneNote L20:     * cite10†Windows L21:     * cite11†more ... L22:   * [Button: Devices]
+L23:     * cite12†Surface L24:     * cite13†PC Accessories L25:     * cite14†Xbox†support.xbox.com L26:     * cite15†PC Gaming†support.xbox.com L27:     * cite16†HoloLens†docs.microsoft.com L28:     * cite17†Surface Hub†learn.microsoft.com L29:     * cite18†Hardware warranties L30:   * cite19†Account & billing L31:   * [Button: Resources]
+L32:     * cite20†Community forums†learn.microsoft.com L33:     * cite21†Microsoft 365 Admins†portal.office.com L34:     * cite22†Developer†developer.microsoft.com L35:     * cite23†Education L36:     * cite24†Report a support scam†www.microsoft.com L37:     * cite25†Product safety L38: 
+L39:   * [Button: More]
+L40: 
+L41:   * cite26†Buy Microsoft 365†go.microsoft.com L42: 
+L43:   * All Microsoft
+L44:     * ## Global
+L45:       * cite27†Microsoft 365†www.microsoft.com L46:       * cite28†Azure†azure.microsoft.com L47:       * cite29†Copilot†copilot.com L48:       * cite30†Windows†www.microsoft.com L49:       * cite31†Surface†www.microsoft.com L50:       * cite32†XBOX†www.xbox.com L51:       * cite33†Deals†www.microsoft.com L52:       * cite34†Small Business†www.microsoft.com L53:       * cite1†Support L54:     * Software [Button: Software]
+L55:       * cite35†Windows Apps†apps.microsoft.com L56:       * cite36†Outlook†www.microsoft.com L57:       * cite37†OneDrive†www.microsoft.com L58:       * cite38†Microsoft Teams†www.microsoft.com L59:       * cite39†OneNote†www.microsoft.com L60:       * cite40†Microsoft Edge†www.microsoft.com L61:       * cite41†Moving from Skype to Teams L62:     * PCs & Devices [Button: PCs & Devices ]
+L63:       * cite42†Computers†www.microsoft.com L64:       * cite43†Shop XBOX†www.microsoft.com L65:       * cite44†Accessories†www.microsoft.com L66:       * cite45†VR & mixed reality†www.microsoft.com L67:       * cite46†Certified Refurbished†www.microsoft.com L68:       * cite47†Trade-in for cash†www.microsoft.com L69:     * Entertainment [Button: Entertainment]
+L70:       * cite48†XBOX Game Pass Ultimate†www.xbox.com L71:       * cite49†PC Game Pass†www.xbox.com L72:       * cite50†XBOX games†www.microsoft.com L73:       * cite51†PC games†apps.microsoft.com L74:     * Business [Button: Business]
+L75:       * cite52†Microsoft AI†www.microsoft.com L76:       * cite53†Microsoft Security†www.microsoft.com L77:       * cite54†Dynamics 365†www.microsoft.com L78:       * cite55†Microsoft 365 for business†www.microsoft.com L79:       * cite56†Microsoft Power Platform†www.microsoft.com L80:       * cite57†Windows 365†www.microsoft.com L81:       * cite58†Small Business†www.microsoft.com L82:       * cite59†Digital Sovereignty†www.microsoft.com L83:     * Developer & IT [Button: Developer & IT ]
+L84:       * cite60†Azure†azure.microsoft.com L85:       * cite61†Microsoft Developer†developer.microsoft.com L86:       * cite62†Microsoft Learn†learn.microsoft.com L87:       * cite63†Support for AI marketplace apps†www.microsoft.com L88:       * cite64†Microsoft Tech Community†techcommunity.microsoft.com L89:       * cite65†Microsoft Marketplace†marketplace.microsoft.com L90:       * cite66†Software companies†www.microsoft.com L91:       * cite67†Visual Studio†visualstudio.microsoft.com L92:     * Other [Button: Other]
+L93:       * cite68†Microsoft Rewards†www.microsoft.com L94:       * cite69†Free downloads & security†www.microsoft.com L95:       * cite70†Education†www.microsoft.com L96:       * cite71†Gift cards†www.microsoft.com L97:       * cite72†Licensing†www.microsoft.com L98:       * cite73†Unlocked stories†unlocked.microsoft.com L99:     * cite74†View Sitemap†www.microsoft.com L100: [Input: Search for help] Search Search for help
+L101: 
+L102:   * No results
+L103: 
+L104: Cancel
+L105: 
+L106: Sign in
+L107: 
+L108: Sign in with Microsoft
+L109: 
+L110: Sign in or create an account.
+L111: 
+L112: Hello,
+L113: 
+L114: Select a different account.
+L115: 
+L116: You have multiple accounts
+L117: 
+L118: Choose the account you want to sign in with.
+L119: 
+L120: Related topics
+L121: # Surface Pro 8 features and specs
+L122: 
+L123: Applies To
+L124: 
+L125: Surface Pro 8 Surface Pro 8 with LTE Advanced
+L126: 
+L127: Note
+L128: 
+L129:   * Get tablet-to-laptop flexibility in one powerful PC. With AI-accelerated Copilot+ PC experiences and all-day battery life, Surface Pro is built to keep you on the go.
+L130:   * cite75†Explore the newest Surface devices†www.microsoft.com L131: 
+L132: Surface Pro 8 is designed to highlight the best of Windows 11 and combine the power for a laptop, the flexibility of a tablet, and everything in between.
+L133: ## Get to know Surface Pro 8
+L134: 
+L135: cite76†Image: A Surface Pro 8 with its hardware features identified. L136: 
+L137:   1. Volume
+L138:   2. 5 mm headset jack
+L139:   3. Windows Hello facial-recognition camera
+L140:   4. Front-facing camera
+L141:   5. Power button
+L142:   6. USB-C port
+L143:   7. Surface Connect port
+L144:   8. Surface Signature Type Cover (sold separately)
+L145: ## Surface Pro 8 and Windows
+L146: 
+L147: Surface Pro 8 comes with:
+L148: 
+L149:   * Windows 11 Home edition (consumer customers)
+L150:   * Windows 10 Pro edition or Windows 11 Pro edition (commercial customers)
+L151: 
+L152: If you have Windows 11 Home on your device, you can upgrade to Windows 11 Pro for an additional cost. For more info, see cite77†Which edition of Windows comes with your Surface device? .
+L153: 
+L154: ## Charging your Surface
+L155: 
+L156: You can charge your Surface using USB-C or Surface Connect. For more information, see cite78†How to charge Surface. L157: ## Make it your own
+L158: 
+L159: Learn more about the optional accessories that work with your Surface Pro 8.
+L160: 
+L161:   * cite79†Surface Pro Signature Keyboard L162:   * cite80†Surface Slim Pen 2 L163:   * cite81†Surface Arc Mouse L164:   * cite82†Surface Dock L165: ## Get the most out of your Surface
+L166: 
+L167: Learn more about your Surface and customize it with the Surface app. To open it, select Start cite83†Image: icon for Windows logo icon , enter Surface, and select it to open the app. If the app doesn't open, get it from the cite84†Microsoft Store†go.microsoft.com .
+L168: 
+L169: Open the Surface app
+L170: ## A more repairable device design
+L171: 
+L172: Many components can be replaced by cite85†authorized service providers or skilled technicians — supporting a more repairable device design. Replacement components are available for out-of-warranty repair. Availability and service options may vary by product, market, and over time.
+L173: 
+L174: To learn more, see cite86†Self-repair information for your Surface device. L175: ## Surface Pro 8 Technical specs
+L176: 
+L177: Dimensions  | 11.3 in x 8.2 in x 0.37 in (287mm x 208mm x 9.3mm)
+L178: --- | ---
+L179: Display  |
+L180: 
+L181:   * Screen: 13” PixelSense™ Flow Display
+L182:   * Resolution: 2880 x 1920 (267 PPI)
+L183:   * Up to 120Hz refresh rate (60Hz default)
+L184:   * Aspect ratio: 3:2
+L185:   * Adaptive Color
+L186:   * Touch: 10 point multi-touch
+L187:   * GPU Ink Acceleration
+L188:   * Dolby Vision® support ^{3}
+L189: Memory  | 8GB, 16GB, 32GB (LPDDR4x RAM)
+L190: Processor  |
+L191:   * Quad-core 11th Gen Intel® Core™ i5-1135G7 Processor
+L192:   * Quad-core 11th Gen Intel® Core™ i7-1185G7 Processor
+L193:   * i5 and i7 options with storage 256GB and above built on the Intel® Evo™ platform
+L194: Security  |
+L195: 
+L196:   * Firmware TPM chip for enterprise-grade security and BitLocker support
+L197:   * Enterprise-grade protection with Windows Hello face sign-in
+L198: Software  |
+L199:   * Windows 11 Home
+L200:   * Preloaded Microsoft 365 Apps ^{8}
+L201:   * Microsoft 365 Family 30-day trial ^{9}
+L202:   * Preloaded Xbox app
+L203:   * Xbox Game Pass Ultimate one month trial ^{11}
+L204: Sensors  |
+L205: 
+L206:   * Accelerometer
+L207:   * Gyroscope
+L208:   * Magnetometer
+L209:   * Ambient Color Sensor (brightness and color)
+L210: What's in the box  |
+L211: 
+L212:   * Surface Pro 8
+L213:   * Power Supply
+L214:   * Quick Start Guide
+L215:   * Safety and warranty documents
+L216: Weight ^{6}  | 891 g (1.96lb)
+L217: Pen compatibility  |
+L218:   * Designed for Surface Slim Pen 2*
+L219:   * Integrated storage and wireless charging for Surface Slim Pen 2 with Surface Pro Signature Keyboard*
+L220:   * Supports tactile signals with Surface Slim Pen 2 ^{7}
+L221:   * Supports Microsoft Pen Protocol (MPP)
+L222: Keyboard compatibility  |
+L223: 
+L224:   * Surface Pro Signature Keyboard
+L225:   * Surface Pro X Keyboard
+L226: Storage ^{1}  |
+L227:   * Removable solid-state drive (SSD) options: 128GB or 256GB
+L228:   * 512GB or 1TB
+L229: Battery life ^{2}  | Up to 16 hours of typical device usage
+L230: Graphics  | Intel® Iris® Xe Graphics (i5, i7)
+L231: Connections  |
+L232: 
+L233:   * 2 x USB-C® with USB 4.0/Thunderbolt™ 4
+L234:   * 3.5mm headphone jack
+L235:   * 1 x Surface Connect port
+L236:   * Surface Type Cover port
+L237:   * Compatible with Surface Dial off-screen interaction*
+L238: Cameras, video, and audio  |
+L239:   * Windows Hello face authentication camera (front-facing)
+L240:   * 5.0MP front-facing camera with 1080p full HD video
+L241:   * 10.0MP rear-facing autofocus camera with 1080p HD and 4k video
+L242:   * Dual far-field Studio Mics
+L243:   * 2W stereo speakers with Dolby Atmos®
+L244: Wireless  |
+L245: 
+L246:   * Wi-Fi 6: 802.11ax compatible
+L247:   * Bluetooth Wireless 5.1 technology
+L248: Exterior  |
+L249:   * Casing: Signature anodized aluminum
+L250:   * Colors: Graphite, Platinum ^{4}
+L251:   * Physical buttons: Volume, Power
+L252: Warranty ^{5}  | 1-year limited hardware warranty
+L253: Battery capacities  |
+L254: 
+L255:   * Battery Capacity Nominal (WH) 51.5Wh
+L256:   * Battery Capacity Min (WH) 50.2Wh
+L257: Eco Labels and Ratings  |
+L258: 
+L259:   * Registered EPEAT® Gold in the US and Canada ^{10}
+L260:   * Meets ENERGY STAR® requirements
+L261: 
+L262: ^ Pen storage and charging available on select Keyboards.
+L263: 
+L264: * Sold separately.
+L265: [1] System software and updates use significant storage space. Available storage is subject to change based on system software and updates and apps usage. 1 GB = 1 billion bytes. 1 TB = 1,000 GB. See cite87†Surface Storage for more details.
+L266: [2] Surface Pro 8 battery life: Up to 16 hours of battery life based on typical Surface device usage. Testing conducted by Microsoft in August 2021 using preproduction software and preproduction Intel® 11th Gen Core™ i5-1135G7, 256GB, 8GB RAM device. Testing consisted of full battery discharge with a mixture of active use and modern standby.
+L267: The active use portion consists of (1) a web browsing test accessing 8 popular websites over multiple open tabs, (2) a productivity test utilizing Microsoft Word, PowerPoint, Excel and Outlook, and (3) a portion of time with the device in use with idle applications. All settings were default except screen brightness was set to 150 nits with Auto-Brightness and Adaptive Color disabled. Wi-Fi was connected to a network. Tested with Windows Version 11.0.22000.9 (21H2).
+L268: Battery life varies significantly with settings, usage and other factors.
+L269: [3] Requires Dolby Vision® encoded content and video.
+L270: 
+L271: [4] Colors available on selected models only. Available colors, sizes, finishes, and processors may vary by store, market, and configuration.
+L272: 
+L273: [5] Microsoft’s Limited Warranty is in addition to your consumer law rights.
+L274: 
+L275: [6] Weight not including Surface Pro Signature Keyboard and Surface Slim Pen 2 (sold separately).
+L276: [7] Tactile signals with Surface Slim Pen 2 can be experienced on some applications on Surface Pro 8 running Windows 11. Surface Slim Pen 2 sold separately.
+L277: 
+L278: [8] Subscription required (sold separately).
+L279: [9] Activation required. If your device is managed by your organization’s IT department, contact your IT administrator for activation. After 30 days, you will be charged the applicable monthly or annual subscription fee. Credit card required. Cancel any time to stop future charges. cite88†Learn more about a Microsoft 365 for Business Trial†aka.ms .
+L280: 
+L281: [10] For more information on EPEAT registration in other markets see cite89†Electronic Product Environmental Assessment Tool Surface Pro 8†aka.ms .
+L282: [11] Activation required for Xbox Game Pass Ultimate.
+L283: ## Related topics
+L284: 
+L285:   * cite90†Surface Pro 8 for Business†www.microsoft.com L286:   * cite91†Which Surface model do I have? L287:   * cite92†Which Windows operating system am I running? L288: ## Need more help?
+L289: 
+L290:   * cite93†Personal accounts L291:   * cite94†Work/school accounts L292: 
+L293: Technical support
+L294: 
+L295: For technical support, cite95†open the Surface app†go.microsoft.com or cite96†web browser†go.microsoft.com , describe your problem and select Get Help.
+L296: 
+L297: Community support
+L298: 
+L299: Communities can help you ask questions, and hear from experts with rich knowledge. cite97†Ask the Community†go.microsoft.com .
+L300: 
+L301: Other support
+L302: If you can't use your Surface or have a question about something else, cite98†open Get Help†go.microsoft.com to get other support online.
+L303: 
+L304: cite99†Image: Need more help grid spacer. L305: 
+L306: Technical support
+L307: 
+L308: You can get self-help support from cite95†the Surface app†go.microsoft.com or cite96†web browser†go.microsoft.com . For technical assistance, contact your organization's IT helpdesk or admin.
+L309: 
+L310: Service & repair
+L311: For Surface for Business, visit cite100†Surface repair by Microsoft Authorized Service Providers†go.microsoft.com .
+L312: 
+L313: For IT Admins
+L314: 
+L315: IT Admins should view cite101†Surface for Business†go.microsoft.com and cite102†Support for Business & Education customers†go.microsoft.com .
+L316: 
+L317: cite99†Image: Need more help grid spacer. L318: ## Was this information helpful?
+L319: 
+L320: [Button: Yes] [Button: No]
+L321: 
+L322: Can you help us improve? (Send feedback to Microsoft so we can help.)
+L323: 
+L324: What affected your experience?
+L325: 
+L326: [Input] Resolved my issue
+L327: 
+L328: [Input] Clear instructions
+L329: 
+L330: [Input] Easy to follow
+L331: 
+L332: [Input] No jargon
+L333: 
+L334: [Input] Pictures helped
+L335: 
+L336: [Input] Other
+L337: 
+L338: [Input] Didn't match my screen
+L339: 
+L340: [Input] Incorrect instructions
+L341: 
+L342: [Input] Too technical
+L343: 
+L344: [Input] Not enough information
+L345: 
+L346: [Input] Not enough pictures
+L347: 
+L348: [Input] Other
+L349: 
+L350: Any additional feedback? (Optional)
+L351: [Button: Submit feedback]
+L352: 
+L353: By pressing submit, your feedback will be used to improve Microsoft products and services. cite103†Privacy Statement.†privacy.microsoft.com L354: 
+L355: What's new
+L356: 
+L357:   * cite104†Surface Laptop Ultra†www.microsoft.com L358:   * cite105†Surface Pro†www.microsoft.com L359:   * cite106†Surface Laptop†www.microsoft.com L360:   * cite107†Surface RTX Spark Dev Box†www.microsoft.com L361:   * cite108†Explore Copilot†www.microsoft.com L362:   * cite109†Explore Microsoft products†www.microsoft.com L363:   * cite110†Windows 11 apps†www.microsoft.com L364: Microsoft Store
+L365: 
+L366:   * cite111†Account profile†account.microsoft.com L367:   * cite69†Download Center†www.microsoft.com L368:   * cite112†Microsoft Store support†go.microsoft.com L369:   * cite113†Returns†www.microsoft.com L370:   * cite114†Order tracking†www.microsoft.com L371:   * cite46†Certified Refurbished†www.microsoft.com L372:   * cite115†Microsoft Store Promise†www.microsoft.com L373:   * cite116†Flexible Payments†www.microsoft.com L374: 
+L375: Education
+L376:   * cite70†Microsoft in education†www.microsoft.com L377:   * cite117†Devices for education†www.microsoft.com L378:   * cite118†Microsoft Teams for Education†www.microsoft.com L379:   * cite119†Microsoft 365 Education†www.microsoft.com L380:   * cite120†How to buy for your school†www.microsoft.com L381:   * cite121†Educator training and development†education.microsoft.com L382:   * cite122†Deals for students and parents†www.microsoft.com L383:   * cite123†AI for education†www.microsoft.com L384: 
+L385: Business
+L386:   * cite124†Microsoft AI†www.microsoft.com L387:   * cite53†Microsoft Security†www.microsoft.com L388:   * cite54†Dynamics 365†www.microsoft.com L389:   * cite55†Microsoft 365†www.microsoft.com L390:   * cite56†Microsoft Power Platform†www.microsoft.com L391:   * cite38†Microsoft Teams†www.microsoft.com L392:   * cite125†Microsoft Copilot†www.microsoft.com L393:   * cite58†Small Business†www.microsoft.com L394: 
+L395: Developer & IT
+L396:   * cite60†Azure†azure.microsoft.com L397:   * cite61†Microsoft Developer†developer.microsoft.com L398:   * cite62†Microsoft Learn†learn.microsoft.com L399:   * cite126†Support for AI marketplace apps†www.microsoft.com L400:   * cite64†Microsoft Tech Community†techcommunity.microsoft.com L401:   * cite127†Microsoft Marketplace†marketplace.microsoft.com L402:   * cite128†Software companies†www.microsoft.com L403:   * cite67†Visual Studio†visualstudio.microsoft.com L404: 
+L405: Company
+L406:   * cite129†Careers†careers.microsoft.com L407:   * cite130†About Microsoft†www.microsoft.com L408:   * cite131†Company news†news.microsoft.com L409:   * cite132†Privacy at Microsoft†www.microsoft.com L410:   * cite133†Investors†www.microsoft.com L411:   * cite134†Diversity and inclusion†www.microsoft.com L412:   * cite135†Accessibility†www.microsoft.com L413:   * cite136†Sustainability†www.microsoft.com L414: 
+L415: cite137†English (United States) cite138†Your Privacy Choices†aka.ms cite138†Your Privacy Choices†aka.ms cite139†Consumer Health Privacy†go.microsoft.com L416:   * cite140†Sitemap†www.microsoft.com L417:   * cite141†Contact Microsoft L418:   * cite142†Privacy†go.microsoft.com L419:   * cite143†Manage cookies L420:   * cite144†Terms of use†go.microsoft.com L421:   * cite145†Trademarks†go.microsoft.com L422:   * cite146†Safety & eco†go.microsoft.com L423:   * cite147†Recycling†www.microsoft.com L424:   * cite148†About our ads†choice.microsoft.com L425:   * © Microsoft 2026
+

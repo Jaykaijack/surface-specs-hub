@@ -1,0 +1,484 @@
+微软认证翻新 Surface Pro 第11版-微软AI+ PC-Windows 11 AI笔记本-微软官方商城 (https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-11th-edition)
+citeturn91view0 [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-11th-edition","lineno":200}); Total lines: 608
+L0: JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser.
+L1: 
+L2: Menu
+L3: 
+L4: cite0†微软官方商城 L5: 
+L6: cite1†Menu L7:   * 硬件
+L8:     * Surface
+L9:       * 认证翻新 Surface
+L10:         * 认证翻新 Surface
+L11:         * 认证翻新 Surface 商用版
+L12:     * 特惠翻新 Surface
+L13:     * Xbox+游戏
+L14:       * 手柄及遥控器
+L15:       * Xbox 主机
+L16:       * 游戏机周边配件
+L17:       * 本周畅销游戏推荐
+L18:       * 光盘游戏
+L19:     * 配件
+L20:       * Surface配件
+L21:         * 键鼠+Dial
+L22:         * 触控笔
+L23:         * 保护类
+L24:         * 线材及适配器
+L25:         * 维修部件
+L26:       * Xbox 配件
+L27:         * 手柄及遥控器
+L28:         * 游戏机周边配件
+L29:       * 自适应配件
+L30:       * 键鼠
+L31:       * 线材及适配器
+L32:       * 其他配件
+L33:   * 软件
+L34:     * Microsoft 365
+L35:     * Office 2024
+L36:     * Windows
+L37:     * Apps与Windows 10游戏
+L38:     * Visual Studio
+L39:     * Microsoft Complete and EHS
+L40:     * 其他软件与服务
+L41:   * 折扣专区
+L42:   * Surface
+L43:   * 特惠翻新 Surface
+L44:   * 教育优惠
+L45:   * 企业购
+L46:   * 我的优惠券
+L47:   * 以旧换新
+L48:   * 商城承诺
+L49:   * 支持与帮助
+L50:   * 专栏博客
+L51:   * 更多
+L52: cite2†账户 L53: 
+L54: 搜索
+L55: 
+L56: cite3†My Cart L57: 
+L58: 登录
+L59: 
+L60: Search
+L61: 
+L62: Search
+L63: 
+L64: [Input]
+L65: 
+L66: cite4†Advanced Search L67: 
+L68: Search
+L69: 
+L70: [Button: 取消]
+L71: 
+L72: cite5†Image†cdn.microsoftstore.com.cn L73: 
+L74: cite5†Image†cdn.microsoftstore.com.cn L75: 
+L76:   * cite6†我的账户 L77:   * cite7†我的订单 L78:   * cite8†地址管理 L79:   * cite9†我的专区 L80:   * cite10†我的优惠券 L81:   * cite11†退出 cite12†登录 L82: 
+L83: [Input]
+L84: 
+L85: 配置设备
+L86: 
+L87: cite13†Image†cdn.microsoftstore.com.cn L88: 
+L89: 微软认证翻新 Surface Pro
+L90: 
+L91: 在一台功能强大的电脑中，同时获得灵活性与便携性。有了 AI 加速的 Windows 11 AI+ PC 体验，还有长效电池续航，Surface Pro 生来就是为了让你随时行动自如。
+L92: 
+L93: cite14†Image†cdn.microsoftstore.com.cn L94: 
+L95: cite14†Image†cdn.microsoftstore.com.cn L96: 在 Surface Pro 的 PixelSense 触控屏显示器上，你可以通过触控手势、语音或者触控笔来表达你的想法。
+L97: 
+L98: 为提升生产力和创造力而打造。
+L99: 
+L100: 二合一设计让这款超便携的电脑具备更高的灵活性。
+L101: 
+L102: Surface Pro – 12 英寸全新呈现
+L103: 
+L104: 为多功能而生
+L105: 
+L106: Surface Pro 设备配备 12 英寸和 13 英寸 PixelSense 显示屏，可提供 AI 加速体验，并无缝连接 Surface Pro 键盘以获得出色的键入和滚动体验。
+L107: 
+L108: 12 英寸 13 英寸
+L109: 
+L110: Previous
+L111: 
+L112: Next
+L113: 
+L114: cite15†Image: 横向或纵向†cdn.microsoftstore.com.cn L115: 
+L116: cite16†Image: 方便安全的存储†cdn.microsoftstore.com.cn L117: 
+L118: cite17†Image: 一键即可从平板电脑转换为笔记本电脑†cdn.microsoftstore.com.cn L119: 
+L120: cite18†Image: 绚丽的显示屏†cdn.microsoftstore.com.cn L121: 
+L122: cite19†Image: 后置摄像头†cdn.microsoftstore.com.cn L123: cite20†Image: 超凡灵活性†cdn.microsoftstore.com.cn L124: ## 横向或纵向
+L125: 
+L126: 轻松切换浏览、记笔记或创作的方向。
+L127: 
+L128: ## 方便安全的存储
+L129: 
+L130: 超薄触控笔固定在 Surface Pro 背面，可轻松取用、安全充电。
+L131: 
+L132: ## 一键即可从平板电脑转换为笔记本电脑
+L133: 
+L134: 使用 Surface 键盘，轻松将 Surface Pro 转变为完整的笔记本电脑。
+L135: 
+L136: ## 绚丽的显示屏
+L137: 
+L138: 13 英寸超亮显示屏，可选配 OLED PixelSense 显示屏，体验绚丽色彩。^{20}
+L139: 
+L140: ## 后置摄像头
+L141: 
+L142: 1000 万像素超高清后置摄像头，集拍摄、扫描和编辑功能于一身。
+L143: 
+L144: ## 超凡灵活性
+L145: 
+L146: 13 英寸 Pro Flex 键盘既可连接，又可分离，可在任何你舒适的地方使用。
+L147: 
+L148: End of Explore laptops designed by Microsoft
+L149: 
+L150: 16
+L151: 
+L152: ### 长效电池使用时间
+L153: 
+L154: 更少的停机时间和更多电量，视频播放时间长达 16 小时。^{4}
+L155: 
+L156: 50%
+L157: 
+L158: ### 更出色的性能表现
+L159: 
+L160: 相较 Surface Pro 9，速度提升超 50%。^{6}
+L161: 
+L162: cite21†Image†cdn.microsoftstore.com.cn L163: ### 令人惊叹的触控显示屏
+L164: 
+L165: 12 英寸 PixelSense 触控屏显示器，可与触控操作和触控笔配合使用。^{5}
+L166: 
+L167: cite22†Image†cdn.microsoftstore.com.cn L168: 
+L169: ### 利用 AI 成就更多
+L170: 
+L171: 借助 45 TOPS 的算力，让工作更高效，创造力更出众。
+L172: 
+L173: 14
+L174: 
+L175: ### 长效电池使用时间
+L176: 
+L177: 更少的停机充电时间和更多电量，视频播放时间长达 14 小时。^{4,29}
+L178: 
+L179: 90%
+L180: 
+L181: ### 更出色的性能表现
+L182: 
+L183: 由 Snapdragon^{®} X Elite 和 Plus 处理器提供支持，性能强劲非凡。^{7}
+L184: 
+L185: cite21†Image†cdn.microsoftstore.com.cn L186: 
+L187: ### 电影级显示屏
+L188: 
+L189: OLED 触控屏为可选组件，具备 100 万：1 的对比度，能呈现超宽色域的绚丽显示效果。
+L190: 
+L191: cite22†Image†cdn.microsoftstore.com.cn L192: ### 利用 AI 成就更多
+L193: 
+L194: 借助 45 TOPS 的算力，让工作更高效，创造力更出众。
+L195: 
+L196: cite23†Image†cdn.microsoftstore.com.cn L197: 
+L198: cite23†Image†cdn.microsoftstore.com.cn L199: 
+L200: Surface Pro 经过重新设计，配备了顺滑的哑光掌托、坚固的楔形外观以及灵活的铰链，无论在哪里打字都很合适，即便是放在腿上也没问题。
+L201: 
+L202: 令人惊叹的打字体验
+L203: 
+L204: 有了更舒适的打字体验和 360° 旋转功能，无论身处何地，皆可高效办公。Surface Pro 坚固耐用，易于清洁，无论是出差旅游还是在咖啡馆办公，都是理想之选。
+L205: 
+L206: cite24†Image†cdn.microsoftstore.com.cn L207: 
+L208: cite24†Image†cdn.microsoftstore.com.cn L209: 
+L210: 沉浸式屏。凭借其 PixelSense 触控屏，你将获得高分辨率、沉浸式的视觉体验，且该屏幕能适应不同的光照条件。
+L211: 
+L212: 任何位置均适用
+L213: 
+L214: 无论是连接使用还是分离使用，无论是在腿上办公还是在飞机上办公，Surface Pro Flex 键盘都能让你工作状态不受影响。
+L215: ## 内置 AI
+L216: 
+L217: 快来体验这款会让你爱不释手的 Windows 11 AI+ PC 吧，它能帮助你高效完成工作，更能激发你无尽的创造力。^{3}
+L218: 
+L219: ### 找到你心中所想
+L220: 
+L221: 用日常语言进行搜索，或者描述一下你要找的内容，就能在你的电脑上找到文件和图片。^{50}
+L222: 
+L223: ### 单击即做
+L224: 
+L225: 借助单击即做针对屏幕识别出的文本和图像的即时操作功能，提升生产力与创造力。^{49}
+L226: 
+L227: ### 回顾（预览版）
+L228: 
+L229: 在电脑上搜索文档、电子邮件或网页可能是一个非常耗时的过程。使用电脑历史记录中的可探索时间线来检索你看到它的那一时刻。^{9}
+L230: 
+L231: cite25†Image: 借助 AI 的力量进行搜索†cdn.microsoftstore.com.cn L232: 
+L233: 借助 AI 的力量进行搜索
+L234: 
+L235: cite26†Image: 简化你的工作流†cdn.microsoftstore.com.cn L236: 
+L237: 简化你的工作流
+L238: 
+L239: cite27†Image: 追溯过去的脚步†cdn.microsoftstore.com.cn L240: 
+L241: 追溯过去的脚步
+L242: ## 所有你喜欢的应用
+L243: 
+L244: 在 Surface Pro 上进行创作、流式传输、聊天或使用你喜欢的应用。在 cite28†Microsoft Store†apps.microsoft.com 查找并下载所需内容。
+L245: 
+L246: cite29†Image L247: 
+L248: ## 精准书写，手感自然
+L249: 
+L250: 使用超精准的 Surface 超薄触控笔，在手写笔记、设计插图、编辑视频或注释文本时，获得自然的书写体验。
+L251: 
+L252: ## 精确灵敏的输入
+L253: 
+L254: 无论是在 Surface 触控屏上绘图、记笔记还是浏览，Surface 超薄触控笔都能提供强大功能和灵活性。
+L255: ## 手写内容转文本
+L256: 
+L257: 使用超薄触控笔，在 Windows 11 中可键入内容的任何位置书写，例如搜索框和输入字段。
+L258: 
+L259: cite30†Image†cdn.microsoftstore.com.cn L260: 
+L261: cite30†Image†cdn.microsoftstore.com.cn L262: 
+L263: 为提升生产力和创造力而打造。
+L264: 一旦某项任务要求进行打字操作，你可即刻着手。将 Surface Pro 与时尚耐用的 Pro 键盘无缝配对，将设备转变为笔记本电脑。
+L265: 
+L266: 时尚的设计
+L267: 
+L268: Pro 键盘专为让你保持高效而设计，为你提供舒适的打字体验，且按键带有背光。**
+L269: 此外，Pro 键盘配备可定制的触控板，为你带来舒适体验与高效办公。
+L270: 
+L271: ##
+L272: 
+L273: ## 展现自己最好的一面
+L274: 
+L275: Surface Pro 超广角四倍高清前置摄像头能将视频通话效果提升至新高度，无论从何处呼入，都能确保你获得绝佳的光线效果和清晰的通话体验。
+L276: 
+L277: cite31†Image†cdn.microsoftstore.com.cn L278: 
+L279: # 内置安全防护机制
+L280: 
+L281: cite32†Image†cdn.microsoftstore.com.cn L282: #
+L283: 
+L284: cite33†Image†cdn.microsoftstore.com.cn L285: 
+L286: ### 登录操作简单、流畅
+L287: 
+L288: 你可以使用面部识别、指纹等生物识别登录方式，或者用 PIN 码，安全登录你的 Surface Pro。
+L289: 
+L290: cite34†Image†cdn.microsoftstore.com.cn L291: 
+L292: #
+L293: 
+L294: cite35†Image†cdn.microsoftstore.com.cn L295: 
+L296: ### 芯片到云的安全性
+L297: 
+L298: 使用“查找我的设备”、无密码登录和内置防病毒保护等安全功能，以确保设备安全。
+L299: 
+L300: cite36†Image†cdn.microsoftstore.com.cn L301: 
+L302: #
+L303: 
+L304: cite37†Image†cdn.microsoftstore.com.cn L305: 
+L306: ### 一体化全方位保护
+L307: 
+L308: 为你和家人的设备、数据及个人身份信息提供无缝保护。
+L309: 
+L310: ## 查找适合你的 Surface 设备
+L311: 
+L312: 比较 Surface Pro 的特点和规格，找到最适合你的设备。
+L313: 
+L314: 比较并选择
+L315: 
+L316: ## 一探究竟
+L317: 
+L318: 查看 Surface Pro 的功能和规格的完整列表。
+L319: 
+L320: ##
+L321: 
+L322: #### 显示所有技术规格
+L323: 
+L324: #### 收起所有技术规格
+L325: ## 本着可持续性而设计
+L326: 
+L327: 我们在设计 Surface Pro 产品之初便已将循环经济纳入考量，这体现在更多再生材料、贴心包装和设备与生俱来的更出色的能效之中。Surface Pro 将进一步朝着 Microsoft 的目标迈进，即到 2030 年实现负碳排、水资源正效益和零废弃物排放。
+L328: 
+L329: ## 采用更多再生材料
+L330: 
+L331: Surface Pro 以再生材料打造而成，在 12 英寸及 13 英寸设备的外壳部分，采用了 100% 的再生铝合金。^{14}
+L332: 
+L333: ## 为电脑体验锦上添花
+L334: 打造出色的工作环境
+L335: 
+L336: ## 带超薄触控笔的 12 英寸 Surface 键盘盖
+L337: 
+L338: 添加 Surface 键盘, 即可将 Surface Pro 转变为一台完整的笔记本电脑，以获得优质、舒适的键入体验。^{14}
+L339: 
+L340: 选购键盘盖 + 超薄触控笔
+L341: 
+L342: ## 12 英寸 Surface 键盘盖
+L343: 
+L344: 添加 Surface 键盘, 即可将 Surface Pro 转变为一台完整的笔记本电脑，以获得优质、舒适的键入体验。^{14}
+L345: 
+L346: 选购键盘盖
+L347: ## Surface Pro Flex 13 英寸键盘（带超薄触控笔）
+L348: 
+L349: Surface Pro 13 英寸 Flex 键盘可与 Pro 设备连接或拆卸使用，配备精准触觉触控板，提供近乎无边框的使用体验，按键可实现超静音键入，与此同时，Surface 超薄触控笔可存储其中并充电。^{2}
+L350: 
+L351: 选购键盘 + 超薄触控笔
+L352: 
+L353: ## Surface Pro 13 英寸键盘（带超薄触控笔）
+L354: 
+L355: 集存储、充电、打字和书写功能于一体。配备大尺寸玻璃触控板，覆盖奢华的 Alcantara^{®} 材料，且触控笔存储位中带有 Surface 超薄触控笔。^{2}
+L356: 
+L357: 选购键盘 + 超薄触控笔
+L358: 
+L359: ## Surface Pro 13 英寸键盘
+L360: 
+L361: 随时随地畅享舒适打字体验。Surface Pro 键盘设计时尚，轻巧紧凑，同样配备大尺寸触控板，可实现精准定位。^{2}
+L362: 
+L363: 立即选购
+L364: 
+L365: ## Surface Arc 鼠标
+L366: 
+L367: 专为贴合你的手型而设计，展平后能轻松放入包中。通过蓝牙连接。丰富多样的颜色可供选择，用于搭配个性化设备使用。^{2}
+L368: 
+L369: 选购 Arc 鼠标
+L370: ## Surface 超薄触控笔
+L371: 
+L372: 使用由 AI 赋能的强大创意工具和 Surface 超薄触控笔，将创意变为现实。在手写笔记和绘图过程中，享受纸笔书写般的逼真体验。^{1,2}
+L373: 
+L374: 立即选购
+L375: ## Surface 45W USB-C 电源适配器
+L376: 
+L377: 这款外形时尚、轻巧紧凑的通用 USB-C^{®} 45W 电源专为 Surface 设备* 充电而设计，方便随身携带。^{16}
+L378: 
+L379: 选购 Surface 电源
+L380: 
+L381: [*] 需要订阅。另售。某些功能需要拥有软件许可。
+L382: 
+L383: [**] 键盘另售。
+L384: 
+L385: [1] 需要微软帐户。
+L386: 
+L387: [2] Microsoft 365 及某些配件和软件另售。
+L388: 
+L389: [3] 可用的 Windows 11 AI+ PC 体验因设备和市场而异。某些 Windows 11 AI+ PC 体验需要更新，这些更新将持续推出至 2025 年。请参阅 cite38†Windows 11 AI+ PC 常见问题解答†www.microsoft.com 。
+L390: 
+L391: [4] 电池使用时间可能会因设备配置、使用情况、网络和功能配置、信号强度、设置和其他因素而存在显著差异。请参阅 “cite39†Surface 电池性能†support.microsoft.com ” 了解更多信息。
+L392: 
+L393: ### 对于本地视频播放
+L394: 
+L395: Surface Pro 12 英寸 - 长达 16 小时
+L396: Surface Pro 13 英寸 - 长达 14 小时
+L397: ### 对于活跃的网页浏览
+L398: 
+L399: Surface Pro 12 英寸 - 长达 12 小时
+L400: Surface Pro 13 英寸 - 长达 10 小时
+L401: 
+L402: [5] Surface Pro 显示屏采用标准矩形搭配圆角的设计。按标准矩形测量时，屏幕的对角线尺寸为 12 英寸（实际可视区域较小）。
+L403: 
+L404: [6] 基于 Microsoft 2025 年 4 月使用 Geekbench 6 多核基准测试进行的内部测试，将 Surface Pro, Windows 11 AI+ PC, Snapdragon^{®} X Plus（8 核）处理器设备与配备英特尔^{®} 酷睿™ i5 处理器的 Surface Pro 9 进行比较。
+L405: 
+L406: [7] 与 Surface Pro 9 比较。
+L407: 
+L408: [8] HDR 需要 HDR 内容，并需要在设备设置中启用 HDR。
+L409: [9] 将于 2025 年初在大多数市场推出。针对特定语言（英语、简体中文、法语、德语、日语和西班牙语）进行优化。基于内容，且适用存储空间限制。需要 cite40†Windows Hello 增强的登录安全性†learn.microsoft.com 。请参阅 cite38†Windows 11 AI+ PC 常见问题解答†www.microsoft.com 。
+L410: 预发布产品展示，如有变化，请以实际情况为准。
+L411: 
+L412: [13] 目前支持将 40 多种语言的视频和音频字幕翻译成英语。请参阅 cite38†Windows 11 AI+ PC 常见问题解答†www.microsoft.com 。
+L413: 
+L414: [14] 外壳包括托架、一体式支架和触控笔笔槽。托架采用 100% 再生铝合金。磁性组件采用 100% 再生稀土金属。基于 Underwriter Laboratories, Inc. 根据 “再生成分环境声明验证程序” （ECVP）（UL ECVP 2809-2，第二版，2024 年 6 月 20 日）进行的验证。
+L415: 
+L416: [15] 可选颜色因配置和销售区域而异。
+L417: [16] 不包含充电器。额定功率为 45W 或更高的 USB Type-C PD 充电器支持快速充电（从 5% 到 80%），单独销售。测试于 2025 年 3 月在受控条件下使用试制设备、软件和最小功率为 45 W 的 USB-C^{®} 充电器在 Microsoft 进行。设备以默认显示亮度设置开启，并显示桌面屏幕。实际充电时间将根据运行条件而有所不同。在 23℃ 的典型办公室环境温度下进行测量。
+L418: 
+L419: [17] 系统软件会占用大量的存储空间。可用存储空间会根据系统软件更新和应用的使用情况而改变。1 GB = 10 亿字节。1 TB = 1,000 GB。有关详细信息，请参阅 cite41†Surface 存储空间†support.microsoft.com 。
+L420: 
+L421: [18] 32GB、64GB 内存和 1TB 存储空间选项仅适用于 Surface Pro 13 英寸，仅 Wi-Fi 版。
+L422: 
+L423: [19] 本设备不包含用户可维修组件。硬盘仅可由授权的技术人员按照 Microsoft 提供的说明进行拆卸。
+L424: [20] Surface Pro 显示屏采用标准矩形搭配圆角的设计。按标准矩形测量时，屏幕对角线尺寸为 13 英寸（实际可视区域稍小）。
+L425: 
+L426: [21] 需要杜比视界^{®} 编码的内容和视频。
+L427: 
+L428: [23] 可能因制造工艺而异。
+L429: 
+L430: [24] 重量不包含专业键盘盖。
+L431: 
+L432: [26] 需要杜比全景声（Dolby Atmos^{®}）编码的内容和音频。
+L433: 
+L434: [29] 在特定市场中，只有特定配置才随附 39W Surface 电源。当与功率最低为 65W 的 Surface 电源或额定功率为 60W 或更高瓦数的 USB Type-C PD 充电器（另售）配合使用时，支持快速充电。测试于 2024 年 3 月由 Microsoft 实施。有关快速充电功能的详细信息，请参见 - cite42†Surface 的 USB-C^{®} 和快速充电功能 - Microsoft 支持†support.microsoft.com 。
+L435: 
+L436: [30] 仅支持具有 5G 功能的 Surface Pro 13 英寸设备。5G 功能并非在所有地区都可用；兼容性和性能取决于运营商网络、套餐和其他因素。请咨询运营商了解详情和定价。
+L437: [31] 6GHz 频带并非适用于所有地区。
+L438: 
+L439: [34] 适用于 Surface Pro 键盘（带触控笔存储位）、Surface Pro Flex 键盘以及 Surface Pro 特制版专业键盘盖。
+L440: 
+L441: [38] 需运行 Windows 11。
+L442: 
+L443: [40] 至少 82.9% 的设备（不包括 PSU）含有 100% 再生钴。基于 Underwriter Laboratories, Inc. 使用 “再生成分环境声明验证程序” （ECVP）（UL ECVP 2809-2，第二版，2024 年 6 月 20 日）进行的验证。再生成分的定义符合 ISO 14201 标准。
+L444: 
+L445: [41] 适用于销售包装。基于使用 IEEE Std 1680.1-2018 进行的内部分析。《计算机和显示器环境与社会责任评估 IEEE 标准》。4.7.3.1 要求 — 木质纤维包装中的再生成分含量。
+L446: 
+L447: [42] 来源必须经过森林管理委员会认证。
+L448: 
+L449: [43] 请参阅 EPEAT 注册信息以了解当前评级。评级可能因国家/地区而异，可能会随着时间的推移而变化，并且产品最终会被记录归档。
+L450: [45] 可通过在线 cite43†Microsoft Store 购买更换组件，以进行保修期外维修。具有维修电子设备知识和经验的个人可以按照 Microsoft 的cite44†《服务指南》†www.microsoft.com 更换组件。维修可能需要 Microsoft 工具（另售）。替换组件和服务可选项的可用性可能因产品、市场和时间而异。请参阅 cite45†Surface 设备的自行维修信息 - Microsoft 支持†support.microsoft.com 。
+L451: 
+L452: [46] 所提供颜色仅适用于特定型号。可选颜色、尺寸、饰面材质及处理器可能因商店、产品销售区域和配置而异。
+L453: 
+L454: [47] Microsoft 的有限保修是对消费者法定权利的额外补充。
+L455: 
+L456: [48] 触控笔另售。
+L457: 
+L458: [49] 自 2025 年年初起，可在配备 Snapdragon® X 系列处理器的 Windows 11 AI+ PC 上使用，并从 2025 年年中开始在其他设备上使用。文本操作功能在特定字符集下可用；功能因市场而异。请参见 cite38†aka.ms/windows11aipluspcs†www.microsoft.com 。
+L459: [50] 自 2025 年年中起将可使用该功能。仅适用于特定的文本、图像和文档格式；针对部分语言（英语、简体中文、法语、德语、日语和西班牙语）进行了优化。请参阅 cite38†Windows 11 AI+ PC 常见问题解答†www.microsoft.com 。
+L460: 
+L461: cite46†Image: 微软认证翻新 Surface Pro†cdn.microsoftstore.com.cn L462: 
+L463: 打开图片
+L464: 
+L465: 4张图片
+L466: 
+L467:   * cite47†Image: 微软认证翻新 Surface Pro†cdn.microsoftstore.com.cn L468:   * cite48†Image: 微软认证翻新 Surface Pro†cdn.microsoftstore.com.cn L469:   * cite49†Image: 微软认证翻新 Surface Pro†cdn.microsoftstore.com.cn L470:   * cite50†Image: 微软认证翻新 Surface Pro†cdn.microsoftstore.com.cn L471: # 微软认证翻新 Surface Pro
+L472: 
+L473: 24期免息分期，享按月支付。了解更多>
+L474: 
+L475: [Input][Input][Input][Input][Input][Input][Input]
+L476: 
+L477: cite51†购买 （） L478: 
+L479: #### 登记手机号码及邮箱
+L480: 
+L481: 第一手新品资讯将通过手机短信或电子邮件发送给您。
+L482: 
+L483: *电子邮箱
+L484: 
+L485: [Input]
+L486: 
+L487: *手机号码
+L488: 
+L489: [Input]
+L490: #### 扫码微信小程序订阅
+L491: 
+L492: cite52†Image: wechatstore-signup†cdn.microsoftstore.com.cn L493: 
+L494: 扫码前往官方商城微信小程序，订阅新品资讯
+L495: 
+L496: 〖教育优惠〗高校学生及教职员，认证购机，享专属折扣。cite53†前往教育专区> L497: 
+L498: cite51†购买 （） L499: 
+L500: {"components":{"stockNotificationPopup":{"component":"IsobarCommerce_BuyBox\/js\/stock-notify-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"}},"mainProductId":"2384"}}}
+L501: 
+L502: *划线价格均为微软建议零售价。
+L503: 
+L504:   * 产品类别
+L505:     * cite54†Surface L506:     * cite55†Microsoft 365 L507:     * cite56†XBOX L508:     * cite57†Office L509:     * cite58†Windows L510:     * cite59†Visual Studio L511:     * cite60†混合现实 L512:     * cite61†其他软件与服务 L513:     * cite62†配件 L514:     * cite63†其他微软站点†www.microsoft.com L515:   * 账户信息
+L516: 
+L517:     * cite6†账户信息 L518:     * cite7†订单跟踪 L519:     * cite64†订单历史 L520:     * cite6†软件密钥和下载 L521:   * 支持与帮助
+L522: 
+L523:     * cite65†产品支持信息 L524:     * cite66†退换货政策 L525:     * cite67†常见问题 L526:     * cite68†软件产品问题 L527:     * cite69†教育优惠相关问题 L528:     * cite70†购物流程 L529:     * cite71†支付与配送 L530:     * cite72†售后服务 L531:     * cite73†专栏博客 L532:   * 热门资源
+L533:     * cite74†Surface Pro L534:     * cite75†Surface Laptop L535:     * cite76†优惠信息 L536:     * cite77†教育专区 L537:     * cite78†以旧换新 L538:     * cite79†商务专区 L539:   * 关于我们
+L540: 
+L541:     * cite80†查找店铺 L542:     * cite81†网站地图 L543:     * cite82†商城承诺 L544:     * cite0†商城首页 L545:   * 关注我们
+L546: 
+L547:     * 官方微博
+L548: 
+L549:     * 微软官方商城
+L550:     *     * 微信小店
+L551: 
+L552: cite83†Image: Wechatstore QRCode†cdn.microsoftstore.com.cn L553: 
+L554: cite63†其他微软站点†www.microsoft.com L555: 
+L556: cite84†中国 - 简体中文†www.microsoft.com L557: 
+L558: cite85†使用条款 cite86†销售条款 cite87†隐私权声明†go.microsoft.com 管理 Cookie cite88†商标†www.microsoft.com cite89†沪 ICP备12038052号-4†beian.miit.gov.cn L559: cite90†沪公网安备 31010402009788号†www.beian.gov.cn L560: 
+L561: cite91†公司证件†cdn.microsoftstore.com.cn © 2024 Microsoft
+L562: 
+L563: cite92†Image†cdn.microsoftstore.com.cn L564: 
+L565: 扫码小程序
+L566: 
+L567: 进行购买
+L568: 
+L569: cite93†Image: Contact customer service†cdn.microsoftstore.com.cn cite94†Image: Contact customer service†cdn.microsoftstore.com.cn L570: 
+L571: cite95†Image: miniapp_qrcode†cdn.microsoftstore.com.cn L572: 
+L573: cite96†Image: contact sales†cdn.microsoftstore.com.cn cite97†Image: contact sales†cdn.microsoftstore.com.cn cite98†Image: Contact customer service†cdn.microsoftstore.com.cn L574: cite99†Image: QR Code†cdn.microsoftstore.com.cn L575: 
+

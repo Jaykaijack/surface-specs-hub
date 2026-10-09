@@ -5,7 +5,7 @@
 
 const ToolsEngine = {
   spec(device, key) {
-    return Catalog.getSpec(device, key);
+    return Catalog.evidenceFor(device, key) ? Catalog.getSpec(device, key) : null;
   },
 
   parseMass(value) {
@@ -670,13 +670,13 @@ const ToolsEngine = {
   },
 
   guidePriceYuan(device) {
-    const raw = String(Catalog.getSpec(device, 'startingPriceCny') || '').replace(/,/g, '');
+    const raw = String(this.spec(device, 'startingPriceCny') || '').replace(/,/g, '');
     const match = raw.match(/(\d{4,6})/);
     return match ? Number(match[1]) : null;
   },
 
   guideCpuText(device) {
-    return String(Catalog.getSpec(device, 'cpuModel') || '');
+    return String(this.spec(device, 'cpuModel') || '');
   },
 
   guideIsIntel(device) {
@@ -689,13 +689,13 @@ const ToolsEngine = {
   },
 
   guideHours(device) {
-    const text = String(Catalog.getSpec(device, 'batteryLifeVideo') || Catalog.getSpec(device, 'batteryLifeLocalVideo') || '');
+    const text = String(this.spec(device, 'batteryLifeVideo') || this.spec(device, 'batteryLifeLocalVideo') || '');
     const match = text.match(/(\d+(?:\.\d+)?)\s*小时/);
     return match ? Number(match[1]) : 0;
   },
 
   guideGrams(device) {
-    return this.parseMass(Catalog.getSpec(device, 'weight'));
+    return this.parseMass(this.spec(device, 'weight'));
   },
 
   guidePassesFilters(device) {
@@ -742,7 +742,7 @@ const ToolsEngine = {
       if (this.guideIsIntel(device)) score += 80;
     }
     if (scene === 'ai_copilot') {
-      const npuVal = Catalog.npuScore(Catalog.getSpec(device, 'npuTops'));
+      const npuVal = Catalog.npuScore(this.spec(device, 'npuTops'));
       if (npuVal >= 80) score += 220;
       else if (npuVal >= 40) score += 140;
       if (this.guideIsSnapdragon(device)) score += 80;
@@ -761,16 +761,16 @@ const ToolsEngine = {
       if (device.segment === 'commercial') score += 50;
     }
     if (scene === 'cloud_gaming') {
-      const hz = String(Catalog.getSpec(device, 'refreshRate') || '');
+      const hz = String(this.spec(device, 'refreshRate') || '');
       if (hz.includes('120')) score += 110;
       if (device.categoryId === 'xbox') score += 150;
     }
     if (scene === 'medical_field') {
       if (device.categoryId === 'pro' || device.categoryId === 'go') score += 120;
     }
-    const pen = String(Catalog.getSpec(device, 'touchAndPenProtocol') || Catalog.getSpec(device, 'penSupport') || '');
+    const pen = String(this.spec(device, 'touchAndPenProtocol') || this.spec(device, 'penSupport') || '');
     if ((scene === 'design' || scene === 'creative_pen' || scene === 'study' || scene === 'study_exam') && /触控笔|MPP/.test(pen) && !pen.includes('不支持')) score += 70;
-    const npu = Catalog.npuScore(Catalog.getSpec(device, 'npuTops'));
+    const npu = Catalog.npuScore(this.spec(device, 'npuTops'));
     if (!isNaN(npu)) score += Math.min(npu, 80) / 10;
     score += (Number(device.year) || 0) / 100;
     return score;
@@ -779,13 +779,13 @@ const ToolsEngine = {
   guideCaveat(device) {
     const lines = [];
     if (device.status === 'upcoming') lines.push('官方页面写的是上市月份，现在还不能当作国行在售。');
-    const pen = String(Catalog.getSpec(device, 'touchAndPenProtocol') || '');
+    const pen = String(this.spec(device, 'touchAndPenProtocol') || '');
     if (pen.includes('不支持触控笔')) lines.push('官方写明不支持触控笔。');
-    const keyboard = String(Catalog.getSpec(device, 'keyboardCompat') || Catalog.getSpec(device, 'compatibleKeyboard') || '');
+    const keyboard = String(this.spec(device, 'keyboardCompat') || this.spec(device, 'compatibleKeyboard') || '');
     if (keyboard.includes('另售')) lines.push('键盘另售，不在主机包装里。');
-    const video = String(Catalog.getSpec(device, 'batteryLifeVideo') || '');
+    const video = String(this.spec(device, 'batteryLifeVideo') || '');
     if (video.includes('5G') && video.includes('Wi-Fi')) lines.push('Wi-Fi 机型和 5G 机型的续航要分开看。');
-    if (Catalog.getSpec(device, 'startingPriceCny') === 'not_disclosed') lines.push('国行售价官方页面没有标出。');
+    if (this.spec(device, 'startingPriceCny') === 'not_disclosed') lines.push('当前售价尚未绑定地区、配置和日期证据。');
     return lines.join('');
   },
 
@@ -819,7 +819,7 @@ const ToolsEngine = {
         matches: [],
         emptyNote: this.guideBudget === 'all'
           ? '当前形态和芯片条件下，没有在售或即将发售的机型。'
-          : '这个预算里没有官方标价、又符合条件的机型。没标价的机型不会被硬塞进预算档。'
+          : '当前没有已核验价格且符合此预算的机型。未核验的历史价格不参与预算筛选，可选择全部预算查看参数。'
       };
     }
     const leaders = ranked.slice(0, 2);
@@ -950,7 +950,7 @@ const ToolsEngine = {
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px;">
             <div>
               <h2 style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">🎯 场景化智能选型向导 (Surface Smart Guide)</h2>
-              <p style="font-size:13px; color:var(--ms-text-secondary);">根据您的核心应用场景、预算与形态偏好，3 秒匹配最契合的官方 Surface 机型与避坑建议。</p>
+              <p style="font-size:13px; color:var(--ms-text-secondary);">按场景与形态查找设备，数值筛选只使用已绑定来源的限定参数。请核对地区与具体配置。</p>
             </div>
             <button class="fluent-btn-sm" onclick="ToolsEngine.guideBudget='all'; ToolsEngine.guideScene='commute'; ToolsEngine.guideForm='all'; ToolsEngine.guideArch='all'; document.getElementById('tool-smart-guide-container').innerHTML = ToolsEngine.renderSmartGuide();">
               重置条件 ↺
@@ -1007,7 +1007,7 @@ const ToolsEngine = {
           </div>
         </div>
 
-        <p role="status" aria-live="polite" style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${rule.title}。符合条件 ${matches.length} 款，下面按官方参数排序，不只给两台旧机型。</p>
+        <p role="status" aria-live="polite" style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${rule.title}。符合条件 ${matches.length} 款，按已核对参数筛选；未知值不参与数值计算。</p>
         ${emptyNote ? `<p style="margin:12px 0 0; font-size:13px; color:var(--ms-text-secondary);">${emptyNote}</p>` : ''}
 
         <!-- 推荐结果卡片区 -->
@@ -1088,7 +1088,7 @@ const ToolsEngine = {
                 <div style="font-weight:600;">Surface 主机裸机净重</div>
                 <div style="font-size:11px; color:var(--ms-text-tertiary);">${currentDev.name} 铝合金/镁合金一体机身</div>
               </div>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight === null ? '待核验' : bodyWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight === null ? '待核验' : bodyWeight} g</div>${Catalog.evidenceMarkup(currentDev, 'weight')}
             </div>
 
             <div class="weight-item-row">
@@ -1220,7 +1220,7 @@ const ToolsEngine = {
         <div class="guide-panel" style="margin-top:16px; margin-bottom:16px;">
           <div style="font-size:16px; font-weight:700; color:var(--ms-accent);">性能与算力跃迁</div>
           <div style="font-size:13px; color:var(--ms-text-secondary); margin-top:4px;">
-            以下对比只展示当前两台设备的官方参数；官方未披露的项目不以估算值替代。
+            以下只展示已绑定当前值的限定来源参数；未核验项保留未知，不能据此推断升级优势。
           </div>
         </div>
 

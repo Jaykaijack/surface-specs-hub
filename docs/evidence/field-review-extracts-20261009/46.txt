@@ -1,0 +1,426 @@
+Surface Pro 商用版第 11 版，Windows 11 AI+ PC，酷睿 Ultra 笔记本电脑价格及规格 | 微软官方商城 (https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel)
+citeturn66view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel","lineno":300}); Total lines: 751
+L140: ### 任何光线条件下都清晰可见
+L141: 
+L142: 集成的防反射显示屏可减少高达 50% 的反射，帮助你在明亮光线条件下看清屏幕内容。
+L143: 
+L144: cite33†Image: 一人在 Surface Pro 商用版上使用超薄触控笔绘制彩色设计图。†cdn.microsoftstore.com.cn L145: 
+L146: ### 栩栩如生的色彩
+L147: 
+L148: 精准色彩与自适应显示屏，具备自动色彩管理功能，在任何环境下都能获得理想观看体验。
+L149: 
+L150: cite34†Image: 一人在分离状态的 Surface Pro Flex 键盘上打字，操作 Surface Pro 商用版。†cdn.microsoftstore.com.cn L151: 
+L152: ### 专为护眼设计
+L153: 
+L154: 显示屏经过测试，无闪烁且可减少蓝光暴露，有助于减轻用眼疲劳。^{11}
+L155: 
+L156: cite35†Image: 一人在 Surface Pro 商用版的触控屏上用手滚动浏览页面。†cdn.microsoftstore.com.cn L157: 
+L161: ## 为信任而生，同类产品中安全性更出色
+L162: 
+L163: cite36†Image: Surface 设备上 Windows 11 专业版安全性菜单的特写视图。†cdn.microsoftstore.com.cn L164: 
+L165: ### 保护业务数据
+L166: 
+L167: Surface Pro 商用版是一款安全核心 PC，旨在增强 Windows 11 专业版安全性的优势，同时提供额外的硬件和软件保护。
+L168: 
+L169: cite37†Image: Surface 设备上 Windows Hello 登录屏幕的特写视图。†cdn.microsoftstore.com.cn L170: 
+L171: ### 简单、安全，无密码登录
+L172: 
+L173: 使用集成的 NFC 读卡器或带面部识别功能的 Windows Hello，无需密码即可瞬间安全登录，有助于防范网络钓鱼和基于凭据的攻击。
+L174: 
+L175:   * cite38†Image†cdn.microsoftstore.com.cn L176: 
+L177: #### 从芯片到云的保护
+L178: 
+L179: Microsoft Pluton 实际上是一款内置安全处理器，它更难被破解，而且更容易更新。
+L180: 
+L181:   * cite39†Image†cdn.microsoftstore.com.cn L182: #### 快速保护敏感数据
+L183: 
+L184: 可拆卸的 SSD^{12} 便于快速且安全地擦除敏感数据，确保未经授权的人员无法访问机密信息。
+L185: 
+L186:   * cite40†Image†cdn.microsoftstore.com.cn L187: 
+L188: #### 防范不断演变的威胁
+L189: 
+L190: Windows 默认即安全，拥有多层硬件支持的保护，据报告安全事件减少了 62%。^{13}
+L191: 
+L192:   * cite41†Image†cdn.microsoftstore.com.cn L193: 
+L194: #### 让数据得到稳妥保护
+L195: 
+L196: 登录工作帐户，^{4} 聊天数据不会被保存，Microsoft 无法访问，你的数据也不会被用于训练模型。
+L197: 
+L198: cite42†Image: Surface Pro 商用版, Windows 11 AI+ PC 的电脑桌面†cdn.microsoftstore.com.cn L199: 
+L200: ## 事半功倍
+L201: 
+L202: 借助 Windows 11 专业版的商用 AI 和功能，轻松组织工作，平均提高工作流程速度达 50%。^{14}
+L203: 
+L204: ## 增强的 Windows 11 AI+ PC^{1} AI 体验
+L205: ## 用 AI 强化摄像头拍摄画面
+L206: 
+L207: Quad HD 高清前置摄像头拥有 Windows 电脑中最宽的视野。使用 AI 直接在设备上编辑由 1000 万像素 Ultra HD 超高清后置摄像头拍摄的照片。
+L208: 
+L209: cite43†Image: 一人在使用 Windows 工作室效果。†cdn.microsoftstore.com.cn L210: 
+L211:   * cite44†Image†cdn.microsoftstore.com.cn L212: 
+L213: #### 移动时保持画面居中
+L214: 
+L215: Windows 工作室效果具有自动取景功能，即使你在空间内移动，也能保持你身处焦点。
+L216: 
+L217:   * cite45†Image†cdn.microsoftstore.com.cn L218: 
+L219: #### 减少视觉干扰
+L220: 
+L221: 背景模糊功能可以实时虚化背景，保持对讲话者的关注，还能减少视觉干扰。
+L222: 
+L223:   * cite46†Image†cdn.microsoftstore.com.cn L224: 
+L225: #### 让会议更聚焦
+L226: 
+L227: 人像模糊功能可以根据周围环境调整背景模糊效果，并使用基于深度的感应将焦点集中在你身上。
+L228: 
+L229:   * cite47†Image†cdn.microsoftstore.com.cn L230: #### 提升通话参与度
+L231: 
+L232: 眼神接触让你即使在查看笔记时也能显得专注并与听众保持接触。
+L233: 
+L234: ## 破除语言壁垒
+L235: 
+L236: 启用实时字幕功能，支持 40 多种语言到英语的翻译。在 Windows 上的任何应用中，当有人进行直播或录制音频讲话时，都会显示实时字幕。^{15}
+L237: 
+L238: cite48†Image: 实时字幕在 Surface Windows 11 AI+ PC 上运行。†cdn.microsoftstore.com.cn L239: ## Microsoft 延保计划，让你更加安心
+L240: 
+L241: 提供多种不同计划供你选择，从机械故障到意外损坏，你可以获得所需的保障，包括延长保障和技术支持。
+L242: 
+L243: cite49†Image: 受 Microsoft Complete 保护计划保护的 Surface Pro 商用版。†cdn.microsoftstore.com.cn L244: 
+L245: [1] 在某些设备上，Windows 11 AI+ PC 体验需要免费更新，这些更新将从今年晚些时候开始提供，并持续到 2025 年。具体时间因设备、地区而异——请参阅 cite50†Windows 11 AI+ PC 常见问题解答†www.microsoft.com 。
+L246: 
+L247: [2] 基于本地视频播放测试。电池使用时间会因设备使用情况、网络和功能配置、信号强度、设置和其他因素而存在显著差异。请参阅 “cite51†Surface 电池性能†support.microsoft.com ” 了解更多信息。
+L248: [3] 在部分市场，仅特定配置的 Surface 附带 39 瓦 Surface 电源适配器。快速充电需要至少 65 瓦的 Surface 电源适配器或 USB Type-C^{®} PD 充电器，充电器需单独购买。测试由 Microsoft 于 2024 年 12 月进行。有关快速充电功能的详细信息，请参见 cite52†Surface 的 USB-C^{®} 和快速充电信息-Microsoft 支持†support.microsoft.com 。
+L249: 
+L250: [4] 配备 Intel^{®} 酷睿™ Ultra 5 处理器的机型可达 40 TOPS 且 AI 性能高达 Surface Pro 10 商用版的 3.5 倍。
+L251: 
+L252: [5] 另售。某些功能需要拥有软件许可。
+L253: 
+L254: [6] 拆离使用时需要 Windows 11。
+L255: [7] MIL-STD 810H 建立了在受控实验室条件下测试产品抗环境压力的方法。这些测试结果不保证在相同测试条件下的后续表现。客户使用不当造成的损坏，如 MIL-STD 810G 测试中包含的情况，不在 Microsoft 的有限硬件保修范围内。在 cite53†Surface 硬件环境测试结果†learn.microsoft.com 中了解更多信息。
+L256: 
+L257: [8] 6GHz 频带并非适用于所有地区。
+L258: 
+L259: [9] 需要安装设备，另售。
+L260: 
+L261: [10] HDR 需要 HDR 内容，并需要在设备设置中启用 HDR。
+L262: 
+L263: [11] 测试和认证已由 TÜV SÜD 执行，仅适用于 Surface Pro 商用版，Windows 11 AI+ PC | Intel 第 11 代。
+L264: [12] 只有在技术规格中标明 SSD 为可拆卸的 Microsoft Surface 设备，才提供固态硬盘（SSD）保留服务。“固态驱动器 (SSD) 保留”属于“延期硬件服务增强版”和“商业 Microsoft Complete 增强版”涵盖的服务，在购买 Microsoft 延期硬件服务和商业 Microsoft Complete 服务计划时可作为可选的附加项。退回给 Microsoft 的缺少固态硬盘（SSD）的设备需要支付固态硬盘（SSD）更换费，若该设备已加入硬盘（SSD）保留服务则无需支付此费用。
+L265: 
+L266: [13] Windows 11 调查报告。Techaisle（2024年9月）。Windows 11 的结果基于与 Windows 10 设备进行的比较。
+L267: 
+L268: [14] 与 Windows 10 设备对比。cite54†使用 Windows 11 专业版笔记本电脑改善你的日常体验。†www.principledtechnologies.com Principled Technologies，2023年2月。
+L269: [15] 目前支持将 40 多种语言的视频和音频字幕翻译成英语。cite55†了解详细信息。†www.microsoft.com L270: ### 技术规格
+L271: 
+L272: #### 处理器
+L273: 
+L274:  |
+L275: 
+L276:   * Intel^{®} 酷睿™ Ultra 5 处理器 236V
+L277:   * Intel^{®} 酷睿™ Ultra 5 处理器 238V
+L278:   * Intel^{®} 酷睿™ Ultra 7 处理器 266V
+L279:   * Intel^{®} 酷睿™ Ultra 7 处理器 268V
+L280: 
+L281: #### NPU
+L282: 
+L283:  |
+L284: 
+L285:   * Intel^{®} AI Boost，40 TOPS
+L286:   * Intel^{®} 酷睿™ Ultra 5 处理器 236V
+L287:   * Intel^{®} 酷睿™ Ultra 5 处理器 238V
+L288:   * Intel^{®} AI Boost，48 TOPS
+L289:   * Intel^{®} 酷睿™ Ultra 7 处理器 266V
+L290:   * Intel^{®} 酷睿™ Ultra 7 处理器 268V
+L291: 
+L292: #### 显卡
+L293: 
+L294:  | Intel^{®} Arc™ 显卡
+L295: #### 内存和存储空间^{1}
+L296: 
+L297:  |
+L298: 
+L299:   * 内存可选配置：16GB、32GB LPDDR5x RAM
+L300:   * 存储空间可选配置：可拆卸式^{2} 固态硬盘（第 4 代 SSD）：256GB、512GB、1TB
+L301: #### 显示屏
+L302: 
+L303:  |
+L304:   * 配备 OLED 显示屏的 Surface Pro 商用版：
+L305:   * 触控屏：13 英寸 PixelSense™ Flow 显示屏^{3}
+L306:   * 分辨率：2880 x 1920 (267 PPI)
+L307:   * 纵横比：3:2
+L308:   * 对比度：1000000:1
+L309:   * 动态刷新频率：高达 120Hz
+L310:   * 颜色配置：
+L311:   * SDR 模式：sRGB 和 Vivid
+L312:   * HDR 模式^{4}：HDR
+L313:   * 经单独颜色校准的显示器
+L314:   * 自适应颜色
+L315:   * 自动颜色管理
+L316:   * 触控：10 点多点触控
+L317:   * 支持杜比视界 IQ™^{5}
+L318:   * Corning^{®} Gorilla^{®} Glass 5
+L319:   * 防反光，已通过 ISO 9241-307 认证^{6}
+L320:   * 亮度：
+L321:   * SDR：最大 600 尼特（典型值）
+L322:   * HDR^{4}：900 尼特峰值亮度
+L323:   * 配备 LCD 显示屏的 Surface Pro 商用版：
+L324:   * 触控屏：13 英寸 PixelSense™ Flow 显示屏^{3}
+L325:   * 分辨率：2880 x 1920 (267 PPI)
+L326:   * 纵横比：3:2
+L327:   * 对比度：1300:1
+L328:   * 动态刷新频率：高达 120Hz
+L329:   * 颜色配置：sRGB 和 Vivid
+L330:   * 经单独颜色校准的显示器
+L331:   * 自适应颜色
+L332:   * 自动颜色管理
+L333:   * 触控：10 点多点触控
+L334:   * 支持杜比视界 IQ™^{5}
+L335:   * Corning^{®} Gorilla^{®} Glass 5
+L336:   * 防反光，已通过 ISO 9241-307 认证^{6}
+L337:   * 亮度：
+L338:   * SDR：最大 600 尼特（典型值）
+L339: #### 尺寸和重量^{7,8}
+L340: 
+L341:  |
+L342: 
+L343:   * 长度：287 毫米（11.3 英寸）
+L344:   * 宽度：209 毫米（8.2 英寸）
+L345:   * 厚度：9.3 毫米（0.37 英寸
+L346:   * 重量：872 克（1.92 磅）
+L347: 
+L348: #### 电池使用时间
+L349: 
+L350:  |
+L351: 
+L352:   * 支持长达 14 小时的本地视频播放^{9}
+L353:   * 支持长达 10 小时的网页浏览^{10}
+L354: 
+L355: #### 安全性
+L356: 
+L357:  |
+L358: 
+L359:   * 通过 TPM 2.0 芯片实现的企业级安全性，并提供 BitLocker 支持
+L360:   * Windows 11 安全核心 PC
+L361:   * Microsoft Pluton 技术
+L362:   * Windows Hello 面部识别功能，具备增强的登录安全性
+L363:   * NFC 身份认证
+L364: #### 摄像头
+L365: 
+L366:  |
+L367: 
+L368:   * Quad HD 前置 Surface Studio 摄像头
+L369:   * 1440p Quad HD 超广角摄像头
+L370:   * 支持 Windows 工作室效果，自动取景、眼神交流、人像模糊与背景模糊
+L371:   * 1000 万像素 Ultra HD 后置摄像头
+L372:   * 采用 Windows Hello 人脸识别身份验证摄像头，具备增强的登录安全性
+L373: 
+L374: #### 音频
+L375: 
+L376:  |
+L377: 
+L378:   * 双 Studio Mics，支持语音聚焦功能^{11}
+L379:   * 支持杜比全景声（Dolby Atmos^{®}）的 2W 立体声扬声器^{12}
+L380:   * 支持蓝牙（Bluetooth^{®}）LE 音频
+L381: #### 端口和充电
+L382: 
+L383:  |
+L384: 
+L385:   * 两个 USB-C^{®} 端口，支持 USB4^{®}/Thunderbolt™ 4：
+L386:   * 充电
+L387:   * 数据传输
+L388:   * DisplayPort 2.1，最多支持 2 台 4K 显示器
+L389:   * Surface Thunderbolt™ 4 扩展坞和其他配件
+L390:   * 支持通过 Surface Connect 或 USB-C^{®} 端口使用功率最小为 60W 的充电器进行快速充电^{13}
+L391:   * Surface Connect 端口
+L392:   * Surface Pro 键盘端口
+L393: 
+L394: #### 网络和连接性
+L395: 
+L396:  |
+L397: 
+L398:   * Wi-Fi 7^{14}
+L399:   * 蓝牙（Bluetooth^{®}）Core 5.4 技术
+L400: #### 触控笔和键盘兼容性^{15}
+L401: 
+L402:  |
+L403: 
+L404:   * 触控笔兼容性
+L405:   * 专为 Surface 超薄触控笔（第 2 版）设计
+L406:   * 搭配带触控笔存储位的 Surace Pro 键盘以及 Surface Pro Flex 键盘，可集成存储 Surface 超薄触控笔（第 2 版）并为其进行无线充电^{16}
+L407:   * 支持 Surface 超薄触控笔（第 2 版）的触觉信号功能
+L408:   * 支持 Microsoft Pen Protocol (MPP)
+L409:   * 键盘兼容性
+L410:   * cite56†了解兼容性信息†support.microsoft.com L411: 
+L412: #### 软件
+L413: 
+L414:  |
+L415: 
+L416:   * Windows 11 专业版
+L417:   * 预装 Microsoft 365 应用^{17}
+L418:   * Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 应用 30 天试用^{18}
+L419: #### 辅助功能
+L420: 
+L421:  |
+L422: 
+L423:   * 兼容 Surface 精准触觉触控板（Surface Pro Flex 键盘自带）
+L424:   * 兼容 Surface 适配套件
+L425:   * 兼容 Microsoft 自适应配件
+L426: 
+L427: #### 可持续性
+L428: 
+L429:  |
+L430: 
+L431:   * Surface Pro 商用版本着可持续性而设计。
+L432:   * 采用更多再生材料
+L433:   * 外壳的再生材料使用率至少为 89.1%，其中包括 100% 再生铝合金和 100% 再生稀土金属。^{19}
+L434:   * 贴心包装
+L435:   * 木质纤维包装中含有 72% 的再生材料^{20}
+L436:   * 以纸张为基础，尽量减少塑料的使用
+L437:   * 所有原生纸张均源自负责任管理的森林^{21}
+L438:   * 可修性
+L439:   * 清晰的可视图标与内置的维修指南访问码^{25}
+L440:   * Microsoft 致力于实现碳负排放，水资源正效益，并在 2030 年实现零废物。在 cite57†Microsoft Surface 可持续发展†www.microsoft.com 了解更多我们的可持续设计理念。
+L441: #### 可维修性
+L442: 
+L443:  |
+L444: 
+L445:   * 可更换组件包括^{25}：
+L446:   * 显示屏模块
+L447:   * 可拆卸式固态硬盘
+L448:   * 电池
+L449:   * 主板（包括主处理器和主存储器）
+L450:   * Surface Connect
+L451:   * 散热模块
+L452:   * 麦克风模块（包括红外摄像头）
+L453:   * 固态硬盘匣盖
+L454:   * 扬声器
+L455:   * 外壳（托架）
+L456:   * 前置摄像头
+L457:   * 后置摄像头
+L458:   * 电源和音量按钮
+L459:   * 一体式支架
+L460:   * 设备维修套件
+L461: 
+L462: #### 外观
+L463: 
+L464:  |
+L465: 
+L466:   * 机身材质：阳极氧化铝
+L467:   * 颜色^{26}：亮铂金和典雅黑
+L468:   * 实体按键：音量、电源
+L469: 
+L470: #### 一体式支架
+L471: 
+L472:  | 一体式支架，配备 165 度全阻尼铰链
+L473: 
+L474: #### 传感器
+L475: 
+L476:  |
+L477: 
+L478:   * 氛围颜色传感器
+L479:   * 加速度计
+L480:   * 陀螺仪
+L481:   * 磁强计
+L482:   * NFC
+L483: 
+L484: #### 装箱物品
+L485: 
+L486:  |
+L487: 
+L488:   * Surface Pro 商用版
+L489:   * 39 瓦电源
+L490:   * 快速入门指南
+L491:   * 安全手册及保修文档
+L492: #### 保修^{27}
+L493: 
+L494:  | 自购买凭证（发票）标注时间起，Surface 主机3年有限硬件保修。Surface 配件视品类而定，详情以所购产品包装盒内相关信息为准。
+L495: 
+L496: #### 电池容量^{7}
+L497: 
+L498:  |
+L499: 
+L500:   * 电池容量额定值（瓦时）：47
+L501:   * 电池容量最小值（瓦时）：46
+L502: #### 中国能效标识
+L503: 
+L504:  | cite58†Image†cdn.microsoftstore.com.cn L505: 
+L506: [1] 系统软件会占用大量的存储空间。可用存储空间会根据系统软件更新和应用的使用情况而改变。1 GB = 10 亿字节。1 TB = 1,000 GB。有关详细信息，请参阅 cite59†Surface 存储空间选项†support.microsoft.com 。
+L507: 
+L508: [2] 只有在技术规格中标明 SSD 为可拆卸的 Microsoft Surface 设备，才提供固态硬盘（SSD）保留服务。“固态硬盘（SSD）保留”属于“延期硬件服务增强版”和“商业 Microsoft Complete 增强版”涵盖的服务，在购买 Microsoft 延期硬件服务和商业 Microsoft Complete 服务计划时可作为可选的附加项。退回给 Microsoft 的缺少固态硬盘（SSD）的设备需要支付固态硬盘（SSD）更换费，若该设备已加入硬盘 (SSD) 保留服务则无需支付此费用。
+L509: [3] Surface Pro 商用版显示屏采用标准矩形搭配圆角的设计。按标准矩形测量时，屏幕对角线尺寸为 13 英寸（实际可视区域稍小）。
+L510: 
+L511: [4] HDR 需要 HDR 内容，并需要在设备设置中启用 HDR。
+L512: 
+L513: [5] ] 需要杜比视界^{®} (Dolby Vision^{®}) 编码的内容和视频。
+L514: 
+L515: [6] Surface Pro 商用版 | Intel 第 11 代的显示屏经过精心设计，可减少不必要的反射，并已通过 TÜV SÜD 认证，符合 ISO 9241-307 的要求。
+L516: 
+L517: [7] 可能因制造工艺而异。
+L518: 
+L519: [8] 重量不包含键盘。
+L520: [9] 基于本地视频播放测试。测试由 Microsoft 在 2025 年 1 月使用预制软件和预制的 Surface Pro 商用版 Intel^{®} 酷睿™ Ultra 5 256 GB、16 GB RAM (LCD) 设备以及 Intel ^{®} 酷睿™ Ultra 7 256 GB、16 GB RAM (OLED) 设备进行。测试项目包括在通过 Windows 媒体播放器应用程序以 24 FPS 的帧率播放 1080p 的 .mov 格式视频时使电池完全放电的情况。除屏幕亮度设置为 150 尼特和禁用自动亮度调节外，所有设置均为默认设置。Wi-Fi 在测试时保持联网状态。电池使用时间会因设置、使用情况及其他因素而有明显差异。
+L521: [10] 基于网页浏览测试。测试由 Microsoft 在 2025 年 1 月使用预制软件和预制的 Surface Pro 商用版 Intel^{®} 酷睿™ Ultra 5 256 GB、16 GB RAM (LCD) 设备以及 Intel^{®} 酷睿™ Ultra 7 256 GB、16 GB RAM (OLED) 设备进行。测试项目包含通过浏览器在多个打开的标签页上访问八个常用网站，并将电池电量完全耗尽的情况。除屏幕亮度设置为 150 尼特和禁用自动亮度调节外，所有设置均为默认设置。 Wi-Fi 在测试时保持联网状态。电池使用时间会因设置、使用情况及其他因素而有明显差异。
+L522: 
+L523: [11] 语音聚焦功能需要激活，并需使用 Windows 11 操作系统，在使用集成式设备麦克风和使用某些 Windows 音频处理模式的应用中可以使用。
+L524: 
+L525: [12] 需要杜比^{®} 全景声^{®} 编码的内容/音频。
+L526: [13] 在特定市场中，只有特定配置才随附 39 瓦 Surface 电源。最小功率为 65 瓦的 Surface 电源或最小 60 瓦的 USB Type-C^{®} PD 充电器或更大功率的充电器（另售）支持快速充电。测试于 2024 年 12 月由 Microsoft 实施。有关快速充电功能的详细信息，请参见 - cite52†Surface 的 USB-C^{®} 和快速充电功能 - Microsoft 支持。†support.microsoft.com L527: 
+L528: [14] 6GHz 频带并非适用于所有地区。
+L529: 
+L530: [15] 触控笔和键盘另售。
+L531: 
+L532: [16] 适用于 Surface Pro 键盘（带笔槽）、Surface Pro Flex 键盘以及 Surface Pro 特制版专业键盘盖。
+L533: 
+L534: [17] 另售。某些功能需要拥有软件许可。
+L535: [18] 需要激活。若你的设备由所在组织的 IT 部门管理，请联系 IT 管理员激活。30 天后，我们会向您收取适用的每月或每年订阅费用。需要信用卡。可随时取消，取消订阅即停止继续扣费。请参阅cite60†试用或购买 Microsoft 365 商业版订阅。†learn.microsoft.com L536: 
+L537: [19] 外壳包括托架。托架采用 100% 再生铝合金。磁性组件中采用 100% 再生稀土金属。基于 Underwriter Laboratories, Inc. 使用 “再生成分环境声明验证程序”（ECVP）（UL ECVP 2809-2，第二版，2024 年 6 月 20 日）进行的验证。
+L538: 
+L539: [20] 再生成分含量计算依据为 IEEE Std 1680.1-2018，《计算机和显示器环境与社会责任评估 IEEE 标准》。4.7.3.1 要求 — 木质纤维包装中的再生成分含量。
+L540: 
+L541: [21] 基于 FSC 认证。
+L542: [25] 替换组件可通过 Surface 商业授权设备经销商获得。组件可以由有经验的技术人员按照 Microsoft 的《服务指南》在现场更换。可能还需要 Microsoft 工具（另售）。替换组件和服务选项的可用性可能因产品、市场和时间而异。请参阅 cite61†Surface 服务选项 - Surface | Microsoft Learn†learn.microsoft.com 拆开和/或修理你的设备都有导致触电、火灾和/或人身伤害的风险和其他危险的可能性。如果自行维修，需谨慎处理。除非法律有要求，否则在维修过程中造成的设备损坏不在 Microsoft 的硬件保修或保护计划的保障范围内。
+L543: 
+L544: [26] 所提供颜色仅针对特定型号。可选颜色、尺寸、饰面材质及处理器可能因商店、产品销售区域和配置而异。
+L545: 
+L546: [27] Microsoft 的有限保修是对消费者法定权利的额外补充。
+L547: ## 本着可持续性而设计
+L548: 
+L549: Microsoft 设计的笔记本电脑致力于负责任的创新。cite62†了解更多关于 Surface 的可持续发展的信息†www.microsoft.com 。
+L550: 
+L551: cite63†Image: 郁郁葱葱的绿草中盛开的花朵，体现了 Microsoft 对可持续发展的环境承诺†cdn.microsoftstore.com.cn L552: 
+L553:   * cite64†Image†cdn.microsoftstore.com.cn L554: 
+L555: #### 提升供应链的可持续性
+L556: 
+L557: 为了推进 Microsoft 2030 年实现 100% 无碳电力的目标，我们主要设备供应商中的 40% 已在 2024 财年转向无碳电力（CFE）。
+L558: 
+L559:   * cite65†Image†cdn.microsoftstore.com.cn L560: 
+L561: #### 低碳配送
+L562: 
+L563: Microsoft 设备运营的一个基本原则是网络优化和效率。这使我们能够专注于在我们的配送和物流网络中采取旨在减少碳排放的措施，例如引入电动车辆以及在运输路段使用 HVO。
+L564: 
+L565:   * cite66†Image†cdn.microsoftstore.com.cn L566: #### 采用更多再生材料
+L567: 
+L568: Surface Pro 商用版外壳的回收材料利用率至少为 89.1%，其中包括 100% 再生铝合金和 100% 再生稀土金属。^{3}
+L569: 
+L570:   * cite67†Image†cdn.microsoftstore.com.cn L571: 
+L572: #### 贴心包装
+L573: 
+L574: 木质纤维包装，含有 72% 的再生材料。^{4}
+L575: 
+L576:   * cite68†Image†cdn.microsoftstore.com.cn L577: #### 本着可轻松维护而设计
+L578: 
+L579: Surface Pro 商用版更容易维修，因为设备内附有清晰的路径图标，服务指南和备件易于获取，电池和屏幕也更易于拆卸。^{5}
+L580: 
+L581: [1] 在某些设备上，Windows 11 AI+ PC 体验需要免费更新，这些更新将从今年晚些时候开始提供，并持续到2025年。具体时间因设备、地区而异——请参阅 cite50†Windows 11 AI+ PC 常见问题解答†www.microsoft.com 。
+L582: 
+L583: [2] 基于本地视频播放测试。电池使用时间会因设备使用情况、网络和功能配置、信号强度、设置和其他因素而存在显著差异。请参阅 cite51†Surface 电池性能†support.microsoft.com 了解更多信息。
+L584: 
+L585: [3] 外壳包括托架。托架采用 100% 再生铝合金制成。磁性组件中采用 100% 再生稀土金属。基于 Underwriter Laboratories, Inc. 使用 “再生成分环境声明验证程序” （ECVP）（UL ECVP 2809-2，第二版，2024 年 6 月 20 日修订）进行的验证。
+L586: [4] 再生成分含量计算依据为 IEEE Std 1680.1-2018，《计算机和显示器环境与社会责任评估 IEEE 标准》。4.7.3.1 要求 — 木质纤维包装中的再生成分含量。
+L587: 
+L588: [5] 替换组件可通过 Surface 商业授权设备经销商获得。组件可以由有经验的技术人员按照 Microsoft 的《服务指南》在现场更换。可能还需要 Microsoft 工具（另售）。替换组件和服务可选项的可用性可能因产品、市场和时间而异。请参阅 cite61†Surface 服务选项 - Surface | Microsoft Learn†learn.microsoft.com 。拆开和/或修理设备可能存在触电、发生火灾和人身伤害的风险，并造成其他危险情况。如果自行维修，需谨慎处理。除非法律有要求，否则在维修过程中造成的设备损坏不在 Microsoft 的硬件保修或保护计划的保障范围内。
+L589: ## 选择适合你的设备配置
+L590: 
+L591: cite69†选购所有 Surface 商用版设备 L592: 
+L593: cite70†Image: 一台 Surface Pro 商用版, Windows 11 AI+ PC | Intel。†cdn.microsoftstore.com.cn L594: 
+L595: ### Intel^{®} 酷睿™ Ultra 处理器（第二代）
+
