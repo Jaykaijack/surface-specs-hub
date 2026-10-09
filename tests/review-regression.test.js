@@ -40,7 +40,7 @@ for(const budget of ['budget_entry','budget_mid','budget_high','budget_pro']) {
 const registry=JSON.parse(fs.readFileSync('docs/full-library-verification-registry.json'));
 const fields=SURFACE_DATA.devices.flatMap(d=>Object.entries(d.specs).map(([field,value])=>({d,field,value})));
 assert.equal(registry.entries.length,fields.length);
-for(const {d,field,value} of fields){const e=registry.entries.find(e=>e.deviceId===d.id&&e.field===field);assert.ok(e);assert.equal(e.valueHash,crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex'));assert.equal(e.region,e.verdict === 'VERIFIED' ? 'CN' : d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN'));assert.equal(e.configuration,d.id);if(e.verdict==='VERIFIED'){assert.ok(e.reviewedAt&&e.sourceUrl);assert.equal(e.sourceUrl,d.specs.officialDocUrl);assert.ok(!(d.unverifiedFields || []).includes(field))}}
+for(const {d,field,value} of fields){const e=registry.entries.find(e=>e.deviceId===d.id&&e.field===field);assert.ok(e);assert.equal(e.valueHash,crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex'));assert.equal(e.region,e.verdict === 'VERIFIED' ? e.region : d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN'));assert.equal(e.configuration,d.id);if(e.verdict==='VERIFIED'){assert.ok(['CN','GLOBAL'].includes(e.region));assert.ok(e.reviewedAt&&e.sourceUrl);assert.equal(e.sourceUrl,d.specs.officialDocUrl);assert.ok(!(d.unverifiedFields || []).includes(field))}}
 assert.equal(require('../js/verification-status').resolve('pro-12-13-intel').status,'pending');
 const evidence=require('../docs/evidence/ultra-business-cn-20261009.json');
 assert.equal(evidence.region,'CN');assert.equal(evidence.consumerOrOtherRegionApplicable,false);assert.equal(evidence.values.batteryCapacityWh.minimum,89);assert.equal(evidence.values.npuInt8Tops,null);
@@ -70,12 +70,13 @@ assert.match(Catalog.getSpec(ultra,'storageOptions'),/512 GB 第 4 代.*1 TB.*2 
 assert.match(Catalog.getSpec(ultra,'warranty'),/3 年/);
 assert.equal(ultra.status,'upcoming');assert.equal(ultra.availability.shippingStarts,'2026-10-16');
 assert.equal(Catalog.getSpec(ultra,'repairabilityScore'),null);
-assert.equal(Catalog.getSpec(ultra,'cpuArch'),null);
+assert.match(Catalog.getSpec(ultra,'cpuArch'),/Arm/);
+assert.doesNotMatch(Catalog.getSpec(ultra,'cpuArch'),/3nm/);
 assert.equal(Catalog.getSpec(ultraConsumer,'resolution'),null);
 assert.equal(ultraConsumer.specs.resolution,require('../docs/evidence/production-20261009/ultra-input.json').devices[1].specs.resolution);
 assert.equal(Catalog.getSpec(ultraConsumer,'warranty'),null);
 assert.equal(Catalog.getSpec(ultraConsumer,'npuTops'),null);
-for(const acc of Catalog.accessories())assert.equal(t.getCompatStatus(acc.id,ultra.id).status,'UNKNOWN');
+for(const acc of Catalog.accessories())assert.equal(t.getCompatStatus(acc.id,ultra.id).status,acc.category==='pen'?'UNSUPPORTED':'UNKNOWN');
 console.log('Real Ultra import PASS: 90 records, China-business facts corrected, consumer raw values retained but not asserted, unknown configuration compatibility');
 
 assert.equal(ComparisonEngine.checkFieldDiff([{specs:{resolution:'3270 x 2180 (262 PPI)'}},{specs:{resolution:'3270 × 2180'}}],'resolution'),false);
@@ -109,3 +110,18 @@ assert.match(fs.readFileSync('css/specs-layout.css','utf8'),/guide-container sel
 console.log('Upstream/report regression PASS: unique IDs, safe updater, search aliases, atomic snapshot rejection, image hashes/blocked rendering/pending state, active narrow-screen CSS');
 
 assert.equal(Catalog.portrait({id:'pro-1',name:'Pro 初代',heroImage:'data:image/png;base64,AAA',specs:{}}).identity,'blocked','inline build must preserve mapping block');
+
+const scoped=require('../docs/evidence/review-batch-current-20261009.json');
+for(const e of scoped.entries) { const d=Catalog.getDevice(e.deviceId); assert.deepEqual(Catalog.getSpec(d,e.field),e.value); }
+for(const e of scoped.compatibility)assert.equal(t.getCompatStatus(e.accessoryId,e.deviceId).status,e.status);
+assert.equal(Catalog.getSpec(Catalog.getDevice('pro-12-13-snap'),'batteryCapacityWh'),null);
+assert.doesNotMatch(Catalog.getSpec(Catalog.getDevice('laptop-8-150-snap'),'usbPorts'),/MicroSD/);
+assert.equal(Catalog.portrait(Catalog.getDevice('duo-2'),'冰川白').identity,'blocked');
+console.log('Current-lineup source batch and explicit conflicts PASS');
+
+for(const source of scoped.sourceExtracts)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(source.path)).digest('hex'),source.sha256);
+const gaps=require('../docs/evidence/remaining-field-gaps-20261009.json');assert.equal(gaps.remaining,registry.entries.filter(e=>e.verdict!=='VERIFIED').length);assert.equal(gaps.total,registry.entries.length);
+
+const accessoryImages=require('../docs/evidence/accessory-and-ultra-images-20261009.json');
+for(const row of [...accessoryImages.accessories,...accessoryImages.ultraAssets])assert.equal(crypto.createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256);
+for(const acc of Catalog.accessories()){assert.equal(Catalog.accessoryPortrait(acc).identity,'pending');assert.match(Catalog.frame(Catalog.accessoryPortrait(acc)),/配件型号与视角待核验/);}

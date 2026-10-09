@@ -33,7 +33,7 @@ const Catalog = (function () {
   };
 
   // Visual review: docs/evidence/image-verification-20261009.json. Never substitute another product.
-  const BLOCKED_IMAGES = ['surface-pro-1-hero.png', 'surface-pro-2-hero.png', 'surface-hub-3-hero.png', 'surface-pro-9-forest.png'];
+  const BLOCKED_IMAGES = ['surface-pro-1-hero.png', 'surface-pro-2-hero.png', 'surface-hub-3-hero.png', 'surface-pro-9-forest.png', 'surface-duo-2-obsidian.png', 'surface-duo-2-glacier.png'];
   const IMAGE_PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220"><rect width="320" height="220" fill="#eee"/><text x="160" y="110" text-anchor="middle" fill="#555" font-size="16">图片待核验，暂不展示</text></svg>');
   const PORTRAIT_REV = '20261009-review';
   const DELIVERY_REV = '20260925pic2';
@@ -582,7 +582,7 @@ const Catalog = (function () {
       return { src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName) };
     }
     // Keep the same block in single-file builds, where original paths become data URIs.
-    const blockedMapping = ['pro-1','pro-2','hub-3'].includes(device.id) || (device.id === 'pro-9' && colorName === '森野绿');
+    const blockedMapping = ['pro-1','pro-2','hub-3','duo-2'].includes(device.id) || (device.id === 'pro-9' && colorName === '森野绿');
     if (blockedMapping || BLOCKED_IMAGES.includes(raw.split('/').pop().split('?')[0])) return {src: IMAGE_PLACEHOLDER, identity: 'blocked', alt: deviceAlt(device, colorName) + '：图片存在错配或裁切问题，暂不展示'};
     const review = device.imageVerification || {};
     const explicitIdentity = ['pending', 'diagram', 'shared'].indexOf(review.status) !== -1;
@@ -592,6 +592,11 @@ const Catalog = (function () {
       kind: review.kind || (review.status === 'diagram' ? 'diagram' : ''),
       alt: deviceAlt(device, colorName)
     };
+  }
+
+  function accessoryPortrait(accessory) {
+    return {src: accessory && accessory.image ? withPortraitRev(accessory.image) : IMAGE_PLACEHOLDER,
+      identity: 'pending', kind: 'accessory', alt: accessory ? accessory.name : '配件图片待核验'};
   }
 
   function portraitLabel(shot) {
@@ -628,19 +633,20 @@ const Catalog = (function () {
       ? opts.alt
       : (shot && shot.alt ? shot.alt : '');
     const alt = escAttr(effectiveAlt);
+    const evidenceMark = shot && shot.kind === 'accessory' ? '<span class="portrait-stand-in">配件型号与视角待核验</span>' : '';
     const onerror = opts.onerror ? ' onerror="' + opts.onerror + '"' : '';
     const rawAttr = cleanSrc ? ' data-fallback-path="' + escAttr(cleanSrc) + '"' : '';
     const sizes = opts.sizes || slot.sizes;
     const widths = deliveryWidths(src);
     if (!widths) {
-      return '<img' + id + cls + ' src="' + escAttr(src) + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>';
+      return '<img' + id + cls + ' src="' + escAttr(src) + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>' + evidenceMark;
     }
     const fallback = deliveryUrl(src, 'webp', pickWidth(widths, slotName));
     return '<picture>'
       + '<source type="image/avif" srcset="' + srcsetFor(src, 'avif', widths) + '" sizes="' + sizes + '">'
       + '<source type="image/webp" srcset="' + srcsetFor(src, 'webp', widths) + '" sizes="' + sizes + '">'
       + '<img' + id + cls + ' src="' + fallback + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>'
-      + '</picture>';
+      + '</picture>' + evidenceMark;
   }
 
   function audience(device) {
@@ -729,6 +735,7 @@ const Catalog = (function () {
     acceptsCloudVersion: acceptsCloudVersion,
     onChange: onChange,
     portrait: portrait,
+    accessoryPortrait: accessoryPortrait,
     portraitLabel: portraitLabel,
     portraitMark: portraitMark,
     isRecentLaunch: isRecentLaunch,

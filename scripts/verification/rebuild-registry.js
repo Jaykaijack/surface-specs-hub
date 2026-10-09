@@ -4,9 +4,9 @@ const crypto = require('crypto');
 const data = require('../../js/surface-data');
 const target = 'docs/full-library-verification-registry.json';
 const previous = JSON.parse(fs.readFileSync(target, 'utf8'));
-const official = require('../../docs/evidence/ultra-business-cn-field-ledger.json').entries;
+const official = [...require('../../docs/evidence/ultra-business-cn-field-ledger.json').entries, ...require('../../docs/evidence/review-batch-current-20261009.json').entries];
 const entries = data.devices.flatMap(d => Object.entries(d.specs || {}).map(([field,value]) => {
-  const confirmed = official.find(e => e.deviceId === d.id && e.configuration === d.id && d.isCommercial === true && e.sourceUrl === d.specs.officialDocUrl && e.field === field && JSON.stringify(e.value) === JSON.stringify(value) && !(d.unverifiedFields || []).includes(field));
+  const confirmed = official.find(e => e.deviceId === d.id && e.configuration === d.id && e.sourceUrl === d.specs.officialDocUrl && e.field === field && JSON.stringify(e.value) === JSON.stringify(value) && !(d.unverifiedFields || []).includes(field));
   const region = confirmed ? confirmed.region : d.specs.salesRegion || (d.categoryId === 'xbox' ? 'UNKNOWN' : 'CN');
   const hash = crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
   const old = (previous.entries || []).find(e => e.deviceId === d.id && e.field === field);

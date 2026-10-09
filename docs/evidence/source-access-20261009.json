@@ -1,0 +1,1760 @@
+{
+  "notice": "Raw capture availability only; not an assertion that alternate official browsing is impossible, nor parameter verification. No unavailable value is converted to NOT_DISCLOSED.",
+  "sources": [
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-ultra-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.908697+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface/surface-laptop-ultra",
+      "bindings": [
+        {
+          "deviceId": "laptop-ultra-biz",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.909398+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra",
+      "bindings": [
+        {
+          "deviceId": "laptop-ultra",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.909788+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
+      "bindings": [
+        {
+          "deviceId": "pro-12-13-intel",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.910158+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
+      "bindings": [
+        {
+          "deviceId": "pro-12-13-intel",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "pro-12-13-snap",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "pro-12-13",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.910461+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business-snapdragon",
+      "bindings": [
+        {
+          "deviceId": "pro-12-13-snap",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.911106+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
+      "bindings": [
+        {
+          "deviceId": "pro-12-13",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.927602+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch",
+      "bindings": [
+        {
+          "deviceId": "pro-12-inch",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.928423+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-copilot-plus-pc-12inch-tech-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-12-inch",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "pro-12-inch-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.930066+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-pro",
+      "bindings": [
+        {
+          "deviceId": "pro-12-inch-2",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-12-inch-2",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.931238+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-11th-edition",
+      "bindings": [
+        {
+          "deviceId": "pro-11-13",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.932500+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-11-13",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "pro-11-biz-snap",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.933883+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-10-for-business",
+      "bindings": [
+        {
+          "deviceId": "pro-10-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.935114+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-10-for-business-features",
+      "bindings": [
+        {
+          "deviceId": "pro-10-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.936388+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-9",
+      "bindings": [
+        {
+          "deviceId": "pro-9",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.937697+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-9-features-and-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-9",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.938966+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-pro-8-%E7%89%B9%E6%80%A7-3310034a-953e-4680-a75d-35aa7d53b9a0",
+      "bindings": [
+        {
+          "deviceId": "pro-8",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.940303+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-8-features-and-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-8",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "pro-8-biz",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-8-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.941557+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-7-features-and-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-7-plus",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-7-plus",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.942852+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-pro-7-%E7%89%B9%E6%80%A7-82547b74-4b47-4977-8495-2a1e8093d562",
+      "bindings": [
+        {
+          "deviceId": "pro-7",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.944096+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-US/surface/models/surface-pro-7-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "pro-7",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.945358+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-pro-6-%E7%89%B9%E6%80%A7-336c1e57-a363-4416-a197-0f8c37d40362",
+      "bindings": [
+        {
+          "deviceId": "pro-6",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.946607+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "pro-6",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.947861+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-pro-5th-gen-%E7%89%B9%E6%80%A7-42d321e4-52d3-d059-4705-59540a43fa7b",
+      "bindings": [
+        {
+          "deviceId": "pro-5",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.949128+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-5th-gen-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "pro-5",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.950424+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-pro-4-%E7%89%B9%E6%80%A7-e3a8ac71-42ec-70e6-8c9a-b684531644ec",
+      "bindings": [
+        {
+          "deviceId": "pro-4",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.951712+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-4-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "pro-4",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.952928+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-3-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "pro-3",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-3",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.954188+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "pro-2",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-2",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.955336+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
+      "bindings": [
+        {
+          "deviceId": "pro-1",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-1",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.956575+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-pro-x-%E7%89%B9%E6%80%A7-5eb0dfb6-b4b3-461b-99d0-65e1866380c2",
+      "bindings": [
+        {
+          "deviceId": "pro-x",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.957859+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-x-features-and-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-x",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.959174+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-8-138-intel",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "laptop-8-150-intel",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.960356+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
+      "bindings": [
+        {
+          "deviceId": "laptop-8-138-intel",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-8-138-snap",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-8-150-intel",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-8-150-snap",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-8-138",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-8-150",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.961593+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
+      "bindings": [
+        {
+          "deviceId": "laptop-8-138-snap",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "laptop-8-150-snap",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.962845+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch-8th-edition",
+      "bindings": [
+        {
+          "deviceId": "laptop-8-138",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.964248+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/buy-surface-laptop",
+      "bindings": [
+        {
+          "deviceId": "laptop-8-150",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.965491+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
+      "bindings": [
+        {
+          "deviceId": "laptop-7-138",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "laptop-7-150",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.966667+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
+      "bindings": [
+        {
+          "deviceId": "laptop-7-138",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-7-biz-snap",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-7-150",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.967882+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-6-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-6-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.969180+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-6-for-business-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-6-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.970304+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-laptop-5-%E7%89%B9%E6%80%A7-5509a24a-f3c5-4309-8d5c-f4893708e1e7",
+      "bindings": [
+        {
+          "deviceId": "laptop-5",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.971604+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-5-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-5",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-5-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.972695+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-laptop-4-%E7%89%B9%E6%80%A7-9759c99d-1510-4ff6-a79a-e1a90c010b98",
+      "bindings": [
+        {
+          "deviceId": "laptop-4",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.974011+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-4-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-4",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.975207+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-laptop-3-%E7%89%B9%E6%80%A7-96a237f3-2391-4c62-8e7c-a4962c5b3648",
+      "bindings": [
+        {
+          "deviceId": "laptop-3",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.976468+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-3-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-3",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.977676+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-laptop-2-%E7%89%B9%E6%80%A7-70e28f11-09d2-4cf0-9d04-0ee0d17d590e",
+      "bindings": [
+        {
+          "deviceId": "laptop-2",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.978907+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-2-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-2",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.980090+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-1st-gen-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-1",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "laptop-1",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.981386+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-studio-2",
+      "bindings": [
+        {
+          "deviceId": "sls-2",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.982540+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-2-features",
+      "bindings": [
+        {
+          "deviceId": "sls-2",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "sls-2-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.984756+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-studio",
+      "bindings": [
+        {
+          "deviceId": "sls-1",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "sls-1-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.985043+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-US/surface/models/surface-laptop-studio-features",
+      "bindings": [
+        {
+          "deviceId": "sls-1",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "sls-1-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.986209+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-go-4-for-business",
+      "bindings": [
+        {
+          "deviceId": "go-4",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.987394+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-go-4-features",
+      "bindings": [
+        {
+          "deviceId": "go-4",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.988552+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-go-3-%E7%89%B9%E6%80%A7-2bb3e721-a477-49e0-8a71-3312e75e921c",
+      "bindings": [
+        {
+          "deviceId": "go-3",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.989850+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-3-features",
+      "bindings": [
+        {
+          "deviceId": "go-3",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "go-3-biz",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "go-3-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.991435+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-go-3",
+      "bindings": [
+        {
+          "deviceId": "laptop-go-3",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.992397+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-3-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-go-3",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-go-3-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.994190+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-studio-2-plus",
+      "bindings": [
+        {
+          "deviceId": "studio-2-plus",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "studio-2-plus-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.995795+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-studio-2-features",
+      "bindings": [
+        {
+          "deviceId": "studio-2-plus",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "studio-2-plus-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.997062+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-duo-2-features",
+      "bindings": [
+        {
+          "deviceId": "duo-2",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "duo-2",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:40.998288+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-book-3-%E7%89%B9%E6%80%A7-e78950d8-3015-4740-97eb-88ff23a7892a",
+      "bindings": [
+        {
+          "deviceId": "book-3-15",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "book-3-135",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.001907+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-book-3-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "book-3-15",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "book-3-135",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "book-3-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.002136+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-book-2-%E7%89%B9%E6%80%A7-e7608730-80d4-4545-a4e6-7b4430e7039f",
+      "bindings": [
+        {
+          "deviceId": "book-2-15",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.003394+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-book-2-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "book-2-15",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.004456+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-book-1st-gen-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "book-1",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "book-1",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.005658+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-go-2-%E7%89%B9%E6%80%A7-b4d45be0-80a5-48b4-82ab-251f7bb9ca25",
+      "bindings": [
+        {
+          "deviceId": "go-2",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.006877+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-go-2-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "go-2",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "go-2-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.007916+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-go-1st-gen-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "go-1",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "go-1",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.009249+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-laptop-go-2-%E7%89%B9%E6%80%A7-79b8a531-4e78-4eb1-995b-06f15dd64372",
+      "bindings": [
+        {
+          "deviceId": "laptop-go-2",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.010494+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-laptop-go-2-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-go-2",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.011655+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-laptop-go-%E7%89%B9%E6%80%A7-e7e00a9a-3d23-455b-80df-8d0092f69477",
+      "bindings": [
+        {
+          "deviceId": "laptop-go-1",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.012860+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-go-1st-gen-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-go-1",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.014083+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/surface-studio-2-%E7%89%B9%E6%80%A7-f0b12bc1-0268-4505-ba38-e6d7a46977ef",
+      "bindings": [
+        {
+          "deviceId": "studio-2",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.015284+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-2-features-and-specs",
+      "bindings": [
+        {
+          "deviceId": "studio-2",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.016450+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-studio-1st-gen-diagrams-and-tech-specs",
+      "bindings": [
+        {
+          "deviceId": "studio-1",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "studio-1",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.018465+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-2s-techspecs",
+      "bindings": [
+        {
+          "deviceId": "hub-2s",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "hub-2s",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.018947+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-duo-1st-gen-features-and-specs",
+      "bindings": [
+        {
+          "deviceId": "duo-1",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "duo-1",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.020144+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-for-business",
+      "bindings": [
+        {
+          "deviceId": "pro-12-inch-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.021305+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-12-inch-2nd-edition-for-business",
+      "bindings": [
+        {
+          "deviceId": "pro-12-inch-2-biz",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-12-inch-2-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.022664+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-13-inch-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.023841+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-copilot-plus-pc-13inch-tech-specs",
+      "bindings": [
+        {
+          "deviceId": "laptop-13-inch-biz",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "laptop-13-inch",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.025198+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-13-inch-2-biz",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "laptop-13-inch-2-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.026354+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business",
+      "bindings": [
+        {
+          "deviceId": "pro-11-biz-snap",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.027505+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel",
+      "bindings": [
+        {
+          "deviceId": "pro-11-biz-intel",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.028714+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-intel-tech-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-11-biz-intel",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.030074+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-7-biz-snap",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.031126+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel",
+      "bindings": [
+        {
+          "deviceId": "laptop-7-biz-intel",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.032378+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-intel-tech-specs",
+      "bindings": [
+        {
+          "deviceId": "laptop-7-biz-intel",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.033587+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
+      "bindings": [
+        {
+          "deviceId": "hub-3",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "hub-3",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.034732+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-go-3-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-go-3-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.035986+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-pro-9-for-business",
+      "bindings": [
+        {
+          "deviceId": "pro-9-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.037181+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-US/surface/models/surface-pro-9-features-and-specs",
+      "bindings": [
+        {
+          "deviceId": "pro-9-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.038379+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-5-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-5-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.039613+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/certified-refurbished-surface-laptop-studio-2-for-business",
+      "bindings": [
+        {
+          "deviceId": "sls-2-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.040707+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-inch",
+      "bindings": [
+        {
+          "deviceId": "laptop-13-inch",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.041984+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop",
+      "bindings": [
+        {
+          "deviceId": "laptop-13-inch-2",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "laptop-13-inch-2",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.043183+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13-inch-for-business",
+      "bindings": [
+        {
+          "deviceId": "laptop-13-inch-intel-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.044364+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-13-inch-features",
+      "bindings": [
+        {
+          "deviceId": "laptop-13-inch-intel-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.045554+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-book-3-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "book-3-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.046843+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-go-2-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "go-2-biz",
+          "role": "officialDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.048545+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-6-specs-and-features",
+      "bindings": [
+        {
+          "deviceId": "pro-6-biz",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "pro-6-biz",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.050592+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2005/05/28/what-type-of-tv-will-you-need-for-the-xbox-360/",
+      "bindings": [
+        {
+          "deviceId": "xbox-original",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-original",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.051757+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "http://mktplassets.xbox.com/NR/rdonlyres/D535D3AF-6943-4B91-ABF2-70B2D43D6B27/0/ConsoleWarranty_LATAM_0801.pdf",
+      "bindings": [
+        {
+          "deviceId": "xbox-360",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-360",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.053098+00:00",
+      "status": "RAW_HTTP_BLOCKED",
+      "httpStatus": 403
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2010/06/14/announcing-the-new-xbox-360/",
+      "bindings": [
+        {
+          "deviceId": "xbox-360-s",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-360-s",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.054280+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2013/06/10/e3-2013-xbox-360-reveal/",
+      "bindings": [
+        {
+          "deviceId": "xbox-360-e",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-360-e",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.055559+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/",
+      "bindings": [
+        {
+          "deviceId": "xbox-one",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-one",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.056737+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.xbox.com/en-US/consoles/xbox-one-s",
+      "bindings": [
+        {
+          "deviceId": "xbox-one-s",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-one-s",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.057976+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2019/04/16/xbox-one-s-all-digital-edition/",
+      "bindings": [
+        {
+          "deviceId": "xbox-one-s-digital",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-one-s-digital",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.059155+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/",
+      "bindings": [
+        {
+          "deviceId": "xbox-one-x",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-one-x",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.061229+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.xbox.com/en-US/consoles/xbox-series-s",
+      "bindings": [
+        {
+          "deviceId": "xbox-series-s-512",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-s-512",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-s-1tb",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.065054+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+      "bindings": [
+        {
+          "deviceId": "xbox-series-x",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-x",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-x-digital",
+          "role": "learnDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-x-2tb",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.066354+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/d/xbox-series-x25-limited-edition/8wg5vqp0x4h3",
+      "bindings": [
+        {
+          "deviceId": "xbox-series-x25",
+          "role": "officialDocUrl"
+        },
+        {
+          "deviceId": "xbox-series-x25",
+          "role": "learnDocUrl"
+        }
+      ],
+      "method": "read-only raw HTTP GET; separate from web text extraction",
+      "checkedAt": "2026-10-09T08:59:41.067135+00:00",
+      "status": "RAW_FETCH_FAILED",
+      "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ]
+}

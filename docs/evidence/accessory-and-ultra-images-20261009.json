@@ -1,0 +1,361 @@
+{
+  "reviewDate": "2026-10-09",
+  "accessories": [
+    {
+      "accessoryId": "surface-arc-mouse",
+      "name": "Surface Arc 鼠标 (Surface Arc Mouse)",
+      "path": "./assets/accessories/surface-arc-mouse.png",
+      "sha256": "8256efb8b8cc2691db77a1575c10fb02f8e9a0886c3ec6f64a20e67ffbc9bb03",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-precision-mouse",
+      "name": "Surface 精准鼠标 (Surface Precision Mouse)",
+      "path": "./assets/accessories/surface-precision-mouse.png",
+      "sha256": "10404f4695326e818c3660471ed758ea9ea73489985a083c4052c10833808333",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-mobile-mouse",
+      "name": "Surface 便携移动鼠标 (Surface Mobile Mouse)",
+      "path": "./assets/accessories/surface-mobile-mouse.png",
+      "sha256": "bdd9b65957d8b785b94e1c04a3843b133694c106f983a394ead6ab266013f01b",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-ergonomic-mouse",
+      "name": "Surface 人体工学鼠标 (Surface Ergonomic Mouse)",
+      "path": "./assets/accessories/surface-ergonomic-mouse.png",
+      "sha256": "d4d9314c3006d2a1026f95609c1274b004a72a526d90ac4d66ba37f74b3c43eb",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "flex-keyboard",
+      "name": "Surface Pro Flex 键盘",
+      "path": "./assets/accessories/flex-keyboard.png",
+      "sha256": "ae5f1b521994221bbed05fcb7bc06056e0d340075b973078ec362cda0c98106d",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "pro-signature-keyboard",
+      "name": "Surface Pro 特制版专业键盘盖 (带笔槽款)",
+      "path": "./assets/accessories/pro-signature-keyboard.png",
+      "sha256": "7a2f3ce17794fabe62cf42c16ccca4aac02dd5b241841104592e2b384b92c979",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "pro-classic-type-cover",
+      "name": "Surface Pro 经典专业键盘盖 (Type Cover)",
+      "path": "./assets/accessories/pro-classic-type-cover.png",
+      "sha256": "2554040f43b206c3be8c2b467a547338f5b8398a3887dc448a7ad670d297ceee",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "go-signature-type-cover",
+      "name": "Surface Go 特制版专业键盘盖 (Go Type Cover)",
+      "path": "./assets/accessories/go-signature-type-cover.png",
+      "sha256": "72d116c532ecb25b87c0e48e2777d8a4b9baa90cb60a41c8f2cc8d1f03e7e825",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-touch-cover",
+      "name": "Surface 早期经典触控键盘 (Touch / Type Cover 1~2)",
+      "path": "./assets/accessories/surface-touch-cover.png",
+      "sha256": "8fd1d98940bade838f1a12619f03bc3fd05d200fea2cbf0b7eb1503c3aa6a9ab",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-keyboard-desktop",
+      "name": "Surface 蓝牙桌面无线键盘 (含 Modern Keyboard 指纹款)",
+      "path": "./assets/accessories/surface-keyboard-desktop.png",
+      "sha256": "c626f006b7cba947f755ccedf410cfcd3ff50e37bd4c1583f2cee173f33abc66",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "slim-pen-2",
+      "name": "Surface 超感触控笔 2 (Slim Pen 2)",
+      "path": "./assets/accessories/slim-pen-2.png",
+      "sha256": "76cd08161e5180647be3036217428bd3bd068786f0e051d196bf9e69eb7232c7",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "slim-pen-1",
+      "name": "Surface 超感触控笔一代 (Slim Pen 1)",
+      "path": "./assets/accessories/slim-pen-1.png",
+      "sha256": "5c4caaa1c3462bdee09b3c38c5db3ef0ca0ffe0aa253e2dfddc94e6c681c7c99",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-pen-classic",
+      "name": "Surface 触控笔经典款 (Surface Pen 4096 级带笔夹/单侧磁吸)",
+      "path": "./assets/accessories/surface-pen-classic.png",
+      "sha256": "da8f021edf4be0e90f20c520cebcdd1d0bd0bd2daad360a6cc0f6fa2889a1755",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-pen-pro3",
+      "name": "Surface 初代压感触控笔 (Pro 3 / 256级 紫色顶键)",
+      "path": "./assets/accessories/surface-pen-pro3.png",
+      "sha256": "dd5a9cc40324f636058844f9126e0371bf0dbbb38b3d905a458f847f5d554015",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-dock-2",
+      "name": "Surface 拓展坞 2 代 (Surface Dock 2 磁吸口)",
+      "path": "./assets/accessories/surface-dock-2.png",
+      "sha256": "6efa092f98b27f97ce0488704131ffbc7c06b9e91a4cd3d36275dc50a260fd6e",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-dock-1",
+      "name": "Surface 拓展坞 1 代 (Surface Dock 1 砖块形)",
+      "path": "./assets/accessories/surface-dock-1.png",
+      "sha256": "a895160376835f8227aeb01d3ff67e75556978a6e555913ae2cc734661043a09",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-tb4-dock",
+      "name": "Surface 雷电 4 拓展坞 (Thunderbolt 4 Dock)",
+      "path": "./assets/accessories/surface-tb4-dock.png",
+      "sha256": "874034e48141ec43b7d4d25060468b0e278f6ced2ea400760a9359ad7acd83b9",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-travel-hub",
+      "name": "Surface 便携多功能扩展坞 (Surface USB-C Travel Hub)",
+      "path": "./assets/accessories/surface-travel-hub.png",
+      "sha256": "2f601f5c20e550c7489532243c4031be6c498b57739093b9a7cc713354829ec6",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-connect-usbc",
+      "name": "Surface Connect 转 USB-C 适配器 (历史神器)",
+      "path": "./assets/accessories/surface-connect-usbc.png",
+      "sha256": "caa80fa4cb3a473c4fceadaea3cfbd9f25b799001befd460f7cdb56cba765b3a",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-headphones-2",
+      "name": "Surface 头戴式降噪耳机 2 代 (Surface Headphones 2)",
+      "path": "./assets/accessories/surface-headphones-2.png",
+      "sha256": "ab4a727c7d0afbf2a236a8f8cf541800bcccd07d5037cedd88a89dee0d4a1bd6",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-earbuds",
+      "name": "Surface 真无线耳塞式耳机 (Surface Earbuds)",
+      "path": "./assets/accessories/surface-earbuds.png",
+      "sha256": "3cb34f542dea709548fc461f2003f2a0aace377c1c8486be2e38a01ec3c7c35d",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-audio-dock",
+      "name": "Surface 智能会议音箱拓展坞 (Surface Audio Dock)",
+      "path": "./assets/accessories/surface-audio-dock.png",
+      "sha256": "3b9a411af6a8b6c3c1ffb7c26aabb5c62edd5ad87154a2c1c7c345dc41ecc50e",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    },
+    {
+      "accessoryId": "surface-dial",
+      "name": "Surface Dial 屏幕实体交互旋钮",
+      "path": "./assets/accessories/surface-dial.png",
+      "sha256": "628eb0ca5ffb35e74301753b06aded18c41db390ce59b0633a2e25ee09493d35",
+      "sourceUrl": null,
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true,
+        "method": "local contact sheet pixels; no official origin comparison"
+      },
+      "gap": "缺少此型号原始官方图片及处理过程来源；不以文件名、同图或加载成功认证"
+    }
+  ],
+  "ultraAssets": [
+    {
+      "path": "assets/products/surface-laptop-ultra-gallery-1.png",
+      "sha256": "200dbf9341091218701df3164935617135bf227d98e47a7d908040b62acdda35",
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true
+      },
+      "role": "前视/后侧视图，待官方来源比对"
+    },
+    {
+      "path": "assets/products/surface-laptop-ultra-gallery-2.png",
+      "sha256": "d4160e2b0448c9c61613b9729aac76c235a93a291aa52bda399fc6a6753841a5",
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true
+      },
+      "role": "前视/后侧视图，待官方来源比对"
+    },
+    {
+      "path": "assets/products/surface-laptop-ultra-hero.png",
+      "sha256": "200dbf9341091218701df3164935617135bf227d98e47a7d908040b62acdda35",
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true
+      },
+      "role": "前视/后侧视图，待官方来源比对"
+    },
+    {
+      "path": "assets/products/surface-laptop-ultra-midnight.png",
+      "sha256": "d4160e2b0448c9c61613b9729aac76c235a93a291aa52bda399fc6a6753841a5",
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true
+      },
+      "role": "前视/后侧视图，待官方来源比对"
+    },
+    {
+      "path": "assets/products/surface-laptop-ultra-platinum.png",
+      "sha256": "f7f34f54b015ac285f0564d2e4d2daafa85485eef9063f2efd2177848f1e6c81",
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true
+      },
+      "role": "两台机器侧面对照，不能作为单一亮铂金正面配色图"
+    },
+    {
+      "path": "assets/products/surface-laptop-ultra-ports.png",
+      "sha256": "a0c5cedf4965dc1bc64f04071deacc022049bb72d6fbdce6459b2a2ba6e61345",
+      "status": "PENDING",
+      "visualReview": {
+        "reviewed": true
+      },
+      "role": "两种颜色机身接口局部图"
+    }
+  ],
+  "verified": 0
+}

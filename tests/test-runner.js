@@ -533,7 +533,7 @@ assert(mockDetailContainer.innerHTML.includes('50 TOPS'), '详情页指标卡与
 
 const mockSnapDetailContainer = { innerHTML: '' };
 App.renderProductDetailView(mockSnapDetailContainer, 'pro', 'pro-12-13-snap');
-assert(mockSnapDetailContainer.innerHTML.includes('双层串联 OLED'), '骁龙详情页完整参数表包含双层串联 OLED 真实参数');
+assert(mockSnapDetailContainer.innerHTML.includes('LCD / OLED') && !mockSnapDetailContainer.innerHTML.includes('双层串联 OLED'), '骁龙中国商用配置展示LCD/OLED，不声称未核实双层结构');
 assert(mockSnapDetailContainer.innerHTML.includes('80 TOPS'), '骁龙详情页指标卡正常渲染 80 TOPS 算力');
 
 // ----------------------------------------------------

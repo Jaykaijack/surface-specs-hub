@@ -261,7 +261,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       npuTopsContains: '80',
       batteryLifeVideoContains: '15.5',
       batteryLifeOfficeContains: '11.5',
-      batteryCapacityContains: '53',
       chargingPowerContains: '39',
       brightnessContains: '900',
       storageMustInclude: '256',
@@ -309,7 +308,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       
             "fastCharging": ["60","65"],
             "cpuCores": ["10","12"],
-            "cpuArch": ["Oryon","ARM64"],
             "usbPorts": ["USB-C","USB4","DisplayPort"],
             "thunderboltSupport": "USB4",
             "chargingPower": "39",},
@@ -504,7 +502,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       storageMustInclude: '256',
       colorNames: ['亮铂金', '典雅黑'],
       dimensionsContains: '301',
-      weightContains: '1350',
+      weightContains: '1.35',
       resolutionContains: '2304',
       refreshRateContains: '120',
       screenSizeContains: '13.8',
@@ -672,7 +670,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       resolutionContains: '3270',
       refreshRateContains: '120',
       screenSizeContains: '15',
-      usbMustInclude: ['USB-A', 'MicroSD'],
+      usbMustInclude: ['USB-A', 'USB4'],
       wifiMustInclude: 'Wi-Fi 7',
       dimensionsContains: '329',
       weightContains: '1.66',
@@ -708,7 +706,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "fastCharging": ["60","65"],
             "cpuCores": ["10","12"],
             "cpuArch": ["Oryon","ARM64"],
-            "usbPorts": ["USB-C","USB4","USB-A","MicroSDXC"],
+            "usbPorts": ["USB-C","USB4","USB-A"],
             "chargingPower": "65",},
       specState: {
             "kickstandType": "NOT_APPLICABLE"

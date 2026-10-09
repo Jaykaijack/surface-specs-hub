@@ -358,7 +358,7 @@ const ToolsEngine = {
                 return `
                   <th>
                     <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
-                      ${imgSrc ? Catalog.frame({ src: imgSrc, identity: 'official' }, { slot: 'audit', alt: col.name, loading: 'eager' }) : ''}
+                      ${imgSrc ? Catalog.frame(Catalog.accessoryPortrait(col), { slot: 'audit', alt: col.name, loading: 'eager' }) : ''}
                       <div>${col.name}</div>
                       <span style="font-size:10.5px; font-weight:normal; color:var(--ms-text-tertiary);">${col.sub}</span>
                     </div>
@@ -442,7 +442,7 @@ const ToolsEngine = {
 
         <div style="background:var(--ms-bg-card-secondary); padding:16px 20px; border-radius:var(--ms-radius-md);  display:flex; gap:20px; align-items:center;">
           <div style="flex-shrink:0; width:120px; height:90px; display:flex; align-items:center; justify-content:center; background:var(--ms-bg-card); border-radius:var(--ms-radius-sm); border:1px solid var(--ms-border-subtle); padding:6px;">
-            ${Catalog.frame({ src: SURFACE_DATA.getAccessoryImage(acc), identity: 'official' }, {
+            ${Catalog.frame(Catalog.accessoryPortrait(acc), {
               slot: 'guide',
               alt: acc.name,
               loading: 'eager'
@@ -581,7 +581,7 @@ const ToolsEngine = {
                       <tr>
                         <td class="compat-device-label">
                           <div style="display:flex; align-items:center; gap:10px;">
-                            ${Catalog.frame({ src: SURFACE_DATA.getAccessoryImage(acc), identity: 'official' }, {
+                            ${Catalog.frame(Catalog.accessoryPortrait(acc), {
                               slot: 'audit',
                               alt: acc.name,
                               loading: 'lazy'

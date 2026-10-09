@@ -1449,7 +1449,7 @@ const App = {
 
               <!-- 产品官方大图展示区 (响应式 WebP/AVIF + 优雅兜底) -->
               <div class="accessory-img-wrap">
-                ${Catalog.frame({ src: acc.image, alt: acc.name }, {
+                ${Catalog.frame(Catalog.accessoryPortrait(acc), {
                   slot: 'card',
                   className: 'accessory-card-img',
                   onerror: 'App.hideBrokenImage(this)'
@@ -1554,7 +1554,7 @@ const App = {
 
             <!-- 产品真实大图展示 -->
             <div style="width:100%; height:180px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:10px; box-sizing:border-box;">
-              <img src="${acc.image}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.1));" loading="lazy" onerror="App.hideBrokenImage(this)">
+              <span class="portrait-stand-in">配件型号与视角待核验</span><img src="${Catalog.accessoryPortrait(acc).src}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.1));" loading="lazy" onerror="App.hideBrokenImage(this)">
             </div>
 
             <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">${acc.name}</div>
@@ -2033,6 +2033,7 @@ const App = {
       <div class="catalog-detail-layout">
       <section class="catalog-detail-main">
       <p class="spec-evidence-note">参数记录尚未完成逐字段真实性核验；来源链接与历史记录日期不代表当前配置已确认。</p>
+      ${(dev.dataConflicts || []).map(conflict => `<p class="spec-evidence-note" role="note">来源冲突 · ${this.escapeText(conflict.field)}：${this.escapeText(conflict.reason)}。争议部分待核验，不作为配置结论。</p>`).join('')}
       <div class="catalog-breadcrumb">
         <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}">产品目录</a>
         <span>›</span>
