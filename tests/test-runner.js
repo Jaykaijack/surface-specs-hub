@@ -509,11 +509,13 @@ assert(tokensContent.includes('--md-sys-typescale-headline-large'), 'M3 规范: 
 assert(tokensContent.includes('--md-sys-color-primary'), 'M3 规范: 包含 M3 语义色 Primary 令牌');
 assert(tokensContent.includes('--md-sys-shape-corner-large'), 'M3 规范: 包含 M3 16px 圆角规范');
 
-const hubwebCssPath = path.resolve(__dirname, '../css/hubweb-layout.css');
-const hubwebCss = fs.readFileSync(hubwebCssPath, 'utf8');
-assert(hubwebCss.includes('aspect-ratio: 16 / 10'), '全站图片规范: 包含 16:10 标准化黄金比例舞台容器');
-assert(hubwebCss.includes('.m3-tab-bar'), '切换交互系统: 包含 M3 Tabs 标签页导航样式');
-assert(hubwebCss.includes('.m3-segmented-control'), '切换交互系统: 包含 M3 分段控制切换器样式');
+const specsCssPath = fs.existsSync(path.resolve(__dirname, '../css/specs-layout.css'))
+  ? path.resolve(__dirname, '../css/specs-layout.css')
+  : path.resolve(__dirname, '../css/hubweb-layout.css');
+const specsCss = fs.readFileSync(specsCssPath, 'utf8');
+assert(specsCss.includes('aspect-ratio: 16 / 10'), '全站图片规范: 包含 16:10 标准化黄金比例舞台容器');
+assert(specsCss.includes('.m3-tab-bar'), '切换交互系统: 包含 M3 Tabs 标签页导航样式');
+assert(specsCss.includes('.m3-segmented-control'), '切换交互系统: 包含 M3 分段控制切换器样式');
 
 // 检验 App 对象的切换交互能力
 assert(typeof App.switchDetailTab === 'function', '交互验证: App 具备 switchDetailTab 标签切换方法');

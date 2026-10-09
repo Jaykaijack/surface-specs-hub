@@ -4,7 +4,7 @@ Project domain model, hardware specifications, compliance redlines, and architec
 
 ## 1. Project Background & Purpose
 
-This project is a high-density, authoritative technical reference platform modeled after `HubWeb.cn`, engineered specifically for the entire Microsoft Surface product ecosystem (2012 - 2026). It serves training needs for livestream teams, sales consultants, tech enthusiasts, and IT procurement decision-makers.
+This project is a high-density, authoritative technical reference platform engineered specifically for the entire Microsoft Surface product ecosystem (2012 - 2026). Originated by the Microsoft Tmall Flagship Store livestream operations team, it serves training needs for livestream teams, sales consultants, tech enthusiasts, fans, and IT procurement decision-makers.
 
 ## 2. Hardware Lineup & Technical Specifications (2026 / FY27)
 
@@ -112,7 +112,7 @@ All hardware represented in the Specs Hub must reflect official Microsoft techni
 
 - **Deliverable**: Single-page static web application (`index.html`), 100% offline self-contained, zero backend/database/API server dependency.
 - **Visual Design**: Microsoft Fluent 2 Design System, Segoe UI typography, high contrast >4.5:1, Mica texture, true dark/light mode toggle.
-- **Layout**: High information-density 3-column layout modeled after HubWeb.cn:
+- **Layout**: High information-density 3-column layout:
   - Left: Tree navigation by category & series.
   - Center: Main work area (Cards, Sticky Comparison Table, Product Detail, Analysis Tools).
   - Bottom: Sticky floating comparison dock (`#comparison-dock`).

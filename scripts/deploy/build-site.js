@@ -81,6 +81,7 @@ function stripPublishedMasters(dir) {
   if (!fs.existsSync(dir)) return;
   for (const name of fs.readdirSync(dir)) {
     if (!/\.(png|jpe?g)$/i.test(name)) continue;
+    if (name.includes('laptop-ultra')) continue;
     if (!delivery[name]) continue;
     fs.rmSync(path.join(dir, name));
   }

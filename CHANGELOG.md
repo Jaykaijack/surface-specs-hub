@@ -5,6 +5,44 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.3.0] - 2026-10-08
+
+### Added
+- **全新旗舰移动工作站 Surface Laptop Ultra 正式收录 (消费版与商用版)**：
+  - **旗舰硬件规格**：搭载全新 NVIDIA RTX Spark™ 平台（最高 20 核心 N1X 处理器，Blackwell 架构 4000 系专业级 GPU，1 PetaFLOP 澎湃端侧 AI 算力与 80 TOPS NPU）；
+  - **屏幕显示**：配备 15 英寸 3:2 PixelSense Flow 超清触控屏，采用 Mini-LED 背光技术（1000 尼特峰值亮度，120Hz 动态自适应高刷）；
+  - **配色与材质**：收录亮铂金 (Platinum) 与夜幕色 (Midnight) 全金属阳极氧化铝机身；
+  - **官方资产与交付切片**：引入官方真机透明底图鉴与多角度图，生成 AVIF/WebP 320/640/1024/1280 完整响应式分发切片；
+  - **外设与连接**：双 USB4/雷电 4 端口，Wi-Fi 7 + 蓝牙 5.4，触觉反馈精密触控板；配件兼容性矩阵全量同步更新。
+- **不可变版本发布快照**：
+  - 输出不可变单文件快照：`releases/surface-specs-hub-standalone-v2.3.0-20261008-surface-laptop-ultra.html`。
+
+## [v2.2.6] - 2026-10-06
+
+### Changed
+- **彻底解耦前期参考对象（HubWeb）并完成知识产权脱敏**：
+  - **核心样式重命名与模块化演进 (`css/specs-layout.css`)**：
+    - 将原有 `css/hubweb-layout.css` 正式重命名并演进为主力样式 `css/specs-layout.css`，彻底清除内部“HubWeb Replica”等历史逆向注释；
+    - 保留 `css/hubweb-layout.css` 作为完全一致的平滑兼容层，确保老版本与任何外部挂载无感知过渡；
+    - 同步更新 `css/tools.css`、`tests/test-runner.js`、`tests/g2-strengthening.test.js`、`tests/g3-redesign.test.js` 与构建脚本。
+  - **域名与权威元数据全面归正 (`index.html`, `js/app.js`)**：
+    - 清除所有残留的 `https://hubweb.cn/surface/` 引用，将 `<link rel="canonical">`、JSON-LD 结构化数据（WebSite / BreadcrumbList）及 `App.updateStructuredData` 正式统一对齐至独立线上域名 `https://surface.kaibase.cn/`；
+    - 清除 `index.html` 中的相关历史注释，侧边栏注释统一规整为 `Specs Hub Sidebar`。
+
+### Added
+- **设立工程级法律与合规声明体系 (`NOTICE.md`)**：
+  - 明确本项目由微软天猫官方旗舰店直播运营人员发起、业余独立维护的“民间非官方硬件参数与选型知识库”定位；
+  - 明示对“Microsoft”、“Surface”、“Windows”、“PixelSense”、“Xbox”等商标的指示性/描述性合理使用（Nominative Fair Use）界限；
+  - 声明全站参数信源采编自公开技术白皮书、微软中国官方商城 PDP 与技术支持文档，坚持零捏造准则；
+  - 明示 100% 免费公益属性、零商业广告、零 CPS 分成变现。
+- **不可变版本发布快照**：
+  - 输出不可变版本发布快照：`releases/surface-specs-hub-standalone-v2.2.6-20261006-decouple-hubweb-compliance.html`。
+  - 根目录稳定指针同步更新：`surface-specs-hub-standalone.html` 与 `dist/surface-specs-hub-standalone.html`。
+
+### Why (决策理由)
+- 遵循老大业务指示：“微软的内容暂时不用动，主要是 hubweb 的是前期参考对象。其他根据你的建议执行。我是单独有域名的会对粉丝或者用户开放。暂时不考虑盈利，我自己是微软天猫官旗员工负责直播运营的，这个本身初衷是做了给主播和客服参考培训用的”。
+- 为支持面向粉丝与用户开放、独立域名部署的业务目标，彻底切断对外部第三方平台（HubWeb）的域名与元数据依赖，肃清可能存在的混淆与不正当竞争隐患，建立端到端合规的知识产权保护与免责屏障。
+
 ## [v2.2.5] - 2026-10-04
 
 ### Fixed

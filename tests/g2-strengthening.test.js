@@ -23,7 +23,10 @@ function runG2StrengtheningTests(helpers) {
   const indexHtml = fs.readFileSync(path.join(ROOT_DIR, 'index.html'), 'utf8');
   const appJs = fs.readFileSync(path.join(ROOT_DIR, 'js', 'app.js'), 'utf8');
   const comparisonJs = fs.readFileSync(path.join(ROOT_DIR, 'js', 'comparison-engine.js'), 'utf8');
-  const layoutCss = fs.readFileSync(path.join(ROOT_DIR, 'css', 'hubweb-layout.css'), 'utf8');
+  const layoutCssPath = fs.existsSync(path.join(ROOT_DIR, 'css', 'specs-layout.css'))
+    ? path.join(ROOT_DIR, 'css', 'specs-layout.css')
+    : path.join(ROOT_DIR, 'css', 'hubweb-layout.css');
+  const layoutCss = fs.readFileSync(layoutCssPath, 'utf8');
   const tableCss = fs.readFileSync(path.join(ROOT_DIR, 'css', 'spec-table.css'), 'utf8');
 
   // =========================================================================
@@ -132,10 +135,10 @@ function runG2StrengtheningTests(helpers) {
   // =========================================================================
   assert(indexHtml.includes('<a href="#hub-main-content" class="skip-to-content sr-only">跳至主要内容</a>'),
     'G2-05: index.html 必须包含 skip-to-content 无障碍跳转链接');
-  assert(layoutCss.includes('.sr-only'), 'G2-05: hubweb-layout.css 必须声明 .sr-only 无障碍屏幕阅读器专用隐藏类');
-  assert(layoutCss.includes('.skip-to-content.sr-only:focus'), 'G2-05: hubweb-layout.css 必须声明 .skip-to-content Tab 聚焦浮出样式');
-  assert(layoutCss.includes(':focus-visible'), 'G2-05: hubweb-layout.css 必须声明全局 :focus-visible 高对比度焦点环');
-  assert(layoutCss.includes('@media (prefers-reduced-motion: reduce)'), 'G2-05: hubweb-layout.css 必须支持系统级减弱动态效果偏好');
+  assert(layoutCss.includes('.sr-only'), 'G2-05: specs-layout.css 必须声明 .sr-only 无障碍屏幕阅读器专用隐藏类');
+  assert(layoutCss.includes('.skip-to-content.sr-only:focus'), 'G2-05: specs-layout.css 必须声明 .skip-to-content Tab 聚焦浮出样式');
+  assert(layoutCss.includes(':focus-visible'), 'G2-05: specs-layout.css 必须声明全局 :focus-visible 高对比度焦点环');
+  assert(layoutCss.includes('@media (prefers-reduced-motion: reduce)'), 'G2-05: specs-layout.css 必须支持系统级减弱动态效果偏好');
 
   // =========================================================================
   // G2-06 (P2-4 / C-4): 强化阶段极限词零容忍扫描

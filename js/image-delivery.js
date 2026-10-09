@@ -340,7 +340,30 @@ var IMAGE_DELIVERY = {
     640,
     1280
   ],
+  "surface-laptop-ultra-gallery-1.png": [
+    320,
+    640,
+    1024
+  ],
+  "surface-laptop-ultra-gallery-2.png": [
+    320,
+    400
+  ],
   "surface-laptop-ultra-hero.png": [
+    320,
+    640,
+    1024
+  ],
+  "surface-laptop-ultra-midnight.png": [
+    320,
+    400
+  ],
+  "surface-laptop-ultra-platinum.png": [
+    320,
+    640,
+    1280
+  ],
+  "surface-laptop-ultra-ports.png": [
     320,
     640,
     1280

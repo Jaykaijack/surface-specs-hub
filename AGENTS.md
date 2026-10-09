@@ -151,7 +151,7 @@ Strict zero-clutter discipline applies across the repository:
 
 2. **Directory Responsibilities**:
    - `index.html`: Single-page static entry point.
-   - `css/`: Styling system (`fluent-tokens.css`, `hubweb-layout.css`, `spec-table.css`, `tools.css`).
+   - `css/`: Styling system (`fluent-tokens.css`, `specs-layout.css`, `spec-table.css`, `tools.css`).
    - `js/`: Core application modules (`surface-data.js`, `comparison-engine.js`, `tools-engine.js`, `app.js`).
    - `assets/`: Product images (`assets/products/`), brand logos, and icons.
    - `docs/`: All documentation, Architecture Decision Records (`docs/adr/`), agent configurations (`docs/agents/`), specifications (`docs/data-model.md`, `docs/architecture.md`, etc.).
@@ -161,7 +161,7 @@ Strict zero-clutter discipline applies across the repository:
 3. **Core Delivery Standards**:
    - **Deliverable**: `index.html` is a 100% self-contained offline Single Page Application (SPA), zero external network or server runtime required.
    - **Visual Identity**: Fluent 2 Design System, Segoe UI typography, high contrast >4.5:1, Mica texture, true dark/light mode toggle.
-   - **Layout**: High information-density 3-column layout modeled after HubWeb.cn (Left category tree, Center main work area, Bottom floating comparison dock).
+   - **Layout**: High information-density 3-column layout (Left category tree, Center main work area, Bottom floating comparison dock).
    - **Comparison Engine**: Dual-axis sticky table (1st column sticky left, header card sticky top), difference highlighting, "only show diffs" instant toggle, column swap (`◀ ▶`).
    - **Product Lineup**:
       - Flagship 2-in-1: **Surface Pro 13 英寸（第 12 代）** 与 **Surface Pro 12 英寸（第 1 代）** 官方商用双产品线并收录。

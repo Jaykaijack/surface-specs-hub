@@ -28,7 +28,7 @@
 - **前端页面与样式**:
   - `index.html`: 单页面根入口文件。
   - `css/fluent-tokens.css`: Fluent 2 设计 Token（色彩、圆角、阴影、层级）。
-  - `css/hubweb-layout.css`: 仿 HubWeb 高信息密度布局体系。
+  - `css/specs-layout.css`: Fluent 2 高信息密度三段式布局体系。
   - `css/spec-table.css`: 双轴冻结参数对比表样式。
   - `css/tools.css`: 工具面板（选购助手、充电计算器等）样式。
 - **核心数据与渲染逻辑**:

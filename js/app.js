@@ -205,7 +205,7 @@ const App = {
     if (!scriptEl) return;
 
     const path = (this.activeRoute && this.activeRoute.path) ? this.activeRoute.path : '';
-    const siteUrl = 'https://hubweb.cn/surface/';
+    const siteUrl = 'https://surface.kaibase.cn/';
     const baseBreadcrumb = {
       "@type": "ListItem",
       "position": 1,

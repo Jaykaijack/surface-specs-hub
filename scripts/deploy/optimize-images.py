@@ -42,6 +42,10 @@ def open_image(path):
     im.load()
     has_alpha = im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info)
     if has_alpha:
+        if im.mode == "RGBA":
+            ext = im.getextrema()
+            if ext[3][0] == 255 and ext[3][1] == 255:
+                return im.convert("RGB"), False
         return im.convert("RGBA"), True
     return im.convert("RGB"), False
 

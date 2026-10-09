@@ -18,9 +18,9 @@ DIST_DIR = os.path.join(WORKSPACE, 'dist')
 RELEASES_DIR = os.path.join(WORKSPACE, 'releases')
 
 # 版本规范
-VERSION = "v2.2.5"
-DATE_STR = "20261004"
-DESCRIPTOR = "laptop-8-jade-color-correction"
+VERSION = "v2.3.0"
+DATE_STR = "20261008"
+DESCRIPTOR = "surface-laptop-ultra"
 
 STANDALONE_ROOT = os.path.join(WORKSPACE, 'surface-specs-hub-standalone.html')
 STANDALONE_DIST = os.path.join(DIST_DIR, 'surface-specs-hub-standalone.html')
@@ -28,7 +28,7 @@ STANDALONE_RELEASE = os.path.join(RELEASES_DIR, f"surface-specs-hub-standalone-{
 
 CSS_FILES = [
     'css/fluent-tokens.css',
-    'css/hubweb-layout.css',
+    'css/specs-layout.css',
     'css/spec-table.css',
     'css/tools.css'
 ]

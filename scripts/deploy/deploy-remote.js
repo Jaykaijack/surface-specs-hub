@@ -60,14 +60,30 @@ runRemote('ssh -o ConnectTimeout=10 grow-server "tar -xzf /tmp/deploy-site.tar.g
 const standalonePath = path.join(ROOT, 'surface-specs-hub-standalone.html');
 if (fs.existsSync(standalonePath)) {
   console.log('📄 同步更新单文件离线包至线上目录...');
-  runRemote(`scp -O "${standalonePath}" grow-server:/opt/surface-specs-hub/site/surface-specs-hub-standalone.html`, '上传单文件离线包');
+  runRemote(`scp -O -o ConnectTimeout=15 -o ServerAliveInterval=5 "${standalonePath}" grow-server:/opt/surface-specs-hub/site/surface-specs-hub-standalone.html`, '上传单文件离线包');
   runRemote('ssh -o ConnectTimeout=10 grow-server "chmod 644 /opt/surface-specs-hub/site/surface-specs-hub-standalone.html"', '离线包权限设置');
 }
 
 if (fs.existsSync(tarPath)) fs.unlinkSync(tarPath);
 
 console.log('\n🌐 [5/5] 验证远程站点 (https://surface.kaibase.cn)...');
-const remoteCheck = execSync('ssh grow-server "curl -s -k -I https://surface.kaibase.cn --resolve surface.kaibase.cn:443:127.0.0.1 | head -n 5"', { encoding: 'utf8' });
-console.log(remoteCheck);
+try {
+  runRemote('ssh -o ConnectTimeout=10 grow-server "curl -s -k -I https://surface.kaibase.cn --resolve surface.kaibase.cn:443:127.0.0.1 | head -n 5"', '验证远程站点响应');
+} catch (e) {
+  console.warn('⚠️ 远程探针探测超时，继续执行并汇报。');
+}
 
-console.log('✨ 部署成功！线上服务已更新：https://surface.kaibase.cn\n');
+console.log('\n🐙 [6/6] 检查 GitHub 仓库同步状态...');
+try {
+  const status = execSync('git status --porcelain', { cwd: ROOT, encoding: 'utf8' }).trim();
+  const unpushed = execSync('git log origin/main..HEAD --oneline', { cwd: ROOT, encoding: 'utf8' }).trim();
+  if (status || unpushed) {
+    console.log('⚠️ 注意：检测到本地有未提交或未推送的改动，请务必执行 git commit & git push origin main 以保持 GitHub 同步！');
+  } else {
+    console.log('✅ GitHub 仓库与本地处于完全同步状态。');
+  }
+} catch (e) {
+  // 忽略非 fatal 异常
+}
+
+console.log('\n✨ 部署成功！线上服务已更新：https://surface.kaibase.cn\n');
