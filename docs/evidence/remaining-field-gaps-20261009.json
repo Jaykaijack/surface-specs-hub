@@ -1,9 +1,9 @@
 {
   "notice": "逐字段待办与材料缺口；不是已逐项完成事实认证。原文捕获失败不代表网页不存在，部分web文字仍可读取；未把待办伪装成已核验。",
-  "generatedAt": "2026-10-09T09:10:41.548Z",
+  "generatedAt": "2026-10-09T09:38:42.211Z",
   "total": 6057,
-  "verified": 330,
-  "remaining": 5727,
+  "verified": 393,
+  "remaining": 5664,
   "entries": [
     {
       "deviceId": "laptop-ultra-biz",
@@ -1772,7 +1772,7 @@
     {
       "deviceId": "pro-12-13-intel",
       "field": "tagline",
-      "valueHash": "622175e98fbfb5fb3b21d3bc7101a216c1f5a9af2ce8838520c1a6535446ced6",
+      "valueHash": "59d0f65b96d274a319bd6acb155826dc5d885220fed4aa7ccb125af0b133a587",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -1804,60 +1804,6 @@
         }
       ],
       "requiredEvidence": "官方颜色名称及适用SKU；颜色图还需独立原图来源与像素比对，十六进制色块不是实物颜色认证"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "chassisMaterial",
-      "valueHash": "377bd71c57cc80c073c885c5a586cbe5b6a9e175245c895a5adad6b968523268",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "kickstandType",
-      "valueHash": "ede3f47974eaef238afb82558569fffdd2384d30201ae38d287d919b16cef897",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "osAtLaunch",
-      "valueHash": "5db3ed4b0e373807db7140016a1d76708b2fe2e4b4a6ab1e6fb74c67bd4bb88f",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-12-13-intel",
@@ -1933,42 +1879,6 @@
     },
     {
       "deviceId": "pro-12-13-intel",
-      "field": "colorSupport",
-      "valueHash": "878ec3bf960201667f8e8d60bf3819163d6bd390b32247a6b3fe13cdfca4b1ef",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "videoFeatures",
-      "valueHash": "1f672dd04ff9a797ed6273233fa9008a017d97e2dd5deae07c9add6e4a884dc8",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
       "field": "headphoneJack",
       "valueHash": "0296f22b01d3da51783b5e145c24403c9066251dff0d2f86a33204d0d2b0cd38",
       "state": "PENDING_VALUE_BINDING",
@@ -1984,168 +1894,6 @@
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "thunderboltSupport",
-      "valueHash": "3935d7b6dc87485ccca49fbb850cb22d5cb1b28a448e388a01101eac13e3e6ad",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "wireless",
-      "valueHash": "fa9874bd3ad09caa1febc2d839d541be9734c957d3bf3a465ad71f821f438ab1",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "cellular",
-      "valueHash": "933426651b4a6be8f7fa69cfd04d67c3a1b9b6fdbdc602a37cbf4752575958a2",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "batteryCapacityWh",
-      "valueHash": "48adbf4a0833d4d0c5c63f8d6ee574d24e42234b65d627fd0056001ae85b1866",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "chargingPower",
-      "valueHash": "635162fe2c977df39670465ecfe12dd19e8c37f83870db80b6815731b62c2283",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "fastCharging",
-      "valueHash": "1e5d3d71746efeb67632f4991ccee40123463bf0e37dd4d0fddfbcaf7805ef04",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "compatibleKeyboard",
-      "valueHash": "930b01e38b4298d62d58a556a4911488a362b9a9e87f90e34d27412c345308ce",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "trackpadType",
-      "valueHash": "b444d247f57f51940296f0ecdad4d23f33c6d8c7e607d7185d1516302219a47f",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "biometrics",
-      "valueHash": "3298348f1778fa9579aef5f9267b5630cbdd8f566fc1fbc458eb8394eb8feb66",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-12-13-intel",
@@ -2218,42 +1966,6 @@
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "replaceableParts",
-      "valueHash": "107c25eb3fdcfd5ba2081fa0614af8ef36e5ef3da3e8451bc3e702cb5d2cb076",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-12-13-intel",
-      "field": "warranty",
-      "valueHash": "d8a0536a37a424872da50083af5bde8b0fb5c0aff4f84b869711d74144157a97",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-12-13-intel",
@@ -17957,20 +17669,6 @@
     },
     {
       "deviceId": "pro-2",
-      "field": "usbPorts",
-      "valueHash": "4074205053073c3b428d81bcbc950537f7275bfe592a9321510d3da193ba3cb5",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-2",
       "field": "thunderboltSupport",
       "valueHash": "0296f22b01d3da51783b5e145c24403c9066251dff0d2f86a33204d0d2b0cd38",
       "state": "PENDING_VALUE_BINDING",
@@ -18055,20 +17753,6 @@
     },
     {
       "deviceId": "pro-2",
-      "field": "chargingPower",
-      "valueHash": "05eaaa00dccb9ff61924d4e379b26d2102aae5a458e73d77d6de04d11ce56647",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-2",
       "field": "fastCharging",
       "valueHash": "0296f22b01d3da51783b5e145c24403c9066251dff0d2f86a33204d0d2b0cd38",
       "state": "PENDING_VALUE_BINDING",
@@ -18139,20 +17823,6 @@
     },
     {
       "deviceId": "pro-2",
-      "field": "tpmChip",
-      "valueHash": "93ee1ef29cafcdd9e0e883afd3bff478a8ee67bd920598941a9e3c6842fb7ab1",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-2",
       "field": "securedCorePc",
       "valueHash": "971d445754221cfb494e93ad47d251e91817e7e8e762739092f9008ad84cee23",
       "state": "PENDING_VALUE_BINDING",
@@ -18183,34 +17853,6 @@
       "deviceId": "pro-2",
       "field": "enterpriseManage",
       "valueHash": "e7708535cfbe519041032da58b4cde50ac5f2342d446eb03f4e4c2802f08a783",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-2",
-      "field": "dimensionsMm",
-      "valueHash": "4df6c4591a9e57a762cd034c22c52bd7660b4f4e95b1bfdacb674006f210dd44",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-2",
-      "field": "weightGrams",
-      "valueHash": "912fd3247f0cd6c23daf7d0378c8b3711d05a2ef64b0f57a34589109e912987f",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -18355,8 +17997,8 @@
       "reason": "带观察日期的地区销售/发布/价格证据，明确容量和配置；不得把预售/翻新/全球发售混用",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "带观察日期的地区销售/发布/价格证据，明确容量和配置；不得把预售/翻新/全球发售混用"
@@ -18369,8 +18011,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -18383,8 +18025,8 @@
       "reason": "带观察日期的地区销售/发布/价格证据，明确容量和配置；不得把预售/翻新/全球发售混用",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "带观察日期的地区销售/发布/价格证据，明确容量和配置；不得把预售/翻新/全球发售混用"
@@ -18397,8 +18039,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -18411,8 +18053,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -18425,67 +18067,11 @@
       "reason": "官方颜色名称及适用SKU；颜色图还需独立原图来源与像素比对，十六进制色块不是实物颜色认证",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "官方颜色名称及适用SKU；颜色图还需独立原图来源与像素比对，十六进制色块不是实物颜色认证"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "chassisMaterial",
-      "valueHash": "63c0d1688793b45b3c9da5a61238ba00d1e2358ede6618395ea1a0d22952805e",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "kickstandType",
-      "valueHash": "f0963d55cd369e7260141819c5fca0e7e4eae9a6fa761b4abf4af3eb6298978c",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "osAtLaunch",
-      "valueHash": "9b9dedb7306b75109521b94d0d6653c13404b70f27c5084a5f1b51f26a4d3688",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "cpuModel",
-      "valueHash": "fb819f9c1fa8054d21c892437ea4668b80dcdcc9d860ad2fa2f7218146ca4c52",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18495,8 +18081,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -18509,8 +18095,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -18523,8 +18109,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -18537,8 +18123,8 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
@@ -18551,8 +18137,8 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
@@ -18565,39 +18151,11 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "ramSpec",
-      "valueHash": "85b2dba12d21a2bf7182be2d86e5933c2c5ce7e911a8b54d97b0c030119648d9",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "storageOptions",
-      "valueHash": "81b19dfdb52df4213695f23bf5e5a1f4fea31b23c19cb2f6b4ec41d3f53f9387",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18607,53 +18165,11 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "expandableStorage",
-      "valueHash": "19453a003454d8fda4e2e752495d1b9ca02a3ac5ce93bd83882c2cb48b751cd4",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "screenSize",
-      "valueHash": "c93d06530a81653756968aa6edc869e2d03f4263ed2f3b2be6addd9e94ed1240",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "aspectRatio",
-      "valueHash": "0c607131a93856ed93d33dad0c3829fbc410504ac4110e992486dbe75102427b",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18663,25 +18179,11 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "resolution",
-      "valueHash": "74e9fb4949c5ec6df61a7b01a035136e0ea12ccfb0e26007b507f24a39d72d8a",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18691,8 +18193,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -18705,8 +18207,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -18719,8 +18221,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -18733,39 +18235,11 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "touchAndPenProtocol",
-      "valueHash": "838164b2ca028b9db2c10b63cf65587de4ba034d155a6bfca8a541c29cc88518",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "frontCamera",
-      "valueHash": "486b4ac95b53afce3514c7bf96b5ce214bd5aceeb183fc215735065c8e97b433",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18775,25 +18249,11 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "rearCamera",
-      "valueHash": "ba0f4399d0f12f7bed3ad6a5c57cf4e01d566b82d6bfabe7c60bfa666e66e0b3",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18803,39 +18263,11 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "microphones",
-      "valueHash": "d2919bb591d90fd984f35950a4ee6e29965efc95bee2d384901d13f570682dfd",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "speakers",
-      "valueHash": "9f2f4965a50ee6e97c60169df92d7cba337a69bf9f1d4ecbd9f41b6727f7164b",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18845,25 +18277,11 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "headphoneJack",
-      "valueHash": "fbae4bc4eb379ac446cda95f4c8853ea0e8a5a14261c9a4a889158e28d64c955",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18873,8 +18291,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -18887,8 +18305,8 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
@@ -18901,25 +18319,11 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "wireless",
-      "valueHash": "c9ad1bfb7bf7fe7628f6147fc41278a42b1cf84127b608b6ce423d51ad2b9f7e",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18929,25 +18333,11 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "batteryCapacityWh",
-      "valueHash": "44be6a1e55af42f5e2df58bff195d2e817ee1d4fef223c39f73b4fef08f55dbd",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18957,8 +18347,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -18971,25 +18361,11 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "chargingPower",
-      "valueHash": "05eaaa00dccb9ff61924d4e379b26d2102aae5a458e73d77d6de04d11ce56647",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "pro-1",
@@ -18999,8 +18375,8 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
@@ -19013,8 +18389,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19027,8 +18403,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19041,8 +18417,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19055,8 +18431,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19069,8 +18445,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19083,8 +18459,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19097,8 +18473,8 @@
       "reason": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
@@ -19111,36 +18487,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "dimensionsMm",
-      "valueHash": "68c464b8a6c3272d612563039f278c55f6c9a55e1dc27fe9d33ee198e6d4a2a5",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "pro-1",
-      "field": "weightGrams",
-      "valueHash": "e05c0a8d5057ee70120f72d80cd1f947565dbe328d9b380099b54ea478e254a8",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19153,8 +18501,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -19167,8 +18515,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19181,8 +18529,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -19195,8 +18543,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -19209,8 +18557,8 @@
       "reason": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
@@ -19223,8 +18571,8 @@
       "reason": "带观察日期的地区销售/发布/价格证据，明确容量和配置；不得把预售/翻新/全球发售混用",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "带观察日期的地区销售/发布/价格证据，明确容量和配置；不得把预售/翻新/全球发售混用"
@@ -19237,8 +18585,8 @@
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -19251,8 +18599,8 @@
       "reason": "历史记录日期仅作历史元数据，不是当前字段核验日期",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "历史记录日期仅作历史元数据，不是当前字段核验日期"
@@ -19260,13 +18608,13 @@
     {
       "deviceId": "pro-1",
       "field": "officialDocUrl",
-      "valueHash": "69895f767e4f8fee7d7c2005b1fc4b85540bd7cb7d53288ec1356191de370601",
+      "valueHash": "383496d2490cb0e5f75de47406d22b4164f8e8fc863675dcbeea9d4c8b5341d6",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
         {
-          "url": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
+          "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+          "rawCaptureStatus": "NOT_ATTEMPTED"
         }
       ],
       "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
@@ -20803,24 +20151,6 @@
     },
     {
       "deviceId": "laptop-8-138-intel",
-      "field": "mics",
-      "valueHash": "3e9f32fe90a6baf6850b47f67f597e568988a3f636d08a6e20e76ef01e583867",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-intel",
       "field": "usbC",
       "valueHash": "1cda40cd500829c8e58d0991f8587f42172a261cbcd4113d76b09254921cfefb",
       "state": "PENDING_VALUE_BINDING",
@@ -20841,24 +20171,6 @@
       "deviceId": "laptop-8-138-intel",
       "field": "usbA",
       "valueHash": "9079e234b0c57d162205a9ce31e84a9be377938e80d8a860c94452271c899409",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-intel",
-      "field": "audioJack",
-      "valueHash": "a0594ffde9150c018d5df58c5524284f694f7bf66c35c646a2ad6504fb063f36",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -20965,98 +20277,8 @@
     },
     {
       "deviceId": "laptop-8-138-intel",
-      "field": "batteryWh",
-      "valueHash": "8975af90d0491c087fe1b304b0b13baecbfc09f85b7cbbf691054906528dee05",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-intel",
-      "field": "batteryLifeLocalVideo",
-      "valueHash": "6275be2b13c9370cf569fdf8c564d985c72802987fda9ff34460c19fa4830054",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-intel",
-      "field": "batteryLifeWeb",
-      "valueHash": "bf6c571c63251fac6c4f96e47e0a59f0bb7d5adbd27067a806095a3152fbddc7",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-intel",
-      "field": "chargingSpeed",
-      "valueHash": "635162fe2c977df39670465ecfe12dd19e8c37f83870db80b6815731b62c2283",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-intel",
       "field": "keyboardCompatibility",
       "valueHash": "f274c6653d371f8f038323c9aadf56572c30e03b19d0a5eeff3a08751b179a8f",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-intel",
-      "field": "biometrics",
-      "valueHash": "3298348f1778fa9579aef5f9267b5630cbdd8f566fc1fbc458eb8394eb8feb66",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -21595,24 +20817,6 @@
     },
     {
       "deviceId": "laptop-8-138-snap",
-      "field": "mics",
-      "valueHash": "3e9f32fe90a6baf6850b47f67f597e568988a3f636d08a6e20e76ef01e583867",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-snap",
       "field": "usbC",
       "valueHash": "2f1011cdc68b6455181dabd06730264f451c2b91fa7258c16dde46c17037a7a2",
       "state": "PENDING_VALUE_BINDING",
@@ -21633,24 +20837,6 @@
       "deviceId": "laptop-8-138-snap",
       "field": "usbA",
       "valueHash": "9079e234b0c57d162205a9ce31e84a9be377938e80d8a860c94452271c899409",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-snap",
-      "field": "audioJack",
-      "valueHash": "a0594ffde9150c018d5df58c5524284f694f7bf66c35c646a2ad6504fb063f36",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -21775,42 +20961,6 @@
     },
     {
       "deviceId": "laptop-8-138-snap",
-      "field": "batteryLifeLocalVideo",
-      "valueHash": "8cbefca565e236512f5e8dd1ca4efdad076ead379cb28a2c0138f91b019e429c",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-snap",
-      "field": "batteryLifeWeb",
-      "valueHash": "faa138b12248d87747a787a2e569c4d6da01509776073dc2959953526635c7bd",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-snap",
       "field": "chargingSpeed",
       "valueHash": "635162fe2c977df39670465ecfe12dd19e8c37f83870db80b6815731b62c2283",
       "state": "PENDING_VALUE_BINDING",
@@ -21831,24 +20981,6 @@
       "deviceId": "laptop-8-138-snap",
       "field": "keyboardCompatibility",
       "valueHash": "f274c6653d371f8f038323c9aadf56572c30e03b19d0a5eeff3a08751b179a8f",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-138-snap",
-      "field": "biometrics",
-      "valueHash": "3298348f1778fa9579aef5f9267b5630cbdd8f566fc1fbc458eb8394eb8feb66",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -22353,24 +21485,6 @@
       "deviceId": "laptop-8-150-intel",
       "field": "compatibleKeyboard",
       "valueHash": "e78b0b03223b2843bda260733659f560b8f72d8704f6098adb8d7e7ebfad2266",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-150-intel",
-      "field": "biometrics",
-      "valueHash": "513275d7fbcf0d5e2c494376011f23a4dd72a47bff42d8be09714ed33bc04141",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -22893,24 +22007,6 @@
       "deviceId": "laptop-8-150-snap",
       "field": "compatibleKeyboard",
       "valueHash": "e78b0b03223b2843bda260733659f560b8f72d8704f6098adb8d7e7ebfad2266",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://www.microsoftstore.com.cn/surface/surface-laptop-8th-edition-13.8-and-15-inch-for-business-snapdragon",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        },
-        {
-          "url": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "laptop-8-150-snap",
-      "field": "biometrics",
-      "valueHash": "513275d7fbcf0d5e2c494376011f23a4dd72a47bff42d8be09714ed33bc04141",
       "state": "PENDING_VALUE_BINDING",
       "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
       "candidateSources": [
@@ -64001,20 +63097,6 @@
     },
     {
       "deviceId": "hub-3",
-      "field": "osAtLaunch",
-      "valueHash": "773cfe92b95741e9072af1ed6d4a181fa7b74ede6322e9ee53398e809dc8c05d",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "hub-3",
       "field": "cpuArch",
       "valueHash": "ecb24e638da34dc20eda9c9570fdd1e0f188f542760b382b765b4477dcbc6fc3",
       "state": "PENDING_VALUE_BINDING",
@@ -64169,34 +63251,6 @@
     },
     {
       "deviceId": "hub-3",
-      "field": "videoFeatures",
-      "valueHash": "6bd18d97c7096639f9cb72848ba57dcc26f163b550909690dc99950de133e79d",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "hub-3",
-      "field": "speakers",
-      "valueHash": "d2e81a9e2b1eb244e7cf1853df1060c5323b21be270d76eec53cef022051f681",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "hub-3",
       "field": "audioTech",
       "valueHash": "ecb24e638da34dc20eda9c9570fdd1e0f188f542760b382b765b4477dcbc6fc3",
       "state": "PENDING_VALUE_BINDING",
@@ -64225,34 +63279,6 @@
     },
     {
       "deviceId": "hub-3",
-      "field": "usbCPorts",
-      "valueHash": "b24d117e9dd3e5e6f9958390aaa2bb0905935b3a07b484837273c471cf9d9713",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "hub-3",
-      "field": "usbAPorts",
-      "valueHash": "ac83662edec4a21a20d23716d7e996d32a8c4262785cc9ae65c1ab85afa47fb6",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
-    },
-    {
-      "deviceId": "hub-3",
       "field": "surfaceConnect",
       "valueHash": "0296f22b01d3da51783b5e145c24403c9066251dff0d2f86a33204d0d2b0cd38",
       "state": "PENDING_VALUE_BINDING",
@@ -64278,20 +63304,6 @@
         }
       ],
       "requiredEvidence": "证明该功能在该配置不适用的官方限制说明；不能只凭产品类别推断"
-    },
-    {
-      "deviceId": "hub-3",
-      "field": "videoOut",
-      "valueHash": "004f8c7702b48e095608041f8e5f59eeeb5e84e81d9c95f756222eec423491e1",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "hub-3",
@@ -64460,20 +63472,6 @@
         }
       ],
       "requiredEvidence": "当前“官方未披露”来自旧记录，须核对完整适用官方资料；查不到或抓取失败不能证明未披露"
-    },
-    {
-      "deviceId": "hub-3",
-      "field": "serviceabilityScore",
-      "valueHash": "75b63dac15f15a5fe509804f737b63a14cc77423c91200b729af4b5e965bacae",
-      "state": "PENDING_VALUE_BINDING",
-      "reason": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够",
-      "candidateSources": [
-        {
-          "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
-          "rawCaptureStatus": "RAW_FETCH_FAILED"
-        }
-      ],
-      "requiredEvidence": "同型号、地区、配置的官方规格段落，明确支持该字段当前值；来源链接本身不够"
     },
     {
       "deviceId": "hub-3",

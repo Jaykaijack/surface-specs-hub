@@ -1,0 +1,32 @@
+{
+  "reviewedAt": "2026-10-09",
+  "deviceId": "pro-1",
+  "sourceUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+  "method": "Manual structured fact extraction from readable numbered official page; not raw HTML",
+  "scope": "global hardware only; no China sales or warranty inference",
+  "status": "Evidence excerpt; current bindings in review-batch-current-20261009.json",
+  "confirmed": {
+    "aspectRatio": "16:9",
+    "resolution": "1920 × 1080",
+    "ramSpec": "4GB",
+    "storageOptions": "64GB / 128GB",
+    "batteryCapacityWh": "42 Wh",
+    "cpuModel": "Intel 第 3 代酷睿 i5",
+    "dimensionsMm": "275 × 173 × 13.46",
+    "wireless": "Wi-Fi 802.11a/b/g/n + 蓝牙 4.0",
+    "touchAndPenProtocol": "10 点多点触控",
+    "chassisMaterial": "VaporMg",
+    "kickstandType": "集成支架",
+    "frontCamera": "720p 高清前置摄像头",
+    "rearCamera": "720p 高清后置摄像头",
+    "microphones": "麦克风",
+    "speakers": "立体声扬声器",
+    "expandableStorage": "配备 MicroSDXC 卡槽",
+    "headphoneJack": "配备耳机插孔"
+  },
+  "followup": {
+    "chargingPower": "Official specifies supplied 48 W power supply including 5 W USB accessory charging. Does not substantiate existing minimum charging wording or adapter model 1536; obtain separate source or correct scoped wording.",
+    "weightGrams": "Official less than 2 lb is a bound, not exact mass; retain unknown in mass calculator.",
+    "screenSize": "ClearType Full HD supports Full HD wording; current broad-view wording needs separate evidence."
+  }
+}

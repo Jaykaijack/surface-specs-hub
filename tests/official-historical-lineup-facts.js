@@ -2115,7 +2115,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       chargingPowerContains: '48',
       brightnessState: 'NOT_DISCLOSED',
       dimensionsContains: '274.6',
-      weightContains: '907',
+      weightContains: '2 磅',
       resolutionContains: '1920',
       screenSizeContains: '10.6',
       usbMustInclude: 'Mini DisplayPort',
@@ -2170,7 +2170,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       frontCameraContains: '720p',
       rearCameraContains: '720p',
       speakersContains: '立体声',
-      learnDocUrl: 'https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications',
+      learnDocUrl: 'https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications',
       specContains: {
             "headphoneJack": "耳机",
             "expandableStorage": "MicroSD",

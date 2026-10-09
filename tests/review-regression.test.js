@@ -121,6 +121,20 @@ console.log('Current-lineup source batch and explicit conflicts PASS');
 
 for(const source of scoped.sourceExtracts)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(source.path)).digest('hex'),source.sha256);
 const gaps=require('../docs/evidence/remaining-field-gaps-20261009.json');assert.equal(gaps.remaining,registry.entries.filter(e=>e.verdict!=='VERIFIED').length);assert.equal(gaps.total,registry.entries.length);
+const inventory=require('../docs/evidence/product-review-inventory-20261009.json');
+assert.equal(inventory.records.length,Catalog.listDevices().length);
+assert.equal(inventory.verified,registry.entries.filter(e=>e.verdict==='VERIFIED').length);
+assert.equal(inventory.pending,gaps.remaining);
+assert.equal(t.parseMass(Catalog.getSpec(Catalog.getDevice('pro-1'),'weight')),null,'less-than bound is not an exact mass');
+assert.equal(t.parseMass(Catalog.getSpec(Catalog.getDevice('pro-2'),'weight')),907.18474);
+for(const id of ['pro-1','pro-2'])assert.doesNotMatch(Catalog.getSpec(Catalog.getDevice(id),'chargingPower'),/最低|1536/);
+const family=require('../docs/evidence/ultra-global-product-scope-20261009.json');
+assert.equal(family.status,'PRODUCT_FAMILY_EVIDENCE_ONLY_NOT_CN_SKU_VERIFICATION');
+assert.match(Catalog.getDevice('laptop-ultra').productFamilyEvidence.scope,/不能确认中国/);
+assert.equal(registry.entries.filter(e=>e.deviceId==='laptop-ultra'&&e.verdict==='VERIFIED').length,0);
+assert.doesNotMatch(Catalog.presentSpec('not_disclosed'),/从未对外正式披露/);
+for(const id of ['pro-12-13-intel','laptop-8-138','laptop-8-150','laptop-8-138-intel','laptop-8-138-snap','laptop-8-150-intel','laptop-8-150-snap'])assert.equal(Catalog.getSpec(Catalog.getDevice(id),'cpuArch'),null,'unconfirmed process/core architecture must not be shown as verified');
+assert.match(Catalog.getSpec(Catalog.getDevice('pro-12-13-intel'),'trackpadType'),/键盘另售/);
 
 const accessoryImages=require('../docs/evidence/accessory-and-ultra-images-20261009.json');
 for(const row of [...accessoryImages.accessories,...accessoryImages.ultraAssets])assert.equal(crypto.createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256);

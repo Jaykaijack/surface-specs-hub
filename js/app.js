@@ -2033,6 +2033,7 @@ const App = {
       <div class="catalog-detail-layout">
       <section class="catalog-detail-main">
       <p class="spec-evidence-note">参数记录尚未完成逐字段真实性核验；来源链接与历史记录日期不代表当前配置已确认。</p>
+      ${dev.productFamilyEvidence && /^https:\/\/www\.microsoft\.com\//.test(dev.productFamilyEvidence.url) ? `<p class="spec-evidence-note">独立产品级来源（${this.escapeText(dev.productFamilyEvidence.locale)}）：${this.escapeText(dev.productFamilyEvidence.scope)} <a href="${this.escapeText(dev.productFamilyEvidence.url)}" target="_blank" rel="noopener noreferrer">查看官方产品说明</a></p>` : ''}
       ${(dev.dataConflicts || []).map(conflict => `<p class="spec-evidence-note" role="note">来源冲突 · ${this.escapeText(conflict.field)}：${this.escapeText(conflict.reason)}。争议部分待核验，不作为配置结论。</p>`).join('')}
       <div class="catalog-breadcrumb">
         <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}">产品目录</a>

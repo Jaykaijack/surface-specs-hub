@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://images.ctfassets.net/jy9s7k22hbg4/4KVqDIfm10HcC7B70bg5LR/7182c8de9f0dabcf4b0716ffdab47f8c/SLU_Hero_Mobile_Poster__1_.jpg",
+    "sourcePage": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+    "status": "DOWNLOAD_BLOCKED",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "model": "Surface Laptop Ultra",
+    "sourceLocale": "en-US",
+    "regionApplicability": "Global product illustration; China SKU not certified",
+    "poseVerified": false,
+    "pixelComparison": "NOT_RUN_DOWNLOAD_BLOCKED",
+    "localReplacement": null
+  },
+  {
+    "url": "https://images.ctfassets.net/jy9s7k22hbg4/3Xe8kezgFucQyYGWe2hJzP/b95f2637ecf4a897b7d351f2fe6cd551/SLU_C303_Ports__1_.jpg",
+    "sourcePage": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+    "status": "DOWNLOAD_BLOCKED",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "model": "Surface Laptop Ultra",
+    "sourceLocale": "en-US",
+    "regionApplicability": "Global product illustration; China SKU not certified",
+    "poseVerified": false,
+    "pixelComparison": "NOT_RUN_DOWNLOAD_BLOCKED",
+    "localReplacement": null
+  }
+]

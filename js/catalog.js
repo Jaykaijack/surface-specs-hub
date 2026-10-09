@@ -198,10 +198,10 @@ const Catalog = (function () {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
     }
     if (state === 'NOT_DISCLOSED') {
-      return '<span class="spec-state not-disclosed" title="微软官方白皮书从未对外正式披露">官方未披露</span>';
+      return '<span class="spec-state not-disclosed" title="原记录标为未披露；须由适用来源逐项核验，抓取失败不能证明未披露">官方未披露（原记录，待核验）</span>';
     }
     if (state === 'NOT_APPLICABLE') {
-      return '<span class="spec-state not-applicable" title="该产品物理形态不具备此属性">不适用</span>';
+      return '<span class="spec-state not-applicable" title="记录状态；是否适用于具体配置须查对应字段证据">不适用</span>';
     }
     return val;
   }

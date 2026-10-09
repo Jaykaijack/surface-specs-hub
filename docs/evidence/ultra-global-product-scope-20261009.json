@@ -1,0 +1,74 @@
+{
+  "sourceUrl": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+  "reviewedAt": "2026-10-09",
+  "sourceLocale": "en-US",
+  "scope": "Product-family descriptions on US marketing page; NOT China SKU certification",
+  "claims": [
+    {
+      "field": "platform",
+      "value": "NVIDIA RTX Spark",
+      "locator": "L10,L26"
+    },
+    {
+      "field": "cpuMaximumCores",
+      "value": 20,
+      "locator": "L26",
+      "qualifier": "up to; not every SKU"
+    },
+    {
+      "field": "unifiedMemoryMaximumGB",
+      "value": 128,
+      "locator": "L26,L210",
+      "qualifier": "CPU/GPU shared; GPU addressable amount less than total"
+    },
+    {
+      "field": "colors",
+      "value": [
+        "Platinum",
+        "Nightfall"
+      ],
+      "locator": "L32,L298",
+      "qualifier": "availability varies by market/configuration"
+    },
+    {
+      "field": "display",
+      "value": "15-inch touchscreen; 120 Hz",
+      "locator": "L55-L61,L216",
+      "qualifier": "rectangular diagonal; actual visible area smaller"
+    },
+    {
+      "field": "storageMaximumTB",
+      "value": 2,
+      "locator": "L75",
+      "qualifier": "up to; no China storage tiers inferred"
+    },
+    {
+      "field": "ports",
+      "value": "3 USB-C, USB-A, HDMI, SD card reader, headphone jack",
+      "locator": "L41",
+      "qualifier": "does not certify interface speeds"
+    },
+    {
+      "field": "penSupport",
+      "value": false,
+      "locator": "L220",
+      "qualifier": "explicitly excludes Surface Pen/Slim Pen and similar input accessories"
+    },
+    {
+      "field": "includedCharger",
+      "value": "market/configuration dependent",
+      "locator": "L249",
+      "qualifier": "no universal included-charger claim"
+    }
+  ],
+  "notEstablished": [
+    "China prices, warranty, launch/shipping, SKU capacities",
+    "exact resolution, rated/minimum battery capacity from this readable text",
+    "dedicated NPU INT8 TOPS",
+    "specific fingerprint reader or fingerprint power button; generic Windows Hello copy is insufficient"
+  ],
+  "images": "image-sources.json; both links extracted from official page, raw downloads blocked by proxy 403; no pixel identity verification",
+  "runtimeDataChanged": true,
+  "registryCountChanged": false,
+  "status": "PRODUCT_FAMILY_EVIDENCE_ONLY_NOT_CN_SKU_VERIFICATION"
+}

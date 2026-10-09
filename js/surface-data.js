@@ -915,6 +915,11 @@ const SURFACE_DATA = {
       "imageVerification": {
         "status": "shared",
         "reason": "新版原图已保留；型号、配色与视角尚未完成官方逐图核验"
+      },
+      "productFamilyEvidence": {
+        "url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+        "locale": "en-US",
+        "scope": "美国官网的产品级资料，不能确认中国消费者 SKU、价格、保修或配色库存。触控笔不兼容为该页明确产品限制；充电器附送情况依市场和配置。"
       }
     },
     {
@@ -928,14 +933,14 @@ const SURFACE_DATA = {
       "status": "current_cn",
       "targetAudience": "commercial",
       "flagship": true,
-      "tagline": "商用 AI PC 旗舰：搭载英特尔® 酷睿™ Ultra (第 3 代) 处理器，50 TOPS 端侧 AI 算力与防眩光 LCD/双层串联 OLED 屏幕",
+      "tagline": "中国商用 Intel 版；LCD / OLED 配置，最高 120 Hz 与 50 TOPS NPU",
       "prevGenerationId": "pro-10-biz",
       "specs": {
         "releaseDate": "2026 年 8 月",
         "generation": "第 12 代",
         "status": "current_cn",
         "targetAudience": "商业政企与高端职场精英",
-        "tagline": "英特尔® 酷睿™ Ultra 5/7 (第 3 代，50 TOPS)，防反射 LCD 与双层串联 OLED 屏幕可选，商务双色精工铝合金机身",
+        "tagline": "中国商用 Intel 版；LCD / OLED 配置，最高 120 Hz 与 50 TOPS NPU",
         "colors": [
           {
             "name": "亮铂金",
@@ -974,36 +979,36 @@ const SURFACE_DATA = {
         "frontCamera": "1440p Quad HD超广角Surface Studio摄像头",
         "windowsHello": "Windows Hello人脸识别；增强登录安全性",
         "rearCamera": "1000万像素Ultra HD后置摄像头",
-        "videoFeatures": "Windows Studio 效果 (背景虚化/眼眸校正/语音聚焦)",
+        "videoFeatures": "Windows 工作室效果：自动取景、眼神交流、人像及背景模糊",
         "microphones": "双Studio Mics，支持语音聚焦",
         "speakers": "2W立体声扬声器；Dolby Atmos",
         "audioTech": "Dolby Atmos；蓝牙LE音频",
         "headphoneJack": "not_applicable",
         "usbPorts": "2 × USB-C / USB4 / Thunderbolt 4；DisplayPort 2.1（最多三台4K 60Hz，须兼容扩展坞或菊花链）；Surface Connect；5G配置NanoSIM",
-        "thunderboltSupport": "USB4® / Thunderbolt™ 4",
+        "thunderboltSupport": "USB4 / Thunderbolt 4",
         "surfaceConnect": "Surface Connect端口",
-        "wireless": "Wi-Fi 7 (802.11be) + 蓝牙 5.4",
-        "cellular": "可选 5G（NanoSIM）",
-        "batteryCapacityWh": "LCD 额定 47 Wh / OLED 额定 53 Wh（出处：微软中国商城 Surface Pro 13\" 第12代 Intel 商用页规格）",
+        "wireless": "Wi-Fi 7；蓝牙 Core 5.4",
+        "cellular": "可选 Wi-Fi + 5G 配置，支持 NanoSIM；可用性依区域和运营商",
+        "batteryCapacityWh": "LCD：额定 47 Wh / 最小 46 Wh；OLED：额定 53 Wh / 最小 51 Wh",
         "batteryLifeOffice": "仅Wi-Fi配置网页浏览长达11小时（官方测试，非办公实测）",
         "batteryLifeVideo": "仅Wi-Fi配置本地视频播放长达17小时（官方测试）",
-        "chargingPower": "标配 39W Surface Connect 电源（特定配置，型号 1963）；最低充电 39W",
-        "fastCharging": "推荐快充 60W（国行：65W Surface 电源或 60W USB-C PD）",
-        "compatibleKeyboard": "Surface Pro Flex 键盘 (蓝牙离机无线输入)",
+        "chargingPower": "39 W Surface Connect 电源仅特定市场、特定配置随附",
+        "fastCharging": "65 W Surface 电源或最低 60 W USB-C PD 充电器（另售）",
+        "compatibleKeyboard": "Surface Pro 13 英寸 Flex 键盘（连接或拆离使用；另售，拆离使用须 Windows 11）",
         "penHapticFeedback": "支持Surface Slim Pen 2触觉信号",
         "penChargingType": "Surface Pro 13英寸键盘或Flex键盘提供Slim Pen 2收纳及无线充电",
-        "trackpadType": "触觉反馈精准触控板",
+        "trackpadType": "Surface Pro 13 英寸 Flex 键盘配有精准触觉反馈触控板（键盘另售）",
         "tpmChip": "Microsoft Pluton；TPM 2.0",
         "securedCorePc": "Windows 11安全核心PC",
-        "biometrics": "Windows Hello 人脸识别",
+        "biometrics": "Windows Hello 面部识别；增强登录安全性",
         "enterpriseManage": "支持 Microsoft Intune 与云端快速部署",
         "dimensionsMm": "287 × 209 × 9.3 mm",
         "weightGrams": "Wi-Fi配置895g；Wi-Fi + 5G配置906g",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "超薄均热板双循环无啸叫微风扇",
         "repairabilityScore": "not_disclosed",
-        "replaceableParts": "可拆卸 SSD、屏幕模块、电池、主板接口模块",
-        "warranty": "3 年有限硬件保修",
+        "replaceableParts": "官方列有显示屏模块、SSD、电池、主板、Surface Connect、散热模块、摄像头、扬声器及支架等部件；须遵循维修指引",
+        "warranty": "中国主机自发票日期起 3 年有限硬件保修；配件依品类",
         "startingPriceCny": "¥16,888 起 (商用版)",
         "sourceReliability": "microsoft_official",
         "lastVerified": "2026-09-21",
@@ -1013,7 +1018,11 @@ const SURFACE_DATA = {
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
       "nextGenerationId": null,
-      "segment": "commercial"
+      "segment": "commercial",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch"
+      ]
     },
     {
       "id": "pro-12-13-snap",
@@ -2495,7 +2504,7 @@ const SURFACE_DATA = {
         "speakers": "带 Dolby® 声效的立体声扬声器",
         "audioTech": "Dolby®",
         "headphoneJack": "配备耳机插孔",
-        "usbPorts": "1 × 全尺寸 USB 3.0 + 1 × Mini DisplayPort",
+        "usbPorts": "全尺寸 USB 3.0；Mini DisplayPort 1.2",
         "thunderboltSupport": "not_applicable",
         "surfaceConnect": "not_disclosed",
         "wireless": "Wi-Fi 802.11a/b/g/n + 蓝牙 4.0",
@@ -2503,18 +2512,18 @@ const SURFACE_DATA = {
         "batteryCapacityWh": "not_disclosed",
         "batteryLifeOffice": "not_disclosed",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "最低充电 48W；标配型号 1536",
+        "chargingPower": "附带 48 W 电源",
         "fastCharging": "not_applicable",
         "compatibleKeyboard": "Touch Cover 2 / Type Cover 2",
         "penHapticFeedback": "不支持",
         "penChargingType": "无需充电 (无源电磁)",
         "trackpadType": "压力传感触控板",
-        "tpmChip": "TPM 1.2",
+        "tpmChip": "TPM 芯片（版本待核验）",
         "securedCorePc": "否",
         "biometrics": "not_applicable",
         "enterpriseManage": "基础管理",
-        "dimensionsMm": "274.6 × 173 × 13.5",
-        "weightGrams": "907g",
+        "dimensionsMm": "约 274.6 × 173.0 × 13.5 mm（官方为 10.81 × 6.81 × 0.53 英寸，换算取整）",
+        "weightGrams": "2 磅",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "双风扇潜艇周边风道散热",
         "repairabilityScore": "not_disclosed",
@@ -2527,7 +2536,12 @@ const SURFACE_DATA = {
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-2-specs-and-features",
-      "segment": "consumer"
+      "segment": "consumer",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch",
+        "trackpadType"
+      ]
     },
     {
       "id": "pro-1",
@@ -2569,7 +2583,7 @@ const SURFACE_DATA = {
         "storageOptions": "64GB / 128GB",
         "ssdRemovable": "not_disclosed",
         "expandableStorage": "配备 MicroSDXC 卡槽",
-        "screenSize": "10.6 英寸 ClearType 广视角显示屏",
+        "screenSize": "10.6 英寸 ClearType Full HD 显示屏",
         "aspectRatio": "16:9",
         "panelTech": "not_disclosed",
         "resolution": "1920 × 1080",
@@ -2594,7 +2608,7 @@ const SURFACE_DATA = {
         "batteryCapacityWh": "42 Wh",
         "batteryLifeOffice": "not_disclosed",
         "batteryLifeVideo": "not_disclosed",
-        "chargingPower": "最低充电 48W；标配型号 1536",
+        "chargingPower": "附带 48 W 电源（包含用于配件充电的 5 W USB 输出）",
         "fastCharging": "not_applicable",
         "compatibleKeyboard": "初代触控键盘 Touch Cover / 实体键盘 Type Cover",
         "penHapticFeedback": "不支持",
@@ -2605,7 +2619,7 @@ const SURFACE_DATA = {
         "biometrics": "not_applicable",
         "enterpriseManage": "基础管理",
         "dimensionsMm": "275 × 173 × 13.46",
-        "weightGrams": "不足 2 磅（官方未给出克重）",
+        "weightGrams": "不足 2 磅（上限描述，不是精确重量）",
         "totalWeightWithKeyboard": "not_disclosed",
         "thermalDesign": "双风扇四周开槽隐蔽风道",
         "repairabilityScore": "not_disclosed",
@@ -2614,11 +2628,16 @@ const SURFACE_DATA = {
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_support",
         "lastVerified": "2026-09-21",
-        "officialDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications"
+        "officialDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications"
       },
       "isCommercial": false,
-      "learnDocUrl": "https://support.microsoft.com/zh-cn/surface/models/surface-pro-1st-gen-specifications",
-      "segment": "consumer"
+      "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-1st-gen-specifications",
+      "segment": "consumer",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch",
+        "trackpadType"
+      ]
     },
     {
       "id": "pro-x",
@@ -2801,16 +2820,16 @@ const SURFACE_DATA = {
         "wifi": "Wi-Fi 7 (802.11be)",
         "bluetooth": "蓝牙 5.4",
         "cellular": "not_applicable",
-        "batteryWh": "54 Wh（额定；最小 52 Wh）",
-        "batteryLifeLocalVideo": "本地视频播放长达 23 小时",
-        "batteryLifeWeb": "网页浏览长达 14.5 小时",
-        "chargingSpeed": "标配 39W Surface Connect 电源（特定配置，型号 1963）；最低充电 39W",
+        "batteryWh": "额定 54 Wh / 最小 52 Wh",
+        "batteryLifeLocalVideo": "本地视频播放长达 23 小时（官方试制配置测试）",
+        "batteryLifeWeb": "网页浏览长达 14.5 小时（非办公实测）",
+        "chargingSpeed": "39 W Surface Connect 电源仅特定市场、特定配置随附",
         "keyboardCompatibility": "一体化静音剪刀脚键盘 (1.3mm 键程，内置 Copilot 独立按键)",
         "penChargingType": "not_applicable",
         "trackpadType": "精准触觉反馈触控板；自适应触控模式",
         "tpmChip": "Microsoft Pluton；TPM 2.0",
         "securedCorePc": "Windows 11 安全核心 PC",
-        "biometrics": "Windows Hello 人脸识别",
+        "biometrics": "Windows Hello 人脸识别；增强登录安全性",
         "enterpriseManage": "支持 Microsoft Intune 远程企业部署",
         "dimensionsMm": "301 × 220 × 17.5 mm",
         "weightGrams": "普通屏 1.35 kg；隐私屏 1.36 kg",
@@ -2837,7 +2856,11 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-      "segment": "commercial"
+      "segment": "commercial",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch"
+      ]
     },
     {
       "id": "laptop-8-138-snap",
@@ -2917,15 +2940,15 @@ const SURFACE_DATA = {
         "bluetooth": "蓝牙 5.4",
         "cellular": "not_applicable",
         "batteryWh": "54 Wh（额定；最小 52 Wh）",
-        "batteryLifeLocalVideo": "本地视频播放长达 20 小时",
-        "batteryLifeWeb": "网页浏览长达 16 小时",
+        "batteryLifeLocalVideo": "本地视频播放长达 20 小时（官方试制配置测试）",
+        "batteryLifeWeb": "网页浏览长达 16 小时（非办公实测）",
         "chargingSpeed": "标配 39W Surface Connect 电源（特定配置，型号 1963）；最低充电 39W",
         "keyboardCompatibility": "一体化静音剪刀脚键盘 (1.3mm 键程，内置 Copilot 独立按键)",
         "penChargingType": "not_applicable",
         "trackpadType": "精准触觉反馈触控板；自适应触控模式",
         "tpmChip": "Microsoft Pluton；TPM 2.0",
         "securedCorePc": "Windows 11 安全核心 PC",
-        "biometrics": "Windows Hello 人脸识别",
+        "biometrics": "Windows Hello 人脸识别；增强登录安全性",
         "enterpriseManage": "支持 Microsoft Intune 远程企业部署",
         "dimensionsMm": "301 × 220 × 17.5 mm",
         "weightGrams": "1.36 kg",
@@ -2950,7 +2973,11 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-      "segment": "commercial"
+      "segment": "commercial",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch"
+      ]
     },
     {
       "id": "laptop-8-150-intel",
@@ -3039,7 +3066,7 @@ const SURFACE_DATA = {
         "trackpadType": "精准触觉反馈触控板；自适应触控模式",
         "tpmChip": "Microsoft Pluton；TPM 2.0",
         "securedCorePc": "Windows 11 安全核心 PC",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello 人脸识别；增强登录安全性",
         "enterpriseManage": "支持 Intune",
         "dimensionsMm": "329 × 239 × 18.26 mm",
         "weightGrams": "1.67 kg",
@@ -3056,7 +3083,11 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-      "segment": "commercial"
+      "segment": "commercial",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch"
+      ]
     },
     {
       "id": "laptop-8-150-snap",
@@ -3138,7 +3169,7 @@ const SURFACE_DATA = {
         "trackpadType": "精准触觉反馈触控板；自适应触控模式",
         "tpmChip": "Microsoft Pluton；TPM 2.0",
         "securedCorePc": "Windows 11 安全核心 PC",
-        "biometrics": "人脸识别",
+        "biometrics": "Windows Hello 人脸识别；增强登录安全性",
         "enterpriseManage": "支持 Intune",
         "dimensionsMm": "329 × 239 × 18.26 mm",
         "weightGrams": "1.66 kg",
@@ -3155,7 +3186,11 @@ const SURFACE_DATA = {
       },
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-      "segment": "commercial"
+      "segment": "commercial",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch"
+      ]
     },
     {
       "id": "laptop-8-138",
@@ -3273,7 +3308,12 @@ const SURFACE_DATA = {
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-      "segment": "consumer"
+      "segment": "consumer",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch",
+        "trackpadType"
+      ]
     },
     {
       "id": "laptop-8-150",
@@ -3376,7 +3416,12 @@ const SURFACE_DATA = {
       },
       "isCommercial": false,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
-      "segment": "consumer"
+      "segment": "consumer",
+      "unverifiedFields": [
+        "thermalDesign",
+        "cpuArch",
+        "trackpadType"
+      ]
     },
     {
       "id": "laptop-7-138",
@@ -6737,7 +6782,7 @@ const SURFACE_DATA = {
         ],
         "chassisMaterial": "精密加工铝与矿物复合树脂",
         "kickstandType": "not_applicable",
-        "osAtLaunch": "Windows 11 IoT Enterprise（Microsoft Teams Rooms on Windows；可另配 Windows 11 专业版/企业版映像）",
+        "osAtLaunch": "Windows 11 IoT Enterprise（Teams Rooms）；可另购许可证与映像配置 Windows 11 Pro/Enterprise",
         "cpuModel": "Intel Core i5（Hub 3 计算模块；具体SKU待核验）",
         "cpuArch": "not_disclosed",
         "cpuCores": "not_disclosed",
@@ -6761,16 +6806,16 @@ const SURFACE_DATA = {
         "frontCamera": "Surface Hub Smart Camera；4K；136°水平视场；定制USB-C接口",
         "windowsHello": "not_disclosed",
         "rearCamera": "not_applicable",
-        "videoFeatures": "Teams 会议室体验；Smart AV 随横竖屏优化音频",
+        "videoFeatures": "Teams Rooms；Smart AV 随横竖屏优化音频",
         "microphones": "50 英寸：2组8元素MEMS麦克风阵列；85英寸：1组8元素MEMS麦克风阵列",
-        "speakers": "三路立体声（中音 + 高音 + 后置低音）",
+        "speakers": "50英寸：6个中音、3个高音、1个后置低音；85英寸：4个中音、2个高音、1个后置低音，均为三路立体声",
         "audioTech": "not_disclosed",
         "headphoneJack": "not_applicable",
-        "usbCPorts": "50 英寸：4 个 USB-C（含摄像头口）；85 英寸：3 个 USB-C（屏幕）+ 计算模块 USB-C DisplayPort 输入",
-        "usbAPorts": "计算模块 1 个 USB-A；85 英寸屏幕另有 1 个 USB-A",
+        "usbCPorts": "50英寸屏幕4个USB-C（含2个摄像头口）；85英寸屏幕3个USB-C；两款另列USB-C Alt-Mode DisplayPort输入",
+        "usbAPorts": "50英寸：计算模块1个USB-A；85英寸：共2个（屏幕1个、计算模块1个）",
         "surfaceConnect": "not_applicable",
         "thunderboltSupport": "not_applicable",
-        "videoOut": "Mini-DisplayPort 视频输出（Windows 10/11 专业版/企业版模式下）",
+        "videoOut": "Mini DisplayPort输出仅在Windows 10/11 Pro/Enterprise下可用",
         "cellular": "not_applicable",
         "wifi": "Wi-Fi 5（802.11ac，兼容a/b/g/n）",
         "bluetooth": "Bluetooth 5.1",
@@ -6790,14 +6835,15 @@ const SURFACE_DATA = {
         "dimensions": "50 英寸：741 × 1097 × 76 mm；85 英寸：1130 × 1959 × 85.6 mm（高×宽×深）",
         "weightGrams": "50 英寸 28 kg；85 英寸 84 kg",
         "packagingWeight": "not_disclosed",
-        "serviceabilityScore": "计算模块、Smart Camera、触控笔可现场更换",
+        "serviceabilityScore": "用户可更换计算模块（含可拆卸SSD）、Surface Hub Smart Camera、Surface Hub Pen；须遵循维修指引",
         "warranty": "1 年有限硬件保修（Microsoft Learn）",
         "startingPriceCny": "not_disclosed",
         "sourceReliability": "microsoft_official",
         "officialDocUrl": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs",
         "officialCommercialConfigureUrl": "https://www.microsoftstore.com.cn/blog/blog-surface/surface-hub-3-commercial",
         "lastVerified": "2026-09-21"
-      }
+      },
+      "unverifiedFields": []
     },
     {
       "id": "laptop-go-3-biz",

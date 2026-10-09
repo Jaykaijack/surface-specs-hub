@@ -1,0 +1,88 @@
+{
+  "method": "Structured fact extraction from web numbered text; not raw HTML",
+  "observedAt": "2026-10-09",
+  "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-pro-12th-edition-13-inch-for-business",
+  "facts": [
+    {
+      "field": "chassisMaterial",
+      "value": "阳极氧化铝",
+      "locator": "L513"
+    },
+    {
+      "field": "kickstandType",
+      "value": "一体式支架，165 度全阻尼铰链",
+      "locator": "L519"
+    },
+    {
+      "field": "osAtLaunch",
+      "value": "Windows 11 专业版",
+      "locator": "L167"
+    },
+    {
+      "field": "colorSupport",
+      "value": "SDR：sRGB 和 Vivid；支持杜比视界 IQ",
+      "locator": "L321、L328"
+    },
+    {
+      "field": "videoFeatures",
+      "value": "Windows 工作室效果：自动取景、眼神交流、人像及背景模糊",
+      "locator": "L393"
+    },
+    {
+      "field": "thunderboltSupport",
+      "value": "USB4 / Thunderbolt 4",
+      "locator": "L408"
+    },
+    {
+      "field": "wireless",
+      "value": "Wi-Fi 7；蓝牙 Core 5.4",
+      "locator": "L432–440"
+    },
+    {
+      "field": "cellular",
+      "value": "可选 Wi-Fi + 5G 配置，支持 NanoSIM；可用性依区域和运营商",
+      "locator": "L416–440、L560"
+    },
+    {
+      "field": "batteryCapacityWh",
+      "value": "LCD：额定 47 Wh / 最小 46 Wh；OLED：额定 53 Wh / 最小 51 Wh",
+      "locator": "L548–553；仅此Intel商用页"
+    },
+    {
+      "field": "chargingPower",
+      "value": "39 W Surface Connect 电源仅特定市场、特定配置随附",
+      "locator": "L536；不是最低输入功率"
+    },
+    {
+      "field": "fastCharging",
+      "value": "65 W Surface 电源或最低 60 W USB-C PD 充电器（另售）",
+      "locator": "L264；保留脚注限定"
+    },
+    {
+      "field": "compatibleKeyboard",
+      "value": "Surface Pro 13 英寸 Flex 键盘（连接或拆离使用；另售，拆离使用须 Windows 11）",
+      "locator": "L148、L273–275"
+    },
+    {
+      "field": "trackpadType",
+      "value": "Surface Pro 13 英寸 Flex 键盘配有精准触觉反馈触控板（键盘另售）",
+      "locator": "L150–154；配件属性不是裸机"
+    },
+    {
+      "field": "biometrics",
+      "value": "Windows Hello 面部识别；增强登录安全性",
+      "locator": "L380、L395"
+    },
+    {
+      "field": "replaceableParts",
+      "value": "官方列有显示屏模块、SSD、电池、主板、Surface Connect、散热模块、摄像头、扬声器及支架等部件；须遵循维修指引",
+      "locator": "L490–505"
+    },
+    {
+      "field": "warranty",
+      "value": "中国主机自发票日期起 3 年有限硬件保修；配件依品类",
+      "locator": "L542"
+    }
+  ],
+  "excluded": "CPU process node/core architecture not evidenced by this page; no tandem-OLED inference"
+}

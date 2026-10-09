@@ -246,7 +246,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "npuModel": "AI Boost",
       
             "fastCharging": ["60","65"],
-            "cpuArch": ["64","18A"],
+
             "usbPorts": ["USB-C","Thunderbolt","DisplayPort"],
             "thunderboltSupport": "Thunderbolt",
             "chargingPower": "39",},
@@ -365,7 +365,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       
             "fastCharging": ["60","65"],
             "cpuCores": ["10","12"],
-            "cpuArch": ["Oryon","ARM64"],
+
             "usbPorts": ["USB-C","USB4","USB-A","DisplayPort"],
             "chargingPower": "39",},
       specState: {
@@ -424,7 +424,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       
             "fastCharging": ["60","65"],
             "cpuCores": ["10","12"],
-            "cpuArch": ["Oryon","ARM64"],
+
             "usbPorts": ["USB-C","USB4","USB-A","MicroSDXC"],
             "chargingPower": "65",},
       specState: {
@@ -538,7 +538,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "thunderboltSupport": "Thunderbolt",
       
             "fastCharging": ["60","65"],
-            "cpuArch": ["64","18A"],
+
             "usbPorts": ["USB-C","USB-A","Thunderbolt","DisplayPort"],
             "chargingPower": "39",},
       specState: {
@@ -594,7 +594,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       
             "fastCharging": ["60","65"],
             "cpuCores": ["10","12"],
-            "cpuArch": ["Oryon","ARM64"],
+
             "usbPorts": ["USB-C","USB4","USB-A","DisplayPort"],
             "chargingPower": "39",},
       specState: {
@@ -650,7 +650,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
             "expandableStorage": "MicroSD",
       
             "fastCharging": ["60","65"],
-            "cpuArch": ["64","18A"],
+
             "usbPorts": ["USB-C","USB-A","MicroSDXC","Thunderbolt"],
             "chargingPower": "65",},
       specState: {
@@ -705,7 +705,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       
             "fastCharging": ["60","65"],
             "cpuCores": ["10","12"],
-            "cpuArch": ["Oryon","ARM64"],
+
             "usbPorts": ["USB-C","USB4","USB-A"],
             "chargingPower": "65",},
       specState: {
