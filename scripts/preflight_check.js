@@ -114,13 +114,17 @@ function checkTerminology() {
     });
   }
 
-  // 3. 检查未授权的 RTX Spark 违规条目
-  if (content.includes('RTX Spark')) {
-    violations.push({
-      file: 'js/surface-data.js',
-      error: '存在未经微软官方证实的非官方爆料词「RTX Spark」(F-1事实违规)'
-    });
-  }
+  // 3. RTX Spark 已于 2026-10-07 由微软官方发布（Surface Laptop Ultra），名称本身合规。
+  //    改为拦截上市前流传、但微软官方规格未写出的说法，防止爆料参数回流。
+  const UNVERIFIED_ULTRA_CLAIMS = ['台积电 3nm', 'Tensor Core & AI Boost Engine', '1 PetaFLOP 澎湃', '离电运行性能保持率高达 99%', '3120 x 2080', '90 Wh'];
+  UNVERIFIED_ULTRA_CLAIMS.forEach((claim) => {
+    if (content.includes(claim)) {
+      violations.push({
+        file: 'js/surface-data.js',
+        error: `存在微软官方规格未写出的说法「${claim}」(F-1事实违规)`
+      });
+    }
+  });
 
   return {
     name: '术语与命名合规性扫描 (PRD P1-2 / C-2)',

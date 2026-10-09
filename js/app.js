@@ -205,7 +205,7 @@ const App = {
     if (!scriptEl) return;
 
     const path = (this.activeRoute && this.activeRoute.path) ? this.activeRoute.path : '';
-    const siteUrl = 'https://hubweb.cn/surface/';
+    const siteUrl = 'https://surface.kaibase.cn/';
     const baseBreadcrumb = {
       "@type": "ListItem",
       "position": 1,
@@ -2195,9 +2195,6 @@ const App = {
           <button class="fluent-btn primary utility-primary-action" onclick="ComparisonEngine.toggleDevice('${dev.id}')">
             ${isSelected ? '✓ 已加入对比' : '+ 加入对比'}
           </button>
-          <button class="fluent-btn utility-secondary-action" type="button" title="收藏功能待接入">
-            ♡ 收藏产品
-          </button>
         </div>
 
         <div class="utility-rail-section">
@@ -2580,19 +2577,23 @@ const App = {
       return this.normalizeSearchText(`${c.name} ${c.vendor} ${c.npuDesc} ${c.highlights}`).includes(term);
     });
 
+    const matchedAccessories = (SURFACE_DATA.accessories || []).filter(a => {
+      return this.normalizeSearchText(`${a.name} ${a.categoryName || ''} ${a.tagline || ''} ${(a.features || []).join(' ')}`).includes(term);
+    });
+
     let html = `
       <div class="search-modal-backdrop" onclick="App.closeSearchModal()">
         <div class="search-modal-card" onclick="event.stopPropagation()">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <span style="font-weight:700; font-size:15px;">搜索结果 (${matchedDevices.length + matchedChips.length})</span>
+            <span style="font-weight:700; font-size:15px;">搜索结果 (${matchedDevices.length + matchedChips.length + matchedAccessories.length})</span>
             <button class="dock-item-remove" onclick="App.closeSearchModal()">✕</button>
           </div>
 
-          ${matchedDevices.length === 0 && matchedChips.length === 0 ? `
+          ${matchedDevices.length === 0 && matchedChips.length === 0 && matchedAccessories.length === 0 ? `
             <div class="hub-empty-state" style="padding:24px 16px; margin:10px 0; border:none; box-shadow:none;">
               <div class="empty-icon" style="font-size:32px; margin-bottom:8px;">🔍</div>
               <div class="empty-title" style="font-size:15px;">未找到与 "${term}" 匹配的内容</div>
-              <div class="empty-desc" style="font-size:12px; margin-bottom:12px;">建议尝试搜索机型（如 Pro 13、Laptop 8）、芯片架构（如 骁龙 X2、酷睿 Ultra）或算力（如 80 TOPS）。</div>
+              <div class="empty-desc" style="font-size:12px; margin-bottom:12px;">建议尝试搜索机型（如 Pro 13、Laptop 8）、芯片架构（如 骁龙 X2、酷睿 Ultra）、算力（如 80 TOPS）或配件（如 触控笔、键盘盖）。</div>
               <div class="empty-actions">
                 <button class="fluent-btn-sm" onclick="App.clearGlobalSearch()">清空搜索词</button>
               </div>
@@ -2625,6 +2626,21 @@ const App = {
                     <div style="font-size:11.5px; color:var(--ms-text-secondary);">${c.vendor} · ${c.npuDesc}</div>
                   </div>
                   <span class="spec-badge gold">${c.npuTops} TOPS</span>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+
+          ${matchedAccessories.length > 0 ? `
+            <div style="font-size:12px; font-weight:700; color:var(--ms-text-brand); margin:12px 0 4px;">匹配 Surface 配件 (${matchedAccessories.length})</div>
+            <div style="display:flex; flex-direction:column; gap:6px; max-height:220px; overflow-y:auto;">
+              ${matchedAccessories.map(a => `
+                <div class="search-result-item" onclick="App.navigate('#/accessories/${a.category}'); App.closeSearchModal();">
+                  <div>
+                    <div style="font-weight:600; font-size:13.5px;">${a.name}</div>
+                    <div style="font-size:11.5px; color:var(--ms-text-secondary);">${a.categoryName || ''}</div>
+                  </div>
+                  <span class="spec-badge">配件</span>
                 </div>
               `).join('')}
             </div>
@@ -2663,9 +2679,9 @@ const App = {
   detailCatalogStatusLabel(status) {
     const labels = {
       current_cn: '已发布',
-      upcoming: '即将推出',
-      discontinued: '已停止销售',
-      legacy: '历史型号',
+      upcoming: '即将发售',
+      discontinued: '已停售',
+      legacy: '历史机型',
       current_global: '全球在售'
     };
     return labels[status] || '待确认';
@@ -2819,9 +2835,6 @@ const App = {
           <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" onclick="App.navigate('#/compare')">
             <span class="catalog-tab-icon">▣</span>对比 (${ComparisonEngine.selectedIds.length})
           </button>
-          <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" title="收藏功能待接入">
-            <span class="catalog-tab-icon">♡</span>收藏 (0)
-          </button>
         </div>
         <div class="detail-catalog-controls">
           <label class="detail-catalog-search">
@@ -2836,7 +2849,7 @@ const App = {
             <select aria-label="按状态筛选" onchange="App.updateDetailFilter('status', this.value)">
               <option value="all" ${this.detailFilterState.status === 'all' ? 'selected' : ''}>所有状态</option>
               <option value="current_cn" ${this.detailFilterState.status === 'current_cn' || this.detailFilterState.status === '已发布' ? 'selected' : ''}>国行在售</option>
-              <option value="upcoming" ${this.detailFilterState.status === 'upcoming' || this.detailFilterState.status === '即将推出' ? 'selected' : ''}>即将推出</option>
+              <option value="upcoming" ${this.detailFilterState.status === 'upcoming' || this.detailFilterState.status === '即将推出' ? 'selected' : ''}>即将发售</option>
               <option value="discontinued" ${this.detailFilterState.status === 'discontinued' || this.detailFilterState.status === '已停止销售' ? 'selected' : ''}>停产/经典</option>
             </select>
             <select aria-label="按发布时间筛选" onchange="App.updateDetailFilter('sort', this.value)">

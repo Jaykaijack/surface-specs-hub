@@ -67,7 +67,7 @@ surface-specs-hub/
 ├── README.md                    # 项目说明书与培训指南
 ├── css/
 │   ├── fluent-tokens.css        # Fluent 2 设计系统令牌与深浅色模式变量
-│   ├── hubweb-layout.css        # HubWeb 三段式布局、树形导航与常驻托盘
+│   ├── specs-layout.css         # 三段式布局、树形导航与常驻托盘
 │   ├── spec-table.css           # 横向滚动对比表、固定表头、差异高亮
 │   └── tools.css                # 3:2 屏幕计算器、芯片天梯榜与配件矩阵样式
 └── js/

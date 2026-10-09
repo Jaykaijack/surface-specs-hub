@@ -509,7 +509,7 @@ assert(tokensContent.includes('--md-sys-typescale-headline-large'), 'M3 规范: 
 assert(tokensContent.includes('--md-sys-color-primary'), 'M3 规范: 包含 M3 语义色 Primary 令牌');
 assert(tokensContent.includes('--md-sys-shape-corner-large'), 'M3 规范: 包含 M3 16px 圆角规范');
 
-const hubwebCssPath = path.resolve(__dirname, '../css/hubweb-layout.css');
+const hubwebCssPath = path.resolve(__dirname, '../css/specs-layout.css');
 const hubwebCss = fs.readFileSync(hubwebCssPath, 'utf8');
 assert(hubwebCss.includes('aspect-ratio: 16 / 10'), '全站图片规范: 包含 16:10 标准化黄金比例舞台容器');
 assert(hubwebCss.includes('.m3-tab-bar'), '切换交互系统: 包含 M3 Tabs 标签页导航样式');
@@ -1629,6 +1629,12 @@ assertEqual(officialLockedIds.size, Catalog.listDevices().length,
 
 Catalog.listDevices().forEach(dev => {
   if (dev.status === 'current_cn') return;
+  if ((OFFICIAL_CURRENT_LINEUP_FACTS.presaleWithOfficialPriceIds || []).includes(dev.id)) {
+    assertEqual(dev.status, 'upcoming', `${dev.id} 商城预售未发货，状态必须为即将发售`);
+    assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'VALID',
+      `${dev.id} 商城已公布预售价，起售价必须按官方预售价填写`);
+    return;
+  }
   if (['pro-12-inch-2', 'laptop-13-inch-2'].includes(dev.id)) {
     assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'NULL',
       `${dev.id} 专属产品列仅列预售日期，价格待核验而非断言官方未披露`);

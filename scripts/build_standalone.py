@@ -28,7 +28,7 @@ STANDALONE_RELEASE = os.path.join(RELEASES_DIR, f"surface-specs-hub-standalone-{
 
 CSS_FILES = [
     'css/fluent-tokens.css',
-    'css/hubweb-layout.css',
+    'css/specs-layout.css',
     'css/spec-table.css',
     'css/tools.css'
 ]

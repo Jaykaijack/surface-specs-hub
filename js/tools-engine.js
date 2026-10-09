@@ -173,8 +173,8 @@ const ToolsEngine = {
     else if (this.chipFilter === 'x86') chips = chips.filter(c => c.architecture.includes('x86'));
     else if (this.chipFilter === 'copilot') chips = chips.filter(c => c.copilotPlus);
 
-    chips.sort((a, b) => b.npuTops - a.npuTops);
-    const maxTops = 80;
+    chips.sort((a, b) => (Number(b.npuTops) || 0) - (Number(a.npuTops) || 0));
+    const maxTops = Math.max(...chips.map(c => Number(c.npuTops) || 0), 80);
 
     let html = `
       <div class="tool-view-card">
@@ -226,7 +226,7 @@ const ToolsEngine = {
           </div>
 
           <div class="chip-score-cell">
-            ${npuTops > 0 ? `${npuTops} <span style="font-size:11px; font-weight:normal;">TOPS</span>` : '<span style="font-size:11px; color:var(--ms-text-tertiary);">无独立NPU</span>'}
+            ${npuTops > 0 ? `${npuTops} <span style="font-size:11px; font-weight:normal;">TOPS</span>` : (chip.npuTopsNote ? `<span style="font-size:11px; color:var(--ms-text-tertiary);">${chip.npuTopsNote}</span>` : '<span style="font-size:11px; color:var(--ms-text-tertiary);">无独立NPU</span>')}
           </div>
         </div>
 

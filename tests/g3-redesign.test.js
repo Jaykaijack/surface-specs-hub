@@ -23,7 +23,7 @@ function runG3RedesignTests(helpers) {
   const indexHtml = fs.readFileSync(path.join(ROOT_DIR, 'index.html'), 'utf8');
   const appJs = fs.readFileSync(path.join(ROOT_DIR, 'js', 'app.js'), 'utf8');
   const comparisonJs = fs.readFileSync(path.join(ROOT_DIR, 'js', 'comparison-engine.js'), 'utf8');
-  const layoutCss = fs.readFileSync(path.join(ROOT_DIR, 'css', 'hubweb-layout.css'), 'utf8');
+  const layoutCss = fs.readFileSync(path.join(ROOT_DIR, 'css', 'specs-layout.css'), 'utf8');
   const tokensCss = fs.readFileSync(path.join(ROOT_DIR, 'css', 'fluent-tokens.css'), 'utf8');
   const designDocPath = path.join(ROOT_DIR, 'docs', 'design-system.md');
 
@@ -51,10 +51,10 @@ function runG3RedesignTests(helpers) {
   // =========================================================================
   // G3-03 (D-4): 全态反馈系统（骨架屏、空状态组件系统）
   // =========================================================================
-  assert(layoutCss.includes('.skeleton-box'), 'G3-03: hubweb-layout.css 必须定义骨架屏基础类 .skeleton-box');
-  assert(layoutCss.includes('skeleton-pulse'), 'G3-03: hubweb-layout.css 必须包含骨架屏流动微光动画 @keyframes skeleton-pulse');
-  assert(layoutCss.includes('.hub-empty-state'), 'G3-03: hubweb-layout.css 必须定义空状态通用组件 .hub-empty-state');
-  assert(layoutCss.includes('.empty-actions'), 'G3-03: hubweb-layout.css 必须定义空状态操作区 .empty-actions');
+  assert(layoutCss.includes('.skeleton-box'), 'G3-03: specs-layout.css 必须定义骨架屏基础类 .skeleton-box');
+  assert(layoutCss.includes('skeleton-pulse'), 'G3-03: specs-layout.css 必须包含骨架屏流动微光动画 @keyframes skeleton-pulse');
+  assert(layoutCss.includes('.hub-empty-state'), 'G3-03: specs-layout.css 必须定义空状态通用组件 .hub-empty-state');
+  assert(layoutCss.includes('.empty-actions'), 'G3-03: specs-layout.css 必须定义空状态操作区 .empty-actions');
 
   // 验证对比表空状态
   const emptyComparisonHtml = ComparisonEngine.renderComparisonTable([]);
@@ -68,8 +68,8 @@ function runG3RedesignTests(helpers) {
   // =========================================================================
   // G3-04 (D-6): 移动端自适应与横滑引导提示 (mobile-scroll-hint)
   // =========================================================================
-  assert(layoutCss.includes('.mobile-scroll-hint'), 'G3-04: hubweb-layout.css 必须声明 .mobile-scroll-hint 样式');
-  assert(layoutCss.includes('@media (max-width: 768px)'), 'G3-04: hubweb-layout.css 必须包含移动端 768px 响应式断点');
+  assert(layoutCss.includes('.mobile-scroll-hint'), 'G3-04: specs-layout.css 必须声明 .mobile-scroll-hint 样式');
+  assert(layoutCss.includes('@media (max-width: 768px)'), 'G3-04: specs-layout.css 必须包含移动端 768px 响应式断点');
   assert(comparisonJs.includes('mobile-scroll-hint'), 'G3-04: 横向对比大表必须渲染移动端横滑指示条');
   assert(appJs.includes('mobile-scroll-hint'), 'G3-04: 首页货架卡片前必须渲染移动端横滑指示条');
 

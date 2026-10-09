@@ -1,5 +1,5 @@
 /**
- * Microsoft Surface Specs Hub - Layout Styles (HubWeb Replica + Fluent 2)
+ * Microsoft Surface Specs Hub - Layout Styles (Fluent 2 + High-Density Layout)
  */
 
 * {
@@ -3983,3 +3983,8 @@ select:focus-visible,
 .device-card-mini:hover .accessory-img-wrap img {
   transform: scale(1.03);
 }
+
+/* 搜索结果：标签不换行、不被长文本挤压（修复“新品”竖排） */
+.search-result-item > div:first-child { min-width: 0; flex: 1 1 auto; }
+.search-result-item .spec-badge,
+.search-result-item .recent-launch-badge { white-space: nowrap; flex-shrink: 0; }

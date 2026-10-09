@@ -1,6 +1,6 @@
 const SURFACE_DATA = {
   "datasetVersion": "2026.10.01",
-  "lastVerifiedDate": "2026-10-01",
+  "lastVerifiedDate": "2026-10-08",
   "categories": [
     {
       "id": "pro",
@@ -1277,7 +1277,7 @@ const SURFACE_DATA = {
         "frontCamera": "1440p 超宽角四倍高清前置摄像头",
         "windowsHello": "Windows Hello 面部识别",
         "rearCamera": "1000 万像素 Ultra HD 后置摄像头",
-        "videoFeatures": "Windows Studio 效果",
+        "videoFeatures": "not_disclosed",
         "microphones": "矩阵式远场双麦克风",
         "speakers": "2W 立体声扬声器，支持 Dolby® Atmos®",
         "audioTech": "Dolby Atmos®",
@@ -2377,6 +2377,117 @@ const SURFACE_DATA = {
       "segment": "consumer"
     },
     {
+      "id": "laptop-ultra-biz",
+      "categoryId": "laptop",
+      "heroImage": "./assets/products/surface-laptop-ultra-hero.png",
+      "name": "Surface Laptop Ultra 商用版",
+      "nameEn": "Surface Laptop Ultra for Business",
+      "generation": "第 1 代商用 (2026)",
+      "year": 2026,
+      "status": "upcoming",
+      "targetAudience": "commercial",
+      "flagship": true,
+      "tagline": "商用版：NVIDIA RTX Spark™，高达一千万亿次浮点运算 AI 算力，Windows 11 专业版安全核心 PC",
+      "aliases": [
+        "Surface Laptop Ultra 商用版",
+        "Surface Laptop Ultra for Business",
+        "Laptop Ultra Biz",
+        "RTX Spark Biz"
+      ],
+      "prevGenerationId": "laptop-8-150-intel",
+      "nextGenerationId": null,
+      "isCommercial": true,
+      "segment": "commercial",
+      "learnDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
+      "specs": {
+        "releaseDate": "2026 年 10 月 (预售，2026 年 10 月 16 日起陆续发货)",
+        "generation": "第 1 代商用",
+        "status": "upcoming",
+        "salesRegion": "中国微软官方商城商用专区预售中，2026 年 10 月 16 日起陆续发货",
+        "targetAudience": "企业 AI 研发人员、数据科学家、3D 视觉工程团队与企业 IT 资产管理",
+        "tagline": "Surface Laptop Ultra 商用版：NVIDIA RTX Spark™，Windows 11 专业版安全核心 PC，防反光显示屏",
+        "colors": [
+          {
+            "name": "亮铂金",
+            "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
+            "image": "./assets/products/surface-laptop-ultra-hero.png"
+          },
+          {
+            "name": "夜幕色",
+            "hex": "#1f242d",
+            "material": "阳极氧化铝",
+            "image": "./assets/products/surface-laptop-ultra-midnight.png"
+          }
+        ],
+        "chassisMaterial": "阳极氧化铝",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "Windows 11 专业版 (全部配置)",
+        "cpuModel": "NVIDIA RTX Spark™ N1X，搭载 5120 核 GPU 与 18 核 CPU / NVIDIA RTX Spark™ N1X，搭载 6144 核 GPU 与 20 核 CPU",
+        "cpuArch": "Arm 架构 (NVIDIA RTX Spark™ 平台，最高 20 核 NVIDIA Grace CPU)",
+        "cpuCores": "18 核 CPU / 20 核 CPU",
+        "gpuModel": "NVIDIA Blackwell 架构 RTX 5120 核 GPU / 6144 核 GPU",
+        "npuModel": "NVIDIA NPU (NVIDIA RTX Spark™ 平台 AI 算力高达一千万亿次浮点运算，FP4 理论值，启用稀疏性，特定配置)",
+        "npuTops": "not_disclosed",
+        "copilotPlus": "Windows 11 AI+ PC",
+        "ramSpec": "24GB / 32GB / 48GB / 64GB / 128GB LPDDR5x 统一内存",
+        "storageOptions": "可拆卸式固态硬盘：512GB (第 4 代 SSD)；1TB / 2TB (第 5 代 SSD)",
+        "ssdRemovable": "可拆卸式固态硬盘",
+        "expandableStorage": "SD 读卡器",
+        "screenSize": "15 英寸",
+        "aspectRatio": "3:2",
+        "panelTech": "Mini-LED PixelSense™ Ultra 触控屏，强化玻璃，防反光 (已通过 ISO 9241-307 认证)",
+        "resolution": "3270 x 2180",
+        "ppi": "262",
+        "refreshRate": "动态刷新频率：高达 120Hz",
+        "brightness": "SDR：最大 1000 尼特 (典型值)；HDR：2000 尼特峰值亮度",
+        "colorSupport": [
+          "DCI-P3 100%，D65 白点",
+          "SDR 模式：sRGB 和 Vivid 模式；HDR 模式：HDR8",
+          "支持杜比视界 IQ (Dolby Vision IQ™)",
+          "对比度 100,000:1"
+        ],
+        "touchAndPenProtocol": "10 点多点触控；不支持触控笔输入",
+        "frontCamera": "全高清前置 Surface Studio 摄像头 (1080p)",
+        "windowsHello": "Windows Hello 面部识别",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "not_disclosed",
+        "microphones": "双 Studio Mics",
+        "speakers": "四扬声器 Omnisonic® 音响系统，搭载 Dolby Atmos® 技术",
+        "audioTech": "Dolby Atmos®；支持蓝牙 LE 音频",
+        "headphoneJack": "3.5 毫米耳机插孔",
+        "usbPorts": "2 个 USB-C® / USB4®；1 个 USB-C® / USB4® 带磁吸接口 (Magnetic Connect)；HDMI 2.1b；USB-A 3.1；SD 读卡器；3.5 毫米耳机插孔",
+        "thunderboltSupport": "USB4® 40 Gbps；所有 USB-C 端口支持 DisplayPort™ 2.1，最多 3 台 4K 60Hz 显示器",
+        "surfaceConnect": "USB-C Magnetic Connect 磁吸接口 (无 Surface Connect)",
+        "wireless": "Wi-Fi 7 (6GHz 频带并非适用于所有地区) + 蓝牙® Core 5.4",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "额定 92 Wh / 最小 89 Wh",
+        "batteryLifeOffice": "长达 12 小时网页浏览",
+        "batteryLifeVideo": "长达 15 小时本地视频播放",
+        "chargingPower": "所有 USB-C 端口支持 140W 充电；Surface 140W USB-C 电源适配器 (特定市场提供，仅适用于特定配置；商城另售 ¥888)",
+        "fastCharging": "支持 115W 及以上 Surface 电源或 USB-C PD 充电器快速充电；电池供电时性能保持插电状态的 95.6%–101.0% (平均 99.6%，微软预发布测试)",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "精准触觉触控板，面积比 Surface Laptop (第 8 代) 增大 30% 以上",
+        "tpmChip": "TPM 2.0 企业级安全，支持 BitLocker",
+        "securedCorePc": "Windows 11 安全核心 PC",
+        "biometrics": "Windows Hello 面部识别",
+        "enterpriseManage": "Surface UEFI (基于 Patina 与 Project Mu 开源组件)，通过 Windows 更新升级",
+        "dimensionsMm": "328.8 x 238.7 x 17.99 mm (含脚垫 19.16 mm)",
+        "weightGrams": "2.0 千克 (4.41 磅)",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "全新散热系统，散热能力为 Surface Laptop (第 8 代) 的 2.5 倍",
+        "repairabilityScore": "官方未公布评分；内部维修标识与官方服务指南",
+        "replaceableParts": "显示组件 (含摄像头)、键盘、触摸板、可拆卸式固态硬盘、电池、主板、风扇、扬声器、外壳、音频插孔、USB Mag-C 接口、USB-C 接口、USB-A 端口、支脚",
+        "warranty": "自购买凭证 (发票) 标注时间起，Surface 主机 3 年有限硬件保修",
+        "startingPriceCny": "¥23,188 起",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-10-09",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business"
+      }
+    },
+    {
       "id": "laptop-8-138-intel",
       "categoryId": "laptop",
       "heroImage": "./assets/products/surface-laptop-8-platinum.png",
@@ -2389,10 +2500,6 @@ const SURFACE_DATA = {
       "flagship": true,
       "tagline": "商用轻薄触控本旗舰：搭载英特尔® 酷睿™ Ultra (第 3 代) 处理器，50 TOPS AI 算力与全域触觉触控板",
       "aliases": [
-        "Surface Laptop Ultra",
-        "Surface Laptop 13.8 Ultra",
-        "Laptop Ultra",
-        "Laptop 8 Ultra",
         "酷睿 Ultra"
       ],
       "prevGenerationId": "laptop-6-biz",
@@ -2606,10 +2713,6 @@ const SURFACE_DATA = {
       "flagship": true,
       "tagline": "商用大屏性能轻薄本：搭载英特尔® 酷睿™ Ultra 5 335 / Ultra X7 368H（第 3 代），50 TOPS 与 262 PPI 超清屏",
       "aliases": [
-        "Surface Laptop Ultra",
-        "Surface Laptop 15 Ultra",
-        "Laptop Ultra",
-        "Laptop 8 Ultra 15",
         "酷睿 Ultra"
       ],
       "prevGenerationId": "laptop-6-biz",
@@ -2797,6 +2900,118 @@ const SURFACE_DATA = {
       "isCommercial": true,
       "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-laptop-business-8th-edition-intel",
       "segment": "commercial"
+    },
+    {
+      "id": "laptop-ultra",
+      "categoryId": "laptop",
+      "heroImage": "./assets/products/surface-laptop-ultra-hero.png",
+      "name": "Surface Laptop Ultra",
+      "nameEn": "Surface Laptop Ultra",
+      "generation": "第 1 代 (2026)",
+      "year": 2026,
+      "status": "upcoming",
+      "targetAudience": "consumer",
+      "flagship": true,
+      "tagline": "更强大的 Surface 笔记本电脑：NVIDIA RTX Spark™，15 英寸 Mini-LED PixelSense™ Ultra 触控屏，最高 128GB 统一内存",
+      "aliases": [
+        "Surface Laptop Ultra",
+        "Laptop Ultra",
+        "RTX Spark",
+        "Blackwell RTX",
+        "Surface Ultra"
+      ],
+      "prevGenerationId": "laptop-8-150",
+      "nextGenerationId": null,
+      "isCommercial": false,
+      "segment": "consumer",
+      "learnDocUrl": "https://www.microsoft.com/zh-cn/surface/devices/surface-laptop-ultra",
+      "specs": {
+        "releaseDate": "2026 年 10 月 (中国微软官方商城预售)",
+        "generation": "第 1 代",
+        "status": "upcoming",
+        "salesRegion": "中国微软官方商城预售中",
+        "targetAudience": "专业创作者、AI 开发者与追求卓越性能的高端用户",
+        "tagline": "搭载 NVIDIA RTX Spark™，提供高达一千万亿次浮点运算的 AI 算力，可本地运行高达 1200 亿参数的模型",
+        "colors": [
+          {
+            "name": "亮铂金",
+            "hex": "#d8d8d8",
+            "material": "阳极氧化铝",
+            "image": "./assets/products/surface-laptop-ultra-hero.png"
+          },
+          {
+            "name": "夜幕色",
+            "hex": "#1f242d",
+            "material": "阳极氧化铝",
+            "image": "./assets/products/surface-laptop-ultra-midnight.png"
+          }
+        ],
+        "chassisMaterial": "阳极氧化铝",
+        "kickstandType": "not_applicable",
+        "osAtLaunch": "Windows 11 家庭版 (24GB 配置)；Windows 11 专业版 (32GB 及以上配置，以美国官方商城为准)",
+        "cpuModel": "NVIDIA RTX Spark™ N1X，搭载 5120 核 GPU 与 18 核 CPU / NVIDIA RTX Spark™ N1X，搭载 6144 核 GPU 与 20 核 CPU",
+        "cpuArch": "Arm 架构 (NVIDIA RTX Spark™ 平台，最高 20 核 NVIDIA Grace CPU)",
+        "cpuCores": "18 核 CPU / 20 核 CPU",
+        "gpuModel": "NVIDIA Blackwell 架构 RTX 5120 核 GPU / 6144 核 GPU",
+        "npuModel": "NVIDIA NPU (NVIDIA RTX Spark™ 平台 AI 算力高达一千万亿次浮点运算，FP4 理论值，启用稀疏性，特定配置)",
+        "npuTops": "not_disclosed",
+        "copilotPlus": "Windows 11 AI+ PC",
+        "ramSpec": "24GB / 32GB / 48GB / 64GB / 128GB LPDDR5x 统一内存",
+        "storageOptions": "可拆卸式固态硬盘：512GB (第 4 代 SSD)；1TB / 2TB (第 5 代 SSD)",
+        "ssdRemovable": "可拆卸式固态硬盘",
+        "expandableStorage": "SD 读卡器",
+        "screenSize": "15 英寸",
+        "aspectRatio": "3:2",
+        "panelTech": "Mini-LED PixelSense™ Ultra 触控屏",
+        "resolution": "3270 x 2180",
+        "ppi": "262",
+        "refreshRate": "动态刷新频率：高达 120Hz",
+        "brightness": "SDR：最大 1000 尼特 (典型值)；HDR：2000 尼特峰值亮度",
+        "colorSupport": [
+          "DCI-P3 100%，D65 白点",
+          "SDR 模式：sRGB 和 Vivid 模式；HDR 模式：HDR8",
+          "支持杜比视界 IQ (Dolby Vision IQ™)",
+          "对比度 100,000:1"
+        ],
+        "touchAndPenProtocol": "10 点多点触控；不支持触控笔输入",
+        "frontCamera": "全高清前置 Surface Studio 摄像头 (1080p)",
+        "windowsHello": "Windows Hello 面部识别",
+        "rearCamera": "not_applicable",
+        "videoFeatures": "not_disclosed",
+        "microphones": "双 Studio Mics",
+        "speakers": "四扬声器 Omnisonic® 音响系统，搭载 Dolby Atmos® 技术",
+        "audioTech": "Dolby Atmos®；支持蓝牙 LE 音频",
+        "headphoneJack": "3.5 毫米耳机插孔",
+        "usbPorts": "2 个 USB-C® / USB4®；1 个 USB-C® / USB4® 带磁吸接口 (Magnetic Connect)；HDMI 2.1b；USB-A 3.1；SD 读卡器；3.5 毫米耳机插孔",
+        "thunderboltSupport": "USB4® 40 Gbps；所有 USB-C 端口支持 DisplayPort™ 2.1，最多 3 台 4K 60Hz 显示器",
+        "surfaceConnect": "USB-C Magnetic Connect 磁吸接口 (无 Surface Connect)",
+        "wireless": "Wi-Fi 7 (6GHz 频带并非适用于所有地区) + 蓝牙® Core 5.4",
+        "cellular": "not_applicable",
+        "batteryCapacityWh": "额定 92 Wh / 最小 89 Wh",
+        "batteryLifeOffice": "长达 12 小时网页浏览",
+        "batteryLifeVideo": "长达 15 小时本地视频播放",
+        "chargingPower": "所有 USB-C 端口支持 140W 充电；Surface 140W USB-C 电源适配器 (特定市场提供，仅适用于特定配置；商城另售 ¥888)",
+        "fastCharging": "支持 115W 及以上 Surface 电源或 USB-C PD 充电器快速充电；电池供电时性能保持插电状态的 95.6%–101.0% (平均 99.6%，微软预发布测试)",
+        "compatibleKeyboard": "not_applicable",
+        "penHapticFeedback": "not_applicable",
+        "penChargingType": "not_applicable",
+        "trackpadType": "精准触觉触控板，面积比 Surface 第 7 版笔记本电脑增大 30% 以上",
+        "tpmChip": "TPM 2.0 企业级安全，支持 BitLocker",
+        "securedCorePc": "Windows 11 安全核心 PC",
+        "biometrics": "Windows Hello 面部识别",
+        "enterpriseManage": "not_applicable",
+        "dimensionsMm": "328.8 x 238.7 x 17.99 mm (含脚垫 19.16 mm)",
+        "weightGrams": "2.0 千克 (4.41 磅)",
+        "totalWeightWithKeyboard": "not_applicable",
+        "thermalDesign": "全新散热系统，散热能力最高可达 Surface Laptop 15 英寸 (第 7 版) 的 2.5 倍",
+        "repairabilityScore": "官方未公布评分；内部维修标识与官方服务指南",
+        "replaceableParts": "显示组件 (含摄像头)、键盘、触摸板、可拆卸式固态硬盘、电池、主板、风扇、扬声器、外壳、音频插孔、USB Mag-C 接口、USB-C 接口、USB-A 端口、支脚",
+        "warranty": "中国消费版保修年限官方尚未公布",
+        "startingPriceCny": "¥21,988 起 (18 核 CPU / 24GB / 512GB / 亮铂金)",
+        "sourceReliability": "microsoft_official",
+        "lastVerified": "2026-10-09",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-ultra"
+      }
     },
     {
       "id": "laptop-8-138",
@@ -3139,9 +3354,6 @@ const SURFACE_DATA = {
       "flagship": false,
       "tagline": "英特尔® 酷睿™ Ultra H 系列标压商用本，国行规格不含美加专属智能卡读卡器",
       "aliases": [
-        "Surface Laptop Ultra",
-        "Surface Laptop 6 Ultra",
-        "Laptop Ultra",
         "酷睿 Ultra"
       ],
       "prevGenerationId": "laptop-5",
@@ -7502,7 +7714,7 @@ const SURFACE_DATA = {
         "frontCamera": "1080p 全高清 Surface Studio 摄像头",
         "windowsHello": "Windows Hello 面部识别",
         "rearCamera": "not_applicable",
-        "videoFeatures": "Windows Studio 效果",
+        "videoFeatures": "not_disclosed",
         "microphones": "矩阵式远场双麦克风",
         "speakers": null,
         "audioTech": "Dolby Atmos®",
@@ -9251,6 +9463,23 @@ const SURFACE_DATA = {
   ],
   "chips": [
     {
+      "id": "nvidia-rtx-spark-n1x",
+      "name": "NVIDIA RTX Spark™ N1X",
+      "series": "nvidia",
+      "process": "官方未公布",
+      "architecture": "Arm 架构：最高 20 核 NVIDIA Grace CPU + NVIDIA Blackwell 架构 RTX GPU (5120 核 / 6144 核)",
+      "npuTops": null,
+      "npuTopsNote": "NPU 算力官方未公布",
+      "npu": "NVIDIA NPU",
+      "copilotPlus": true,
+      "tdp": "not_disclosed",
+      "devices": [
+        "Surface Laptop Ultra",
+        "Surface Laptop Ultra 商用版"
+      ],
+      "desc": "微软官方：NVIDIA RTX Spark™ 将高效 CPU 与 NVIDIA Blackwell RTX GPU 相结合，提供高达一千万亿次浮点运算的 AI 算力 (FP4 理论值，启用稀疏性，特定配置)，可本地运行高达 1200 亿参数的模型；最高 128 GB 统一内存。"
+    },
+    {
       "id": "intel-core-ultra-gen3",
       "name": "Intel® Core™ Ultra (第 3 代)",
       "vendor": "英特尔 Intel®",
@@ -9934,6 +10163,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
         }
       ]
     },
@@ -10391,6 +10630,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
         }
       ]
     },
@@ -10848,6 +11097,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
         }
       ]
     },
@@ -11305,6 +11564,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
         }
       ]
     },
@@ -11762,6 +12031,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
         }
       ]
     },
@@ -12219,6 +12498,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
         }
       ]
     },
@@ -12676,6 +12965,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
         }
       ]
     },
@@ -13133,6 +13432,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
         }
       ]
     },
@@ -13590,6 +13899,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
         }
       ]
     },
@@ -14047,6 +14366,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "内置全尺寸一体化背光键盘，不适用独立键盘盖"
         }
       ]
     },
@@ -14504,6 +14833,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
         }
       ]
     },
@@ -14961,6 +15300,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
         }
       ]
     },
@@ -15418,6 +15767,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
         }
       ]
     },
@@ -15875,6 +16234,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "UNSUPPORTED",
+          "note": "专注于多点触控与极窄边框体验，不支持触控笔手写协议"
         }
       ]
     },
@@ -16332,6 +16701,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
         }
       ]
     },
@@ -16789,6 +17168,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
         }
       ]
     },
@@ -17246,6 +17635,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
         }
       ]
     },
@@ -17703,6 +18102,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
         }
       ]
     },
@@ -18160,6 +18569,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "双雷电/USB4 全速连接，支持多屏 4K 120Hz 扩展输出"
         }
       ]
     },
@@ -18617,6 +19036,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
         }
       ]
     },
@@ -19074,6 +19503,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
         }
       ]
     },
@@ -19531,6 +19970,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "原生低功耗蓝牙 5.4 免驱直连，平滑高精度指针控制"
         }
       ]
     },
@@ -19988,6 +20437,16 @@ const SURFACE_DATA = {
           "deviceId": "xbox-series-x25",
           "status": "UNSUPPORTED",
           "note": "这是 Surface 配件，不适用于 Xbox 主机"
+        },
+        {
+          "deviceId": "laptop-ultra",
+          "status": "FULL",
+          "note": "完全兼容支持"
+        },
+        {
+          "deviceId": "laptop-ultra-biz",
+          "status": "FULL",
+          "note": "完全兼容支持"
         }
       ]
     }
