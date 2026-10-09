@@ -125,3 +125,9 @@ const gaps=require('../docs/evidence/remaining-field-gaps-20261009.json');assert
 const accessoryImages=require('../docs/evidence/accessory-and-ultra-images-20261009.json');
 for(const row of [...accessoryImages.accessories,...accessoryImages.ultraAssets])assert.equal(crypto.createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256);
 for(const acc of Catalog.accessories()){assert.equal(Catalog.accessoryPortrait(acc).identity,'pending');assert.match(Catalog.frame(Catalog.accessoryPortrait(acc)),/配件型号与视角待核验/);}
+
+const accessoryView={innerHTML:""};
+App.renderSurfaceAccessoriesView(accessoryView,"all");
+assert.doesNotMatch(accessoryView.innerHTML,/官方认证全量|零杜撰参数|完美支持/);
+const claimedIds=[...accessoryView.innerHTML.matchAll(/App.navigateToDetail\('', '([^']+)'\)/g)].map(m=>m[1]);
+for(const id of claimedIds)assert.ok(Catalog.accessories().some(a=>t.getCompatStatus(a.id,id).status==="FULL"));

@@ -1396,10 +1396,10 @@ const App = {
         <div class="view-title-group">
           <h1>
             <span>Surface 官方配件图鉴</span>
-            <span class="header-sub-tag">微软官方原装配件 · 官方技术规格 · 双向全景兼容矩阵</span>
+            <span class="header-sub-tag">微软配件资料 · 参数与图片待逐项核验 · 双向兼容矩阵</span>
           </h1>
           <div class="view-meta-tip">
-            <span>官方认证全量收录 ${allAccessories.length} 款原装主力配件 ｜ 💡 涵盖专业键盘盖、超薄触控笔 2、雷电 4 拓展坞、精准鼠标、降噪耳机与 Dial 智能旋钮 ｜ 零杜撰参数</span>
+            <span>收录 ${allAccessories.length} 款配件资料 ｜ 💡 涵盖专业键盘盖、超薄触控笔 2、雷电 4 拓展坞、精准鼠标、降噪耳机与 Dial 智能旋钮 ｜ 兼容性仅按已绑定证据显示</span>
           </div>
         </div>
         <div class="view-actions">
@@ -1436,7 +1436,7 @@ const App = {
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:22px; margin-bottom:40px;">
         ${filtered.map(acc => {
           const catName = categoryNamesMap[acc.category] || '原装配件';
-          const fullSupported = (acc.compatibilityList || []).filter(d => d.status === 'FULL' && !d.deviceId.startsWith('xbox'));
+          const fullSupported = (acc.compatibilityList || []).filter(d => ToolsEngine.getCompatStatus(acc.id, d.deviceId).status === 'FULL' && !d.deviceId.startsWith('xbox'));
           const sampleSupported = fullSupported.slice(0, 4);
 
           return `
@@ -1476,14 +1476,14 @@ const App = {
               <!-- 适配代表机型 -->
               <div style="margin-top:auto; width:100%; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
                 <div style="font-size:11px; font-weight:700; color:var(--ms-text-tertiary); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.5px;">
-                  原生适配支持机型 (${fullSupported.length} 款)
+                  有证据支持的机型 (${fullSupported.length} 款)
                 </div>
                 <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:12px;">
                   ${sampleSupported.map(dev => {
                     const devObj = App.getDevice(dev.deviceId);
                     const label = devObj ? devObj.name : dev.deviceId;
                     return `
-                      <span class="accessory-compat-chip" style="font-size:11px; padding:2px 8px; border-radius:10px; background:var(--ms-bg-subtle); color:var(--ms-text-primary); cursor:pointer; border:1px solid var(--ms-border-subtle);" onclick="App.navigateToDetail('', '${dev.deviceId}')" title="${dev.note || '完美支持'}">
+                      <span class="accessory-compat-chip" style="font-size:11px; padding:2px 8px; border-radius:10px; background:var(--ms-bg-subtle); color:var(--ms-text-primary); cursor:pointer; border:1px solid var(--ms-border-subtle);" onclick="App.navigateToDetail('', '${dev.deviceId}')" title="${this.escapeText(ToolsEngine.getCompatStatus(acc.id, dev.deviceId).note)}">
                         ${label}
                       </span>
                     `;
@@ -1529,7 +1529,7 @@ const App = {
             <span class="header-sub-tag">Xbox 官方存储扩展、音频与周边生态</span>
           </h1>
           <div class="view-meta-tip">
-            <span>官方认证收录 ${accessories.length} 款主力配件 ｜ 💡 包含希捷定制存储卡、官方无线双模耳机、Windows 10/11 极速无线适配器与电池包 ｜ 零杜撰参数</span>
+            <span>官方认证收录 ${accessories.length} 款主力配件 ｜ 💡 包含希捷定制存储卡、官方无线双模耳机、Windows 10/11 极速无线适配器与电池包 ｜ 兼容性仅按已绑定证据显示</span>
           </div>
         </div>
         <div class="view-actions">
