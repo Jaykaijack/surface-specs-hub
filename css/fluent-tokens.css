@@ -199,6 +199,7 @@
   --md-sys-color-on-surface-variant: #c4c7c5;
   --md-sys-color-outline: #8e918f;
   --md-sys-color-outline-variant: #444746;
+}
 
 /* 全局滚动条美化（与原版 HubWeb 对齐并适配 Fluent） */
 ::-webkit-scrollbar {
