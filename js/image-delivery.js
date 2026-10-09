@@ -343,7 +343,12 @@ var IMAGE_DELIVERY = {
   "surface-laptop-ultra-hero.png": [
     320,
     640,
-    1280
+    1200
+  ],
+  "surface-laptop-ultra-midnight.png": [
+    320,
+    640,
+    1200
   ],
   "surface-mobile-mouse.png": [
     320

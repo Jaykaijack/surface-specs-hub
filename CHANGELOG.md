@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.3.1] - 2026-10-09
+
+### Added
+- 把现网 v2.3.0（20261008，含 Surface Laptop Ultra 消费版 `laptop-ultra` 与商用版 `laptop-ultra-biz`）同步回仓库。此前该版本只部署到了 surface.kaibase.cn，没有进 GitHub。
+- 版式文件改名为 `css/specs-layout.css`（原 `css/hubweb-layout.css`），测试引用同步更新。
+
+### Fixed
+- **Surface Laptop Ultra 参数按微软中国官方逐项核实**（来源：微软官方商城 `/configure/surface-laptop-ultra`、商用版产品页技术规格、microsoft.com/zh-cn 产品页，2026-10-09）：
+  - 状态改为预售（upcoming），起售价：消费版 ¥21,988、商用版 ¥23,188；
+  - 尺寸 328.8 × 238.7 × 17.99 mm、重量 2.0 千克、分辨率 3270 × 2180、SDR 1000 尼特、电池 92 Wh；
+  - 存储为 512GB（第 4 代）及 1TB / 2TB（第 5 代），删除不存在的 4TB；端口为 USB-A 3.1 和 HDMI 2.1b；
+  - 商用版保修为 3 年，内存从 24GB 起；
+  - 删除官方未写出的说法：台积电 3nm、Tensor Core & AI Boost Engine、可维修性 8/10、电源键指纹、Pluton、UHS-II、标配 140W 等；NPU 单独算力改为官方未公布。
+- **Ultra 图片**：亮铂金原来误用了夜幕色机器的图，现改用微软官方商城透明底正面图（亮铂金、夜幕色各一张），并重新生成 320/640/1200 交付切片。
+- 预发布检查：RTX Spark 已由微软官方发布，不再当作爆料词拦截；改为拦截上市前流传、但官方规格未写出的参数。
+- SEO/UX：canonical、OG、JSON-LD 改为 surface.kaibase.cn，og:image 改为完整地址；移除没有功能的 JL 头像和市场/语言按钮；隐藏尚未接入的收藏按钮；统一产品状态文案；全局搜索支持配件；搜索结果标签不再换行（修复“新品”竖排）。
+
+### Tests
+- 新增 Ultra 两款机型的官方事实锁；商城预售且已公布价格的机型单独校验。全量 5718 项测试通过，预发布检查五项全部通过。
+
 ## [v2.2.5] - 2026-10-04
 
 ### Fixed

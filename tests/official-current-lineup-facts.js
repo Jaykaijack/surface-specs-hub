@@ -21,6 +21,8 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
     pro11IntelBiz: 'https://www.microsoftstore.com.cn/surface/surface-pro-11th-edition-for-business-intel',
     laptop7SnapBiz: 'https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business',
     laptop7IntelBiz: 'https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-for-business-intel',
+    configureLaptopUltra: 'https://www.microsoftstore.com.cn/configure/surface-laptop-ultra',
+    laptopUltraBiz: 'https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business',
     hub3Specs: 'https://learn.microsoft.com/en-us/surface-hub/surface-hub-3-techspecs',
     compareDevices: 'https://www.microsoftstore.com.cn/surface/compare-devices',
     cnSurfacePortal: 'https://www.microsoft.com/zh-cn/surface',
@@ -57,7 +59,57 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
     'laptop-7-biz-intel',
     'hub-3'
   ],
+  /**
+   * 2026-10-09 微软中国商城「预售」新品：页面已公布官方价格，但尚未发货。
+   * 状态标 upcoming，起售价按商城预售价填写（不按已撤机型处理）。
+   */
+  presaleWithOfficialPriceIds: ['laptop-ultra', 'laptop-ultra-biz'],
   devices: {
+    // 2026-10-09 核验：/configure/surface-laptop-ultra（价格与配置）+ 商用版产品页技术规格
+    'laptop-ultra': {
+      startingPriceContains: '21,988',
+      cpuMustInclude: ['RTX Spark', 'N1X', '18 核', '20 核'],
+      cpuMustNotInclude: ['英特尔', 'Intel', '骁龙'],
+      batteryLifeVideoContains: '15',
+      batteryLifeOfficeContains: '12',
+      batteryCapacityContains: '92',
+      brightnessContains: '2000',
+      ramMustInclude: ['24GB', '128GB'],
+      storageMustInclude: '512GB',
+      storageMustNotInclude: '4TB',
+      resolutionContains: '3270 x 2180',
+      refreshRateContains: '120',
+      screenSizeContains: '15',
+      usbMustInclude: ['HDMI 2.1b', 'USB-A 3.1', 'SD'],
+      wifiMustInclude: 'Wi-Fi 7',
+      dimensionsContains: '328.8',
+      weightContains: '2.0',
+      colorNames: ['亮铂金', '夜幕色'],
+      officialDocUrl: 'https://www.microsoftstore.com.cn/configure/surface-laptop-ultra'
+    },
+    'laptop-ultra-biz': {
+      startingPriceContains: '23,188',
+      cpuMustInclude: ['RTX Spark', 'N1X', '18 核', '20 核'],
+      cpuMustNotInclude: ['英特尔', 'Intel', '骁龙'],
+      batteryLifeVideoContains: '15',
+      batteryLifeOfficeContains: '12',
+      batteryCapacityContains: '92',
+      brightnessContains: '2000',
+      ramMustInclude: ['24GB', '128GB'],
+      storageMustInclude: '512GB',
+      storageMustNotInclude: '4TB',
+      resolutionContains: '3270 x 2180',
+      refreshRateContains: '120',
+      screenSizeContains: '15',
+      usbMustInclude: ['HDMI 2.1b', 'USB-A 3.1', 'SD'],
+      wifiMustInclude: 'Wi-Fi 7',
+      dimensionsContains: '328.8',
+      weightContains: '2.0',
+      osMustInclude: '专业版',
+      warrantyContains: '3 年',
+      colorNames: ['亮铂金', '夜幕色'],
+      officialDocUrl: 'https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business'
+    },
     'pro-12-13': {
       startingPriceContains: '12,888',
       cpuMustInclude: ['X2 Plus', 'X2 Elite'],

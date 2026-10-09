@@ -89,7 +89,7 @@
 }
 
 /* 屏幕计算器左栏指标组：保持 3 列布局。
-   .metric-box/.metric-val/.metric-label 的组件样式统一由 hubweb-layout.css
+   .metric-box/.metric-val/.metric-label 的组件样式统一由 specs-layout.css
    的 M3 Metric Cards 定义，此处仅做布局覆盖，避免重复定义互相覆盖。 */
 .screen-ctrl-panel .screen-metrics-grid {
   display: grid;

@@ -151,7 +151,7 @@ Strict zero-clutter discipline applies across the repository:
 
 2. **Directory Responsibilities**:
    - `index.html`: Single-page static entry point.
-   - `css/`: Styling system (`fluent-tokens.css`, `hubweb-layout.css`, `spec-table.css`, `tools.css`).
+   - `css/`: Styling system (`fluent-tokens.css`, `specs-layout.css`, `spec-table.css`, `tools.css`).
    - `js/`: Core application modules (`surface-data.js`, `comparison-engine.js`, `tools-engine.js`, `app.js`).
    - `assets/`: Product images (`assets/products/`), brand logos, and icons.
    - `docs/`: All documentation, Architecture Decision Records (`docs/adr/`), agent configurations (`docs/agents/`), specifications (`docs/data-model.md`, `docs/architecture.md`, etc.).
