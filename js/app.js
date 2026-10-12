@@ -1363,7 +1363,8 @@ const App = {
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:20px;">
         ${filtered.map(ctrl => {
           const value = key => this.controllerSpec(ctrl, key);
-          const spec = key => value(key) == null ? (key === 'msrp' ? '待核：型号、地区及日期明确的价格来源' : '—') : value(key);
+          const recorded = key => ctrl.specEvidence?.[key]?.sourceAuthority === 'user-provided-structured-record';
+          const spec = key => value(key) == null ? (key === 'msrp' ? '待核：型号、地区及日期明确的价格来源' : '—') : `${recorded(key) ? '资料记录（厂商原网页待复核）：' : ''}${value(key)}`;
           let badgeClass = 'spec-badge green';
           if (ctrl.status === 'discontinued') badgeClass = 'spec-badge';
           if (ctrl.status === 'upcoming') badgeClass = 'spec-badge blue';
@@ -1381,10 +1382,10 @@ const App = {
             <div data-controller-id="${ctrl.id}" class="device-card-mini" style="text-align:left; padding:18px 20px; align-items:flex-start; height:auto; transition:transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
               <!-- 卡片顶部信息条 -->
               <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:8px; font-size:11.5px; flex-wrap:wrap; gap:6px;">
-                <span style="color:var(--ms-text-tertiary); font-weight:600;">${ctrl.generationName}${value('year') ? ` · 日期：${value('year')}` : ''}</span>
+                <span style="color:var(--ms-text-tertiary); font-weight:600;">${spec('generationName')}${value('year') ? ` · 日期：${spec('year')}` : ''}</span>
                 <div style="display:flex; gap:4px; align-items:center;">
                   ${regionBadgeHtml}
-                  ${value('statusLabel') ? `<span class="${badgeClass}" style="font-size:11px; padding:2px 8px;">${/在售/.test(value('statusLabel')) ? '已收录 · 库存另核' : value('statusLabel')}</span>` : ''}
+                  ${value('statusLabel') ? `<span class="${badgeClass}" style="font-size:11px; padding:2px 8px;">${/在售/.test(value('statusLabel')) ? '已收录 · 库存另核' : spec('statusLabel')}</span>` : ''}
                 </div>
               </div>
 
@@ -1395,14 +1396,14 @@ const App = {
 
               <!-- 标题与色彩徽章 -->
               <div style="font-size:16px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px; line-height:1.3;">
-                ${ctrl.name}
+                ${ctrl.name}${recorded('name') ? '<div style="font-size:11px;font-weight:400;line-height:1.5">资料记录名称，厂商原网页待复核</div>' : ''}
               </div>
               <div style="font-size:11.5px; color:var(--ms-text-tertiary); margin-bottom:10px;">英文检索名（本站）：${ctrl.nameEn}</div>
 
               <!-- 官方色卡指示器 -->
               ${value('colorName') ? `<div style="display:inline-flex; align-items:center; gap:8px; padding:4px 10px; background:var(--ms-bg-subtle); border-radius:20px; margin-bottom:12px; font-size:12px; border:1px solid var(--ms-border-subtle);">
                 <span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:${ctrl.colorHex}; box-shadow:0 0 0 1px rgba(0,0,0,0.2) inset;"></span>
-                <span style="font-weight:600; color:var(--ms-text-primary);">${value('colorName')}</span>
+                <span style="font-weight:600; color:var(--ms-text-primary);">${spec('colorName')}</span>
               </div>` : ''}
 
               <!-- 详细微观规格矩阵 -->
@@ -1419,7 +1420,7 @@ const App = {
               </div>
 
               <!-- 设计背景故事 -->
-              ${value('description') ? `<div style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--ms-border-subtle); font-size:12px; color:var(--ms-text-tertiary); line-height:1.5;">${value('description')}</div>` : ''}
+              ${value('description') ? `<div style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--ms-border-subtle); font-size:12px; color:var(--ms-text-tertiary); line-height:1.5;">${spec('description')}</div>` : ''}
               ${Catalog.objectEvidenceMarkup(ctrl, 'specEvidence')}
             </div>
           `;

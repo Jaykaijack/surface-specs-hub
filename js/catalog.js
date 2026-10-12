@@ -877,7 +877,7 @@ const Catalog = (function () {
       const urls = [...new Set([e.sourceUrl, ...(e.sourceUrls || [])])].filter(official);
       const value = field === 'status' ? ({current_global:'海外官网列售（库存未核验）',current_cn:'国行目录',upcoming:'即将发售',legacy:'历史机型',pending:'—'}[e.value] || '') : field === 'salesRegion' ? ({cn_official:'中国官方历史收录',cn_recorded:'中国目录记录（原网页待复核）',global_recorded:'海外资料收录（中国供应另核）',legacy:'历史资料收录',us_only:'美国限定（适用条件见来源）'}[e.value] || e.value) : Array.isArray(e.value) ? e.value.join('、') : e.value;
       const sourceKind = e.sourceAuthority === 'user-provided-structured-record' ? '资料记录引用，厂商原文待复核' : e.region === 'CN' ? '中国适用来源' : '海外/全球来源';
-      return `<p data-source-field="${escape(field)}"><strong>${escape(labels[field] || '参数条件')}</strong>：${escape(value)}<br>${sourceKind}。${escape(e.configurationScope)} ${urls.map((url,i) => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${primarySourceLabel(url,i+1)}</a>`).join(' ')}</p>`;
+      return `<p data-source-field="${escape(field)}"><strong>${escape(labels[field] || '参数条件')}</strong>：${escape(value)}<br>${sourceKind}。${escape(e.configurationScope)} ${urls.map((url,i) => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${e.sourceAuthority === 'user-provided-structured-record' ? `资料所引链接 ${i+1}（原文待复核）` : primarySourceLabel(url,i+1)}</a>`).join(' ')}</p>`;
     }).join('')}</details>${gaps}`;
   }
 

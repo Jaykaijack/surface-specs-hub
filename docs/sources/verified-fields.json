@@ -110,7 +110,7 @@
     {
       "id": "surface.devices[0].specEvidence.salesRegion",
       "configuration": "laptop-ultra-biz",
-      "valueHash": "8249c3489a11eabc61b8604f9e6c4411dc5abb7691deae536fde1513cd639993",
+      "valueHash": "7a7c8730e5ac40223148ec8bfb1ddac3e81e46b039215b220fc6ab5918fed5ed",
       "sourceUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business"
@@ -2738,7 +2738,7 @@
     {
       "id": "surface.devices[5].specEvidence.currentPriceCny",
       "configuration": "pro-12-inch",
-      "valueHash": "8ad422da2664a31faf3622825c4176927fb637d4900ef0ab79e2572cea5d497c",
+      "valueHash": "4b47ebc5348bec7d439b6ba527d93d6e18037f8b10edec73130135c59ed342b1",
       "sourceUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/configure/surface-pro-12-inch"
@@ -54604,7 +54604,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[0].specEvidence.compatibility",
@@ -54618,7 +54618,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[0].specEvidence.connectivity",
@@ -54632,7 +54632,7 @@
       "region": "CN",
       "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[0].specEvidence.description",
@@ -54659,7 +54659,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[0].specEvidence.generationName",
@@ -54673,7 +54673,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[0].specEvidence.status",
@@ -54686,7 +54686,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[0].specEvidence.statusLabel",
@@ -54699,7 +54699,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[0].specEvidence.triggers",
@@ -54713,7 +54713,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.battery",
@@ -54728,7 +54728,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.compatibility",
@@ -54742,7 +54742,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.connectivity",
@@ -54756,7 +54756,7 @@
       "region": "CN",
       "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.description",
@@ -54783,7 +54783,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.generationName",
@@ -54797,7 +54797,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.status",
@@ -54810,7 +54810,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.statusLabel",
@@ -54823,7 +54823,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[1].specEvidence.triggers",
@@ -54837,7 +54837,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.battery",
@@ -54852,7 +54852,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.compatibility",
@@ -54866,7 +54866,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.connectivity",
@@ -54880,7 +54880,7 @@
       "region": "CN",
       "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.dpad",
@@ -54894,7 +54894,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.generationName",
@@ -54908,7 +54908,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.status",
@@ -54921,7 +54921,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.statusLabel",
@@ -54934,7 +54934,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[2].specEvidence.triggers",
@@ -54948,7 +54948,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.battery",
@@ -54963,7 +54963,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.colorName",
@@ -54976,7 +54976,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.compatibility",
@@ -54990,7 +54990,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.dpad",
@@ -55004,7 +55004,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.generationName",
@@ -55018,7 +55018,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.name",
@@ -55031,7 +55031,7 @@
       "region": "CN",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.status",
@@ -55044,7 +55044,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.statusLabel",
@@ -55057,7 +55057,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[3].specEvidence.triggers",
@@ -55071,7 +55071,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[4].specEvidence.battery",
@@ -55086,7 +55086,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[4].specEvidence.compatibility",
@@ -55100,7 +55100,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[4].specEvidence.dpad",
@@ -55114,7 +55114,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[4].specEvidence.generationName",
@@ -55128,7 +55128,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[4].specEvidence.status",
@@ -55141,7 +55141,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[4].specEvidence.statusLabel",
@@ -55154,7 +55154,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[4].specEvidence.triggers",
@@ -55168,7 +55168,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.battery",
@@ -55183,7 +55183,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.colorName",
@@ -55196,7 +55196,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.compatibility",
@@ -55210,7 +55210,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.connectivity",
@@ -55224,7 +55224,7 @@
       "region": "CN",
       "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.description",
@@ -55251,7 +55251,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.generationName",
@@ -55265,7 +55265,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.name",
@@ -55278,7 +55278,7 @@
       "region": "CN",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.status",
@@ -55291,7 +55291,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.statusLabel",
@@ -55304,7 +55304,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[5].specEvidence.triggers",
@@ -55318,7 +55318,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.battery",
@@ -55333,7 +55333,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.colorName",
@@ -55346,7 +55346,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.compatibility",
@@ -55360,7 +55360,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.connectivity",
@@ -55374,7 +55374,7 @@
       "region": "CN",
       "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.dpad",
@@ -55388,7 +55388,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.generationName",
@@ -55402,7 +55402,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.name",
@@ -55415,7 +55415,7 @@
       "region": "CN",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.status",
@@ -55428,7 +55428,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.statusLabel",
@@ -55441,7 +55441,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[6].specEvidence.triggers",
@@ -55455,7 +55455,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].imageEvidence",
@@ -55483,7 +55483,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.colorName",
@@ -55496,7 +55496,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.compatibility",
@@ -55510,7 +55510,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.connectivity",
@@ -55524,7 +55524,7 @@
       "region": "CN",
       "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.dpad",
@@ -55538,7 +55538,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.generationName",
@@ -55552,7 +55552,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.name",
@@ -55565,7 +55565,7 @@
       "region": "CN",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.status",
@@ -55578,7 +55578,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.statusLabel",
@@ -55591,7 +55591,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[7].specEvidence.triggers",
@@ -55605,7 +55605,7 @@
       "region": "CN",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[8].specEvidence.battery",
@@ -55735,7 +55735,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[9].specEvidence.compatibility",
@@ -55787,7 +55787,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[9].specEvidence.generationName",
@@ -55800,7 +55800,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[9].specEvidence.name",
@@ -55813,7 +55813,7 @@
       "region": "CN",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[9].specEvidence.status",
@@ -55878,7 +55878,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[10].specEvidence.compatibility",
@@ -55930,7 +55930,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[10].specEvidence.generationName",
@@ -55943,7 +55943,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[10].specEvidence.name",
@@ -55956,7 +55956,7 @@
       "region": "CN",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[10].specEvidence.status",
@@ -56477,7 +56477,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[16].specEvidence.generationName",
@@ -56490,7 +56490,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[16].specEvidence.name",
@@ -56503,7 +56503,7 @@
       "region": "CN",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[16].specEvidence.battery",
@@ -56518,7 +56518,7 @@
       "region": "CN",
       "configurationScope": "美国单独X25手柄技术规格与电池测试脚注：使用试制手柄和标准AA电池；耳机、配件及使用方式显著影响续航。另售充电包的兼容与独立续航另核，不共用AA的40小时结论。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[16].specEvidence.compatibility",
@@ -56549,7 +56549,7 @@
       "region": "CN",
       "configurationScope": "美国单独X25手柄规格：Xbox主机用Xbox Wireless，指定PC与移动设备用Bluetooth；应用映射需兼容USB-C线。BLE版本和USB-C有线游戏数据协议仍待本款说明。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[16].specEvidence.nameEn",
@@ -56564,7 +56564,7 @@
       "region": "CN",
       "configurationScope": "美国单独X25手柄商品页的正式型号名称；中国渠道、包装组合和当前库存另核，主机套装标题不能代替单独手柄规格。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[17].specEvidence.description",
@@ -56577,7 +56577,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox 无线控制器《毁灭战士：黑暗时代》限量版",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[17].specEvidence.name",
@@ -56590,7 +56590,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox 无线控制器《毁灭战士：黑暗时代》限量版",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[17].specEvidence.colorName",
@@ -56603,7 +56603,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[17].specEvidence.generation",
@@ -56616,7 +56616,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[17].specEvidence.generationName",
@@ -56629,7 +56629,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[17].specEvidence.status",
@@ -56642,7 +56642,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[17].specEvidence.statusLabel",
@@ -56655,7 +56655,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[18].specEvidence.year",
@@ -57292,7 +57292,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox 无线控制器 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.name",
@@ -57305,7 +57305,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox 无线控制器 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.colorName",
@@ -57318,7 +57318,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.compatibility",
@@ -57331,7 +57331,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.connectivity",
@@ -57344,7 +57344,7 @@
       "region": "CN",
       "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.generation",
@@ -57357,7 +57357,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.generationName",
@@ -57370,7 +57370,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.status",
@@ -57383,7 +57383,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[24].specEvidence.statusLabel",
@@ -57396,7 +57396,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[25].specEvidence.compatibility",
@@ -57565,7 +57565,7 @@
       "region": "CN",
       "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[27].specEvidence.compatibility",
@@ -57579,7 +57579,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[27].specEvidence.connectivity",
@@ -57606,7 +57606,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[27].specEvidence.generationName",
@@ -57620,7 +57620,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[27].specEvidence.status",
@@ -57633,7 +57633,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[27].specEvidence.statusLabel",
@@ -57646,12 +57646,12 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[27].specEvidence.triggers",
       "configuration": "elite-series-2-black",
-      "valueHash": "68dffd86afbebdeb670334519e3455773522517359bda4f023b1d0acb74dd110",
+      "valueHash": "3babd80e68de06f64827b412f154420257fb2c1e17ab21e239b9a6f3dff3d0dc",
       "sourceUrl": "https://www.xbox.com/en-us/accessories/controllers/elite-wireless-controller-series-2",
       "sourceUrls": [
         "https://www.xbox.com/en-us/accessories/controllers/elite-wireless-controller-series-2"
@@ -57700,7 +57700,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行青春版白色 | 中国大陆：国行 Xbox Elite 无线控制器 2 代 青春版 | 中国大陆：国行Elite2配件包",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[28].specEvidence.battery",
@@ -57754,7 +57754,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[28].specEvidence.generationName",
@@ -57768,7 +57768,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[28].specEvidence.status",
@@ -57781,7 +57781,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[28].specEvidence.statusLabel",
@@ -57794,12 +57794,12 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[28].specEvidence.triggers",
       "configuration": "elite-series-2-core-white",
-      "valueHash": "ad7c3f800f95da4962f5858f6ff2eaf91118ab30a6962ac71833c923cf1b40cb",
+      "valueHash": "41dbb46637562419c8b0213259e607300bd726221129df6c168739679a4b8071",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-core-white",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-core-white",
@@ -57808,7 +57808,7 @@
       "region": "CN",
       "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[28].specEvidence.weight",
@@ -57962,7 +57962,7 @@
     {
       "id": "controllers[29].specEvidence.triggers",
       "configuration": "elite-series-2-core-red",
-      "valueHash": "ad7c3f800f95da4962f5858f6ff2eaf91118ab30a6962ac71833c923cf1b40cb",
+      "valueHash": "b53a4b64f895493bc7196d6125bb8faeac78290379278ade5f843efe2988d879",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
@@ -58125,7 +58125,7 @@
     {
       "id": "controllers[30].specEvidence.triggers",
       "configuration": "elite-series-2-core-blue",
-      "valueHash": "ad7c3f800f95da4962f5858f6ff2eaf91118ab30a6962ac71833c923cf1b40cb",
+      "valueHash": "b53a4b64f895493bc7196d6125bb8faeac78290379278ade5f843efe2988d879",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
@@ -58175,12 +58175,12 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[31].specEvidence.description",
       "configuration": "elite-series-2-doom",
-      "valueHash": "d12d705c6f4efa115d1fd7de4169aa5edbf886d3f970cf7f3cca2530a245b6e2",
+      "valueHash": "06456cbc3f1e2dc7d12c091b7d86f6b0109c6c0af571b61106f61d551db13811",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition"
@@ -58188,7 +58188,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[31].specEvidence.name",
@@ -58201,7 +58201,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[31].specEvidence.generation",
@@ -58215,7 +58215,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[31].specEvidence.generationName",
@@ -58229,7 +58229,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[31].specEvidence.status",
@@ -58242,7 +58242,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[31].specEvidence.statusLabel",
@@ -58255,7 +58255,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[32].specEvidence.year",
@@ -58632,7 +58632,7 @@
       "region": "CN",
       "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代 青春版 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[35].specEvidence.name",
@@ -58671,7 +58671,7 @@
       "region": "CN",
       "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[35].specEvidence.connectivity",
@@ -58756,7 +58756,7 @@
     {
       "id": "controllers[35].specEvidence.triggers",
       "configuration": "elite-series-2-ninja-gaiden",
-      "valueHash": "ad7c3f800f95da4962f5858f6ff2eaf91118ab30a6962ac71833c923cf1b40cb",
+      "valueHash": "41dbb46637562419c8b0213259e607300bd726221129df6c168739679a4b8071",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
@@ -58765,7 +58765,7 @@
       "region": "CN",
       "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[35].specEvidence.weight",
@@ -58779,7 +58779,7 @@
       "region": "CN",
       "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[35].specEvidence.nameEn",
@@ -59007,7 +59007,7 @@
       "region": "CN",
       "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[38].specEvidence.description",
@@ -59034,7 +59034,7 @@
       "region": "CN",
       "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[38].specEvidence.generationName",
@@ -59048,7 +59048,7 @@
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[38].specEvidence.status",
@@ -59061,7 +59061,7 @@
       "region": "CN",
       "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[38].specEvidence.statusLabel",
@@ -59074,7 +59074,7 @@
       "region": "CN",
       "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
       "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
+      "sourceAuthority": "user-provided-structured-record"
     },
     {
       "id": "controllers[38].specEvidence.triggers",
