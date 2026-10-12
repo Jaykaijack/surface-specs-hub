@@ -736,7 +736,7 @@ const App = {
         <h2 style="font-size:22px; font-weight:700; margin:0;">国行目录</h2>
         <button class="fluent-btn primary" onclick="App.navigate('#/compare?products=pro-12-inch-2,laptop-13-inch-2')">开始对比</button>
       </div>
-      <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">在售 ${currentCnDevices.length} 款 · 即将发售 ${upcomingDevices.length} 款。点选机型查看完整参数，或对比 9 月新发布的 12 英寸 Pro 与 13 英寸 Laptop。</p>
+      <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">国行目录 ${currentCnDevices.length} 条 · 预发布资料 ${upcomingDevices.length} 条；实际供货另核。点选机型查看条件与来源，或比较不同尺寸与消费／商用配置。</p>
 
       <div class="mobile-scroll-hint">👈 左右滑动查看更多国行目录机型 👉</div>
       <div class="device-select-strip" style="margin-bottom:28px;">
@@ -797,9 +797,9 @@ const App = {
     if (upcomingDevices && upcomingDevices.length) {
       html += `
         <div class="home-section-header">
-          <h2 style="font-size:20px; font-weight:700; margin:0;">即将发售</h2>
+          <h2 style="font-size:20px; font-weight:700; margin:0;">预发布资料</h2>
         </div>
-        <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">收录官方已公布发布日程但尚未正式在售的 Surface 机型（共 ${upcomingDevices.length} 款）。</p>
+        <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">按已保存的发布与预计供货资料收录 Surface 机型（共 ${upcomingDevices.length} 条）；实际上市日期、库存与发货另核。</p>
         <div class="device-select-strip" style="margin-bottom:28px;">
       `;
       upcomingDevices.forEach((dev) => {
@@ -1909,15 +1909,15 @@ const App = {
       <div class="screen-metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom:24px;">
         <div class="metric-box">
           <div class="metric-val" style="color:var(--ms-accent);">${devices.length} 款</div>
-          <div class="metric-label">收录历代全系机型</div>
+          <div class="metric-label">收录设备记录</div>
         </div>
         <div class="metric-box">
           <div class="metric-val" style="color:#107c41;">${currentDevices.length} 款</div>
-          <div class="metric-label">微软中国在售 SKU</div>
+          <div class="metric-label">国行目录记录 · 库存另核</div>
         </div>
         <div class="metric-box">
           <div class="metric-val" style="color:#0078d4;">${commercialDevices.length} 款</div>
-          <div class="metric-label">商用企业级支持机型</div>
+          <div class="metric-label">商用目录记录 · 支持条件另核</div>
         </div>
         <div class="metric-box">
           <div class="metric-val" style="color:#d83b01;">逐字段</div>
@@ -2505,7 +2505,7 @@ const App = {
       },
       2023: {
         title: "🎨 形态深化与动态编织铰链纪元 (2021 ~ 2023)",
-        desc: "Surface Laptop Studio 独创展台与工作室多姿态切换，120Hz 高刷屏与触觉反馈手写笔全面普及。"
+        desc: "Surface Laptop Studio 提供展台与工作室姿态；部分机型提供最高120Hz屏幕，触觉手写反馈需匹配设备、手写笔、系统与支持的应用。"
       },
       2020: {
         title: "📱 ARM 初探与双屏探索纪元 (2019 ~ 2020)",

@@ -57969,7 +57969,7 @@
         "https://www.xbox.com/en-us/accessories/controllers/elite-wireless-controller-series-2"
       ],
       "region": "CN",
-      "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
+      "configurationScope": "中国Core系列厂家页面分别列出三种扳机键程与三种摇杆张力；两项独立功能，包装与配件按具体款式，不推断其他版本或默认材质。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -58132,7 +58132,7 @@
         "https://www.xbox.com/en-us/accessories/controllers/elite-wireless-controller-series-2"
       ],
       "region": "CN",
-      "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
+      "configurationScope": "中国Core系列厂家页面分别列出三种扳机键程与三种摇杆张力；两项独立功能，包装与配件按具体款式，不推断其他版本或默认材质。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -60771,14 +60771,14 @@
     {
       "id": "controllers[22].specEvidence.msrp",
       "configuration": "series-witcher-3",
-      "valueHash": "23fb5b5364b5ba6a7ae6d985ea1c28e9e23c834d7c191677e846bd5531d2949b",
+      "valueHash": "9b7be0c2234fba3392fe19ac6772a84fd503a1b85325b198518e3a9cd02dd1cc",
       "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
       "sourceUrls": [
         "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
       ],
       "region": "GLOBAL",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "Witcher普通固定USD ERP；MicrosoftStore限定；去起价/定制升级模板；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "configurationScope": "Witcher普通固定USD ERP；MicrosoftStore限定；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
       "sourceAuthority": "manufacturer-primary"
     },
     {
@@ -61018,14 +61018,14 @@
     {
       "id": "controllers[34].specEvidence.msrp",
       "configuration": "elite-series-2-witcher",
-      "valueHash": "af4981e9837571211e87a661463dfef10dbdf3b4cf103a9cb99f34651d6e8d08",
+      "valueHash": "90a8637babf495c3d21d9e5ef1b1dd5b1c73726f4e7874f93de398d8069783a6",
       "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
       "sourceUrls": [
         "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
       ],
       "region": "GLOBAL",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "Witcher Elite Series2 Core固定USD ERP，非完整套装；MicrosoftStore限定；去定制升级模板；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "configurationScope": "Witcher Elite Series2 Core固定USD ERP，非完整套装；MicrosoftStore限定；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
       "sourceAuthority": "manufacturer-primary"
     },
     {
