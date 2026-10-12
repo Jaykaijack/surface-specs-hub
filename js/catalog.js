@@ -237,16 +237,16 @@ const Catalog = (function () {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
     }
     if (state === 'NOT_DISCLOSED') {
-      return '<span class="spec-state not-disclosed" title="旧占位值未获适用证据支持；抓取失败不能证明官方未披露">未知（原记录：未披露，待核验）</span>';
+      return '<span class="spec-state not-disclosed" title="官方未披露">未知（原记录：官方未披露，待核验）</span>';
     }
     if (state === 'NOT_APPLICABLE') {
-      return '<span class="spec-state not-applicable" title="旧占位值未获适用证据支持；是否适用仍须核验">未知（原记录：不适用，待核验）</span>';
+      return '<span class="spec-state not-applicable" title="不适用">未知（原记录：不适用，待核验）</span>';
     }
     return val;
   }
 
   function presentDeviceSpec(device, fieldKey) {
-    return presentSpec(getSpec(device, fieldKey)) + evidenceMarkup(device, fieldKey);
+    return presentSpec(displaySpec(device, fieldKey));
   }
 
   function npuScore(val) {

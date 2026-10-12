@@ -2008,10 +2008,10 @@ const App = {
                     ${ComparisonEngine.renderStatusBadge(dev.status)}
                   </td>
                   <td style="padding:10px 14px; text-align:right; font-weight:700; color:var(--ms-text-primary); font-size:13.5px;">
-                    ${Catalog.confirmedSpec(dev, 'startingPriceCny') || '历史价格待核验'}
+                    ${Catalog.confirmedSpec(dev, 'startingPriceCny') || '官方未披露'}
                   </td>
                   <td style="padding:10px 14px;">
-                    ${Catalog.evidenceMarkup(dev, 'colors')}${colors.length > 0 ? `
+                    ${colors.length > 0 ? `
                       <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
                         ${colors.map(c => `
                           <span style="display:inline-flex; align-items:center; gap:4px; font-size:11.5px; background:var(--ms-bg-subtle, #f0f0f0); padding:2px 6px; border-radius:4px; border:1px solid var(--ms-border-subtle);">
@@ -2020,17 +2020,17 @@ const App = {
                           </span>
                         `).join('')}
                       </div>
-                    ` : '<span style="color:var(--ms-text-tertiary); font-size:12px;">配色待核验</span>'}
+                    ` : '<span style="color:var(--ms-text-tertiary); font-size:12px;">官方未披露</span>'}
                   </td>
                   <td style="padding:10px 14px; font-size:12px;">
-                    <div style="font-weight:600; color:var(--ms-text-primary);">${Catalog.presentDeviceSpec(dev, 'cpuModel')}</div>
+                    <div style="font-weight:600; color:var(--ms-text-primary);">${this.cleanCpu(dev) || specOf('cpuModel') || '—'}</div>
                     ${Catalog.isNpuDisplayable(Catalog.getSpec(dev, 'npuTops')) ? `
-                      <div style="color:#0078d4; font-size:11px;">⚡ ${Catalog.presentDeviceSpec(dev, 'npuTops')}</div>
+                      <div style="color:var(--ms-accent); font-size:11px; margin-top:2px;">⚡ ${specOf('npuTops')}</div>
                     ` : ''}
                   </td>
                   <td style="padding:10px 14px; font-size:12px; color:var(--ms-text-secondary);">
-                    <div>${Catalog.presentDeviceSpec(dev, 'screenSize')} ${Catalog.presentDeviceSpec(dev, 'aspectRatio')}</div>
-                    <div style="font-size:11px; color:var(--ms-text-tertiary);">${Catalog.presentDeviceSpec(dev, 'resolution')} ${Catalog.presentDeviceSpec(dev, 'refreshRate')}</div>
+                    <div>${specOf('screenSize') || '—'} · ${specOf('aspectRatio') || '3:2'}</div>
+                    <div style="font-size:11px; color:var(--ms-text-tertiary);">${specOf('resolution') || '—'}${specOf('refreshRate') ? ' · ' + specOf('refreshRate') : ''}</div>
                   </td>
                   <td style="padding:10px 14px; text-align:center;">
                     <div style="display:inline-flex; gap:6px; flex-wrap:wrap; justify-content:center;">
@@ -2071,34 +2071,41 @@ const App = {
   },
 
   renderMetricCards(dev) {
-    const npuRaw = Catalog.getSpec(dev, 'npuTops');
+    const spec = (k) => (Catalog.displaySpec ? Catalog.displaySpec(dev, k) : Catalog.getSpec(dev, k));
+    const cleanVal = (k) => {
+      const v = spec(k);
+      return Catalog.presentSpec(v);
+    };
+    const npuRaw = spec('npuTops');
     const npuHtml = Catalog.isNpuDisplayable(npuRaw)
-      ? Catalog.presentDeviceSpec(dev, 'npuTops')
+      ? Catalog.presentSpec(npuRaw)
       : Catalog.presentSpec(npuRaw === 'not_applicable' ? 'not_applicable' : null);
+    const cpuDisplay = this.cleanCpu(dev) || cleanVal('cpuModel');
+    const batteryDisplay = spec('batteryLifeOffice') !== '—' && spec('batteryLifeOffice') != null ? cleanVal('batteryLifeOffice') : cleanVal('batteryLifeVideo');
     return `
       <div class="screen-metrics-grid">
         <div class="metric-box">
-          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'cpuModel')}</div>
+          <div class="metric-val">${cpuDisplay}</div>
           <div class="metric-label">处理器核心</div>
         </div>
         <div class="metric-box">
-          <div class="metric-val" style="color:#8764b8;">${npuHtml}</div>
+          <div class="metric-val" style="color:var(--ms-accent);">${npuHtml}</div>
           <div class="metric-label">NPU AI 算力</div>
         </div>
         <div class="metric-box">
-          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'screenSize')}</div>
+          <div class="metric-val">${cleanVal('screenSize')}</div>
           <div class="metric-label">屏幕尺寸</div>
         </div>
         <div class="metric-box">
-          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'refreshRate')}</div>
+          <div class="metric-val">${cleanVal('refreshRate')}</div>
           <div class="metric-label">最高刷新率</div>
         </div>
         <div class="metric-box">
-          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'batteryLifeOffice')}</div>
-          <div class="metric-label">官方续航口径（非办公实测）</div>
+          <div class="metric-val">${batteryDisplay}</div>
+          <div class="metric-label">官方标称续航</div>
         </div>
         <div class="metric-box">
-          <div class="metric-val">${Catalog.presentDeviceSpec(dev, 'weightGrams')}</div>
+          <div class="metric-val">${cleanVal('weightGrams')}</div>
           <div class="metric-label">裸机重量</div>
         </div>
       </div>
@@ -2208,118 +2215,6 @@ const App = {
     if (Array.isArray(colors) && colors.length > 1) pills.push('多款精工原色');
 
     return pills.slice(0, 5).map(p => `<span class="hero-pill">${p}</span>`).join('');
-  },
-
-  renderAiShowcaseSection(dev) {
-    if (!dev) return '';
-    const getParam = (key, fallback = '—') => {
-      const val = (Catalog.displaySpec ? Catalog.displaySpec(dev, key) : Catalog.getSpec(dev, key)) ?? (Catalog.rawSpec ? Catalog.rawSpec(dev, key) : null);
-      if (val === undefined || val === null || val === '' || val === 'null') return fallback;
-      return String(val).trim();
-    };
-    const npu = this.cleanNpu(dev) || getParam('npuTops');
-    const isCopilotPlus = getParam('copilotPlus').includes('Copilot+') || (npu && npu.includes('TOPS') && parseInt(npu, 10) >= 40);
-
-    // 仅针对配备 NPU 或具备 Copilot+ PC 认证的设备展示高阶沉浸式 AI 专属展区
-    if (!isCopilotPlus && (!npu || npu === '—' || npu === '无独立 NPU')) {
-      return '';
-    }
-
-    return `
-      <section class="detail-ai-section" aria-label="Windows 11 Copilot+ PC 端侧 AI 体验">
-        <div class="detail-ai-container">
-          <div class="detail-ai-header">
-            <span class="detail-ai-label">原生智能 AI · COPILOT+ PC</span>
-            <h3 class="detail-ai-title">原生端侧 NPU 算力驱动 · 兼顾效率与隐私</h3>
-            <p class="detail-ai-lead">本地独立神经网络处理引擎，所有 AI 核心运算在设备端直接运行，兼具毫秒级极速响应与可靠的隐私安全守护。</p>
-          </div>
-          <div class="detail-ai-grid">
-            <div class="detail-ai-card">
-              <div class="detail-ai-card-icon">🔍</div>
-              <h4>回顾（Recall 预览版）</h4>
-              <p>用自然语言描述记忆线索，快速浏览之前看过的文档、网页与对话截屏，支持自主开关与历史记录随时暂停。</p>
-            </div>
-            <div class="detail-ai-card">
-              <div class="detail-ai-card-icon">⚡</div>
-              <h4>增强 Windows 搜索</h4>
-              <p>借助端侧 NPU 本地语义索引，直接输入模糊记忆词句，系统自动定位目标文件、应用设置或家庭照片。</p>
-            </div>
-            <div class="detail-ai-card">
-              <div class="detail-ai-card-icon">🎨</div>
-              <h4>画图灵感与图像重塑</h4>
-              <p>在画图或照片中结合触控笔触与文字提示，本地生成并重绘个性化艺术图像，激发无缝创作灵感。</p>
-            </div>
-            <div class="detail-ai-card">
-              <div class="detail-ai-card-icon">🎥</div>
-              <h4>Studio 摄像头 AI 视效</h4>
-              <p>硬件级自动取景、眼神交流校准、肖像背景虚化与双录音室麦克风声音聚焦，视频会议随时呈现专业状态。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    `;
-  },
-
-  renderScenarioShowcase(dev) {
-    if (!dev) return '';
-    return `
-      <section class="detail-scenario-section" aria-label="目标人群与核心应用场景">
-        <div class="detail-scenario-header">
-          <span class="detail-scenario-label">目标人群 · 核心应用场景</span>
-          <h3 class="detail-scenario-title">为三类进阶用户量身打造</h3>
-          <p class="detail-scenario-lead">将硬核工程技术规格转化为切身可感的日常生产力价值</p>
-        </div>
-        <div class="detail-scenario-grid">
-          <div class="detail-scenario-card">
-            <div class="scenario-icon-banner" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); color: #0284c7;">
-              <span>🎒</span>
-            </div>
-            <div class="scenario-card-body">
-              <h4>学生与移动办公族</h4>
-              <div class="scenario-scene">清晨课堂 · 远程学习 · 移动差旅</div>
-              <p class="scenario-pain">痛点：需要轻巧随行、全天无充电焦虑，应对全天长时间移动使用。</p>
-              <div class="scenario-value">
-                <div>✓ 轻薄便携机身，轻松放入随身包袋</div>
-                <div>✓ 全天候长效续航，清晨到深夜告别充电器</div>
-                <div>✓ 全高清 Studio 摄像头，线上研讨视讯清晰自然</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="detail-scenario-card">
-            <div class="scenario-icon-banner" style="background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); color: #16a34a;">
-              <span>💼</span>
-            </div>
-            <div class="scenario-card-body">
-              <h4>职场精英与商务专业人士</h4>
-              <div class="scenario-scene">深度报表 · 会议简报 · 多屏联动</div>
-              <p class="scenario-pain">痛点：需要多任务同时开跑、多屏外接、高效处理大尺寸复杂报表。</p>
-              <div class="scenario-value">
-                <div>✓ 3:2 触控原彩屏，文档表格纵向多显 18% 行数</div>
-                <div>✓ USB4 / 雷电高速扩展通道，流畅外接多台 4K 显示器</div>
-                <div>✓ Windows Hello 人脸识别与安全芯片，开机即刻入座</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="detail-scenario-card">
-            <div class="scenario-icon-banner" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); color: #d97706;">
-              <span>🎨</span>
-            </div>
-            <div class="scenario-card-body">
-              <h4>创意设计与技术开发者</h4>
-              <div class="scenario-scene">内容编排 · 高色准精修 · 灵感捕捉</div>
-              <p class="scenario-pain">痛点：需要广色域校准屏幕、舒适输入与充裕运存，支撑高强度创作。</p>
-              <div class="scenario-value">
-                <div>✓ PixelSense 原彩屏幕，经色彩校准呈现丰富细节</div>
-                <div>✓ 大容量高速内存与可更换 SSD，大型素材随心载入</div>
-                <div>✓ 舒适全尺寸键盘与精准触觉触控板，灵感顺畅输入</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    `;
   },
 
   renderBentoSpecsMatrix(dev) {
@@ -2464,7 +2359,7 @@ const App = {
           <div class="pillar-num">02 / 续航与轻薄便携</div>
           <h3 class="pillar-title">长效陪伴与轻薄工学</h3>
           <div class="pillar-big-num">${bigNum2}<small>${bigNum2Unit}</small></div>
-          <p class="pillar-lead">${batteryLife !== '—' ? `标称典型续航 ${batteryLife}，外出办公学习告别充电器焦虑。` : '高集成一体化结构，兼顾移动便携与全天陪伴。'}</p>
+          <p class="pillar-lead">${batteryLife !== '—' ? `标称典型续航 ${batteryLife}，满足移动出行与长时间差旅办公需求。` : '高集成一体化结构，兼顾移动便携与长效使用。'}</p>
           <div class="bento-spec-list">
             <div class="bento-spec-row">
               <span class="bento-k">典型续航</span>
@@ -2686,8 +2581,6 @@ const App = {
           <span class="detail-verification-inline">${this.getDeviceVerificationBadge(dev.id)}</span>
         </div>
         ${this.renderBentoSpecsMatrix(dev)}
-        ${this.renderAiShowcaseSection(dev)}
-        ${this.renderScenarioShowcase(dev)}
         <div class="detail-section-divider">
           <span>全维度 13 大类工程技术规格明细</span>
         </div>
