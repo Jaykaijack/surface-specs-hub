@@ -61,7 +61,7 @@ const App = {
 
   cleanCpu(dev) {
     if (!dev) return '—';
-    const raw = Catalog.getSpec(dev, 'cpuModel') || '';
+    const raw = (Catalog.displaySpec ? Catalog.displaySpec(dev, 'cpuModel') : Catalog.getSpec(dev, 'cpuModel')) || '';
     let str = String(raw).trim();
     if (!str || str === 'not_applicable' || str === 'not_disclosed' || str === 'null') return '—';
     str = str.replace(/（地区上市另核验）|（不确认中国商用实际销售组合）|；分别按地区.*$/g, '').trim();
@@ -73,7 +73,7 @@ const App = {
 
   cleanNpu(dev) {
     if (!dev) return null;
-    const raw = Catalog.getSpec(dev, 'npuTops') || '';
+    const raw = (Catalog.displaySpec ? Catalog.displaySpec(dev, 'npuTops') : Catalog.getSpec(dev, 'npuTops')) || '';
     const str = String(raw).trim();
     if (!str || str === 'not_applicable' || str === 'not_disclosed' || str === 'null') return null;
     const match = str.match(/(\d+(?:[~-]\d+)?\s*TOPS)/i);
@@ -87,7 +87,7 @@ const App = {
 
   cleanScreen(dev) {
     if (!dev) return '—';
-    const raw = Catalog.getSpec(dev, 'screenSize') || '';
+    const raw = (Catalog.displaySpec ? Catalog.displaySpec(dev, 'screenSize') : Catalog.getSpec(dev, 'screenSize')) || '';
     const str = String(raw).trim();
     if (!str || str === 'not_applicable' || str === 'not_disclosed' || str === 'null') return '—';
     const m = str.match(/(\d+(?:\.\d+)?\s*英寸)/);
@@ -2179,7 +2179,7 @@ const App = {
     if (!dev) return '';
 
     const getParam = (key, fallback = '—') => {
-      const val = Catalog.getSpec(dev, key) || Catalog.rawSpec(dev, key);
+      const val = (Catalog.displaySpec ? Catalog.displaySpec(dev, key) : Catalog.getSpec(dev, key)) ?? (Catalog.rawSpec ? Catalog.rawSpec(dev, key) : null);
       if (val === undefined || val === null || val === '' || val === 'null') return fallback;
       if (val === 'not_disclosed') return '官方未披露';
       if (val === 'not_applicable') return '不适用';

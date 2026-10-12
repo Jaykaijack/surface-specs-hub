@@ -1088,7 +1088,7 @@ const ToolsEngine = {
                 <div style="font-weight:600;">Surface 主机裸机净重</div>
                 <div style="font-size:11px; color:var(--ms-text-tertiary);">${currentDev.name} 铝合金/镁合金一体机身</div>
               </div>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight === null ? '待核验' : bodyWeight} g</div>${Catalog.evidenceMarkup(currentDev, 'weight')}
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight === null ? '待核验' : bodyWeight} g</div>
             </div>
 
             <div class="weight-item-row">

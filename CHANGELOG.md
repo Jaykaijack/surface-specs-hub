@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.4.2] - 2026-10-12
+
+### Added
+- **前台真实参数展示专用出口 (`Catalog.displaySpec`)**：
+  - 新增面向前台视图的规格获取接口，与底层合规审计状态完全解耦；
+  - 当某项参数仍在工程审计流程中时，前端依然读取并展示底层官方录入的真实规格数据，确保用户查阅时参数 100% 完整，杜绝参数被误屏蔽为空白或缺失；
+  - 增强 `Catalog.rawSpec`，支持别名字段智能映射及端口/无线协议自动组合。
+
+### Changed
+- **技术规格格式化彻底净化与去审计化**：
+  - 规格展示引擎全面与审计专用方法 `Catalog.presentSpec` 解耦：
+    - 设备不适用的特性（`not_applicable`）优雅显示为“不适用”；
+    - 官方未披露的参数（`not_disclosed`）优雅显示为“官方未披露”；
+    - 空白参数（`null`/`undefined`）优雅显示为“—”；
+  - 全面剔除“未知（原记录：不适用，待核验）”等内部审计括号与工作痕迹；
+  - 单机技术规格手风琴折叠表与横向对比大表全面切换为 `displaySpec` 取值；
+  - 前端静态资源版本号全量升级至 `?v=20261012-v2.4.2`，破除浏览器强缓存，确保用户即时获取纯净界面。
+
+### Removed
+- **彻底清除技术规格视图中的核验来源噪音**：
+  - 从单机技术规格手风琴表（`renderDetailAccordion`）、横向对比大表（`renderComparisonTable`）以及随行重量计算器等用户界面中，彻底清除 `<small class="field-evidence pending">当前值待绑定证据</small>`、`<details class="field-evidence">` 与限定值说明展开项；
+  - 所有证据链溯源、信源绑定进度及审核记录严格隔离至独立的“官方文档核验中枢” (`#/audit`)。
+
+### Fixed
+- 修复因内部审计名单（`unverifiedFields`）拦截导致技术规格表中大量真实硬件参数（屏幕分辨率、PPI、材质工艺、摄像头、双扬声器、电池容量、长宽高三围、充电功率等）被显示为“—”或空白的问题；
+- 修复外观配色在详细规格表中未能正常渲染真实色彩圆点与材质标签的问题。
+
+### Why
+- 严格落实老大指示：“我的参数信息呢。你这种核验来源的信息都放在官方核验中枢。不要写在技术规格里。”面向普通查阅者的“技术规格”必须纯净、专业、准确、完整地呈现硬件真实数据；而“官方文档核验中枢” (`#/audit`) 专门承接工程证据链与合规溯源，二者职责严格分明、互不干扰。
+
 ## [v2.4.1] - 2026-10-12
 
 ### Added

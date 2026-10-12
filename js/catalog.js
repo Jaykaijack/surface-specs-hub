@@ -193,6 +193,44 @@ const Catalog = (function () {
     return specs[fieldKey];
   }
 
+  function rawSpec(device, fieldKey) {
+    if (!device || !device.specs || !fieldKey) return undefined;
+    const specs = device.specs;
+    if (fieldKey === 'usbPorts') {
+      if (!isEmpty(specs.usbPorts) || specs.usbPorts === 'not_disclosed' || specs.usbPorts === 'not_applicable') return specs.usbPorts;
+      const composed = composePorts(specs);
+      if (composed) return composed;
+    }
+    if (fieldKey === 'wireless') {
+      if (!isEmpty(specs.wireless) || specs.wireless === 'not_disclosed' || specs.wireless === 'not_applicable') return specs.wireless;
+      const composed = composeWireless(specs);
+      if (composed) return composed;
+    }
+    if (!isEmpty(specs[fieldKey]) || specs[fieldKey] === 'not_disclosed' || specs[fieldKey] === 'not_applicable') {
+      return specs[fieldKey];
+    }
+    const aliases = SPEC_ALIASES[fieldKey] || [];
+    for (let i = 0; i < aliases.length; i++) {
+      const alt = aliases[i];
+      if (!isEmpty(specs[alt]) || specs[alt] === 'not_disclosed' || specs[alt] === 'not_applicable') {
+        return specs[alt];
+      }
+    }
+    return specs[fieldKey];
+  }
+
+  function displaySpec(device, fieldKey) {
+    if (!device || !fieldKey) return undefined;
+    const conflicts = (device.dataConflicts || []).map(c => c.field);
+    if (conflicts.includes(fieldKey)) return null;
+
+    const verified = getSpec(device, fieldKey);
+    if (verified !== null && verified !== undefined) return verified;
+
+    return rawSpec(device, fieldKey);
+  }
+
+
   function presentSpec(val) {
     const state = specState(val);
     if (state === 'NULL') {
@@ -779,7 +817,8 @@ const Catalog = (function () {
     confirmedSpec: confirmedSpec,
     chipNpuScore: chipNpuScore,
     specKeys: device => Object.keys((device && device.specs) || {}),
-    rawSpec: (device, field) => device && device.specs ? device.specs[field] : undefined,
+    rawSpec: rawSpec,
+    displaySpec: displaySpec,
     evidenceFor: evidenceFor,
     pendingEvidenceAsset: pendingEvidenceAsset,
     installEvidence: installEvidence,

@@ -363,7 +363,7 @@ const ComparisonEngine = {
         `;
 
         devicesToCompare.forEach(dev => {
-          const rawVal = Catalog.getSpec(dev, field.key);
+          const rawVal = (Catalog.displaySpec ? Catalog.displaySpec(dev, field.key) : Catalog.getSpec(dev, field.key)) ?? (Catalog.rawSpec ? Catalog.rawSpec(dev, field.key) : null);
           const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
           html += `<td class="spec-val-cell">${formattedVal}</td>`;
         });
@@ -422,32 +422,37 @@ const ComparisonEngine = {
 
   // 严格根据 PRD 第九、十章处理字段格式化与未知参数治理 (Zero-Hallucination)
   formatFieldValue(val, type, dev, fieldKey) {
-    if (typeof Catalog !== 'undefined' && Catalog.specState) {
-      const state = Catalog.specState(val);
-      if (state !== 'VALID') return Catalog.presentSpec(val);
-    } else if (val === undefined || val === null || val === '' || val === 'null') {
+    if (val === 'not_applicable') {
+      return '<span class="spec-state not-applicable">不适用</span>';
+    }
+    if (val === 'not_disclosed') {
+      return '<span class="spec-state not-disclosed">官方未披露</span>';
+    }
+    if (val === undefined || val === null || val === '' || val === 'null') {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
-    } else if (val === 'not_disclosed') {
-      return '<span class="spec-state not-disclosed">未知（原记录：未披露，待核验）</span>';
-    } else if (val === 'not_applicable') {
-      return '<span class="spec-state not-applicable">未知（原记录：不适用，待核验）</span>';
     }
 
     // 配色调色盘
-    if (type === 'colors' && Array.isArray(val)) {
-      let colorDots = '<div class="color-palette-wrap">';
-      val.forEach(c => {
-        const matTag = c.material ? `<span class="color-mat-badge">${c.material}</span>` : '';
-        colorDots += `
-          <div class="color-dot-item" title="${c.name}${c.material ? ' · ' + c.material : ''}">
-            <span class="color-dot" style="background-color:${c.hex};"></span>
-            <span class="color-dot-name">${c.name}</span>
-            ${matTag}
-          </div>
-        `;
-      });
-      colorDots += '</div>';
-      return colorDots;
+    if (type === 'colors') {
+      if (Array.isArray(val) && val.length > 0) {
+        let colorDots = '<div class="color-palette-wrap">';
+        val.forEach(c => {
+          const matTag = c.material ? `<span class="color-mat-badge">${c.material}</span>` : '';
+          colorDots += `
+            <div class="color-dot-item" title="${c.name}${c.material ? ' · ' + c.material : ''}">
+              <span class="color-dot" style="background-color:${c.hex};"></span>
+              <span class="color-dot-name">${c.name}</span>
+              ${matTag}
+            </div>
+          `;
+        });
+        colorDots += '</div>';
+        return colorDots;
+      }
+      if (typeof val === 'string' && val.trim()) {
+        return `<span class="spec-text">${val}</span>`;
+      }
+      return '<span class="spec-state null">—</span>';
     }
 
     // 销售状态标签
@@ -627,7 +632,7 @@ const ComparisonEngine = {
 
       let hasValid = false;
       group.fields.forEach(field => {
-        const val = Catalog.getSpec(dev, field.key);
+        const val = (Catalog.displaySpec ? Catalog.displaySpec(dev, field.key) : Catalog.getSpec(dev, field.key)) ?? (Catalog.rawSpec ? Catalog.rawSpec(dev, field.key) : null);
         if (val !== undefined && val !== null && val !== '' && val !== 'null' && val !== 'not_disclosed' && val !== 'not_applicable') {
           hasValid = true;
         }
@@ -654,7 +659,7 @@ const ComparisonEngine = {
       `;
 
       group.fields.forEach(field => {
-        const rawVal = Catalog.getSpec(dev, field.key);
+        const rawVal = (Catalog.displaySpec ? Catalog.displaySpec(dev, field.key) : Catalog.getSpec(dev, field.key)) ?? (Catalog.rawSpec ? Catalog.rawSpec(dev, field.key) : null);
         const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
         html += `
           <tr class="spec-accordion-row">
