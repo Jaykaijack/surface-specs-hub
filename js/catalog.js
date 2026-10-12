@@ -641,7 +641,7 @@ const Catalog = (function () {
   function portraitLabel(shot) {
     if (!shot) return '';
     if (shot.identity === 'blocked' || shot.identity === 'missing') return '图片待核验，暂不展示';
-    if (shot.identity === 'pending') return '图片型号、配色与视角待核验';
+    if (shot.identity === 'pending') return '图片待核验：型号、配色与视角待核验';
     if (shot.identity === 'diagram') return '结构图待核验（非配色照片）';
     if (shot.identity === 'shared') {
       return shot.kind === 'diagram' ? '其他机型结构图示意，待核验' : '同系列示意，型号与配色待核验';

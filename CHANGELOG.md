@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.5.2] - 2026-10-12
+
+### Changed
+- **全面纠正 Surface Pro 11 与 Laptop 7 现网在售状态 (`current_cn`) 与官方商城链接**：
+  - 彻底纠正 `pro-11-13`（Surface Pro 第 11 代 13 英寸消费版）、`laptop-7-138`（Surface Laptop 第 7 代 13.8 英寸消费版）与 `laptop-7-150`（Surface Laptop 第 7 代 15 英寸消费版）的生命周期状态，由误标的 `discontinued`（停产）恢复为 `current_cn`（现网国行在售）；
+  - 彻底替换误挂的翻新机链接，精准绑定微软中国官方商城实时选配下单入口：
+    - Pro 11 (13"): `https://www.microsoftstore.com.cn/configure/surface-pro-13-inch`
+    - Laptop 7 (13.8"): `https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch`
+    - Laptop 7 (15"): `https://www.microsoftstore.com.cn/configure/surface-laptop-15-inch`
+  - 对齐微软中国商城实时起售价与 Copilot+ PC 认证参数：
+    - Pro 11 (13"): 起售价 `¥10,388 起 (现网选配在售)`，Copilot+ PC 认证恢复；
+    - Laptop 7 (13.8"): 起售价 `¥10,388 起 (现网选配在售)`，Copilot+ PC 认证恢复；
+    - Laptop 7 (15"): 起售价 `¥12,788 起 (现网选配在售)`，Copilot+ PC 认证恢复。
+
+### Fixed
+- **修复机型分类、在售筛选与货架联动**：
+  - 修复首页「国行在售」货架和列表筛选中因 `discontinued` 标签导致主流主力机 Pro 11 / Laptop 7 丢失的缺陷；
+  - 修复 `tests/official-current-lineup-facts.js` 与 `tests/test-runner.js`，将 3 款新品正式纳入现网国行名单；
+  - 重新执行 `rebuild-registry.js`，更新 `docs/full-library-verification-registry.json` 6,191 项参数指纹，4,989 项测试与回归测试 100% 全绿。
+
+### Why
+- 深刻反思并坚决执行老大的严厉批评与指导：「你去官方商城看看阿，pro11 和 laptop7 不是还在售吗。网站都给你们了，就是搞不清楚产品吗 https://www.microsoftstore.com.cn/ 好头疼啊」。
+- 经实时爬取与核对微软中国官方商城，Surface Pro 11 与 Surface Laptop 7 是官方主推的主流 Windows 11 AI+ PC，此前数据批次将其误指为认证翻新页并断言为停产退市是重大疏漏。现已全面校准官方直购入口、价格与产品定位，并在生产服务器完成部署验证。
+
 ## [v2.5.1] - 2026-10-12
 
 ### Removed

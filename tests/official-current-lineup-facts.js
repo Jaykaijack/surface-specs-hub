@@ -29,7 +29,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
     "qualcommXPlus": "https://www.qualcomm.com/products/mobile/snapdragon/laptops-and-tablets/snapdragon-x-plus",
     "qualcommX2Elite": "https://www.qualcomm.com/products/mobile/snapdragon/laptops-and-tablets/snapdragon-x2-elite",
     "laptopUltra": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra",
-    "laptopUltraBiz": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business"
+    "laptopUltraBiz": "https://www.microsoftstore.com.cn/surface/surface-laptop-ultra-for-business",
+    "configurePro11": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch",
+    "configureLaptop7_138": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch",
+    "configureLaptop7_150": "https://www.microsoftstore.com.cn/configure/surface-laptop-15-inch"
   },
   "currentCnDeviceIds": [
     "pro-12-13",
@@ -46,6 +49,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
     "laptop-8-150-snap",
     "laptop-13-inch-biz",
     "laptop-13-inch-intel-biz",
+    "pro-11-13",
+    "laptop-7-138",
+    "laptop-7-150",
     "pro-11-biz-snap",
     "pro-11-biz-intel",
     "laptop-7-biz-snap",

@@ -2840,7 +2840,7 @@ const SURFACE_DATA = {
       "nameEn": "Surface Pro (11th Edition)",
       "generation": "第 11 代 (2024)",
       "year": 2024,
-      "status": "discontinued",
+      "status": "current_cn",
       "targetAudience": "consumer",
       "flagship": false,
       "tagline": "首款 Copilot+ PC 二合一，高通骁龙® X 架构",
@@ -2849,7 +2849,7 @@ const SURFACE_DATA = {
       "specs": {
         "releaseDate": "2024 年 5 月",
         "generation": "第 11 代",
-        "status": "discontinued",
+        "status": "current_cn",
         "targetAudience": "主流消费者与移动办公群体",
         "tagline": "搭载高通骁龙® X 平台，长效续航与 OLED 选项",
         "colors": [
@@ -2883,7 +2883,7 @@ const SURFACE_DATA = {
         "gpuModel": "Qualcomm® Adreno™ GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "45 TOPS",
-        "copilotPlus": "not_disclosed",
+        "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB LPDDR5x (8448 MT/s)",
         "storageOptions": "256GB / 512GB / 1TB PCIe Gen 4",
         "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
@@ -2930,11 +2930,11 @@ const SURFACE_DATA = {
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "SSD、电池、屏幕、主板各接口组件",
         "warranty": "not_disclosed",
-        "startingPriceCny": "not_disclosed",
+        "startingPriceCny": "¥10,388 起 (现网选配在售)",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-21",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-pro-11th-edition",
-        "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs"
+        "lastVerified": "2026-10-12",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch",
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch"
       },
       "isCommercial": false,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs",
@@ -10197,7 +10197,7 @@ const SURFACE_DATA = {
       "nameEn": "Surface Laptop (7th Edition)",
       "generation": "第 7 代 (2024)",
       "year": 2024,
-      "status": "discontinued",
+      "status": "current_cn",
       "targetAudience": "consumer",
       "flagship": false,
       "tagline": "极窄边框与高通骁龙® X Elite，触觉反馈触控板革新",
@@ -10206,7 +10206,7 @@ const SURFACE_DATA = {
       "specs": {
         "releaseDate": "2024 年 5 月",
         "generation": "第 7 代",
-        "status": "discontinued",
+        "status": "current_cn",
         "targetAudience": "个人消费者与商务差旅",
         "tagline": "第一代 Copilot+ PC 轻薄本，首次引入圆角屏幕与触觉触控",
         "colors": [
@@ -10240,7 +10240,7 @@ const SURFACE_DATA = {
         "gpuModel": "Qualcomm® Adreno™ GPU",
         "npuModel": "Qualcomm® Hexagon™",
         "npuTops": "45 TOPS",
-        "copilotPlus": "not_disclosed",
+        "copilotPlus": "认证 Copilot+ PC / Windows 11 AI+ PC",
         "ramSpec": "16GB / 32GB / 64GB LPDDR5x",
         "storageOptions": "256GB / 512GB / 1TB SSD",
         "ssdRemovable": "可拆卸式固态硬盘（第 4 代 SSD）",
@@ -10287,10 +10287,10 @@ const SURFACE_DATA = {
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "SSD、键盘盖组件、电池",
         "warranty": "not_disclosed",
-        "startingPriceCny": "not_disclosed",
+        "startingPriceCny": "¥10,388 起 (现网选配在售)",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-21",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition"
+        "lastVerified": "2026-10-12",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-13-8-inch"
       },
       "isCommercial": false,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
@@ -27043,7 +27043,7 @@ const SURFACE_DATA = {
       "nameEn": "Surface Laptop, 15-inch (7th Edition)",
       "generation": "第 7 代 (2024)",
       "year": 2024,
-      "status": "discontinued",
+      "status": "current_cn",
       "targetAudience": "consumer",
       "flagship": true,
       "tagline": "15 英寸大视野长续航轻薄本，高通骁龙® X Elite 强劲性能",
@@ -27052,7 +27052,7 @@ const SURFACE_DATA = {
       "specs": {
         "releaseDate": "2024 年 6 月",
         "generation": "第 7 代",
-        "status": "discontinued",
+        "status": "current_cn",
         "targetAudience": "面向需要超大屏幕与长效续航的内容创作者、商务白领与工程开发人员",
         "tagline": "搭载高通骁龙® X Elite 平台，22 小时视频续航与 120Hz 大屏",
         "colors": [
@@ -27123,11 +27123,11 @@ const SURFACE_DATA = {
         "repairabilityScore": "not_disclosed",
         "replaceableParts": "固态硬盘、主板模块、电池、屏幕",
         "warranty": null,
-        "startingPriceCny": "not_disclosed",
+        "startingPriceCny": "¥12,788 起 (现网选配在售)",
         "sourceReliability": "microsoft_official",
-        "lastVerified": "2026-09-30",
-        "officialDocUrl": "https://www.microsoftstore.com.cn/refurbished/certified-refurbished-surface-laptop-7th-edition",
-        "officialConfigureUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs"
+        "lastVerified": "2026-10-12",
+        "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-15-inch",
+        "officialConfigureUrl": "https://www.microsoftstore.com.cn/configure/surface-laptop-15-inch"
       },
       "isCommercial": false,
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",

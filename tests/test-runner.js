@@ -1222,7 +1222,7 @@ officialCurrentIds.forEach(id => {
   const d = Catalog.getDevice(id);
   assert(!!d && d.status === 'current_cn', `现网新品 ${id} 必须标 current_cn`);
 });
-['pro-11-13', 'laptop-7-138', 'laptop-7-150', 'pro-10-biz', 'laptop-6-biz', 'sls-2', 'go-4', 'laptop-go-3', 'studio-2-plus'].forEach(id => {
+['pro-10-biz', 'laptop-6-biz', 'sls-2', 'go-4', 'laptop-go-3', 'studio-2-plus'].forEach(id => {
   const d = Catalog.getDevice(id);
   assert(!!d && d.status === 'discontinued', `${id} 现网已无新品在售，不得再标国行在售`);
 });
