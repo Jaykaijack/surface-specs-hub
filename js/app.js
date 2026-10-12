@@ -2461,7 +2461,7 @@ const App = {
             <span class="header-sub-tag">已选 ${selectedDevices.length} 款 Surface 设备</span>
           </h1>
           <div class="view-meta-tip">
-            <span>当前对比链接可直接复制分享 ｜ 左右拖动滚轮平滑横向滚动 ｜ 点击机型右上角 ✕ 可移除</span>
+            <span>当前对比链接可直接复制分享 ｜ 上下滚动读参数，左右滑动或 Shift+滚轮切换列 ｜ 点击机型右上角 ✕ 可移除</span>
           </div>
         </div>
 

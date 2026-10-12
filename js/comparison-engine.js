@@ -42,17 +42,15 @@ const ComparisonEngine = {
 
   bindEvents() {
     if (typeof document === 'undefined') return;
-    // 监听 Shift + 鼠标滚轮横向滚动，或在超宽表格上直接滚轮滚动辅助横向
+    // Normal wheel reads rows/conditions; horizontal input stays native. Shift opts into column scrolling.
     document.addEventListener('wheel', (e) => {
-      const container = document.querySelector('.spec-table-container');
-      if (container && container.contains(e.target)) {
-        if (!e.shiftKey && Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-          if (container.scrollWidth > container.clientWidth) {
-            container.scrollLeft += e.deltaY * 0.85;
-          }
-        }
+      const container = e.target.closest?.('.spec-table-container');
+      if (!container || e.target.closest('.table-decision-scroll') || !e.shiftKey || e.deltaX || !e.deltaY) return;
+      if (container.scrollWidth > container.clientWidth) {
+        container.scrollLeft += e.deltaY;
+        e.preventDefault();
       }
-    }, { passive: true });
+    }, { passive: false });
   },
 
   toggleDevice(id) {
