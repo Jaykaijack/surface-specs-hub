@@ -8135,7 +8135,7 @@ var XBOX_CONTROLLERS = [
     "statusLabel": "官方资料已收录 · 库存另核",
     "salesRegion": "cn_official",
     "image": "./assets/products/xbox-controller-20th-anniversary-official.png",
-    "dpad": "混合式 8 向圆盘方向键 (冰川白)",
+    "dpad": "深色圆盘外观方向键（按本款官方原图；具体结构规格待本款原文核实）",
     "triggers": "防滑纹理扳机键 + 脉冲震动",
     "connectivity": "Xbox 无线协议 + 蓝牙低功耗 (BLE) + USB-C",
     "battery": "2 节 AA 电池或官方充电电池包（最长 40 小时）",

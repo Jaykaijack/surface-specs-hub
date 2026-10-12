@@ -173,6 +173,7 @@ const App = {
   },
 
   handleRouteChange() {
+    this.closeMobileNav();
     const hash = window.location.hash.slice(1) || '/';
     const [pathPart, queryPart] = hash.split('?');
     
@@ -403,7 +404,18 @@ const App = {
     }
   },
 
+  closeMobileNav() {
+    if (typeof document === 'undefined') return;
+    const sidebar = document.querySelector('.hub-sidebar');
+    const button = document.getElementById('mobile-menu-btn');
+    const wasOpen = sidebar && sidebar.classList.contains('open');
+    sidebar?.classList.remove('open');
+    button?.setAttribute('aria-expanded', 'false');
+    if (wasOpen) button?.focus();
+  },
+
   navigate(hashPath) {
+    this.closeMobileNav();
     window.location.hash = hashPath;
   },
 
@@ -2963,7 +2975,7 @@ const App = {
             <span class="catalog-tab-icon">▦</span>产品目录
           </button>
           <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" onclick="App.navigate('#/compare')">
-            <span class="catalog-tab-icon">▣</span>对比 (${ComparisonEngine.selectedIds.length})
+            <span class="catalog-tab-icon">▣</span>对比 (<span data-comparison-count>${ComparisonEngine.selectedIds.length}</span>)
           </button>
           <button type="button" class="detail-catalog-tab" role="tab" aria-selected="false" hidden title="收藏功能待接入">
             <span class="catalog-tab-icon">♡</span>收藏 (0)
@@ -3426,7 +3438,7 @@ const App = {
       Catalog.paint(railImg, shot, 'detail');
     }
     const shotIdentityLabel = Catalog.portraitLabel(shot);
-    const shotRoleLabel = colorName ? `${colorName} 配色图` : '代表图';
+    const shotRoleLabel = shot.identity === 'pending' ? '参考图' : colorName ? `${colorName} 配色图` : '代表图';
 
     const railLabel = document.getElementById('detail-rail-image-label');
     if (railLabel) {
@@ -3446,11 +3458,7 @@ const App = {
     if (labelEl) {
       const colors = this.spec(dev, 'colors') || [];
       const foundColor = colors.find(c => c.name === colorName);
-      if (foundColor && foundColor.material) {
-        labelEl.textContent = `${colorName} · ${foundColor.material}`;
-      } else {
-        labelEl.textContent = foundColor && foundColor.availabilityNote ? `${colorName} · ${foundColor.availabilityNote}` : colorName;
-      }
+      labelEl.textContent = [colorName, foundColor?.material, foundColor?.availabilityNote].filter(Boolean).join(' · ');
     }
     document.querySelectorAll('.detail-color-options .color-choice-btn').forEach(button => {
       button.classList.toggle('active', button.dataset.color === colorName);

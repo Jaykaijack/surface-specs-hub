@@ -4012,3 +4012,8 @@ select:focus-visible,
 .device-card-date-status > .spec-badge { flex:0 0 auto; white-space:nowrap; }
 .device-card-date-status .device-year-badge { min-width:0; white-space:normal; overflow-wrap:anywhere; }
 .portrait-scope-note { color:var(--ms-text-secondary); font-size:12px; line-height:1.5; overflow-wrap:anywhere; }
+
+.color-choice-btn, .catalog-explorer-detail .color-choice-btn { max-width:100%; flex-wrap:wrap; justify-content:flex-start; padding-block:6px; }
+.color-choice-name { flex:0 0 auto; white-space:nowrap; }
+.color-material-chip { min-width:0; white-space:normal; overflow-wrap:anywhere; }
+.xbox-controller-image { object-fit:contain; max-width:100%; max-height:100%; }

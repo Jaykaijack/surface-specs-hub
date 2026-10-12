@@ -164,6 +164,7 @@ const ComparisonEngine = {
     const dockPills = document.getElementById('dock-pills');
 
     const dockCount = document.getElementById('dock-count');
+    document.querySelectorAll?.('[data-comparison-count]')?.forEach(node => { node.textContent = String(this.selectedIds.length); });
     if (!dock || !dockPills) return;
 
     if (this.selectedIds.length === 0) {
