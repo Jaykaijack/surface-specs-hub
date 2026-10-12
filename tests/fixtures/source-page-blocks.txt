@@ -1,0 +1,6 @@
+Synthetic Laptop (https://www.microsoft.com/en-us/surface/devices/surface-laptop)
+Source: open({"url":"https://www.microsoft.com/en-us/surface/devices/surface-laptop"}); Content type: text/html; Total lines: 2
+L1: The applicable charger is Model A.
+Synthetic Laptop Go (https://www.microsoft.com/en-us/surface/devices/surface-laptop-go)
+Source: open({"url":"https://www.microsoft.com/en-us/surface/devices/surface-laptop-go"}); Content type: text/html; Total lines: 2
+L1: The applicable charger is Model B.

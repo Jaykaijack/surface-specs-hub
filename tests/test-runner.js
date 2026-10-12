@@ -16,6 +16,7 @@ const App = require('../js/app.js');
 const OFFICIAL_CURRENT_LINEUP_FACTS = require('./official-current-lineup-facts.js');
 const OFFICIAL_HISTORICAL_LINEUP_FACTS = require('./official-historical-lineup-facts.js');
 const OFFICIAL_XBOX_LINEUP_FACTS = require('./official-xbox-lineup-facts.js');
+const latestDisposition = require('./helpers/current-dispositions');
 const { runImageMappingP0Tests } = require('./image-mapping-p0.test.js');
 const { runDeploySeamTests } = require('./deploy-seams.test.js');
 const { runP0SpecBatteryRegressionTests } = require('./p0-spec-battery-regression.test.js');
@@ -46,12 +47,20 @@ function assert(condition, message) {
 }
 
 function assertSpecFacts(deviceId, dev, fact) {
+  for (const [field, expected] of Object.entries(fact.sourceScopeAssertions || {})) {
+    const evidence = Catalog.evidenceFor(dev, field);
+    assert(!!evidence, `${deviceId}:${field} 恢复参数必须绑定适用来源`);
+    if (evidence) {
+      assertEqual(evidence.region, expected.region, `${deviceId}:${field} 保留来源地区范围`);
+      assert(evidence.configurationScope.includes(expected.configurationScopeContains), `${deviceId}:${field} 保留消费者、商用或翻新配置范围`);
+    }
+  }
   const contains = fact.specContains || {};
   Object.keys(contains).forEach((key) => {
     const actual = String(Catalog.getSpec(dev, key) || '');
     const needles = Array.isArray(contains[key]) ? contains[key] : [contains[key]];
     needles.forEach((needle) => {
-      assert(actual.includes(needle), `${deviceId} ${key} 必须含国行 ${needle}（实际: ${actual}）`);
+      assert(actual.includes(needle), `${deviceId} ${key} 必须含适用来源 ${needle}（实际: ${actual}）`);
     });
   });
   const states = fact.specState || {};
@@ -187,12 +196,12 @@ const htmlValid = ComparisonEngine.formatFieldValue('骁龙 X2 处理器', 'text
 assert(htmlValid === '骁龙 X2 处理器', '正常参数格式化渲染文本');
 
 const htmlNotDisclosed = ComparisonEngine.formatFieldValue('not_disclosed', 'text');
-assert(htmlNotDisclosed.includes('官方未披露'), 'not_disclosed 准确渲染为"官方未披露"标签');
-assert(htmlNotDisclosed.includes('spec-state not-disclosed'), '包含 spec-state not-disclosed CSS 样式类');
+assert(htmlNotDisclosed.includes('—'), '无适用证据的 not_disclosed 展示缺失值');
+assert(htmlNotDisclosed.includes('spec-state null'), '未知值使用中性空态样式');
 
 const htmlNotApplicable = ComparisonEngine.formatFieldValue('not_applicable', 'text');
-assert(htmlNotApplicable.includes('不适用'), 'not_applicable 准确渲染为"不适用"标签');
-assert(htmlNotApplicable.includes('spec-state not-applicable'), '包含 spec-state not-applicable CSS 样式类');
+assert(htmlNotApplicable.includes('—'), '无适用证据的 not_applicable 不能断言不适用');
+assert(htmlNotApplicable.includes('spec-state null'), '未知值使用中性空态样式');
 
 const htmlNull = ComparisonEngine.formatFieldValue(null, 'text');
 assert(htmlNull.includes('—'), '空缺值渲染为标准中划线');
@@ -240,10 +249,10 @@ if (snapdragonX2) {
   assertEqual(snapdragonX2.npuTops, 80, '骁龙 X2 Elite NPU 硬件算力为 80 TOPS');
 }
 
-// 40 TOPS Copilot+ 认证红线验证
+// NPU门槛只描述芯片平台，整机资格还需内存、存储与系统条件。
 SURFACE_DATA.chips.forEach(chip => {
   if (chip.npuTops >= 40) {
-    assert(chip.copilotPlus === true, `算力 >= 40 TOPS 的芯片 (${chip.name}) 必须具备 Copilot+ 认证`);
+    assert(typeof chip.copilotPlus === 'string' && /16GB.*256GB.*Windows/.test(chip.copilotScope || ''), `算力 >= 40 TOPS 的芯片 (${chip.name}) 必须明确整机内存、存储与Windows条件`);
   }
 });
 
@@ -560,36 +569,13 @@ laptopColors.forEach(imgName => {
   assert(fs.existsSync(p), `Laptop 官方真机配色图存在: ${imgName}`);
 });
 
-// 检验全系 8 大品类均配有官方 Hero 图像
-const categoryHeroes = [
-  'surface-new-pro-hero.png',
-  'surface-new-laptop-hero.png',
-  'surface-laptop-studio-2-hero.jpg',
-  'surface-laptop-go-3-hero.jpg',
-  'surface-studio-2-plus-hero.jpg',
-  'surface-book-hero.jpg',
-  'surface-go-hero.jpg',
-  'surface-duo-hero.jpg'
-];
-categoryHeroes.forEach(imgName => {
-  const p = path.join(assetsDir, imgName);
-  assert(fs.existsSync(p), `系列代表性机型官方主图存在: ${imgName}`);
-});
-
-const categoryHeroesPng = [
-  'surface-new-pro-hero.png',
-  'surface-new-laptop-hero.png',
-  'surface-laptop-studio-2-hero.png',
-  'surface-laptop-go-3-hero.png',
-  'surface-studio-2-plus-hero.png',
-  'surface-book-hero.png',
-  'surface-go-hero.png',
-  'surface-duo-hero.png'
-];
-categoryHeroesPng.forEach(imgName => {
-  const p = path.join(assetsDir, imgName);
-  assert(fs.existsSync(p), `全系 8 大品类官方透明 PNG 主图存在: ${imgName}`);
-});
+// 检验全部系列的实际运行主图；不要求已不使用的历史别名文件。
+for (const category of SURFACE_DATA.categories.filter(c => c.id !== 'xbox')) {
+  const device = SURFACE_DATA.devices.find(d => d.id === category.defaultModel);
+  assert(!!device, `系列代表机型存在: ${category.id}`);
+  const shot = Catalog.portrait(device);
+  assert(shot.src.startsWith('data:') || fs.existsSync(path.resolve(__dirname,'..',shot.src.split('?')[0].replace(/^\.\//,''))), `系列实际主图或准确占位可解析: ${category.id}`);
+}
 
 // 检验商用机型色彩严查: 必须严格且仅为商务色 (亮铂金与典雅黑)，绝无沙漫金/宝石蓝/罗兰紫
 const pro12_biz_intel = SURFACE_DATA.devices.find(d => d.id === 'pro-12-13-intel');
@@ -625,7 +611,7 @@ const laptop13Inch = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch');
 assert(Boolean(laptop13Inch), '全系参数库正式收录官方 Surface Laptop, 13 英寸 (第 1 代) 消费版');
 assertEqual(laptop13Inch.specs.resolution, '1920 × 1280', 'Laptop 13 英寸机型分辨率 1920x1280 准确无误');
 assertEqual(laptop13Inch.specs.npuTops, '45 TOPS', 'Laptop 13 英寸机型搭载 45 TOPS 高通 NPU');
-assertEqual(laptop13Inch.specs.startingPriceCny, '¥7,788 起 (消费版)', 'Laptop 13 英寸机型官方商城起售价准确无误 (Actual: ¥7,788 起)');
+assert(latestDisposition.assertLatest(laptop13Inch.id, 'startingPriceCny') && ToolsEngine.guidePriceYuan(laptop13Inch) === null, 'Laptop 13 英寸发布价格按已读中国公告修正，保留起配未知及预算排序隔离');
 assert(laptop13Inch.specs.officialDocUrl.includes('configure/surface-laptop-13-inch'), 'Laptop 13 英寸官方商城直达选配页链接准确');
 assertEqual(laptop13Inch.specs.weightGrams, '1220g (1.22 kg)', '保留消费者旧重量原始记录，是否可计算由独立证据门禁决定');
 
@@ -639,7 +625,7 @@ assert(laptop7_150.specs.cpuModel.includes('X Elite'), 'Laptop 7 15 英寸搭载
 const laptop13_intel_biz = SURFACE_DATA.devices.find(d => d.id === 'laptop-13-inch-intel-biz');
 assert(Boolean(laptop13_intel_biz), '全系参数库正式收录 Surface Laptop 13 英寸 商用版 - Intel 版');
 assert(laptop13_intel_biz.specs.cpuModel.includes('Ultra 5') && laptop13_intel_biz.specs.cpuModel.includes('325'), 'Laptop 13 英寸 Intel 版搭载英特尔酷睿 Ultra 5 325');
-assertEqual(laptop13_intel_biz.specs.startingPriceCny, '¥10,188 起 (商用版)', 'Laptop 13 英寸 Intel 商用版起售价对齐现网官方商城 ¥10,188 起');
+assert(latestDisposition.assertLatest(laptop13_intel_biz.id, 'startingPriceCny') && ToolsEngine.guidePriceYuan(laptop13_intel_biz) === null, 'Laptop 13 英寸 Intel 商用发布价格绑定地区、年份及内存上市条件，不作完整起配认证');
 assertEqual(laptop13_intel_biz.specs.colors.length, 1, 'Laptop 13 英寸 Intel 商用版严格单色亮铂金');
 
 // 检验新收录的官方 12 英寸机型
@@ -647,8 +633,8 @@ const pro12Inch = SURFACE_DATA.devices.find(d => d.id === 'pro-12-inch');
 assert(Boolean(pro12Inch), '全系参数库正式收录官方 Surface Pro, 12 英寸 (第 1 代)');
 assertEqual(pro12Inch.specs.resolution, '2196 × 1464', '12 英寸机型分辨率 2196x1464 准确无误');
 assertEqual(pro12Inch.specs.npuTops, '45 TOPS', '12 英寸机型搭载 45 TOPS 高通 NPU');
-assert(pro12Inch.specs.startingPriceCny.includes('6,788'), '12 英寸机型官方商城起售价为 ¥6,788 起（以实时选配页为准）');
-assert(pro12Inch.specs.startingPriceCny.includes('实时'), '12 英寸起售价含实时页 caveat');
+assertEqual(Catalog.getSpec(pro12Inch, 'startingPriceCny'), null, '配置页列价不能认证历史首发价');
+assert(pro12Inch.specs.currentPriceCny.includes('6,788') && pro12Inch.specs.currentPriceCny.includes('8GB') && pro12Inch.specs.currentPriceCny.includes('采集快照'), '12英寸指定8GB/256GB配置页列价保留配置与快照范围');
 assert(pro12Inch.specs.officialDocUrl.includes('configure/surface-pro-12-inch'), '12 英寸官方商城直达选配页链接准确');
 const pro12Colors = pro12Inch.specs.colors.map(c => c.name);
 assert(pro12Colors.includes('亮铂金') && pro12Colors.includes('罗兰紫') && pro12Colors.includes('碧海青'), '12 英寸机型完整包含官网在售 3 色: 亮铂金、罗兰紫、碧海青');
@@ -689,10 +675,10 @@ assert(fs.existsSync(path.join(adrDir, '0002-zero-hallucination-spec-governance.
 assert(fs.existsSync(path.join(adrDir, '0003-surface-product-lineup-and-taxonomy.md')), 'ADR-0003 存在');
 assert(fs.existsSync(path.join(adrDir, '0004-official-cdn-asset-localization-and-color-switching.md')), 'ADR-0004 存在');
 
-const scratchDir = path.resolve(__dirname, '../.scratch');
-assert(fs.existsSync(scratchDir), '.scratch/ 本地任务跟踪目录存在');
-assert(fs.existsSync(path.join(scratchDir, 'surface-specs-hub-core/spec.md')), '.scratch/ 下功能规格 spec.md 存在');
-assert(fs.existsSync(path.join(scratchDir, 'surface-specs-hub-core/map.md')), '.scratch/ 下任务决策地图 map.md 存在');
+const workflow = fs.readFileSync(path.resolve(__dirname,'../docs/workflow.md'),'utf8');
+assert(workflow.includes('制造商实际正文'),'公开维护流程要求读取实际正文');
+assert(workflow.includes('评分'),'公开维护流程覆盖参数评分出口');
+assert(workflow.includes('真实像素'),'公开维护流程要求实际图片检查');
 
 // ----------------------------------------------------
 // 9. 图像资产真实性与商用版规范校验 (Asset Fidelity & Commercial Governance)
@@ -788,10 +774,9 @@ Catalog.listDevices().forEach(dev => {
 console.log('\n🔍 Test Suite 10: 官方信源核验与 Excel 审计台校验');
 assert(typeof App.renderAuditView === 'function', 'App 具备 renderAuditView 官方核验总账渲染方法');
 
-const excelPath = path.resolve(__dirname, '..', 'docs', 'Surface_全系规格与官方信源核对总账.xlsx');
-assert(fs.existsSync(excelPath), 'docs/Surface_全系规格与官方信源核对总账.xlsx 存在');
-const excelStats = fs.statSync(excelPath);
-assert(excelStats.size > 20000, `Excel 核验总账大小正常 (Actual: ${excelStats.size} bytes)`);
+const publicSources = require('../docs/sources/verified-fields.json');
+assert(publicSources.fields.length > 4000 && publicSources.fullFactCertification === false,'公开来源摘要完整且不冒称全库认证');
+assert(publicSources.fields.every(p=>p.id && p.sourceUrl && p.valueHash), '每项公开来源具备字段定位、原始URL和值摘要');
 
 let validStoreUrlCount = 0;
 SURFACE_DATA.devices.forEach(dev => {
@@ -812,8 +797,8 @@ assert(typeof Catalog.presentSpec === 'function', 'Catalog.presentSpec 是四态
 assert(typeof Catalog.applySnapshot === 'function', 'Catalog.applySnapshot 是云端/本地 adapter 的 seam');
 assert(typeof App.renderRoute === 'function', '云端刷新必须能调用 App.renderRoute');
 
-assertEqual(Catalog.presentSpec('not_disclosed').includes('官方未披露'), true, '四态：NOT_DISCLOSED 统一为官方未披露');
-assertEqual(Catalog.presentSpec('not_applicable').includes('不适用'), true, '四态：NOT_APPLICABLE 统一为不适用');
+assertEqual(Catalog.presentSpec('not_disclosed', true).includes('官方未披露'), true, '经证据确认的 NOT_DISCLOSED 显示官方未披露');
+assertEqual(Catalog.presentSpec('not_applicable', true).includes('不适用'), true, '经证据确认的 NOT_APPLICABLE 显示不适用');
 assertEqual(Catalog.presentSpec(null).includes('—'), true, '四态：NULL 统一为 —');
 assertEqual(Catalog.isNpuDisplayable('not_disclosed'), false, '官方未披露的 NPU 不得出现在徽章上');
 
@@ -877,9 +862,9 @@ assert(typeof Catalog.presentDeviceSpec === 'function', '卡片/详情/大表共
 const hubPresented = Catalog.getDevice('hub-3');
 const hubBatteryHtml = Catalog.presentDeviceSpec(hubPresented, 'batteryLifeVideo');
 const hubPriceHtml = Catalog.presentDeviceSpec(hubPresented, 'startingPriceCny');
-assert(String(hubBatteryHtml).includes('不适用'), 'Hub 3 详情续航必须显示「不适用」');
+assert(String(hubBatteryHtml).includes('—'), 'Hub 3 未绑定证据的旧续航占位保持中性空态');
 assert(!String(hubBatteryHtml).includes('not_applicable'), 'Hub 3 详情不得泄漏 raw not_applicable');
-assert(String(hubPriceHtml).includes('官方未披露'), 'Hub 3 详情起售价必须显示「官方未披露」');
+assert(String(hubPriceHtml).includes('—'), 'Hub 3 未绑定证据的旧价格占位保持中性空态');
 assert(!String(hubPriceHtml).includes('not_disclosed'), 'Hub 3 详情不得泄漏 raw not_disclosed');
 const heroHtml = App.renderMetricCards ? App.renderMetricCards(hubPresented) : '';
 assert(typeof App.renderMetricCards === 'function', '详情六指标卡片走统一四态 interface');
@@ -930,10 +915,15 @@ assert(!!ToolsEngine.getCompatStatus('flex-keyboard', 'pro-12-13'),
   '回到基线后兼容矩阵恢复配件判定');
 
 Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices).forEach(deviceId => {
-  const fact = OFFICIAL_CURRENT_LINEUP_FACTS.devices[deviceId];
+  const fact = latestDisposition.historicalFacts(deviceId, OFFICIAL_CURRENT_LINEUP_FACTS.devices[deviceId]);
   const dev = Catalog.getDevice(deviceId);
   assert(!!dev, `现网机型在库: ${deviceId}`);
   if (!dev) return;
+
+  for (const field of fact.assertUnknownFields || []) {
+    assertEqual(Catalog.getSpec(dev, field), null, `${deviceId}:${field} 消费原文缺失、商用不能移用；不得恢复旧硬件断言`);
+    assert((dev.unverifiedFields || []).includes(field), `${deviceId}:${field} 必须保留内部缺证标记`);
+  }
 
   const price = Catalog.getSpec(dev, 'startingPriceCny');
   if (fact.startingPriceContains) {
@@ -942,7 +932,7 @@ Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices).forEach(deviceId => {
   }
   if (fact.startingPriceState) {
     assertEqual(Catalog.specState(price), fact.startingPriceState,
-      `${deviceId} 起售价四态必须是 ${fact.startingPriceState}（官方合页未单列该尺寸入门价）`);
+      `${deviceId} 首发价四态必须是 ${fact.startingPriceState}（配置页列价不能证明首发价）`);
   }
 
   const cpu = String(Catalog.getSpec(dev, 'cpuModel') || '');
@@ -1137,7 +1127,7 @@ Object.keys(OFFICIAL_CURRENT_LINEUP_FACTS.devices).forEach(deviceId => {
     if (fact.frontCameraContains) {
       const needles = Array.isArray(fact.frontCameraContains) ? fact.frontCameraContains : [fact.frontCameraContains];
       needles.forEach((needle) => {
-        assert(cam.includes(needle), `${deviceId} 前置摄像头必须含国行 ${needle}（实际: ${cam}）`);
+        assert(cam.includes(needle), `${deviceId} 前置摄像头必须含适用来源 ${needle}（实际: ${cam}）`);
       });
     }
     if (fact.frontCameraMustNotInclude) {
@@ -1238,7 +1228,7 @@ if (intelLaptop) {
 }
 
 Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices).forEach(deviceId => {
-  const fact = OFFICIAL_HISTORICAL_LINEUP_FACTS.devices[deviceId];
+  const fact = latestDisposition.historicalFacts(deviceId, OFFICIAL_HISTORICAL_LINEUP_FACTS.devices[deviceId]);
   const dev = Catalog.getDevice(deviceId);
   assert(!!dev, `历史核验机型在库: ${deviceId}`);
   if (!dev) return;
@@ -1430,7 +1420,7 @@ Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices).forEach(deviceId => {
     if (fact.frontCameraContains) {
       const needles = Array.isArray(fact.frontCameraContains) ? fact.frontCameraContains : [fact.frontCameraContains];
       needles.forEach((needle) => {
-        assert(cam.includes(needle), `${deviceId} 前置摄像头必须含国行 ${needle}（实际: ${cam}）`);
+        assert(cam.includes(needle), `${deviceId} 前置摄像头必须含适用来源 ${needle}（实际: ${cam}）`);
       });
     }
     if (fact.frontCameraMustNotInclude) {
@@ -1513,12 +1503,12 @@ Object.keys(OFFICIAL_HISTORICAL_LINEUP_FACTS.devices).forEach(deviceId => {
 });
 
 Object.keys(OFFICIAL_XBOX_LINEUP_FACTS.devices).forEach(deviceId => {
-  const fact = OFFICIAL_XBOX_LINEUP_FACTS.devices[deviceId];
+  const fact = latestDisposition.historicalFacts(deviceId, OFFICIAL_XBOX_LINEUP_FACTS.devices[deviceId]);
   const dev = Catalog.getDevice(deviceId);
   assert(!!dev, `Xbox 主机在库: ${deviceId}`);
   if (!dev) return;
   assertEqual(dev.categoryId, 'xbox', `${deviceId} 归在 Xbox 系列`);
-  assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'NOT_DISCLOSED',
+  if (!latestDisposition.assertLatest(deviceId, 'startingPriceCny')) assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'NOT_DISCLOSED',
     `${deviceId} 不把美元或另一台的人民币标价写进国行价格栏`);
   assertSpecFacts(deviceId, dev, fact);
   if (fact.storageMustNotInclude) {
@@ -1627,6 +1617,7 @@ assertEqual(officialLockedIds.size, Catalog.listDevices().length,
   '事实回归与待核验隔离必须覆盖全量设备');
 
 Catalog.listDevices().forEach(dev => {
+  if (latestDisposition.assertLatest(dev.id, 'startingPriceCny')) return;
   if (dev.status === 'current_cn') return;
   if (['pro-12-inch-2', 'laptop-13-inch-2', 'laptop-ultra-biz', 'laptop-ultra'].includes(dev.id)) {
     assertEqual(Catalog.specState(Catalog.getSpec(dev, 'startingPriceCny')), 'NULL',

@@ -210,18 +210,18 @@ const ToolsEngine = {
             <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor">
               <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14A2.5 2.5 0 0 1 11.5 14v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zM3 4.5A1.5 1.5 0 0 0 4.5 6h7A1.5 1.5 0 0 0 13 4.5v-1A1.5 1.5 0 0 0 11.5 2h-7A1.5 1.5 0 0 0 3 3.5v1z"/>
             </svg>
-            微软定制处理器架构与 NPU AI 硬件算力天梯榜 (TOPS)
+            处理器架构与专用 NPU 算力资料 (TOPS)
           </div>
           <div class="tool-desc">
-            芯片历史记录尚未逐字段绑定证据；未核验 NPU 数值不参与排序或筛选，其他文字仅作待核验记录。
+            专用 NPU 按 INT8 TOPS 比较；已绑定的型号、配置条件分列。整机 Copilot+ 资格还需内存、系统等条件。
           </div>
         </div>
 
         <div class="chip-filter-bar">
           <button class="fluent-btn ${this.chipFilter === 'all' ? 'active' : ''}" onclick="ToolsEngine.onChipFilterChange('all')">全部芯片 (${SURFACE_DATA.chips.length})</button>
-          <button class="fluent-btn ${this.chipFilter === 'arm' ? 'active' : ''}" onclick="ToolsEngine.onChipFilterChange('arm')">仅看 ARM 高能效架构</button>
-          <button class="fluent-btn ${this.chipFilter === 'x86' ? 'active' : ''}" onclick="ToolsEngine.onChipFilterChange('x86')">仅看 x86 传统架构</button>
-          <button class="fluent-btn ${this.chipFilter === 'copilot' ? 'active' : ''}" onclick="ToolsEngine.onChipFilterChange('copilot')">✨ 认证 Copilot+ PC (≥40 TOPS)</button>
+          <button class="fluent-btn ${this.chipFilter === 'arm' ? 'active' : ''}" onclick="ToolsEngine.onChipFilterChange('arm')">仅看 ARM 架构</button>
+          <button class="fluent-btn ${this.chipFilter === 'x86' ? 'active' : ''}" onclick="ToolsEngine.onChipFilterChange('x86')">仅看 x86 架构</button>
+          <button class="fluent-btn ${this.chipFilter === 'copilot' ? 'active' : ''}" onclick="ToolsEngine.onChipFilterChange('copilot')">专用 NPU ≥40 TOPS（INT8）</button>
         </div>
 
         <div class="chip-ladder-container">
@@ -239,12 +239,16 @@ const ToolsEngine = {
 
       const equippedList = Array.isArray(chip.equippedDevices) ? chip.equippedDevices
         : (Array.isArray(chip.devices) ? chip.devices : []);
+      const escape = v => String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+      const scoped = [['architecture','架构'],['cores','核心与频率'],['gpu','GPU'],['memorySupport','芯片内存支持'],['tdp','芯片平台TDP'],['npuDesc','NPU原厂口径']]
+        .filter(([key]) => chip.fieldEvidence?.[key]?.configuration === chip.id && JSON.stringify(chip.fieldEvidence[key].value) === JSON.stringify(chip[key]))
+        .map(([key,label]) => `<br><span style="color:var(--ms-text-tertiary);">${label}：</span>${chip[key] == null ? '未知（当前同型号来源未独证）' : escape(chip[key])}`).join('');
 
       html += `
-        <div class="chip-ladder-row">
+        <div class="chip-ladder-row" data-chip-id="${escape(chip.id)}">
           <div class="chip-name-cell">
             <span class="chip-model">${chip.name}</span>
-            <span class="chip-meta">${chip.vendor || '芯片'} · ${chip.processNode || chip.process || '制程待核验'}</span>
+            <span class="chip-meta">${chip.vendor || '芯片'} · ${(Object.prototype.hasOwnProperty.call(chip, 'processNode') ? chip.processNode : chip.process) || '制程待核验'}</span>
           </div>
 
           <div class="chip-bar-track">
@@ -259,7 +263,9 @@ const ToolsEngine = {
 
         <div style="font-size:12px; color:var(--ms-text-secondary); margin:-6px 0 14px 14px; padding-left:12px;  line-height:1.5;">
           <span style="color:var(--ms-text-tertiary);">装备机型：</span><strong>${equippedList.join('、') || '—'}</strong><br>
-          <span style="color:var(--ms-text-tertiary);">架构亮点：</span>${chip.highlights || chip.desc || '—'}
+          <span style="color:var(--ms-text-tertiary);">概述：</span>${chip.highlights || chip.desc || '—'}${scoped}
+          ${chip.copilotScope ? `<br>${escape(chip.copilotScope)}` : ''}
+          ${Catalog.objectEvidenceMarkup(chip, 'fieldEvidence')}
         </div>
       `;
     });
@@ -465,7 +471,7 @@ const ToolsEngine = {
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
           <div style="font-weight:600; font-size:14px;">适配 Surface 全系设备判定清单 (${(acc.compatibilityList || []).length} 款机型)</div>
           <div style="font-size:12px; color:var(--ms-text-tertiary);">
-            绿色：原生完美 · 橙色：部分/功能受限 · 红色：不兼容
+            绿色：已证支持 · 橙色：已证部分功能 · 红色：明确不支持 · —：整体结论未核，已知条件见备注
           </div>
         </div>
 
@@ -481,13 +487,13 @@ const ToolsEngine = {
             ${(acc.compatibilityList || []).map(item => {
               const dev = Catalog.getDevice(item.deviceId);
               return `
-                <tr>
+                <tr data-compat-accessory="${acc.id}" data-compat-device="${item.deviceId}">
                   <td class="compat-device-label">
                     ${dev ? dev.name : item.deviceId}
                     ${dev ? `<div style="font-size:11px; color:var(--ms-text-tertiary); font-weight:normal;">${dev.generation}</div>` : ''}
                   </td>
                   <td>${this.formatBadgeByStatus(this.getCompatStatus(acc.id, item.deviceId).status)}</td>
-                  <td style="text-align:left; color:var(--ms-text-secondary); font-size:12.5px;">${this.getCompatStatus(acc.id, item.deviceId).note}</td>
+                  <td class="compat-row-note" style="text-align:left; color:var(--ms-text-secondary); font-size:12.5px;">${this.getCompatStatus(acc.id, item.deviceId).note}${this.compatibilitySourceMarkup(acc.id,item.deviceId)}</td>
                 </tr>
               `;
             }).join('')}
@@ -540,7 +546,7 @@ const ToolsEngine = {
 
     return `
       <div style="display:flex; flex-direction:column; gap:16px;">
-        <div style="display:flex; gap:10px; align-items:center;">
+        <div class="compat-device-selector" style="display:flex; gap:10px; align-items:center;">
           <span style="font-size:13px; font-weight:600; white-space:nowrap;">当前选择 Surface 设备：</span>
           <select class="fluent-btn" style="padding:6px 12px; font-size:13px; cursor:pointer;" onchange="ToolsEngine.onSelectDevice(this.value)">
             ${allDevices.map(d => `
@@ -551,7 +557,7 @@ const ToolsEngine = {
 
         <div style="background:var(--ms-bg-card-secondary); padding:16px; border-radius:var(--ms-radius-md); ">
           <div style="font-weight:700; font-size:16px; margin-bottom:4px;">${dev.name}</div>
-          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.5;">${dev.tagline || dev.desc || 'Microsoft Surface 官方系列硬件'}</div>
+          <div style="font-size:13px; color:var(--ms-text-secondary); line-height:1.5;">${Catalog.confirmedSpec(dev, 'tagline') || '设备配置'}</div>
         </div>
 
         <!-- 按品类分组展示全系配件兼容表现 -->
@@ -564,7 +570,7 @@ const ToolsEngine = {
                 <span>${cat.label}</span>
                 <span style="font-size:12px; font-weight:normal; color:var(--ms-text-tertiary);">(${accs.length} 款配件)</span>
               </div>
-              <table class="compat-matrix-table">
+              <table class="compat-matrix-table compat-device-table">
                 <thead>
                   <tr>
                     <th style="width:260px; text-align:left;">配件型号</th>
@@ -628,12 +634,25 @@ const ToolsEngine = {
   getCompatStatus(accId, devId) {
     const acc = Catalog.accessories().find(a => a.id === accId);
     if (!acc) return null;
-    const row = (acc.compatibilityList || []).find(c => c.deviceId === devId);
+    const rows = (acc.compatibilityList || []).filter(c => c.deviceId === devId);
+    const row = rows.length === 1 ? rows[0] : null;
     const e = row && row.evidence;
-    if (!e || e.deviceId !== devId || e.accessoryId !== accId || e.status !== row.status || e.note !== row.note || !e.configuration || !e.verifiedAt || !/^https:\/\//.test(e.sourceUrl || '')) {
-      return {status:'UNKNOWN', note:'尚无绑定此型号、配件和配置的有效证据，无法判断兼容；历史说明不作结论'};
+    const officialSource = /^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)\//i;
+    if (!Catalog.getDevice(devId) || !e || e.deviceId !== devId || e.accessoryId !== accId || !e.configuration || !e.verifiedAt || !officialSource.test(e.sourceUrl || '')) {
+      return {status:'UNKNOWN', note:'—'};
     }
-    return row;
+    // Status and note have independent evidence. A supported input feature does not
+    // certify every accessory function; an unknown status can retain a proven note.
+    const status = e.status === row.status && ['FULL','PARTIAL','UNSUPPORTED'].includes(row.status) ? row.status : 'UNKNOWN';
+    return {...row, status, note: typeof e.note === 'string' && e.note === row.note ? row.note : '—'};
+  },
+
+  compatibilitySourceMarkup(accId,devId) {
+    const v=this.getCompatStatus(accId,devId),e=v&&v.evidence;
+    if(!e || v.note==='—')return '';
+    const esc=value=>String(value||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const urls=[...new Set(e.sourceUrls||[e.sourceUrl])].filter(url=>/^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)\//i.test(url));
+    return `<details class="field-evidence compat-source-details"><summary>来源与适用范围</summary><p>${esc(e.configurationScope||e.configuration)}</p>${urls.map((url,i)=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">官方来源${i?' '+(i+1):''}</a>`).join(' · ')}</details>`;
   },
 
   formatStatusObj(obj) {
@@ -645,10 +664,10 @@ const ToolsEngine = {
   },
 
   formatBadgeByStatus(status) {
-    if (status === 'UNKNOWN') return '<span class="compat-status-partial">待核验</span>';
-    if (status === 'FULL') return '<span class="compat-status-yes">✓ 完美支持</span>';
+    if (status === 'FULL') return '<span class="compat-status-yes">✓ 支持</span>';
     if (status === 'PARTIAL') return '<span class="compat-status-partial">● 部分支持</span>';
-    return '<span class="compat-status-no">✕ 不支持</span>';
+    if (status === 'UNSUPPORTED') return '<span class="compat-status-no">✕ 不支持</span>';
+    return '<span class="spec-state null" title="尚无适用于此组合的已确认结论">—</span>';
   },
 
   // ========================================================
@@ -671,7 +690,7 @@ const ToolsEngine = {
 
   guidePriceYuan(device) {
     const raw = String(this.spec(device, 'startingPriceCny') || '').replace(/,/g, '');
-    const match = raw.match(/(\d{4,6})/);
+    const match = raw.trim().match(/^(?:¥|￥)?\s*(\d+(?:\.\d{1,2})?)\s*(?:元|CNY|RMB)?$/i);
     return match ? Number(match[1]) : null;
   },
 
@@ -690,8 +709,8 @@ const ToolsEngine = {
 
   guideHours(device) {
     const text = String(this.spec(device, 'batteryLifeVideo') || this.spec(device, 'batteryLifeLocalVideo') || '');
-    const match = text.match(/(\d+(?:\.\d+)?)\s*小时/);
-    return match ? Number(match[1]) : 0;
+    const match = text.trim().match(/^(\d+(?:\.\d+)?)\s*小时$/);
+    return match ? Number(match[1]) : null;
   },
 
   guideGrams(device) {
@@ -733,7 +752,8 @@ const ToolsEngine = {
     let score = categoryBoost[device.categoryId] || 0;
     const mass = this.guideGrams(device);
     if (mass !== null) score += Math.max(0, 2200 - mass) / 10;
-    score += this.guideHours(device) * 4;
+    const hours = this.guideHours(device);
+    if (hours !== null) score += hours * 4;
     if (device.status === 'current_cn') score += 30;
     if (scene === 'office' && this.guideIsIntel(device)) score += 80;
     if (scene === 'office' && device.segment === 'commercial') score += 40;
@@ -742,7 +762,7 @@ const ToolsEngine = {
       if (this.guideIsIntel(device)) score += 80;
     }
     if (scene === 'ai_copilot') {
-      const npuVal = Catalog.npuScore(this.spec(device, 'npuTops'));
+      const npuVal = Catalog.deviceNpuScore(device);
       if (npuVal >= 80) score += 220;
       else if (npuVal >= 40) score += 140;
       if (this.guideIsSnapdragon(device)) score += 80;
@@ -762,7 +782,7 @@ const ToolsEngine = {
     }
     if (scene === 'cloud_gaming') {
       const hz = String(this.spec(device, 'refreshRate') || '');
-      if (hz.includes('120')) score += 110;
+      if (/^120\s*Hz$/i.test(hz.trim())) score += 110;
       if (device.categoryId === 'xbox') score += 150;
     }
     if (scene === 'medical_field') {
@@ -770,8 +790,8 @@ const ToolsEngine = {
     }
     const pen = String(this.spec(device, 'touchAndPenProtocol') || this.spec(device, 'penSupport') || '');
     if ((scene === 'design' || scene === 'creative_pen' || scene === 'study' || scene === 'study_exam') && /触控笔|MPP/.test(pen) && !pen.includes('不支持')) score += 70;
-    const npu = Catalog.npuScore(this.spec(device, 'npuTops'));
-    if (!isNaN(npu)) score += Math.min(npu, 80) / 10;
+    const npu = Catalog.deviceNpuScore(device);
+    if (npu !== null) score += Math.min(npu, 80) / 10;
     score += (Number(device.year) || 0) / 100;
     return score;
   },
@@ -880,7 +900,7 @@ const ToolsEngine = {
       const specOf = (key) => this.spec(dev, key);
       const shot = Catalog.portrait(dev);
       const price = specOf('startingPriceCny');
-      const priceLabel = !price || price === 'not_disclosed' || price === 'not_applicable' ? '价格待核验' : price;
+      const priceLabel = !price || price === 'not_disclosed' || price === 'not_applicable' ? '—' : price;
       const points = (typeof Catalog.highlights === 'function' ? Catalog.highlights(dev) : []).map(item => `<li>${item}</li>`).join('');
       const audience = typeof Catalog.audience === 'function' ? Catalog.audience(dev) : '';
       const caveat = this.guideCaveat(dev);
@@ -909,7 +929,7 @@ const ToolsEngine = {
           <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px;">
             ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge" style="background:var(--ms-accent-subtle); color:var(--ms-accent); border:1px solid var(--ms-accent-border);">
-              ${specOf('cpuModel') || '处理器待核验'}
+              ${specOf('cpuModel') || '—'}
             </span>
             ${specOf('npuTops') && specOf('npuTops') !== '—' ? `<span class="spec-badge">NPU ${specOf('npuTops')}</span>` : ''}
           </div>
@@ -1053,11 +1073,11 @@ const ToolsEngine = {
     const mouseWeight = this.weightWithMouse ? null : 0;
     const parts = [bodyWeight, kbWeight, chargerWeight, penWeight, mouseWeight];
     const total = this.sumMass(parts);
-    const totalWeightG = total === null ? '待确认配置' : total;
+    const totalWeightG = total === null ? '—' : total;
     const totalWeightKg = total === null ? '—' : (total / 1000).toFixed(2);
     const realOfficeHours = '暂无该配置办公实测，不由视频续航换算';
-    const claimedBatteryLabel = this.spec(currentDev, 'batteryLifeOffice') || this.spec(currentDev, 'batteryLifeVideo') || '待核验';
-    const tier = total === null ? '配件或机身重量待核验，无法计算总重' : '所选已知重量合计';
+    const claimedBatteryLabel = this.spec(currentDev, 'batteryLifeOffice') || this.spec(currentDev, 'batteryLifeVideo') || '—';
+    const tier = total === null ? '缺少所选配置的重量，无法计算总重' : '所选已知重量合计';
     const tierColor = 'var(--ms-text-secondary)';
 
     return `
@@ -1072,7 +1092,7 @@ const ToolsEngine = {
             <span style="font-size:13px; font-weight:600;">选择主力机型：</span>
             <select class="fluent-btn" style="padding:6px 12px; font-size:13px; cursor:pointer;" onchange="ToolsEngine.onWeightOptionChange('device', this.value)">
               ${devices.map(d => `
-                <option value="${d.id}" ${d.id === currentDev.id ? 'selected' : ''}>${d.name} (${this.spec(d, 'weight') || '重量待核验'})</option>
+                <option value="${d.id}" ${d.id === currentDev.id ? 'selected' : ''}>${d.name} (${this.spec(d, 'weight') || '—'})</option>
               `).join('')}
             </select>
           </div>
@@ -1088,7 +1108,7 @@ const ToolsEngine = {
                 <div style="font-weight:600;">Surface 主机裸机净重</div>
                 <div style="font-size:11px; color:var(--ms-text-tertiary);">${currentDev.name} 铝合金/镁合金一体机身</div>
               </div>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight === null ? '待核验' : bodyWeight} g</div>${Catalog.evidenceMarkup(currentDev, 'weight')}
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${bodyWeight === null ? '—' : bodyWeight} g</div>${Catalog.evidenceMarkup(currentDev, 'weight')}
             </div>
 
             <div class="weight-item-row">
@@ -1099,41 +1119,41 @@ const ToolsEngine = {
                   <div style="font-size:11px; color:var(--ms-text-tertiary);">${currentDev.categoryId === 'pro' ? '特制版专业键盘盖 / Flex 键盘' : (currentDev.categoryId === 'go' ? 'Go 特制专业键盘盖' : '翻盖机身自带键盘')}</div>
                 </div>
               </label>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${kbWeight === null ? '待确认配置' : kbWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${kbWeight === null ? '—' : kbWeight} g</div>
             </div>
 
             <div class="weight-item-row">
               <div style="flex:1;">
                 <div style="font-weight:600; margin-bottom:4px;">电源适配器方案</div>
                 <select class="fluent-btn" style="padding:4px 8px; font-size:12px;" onchange="ToolsEngine.onWeightOptionChange('charger', this.value)">
-                  <option value="gan_65w" ${this.weightCharger === 'gan_65w' ? 'selected' : ''}>⚡ 第三方 65W GaN 充电器（型号、线材、兼容性待确认）</option>
-                  <option value="orig_charger" ${this.weightCharger === 'orig_charger' ? 'selected' : ''}>🔌 官方原装磁吸电源+线 (${chargerWeight === null ? '待确认配置' : chargerWeight}g)</option>
+                  <option value="gan_65w" ${this.weightCharger === 'gan_65w' ? 'selected' : ''}>⚡ 第三方 65W GaN 充电器（适用型号以产品说明为准）</option>
+                  <option value="orig_charger" ${this.weightCharger === 'orig_charger' ? 'selected' : ''}>🔌 官方原装磁吸电源+线 (${chargerWeight === null ? '—' : chargerWeight}g)</option>
                   <option value="none" ${this.weightCharger === 'none' ? 'selected' : ''}>❌ 不带充电器 (仅靠机身电池外勤)</option>
                 </select>
               </div>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${chargerWeight === null ? '待确认配置' : chargerWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${chargerWeight === null ? '—' : chargerWeight} g</div>
             </div>
 
             <div class="weight-item-row">
               <label style="display:flex; align-items:center; gap:8px; cursor:pointer; flex:1;">
                 <input type="checkbox" ${this.weightWithPen ? 'checked' : ''} onchange="ToolsEngine.onWeightOptionChange('pen', this.checked)">
                 <div>
-                  <div style="font-weight:600;">携带触控笔（型号待确认）</div>
+                  <div style="font-weight:600;">携带触控笔（请指定型号）</div>
                   <div style="font-size:11px; color:var(--ms-text-tertiary);">型号、主机兼容性与充电方式须单独确认</div>
                 </div>
               </label>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${penWeight === null ? '待确认配置' : penWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${penWeight === null ? '—' : penWeight} g</div>
             </div>
 
             <div class="weight-item-row">
               <label style="display:flex; align-items:center; gap:8px; cursor:pointer; flex:1;">
                 <input type="checkbox" ${this.weightWithMouse ? 'checked' : ''} onchange="ToolsEngine.onWeightOptionChange('mouse', this.checked)">
                 <div>
-                  <div style="font-weight:600;">携带鼠标（型号待确认）</div>
+                  <div style="font-weight:600;">携带鼠标（请指定型号）</div>
                   <div style="font-size:11px; color:var(--ms-text-tertiary);">须确认具体型号及包含电池的重量</div>
                 </div>
               </label>
-              <div style="font-weight:700; font-family:var(--ms-font-mono);">${mouseWeight === null ? '待确认配置' : mouseWeight} g</div>
+              <div style="font-weight:700; font-family:var(--ms-font-mono);">${mouseWeight === null ? '—' : mouseWeight} g</div>
             </div>
           </div>
 
@@ -1243,26 +1263,26 @@ const ToolsEngine = {
             </tr>
             <tr>
               <td class="compat-device-label">端侧 AI / NPU 算力</td>
-              <td>${oldOf('npuTops') && oldOf('npuTops') !== '—' ? oldOf('npuTops') : '待核验'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('npuTops') && newOf('npuTops') !== '—' ? `${newOf('npuTops')}` : '待核验'}</td>
+              <td>${oldOf('npuTops') && oldOf('npuTops') !== '—' ? oldOf('npuTops') : '—'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('npuTops') && newOf('npuTops') !== '—' ? `${newOf('npuTops')}` : '—'}</td>
               <td style="text-align:left; color:#107c41; font-weight:600;">🤖 仅在目标设备官方参数明确提供 NPU / Copilot+ 信息时作出判断</td>
             </tr>
             <tr>
               <td class="compat-device-label">屏幕素质与刷新率</td>
-              <td>${oldOf('refreshRate') || '待核验'} · ${oldOf('screenSize') || '—'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('refreshRate') || '待核验'} · ${newOf('screenSize') || '—'}</td>
+              <td>${oldOf('refreshRate') || '—'} · ${oldOf('screenSize') || '—'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('refreshRate') || '—'} · ${newOf('screenSize') || '—'}</td>
               <td style="text-align:left; color:#107c41; font-weight:600;">👁️ 依据两台设备实际刷新率和屏幕规格比较</td>
             </tr>
             <tr>
               <td class="compat-device-label">外勤续航时间</td>
-              <td>${oldOf('batteryLifeOffice') || oldOf('batteryLifeVideo') || '待核验'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('batteryLifeOffice') || newOf('batteryLifeVideo') || '待核验'}</td>
+              <td>${oldOf('batteryLifeOffice') || oldOf('batteryLifeVideo') || '—'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('batteryLifeOffice') || newOf('batteryLifeVideo') || '—'}</td>
               <td style="text-align:left; color:#107c41; font-weight:600;">🔋 按官方续航口径比较，实际表现会受设置和使用方式影响</td>
             </tr>
             <tr>
               <td class="compat-device-label">外设与手写笔震动</td>
-              <td>${oldOf('penHapticFeedback') || '待核验'}</td>
-              <td style="font-weight:700; color:var(--ms-accent);">${newOf('penHapticFeedback') || '待核验'}</td>
+              <td>${oldOf('penHapticFeedback') || '—'}</td>
+              <td style="font-weight:700; color:var(--ms-accent);">${newOf('penHapticFeedback') || '—'}</td>
               <td style="text-align:left; color:#107c41; font-weight:600;">${oldDev.id === newDev.id ? '同一设备，无升级差异' : '须结合具体触控笔、主机与应用兼容性核对'}</td>
             </tr>
           </tbody>

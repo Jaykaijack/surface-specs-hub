@@ -248,7 +248,7 @@ const ComparisonEngine = {
               <div class="table-single-header-title">${dev.name} 官方技术规格全览</div>
               <div class="table-single-header-sub">
                 <span class="table-single-meta-pill">${dev.generation}</span>
-                <span class="table-single-meta-desc">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
+                <span class="table-single-meta-desc">${Catalog.confirmedSpec(dev, 'cpuModel') || '—'}</span>
               </div>
             </div>
           </th>
@@ -279,7 +279,7 @@ const ComparisonEngine = {
                 <div class="table-color-swatches-wrap" onclick="event.stopPropagation();">
                   <div class="table-color-dots">
                     ${Catalog.getSpec(dev, 'colors').map((c, idx) => `
-                      <span class="table-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' · ' + c.material : ''}"
+                      <span class="table-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex || '#e4e4e4'};" title="${c.name}${c.material ? ' · ' + c.material : ''}"
                         onclick="ComparisonEngine.switchTableDeviceColor('${dev.id}', ${colIdx}, '${c.name}', this)"></span>
                     `).join('')}
                   </div>
@@ -313,15 +313,15 @@ const ComparisonEngine = {
                   <div class="table-device-decision-summary" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--ms-border-subtle); font-size:11.5px; line-height:1.5; text-align:left; color:var(--ms-text-secondary);">
                     <div class="summary-line" style="display:flex; align-items:center; gap:5px; margin-bottom:2px;" title="续航标称">
                       <span style="opacity:0.85;">🔋</span>
-                      <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${summary.batText}</span>
+                      <span class="summary-value">${summary.batText}</span>
                     </div>
                     <div class="summary-line" style="display:flex; align-items:center; gap:5px; margin-bottom:2px;" title="处理器与端侧算力">
                       <span style="opacity:0.85;">⚡</span>
-                      <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${summary.coreText}</span>
+                      <span class="summary-value">${summary.coreText}</span>
                     </div>
                     <div class="summary-line" style="display:flex; align-items:center; gap:5px;" title="整机便携规格">
                       <span style="opacity:0.85;">⚖️</span>
-                      <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${summary.portText}</span>
+                      <span class="summary-value">${summary.portText}</span>
                     </div>
                   </div>
                 `;
@@ -422,15 +422,16 @@ const ComparisonEngine = {
 
   // 严格根据 PRD 第九、十章处理字段格式化与未知参数治理 (Zero-Hallucination)
   formatFieldValue(val, type, dev, fieldKey) {
+    if (fieldKey === 'tagline' && dev && !Catalog.evidenceFor(dev, fieldKey)) return Catalog.presentSpec(null);
     if (typeof Catalog !== 'undefined' && Catalog.specState) {
       const state = Catalog.specState(val);
-      if (state !== 'VALID') return Catalog.presentSpec(val);
+      if (state !== 'VALID') return Catalog.presentSpec(val, !!(dev && fieldKey && Catalog.evidenceFor(dev, fieldKey)));
     } else if (val === undefined || val === null || val === '' || val === 'null') {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
     } else if (val === 'not_disclosed') {
-      return '<span class="spec-state not-disclosed">未知（原记录：未披露，待核验）</span>';
+      return '<span class="spec-state not-disclosed">—</span>';
     } else if (val === 'not_applicable') {
-      return '<span class="spec-state not-applicable">未知（原记录：不适用，待核验）</span>';
+      return '<span class="spec-state not-applicable">—</span>';
     }
 
     // 配色调色盘
@@ -438,11 +439,12 @@ const ComparisonEngine = {
       let colorDots = '<div class="color-palette-wrap">';
       val.forEach(c => {
         const matTag = c.material ? `<span class="color-mat-badge">${c.material}</span>` : '';
+        const supplyTag = c.availabilityNote ? `<span class="color-mat-badge">${c.availabilityNote}</span>` : '';
         colorDots += `
           <div class="color-dot-item" title="${c.name}${c.material ? ' · ' + c.material : ''}">
-            <span class="color-dot" style="background-color:${c.hex};"></span>
+            <span class="color-dot" style="background-color:${c.hex || '#e4e4e4'};"></span>
             <span class="color-dot-name">${c.name}</span>
-            ${matTag}
+            ${matTag}${supplyTag}
           </div>
         `;
       });
@@ -533,11 +535,11 @@ const ComparisonEngine = {
   renderStatusBadge(status) {
     switch (status) {
       case 'pending':
-        return '<span class="spec-badge">销售状态待核验</span>';
+        return '<span class="spec-badge">—</span>';
       case 'current_cn':
         return '<span class="spec-badge green">国行在售</span>';
       case 'current_global':
-        return '<span class="spec-badge" style="background:#fff3cd; color:#856404;">海外在售</span>';
+        return '<span class="spec-badge" style="background:#fff3cd; color:#856404;">海外官网列售（库存未核验）</span>';
       case 'upcoming':
         return '<span class="spec-badge gold">即将发售</span>';
       case 'discontinued':
@@ -555,9 +557,9 @@ const ComparisonEngine = {
 
     // Preserve SKU/test-condition qualifiers; never reduce a range or minimum to one number.
     const known = key => Catalog.confirmedSpec(dev, key);
-    const batText = known('batteryLifeVideo') || known('batteryLifeOffice') || '续航待核验';
-    const coreText = [known('cpuModel'), known('npuTops')].filter(Boolean).join(' · ') || '处理器与算力待核验';
-    const portText = [known('weightGrams') || known('weight'), known('screenSize')].filter(Boolean).join(' · ') || '重量与尺寸待核验';
+    const batText = known('batteryLifeVideo') || known('batteryLifeOffice') || '—';
+    const coreText = [known('cpuModel'), known('npuTops')].filter(Boolean).join(' · ') || '—';
+    const portText = [known('weightGrams') || known('weight'), known('screenSize')].filter(Boolean).join(' · ') || '—';
 
     return { batText, coreText, portText };
   },
@@ -625,18 +627,6 @@ const ComparisonEngine = {
     (SURFACE_DATA.specGroups || []).forEach(group => {
       const icon = groupIcons[group.id] || '📑';
 
-      let hasValid = false;
-      group.fields.forEach(field => {
-        const val = Catalog.getSpec(dev, field.key);
-        if (val !== undefined && val !== null && val !== '' && val !== 'null' && val !== 'not_disclosed' && val !== 'not_applicable') {
-          hasValid = true;
-        }
-      });
-
-      const badgeHtml = hasValid
-        ? '<span class="spec-accordion-badge pending">有记录，未全组核验</span>'
-        : '<span class="spec-accordion-badge pending">暂无已确认参数</span>';
-
       html += `
         <div class="spec-accordion-group" id="accordion-group-${group.id}">
           <div class="spec-accordion-header" aria-expanded="true" onclick="ComparisonEngine.toggleAccordionGroup('${group.id}')" role="button" tabindex="0">
@@ -645,12 +635,10 @@ const ComparisonEngine = {
               <span class="accordion-icon">${icon}</span>
               <span class="accordion-title">${group.name}</span>
             </div>
-            <div class="accordion-header-right">
-              ${badgeHtml}
-            </div>
           </div>
           <div class="spec-accordion-body" id="accordion-body-${group.id}">
             <table class="spec-accordion-table">
+              <colgroup><col class="spec-param-column"><col></colgroup>
               <caption class="sr-only">${dev.name} - ${group.name} 技术规格参数</caption>
               <tbody>
       `;

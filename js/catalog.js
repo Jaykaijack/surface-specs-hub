@@ -22,9 +22,9 @@ const Catalog = (function () {
     headphoneJack: ['audioJack'],
     wireless: ['wifi'],
     colorSupport: ['colorGamut'],
-    touchAndPenProtocol: ['penSupport', 'touchAndPenProtocol'],
+    touchAndPenProtocol: ['touchAndPenProtocol'],
     microphones: ['mics'],
-    videoFeatures: ['studioEffects'],
+    // Recording, Studio effects and console output are independent public fields.
     chargingPower: ['charger', 'chargingSpeed'],
     compatibleKeyboard: ['keyboardCompatibility', 'keyboardCompat'],
     expandableStorage: ['sdSlot'],
@@ -32,12 +32,19 @@ const Catalog = (function () {
     weight: ['weightGrams']
   };
 
-  // Visual review: docs/evidence/image-verification-20261009.json. Never substitute another product.
+  // Visual review: docs/sources/image-mappings.json. Never substitute another product.
   const BLOCKED_IMAGES = ['surface-pro-1-hero.png', 'surface-pro-2-hero.png', 'surface-hub-3-hero.png', 'surface-pro-9-forest.png', 'surface-duo-2-obsidian.png', 'surface-duo-2-glacier.png'];
-  const IMAGE_PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220"><rect width="320" height="220" fill="#eee"/><text x="160" y="110" text-anchor="middle" fill="#555" font-size="16">图片待核验，暂不展示</text></svg>');
-  const PORTRAIT_REV = '20261009-review';
-  const DELIVERY_REV = '20260925pic2';
-  const PORTRAIT_FALLBACK = './assets/products/surface-new-pro-hero.png';
+  const IMAGE_PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220"><rect width="320" height="220" fill="#f3f3f3"/><rect x="128" y="78" width="64" height="48" rx="4" fill="none" stroke="#888" stroke-width="2"/><path d="m133 119 17-18 13 13 10-9 14 14" fill="none" stroke="#888" stroke-width="2"/></svg>');
+  const PORTRAIT_REV = '20261011-official';
+  const DELIVERY_REV = '20261011-official';
+  const portraitSizes = new Map();
+
+  function setPortraitSize(deviceId, size) {
+    const device = getDevice(deviceId);
+    if (!(device && device.portraitVariants || []).some(v => v.size === size)) return false;
+    portraitSizes.set(deviceId, size);
+    return true;
+  }
 
   const IMAGE_SLOTS = {
     icon: { sizes: '64px', boxW: 64, boxH: 64 },
@@ -165,6 +172,12 @@ const Catalog = (function () {
     const specs = device.specs;
     const blocked = [...(device.unverifiedFields || []), ...(device.dataConflicts || []).map(c => c.field)];
     if (blocked.includes(fieldKey)) return null;
+    // Pen compatibility does not establish touch points or pen protocol.
+    if (fieldKey === 'penSupport') {
+      const e = (device.specEvidence || {}).penSupport;
+      if (!e || e.configuration !== device.id || JSON.stringify(e.value) !== JSON.stringify(specs.penSupport) ||
+          (e.sourceUrl !== specs.officialDocUrl && !(device.evidenceSources || []).includes(e.sourceUrl))) return null;
+    }
     if (fieldKey === 'usbPorts') {
       if (!isEmpty(specs.usbPorts) || specs.usbPorts === 'not_disclosed' || specs.usbPorts === 'not_applicable') {
         return specs.usbPorts;
@@ -193,27 +206,27 @@ const Catalog = (function () {
     return specs[fieldKey];
   }
 
-  function presentSpec(val) {
+  function presentSpec(val, confirmed) {
     const state = specState(val);
     if (state === 'NULL') {
       return '<span class="spec-state null" title="暂未录入或缺失">—</span>';
     }
     if (state === 'NOT_DISCLOSED') {
-      return '<span class="spec-state not-disclosed" title="旧占位值未获适用证据支持；抓取失败不能证明官方未披露">未知（原记录：未披露，待核验）</span>';
+      return confirmed ? '<span class="spec-state not-disclosed">官方未披露</span>' : '<span class="spec-state null" title="该配置尚无已确认值">—</span>';
     }
     if (state === 'NOT_APPLICABLE') {
-      return '<span class="spec-state not-applicable" title="旧占位值未获适用证据支持；是否适用仍须核验">未知（原记录：不适用，待核验）</span>';
+      return confirmed ? '<span class="spec-state not-applicable">不适用</span>' : '<span class="spec-state null" title="该配置尚无已确认值">—</span>';
     }
     return val;
   }
 
   function presentDeviceSpec(device, fieldKey) {
-    return presentSpec(getSpec(device, fieldKey)) + evidenceMarkup(device, fieldKey);
+    return presentSpec(getSpec(device, fieldKey), !!evidenceFor(device, fieldKey)) + evidenceMarkup(device, fieldKey);
   }
 
   function npuScore(val) {
     if (val && typeof val === 'object') {
-      return val.scope === 'npu' && val.precision === 'INT8' && val.unit === 'TOPS' && Number.isFinite(val.value) ? val.value : null;
+      return val.scope === 'npu' && val.precision === 'INT8' && val.unit === 'TOPS' && Number.isFinite(val.value) && val.value >= 0 ? val.value : null;
     }
     if (typeof val === 'number') return Number.isFinite(val) && val >= 0 ? val : null;
     const text = String(val || '');
@@ -232,31 +245,20 @@ const Catalog = (function () {
   }
 
   function parseReleaseTimestamp(dev) {
-    const dateStr = String((dev.specs && (dev.specs.releaseDate || dev.specs.releaseDateCny)) || '');
-    let y = 0, m = 1, d = 1;
-    const ymMatch = dateStr.match(/(\d{4})\s*年\s*(\d{1,2})\s*月(?:\s*(\d{1,2})\s*日)?/);
-    if (ymMatch) {
-      y = parseInt(ymMatch[1], 10);
-      m = parseInt(ymMatch[2], 10);
-      d = ymMatch[3] ? parseInt(ymMatch[3], 10) : 1;
-    } else {
-      const yMatch = dateStr.match(/(\d{4})\s*年/);
-      if (yMatch) {
-        y = parseInt(yMatch[1], 10);
-      } else {
-        y = parseInt(dev.year, 10) || 2000;
-      }
-      if (/秋季/i.test(dateStr)) m = 9;
-      else if (/春季/i.test(dateStr)) m = 3;
-      else if (/夏季/i.test(dateStr)) m = 6;
-      else if (/冬季/i.test(dateStr)) m = 12;
-    }
+    const dateStr = String(confirmedSpec(dev, 'releaseDate') || confirmedSpec(dev, 'releaseDateCny') || '').trim();
+    const match = dateStr.match(/^(\d{4})\s*年(?:\s*(\d{1,2})\s*月(?:\s*(\d{1,2})\s*日)?)?$/);
+    if (!match) return null;
+    const y = Number(match[1]), m = Number(match[2] || 0), d = Number(match[3] || 0);
+    if ((match[2] && (m < 1 || m > 12)) || (match[3] && (d < 1 || d > new Date(y, m, 0).getDate()))) return null;
+    // Zero suffixes represent date precision only; never invent January 1 for a missing date.
     return y * 10000 + m * 100 + d;
   }
 
   function compareDeviceRecency(a, b) {
     const timeA = parseReleaseTimestamp(a);
     const timeB = parseReleaseTimestamp(b);
+    if (timeA === null && timeB !== null) return 1;
+    if (timeB === null && timeA !== null) return -1;
     if (timeB !== timeA) return timeB - timeA;
 
     const statusRank = { upcoming: 4, current_cn: 3, current_global: 2, discontinued: 1, legacy: 1 };
@@ -390,7 +392,11 @@ const Catalog = (function () {
     const local = baselineVersion();
     if (!local) return true;
     if (!cloudVersion) return false;
-    return String(cloudVersion) >= local;
+    if (String(cloudVersion) === local) return true;
+    const localDate = local.match(/^\d{4}\.\d{2}\.\d{2}/);
+    const cloudDate = String(cloudVersion).match(/^\d{4}\.\d{2}\.\d{2}/);
+    // Same-day descriptive suffixes are not chronological version numbers.
+    return !!localDate && !!cloudDate && cloudDate[0] > localDate[0];
   }
 
   function onChange(cb) {
@@ -573,40 +579,53 @@ const Catalog = (function () {
       return { src: IMAGE_PLACEHOLDER, identity: 'missing', alt: '' };
     }
     let raw = '';
+    const variants = device.portraitVariants || [];
+    const variant = variants.find(v => v.size === portraitSizes.get(device.id)) || variants[0];
+    let variantBound = !!variant;
     if (colorName) {
       const found = colorList(device).find(function (color) { return color && color.name === colorName; });
-      if (found && found.image) raw = found.image;
+      if (found && variant && Array.isArray(found.availableSizes) && !found.availableSizes.includes(variant.size)) {
+        return {src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName) + '：该配色不属于当前尺寸', scopeLabel:'该配色仅列于 ' + found.availableSizes.join(' / ') + ' 英寸'};
+      }
+      if (!found || !found.image) return {src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName)};
+      variantBound = !!(variant && found.imageBySize && found.imageBySize[variant.size]);
+      raw = variant && found.imageBySize ? found.imageBySize[variant.size] : found.image;
     }
-    if (!raw) raw = device.heroImage || '';
+    if (!raw) raw = variant ? variant.image : device.heroImage || '';
     if (!raw) {
       if (device.categoryId === 'xbox') return { src: '', identity: 'missing', alt: deviceAlt(device, colorName) };
       return { src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName) };
     }
     // Keep the same block in single-file builds, where original paths become data URIs.
-    const blockedMapping = ['pro-1','pro-2','hub-3','duo-2'].includes(device.id) || (device.id === 'pro-9' && colorName === '森野绿');
+    const proof = (device.officialPortraits || []).find(p => p.image === raw);
+    const blockedMapping = (!proof && (['pro-1','pro-2','hub-3','duo-2'].includes(device.id) || (device.id === 'pro-9' && colorName === '森野绿'))) ||
+      (colorName ? (device.imageBlockedColors || []).includes(colorName) : device.heroImageBlocked);
     if (blockedMapping || BLOCKED_IMAGES.includes(raw.split('/').pop().split('?')[0])) return {src: IMAGE_PLACEHOLDER, identity: 'blocked', alt: deviceAlt(device, colorName) + '：图片存在错配或裁切问题，暂不展示'};
     const review = device.imageVerification || {};
     const explicitIdentity = ['pending', 'diagram', 'shared'].indexOf(review.status) !== -1;
     return {
       src: withPortraitRev(raw),
-      identity: explicitIdentity ? review.status : (isStandIn(device, raw) ? 'shared' : 'pending'),
+      identity: proof ? 'official' : explicitIdentity ? review.status : (isStandIn(device, raw) ? 'shared' : 'pending'),
       kind: review.kind || (review.status === 'diagram' ? 'diagram' : ''),
-      alt: deviceAlt(device, colorName)
+      alt: deviceAlt(device, colorName) + (variantBound ? ' · ' + variant.label : ''),
+      deviceId: device.id, variants, size: variant && variant.size,
+      nativeWidth: proof && proof.width,
+      scopeLabel: variant ? (variantBound ? variant.label : '该配色图尺寸未确认') : proof && proof.width === 762 ? '原图 762×429' : ''
     };
   }
 
   function accessoryPortrait(accessory) {
     return {src: accessory && accessory.image ? withPortraitRev(accessory.image) : IMAGE_PLACEHOLDER,
-      identity: 'pending', kind: 'accessory', alt: accessory ? accessory.name : '配件图片待核验'};
+      identity: 'pending', kind: 'accessory', alt: accessory ? accessory.name : '配件图片'};
   }
 
   function portraitLabel(shot) {
     if (!shot) return '';
-    if (shot.identity === 'blocked' || shot.identity === 'missing') return '图片待核验，暂不展示';
-    if (shot.identity === 'pending') return '图片型号、配色与视角待核验';
-    if (shot.identity === 'diagram') return '结构图待核验（非配色照片）';
+    if (shot.scopeLabel) return shot.scopeLabel;
+    if (shot.identity === 'blocked' || shot.identity === 'missing' || shot.identity === 'pending') return '';
+    if (shot.identity === 'diagram') return '结构示意';
     if (shot.identity === 'shared') {
-      return shot.kind === 'diagram' ? '其他机型结构图示意，待核验' : '同系列示意，型号与配色待核验';
+      return '参考示意';
     }
     return '';
   }
@@ -622,7 +641,7 @@ const Catalog = (function () {
     const opts = options || {};
     const slotName = IMAGE_SLOTS[opts.slot] ? opts.slot : 'card';
     const slot = IMAGE_SLOTS[slotName];
-    const src = shot && shot.src ? shot.src : withPortraitRev(PORTRAIT_FALLBACK);
+    const src = shot && shot.src ? shot.src : IMAGE_PLACEHOLDER;
     const isData = String(src).indexOf('data:') === 0;
     const cleanSrc = isData ? '' : String(src).split('?')[0];
     const loading = opts.loading || (slotName === 'detail' ? 'eager' : 'lazy');
@@ -630,23 +649,26 @@ const Catalog = (function () {
     const decoding = slotName === 'detail' ? 'auto' : 'async';
     const id = opts.id ? ' id="' + escAttr(opts.id) + '"' : '';
     const cls = opts.className ? ' class="' + escAttr(opts.className) + '"' : '';
+    const nativeCap = shot && shot.nativeWidth ? ' style="max-width:' + Number(shot.nativeWidth) + 'px"' : '';
     const effectiveAlt = (opts.alt !== undefined && opts.alt !== null && opts.alt !== '')
       ? opts.alt
       : (shot && shot.alt ? shot.alt : '');
     const alt = escAttr(effectiveAlt);
-    const evidenceMark = shot && shot.kind === 'accessory' ? '<span class="portrait-stand-in">配件型号与视角待核验</span>' : '';
-    const onerror = opts.onerror ? ' onerror="' + opts.onerror + '"' : '';
-    const rawAttr = cleanSrc ? ' data-fallback-path="' + escAttr(cleanSrc) + '"' : '';
-    const sizes = opts.sizes || slot.sizes;
+    const showSizeControl = (slotName === 'detail' && opts.id === 'detail-main-img') || slotName === 'table';
+    const evidenceMark = showSizeControl && shot && shot.variants && shot.variants.length > 1 ? '<label class="portrait-size-control">图片尺寸 <select aria-label="图片尺寸" onclick="event.stopPropagation()" onchange="App.switchImageSize(\'' + escAttr(shot.deviceId) + '\',this.value)">' + shot.variants.map(v => '<option value="' + escAttr(v.size) + '"' + (v.size === shot.size ? ' selected' : '') + '>' + escAttr(v.label) + '</option>').join('') + '</select></label>' : '';
+    const onerror = ' onerror="' + (opts.onerror || 'App.hideBrokenImage(this)') + '"';
     const widths = deliveryWidths(src);
+    const fallbackPath = widths ? deliveryUrl(src, 'webp', pickWidth(widths, slotName)) : cleanSrc;
+    const rawAttr = fallbackPath ? ' data-fallback-path="' + escAttr(fallbackPath) + '"' : '';
+    const sizes = opts.sizes || slot.sizes;
     if (!widths) {
-      return '<img' + id + cls + ' src="' + escAttr(src) + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>' + evidenceMark;
+      return '<img' + id + cls + nativeCap + ' src="' + escAttr(src) + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>' + evidenceMark;
     }
     const fallback = deliveryUrl(src, 'webp', pickWidth(widths, slotName));
     return '<picture>'
       + '<source type="image/avif" srcset="' + srcsetFor(src, 'avif', widths) + '" sizes="' + sizes + '">'
       + '<source type="image/webp" srcset="' + srcsetFor(src, 'webp', widths) + '" sizes="' + sizes + '">'
-      + '<img' + id + cls + ' src="' + fallback + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>'
+      + '<img' + id + cls + nativeCap + ' src="' + fallback + '"' + rawAttr + ' alt="' + alt + '" width="' + slot.boxW + '" height="' + slot.boxH + '" loading="' + loading + '" decoding="' + decoding + '"' + priority + onerror + '>'
       + '</picture>' + evidenceMark;
   }
 
@@ -682,6 +704,8 @@ const Catalog = (function () {
 
   function isRecentLaunch(device, asOf) {
     if (device && device.status === 'upcoming') return false;
+    const proof = evidenceFor(device, 'releaseDate');
+    if (!proof || proof.region !== 'CN') return false;
     const text = String(confirmedSpec(device, 'releaseDate') || '');
     const match = text.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
     if (!match) return false;
@@ -698,6 +722,14 @@ const Catalog = (function () {
     const slot = IMAGE_SLOTS[slotName] || IMAGE_SLOTS.card;
     const name = IMAGE_SLOTS[slotName] ? slotName : 'card';
     const widths = deliveryWidths(shot.src);
+    // A switched colour owns every part of its fallback chain, including after a previous failure.
+    delete img.dataset.retryClean;
+    delete img.dataset.retryFallback;
+    img.style.display = '';
+    img.style.maxWidth = shot.nativeWidth ? Number(shot.nativeWidth) + 'px' : '';
+    img.alt = shot.alt || '';
+    if (String(shot.src).indexOf('data:') === 0) img.removeAttribute('data-fallback-path');
+    else img.setAttribute('data-fallback-path', widths ? deliveryUrl(shot.src, 'webp', pickWidth(widths, name)) : String(shot.src).split('?')[0]);
     if (!widths || String(shot.src).indexOf('data:') === 0) {
       const picture = img.closest ? img.closest('picture') : null;
       if (picture) picture.querySelectorAll('source').forEach(source => source.remove());
@@ -707,9 +739,18 @@ const Catalog = (function () {
     }
     const picture = img.closest ? img.closest('picture') : null;
     if (picture) {
+      // A failed or blocked colour removes source nodes; recreate them when returning to a real image.
+      if (!picture.querySelector('source')) {
+        ['avif', 'webp'].forEach(function (kind) {
+          const source = img.ownerDocument.createElement('source');
+          source.type = 'image/' + kind;
+          picture.insertBefore(source, img);
+        });
+      }
       picture.querySelectorAll('source').forEach(function (source) {
         const kind = source.type === 'image/avif' ? 'avif' : 'webp';
         source.srcset = srcsetFor(shot.src, kind, widths);
+        source.sizes = slot.sizes;
       });
     }
     img.removeAttribute('srcset');
@@ -727,11 +768,28 @@ const Catalog = (function () {
       if (e.sourceUrl !== device.specs.officialDocUrl && !(device.evidenceSources || []).includes(e.sourceUrl)) continue;
       try {
         const url = new URL(e.sourceUrl);
-        if (url.protocol !== 'https:' || !/^(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)$/.test(url.hostname)) continue;
+        const microsoft = /^(?:(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)|blogs\.windows\.com)$/.test(url.hostname);
+        const reviewedPrimary = ['docs/sources/verified-fields.json'].includes(e.sourcePath) && primarySourceIdentity(e.sourceUrl);
+        if (url.protocol !== 'https:' || !(microsoft || reviewedPrimary)) continue;
       } catch (_) { continue; }
       return e;
     }
     return null;
+  }
+
+  function accessoryEvidenceMarkup(accessory) {
+    const escape = value => String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const official = url => /^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)\//i.test(url || '');
+    const proofs = Object.entries((accessory && accessory.fieldEvidence) || {}).filter(([field, e]) => {
+      const match = /^(\w+)\[(\d+)\]$/.exec(field);
+      const value = match ? (accessory[match[1]] || [])[Number(match[2])] : accessory[field];
+      return e && e.configuration === accessory.id && JSON.stringify(e.value) === JSON.stringify(value) &&
+        official(e.sourceUrl);
+    });
+    if (!proofs.length) return '';
+    return `<details class="field-evidence accessory-source-details"><summary>来源与适用范围</summary>${proofs.map(([field, e]) =>
+      `<p>${escape(e.value)}<br>${escape(e.configurationScope)}<br>${(e.sourceUrls || [e.sourceUrl]).filter(official).map((url, i) =>
+        `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">官方来源${i ? ' ' + (i + 1) : ''}</a>`).join(' · ')}</p>`).join('')}</details>`;
   }
 
   function chipNpuScore(chip) {
@@ -739,6 +797,12 @@ const Catalog = (function () {
     if (!e || e.configuration !== chip.id || e.value !== chip.npuTops || e.scope !== 'npu' || e.precision !== 'INT8' || !e.reviewedAt) return null;
     try { if (!/^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|qualcomm\.com|intel\.com)\//.test(e.sourceUrl)) return null; } catch (_) { return null; }
     return npuScore(chip.npuTops);
+  }
+
+  function deviceNpuScore(device) {
+    const e = evidenceFor(device, 'npuTops');
+    if (!e || e.scope !== 'npu' || e.precision !== 'INT8' || e.unit !== 'TOPS') return null;
+    return npuScore(getSpec(device, 'npuTops'));
   }
 
   function confirmedSpec(device, key) {
@@ -761,12 +825,56 @@ const Catalog = (function () {
     return true;
   }
 
+  function primarySourceIdentity(url) {
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol !== 'https:') return null;
+      if (/^(?:www\.|zh\.|[a-z]{2}\.)?ifixit\.com$/.test(parsed.hostname)) return 'ifixit';
+      return /^(?:(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com|intel\.com|qualcomm\.com|amd\.com|sandisk\.com|intel\.co\.jp|nvidia\.com)|blogs\.windows\.com)$/.test(parsed.hostname) ? 'manufacturer' : null;
+    } catch (_) { return null; }
+  }
+
+  function primarySourceLabel(url, index, alreadyRead) {
+    const label = primarySourceIdentity(url) === 'ifixit' ? 'iFixit原始资料' : '官方来源';
+    return (alreadyRead ? '已读' : '') + label + (index ? ' ' + index : '');
+  }
+
   function evidenceMarkup(device, field) {
     const e = evidenceFor(device, field);
-    if (!e) return '<small class="field-evidence pending">当前值待绑定证据</small>';
+    const gap = reviewGapMarkup(device, field);
+    if (!e) return gap || (specState(getSpec(device, field)) === 'VALID' ? '<details class="field-evidence"><summary>来源</summary><p>历史记录，尚无适用于当前配置的逐字段来源。</p></details>' : '');
     const escape = value => String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     const region = e.region === 'CN' ? '中国来源' : '海外/全球来源，非国行认证';
-    return `<details class="field-evidence"><summary>${region} · 已核对限定值</summary><p>${escape(e.configurationScope)}</p><a href="${escape(e.sourceUrl)}" target="_blank" rel="noopener noreferrer">官方来源</a> · ${escape(e.reviewedAt)}</details>`;
+    const official = primarySourceIdentity;
+    const urls = [...new Set([e.sourceUrl, ...(e.sourceUrls || [])])].filter(official);
+    return `<details class="field-evidence"><summary>来源 · ${primarySourceIdentity(e.sourceUrl) === 'ifixit' ? 'iFixit' : e.region === 'CN' ? '中国' : '全球/海外'}</summary><p>${region}。${escape(e.configurationScope)}</p>${urls.map((url,i) => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${primarySourceLabel(url,i ? i + 1 : 0)}</a>`).join(' · ')} · ${escape(e.reviewedAt)}</details>${gap}`;
+  }
+
+  function reviewGapMarkup(object, field, location) {
+    const escape = value => String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const gaps = Object.entries(object && object.fieldReviewGaps || {}).filter(([key,g]) => g && (!field || key === field) && (!location || g.location === location));
+    if (!gaps.length) return '';
+    const official = primarySourceIdentity;
+    const fields = (baseline().specGroups || []).flatMap(g => g.fields || []);
+    return `<details class="field-evidence field-confirmation-conditions"><summary>尚需确认的条件</summary>${gaps.map(([key,g]) => `<p><strong>${escape(fields.find(f=>f.key===key)?.label || '型号与配置条件')}</strong>。${escape(g.scope)}<br>${escape(g.reason)}${(g.parallelClaims || []).map(claim=>`<br>${escape(claim)}`).join('')}<br>尚需原文：${escape(g.needed)} ${(g.sourceUrls || []).filter(official).map(url => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${primarySourceLabel(url,0,true)}</a>`).join(' · ')}</p>`).join('')}</details>`;
+  }
+
+  function objectEvidenceMarkup(object, proofKey) {
+    if (!object) return '';
+    const proofs = object[proofKey] || {}, escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const labels = {name:'产品名称',nameEn:'英文名称',vendor:'芯片厂商',processNode:'制程',architecture:'架构',cores:'核心与频率',gpu:'GPU',memorySupport:'芯片内存支持',tdp:'芯片平台功耗',npuTops:'专用NPU算力',npuDesc:'NPU原厂口径',copilotPlus:'整机资格条件',equippedDevices:'已证搭载关系',highlights:'硬件概述',generation:'目录分类（本站）',generationName:'分类名称（本站）',status:'资料收录与供货',statusLabel:'供货状态说明',salesRegion:'地区供应范围',colorName:'配色与定制选项',weight:'装配重量',battery:'供电与续航',connectivity:'连接方式',compatibility:'设备与系统兼容',dpad:'方向键',triggers:'扳机',msrp:'地区与历史参考价',description:'设计与包装说明',headphoneJack:'音频与扩展接口',shareBtn:'分享键与映射',year:'公布与发售日期'};
+    const official = primarySourceIdentity;
+    labels.dimensions = '版本与尺寸说明';
+    Object.assign(labels, {tagline:'型号概述',aliases:'型号别名',systemSku:'系统型号标识',releaseDate:'日期与事件范围'});
+    const entries = Object.entries(proofs).filter(([field,e]) => e && e.configuration === object.id && e.reviewedAt &&
+      JSON.stringify(e.value) === JSON.stringify(object[field]) && official(e.sourceUrl));
+    const gaps = reviewGapMarkup(object, null, proofKey === 'metadataEvidence' ? 'root' : proofKey === 'detailEvidence' ? 'details' : null);
+    if (!entries.length) return gaps;
+    return `<details class="field-evidence object-field-sources" data-source-object="${escape(object.id)}"><summary>逐字段来源与适用条件</summary>${entries.map(([field,e]) => {
+      const urls = [...new Set([e.sourceUrl, ...(e.sourceUrls || [])])].filter(official);
+      const value = field === 'status' ? ({current_global:'海外官网列售（库存未核验）',current_cn:'国行目录',upcoming:'即将发售',legacy:'历史机型',pending:'—'}[e.value] || '') : Array.isArray(e.value) ? e.value.join('、') : e.value;
+      return `<p data-source-field="${escape(field)}"><strong>${escape(labels[field] || '参数条件')}</strong>：${escape(value)}<br>${e.region === 'CN' ? '中国来源' : '海外/全球来源'}。${escape(e.configurationScope)} ${urls.map((url,i) => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${primarySourceLabel(url,i+1)}</a>`).join(' ')}</p>`;
+    }).join('')}</details>${gaps}`;
   }
 
   return {
@@ -775,6 +883,7 @@ const Catalog = (function () {
     listDevices: listDevices,
     listSeries: listSeries,
     accessories: accessories,
+    accessoryEvidenceMarkup: accessoryEvidenceMarkup,
     getSpec: getSpec,
     confirmedSpec: confirmedSpec,
     chipNpuScore: chipNpuScore,
@@ -784,11 +893,13 @@ const Catalog = (function () {
     pendingEvidenceAsset: pendingEvidenceAsset,
     installEvidence: installEvidence,
     evidenceMarkup: evidenceMarkup,
+    objectEvidenceMarkup: objectEvidenceMarkup,
     specState: specState,
     presentSpec: presentSpec,
     presentDeviceSpec: presentDeviceSpec,
     isNpuDisplayable: isNpuDisplayable,
     npuScore: npuScore,
+    deviceNpuScore: deviceNpuScore,
     segmentOf: segmentOf,
     getSnapshot: getSnapshot,
     applySnapshot: applySnapshot,
@@ -797,6 +908,7 @@ const Catalog = (function () {
     acceptsCloudVersion: acceptsCloudVersion,
     onChange: onChange,
     portrait: portrait,
+    setPortraitSize: setPortraitSize,
     accessoryPortrait: accessoryPortrait,
     portraitLabel: portraitLabel,
     portraitMark: portraitMark,

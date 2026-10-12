@@ -21,3 +21,9 @@ dist/_*.html
 dist/deploy-manifest.json
 releases/verification-*
 
+
+# Reproducible local artifacts
+dist/
+releases/
+surface-specs-hub-standalone.html
+qa/

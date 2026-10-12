@@ -291,6 +291,40 @@
   color: var(--ms-text-primary);
 }
 
+@media (max-width: 768px) {
+  .compat-device-selector {
+    flex-wrap: wrap;
+  }
+  .compat-device-selector select {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .compat-device-table,
+  .compat-device-table tbody {
+    display: block;
+  }
+  .compat-device-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .compat-device-table tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 88px;
+    margin-bottom: 10px;
+  }
+  .compat-device-table td {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .compat-device-table td:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
 .compat-status-yes {
   color: #107c41;
   font-weight: 700;

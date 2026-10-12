@@ -1,0 +1,1071 @@
+{
+  "fullFactCertification": false,
+  "accepted": [
+    {
+      "id": "official-image-01",
+      "deviceId": "laptop-ultra-biz",
+      "field": "devices[id=laptop-ultra-biz].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [
+        "与消费版候选共用官方商业版来源，但只绑定本条亮铂金色；不覆盖夜幕色或hero。"
+      ],
+      "paths": [
+        "./assets/products/surface-laptop-ultra-platinum-front-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-ultra-platinum-front-official.jpg",
+          "sha256": "b80bfc34bd6f8c115fd6d916e865b2a436cc1a302440e9f1a9c9985d774c8a94",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-ultra-for-business/8wg5vqp0x4d1",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "15英寸共同硬件外观；来源为商业版页，地区键盘/软件版本不由图认证",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-02",
+      "deviceId": "laptop-ultra",
+      "field": "devices[id=laptop-ultra].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-ultra-platinum-front-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-ultra-platinum-front-official.jpg",
+          "sha256": "b80bfc34bd6f8c115fd6d916e865b2a436cc1a302440e9f1a9c9985d774c8a94",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-ultra-for-business/8wg5vqp0x4d1",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "15英寸共同硬件外观；来源为商业版页，地区键盘/软件版本不由图认证",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-03",
+      "deviceId": "pro-9",
+      "field": "devices[id=pro-9].specs.colors[name=森野绿].image",
+      "role": "color",
+      "color": "森野绿",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-pro-9-forest-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-pro-9-forest-official.jpg",
+          "sha256": "45c91d7f0887a314a63d07d40525e7648d959df2988895a5b845b6494ec78f16",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-pro-9/93vkd8np4fvk",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "13英寸Intel/Wi-Fi Forest；不能用于仅铂金的SQ3/5G",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-04",
+      "deviceId": "pro-4",
+      "field": "devices[id=pro-4].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/pro-4-Surface-Pro-4-image-5_HERO.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/pro-4-Surface-Pro-4-image-5_HERO.png",
+          "sha256": "928080a939a10da24bfbda3e962075bb0ace88e048c11a4a0587cebd35c088e2",
+          "sourceUrl": "https://blogs.windows.com/devices/2015/10/13/in-photos-the-microsoft-surface-pro-4/",
+          "dimensions": [
+            1400,
+            788
+          ],
+          "scope": null,
+          "limitations": [
+            "Pro4 official color name is Silver, not Platinum; this image does not validate existing site label 亮铂金.",
+            "Accessories are shown; do not imply keyboard inclusion.",
+            "Original transparent PNG, no cropping/recoloring/editing.",
+            "English on-screen application/keyboard; cannot certify China SKU."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-05",
+      "deviceId": "pro-4",
+      "field": "devices[id=pro-4].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [],
+      "paths": [
+        "./assets/products/pro-4-Surface-Pro-4-image-5_HERO.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/pro-4-Surface-Pro-4-image-5_HERO.png",
+          "sha256": "928080a939a10da24bfbda3e962075bb0ace88e048c11a4a0587cebd35c088e2",
+          "sourceUrl": "https://blogs.windows.com/devices/2015/10/13/in-photos-the-microsoft-surface-pro-4/",
+          "dimensions": [
+            1400,
+            788
+          ],
+          "scope": null,
+          "limitations": [
+            "Pro4 official color name is Silver, not Platinum; this image does not validate existing site label 亮铂金.",
+            "Accessories are shown; do not imply keyboard inclusion.",
+            "Original transparent PNG, no cropping/recoloring/editing.",
+            "English on-screen application/keyboard; cannot certify China SKU."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-06",
+      "deviceId": "pro-2",
+      "field": "devices[id=pro-2].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/pro-2-image1.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/pro-2-image1.png",
+          "sha256": "cbb1d73bfbce286ce1705c081b4af2870cf9d26e855bd2ed4dcb7127d537bf49",
+          "sourceUrl": "https://news.microsoft.com/presskits/surface/",
+          "dimensions": [
+            1122,
+            652
+          ],
+          "scope": null,
+          "limitations": [
+            "Original image is embedded in Microsoft DOCX; no independently working direct PNG URL obtained.",
+            "Color is evidenced by official Pro 2 specifications PDF; front image reveals only dark chassis edge, black bezel and dark kickstand. Purple is keyboard accessory, not chassis.",
+            "Accessories shown do not establish bundle inclusion. English screen and keyboard do not establish Chinese-market configuration.",
+            "Current color field is null and must be set explicitly if later implemented. Do not merely replace a generic shared asset."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-07",
+      "deviceId": "pro-2",
+      "field": "devices[id=pro-2].specs.colors[name=暗钛灰].image",
+      "role": "color",
+      "color": "暗钛灰",
+      "conditions": [
+        "当前字段缺省并回退hero；必须新增独立颜色image，不可只换共享hero使其他颜色错误。"
+      ],
+      "paths": [
+        "./assets/products/pro-2-image1.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/pro-2-image1.png",
+          "sha256": "cbb1d73bfbce286ce1705c081b4af2870cf9d26e855bd2ed4dcb7127d537bf49",
+          "sourceUrl": "https://news.microsoft.com/presskits/surface/",
+          "dimensions": [
+            1122,
+            652
+          ],
+          "scope": null,
+          "limitations": [
+            "Original image is embedded in Microsoft DOCX; no independently working direct PNG URL obtained.",
+            "Color is evidenced by official Pro 2 specifications PDF; front image reveals only dark chassis edge, black bezel and dark kickstand. Purple is keyboard accessory, not chassis.",
+            "Accessories shown do not establish bundle inclusion. English screen and keyboard do not establish Chinese-market configuration.",
+            "Current color field is null and must be set explicitly if later implemented. Do not merely replace a generic shared asset."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-08",
+      "deviceId": "pro-1",
+      "field": "devices[id=pro-1].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/pro-1-page8-003.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/pro-1-page8-003.jpg",
+          "sha256": "7e0ac021666548d508df4b2639be48241c052e3ca804bb8288a4df428d74d4b4",
+          "sourceUrl": "https://download.microsoft.com/download/B/D/4/BD44C612-D08E-4586-9345-ACA8AB978BC8/th-th_Surface_Pro_User_Guide_V_1.01.pdf",
+          "dimensions": [
+            762,
+            429
+          ],
+          "scope": null,
+          "limitations": [
+            "762×429 original embedded JPEG, moderate resolution. Do not upscale to pretend finer detail.",
+            "Original JPEG is embedded in official PDF, no separately working direct image URL obtained.",
+            "Thai-language guide uses an English Windows8 screenshot; image does not certify China software/keyboard configuration.",
+            "Keyboard pictured separately sold; no bundle implication.",
+            "Current dark-titanium color field is absent and must be set explicitly if implemented."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-09",
+      "deviceId": "pro-1",
+      "field": "devices[id=pro-1].specs.colors[name=暗钛灰].image",
+      "role": "color",
+      "color": "暗钛灰",
+      "conditions": [
+        "当前字段缺省并回退hero；必须新增独立颜色image，不可只换共享hero使其他颜色错误。"
+      ],
+      "paths": [
+        "./assets/products/pro-1-page8-003.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/pro-1-page8-003.jpg",
+          "sha256": "7e0ac021666548d508df4b2639be48241c052e3ca804bb8288a4df428d74d4b4",
+          "sourceUrl": "https://download.microsoft.com/download/B/D/4/BD44C612-D08E-4586-9345-ACA8AB978BC8/th-th_Surface_Pro_User_Guide_V_1.01.pdf",
+          "dimensions": [
+            762,
+            429
+          ],
+          "scope": null,
+          "limitations": [
+            "762×429 original embedded JPEG, moderate resolution. Do not upscale to pretend finer detail.",
+            "Original JPEG is embedded in official PDF, no separately working direct image URL obtained.",
+            "Thai-language guide uses an English Windows8 screenshot; image does not certify China software/keyboard configuration.",
+            "Keyboard pictured separately sold; no bundle implication.",
+            "Current dark-titanium color field is absent and must be set explicitly if implemented."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-10",
+      "deviceId": "laptop-5",
+      "field": "devices[id=laptop-5].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [
+        "同一现有字段涵盖两个尺寸，必须先按尺寸建独立映射；不能将两张候选累计为两个已修复字段。"
+      ],
+      "paths": [
+        "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+        "./assets/products/surface-laptop-5-platinum-metal-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+          "sha256": "fc2f07599bd942e8bf04678aa1548bface41866984a592ab92ba821d7f26f9e8",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "13.5英寸铂金Alcantara；不能用于15英寸金属掌托版本",
+          "limitations": null
+        },
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-metal-official.jpg",
+          "sha256": "694eec7dd49031a695ba8eab720524be5331d2ad2e6af5215ed16e90b79aa9c9",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "15英寸铂金金属掌托；live条目包含两种尺寸，实施前需按尺寸分流",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-11",
+      "deviceId": "laptop-5",
+      "field": "devices[id=laptop-5].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [
+        "同一现有字段涵盖两个尺寸，必须先按尺寸建独立映射；不能将两张候选累计为两个已修复字段。"
+      ],
+      "paths": [
+        "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+        "./assets/products/surface-laptop-5-platinum-metal-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+          "sha256": "fc2f07599bd942e8bf04678aa1548bface41866984a592ab92ba821d7f26f9e8",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "13.5英寸铂金Alcantara；不能用于15英寸金属掌托版本",
+          "limitations": null
+        },
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-metal-official.jpg",
+          "sha256": "694eec7dd49031a695ba8eab720524be5331d2ad2e6af5215ed16e90b79aa9c9",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "15英寸铂金金属掌托；live条目包含两种尺寸，实施前需按尺寸分流",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-12",
+      "deviceId": "laptop-go-3",
+      "field": "devices[id=laptop-go-3].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-3-platinum-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-3-platinum-official.jpg",
+          "sha256": "140e1a652eb3b6fdcb006195f29d03c539cd8386d8a7e330d7fba08431adeadd",
+          "sourceUrl": "https://www.microsoft.com/en-sg/p/surface-laptop-go-3/8p0wwgj6c6l2",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-13",
+      "deviceId": "laptop-go-3",
+      "field": "devices[id=laptop-go-3].specs.colors[name=冰晶蓝].image",
+      "role": "color",
+      "color": "冰晶蓝",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-3-iceblue-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-3-iceblue-official.jpg",
+          "sha256": "f9b1a1a51e76ddac07cf67b475708856a46eae10ab8895b22f624bbaeb106343",
+          "sourceUrl": "https://www.microsoft.com/en-sg/p/surface-laptop-go-3/8p0wwgj6c6l2",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-14",
+      "deviceId": "laptop-go-3",
+      "field": "devices[id=laptop-go-3].specs.colors[name=砂岩金].image",
+      "role": "color",
+      "color": "砂岩金",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-3-sandstone-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-3-sandstone-official.jpg",
+          "sha256": "291762754a0573ddcfd438684441482af8c1bf8bc5834649e6a3e3edfa7656a5",
+          "sourceUrl": "https://www.microsoft.com/en-sg/p/surface-laptop-go-3/8p0wwgj6c6l2",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-15",
+      "deviceId": "laptop-go-3",
+      "field": "devices[id=laptop-go-3].specs.colors[name=仙野绿].image",
+      "role": "color",
+      "color": "仙野绿",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-3-sage-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-3-sage-official.jpg",
+          "sha256": "868a2437b533cf205d5d0f298316dd152e3cfd53f696c9b26a70c208bf0bece9",
+          "sourceUrl": "https://www.microsoft.com/en-sg/p/surface-laptop-go-3/8p0wwgj6c6l2",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-16",
+      "deviceId": "duo-2",
+      "field": "devices[id=duo-2].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-duo-2-obsidian-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-duo-2-obsidian-official.jpg",
+          "sha256": "7e129e9bebe8eb05adaf4cf63a04fd0689dd6385a3e18351622532dd5fcfe09a",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-duo-unlocked/8S3V46W10HFR",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "Duo2 Obsidian；来源商业版页，不认证地区SKU",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-17",
+      "deviceId": "duo-2",
+      "field": "devices[id=duo-2].specs.colors[name=曜石黑].image",
+      "role": "color",
+      "color": "曜石黑",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-duo-2-obsidian-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-duo-2-obsidian-official.jpg",
+          "sha256": "7e129e9bebe8eb05adaf4cf63a04fd0689dd6385a3e18351622532dd5fcfe09a",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-duo-unlocked/8S3V46W10HFR",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "Duo2 Obsidian；来源商业版页，不认证地区SKU",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-18",
+      "deviceId": "duo-2",
+      "field": "devices[id=duo-2].specs.colors[name=冰川白].image",
+      "role": "color",
+      "color": "冰川白",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-duo-2-glacier-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-duo-2-glacier-official.jpg",
+          "sha256": "c4d951425564d1bac546becefb75949ad0b9db235961b35bfcc201319f7eb5f9",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-duo-unlocked/8S3V46W10HFR",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "Duo2 Glacier；与黑色使用同一视角",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-19",
+      "deviceId": "laptop-go-2",
+      "field": "devices[id=laptop-go-2].specs.colors[name=仙踪绿].image",
+      "role": "color",
+      "color": "仙踪绿",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-2-sage-front-official.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-2-sage-front-official.png",
+          "sha256": "3d5d411c632f4b2de151c9dba17de2d9ce3bf202f3b358d8a2335d92038390ec",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-laptop-go-2/8PGLPV76MJHN/CH8J",
+          "dimensions": [
+            1758,
+            990
+          ],
+          "scope": null,
+          "limitations": [
+            "只用于本条Sage配色，不替换Go1/Go3或其他配色。",
+            "现字段名仙踪绿，官方中国商城称Sage为仙茶绿；应按数据审计同步正确中文名，机读field保留原始匹配路径。",
+            "来源为美国商品页，不能认证中国地区键盘/软件/SKU。",
+            "其余三色仍分别研究，不因本图合格而使用其他姿态的图填充。",
+            "官方托管不等于发布许可，使用权未评估。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-20",
+      "deviceId": "laptop-go-1",
+      "field": "devices[id=laptop-go-1].specs.colors[name=冰晶蓝].image",
+      "role": "color",
+      "color": "冰晶蓝",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-1-ice-blue-front-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-1-ice-blue-front-official.jpg",
+          "sha256": "c7d9b5a5338a770b7a02b9d10d0222c2c20740a77f50d66515071c282239790f",
+          "sourceUrl": "https://news.microsoft.com/oct-1-2020/",
+          "dimensions": [
+            2100,
+            1181
+          ],
+          "scope": null,
+          "limitations": [
+            "仅替换本条配色image，不修改尚未确证代际的hero。",
+            "不得拿此初代图用于Laptop Go 2或3。",
+            "照片不认证CPU/内存/存储或可见界面以外的软件规格。",
+            "使用完整官方原图；发布权未评估，官方托管不等于许可。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-21",
+      "deviceId": "laptop-go-1",
+      "field": "devices[id=laptop-go-1].specs.colors[name=砂岩金].image",
+      "role": "color",
+      "color": "砂岩金",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-1-sandstone-front-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-1-sandstone-front-official.jpg",
+          "sha256": "9f00b7cd244ba5547a2fe1ca96508de8901a747434b72ceeb511aefe1921644f",
+          "sourceUrl": "https://news.microsoft.com/oct-1-2020/",
+          "dimensions": [
+            2100,
+            1181
+          ],
+          "scope": null,
+          "limitations": [
+            "仅替换本条配色image，不修改尚未确证代际的hero。",
+            "不得拿此初代图用于Laptop Go 2或3。",
+            "照片不认证CPU/内存/存储或可见界面以外的软件规格。",
+            "使用完整官方原图；发布权未评估，官方托管不等于许可。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-22",
+      "deviceId": "laptop-go-1",
+      "field": "devices[id=laptop-go-1].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [],
+      "paths": [
+        "./assets/products/surface-laptop-go-1-platinum-front-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-go-1-platinum-front-official.jpg",
+          "sha256": "23e51bb391f9c12f0991bac409383827545b5d57a3bac5359d360b50de10dff0",
+          "sourceUrl": "https://news.microsoft.com/oct-1-2020/",
+          "dimensions": [
+            2100,
+            1181
+          ],
+          "scope": null,
+          "limitations": [
+            "仅替换本条配色image，不修改尚未确证代际的hero。",
+            "不得拿此初代图用于Laptop Go 2或3。",
+            "照片不认证CPU/内存/存储或可见界面以外的软件规格。",
+            "使用完整官方原图；发布权未评估，官方托管不等于许可。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-image-23",
+      "deviceId": "hub-3",
+      "field": "devices[id=hub-3].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [
+        "同一现有字段涵盖两个尺寸，必须先按尺寸建独立映射；不能将两张候选累计为两个已修复字段。"
+      ],
+      "paths": [
+        "./assets/products/surface-hub-3-50-landscape-official.jpg",
+        "./assets/products/surface-hub-3-85-landscape-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-hub-3-50-landscape-official.jpg",
+          "sha256": "d43d2b8aec7767d68b3caafd1f3105fcacaa18469ccd12635cfe093217c4335e",
+          "sourceUrl": "https://www.microsoft.com/en-ie/d/surface-hub-3-for-business/8p19nxpc1rsb",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "仅50英寸3:2；必须与85英寸分开选择",
+          "limitations": null
+        },
+        {
+          "path": "./assets/products/surface-hub-3-85-landscape-official.jpg",
+          "sha256": "037a2b74aa5deffae8012cfc6b2ceec3b3653d2ab4ee481167d23b7a97ded756",
+          "sourceUrl": "https://www.microsoft.com/en-ie/d/surface-hub-3-for-business/8p19nxpc1rsb",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "仅85英寸16:9；必须与50英寸分开选择",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-24",
+      "deviceId": "hub-3",
+      "field": "devices[id=hub-3].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [
+        "同一现有字段涵盖两个尺寸，必须先按尺寸建独立映射；不能将两张候选累计为两个已修复字段。"
+      ],
+      "paths": [
+        "./assets/products/surface-hub-3-50-landscape-official.jpg",
+        "./assets/products/surface-hub-3-85-landscape-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-hub-3-50-landscape-official.jpg",
+          "sha256": "d43d2b8aec7767d68b3caafd1f3105fcacaa18469ccd12635cfe093217c4335e",
+          "sourceUrl": "https://www.microsoft.com/en-ie/d/surface-hub-3-for-business/8p19nxpc1rsb",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "仅50英寸3:2；必须与85英寸分开选择",
+          "limitations": null
+        },
+        {
+          "path": "./assets/products/surface-hub-3-85-landscape-official.jpg",
+          "sha256": "037a2b74aa5deffae8012cfc6b2ceec3b3653d2ab4ee481167d23b7a97ded756",
+          "sourceUrl": "https://www.microsoft.com/en-ie/d/surface-hub-3-for-business/8p19nxpc1rsb",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "仅85英寸16:9；必须与50英寸分开选择",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-25",
+      "deviceId": "laptop-5-biz",
+      "field": "devices[id=laptop-5-biz].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [
+        "候选源消费版图：商用条目仅按相同尺寸、颜色、可见硬件外观复用；不认证键盘地区、OS或商用SKU。",
+        "同一现有字段涵盖两个尺寸，必须先按尺寸建独立映射；不能将两张候选累计为两个已修复字段。"
+      ],
+      "paths": [
+        "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+        "./assets/products/surface-laptop-5-platinum-metal-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+          "sha256": "fc2f07599bd942e8bf04678aa1548bface41866984a592ab92ba821d7f26f9e8",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "13.5英寸铂金Alcantara；不能用于15英寸金属掌托版本",
+          "limitations": null
+        },
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-metal-official.jpg",
+          "sha256": "694eec7dd49031a695ba8eab720524be5331d2ad2e6af5215ed16e90b79aa9c9",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "15英寸铂金金属掌托；live条目包含两种尺寸，实施前需按尺寸分流",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-26",
+      "deviceId": "laptop-5-biz",
+      "field": "devices[id=laptop-5-biz].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [
+        "候选源消费版图：商用条目仅按相同尺寸、颜色、可见硬件外观复用；不认证键盘地区、OS或商用SKU。",
+        "同一现有字段涵盖两个尺寸，必须先按尺寸建独立映射；不能将两张候选累计为两个已修复字段。",
+        "当前字段缺省并回退hero；必须新增独立颜色image，不可只换共享hero使其他颜色错误。"
+      ],
+      "paths": [
+        "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+        "./assets/products/surface-laptop-5-platinum-metal-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
+          "sha256": "fc2f07599bd942e8bf04678aa1548bface41866984a592ab92ba821d7f26f9e8",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "13.5英寸铂金Alcantara；不能用于15英寸金属掌托版本",
+          "limitations": null
+        },
+        {
+          "path": "./assets/products/surface-laptop-5-platinum-metal-official.jpg",
+          "sha256": "694eec7dd49031a695ba8eab720524be5331d2ad2e6af5215ed16e90b79aa9c9",
+          "sourceUrl": "https://www.microsoft.com/en-us/p/surface-laptop-5/8xn49v61s1bn",
+          "dimensions": [
+            539,
+            440
+          ],
+          "scope": "15英寸铂金金属掌托；live条目包含两种尺寸，实施前需按尺寸分流",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-27",
+      "deviceId": "xbox-one-s-digital",
+      "field": "devices[id=xbox-one-s-digital].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/xbox-one-s-digital-onedigital-full.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/xbox-one-s-digital-onedigital-full.png",
+          "sha256": "be96865b3585f363b3de96815b5001af0e71343dd3bbad6da976dc3ea0ad1192",
+          "sourceUrl": "https://news.xbox.com/de-de/2019/04/17/xbox-one-s-all-digital/",
+          "dimensions": [
+            1080,
+            608
+          ],
+          "scope": null,
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-28",
+      "deviceId": "xbox-one-s-digital",
+      "field": "devices[id=xbox-one-s-digital].specs.colors[name=机器人白 Robot White].image",
+      "role": "color",
+      "color": "机器人白 Robot White",
+      "conditions": [
+        "当前字段缺省并回退hero；必须新增独立颜色image，不可只换共享hero使其他颜色错误。"
+      ],
+      "paths": [
+        "./assets/products/xbox-one-s-digital-onedigital-full.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/xbox-one-s-digital-onedigital-full.png",
+          "sha256": "be96865b3585f363b3de96815b5001af0e71343dd3bbad6da976dc3ea0ad1192",
+          "sourceUrl": "https://news.xbox.com/de-de/2019/04/17/xbox-one-s-all-digital/",
+          "dimensions": [
+            1080,
+            608
+          ],
+          "scope": null,
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-29",
+      "deviceId": "xbox-one-x",
+      "field": "devices[id=xbox-one-x].specs.colors[name=机器人白 Robot White].image",
+      "role": "color",
+      "color": "机器人白 Robot White",
+      "conditions": [],
+      "paths": [
+        "./assets/products/xbox-one-x-onewhite-de-product.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/xbox-one-x-onewhite-de-product.png",
+          "sha256": "464087ec743f70cbd67cc742050af0f9e756324da7ebb0448520b3cb88153936",
+          "sourceUrl": "https://news.xbox.com/de-de/2018/08/29/xbox-elite-wireless-controller/",
+          "dimensions": [
+            1080,
+            517
+          ],
+          "scope": null,
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-30",
+      "deviceId": "xbox-series-s-1tb",
+      "field": "devices[id=xbox-series-s-1tb].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/xbox-series-s-1tb-carbon-black-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/xbox-series-s-1tb-carbon-black-official.jpg",
+          "sha256": "bbdf8e3e38969f1e022ff8cedd094654fb6bad925fd1deac23ee65e5e2bf3d5b",
+          "sourceUrl": "https://www.microsoft.com/en-gb/d/xbox-series-s-1tb-black/8zcbgtt29h9c",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-31",
+      "deviceId": "xbox-series-s-1tb",
+      "field": "devices[id=xbox-series-s-1tb].specs.colors[name=碳黑 Carbon Black].image",
+      "role": "color",
+      "color": "碳黑 Carbon Black",
+      "conditions": [],
+      "paths": [
+        "./assets/products/xbox-series-s-1tb-carbon-black-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/xbox-series-s-1tb-carbon-black-official.jpg",
+          "sha256": "bbdf8e3e38969f1e022ff8cedd094654fb6bad925fd1deac23ee65e5e2bf3d5b",
+          "sourceUrl": "https://www.microsoft.com/en-gb/d/xbox-series-s-1tb-black/8zcbgtt29h9c",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-32",
+      "deviceId": "go-signature-type-cover",
+      "field": "accessories[id=go-signature-type-cover].image",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/accessories/surface-go-type-cover-platinum-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/accessories/surface-go-type-cover-platinum-official.jpg",
+          "sha256": "da74c32bdd0fe88c309cc680c3c0ce6d3f1f267ce9d18ab94bc8fc4ae5fe5cbf",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/surface-go-type-cover-english/8vszf6wtwf29",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-33",
+      "deviceId": "series-astral-purple",
+      "field": "XBOX_CONTROLLERS[id=series-astral-purple].image",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/xbox-controller-astral-purple-official.jpg"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/xbox-controller-astral-purple-official.jpg",
+          "sha256": "4e799aa0513cfd9e20799257dd063bca4e66b820cfa38336f5d307c9c8309b6e",
+          "sourceUrl": "https://www.microsoft.com/en-us/d/Xbox-Wireless-Controller-Astral-Purple/8xh29kv7c235/5F0D",
+          "dimensions": [
+            1253,
+            705
+          ],
+          "scope": "按现有产品规格；未由照片认证隐藏规格",
+          "limitations": null
+        }
+      ]
+    },
+    {
+      "id": "official-image-34",
+      "deviceId": "series-20th-anniversary",
+      "field": "XBOX_CONTROLLERS[id=series-20th-anniversary].image",
+      "role": "hero",
+      "color": null,
+      "conditions": [],
+      "paths": [
+        "./assets/products/xbox-controller-20th-anniversary-official.png"
+      ],
+      "assets": [
+        {
+          "path": "./assets/products/xbox-controller-20th-anniversary-official.png",
+          "sha256": "44ca4ef42ee3f7de14659684883877dadb63c5ae2d36609d1a0efdf00b78a0ad",
+          "sourceUrl": "https://displaycatalog.mp.microsoft.com/v7.0/products?bigIds=8R419TH0Z8NV&market=US&languages=en-us",
+          "dimensions": [
+            2000,
+            2000
+          ],
+          "scope": "完整2000×2000官方PNG；不改色、不重绘",
+          "limitations": null
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    {
+      "deviceId": "pro-6",
+      "field": "devices[id=pro-6].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": []
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "devices[id=laptop-3].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": []
+    },
+    {
+      "deviceId": "laptop-3",
+      "field": "devices[id=laptop-3].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": []
+    },
+    {
+      "deviceId": "laptop-2",
+      "field": "devices[id=laptop-2].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": []
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "devices[id=laptop-go-2].specs.colors[name=冰晶蓝].image",
+      "role": "color",
+      "color": "冰晶蓝",
+      "conditions": []
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "devices[id=laptop-go-2].specs.colors[name=砂岩金].image",
+      "role": "color",
+      "color": "砂岩金",
+      "conditions": []
+    },
+    {
+      "deviceId": "laptop-go-2",
+      "field": "devices[id=laptop-go-2].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": []
+    },
+    {
+      "deviceId": "pro-6-biz",
+      "field": "devices[id=pro-6-biz].specs.colors[name=亮铂金].image",
+      "role": "color",
+      "color": "亮铂金",
+      "conditions": [
+        "当前字段缺省并回退hero；必须新增独立颜色image，不可只换共享hero使其他颜色错误。"
+      ]
+    },
+    {
+      "deviceId": "xbox-360-s",
+      "field": "devices[id=xbox-360-s].heroImage",
+      "role": "hero",
+      "color": null,
+      "conditions": []
+    },
+    {
+      "deviceId": "xbox-360-s",
+      "field": "devices[id=xbox-360-s].specs.colors[name=亮面钢琴黑 Liquid Black].image",
+      "role": "color",
+      "color": "亮面钢琴黑 Liquid Black",
+      "conditions": []
+    },
+    {
+      "deviceId": "xbox-360-s",
+      "field": "devices[id=xbox-360-s].specs.colors[name=哑光黑 Matte Black].image",
+      "role": "color",
+      "color": "哑光黑 Matte Black",
+      "conditions": []
+    },
+    {
+      "deviceId": "series-starfield",
+      "field": "XBOX_CONTROLLERS[id=series-starfield].image",
+      "role": "hero",
+      "color": null,
+      "conditions": []
+    },
+    {
+      "deviceId": "series-forza-5",
+      "field": "XBOX_CONTROLLERS[id=series-forza-5].image",
+      "role": "hero",
+      "color": null,
+      "conditions": []
+    },
+    {
+      "deviceId": "series-gears-5",
+      "field": "XBOX_CONTROLLERS[id=series-gears-5].image",
+      "role": "hero",
+      "color": null,
+      "conditions": []
+    }
+  ]
+}

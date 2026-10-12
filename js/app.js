@@ -45,7 +45,7 @@ const App = {
   spec(device, key) {
     const value = Catalog.getSpec(device, key);
     if (/Url$/.test(key) || Array.isArray(value) || value == null) return value;
-    if (!Catalog.evidenceFor(device, key)) return Catalog.specState(value) === 'VALID' ? `${value}（待核验）` : '待核验';
+    if (!Catalog.evidenceFor(device, key)) return Catalog.specState(value) === 'VALID' ? value : '—';
     return value;
   },
 
@@ -254,17 +254,17 @@ const App = {
       const shot = this.shot(matchedDevice);
       const rawImg = typeof shot === 'string' ? shot : (shot && shot.src ? shot.src : '');
       const cleanImg = rawImg.split('?')[0];
-      const absImage = cleanImg ? (cleanImg.startsWith('http') ? cleanImg : `${siteUrl}${cleanImg.replace(/^\.\//, '')}`) : `${siteUrl}assets/delivery/webp/w1280/surface-new-pro-hero.webp`;
+      const absImage = cleanImg && !cleanImg.startsWith('data:') ? (cleanImg.startsWith('http') ? cleanImg : `${siteUrl}${cleanImg.replace(/^\.\//, '')}`) : null;
       
-      const cpu = Catalog.getSpec(matchedDevice, 'cpuModel') || '';
-      const npu = Catalog.getSpec(matchedDevice, 'npuTops') || '';
-      const summaryDesc = matchedDevice.tagline || `${matchedDevice.name}，搭载 ${cpu || '官方高性能处理器'}${npu ? `，具备 ${npu} 端侧 AI 算力` : ''}。`;
+      const cpu = Catalog.confirmedSpec(matchedDevice, 'cpuModel') || '';
+      const npu = Catalog.confirmedSpec(matchedDevice, 'npuTops') || '';
+      const summaryDesc = Catalog.confirmedSpec(matchedDevice, 'tagline') || `${matchedDevice.name}${cpu ? `，搭载 ${cpu}` : ''}${npu ? `，具备 ${npu} 端侧 AI 算力` : ''}。`;
 
       const productNode = {
         "@type": "Product",
         "@id": `${pageUrl}#product`,
         "name": matchedDevice.name,
-        "image": absImage,
+        ...(absImage ? {"image": absImage} : {}),
         "description": summaryDesc,
         "brand": {
           "@type": "Brand",
@@ -441,7 +441,7 @@ const App = {
     if (this._toolsLoading) return this._toolsLoading;
     this._toolsLoading = new Promise((resolve, reject) => {
       const script = document.createElement('script');
-      script.src = './js/tools-engine.js?v=20261009-review';
+      script.src = './js/tools-engine.js?v=20261012-public-review';
       script.onload = () => {
         if (typeof ToolsEngine !== 'undefined') resolve();
         else { script.remove(); this._toolsLoading = null; reject(new Error('工具引擎未就绪')); }
@@ -739,7 +739,7 @@ const App = {
         <div class="card-color-swatches" onclick="event.stopPropagation();">
           <div class="card-color-dots-row">
             ${homeColors.map((c, idx) => `
-              <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
+              <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex || '#e4e4e4'};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
                 onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
                 onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
             `).join('')}
@@ -766,13 +766,13 @@ const App = {
                   </div>
                 </div>
                 <div class="device-name">${dev.name}</div>
-          <div class="device-tagline">${dev.tagline}</div><small class="field-evidence pending">历史参数记录；未绑定证据项待核验</small>
+          <div class="device-tagline">${Catalog.confirmedSpec(dev, 'tagline') || ''}</div>
           ${this.audienceHtml(dev)}
           ${colorDotsHtml}
           <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
             ${this.recentLaunchBadge(dev)}
             <span class="spec-badge green">国行在售</span>
-            ${String(Catalog.confirmedSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge gold">80 TOPS</span>' : ''}
+            ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
           </div>
         </div>
       `;
@@ -807,7 +807,7 @@ const App = {
               ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
             </div>
             <div class="device-name">${dev.name}</div>
-            <div class="device-tagline">${dev.tagline}</div><small class="field-evidence pending">历史参数记录；未绑定证据项待核验</small>
+            <div class="device-tagline">${Catalog.confirmedSpec(dev, 'tagline') || ''}</div>
             ${this.audienceHtml(dev)}
             <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
               ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -1135,7 +1135,7 @@ const App = {
               <div class="card-color-swatches" onclick="event.stopPropagation();" style="margin-bottom:12px;">
                 <div class="card-color-dots-row">
                   ${galleryColors.map((c, idx) => `
-                    <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
+                    <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex || '#e4e4e4'};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
                       onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
                       onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
                   `).join('')}
@@ -1172,14 +1172,14 @@ const App = {
                 <div class="device-name" style="font-size:16px; font-weight:700;">
                   ${dev.name}
                 </div>
-                <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
+                <div class="device-tagline" style="margin-bottom:8px;">${Catalog.confirmedSpec(dev, 'tagline') || ''}</div>
                 ${this.audienceHtml(dev)}
                 ${colorDotsHtml}
                 <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                   ${this.recentLaunchBadge(dev)}
-                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
+                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '—'}</span>
                   ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
-                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '尺寸待核验'}</span>
+                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '—'}</span>
                 </div>
                 <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                   <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -1251,6 +1251,15 @@ const App = {
   },
 
   // 3.4a Xbox 手柄专区 (大全中心)
+  controllerSpec(controller, key) {
+    if (!controller.requiresFieldEvidence) return controller[key] == null ? null : controller[key];
+    const proof = controller.specEvidence && controller.specEvidence[key];
+    if (!proof || proof.configuration !== controller.id || !proof.reviewedAt ||
+        JSON.stringify(proof.value) !== JSON.stringify(controller[key]) ||
+        !/^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)\//.test(proof.sourceUrl || '')) return null;
+    return controller[key];
+  },
+
   renderXboxControllersView(container) {
     const controllers = (typeof XBOX_CONTROLLERS !== 'undefined' ? XBOX_CONTROLLERS : (typeof XBOX_LINEUP !== 'undefined' && XBOX_LINEUP.controllers ? XBOX_LINEUP.controllers : []));
     const activeFilter = this._xboxCtrlFilter || 'all';
@@ -1258,8 +1267,9 @@ const App = {
 
     const filtered = controllers.filter(ctrl => {
       // 类别与发售地区筛选
-      if (activeFilter === 'cn_active' && ctrl.salesRegion !== 'cn_official') return false;
-      if (activeFilter === 'us_exclusive' && ctrl.salesRegion !== 'us_only') return false;
+      if (activeFilter === 'cn_active' && this.controllerSpec(ctrl, 'salesRegion') !== 'cn_official') return false;
+      if (activeFilter === 'us_exclusive' && this.controllerSpec(ctrl, 'salesRegion') !== 'us_only') return false;
+      if (activeFilter === 'global_recorded' && this.controllerSpec(ctrl, 'salesRegion') !== 'global_recorded') return false;
       if (activeFilter === 'series_core' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'core')) return false;
       if (activeFilter === 'series_special' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'special')) return false;
       if (activeFilter === 'series_camo' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'camo')) return false;
@@ -1270,7 +1280,7 @@ const App = {
 
       // 关键词搜索
       if (searchQuery) {
-        const text = `${ctrl.name} ${ctrl.nameEn} ${ctrl.colorName} ${ctrl.description} ${ctrl.generationName} ${ctrl.seriesTypeName} ${ctrl.year}`.toLowerCase();
+        const text = `${ctrl.name} ${ctrl.nameEn} ${this.controllerSpec(ctrl, 'colorName') || ''} ${this.controllerSpec(ctrl, 'description') || ''} ${ctrl.generationName} ${ctrl.seriesTypeName} ${this.controllerSpec(ctrl, 'year') || ''}`.toLowerCase();
         if (!text.includes(searchQuery)) return false;
       }
       return true;
@@ -1280,11 +1290,11 @@ const App = {
       <div class="view-header">
         <div class="view-title-group">
           <h1>
-            <span>Xbox 手柄大全中心</span>
-            <span class="header-sub-tag">Xbox 历代官方控制器·全色系图鉴与硬件微观参数</span>
+            <span>Xbox 控制器参数</span>
+            <span class="header-sub-tag">型号、配色与适用条件</span>
           </h1>
           <div class="view-meta-tip">
-            <span>官方收录共 ${controllers.length} 款 ｜ 💡 对齐微软中国官方标准命名，清晰标注国行在售与美国限定款式 ｜ 覆盖初代 Duke、360、One、Series X|S 核心纯色、烟云透视、战术迷彩、联名限定与精英 2 代系列</span>
+            <span>收录 ${controllers.length} 款 ｜ 按世代、系列和配色查找，查看参数与版本说明</span>
           </div>
         </div>
         <div class="view-actions">
@@ -1296,7 +1306,7 @@ const App = {
 
       <!-- 微软泛硬件生态收录说明 (PRD P2-1 / C-5) -->
       <div class="xbox-scope-callout" role="note" style="margin:16px 0; padding:12px 16px; border-radius:8px; background:rgba(16, 124, 65, 0.08); border-left:4px solid #107c41; font-size:13px; line-height:1.6; color:var(--ms-text-primary);">
-        <strong>【微软硬件生态拓展收录】</strong>本专区作为 Microsoft 硬件生态的补充资料，全量收录历代 Xbox 官方无线控制器、国行在售标准译名与海外限定色号图鉴，供数码外设与游戏玩家查阅参考。
+        <strong>【微软硬件生态拓展收录】</strong>本专区按已收录的微软 Xbox 官方产品资料列示参数。地区、硬件修订版和定制选项分别核对；当前库存与供货另核。
       </div>
 
       <!-- 控制台：代际色彩分类 Tab + 实时搜索 -->
@@ -1304,8 +1314,8 @@ const App = {
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
           <div style="display:flex; gap:6px; flex-wrap:wrap;">
             <button class="fluent-btn ${activeFilter === 'all' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('all')">全部 (${controllers.length})</button>
-            <button class="fluent-btn ${activeFilter === 'cn_active' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('cn_active')">🇨🇳 国行在售</button>
-            <button class="fluent-btn ${activeFilter === 'us_exclusive' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('us_exclusive')">🇺🇸 美国限定 / 未在大陆发售</button>
+            <button class="fluent-btn ${activeFilter === 'cn_active' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('cn_active')">🇨🇳 中国官方收录</button>
+            <button class="fluent-btn ${activeFilter === 'global_recorded' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('global_recorded')">海外官方收录 · 国行供应另核</button>
             <button class="fluent-btn ${activeFilter === 'series_core' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_core')">Series 核心纯色</button>
             <button class="fluent-btn ${activeFilter === 'series_special' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_special')">透视与烟云特别版</button>
             <button class="fluent-btn ${activeFilter === 'series_camo' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_camo')">战术迷彩系列</button>
@@ -1322,73 +1332,77 @@ const App = {
         </div>
         <div style="font-size:12px; color:var(--ms-text-secondary); display:flex; justify-content:space-between; align-items:center;">
           <span>当前筛选结果：<strong>${filtered.length}</strong> 款手柄展示中</span>
-          <span style="opacity:0.8;">💡 点击卡片可查看微软官方全色彩及详细微观硬件结构</span>
+          <span style="opacity:0.8;">卡片列出配色与硬件参数</span>
         </div>
       </div>
 
       <!-- 🎮 手柄全图鉴高密度网格 -->
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:20px;">
         ${filtered.map(ctrl => {
+          const value = key => this.controllerSpec(ctrl, key);
+          const spec = key => value(key) == null ? '—' : value(key);
           let badgeClass = 'spec-badge green';
           if (ctrl.status === 'discontinued') badgeClass = 'spec-badge';
           if (ctrl.status === 'upcoming') badgeClass = 'spec-badge blue';
           if (ctrl.seriesType === 'limited') badgeClass = 'spec-badge gold';
 
-          const regionBadgeHtml = ctrl.salesRegion === 'us_only'
+          const regionBadgeHtml = value('salesRegion') === 'us_only'
             ? '<span class="spec-badge gold" style="font-size:11px; padding:2px 8px; font-weight:700;">🇺🇸 美国限定</span>'
-            : (ctrl.salesRegion === 'cn_official'
-              ? '<span class="spec-badge green" style="font-size:11px; padding:2px 8px; font-weight:700;">🇨🇳 国行在售</span>'
-              : '<span class="spec-badge" style="font-size:11px; padding:2px 8px; background:var(--ms-bg-subtle); color:var(--ms-text-tertiary);">历史经典款</span>');
+            : (value('salesRegion') === 'cn_official'
+              ? '<span class="spec-badge green" style="font-size:11px; padding:2px 8px; font-weight:700;">🇨🇳 中国官方收录</span>'
+              : (value('salesRegion') === 'global_recorded' ? '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">海外官方收录 · 国行供应另核</span>' : (value('salesRegion') === 'legacy' ? '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">历史经典款</span>' : '')));
 
           return `
-            <div class="device-card-mini" style="text-align:left; padding:18px 20px; align-items:flex-start; height:auto; transition:transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
+            <div data-controller-id="${ctrl.id}" class="device-card-mini" style="text-align:left; padding:18px 20px; align-items:flex-start; height:auto; transition:transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
               <!-- 卡片顶部信息条 -->
               <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:8px; font-size:11.5px; flex-wrap:wrap; gap:6px;">
-                <span style="color:var(--ms-text-tertiary); font-weight:600;">${ctrl.generationName} · ${ctrl.year} 年</span>
+                <span style="color:var(--ms-text-tertiary); font-weight:600;">${ctrl.generationName}${value('year') ? ` · 日期：${value('year')}` : ''}</span>
                 <div style="display:flex; gap:4px; align-items:center;">
                   ${regionBadgeHtml}
-                  <span class="${badgeClass}" style="font-size:11px; padding:2px 8px;">${ctrl.statusLabel}</span>
+                  ${value('statusLabel') ? `<span class="${badgeClass}" style="font-size:11px; padding:2px 8px;">${value('statusLabel')}</span>` : ''}
                 </div>
               </div>
 
               <!-- 手柄真实官方摄影大图展示区 -->
               <div style="width:100%; height:170px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:10px; box-sizing:border-box; overflow:hidden;">
-                <img src="${ctrl.image}" alt="${ctrl.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 6px 12px rgba(0,0,0,0.12));" loading="lazy" onerror="App.hideBrokenImage(this)">
+                ${this.picture({src:ctrl.image || Catalog.portrait(null).src}, {slot:'card',className:'xbox-controller-image',alt:ctrl.name,loading:'lazy',deliveryFallback:true,onerror:'App.hideBrokenImage(this)'})}
               </div>
 
               <!-- 标题与色彩徽章 -->
               <div style="font-size:16px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px; line-height:1.3;">
                 ${ctrl.name}
               </div>
-              <div style="font-size:11.5px; color:var(--ms-text-tertiary); margin-bottom:10px;">${ctrl.nameEn}</div>
+              <div style="font-size:11.5px; color:var(--ms-text-tertiary); margin-bottom:10px;">英文检索名（本站）：${ctrl.nameEn}</div>
 
               <!-- 官方色卡指示器 -->
-              <div style="display:inline-flex; align-items:center; gap:8px; padding:4px 10px; background:var(--ms-bg-subtle); border-radius:20px; margin-bottom:12px; font-size:12px; border:1px solid var(--ms-border-subtle);">
+              ${value('colorName') ? `<div style="display:inline-flex; align-items:center; gap:8px; padding:4px 10px; background:var(--ms-bg-subtle); border-radius:20px; margin-bottom:12px; font-size:12px; border:1px solid var(--ms-border-subtle);">
                 <span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:${ctrl.colorHex}; box-shadow:0 0 0 1px rgba(0,0,0,0.2) inset;"></span>
-                <span style="font-weight:600; color:var(--ms-text-primary);">${ctrl.colorName}</span>
-              </div>
+                <span style="font-weight:600; color:var(--ms-text-primary);">${value('colorName')}</span>
+              </div>` : ''}
 
               <!-- 详细微观规格矩阵 -->
               <div style="display:flex; flex-direction:column; gap:6px; width:100%; font-size:12px; border-top:1px solid var(--ms-border-subtle); padding-top:12px; color:var(--ms-text-secondary); line-height:1.5;">
-                <div><strong style="color:var(--ms-text-primary);">🕹️ 方向键结构：</strong>${ctrl.dpad}</div>
-                <div><strong style="color:var(--ms-text-primary);">⚡ 扳机技术：</strong>${ctrl.triggers}</div>
-                <div><strong style="color:var(--ms-text-primary);">📶 连接协议：</strong>${ctrl.connectivity}</div>
-                <div><strong style="color:var(--ms-text-primary);">🔋 供电与续航：</strong>${ctrl.battery}</div>
-                <div><strong style="color:var(--ms-text-primary);">🎧 音频接口：</strong>${ctrl.headphoneJack}</div>
-                <div><strong style="color:var(--ms-text-primary);">🏷️ 官方参考价：</strong><span style="color:var(--ms-accent); font-weight:700;">${ctrl.msrp}</span></div>
+                <div><strong style="color:var(--ms-text-primary);">🕹️ 方向键结构：</strong>${spec('dpad')}</div>
+                <div><strong style="color:var(--ms-text-primary);">分享键：</strong>${spec('shareBtn')}</div>
+                <div><strong style="color:var(--ms-text-primary);">⚡ 扳机技术：</strong>${spec('triggers')}</div>
+                <div><strong style="color:var(--ms-text-primary);">📶 连接协议：</strong>${spec('connectivity')}</div>
+                <div><strong style="color:var(--ms-text-primary);">🔋 供电与续航：</strong>${spec('battery')}</div>
+                <div><strong style="color:var(--ms-text-primary);">🎧 音频接口：</strong>${spec('headphoneJack')}</div>
+                <div><strong style="color:var(--ms-text-primary);">兼容设备与系统条件：</strong>${spec('compatibility')}</div>
+                <div><strong style="color:var(--ms-text-primary);">装配重量与容差：</strong>${spec('weight')}</div>
+                <div><strong style="color:var(--ms-text-primary);">🏷️ 官方参考价：</strong><span style="color:var(--ms-accent); font-weight:700;">${spec('msrp')}</span></div>
               </div>
 
               <!-- 设计背景故事 -->
-              <div style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--ms-border-subtle); font-size:12px; color:var(--ms-text-tertiary); line-height:1.5;">
-                ${ctrl.description}
-              </div>
+              ${value('description') ? `<div style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--ms-border-subtle); font-size:12px; color:var(--ms-text-tertiary); line-height:1.5;">${value('description')}</div>` : ''}
+              ${Catalog.objectEvidenceMarkup(ctrl, 'specEvidence')}
             </div>
           `;
         }).join('')}
       </div>
 
       <div style="margin-top:30px; padding:16px 20px; background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:8px; font-size:12.5px; color:var(--ms-text-secondary); line-height:1.6;">
-        🛡️ <strong>Xbox 手柄档案核验守则：</strong>本中心收录的所有色彩款型、按键机构、微动开关、射频协议及建议售价均与微软 Xbox 官方技术白皮书及发售公报逐一核对。已明确标明国行在售与美国限定（未在大陆发售）版本。
+        不同版本的外观、供电和连接方式有所区别。购买前可通过官方页面查看对应版本的包装和销售信息。
       </div>
     `;
     container.innerHTML = html;
@@ -1448,7 +1462,7 @@ const App = {
     let html = `
       <div class="view-header">
         <div class="view-title-group">
-          <h1>
+          <h1 style="flex-wrap:wrap; gap:8px;">
             <span>Surface 官方配件图鉴</span>
             <span class="header-sub-tag">微软配件资料 · 参数与图片待逐项核验 · 双向兼容矩阵</span>
           </h1>
@@ -1490,7 +1504,7 @@ const App = {
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:22px; margin-bottom:40px;">
         ${filtered.map(acc => {
           const catName = categoryNamesMap[acc.category] || '原装配件';
-          const fullSupported = (acc.compatibilityList || []).filter(d => ToolsEngine.getCompatStatus(acc.id, d.deviceId).status === 'FULL' && !d.deviceId.startsWith('xbox'));
+          const fullSupported = (acc.compatibilityList || []).filter(d => ['FULL', 'PARTIAL'].includes(ToolsEngine.getCompatStatus(acc.id, d.deviceId).status) && !d.deviceId.startsWith('xbox'));
           const sampleSupported = fullSupported.slice(0, 4);
 
           return `
@@ -1527,10 +1541,12 @@ const App = {
                 </div>
               ` : ''}
 
+              ${Catalog.accessoryEvidenceMarkup(acc)}
+
               <!-- 适配代表机型 -->
               <div style="margin-top:auto; width:100%; border-top:1px solid var(--ms-border-subtle); padding-top:12px;">
                 <div style="font-size:11px; font-weight:700; color:var(--ms-text-tertiary); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.5px;">
-                  有证据支持的机型 (${fullSupported.length} 款)
+                  已证基础支持 · 功能条件见矩阵 (${fullSupported.length} 款)
                 </div>
                 <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:12px;">
                   ${sampleSupported.map(dev => {
@@ -1583,7 +1599,7 @@ const App = {
             <span class="header-sub-tag">Xbox 官方存储扩展、音频与周边生态</span>
           </h1>
           <div class="view-meta-tip">
-            <span>官方认证收录 ${accessories.length} 款主力配件 ｜ 💡 包含希捷定制存储卡、官方无线双模耳机、Windows 10/11 极速无线适配器与电池包 ｜ 兼容性仅按已绑定证据显示</span>
+            <span>收录 ${accessories.length} 款配件 ｜ 参数、地区与兼容条件见对应来源</span>
           </div>
         </div>
         <div class="view-actions">
@@ -1598,17 +1614,17 @@ const App = {
         <strong>【微软硬件生态拓展收录】</strong>本专区作为 Microsoft 硬件生态的补充资料，收录 Xbox 官方存储扩展卡、无线双模耳机及核心周边配件，供数码外设玩家查阅参考。
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:22px; margin-top:20px;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap:22px; margin-top:20px;">
         ${accessories.map(acc => `
-          <div class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto; transition:transform 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
+          <div data-xbox-accessory-id="${acc.id}" class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto; transition:transform 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
             <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:10px;">
               <span style="font-size:12px; font-weight:700; color:var(--ms-accent);">${acc.categoryName}</span>
-              <span class="spec-badge green">${acc.statusLabel}</span>
+              <span class="spec-badge ${acc.metadataEvidence?.status?.partialDisposition ? '' : 'green'}">${acc.statusLabel}</span>
             </div>
 
             <!-- 产品真实大图展示 -->
-            <div style="width:100%; height:180px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:10px; box-sizing:border-box;">
-              <span class="portrait-stand-in">配件型号与视角待核验</span><img src="${Catalog.accessoryPortrait(acc).src}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.1));" loading="lazy" onerror="App.hideBrokenImage(this)">
+            <div class="accessory-img-wrap" style="width:100%; height:180px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:10px; box-sizing:border-box;">
+              ${this.picture(Catalog.accessoryPortrait(acc), {slot:'card',className:'accessory-img',alt:acc.name,loading:'lazy',deliveryFallback:true,onerror:'App.hideBrokenImage(this)'})}
             </div>
 
             <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">${acc.name}</div>
@@ -1646,13 +1662,14 @@ const App = {
                 return `<div><strong style="color:var(--ms-text-primary);">${labelMap[k] || k}：</strong>${acc.details[k]}</div>`;
               }).join('')}
               <div style="margin-top:6px;"><strong style="color:var(--ms-text-primary);">🏷️ 官方参考价：</strong><span style="color:var(--ms-accent); font-weight:700;">${acc.price}</span></div>
+              ${Catalog.objectEvidenceMarkup({...acc, ...(acc.details || {})}, 'detailEvidence')}${Catalog.objectEvidenceMarkup(acc, 'metadataEvidence')}
             </div>
           </div>
         `).join('')}
       </div>
 
       <div style="margin-top:24px; padding:14px 18px; background:var(--ms-bg-card); border:1px solid var(--ms-border-subtle); border-radius:8px; font-size:12px; color:var(--ms-text-secondary); line-height:1.6;">
-        🛡️ <strong>官方扩展协议守则：</strong>Xbox Series X|S 专属存储扩展卡利用定点 PCIe 4.0 x2 直连通道提供与机身内置 SSD 毫无二致的 4.8 GB/s 瞬时硬件解压带宽；通用 USB 3.1 移动硬盘仅供存放与运行向下兼容作品。
+        🛡️ <strong>扩展存储说明：</strong>各型号的接口、Quick Resume 支持和性能口径见对应来源；主机 SSD 的吞吐量或解压指标不能直接作为扩展卡的同容量测试结果。
       </div>
     `;
     container.innerHTML = html;
@@ -1745,7 +1762,7 @@ const App = {
             <div class="card-color-swatches" onclick="event.stopPropagation();" style="margin-bottom:12px;">
               <div class="card-color-dots-row">
                 ${galleryColors.map((c, idx) => `
-                  <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
+                  <span class="card-color-dot ${idx === 0 ? 'active' : ''}" style="background:${c.hex || '#e4e4e4'};" title="${c.name}${c.material ? ' (' + c.material + ')' : ''}"
                     onmouseenter="App.previewCardColor('${dev.id}', '${c.name}', this)"
                     onclick="App.previewCardColor('${dev.id}', '${c.name}', this)"></span>
                 `).join('')}
@@ -1781,14 +1798,14 @@ const App = {
               <div class="device-name" style="font-size:16px; font-weight:700;">
                 ${dev.name}
               </div>
-              <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
+              <div class="device-tagline" style="margin-bottom:8px;">${Catalog.confirmedSpec(dev, 'tagline') || ''}</div>
               ${this.audienceHtml(dev)}
               ${colorDotsHtml}
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                 ${this.recentLaunchBadge(dev)}
-                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
+                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '—'}</span>
                 ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
-                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '尺寸待核验'}</span>
+                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '—'}</span>
               </div>
               <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                 <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -1835,13 +1852,10 @@ const App = {
             </h1>
           </div>
           <div class="view-meta-tip">
-            <span>Surface 参数按国行官方页面核对。Xbox 主机按美国微软官网收录，规格表里写明销售区域。</span>
+            <span>Surface 优先采用微软中国来源；海外和历史配置按条目注明地区。Xbox 按对应官方地区页面收录。来源索引不代表全库真实性认证。</span>
           </div>
         </div>
         <div class="view-actions" style="display:flex; gap:10px; flex-wrap:wrap;">
-          <a href="./docs/Surface_全系规格与官方信源核对总账.xlsx" download="Surface_全系规格与官方信源核对总账.xlsx" class="fluent-btn primary" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-            📥 下载 Excel 核验总账 (.xlsx)
-          </a>
           <a href="https://www.microsoftstore.com.cn/commercial" target="_blank" rel="noopener noreferrer" class="fluent-btn" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
             🏢 微软商用商城 ↗
           </a>
@@ -1950,7 +1964,7 @@ const App = {
                       <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
                         ${colors.map(c => `
                           <span style="display:inline-flex; align-items:center; gap:4px; font-size:11.5px; background:var(--ms-bg-subtle, #f0f0f0); padding:2px 6px; border-radius:4px; border:1px solid var(--ms-border-subtle);">
-                            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:${c.hex}; border:1px solid rgba(0,0,0,0.15);"></span>
+                            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:${c.hex || '#e4e4e4'}; border:1px solid rgba(0,0,0,0.15);"></span>
                             <span>${c.name}</span>
                           </span>
                         `).join('')}
@@ -2137,16 +2151,18 @@ const App = {
 
     // 默认展示全量参数表
     const isComparisonTab = this.activeDetailTab === 'comparison';
-    const shotIdentityLabel = activeShot.identity === 'official' ? '官方图像' : (Catalog.portraitLabel(activeShot) || '同系列示意');
+    const shotIdentityLabel = Catalog.portraitLabel(activeShot);
     const shotRoleLabel = activeColorName ? `${activeColorName} 配色图` : '代表图';
 
     let html = `
       <div class="catalog-detail-layout">
       <section class="catalog-detail-main">
-      <p class="spec-evidence-note">参数记录尚未完成逐字段真实性核验；来源链接与历史记录日期不代表当前配置已确认。</p>
-      <button class="fluent-btn" onclick="App.openCorrectionDialog('${this.escapeText(dev.id)}')">报告参数问题</button>
-      ${dev.productFamilyEvidence && /^https:\/\/www\.microsoft\.com\//.test(dev.productFamilyEvidence.url) ? `<p class="spec-evidence-note">独立产品级来源（${this.escapeText(dev.productFamilyEvidence.locale)}）：${this.escapeText(dev.productFamilyEvidence.scope)} <a href="${this.escapeText(dev.productFamilyEvidence.url)}" target="_blank" rel="noopener noreferrer">查看官方产品说明</a></p>` : ''}
-      ${(dev.dataConflicts || []).map(conflict => `<p class="spec-evidence-note" role="note">来源冲突 · ${this.escapeText(conflict.field)}：${this.escapeText(conflict.reason)}。争议部分待核验，不作为配置结论。</p>`).join('')}
+      <details class="field-evidence product-source-details"><summary>来源与适用范围</summary>
+        <p>参数记录尚未完成逐字段真实性核验；来源链接与历史记录日期不代表当前配置已确认。空白项用“—”表示。</p>
+        ${dev.productFamilyEvidence && /^https:\/\/www\.microsoft\.com\//.test(dev.productFamilyEvidence.url) ? `<p>独立产品级来源（${this.escapeText(dev.productFamilyEvidence.locale)}）：${this.escapeText(dev.productFamilyEvidence.scope)} <a href="${this.escapeText(dev.productFamilyEvidence.url)}" target="_blank" rel="noopener noreferrer">查看官方产品说明</a></p>` : ''}
+        ${(dev.dataConflicts || []).map(conflict => `<p>来源冲突 · ${this.escapeText(conflict.field)}：${this.escapeText(conflict.reason)}。争议部分不作为配置结论。</p>`).join('')}
+        ${Catalog.objectEvidenceMarkup(dev, 'metadataEvidence')}
+      </details>
       <div class="catalog-breadcrumb">
         <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}">产品目录</a>
         <span>›</span>
@@ -2177,7 +2193,7 @@ const App = {
             <div class="detail-color-panel">
               <div class="detail-color-header">
                 <span style="font-weight:600;">🎨 外观配色与材质工学</span>
-                <span class="detail-color-active-name" id="detail-active-color-label">${activeColorName}${colorRows[0] && colorRows[0].material ? ' · ' + colorRows[0].material : ''}</span>
+                <span class="detail-color-active-name" id="detail-active-color-label">${activeColorName}${colorRows[0] && colorRows[0].material ? ' · ' + colorRows[0].material : ''}${colorRows[0] && colorRows[0].availabilityNote ? ' · ' + colorRows[0].availabilityNote : ''}</span>
               </div>
               <div class="detail-color-options">
                 ${colorRows.map((c, idx) => `
@@ -2185,9 +2201,10 @@ const App = {
                     data-color="${c.name}"
                     title="${c.name}${c.material ? ' · ' + c.material : ''}"
                     onclick="App.switchDetailColor('${dev.id}', '${c.name}', this)">
-                    <span class="color-choice-dot" style="background:${c.hex};"></span>
+                    <span class="color-choice-dot" style="background:${c.hex || '#e4e4e4'};"></span>
                     <span class="color-choice-name">${c.name}</span>
                     ${c.material ? `<span class="color-material-chip">${c.material}</span>` : ''}
+                    ${c.availabilityNote ? `<span class="color-material-chip">${c.availabilityNote}</span>` : ''}
                   </button>
                 `).join('')}
               </div>
@@ -2201,17 +2218,17 @@ const App = {
             ${ComparisonEngine.renderStatusBadge(dev.status)}
             <span class="spec-badge">${dev.generation}</span>
             ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
-            ${String(Catalog.confirmedSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge copilot">80 TOPS AI</span>' : ''}
+            ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge copilot">${this.spec(dev, 'npuTops')}</span>` : ''}
           </div>
 
           <h1 class="detail-hero-title">
             ${dev.name}
           </h1>
           <div class="detail-hero-name-en">${dev.nameEn}</div>
-          <p class="detail-hero-tagline">${this.escapeText(dev.tagline || '')}</p>
+          <p class="detail-hero-tagline">${this.escapeText(Catalog.confirmedSpec(dev, 'tagline') || '')}</p>
           <div class="detail-hero-meta">
-            <div class="hero-meta-card"><span>发布日期</span><strong>${this.spec(dev, 'releaseDate') || dev.year || '—'}</strong></div>
-            <div class="hero-meta-card"><span>产品定位</span><strong>${this.escapeText(dev.tagline || 'Surface 设备')}</strong></div>
+            <div class="hero-meta-card"><span>发布日期</span><strong>${Catalog.confirmedSpec(dev, 'releaseDate') || '—'}</strong></div>
+            <div class="hero-meta-card"><span>产品定位</span><strong>${this.escapeText(Catalog.audience(dev))}</strong></div>
             <div class="hero-meta-card"><span>起始价格</span><strong>${Catalog.presentDeviceSpec(dev, 'startingPriceCny')}</strong></div>
             <div class="hero-meta-card"><span>目标客户</span><strong>${this.escapeText(Catalog.audience(dev) || '个人与企业用户')}</strong></div>
           </div>
@@ -2255,9 +2272,9 @@ const App = {
         <div class="detail-specs-heading">
           <div>
             <h2 aria-label="${dev.name} · 13 大类官方标准规格全量大表">${dev.name} · 技术规格</h2>
-            <p>字段按官方资料分组展示；没有公布的参数保持原始核验状态。</p>
+            <p>按参数类别查看，地区、版本和测试条件随各项来源说明。</p>
           </div>
-          <span class="detail-verification-inline">${this.getDeviceVerificationBadge(dev.id)}</span>
+          <button type="button" class="fluent-btn-sm" aria-label="报告参数问题" onclick="App.openCorrectionDialog('${this.escapeText(dev.id)}')">参数反馈</button>
         </div>
         ${ComparisonEngine.renderDetailAccordion(dev)}
       </div>
@@ -2312,7 +2329,6 @@ const App = {
         <div class="utility-rail-section">
           <div class="utility-rail-heading">
             <span>官方资源</span>
-            <span class="utility-rail-count">${dev.learnDocUrl || dev.officialDocUrl ? '已绑定' : '待补充'}</span>
           </div>
           <div class="utility-link-list">
             ${(this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')) ? `
@@ -2365,9 +2381,9 @@ const App = {
           <dl class="utility-meta-list">
             <div><dt>产品线</dt><dd>${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))}</dd></div>
             <div><dt>版本</dt><dd>${dev.generation || '—'}</dd></div>
-            <div><dt>历史记录日期</dt><dd>${this.spec(dev, 'lastVerified') || '待核验'}（非全字段核验）</dd></div>
+            <div><dt>历史记录日期</dt><dd>${Catalog.confirmedSpec(dev, 'lastVerified') || '—'}</dd></div>
             <div><dt>图像身份</dt><dd id="detail-rail-meta-identity">${shotIdentityLabel}</dd></div>
-            <div><dt>备注</dt><dd>${this.spec(dev, 'sourceReliability') || '—'}</dd></div>
+            <div><dt>来源说明</dt><dd>${this.spec(dev, 'sourceReliability') || '—'}${Catalog.evidenceMarkup(dev, 'sourceReliability')}</dd></div>
           </dl>
         </div>
       </aside>
@@ -2509,9 +2525,9 @@ const App = {
                     ${dev.name}
                   </div>
                   <div style="font-size:12px; color:var(--ms-text-secondary); margin-bottom:6px;">
-                    ${this.spec(dev, 'releaseDate')} · ${cpu || '处理器待核验'}
+                    ${this.spec(dev, 'releaseDate')} · ${cpu || '—'}
                   </div>
-                  <div style="font-size:11.5px; color:var(--ms-text-tertiary);">${dev.tagline}</div>
+                  <div style="font-size:11.5px; color:var(--ms-text-tertiary);">${Catalog.confirmedSpec(dev, 'tagline') || ''}</div>
                   
                   <div style="display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; align-items:center;">
                     ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -2542,7 +2558,7 @@ const App = {
           <div class="filter-group">
             <span class="filter-label">主机代际状态:</span>
             <button class="filter-chip ${this.filters.status === 'all' ? 'active' : ''}" onclick="App.setFilter('status', 'all')">全部主机</button>
-            <button class="filter-chip ${this.filters.status === 'current_global' ? 'active' : ''}" onclick="App.setFilter('status', 'current_global')">现役在售</button>
+            <button class="filter-chip ${this.filters.status === 'current_global' ? 'active' : ''}" onclick="App.setFilter('status', 'current_global')">海外官网列售</button>
             <button class="filter-chip ${this.filters.status === 'upcoming' ? 'active' : ''}" onclick="App.setFilter('status', 'upcoming')">即将发售</button>
             <button class="filter-chip ${this.filters.status === 'discontinued' ? 'active' : ''}" onclick="App.setFilter('status', 'discontinued')">已停售 / 经典代际</button>
           </div>
@@ -2633,9 +2649,9 @@ const App = {
 
       // Copilot+ 过滤
       if (this.filters.copilotOnly) {
-        const topsStr = Catalog.confirmedSpec(d, 'npuTops') || '';
-        const num = Catalog.npuScore(topsStr);
-        if (num === null || num < 40) return false;
+        const claim = String(Catalog.confirmedSpec(d, 'copilotPlus') || '');
+        if (!/Copilot\+\s*PC|Windows\s*11\s*AI\+\s*PC/.test(claim) ||
+            /仅|指定|16GB及以上|16GB以上|的16GB配置|受支持设备|不认证8GB/.test(claim)) return false;
       }
 
       return true;
@@ -2684,7 +2700,7 @@ const App = {
 
     const matchedDevices = this.listDevices().filter(d => {
       const fullText = this.normalizeSearchText(
-        `${d.id.replace(/-/g, " ")} ${d.name} ${d.nameEn} ${d.generation} ${this.spec(d, 'cpuModel')} ${this.spec(d, 'npuTops')} ${d.tagline} ${d.year}`
+        `${d.id.replace(/-/g, " ")} ${d.name} ${d.nameEn} ${d.generation} ${this.spec(d, 'cpuModel')} ${this.spec(d, 'npuTops')} ${Catalog.confirmedSpec(d, 'tagline') || ''} ${d.year}`
       );
       const modelQuery = term.match(/^(?:surface\s+)?(pro|laptop)\s+(\d+)$/);
       if (modelQuery) return new RegExp(`^${modelQuery[1]}-${modelQuery[2]}(?:-|$)`).test(d.id);
@@ -2722,7 +2738,7 @@ const App = {
                 <div class="search-result-item" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" onclick="App.navigateToDetail('${d.categoryId}', '${d.id}'); App.closeSearchModal();">
                   <div>
                     <div style="font-weight:600; font-size:13.5px;">${d.name}</div>
-                    <div style="font-size:11.5px; color:var(--ms-text-secondary);">${Catalog.confirmedSpec(d, 'cpuModel') || '处理器待核验'} · ${Catalog.confirmedSpec(d, 'npuTops') || '算力待核验'} · ${Catalog.confirmedSpec(d, 'releaseDate') || '日期待核验'}</div>
+                    <div style="font-size:11.5px; color:var(--ms-text-secondary);">${Catalog.confirmedSpec(d, 'cpuModel') || '—'} · ${Catalog.confirmedSpec(d, 'npuTops') || '—'} · ${Catalog.confirmedSpec(d, 'releaseDate') || '—'}</div>
                   </div>
                   ${this.recentLaunchBadge(d)}
                   <span class="spec-badge">${d.generation}</span>
@@ -2740,7 +2756,7 @@ const App = {
                     <div style="font-weight:600; font-size:13.5px;">${c.name}</div>
                     <div style="font-size:11.5px; color:var(--ms-text-secondary);">${c.vendor} · ${c.npuDesc}</div>
                   </div>
-                  <span class="spec-badge gold">${Catalog.chipNpuScore(c) === null ? 'NPU 算力待核验' : Catalog.chipNpuScore(c) + ' TOPS'}</span>
+                  <span class="spec-badge gold">${Catalog.chipNpuScore(c) === null ? '—' : Catalog.chipNpuScore(c) + ' TOPS'}</span>
                 </div>
               `).join('')}
             </div>
@@ -2794,7 +2810,7 @@ const App = {
       upcoming: '即将推出',
       discontinued: '已停止销售',
       legacy: '历史型号',
-      current_global: '全球在售'
+      current_global: '海外官网列售（库存未核验）'
     };
     return labels[status] || '待确认';
   },
@@ -3269,7 +3285,7 @@ const App = {
         <span class="sidebar-action-icon">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </span>
-        <span class="sidebar-item-text">定制芯片架构库</span>
+        <span class="sidebar-item-text">处理器与 NPU 资料</span>
       </div>
       <div role="button" tabindex="0" class="sidebar-action-item ${path === '/compare' ? 'active' : ''}" onclick="App.navigate('#/compare')">
         <span class="sidebar-action-icon">
@@ -3365,11 +3381,23 @@ const App = {
     this.renderActiveView();
   },
 
+  switchImageSize(deviceId, size) {
+    if (Catalog.setPortraitSize(deviceId, size)) this.renderActiveView();
+  },
+
   switchDetailColor(deviceId, colorName, btnEl) {
     const dev = this.getDevice(deviceId);
+    const color = (this.spec(dev, 'colors') || []).find(c => c.name === colorName);
+    const selectedSize = this.shot(dev).size;
+    if (color && selectedSize && Array.isArray(color.availableSizes) && !color.availableSizes.includes(selectedSize)) {
+      const supported = (dev.portraitVariants || []).find(v => color.availableSizes.includes(v.size));
+      if (supported) Catalog.setPortraitSize(deviceId, supported.size);
+    }
     const imgEl = document.getElementById('detail-main-img');
     const labelEl = document.getElementById('detail-active-color-label');
     const shot = this.shot(dev, colorName);
+    const activeSize = shot.size || this.shot(dev).size;
+    if (activeSize) document.querySelectorAll('.portrait-size-control select').forEach(select => { select.value = activeSize; });
     if (imgEl && shot.src) {
       delete imgEl.dataset.retryClean;
       delete imgEl.dataset.retryFallback;
@@ -3396,7 +3424,7 @@ const App = {
     if (railImg && shot.src) {
       Catalog.paint(railImg, shot, 'detail');
     }
-    const shotIdentityLabel = shot.identity === 'official' ? '官方图像' : (Catalog.portraitLabel(shot) || '同系列示意');
+    const shotIdentityLabel = Catalog.portraitLabel(shot);
     const shotRoleLabel = colorName ? `${colorName} 配色图` : '代表图';
 
     const railLabel = document.getElementById('detail-rail-image-label');
@@ -3420,16 +3448,12 @@ const App = {
       if (foundColor && foundColor.material) {
         labelEl.textContent = `${colorName} · ${foundColor.material}`;
       } else {
-        labelEl.textContent = colorName;
+        labelEl.textContent = foundColor && foundColor.availabilityNote ? `${colorName} · ${foundColor.availabilityNote}` : colorName;
       }
     }
-    if (btnEl) {
-      const parent = btnEl.closest('.detail-color-options');
-      if (parent) {
-        parent.querySelectorAll('.color-choice-btn').forEach(b => b.classList.remove('active'));
-        btnEl.classList.add('active');
-      }
-    }
+    document.querySelectorAll('.detail-color-options .color-choice-btn').forEach(button => {
+      button.classList.toggle('active', button.dataset.color === colorName);
+    });
   },
 
   nextDetailImage(deviceId) {
