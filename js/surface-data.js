@@ -1487,7 +1487,7 @@ const SURFACE_DATA = {
     {
       "id": "laptop-ultra",
       "categoryId": "laptop",
-      "heroImage": "./assets/products/surface-laptop-ultra-hero.png",
+      "heroImage": "./assets/products/surface-laptop-ultra-platinum-front-official.jpg",
       "name": "Surface Laptop Ultra",
       "nameEn": "Surface Laptop Ultra",
       "generation": "第 1 代 (2026)",
@@ -2270,7 +2270,8 @@ const SURFACE_DATA = {
             "https://www.microsoft.com/zh-cn/surface/devices/surface-laptop-ultra?icid=DSM_Footer_WhatsNew_SurfaceLaptopUltra"
           ]
         }
-      }
+      },
+      "portraitScopeNote": "15英寸共同硬件外观参考；图源为海外商用版，不认证国行SKU或配色供应。"
     },
     {
       "id": "pro-12-13-intel",
@@ -3855,7 +3856,7 @@ const SURFACE_DATA = {
         "batteryCapacitySourceNotes": "消费版电池容量尚未独立确认；以下仅为商用来源对照：中国骁龙商用页LCD53/51Wh、OLED47/46Wh，美国同代商用页LCD47/46Wh、OLED53/51Wh。对应相反，不能转作消费版容量或容量计算"
       },
       "isCommercial": false,
-      "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
+      "learnDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
       "segment": "consumer",
       "unverifiedFields": [
         "batteryCapacityWh",
@@ -6359,23 +6360,27 @@ const SURFACE_DATA = {
           {
             "name": "亮铂金",
             "hex": "#d8d8d8",
-            "image": "./assets/products/surface-pro-9-platinum.png"
+            "image": "./assets/products/surface-pro-9-platinum.png",
+            "availabilityNote": "Intel/Wi-Fi或SQ3/5G；配置及市场另核"
           },
           {
             "name": "典黑",
             "hex": "#262626",
-            "image": "./assets/products/surface-pro-9-black.png"
+            "image": "./assets/products/surface-pro-9-black.png",
+            "availabilityNote": "仅Intel/Wi-Fi；SQ3/5G仅亮铂金，配置及市场另核"
           },
           {
             "name": "宝石蓝",
             "hex": "#2f4f7f",
-            "image": "./assets/products/surface-pro-9-sapphire.png"
+            "image": "./assets/products/surface-pro-9-sapphire.png",
+            "availabilityNote": "仅Intel/Wi-Fi；SQ3/5G仅亮铂金，配置及市场另核"
           },
           {
             "name": "森野绿",
             "hex": "#3b5323",
             "image": "./assets/products/surface-pro-9-forest-official.jpg",
-            "imageSourceUrl": "https://www.microsoft.com/en-us/p/surface-pro-9/93vkd8np4fvk"
+            "imageSourceUrl": "https://www.microsoft.com/en-us/p/surface-pro-9/93vkd8np4fvk",
+            "availabilityNote": "仅Intel/Wi-Fi；SQ3/5G仅亮铂金，配置及市场另核"
           }
         ],
         "chassisMaterial": "铝",

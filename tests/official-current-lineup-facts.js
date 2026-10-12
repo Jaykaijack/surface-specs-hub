@@ -78,7 +78,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
-      "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
+      "learnDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
       "specContains": {
         "cpuCores": [
           "10",

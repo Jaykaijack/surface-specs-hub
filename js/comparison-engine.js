@@ -303,7 +303,6 @@ const ComparisonEngine = {
                 ${this.renderStatusBadge(dev.status)}
                 ${dev.flagship ? '<span class="spec-badge gold">最新旗舰</span>' : ''}
                 ${String(Catalog.confirmedSpec(dev, 'npuTops') || '').includes('80 TOPS') ? '<span class="spec-badge copilot">80 TOPS</span>' : ''}
-                ${String(Catalog.confirmedSpec(dev, 'panelTech') || '').includes('OLED') ? '<span class="spec-badge green">OLED</span>' : ''}
               </div>
 
               <!-- 3 行核心决策摘要 (PRD P2-2 / D-3: 续航 / 算力 / 重量) -->

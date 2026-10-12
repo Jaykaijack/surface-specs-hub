@@ -687,7 +687,7 @@ const App = {
               <span class="scenario-card-icon">💻</span>
               <div class="scenario-card-title">长效续航与传统轻薄本</div>
             </div>
-            <div class="scenario-card-desc">高通骁龙 X2 平台，触觉压感触控板，全天候长达 22 小时办公。</div>
+            <div class="scenario-card-desc">按型号、配置与官方测试条件查看续航、触控板和处理器；测试上限不等于连续办公保证。</div>
             <div class="scenario-card-footer">
               <span>推荐: Surface Laptop 8 (13.8"/15")</span>
               <span>查看 ↗</span>
@@ -1162,7 +1162,7 @@ const App = {
                     ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
                   </div>
                 </div>
-                <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
+                <div class="device-card-date-status" style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
                   <div style="display:flex; gap:6px; align-items:center;">
                     <span class="device-year-badge">${this.spec(dev, 'releaseDate') || dev.year}</span>
                     ${dev.isCommercial ? '<span class="spec-badge commercial">🏢 商用</span>' : ''}
@@ -1186,8 +1186,8 @@ const App = {
                     规格详情 ↗
                   </button>
                   ${dev.learnDocUrl ? `
-                    <a href="${dev.learnDocUrl}" target="_blank" rel="noopener" class="fluent-btn-sm" style="display:inline-flex; align-items:center; text-decoration:none; padding:0 8px;" title="查看微软官方 Learn 架构文档">
-                      📖 Learn ↗
+                    <a href="${dev.learnDocUrl}" target="_blank" rel="noopener" class="fluent-btn-sm" style="display:inline-flex; align-items:center; text-decoration:none; padding:0 8px;" title="查看本款官方资料">
+                      📖 官方资料 ↗
                     </a>
                   ` : ''}
                   <button class="fluent-btn-sm ${isSelected ? 'active' : ''}" onclick="ComparisonEngine.toggleDevice('${dev.id}')">
@@ -1812,8 +1812,8 @@ const App = {
                   规格详情 ↗
                 </button>
                 ${dev.learnDocUrl ? `
-                  <a href="${dev.learnDocUrl}" target="_blank" rel="noopener" class="fluent-btn-sm" style="display:inline-flex; align-items:center; text-decoration:none; padding:0 8px;" title="查看微软官方 Learn 架构文档">
-                    📖 Learn ↗
+                  <a href="${dev.learnDocUrl}" target="_blank" rel="noopener" class="fluent-btn-sm" style="display:inline-flex; align-items:center; text-decoration:none; padding:0 8px;" title="查看本款官方资料">
+                    📖 官方资料 ↗
                   </a>
                 ` : ''}
                 <button class="fluent-btn-sm ${isSelected ? 'active' : ''}" onclick="ComparisonEngine.toggleDevice('${dev.id}')">
@@ -2000,7 +2000,7 @@ const App = {
                       ` : ''}
                       ${learnUrl ? `
                         <a href="${learnUrl}" target="_blank" rel="noopener noreferrer" class="fluent-btn-sm" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-size:11px; padding:3px 8px;" title="前往微软官方 Learn 文档核对">
-                          📖 Learn ↗
+                          📖 官方资料 ↗
                         </a>
                       ` : ''}
                     </div>
@@ -2152,7 +2152,7 @@ const App = {
     // 默认展示全量参数表
     const isComparisonTab = this.activeDetailTab === 'comparison';
     const shotIdentityLabel = Catalog.portraitLabel(activeShot);
-    const shotRoleLabel = activeColorName ? `${activeColorName} 配色图` : '代表图';
+    const shotRoleLabel = activeShot.identity === 'pending' ? '参考图' : activeColorName ? `${activeColorName} 配色图` : '代表图';
 
     let html = `
       <div class="catalog-detail-layout">
@@ -2188,6 +2188,7 @@ const App = {
             </div>
           </div>
 
+          ${dev.portraitScopeNote ? '<p class="portrait-scope-note">'+this.escapeText(dev.portraitScopeNote)+'</p>' : ''}
           <!-- 多外观配色展示与交互切换器 (PRD 全系真机与多配色展示) -->
           ${hasColors ? `
             <div class="detail-color-panel">
@@ -2236,7 +2237,7 @@ const App = {
             ${(this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')) ? `
               <a class="hero-link-btn" href="${this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')}" target="_blank" rel="noopener noreferrer">▣ 查看官方产品页 ↗</a>
             ` : ''}
-            ${dev.learnDocUrl ? `<a class="hero-link-btn" href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer">▤ 技术规格（Microsoft Learn）↗</a>` : ''}
+            ${dev.learnDocUrl ? `<a class="hero-link-btn" href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer">▤ 官方技术资料 ↗</a>` : ''}
             ${this.spec(dev, 'supportUrl') ? `<a class="hero-link-btn" href="${this.spec(dev, 'supportUrl')}" target="_blank" rel="noopener noreferrer">▱ 支持页面 ↗</a>` : ''}
           </div>
 
@@ -2328,7 +2329,7 @@ const App = {
 
         <div class="utility-rail-section">
           <div class="utility-rail-heading">
-            <span>官方资源</span>
+            <span>资料与图片</span>
           </div>
           <div class="utility-link-list">
             ${(this.spec(dev, 'officialConfigureUrl') || this.spec(dev, 'officialDocUrl')) ? `
@@ -2336,8 +2337,7 @@ const App = {
             ` : ''}
             ${dev.learnDocUrl ? `<a href="${dev.learnDocUrl}" target="_blank" rel="noopener noreferrer">▤ 技术规格 ↗</a>` : ''}
             ${this.spec(dev, 'supportUrl') ? `<a href="${this.spec(dev, 'supportUrl')}" target="_blank" rel="noopener noreferrer">▣ 支持页面 ↗</a>` : ''}
-            <a href="#/audit">▧ 产品图片 ↗</a>
-            <a href="#/audit">▤ 宣传素材 ↗</a>
+            <a href="#/audit">▤ 来源索引 ↗</a>
           </div>
         </div>
 
@@ -2406,8 +2406,9 @@ const App = {
       devIds = ComparisonEngine.selectedIds;
       // 反射到 URL
       if (devIds.length > 0) {
-        window.location.hash = `#/compare?products=${devIds.join(',')}`;
-        return;
+        const canonicalHash = `#/compare?products=${devIds.join(',')}`;
+        window.history.replaceState(null, '', canonicalHash);
+        this.activeRoute.query.products = devIds.join(',');
       }
     }
 
