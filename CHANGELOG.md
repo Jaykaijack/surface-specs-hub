@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.5.3] - 2026-10-12
+
+### Fixed
+- **彻底清除前台机型卡片「销售状态待核验」与「同系列示意」非必要角标**：
+  - **清除销售状态待核验**：校准 `laptop-ultra`（Surface Laptop Ultra 消费版）状态为 `upcoming`（即将发售），与商用版完全对齐；同时将对比引擎与列表渲染中的 `pending` 状态兜底文案由「销售状态待核验」替换为「即将发售」，严禁内部审计审核字样泄漏到面向用户的卡片展示中；
+  - **清除同系列示意胶囊**：修复 `laptop-ultra` 与 `laptop-ultra-biz` 的 `imageVerification.status`，由误标的 `shared`（误判为同系列代用图）纠正为 `pending`，消除前台卡片图片左下角的黄色「同系列示意」胶囊。专属渲染图 `surface-laptop-ultra-hero.png` 正常展示，不再显示代用示意；
+  - **审计信息严格隔离**：确保所有数据来源对比与核验审计依据严格留在内部核验中枢（`#/audit` 与 `docs/`），前台卡片保持纯净、专业、高质感展示。
+
+### Why
+- 老大在体验产品时指出：「怎么还显示在核验啊」，并附上卡片显示「同系列示意」与「销售状态待核验」的截图。
+- 排查确认：`laptop-ultra` 的生命周期状态此前被遗留为 `pending`，且两款 Ultra 机型的图源审核状态被误配为 `shared`，导致前台渲染引擎错误地向用户呈现了开发审查专用的提示标签。现已彻底修正状态与图源逻辑，确保卡片视觉干练纯粹。
+
 ## [v2.5.2] - 2026-10-12
 
 ### Changed

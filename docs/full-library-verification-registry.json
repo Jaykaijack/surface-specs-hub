@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T14:00:40.776Z",
+  "generatedAt": "2026-10-12T14:39:57.748Z",
   "datasetVersion": "2026.10.09.source-review",
   "canClaimSafe100Percent": false,
   "scope": "90 devices; 6191 spec fields; snapshot only",
@@ -918,8 +918,8 @@
     {
       "deviceId": "laptop-ultra",
       "field": "status",
-      "value": "current_cn",
-      "valueHash": "a31687e0637227181fd91f1ad9cd327817a73d095331ca07ba0d5e3a5d34c3ca",
+      "value": "upcoming",
+      "valueHash": "574b489f15c7784a93c81f0442001b5bed301d734cd779c929c020ba7c421610",
       "region": "全球同步，中国首批国行在售",
       "configuration": "laptop-ultra",
       "configurationScope": "设备记录；具体 SKU 适用性未逐项核验",

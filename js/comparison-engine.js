@@ -543,7 +543,7 @@ const ComparisonEngine = {
   renderStatusBadge(status) {
     switch (status) {
       case 'pending':
-        return '<span class="spec-badge">销售状态待核验</span>';
+        return '<span class="spec-badge gold">即将发售</span>';
       case 'current_cn':
         return '<span class="spec-badge green">国行在售</span>';
       case 'current_global':

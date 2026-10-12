@@ -720,7 +720,7 @@ const SURFACE_DATA = {
         "lastVerified"
       ],
       "imageVerification": {
-        "status": "shared",
+        "status": "pending",
         "reason": "新版原图已保留；型号、配色与视角尚未完成官方逐图核验"
       },
       "specEvidence": {
@@ -1138,7 +1138,7 @@ const SURFACE_DATA = {
       "nameEn": "Surface Laptop Ultra",
       "generation": "第 1 代 (2026)",
       "year": 2026,
-      "status": "pending",
+      "status": "upcoming",
       "targetAudience": "consumer",
       "flagship": false,
       "tagline": "首款搭载 NVIDIA RTX Spark™ 平台的移动工作站，1 PetaFLOP 澎湃 AI 算力与 Mini-LED 超清触控屏",
@@ -1157,7 +1157,7 @@ const SURFACE_DATA = {
       "specs": {
         "releaseDate": "2026 年 10 月",
         "generation": "第 1 代",
-        "status": "current_cn",
+        "status": "upcoming",
         "salesRegion": "全球同步，中国首批国行在售",
         "targetAudience": "专业创作者、AI 开发者与追求卓越性能的高端用户",
         "tagline": "首款搭载 NVIDIA RTX Spark™ 平台的移动工作站，1 PetaFLOP 澎湃 AI 算力与 Mini-LED 超清触控屏",
@@ -1309,7 +1309,7 @@ const SURFACE_DATA = {
         "lastVerified"
       ],
       "imageVerification": {
-        "status": "shared",
+        "status": "pending",
         "reason": "新版原图已保留；型号、配色与视角尚未完成官方逐图核验"
       },
       "productFamilyEvidence": {
