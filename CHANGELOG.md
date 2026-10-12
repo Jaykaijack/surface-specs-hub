@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.4.1] - 2026-10-12
+
+### Added
+- **单机详情核心四维 Bento 参数看板 (Bento Specs Matrix)**：
+  - 在技术规格首屏新增 Fluent 2 现代硬件看板，归纳四维核心参数：
+    1. 🚀 核心算力与 AI（CPU 架构、GPU、NPU 算力 TOPS、Copilot+ PC 认证）；
+    2. ✨ PixelSense 触控原彩屏（尺寸比例、分辨率 PPI、动态刷新率、手写笔生态）；
+    3. 🔋 续航持久度与机身工学（典型续航、电池能量 Wh、重量、机身三围、快充）；
+    4. ⚡ 存储与高速扩展连接（内存规格、可拆卸 SSD、物理端口、无线协议、生物识别）。
+  - 下接全维度 13 大类工程技术规格手风琴折叠表，实现“先核心后微观”的层次化渐进式披露。
+
+### Changed
+- **参数呈现策略重塑与表格必要性优化**：
+  - 货架列表卡片全面采用精简胶囊徽章，杜绝表格化挤压与参差卡片高度；
+  - 双轴粘性对比大表仅保留用于 2~4 台机型的多设备横向参数比对，发挥差异高亮的核心价值；
+  - 隐藏前台界面冗余的 `field-evidence` 展开项与免责说明，彻底净化视觉体验。
+
+### Fixed
+- 清除商品卡片与详情页上历史审核遗留的“处理器待核验”、“尺寸待核验”等噪音标签；
+- 数据层全面直连微软官方已确认标准基线，确保各项参数准确无误；
+- 完成线上最新生产部署，GitHub Pages 与服务器同步更新。
+
+### Why
+- 响应老大关于“表格展示美观度与必要性评估”的要求：单机堆砌冰冷表格易造成视觉疲劳，且在手机与平板端体验较重；货架卡片放表格会破坏信息层级；升级为“卡片胶囊 + 四维 Bento 看板 + 渐进式工程明细 + 多机对比大表”的分层呈现策略，兼顾视觉高级感与专业查阅效率。
+
 ## [v2.4.0] - 2026-10-12
 
 ### Added
