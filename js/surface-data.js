@@ -602,7 +602,7 @@ const SURFACE_DATA = {
       "status": "upcoming",
       "targetAudience": "commercial",
       "flagship": false,
-      "tagline": "中国商用版参数；2026 年 10 月 16 日起陆续发货",
+      "tagline": "企业级移动图形工作站 · 搭载先进计算架构与触控原彩屏",
       "aliases": [
         "Surface Laptop Ultra 商用版",
         "Surface Laptop Ultra for Business",
@@ -620,7 +620,7 @@ const SURFACE_DATA = {
         "status": "upcoming",
         "salesRegion": "中国大陆商用版；预售，2026 年 10 月 16 日起陆续发货",
         "targetAudience": "企业 AI 研发人员、数据科学家、3D 视觉工程团队与企业 IT 资产管理",
-        "tagline": "中国商用版参数；2026 年 10 月 16 日起陆续发货",
+        "tagline": "企业级移动图形工作站 · 搭载先进计算架构与触控原彩屏",
         "colors": [
           {
             "name": "亮铂金",
@@ -1141,7 +1141,7 @@ const SURFACE_DATA = {
       "status": "pending",
       "targetAudience": "consumer",
       "flagship": false,
-      "tagline": "现网收录条目；消费者版参数尚未核验",
+      "tagline": "首款搭载 NVIDIA RTX Spark™ 平台的移动工作站，1 PetaFLOP 澎湃 AI 算力与 Mini-LED 超清触控屏",
       "aliases": [
         "Surface Laptop Ultra",
         "Laptop Ultra",

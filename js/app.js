@@ -2183,6 +2183,145 @@ const App = {
     document.body.appendChild(dialog);dialog.showModal();
   },
 
+  renderHeroPills(dev) {
+    if (!dev) return '';
+    const getParam = (key, fallback = '') => {
+      const val = (Catalog.displaySpec ? Catalog.displaySpec(dev, key) : Catalog.getSpec(dev, key)) ?? (Catalog.rawSpec ? Catalog.rawSpec(dev, key) : null);
+      if (val === undefined || val === null || val === '' || val === 'null' || val === 'not_disclosed' || val === 'not_applicable') return fallback;
+      return String(val).trim();
+    };
+
+    const pills = [];
+    const npu = this.cleanNpu(dev) || getParam('npuTops');
+    const isCopilotPlus = getParam('copilotPlus').includes('Copilot+') || (npu && npu.includes('TOPS') && parseInt(npu, 10) >= 40);
+    const refresh = getParam('refreshRate');
+    const battery = getParam('batteryLifeVideo') || getParam('batteryLifeOffice');
+    const weight = getParam('weightGrams');
+
+    pills.push('高效性能');
+    if (isCopilotPlus || (npu && npu !== '—')) pills.push('原生 AI 体验');
+    if (refresh.includes('120')) pills.push('120Hz 动态高刷');
+    if (battery.includes('小时')) pills.push('超长全天续航');
+    if (weight && (parseInt(weight, 10) < 1000 || weight.includes('686') || weight.includes('879'))) pills.push('纤薄羽量机身');
+    pills.push('3:2 触控屏');
+    const colors = this.spec(dev, 'colors');
+    if (Array.isArray(colors) && colors.length > 1) pills.push('多款精工原色');
+
+    return pills.slice(0, 5).map(p => `<span class="hero-pill">${p}</span>`).join('');
+  },
+
+  renderAiShowcaseSection(dev) {
+    if (!dev) return '';
+    const getParam = (key, fallback = '—') => {
+      const val = (Catalog.displaySpec ? Catalog.displaySpec(dev, key) : Catalog.getSpec(dev, key)) ?? (Catalog.rawSpec ? Catalog.rawSpec(dev, key) : null);
+      if (val === undefined || val === null || val === '' || val === 'null') return fallback;
+      return String(val).trim();
+    };
+    const npu = this.cleanNpu(dev) || getParam('npuTops');
+    const isCopilotPlus = getParam('copilotPlus').includes('Copilot+') || (npu && npu.includes('TOPS') && parseInt(npu, 10) >= 40);
+
+    // 仅针对配备 NPU 或具备 Copilot+ PC 认证的设备展示高阶沉浸式 AI 专属展区
+    if (!isCopilotPlus && (!npu || npu === '—' || npu === '无独立 NPU')) {
+      return '';
+    }
+
+    return `
+      <section class="detail-ai-section" aria-label="Windows 11 Copilot+ PC 端侧 AI 体验">
+        <div class="detail-ai-container">
+          <div class="detail-ai-header">
+            <span class="detail-ai-label">原生智能 AI · COPILOT+ PC</span>
+            <h3 class="detail-ai-title">原生端侧 NPU 算力驱动 · 兼顾效率与隐私</h3>
+            <p class="detail-ai-lead">本地独立神经网络处理引擎，所有 AI 核心运算在设备端直接运行，兼具毫秒级极速响应与可靠的隐私安全守护。</p>
+          </div>
+          <div class="detail-ai-grid">
+            <div class="detail-ai-card">
+              <div class="detail-ai-card-icon">🔍</div>
+              <h4>回顾（Recall 预览版）</h4>
+              <p>用自然语言描述记忆线索，快速浏览之前看过的文档、网页与对话截屏，支持自主开关与历史记录随时暂停。</p>
+            </div>
+            <div class="detail-ai-card">
+              <div class="detail-ai-card-icon">⚡</div>
+              <h4>增强 Windows 搜索</h4>
+              <p>借助端侧 NPU 本地语义索引，直接输入模糊记忆词句，系统自动定位目标文件、应用设置或家庭照片。</p>
+            </div>
+            <div class="detail-ai-card">
+              <div class="detail-ai-card-icon">🎨</div>
+              <h4>画图灵感与图像重塑</h4>
+              <p>在画图或照片中结合触控笔触与文字提示，本地生成并重绘个性化艺术图像，激发无缝创作灵感。</p>
+            </div>
+            <div class="detail-ai-card">
+              <div class="detail-ai-card-icon">🎥</div>
+              <h4>Studio 摄像头 AI 视效</h4>
+              <p>硬件级自动取景、眼神交流校准、肖像背景虚化与双录音室麦克风声音聚焦，视频会议随时呈现专业状态。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  },
+
+  renderScenarioShowcase(dev) {
+    if (!dev) return '';
+    return `
+      <section class="detail-scenario-section" aria-label="目标人群与核心应用场景">
+        <div class="detail-scenario-header">
+          <span class="detail-scenario-label">目标人群 · 核心应用场景</span>
+          <h3 class="detail-scenario-title">为三类进阶用户量身打造</h3>
+          <p class="detail-scenario-lead">将硬核工程技术规格转化为切身可感的日常生产力价值</p>
+        </div>
+        <div class="detail-scenario-grid">
+          <div class="detail-scenario-card">
+            <div class="scenario-icon-banner" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); color: #0284c7;">
+              <span>🎒</span>
+            </div>
+            <div class="scenario-card-body">
+              <h4>学生与移动办公族</h4>
+              <div class="scenario-scene">清晨课堂 · 远程学习 · 移动差旅</div>
+              <p class="scenario-pain">痛点：需要轻巧随行、全天无充电焦虑，应对全天长时间移动使用。</p>
+              <div class="scenario-value">
+                <div>✓ 轻薄便携机身，轻松放入随身包袋</div>
+                <div>✓ 全天候长效续航，清晨到深夜告别充电器</div>
+                <div>✓ 全高清 Studio 摄像头，线上研讨视讯清晰自然</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-scenario-card">
+            <div class="scenario-icon-banner" style="background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); color: #16a34a;">
+              <span>💼</span>
+            </div>
+            <div class="scenario-card-body">
+              <h4>职场精英与商务专业人士</h4>
+              <div class="scenario-scene">深度报表 · 会议简报 · 多屏联动</div>
+              <p class="scenario-pain">痛点：需要多任务同时开跑、多屏外接、高效处理大尺寸复杂报表。</p>
+              <div class="scenario-value">
+                <div>✓ 3:2 触控原彩屏，文档表格纵向多显 18% 行数</div>
+                <div>✓ USB4 / 雷电高速扩展通道，流畅外接多台 4K 显示器</div>
+                <div>✓ Windows Hello 人脸识别与安全芯片，开机即刻入座</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-scenario-card">
+            <div class="scenario-icon-banner" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); color: #d97706;">
+              <span>🎨</span>
+            </div>
+            <div class="scenario-card-body">
+              <h4>创意设计与技术开发者</h4>
+              <div class="scenario-scene">内容编排 · 高色准精修 · 灵感捕捉</div>
+              <p class="scenario-pain">痛点：需要广色域校准屏幕、舒适输入与充裕运存，支撑高强度创作。</p>
+              <div class="scenario-value">
+                <div>✓ PixelSense 原彩屏幕，经色彩校准呈现丰富细节</div>
+                <div>✓ 大容量高速内存与可更换 SSD，大型素材随心载入</div>
+                <div>✓ 舒适全尺寸键盘与精准触觉触控板，灵感顺畅输入</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  },
+
   renderBentoSpecsMatrix(dev) {
     if (!dev) return '';
 
@@ -2222,144 +2361,182 @@ const App = {
     const wireless = getParam('wireless');
     const biometrics = getParam('windowsHello') !== '—' ? getParam('windowsHello') : getParam('biometrics');
 
+    // 提取高阶大数字指标 (Pillar Big Numbers)
+    let bigNum1 = 'AI';
+    let bigNum1Unit = ' 平台';
+    if (npu && npu !== '—' && npu.includes('TOPS')) {
+      const m = npu.match(/(\d+)\s*TOPS/i);
+      bigNum1 = m ? m[1] : npu;
+      bigNum1Unit = ' TOPS 算力';
+    } else if (npu && npu.includes('PetaFLOP')) {
+      bigNum1 = '1';
+      bigNum1Unit = ' PetaFLOP';
+    } else {
+      const coreM = (getParam('cpuCores') || '').match(/(\d+)/);
+      if (coreM) {
+        bigNum1 = coreM[1];
+        bigNum1Unit = ' 核心算力';
+      } else {
+        bigNum1 = 'Pro';
+        bigNum1Unit = ' 架构';
+      }
+    }
+
+    let bigNum2 = '20';
+    let bigNum2Unit = ' 小时续航';
+    if (batteryLife && batteryLife !== '—') {
+      const m = batteryLife.match(/(\d+)\s*小时/);
+      if (m) {
+        bigNum2 = m[1];
+        bigNum2Unit = ' 小时典型续航';
+      } else {
+        bigNum2 = batteryLife;
+        bigNum2Unit = '';
+      }
+    } else if (weight && weight !== '—') {
+      const wm = weight.match(/([\d\.]+)\s*(?:克|g|kg)/i);
+      if (wm) {
+        bigNum2 = wm[1];
+        bigNum2Unit = weight.includes('kg') ? ' kg 轻盈机身' : ' 克净重';
+      }
+    }
+
+    let bigNum3 = '3:2';
+    let bigNum3Unit = ' 黄金比例';
+    if (refresh && refresh !== '—' && refresh.includes('120')) {
+      bigNum3 = '120';
+      bigNum3Unit = ' Hz 动态高刷';
+    } else if (ppi && ppi !== '—') {
+      bigNum3 = ppi;
+      bigNum3Unit = ' PPI 超清视网膜';
+    }
+
+    let bigNum4 = '64';
+    let bigNum4Unit = ' GB 统一运存';
+    if (ram && ram !== '—') {
+      const rm = ram.match(/(\d+)\s*GB/g);
+      if (rm && rm.length > 0) {
+        const last = rm[rm.length - 1].replace(/\D/g, '');
+        bigNum4 = last;
+        bigNum4Unit = ' GB 高速运存';
+      } else {
+        bigNum4 = ram.split('/')[0] || '高速';
+        bigNum4Unit = ' 规格';
+      }
+    } else if (ports && (ports.includes('USB4') || ports.includes('雷电'))) {
+      bigNum4 = 'USB4';
+      bigNum4Unit = ' / 雷电 4 高速接口';
+    } else {
+      bigNum4 = 'Wi-Fi 7';
+      bigNum4Unit = ' 极速互联';
+    }
+
     return `
-      <div class="bento-specs-matrix">
+      <div class="bento-specs-matrix pillar-grid">
         <!-- 1. 核心算力与 AI -->
-        <div class="bento-spec-card bento-card-cpu">
-          <div class="bento-card-header">
-            <span class="bento-card-icon">🚀</span>
-            <div class="bento-card-title-group">
-              <span class="bento-card-cat">COMPUTE & AI</span>
-              <h3 class="bento-card-title">核心算力与 AI 引擎</h3>
+        <div class="bento-spec-card pillar-card bento-card-cpu">
+          <div class="pillar-num">01 / 性能与 AI</div>
+          <h3 class="pillar-title">核心算力与 AI 引擎</h3>
+          <div class="pillar-big-num">${bigNum1}<small>${bigNum1Unit}</small></div>
+          <p class="pillar-lead">${cpu} 处理器平台驱动，${npu && npu !== '—' ? '集成独立神经网络处理单元（NPU），端侧加速 Windows 11 AI 体验。' : '兼备高能效与强劲输出，平稳应对多任务。'}</p>
+          <div class="bento-spec-list">
+            <div class="bento-spec-row">
+              <span class="bento-k">核心架构</span>
+              <span class="bento-v">${arch}</span>
             </div>
-          </div>
-          <div class="bento-card-body">
-            <div class="bento-primary-metric">
-              <span class="bento-metric-label">中央处理器</span>
-              <span class="bento-metric-val">${cpu}</span>
+            <div class="bento-spec-row">
+              <span class="bento-k">图形显卡</span>
+              <span class="bento-v">${gpu}</span>
             </div>
-            <div class="bento-spec-list">
-              <div class="bento-spec-row">
-                <span class="bento-k">核心架构</span>
-                <span class="bento-v">${arch}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">图形显卡</span>
-                <span class="bento-v">${gpu}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">NPU 算力</span>
-                <span class="bento-v ${npu && npu !== '—' ? 'bento-highlight-badge' : ''}">${npu !== '—' ? '⚡ ' + npu : '无独立 NPU'}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">Copilot+ PC</span>
-                <span class="bento-v">${isCopilotPlus ? '<span class="spec-badge copilot" style="font-size:11px;">✓ 官方认证</span>' : '常规标准'}</span>
-              </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">NPU 算力</span>
+              <span class="bento-v ${npu && npu !== '—' ? 'bento-highlight-badge' : ''}">${npu !== '—' ? '⚡ ' + npu : '无独立 NPU'}</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">Copilot+ PC</span>
+              <span class="bento-v">${isCopilotPlus ? '<span class="spec-badge copilot" style="font-size:11px;">✓ 官方认证</span>' : '常规标准'}</span>
             </div>
           </div>
         </div>
 
-        <!-- 2. 屏幕与触控 -->
-        <div class="bento-spec-card bento-card-display">
-          <div class="bento-card-header">
-            <span class="bento-card-icon">✨</span>
-            <div class="bento-card-title-group">
-              <span class="bento-card-cat">DISPLAY & TOUCH</span>
-              <h3 class="bento-card-title">PixelSense 触控原彩屏</h3>
+        <!-- 2. 续航与轻薄便携 -->
+        <div class="bento-spec-card pillar-card bento-card-battery">
+          <div class="pillar-num">02 / 续航与轻薄便携</div>
+          <h3 class="pillar-title">长效陪伴与轻薄工学</h3>
+          <div class="pillar-big-num">${bigNum2}<small>${bigNum2Unit}</small></div>
+          <p class="pillar-lead">${batteryLife !== '—' ? `标称典型续航 ${batteryLife}，外出办公学习告别充电器焦虑。` : '高集成一体化结构，兼顾移动便携与全天陪伴。'}</p>
+          <div class="bento-spec-list">
+            <div class="bento-spec-row">
+              <span class="bento-k">典型续航</span>
+              <span class="bento-v">${batteryLife}</span>
             </div>
-          </div>
-          <div class="bento-card-body">
-            <div class="bento-primary-metric">
-              <span class="bento-metric-label">屏幕尺寸与比例</span>
-              <span class="bento-metric-val">${screen} · ${ratio}</span>
+            <div class="bento-spec-row">
+              <span class="bento-k">电池能量</span>
+              <span class="bento-v">${batteryWh}</span>
             </div>
-            <div class="bento-spec-list">
-              <div class="bento-spec-row">
-                <span class="bento-k">分辨率与细腻度</span>
-                <span class="bento-v">${resDisplay}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">动态刷新率</span>
-                <span class="bento-v">${refresh}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">面板技术</span>
-                <span class="bento-v">${panel}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">触控与手写生态</span>
-                <span class="bento-v">${pen}</span>
-              </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">整机净重</span>
+              <span class="bento-v">${weight}</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">快速充电</span>
+              <span class="bento-v">${charging}</span>
             </div>
           </div>
         </div>
 
-        <!-- 3. 续航与轻薄便携 -->
-        <div class="bento-spec-card bento-card-battery">
-          <div class="bento-card-header">
-            <span class="bento-card-icon">🔋</span>
-            <div class="bento-card-title-group">
-              <span class="bento-card-cat">BATTERY & MOBILITY</span>
-              <h3 class="bento-card-title">续航持久度与机身工学</h3>
+        <!-- 3. 显示屏与触控 -->
+        <div class="bento-spec-card pillar-card bento-card-display">
+          <div class="pillar-num">03 / 生产力原彩屏</div>
+          <h3 class="pillar-title">PixelSense 触控原彩屏</h3>
+          <div class="pillar-big-num">${bigNum3}<small>${bigNum3Unit}</small></div>
+          <p class="pillar-lead">${ratio} 生产力纵横比，相比常规 16:9 纵向呈现更多有效行数，文档与报表一览无余。</p>
+          <div class="bento-spec-list">
+            <div class="bento-spec-row">
+              <span class="bento-k">屏幕尺寸与比例</span>
+              <span class="bento-v">${screen} · ${ratio}</span>
             </div>
-          </div>
-          <div class="bento-card-body">
-            <div class="bento-primary-metric">
-              <span class="bento-metric-label">标称典型续航</span>
-              <span class="bento-metric-val">${batteryLife}</span>
+            <div class="bento-spec-row">
+              <span class="bento-k">分辨率与细腻度</span>
+              <span class="bento-v">${resDisplay}</span>
             </div>
-            <div class="bento-spec-list">
-              <div class="bento-spec-row">
-                <span class="bento-k">电池能量</span>
-                <span class="bento-v">${batteryWh}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">整机净重</span>
-                <span class="bento-v">${weight}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">机身尺寸</span>
-                <span class="bento-v">${dim}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">快速充电</span>
-                <span class="bento-v">${charging}</span>
-              </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">动态刷新率</span>
+              <span class="bento-v">${refresh}</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">面板技术</span>
+              <span class="bento-v">${panel}</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">触控手写生态</span>
+              <span class="bento-v">${pen}</span>
             </div>
           </div>
         </div>
 
-        <!-- 4. 内存存储与连接 -->
-        <div class="bento-spec-card bento-card-io">
-          <div class="bento-card-header">
-            <span class="bento-card-icon">⚡</span>
-            <div class="bento-card-title-group">
-              <span class="bento-card-cat">STORAGE & I/O</span>
-              <h3 class="bento-card-title">存储与高速扩展连接</h3>
+        <!-- 4. 存储与高速扩展 -->
+        <div class="bento-spec-card pillar-card bento-card-io">
+          <div class="pillar-num">04 / 存储与极速互联</div>
+          <h3 class="pillar-title">高速存储与多屏扩展</h3>
+          <div class="pillar-big-num">${bigNum4}<small>${bigNum4Unit}</small></div>
+          <p class="pillar-lead">高速通道内存搭配灵活存储方案，支持通过通用高速端口至多外接多台 4K 超清显示器。</p>
+          <div class="bento-spec-list">
+            <div class="bento-spec-row">
+              <span class="bento-k">运存选配</span>
+              <span class="bento-v">${ram !== '—' ? ram : '—'}</span>
             </div>
-          </div>
-          <div class="bento-card-body">
-            <div class="bento-primary-metric">
-              <span class="bento-metric-label">运存与存储选配</span>
-              <span class="bento-metric-val">${ram !== '—' ? ram : '—'}</span>
+            <div class="bento-spec-row">
+              <span class="bento-k">固态硬盘 SSD</span>
+              <span class="bento-v">${storage}${ssdRemovable !== '—' ? ' (' + ssdRemovable + ')' : ''}</span>
             </div>
-            <div class="bento-spec-list">
-              <div class="bento-spec-row">
-                <span class="bento-k">固态硬盘 SSD</span>
-                <span class="bento-v">${storage}${ssdRemovable !== '—' ? ' (' + ssdRemovable + ')' : ''}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">物理端口</span>
-                <span class="bento-v">${ports}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">无线协议</span>
-                <span class="bento-v">${wireless}</span>
-              </div>
-              <div class="bento-spec-row">
-                <span class="bento-k">生物安全识别</span>
-                <span class="bento-v">${biometrics}</span>
-              </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">物理端口</span>
+              <span class="bento-v">${ports}</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-k">生物安全识别</span>
+              <span class="bento-v">${biometrics}</span>
             </div>
           </div>
         </div>
@@ -2441,6 +2618,7 @@ const App = {
         </div>
 
         <div class="detail-hero-right">
+          <div class="detail-hero-brand">MICROSOFT SURFACE</div>
           <div class="detail-hero-status-row">
             ${this.recentLaunchBadge(dev)}
             ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -2454,6 +2632,9 @@ const App = {
           </h1>
           <div class="detail-hero-name-en">${dev.nameEn}</div>
           <p class="detail-hero-tagline">${this.escapeText(dev.tagline || '')}</p>
+          <div class="detail-hero-pills">
+            ${this.renderHeroPills(dev)}
+          </div>
           <div class="detail-hero-meta">
             <div class="hero-meta-card"><span>发布日期</span><strong>${this.spec(dev, 'releaseDate') || dev.year || '—'}</strong></div>
             <div class="hero-meta-card"><span>产品定位</span><strong>${this.escapeText(dev.tagline || 'Surface 设备')}</strong></div>
@@ -2505,6 +2686,8 @@ const App = {
           <span class="detail-verification-inline">${this.getDeviceVerificationBadge(dev.id)}</span>
         </div>
         ${this.renderBentoSpecsMatrix(dev)}
+        ${this.renderAiShowcaseSection(dev)}
+        ${this.renderScenarioShowcase(dev)}
         <div class="detail-section-divider">
           <span>全维度 13 大类工程技术规格明细</span>
         </div>

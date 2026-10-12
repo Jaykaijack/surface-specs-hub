@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T11:30:49.710Z",
+  "generatedAt": "2026-10-12T12:05:35.007Z",
   "datasetVersion": "2026.10.09.source-review",
   "canClaimSafe100Percent": false,
   "scope": "90 devices; 6191 spec fields; snapshot only",
@@ -73,8 +73,8 @@
     {
       "deviceId": "laptop-ultra-biz",
       "field": "tagline",
-      "value": "中国商用版参数；2026 年 10 月 16 日起陆续发货",
-      "valueHash": "57dcfd902ed3dae817d23ae04f5348aae3236e5f959f71b9eecfdfea695ea2f0",
+      "value": "企业级移动图形工作站 · 搭载先进计算架构与触控原彩屏",
+      "valueHash": "100e2d8018113a363223d36e4abdaf125fc3dfafae396055f0f6969e101a439e",
       "region": "中国大陆商用版；预售，2026 年 10 月 16 日起陆续发货",
       "configuration": "laptop-ultra-biz",
       "configurationScope": "设备记录；具体 SKU 适用性未逐项核验",
