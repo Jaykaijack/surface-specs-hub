@@ -20,4 +20,6 @@ dist/site/
 dist/_*.html
 dist/deploy-manifest.json
 releases/verification-*
+*.zip
+docs/参数中心资料与交接/
 

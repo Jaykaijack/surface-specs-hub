@@ -21,9 +21,9 @@ DIST_DIR = os.path.join(WORKSPACE, 'dist')
 RELEASES_DIR = os.path.join(WORKSPACE, 'releases')
 
 # 版本规范
-VERSION = "v2.3.0"
-DATE_STR = "20261008"
-DESCRIPTOR = "surface-laptop-ultra"
+VERSION = "v2.4.0"
+DATE_STR = "20261012"
+DESCRIPTOR = "handover-reconciliation"
 
 STANDALONE_ROOT = os.path.join(WORKSPACE, 'surface-specs-hub-standalone.html')
 STANDALONE_DIST = os.path.join(DIST_DIR, 'surface-specs-hub-standalone.html')

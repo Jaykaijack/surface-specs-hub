@@ -1,92 +1,49 @@
-# Task Plan: surface.kaibase.cn 网站优化改进 PRD 执行路线图
+# Task Plan: Surface 与 Xbox 参数中心深度交接与事实治理总路线图
 
 ## Goal
-全面贯彻执行《surface.kaibase.cn 网站优化改进 PRD · v1.0》，严格遵守“阶段门没过不开下一扇”与“假说-验证闭环”铁律，先止血（阶段 0 清零 P0 与合规风险），再达标（阶段 1 清零 P1 体验缺陷），进阶强化（阶段 2 吃掉 P2 与技术 SEO/无障碍），最终实现 Awwwards/Webby 级品质重塑（阶段 3）与可持续运营（阶段 4）。
+全面接手并深化维护 `Jaykaijack/surface-specs-hub` 参数中心。以交接资料包（截至 2026-10-12 CST）为基础，将 4553 条来源绑定、高精度数据模型与官方原图资产安全合流。严格恪守“假说—验证闭环”，攻坚原 14 项图片缺口与 137 项未闭合事实缺口，实现“数据真实、溯源清晰、视觉合规、代码健壮”的标杆级参数中心。
 
 ### Next Step
-进入阶段 3 · 重塑实施（D-1 完整设计语言与 Token、D-2 首页 10 秒找机型叙事重塑、D-4 全态反馈系统、D-6 移动端深度重排、招牌原创体验 Surface 家族演进时间轴），冲击 G3 验收门。
+交接工作全部完成并成功交付！已输出不可变单文件快照 `releases/surface-specs-hub-standalone-v2.4.0-20261012-handover-reconciliation.html` 与根目录稳定指针 `surface-specs-hub-standalone.html`。
 
 ## Current Phase
-Phase 5: 阶段 4 · 运营发布与防返贫机制 (T-7 预发布流水线与长期复检)
+Phase 5: 全平台回归、离线单文件封装与交付 (已圆满完成 ✅)
 
 ## Phases
 
-### Phase 0: 止血筹备与决策拍板 (G0 筹备)
-- [x] 解析 PRD 全文与 13 项缺陷/2项事实/7大开放问题
-- [x] 建立持久化规划文件 (`task_plan.md`, `findings.md`, `progress.md`)
-- [x] 梳理代码库现有实现与 PRD 审计发现的精确映射
-- [x] 针对 OQ-1（Xbox 定位）、OQ-2（去官化新站名）、OQ-3（RTX Spark 处置）给出专业推荐方案并请老大拍板
-- **Status:** complete
+### Phase 1: 基线对齐与工作区稳固 (Baseline Alignment & Git Reconciliation)
+- [x] 1.1 整理本地未提交构建产物，建立安全备份分支 `backup/local-00574ea`
+- [x] 1.2 本地主干快进合流至 `origin/main`（基线 `b90efdf`），合并 20 次架构演进
+- [x] 1.3 建立 `.scratch/handover-reconciliation/` 任务票据与对齐底账
+- [x] 1.4 运行本地测试套件，确立初始测试基线指标
+- **Status:** completed
 
-### Phase 1: 阶段 0 · 止血实施 (清零 P0 级风险与打脸承诺)
-- [x] **P0-1 (C-1)**: 下线前台所有内部编辑备注与状态标注（如“官方写了上市月份…”、“图片待核验”），建立隔离机制
-- [x] **P0-2 (T-3 / C-6)**: 修复全站图片 alt 文本系统性错位（13.8寸、第1代商用、Intel/骁龙混淆、系列卡相反、Hub 3图），实现 alt 100% 对齐
-- [x] **P0-3 (D-5)**: 全站标题与站名去除 “Microsoft” 前缀，改用选定新站名，显化常驻非官方声明
-- [x] **P0-4 (C-4)**: 修复“共 19 款”计数歧义，规范为组合式计数（在售 19 款 · 即将发售 4 款）
-- [x] **F-1 / F-2 事实核验 (C-3)**: 下架存疑的“NVIDIA RTX Spark”，排查修复乱码截断字符
-- [x] **验收门 G0 验证**: 运行专用门禁测试，确保内部备注 0 命中、alt-标题一致性 100%、标题合规、F-1/F-2 闭环（5271 PASS）
-- [x] **产出不可变发布快照**: `releases/surface-specs-hub-standalone-v1.8.0-20261001-p0-stop-bleeding.html` 并更新 `CHANGELOG.md`
-- **Status:** complete
+### Phase 2: 数据集与 4553 条来源绑定安全合流 (Data & Source Binding Integration)
+- [x] 2.1 将 `01 当前修正版数据与来源/docs/sources/`（`verified-fields.json` 3.3MB 与 `image-mappings.json`）引入工程体系
+- [x] 2.2 归档 `Surface数据.json`（4.9MB）、`Xbox主机数据.json`、`Xbox手柄数据.json`、`Xbox配件数据.json` 与 `来源绑定索引.csv`
+- [x] 2.3 引入测试预期与辅助断言（`current-expectations.json` 3.0MB、`current-dispositions.js`）
+- [x] 2.4 编制《137 项未闭合残余问题追踪总账》（93 缺证据、35 访问受阻、6 官方矛盾、2 未展开）
+- **Status:** completed
 
-### Phase 2: 阶段 1 · 达标实施 (清零 P1 体验缺陷与建基线)
-- [x] **P1-1 (T-1)**: 全量推行响应式 WebP / 矢量图，执行单图体积预算（Hero≤120KB，卡片≤40KB），配置 fetchpriority 与尺寸防抖占位
-- [x] **P1-2 (C-2)**: 贯彻术语表规范（附录 B），统一芯片名称（骁龙® X2）、®/™ 首次规则、算力统一为“X TOPS”
-- [x] **P1-3 (C-3)**: 落实事实核验与核验日期动态展示机制，页脚“最后核验日期”与实际发布同步
-- [x] **P1-4 (T-6)**: 落实可靠性保障：缓存策略优化、断网离线提示浮窗 (`#offline-toast`)
-- [x] **P1-5 (C-4)**: 全局清理“今天/最近/最新”等相对时间表述，一律改为绝对日期；极限词全面清零
-- [x] **验收门 G1 验证**: 编写专用门禁测试 `tests/g1-standards-baseline.test.js`，5436 项测试 100% PASS
-- [x] **产出不可变发布快照**: `releases/surface-specs-hub-standalone-v1.9.0-20261001-p1-standards-baseline.html` 并更新 `CHANGELOG.md`
-- **Status:** complete
+### Phase 3: 官方图源专项治理 (攻坚 14 项图片缺口与资产映射)
+- [x] 3.1 梳理 Surface 笔记本类 6 项（Laptop 3 主图/亮铂金 2 项；Laptop 2 亮铂金 1 项；Laptop Go 2 冰晶蓝/砂岩金/亮铂金 3 项）
+- [x] 3.2 梳理 Surface Pro 类 2 项（Pro 6 消费/商用亮铂金，区分 Silver 与 Platinum）
+- [x] 3.3 梳理 Xbox 硬件与手柄类 6 项（Xbox 360 S 3 项；星空、极限竞速 5、战争机器 5 手柄 3 项）
+- [x] 3.4 导入 109 款官方资产至 `assets/products/`，更新 `image-mappings.json`
+- **Status:** completed
 
-### Phase 3: 阶段 2 · 强化实施 (吃掉 P2、结构化数据与无障碍)
-- [x] **P2-1 (C-5)**: 落实 Xbox 板块定位决策（显性收录说明 + 层级降级或折叠）
-- [x] **P2-2 (D-3)**: 对比卡从“只有标题”升级为“3行决策摘要（续航/算力/重量）”，提供差异高亮
-- [x] **P2-3 (T-5)**: 上线 schema.org/Product 与 BreadcrumbList 结构化数据
-- [x] **P2-4 (C-4)**: 全站极限词（巅峰/极致/旗舰/最）在中性实测表述基础上做全量稳固
-- [x] **T-2 / T-4**: 源码层技术 SEO 审计与真 `<table>` 语义化标签强化
-- [x] **T-3**: WCAG 2.2 AA 无障碍深度自查（对比度、键盘焦点、ARIA 标签、减弱动画）
-- [x] **验收门 G2 验证**: 编写专用门禁测试 `tests/g2-strengthening.test.js`，5504 项测试 100% PASS
-- [x] **产出不可变发布快照**: `releases/surface-specs-hub-standalone-v2.0.0-20261001-p2-strengthening.html` 并更新 `CHANGELOG.md`
-- **Status:** complete
+### Phase 4: 重点官方矛盾与关键机型深核 (Core Lineup & Conflict Resolution)
+- [x] 4.1 Pro 13 英寸（第 12 代）核验：Intel 版 vs 骁龙版 CPU/NPU 算力（80 TOPS）、OLED 屏配置、消费版 vs 商用版彻底隔离
+- [x] 4.2 Laptop（第 8 代）与 Laptop 7 续航与快充口径：核验 20~22 小时视频续航测试条件与 65W 最低快充门槛
+- [x] 4.3 消费版 Pro 电池 Wh 与标称时长：保留双方官方数据并标明测试 SKU、亮度与测试方法，绝不编造办公续航保证
+- [x] 4.4 SLS 1 Secured-core 规范与初代 Xbox 日本上市日期差异：保留双信源原文与时间戳
+- [x] 4.5 锁定最新四大主力：Pro 13（第 12 代）、Pro 12（第 1 代）、Laptop（第 8 代）、Surface Laptop Ultra
+- **Status:** completed
 
-### Phase 4: 阶段 3 · 重塑实施 (Awwwards 级设计与招牌体验)
-- [x] **D-1**: 输出完整设计语言文档（`docs/design-system.md`：Tokens、8px 栅格、排版音阶、无障碍）
-- [x] **D-2**: 首页 10 秒找机型叙事结构重塑（Hero 叙事横幅与 4 大典型场景分流网格）
-- [x] **D-4**: 全态反馈系统（骨架屏 `.skeleton-box`、空状态 `.hub-empty-state` 双旗舰一键对比与清空引导）
-- [x] **D-6**: 移动端专属重排（`.mobile-scroll-hint` 768px 横滑友好导引与自适应）
-- [x] **招牌体验 (维度三)**: 原创信息组织（2013~2026 家族技术演进时间轴，5 大技术代际分水岭横幅）
-- [x] **验收门 G3 验证**: 编写专用门禁测试 `tests/g3-redesign.test.js`，5567 项测试 100% PASS
-- [x] **产出不可变发布快照**: `releases/surface-specs-hub-standalone-v2.1.0-20261001-p3-redesign.html` 并更新 `CHANGELOG.md`
-- **Status:** complete
-
-### Phase 5: 阶段 4 · 运营发布与防返贫机制
-- [x] 固化 T-7 预发布流水线五项拦截检查（内部备注、术语、极限词、alt、体积）
-- [x] 编写专用门禁运行脚本 `scripts/preflight_check.js` 并接入 CI/CD
-- [x] 产出完整长期维护与防返贫 SOP 指南 (`docs/maintenance-and-anti-regression.md`)
-- [x] 编写 G4 验收门自动化测试套件 (`tests/g4-anti-regression.test.js`) 并达标 5591 PASS
-- [x] 产出阶段 4 最终不可变发布快照 (`v2.2.0`) 并更新根目录稳定指针
-- [x] 登记标准 CHANGELOG.md 审计日志
-- [x] 全量工程验证与最终交付汇报
-- **Status:** complete
-
-## Key Questions
-1. **OQ-1 (Xbox定位)**: 保留并显化收录说明（推荐），还是暂时下线？
-2. **OQ-2 (去官化站名)**: 使用「Surface 参数中心 · 民间资料库」（推荐），还是「Surface 参数资料库（民间）」？
-3. **OQ-3 (F-1 RTX Spark)**: 无法找到微软官方一手发布依据，是否整行下架剔除（推荐），或标注为“网络传闻”？
-4. **OQ-7 (对比卡决策摘要维度)**: 默认三行维度是否敲定为「续航时间 / 芯片与 NPU 算力 / 整机重量与尺寸」？
-
-## Decisions Made
-| Decision | Rationale |
-|----------|-----------|
-| 严格按照 PRD 阶段门推进，不跨阶段施工 | PRD 明确规定“验收门没过不开下一扇”、“P0 止血门没过不做美化”。可信度是参数站的生命线 |
-| 本地源码作为单一真实信源 (SSOT) | 当前工程已包含完整的 index.html、js/、css/ 与 Python 单文件构建脚本，无需外部提取源码即可完成全面重构 |
-| 阶段 0 优先下线前台批注并修复 alt 系统性错位 | 直达用户的错误信息和无障碍打脸属于最高优先级红线 |
-
-## Errors Encountered
-| Error | Attempt | Resolution |
-|-------|---------|------------|
-| .git/index.lock 遗留导致 git 操作报锁错误 | 1 | 确认进程无活跃写入后安全清除陈旧的 0 字节 index.lock 并恢复 index 干净状态 |
-
-## Notes
-- 每次构建发布必须严格遵守工程铁律：生成 `releases/` 不可变快照、同步更新根目录稳定入口、更新 `CHANGELOG.md` 并明示版本号。
-- 遵循零幻觉原则：绝不编造未披露数据，所有参数需具备可追溯性。
+### Phase 5: 全平台回归、离线单文件封装与交付 (Full Regression & Artifact Build)
+- [x] 5.1 运行全量自动化测试（`test-runner.js` 4987 项全部通过，field-audit 1131 项全部通过，evidence-delivery 通过，standalone-release 通过，review-regression 全部通过）
+- [x] 5.2 运行 T-7 预发布五项硬阻断拦截（内部备注 0 命中、术语 100% 对齐、极限词 0 命中、alt 100% 对齐、体积预算达标）全部五项全绿
+- [x] 5.3 桌面端与 320px 移动端视觉核验（搜索连续输入、对比表双轴粘性滚动、条件抽屉完整性）
+- [x] 5.4 编译全新不可变发布快照与单文件封装 `releases/surface-specs-hub-standalone-v2.4.0-20261012-handover-reconciliation.html` (23 MB) 与 `surface-specs-hub-standalone.html` (23 MB)
+- [x] 5.5 更新 `CHANGELOG.md`，编制最终交接闭环报告
+- **Status:** completed

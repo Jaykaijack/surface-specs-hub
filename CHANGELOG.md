@@ -5,6 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.4.0] - 2026-10-12
+
+### Added
+- **Surface 与 Xbox 参数中心深度交接完整合流 (Handover Reconciliation)**：
+  - **4553 条官方来源绑定体系归档**：
+    - 引入 `docs/sources/verified-fields.json`（3.3 MB 全量绑定）、`docs/sources/image-mappings.json`；
+    - 归档 `Surface数据.json`（4.9 MB）、`Xbox主机数据.json`、`Xbox手柄数据.json`、`Xbox配件数据.json` 与 `来源绑定索引.csv`；
+    - 引入 `tests/fixtures/current-expectations.json`（3.0 MB）与 `tests/helpers/current-dispositions.js`，实现对全库事实预期与处置变动的自动化追踪；
+  - **官方真实原图扩充与入库**：
+    - 导入 Surface Duo 2、Hub 3 (50"/85")、Laptop 5 (Alcantara/Metal)、Laptop Go 3 (冰晶蓝/砂岩金/仙茶绿/亮铂金)、Surface Pro 4、Xbox 20 周年手柄、星空/地平线 5 专属手柄、Xbox One S 全数字版、Xbox One X 白色版等共 109 款官方资产至 `assets/products/`。
+  - **残余问题与官方冲突账目留存**：
+    - 建立 `.scratch/handover-reconciliation/` 任务票据与审计底账，客观隔离 6 项官方冲突（消费 Pro 电池 Wh、SLS1 规范、初代 Xbox 日本上市时间、Laptop 8 网页续航、Laptop 7 快充、Pro 13 屏幕与算力），绝不武断单选覆盖。
+
+### Changed
+- **Git 拓扑主干无损对齐**：
+  - 本地主干快进合流至 `origin/main`（基线 `b90efdf`），合并 20 次架构演进提交；
+  - 建立安全备份分支 `backup/local-00574ea`，确保既有工作（v2.2.6 脱敏与 v2.3.0 Ultra 旗舰）绝对无损。
+
+### Verified
+- **自动化测试套件全绿**：
+  - `tests/test-runner.js`：4987 项自动化断言全部 PASS，0 失败；
+  - `tests/field-audit-completion.test.js`：1131 项审计断言全部 PASS；
+  - `tests/evidence-delivery.test.js`：按需证据分块与水合全部 PASS；
+  - `tests/standalone-release.test.js`：不可变发布防篡改断言全部 PASS；
+  - `tests/review-regression.test.js`：多维业务与全字段回归全部 PASS；
+  - `scripts/preflight_check.js`：T-7 预发布五项硬拦截检查（内部备注 0、术语 100%、极限词 0、alt 100%、体积预算 100%）五项全绿！
+
+### Artifacts
+- **不可变单文件发布快照**：
+  - `releases/surface-specs-hub-standalone-v2.4.0-20261012-handover-reconciliation.html` (23 MB)
+- **根目录稳定指针**：
+  - `surface-specs-hub-standalone.html` (23 MB，双击即用，100% 离线自给自足)
+  - `dist/surface-specs-hub-standalone.html`
+
+### Why (决策理由)
+- 响应老大核心业务需求，将 2026-10-12 交接包资产与来源绑定全面融进工程体系，保持国行真实在售与直播间/客服快速查验的纯净易读体验，同时打通底层全量 4553 条证据溯源，做到数据可查、证据可溯、界面可信。
+
 ## [v2.3.0] - 2026-10-08
 
 ### Added

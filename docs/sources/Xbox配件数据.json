@@ -1,0 +1,975 @@
+[
+  {
+    "id": "xbox-wireless-headset",
+    "name": "Xbox 无线耳机",
+    "nameEn": "Xbox Wireless Headset",
+    "category": "audio",
+    "categoryName": "官方音频设备",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-wireless-headset.png",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
+    "details": {
+      "driver": "40 毫米钕磁铁扬声单元",
+      "spatialAudio": "支持 Dolby Atmos、DTS Headphone:X 与 Windows Sonic 空间音效",
+      "connectivity": "Xbox 无线专有协议直接与主机配对（无需适配器）+ 蓝牙 4.2 双模并发",
+      "battery": "内置锂电池，充满最长续航 15 小时；充电 30 分钟可提供约 4 小时续航",
+      "mic": "双麦克风波束成形阵列，支持自动静音与语音隔离算法",
+      "controls": "左右旋转式耳罩拨盘（左耳调节游戏/语音平衡，右耳调节总音量）",
+      "weight": "312 克"
+    },
+    "description": "专为主机玩家定制的高性能无线游戏耳机。无需适配器即可与 Xbox 主机直连，并可同时连接手机蓝牙，接听电话无需中断游戏。"
+  },
+  {
+    "id": "xbox-stereo-headset",
+    "name": "Xbox 有线立体声耳机",
+    "nameEn": "Xbox Stereo Headset",
+    "category": "audio",
+    "categoryName": "官方音频设备",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-stereo-headset.png",
+    "price": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
+    "details": {
+      "driver": "40 毫米高质量钕磁铁驱动单元",
+      "spatialAudio": "支持 Windows Sonic、Dolby Atmos 与 DTS Headphone:X 空间立体环绕声",
+      "connectivity": "3.5 毫米音频插孔（即插即用，零延迟）",
+      "controls": "右耳罩旋转拨盘直接调节音量，右耳罩背部设有麦克风一键静音滑块",
+      "weight": "286 克轻量化佩戴设计",
+      "features": "超柔软亲肤大耳罩，可伸缩可折叠全向麦克风"
+    },
+    "description": "高性价比高舒适度官方有线电竞耳麦。3.5mm 标准音频线直连手柄耳机孔，耳罩集成物理旋钮音量调节。",
+    "metadataEvidence": {
+      "name": {
+        "configuration": "xbox-stereo-headset",
+        "value": "Xbox 有线立体声耳机",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-stereo-headset",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-stereo-headset",
+          "https://www.xbox.com/accessories/headsets/xbox-stereo-headset"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "Xbox Stereo Headset有线3.5mm款，不混Xbox Wireless Headset。；中国官方商品名“Xbox立体声耳机”已读，官方英文产品页明确通过3.5mm音频孔连接且无需电池，本站加入“有线”说明与该2021款身份一致。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[1].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "price": {
+        "configuration": "xbox-stereo-headset",
+        "value": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-stereo-headset",
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Xbox Stereo Headset有线3.5mm款；当次中国产品页总计419元，券后价空白，不推断券后价、首发价或其他年份无线款。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-stereo-headset:price",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  },
+  {
+    "id": "xbox-seagate-1tb",
+    "name": "希捷存储扩展卡 - 1TB",
+    "nameEn": "Seagate Storage Expansion Card for Xbox Series X|S - 1TB",
+    "category": "storage",
+    "categoryName": "官方存储扩展",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-seagate-1tb-expansion-card.png",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
+    "details": {
+      "capacity": "1TB 闪存扩展容量（实际可用约 920GB）",
+      "interface": "定制 PCIe 4.0 x2 NVMe 专有直连接口",
+      "speed": "官方说明扩展卡持续性能匹配内置SSD；2.4 GB/s是Xbox Velocity Architecture原始I/O口径，非扩展卡读写实测。4.8 GB/s为Series X在假设2:1压缩比时提供给游戏的有效I/O口径，非卡片原始吞吐。",
+      "architecture": "100% 完整支持 Xbox Velocity Architecture（速度与内置 SSD 完全一致）",
+      "features": "完美支持次世代 Xbox Series 专属游戏直接安装与流畅运行，支持快速唤醒 (Quick Resume)"
+    },
+    "description": "微软与希捷合作推出的Xbox Series X|S存储扩展卡。插入主机背部专用Storage Expansion插槽，可直接安装和运行游戏；官方说明其持续性能匹配内置SSD。",
+    "metadataEvidence": {
+      "description": {
+        "configuration": "xbox-seagate-1tb",
+        "value": "微软与希捷合作推出的Xbox Series X|S存储扩展卡。插入主机背部专用Storage Expansion插槽，可直接安装和运行游戏；官方说明其持续性能匹配内置SSD。",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+          "https://news.xbox.com/en-us/2020/07/14/a-closer-look-at-xbox-velocity-architecture/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "希捷1TB Xbox Series X|S扩展卡；2021官方架构/游戏体验说明，不作为每种读写负载实测。；已读微软与希捷合作及匹配内置SSD持续性能原文；“性能完全无差”是对所有性能的过度概括。应限定持续性能与Xbox专用扩展插槽。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[2].metadataEvidence.description",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "name": {
+        "configuration": "xbox-seagate-1tb",
+        "value": "希捷存储扩展卡 - 1TB",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "1TB/2TB两容量分别绑定；中国名称为本站准确说明译名，海外公告不证明国行库存/价格。；2021官方正文分别列1TB既有扩展卡及2TB新品，标题与正文确定Seagate Storage Expansion Card for Xbox Series X|S身份；当前容量与中英文说明名吻合。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[2].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "nameEn": {
+        "configuration": "xbox-seagate-1tb",
+        "value": "Seagate Storage Expansion Card for Xbox Series X|S - 1TB",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "1TB/2TB两容量分别绑定；中国名称为本站准确说明译名，海外公告不证明国行库存/价格。；2021官方正文分别列1TB既有扩展卡及2TB新品，标题与正文确定Seagate Storage Expansion Card for Xbox Series X|S身份；当前容量与中英文说明名吻合。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[2].metadataEvidence.nameEn",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    },
+    "detailEvidence": {
+      "speed": {
+        "configuration": "xbox-seagate-1tb",
+        "value": "官方说明扩展卡持续性能匹配内置SSD；2.4 GB/s是Xbox Velocity Architecture原始I/O口径，非扩展卡读写实测。4.8 GB/s为Series X在假设2:1压缩比时提供给游戏的有效I/O口径，非卡片原始吞吐。",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+          "https://news.xbox.com/en-us/2020/07/14/a-closer-look-at-xbox-velocity-architecture/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "分别适用希捷1TB和2TB扩展卡的持续性能；4.8只作2020 Series X架构说明，不声称卡片独立解压能力或Xbox Series S特定数字。；已读存储卡和架构两篇官方全文相关段。2.4是raw I/O；4.8是主机硬件解压并假设2:1压缩比的有效I/O，不是1TB/2TB扩展卡的读写吞吐测试值。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[2].detailEvidence.speed",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  },
+  {
+    "id": "xbox-seagate-2tb",
+    "name": "希捷存储扩展卡 - 2TB",
+    "nameEn": "Seagate Storage Expansion Card for Xbox Series X|S - 2TB",
+    "category": "storage",
+    "categoryName": "官方存储扩展",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-seagate-2tb-expansion-card.png",
+    "price": "海外历史公告（2021-10-21）：2TB预购公布价$399.99 USD，计划11月预购、12月初发售；国行价格与当前报价另核",
+    "details": {
+      "capacity": "2TB 超大容量极速闪存空间",
+      "interface": "定制 PCIe 4.0 x2 NVMe 专属热插拔接口",
+      "speed": "官方说明扩展卡持续性能匹配内置SSD；2.4 GB/s是Xbox Velocity Architecture原始I/O口径，非扩展卡读写实测。4.8 GB/s为Series X在假设2:1压缩比时提供给游戏的有效I/O口径，非卡片原始吞吐。",
+      "architecture": "完整支持 Xbox Velocity 架构，与内置 SSD 协同组成海量极速游戏库",
+      "features": "可容纳数十款 3A 巨作（如极限竞速、战争机器、使命召唤）"
+    },
+    "description": "2TB希捷Xbox Series X|S存储扩展卡。插入主机背部专用扩展槽，可选择默认安装游戏、直接运行游戏，并在内置与扩展存储间移动或复制游戏。",
+    "metadataEvidence": {
+      "description": {
+        "configuration": "xbox-seagate-2tb",
+        "value": "2TB希捷Xbox Series X|S存储扩展卡。插入主机背部专用扩展槽，可选择默认安装游戏、直接运行游戏，并在内置与扩展存储间移动或复制游戏。",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2021推出的2TB希捷Xbox Series X|S扩展卡；总安装容量和游戏/系统占用仍有限。；2TB容量和专用扩展用途有直接原文；“顶配”“无需反复下载卸载”“随时畅玩海量库”不构成规格或长期容量保证。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[3].metadataEvidence.description",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "name": {
+        "configuration": "xbox-seagate-2tb",
+        "value": "希捷存储扩展卡 - 2TB",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "1TB/2TB两容量分别绑定；中国名称为本站准确说明译名，海外公告不证明国行库存/价格。；2021官方正文分别列1TB既有扩展卡及2TB新品，标题与正文确定Seagate Storage Expansion Card for Xbox Series X|S身份；当前容量与中英文说明名吻合。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[3].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "nameEn": {
+        "configuration": "xbox-seagate-2tb",
+        "value": "Seagate Storage Expansion Card for Xbox Series X|S - 2TB",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "1TB/2TB两容量分别绑定；中国名称为本站准确说明译名，海外公告不证明国行库存/价格。；2021官方正文分别列1TB既有扩展卡及2TB新品，标题与正文确定Seagate Storage Expansion Card for Xbox Series X|S身份；当前容量与中英文说明名吻合。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[3].metadataEvidence.nameEn",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "price": {
+        "configuration": "xbox-seagate-2tb",
+        "value": "海外历史公告（2021-10-21）：2TB预购公布价$399.99 USD，计划11月预购、12月初发售；国行价格与当前报价另核",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2021年Xbox官方公告的2TB容量预购计划；非1TB/512GB，非当前实时价。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-seagate-2tb:price",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    },
+    "detailEvidence": {
+      "speed": {
+        "configuration": "xbox-seagate-2tb",
+        "value": "官方说明扩展卡持续性能匹配内置SSD；2.4 GB/s是Xbox Velocity Architecture原始I/O口径，非扩展卡读写实测。4.8 GB/s为Series X在假设2:1压缩比时提供给游戏的有效I/O口径，非卡片原始吞吐。",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+          "https://news.xbox.com/en-us/2020/07/14/a-closer-look-at-xbox-velocity-architecture/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "分别适用希捷1TB和2TB扩展卡的持续性能；4.8只作2020 Series X架构说明，不声称卡片独立解压能力或Xbox Series S特定数字。；已读存储卡和架构两篇官方全文相关段。2.4是raw I/O；4.8是主机硬件解压并假设2:1压缩比的有效I/O，不是1TB/2TB扩展卡的读写吞吐测试值。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[3].detailEvidence.speed",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  },
+  {
+    "id": "xbox-seagate-4tb",
+    "name": "希捷存储扩展卡 - 4TB",
+    "nameEn": "Seagate Storage Expansion Card for Xbox Series X|S - 4TB",
+    "category": "storage",
+    "categoryName": "官方存储扩展",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-seagate-4tb-expansion-card.png",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
+    "details": {
+      "capacity": "4TB 极限海量存储空间",
+      "interface": "定制 PCIe 4.0 x2 专有直插通道",
+      "speed": "2.4 GB/s 原始吞吐 / 4.8 GB/s 解压读写",
+      "architecture": "完全契合 Xbox Velocity 架构，支持次世代专属强化游戏与快速唤醒",
+      "features": "终极发烧友配置，彻底释放次世代主机游戏存储焦虑"
+    },
+    "description": "希捷专为 Xbox Series X|S 打造的 4TB 旗舰存储卡。满足骨灰级玩家对于数十款大型 3A 游戏常驻主机的使用需求。"
+  },
+  {
+    "id": "xbox-wd-black-512gb",
+    "name": "WD_BLACK C50 Xbox扩展卡 — 512GB（WDBMPH5120ANC）",
+    "nameEn": "WD_BLACK C50 Storage Expansion Card for Xbox Series X|S - 512GB",
+    "category": "storage",
+    "categoryName": "官方存储扩展",
+    "status": "pending",
+    "statusLabel": "2023原厂WD_BLACK型号；当前供货与库存待核",
+    "image": "./assets/products/xbox-wd-black-c50-512gb-expansion-card-for-xbox-series-x-s.png",
+    "price": "对应容量的中国现价及历史首发价尚待地区与日期明确的原厂记录",
+    "details": {
+      "capacity": "512GB（原厂型号WDBMPH5120ANC；标称容量，实际可用空间可能减少）",
+      "interface": "Xbox Series X|S存储扩展插槽；官方授权扩展卡",
+      "speed": "原厂称性能类似主机内置存储；本数据表未给此容量独立GB/s指标",
+      "architecture": "原厂采用Xbox Velocity Architecture；支持Quick Resume",
+      "features": "即插即用；按原厂说明无需打开主机安装。本次已读原厂数据表未给军规等级、金属材质和温控效果"
+    },
+    "description": "WD_BLACK C50 512GB（WDBMPH5120ANC），官方授权Xbox扩展卡，适用Xbox Series X|S扩展插槽，即插即用，支持Quick Resume。原厂称采用Xbox Velocity Architecture、性能类似主机内置存储；实际可用容量依环境可能减少。",
+    "fieldReviewGaps": {
+      "speed": {
+        "location": "details",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确512GB/WDBMPH5120ANC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "本容量原厂GB/s测试方法、条件与指标"
+      },
+      "features": {
+        "location": "details",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确512GB/WDBMPH5120ANC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "军规认证、外壳材料与温控测试原文"
+      },
+      "price": {
+        "location": "root",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确512GB/WDBMPH5120ANC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "同容量、地区与日期的实际原厂价目记录"
+      },
+      "status": {
+        "location": "root",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确512GB/WDBMPH5120ANC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "当前地区官方供货及库存证据"
+      }
+    },
+    "metadataEvidence": {
+      "description": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "WD_BLACK C50 512GB（WDBMPH5120ANC），官方授权Xbox扩展卡，适用Xbox Series X|S扩展插槽，即插即用，支持Quick Resume。原厂称采用Xbox Velocity Architecture、性能类似主机内置存储；实际可用容量依环境可能减少。",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50数据表明确512GB/WDBMPH5120ANC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].metadataEvidence.description",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "name": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "WD_BLACK C50 Xbox扩展卡 — 512GB（WDBMPH5120ANC）",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50数据表明确512GB/WDBMPH5120ANC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "price": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "对应容量的中国现价及历史首发价尚待地区与日期明确的原厂记录",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].metadataEvidence.price",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "status": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "pending",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].metadataEvidence.status",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "statusLabel": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "2023原厂WD_BLACK型号；当前供货与库存待核",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].metadataEvidence.statusLabel",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    },
+    "detailEvidence": {
+      "capacity": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "512GB（原厂型号WDBMPH5120ANC；标称容量，实际可用空间可能减少）",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].detailEvidence.capacity",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "interface": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "Xbox Series X|S存储扩展插槽；官方授权扩展卡",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].detailEvidence.interface",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "speed": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "原厂称性能类似主机内置存储；本数据表未给此容量独立GB/s指标",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].detailEvidence.speed",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "architecture": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "原厂采用Xbox Velocity Architecture；支持Quick Resume",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].detailEvidence.architecture",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "features": {
+        "configuration": "xbox-wd-black-512gb",
+        "value": "即插即用；按原厂说明无需打开主机安装。本次已读原厂数据表未给军规等级、金属材质和温控效果",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；512GB/WDBMPH5120ANC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[5].detailEvidence.features",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  },
+  {
+    "id": "xbox-wd-black-1tb",
+    "name": "WD_BLACK C50 Xbox扩展卡 — 1TB（WDBMPH0010BNC）",
+    "nameEn": "WD_BLACK C50 Storage Expansion Card for Xbox Series X|S - 1TB",
+    "category": "storage",
+    "categoryName": "官方存储扩展",
+    "status": "pending",
+    "statusLabel": "2023原厂WD_BLACK型号；当前供货与库存待核",
+    "image": "./assets/products/xbox-wd-black-c50-1tb-expansion-card-for-xbox-series-x-s.png",
+    "price": "对应容量的中国现价及历史首发价尚待地区与日期明确的原厂记录",
+    "details": {
+      "capacity": "1TB（原厂型号WDBMPH0010BNC；标称容量，实际可用空间可能减少）",
+      "interface": "Xbox Series X|S存储扩展插槽；官方授权扩展卡",
+      "speed": "原厂称性能类似主机内置存储；本数据表未给此容量独立GB/s指标",
+      "architecture": "原厂采用Xbox Velocity Architecture；支持Quick Resume",
+      "features": "即插即用；按原厂说明无需打开主机安装。本次已读原厂数据表未给军规等级、金属材质和温控效果"
+    },
+    "description": "WD_BLACK C50 1TB（WDBMPH0010BNC），官方授权Xbox扩展卡，适用Xbox Series X|S扩展插槽，即插即用，支持Quick Resume。原厂称采用Xbox Velocity Architecture、性能类似主机内置存储；实际可用容量依环境可能减少。",
+    "fieldReviewGaps": {
+      "speed": {
+        "location": "details",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确1TB/WDBMPH0010BNC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "本容量原厂GB/s测试方法、条件与指标"
+      },
+      "features": {
+        "location": "details",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确1TB/WDBMPH0010BNC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "军规认证、外壳材料与温控测试原文"
+      },
+      "price": {
+        "location": "root",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确1TB/WDBMPH0010BNC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "同容量、地区与日期的实际原厂价目记录"
+      },
+      "status": {
+        "location": "root",
+        "isConfirmedFact": false,
+        "scope": "2023原厂WD_BLACK C50数据表明确1TB/WDBMPH0010BNC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "needed": "当前地区官方供货及库存证据"
+      }
+    },
+    "metadataEvidence": {
+      "description": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "WD_BLACK C50 1TB（WDBMPH0010BNC），官方授权Xbox扩展卡，适用Xbox Series X|S扩展插槽，即插即用，支持Quick Resume。原厂称采用Xbox Velocity Architecture、性能类似主机内置存储；实际可用容量依环境可能减少。",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50数据表明确1TB/WDBMPH0010BNC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].metadataEvidence.description",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "name": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "WD_BLACK C50 Xbox扩展卡 — 1TB（WDBMPH0010BNC）",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50数据表明确1TB/WDBMPH0010BNC及共同功能；当前官方产品族页面容量SKU表交叉核对。保留历史WD_BLACK名称，不将2TB选择器、当前库存、价差或其他品牌重命名自动套入。；未重试已失败en-gb/2TB URL；从官方搜索发现独立无locale产品族页，再按其真实Data Sheet链接读取2页原厂PDF。P1容量/型号直接对应512GB和1TB；授权、插槽、即插即用、Quick Resume明确。删除无条件第二种选择、竞争价格等无证宣传，按准确容量SKU改名和描述。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "price": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "对应容量的中国现价及历史首发价尚待地区与日期明确的原厂记录",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].metadataEvidence.price",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "status": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "pending",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].metadataEvidence.status",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "statusLabel": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "2023原厂WD_BLACK型号；当前供货与库存待核",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].metadataEvidence.statusLabel",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    },
+    "detailEvidence": {
+      "capacity": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "1TB（原厂型号WDBMPH0010BNC；标称容量，实际可用空间可能减少）",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].detailEvidence.capacity",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "interface": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "Xbox Series X|S存储扩展插槽；官方授权扩展卡",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].detailEvidence.interface",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "speed": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "原厂称性能类似主机内置存储；本数据表未给此容量独立GB/s指标",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].detailEvidence.speed",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "architecture": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "原厂采用Xbox Velocity Architecture；支持Quick Resume",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].detailEvidence.architecture",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "features": {
+        "configuration": "xbox-wd-black-1tb",
+        "value": "即插即用；按原厂说明无需打开主机安装。本次已读原厂数据表未给军规等级、金属材质和温控效果",
+        "sourceUrl": "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf",
+        "sourceUrls": [
+          "https://www.sandisk.com/products/ssd/external-ssd/wd-black-c50-expansion-card-for-xbox-ssd",
+          "https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fwd%2Fproduct%2Fexternal-storage%2Fwd-black-c50-expansion-card-for-xbox-ssd%2Fdata-sheet-wd-black-c50-expansion-card-for-xbox-ssd.pdf"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2023原厂WD_BLACK C50两页数据表；1TB/WDBMPH0010BNC独立容量分支。供货/库存/现价、军规、材质、温控与独立GB/s指标未由该数据表认证。",
+        "partialDisposition": true,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[6].detailEvidence.features",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  },
+  {
+    "id": "xbox-complete-component-pack",
+    "name": "Xbox Elite 无线控制器 2代配件包",
+    "nameEn": "Xbox Elite Wireless Controller Series 2 Complete Component Pack",
+    "category": "accessories",
+    "categoryName": "官方配件与扩展",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-complete-component-pack.png",
+    "price": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
+    "details": {
+      "features": "标准方向键1个；摇杆4个（经典2／高1／宽圆顶1）；拨片4个（中2／迷你2）；另含携带盒、USB-C充电线及充电底座",
+      "accessories": "附带专用磁吸充电底座、便携硬壳收纳包、摇杆阻尼调节扳手与 2.7 米编织 USB-C 编织线",
+      "compatibility": "专为 Xbox 精英无线控制器 2 代 青春版（Core）升级为全配版量身打造"
+    },
+    "description": "微软官方推出的精英 2 代全套配件升级包。让拥有 Core 青春版手柄的玩家能够一站式配齐所有金属背部拨片、充电底座与收纳盒。",
+    "fieldEvidence": {
+      "details.features": {
+        "configuration": "xbox-complete-component-pack",
+        "value": "标准方向键1个；摇杆4个（经典2／高1／宽圆顶1）；拨片4个（中2／迷你2）；另含携带盒、USB-C充电线及充电底座",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+        "region": "CN",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "中国大陆：国行Elite2配件包",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[7].fieldEvidence.details.features",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    },
+    "metadataEvidence": {
+      "name": {
+        "configuration": "xbox-complete-component-pack",
+        "value": "Xbox Elite 无线控制器 2代配件包",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+          "https://www.xbox.com/accessories/controllers/xbox-elite-wireless-controller-series-2-core"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "配件包为Elite Series 2可替换部件及充电收纳配件；配件包和Core手柄包装分别核验，不把页面通用控制器规格当包内物料证明。；中国官网精确商品名为微软XBOX Elite无线控制器2代配件包；“完整”对应海外Complete Component Pack，本次采用国行官方列名并保留配件包身份。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[7].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "nameEn": {
+        "configuration": "xbox-complete-component-pack",
+        "value": "Xbox Elite Wireless Controller Series 2 Complete Component Pack",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+          "https://www.xbox.com/accessories/controllers/xbox-elite-wireless-controller-series-2-core"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "英文说明名对应Complete Component Pack；中国官方列名是配件包，非控制器本体套装。；已读中国商品身份/组件与官方海外Core页的Complete Component Pack，现英文说明名与对应产品及代次一致，不拿其作为包含控制器的完整套装。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[7].metadataEvidence.nameEn",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "price": {
+        "configuration": "xbox-complete-component-pack",
+        "value": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Elite Series 2完整配件包；当次中国独立产品页总计419元，券后价空白，不作为手柄、单独收纳盒或拨片套装价格。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-complete-component-pack:price",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  },
+  {
+    "id": "xbox-elite-carrying-case",
+    "name": "Xbox 精英手柄 2 代收纳包与充电底座",
+    "nameEn": "Xbox Elite Series 2 Carrying Case and Charging Pack",
+    "category": "accessories",
+    "categoryName": "官方配件与扩展",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-elite-wireless-controller-series-2-carrying-case-and-charging-pack.png",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
+    "details": {
+      "features": "硬壳抗压便携收纳包，包内内置专属磁吸充电底座，支持收纳包闭合状态下外接 USB-C 进行透壳充电",
+      "compatibility": "适用于所有 Xbox 精英无线控制器 2 代及 2 代青春版手柄"
+    },
+    "description": "便携收纳保护包；适配手柄与充电座按具体产品及包装规格核对，防尘与防跌落等级待适用测试原文核实。"
+  },
+  {
+    "id": "xbox-elite-paddle-pack",
+    "name": "Xbox 精英手柄 2 代背部拨片包",
+    "nameEn": "Xbox Elite Series 2 Paddle Pack",
+    "category": "accessories",
+    "categoryName": "官方配件与扩展",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-elite-wireless-controller-series-2-paddle-pack.png",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
+    "details": {
+      "features": "4 枚精工不锈钢背部拨片（2 枚中型短拨片、2 枚迷你拨片），磁吸式免工具秒级卡入安装",
+      "compatibility": "兼容 Xbox 精英手柄 2 代及 Core 青春版系列"
+    },
+    "description": "官方背部金属拨片替换装。为玩家在紧张竞技中提供四指无缝映射输入，大拇指无需离开右摇杆即可完成跳跃、换弹与瞄准。"
+  },
+  {
+    "id": "xbox-elite-thumbstick-pack",
+    "name": "Xbox 精英手柄 2 代摇杆与十字键包",
+    "nameEn": "Xbox Elite Series 2 Thumbsticks and D-Pad Pack",
+    "category": "accessories",
+    "categoryName": "官方配件与扩展",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-elite-wireless-controller-series-2-thumbsticks-and-d-pad-pack.png",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
+    "details": {
+      "features": "包含 4 枚高品质可替换摇杆帽（经典凹面、高凸面、宽大圆顶）+ 1 枚多面刻面十字键 + 1 枚调校扳手",
+      "compatibility": "兼容 Xbox 精英手柄 2 代系列"
+    },
+    "description": "针对不同游戏类型（格斗、竞速、FPS 狙击）定制的摇杆与方向键模块，磁吸吸附稳固耐用。"
+  },
+  {
+    "id": "xbox-rechargeable-battery",
+    "name": "Xbox 同步充电套组 + USB-C 线缆",
+    "nameEn": "Xbox Rechargeable Battery + USB-C Cable",
+    "category": "power",
+    "categoryName": "官方供电方案",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-rechargeable-battery.png",
+    "price": "中国商城2026-10-11读取快照：¥199人民币；不是首发价，当前报价与库存另核",
+    "details": {
+      "batteryType": "官方定制 1400mAh 锂离子可充电电池包",
+      "chargingTime": "约 4 小时即可完全充满",
+      "batteryLife": "最长30小时；续航随设置、使用和配件显著变化（可充电电池包，不是AA电池上限）",
+      "cable": "随附 2.7 米 (9 英尺) 编织手感 USB-C 充电连接线",
+      "features": "支持边玩边充（Play & Charge），待机状态亦可自动涓流补电，彻底告别一次性干电池",
+      "compatibility": "兼容配备 USB-C 接口的所有 Xbox Series X|S 官方无线手柄"
+    },
+    "description": "微软专为 Xbox 无线控制器打造的官方锂电池供电方案。附带 2.7 米长线，边充边玩无拘无束。",
+    "fieldEvidence": {
+      "details.batteryLife": {
+        "configuration": "xbox-rechargeable-battery",
+        "value": "最长30小时；续航随设置、使用和配件显著变化（可充电电池包，不是AA电池上限）",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-play-and-charge-kit",
+        "region": "CN",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "中国大陆：国行同步充电套组 | 海外/历史官方参考：2020",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[11].fieldEvidence.details.batteryLife",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    },
+    "metadataEvidence": {
+      "name": {
+        "configuration": "xbox-rechargeable-battery",
+        "value": "Xbox 同步充电套组 + USB-C 线缆",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-play-and-charge-kit",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-play-and-charge-kit"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "中国2020 USB-C款Xbox无线控制器用电池套组；不推广至Micro-USB旧款或Elite内置电池。；中国商品名明确为同步充电套组+USB-C线缆；包装实证专用锂电池。正文不证明线缆的数据传输能力，建议用官方商品名避免“数据线”功能断言。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[11].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "price": {
+        "configuration": "xbox-rechargeable-battery",
+        "value": "中国商城2026-10-11读取快照：¥199人民币；不是首发价，当前报价与库存另核",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-play-and-charge-kit",
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2020款USB-C控制器适用的同步充电套组+USB-C线缆；当次中国页总计199元，不适用于旧Micro-USB套组。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-rechargeable-battery:price",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  },
+  {
+    "id": "xbox-wireless-adapter",
+    "name": "Xbox 无线适配器（2015原版 / 2017 Windows 10小型版）",
+    "nameEn": "Xbox Wireless Adapter for Windows（2015） / Xbox Wireless Adapter for Windows 10（2017小型版）",
+    "category": "connectivity",
+    "categoryName": "官方连接外设",
+    "status": "active",
+    "statusLabel": "官方在售",
+    "image": "./assets/products/xbox-wireless-adapter.png",
+    "price": "美国历史公告（2015-10-20）：原版单独适配器$24.99 USD MSRP；国行价格、2017小型版及当前报价另核",
+    "details": {
+      "port": "标准 USB 2.0 / USB 3.0 接口",
+      "connectivity": "Xbox 专有双频无线射频通信技术（非普通蓝牙协议）",
+      "latency": "接近零延迟的端到端超低传输响应，游戏级信号抗干扰",
+      "capacity": "单适配器最多支持同时连接 8 个 Xbox 手柄 + 4 个聊天耳机或 2 个立体声耳机",
+      "audioSupport": "完整支持手柄 3.5mm 耳机孔高品质立体声与麦克风语音无线传输",
+      "dimensions": "2017小型版发布文同页先称前款体积的一半，后称比初代小66%；两个说法并列保留。未核到该小型版精确长宽高，不把缩小比例当尺寸"
+    },
+    "description": "适用于Windows的Xbox无线适配器。2015原版官方说明：在Windows 10电脑/平板USB 2.0或3.0端口使用，最多连接8个控制器，支持最多4个聊天耳机或2个立体声耳机；2017另有小型Windows 10版。具体版本兼容及延迟另核。",
+    "detailEvidence": {
+      "dimensions": {
+        "configuration": "xbox-wireless-adapter",
+        "value": "2017小型版发布文同页先称前款体积的一半，后称比初代小66%；两个说法并列保留。未核到该小型版精确长宽高，不把缩小比例当尺寸",
+        "sourceUrl": "https://news.xbox.com/en-us/2017/08/01/xbox-wireless-controllers-new-designs/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2017/08/01/xbox-wireless-controllers-new-designs/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2017小型版发布文同页先称前款体积的一半，后称比初代小66%；两个说法并列保留。未核到该小型版精确长宽高，不把缩小比例当尺寸；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[12].detailEvidence.dimensions",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    },
+    "metadataEvidence": {
+      "description": {
+        "configuration": "xbox-wireless-adapter",
+        "value": "适用于Windows的Xbox无线适配器。2015原版官方说明：在Windows 10电脑/平板USB 2.0或3.0端口使用，最多连接8个控制器，支持最多4个聊天耳机或2个立体声耳机；2017另有小型Windows 10版。具体版本兼容及延迟另核。",
+        "sourceUrl": "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+          "https://news.xbox.com/en-us/2017/08/01/xbox-wireless-controllers-new-designs/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2015 Xbox Wireless Adapter for Windows原版与2017 Xbox Wireless Adapter for Windows 10小型版分别记；2015容量/音频条件不自动当2017或Windows11认证。；2015原文证明Windows10 USB2/3接口、最多8控制器、4聊天或2立体声耳机和游戏内聊天/高质量音频；并未给出延迟数值或“与主机完全一致”测试。2017小型版应分版本。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[12].metadataEvidence.description",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "name": {
+        "configuration": "xbox-wireless-adapter",
+        "value": "Xbox 无线适配器（2015原版 / 2017 Windows 10小型版）",
+        "sourceUrl": "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+          "https://news.xbox.com/en-us/2017/08/01/xbox-wireless-controllers-new-designs/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "2015原版/2017小型版为两个硬件版本；本轮现有正文只明确Windows10，不宣布Windows11不支持。；2015官方正式列名为Windows，2017列名明确Windows10。当前括号Windows10/11将未逐版证明的Windows11写进商品身份，建议采用名称及版本限定。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[12].metadataEvidence.name",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "nameEn": {
+        "configuration": "xbox-wireless-adapter",
+        "value": "Xbox Wireless Adapter for Windows（2015） / Xbox Wireless Adapter for Windows 10（2017小型版）",
+        "sourceUrl": "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+          "https://news.xbox.com/en-us/2017/08/01/xbox-wireless-controllers-new-designs/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-11",
+        "configurationScope": "官方海外历史名称；Windows11未读到逐型号正文，未知不等于不兼容。；当前英文名称把Windows10/11都并入正式商品列名；已读2015及2017原文名称不同，应逐版本保留并将Windows11兼容独立待核。",
+        "partialDisposition": false,
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xboxAccessories[12].metadataEvidence.nameEn",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      },
+      "price": {
+        "configuration": "xbox-wireless-adapter",
+        "value": "美国历史公告（2015-10-20）：原版单独适配器$24.99 USD MSRP；国行价格、2017小型版及当前报价另核",
+        "sourceUrl": "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2015原版适配器单品；非含控制器79.95美元套装，非2017小型版，非当前报价。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-wireless-adapter:price",
+        "sourceSha256": "b1804ac25d36f47c4b223675071787b526de843a548bc76374ae1eb009b852fb"
+      }
+    }
+  }
+]
