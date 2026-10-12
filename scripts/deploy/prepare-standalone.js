@@ -8,18 +8,14 @@ const TARGET = 'surface-specs-hub-standalone.html';
 const INPUTS = ['index.html',
   ...['fluent-tokens', 'specs-layout', 'spec-table', 'tools'].map(n => `css/${n}.css`),
   ...['xbox-lineup', 'surface-data', 'verification-status', 'image-delivery', 'catalog', 'taxonomy', 'comparison-engine', 'tools-engine', 'app'].map(n => `js/${n}.js`),
-  'docs/evidence/field-audit-1131-input-20261009.json',
-  'docs/evidence/field-audit-1131-decisions-20261009.json',
-  'docs/evidence/full-model-source-review-20261009.json',
-  'docs/full-library-verification-registry.json',
-  'docs/evidence/image-source-correspondence-20261009.json'];
+  'docs/sources/verified-fields.json', 'docs/sources/image-mappings.json','tests/fixtures/runtime-baseline.json','scripts/build_standalone.py'];
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 function provenance(html) {
   const match = html.match(/<script\b[^>]*\bid="build-provenance"[^>]*>([\s\S]*?)<\/script>/i);
   try { return match ? JSON.parse(match[1]) : null; } catch { return null; }
 }
 function matches(meta, expected) {
-  return !!meta && /^[0-9a-f]{40}$/.test(meta.gitSha || '') && meta.fullFactCertification === false &&
+  return !!meta && meta.dirty === false && /^[0-9a-f]{40}$/.test(meta.gitSha || '') && meta.fullFactCertification === false &&
     Object.keys(expected).every(file => meta.files?.[file] === expected[file]);
 }
 function prepareStandalone(out, root = ROOT) {

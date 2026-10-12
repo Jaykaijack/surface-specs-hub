@@ -159,14 +159,14 @@ Strict zero-clutter discipline applies across the repository:
    - `.scratch/`: Local issue tracking, task tickets, feature specs, and wayfinding maps.
 
 3. **Core Delivery Standards**:
-   - **Deliverable**: `index.html` is a 100% self-contained offline Single Page Application (SPA), zero external network or server runtime required.
+   - **Deliverable**: `index.html` is the static web entry. The generated standalone HTML embeds runtime assets for offline use; file:// requires separate browser verification.
    - **Visual Identity**: Fluent 2 Design System, Segoe UI typography, high contrast >4.5:1, Mica texture, true dark/light mode toggle.
    - **Layout**: High information-density 3-column layout (Left category tree, Center main work area, Bottom floating comparison dock).
    - **Comparison Engine**: Dual-axis sticky table (1st column sticky left, header card sticky top), difference highlighting, "only show diffs" instant toggle, column swap (`◀ ▶`).
    - **Product Lineup**:
       - Flagship 2-in-1: **Surface Pro 13 英寸（第 12 代）** 与 **Surface Pro 12 英寸（第 1 代）** 官方商用双产品线并收录。
-      - Flagship Laptop: **Surface Laptop（第 8 代）** (13.8" & 15", Snapdragon X2, 120Hz touch, no pen support, haptic trackpad, 20-22h battery).
+      - Flagship Laptop: **Surface Laptop（第 8 代）**: keep each consumer/business, size and CPU/SKU branch separate; use currently bound source conditions rather than a family-wide spec assumption.
       - 8 series covered: `pro`, `laptop`, `sls`, `book`, `go`, `laptopgo`, `studio`, `duo`.
    - **Data Governance (Zero-Hallucination Policy)**:
      - 4-state spec values: `VALID`, `NOT_DISCLOSED` (官方未披露), `NOT_APPLICABLE` (不适用), `NULL` (—).
-     - Never fabricate missing specifications. All parameters must trace to official Microsoft documentation.
+     - Never fabricate missing specifications. Prefer Microsoft China documentation. Preserve overseas scope and identify third-party engineering sources explicitly.

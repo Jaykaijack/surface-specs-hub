@@ -40,7 +40,7 @@ function runG2StrengtheningTests(helpers) {
   assert(appJs.includes('【微软硬件生态拓展收录】'), 'G2-01: app.js 必须包含【微软硬件生态拓展收录】提示文字');
   assert(appJs.includes('class="xbox-scope-callout" role="note"'), 'G2-01: app.js 中收录横幅必须声明 role="note" 语义');
   assert(appJs.includes('本专区作为 Microsoft 硬件生态的补充资料，收录历代 Xbox 主机规格参数'), 'G2-01: Xbox 主机专区必须包含生态补充说明');
-  assert(appJs.includes('本专区作为 Microsoft 硬件生态的补充资料，全量收录历代 Xbox 官方无线控制器'), 'G2-01: Xbox 手柄专区必须包含生态补充说明');
+  assert(appJs.includes('按已收录的微软 Xbox 官方产品资料') && appJs.includes('硬件修订版和定制选项分别核对') && appJs.includes('当前库存与供货另核'), 'G2-01: Xbox 手柄专区必须说明收录范围、修订版与供货条件');
   assert(appJs.includes('本专区作为 Microsoft 硬件生态的补充资料，收录 Xbox 官方存储扩展卡、无线双模耳机及核心周边配件'), 'G2-01: Xbox 配件专区必须包含生态补充说明');
 
   // =========================================================================

@@ -11,8 +11,8 @@ function runP0SpecBatteryRegressionTests(helpers) {
   const snap = SURFACE_DATA.devices.find((d) => d.id === 'pro-12-13-snap');
   assert(Boolean(snap), 'P0-batt: 收录 pro-12-13-snap');
   const wh = (snap && snap.specs && snap.specs.batteryCapacityWh) || '';
-  // 只核验额定值前缀（说明文可提及全球页冲突口径）
-  const snapRated = String(wh).split('（')[0];
+  // 中国额定值与并列的美国来源分别核验，不能因保留矛盾就否定中国原文。
+  const snapRated = String(wh).split('；美国')[0].split('（')[0];
   assert(
     /LCD[^0-9]*53/.test(snapRated) && /OLED[^0-9]*47/.test(snapRated),
     `P0-batt: pro-12-13-snap 额定为 LCD53/OLED47（中国商城口径）(Actual: ${snapRated})`
@@ -20,6 +20,10 @@ function runP0SpecBatteryRegressionTests(helpers) {
   assert(
     !(/LCD[^0-9]*47/.test(snapRated) && /OLED[^0-9]*53/.test(snapRated)),
     `P0-batt: pro-12-13-snap 额定不得写成 LCD47/OLED53 (Actual: ${snapRated})`
+  );
+  if (String(wh).includes('；美国')) assert(
+    /美国.*LCD[^0-9]*47.*OLED[^0-9]*53/.test(wh) && /未裁定.*不作容量计算/.test(wh),
+    'P0-batt: 美国相反配对独立保留，未裁定容量且不参与计算'
   );
 
   const intel = SURFACE_DATA.devices.find((d) => d.id === 'pro-12-13-intel');

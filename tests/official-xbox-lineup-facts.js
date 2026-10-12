@@ -65,7 +65,10 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
           "不是当前国行在售"
         ],
         "videoFeatures": [
-          "4K Ultra HD"
+          "HDR"
+        ],
+        "opticalDrive": [
+          "4K UHD"
         ],
         "usbPorts": [
           "USB 3.0"
@@ -146,8 +149,9 @@ const OFFICIAL_XBOX_LINEUP_FACTS = {
     "xbox-series-x-digital": {
       "specContains": {
         "salesRegion": [
-          "Digital Edition",
-          "749.99"
+          "中国官方商城",
+          "1TB 白色数字版",
+          "当前库存与价格另核"
         ],
         "weightGrams": [
           "7.9"

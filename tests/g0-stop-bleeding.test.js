@@ -43,9 +43,10 @@ function runG0StopBleedingTests(helpers) {
     assert(!indexHtmlContent.includes(kw), `G0-01: index.html 严禁包含内部编辑批注「${kw}」`);
   });
 
-  // 不再隐藏图片的未核验状态
+  // 内部保留未核验状态，前台使用中性展示，不冒称认证
   const pendingShot = { identity: 'pending', src: './assets/test.png' };
-  assert(Catalog.portraitLabel(pendingShot).includes('待核验'), 'G0-01: 未核验图片必须明确标注');
+  assertEqual(Catalog.portraitLabel(pendingShot), '', 'G0-01: 前台不堆审核标签');
+  assertEqual(pendingShot.identity, 'pending', 'G0-01: 清理标签不能改变内部审核状态');
 
   // ----------------------------------------------------
   // G0-02: 全站 alt 与标题逐一对齐 (P0-2 & T-3 & C-6)

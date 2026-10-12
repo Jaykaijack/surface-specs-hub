@@ -54,7 +54,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
   ],
   "devices": {
     "pro-12-13": {
-      "startingPriceContains": "12,888",
       "cpuMustInclude": [
         "X2 Plus",
         "X2 Elite"
@@ -79,7 +78,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "officialDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
-      "learnDocUrl": "https://support.microsoft.com/en-us/surface/models/surface-pro-12th-edition-intel-features",
+      "learnDocUrl": "https://www.microsoftstore.com.cn/configure/surface-pro-13-inch-12th-edition",
       "specContains": {
         "cpuCores": [
           "10",
@@ -90,10 +89,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "12,888",
+      "startingPriceState": "NULL"
     },
     "pro-12-inch": {
-      "startingPriceContains": "6,788",
       "cpuMustInclude": [
         "X Plus"
       ],
@@ -115,10 +115,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "surfaceConnect": "NOT_APPLICABLE",
         "thunderboltSupport": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "6,788",
+      "startingPriceState": "NULL"
     },
     "pro-12-13-intel": {
-      "startingPriceContains": "16,888",
       "cpuMustInclude": [
         "Ultra 5",
         "335"
@@ -193,10 +194,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "16,888",
+      "startingPriceState": "NULL"
     },
     "pro-12-13-snap": {
-      "startingPriceContains": "15,488",
       "cpuMustInclude": [
         "X2"
       ],
@@ -271,10 +273,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "15,488",
+      "startingPriceState": "NULL"
     },
     "laptop-8-138": {
-      "startingPriceContains": "11,488",
       "cpuMustInclude": [
         "X2 Plus",
         "X2 Elite"
@@ -317,10 +320,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "11,488",
+      "startingPriceState": "NULL"
     },
     "laptop-8-150": {
-      "startingPriceContains": "12,888",
       "cpuMustInclude": [
         "X2 Plus",
         "X2 Elite"
@@ -360,10 +364,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "specState": {
         "kickstandType": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "12,888",
+      "startingPriceState": "NULL"
     },
     "laptop-13-inch": {
-      "startingPriceContains": "7,788",
       "cpuMustInclude": [
         "X Plus"
       ],
@@ -384,10 +389,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "surfaceConnect": "NOT_APPLICABLE",
         "thunderboltSupport": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "7,788",
+      "startingPriceState": "NULL"
     },
     "laptop-8-138-intel": {
-      "startingPriceContains": "16,888",
       "cpuMustInclude": [
         "Ultra 5",
         "335",
@@ -448,10 +454,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "16,888",
+      "startingPriceState": "NULL"
     },
     "laptop-8-138-snap": {
-      "startingPriceContains": "14,888",
       "cpuMustInclude": [
         "X2 Plus",
         "X2 Elite"
@@ -489,7 +496,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "audioTech": "Atmos",
         "surfaceConnect": "Connect",
         "ssdRemovable": "可拆卸",
-        "chassisMaterial": "阳极氧化",
+        "chassisMaterial": "再生铝合金",
         "touchAndPenProtocol": "10",
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
@@ -502,7 +509,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "14,888",
+      "startingPriceState": "NULL"
     },
     "laptop-8-150-intel": {
       "startingPriceState": "NOT_DISCLOSED",
@@ -618,7 +627,7 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "audioTech": "Atmos",
         "surfaceConnect": "Connect",
         "ssdRemovable": "可拆卸",
-        "chassisMaterial": "阳极氧化",
+        "chassisMaterial": "再生铝合金",
         "touchAndPenProtocol": "10",
         "gpuModel": "Adreno",
         "npuModel": "Hexagon",
@@ -638,7 +647,6 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
     "pro-12-inch-biz": {
-      "startingPriceContains": "9,788",
       "cpuMustInclude": [
         "X Plus"
       ],
@@ -685,10 +693,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "thunderboltSupport": "NOT_APPLICABLE",
         "ssdRemovable": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "9,788",
+      "startingPriceState": "NULL"
     },
     "laptop-13-inch-biz": {
-      "startingPriceContains": "10,788",
       "cpuMustInclude": [
         "X Plus"
       ],
@@ -737,6 +746,10 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "usbPorts": [
           "USB-C",
           "USB3.2"
+        ],
+        "ssdRemovable": [
+          "1TB",
+          "第 4 代"
         ]
       },
       "specState": {
@@ -744,12 +757,13 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "expandableStorage": "NOT_APPLICABLE",
         "surfaceConnect": "NOT_APPLICABLE",
         "thunderboltSupport": "NOT_APPLICABLE",
-        "ssdRemovable": "NULL"
+        "ssdRemovable": "VALID"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "10,788",
+      "startingPriceState": "NULL"
     },
     "laptop-13-inch-intel-biz": {
-      "startingPriceContains": "10,188",
       "cpuMustInclude": [
         "Ultra 5",
         "325"
@@ -799,10 +813,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "thunderboltSupport": "NOT_APPLICABLE",
         "ramSpec": "NULL"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "10,188",
+      "startingPriceState": "NULL"
     },
     "pro-11-biz-snap": {
-      "startingPriceContains": "11,239",
       "cpuMustInclude": [
         "X Plus",
         "X Elite"
@@ -857,10 +872,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "11,239",
+      "startingPriceState": "NULL"
     },
     "pro-11-biz-intel": {
-      "startingPriceContains": "14,488",
       "cpuMustInclude": [
         "236V",
         "268V"
@@ -911,10 +927,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "14,488",
+      "startingPriceState": "NULL"
     },
     "laptop-7-biz-snap": {
-      "startingPriceContains": "11,329",
       "cpuMustInclude": [
         "X Plus",
         "X Elite"
@@ -971,10 +988,11 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "kickstandType": "NOT_APPLICABLE",
         "fastCharging": "NULL"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "11,329",
+      "startingPriceState": "NULL"
     },
     "laptop-7-biz-intel": {
-      "startingPriceContains": "14,488",
       "cpuMustInclude": [
         "236V",
         "268V"
@@ -1031,7 +1049,9 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
       "specState": {
         "kickstandType": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "archivedUncertifiedPriceClaim": "14,488",
+      "startingPriceState": "NULL"
     },
     "hub-3": {
       "startingPriceState": "NOT_DISCLOSED",
@@ -1077,38 +1097,62 @@ const OFFICIAL_CURRENT_LINEUP_FACTS = {
         "startingPriceCny": "NULL",
         "surfaceConnect": "NULL"
       },
-      "cpuMustInclude": [
-        "X2 Plus",
-        "6"
-      ],
-      "npuTopsContains": "80",
-      "batteryLifeVideoContains": "15.5",
-      "batteryLifeOfficeContains": "13",
-      "batteryCapacityContains": "38",
-      "brightnessContains": "500",
-      "chargingPowerContains": "60",
-      "dimensionsContains": "274",
-      "weightContains": "686",
-      "resolutionContains": "2196",
-      "refreshRateContains": "90",
-      "screenSizeContains": "12",
-      "ramMustInclude": [
-        "8",
-        "16",
-        "24"
-      ],
-      "storageMustInclude": "UFS",
-      "usbMustInclude": "USB 3.2",
-      "wifiMustInclude": "Wi-Fi 7",
-      "osMustInclude": "家庭",
-      "rearCameraContains": "1000",
-      "frontCameraContains": "1080",
       "colorNames": [
         "亮铂金",
         "罗兰紫",
         "典雅黑"
       ],
-      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro"
+      "officialDocUrl": "https://www.microsoftstore.com.cn/surface/surface-pro",
+      "sourceScopeGap": "当前概览和适用系列FAQ已补证18字段，其余需适用原文",
+      "assertUnknownFields": [
+        "fastCharging",
+        "windowsHello",
+        "chassisMaterial",
+        "gpuModel",
+        "copilotPlus",
+        "panelTech",
+        "resolution",
+        "brightness",
+        "colorGamut",
+        "displayProtection",
+        "touchAndPenProtocol",
+        "audioTech",
+        "rearCamera",
+        "frontCamera",
+        "studioEffects",
+        "speakers",
+        "mics",
+        "simSlot",
+        "bluetooth",
+        "cellular",
+        "batteryWh",
+        "batteryLifeWeb",
+        "keyboardCompatibility",
+        "penChargingType",
+        "tpmChip",
+        "securedCorePc",
+        "biometrics",
+        "dimensionsMm",
+        "weightGrams",
+        "warranty"
+      ],
+      "cpuMustInclude": [
+        "X2 Plus",
+        "6"
+      ],
+      "npuTopsContains": "80",
+      "ramMustInclude": [
+        "16GB",
+        "24GB"
+      ],
+      "ramMustNotInclude": "8GB",
+      "storageMustInclude": "512GB",
+      "storageMustNotInclude": "UFS",
+      "screenSizeContains": "12",
+      "refreshRateContains": "90",
+      "batteryLifeVideoContains": "15.5",
+      "wifiMustInclude": "Wi-Fi 7",
+      "usbMustInclude": "USB 3.2"
     },
     "laptop-13-inch-2": {
       "specState": {

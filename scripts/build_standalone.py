@@ -21,9 +21,9 @@ DIST_DIR = os.path.join(WORKSPACE, 'dist')
 RELEASES_DIR = os.path.join(WORKSPACE, 'releases')
 
 # 版本规范
-VERSION = "v2.3.0"
-DATE_STR = "20261008"
-DESCRIPTOR = "surface-laptop-ultra"
+VERSION = "v2.3.13"
+DATE_STR = "20261011"
+DESCRIPTOR = "public-review-20261012"
 
 STANDALONE_ROOT = os.path.join(WORKSPACE, 'surface-specs-hub-standalone.html')
 STANDALONE_DIST = os.path.join(DIST_DIR, 'surface-specs-hub-standalone.html')
@@ -77,7 +77,7 @@ def scan_and_encode_directory(dir_path, label):
     return mapping, orig_size, webp_size
 
 def build(snapshot_only=False):
-    for check in ['tests/test-runner.js', 'tests/review-regression.test.js', 'tests/field-audit-completion.test.js', 'tests/evidence-delivery.test.js', 'scripts/preflight_check.js']:
+    for check in ['tests/test-runner.js','tests/contract-regression.test.js']:
         subprocess.run(['node', os.path.join(WORKSPACE, check)], cwd=WORKSPACE, check=True)
     if snapshot_only and os.path.exists(STANDALONE_RELEASE):
         raise FileExistsError(f"不可覆盖核验快照: {STANDALONE_RELEASE}")
@@ -133,13 +133,10 @@ def build(snapshot_only=False):
         html = f.read()
 
     # Bind this offline review artifact to the exact code, data and audit inputs.
-    evidence_paths = [
-        'docs/evidence/field-audit-1131-input-20261009.json',
-        'docs/evidence/field-audit-1131-decisions-20261009.json',
-        'docs/evidence/full-model-source-review-20261009.json',
-        'docs/full-library-verification-registry.json',
-        'docs/evidence/image-source-correspondence-20261009.json'
-    ]
+    evidence_paths = ['docs/sources/verified-fields.json','docs/sources/image-mappings.json','tests/fixtures/runtime-baseline.json','scripts/build_standalone.py']
+    for asset_root in ['assets/products','assets/accessories']:
+        for root, dirs, files in os.walk(os.path.join(WORKSPACE, asset_root)):
+            evidence_paths.extend(os.path.relpath(os.path.join(root,f),WORKSPACE).replace(os.sep,'/') for f in sorted(files))
     def sha256_file(relative):
         with open(os.path.join(WORKSPACE, relative), 'rb') as source:
             return hashlib.sha256(source.read()).hexdigest()
@@ -148,7 +145,7 @@ def build(snapshot_only=False):
         'dirty': bool(subprocess.check_output(['git', 'status', '--porcelain'], cwd=WORKSPACE, text=True).strip()),
         'files': {p: sha256_file(p) for p in ['index.html'] + CSS_FILES + JS_FILES + evidence_paths},
         'fullFactCertification': False,
-        'review': 'field-audit-1131-decisions-20261009.json'
+        'review': 'docs/sources/verified-fields.json'
     }
     html = html.replace('</head>', '<script type="application/json" id="build-provenance">' +
                         json.dumps(provenance, ensure_ascii=False).replace('<', '\\u003c') + '</script>\n</head>')

@@ -128,6 +128,13 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
           "1TB",
           "UFS",
           "第4代SSD"
+        ],
+        "ssdRemovable": [
+          "可拆卸式",
+          "256GB",
+          "512GB",
+          "1TB",
+          "存储保留服务"
         ]
       },
       "dimensionsContains": "285.65",
@@ -145,7 +152,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "osMustNotInclude": "家庭版",
       "learnDocUrl": "https://www.microsoftstore.com.cn/surface/surface-laptop-7th-edition-13-inch-2nd-edition-for-business",
       "specState": {
-        "ssdRemovable": "NULL"
+        "ssdRemovable": "VALID"
       },
       "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
@@ -162,7 +169,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "keyboardWeightState": "NOT_DISCLOSED",
       "warrantyState": "NOT_DISCLOSED",
       "rearCameraContains": "1000",
-      "speakersState": "NOT_DISCLOSED",
+      "speakersState": "VALID",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-pro-snapdragon-tech-specs",
       "specContains": {
         "chassisMaterial": "再生铝合金"
@@ -171,7 +178,17 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "headphoneJack": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "speakersContains": [
+        "2W",
+        "Dolby Atmos"
+      ],
+      "sourceScopeAssertions": {
+        "speakers": {
+          "region": "GLOBAL",
+          "configurationScopeContains": "consumer"
+        }
+      }
     },
     "laptop-7-138": {
       "batteryLifeVideoContains": "20",
@@ -182,7 +199,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "warrantyState": "NOT_DISCLOSED",
-      "speakersState": "NOT_DISCLOSED",
+      "speakersState": "VALID",
       "cellularState": "NOT_APPLICABLE",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
       "specContains": {
@@ -193,7 +210,17 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "kickstandType": "NOT_APPLICABLE",
         "expandableStorage": "NOT_APPLICABLE"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "speakersContains": [
+        "Omnisonic",
+        "Dolby Atmos"
+      ],
+      "sourceScopeAssertions": {
+        "speakers": {
+          "region": "GLOBAL",
+          "configurationScopeContains": "consumer"
+        }
+      }
     },
     "laptop-7-150": {
       "batteryLifeVideoContains": "22",
@@ -203,7 +230,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "repairabilityState": "NOT_DISCLOSED",
       "keyboardWeightState": "NOT_DISCLOSED",
       "warrantyState": "NULL",
-      "speakersState": "NULL",
+      "speakersState": "VALID",
       "cellularState": "NOT_APPLICABLE",
       "learnDocUrl": "https://learn.microsoft.com/en-us/surface/tech-specs/surface-laptop-snapdragon-tech-specs",
       "specContains": {
@@ -213,7 +240,17 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "kickstandType": "NOT_APPLICABLE",
         "fastCharging": "NULL"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "speakersContains": [
+        "Omnisonic",
+        "Dolby Atmos"
+      ],
+      "sourceScopeAssertions": {
+        "speakers": {
+          "region": "GLOBAL",
+          "configurationScopeContains": "consumer"
+        }
+      }
     },
     "sls-2": {
       "cpuMustInclude": [
@@ -304,7 +341,6 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "resolutionContains": "2400",
       "refreshRateContains": "120",
       "screenSizeContains": "14.4",
-      "warrantyState": "NOT_DISCLOSED",
       "osMustInclude": "专业",
       "frontCameraContains": "1080",
       "speakersContains": [
@@ -339,7 +375,14 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "specState": {
         "kickstandType": "VALID"
       },
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "warrantyContains": "中国大陆微软认证翻新版：2年",
+      "sourceScopeAssertions": {
+        "warranty": {
+          "region": "CN",
+          "configurationScopeContains": "翻新版"
+        }
+      }
     },
     "studio-2-plus-biz": {
       "cpuMustInclude": [
@@ -462,7 +505,10 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "speakersContains": "2W",
       "learnDocUrl": "https://support.microsoft.com/en-US/surface/models/surface-pro-9-features-and-specs",
       "specContains": {
-        "gpuModel": "Intel Iris Xe",
+        "gpuModel": [
+          "Intel：Iris Xe",
+          "SQ3 5G：Microsoft SQ3 Adreno 8CX Gen3"
+        ],
         "ppi": "267",
         "colorSupport": [
           "sRGB",
@@ -583,11 +629,15 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "microphones": "麦克",
         "audioTech": "Audio",
         "touchAndPenProtocol": "10",
-        "chassisMaterial": "镁"
+        "chassisMaterial": "镁",
+        "fastCharging": [
+          "支持快速充电",
+          "支持快速充电"
+        ]
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE",
-        "fastCharging": "NOT_APPLICABLE"
+        "fastCharging": "VALID"
       },
       "warrantyContains": "非中国保修认证",
       "fieldAudit": "field-audit-1131-decisions-20261009.json"
@@ -638,11 +688,15 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "chassisMaterial": "镁",
         "frontCamera": "500万",
         "rearCamera": "800万",
-        "cellular": "LTE"
+        "cellular": "LTE",
+        "fastCharging": [
+          "支持快速充电",
+          "支持快速充电"
+        ]
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE",
-        "fastCharging": "NOT_APPLICABLE"
+        "fastCharging": "VALID"
       },
       "fieldAudit": "field-audit-1131-decisions-20261009.json"
     },
@@ -1349,7 +1403,11 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "audioTech": "Audio",
         "chassisMaterial": "镁",
         "kickstandType": "165",
-        "fastCharging": "not_disclosed"
+        "fastCharging": [
+          "60W",
+          "USB-C PD",
+          "盒内电源不支持快充"
+        ]
       },
       "specState": {
         "thunderboltSupport": "NOT_APPLICABLE"
@@ -2195,7 +2253,7 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
       "refreshRateState": "NOT_DISCLOSED",
       "warrantyState": "VALID",
       "repairabilityState": "NOT_DISCLOSED",
-      "osState": "NOT_DISCLOSED",
+      "osState": "VALID",
       "frontCameraState": "VALID",
       "rearCameraState": "VALID",
       "speakersState": "VALID",
@@ -2221,7 +2279,17 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
         "thunderboltSupport": "NOT_APPLICABLE"
       },
       "warrantyContains": "不是中国保修承诺",
-      "fieldAudit": "field-audit-1131-decisions-20261009.json"
+      "fieldAudit": "field-audit-1131-decisions-20261009.json",
+      "osMustInclude": [
+        "Windows 10 家庭版 S 模式（消费者）",
+        "商用版为 Windows 10 专业版"
+      ],
+      "sourceScopeAssertions": {
+        "osAtLaunch": {
+          "region": "GLOBAL",
+          "configurationScopeContains": "消费者与商用"
+        }
+      }
     },
     "book-1": {
       "cpuMustInclude": [
@@ -2464,4 +2532,4 @@ const OFFICIAL_HISTORICAL_LINEUP_FACTS = {
     }
   }
 };
-if(typeof module!=="undefined"&&module.exports)module.exports=OFFICIAL_HISTORICAL_LINEUP_FACTS;
+module.exports=OFFICIAL_HISTORICAL_LINEUP_FACTS;

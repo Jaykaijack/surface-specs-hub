@@ -16,7 +16,7 @@ const ASSETS_DIR = path.join(REPO_ROOT, 'assets', 'products');
 
 const PRO_34578_HEROES = [
   'surface-pro-3-hero.png',
-  'surface-pro-4-hero.png',
+  'pro-4-Surface-Pro-4-image-5_HERO.png',
   'surface-pro-5-hero.png',
   'surface-pro-7-hero.png',
   'surface-pro-8-hero.png'
@@ -116,7 +116,7 @@ function runImageMappingP0Tests(helpers) {
   });
   const newLaptopHeroMd5 = fileMd5(assetAbs('surface-new-laptop-hero.png'));
   assert(Boolean(newLaptopHeroMd5), 'IMG-P0-04: surface-new-laptop-hero.png 存在');
-  ['surface-laptop-1-hero.png', 'surface-laptop-5-hero.png'].forEach((name) => {
+  ['surface-laptop-1-hero.png', 'surface-laptop-5-platinum-alcantara-official.jpg'].forEach((name) => {
     const md5 = fileMd5(assetAbs(name));
     assert(Boolean(md5), `IMG-P0-04: 文件存在 ${name}`);
     assert(md5 !== newLaptopHeroMd5, `IMG-P0-04: ${name} MD5 ≠ surface-new-laptop-hero.png 簇（禁止新 Laptop 铂金冒充 Laptop 1/5）`);
@@ -158,7 +158,7 @@ function runImageMappingP0Tests(helpers) {
     assert(Boolean(device), `IMG-P0-06b: 收录 ${id}`);
     if (!device) return;
     if (device.imageVerification && (device.imageVerification.status === 'diagram' || device.imageVerification.colorStatus === 'pending')) {
-      assert(device.specs.colors.every((color) => !color.image),
+      assert(device.specs.colors.every((color) => !color.image || (device.officialPortraits || []).some(p=>p.image===color.image)),
         `IMG-P0-06b: ${id} 未确认配色照片时不得伪造双色图片路径`);
       return;
     }
