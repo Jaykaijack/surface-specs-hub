@@ -225,7 +225,7 @@ const ComparisonEngine = {
 
     let html = `
       ${!isSingleDevice ? '<div class="mobile-scroll-hint">👈 左右滑动查看更多对比机型 👉</div>' : ''}
-      <div class="spec-table-container">
+      <div class="spec-table-container ${!isSingleDevice ? 'comparison-scroll-viewport' : ''}">
         <table class="spec-table ${this.highlightDiff ? 'highlight-diff' : ''} ${applyDiffOnly ? 'diff-only' : ''}">
           <caption class="sr-only">${isSingleDevice ? `${devicesToCompare[0].name} 官方技术规格全览表` : `Surface 历代机型横向技术规格对比表（共 ${devicesToCompare.length} 款设备）`}</caption>
           <thead>
@@ -310,7 +310,8 @@ const ComparisonEngine = {
               ${(() => {
                 const summary = this.getDecisionSummary(dev);
                 return `
-                  <div class="table-device-decision-summary" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--ms-border-subtle); font-size:11.5px; line-height:1.5; text-align:left; color:var(--ms-text-secondary);">
+                  <details class="table-device-decision-summary" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--ms-border-subtle); font-size:11.5px; line-height:1.5; text-align:left; color:var(--ms-text-secondary);">
+                    <summary>配置与测试条件</summary>
                     <div class="summary-line" style="display:flex; align-items:center; gap:5px; margin-bottom:2px;" title="续航标称">
                       <span style="opacity:0.85;">🔋</span>
                       <span class="summary-value">${summary.batText}</span>
@@ -323,7 +324,7 @@ const ComparisonEngine = {
                       <span style="opacity:0.85;">⚖️</span>
                       <span class="summary-value">${summary.portText}</span>
                     </div>
-                  </div>
+                  </details>
                 `;
               })()}
             </div>
@@ -776,6 +777,7 @@ const ComparisonEngine = {
     if (!shot.src) return;
     const imgEl = document.getElementById(`table-thumb-${devId}-${colIdx}`);
     if (imgEl) {
+      imgEl.closest('th')?.querySelectorAll('.portrait-size-control').forEach(control => { control.hidden = !(shot.variants?.length > 1); });
       Catalog.paint(imgEl, shot, 'table');
     }
     const mark = document.getElementById(`portrait-mark-${devId}-${colIdx}`);

@@ -60700,6 +60700,19 @@
       "reviewedAt": "2026-10-12",
       "configurationScope": "本站按英文官方历史发布稿列为海外收录；不认证中国SKU、库存或在售。",
       "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-one.warranty.cn-2014",
+      "configuration": "xbox-one",
+      "valueHash": "909bd2be15e1045cf8c0c384eac0b90915092e44285baff66aefbdafe2be4b16",
+      "sourceUrl": "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2014中国Xbox One首发公告的历史权益；不等于完整保修条款、其他地区或当前维修保证。",
+      "sourceAuthority": "manufacturer-primary"
     }
   ]
 }

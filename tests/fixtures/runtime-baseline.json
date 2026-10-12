@@ -47498,10 +47498,10 @@
     {
       "deviceId": "xbox-one",
       "field": "warranty",
-      "raw": "not_disclosed",
-      "display": "not_disclosed",
-      "state": "NOT_DISCLOSED",
-      "bound": false
+      "raw": "2014-09-23官方国行发售公告为9月29日上市记录列两年保修；仅作当时国行历史权益参考，具体包装/条款及当前维修权益另核，不外推2013海外型号",
+      "display": "2014-09-23官方国行发售公告为9月29日上市记录列两年保修；仅作当时国行历史权益参考，具体包装/条款及当前维修权益另核，不外推2013海外型号",
+      "state": "VALID",
+      "bound": true
     },
     {
       "deviceId": "xbox-one",
@@ -53928,18 +53928,7 @@
             "kind": "",
             "alt": "Surface Laptop 5 (13.5\" & 15\") (典雅黑)",
             "deviceId": "laptop-5",
-            "variants": [
-              {
-                "size": "13.5",
-                "image": "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
-                "label": "13.5 英寸 · Alcantara 掌托"
-              },
-              {
-                "size": "15",
-                "image": "./assets/products/surface-laptop-5-platinum-metal-official.jpg",
-                "label": "15 英寸 · 金属掌托"
-              }
-            ],
+            "variants": [],
             "size": "13.5",
             "scopeLabel": "该配色图尺寸未确认"
           }
@@ -53952,18 +53941,7 @@
             "kind": "",
             "alt": "Surface Laptop 5 (13.5\" & 15\") (仙茶绿)",
             "deviceId": "laptop-5",
-            "variants": [
-              {
-                "size": "13.5",
-                "image": "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
-                "label": "13.5 英寸 · Alcantara 掌托"
-              },
-              {
-                "size": "15",
-                "image": "./assets/products/surface-laptop-5-platinum-metal-official.jpg",
-                "label": "15 英寸 · 金属掌托"
-              }
-            ],
+            "variants": [],
             "size": "13.5",
             "scopeLabel": "该配色图尺寸未确认"
           }
@@ -53976,18 +53954,7 @@
             "kind": "",
             "alt": "Surface Laptop 5 (13.5\" & 15\") (砂岩金)",
             "deviceId": "laptop-5",
-            "variants": [
-              {
-                "size": "13.5",
-                "image": "./assets/products/surface-laptop-5-platinum-alcantara-official.jpg",
-                "label": "13.5 英寸 · Alcantara 掌托"
-              },
-              {
-                "size": "15",
-                "image": "./assets/products/surface-laptop-5-platinum-metal-official.jpg",
-                "label": "15 英寸 · 金属掌托"
-              }
-            ],
+            "variants": [],
             "size": "13.5",
             "scopeLabel": "该配色图尺寸未确认"
           }

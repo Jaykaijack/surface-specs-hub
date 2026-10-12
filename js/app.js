@@ -1336,7 +1336,7 @@ const App = {
             <button class="fluent-btn ${activeFilter === 'adaptive' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('adaptive')">无障碍控制器</button>
           </div>
           <div style="position:relative; min-width:240px; flex:1; max-width:320px;">
-            <input type="text" placeholder="搜索手柄名称、色号、型号..." value="${this._xboxCtrlQuery || ''}"
+            <input id="xbox-controller-search" type="text" placeholder="搜索手柄名称、色号、型号..." value="${this.escapeText(this._xboxCtrlQuery || '')}"
               style="width:100%; box-sizing:border-box; padding:7px 12px 7px 32px; border-radius:6px; border:1px solid var(--ms-border-subtle); background:var(--ms-bg-subtle); font-size:13px; color:var(--ms-text-primary);"
               oninput="App.searchXboxControllers(this.value)">
             <span style="position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:13px; opacity:0.6;">🔍</span>
@@ -1428,9 +1428,16 @@ const App = {
   },
 
   searchXboxControllers(query) {
+    const focused = document.activeElement;
+    const selection = focused?.id === 'xbox-controller-search' ? [focused.selectionStart, focused.selectionEnd] : null;
     this._xboxCtrlQuery = query;
     const main = document.getElementById('hub-main-content');
     if (main) this.renderXboxControllersView(main);
+    if (selection) {
+      const replacement = document.getElementById('xbox-controller-search');
+      replacement?.focus();
+      replacement?.setSelectionRange(...selection);
+    }
   },
 
   // 3.4c Surface 官方配件专区 (23 款官方原装配件图鉴)
@@ -1500,7 +1507,7 @@ const App = {
             `).join('')}
           </div>
           <div style="position:relative; min-width:240px; flex:1; max-width:320px;">
-            <input type="text" placeholder="搜索配件名称、接口、特性..." value="${this._accessorySearchQuery || ''}"
+            <input id="surface-accessory-search" type="text" placeholder="搜索配件名称、接口、特性..." value="${this.escapeText(this._accessorySearchQuery || '')}"
               style="width:100%; box-sizing:border-box; padding:7px 12px 7px 32px; border-radius:6px; border:1px solid var(--ms-border-subtle); background:var(--ms-bg-subtle); font-size:13px; color:var(--ms-text-primary);"
               oninput="App.searchAccessories(this.value)">
             <span style="position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:13px; opacity:0.6;">🔍</span>
@@ -1594,9 +1601,16 @@ const App = {
   },
 
   searchAccessories(query) {
+    const focused = document.activeElement;
+    const selection = focused?.id === 'surface-accessory-search' ? [focused.selectionStart, focused.selectionEnd] : null;
     this._accessorySearchQuery = query;
     const main = document.getElementById('hub-main-content');
     if (main) this.renderSurfaceAccessoriesView(main, this._activeAccessoryCategory);
+    if (selection) {
+      const replacement = document.getElementById('surface-accessory-search');
+      replacement?.focus();
+      replacement?.setSelectionRange(...selection);
+    }
   },
 
   // 3.4b Xbox 配件专区 (官方扩展图鉴)
@@ -3410,6 +3424,7 @@ const App = {
     const labelEl = document.getElementById('detail-active-color-label');
     const shot = this.shot(dev, colorName);
     const activeSize = shot.size || this.shot(dev).size;
+    document.querySelectorAll('.portrait-size-control').forEach(control => { control.hidden = !(shot.variants?.length > 1); });
     if (activeSize) document.querySelectorAll('.portrait-size-control select').forEach(select => { select.value = activeSize; });
     if (imgEl && shot.src) {
       delete imgEl.dataset.retryClean;

@@ -582,12 +582,14 @@ const Catalog = (function () {
     const variants = device.portraitVariants || [];
     const variant = variants.find(v => v.size === portraitSizes.get(device.id)) || variants[0];
     let variantBound = !!variant;
+    let showVariants = true;
     if (colorName) {
       const found = colorList(device).find(function (color) { return color && color.name === colorName; });
       if (found && variant && Array.isArray(found.availableSizes) && !found.availableSizes.includes(variant.size)) {
         return {src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName) + '：该配色不属于当前尺寸', scopeLabel:'该配色仅列于 ' + found.availableSizes.join(' / ') + ' 英寸'};
       }
       if (!found || !found.image) return {src: IMAGE_PLACEHOLDER, identity: 'missing', alt: deviceAlt(device, colorName)};
+      showVariants = !!found.imageBySize;
       variantBound = !!(variant && found.imageBySize && found.imageBySize[variant.size]);
       raw = variant && found.imageBySize ? found.imageBySize[variant.size] : found.image;
     }
@@ -608,7 +610,7 @@ const Catalog = (function () {
       identity: proof ? 'official' : explicitIdentity ? review.status : (isStandIn(device, raw) ? 'shared' : 'pending'),
       kind: review.kind || (review.status === 'diagram' ? 'diagram' : ''),
       alt: deviceAlt(device, colorName) + (variantBound ? ' · ' + variant.label : ''),
-      deviceId: device.id, variants, size: variant && variant.size,
+      deviceId: device.id, variants: showVariants ? variants : [], size: variant && variant.size,
       nativeWidth: proof && proof.width,
       scopeLabel: variant ? (variantBound ? variant.label : '该配色图尺寸未确认') : proof && proof.width === 762 ? '原图 762×429' : ''
     };
@@ -655,7 +657,7 @@ const Catalog = (function () {
       : (shot && shot.alt ? shot.alt : '');
     const alt = escAttr(effectiveAlt);
     const showSizeControl = (slotName === 'detail' && opts.id === 'detail-main-img') || slotName === 'table';
-    const evidenceMark = showSizeControl && shot && shot.variants && shot.variants.length > 1 ? '<label class="portrait-size-control">图片尺寸 <select aria-label="图片尺寸" onclick="event.stopPropagation()" onchange="App.switchImageSize(\'' + escAttr(shot.deviceId) + '\',this.value)">' + shot.variants.map(v => '<option value="' + escAttr(v.size) + '"' + (v.size === shot.size ? ' selected' : '') + '>' + escAttr(v.label) + '</option>').join('') + '</select></label>' : '';
+    const evidenceMark = showSizeControl && shot && shot.variants && shot.variants.length > 1 ? '<label class="portrait-size-control">' + (shot.deviceId === 'laptop-5' ? '亮铂金图片尺寸' : '图片尺寸') + ' <select aria-label="图片尺寸" onclick="event.stopPropagation()" onchange="App.switchImageSize(\'' + escAttr(shot.deviceId) + '\',this.value)">' + shot.variants.map(v => '<option value="' + escAttr(v.size) + '"' + (v.size === shot.size ? ' selected' : '') + '>' + escAttr(v.label) + '</option>').join('') + '</select></label>' : '';
     const onerror = ' onerror="' + (opts.onerror || 'App.hideBrokenImage(this)') + '"';
     const widths = deliveryWidths(src);
     const fallbackPath = widths ? deliveryUrl(src, 'webp', pickWidth(widths, slotName)) : cleanSrc;
