@@ -110,9 +110,17 @@ const App = {
     return Catalog.isRecentLaunch(device) ? '<span class="spec-badge new">新品</span>' : '';
   },
 
+  displayPortraitBadgeLabel(shot) {
+    if (!shot) return '';
+    if (shot.identity === 'shared') {
+      return shot.kind === 'diagram' ? '其他机型结构图示意' : '同系列示意';
+    }
+    return '';
+  },
+
   portraitBadge(device, colorName, markId) {
     const shot = this.shot(device, colorName);
-    const label = Catalog.portraitLabel(shot);
+    const label = this.displayPortraitBadgeLabel(shot);
     const hidden = label ? '' : ' hidden';
     const idAttr = markId ? ` id="${markId}"` : '';
     return `<span class="portrait-stand-in"${idAttr}${hidden}>${label}</span>`;
@@ -1661,7 +1669,7 @@ const App = {
 
             <!-- 产品真实大图展示 -->
             <div style="width:100%; height:180px; background:var(--ms-bg-subtle); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; padding:10px; box-sizing:border-box;">
-              <span class="portrait-stand-in">配件型号与视角待核验</span><img src="${Catalog.accessoryPortrait(acc).src}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.1));" loading="lazy" onerror="App.hideBrokenImage(this)">
+              <img src="${Catalog.accessoryPortrait(acc).src}" alt="${acc.name}" style="max-height:100%; max-width:100%; object-fit:contain; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.1));" loading="lazy" onerror="App.hideBrokenImage(this)">
             </div>
 
             <div style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">${acc.name}</div>
@@ -2449,7 +2457,7 @@ const App = {
           <div class="detail-hero-meta">
             <div class="hero-meta-card"><span>发布日期</span><strong>${this.spec(dev, 'releaseDate') || dev.year || '—'}</strong></div>
             <div class="hero-meta-card"><span>产品定位</span><strong>${this.escapeText(dev.tagline || 'Surface 设备')}</strong></div>
-            <div class="hero-meta-card"><span>起始价格</span><strong>${Catalog.presentDeviceSpec(dev, 'startingPriceCny')}</strong></div>
+            <div class="hero-meta-card"><span>起始价格</span><strong>${Catalog.confirmedSpec(dev, 'startingPriceCny') || (this.spec(dev, 'startingPriceCny') || '—')}</strong></div>
             <div class="hero-meta-card"><span>目标客户</span><strong>${this.escapeText(Catalog.audience(dev) || '个人与企业用户')}</strong></div>
           </div>
           <div class="detail-hero-links">
@@ -3630,14 +3638,14 @@ const App = {
     }
     const mark = document.getElementById('portrait-mark-detail');
     if (mark) {
-      mark.textContent = Catalog.portraitLabel(shot);
+      mark.textContent = this.displayPortraitBadgeLabel(shot);
       mark.hidden = !mark.textContent;
     }
     const railImg = document.getElementById('detail-rail-main-img');
     if (railImg && shot.src) {
       Catalog.paint(railImg, shot, 'detail');
     }
-    const shotIdentityLabel = shot.identity === 'official' ? '官方图像' : (Catalog.portraitLabel(shot) || '同系列示意');
+    const shotIdentityLabel = shot.identity === 'official' ? '官方图像' : (shot.identity === 'shared' ? '同系列示意' : '官方产品图');
     const shotRoleLabel = colorName ? `${colorName} 配色图` : '代表图';
 
     const railLabel = document.getElementById('detail-rail-image-label');
@@ -3703,7 +3711,7 @@ const App = {
     }
     const mark = document.getElementById(`portrait-mark-${deviceId}`);
     if (mark) {
-      mark.textContent = Catalog.portraitLabel(shot);
+      mark.textContent = this.displayPortraitBadgeLabel(shot);
       mark.hidden = !mark.textContent;
     }
     if (dotEl) {

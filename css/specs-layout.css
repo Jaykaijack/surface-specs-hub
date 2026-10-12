@@ -991,7 +991,8 @@ body {
   pointer-events: none;
   white-space: nowrap;
 }
-.portrait-stand-in[hidden] {
+.portrait-stand-in[hidden],
+.accessory-img-wrap .portrait-stand-in {
   display: none !important;
 }
 .device-thumb-img {

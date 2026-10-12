@@ -259,20 +259,25 @@ const ComparisonEngine = {
             <div class="table-device-card">
               <button class="table-device-remove-btn" onclick="ComparisonEngine.removeDevice('${dev.id}')" title="从对比中移除">✕</button>
               
-              <div class="table-device-img" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')" style="cursor:pointer;" title="点击查看单机详情页">
-                ${Catalog.frame(Catalog.portrait(dev), {
-                  slot: 'table',
-                  id: `table-thumb-${dev.id}-${colIdx}`,
-                  className: 'table-thumb-img',
-                  alt: dev.name,
-                  loading: 'eager',
-                  onerror: 'App.hideBrokenImage(this)'
-                })}
-                <span class="portrait-stand-in" id="portrait-mark-${dev.id}-${colIdx}"${Catalog.portraitLabel(Catalog.portrait(dev)) ? '' : ' hidden'}>${Catalog.portraitLabel(Catalog.portrait(dev))}</span>
-                <div style="display:none; width:100%; height:100%;">
-                  ${this.getDeviceSvgIcon(dev.categoryId)}
-                </div>
-              </div>
+              ${(() => {
+                const tableShot = Catalog.portrait(dev);
+                const tableBadge = this.displayPortraitBadgeLabel(tableShot);
+                return `
+                <div class="table-device-img" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')" style="cursor:pointer;" title="点击查看单机详情页">
+                  ${Catalog.frame(tableShot, {
+                    slot: 'table',
+                    id: `table-thumb-${dev.id}-${colIdx}`,
+                    className: 'table-thumb-img',
+                    alt: dev.name,
+                    loading: 'eager',
+                    onerror: 'App.hideBrokenImage(this)'
+                  })}
+                  <span class="portrait-stand-in" id="portrait-mark-${dev.id}-${colIdx}"${tableBadge ? '' : ' hidden'}>${tableBadge}</span>
+                  <div style="display:none; width:100%; height:100%;">
+                    ${this.getDeviceSvgIcon(dev.categoryId)}
+                  </div>
+                </div>`;
+              })()}
 
               <!-- 表头多配色快速预览 -->
               ${(Array.isArray(Catalog.getSpec(dev, 'colors')) && Catalog.getSpec(dev, 'colors').length > 1) ? `
@@ -795,7 +800,7 @@ const ComparisonEngine = {
     }
     const mark = document.getElementById(`portrait-mark-${devId}-${colIdx}`);
     if (mark) {
-      mark.textContent = Catalog.portraitLabel(shot);
+      mark.textContent = this.displayPortraitBadgeLabel(shot);
       mark.hidden = !mark.textContent;
     }
     if (dotEl) {
@@ -815,6 +820,14 @@ const ComparisonEngine = {
         nameEl.textContent = colorName;
       }
     }
+  },
+
+  displayPortraitBadgeLabel(shot) {
+    if (!shot) return '';
+    if (shot.identity === 'shared') {
+      return shot.kind === 'diagram' ? '其他机型结构图示意' : '同系列示意';
+    }
+    return '';
   },
 
   renderCurrentView() {
