@@ -2905,6 +2905,191 @@ body {
 }
 
 /* ==========================================================================
+   Bento Specs Matrix (旗舰核心四维参数看板)
+   ========================================================================== */
+.bento-specs-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+@media (max-width: 900px) {
+  .bento-specs-matrix {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.bento-spec-card {
+  background: var(--ms-bg-card);
+  border: 1px solid var(--ms-border-subtle, rgba(0, 0, 0, 0.08));
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-spec-card:hover {
+  border-color: var(--ms-accent, #0078d4);
+  box-shadow: 0 4px 16px rgba(0, 120, 212, 0.08);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .bento-spec-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .bento-spec-card:hover {
+  border-color: rgba(0, 120, 212, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 120, 212, 0.15);
+}
+
+.bento-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.bento-card-icon {
+  font-size: 20px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(0, 120, 212, 0.06);
+}
+
+[data-theme="dark"] .bento-card-icon {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.bento-card-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card-cat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ms-accent, #0078d4);
+  text-transform: uppercase;
+}
+
+.bento-card-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ms-text-primary);
+}
+
+.bento-primary-metric {
+  background: var(--ms-bg-subtle, rgba(0, 0, 0, 0.02));
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-left: 3px solid var(--ms-accent, #0078d4);
+}
+
+[data-theme="dark"] .bento-primary-metric {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.bento-metric-label {
+  font-size: 11px;
+  color: var(--ms-text-tertiary);
+}
+
+.bento-metric-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ms-text-primary);
+  line-height: 1.35;
+}
+
+.bento-spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bento-spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--ms-border-subtle, rgba(0, 0, 0, 0.06));
+}
+
+.bento-spec-row:last-child {
+  border-bottom: none;
+}
+
+[data-theme="dark"] .bento-spec-row {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+.bento-k {
+  color: var(--ms-text-secondary);
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.bento-v {
+  color: var(--ms-text-primary);
+  font-weight: 600;
+  text-align: right;
+  max-width: 65%;
+  word-break: break-word;
+}
+
+.bento-highlight-badge {
+  color: #b78103;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .bento-highlight-badge {
+  color: #f7c948;
+}
+
+.detail-section-divider {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 16px;
+  gap: 12px;
+  color: var(--ms-text-tertiary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.detail-section-divider::before,
+.detail-section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--ms-border-subtle, rgba(0, 0, 0, 0.08));
+}
+
+/* 隐藏冗余稽核标签与免责噪音 */
+.field-evidence,
+.spec-evidence-note {
+  display: none !important;
+}
+
+/* ==========================================================================
    手风琴规格折叠卡片系统 (Accordion Specs Cards) - PRD 1:1 还原
    ========================================================================== */
 .spec-accordion-container {

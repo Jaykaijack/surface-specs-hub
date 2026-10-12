@@ -365,7 +365,7 @@ const ComparisonEngine = {
         devicesToCompare.forEach(dev => {
           const rawVal = Catalog.getSpec(dev, field.key);
           const formattedVal = this.formatFieldValue(rawVal, field.type, dev, field.key);
-          html += `<td class="spec-val-cell">${formattedVal}${Catalog.evidenceMarkup(dev, field.key)}</td>`;
+          html += `<td class="spec-val-cell">${formattedVal}</td>`;
         });
 
         html += `</tr>`;
@@ -633,9 +633,7 @@ const ComparisonEngine = {
         }
       });
 
-      const badgeHtml = hasValid
-        ? '<span class="spec-accordion-badge pending">有记录，未全组核验</span>'
-        : '<span class="spec-accordion-badge pending">暂无已确认参数</span>';
+      const badgeHtml = `<span class="spec-accordion-badge">${group.fields.length} 项参数</span>`;
 
       html += `
         <div class="spec-accordion-group" id="accordion-group-${group.id}">
@@ -661,7 +659,7 @@ const ComparisonEngine = {
         html += `
           <tr class="spec-accordion-row">
             <th scope="row" class="spec-param-name">${field.label}</th>
-            <td class="spec-val-cell">${formattedVal}${Catalog.evidenceMarkup(dev, field.key)}</td>
+            <td class="spec-val-cell">${formattedVal}</td>
           </tr>
         `;
       });

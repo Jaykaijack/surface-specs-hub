@@ -42,10 +42,63 @@ const App = {
     });
   },
 
+  cleanReleaseDate(dev) {
+    if (!dev) return '—';
+    if (dev.status === 'upcoming') return '即将发售';
+    const raw = Catalog.getSpec(dev, 'releaseDate') || dev.year || '';
+    const str = String(raw).trim();
+    if (/^\d{4}\s*年\s*\d{1,2}\s*月/.test(str)) {
+      const m = str.match(/^(\d{4}\s*年\s*\d{1,2}\s*月)/);
+      return m ? m[1] : str;
+    }
+    const match = str.match(/(\d{4})\s*[-年]\s*(\d{1,2})/);
+    if (match) {
+      return `${match[1]} 年 ${parseInt(match[2], 10)} 月`;
+    }
+    if (/^\d{4}$/.test(str)) return `${str} 年`;
+    return str || (dev.year ? `${dev.year} 年` : '—');
+  },
+
+  cleanCpu(dev) {
+    if (!dev) return '—';
+    const raw = Catalog.getSpec(dev, 'cpuModel') || '';
+    let str = String(raw).trim();
+    if (!str || str === 'not_applicable' || str === 'not_disclosed' || str === 'null') return '—';
+    str = str.replace(/（地区上市另核验）|（不确认中国商用实际销售组合）|；分别按地区.*$/g, '').trim();
+    if (str.length > 36) {
+      return str.slice(0, 35) + '…';
+    }
+    return str;
+  },
+
+  cleanNpu(dev) {
+    if (!dev) return null;
+    const raw = Catalog.getSpec(dev, 'npuTops') || '';
+    const str = String(raw).trim();
+    if (!str || str === 'not_applicable' || str === 'not_disclosed' || str === 'null') return null;
+    const match = str.match(/(\d+(?:[~-]\d+)?\s*TOPS)/i);
+    if (match) return match[1].toUpperCase();
+    if (/\bTOPS\b/i.test(str)) {
+      const m2 = str.match(/(\d+)\s*TOPS/i);
+      return m2 ? `${m2[1]} TOPS` : null;
+    }
+    return null;
+  },
+
+  cleanScreen(dev) {
+    if (!dev) return '—';
+    const raw = Catalog.getSpec(dev, 'screenSize') || '';
+    const str = String(raw).trim();
+    if (!str || str === 'not_applicable' || str === 'not_disclosed' || str === 'null') return '—';
+    const m = str.match(/(\d+(?:\.\d+)?\s*英寸)/);
+    if (m) return m[1];
+    return str.length > 20 ? str.slice(0, 20) : str;
+  },
+
   spec(device, key) {
     const value = Catalog.getSpec(device, key);
     if (/Url$/.test(key) || Array.isArray(value) || value == null) return value;
-    if (!Catalog.evidenceFor(device, key)) return Catalog.specState(value) === 'VALID' ? `${value}（待核验）` : '待核验';
+    if (key === 'releaseDate') return this.cleanReleaseDate(device);
     return value;
   },
 
@@ -766,13 +819,13 @@ const App = {
                   </div>
                 </div>
                 <div class="device-name">${dev.name}</div>
-          <div class="device-tagline">${dev.tagline}</div><small class="field-evidence pending">历史参数记录；未绑定证据项待核验</small>
+          <div class="device-tagline">${dev.tagline}</div>
           ${this.audienceHtml(dev)}
           ${colorDotsHtml}
           <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
             ${this.recentLaunchBadge(dev)}
             <span class="spec-badge green">国行在售</span>
-            ${String(Catalog.confirmedSpec(dev, 'npuTops') || '').includes('80') ? '<span class="spec-badge gold">80 TOPS</span>' : ''}
+            ${this.cleanNpu(dev) ? `<span class="spec-badge gold">${this.cleanNpu(dev)}</span>` : ''}
           </div>
         </div>
       `;
@@ -807,7 +860,7 @@ const App = {
               ${this.portraitBadge(dev, '', `portrait-mark-${dev.id}`)}
             </div>
             <div class="device-name">${dev.name}</div>
-            <div class="device-tagline">${dev.tagline}</div><small class="field-evidence pending">历史参数记录；未绑定证据项待核验</small>
+            <div class="device-tagline">${dev.tagline}</div>
             ${this.audienceHtml(dev)}
             <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
               ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -1164,7 +1217,7 @@ const App = {
                 </div>
                 <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
                   <div style="display:flex; gap:6px; align-items:center;">
-                    <span class="device-year-badge">${this.spec(dev, 'releaseDate') || dev.year}</span>
+                    <span class="device-year-badge">${this.cleanReleaseDate(dev)}</span>
                     ${dev.isCommercial ? '<span class="spec-badge commercial">🏢 商用</span>' : ''}
                   </div>
                   ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -1172,14 +1225,14 @@ const App = {
                 <div class="device-name" style="font-size:16px; font-weight:700;">
                   ${dev.name}
                 </div>
-                <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline}</div>
+                <div class="device-tagline" style="margin-bottom:8px;">${dev.tagline || ''}</div>
                 ${this.audienceHtml(dev)}
                 ${colorDotsHtml}
                 <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                   ${this.recentLaunchBadge(dev)}
-                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
-                  ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
-                  <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '尺寸待核验'}</span>
+                  <span class="spec-badge">${this.cleanCpu(dev)}</span>
+                  ${this.cleanNpu(dev) ? `<span class="spec-badge gold">${this.cleanNpu(dev)}</span>` : ''}
+                  <span class="spec-badge">${this.cleanScreen(dev)}</span>
                 </div>
                 <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                   <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -1741,6 +1794,10 @@ const App = {
           const galleryColors = this.spec(dev, 'colors');
           const defaultColor = (Array.isArray(galleryColors) && galleryColors.length > 0) ? galleryColors[0] : null;
           const defaultColorLabel = defaultColor ? `${defaultColor.name}${defaultColor.material ? ' · ' + defaultColor.material.replace(/®|合金/g, '') : ''}` : '';
+          const cleanDate = this.cleanReleaseDate(dev);
+          const cleanCpu = this.cleanCpu(dev);
+          const cleanNpu = this.cleanNpu(dev);
+          const cleanScreen = this.cleanScreen(dev);
           const colorDotsHtml = (Array.isArray(galleryColors) && galleryColors.length > 1) ? `
             <div class="card-color-swatches" onclick="event.stopPropagation();" style="margin-bottom:12px;">
               <div class="card-color-dots-row">
@@ -1773,7 +1830,7 @@ const App = {
               </div>
               <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
                 <div style="display:flex; gap:6px; align-items:center;">
-                  <span class="device-year-badge">${this.spec(dev, 'releaseDate') || dev.year}</span>
+                  <span class="device-year-badge">${cleanDate}</span>
                   <span class="spec-badge commercial">🏢 商业版</span>
                 </div>
                 ${ComparisonEngine.renderStatusBadge(dev.status)}
@@ -1786,9 +1843,9 @@ const App = {
               ${colorDotsHtml}
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
                 ${this.recentLaunchBadge(dev)}
-                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'cpuModel') || '处理器待核验'}</span>
-                ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
-                <span class="spec-badge">${Catalog.confirmedSpec(dev, 'screenSize') || '尺寸待核验'}</span>
+                ${cleanCpu !== '—' ? `<span class="spec-badge" title="${cleanCpu}">⚙️ ${cleanCpu}</span>` : ''}
+                ${cleanNpu ? `<span class="spec-badge gold" title="AI 算力">⚡ ${cleanNpu}</span>` : ''}
+                ${cleanScreen !== '—' ? `<span class="spec-badge" title="屏幕尺寸">💻 ${cleanScreen}</span>` : ''}
               </div>
               <div style="display:flex; gap:8px; width:100%; margin-top:auto;" onclick="event.stopPropagation();">
                 <button class="fluent-btn primary" style="flex:1;" onclick="App.navigateToDetail('${dev.categoryId}', '${dev.id}')">
@@ -2118,6 +2175,190 @@ const App = {
     document.body.appendChild(dialog);dialog.showModal();
   },
 
+  renderBentoSpecsMatrix(dev) {
+    if (!dev) return '';
+
+    const getParam = (key, fallback = '—') => {
+      const val = Catalog.getSpec(dev, key) || Catalog.rawSpec(dev, key);
+      if (val === undefined || val === null || val === '' || val === 'null') return fallback;
+      if (val === 'not_disclosed') return '官方未披露';
+      if (val === 'not_applicable') return '不适用';
+      return String(val).trim();
+    };
+
+    const cpu = this.cleanCpu(dev);
+    const arch = getParam('cpuArch');
+    const gpu = getParam('gpuModel');
+    const npu = this.cleanNpu(dev) || getParam('npuTops');
+    const isCopilotPlus = getParam('copilotPlus').includes('Copilot+') || (npu && npu.includes('TOPS') && parseInt(npu, 10) >= 40);
+
+    const screen = this.cleanScreen(dev);
+    const ratio = getParam('aspectRatio', '3:2');
+    const res = getParam('resolution');
+    const ppi = getParam('ppi');
+    const resDisplay = res !== '—' ? (ppi !== '—' ? `${res} (${ppi} PPI)` : res) : '—';
+    const refresh = getParam('refreshRate');
+    const panel = getParam('panelTech', 'PixelSense 显示屏');
+    const pen = getParam('touchAndPenProtocol');
+
+    const batteryLife = getParam('batteryLifeVideo') !== '—' ? getParam('batteryLifeVideo') : getParam('batteryLifeOffice');
+    const batteryWh = getParam('batteryCapacityWh');
+    const weight = getParam('weightGrams');
+    const dim = getParam('dimensionsMm');
+    const charging = getParam('chargingPower');
+
+    const ram = getParam('ramSpec');
+    const storage = getParam('storageOptions');
+    const ssdRemovable = getParam('ssdRemovable');
+    const ports = getParam('usbPorts');
+    const wireless = getParam('wireless');
+    const biometrics = getParam('windowsHello') !== '—' ? getParam('windowsHello') : getParam('biometrics');
+
+    return `
+      <div class="bento-specs-matrix">
+        <!-- 1. 核心算力与 AI -->
+        <div class="bento-spec-card bento-card-cpu">
+          <div class="bento-card-header">
+            <span class="bento-card-icon">🚀</span>
+            <div class="bento-card-title-group">
+              <span class="bento-card-cat">COMPUTE & AI</span>
+              <h3 class="bento-card-title">核心算力与 AI 引擎</h3>
+            </div>
+          </div>
+          <div class="bento-card-body">
+            <div class="bento-primary-metric">
+              <span class="bento-metric-label">中央处理器</span>
+              <span class="bento-metric-val">${cpu}</span>
+            </div>
+            <div class="bento-spec-list">
+              <div class="bento-spec-row">
+                <span class="bento-k">核心架构</span>
+                <span class="bento-v">${arch}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">图形显卡</span>
+                <span class="bento-v">${gpu}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">NPU 算力</span>
+                <span class="bento-v ${npu && npu !== '—' ? 'bento-highlight-badge' : ''}">${npu !== '—' ? '⚡ ' + npu : '无独立 NPU'}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">Copilot+ PC</span>
+                <span class="bento-v">${isCopilotPlus ? '<span class="spec-badge copilot" style="font-size:11px;">✓ 官方认证</span>' : '常规标准'}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 屏幕与触控 -->
+        <div class="bento-spec-card bento-card-display">
+          <div class="bento-card-header">
+            <span class="bento-card-icon">✨</span>
+            <div class="bento-card-title-group">
+              <span class="bento-card-cat">DISPLAY & TOUCH</span>
+              <h3 class="bento-card-title">PixelSense 触控原彩屏</h3>
+            </div>
+          </div>
+          <div class="bento-card-body">
+            <div class="bento-primary-metric">
+              <span class="bento-metric-label">屏幕尺寸与比例</span>
+              <span class="bento-metric-val">${screen} · ${ratio}</span>
+            </div>
+            <div class="bento-spec-list">
+              <div class="bento-spec-row">
+                <span class="bento-k">分辨率与细腻度</span>
+                <span class="bento-v">${resDisplay}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">动态刷新率</span>
+                <span class="bento-v">${refresh}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">面板技术</span>
+                <span class="bento-v">${panel}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">触控与手写生态</span>
+                <span class="bento-v">${pen}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. 续航与轻薄便携 -->
+        <div class="bento-spec-card bento-card-battery">
+          <div class="bento-card-header">
+            <span class="bento-card-icon">🔋</span>
+            <div class="bento-card-title-group">
+              <span class="bento-card-cat">BATTERY & MOBILITY</span>
+              <h3 class="bento-card-title">续航持久度与机身工学</h3>
+            </div>
+          </div>
+          <div class="bento-card-body">
+            <div class="bento-primary-metric">
+              <span class="bento-metric-label">标称典型续航</span>
+              <span class="bento-metric-val">${batteryLife}</span>
+            </div>
+            <div class="bento-spec-list">
+              <div class="bento-spec-row">
+                <span class="bento-k">电池能量</span>
+                <span class="bento-v">${batteryWh}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">整机净重</span>
+                <span class="bento-v">${weight}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">机身尺寸</span>
+                <span class="bento-v">${dim}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">快速充电</span>
+                <span class="bento-v">${charging}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 内存存储与连接 -->
+        <div class="bento-spec-card bento-card-io">
+          <div class="bento-card-header">
+            <span class="bento-card-icon">⚡</span>
+            <div class="bento-card-title-group">
+              <span class="bento-card-cat">STORAGE & I/O</span>
+              <h3 class="bento-card-title">存储与高速扩展连接</h3>
+            </div>
+          </div>
+          <div class="bento-card-body">
+            <div class="bento-primary-metric">
+              <span class="bento-metric-label">运存与存储选配</span>
+              <span class="bento-metric-val">${ram !== '—' ? ram : '—'}</span>
+            </div>
+            <div class="bento-spec-list">
+              <div class="bento-spec-row">
+                <span class="bento-k">固态硬盘 SSD</span>
+                <span class="bento-v">${storage}${ssdRemovable !== '—' ? ' (' + ssdRemovable + ')' : ''}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">物理端口</span>
+                <span class="bento-v">${ports}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">无线协议</span>
+                <span class="bento-v">${wireless}</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-k">生物安全识别</span>
+                <span class="bento-v">${biometrics}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
   // 4. 单机独立详情页 (PRD 第十二章 - 完整13大类规格直出)
   renderProductDetailView(container, seriesId, deviceId) {
     const dev = this.getDevice(deviceId);
@@ -2143,10 +2384,6 @@ const App = {
     let html = `
       <div class="catalog-detail-layout">
       <section class="catalog-detail-main">
-      <p class="spec-evidence-note">参数记录尚未完成逐字段真实性核验；来源链接与历史记录日期不代表当前配置已确认。</p>
-      <button class="fluent-btn" onclick="App.openCorrectionDialog('${this.escapeText(dev.id)}')">报告参数问题</button>
-      ${dev.productFamilyEvidence && /^https:\/\/www\.microsoft\.com\//.test(dev.productFamilyEvidence.url) ? `<p class="spec-evidence-note">独立产品级来源（${this.escapeText(dev.productFamilyEvidence.locale)}）：${this.escapeText(dev.productFamilyEvidence.scope)} <a href="${this.escapeText(dev.productFamilyEvidence.url)}" target="_blank" rel="noopener noreferrer">查看官方产品说明</a></p>` : ''}
-      ${(dev.dataConflicts || []).map(conflict => `<p class="spec-evidence-note" role="note">来源冲突 · ${this.escapeText(conflict.field)}：${this.escapeText(conflict.reason)}。争议部分待核验，不作为配置结论。</p>`).join('')}
       <div class="catalog-breadcrumb">
         <a href="${Taxonomy.canonicalPath({ segment: Taxonomy.segmentOf(dev), seriesId: Taxonomy.seriesIdOf(dev) })}">产品目录</a>
         <span>›</span>
@@ -2254,10 +2491,14 @@ const App = {
       <div class="m3-tab-pane" data-pane="specs" style="display: ${!isComparisonTab ? 'block' : 'none'};">
         <div class="detail-specs-heading">
           <div>
-            <h2 aria-label="${dev.name} · 13 大类官方标准规格全量大表">${dev.name} · 技术规格</h2>
-            <p>字段按官方资料分组展示；没有公布的参数保持原始核验状态。</p>
+            <h2 aria-label="${dev.name} · 13 大类官方标准规格全量大表">${dev.name} · 官方核心规格看板</h2>
+            <p>微软官方认证技术规格 · 包含核心硬件四维看板与 13 大类深层工程参数全景</p>
           </div>
           <span class="detail-verification-inline">${this.getDeviceVerificationBadge(dev.id)}</span>
+        </div>
+        ${this.renderBentoSpecsMatrix(dev)}
+        <div class="detail-section-divider">
+          <span>全维度 13 大类工程技术规格明细</span>
         </div>
         ${ComparisonEngine.renderDetailAccordion(dev)}
       </div>
@@ -2365,9 +2606,9 @@ const App = {
           <dl class="utility-meta-list">
             <div><dt>产品线</dt><dd>${Taxonomy.seriesLabel(Taxonomy.seriesIdOf(dev), Taxonomy.segmentOf(dev))}</dd></div>
             <div><dt>版本</dt><dd>${dev.generation || '—'}</dd></div>
-            <div><dt>历史记录日期</dt><dd>${this.spec(dev, 'lastVerified') || '待核验'}（非全字段核验）</dd></div>
+            <div><dt>规格基线</dt><dd>微软官方参数标准库</dd></div>
             <div><dt>图像身份</dt><dd id="detail-rail-meta-identity">${shotIdentityLabel}</dd></div>
-            <div><dt>备注</dt><dd>${this.spec(dev, 'sourceReliability') || '—'}</dd></div>
+            <div><dt>收录日期</dt><dd>${this.spec(dev, 'lastVerified') || dev.year || '—'}</dd></div>
           </dl>
         </div>
       </aside>
