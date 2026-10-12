@@ -12174,7 +12174,7 @@ var XBOX_CONTROLLERS = [
     "generationName": "Elite精英系列（本站分类）",
     "seriesType": "limited",
     "seriesTypeName": "精英联名限定款",
-    "name": "XBOX Elite 无线控制器 2 代青春版（Core） 青春版 - XBOX Design Lab 定制版 _《忍者龙剑传 4》",
+    "name": "XBOX Elite 无线控制器 2 代青春版（Core） - XBOX Design Lab 定制版 _《忍者龙剑传 4》",
     "nameEn": "Xbox Elite Wireless Controller Series 2 – Core, Xbox Design Lab NINJA GAIDEN 4（本站英文说明名）",
     "colorName": "《忍者龙剑传4》官方顶盖/侧盖图案；红蓝橡胶握把；Design Lab定制包装",
     "colorHex": "#09090b",
