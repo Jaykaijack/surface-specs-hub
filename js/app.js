@@ -733,12 +733,12 @@ const App = {
       </div>
 
       <div class="home-section-header">
-        <h2 style="font-size:22px; font-weight:700; margin:0;">国行在售</h2>
+        <h2 style="font-size:22px; font-weight:700; margin:0;">国行目录</h2>
         <button class="fluent-btn primary" onclick="App.navigate('#/compare?products=pro-12-inch-2,laptop-13-inch-2')">开始对比</button>
       </div>
       <p style="margin:-8px 0 16px; font-size:13px; color:var(--ms-text-secondary);">在售 ${currentCnDevices.length} 款 · 即将发售 ${upcomingDevices.length} 款。点选机型查看完整参数，或对比 9 月新发布的 12 英寸 Pro 与 13 英寸 Laptop。</p>
 
-      <div class="mobile-scroll-hint">👈 左右滑动查看更多国行在售机型 👉</div>
+      <div class="mobile-scroll-hint">👈 左右滑动查看更多国行目录机型 👉</div>
       <div class="device-select-strip" style="margin-bottom:28px;">
     `;
 
@@ -783,7 +783,7 @@ const App = {
           ${colorDotsHtml}
           <div style="display:flex; gap:4px; justify-content:center; flex-wrap:wrap; margin-top:6px;">
             ${this.recentLaunchBadge(dev)}
-            <span class="spec-badge green">国行在售</span>
+            <span class="spec-badge green">国行目录</span>
             ${Catalog.isNpuDisplayable(Catalog.confirmedSpec(dev, 'npuTops')) ? `<span class="spec-badge gold">${this.spec(dev, 'npuTops')}</span>` : ''}
           </div>
         </div>
@@ -915,27 +915,28 @@ const App = {
         ${(SURFACE_DATA.xboxCategories || []).map((cat, index) => {
           let countText = '';
           let targetPath = '';
-          let heroImg = '';
+          const categoryIcon = {
+            consoles: '<rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="7" r="1"/><path d="M9 17h6"/>',
+            controllers: '<path d="M7 7h10c3 0 5 10 3 11-2 1-4-3-5-3H9c-1 0-3 4-5 3C2 17 4 7 7 7Z"/><path d="M7 10v4m-2-2h4"/><circle cx="16" cy="11" r=".8"/><circle cx="18" cy="13" r=".8"/>',
+            accessories: '<path d="M4 13v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="12" width="4" height="8" rx="2"/><rect x="18" y="12" width="4" height="8" rx="2"/>'
+          }[cat.subCategory] || '';
           if (cat.subCategory === 'consoles') {
             const devs = this.listDevices({ seriesId: 'xbox', segment: 'xbox' });
             countText = `收录历代 ${devs.length} 款主机型号 ↗`;
             targetPath = '#/xbox/consoles';
-            heroImg = './assets/products/xbox-series-x-1tb-hero.png';
           } else if (cat.subCategory === 'controllers') {
             const ctrlCount = (typeof XBOX_CONTROLLERS !== 'undefined' ? XBOX_CONTROLLERS.length : 36);
             countText = `收录历代 ${ctrlCount} 款全色彩与限定版手柄 ↗`;
             targetPath = '#/xbox/controllers';
-            heroImg = './assets/products/xbox-series-controller-sky-cipher.jpg';
           } else {
             const accCount = (typeof XBOX_ACCESSORIES !== 'undefined' ? XBOX_ACCESSORIES.length : 5);
             countText = `收录 ${accCount} 款官方存储卡、耳机与配件 ↗`;
             targetPath = '#/xbox/accessories';
-            heroImg = './assets/products/xbox-wireless-headset.png';
           }
           return `
             <div class="series-card" onclick="App.navigate('${targetPath}')">
               <div class="series-icon" style="background:var(--ms-bg-subtle); display:flex; align-items:center; justify-content:center; overflow:hidden; padding:4px;">
-                <img src="${heroImg}" alt="${cat.name}" style="max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08));" loading="lazy">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-label="${cat.name}分类">${categoryIcon}</svg>
               </div>
               <div class="series-info">
                 <div class="series-title">${cat.name}</div>
@@ -1031,7 +1032,7 @@ const App = {
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
         <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-12-13-intel,pro-12-13-snap')">
           <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Pro 12 商用版 (Intel vs 骁龙)</div>
-          <div style="font-size:12px; color:var(--ms-text-secondary);">50 TOPS 酷睿 Ultra 3 代 对比 80 TOPS 骁龙 X2 Elite</div>
+          <div style="font-size:12px; color:var(--ms-text-secondary);">Intel 与骁龙：按市场及 CPU / SKU 核对 NPU</div>
         </div>
         <div class="compare-shortcut-card" onclick="App.navigate('#/compare?products=pro-12-13-intel,laptop-8-138-intel')">
           <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Surface Pro 12 vs Surface Laptop 8 (商用 Intel)</div>
@@ -1264,12 +1265,22 @@ const App = {
 
   // 3.4a Xbox 手柄专区 (大全中心)
   controllerSpec(controller, key) {
-    if (!controller.requiresFieldEvidence) return controller[key] == null ? null : controller[key];
+    if (!controller.requiresFieldEvidence && !['msrp', 'salesRegion'].includes(key)) return controller[key] == null ? null : controller[key];
     const proof = controller.specEvidence && controller.specEvidence[key];
     if (!proof || proof.configuration !== controller.id || !proof.reviewedAt ||
         JSON.stringify(proof.value) !== JSON.stringify(controller[key]) ||
         !/^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)\//.test(proof.sourceUrl || '')) return null;
+    if (['msrp', 'salesRegion'].includes(key) && (!proof.configurationScope || !proof.region)) return null;
+    if (key === 'salesRegion' && controller[key] === 'cn_official' && proof.region !== 'CN') return null;
     return controller[key];
+  },
+
+  xboxAccessoryPrice(accessory) {
+    const proof = accessory.metadataEvidence?.price;
+    if (!/[¥￥$]|\d+(?:,\d+)*\s*元/.test(accessory.price || '')) return accessory.price || '待核：本款地区及日期明确的价格来源';
+    if (!proof || proof.configuration !== accessory.id || proof.value !== accessory.price || !proof.reviewedAt || !proof.configurationScope ||
+        !/^https:\/\/(?:[a-z0-9-]+\.)?(?:microsoft\.com|microsoftstore\.com\.cn|xbox\.com)\//.test(proof.sourceUrl || '')) return '待核：本款地区及日期明确的价格来源';
+    return accessory.price;
   },
 
   renderXboxControllersView(container) {
@@ -1279,7 +1290,7 @@ const App = {
 
     const filtered = controllers.filter(ctrl => {
       // 类别与发售地区筛选
-      if (activeFilter === 'cn_active' && this.controllerSpec(ctrl, 'salesRegion') !== 'cn_official') return false;
+      if (activeFilter === 'cn_active' && !['cn_official', 'cn_recorded'].includes(this.controllerSpec(ctrl, 'salesRegion'))) return false;
       if (activeFilter === 'us_exclusive' && this.controllerSpec(ctrl, 'salesRegion') !== 'us_only') return false;
       if (activeFilter === 'global_recorded' && this.controllerSpec(ctrl, 'salesRegion') !== 'global_recorded') return false;
       if (activeFilter === 'series_core' && (ctrl.generation !== 'series' || ctrl.seriesType !== 'core')) return false;
@@ -1326,7 +1337,7 @@ const App = {
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
           <div style="display:flex; gap:6px; flex-wrap:wrap;">
             <button class="fluent-btn ${activeFilter === 'all' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('all')">全部 (${controllers.length})</button>
-            <button class="fluent-btn ${activeFilter === 'cn_active' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('cn_active')">🇨🇳 中国官方收录</button>
+            <button class="fluent-btn ${activeFilter === 'cn_active' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('cn_active')">🇨🇳 中国资料收录 · 来源条件另看</button>
             <button class="fluent-btn ${activeFilter === 'global_recorded' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('global_recorded')">海外官方收录 · 国行供应另核</button>
             <button class="fluent-btn ${activeFilter === 'series_core' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_core')">Series 核心纯色</button>
             <button class="fluent-btn ${activeFilter === 'series_special' ? 'primary' : ''}" style="font-size:12.5px; padding:4px 12px;" onclick="App.setXboxControllerFilter('series_special')">透视与烟云特别版</button>
@@ -1352,17 +1363,19 @@ const App = {
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:20px;">
         ${filtered.map(ctrl => {
           const value = key => this.controllerSpec(ctrl, key);
-          const spec = key => value(key) == null ? '—' : value(key);
+          const spec = key => value(key) == null ? (key === 'msrp' ? '待核：型号、地区及日期明确的价格来源' : '—') : value(key);
           let badgeClass = 'spec-badge green';
           if (ctrl.status === 'discontinued') badgeClass = 'spec-badge';
           if (ctrl.status === 'upcoming') badgeClass = 'spec-badge blue';
           if (ctrl.seriesType === 'limited') badgeClass = 'spec-badge gold';
 
-          const regionBadgeHtml = value('salesRegion') === 'us_only'
+          const regionBadgeHtml = value('salesRegion') === 'cn_recorded'
+            ? '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">🇨🇳 中国目录记录 · 原文待复核</span>'
+            : value('salesRegion') === 'us_only'
             ? '<span class="spec-badge gold" style="font-size:11px; padding:2px 8px; font-weight:700;">🇺🇸 美国限定</span>'
             : (value('salesRegion') === 'cn_official'
-              ? '<span class="spec-badge green" style="font-size:11px; padding:2px 8px; font-weight:700;">🇨🇳 中国官方收录</span>'
-              : (value('salesRegion') === 'global_recorded' ? '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">海外官方收录 · 国行供应另核</span>' : (value('salesRegion') === 'legacy' ? '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">历史经典款</span>' : '')));
+              ? '<span class="spec-badge green" style="font-size:11px; padding:2px 8px; font-weight:700;">🇨🇳 中国官方收录 · 库存另核</span>'
+              : (value('salesRegion') === 'global_recorded' ? '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">海外官方收录 · 国行供应另核</span>' : (value('salesRegion') === 'legacy' ? '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">历史经典款</span>' : '<span class="spec-badge" style="font-size:11px; padding:2px 8px;">发行地区待核</span>')));
 
           return `
             <div data-controller-id="${ctrl.id}" class="device-card-mini" style="text-align:left; padding:18px 20px; align-items:flex-start; height:auto; transition:transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
@@ -1371,7 +1384,7 @@ const App = {
                 <span style="color:var(--ms-text-tertiary); font-weight:600;">${ctrl.generationName}${value('year') ? ` · 日期：${value('year')}` : ''}</span>
                 <div style="display:flex; gap:4px; align-items:center;">
                   ${regionBadgeHtml}
-                  ${value('statusLabel') ? `<span class="${badgeClass}" style="font-size:11px; padding:2px 8px;">${value('statusLabel')}</span>` : ''}
+                  ${value('statusLabel') ? `<span class="${badgeClass}" style="font-size:11px; padding:2px 8px;">${/在售/.test(value('statusLabel')) ? '已收录 · 库存另核' : value('statusLabel')}</span>` : ''}
                 </div>
               </div>
 
@@ -1645,7 +1658,7 @@ const App = {
           <div data-xbox-accessory-id="${acc.id}" class="device-card-mini" style="text-align:left; padding:22px; align-items:flex-start; height:auto; transition:transform 0.2s;" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
             <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:10px;">
               <span style="font-size:12px; font-weight:700; color:var(--ms-accent);">${acc.categoryName}</span>
-              <span class="spec-badge ${acc.metadataEvidence?.status?.partialDisposition ? '' : 'green'}">${acc.statusLabel}</span>
+              <span class="spec-badge ${acc.metadataEvidence?.status?.partialDisposition ? '' : 'green'}">${/在售/.test(acc.statusLabel) ? '已收录 · 库存另核' : acc.statusLabel}</span>
             </div>
 
             <!-- 产品真实大图展示 -->
@@ -1687,7 +1700,7 @@ const App = {
                 };
                 return `<div><strong style="color:var(--ms-text-primary);">${labelMap[k] || k}：</strong>${acc.details[k]}</div>`;
               }).join('')}
-              <div style="margin-top:6px;"><strong style="color:var(--ms-text-primary);">🏷️ 官方参考价：</strong><span style="color:var(--ms-accent); font-weight:700;">${acc.price}</span></div>
+              <div style="margin-top:6px;"><strong style="color:var(--ms-text-primary);">🏷️ 地区与日期参考价：</strong><span style="color:var(--ms-accent); font-weight:700;">${this.xboxAccessoryPrice(acc)}</span></div>
               ${Catalog.objectEvidenceMarkup({...acc, ...(acc.details || {})}, 'detailEvidence')}${Catalog.objectEvidenceMarkup(acc, 'metadataEvidence')}
             </div>
           </div>
@@ -1709,12 +1722,12 @@ const App = {
     let html = `
       <div class="business-hero-banner">
         <div class="business-hero-badge">
-          <span>🏢 Microsoft Learn 官方商用规格中心</span>
+          <span>🏢 商用型号与官方资料索引</span>
           <span class="business-sub-pill">Surface for Business</span>
         </div>
         <h1 class="business-hero-title">Surface 商用版产品中枢</h1>
         <p class="business-hero-desc">
-          严格对齐微软官方 Learn (learn.microsoft.com/surface) 技术架构标准。专为企业 IT 集中运维、采购合规、高安全办公与工业现场场景设计，提供深度硬件参数、规格表写明的可拆卸式固态硬盘、Secured-core PC 安全基线与官方驱动生命周期支持。
+          按商用型号查阅硬件参数与微软官方资料。安全处理器、固态硬盘维护、系统版本、管理功能和驱动支持期限均须核对具体 CPU、配置与适用条款；采购前另核地区 SKU 和供货。
         </p>
         <div class="business-hero-actions">
           <a href="https://www.microsoftstore.com.cn/commercial" target="_blank" rel="noopener" class="fluent-btn primary">
@@ -1723,10 +1736,10 @@ const App = {
           <a href="https://learn.microsoft.com/en-us/surface/" target="_blank" rel="noopener" class="fluent-btn">
             📖 微软官方 Learn 文档中枢 ↗
           </a>
-          <button class="fluent-btn" onclick="App.navigate('#/surface/pro')">
+          <button class="fluent-btn" onclick="App.navigate('#/business/pro')">
             💻 浏览 Pro 系列
           </button>
-          <button class="fluent-btn" onclick="App.navigate('#/surface/laptop')">
+          <button class="fluent-btn" onclick="App.navigate('#/business/laptop')">
             ⌨️ 浏览 Laptop 系列
           </button>
           <button class="fluent-btn" onclick="App.selectAllCategoryDevices('commercial')">
@@ -1740,7 +1753,7 @@ const App = {
         <div class="business-pillar-card">
           <div class="pillar-icon">🛡️</div>
           <div class="pillar-title">Secured-core PC 安全基线</div>
-          <div class="pillar-desc">标配微软 Pluton 安全处理器与独立 TPM 2.0，Wi-Fi 商业机型集成硬件级 NFC 快速免密打卡登录，阻绝固件级渗透。</div>
+          <div class="pillar-desc">TPM、Pluton、Secured-core PC 与 NFC 支持因型号和 CPU 配置而异。核对对应安全参数、系统版本及登录条件，不能据商用分类认定全部支持。</div>
         </div>
         <div class="business-pillar-card">
           <div class="pillar-icon">🔧</div>
@@ -1750,12 +1763,12 @@ const App = {
         <div class="business-pillar-card">
           <div class="pillar-icon">☁️</div>
           <div class="pillar-title">Surface IT Toolkit & DFCI</div>
-          <div class="pillar-desc">支持云端集中管控 UEFI 固件设置与端口锁定；Windows Autopilot 零接触开箱部署，驱动生命周期延长至 2030 年。</div>
+          <div class="pillar-desc">DFCI、Autopilot 与管理工具按机型、系统、管理服务及许可条件核对。驱动与固件支持结束日期逐型号查看官方生命周期资料。</div>
         </div>
         <div class="business-pillar-card">
           <div class="pillar-icon">💼</div>
-          <div class="pillar-title">商用专业版 OS 与纯净系统</div>
-          <div class="pillar-desc">出厂预装 Windows 11 专业版 / Windows 10 企业版，纯净无第三方预装推广软件，兼容域控与 MDM 策略下发。</div>
+          <div class="pillar-title">操作系统与管理条件</div>
+          <div class="pillar-desc">出厂系统因代际、地区和 SKU 而异。查看对应系统版本及许可；域加入、MDM 和升级权益按所选配置与服务条件核验。</div>
         </div>
       </div>
 
@@ -1814,7 +1827,7 @@ const App = {
                   ${ComparisonEngine.getDeviceSvgIcon(dev.categoryId)}
                 </div>
               </div>
-              <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
+              <div class="device-card-date-status" style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-bottom:6px;">
                 <div style="display:flex; gap:6px; align-items:center;">
                   <span class="device-year-badge">${this.spec(dev, 'releaseDate') || dev.year}</span>
                   <span class="spec-badge commercial">🏢 商业版</span>
@@ -1919,7 +1932,7 @@ const App = {
             全部机型 (${devices.length})
           </button>
           <button class="fluent-btn-sm ${filterType === 'current' ? 'active' : ''}" onclick="App.auditFilter='current'; App.renderAuditView(document.getElementById('hub-main-content'))">
-            🔥 国行在售 (${currentDevices.length})
+            🔥 国行目录 (${currentDevices.length})
           </button>
           <button class="fluent-btn-sm ${filterType === 'commercial' ? 'active' : ''}" onclick="App.auditFilter='commercial'; App.renderAuditView(document.getElementById('hub-main-content'))">
             🏢 商用版专区 (${commercialDevices.length})
@@ -2487,7 +2500,7 @@ const App = {
     const eraMilestones = {
       2026: {
         title: "⚡ Copilot+ PC 算力革命纪元 (2024 ~ 2026)",
-        desc: "全面拥抱 ARM 架构与高通骁龙® X / X2 芯片，端侧 NPU 突破 80 TOPS，开启 Windows AI PC 硬件新时代。"
+        desc: "部分型号采用高通骁龙 X / X2 ARM 芯片，另有 Intel 型号；NPU 算力与适用功能按地区及具体型号核验。"
       },
       2023: {
         title: "🎨 形态深化与动态编织铰链纪元 (2021 ~ 2023)",
@@ -2609,7 +2622,7 @@ const App = {
         <div class="filter-group">
           <span class="filter-label">销售状态:</span>
           <button class="filter-chip ${this.filters.status === 'all' ? 'active' : ''}" onclick="App.setFilter('status', 'all')">全部代际</button>
-          <button class="filter-chip ${this.filters.status === 'current_cn' ? 'active' : ''}" onclick="App.setFilter('status', 'current_cn')">仅看国行在售</button>
+          <button class="filter-chip ${this.filters.status === 'current_cn' ? 'active' : ''}" onclick="App.setFilter('status', 'current_cn')">仅看国行目录</button>
           <button class="filter-chip ${this.filters.status === 'legacy' ? 'active' : ''}" onclick="App.setFilter('status', 'legacy')">历史归档机型</button>
         </div>
 
@@ -3007,7 +3020,7 @@ const App = {
             </select>
             <select aria-label="按状态筛选" onchange="App.updateDetailFilter('status', this.value)">
               <option value="all" ${this.detailFilterState.status === 'all' ? 'selected' : ''}>所有状态</option>
-              <option value="current_cn" ${this.detailFilterState.status === 'current_cn' || this.detailFilterState.status === '已发布' ? 'selected' : ''}>国行在售</option>
+              <option value="current_cn" ${this.detailFilterState.status === 'current_cn' || this.detailFilterState.status === '已发布' ? 'selected' : ''}>国行目录</option>
               <option value="upcoming" ${this.detailFilterState.status === 'upcoming' || this.detailFilterState.status === '即将推出' ? 'selected' : ''}>即将推出</option>
               <option value="discontinued" ${this.detailFilterState.status === 'discontinued' || this.detailFilterState.status === '已停止销售' ? 'selected' : ''}>停产/经典</option>
             </select>

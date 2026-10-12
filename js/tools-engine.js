@@ -798,7 +798,7 @@ const ToolsEngine = {
 
   guideCaveat(device) {
     const lines = [];
-    if (device.status === 'upcoming') lines.push('官方页面写的是上市月份，现在还不能当作国行在售。');
+    if (device.status === 'upcoming') lines.push('官方页面写的是上市月份，现在还不能当作国行目录。');
     const pen = String(this.spec(device, 'touchAndPenProtocol') || '');
     if (pen.includes('不支持触控笔')) lines.push('官方写明不支持触控笔。');
     const keyboard = String(this.spec(device, 'keyboardCompat') || this.spec(device, 'compatibleKeyboard') || '');
@@ -813,8 +813,8 @@ const ToolsEngine = {
     const titles = {
       commute: '极轻差旅与全天移动外勤',
       office: '现代商务行政与高负荷多任务',
-      enterprise_it: '企业 IT 统采与高等级安全信创',
-      ai_copilot: 'Copilot+ 本地端侧 AI 生产力旗舰',
+      enterprise_it: '企业 IT 配置与管理条件核对',
+      ai_copilot: '本地 AI 硬件与功能条件核对',
       design: '原笔迹触控手绘与数码创作',
       creative_pen: '原笔迹触控手绘与数码创作',
       conference: '高清音视频会务与跨国协作',
@@ -838,7 +838,7 @@ const ToolsEngine = {
         rest: [],
         matches: [],
         emptyNote: this.guideBudget === 'all'
-          ? '当前形态和芯片条件下，没有在售或即将发售的机型。'
+          ? '当前形态和芯片条件下，没有已收录或即将发售的机型。'
           : '当前没有已核验价格且符合此预算的机型。未核验的历史价格不参与预算筛选，可选择全部预算查看参数。'
       };
     }
@@ -870,8 +870,8 @@ const ToolsEngine = {
     const scenes = [
       { id: 'commute', label: '🚄 极轻差旅商旅', desc: '羽量便携随行、超长续航与可选 5G' },
       { id: 'office', label: '💼 现代行政办公', desc: '轻薄一体形态、高舒适全尺寸键程' },
-      { id: 'enterprise_it', label: '🛡️ 企业统采与信创合规', desc: 'Intel vPro 硬件盾与 Secured-core' },
-      { id: 'ai_copilot', label: '🤖 Copilot+ 本地 AI', desc: '专用 NPU 算力与适用功能须分别核验' },
+      { id: 'enterprise_it', label: '🛡️ 企业 IT 管理条件', desc: '管理功能按型号及许可条件核对' },
+      { id: 'ai_copilot', label: '🤖 本地 AI 功能条件', desc: '专用 NPU 算力与适用功能须分别核验' },
       { id: 'design', label: '🎨 原笔迹手绘数码设计', desc: 'PixelSense 4096 级压感与触感笔反馈' },
       { id: 'engineering', label: '⚡ 专业软件研发与重度工程', desc: '强悍 CPU 多核算力与高速编译散热冗余' },
       { id: 'media_3d', label: '🔬 3D 渲染与影视特效后期', desc: 'NVIDIA 独立显卡与超高色准 Mini-LED 屏' },
@@ -891,8 +891,8 @@ const ToolsEngine = {
 
     const archs = [
       { id: 'all', label: '不限芯片架构' },
-      { id: 'snapdragon', label: '骁龙 Copilot+ (超长续航/80 TOPS AI)' },
-      { id: 'intel', label: 'Intel 酷睿 (极高行业软件兼容性)' }
+      { id: 'snapdragon', label: '高通骁龙（按型号核对 NPU / 功能）' },
+      { id: 'intel', label: 'Intel 酷睿（按软件核对兼容条件）' }
     ];
 
     const renderCard = (dev, badgeClass, badgeText) => {
@@ -970,7 +970,7 @@ const ToolsEngine = {
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px;">
             <div>
               <h2 style="font-size:18px; font-weight:700; color:var(--ms-text-primary); margin-bottom:4px;">🎯 场景化智能选型向导 (Surface Smart Guide)</h2>
-              <p style="font-size:13px; color:var(--ms-text-secondary);">按场景与形态查找设备，数值筛选只使用已绑定来源的限定参数。请核对地区与具体配置。</p>
+              <p style="font-size:13px; color:var(--ms-text-secondary);">按场景与形态查找设备，数值筛选只使用已绑定来源的限定参数。Copilot+ 等功能须另核内存、系统和地区条件，具体配置与供货见对应来源。</p>
             </div>
             <button class="fluent-btn-sm" onclick="ToolsEngine.guideBudget='all'; ToolsEngine.guideScene='commute'; ToolsEngine.guideForm='all'; ToolsEngine.guideArch='all'; document.getElementById('tool-smart-guide-container').innerHTML = ToolsEngine.renderSmartGuide();">
               重置条件 ↺
@@ -1033,7 +1033,7 @@ const ToolsEngine = {
         <!-- 推荐结果卡片区 -->
         <div class="guide-results-grid">
           ${renderCard(best, 'gold', '场景最佳首选')}
-          ${renderCard(alt, 'green', '高性价比/均衡备选')}
+          ${renderCard(alt, 'green', '备选机型')}
           ${(rest || []).map(dev => renderCard(dev, 'green', '同场景还可看')).join('')}
         </div>
       </div>

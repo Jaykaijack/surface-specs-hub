@@ -108,7 +108,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-original",
@@ -126,7 +126,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-original",
@@ -142,7 +142,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-original",
@@ -163,7 +163,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-original",
@@ -178,7 +178,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuModel": {
         "configuration": "xbox-original",
@@ -193,7 +193,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-original",
@@ -208,7 +208,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "configuration": "xbox-original",
@@ -223,7 +223,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-original",
@@ -238,7 +238,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-original",
@@ -259,7 +259,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-original",
@@ -274,7 +274,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-original",
@@ -289,7 +289,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "configuration": "xbox-original",
@@ -304,7 +304,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "tagline": {
         "configuration": "xbox-original",
@@ -320,7 +320,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.tagline",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-original",
@@ -335,7 +335,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-original",
@@ -353,7 +353,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-original",
@@ -370,7 +370,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "videoFieldSemantics": {
@@ -393,7 +393,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "evidenceSources": [
@@ -426,7 +426,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[76].metadataEvidence.tagline",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -608,7 +608,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-360",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-360",
@@ -619,7 +619,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-360",
@@ -630,7 +630,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "configuration": "xbox-360",
@@ -641,7 +641,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-360",
@@ -652,7 +652,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ssdRemovable": {
         "configuration": "xbox-360",
@@ -663,7 +663,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.ssdRemovable",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-360",
@@ -674,7 +674,7 @@ var XBOX_LINEUP = [
         "configurationScope": "2005 Core/20GB首发方案；不推最大扩展容量或其他修订\n已有逐字段映射加具名补证；补证URL、定位与适用限制见supplemental_evidence，不能跨型号/地区外推。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-360",
@@ -686,7 +686,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "warranty": {
         "configuration": "xbox-360",
@@ -702,7 +702,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.warranty",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-360",
@@ -733,7 +733,7 @@ var XBOX_LINEUP = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-360",
@@ -753,7 +753,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-360",
@@ -773,7 +773,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-360",
@@ -788,7 +788,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "thermalDesign": {
         "configuration": "xbox-360",
@@ -804,7 +804,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.thermalDesign",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "historicalSkuConfigurations": {
         "configuration": "xbox-360",
@@ -823,7 +823,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[77].specEvidence.historicalSkuConfigurations",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -1030,7 +1030,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-360-s",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "value": "内置Wi-Fi N（2010年6月公告配置）",
@@ -1041,7 +1041,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-360-s",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-360-s",
@@ -1052,7 +1052,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox360 S，需兼容音响；不另推具体声道数\n已有逐字段映射加具名补证；补证URL、定位与适用限制见supplemental_evidence，不能跨型号/地区外推。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ssdRemovable": {
         "configuration": "xbox-360-s",
@@ -1063,7 +1063,7 @@ var XBOX_LINEUP = [
         "configurationScope": "2010版权S手册所示带HDD配置；不证明4GB闪存可拆或任意第三方硬盘兼容\n已有逐字段映射加具名补证；补证URL、定位与适用限制见supplemental_evidence，不能跨型号/地区外推。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.ssdRemovable",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "warranty": {
         "configuration": "xbox-360-s",
@@ -1074,7 +1074,7 @@ var XBOX_LINEUP = [
         "configurationScope": "2010版权历史手册；美国/加拿大；附件90天，不泛化全球及现行政策\n已有逐字段映射加具名补证；补证URL、定位与适用限制见supplemental_evidence，不能跨型号/地区外推。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.warranty",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-360-s",
@@ -1102,7 +1102,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-360-s",
@@ -1118,7 +1118,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-360-s",
@@ -1133,7 +1133,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-360-s",
@@ -1153,7 +1153,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[78].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "heroImageBlocked": true,
@@ -1321,7 +1321,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-360-e",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[79].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-360-e",
@@ -1332,7 +1332,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[79].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-360-e",
@@ -1343,7 +1343,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[79].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-360-e",
@@ -1358,7 +1358,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[79].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-360-e",
@@ -1384,7 +1384,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[79].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -1500,7 +1500,7 @@ var XBOX_LINEUP = [
       "repairabilityScore": "not_disclosed",
       "replaceableParts": "not_disclosed",
       "warranty": "2014-09-23官方国行发售公告为9月29日上市记录列两年保修；仅作当时国行历史权益参考，具体包装/条款及当前维修权益另核，不外推2013海外型号",
-      "startingPriceCny": "历史首发3699元（不含Kinect）/4299元（含Kinect）",
+      "startingPriceCny": "2014-09-29国行历史首发3699元（不含Kinect）/4299元（含Kinect）；人民币，当时套装口径，非当前售价",
       "sourceReliability": "微软/Xbox官方资料（仅来源身份；参数须按各字段证据及适用范围判断，缺证项仍待核验）",
       "lastVerified": "2026-09-29",
       "officialDocUrl": "https://news.xbox.com/en-us/2013/05/23/marc-whitten-and-major-nelson-discuss-xbox-one-architecture/",
@@ -1528,7 +1528,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-one",
@@ -1539,7 +1539,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-one",
@@ -1550,7 +1550,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "configuration": "xbox-one",
@@ -1561,7 +1561,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-one",
@@ -1572,7 +1572,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "configuration": "xbox-one",
@@ -1583,7 +1583,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-one",
@@ -1594,7 +1594,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "chargingPower": {
         "configuration": "xbox-one",
@@ -1605,7 +1605,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.chargingPower",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-one",
@@ -1616,7 +1616,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuModel": {
         "configuration": "xbox-one",
@@ -1627,7 +1627,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "configuration": "xbox-one",
@@ -1638,7 +1638,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "configuration": "xbox-one",
@@ -1649,7 +1649,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-one",
@@ -1660,7 +1660,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-one",
@@ -1671,18 +1671,22 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "startingPriceCny": {
         "configuration": "xbox-one",
-        "value": "历史首发3699元（不含Kinect）/4299元（含Kinect）",
+        "value": "2014-09-29国行历史首发3699元（不含Kinect）/4299元（含Kinect）；人民币，当时套装口径，非当前售价",
         "sourceUrl": "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans",
+        "sourceUrls": [
+          "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans"
+        ],
         "region": "CN",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2014-09-23中国官方发售公告、9月29日历史权益，带与不带Kinect分开；当前报价、供应和后续套装另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.startingPriceCny",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-one",
@@ -1693,7 +1697,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-one",
@@ -1708,7 +1712,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-one",
@@ -1723,7 +1727,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-one",
@@ -1749,7 +1753,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[80].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "warranty": {
         "configuration": "xbox-one",
@@ -1762,7 +1766,7 @@ var XBOX_LINEUP = [
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xbox-one.warranty.cn-2014",
         "partialDisposition": true,
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -1892,7 +1896,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "chargingPower": {
         "configuration": "xbox-one-s",
@@ -1903,7 +1907,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.chargingPower",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-one-s",
@@ -1914,7 +1918,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "configuration": "xbox-one-s",
@@ -1925,7 +1929,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-one-s",
@@ -1936,7 +1940,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "configuration": "xbox-one-s",
@@ -1947,7 +1951,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-one-s",
@@ -1958,7 +1962,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-one-s",
@@ -1969,7 +1973,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-one-s",
@@ -1980,7 +1984,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuModel": {
         "configuration": "xbox-one-s",
@@ -1991,7 +1995,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "configuration": "xbox-one-s",
@@ -2002,7 +2006,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "configuration": "xbox-one-s",
@@ -2013,7 +2017,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-one-s",
@@ -2024,7 +2028,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-one-s",
@@ -2035,7 +2039,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-one-s",
@@ -2046,7 +2050,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-one-s",
@@ -2057,7 +2061,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-one-s",
@@ -2068,7 +2072,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-one-s",
@@ -2079,7 +2083,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-one-s",
@@ -2095,7 +2099,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-one-s",
@@ -2111,7 +2115,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-one-s",
@@ -2126,7 +2130,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-one-s",
@@ -2152,7 +2156,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "startingPriceCny": {
         "configuration": "xbox-one-s",
@@ -2171,7 +2175,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.startingPriceCny",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "historicalBundlePricesCny": {
         "configuration": "xbox-one-s",
@@ -2188,7 +2192,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[81].specEvidence.historicalBundlePricesCny",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -2344,7 +2348,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-one-s-digital",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-one-s-digital",
@@ -2355,7 +2359,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-one-s-digital",
@@ -2366,7 +2370,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-one-s-digital",
@@ -2377,7 +2381,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-one-s-digital",
@@ -2388,7 +2392,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n2026-10-10独立复核官方具名公告，Cord cutters段。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "officialDocUrl": {
         "configuration": "xbox-one-s-digital",
@@ -2399,7 +2403,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.officialDocUrl",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-one-s-digital",
@@ -2413,7 +2417,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球Xbox One S All-Digital发布公告",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-one-s-digital",
@@ -2428,7 +2432,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-one-s-digital",
@@ -2443,7 +2447,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "configuration": "xbox-one-s-digital",
@@ -2465,7 +2469,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-one-s-digital",
@@ -2495,7 +2499,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -2527,7 +2531,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球Xbox One S All-Digital发布公告",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[82].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -2664,7 +2668,7 @@ var XBOX_LINEUP = [
       "repairabilityScore": "not_disclosed",
       "replaceableParts": "not_disclosed",
       "warranty": "not_disclosed",
-      "startingPriceCny": "3999元（国行历史首发）",
+      "startingPriceCny": "3999元（2017-11-07国行历史首发，人民币）；2017-12-22官方年度回顾记录，非当前售价",
       "sourceReliability": "微软/Xbox官方资料（仅来源身份；参数须按各字段证据及适用范围判断，缺证项仍待核验）",
       "lastVerified": "2026-09-29",
       "officialDocUrl": "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/",
@@ -2679,7 +2683,8 @@ var XBOX_LINEUP = [
       "https://news.xbox.com/en-us/2017/06/11/xbox-one-x-e3-2017/",
       "https://news.xbox.com/wp-content/uploads/sites/2/Xbox_One_Spec_Sheet.pdf",
       "https://www.microsoftstore.com.cn/support-and-help/xbox-faq",
-      "https://news.xbox.com/de-de/2018/08/29/xbox-elite-wireless-controller/"
+      "https://news.xbox.com/de-de/2018/08/29/xbox-elite-wireless-controller/",
+      "https://news.microsoft.com/zh-cn/2017-%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87%E7%9A%84%E5%BE%AE%E8%BD%AF-xbox-%E5%A4%A7%E4%BA%8B%E4%BB%B6/"
     ],
     "specEvidence": {
       "storageOptions": {
@@ -2691,7 +2696,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-one-x",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "value": "4K UHD Blu-ray",
@@ -2702,7 +2707,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-one-x",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-one-x",
@@ -2713,7 +2718,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "configuration": "xbox-one-x",
@@ -2724,7 +2729,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-one-x",
@@ -2735,7 +2740,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-one-x",
@@ -2746,7 +2751,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-one-x",
@@ -2757,7 +2762,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "chargingPower": {
         "configuration": "xbox-one-x",
@@ -2768,7 +2773,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.chargingPower",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-one-x",
@@ -2779,7 +2784,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-one-x",
@@ -2790,7 +2795,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuModel": {
         "configuration": "xbox-one-x",
@@ -2801,7 +2806,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "configuration": "xbox-one-x",
@@ -2812,7 +2817,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-one-x",
@@ -2823,7 +2828,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-one-x",
@@ -2834,7 +2839,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-one-x",
@@ -2845,18 +2850,22 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "startingPriceCny": {
         "configuration": "xbox-one-x",
-        "value": "3999元（国行历史首发）",
-        "sourceUrl": "https://www.microsoftstore.com.cn/support-and-help/xbox-faq",
+        "value": "3999元（2017-11-07国行历史首发，人民币）；2017-12-22官方年度回顾记录，非当前售价",
+        "sourceUrl": "https://news.microsoft.com/zh-cn/2017-%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87%E7%9A%84%E5%BE%AE%E8%BD%AF-xbox-%E5%A4%A7%E4%BA%8B%E4%BB%B6/",
+        "sourceUrls": [
+          "https://news.microsoft.com/zh-cn/2017-%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87%E7%9A%84%E5%BE%AE%E8%BD%AF-xbox-%E5%A4%A7%E4%BA%8B%E4%BB%B6/"
+        ],
         "region": "CN",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2017-12-22中国官方年度回顾明确11月7日国行正式发售和3999元；旧中国FAQ另列1TB新品3999元。不泛化限量版、套装或当前报价。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.startingPriceCny",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-one-x",
@@ -2867,7 +2876,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-one-x",
@@ -2878,7 +2887,7 @@ var XBOX_LINEUP = [
         "configurationScope": "Xbox One家族规格PDF的具名型号列；不自动适用于All-Digital改型或每个地区套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-one-x",
@@ -2893,7 +2902,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球Xbox One X发布公告",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-one-x",
@@ -2923,7 +2932,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-one-x",
@@ -2938,7 +2947,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -2971,7 +2980,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球Xbox One X发布公告",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[83].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "imageBlockedColors": []
@@ -2994,7 +3003,7 @@ var XBOX_LINEUP = [
     "isCommercial": false,
     "segment": "xbox",
     "specs": {
-      "releaseDate": "2020 年 11 月 10 日全球发售（国行 2021 年 6 月 10 日）",
+      "releaseDate": "美国官网历史发行：2020-11-10；中国2021-05-14公告计划于2021-06-10在中国大陆推出。两地区发行日期分别记录，当前库存另核",
       "generation": "Xbox Series S",
       "status": "current_global",
       "salesRegion": "国行历史发行：微软2021年5月公告中国大陆Series S为冰雪白全数字主机、512GB定制SSD，6月10日起发行，历史建议价2399元。美国官网另列Robot White 512GB；两地区的当前库存及现价均需即时SKU证据。",
@@ -3089,7 +3098,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "value": "512GB NVMe SSD",
@@ -3100,7 +3109,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-512",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "value": "4 TFLOPS，20CU，1.565GHz，RDNA2",
@@ -3111,7 +3120,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-512",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "value": "65 × 151 × 275 mm",
@@ -3122,7 +3131,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-512",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-series-s-512",
@@ -3133,7 +3142,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "value": "无光驱，不支持光盘游戏",
@@ -3144,7 +3153,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-512",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-series-s-512",
@@ -3155,7 +3164,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-series-s-512",
@@ -3166,7 +3175,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-series-s-512",
@@ -3177,7 +3186,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-series-s-512",
@@ -3188,7 +3197,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-series-s-512",
@@ -3199,7 +3208,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-series-s-512",
@@ -3210,7 +3219,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-series-s-512",
@@ -3221,7 +3230,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-series-s-512",
@@ -3232,7 +3241,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-series-s-512",
@@ -3243,7 +3252,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "chassisMaterial": {
         "configuration": "xbox-series-s-512",
@@ -3254,7 +3263,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.chassisMaterial",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "startingPriceCny": {
         "configuration": "xbox-series-s-512",
@@ -3265,7 +3274,7 @@ var XBOX_LINEUP = [
         "configurationScope": "中国大陆；2021-06-10上市；512GB冰雪白，不套1TB\n已有逐字段映射加具名补证；补证URL、定位与适用限制见supplemental_evidence，不能跨型号/地区外推。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.startingPriceCny",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "warranty": {
         "configuration": "xbox-series-s-512",
@@ -3276,7 +3285,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.warranty",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-series-s-512",
@@ -3292,7 +3301,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-series-s-512",
@@ -3307,7 +3316,7 @@ var XBOX_LINEUP = [
         "configurationScope": "8核定制Zen 2；中国Series S系列官网列3.6GHz（SMT 3.4GHz），美国系列官网列3.8GHz（SMT 3.6GHz）。保留来源冲突，不裁定为512GB具体硬件版频率；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuModel": {
         "configuration": "xbox-series-s-512",
@@ -3322,7 +3331,7 @@ var XBOX_LINEUP = [
         "configurationScope": "8核定制Zen 2；中国Series S系列官网列3.6GHz（SMT 3.4GHz），美国系列官网列3.8GHz（SMT 3.6GHz）。保留来源冲突，不裁定为512GB具体硬件版频率；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-series-s-512",
@@ -3343,7 +3352,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-series-s-512",
@@ -3358,7 +3367,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-series-s-512",
@@ -3373,7 +3382,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-series-s-512",
@@ -3388,7 +3397,23 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "releaseDate": {
+        "configuration": "xbox-series-s-512",
+        "value": "美国官网历史发行：2020-11-10；中国2021-05-14公告计划于2021-06-10在中国大陆推出。两地区发行日期分别记录，当前库存另核",
+        "sourceUrl": "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+        "sourceUrls": [
+          "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+          "https://www.xbox.com/en-US/consoles/xbox-series-s"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "中国2021年历史发行计划与美国官网2020年发行FAQ分别引用；只适用于原始Series S/X发行记录，不当作后续1TB、数字版或2TB同一发售日。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-series-s-512:releaseDate",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "videoFieldSemantics": {
@@ -3409,7 +3434,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "sourceDisagreements": [
@@ -3445,7 +3470,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[84].metadataEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -3570,7 +3595,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "value": "1TB NVMe SSD",
@@ -3581,7 +3606,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-1tb",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "value": "4 TFLOPS，20CU，1.565GHz，RDNA2",
@@ -3592,7 +3617,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-1tb",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "value": "65 × 151 × 275 mm",
@@ -3603,7 +3628,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-1tb",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-series-s-1tb",
@@ -3614,7 +3639,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "value": "无光驱，不支持光盘游戏",
@@ -3625,7 +3650,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-s-1tb",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-series-s-1tb",
@@ -3636,7 +3661,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-series-s-1tb",
@@ -3647,7 +3672,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-series-s-1tb",
@@ -3658,7 +3683,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-series-s-1tb",
@@ -3669,7 +3694,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-series-s-1tb",
@@ -3680,7 +3705,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-series-s-1tb",
@@ -3691,7 +3716,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-series-s-1tb",
@@ -3702,7 +3727,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-series-s-1tb",
@@ -3713,7 +3738,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-series-s-1tb",
@@ -3724,7 +3749,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "chassisMaterial": {
         "configuration": "xbox-series-s-1tb",
@@ -3735,7 +3760,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.chassisMaterial",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-series-s-1tb",
@@ -3751,7 +3776,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-series-s-1tb",
@@ -3766,7 +3791,7 @@ var XBOX_LINEUP = [
         "configurationScope": "8核定制Zen 2；中国Series S系列官网列3.6GHz（SMT 3.4GHz），美国系列官网列3.8GHz（SMT 3.6GHz）。保留来源冲突，不裁定为1TB具体硬件版频率；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuModel": {
         "configuration": "xbox-series-s-1tb",
@@ -3781,7 +3806,7 @@ var XBOX_LINEUP = [
         "configurationScope": "8核定制Zen 2；中国Series S系列官网列3.6GHz（SMT 3.4GHz），美国系列官网列3.8GHz（SMT 3.6GHz）。保留来源冲突，不裁定为1TB具体硬件版频率；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-series-s-1tb",
@@ -3810,7 +3835,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-series-s-1tb",
@@ -3826,7 +3851,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-series-s-1tb",
@@ -3843,7 +3868,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-series-s-1tb",
@@ -3858,7 +3883,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-series-s-1tb",
@@ -3873,7 +3898,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "tagline": {
         "configuration": "xbox-series-s-1tb",
@@ -3891,7 +3916,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].specEvidence.tagline",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "officialPortraits": [
@@ -3924,7 +3949,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "sourceDisagreements": [
@@ -3960,7 +3985,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].metadataEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "tagline": {
         "configuration": "xbox-series-s-1tb",
@@ -3978,7 +4003,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[85].metadataEvidence.tagline",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -4000,7 +4025,7 @@ var XBOX_LINEUP = [
     "isCommercial": false,
     "segment": "xbox",
     "specs": {
-      "releaseDate": "2020 年 11 月 10 日全球发售（国行 2021 年 6 月 10 日）",
+      "releaseDate": "美国官网历史发行：2020-11-10；中国2021-05-14公告计划于2021-06-10在中国大陆推出。两地区发行日期分别记录，当前库存另核",
       "generation": "Xbox Series X",
       "status": "current_global",
       "salesRegion": "海外规格参考：美国Series X系列页列碳黑1TB与4K UHD蓝光光驱。国行历史公告于2021年5月14日计划6月10日起推出Series X，建议价3899元；中国商店旧独立页明确1TB定制SSD。2026年10月11日读取中国商店Xbox主机目录时，所列商品为白色1TB数字版，4099元起；该目录不证明碳黑光驱版当日库存。",
@@ -4102,7 +4127,7 @@ var XBOX_LINEUP = [
         "configurationScope": "8核定制Zen 2，3.8GHz；中国Series X系列官网SMT标3.66GHz，美国系列官网SMT标3.6GHz。保留来源冲突，不裁定为地区硬件修订差异；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-series-x",
@@ -4113,7 +4138,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "value": "1TB NVMe SSD",
@@ -4124,7 +4149,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "value": "12 TFLOPS，52CU，1.825GHz，RDNA2",
@@ -4135,7 +4160,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-series-x",
@@ -4146,7 +4171,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-series-x",
@@ -4157,7 +4182,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-series-x",
@@ -4172,7 +4197,7 @@ var XBOX_LINEUP = [
         "configurationScope": "8核定制Zen 2，3.8GHz；中国Series X系列官网SMT标3.66GHz，美国系列官网SMT标3.6GHz。保留来源冲突，不裁定为地区硬件修订差异；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-series-x",
@@ -4184,7 +4209,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-series-x",
@@ -4195,7 +4220,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-series-x",
@@ -4209,7 +4234,7 @@ var XBOX_LINEUP = [
         ],
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-series-x",
@@ -4220,7 +4245,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-series-x",
@@ -4231,7 +4256,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-series-x",
@@ -4242,7 +4267,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-series-x",
@@ -4253,7 +4278,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "configuration": "xbox-series-x",
@@ -4264,7 +4289,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-series-x",
@@ -4275,7 +4300,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "configuration": "xbox-series-x",
@@ -4287,7 +4312,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "startingPriceCny": {
         "configuration": "xbox-series-x",
@@ -4298,7 +4323,7 @@ var XBOX_LINEUP = [
         "configurationScope": "中国大陆；2021-06-10上市；原版1TB碳黑光驱机\n已有逐字段映射加具名补证；补证URL、定位与适用限制见supplemental_evidence，不能跨型号/地区外推。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.startingPriceCny",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "thermalDesign": {
         "configuration": "xbox-series-x",
@@ -4309,7 +4334,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.thermalDesign",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-series-x",
@@ -4325,7 +4350,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-series-x",
@@ -4346,7 +4371,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-series-x",
@@ -4367,7 +4392,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-series-x",
@@ -4382,7 +4407,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-series-x",
@@ -4397,7 +4422,23 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "releaseDate": {
+        "configuration": "xbox-series-x",
+        "value": "美国官网历史发行：2020-11-10；中国2021-05-14公告计划于2021-06-10在中国大陆推出。两地区发行日期分别记录，当前库存另核",
+        "sourceUrl": "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+        "sourceUrls": [
+          "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+          "https://www.xbox.com/en-US/consoles/xbox-series-x"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "中国2021年历史发行计划与美国官网2020年发行FAQ分别引用；只适用于原始Series S/X发行记录，不当作后续1TB、数字版或2TB同一发售日。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-series-x:releaseDate",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -4419,7 +4460,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "imageBlockedColors": [],
@@ -4437,7 +4478,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[86].metadataEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -4570,7 +4611,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x-digital",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-series-x-digital",
@@ -4581,7 +4622,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "value": "1TB NVMe SSD",
@@ -4592,7 +4633,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x-digital",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "value": "12 TFLOPS，52CU，1.825GHz，RDNA2",
@@ -4603,7 +4644,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x-digital",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-series-x-digital",
@@ -4614,7 +4655,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-series-x-digital",
@@ -4625,7 +4666,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-series-x-digital",
@@ -4636,7 +4677,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-series-x-digital",
@@ -4648,7 +4689,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-series-x-digital",
@@ -4659,7 +4700,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-series-x-digital",
@@ -4673,7 +4714,7 @@ var XBOX_LINEUP = [
         ],
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-series-x-digital",
@@ -4684,7 +4725,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-series-x-digital",
@@ -4695,7 +4736,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-series-x-digital",
@@ -4706,7 +4747,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-series-x-digital",
@@ -4717,7 +4758,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "configuration": "xbox-series-x-digital",
@@ -4728,7 +4769,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-series-x-digital",
@@ -4743,7 +4784,7 @@ var XBOX_LINEUP = [
         "configurationScope": "中国具名1TB白色数字版商品页列4.4kg（9.8lb）；美国Series X规格的Digital分支列7.9lb、Disc分支列9.8lb。保留来源及光驱/数字版差异，不替官方页面裁定实际中国数字版重量；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-series-x-digital",
@@ -4754,7 +4795,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "tagline": {
         "configuration": "xbox-series-x-digital",
@@ -4765,7 +4806,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.tagline",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "warranty": {
         "configuration": "xbox-series-x-digital",
@@ -4776,7 +4817,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.warranty",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-series-x-digital",
@@ -4792,7 +4833,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-series-x-digital",
@@ -4813,7 +4854,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-series-x-digital",
@@ -4828,7 +4869,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-series-x-digital",
@@ -4843,7 +4884,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-series-x-digital",
@@ -4858,7 +4899,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -4880,7 +4921,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "imageBlockedColors": [],
@@ -4898,7 +4939,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[87].metadataEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -5014,7 +5055,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x-2tb",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-series-x-2tb",
@@ -5025,7 +5066,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "value": "2TB NVMe SSD",
@@ -5036,7 +5077,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x-2tb",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "value": "12 TFLOPS，52CU，1.825GHz，RDNA2",
@@ -5047,7 +5088,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x-2tb",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-series-x-2tb",
@@ -5058,7 +5099,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-series-x-2tb",
@@ -5069,7 +5110,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-series-x-2tb",
@@ -5080,7 +5121,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-series-x-2tb",
@@ -5092,7 +5133,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-series-x-2tb",
@@ -5103,7 +5144,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-series-x-2tb",
@@ -5117,7 +5158,7 @@ var XBOX_LINEUP = [
         ],
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-series-x-2tb",
@@ -5128,7 +5169,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-series-x-2tb",
@@ -5139,7 +5180,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-series-x-2tb",
@@ -5150,7 +5191,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-series-x-2tb",
@@ -5161,7 +5202,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "configuration": "xbox-series-x-2tb",
@@ -5173,7 +5214,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "configuration": "xbox-series-x-2tb",
@@ -5184,7 +5225,7 @@ var XBOX_LINEUP = [
         "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-series-x-2tb",
@@ -5199,7 +5240,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-series-x-2tb",
@@ -5220,7 +5261,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "releaseDate": {
         "configuration": "xbox-series-x-2tb",
@@ -5235,7 +5276,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.releaseDate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-series-x-2tb",
@@ -5251,7 +5292,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-series-x-2tb",
@@ -5266,7 +5307,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "tagline": {
         "configuration": "xbox-series-x-2tb",
@@ -5281,7 +5322,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.tagline",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-series-x-2tb",
@@ -5299,7 +5340,7 @@ var XBOX_LINEUP = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -5320,7 +5361,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证；帧率/分辨率须游戏与显示器支持；扩展卡容量/地区供应另核；规格不代表全部游戏表现。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "imageBlockedColors": [],
@@ -5338,7 +5379,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[88].metadataEvidence.tagline",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {}
@@ -5452,7 +5493,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x25",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.cpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "ramSpec": {
         "configuration": "xbox-series-x25",
@@ -5463,7 +5504,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.ramSpec",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "storageOptions": {
         "value": "1TB NVMe SSD",
@@ -5474,7 +5515,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x25",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.storageOptions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "gpuModel": {
         "value": "12 TFLOPS，52CU，1.825GHz，RDNA2",
@@ -5485,7 +5526,7 @@ var XBOX_LINEUP = [
         "configuration": "xbox-series-x25",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.gpuModel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "usbPorts": {
         "configuration": "xbox-series-x25",
@@ -5496,7 +5537,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.usbPorts",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuArch": {
         "configuration": "xbox-series-x25",
@@ -5507,7 +5548,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.cpuArch",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "cpuCores": {
         "configuration": "xbox-series-x25",
@@ -5518,7 +5559,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.cpuCores",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "expandableStorage": {
         "configuration": "xbox-series-x25",
@@ -5530,7 +5571,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.expandableStorage",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "resolution": {
         "configuration": "xbox-series-x25",
@@ -5541,7 +5582,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.resolution",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "refreshRate": {
         "configuration": "xbox-series-x25",
@@ -5556,7 +5597,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.refreshRate",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorSupport": {
         "configuration": "xbox-series-x25",
@@ -5567,7 +5608,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.colorSupport",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "videoFeatures": {
         "configuration": "xbox-series-x25",
@@ -5578,7 +5619,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.videoFeatures",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "audioTech": {
         "configuration": "xbox-series-x25",
@@ -5589,7 +5630,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.audioTech",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "wireless": {
         "configuration": "xbox-series-x25",
@@ -5600,7 +5641,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.wireless",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dimensionsMm": {
         "configuration": "xbox-series-x25",
@@ -5611,7 +5652,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.dimensionsMm",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weightGrams": {
         "configuration": "xbox-series-x25",
@@ -5622,7 +5663,7 @@ var XBOX_LINEUP = [
         "reviewedAt": "2026-10-09",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.weightGrams",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "opticalDrive": {
         "configuration": "xbox-series-x25",
@@ -5634,7 +5675,7 @@ var XBOX_LINEUP = [
         "sourceRegionQualifier": "US/GLOBAL",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.opticalDrive",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "consoleVideo": {
         "configuration": "xbox-series-x25",
@@ -5648,7 +5689,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.consoleVideo",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colors": {
         "configuration": "xbox-series-x25",
@@ -5669,7 +5710,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.colors",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "xbox-series-x25",
@@ -5685,7 +5726,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "sourceReliability": {
         "configuration": "xbox-series-x25",
@@ -5700,7 +5741,7 @@ var XBOX_LINEUP = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].specEvidence.sourceReliability",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "dataConflicts": [],
@@ -5720,7 +5761,7 @@ var XBOX_LINEUP = [
         "configurationScope": "独立主机视频输出/录制字段；原有已核值保留，不作为其他功能证明；全球/美国官方页面限定规格，非国行销售及保修认证",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "surface.devices[89].videoFieldSemantics.source",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "imageBlockedColors": [],
@@ -5782,8 +5823,8 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "海外/全球：美国历史发布建议价：起价$59.99；人民币原值未逐SKU核实。",
-    "salesRegion": "cn_official",
+    "msrp": "2020-09-21官方历史参考：$59.99 USD；系列起价；不是中国售价；人民币和当前售价另核。",
+    "salesRegion": "cn_recorded",
     "description": "海外/全球：Carbon Black随Xbox Series X；Robot White随Xbox Series S。纹理握把、混合方向键。",
     "specEvidence": {
       "battery": {
@@ -5800,7 +5841,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-carbon-black",
@@ -5815,7 +5856,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-carbon-black",
@@ -5830,7 +5871,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-carbon-black",
@@ -5844,7 +5885,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-carbon-black",
@@ -5859,7 +5900,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-carbon-black",
@@ -5874,21 +5915,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-carbon-black",
-        "value": "海外/全球：美国历史发布建议价：起价$59.99；人民币原值未逐SKU核实。",
+        "value": "2020-09-21官方历史参考：$59.99 USD；系列起价；不是中国售价；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "系列起价；不是中国售价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-carbon-black",
@@ -5902,7 +5944,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-carbon-black",
@@ -5916,7 +5958,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-carbon-black",
@@ -5931,7 +5973,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[0].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-carbon-black",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-carbon-black:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -5949,7 +6006,7 @@ var XBOX_CONTROLLERS = [
     "year": 2020,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-wireless-controller-white.png",
     "dpad": "混合方向键（同代普通无线控制器官方功能；款式颜色按对应商品页）",
     "triggers": "中国 / 国行普通无线手柄；配色汇总：混合方向键；分享键；纹理握把；扳机振动；配件应用按键映射；海外/全球 / Series X|S世代（2020起）；配色汇总：分享键；混合方向键；扳机/肩键/后壳纹理；按键映射（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
@@ -5959,7 +6016,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "海外/全球：美国历史发布建议价：起价$59.99；人民币原值未逐SKU核实。",
+    "msrp": "2020-09-21官方历史参考：$59.99 USD；系列起价；不是中国售价；人民币和当前售价另核。",
     "description": "海外/全球：Carbon Black随Xbox Series X；Robot White随Xbox Series S。纹理握把、混合方向键。",
     "specEvidence": {
       "battery": {
@@ -5976,7 +6033,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-robot-white",
@@ -5991,7 +6048,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-robot-white",
@@ -6006,7 +6063,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-robot-white",
@@ -6020,7 +6077,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-robot-white",
@@ -6035,7 +6092,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-robot-white",
@@ -6050,21 +6107,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-robot-white",
-        "value": "海外/全球：美国历史发布建议价：起价$59.99；人民币原值未逐SKU核实。",
+        "value": "2020-09-21官方历史参考：$59.99 USD；系列起价；不是中国售价；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "系列起价；不是中国售价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-robot-white",
@@ -6078,7 +6136,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-robot-white",
@@ -6092,7 +6150,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-robot-white",
@@ -6107,7 +6165,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[1].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-robot-white",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-robot-white:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -6125,7 +6198,7 @@ var XBOX_CONTROLLERS = [
     "year": 2020,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-series-controller-shock-blue.png",
     "dpad": "混合方向键（同代普通无线控制器官方功能；款式颜色按对应商品页）",
     "triggers": "中国 / 国行普通无线手柄；配色汇总：混合方向键；分享键；纹理握把；扳机振动；配件应用按键映射；海外/全球 / Series X|S世代（2020起）；配色汇总：分享键；混合方向键；扳机/肩键/后壳纹理；按键映射（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
@@ -6135,7 +6208,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "海外/全球：美国历史发布建议价：系列起价$59.99，未在该段单列蓝色；人民币原值未逐SKU核实。",
+    "msrp": "2020-09-21官方历史参考：$59.99 USD；系列起价；未单列蓝色独立SKU价；人民币和当前售价另核。",
     "description": "次世代首发经典高饱和撞色款。正面鲜亮电光蓝面壳，背壳为纯白撞色设计，视觉冲击力十足。",
     "specEvidence": {
       "battery": {
@@ -6152,7 +6225,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-shock-blue",
@@ -6167,7 +6240,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-shock-blue",
@@ -6182,7 +6255,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-shock-blue",
@@ -6197,7 +6270,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-shock-blue",
@@ -6212,21 +6285,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-shock-blue",
-        "value": "海外/全球：美国历史发布建议价：系列起价$59.99，未在该段单列蓝色；人民币原值未逐SKU核实。",
+        "value": "2020-09-21官方历史参考：$59.99 USD；系列起价；未单列蓝色独立SKU价；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "系列起价；未单列蓝色独立SKU价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-shock-blue",
@@ -6240,7 +6314,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-shock-blue",
@@ -6254,7 +6328,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-shock-blue",
@@ -6269,7 +6343,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[2].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-shock-blue",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-shock-blue:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -6297,7 +6386,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+    "msrp": "2021-01-11官方历史参考：$64.99 USD；该款USD历史发布价；China次日历史发售另列；人民币和当前售价另核。",
     "description": "热血激昂的高纯度火红配色，背部采用清爽白色外壳，扳机与方向键点缀深黑，视觉张力十足。",
     "specEvidence": {
       "battery": {
@@ -6314,7 +6403,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-pulse-red",
@@ -6328,7 +6417,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-pulse-red",
@@ -6343,7 +6432,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-pulse-red",
@@ -6358,7 +6447,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-pulse-red",
@@ -6373,21 +6462,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-pulse-red",
-        "value": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+        "value": "2021-01-11官方历史参考：$64.99 USD；该款USD历史发布价；China次日历史发售另列；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "该款USD历史发布价；China次日历史发售另列；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-pulse-red",
@@ -6401,7 +6491,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-pulse-red",
@@ -6415,7 +6505,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-pulse-red",
@@ -6429,7 +6519,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-pulse-red",
@@ -6444,7 +6534,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[3].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-pulse-red",
+        "value": "cn_official",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2021-01-11英文官方发布稿明确次日在中国发行Pulse Red，即2021-01-12历史计划；USD价格与人民币分开，当前库存另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-pulse-red:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -6462,7 +6567,7 @@ var XBOX_CONTROLLERS = [
     "year": 2021,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-series-controller-electric-volt.png",
     "dpad": "混合方向键（同代普通无线控制器官方功能；款式颜色按对应商品页）",
     "triggers": "中国 / 国行普通无线手柄；配色汇总：混合方向键；分享键；纹理握把；扳机振动；配件应用按键映射；海外/全球 / Series X|S世代（2020起）；配色汇总：分享键；混合方向键；扳机/肩键/后壳纹理；按键映射（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
@@ -6472,7 +6577,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+    "msrp": "2021-03-25官方历史参考：$64.99 USD；2021-04-27多数Xbox市场发售；日期取准确原文URL；人民币和当前售价另核。",
     "description": "灵感源自当代运动时尚潮流与荧光科技色。亮黄高能视觉，首次采用环保消费后回收树脂 (PCR) 材质制造。",
     "specEvidence": {
       "battery": {
@@ -6489,7 +6594,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-electric-volt",
@@ -6504,7 +6609,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-electric-volt",
@@ -6519,7 +6624,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-electric-volt",
@@ -6534,21 +6639,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-electric-volt",
-        "value": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+        "value": "2021-03-25官方历史参考：$64.99 USD；2021-04-27多数Xbox市场发售；日期取准确原文URL；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2021-04-27多数Xbox市场发售；日期取准确原文URL；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-electric-volt",
@@ -6562,7 +6668,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-electric-volt",
@@ -6576,7 +6682,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-electric-volt",
@@ -6591,7 +6697,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[4].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-electric-volt",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-electric-volt:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -6609,7 +6730,7 @@ var XBOX_CONTROLLERS = [
     "year": 2023,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-wireless-controller-green.png",
     "dpad": "混合方向键（同代普通无线控制器官方功能；款式颜色按对应商品页）",
     "triggers": "中国 / 国行普通无线手柄；配色汇总：混合方向键；分享键；纹理握把；扳机振动；配件应用按键映射；海外/全球 / Series X|S世代（2020起）；配色汇总：分享键；混合方向键；扳机/肩键/后壳纹理；按键映射（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
@@ -6619,7 +6740,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+    "msrp": "2023-03-07官方历史参考：$64.99 USD；USD ERP；worldwide；地域库存另核；人民币和当前售价另核。",
     "description": "海外/全球：Xbox标志性绿色前壳。",
     "specEvidence": {
       "battery": {
@@ -6636,7 +6757,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-velocity-green",
@@ -6650,7 +6771,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-velocity-green",
@@ -6665,7 +6786,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-velocity-green",
@@ -6680,7 +6801,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-velocity-green",
@@ -6694,7 +6815,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-velocity-green",
@@ -6709,7 +6830,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-velocity-green",
@@ -6724,21 +6845,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-velocity-green",
-        "value": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+        "value": "2023-03-07官方历史参考：$64.99 USD；USD ERP；worldwide；地域库存另核；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2023/03/07/stun-the-competition-with-the-new-xbox-wireless-controller-velocity-green/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2023/03/07/stun-the-competition-with-the-new-xbox-wireless-controller-velocity-green/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "USD ERP；worldwide；地域库存另核；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-velocity-green",
@@ -6752,7 +6874,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-velocity-green",
@@ -6766,7 +6888,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-velocity-green",
@@ -6780,7 +6902,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-velocity-green",
@@ -6795,7 +6917,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[5].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-velocity-green",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-velocity-green:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -6813,7 +6950,7 @@ var XBOX_CONTROLLERS = [
     "year": 2022,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-series-controller-deep-pink.png",
     "dpad": "混合方向键（同代普通无线控制器官方功能；款式颜色按对应商品页）",
     "triggers": "中国 / 国行普通无线手柄；配色汇总：混合方向键；分享键；纹理握把；扳机振动；配件应用按键映射；海外/全球 / Series X|S世代（2020起）；配色汇总：分享键；混合方向键；扳机/肩键/后壳纹理；按键映射（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
@@ -6823,7 +6960,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "¥499 / $64.99",
+    "msrp": null,
     "description": "大胆热烈的深粉红主色调，点亮个性化电竞桌面。正面高亮玫粉与背部纯白机身巧妙呼应。",
     "specEvidence": {
       "battery": {
@@ -6840,7 +6977,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-deep-pink",
@@ -6854,7 +6991,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-deep-pink",
@@ -6869,7 +7006,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-deep-pink",
@@ -6884,7 +7021,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-deep-pink",
@@ -6899,7 +7036,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-deep-pink",
@@ -6914,7 +7051,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-deep-pink",
@@ -6928,7 +7065,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-deep-pink",
@@ -6942,7 +7079,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-deep-pink",
@@ -6956,7 +7093,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-deep-pink",
@@ -6971,7 +7108,32 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[6].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-deep-pink",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-deep-pink:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 无线控制器 - 浪漫粉；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -6989,7 +7151,7 @@ var XBOX_CONTROLLERS = [
     "year": 2023,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-controller-astral-purple-official.jpg",
     "dpad": "混合方向键（同代普通无线控制器官方功能；款式颜色按对应商品页）",
     "triggers": "中国 / 国行普通无线手柄；配色汇总：混合方向键；分享键；纹理握把；扳机振动；配件应用按键映射；海外/全球 / Series X|S世代（2020起）；配色汇总：分享键；混合方向键；扳机/肩键/后壳纹理；按键映射（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
@@ -6999,7 +7161,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行普通无线手柄；配色汇总：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / Series X|S世代（2020起）；配色汇总：Xbox Series X|S、Xbox One、Windows10/11、Android、iOS（续航随使用/耳机变化；不是每个硬件版本均带扩展口；PC配件应用需兼容USB-C线。）",
-    "msrp": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+    "msrp": "2023-09-12官方历史参考：$64.99 USD；USD ERP；部分Xbox市场预购；人民币和当前售价另核。",
     "description": "深邃高贵的暗夜紫调，散发神秘星空韵味。白色背壳与暗紫色前面板碰撞出独特典雅气质。",
     "imageEvidence": {
       "image": "./assets/products/xbox-controller-astral-purple-official.jpg",
@@ -7012,7 +7174,7 @@ var XBOX_CONTROLLERS = [
       "pixelReview": "ACTUAL_PIXELS_VIEWED",
       "sourcePath": "docs/sources/verified-fields.json",
       "sourceLocator": "controllers[7].imageEvidence",
-      "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+      "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
     },
     "specEvidence": {
       "battery": {
@@ -7029,7 +7191,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-astral-purple",
@@ -7043,7 +7205,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-astral-purple",
@@ -7058,7 +7220,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-astral-purple",
@@ -7073,7 +7235,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-astral-purple",
@@ -7088,7 +7250,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-astral-purple",
@@ -7103,21 +7265,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-astral-purple",
-        "value": "海外/全球：美国历史发布建议价：$64.99；人民币原值未逐SKU核实。",
+        "value": "2023-09-12官方历史参考：$64.99 USD；USD ERP；部分Xbox市场预购；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2023/09/12/xbox-wireless-controller-astral-purple/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2023/09/12/xbox-wireless-controller-astral-purple/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "USD ERP；部分Xbox市场预购；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-astral-purple",
@@ -7131,7 +7294,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-astral-purple",
@@ -7145,7 +7308,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-astral-purple",
@@ -7159,7 +7322,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-astral-purple",
@@ -7174,7 +7337,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[7].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-astral-purple",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-astral-purple:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -7192,7 +7370,7 @@ var XBOX_CONTROLLERS = [
     "year": 2024,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "global_recorded",
     "image": "./assets/products/xbox-series-controller-sky-cipher.png",
     "dpad": "金属质感天蓝色混合十字键",
     "triggers": "海外/全球：纹理扳机；金属质感细节仅限原文明确款式。",
@@ -7202,7 +7380,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S、Xbox One、PC和受支持移动设备；具体系统版本见兼容说明。",
-    "msrp": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+    "msrp": "2024-07-31官方历史参考：$69.99 USD；USD ERP；部分Xbox市场预购；人民币和当前售价另核。",
     "description": "海外/全球：透明蓝壳、银色内部、天蓝金属质感扳机/方向键、双色摇杆与天蓝橡胶后握把。",
     "specEvidence": {
       "battery": {
@@ -7217,7 +7395,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-sky-cipher",
@@ -7231,7 +7409,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-sky-cipher",
@@ -7245,7 +7423,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-sky-cipher",
@@ -7259,7 +7437,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-sky-cipher",
@@ -7273,21 +7451,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-sky-cipher",
-        "value": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+        "value": "2024-07-31官方历史参考：$69.99 USD；USD ERP；部分Xbox市场预购；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "USD ERP；部分Xbox市场预购；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-sky-cipher",
@@ -7301,7 +7480,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-sky-cipher",
@@ -7315,7 +7494,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-sky-cipher",
@@ -7329,7 +7508,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[8].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-sky-cipher",
+        "value": "global_recorded",
+        "sourceUrl": "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-sky-cipher:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -7347,7 +7541,7 @@ var XBOX_CONTROLLERS = [
     "year": 2024,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-ghost-cipher-special-edition.png",
     "dpad": "青铜金属质感 8 向十字键",
     "triggers": "海外/全球：青铜金属质感扳机",
@@ -7357,7 +7551,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S、Xbox One、PC和受支持移动设备；具体系统版本见兼容说明。",
-    "msrp": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+    "msrp": "2024-09-24官方历史参考：$69.99 USD；普通GhostCipher，非EliteCipher；部分市场预购；人民币和当前售价另核。",
     "description": "海外/全球：透明壳、银色内部、灰/青铜细节、橡胶后握把。",
     "specEvidence": {
       "battery": {
@@ -7372,7 +7566,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-ghost-cipher",
@@ -7386,7 +7580,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-ghost-cipher",
@@ -7400,7 +7594,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-ghost-cipher",
@@ -7414,7 +7608,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-ghost-cipher",
@@ -7428,7 +7622,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "series-ghost-cipher",
@@ -7442,7 +7636,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-ghost-cipher",
@@ -7456,21 +7650,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-ghost-cipher",
-        "value": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+        "value": "2024-09-24官方历史参考：$69.99 USD；普通GhostCipher，非EliteCipher；部分市场预购；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2024/09/24/xbox-cipher-series-transparent-controller-design-lab/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2024/09/24/xbox-cipher-series-transparent-controller-design-lab/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "普通GhostCipher，非EliteCipher；部分市场预购；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-ghost-cipher",
@@ -7484,7 +7679,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-ghost-cipher",
@@ -7498,7 +7693,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-ghost-cipher",
@@ -7512,7 +7707,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-ghost-cipher",
@@ -7526,7 +7721,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[9].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-ghost-cipher",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-ghost-cipher",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-ghost-cipher"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-ghost-cipher:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -7544,7 +7754,7 @@ var XBOX_CONTROLLERS = [
     "year": "美国2023-05；国际扩大发售2024-03-26。",
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-arctic-camo-special-edition.png",
     "dpad": "海外/全球：混合方向键；具体配色依该款设计。",
     "triggers": "海外/全球：纹理扳机；金属质感细节仅限原文明确款式。",
@@ -7554,7 +7764,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S、Xbox One、PC和受支持移动设备；具体系统版本见兼容说明。",
-    "msrp": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+    "msrp": "2024-03-26官方历史参考：$69.99 USD；USD ERP；2023-05美国首发后扩大国际销售，不能混成2024初次全球首发；人民币和当前售价另核。",
     "description": "极地雪原军事战术数码迷彩。浅灰与亮白斑块交织，专为在冰霜严苛战场潜伏作战的硬核硬派玩家设计。",
     "specEvidence": {
       "battery": {
@@ -7569,7 +7779,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-arctic-camo",
@@ -7583,7 +7793,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-arctic-camo",
@@ -7597,7 +7807,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-arctic-camo",
@@ -7611,7 +7821,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-arctic-camo",
@@ -7625,7 +7835,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "series-arctic-camo",
@@ -7639,7 +7849,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-arctic-camo",
@@ -7653,21 +7863,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-arctic-camo",
-        "value": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+        "value": "2024-03-26官方历史参考：$69.99 USD；USD ERP；2023-05美国首发后扩大国际销售，不能混成2024初次全球首发；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2024/03/26/arctic-camo-special-edition/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2024/03/26/arctic-camo-special-edition/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "USD ERP；2023-05美国首发后扩大国际销售，不能混成2024初次全球首发；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-arctic-camo",
@@ -7681,7 +7892,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-arctic-camo",
@@ -7695,7 +7906,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-arctic-camo",
@@ -7709,7 +7920,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-arctic-camo",
@@ -7723,7 +7934,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "year": {
         "configuration": "series-arctic-camo",
@@ -7737,7 +7948,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "公布、预告、美国首发与国际扩大发售分别标注，不把公布年份当中国零售日期。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[10].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-arctic-camo",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-arctic-camo-merlin",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-arctic-camo-merlin"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-arctic-camo:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -7755,7 +7981,7 @@ var XBOX_CONTROLLERS = [
     "year": 2022,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "global_recorded",
     "image": "./assets/products/xbox-mineral-camo-special-edition.png",
     "dpad": "海外/全球：混合方向键；具体配色依该款设计。",
     "triggers": "海外/全球：纹理扳机；金属质感细节仅限原文明确款式。",
@@ -7765,7 +7991,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S、Xbox One、PC和受支持移动设备；具体系统版本见兼容说明。",
-    "msrp": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+    "msrp": "2022-09-27官方历史参考：$69.99 USD；USD MSRP；不是同页Razer底座49.99；人民币和当前售价另核。",
     "description": "海外/全球：矿物蓝、亮紫、浅水蓝及深紫迷彩。",
     "specEvidence": {
       "compatibility": {
@@ -7780,7 +8006,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-mineral-camo",
@@ -7794,7 +8020,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-mineral-camo",
@@ -7808,7 +8034,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-mineral-camo",
@@ -7822,21 +8048,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-mineral-camo",
-        "value": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+        "value": "2022-09-27官方历史参考：$69.99 USD；USD MSRP；不是同页Razer底座49.99；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "USD MSRP；不是同页Razer底座49.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-mineral-camo",
@@ -7850,7 +8077,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-mineral-camo",
@@ -7864,7 +8091,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-mineral-camo",
@@ -7878,7 +8105,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[11].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-mineral-camo",
+        "value": "global_recorded",
+        "sourceUrl": "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-mineral-camo:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -7896,7 +8138,7 @@ var XBOX_CONTROLLERS = [
     "year": 2021,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "global_recorded",
     "image": "./assets/products/xbox-daystrike-camo-special-edition.png",
     "dpad": "海外/全球：混合方向键；具体配色依该款设计。",
     "triggers": "海外/全球：纹理扳机；金属质感细节仅限原文明确款式。",
@@ -7906,7 +8148,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S、Xbox One、PC和受支持移动设备；具体系统版本见兼容说明。",
-    "msrp": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+    "msrp": "2021-03-25官方历史参考：$69.99 USD；DaystrikeCamo于2021-05-04多数市场；不是Volt64.99；人民币和当前售价另核。",
     "description": "日暮破晓战术迷彩系列。深红、纯黑与水泥灰拼接碰撞，首创在缓冲键（Bumpers）表面增设防滑抓地纹理。",
     "specEvidence": {
       "compatibility": {
@@ -7921,7 +8163,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[12].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-daystrike-camo",
@@ -7935,21 +8177,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[12].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-daystrike-camo",
-        "value": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+        "value": "2021-03-25官方历史参考：$69.99 USD；DaystrikeCamo于2021-05-04多数市场；不是Volt64.99；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "DaystrikeCamo于2021-05-04多数市场；不是Volt64.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[12].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-daystrike-camo",
@@ -7963,7 +8206,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[12].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-daystrike-camo",
@@ -7977,7 +8220,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[12].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-daystrike-camo",
@@ -7991,7 +8234,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[12].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-daystrike-camo",
+        "value": "global_recorded",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-daystrike-camo:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -8019,7 +8277,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "待核：本款重量与是否含电池条件缺实际原文依据",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
-    "msrp": "美国历史公布参考价（2023-06-12）：$79.99 USD ERP；国行人民币价格待核",
+    "msrp": "2023-06-12官方历史参考：$79.99 USD；Starfield控制器USD ERP；不是耳机124.99；人民币和当前售价另核。",
     "description": "海外/全球 / Starfield限量版：透明扳机可见铜色振动电机；侧/背握把；Constellation主题（游戏另售；不把普通2024耳机20小时规格套到2023限量款。）",
     "specEvidence": {
       "battery": {
@@ -8035,7 +8293,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[13].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-starfield",
@@ -8049,7 +8307,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[13].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "series-starfield",
@@ -8063,7 +8321,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[13].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-starfield",
@@ -8077,7 +8335,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[13].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-starfield",
@@ -8091,7 +8349,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[13].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-starfield",
@@ -8105,29 +8363,37 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[13].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-starfield",
-        "value": "美国历史公布参考价（2023-06-12）：$79.99 USD ERP；国行人民币价格待核",
+        "value": "2023-06-12官方历史参考：$79.99 USD；Starfield控制器USD ERP；不是耳机124.99；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2023/06/12/starfield-limited-edition-wireless-controller-and-headset/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2023/06/12/starfield-limited-edition-wireless-controller-and-headset/"
+        ],
         "region": "GLOBAL",
         "reviewedAt": "2026-10-12",
-        "configurationScope": "按发布稿日期记录历史参考价格；不认证人民币价格、实时库存或现价。",
+        "configurationScope": "Starfield控制器USD ERP；不是耳机124.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "series-starfield:msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-starfield",
         "value": "global_recorded",
         "sourceUrl": "https://news.xbox.com/en-us/2023/06/12/starfield-limited-edition-wireless-controller-and-headset/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2023/06/12/starfield-limited-edition-wireless-controller-and-headset/"
+        ],
         "region": "GLOBAL",
         "reviewedAt": "2026-10-12",
-        "configurationScope": "本站按英文官方历史发布稿列为海外收录；不认证中国SKU、库存或在售。",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "series-starfield:salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "imageUnavailable": true
@@ -8146,7 +8412,7 @@ var XBOX_CONTROLLERS = [
     "year": 2021,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "global_recorded",
     "image": "./assets/products/xbox-controller-20th-anniversary-official.png",
     "dpad": "深色圆盘外观方向键（按本款官方原图；具体结构规格待本款原文核实）",
     "triggers": "防滑纹理扳机键 + 脉冲震动",
@@ -8156,7 +8422,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
-    "msrp": "¥539 / $69.99",
+    "msrp": "2021-10-07官方历史参考：$69.99 USD；20周年控制器预购；2021-11-15推出；指定全球市场，不支持CNY539；人民币和当前售价另核。",
     "description": "致敬初代 Xbox 诞生 20 周年的标志性特别版。半透明哑光黑外壳可窥见内部微观机械结构，经典初代荧光绿 X 导航键，连接主机可解锁专属纪念动态背景。",
     "imageEvidence": {
       "image": "./assets/products/xbox-controller-20th-anniversary-official.png",
@@ -8169,7 +8435,7 @@ var XBOX_CONTROLLERS = [
       "pixelReview": "ACTUAL_PIXELS_VIEWED",
       "sourcePath": "docs/sources/verified-fields.json",
       "sourceLocator": "controllers[14].imageEvidence",
-      "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+      "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
     },
     "specEvidence": {
       "generation": {
@@ -8184,7 +8450,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[14].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-20th-anniversary",
@@ -8198,7 +8464,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[14].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-20th-anniversary",
@@ -8212,7 +8478,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[14].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-20th-anniversary",
@@ -8226,7 +8492,37 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[14].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "msrp": {
+        "configuration": "series-20th-anniversary",
+        "value": "2021-10-07官方历史参考：$69.99 USD；20周年控制器预购；2021-11-15推出；指定全球市场，不支持CNY539；人民币和当前售价另核。",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "20周年控制器预购；2021-11-15推出；指定全球市场，不支持CNY539；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-20th-anniversary:msrp",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-20th-anniversary",
+        "value": "global_recorded",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-20th-anniversary:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -8244,8 +8540,8 @@ var XBOX_CONTROLLERS = [
     "year": 2023,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
-    "image": "./assets/products/xbox-storm-breaker-special-edition.png",
+    "salesRegion": "global_recorded",
+    "image": "",
     "dpad": "海外/全球：混合方向键；具体配色依该款设计。",
     "triggers": "海外/全球：纹理扳机；金属质感细节仅限原文明确款式。",
     "connectivity": "海外/全球：Xbox Wireless；Bluetooth",
@@ -8254,7 +8550,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S、Xbox One、PC和受支持移动设备；具体系统版本见兼容说明。",
-    "msrp": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+    "msrp": "2023-08-01官方历史参考：$69.99 USD；StormcloudVapor USD ERP；指定全球市场，不支持中国独立SKU；人民币和当前售价另核。",
     "description": "海外/全球：深海军蓝云雾漩涡，每只纹路不同；蓝色菱形橡胶后握把。",
     "specEvidence": {
       "year": {
@@ -8266,7 +8562,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "series-storm-breaker",
@@ -8280,7 +8576,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-storm-breaker",
@@ -8294,7 +8590,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-storm-breaker",
@@ -8308,7 +8604,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-storm-breaker",
@@ -8322,7 +8618,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "series-storm-breaker",
@@ -8336,21 +8632,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-storm-breaker",
-        "value": "海外/全球：美国历史发布建议价：$69.99；人民币原值未逐SKU核实。",
+        "value": "2023-08-01官方历史参考：$69.99 USD；StormcloudVapor USD ERP；指定全球市场，不支持中国独立SKU；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "StormcloudVapor USD ERP；指定全球市场，不支持中国独立SKU；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-storm-breaker",
@@ -8364,7 +8661,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-storm-breaker",
@@ -8378,7 +8675,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-storm-breaker",
@@ -8392,9 +8689,25 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[15].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-storm-breaker",
+        "value": "global_recorded",
+        "sourceUrl": "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-storm-breaker:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
-    }
+    },
+    "imageUnavailable": true
   },
   {
     "id": "series-x25-anniversary",
@@ -8410,7 +8723,7 @@ var XBOX_CONTROLLERS = [
     "year": 2026,
     "status": "upcoming",
     "statusLabel": "25周年预售",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-25th-anniversary.png",
     "dpad": "高光金属翡翠绿混合十字键",
     "triggers": "黑色扳机、白色肩键",
@@ -8420,7 +8733,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（25 周年纪念标识独立 Share 键）",
     "weight": "287 克",
     "compatibility": "Xbox Series X、Xbox Series S、Xbox One、Windows10/11、Android和iOS（美国X25官方规格明确列出）；须使用兼容控制器的游戏，移动设备及Bluetooth限指定设备/版本，部分功能不支持。精确移动OS最低版本另核。",
-    "msrp": "¥539 / $69.99",
+    "msrp": null,
     "description": "Xbox 25 周年特别版无线控制器，采用半透明 OG 绿配色，ABXY 按键沿用初代 Xbox 控制器颜色。",
     "specEvidence": {
       "triggers": {
@@ -8432,7 +8745,7 @@ var XBOX_CONTROLLERS = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-x25-anniversary",
@@ -8443,7 +8756,7 @@ var XBOX_CONTROLLERS = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-x25-anniversary",
@@ -8454,7 +8767,7 @@ var XBOX_CONTROLLERS = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "series-x25-anniversary",
@@ -8468,7 +8781,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-x25-anniversary",
@@ -8482,7 +8795,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-x25-anniversary",
@@ -8496,7 +8809,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "series-x25-anniversary",
@@ -8513,7 +8826,7 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-x25-anniversary",
@@ -8532,7 +8845,7 @@ var XBOX_CONTROLLERS = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-x25-anniversary",
@@ -8549,7 +8862,7 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "series-x25-anniversary",
@@ -8566,7 +8879,22 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[16].specEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "series-x25-anniversary",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller-x25",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller-x25"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-x25-anniversary:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "requiresFieldEvidence": true,
@@ -8597,6 +8925,14 @@ var XBOX_CONTROLLERS = [
           "https://www.xbox.com/controller-compatibility",
           "https://www.xbox.com/en-US/accessories/controllers/xbox-25th-anniversary"
         ]
+      },
+      "msrp": {
+        "scope": "Xbox 无线控制器 - X25 特别版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -8614,7 +8950,7 @@ var XBOX_CONTROLLERS = [
     "year": 2025,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-doom-standard-limited-edition.png",
     "dpad": "做旧战损暗金金属 8 向十字键",
     "triggers": "血污战损金属涂层扳机键 + 脉冲震动",
@@ -8624,7 +8960,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
-    "msrp": "¥599 / $79.99",
+    "msrp": null,
     "description": "DOOM Slayer装甲主题；哑光绿3D壳；绿色ABXY",
     "specEvidence": {
       "description": {
@@ -8636,7 +8972,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox 无线控制器《毁灭战士：黑暗时代》限量版",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-doom-dark-ages",
@@ -8647,18 +8983,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox 无线控制器《毁灭战士：黑暗时代》限量版",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-doom-dark-ages",
-        "value": "cn_official",
+        "value": "cn_recorded",
         "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-doom-the-dark-ages-limited-edition",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-doom-the-dark-ages-limited-edition"
+        ],
         "region": "CN",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "中国大陆：国行 Xbox 无线控制器《毁灭战士：黑暗时代》限量版",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-doom-dark-ages",
@@ -8672,7 +9012,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "series-doom-dark-ages",
@@ -8686,7 +9026,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-doom-dark-ages",
@@ -8700,7 +9040,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-doom-dark-ages",
@@ -8714,7 +9054,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-doom-dark-ages",
@@ -8728,7 +9068,17 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[17].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "XBOX 无线控制器《毁灭战士：黑暗时代》限量版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -8756,7 +9106,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S/One；Windows10/11；Android/iOS受限设备；Elite Win7/8.1仅USB且有限制。",
-    "msrp": "¥599 / $79.99",
+    "msrp": null,
     "description": "海外/全球：2025 Pip-Boy发光绿HUD图案/黑底；Design Lab按钮及金属质感升级可自选。",
     "specEvidence": {
       "year": {
@@ -8768,7 +9118,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "series-fallout-pip-boy",
@@ -8782,7 +9132,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-fallout-pip-boy",
@@ -8796,7 +9146,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-fallout-pip-boy",
@@ -8810,7 +9160,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-fallout-pip-boy",
@@ -8824,7 +9174,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-fallout-pip-boy",
@@ -8838,7 +9188,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-fallout-pip-boy",
@@ -8852,7 +9202,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-fallout-pip-boy",
@@ -8862,11 +9212,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-fallout-pip-boy",
@@ -8880,7 +9231,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-fallout-pip-boy",
@@ -8894,7 +9245,17 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[18].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 无线控制器 - 辐射避难所 Pip-Boy 限定版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -8922,7 +9283,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S/One、PC、iOS、Android；受兼容列表限制。",
-    "msrp": "海外/全球：美国发布当时起价/建议价$84.98；定制升级另计；人民币未核。",
+    "msrp": "2024-10-16官方历史参考：$84.98 USD；普通CoD；USD ERP起价；DesignLab升级另计；人民币和当前售价另核。",
     "description": "海外/全球：机密文档、坐标/符号叠层设计；按钮/扳机/握把可定制。",
     "specEvidence": {
       "compatibility": {
@@ -8937,7 +9298,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-cod-black-ops-6",
@@ -8951,7 +9312,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-cod-black-ops-6",
@@ -8965,21 +9326,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-cod-black-ops-6",
-        "value": "海外/全球：美国发布当时起价/建议价$84.98；定制升级另计；人民币未核。",
+        "value": "2024-10-16官方历史参考：$84.98 USD；普通CoD；USD ERP起价；DesignLab升级另计；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "普通CoD；USD ERP起价；DesignLab升级另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-cod-black-ops-6",
@@ -8993,7 +9355,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-cod-black-ops-6",
@@ -9003,11 +9365,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-cod-black-ops-6",
@@ -9021,7 +9384,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-cod-black-ops-6",
@@ -9035,7 +9398,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[19].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -9063,7 +9426,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "待核：本款重量与是否含电池条件缺实际原文依据",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
-    "msrp": "待核：本款历史公布价和国行人民币价格缺实际原文依据",
+    "msrp": null,
     "description": "海外/全球 / Forza Horizon 5 Limited Edition：透明黄色外壳；可见定制配色震动马达（不把Xbox按键光效解释成全壳RGB）；海外/全球 / Forza Horizon 5 Limited Edition：扳机和肩键纹理；侧面与底部凹点握把（灵感为跑车方向盘打孔纹理，不断言真皮材质）",
     "specEvidence": {
       "dpad": {
@@ -9075,7 +9438,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "海外历史参考：Forza Horizon 5 Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[20].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-forza-5",
@@ -9086,7 +9449,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "海外历史参考：Forza Horizon 5 Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[20].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-forza-5",
@@ -9097,7 +9460,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "海外历史参考：Forza Horizon 5 Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[20].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-forza-5",
@@ -9111,7 +9474,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[20].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "series-forza-5",
@@ -9125,7 +9488,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[20].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-forza-5",
@@ -9139,7 +9502,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[20].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-forza-5",
@@ -9153,21 +9516,35 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[20].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-forza-5",
         "value": "global_recorded",
         "sourceUrl": "https://news.xbox.com/en-us/2021/08/24/forza-horizon-5-unveils-new-gameplay-and-cover-cars/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2021/08/24/forza-horizon-5-unveils-new-gameplay-and-cover-cars/"
+        ],
         "region": "GLOBAL",
         "reviewedAt": "2026-10-12",
-        "configurationScope": "本站按英文官方历史发布稿列为海外收录；不认证中国SKU、库存或在售。",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "series-forza-5:salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
-    "imageUnavailable": true
+    "imageUnavailable": true,
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 无线控制器 -《极限竞速：地平线 5》限量版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
+      }
+    }
   },
   {
     "id": "series-gears-5",
@@ -9193,7 +9570,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无实体独立 Share 键（2019 Xbox One 设计）",
     "weight": "待核：本款重量与是否含电池条件缺实际原文依据",
     "compatibility": "海外/全球 / Gears 5 Kait Diaz Limited Edition：Xbox One系列设备；蓝牙用于Windows10电脑和平板（仅发布文明确的范围；不从此推断所有后续系统兼容）",
-    "msrp": "美国发布稿历史公布价（2019-08-06）：$74.99；国行人民币价格待核",
+    "msrp": "2019-08-06官方历史参考：$74.99 USD；Kait控制器历史USD价；不是另售充电座49.99；人民币和当前售价另核。",
     "description": "海外/全球 / Gears 5 Kait Diaz Limited Edition：雪地旧化风格；扳机纹理与菱形橡胶握把（不能替换为普通冰雪白款图）",
     "specEvidence": {
       "generation": {
@@ -9205,7 +9582,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "海外历史参考：Gears 5 Kait Diaz Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-gears-5",
@@ -9216,7 +9593,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-FIELD-01\n海外历史参考：Gears 5 Kait Diaz Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "shareBtn": {
         "configuration": "series-gears-5",
@@ -9227,7 +9604,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "海外历史参考：Gears 5 Kait Diaz Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.shareBtn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-gears-5",
@@ -9238,7 +9615,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "海外历史参考：Gears 5 Kait Diaz Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-gears-5",
@@ -9249,7 +9626,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "海外历史参考：Gears 5 Kait Diaz Limited Edition",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-gears-5",
@@ -9263,7 +9640,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-gears-5",
@@ -9277,7 +9654,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-gears-5",
@@ -9291,7 +9668,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-gears-5",
@@ -9305,29 +9682,37 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[21].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-gears-5",
-        "value": "美国发布稿历史公布价（2019-08-06）：$74.99；国行人民币价格待核",
+        "value": "2019-08-06官方历史参考：$74.99 USD；Kait控制器历史USD价；不是另售充电座49.99；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/"
+        ],
         "region": "GLOBAL",
         "reviewedAt": "2026-10-12",
-        "configurationScope": "按发布稿日期记录历史参考价格；不认证人民币价格、实时库存或现价。",
+        "configurationScope": "Kait控制器历史USD价；不是另售充电座49.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "series-gears-5:msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-gears-5",
         "value": "global_recorded",
         "sourceUrl": "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/"
+        ],
         "region": "GLOBAL",
         "reviewedAt": "2026-10-12",
-        "configurationScope": "本站按英文官方历史发布稿列为海外收录；不认证中国SKU、库存或在售。",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "series-gears-5:salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "imageUnavailable": true
@@ -9356,7 +9741,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S、One、PC、iOS、Android。",
-    "msrp": "海外/全球：美国发布当时起价/建议价$79.99；定制升级另计；人民币未核。",
+    "msrp": "2025-05-22官方历史参考：$79.99 USD；Witcher普通固定USD ERP；MicrosoftStore限定；去起价/定制升级模板；人民币和当前售价另核。",
     "description": "十周年狼头图案、斯拉夫文字与红爪标志；双色扳机致敬双剑；Elite为Core。",
     "specEvidence": {
       "description": {
@@ -9368,7 +9753,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "year": {
         "configuration": "series-witcher-3",
@@ -9379,7 +9764,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "series-witcher-3",
@@ -9393,7 +9778,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-witcher-3",
@@ -9407,7 +9792,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-witcher-3",
@@ -9421,21 +9806,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-witcher-3",
-        "value": "海外/全球：美国发布当时起价/建议价$79.99；定制升级另计；人民币未核。",
+        "value": "2025-05-22官方历史参考：$79.99 USD；Witcher普通固定USD ERP；MicrosoftStore限定；去起价/定制升级模板；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Witcher普通固定USD ERP；MicrosoftStore限定；去起价/定制升级模板；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-witcher-3",
@@ -9449,7 +9835,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "series-witcher-3",
@@ -9463,7 +9849,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-witcher-3",
@@ -9473,11 +9859,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-witcher-3",
@@ -9491,7 +9878,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-witcher-3",
@@ -9505,7 +9892,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[22].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -9533,7 +9920,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
-    "msrp": "¥599 / $79.99",
+    "msrp": null,
     "description": "海外/全球：2025电影联名笑脸壳；预设黄色摇杆、橙色方向键、金属蓝扳机；另有Design Lab定制。",
     "specEvidence": {
       "dpad": {
@@ -9545,7 +9932,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "year": {
         "configuration": "series-spongebob",
@@ -9556,7 +9943,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-spongebob",
@@ -9570,7 +9957,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-spongebob",
@@ -9584,7 +9971,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-spongebob",
@@ -9598,7 +9985,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-spongebob",
@@ -9608,11 +9995,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2025/11/18/spongebob-movie-limited-edition-xbox-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-spongebob",
@@ -9626,7 +10014,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-spongebob",
@@ -9640,7 +10028,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "series-spongebob",
@@ -9654,7 +10042,17 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[23].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 无线控制器 - 海绵宝宝大电影限定版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -9672,7 +10070,7 @@ var XBOX_CONTROLLERS = [
     "year": 2025,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-ninja-gaiden-4-standard.png",
     "dpad": "龙剑流金十字键",
     "triggers": "忍杀微点防滑扳机键",
@@ -9682,7 +10080,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "中国 / 国行 Xbox 无线控制器 - Xbox Design Lab 定制版 _《忍者龙剑传 4》：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam；腾讯START（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）",
-    "msrp": "¥599 / $79.99",
+    "msrp": null,
     "description": "《忍者龙剑传4》官方顶盖/侧盖图案；红蓝橡胶握把；Design Lab定制包装",
     "specEvidence": {
       "description": {
@@ -9694,7 +10092,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox 无线控制器 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-ninja-gaiden-4",
@@ -9705,18 +10103,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox 无线控制器 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-ninja-gaiden-4",
-        "value": "cn_official",
+        "value": "cn_recorded",
         "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4"
+        ],
         "region": "CN",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "中国大陆：国行 Xbox 无线控制器 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "series-ninja-gaiden-4",
@@ -9730,7 +10132,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "series-ninja-gaiden-4",
@@ -9744,7 +10146,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-ninja-gaiden-4",
@@ -9758,7 +10160,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "series-ninja-gaiden-4",
@@ -9772,7 +10174,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "series-ninja-gaiden-4",
@@ -9786,7 +10188,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-ninja-gaiden-4",
@@ -9800,7 +10202,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-ninja-gaiden-4",
@@ -9814,7 +10216,17 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[24].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "XBOX 无线控制器 - XBOX Design Lab 定制版 _《忍者龙剑传 4》；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -9826,8 +10238,8 @@ var XBOX_CONTROLLERS = [
     "seriesTypeName": "顶级联名典藏",
     "name": "Xbox 无线控制器 - 天外世界 2 官方设计版",
     "nameEn": "Xbox Wireless Controller - The Outer Worlds 2 Edition",
-    "colorName": "太空殖民企业复古黄 (Halcyon Yellow)",
-    "colorHex": "#d97706",
+    "colorName": "MoonMan 与 Arcadia 裂隙主题（按钮与金属配件颜色依 Design Lab 选项）",
+    "colorHex": "#e4e4e4",
     "textColor": "#ffffff",
     "year": 2025,
     "status": "catalogued",
@@ -9842,7 +10254,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "海外/全球：Xbox Series X|S/One、PC、iOS、Android；受兼容列表限制。",
-    "msrp": "海外/全球：美国发布当时起价/建议价$94.98；定制升级另计；人民币未核。",
+    "msrp": "2025-10-08官方历史参考：$94.98 USD；Outer普通MSRP起价；DesignLab选配另计；人民币和当前售价另核。",
     "description": "海外/全球：Moon Man与银河裂隙图案，Arcadia设定；Design Lab自选按钮/升级。",
     "specEvidence": {
       "compatibility": {
@@ -9857,7 +10269,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "series-outerworlds-2",
@@ -9871,7 +10283,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "series-outerworlds-2",
@@ -9885,21 +10297,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "series-outerworlds-2",
-        "value": "海外/全球：美国发布当时起价/建议价$94.98；定制升级另计；人民币未核。",
+        "value": "2025-10-08官方历史参考：$94.98 USD；Outer普通MSRP起价；DesignLab选配另计；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Outer普通MSRP起价；DesignLab选配另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-outerworlds-2",
@@ -9913,7 +10326,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-outerworlds-2",
@@ -9923,11 +10336,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-outerworlds-2",
@@ -9941,7 +10355,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-outerworlds-2",
@@ -9955,9 +10369,25 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[25].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "colorName": {
+        "configuration": "series-outerworlds-2",
+        "value": "MoonMan 与 Arcadia 裂隙主题（按钮与金属配件颜色依 Design Lab 选项）",
+        "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2025-10-08官方主题发布；主题图案与可选按钮/金属配件分开，不固定称黄色或金色。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "series-outerworlds-2:colorName",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
-    }
+    },
+    "hexIsDisplayApproximation": true
   },
   {
     "id": "series-team-spirit",
@@ -9983,7 +10413,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "有（实体独立 Share 键）",
     "weight": "287 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
-    "msrp": "¥599 / $79.99",
+    "msrp": null,
     "description": "2026足球比赛日/队伍支持主题，中央26、球场中线与放射线；Design Lab颜色定制。",
     "specEvidence": {
       "description": {
@@ -9995,7 +10425,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[26].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "year": {
         "configuration": "series-team-spirit",
@@ -10006,7 +10436,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[26].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "series-team-spirit",
@@ -10020,7 +10450,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[26].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "series-team-spirit",
@@ -10030,11 +10460,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2026/05/26/xbox-design-lab-team-spirit-wireless-controller/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[26].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "series-team-spirit",
@@ -10048,7 +10479,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[26].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "series-team-spirit",
@@ -10062,7 +10493,17 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[26].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 无线控制器 - 团队精神特别版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -10080,7 +10521,7 @@ var XBOX_CONTROLLERS = [
     "year": 2019,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-elite-wireless-controller-series-2.png",
     "dpad": "可替换多面刻面十字键 + 标准经典十字键",
     "triggers": "短行程扳机锁；3档指摇杆张力，不是3档扳机锁",
@@ -10090,7 +10531,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "支持Xbox配件应用按键映射及最多3个自定义配置+1个默认配置；独立Share实体键，以及将具体拨片映射为屏幕捕获的动作/版本条件，待该型号官方文档核实。",
     "weight": "海外/全球 / 完整套装 / Core：完整装345 g ±15 g（装4拨片、刻面方向键、标准摇杆）（345 g只对应带拨片完整装，不能套入Core；续航随使用变化。）",
     "compatibility": "中国 / 国行完整套装：Xbox Series X|S、Xbox One；Windows 10+；Android 5.1.1+；iOS/iPadOS/tvOS 14.5+；Steam；腾讯START（移动设备/蓝牙存在功能限制；详见产品兼容脚注。）；海外/全球 / 完整套装 / Core：Xbox主机、Windows7+；Win7/8.1需USB且部分功能受限；兼容Android/iOS（345 g只对应带拨片完整装，不能套入Core；续航随使用变化。 Windows10/11需Bluetooth、USB线或另售Xbox无线适配器；Android/iOS仅部分设备与版本，部分功能可能不支持。）",
-    "msrp": "¥1,398 / $179.99",
+    "msrp": null,
     "description": "3档可调摇杆张力、短扳机锁、橡胶握把；3个自定义与1个默认机内配置（配件应用功能依支持平台）",
     "specEvidence": {
       "description": {
@@ -10102,7 +10543,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行完整套装 | 海外/历史官方参考：完整套装 / Core",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "elite-series-2-black",
@@ -10116,7 +10557,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "elite-series-2-black",
@@ -10131,7 +10572,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "elite-series-2-black",
@@ -10145,7 +10586,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "elite-series-2-black",
@@ -10160,7 +10601,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "elite-series-2-black",
@@ -10175,7 +10616,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-black",
@@ -10189,7 +10630,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-black",
@@ -10203,7 +10644,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-black",
@@ -10217,7 +10658,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weight": {
         "configuration": "elite-series-2-black",
@@ -10231,7 +10672,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.weight",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "shareBtn": {
         "configuration": "elite-series-2-black",
@@ -10248,7 +10689,22 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[27].specEvidence.shareBtn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "elite-series-2-black",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-controller-series-2",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-elite-controller-series-2"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "elite-series-2-black:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -10266,6 +10722,14 @@ var XBOX_CONTROLLERS = [
           "https://support.xbox.com/en-US/help/hardware-network/controller/xbox-accessories-elite-series-2",
           "https://news.xbox.com/en-us/2022/03/09/march-2022-xbox-update/"
         ]
+      },
+      "msrp": {
+        "scope": "Xbox 精英无线控制器 2 代 - 旗舰黑；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -10283,7 +10747,7 @@ var XBOX_CONTROLLERS = [
     "year": 2022,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-elite-wireless-controller-series-2-core.png",
     "dpad": "包装列可替换刻面方向键1个；标准方向键另购配件包",
     "triggers": "短行程扳机锁；3档指摇杆张力，不是3档扳机锁；扳机振动可在配件应用调整",
@@ -10293,7 +10757,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "支持Xbox配件应用自定义按键配置；Core背部拨片需另购。独立Share实体键及屏幕捕获动作映射，待该型号官方文档核实。",
     "weight": "中国 / 国行 Xbox Elite 无线控制器 2 代 青春版：330 g ±15 g（刻面方向键及标准摇杆）",
     "compatibility": "中国 / 国行 Xbox Elite 无线控制器 2 代 青春版：Xbox主机；Windows 7/8.1/10/11；Windows 7/8.1需USB，功能受限（连接方式及系统版本影响功能。）；海外/全球 / 完整套装 / Core：Xbox主机、Windows7+；Win7/8.1需USB且部分功能受限；兼容Android/iOS（345 g只对应带拨片完整装，不能套入Core；续航随使用变化。 Windows10/11需Bluetooth、USB线或另售Xbox无线适配器；Android/iOS仅部分设备与版本，部分功能可能不支持。）",
-    "msrp": "海外/全球：美国2022-09-21历史建议价$129.99；中国¥999未核。",
+    "msrp": "2022-09-21官方历史参考：$129.99 USD；白Core USD MSRP；不是component pack59.99；人民币和当前售价另核。",
     "description": "保留旗舰精英手柄的核心竞技性能（可调张力摇杆、短行程扳机锁与全包橡胶把手），去除后背拨片与便携包，以亲民门槛体验精英手感。",
     "specEvidence": {
       "dpad": {
@@ -10305,7 +10769,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行青春版白色 | 中国大陆：国行 Xbox Elite 无线控制器 2 代 青春版 | 中国大陆：国行Elite2配件包",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "elite-series-2-core-white",
@@ -10319,7 +10783,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "elite-series-2-core-white",
@@ -10334,7 +10798,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "elite-series-2-core-white",
@@ -10348,7 +10812,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "elite-series-2-core-white",
@@ -10363,7 +10827,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "elite-series-2-core-white",
@@ -10378,21 +10842,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "elite-series-2-core-white",
-        "value": "海外/全球：美国2022-09-21历史建议价$129.99；中国¥999未核。",
+        "value": "2022-09-21官方历史参考：$129.99 USD；白Core USD MSRP；不是component pack59.99；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2022/09/21/xbox-september-update-rolls-out-today/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2022/09/21/xbox-september-update-rolls-out-today/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "白Core USD MSRP；不是component pack59.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-core-white",
@@ -10406,7 +10871,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-core-white",
@@ -10420,7 +10885,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-core-white",
@@ -10435,7 +10900,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weight": {
         "configuration": "elite-series-2-core-white",
@@ -10449,7 +10914,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.weight",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "shareBtn": {
         "configuration": "elite-series-2-core-white",
@@ -10466,7 +10931,22 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[28].specEvidence.shareBtn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "elite-series-2-core-white",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-core-white",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-core-white"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "elite-series-2-core-white:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -10511,7 +10991,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "支持Xbox配件应用自定义按键配置；Core背部拨片需另购。独立Share实体键及屏幕捕获动作映射，待该型号官方文档核实。",
     "weight": "中国 / 国行 Xbox Elite 无线控制器 2 代 青春版：330 g ±15 g（刻面方向键及标准摇杆）",
     "compatibility": "中国 / 国行 Xbox Elite 无线控制器 2 代 青春版：Xbox主机；Windows 7/8.1/10/11；Windows 7/8.1需USB，功能受限（连接方式及系统版本影响功能。）；海外/全球 / 完整套装 / Core：Xbox主机、Windows7+；Win7/8.1需USB且部分功能受限；兼容Android/iOS（345 g只对应带拨片完整装，不能套入Core；续航随使用变化。 Windows10/11需Bluetooth、USB线或另售Xbox无线适配器；Android/iOS仅部分设备与版本，部分功能可能不支持。）",
-    "msrp": "海外/全球：美国2023-03-28预售建议价$139.99；人民币¥1099未核。",
+    "msrp": "2023-03-28官方历史参考：$139.99 USD；红Core USD MSRP预购；不是白Core129.99；人民币和当前售价另核。",
     "description": "海外/全球 / 完整套装 / Core：3档摇杆张力；短扳机锁；橡胶握把；3自定义+1默认机内配置（345 g只对应带拨片完整装，不能套入Core；续航随使用变化。 配件应用的映射、Xbox键颜色、配置文件功能仅Xbox Series X|S、Xbox One、Windows10/11。）；中国：红色Core；环绕橡胶握把。",
     "specEvidence": {
       "battery": {
@@ -10526,7 +11006,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "elite-series-2-core-red",
@@ -10541,7 +11021,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "elite-series-2-core-red",
@@ -10555,7 +11035,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "elite-series-2-core-red",
@@ -10570,7 +11050,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "elite-series-2-core-red",
@@ -10584,7 +11064,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "elite-series-2-core-red",
@@ -10599,7 +11079,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "elite-series-2-core-red",
@@ -10614,21 +11094,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "elite-series-2-core-red",
-        "value": "海外/全球：美国2023-03-28预售建议价$139.99；人民币¥1099未核。",
+        "value": "2023-03-28官方历史参考：$139.99 USD；红Core USD MSRP预购；不是白Core129.99；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "红Core USD MSRP预购；不是白Core129.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-core-red",
@@ -10642,7 +11123,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-core-red",
@@ -10656,7 +11137,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-core-red",
@@ -10671,7 +11152,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weight": {
         "configuration": "elite-series-2-core-red",
@@ -10685,7 +11166,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.weight",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "shareBtn": {
         "configuration": "elite-series-2-core-red",
@@ -10702,7 +11183,22 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[29].specEvidence.shareBtn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "elite-series-2-core-red",
+        "value": "cn_official",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "中国Core系列页面明确列红/蓝颜色。999元是未分色的系列总计，不填作任一颜色独立价格；当前库存另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "elite-series-2-core-red:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -10747,7 +11243,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "支持Xbox配件应用自定义按键配置；Core背部拨片需另购。独立Share实体键及屏幕捕获动作映射，待该型号官方文档核实。",
     "weight": "中国 / 国行 Xbox Elite 无线控制器 2 代 青春版：330 g ±15 g（刻面方向键及标准摇杆）",
     "compatibility": "中国 / 国行 Xbox Elite 无线控制器 2 代 青春版：Xbox主机；Windows 7/8.1/10/11；Windows 7/8.1需USB，功能受限（连接方式及系统版本影响功能。）；海外/全球 / 完整套装 / Core：Xbox主机、Windows7+；Win7/8.1需USB且部分功能受限；兼容Android/iOS（345 g只对应带拨片完整装，不能套入Core；续航随使用变化。 Windows10/11需Bluetooth、USB线或另售Xbox无线适配器；Android/iOS仅部分设备与版本，部分功能可能不支持。）",
-    "msrp": "海外/全球：美国2023-03-28预售建议价$139.99；人民币¥1099未核。",
+    "msrp": "2023-03-28官方历史参考：$139.99 USD；蓝Core USD MSRP预购；不是白Core129.99；人民币和当前售价另核。",
     "description": "海外/全球 / 完整套装 / Core：3档摇杆张力；短扳机锁；橡胶握把；3自定义+1默认机内配置（345 g只对应带拨片完整装，不能套入Core；续航随使用变化。 配件应用的映射、Xbox键颜色、配置文件功能仅Xbox Series X|S、Xbox One、Windows10/11。）；中国：蓝色Core；环绕橡胶握把。",
     "specEvidence": {
       "battery": {
@@ -10762,7 +11258,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "elite-series-2-core-blue",
@@ -10777,7 +11273,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "elite-series-2-core-blue",
@@ -10791,7 +11287,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "elite-series-2-core-blue",
@@ -10806,7 +11302,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "elite-series-2-core-blue",
@@ -10820,7 +11316,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "elite-series-2-core-blue",
@@ -10835,7 +11331,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "elite-series-2-core-blue",
@@ -10850,21 +11346,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "elite-series-2-core-blue",
-        "value": "海外/全球：美国2023-03-28预售建议价$139.99；人民币¥1099未核。",
+        "value": "2023-03-28官方历史参考：$139.99 USD；蓝Core USD MSRP预购；不是白Core129.99；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "蓝Core USD MSRP预购；不是白Core129.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-core-blue",
@@ -10878,7 +11375,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-core-blue",
@@ -10892,7 +11389,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-core-blue",
@@ -10907,7 +11404,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weight": {
         "configuration": "elite-series-2-core-blue",
@@ -10921,7 +11418,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.weight",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "shareBtn": {
         "configuration": "elite-series-2-core-blue",
@@ -10938,7 +11435,22 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[30].specEvidence.shareBtn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "elite-series-2-core-blue",
+        "value": "cn_official",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "中国Core系列页面明确列红/蓝颜色。999元是未分色的系列总计，不填作任一颜色独立价格；当前库存另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "elite-series-2-core-blue:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -10973,7 +11485,7 @@ var XBOX_CONTROLLERS = [
     "year": 2025,
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-doom-elite-limited-edition.png",
     "dpad": "全金属做旧地狱浮雕十字键",
     "triggers": "三段式可调行程金属扳机锁",
@@ -10983,7 +11495,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（背部拨片映射）",
     "weight": "345 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11",
-    "msrp": "¥1,699 / $199.99",
+    "msrp": null,
     "description": "《毁灭战士：黑暗时代》主题，透明红顶壳和银色内部；中国官方有独立产品页，库存另核",
     "specEvidence": {
       "colorName": {
@@ -10995,7 +11507,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "elite-series-2-doom",
@@ -11006,7 +11518,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "elite-series-2-doom",
@@ -11017,18 +11529,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "elite-series-2-doom",
-        "value": "cn_official",
+        "value": "cn_recorded",
         "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition"
+        ],
         "region": "CN",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "elite-series-2-doom",
@@ -11043,7 +11559,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "elite-series-2-doom",
@@ -11058,7 +11574,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-doom",
@@ -11072,7 +11588,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-doom",
@@ -11086,7 +11602,17 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[31].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "XBOX Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -11114,7 +11640,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（背部拨片映射）",
     "weight": "海外/全球：345g ±15g，装4拨片、刻面方向键和标准摇杆。",
     "compatibility": "海外/全球：Xbox Series X|S/One；Windows10/11；Android/iOS受限设备；Elite Win7/8.1仅USB且有限制。",
-    "msrp": "¥1,699 / $199.99",
+    "msrp": null,
     "description": "海外/全球：2025 Pip-Boy发光绿HUD图案/黑底；Design Lab按钮及金属质感升级可自选。",
     "specEvidence": {
       "year": {
@@ -11126,7 +11652,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "elite-series-2-fallout",
@@ -11140,7 +11666,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "elite-series-2-fallout",
@@ -11154,7 +11680,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "elite-series-2-fallout",
@@ -11168,7 +11694,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "elite-series-2-fallout",
@@ -11182,7 +11708,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "elite-series-2-fallout",
@@ -11196,7 +11722,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "elite-series-2-fallout",
@@ -11210,7 +11736,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "elite-series-2-fallout",
@@ -11224,7 +11750,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "elite-series-2-fallout",
@@ -11234,11 +11760,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-fallout",
@@ -11252,7 +11779,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-fallout",
@@ -11266,7 +11793,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-fallout",
@@ -11280,7 +11807,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weight": {
         "configuration": "elite-series-2-fallout",
@@ -11294,7 +11821,17 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[32].specEvidence.weight",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 精英无线控制器 2 代 - 辐射哔哔小子限定版；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -11322,7 +11859,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（背部拨片映射）",
     "weight": "345 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11",
-    "msrp": "海外/全球：美国发布当时起价/建议价$164.98；定制升级另计；人民币未核。",
+    "msrp": "2024-10-16官方历史参考：$164.98 USD；CoD Elite；USD ERP起价；DesignLab升级另计；人民币和当前售价另核。",
     "description": "海外/全球：机密文档、坐标/符号叠层设计；按钮/扳机/握把可定制。",
     "specEvidence": {
       "description": {
@@ -11337,7 +11874,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "elite-series-2-cod",
@@ -11351,21 +11888,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "elite-series-2-cod",
-        "value": "海外/全球：美国发布当时起价/建议价$164.98；定制升级另计；人民币未核。",
+        "value": "2024-10-16官方历史参考：$164.98 USD；CoD Elite；USD ERP起价；DesignLab升级另计；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "CoD Elite；USD ERP起价；DesignLab升级另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "elite-series-2-cod",
@@ -11379,7 +11917,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "elite-series-2-cod",
@@ -11389,11 +11927,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-cod",
@@ -11407,7 +11946,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-cod",
@@ -11421,7 +11960,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-cod",
@@ -11435,7 +11974,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[33].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -11445,7 +11984,7 @@ var XBOX_CONTROLLERS = [
     "generationName": "Xbox 精英手柄世代",
     "seriesType": "limited",
     "seriesTypeName": "精英联名限定款",
-    "name": "Xbox 精英无线控制器 2 代 - 巫师 3 限定版",
+    "name": "Xbox 精英无线控制器 2 代青春版（Core） - 巫师 3 限定版",
     "nameEn": "Xbox Elite Wireless Controller Series 2 – Core The Witcher 3 10th Anniversary Special Edition",
     "colorName": "银剑铭文暗夜灰 (Witcher Elite)",
     "colorHex": "#1f2937",
@@ -11463,7 +12002,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（背部拨片映射）",
     "weight": "海外/全球：页面列345g±15g，条件为装4拨片、方向键及标准摇杆。",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11",
-    "msrp": "海外/全球：美国发布当时起价/建议价$169.99；定制升级另计；人民币未核。",
+    "msrp": "2025-05-22官方历史参考：$169.99 USD；Witcher Elite Series2 Core固定USD ERP，非完整套装；MicrosoftStore限定；去定制升级模板；人民币和当前售价另核。",
     "description": "十周年狼头图案、斯拉夫文字与红爪标志；双色扳机致敬双剑；Elite为Core。",
     "specEvidence": {
       "description": {
@@ -11475,7 +12014,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "elite-series-2-witcher",
@@ -11486,7 +12025,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "year": {
         "configuration": "elite-series-2-witcher",
@@ -11497,7 +12036,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "判定规则：R-ID-01",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "elite-series-2-witcher",
@@ -11511,7 +12050,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "elite-series-2-witcher",
@@ -11525,21 +12064,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "elite-series-2-witcher",
-        "value": "海外/全球：美国发布当时起价/建议价$169.99；定制升级另计；人民币未核。",
+        "value": "2025-05-22官方历史参考：$169.99 USD；Witcher Elite Series2 Core固定USD ERP，非完整套装；MicrosoftStore限定；去定制升级模板；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Witcher Elite Series2 Core固定USD ERP，非完整套装；MicrosoftStore限定；去定制升级模板；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "elite-series-2-witcher",
@@ -11553,7 +12093,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "elite-series-2-witcher",
@@ -11563,11 +12103,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-witcher",
@@ -11581,7 +12122,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-witcher",
@@ -11595,7 +12136,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-witcher",
@@ -11609,7 +12150,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weight": {
         "configuration": "elite-series-2-witcher",
@@ -11623,7 +12164,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[34].specEvidence.weight",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -11633,7 +12174,7 @@ var XBOX_CONTROLLERS = [
     "generationName": "Elite精英系列（本站分类）",
     "seriesType": "limited",
     "seriesTypeName": "精英联名限定款",
-    "name": "XBOX Elite 无线控制器 2 代 青春版 - XBOX Design Lab 定制版 _《忍者龙剑传 4》",
+    "name": "XBOX Elite 无线控制器 2 代青春版（Core） 青春版 - XBOX Design Lab 定制版 _《忍者龙剑传 4》",
     "nameEn": "Xbox Elite Wireless Controller Series 2 – Core, Xbox Design Lab NINJA GAIDEN 4（本站英文说明名）",
     "colorName": "《忍者龙剑传4》官方顶盖/侧盖图案；红蓝橡胶握把；Design Lab定制包装",
     "colorHex": "#09090b",
@@ -11651,7 +12192,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（背部拨片映射）",
     "weight": "中国 / 国行 Xbox Elite 无线控制器 2 代 青春版 - Xbox Design Lab 定制版 _《忍者龙剑传 4》：330 g ±15 g（刻面方向键及标准摇杆）",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11",
-    "msrp": "¥1,699 / $199.99",
+    "msrp": "2026-10-11保存的中国商城片段同时列总计¥1110 / 券后¥1259；原页标签矛盾并列，成交条件待核；建议零售价、USD和当前价另核。",
     "description": "Elite Series 2 Core（青春版）；《忍者龙剑传4》图案、红蓝橡胶握把，拨片另售",
     "specEvidence": {
       "description": {
@@ -11663,7 +12204,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代 青春版 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11674,18 +12215,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代 青春版 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "elite-series-2-ninja-gaiden",
         "value": "cn_official",
         "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4"
+        ],
         "region": "CN",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代 青春版 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "中国独立商品/技术页按本款身份记录；商品页存在不等于实时供货，价格与SKU条件另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "battery": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11699,7 +12244,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11713,7 +12258,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11727,7 +12272,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11741,7 +12286,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11756,7 +12301,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11771,7 +12316,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11785,7 +12330,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11799,7 +12344,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11814,7 +12359,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "weight": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11829,7 +12374,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "容差与称重时摇杆/方向键/4拨片配置保留；Core青春版330g与完整套装345g分别对应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.weight",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "elite-series-2-ninja-gaiden",
@@ -11844,7 +12389,23 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[35].specEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "msrp": {
+        "configuration": "elite-series-2-ninja-gaiden",
+        "value": "2026-10-11保存的中国商城片段同时列总计¥1110 / 券后¥1259；原页标签矛盾并列，成交条件待核；建议零售价、USD和当前价另核。",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Elite Series 2 Core忍者龙剑传4版本；原页总计与券后字段同时保留，既不裁成实时成交价，也不作为原1699元/199.99美元证明。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "elite-series-2-ninja-gaiden:msrp",
+        "partialDisposition": true,
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -11856,8 +12417,8 @@ var XBOX_CONTROLLERS = [
     "seriesTypeName": "精英联名限定款",
     "name": "Xbox 精英无线控制器 2 代 - 天外世界 2 限定版",
     "nameEn": "Xbox Elite Wireless Controller Series 2 - The Outer Worlds 2 Edition",
-    "colorName": "企业至尊奢华金 (Board Golden)",
-    "colorHex": "#b45309",
+    "colorName": "MoonMan 与 Arcadia 裂隙主题（按钮与金属配件颜色依 Design Lab 选项）",
+    "colorHex": "#e4e4e4",
     "textColor": "#ffffff",
     "year": 2025,
     "status": "catalogued",
@@ -11872,7 +12433,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（背部拨片映射）",
     "weight": "345 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11",
-    "msrp": "海外/全球：美国发布当时起价/建议价$184.98；定制升级另计；人民币未核。",
+    "msrp": "2025-10-08官方历史参考：$184.98 USD；Outer Elite MSRP起价；DesignLab选配另计；人民币和当前售价另核。",
     "description": "海外/全球：Moon Man与银河裂隙图案，Arcadia设定；Design Lab自选按钮/升级。",
     "specEvidence": {
       "description": {
@@ -11887,21 +12448,22 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[36].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "msrp": {
         "configuration": "elite-series-2-outerworlds",
-        "value": "海外/全球：美国发布当时起价/建议价$184.98；定制升级另计；人民币未核。",
+        "value": "2025-10-08官方历史参考：$184.98 USD；Outer Elite MSRP起价；DesignLab选配另计；人民币和当前售价另核。",
         "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
         "sourceUrls": [
           "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Outer Elite MSRP起价；DesignLab选配另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[36].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "elite-series-2-outerworlds",
@@ -11915,7 +12477,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[36].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "salesRegion": {
         "configuration": "elite-series-2-outerworlds",
@@ -11925,11 +12487,12 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
         ],
         "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[36].specEvidence.salesRegion",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "elite-series-2-outerworlds",
@@ -11943,7 +12506,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[36].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "elite-series-2-outerworlds",
@@ -11957,7 +12520,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[36].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "elite-series-2-outerworlds",
@@ -11971,9 +12534,25 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "短扳机锁、摇杆张力与软件振动调整分别表达；不推断扳机档数、锻造金属或所有预设款默认材质。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[36].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "colorName": {
+        "configuration": "elite-series-2-outerworlds",
+        "value": "MoonMan 与 Arcadia 裂隙主题（按钮与金属配件颜色依 Design Lab 选项）",
+        "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2025-10-08官方主题发布；主题图案与可选按钮/金属配件分开，不固定称黄色或金色。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "elite-series-2-outerworlds:colorName",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
-    }
+    },
+    "hexIsDisplayApproximation": true
   },
   {
     "id": "xbox-adaptive-controller",
@@ -11999,7 +12578,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "支持Xbox配件应用按键重映射；Share实体键与屏幕捕获动作映射待该型号官方文档核实。Windows重映射需有线USB：Windows10 OS Build 19045.3996或更高，Windows11 OS Build 22631.3085或更高。",
     "weight": "552 克",
     "compatibility": "海外/全球 / 自适应控制器：Xbox One、Xbox Series X|S、Windows 10/11（PC配件应用映射需USB；Windows 10 build 19045.3996+或Windows 11 build 22631.3085+；外部输入设备另售。）",
-    "msrp": "¥799 / $99.99",
+    "msrp": null,
     "description": "中国 / 国行无障碍控制器：19×3.5 mm外部输入；2×USB 2.0外部输入；1×3.5 mm立体声耳机插孔；USB-C；海外/全球 / 自适应控制器：19×3.5 mm外部输入；2×USB 2.0输入；1×3.5 mm耳机；USB-C（PC配件应用映射需USB；Windows 10 build 19045.3996+或Windows 11 build 22631.3085+；外部输入设备另售。）",
     "specEvidence": {
       "battery": {
@@ -12015,7 +12594,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "xbox-adaptive-controller",
@@ -12029,7 +12608,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "xbox-adaptive-controller",
@@ -12044,7 +12623,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "xbox-adaptive-controller",
@@ -12059,7 +12638,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "xbox-adaptive-controller",
@@ -12074,7 +12653,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-adaptive-controller",
@@ -12088,7 +12667,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "xbox-adaptive-controller",
@@ -12102,7 +12681,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "xbox-adaptive-controller",
@@ -12117,7 +12696,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "shareBtn": {
         "configuration": "xbox-adaptive-controller",
@@ -12133,7 +12712,22 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[37].specEvidence.shareBtn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "xbox-adaptive-controller",
+        "value": "cn_official",
+        "sourceUrl": "https://www.microsoftstore.com.cn/controller/xbox-adaptive-controller",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/controller/xbox-adaptive-controller"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "中国独立商品/技术页按本款身份记录；商品页存在不等于实时供货，价格与SKU条件另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-adaptive-controller:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -12150,6 +12744,14 @@ var XBOX_CONTROLLERS = [
           "https://www.xbox.com/en-us/accessories/controllers/xbox-adaptive-controller",
           "https://news.xbox.com/en-us/2022/03/09/march-2022-xbox-update/"
         ]
+      },
+      "msrp": {
+        "scope": "Xbox 无障碍自适应控制器；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -12167,7 +12769,7 @@ var XBOX_CONTROLLERS = [
     "year": "2024公布；2025年3月官方宣布已开始销售。",
     "status": "catalogued",
     "statusLabel": "官方资料已收录 · 库存另核",
-    "salesRegion": "cn_official",
+    "salesRegion": "cn_recorded",
     "image": "./assets/products/xbox-adaptive-joystick.png",
     "dpad": "标准Xbox摇杆、正面4个按钮及模拟肩键/扳机的2个附加按钮；按钮均可自定义。方向键功能以实际重映射配置为准。",
     "triggers": "海外/全球 / 有线自适应摇杆：4个正面按钮、标准Xbox摇杆、2个肩键/扳机位置按钮；均可配置（加拿大商城旧来源本轮403；改用Xbox官方公告，不填未重获的尺寸/重量。）",
@@ -12177,7 +12779,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "可通过 Xbox Accessories 软件映射",
     "weight": "160 克",
     "compatibility": "中国 / 国行 Xbox 无障碍摇杆：更新后的Windows 10/11和受支持Xbox主机；完整功能需另一个控制器/外部设备；海外/全球 / 有线自适应摇杆：Xbox Adaptive Controller；直接接主机/PC时需其他控制器提供完整导航/Xbox按键功能（加拿大商城旧来源本轮403；改用Xbox官方公告，不填未重获的尺寸/重量。）",
-    "msrp": "海外/全球：美国预告建议价$29.99；人民币¥249未核。",
+    "msrp": null,
     "description": "海外/全球：单手有线辅助摇杆；可用另售安装件；提供免费3D打印设计文件。",
     "specEvidence": {
       "battery": {
@@ -12192,7 +12794,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "xbox-adaptive-joystick",
@@ -12207,7 +12809,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "连接方式、系统最低版本、部分移动设备/功能限制逐项保留；没有同款macOS证明则不写macOS全面支持。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "xbox-adaptive-joystick",
@@ -12221,7 +12823,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "xbox-adaptive-joystick",
@@ -12236,7 +12838,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "xbox-adaptive-joystick",
@@ -12251,21 +12853,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
-      },
-      "msrp": {
-        "configuration": "xbox-adaptive-joystick",
-        "value": "海外/全球：美国预告建议价$29.99；人民币¥249未核。",
-        "sourceUrl": "https://news.xbox.com/en-us/2024/08/21/xbox-accessibility-adaptive-joystick-thumbstick-toppers/",
-        "sourceUrls": [
-          "https://news.xbox.com/en-us/2024/08/21/xbox-accessibility-adaptive-joystick-thumbstick-toppers/"
-        ],
-        "region": "GLOBAL",
-        "reviewedAt": "2026-10-11",
-        "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-        "sourcePath": "docs/sources/verified-fields.json",
-        "sourceLocator": "controllers[38].specEvidence.msrp",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-adaptive-joystick",
@@ -12279,7 +12867,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "官方产品资料已收录；历史公布/商品页不证明当前库存、停产或所有地区供应。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "xbox-adaptive-joystick",
@@ -12293,7 +12881,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "历史公布或中国商城产品记录；当前库存与地区供货另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "xbox-adaptive-joystick",
@@ -12307,7 +12895,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "year": {
         "configuration": "xbox-adaptive-joystick",
@@ -12321,7 +12909,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "公布、预告、美国首发与国际扩大发售分别标注，不把公布年份当中国零售日期。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "xbox-adaptive-joystick",
@@ -12336,7 +12924,32 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[38].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "xbox-adaptive-joystick",
+        "value": "cn_recorded",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-adaptive-joystick",
+        "sourceUrls": [
+          "https://www.microsoftstore.com.cn/accessories/xbox-adaptive-joystick"
+        ],
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+        "sourceAuthority": "user-provided-structured-record",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-adaptive-joystick:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 自适应游戏摇杆；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -12364,7 +12977,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（通过连按两次 Xbox 键录屏）",
     "weight": "280 克",
     "compatibility": "Xbox One 全系列主机、Windows 7/8/10（需无线适配器）",
-    "msrp": "¥399 / $59.99",
+    "msrp": null,
     "description": "海外/全球：2013 Xbox One手柄有40多项技术/设计改进与Impulse Triggers。",
     "specEvidence": {
       "description": {
@@ -12379,7 +12992,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[39].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "one-standard-black",
@@ -12394,7 +13007,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[39].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "one-standard-black",
@@ -12409,7 +13022,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[39].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "one-standard-black",
@@ -12423,7 +13036,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[39].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "one-standard-black",
@@ -12442,7 +13055,7 @@ var XBOX_CONTROLLERS = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[39].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "headphoneJack": {
         "configuration": "one-standard-black",
@@ -12461,7 +13074,22 @@ var XBOX_CONTROLLERS = [
         "sourceAuthority": "manufacturer-primary",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[39].specEvidence.headphoneJack",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "one-standard-black",
+        "value": "legacy",
+        "sourceUrl": "https://news.xbox.com/en-us/2013/06/12/e3-accessories/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2013/06/12/e3-accessories/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "one-standard-black:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "fieldReviewGaps": {
@@ -12494,6 +13122,14 @@ var XBOX_CONTROLLERS = [
           "https://news.xbox.com/en-us/2014/02/11/xbox-one-headset/",
           "https://news.xbox.com/en-us/2013/06/06/xbox-one-controller-feature/"
         ]
+      },
+      "msrp": {
+        "scope": "Xbox One 无线控制器 - 经典黑 (2013 初版)；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -12512,7 +13148,7 @@ var XBOX_CONTROLLERS = [
     "status": "discontinued",
     "statusLabel": "历史停产",
     "salesRegion": "legacy",
-    "image": "./assets/products/xbox-one-controller-white.png",
+    "image": "",
     "dpad": "4 向经典机械微动十字键",
     "triggers": "脉冲震动扳机键 (微点纹理防滑把手)",
     "connectivity": "海外/全球 / 2013原型 / 2015 3.5mm修订 / 2016蓝牙修订：2016修订款支持Bluetooth",
@@ -12521,7 +13157,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无",
     "weight": "280 克",
     "compatibility": "Xbox Series X|S、Xbox One、Windows 10/11、Android、iOS",
-    "msrp": "¥429 / $59.99",
+    "msrp": null,
     "description": "海外/全球 / 2013原型 / 2015 3.5mm修订 / 2016蓝牙修订：2016修订款支持Bluetooth；海外/全球 / 2013原型 / 2015 3.5mm修订 / 2016蓝牙修订：2016修订款纹理握把",
     "specEvidence": {
       "connectivity": {
@@ -12536,7 +13172,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[40].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "one-s-white",
@@ -12550,7 +13186,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[40].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "one-s-white",
@@ -12565,7 +13201,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[40].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "one-s-white",
@@ -12580,7 +13216,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[40].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "headphoneJack": {
         "configuration": "one-s-white",
@@ -12595,7 +13231,33 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[40].specEvidence.headphoneJack",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "one-s-white",
+        "value": "legacy",
+        "sourceUrl": "https://news.xbox.com/en-us/2016/06/14/xbox-one-s-2tb-launch-edition-console-is-now-available-for-pre-order/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2016/06/14/xbox-one-s-2tb-launch-edition-console-is-now-available-for-pre-order/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "one-s-white:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "imageUnavailable": true,
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox One S 无线控制器 - 冰雪白 (2016 蓝牙版)；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -12623,7 +13285,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（Guide 环形四象限绿色导航光环）",
     "weight": "265 克（含电池）",
     "compatibility": "2005官方公告明确Xbox 360无线控制器；Windows PC的专用Wireless Gaming Receiver型号、支持OS及各后续Xbox 360主机型号兼容待官方型号文档核实。",
-    "msrp": "$49.99",
+    "msrp": "2005-08-17官方历史参考：$49.99 USD；2005基本无线控制器US估价；仅家庭/基础款参考，非后来特殊颜色或当前价；人民币和当前售价另核。",
     "description": "主机手柄工业设计史上难以逾越的丰碑。非对称双摇杆黄金布局、四色水晶字母按键与中央环形绿光导航键，统治 PC 游戏手柄十余年。",
     "specEvidence": {
       "battery": {
@@ -12635,7 +13297,7 @@ var XBOX_CONTROLLERS = [
         "reviewedAt": "2026-10-11",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[41].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "360-wireless-white",
@@ -12649,7 +13311,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[41].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "360-wireless-white",
@@ -12663,7 +13325,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[41].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "360-wireless-white",
@@ -12678,7 +13340,7 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[41].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "compatibility": {
         "configuration": "360-wireless-white",
@@ -12693,7 +13355,37 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[41].specEvidence.compatibility",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "msrp": {
+        "configuration": "360-wireless-white",
+        "value": "2005-08-17官方历史参考：$49.99 USD；2005基本无线控制器US估价；仅家庭/基础款参考，非后来特殊颜色或当前价；人民币和当前售价另核。",
+        "sourceUrl": "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2005基本无线控制器US估价；仅家庭/基础款参考，非后来特殊颜色或当前价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "360-wireless-white:msrp",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "360-wireless-white",
+        "value": "legacy",
+        "sourceUrl": "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/",
+        "sourceUrls": [
+          "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "360-wireless-white:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "requiresFieldEvidence": true,
@@ -12748,7 +13440,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无",
     "weight": "265 克",
     "compatibility": "Xbox 360、Windows PC",
-    "msrp": "$49.99",
+    "msrp": "2007-03-27官方历史参考：$49.99 USD；2007黑色无线控制器独立US估价；非Elite主机479.99；人民币和当前售价另核。",
     "description": "海外/全球：黑色无线手柄随Xbox360 Elite系列发布，也可单独购买。",
     "specEvidence": {
       "battery": {
@@ -12763,7 +13455,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "AA、内置电池与另售充电包分别列；40小时不推广给最长30小时的充电包，也不作实际使用保证。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.battery",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "colorName": {
         "configuration": "360-wireless-black",
@@ -12777,7 +13469,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "中国官方颜色/款式优先；主题图案与Design Lab选项不当作固定材质或全套默认配置。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.colorName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "connectivity": {
         "configuration": "360-wireless-black",
@@ -12791,7 +13483,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "description": {
         "configuration": "360-wireless-black",
@@ -12805,7 +13497,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "360-wireless-black",
@@ -12819,7 +13511,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "360-wireless-black",
@@ -12833,7 +13525,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "360-wireless-black",
@@ -12847,7 +13539,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "360-wireless-black",
@@ -12862,7 +13554,37 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[42].specEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "msrp": {
+        "configuration": "360-wireless-black",
+        "value": "2007-03-27官方历史参考：$49.99 USD；2007黑色无线控制器独立US估价；非Elite主机479.99；人民币和当前售价另核。",
+        "sourceUrl": "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/",
+        "sourceUrls": [
+          "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2007黑色无线控制器独立US估价；非Elite主机479.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "360-wireless-black:msrp",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "360-wireless-black",
+        "value": "legacy",
+        "sourceUrl": "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/",
+        "sourceUrls": [
+          "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "360-wireless-black:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -12890,8 +13612,19 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无",
     "weight": "265 克",
     "compatibility": "Xbox 360、Windows PC",
-    "msrp": "$59.99",
-    "description": "Xbox 360 世代最经典的半透明限定手柄之一。通体透亮的翡翠绿外壳，致敬 Xbox 初代品牌的经典翡翠绿色系。"
+    "msrp": null,
+    "description": "Xbox 360 世代最经典的半透明限定手柄之一。通体透亮的翡翠绿外壳，致敬 Xbox 初代品牌的经典翡翠绿色系。",
+    "specEvidence": {},
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 360 翡翠绿无线手柄；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
+      }
+    }
   },
   {
     "id": "360-halo-odst",
@@ -12917,7 +13650,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无",
     "weight": "265 克",
     "compatibility": "Xbox 360、Windows PC",
-    "msrp": "$59.99",
+    "msrp": null,
     "description": "海外/全球：官方ODST收藏包含游戏与专属无线控制器。",
     "specEvidence": {
       "description": {
@@ -12932,7 +13665,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[44].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "360-halo-odst",
@@ -12946,7 +13679,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[44].specEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "360-halo-odst",
@@ -12961,7 +13694,32 @@ var XBOX_CONTROLLERS = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[44].specEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "360-halo-odst",
+        "value": "legacy",
+        "sourceUrl": "https://news.microsoft.com/source/2009/06/01/xbox-360-primes-every-passion-with-games-that-rock-race-and-sizzle/",
+        "sourceUrls": [
+          "https://news.microsoft.com/source/2009/06/01/xbox-360-primes-every-passion-with-games-that-rock-race-and-sizzle/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "360-halo-odst:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "Xbox 360 无线控制器（Halo 3: ODST Collector’s Pack 套装款）；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -12989,7 +13747,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（配备黑/白辅助按键与巨型凸起水晶 Xbox 徽章）",
     "weight": "385 克（体量巨大，双手饱满握持）",
     "compatibility": "初代 Xbox 主机",
-    "msrp": "$39.99",
+    "msrp": null,
     "description": "Xbox 历史传奇“大胖”手柄 The Duke。中央嵌有一颗巨大的翡翠绿凸起 Xbox 水晶 Logo，按键巨大厚重，成为游戏硬件史上的独一无二经典图腾。",
     "specEvidence": {
       "connectivity": {
@@ -13004,7 +13762,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "Xbox主机的Xbox Wireless与PC/移动端Bluetooth分开；官方未列BLE版本或端口不补写。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[45].specEvidence.connectivity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "dpad": {
         "configuration": "original-the-duke",
@@ -13018,7 +13776,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[45].specEvidence.dpad",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "original-the-duke",
@@ -13032,7 +13790,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[45].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "original-the-duke",
@@ -13046,7 +13804,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[45].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "headphoneJack": {
         "configuration": "original-the-duke",
@@ -13060,7 +13818,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[45].specEvidence.headphoneJack",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "triggers": {
         "configuration": "original-the-duke",
@@ -13074,7 +13832,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[45].specEvidence.triggers",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "year": {
         "configuration": "original-the-duke",
@@ -13088,7 +13846,32 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "公布、预告、美国首发与国际扩大发售分别标注，不把公布年份当中国零售日期。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[45].specEvidence.year",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "original-the-duke",
+        "value": "legacy",
+        "sourceUrl": "https://news.microsoft.com/source/2001/01/06/much-anticipated-xbox-game-console-along-with-xbox-controller-and-game-demonstrations-headline-consumer-electronics-show/",
+        "sourceUrls": [
+          "https://news.microsoft.com/source/2001/01/06/much-anticipated-xbox-game-console-along-with-xbox-controller-and-game-demonstrations-headline-consumer-electronics-show/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "original-the-duke:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "初代 Xbox 控制器 - The Duke (2001)；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   },
@@ -13116,7 +13899,7 @@ var XBOX_CONTROLLERS = [
     "shareBtn": "无（黑白两键移至十字键下方）",
     "weight": "260 克",
     "compatibility": "初代 Xbox 主机",
-    "msrp": "$39.99",
+    "msrp": null,
     "description": "海外/全球 / 2002小型手柄：比原始Xbox控制器更小；成为后续Xbox主机标准随附控制器；海外/全球 / 2002小型手柄：2002（美国10月15日主机新套装随附）",
     "specEvidence": {
       "description": {
@@ -13131,7 +13914,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[46].specEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generation": {
         "configuration": "original-controller-s",
@@ -13145,7 +13928,7 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站筛选分类代码，不是微软官方代数或产品硬件事实。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[46].specEvidence.generation",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "generationName": {
         "configuration": "original-controller-s",
@@ -13159,7 +13942,32 @@ var XBOX_CONTROLLERS = [
         "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "controllers[46].specEvidence.generationName",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "salesRegion": {
+        "configuration": "original-controller-s",
+        "value": "legacy",
+        "sourceUrl": "https://news.microsoft.com/source/2002/10/14/xbox-offers-console-with-two-free-sega-games-and-new-controller-for-199/",
+        "sourceUrls": [
+          "https://news.microsoft.com/source/2002/10/14/xbox-offers-console-with-two-free-sega-games-and-new-controller-for-199/"
+        ],
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "original-controller-s:salesRegion",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      }
+    },
+    "fieldReviewGaps": {
+      "msrp": {
+        "scope": "初代 Xbox 控制器 - Controller S (2002)；本款独立地区/日期/SKU与计价条件",
+        "reason": "当前缺可绑定本款的独立价格原文；不据此推断原厂从未披露。",
+        "needed": "明确型号、币种、地区、历史或当前日期及独立单品/套装条件的厂商价格段",
+        "sourceUrls": [],
+        "isConfirmedFact": false,
+        "location": "root"
       }
     }
   }
@@ -13174,7 +13982,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-wireless-headset.png",
-    "price": "¥799 / $99.99",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
     "details": {
       "driver": "40 毫米钕磁铁扬声单元",
       "spatialAudio": "支持 Dolby Atmos、DTS Headphone:X 与 Windows Sonic 空间音效",
@@ -13195,7 +14003,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-stereo-headset.png",
-    "price": "¥459 / $59.99",
+    "price": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
     "details": {
       "driver": "40 毫米高质量钕磁铁驱动单元",
       "spatialAudio": "支持 Windows Sonic、Dolby Atmos 与 DTS Headphone:X 空间立体环绕声",
@@ -13220,7 +14028,19 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[1].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "price": {
+        "configuration": "xbox-stereo-headset",
+        "value": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-stereo-headset",
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Xbox Stereo Headset有线3.5mm款；当次中国产品页总计419元，券后价空白，不推断券后价、首发价或其他年份无线款。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-stereo-headset:price",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -13233,7 +14053,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-seagate-1tb-expansion-card.png",
-    "price": "¥1,299 / $149.99",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
     "details": {
       "capacity": "1TB 闪存扩展容量（实际可用约 920GB）",
       "interface": "定制 PCIe 4.0 x2 NVMe 专有直连接口",
@@ -13257,7 +14077,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[2].metadataEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "xbox-seagate-1tb",
@@ -13272,7 +14092,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[2].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "xbox-seagate-1tb",
@@ -13287,7 +14107,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[2].metadataEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "detailEvidence": {
@@ -13305,7 +14125,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[2].detailEvidence.speed",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -13318,7 +14138,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-seagate-2tb-expansion-card.png",
-    "price": "¥2,399 / $279.99",
+    "price": "海外历史公告（2021-10-21）：2TB预购公布价$399.99 USD，计划11月预购、12月初发售；国行价格与当前报价另核",
     "details": {
       "capacity": "2TB 超大容量极速闪存空间",
       "interface": "定制 PCIe 4.0 x2 NVMe 专属热插拔接口",
@@ -13341,7 +14161,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[3].metadataEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "xbox-seagate-2tb",
@@ -13356,7 +14176,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[3].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "xbox-seagate-2tb",
@@ -13371,7 +14191,19 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[3].metadataEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "price": {
+        "configuration": "xbox-seagate-2tb",
+        "value": "海外历史公告（2021-10-21）：2TB预购公布价$399.99 USD，计划11月预购、12月初发售；国行价格与当前报价另核",
+        "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2021年Xbox官方公告的2TB容量预购计划；非1TB/512GB，非当前实时价。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-seagate-2tb:price",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "detailEvidence": {
@@ -13389,7 +14221,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[3].detailEvidence.speed",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -13402,7 +14234,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-seagate-4tb-expansion-card.png",
-    "price": "¥4,199 / $499.99",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
     "details": {
       "capacity": "4TB 极限海量存储空间",
       "interface": "定制 PCIe 4.0 x2 专有直插通道",
@@ -13471,7 +14303,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].metadataEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "xbox-wd-black-512gb",
@@ -13487,7 +14319,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "price": {
         "configuration": "xbox-wd-black-512gb",
@@ -13503,7 +14335,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].metadataEvidence.price",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-wd-black-512gb",
@@ -13519,7 +14351,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].metadataEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "xbox-wd-black-512gb",
@@ -13535,7 +14367,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].metadataEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "detailEvidence": {
@@ -13553,7 +14385,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].detailEvidence.capacity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "interface": {
         "configuration": "xbox-wd-black-512gb",
@@ -13569,7 +14401,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].detailEvidence.interface",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "speed": {
         "configuration": "xbox-wd-black-512gb",
@@ -13585,7 +14417,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].detailEvidence.speed",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "architecture": {
         "configuration": "xbox-wd-black-512gb",
@@ -13601,7 +14433,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].detailEvidence.architecture",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "features": {
         "configuration": "xbox-wd-black-512gb",
@@ -13617,7 +14449,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[5].detailEvidence.features",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -13680,7 +14512,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].metadataEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "xbox-wd-black-1tb",
@@ -13696,7 +14528,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "price": {
         "configuration": "xbox-wd-black-1tb",
@@ -13712,7 +14544,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].metadataEvidence.price",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "status": {
         "configuration": "xbox-wd-black-1tb",
@@ -13728,7 +14560,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].metadataEvidence.status",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "statusLabel": {
         "configuration": "xbox-wd-black-1tb",
@@ -13744,7 +14576,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].metadataEvidence.statusLabel",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "detailEvidence": {
@@ -13762,7 +14594,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].detailEvidence.capacity",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "interface": {
         "configuration": "xbox-wd-black-1tb",
@@ -13778,7 +14610,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].detailEvidence.interface",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "speed": {
         "configuration": "xbox-wd-black-1tb",
@@ -13794,7 +14626,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].detailEvidence.speed",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "architecture": {
         "configuration": "xbox-wd-black-1tb",
@@ -13810,7 +14642,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].detailEvidence.architecture",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "features": {
         "configuration": "xbox-wd-black-1tb",
@@ -13826,7 +14658,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": true,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[6].detailEvidence.features",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -13839,7 +14671,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-complete-component-pack.png",
-    "price": "¥499 / $59.99",
+    "price": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
     "details": {
       "features": "标准方向键1个；摇杆4个（经典2／高1／宽圆顶1）；拨片4个（中2／迷你2）；另含携带盒、USB-C充电线及充电底座",
       "accessories": "附带专用磁吸充电底座、便携硬壳收纳包、摇杆阻尼调节扳手与 2.7 米编织 USB-C 编织线",
@@ -13856,7 +14688,7 @@ var XBOX_ACCESSORIES = [
         "configurationScope": "中国大陆：国行Elite2配件包",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[7].fieldEvidence.details.features",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "metadataEvidence": {
@@ -13874,7 +14706,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[7].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "xbox-complete-component-pack",
@@ -13890,7 +14722,19 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[7].metadataEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "price": {
+        "configuration": "xbox-complete-component-pack",
+        "value": "中国商城2026-10-11读取快照：¥419人民币；不是首发价，当前报价与库存另核",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "Elite Series 2完整配件包；当次中国独立产品页总计419元，券后价空白，不作为手柄、单独收纳盒或拨片套装价格。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-complete-component-pack:price",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -13903,7 +14747,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-elite-wireless-controller-series-2-carrying-case-and-charging-pack.png",
-    "price": "¥299 / $39.99",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
     "details": {
       "features": "硬壳抗压便携收纳包，包内内置专属磁吸充电底座，支持收纳包闭合状态下外接 USB-C 进行透壳充电",
       "compatibility": "适用于所有 Xbox 精英无线控制器 2 代及 2 代青春版手柄"
@@ -13919,7 +14763,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-elite-wireless-controller-series-2-paddle-pack.png",
-    "price": "¥149 / $19.99",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
     "details": {
       "features": "4 枚精工不锈钢背部拨片（2 枚中型短拨片、2 枚迷你拨片），磁吸式免工具秒级卡入安装",
       "compatibility": "兼容 Xbox 精英手柄 2 代及 Core 青春版系列"
@@ -13935,7 +14779,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-elite-wireless-controller-series-2-thumbsticks-and-d-pad-pack.png",
-    "price": "¥149 / $19.99",
+    "price": "待核：本款人民币与美元价格尚缺型号、地区和日期明确的原厂记录",
     "details": {
       "features": "包含 4 枚高品质可替换摇杆帽（经典凹面、高凸面、宽大圆顶）+ 1 枚多面刻面十字键 + 1 枚调校扳手",
       "compatibility": "兼容 Xbox 精英手柄 2 代系列"
@@ -13951,7 +14795,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-rechargeable-battery.png",
-    "price": "¥199 / $24.99",
+    "price": "中国商城2026-10-11读取快照：¥199人民币；不是首发价，当前报价与库存另核",
     "details": {
       "batteryType": "官方定制 1400mAh 锂离子可充电电池包",
       "chargingTime": "约 4 小时即可完全充满",
@@ -13971,7 +14815,7 @@ var XBOX_ACCESSORIES = [
         "configurationScope": "中国大陆：国行同步充电套组 | 海外/历史官方参考：2020",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[11].fieldEvidence.details.batteryLife",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "metadataEvidence": {
@@ -13988,7 +14832,19 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[11].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "price": {
+        "configuration": "xbox-rechargeable-battery",
+        "value": "中国商城2026-10-11读取快照：¥199人民币；不是首发价，当前报价与库存另核",
+        "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-play-and-charge-kit",
+        "region": "CN",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2020款USB-C控制器适用的同步充电套组+USB-C线缆；当次中国页总计199元，不适用于旧Micro-USB套组。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-rechargeable-battery:price",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   },
@@ -14001,7 +14857,7 @@ var XBOX_ACCESSORIES = [
     "status": "active",
     "statusLabel": "官方在售",
     "image": "./assets/products/xbox-wireless-adapter.png",
-    "price": "¥199 / $24.99",
+    "price": "美国历史公告（2015-10-20）：原版单独适配器$24.99 USD MSRP；国行价格、2017小型版及当前报价另核",
     "details": {
       "port": "标准 USB 2.0 / USB 3.0 接口",
       "connectivity": "Xbox 专有双频无线射频通信技术（非普通蓝牙协议）",
@@ -14024,7 +14880,7 @@ var XBOX_ACCESSORIES = [
         "configurationScope": "2017小型版发布文同页先称前款体积的一半，后称比初代小66%；两个说法并列保留。未核到该小型版精确长宽高，不把缩小比例当尺寸；逐处核对准确型号/渠道/地区官方原文，保留相互不一致的来源及配置；不裁定实际硬件相同或不同。",
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[12].detailEvidence.dimensions",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     },
     "metadataEvidence": {
@@ -14042,7 +14898,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[12].metadataEvidence.description",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "name": {
         "configuration": "xbox-wireless-adapter",
@@ -14058,7 +14914,7 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[12].metadataEvidence.name",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       },
       "nameEn": {
         "configuration": "xbox-wireless-adapter",
@@ -14074,7 +14930,19 @@ var XBOX_ACCESSORIES = [
         "partialDisposition": false,
         "sourcePath": "docs/sources/verified-fields.json",
         "sourceLocator": "xboxAccessories[12].metadataEvidence.nameEn",
-        "sourceSha256": "23eab9468109f72fc9a2e49a2d8204e8c2b555e0f8abf3ce8ba8b9f2daddc970"
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
+      },
+      "price": {
+        "configuration": "xbox-wireless-adapter",
+        "value": "美国历史公告（2015-10-20）：原版单独适配器$24.99 USD MSRP；国行价格、2017小型版及当前报价另核",
+        "sourceUrl": "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+        "region": "GLOBAL",
+        "reviewedAt": "2026-10-12",
+        "configurationScope": "2015原版适配器单品；非含控制器79.95美元套装，非2017小型版，非当前报价。",
+        "sourceAuthority": "manufacturer-primary",
+        "sourcePath": "docs/sources/verified-fields.json",
+        "sourceLocator": "xbox-wireless-adapter:price",
+        "sourceSha256": "a624680732323724c1c2c97e9bc32ad66c373f11d2639232d5e708449977700c"
       }
     }
   }

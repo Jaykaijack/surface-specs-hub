@@ -337,7 +337,7 @@ console.log('\n🛠️ Test Suite 4b: 特色辅助选机工具矩阵 (智能向�
 const smartGuideHtml = ToolsEngine.renderSmartGuide();
 assert(typeof smartGuideHtml === 'string' && smartGuideHtml.includes('guide-container'), '智能选型向导渲染正常');
 assert(smartGuideHtml.includes('场景最佳首选'), '智能向导输出首选卡片');
-assert(smartGuideHtml.includes('高性价比/均衡备选'), '智能向导输出备选卡片');
+assert(smartGuideHtml.includes('备选机型'), '智能向导输出备选卡片，不在未知价格时承诺性价比');
 
 // 场景联动验证
 ToolsEngine.guideScene = 'commute';

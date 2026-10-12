@@ -312,6 +312,7 @@ const ComparisonEngine = {
                 return `
                   <details class="table-device-decision-summary" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--ms-border-subtle); font-size:11.5px; line-height:1.5; text-align:left; color:var(--ms-text-secondary);">
                     <summary>配置与测试条件</summary>
+                    <div class="table-decision-scroll" tabindex="0" role="region" aria-label="完整配置与测试条件，可滚动阅读">
                     <div class="summary-line" style="display:flex; align-items:center; gap:5px; margin-bottom:2px;" title="续航标称">
                       <span style="opacity:0.85;">🔋</span>
                       <span class="summary-value">${summary.batText}</span>
@@ -323,6 +324,7 @@ const ComparisonEngine = {
                     <div class="summary-line" style="display:flex; align-items:center; gap:5px;" title="整机便携规格">
                       <span style="opacity:0.85;">⚖️</span>
                       <span class="summary-value">${summary.portText}</span>
+                    </div>
                     </div>
                   </details>
                 `;
@@ -538,7 +540,7 @@ const ComparisonEngine = {
       case 'pending':
         return '<span class="spec-badge">—</span>';
       case 'current_cn':
-        return '<span class="spec-badge green">国行在售</span>';
+        return '<span class="spec-badge green">国行目录 · 库存另核</span>';
       case 'current_global':
         return '<span class="spec-badge" style="background:#fff3cd; color:#856404;">海外官网列售（库存未核验）</span>';
       case 'upcoming':

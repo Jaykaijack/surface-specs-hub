@@ -40256,19 +40256,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "surface.devices[80].specEvidence.startingPriceCny",
-      "configuration": "xbox-one",
-      "valueHash": "dc473023e203ab9a371ab2d5ac2781e9223419a4433003eab420874104027d02",
-      "sourceUrl": "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans",
-      "sourceUrls": [
-        "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans"
-      ],
-      "region": "CN",
-      "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "surface.devices[80].specEvidence.weightGrams",
       "configuration": "xbox-one",
       "valueHash": "989253c8ba0c4d6586a30d4e02106a16c7c8a0c861e482904f846db69ff68204",
@@ -41000,19 +40987,6 @@
       "id": "surface.devices[83].specEvidence.salesRegion",
       "configuration": "xbox-one-x",
       "valueHash": "bdc1036dc90e013169808b43a3505e82a116df148d4249db794a76c25c1fff17",
-      "sourceUrl": "https://www.microsoftstore.com.cn/support-and-help/xbox-faq",
-      "sourceUrls": [
-        "https://www.microsoftstore.com.cn/support-and-help/xbox-faq"
-      ],
-      "region": "CN",
-      "configurationScope": "以明确型号/容量/地区/修订版适用的证据为准；不泛化所有套装\n具体对应证据/明示补证；细节与限制见reason及official_evidence。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "surface.devices[83].specEvidence.startingPriceCny",
-      "configuration": "xbox-one-x",
-      "valueHash": "db78bc14b63ece2e81010830d9fb310d3de5c6ef5990c94daf9eb68aa3026245",
       "sourceUrl": "https://www.microsoftstore.com.cn/support-and-help/xbox-faq",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/support-and-help/xbox-faq"
@@ -54702,19 +54676,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[0].specEvidence.msrp",
-      "configuration": "series-carbon-black",
-      "valueHash": "6058e6b8070a0769b3e2e056b03eb1abb99c29fe8176e8bd7aedb35f18cf7cd2",
-      "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[0].specEvidence.status",
       "configuration": "series-carbon-black",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -54839,19 +54800,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[1].specEvidence.msrp",
-      "configuration": "series-robot-white",
-      "valueHash": "6058e6b8070a0769b3e2e056b03eb1abb99c29fe8176e8bd7aedb35f18cf7cd2",
-      "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[1].specEvidence.status",
       "configuration": "series-robot-white",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -54959,19 +54907,6 @@
       ],
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[2].specEvidence.msrp",
-      "configuration": "series-shock-blue",
-      "valueHash": "84085cf583dfb2e340afbe2d133e052521d3964810d8ed408e31356745e5e613",
-      "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -55086,19 +55021,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[3].specEvidence.msrp",
-      "configuration": "series-pulse-red",
-      "valueHash": "cae9c3947f833f3bca2608d44fb3deeb48d4fe6bdc6f96b7e8e02e321fc24f6e",
-      "sourceUrl": "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[3].specEvidence.name",
       "configuration": "series-pulse-red",
       "valueHash": "df7a097f20c325c54a9b82f178e35a9f385876a865e51c0c1e7bd9231ceca4d7",
@@ -55205,19 +55127,6 @@
       ],
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[4].specEvidence.msrp",
-      "configuration": "series-electric-volt",
-      "valueHash": "cae9c3947f833f3bca2608d44fb3deeb48d4fe6bdc6f96b7e8e02e321fc24f6e",
-      "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -55355,19 +55264,6 @@
       ],
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[5].specEvidence.msrp",
-      "configuration": "series-velocity-green",
-      "valueHash": "cae9c3947f833f3bca2608d44fb3deeb48d4fe6bdc6f96b7e8e02e321fc24f6e",
-      "sourceUrl": "https://news.xbox.com/en-us/2023/03/07/stun-the-competition-with-the-new-xbox-wireless-controller-velocity-green/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2023/03/07/stun-the-competition-with-the-new-xbox-wireless-controller-velocity-green/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -55659,19 +55555,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[7].specEvidence.msrp",
-      "configuration": "series-astral-purple",
-      "valueHash": "cae9c3947f833f3bca2608d44fb3deeb48d4fe6bdc6f96b7e8e02e321fc24f6e",
-      "sourceUrl": "https://news.xbox.com/en-us/2023/09/12/xbox-wireless-controller-astral-purple/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2023/09/12/xbox-wireless-controller-astral-purple/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[7].specEvidence.name",
       "configuration": "series-astral-purple",
       "valueHash": "257f4cfa2b2e1908b20ac973b4219e6176e2253ffce840b49d22ba8aee7ca057",
@@ -55786,19 +55669,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[8].specEvidence.msrp",
-      "configuration": "series-sky-cipher",
-      "valueHash": "f9fafab6928720c9000f80d25789e8871750bec9d6ca7fbd4ae17182e100c8f2",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -55929,19 +55799,6 @@
       ],
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[9].specEvidence.msrp",
-      "configuration": "series-ghost-cipher",
-      "valueHash": "f9fafab6928720c9000f80d25789e8871750bec9d6ca7fbd4ae17182e100c8f2",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/09/24/xbox-cipher-series-transparent-controller-design-lab/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/09/24/xbox-cipher-series-transparent-controller-design-lab/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -56089,19 +55946,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[10].specEvidence.msrp",
-      "configuration": "series-arctic-camo",
-      "valueHash": "f9fafab6928720c9000f80d25789e8871750bec9d6ca7fbd4ae17182e100c8f2",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/03/26/arctic-camo-special-edition/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/03/26/arctic-camo-special-edition/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[10].specEvidence.name",
       "configuration": "series-arctic-camo",
       "valueHash": "a008791db5e6ecde203d7a698490e3254b846db499f8e1c817fb2c5ee7d0b097",
@@ -56219,19 +56063,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[11].specEvidence.msrp",
-      "configuration": "series-mineral-camo",
-      "valueHash": "f9fafab6928720c9000f80d25789e8871750bec9d6ca7fbd4ae17182e100c8f2",
-      "sourceUrl": "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[11].specEvidence.status",
       "configuration": "series-mineral-camo",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -56293,19 +56124,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[12].specEvidence.msrp",
-      "configuration": "series-daystrike-camo",
-      "valueHash": "f9fafab6928720c9000f80d25789e8871750bec9d6ca7fbd4ae17182e100c8f2",
-      "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -56571,19 +56389,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[15].specEvidence.msrp",
-      "configuration": "series-storm-breaker",
-      "valueHash": "f9fafab6928720c9000f80d25789e8871750bec9d6ca7fbd4ae17182e100c8f2",
-      "sourceUrl": "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[15].specEvidence.status",
       "configuration": "series-storm-breaker",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -56788,19 +56593,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[17].specEvidence.salesRegion",
-      "configuration": "series-doom-dark-ages",
-      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
-      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-doom-the-dark-ages-limited-edition",
-      "sourceUrls": [
-        "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-doom-the-dark-ages-limited-edition"
-      ],
-      "region": "CN",
-      "configurationScope": "中国大陆：国行 Xbox 无线控制器《毁灭战士：黑暗时代》限量版",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[17].specEvidence.colorName",
       "configuration": "series-doom-dark-ages",
       "valueHash": "cb1ace5ef251747e20bcc86e5599053a01ccc29f11624b3769d7b060182267f1",
@@ -56957,19 +56749,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[18].specEvidence.salesRegion",
-      "configuration": "series-fallout-pip-boy",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[18].specEvidence.status",
       "configuration": "series-fallout-pip-boy",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -57035,19 +56814,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[19].specEvidence.msrp",
-      "configuration": "series-cod-black-ops-6",
-      "valueHash": "cb32510e39ac21ddbfa64a91d6f7ff29ca829a7470449552a1cfcaa81a9382e4",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[19].specEvidence.name",
       "configuration": "series-cod-black-ops-6",
       "valueHash": "0bf78a9673938db19de2f16bb4242417e2a848190f9c0bc13f513e788d0cb5f0",
@@ -57057,19 +56823,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[19].specEvidence.salesRegion",
-      "configuration": "series-cod-black-ops-6",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -57373,19 +57126,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[22].specEvidence.msrp",
-      "configuration": "series-witcher-3",
-      "valueHash": "c88e803338fdd52f1e26cc6f50912679b89356291010dd2d8c87634ff482fe3b",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[22].specEvidence.name",
       "configuration": "series-witcher-3",
       "valueHash": "0e8a0574be23aaa3fba9ac1aa23ae93a8d186ca382d494e910ed1573d222d78e",
@@ -57408,19 +57148,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "具体款式按官方列名；定制选项、完整套装与Core青春版分别解释。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[22].specEvidence.salesRegion",
-      "configuration": "series-witcher-3",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -57516,19 +57243,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[23].specEvidence.salesRegion",
-      "configuration": "series-spongebob",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/11/18/spongebob-movie-limited-edition-xbox-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/11/18/spongebob-movie-limited-edition-xbox-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[23].specEvidence.status",
       "configuration": "series-spongebob",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -57584,19 +57298,6 @@
       "id": "controllers[24].specEvidence.name",
       "configuration": "series-ninja-gaiden-4",
       "valueHash": "918c340e7609e90370a913527c655438daa64df05840e0fb5a6be778d7f2f8e0",
-      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4",
-      "sourceUrls": [
-        "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4"
-      ],
-      "region": "CN",
-      "configurationScope": "中国大陆：国行 Xbox 无线控制器 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[24].specEvidence.salesRegion",
-      "configuration": "series-ninja-gaiden-4",
-      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4"
@@ -57737,19 +57438,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[25].specEvidence.msrp",
-      "configuration": "series-outerworlds-2",
-      "valueHash": "09a271909a94d8633b6e71bc5631a9776db1fb4405715799209bc9a5a823e401",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[25].specEvidence.name",
       "configuration": "series-outerworlds-2",
       "valueHash": "2df684db067f44ae97993a82e23faa1a842a73db76bb72ac812af3d2cac63a02",
@@ -57759,19 +57447,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[25].specEvidence.salesRegion",
-      "configuration": "series-outerworlds-2",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -57837,19 +57512,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[26].specEvidence.salesRegion",
-      "configuration": "series-team-spirit",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2026/05/26/xbox-design-lab-team-spirit-wireless-controller/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2026/05/26/xbox-design-lab-team-spirit-wireless-controller/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -58109,19 +57771,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[28].specEvidence.msrp",
-      "configuration": "elite-series-2-core-white",
-      "valueHash": "18084b759028e04c5f849de2750a453cde4480b93c1552a38e976bb70c5d81f3",
-      "sourceUrl": "https://news.xbox.com/en-us/2022/09/21/xbox-september-update-rolls-out-today/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2022/09/21/xbox-september-update-rolls-out-today/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[28].specEvidence.status",
       "configuration": "elite-series-2-core-white",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -58281,19 +57930,6 @@
       ],
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[29].specEvidence.msrp",
-      "configuration": "elite-series-2-core-red",
-      "valueHash": "02a6f85882d5d160ac4f4cd01208161f5c97239a08bf1b964a2e3bb096774f8a",
-      "sourceUrl": "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -58461,19 +58097,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[30].specEvidence.msrp",
-      "configuration": "elite-series-2-core-blue",
-      "valueHash": "02a6f85882d5d160ac4f4cd01208161f5c97239a08bf1b964a2e3bb096774f8a",
-      "sourceUrl": "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[30].specEvidence.status",
       "configuration": "elite-series-2-core-blue",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -58571,19 +58194,6 @@
       "id": "controllers[31].specEvidence.name",
       "configuration": "elite-series-2-doom",
       "valueHash": "d0a5c13e7af3ce7ddb888c0640304e1a72c890778c71e1c187447363c71311dd",
-      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition",
-      "sourceUrls": [
-        "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition"
-      ],
-      "region": "CN",
-      "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代《毁灭战士：黑暗时代》限量版",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[31].specEvidence.salesRegion",
-      "configuration": "elite-series-2-doom",
-      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition"
@@ -58752,19 +58362,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[32].specEvidence.salesRegion",
-      "configuration": "elite-series-2-fallout",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[32].specEvidence.status",
       "configuration": "elite-series-2-fallout",
       "valueHash": "ddf86dbe7c64130ec953c004df204953b4961f91e9f807fec93d4b3c2b122ffb",
@@ -58843,19 +58440,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[33].specEvidence.msrp",
-      "configuration": "elite-series-2-cod",
-      "valueHash": "5c5cb0cb5e48c7971630d67b4c9d202b036552e197d5fd10b79298cef648783c",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[33].specEvidence.name",
       "configuration": "elite-series-2-cod",
       "valueHash": "cd084f9d917d6c6493687283864e1e8979556456e1af350a8192cf35b56369b8",
@@ -58865,19 +58449,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[33].specEvidence.salesRegion",
-      "configuration": "elite-series-2-cod",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -58986,19 +58557,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[34].specEvidence.msrp",
-      "configuration": "elite-series-2-witcher",
-      "valueHash": "23c677814af2eca41ad774296a49dee4e2edfa2785993f3567461c5a719c299a",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[34].specEvidence.name",
       "configuration": "elite-series-2-witcher",
       "valueHash": "3ea0e13941f035655b0b700540b3934cb8a82d5e136134a67a62157dc1a898d1",
@@ -59008,19 +58566,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[34].specEvidence.salesRegion",
-      "configuration": "elite-series-2-witcher",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -59093,19 +58638,6 @@
       "id": "controllers[35].specEvidence.name",
       "configuration": "elite-series-2-ninja-gaiden",
       "valueHash": "6706b23376f3ede3ec9cee9cbfcca63c2746475af813d705ea759d81f09ebb3f",
-      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
-      "sourceUrls": [
-        "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4"
-      ],
-      "region": "CN",
-      "configurationScope": "中国大陆：国行 Xbox Elite 无线控制器 2 代 青春版 - Xbox Design Lab 定制版 _《忍者龙剑传 4》",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[35].specEvidence.salesRegion",
-      "configuration": "elite-series-2-ninja-gaiden",
-      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
       "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
       "sourceUrls": [
         "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4"
@@ -59276,19 +58808,6 @@
       "sourceAuthority": null
     },
     {
-      "id": "controllers[36].specEvidence.msrp",
-      "configuration": "elite-series-2-outerworlds",
-      "valueHash": "4aae79a2e06c7e29cf04be0ac9f96abbf35b18f911d26bf255bf8f7bbe84f9c0",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
       "id": "controllers[36].specEvidence.name",
       "configuration": "elite-series-2-outerworlds",
       "valueHash": "b6c1738eea7b6600b412bd1b692c4a7a54212e2bf6eed5552067aa78e3d30b1e",
@@ -59298,19 +58817,6 @@
       ],
       "region": "GLOBAL",
       "configurationScope": "按官方产品/联名身份收录；删除未有正面证据的美国独占/中国未售断言，地区供应另核。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[36].specEvidence.salesRegion",
-      "configuration": "elite-series-2-outerworlds",
-      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "已证海外官方产品资料；没有正面证据证明美国独占或中国未售。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -59541,19 +59047,6 @@
       ],
       "region": "CN",
       "configurationScope": "本站目录分类；官方精确产品名与Core/完整套装另列。",
-      "reviewedAt": "2026-10-11",
-      "sourceAuthority": null
-    },
-    {
-      "id": "controllers[38].specEvidence.msrp",
-      "configuration": "xbox-adaptive-joystick",
-      "valueHash": "0a5a25d6b219082118ddb9ed915af9fbc816d7a923fcdca939afbfd65662e25e",
-      "sourceUrl": "https://news.xbox.com/en-us/2024/08/21/xbox-accessibility-adaptive-joystick-thumbstick-toppers/",
-      "sourceUrls": [
-        "https://news.xbox.com/en-us/2024/08/21/xbox-accessibility-adaptive-joystick-thumbstick-toppers/"
-      ],
-      "region": "GLOBAL",
-      "configurationScope": "按该款海外历史发布的日期、货币与起价/建议价保留；人民币价格未证，Design Lab升级另计，非当前中国售价。",
       "reviewedAt": "2026-10-11",
       "sourceAuthority": null
     },
@@ -60637,16 +60130,473 @@
       "sourceAuthority": null
     },
     {
+      "id": "xbox-one.warranty.cn-2014",
+      "configuration": "xbox-one",
+      "valueHash": "909bd2be15e1045cf8c0c384eac0b90915092e44285baff66aefbdafe2be4b16",
+      "sourceUrl": "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2014中国Xbox One首发公告的历史权益；不等于完整保修条款、其他地区或当前维修保证。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-stereo-headset:price",
+      "configuration": "xbox-stereo-headset",
+      "valueHash": "9809c2f9d1dbe5b68d740c3a620394649bb5ed1aa774e65b04f6f3401ba34649",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-stereo-headset",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-stereo-headset"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Xbox Stereo Headset有线3.5mm款；当次中国产品页总计419元，券后价空白，不推断券后价、首发价或其他年份无线款。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-seagate-2tb:price",
+      "configuration": "xbox-seagate-2tb",
+      "valueHash": "b7628a1f346fe842ed581e6c047f3d64498b78d07e11a3284839243c398cdfb5",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2021/10/21/new-seagate-storage-expansion-cards/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2021年Xbox官方公告的2TB容量预购计划；非1TB/512GB，非当前实时价。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-complete-component-pack:price",
+      "configuration": "xbox-complete-component-pack",
+      "valueHash": "9809c2f9d1dbe5b68d740c3a620394649bb5ed1aa774e65b04f6f3401ba34649",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-elite-series-2-complete-component-pack"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Elite Series 2完整配件包；当次中国独立产品页总计419元，券后价空白，不作为手柄、单独收纳盒或拨片套装价格。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-rechargeable-battery:price",
+      "configuration": "xbox-rechargeable-battery",
+      "valueHash": "2e2f358d96308ffeb15d3bb364cf2247ea90ada67331cd66b695586fa0498f51",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-play-and-charge-kit",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-play-and-charge-kit"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2020款USB-C控制器适用的同步充电套组+USB-C线缆；当次中国页总计199元，不适用于旧Micro-USB套组。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-wireless-adapter:price",
+      "configuration": "xbox-wireless-adapter",
+      "valueHash": "209f94657f6cd2d0bdbc580ee2f5bcae439be82d496cd69dd421f9f6cbedb60e",
+      "sourceUrl": "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2015/10/20/xbox-wireless-adapter-for-windows-begins-shipping-today/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2015原版适配器单品；非含控制器79.95美元套装，非2017小型版，非当前报价。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "surface.devices[80].specEvidence.startingPriceCny",
+      "configuration": "xbox-one",
+      "valueHash": "e76efd55a85deb6f33f756bab9146b3938e8cbb4589f5959f14004cf1fd5c94e",
+      "sourceUrl": "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2014-09-23中国官方发售公告、9月29日历史权益，带与不带Kinect分开；当前报价、供应和后续套装另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "surface.devices[83].specEvidence.startingPriceCny",
+      "configuration": "xbox-one-x",
+      "valueHash": "c873efae556a676c60b039548eb0e4ba1f524266f9d63fda7a9ed74a30024b80",
+      "sourceUrl": "https://news.microsoft.com/zh-cn/2017-%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87%E7%9A%84%E5%BE%AE%E8%BD%AF-xbox-%E5%A4%A7%E4%BA%8B%E4%BB%B6/",
+      "sourceUrls": [
+        "https://news.microsoft.com/zh-cn/2017-%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87%E7%9A%84%E5%BE%AE%E8%BD%AF-xbox-%E5%A4%A7%E4%BA%8B%E4%BB%B6/"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2017-12-22中国官方年度回顾明确11月7日国行正式发售和3999元；旧中国FAQ另列1TB新品3999元。不泛化限量版、套装或当前报价。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-series-s-512:releaseDate",
+      "configuration": "xbox-series-s-512",
+      "valueHash": "4470cf660531cb164b1b80ccb15da0c42b6e59826b976918459cd76e9500c788",
+      "sourceUrl": "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+      "sourceUrls": [
+        "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+        "https://www.xbox.com/en-US/consoles/xbox-series-s"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "中国2021年历史发行计划与美国官网2020年发行FAQ分别引用；只适用于原始Series S/X发行记录，不当作后续1TB、数字版或2TB同一发售日。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-series-x:releaseDate",
+      "configuration": "xbox-series-x",
+      "valueHash": "4470cf660531cb164b1b80ccb15da0c42b6e59826b976918459cd76e9500c788",
+      "sourceUrl": "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+      "sourceUrls": [
+        "https://news.microsoft.com/zh-cn/%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%B2%E8%87%B3%EF%BC%9A%E5%9B%BD%E8%A1%8C-xbox-series-xs-%E5%B0%86%E4%BA%8E-6-%E6%9C%88-10-%E6%97%A5%E8%B5%B7%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA/",
+        "https://www.xbox.com/en-US/consoles/xbox-series-x"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "中国2021年历史发行计划与美国官网2020年发行FAQ分别引用；只适用于原始Series S/X发行记录，不当作后续1TB、数字版或2TB同一发售日。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[0].specEvidence.msrp",
+      "configuration": "series-carbon-black",
+      "valueHash": "081a829971ae35f3cf8d1922fe957edf92b01331ed8b5779f2369980a592890d",
+      "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "系列起价；不是中国售价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-carbon-black:salesRegion",
+      "configuration": "series-carbon-black",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[1].specEvidence.msrp",
+      "configuration": "series-robot-white",
+      "valueHash": "081a829971ae35f3cf8d1922fe957edf92b01331ed8b5779f2369980a592890d",
+      "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "系列起价；不是中国售价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-robot-white:salesRegion",
+      "configuration": "series-robot-white",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[2].specEvidence.msrp",
+      "configuration": "series-shock-blue",
+      "valueHash": "f5cc6d538d5445cd09e684bc8b4e23403c404832795508768aa0ffe6eebc41fe",
+      "sourceUrl": "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2020/09/21/introducing-next-gen-xbox-accessories/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "系列起价；未单列蓝色独立SKU价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-shock-blue:salesRegion",
+      "configuration": "series-shock-blue",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[3].specEvidence.msrp",
+      "configuration": "series-pulse-red",
+      "valueHash": "3b0367de7be64dcd10e5f6c6b49008eb448788871f52b4653a3db376d4d40c60",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "该款USD历史发布价；China次日历史发售另列；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-pulse-red:salesRegion",
+      "configuration": "series-pulse-red",
+      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2021/01/11/introducing-new-xbox-wireless-controller-pulse-red/"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2021-01-11英文官方发布稿明确次日在中国发行Pulse Red，即2021-01-12历史计划；USD价格与人民币分开，当前库存另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[4].specEvidence.msrp",
+      "configuration": "series-electric-volt",
+      "valueHash": "fa09143983db627eea425434c1a843d1c3c0c9aaf0d70525de9ce0375934aeed",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2021-04-27多数Xbox市场发售；日期取准确原文URL；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-electric-volt:salesRegion",
+      "configuration": "series-electric-volt",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[5].specEvidence.msrp",
+      "configuration": "series-velocity-green",
+      "valueHash": "03fd5d315a5775e2749f7d63a2ba680a1de1ac3f4d001105ebfe625a8564bdf9",
+      "sourceUrl": "https://news.xbox.com/en-us/2023/03/07/stun-the-competition-with-the-new-xbox-wireless-controller-velocity-green/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2023/03/07/stun-the-competition-with-the-new-xbox-wireless-controller-velocity-green/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "USD ERP；worldwide；地域库存另核；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-velocity-green:salesRegion",
+      "configuration": "series-velocity-green",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "series-deep-pink:salesRegion",
+      "configuration": "series-deep-pink",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[7].specEvidence.msrp",
+      "configuration": "series-astral-purple",
+      "valueHash": "b8de6adb4937ee85a611c5cf37cac8cc8ddc3406f97cf35ea1ebfa993c103963",
+      "sourceUrl": "https://news.xbox.com/en-us/2023/09/12/xbox-wireless-controller-astral-purple/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2023/09/12/xbox-wireless-controller-astral-purple/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "USD ERP；部分Xbox市场预购；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-astral-purple:salesRegion",
+      "configuration": "series-astral-purple",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[8].specEvidence.msrp",
+      "configuration": "series-sky-cipher",
+      "valueHash": "4f3c104c692c84fefcd1b835d059e646efde5c0feffd6eea37eb710c024115c2",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "USD ERP；部分Xbox市场预购；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-sky-cipher:salesRegion",
+      "configuration": "series-sky-cipher",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/07/31/sky-cipher-xbox-wireless-controller-transparent/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[9].specEvidence.msrp",
+      "configuration": "series-ghost-cipher",
+      "valueHash": "3d465d6b49a8c890856529a66a99eb51931b9b8f4982145de2b7e8e62e7f2a03",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/09/24/xbox-cipher-series-transparent-controller-design-lab/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/09/24/xbox-cipher-series-transparent-controller-design-lab/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "普通GhostCipher，非EliteCipher；部分市场预购；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-ghost-cipher:salesRegion",
+      "configuration": "series-ghost-cipher",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-ghost-cipher",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-ghost-cipher"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[10].specEvidence.msrp",
+      "configuration": "series-arctic-camo",
+      "valueHash": "52a624acade811119173c03cce15c15ee72d1d79d0586f7fe5858b0e62137685",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/03/26/arctic-camo-special-edition/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/03/26/arctic-camo-special-edition/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "USD ERP；2023-05美国首发后扩大国际销售，不能混成2024初次全球首发；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-arctic-camo:salesRegion",
+      "configuration": "series-arctic-camo",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-arctic-camo-merlin",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-arctic-camo-merlin"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[11].specEvidence.msrp",
+      "configuration": "series-mineral-camo",
+      "valueHash": "cbd41a1be5a03ded2400f822155e88e0bcc967111d2849fb1c06c9326f6a1e43",
+      "sourceUrl": "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "USD MSRP；不是同页Razer底座49.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-mineral-camo:salesRegion",
+      "configuration": "series-mineral-camo",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2022/09/27/mineral-camo-special-edition-controller-announce/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[12].specEvidence.msrp",
+      "configuration": "series-daystrike-camo",
+      "valueHash": "d19ac6cd0128fbbd8199c984f3503ad89e5b2c8560c2358bb1595b67d8860b58",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "DaystrikeCamo于2021-05-04多数市场；不是Volt64.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-daystrike-camo:salesRegion",
+      "configuration": "series-daystrike-camo",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2021/03/25/new-xbox-wireless-controllers-electric-volt-and-daystrike-camo/amp/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
       "id": "series-starfield:msrp",
       "configuration": "series-starfield",
-      "valueHash": "93ae080a713154845a522724f1119456f48168d8b4a49a8261389d39521355ad",
+      "valueHash": "3695afd1feaf187e2a9fa68e24bb773736f0a858160c3918279e65b468ef54e0",
       "sourceUrl": "https://news.xbox.com/en-us/2023/06/12/starfield-limited-edition-wireless-controller-and-headset/",
       "sourceUrls": [
         "https://news.xbox.com/en-us/2023/06/12/starfield-limited-edition-wireless-controller-and-headset/"
       ],
       "region": "GLOBAL",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "按发布稿日期记录历史参考价格；不认证人民币价格、实时库存或现价。",
+      "configurationScope": "Starfield控制器USD ERP；不是耳机124.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
       "sourceAuthority": "manufacturer-primary"
     },
     {
@@ -60659,33 +60609,124 @@
       ],
       "region": "GLOBAL",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "本站按英文官方历史发布稿列为海外收录；不认证中国SKU、库存或在售。",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
       "sourceAuthority": "manufacturer-primary"
     },
     {
-      "id": "series-gears-5:msrp",
-      "configuration": "series-gears-5",
-      "valueHash": "2bfc1ca2a68e2fd5116635fd8b135d3c17009d409bd18b244b1e6352e0355da8",
-      "sourceUrl": "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/",
+      "id": "series-20th-anniversary:msrp",
+      "configuration": "series-20th-anniversary",
+      "valueHash": "a1ebafa155f38dec6630ad1974b7b0553ca1a7b0adb00d47e19d913a4496f4ba",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/",
       "sourceUrls": [
-        "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/"
+        "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/"
       ],
       "region": "GLOBAL",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "按发布稿日期记录历史参考价格；不认证人民币价格、实时库存或现价。",
+      "configurationScope": "20周年控制器预购；2021-11-15推出；指定全球市场，不支持CNY539；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
       "sourceAuthority": "manufacturer-primary"
     },
     {
-      "id": "series-gears-5:salesRegion",
-      "configuration": "series-gears-5",
+      "id": "series-20th-anniversary:salesRegion",
+      "configuration": "series-20th-anniversary",
       "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
-      "sourceUrl": "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/",
+      "sourceUrl": "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/",
       "sourceUrls": [
-        "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/"
+        "https://news.xbox.com/en-us/2021/10/07/celebrate-20-years-of-play-with-20th-anniversary-hardware/"
       ],
       "region": "GLOBAL",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "本站按英文官方历史发布稿列为海外收录；不认证中国SKU、库存或在售。",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[15].specEvidence.msrp",
+      "configuration": "series-storm-breaker",
+      "valueHash": "61bc66379017a8f5ad2931d1871ea6096761cbfa55372385cd8d8337da000d2c",
+      "sourceUrl": "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "StormcloudVapor USD ERP；指定全球市场，不支持中国独立SKU；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-storm-breaker:salesRegion",
+      "configuration": "series-storm-breaker",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2023/08/01/stormcloud-vapor-special-edition-xbox-wireless-controller/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-x25-anniversary:salesRegion",
+      "configuration": "series-x25-anniversary",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller-x25",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/gaming/xbox-wireless-controller-x25"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[17].specEvidence.salesRegion",
+      "configuration": "series-doom-dark-ages",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-doom-the-dark-ages-limited-edition",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-wireless-controller-doom-the-dark-ages-limited-edition"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[18].specEvidence.salesRegion",
+      "configuration": "series-fallout-pip-boy",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[19].specEvidence.msrp",
+      "configuration": "series-cod-black-ops-6",
+      "valueHash": "bc56ba14d90ac88ee730f09d68bf15493c6e11d88d110da1441f573f9ccec52b",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "普通CoD；USD ERP起价；DesignLab升级另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[19].specEvidence.salesRegion",
+      "configuration": "series-cod-black-ops-6",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
       "sourceAuthority": "manufacturer-primary"
     },
     {
@@ -60698,20 +60739,514 @@
       ],
       "region": "GLOBAL",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "本站按英文官方历史发布稿列为海外收录；不认证中国SKU、库存或在售。",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
       "sourceAuthority": "manufacturer-primary"
     },
     {
-      "id": "xbox-one.warranty.cn-2014",
-      "configuration": "xbox-one",
-      "valueHash": "909bd2be15e1045cf8c0c384eac0b90915092e44285baff66aefbdafe2be4b16",
-      "sourceUrl": "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans",
+      "id": "series-gears-5:msrp",
+      "configuration": "series-gears-5",
+      "valueHash": "99be0e6cf7d2820b52c93de5699a4d41425f0dde07fe390bac6abf6c984bcaeb",
+      "sourceUrl": "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/",
       "sourceUrls": [
-        "https://news.microsoft.com/source/asia/2014/09/23/xbox-one-%E5%9B%BD%E8%A1%8C%E7%89%88%E5%B0%86%E4%BA%8E-9-%E6%9C%88-29-%E6%97%A5%E5%8F%91%E5%94%AE/?lang=zh-hans"
+        "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Kait控制器历史USD价；不是另售充电座49.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-gears-5:salesRegion",
+      "configuration": "series-gears-5",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2019/08/06/gears-5-limited-edition-hardware-available-for-preorder-today/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[22].specEvidence.msrp",
+      "configuration": "series-witcher-3",
+      "valueHash": "23fb5b5364b5ba6a7ae6d985ea1c28e9e23c834d7c191677e846bd5531d2949b",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Witcher普通固定USD ERP；MicrosoftStore限定；去起价/定制升级模板；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[22].specEvidence.salesRegion",
+      "configuration": "series-witcher-3",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[23].specEvidence.salesRegion",
+      "configuration": "series-spongebob",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/11/18/spongebob-movie-limited-edition-xbox-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/11/18/spongebob-movie-limited-edition-xbox-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[24].specEvidence.salesRegion",
+      "configuration": "series-ninja-gaiden-4",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-wireless-controller-ninja-gaiden-4"
       ],
       "region": "CN",
       "reviewedAt": "2026-10-12",
-      "configurationScope": "2014中国Xbox One首发公告的历史权益；不等于完整保修条款、其他地区或当前维修保证。",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[25].specEvidence.msrp",
+      "configuration": "series-outerworlds-2",
+      "valueHash": "709e871088d2fae0c45a5dde1163886be746b1f1535dcb241fa8260962727563",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Outer普通MSRP起价；DesignLab选配另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[25].specEvidence.salesRegion",
+      "configuration": "series-outerworlds-2",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "series-outerworlds-2:colorName",
+      "configuration": "series-outerworlds-2",
+      "valueHash": "f95624f9320818e9a12ab4d026c12648747e5517c7c47db0ffe702061540ca52",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2025-10-08官方主题发布；主题图案与可选按钮/金属配件分开，不固定称黄色或金色。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[26].specEvidence.salesRegion",
+      "configuration": "series-team-spirit",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2026/05/26/xbox-design-lab-team-spirit-wireless-controller/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2026/05/26/xbox-design-lab-team-spirit-wireless-controller/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "elite-series-2-black:salesRegion",
+      "configuration": "elite-series-2-black",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-controller-series-2",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-elite-controller-series-2"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[28].specEvidence.msrp",
+      "configuration": "elite-series-2-core-white",
+      "valueHash": "12aa4f27d0c811257b628ff335d469a480acae32095b673ec62d85d336c8068a",
+      "sourceUrl": "https://news.xbox.com/en-us/2022/09/21/xbox-september-update-rolls-out-today/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2022/09/21/xbox-september-update-rolls-out-today/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "白Core USD MSRP；不是component pack59.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "elite-series-2-core-white:salesRegion",
+      "configuration": "elite-series-2-core-white",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-core-white",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-core-white"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[29].specEvidence.msrp",
+      "configuration": "elite-series-2-core-red",
+      "valueHash": "7bb4d209b9bca87b91b755f98c1ad2aedbee17a9cf3e690a2f144dad54f8afbc",
+      "sourceUrl": "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "红Core USD MSRP预购；不是白Core129.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "elite-series-2-core-red:salesRegion",
+      "configuration": "elite-series-2-core-red",
+      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "中国Core系列页面明确列红/蓝颜色。999元是未分色的系列总计，不填作任一颜色独立价格；当前库存另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[30].specEvidence.msrp",
+      "configuration": "elite-series-2-core-blue",
+      "valueHash": "4489ef00433859c402606fa8659085a192fa61aecdcc86438e9a8f01fdec9bdf",
+      "sourceUrl": "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2023/03/28/xbox-elite-wireless-controller-series-2-core-red-blue/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "蓝Core USD MSRP预购；不是白Core129.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "elite-series-2-core-blue:salesRegion",
+      "configuration": "elite-series-2-core-blue",
+      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-elite-v2-core-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "中国Core系列页面明确列红/蓝颜色。999元是未分色的系列总计，不填作任一颜色独立价格；当前库存另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[31].specEvidence.salesRegion",
+      "configuration": "elite-series-2-doom",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-elite-wireless-controller-series-2-the-dark-age-limited-edition"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "controllers[32].specEvidence.salesRegion",
+      "configuration": "elite-series-2-fallout",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/12/10/fallout-pip-boy-xbox-controller-design-lab/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[33].specEvidence.msrp",
+      "configuration": "elite-series-2-cod",
+      "valueHash": "d25bbdea83e61527cd0f1de6893356154c8f5051b1e723b5498626d5f31e4282",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "CoD Elite；USD ERP起价；DesignLab升级另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[33].specEvidence.salesRegion",
+      "configuration": "elite-series-2-cod",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2024/10/16/call-of-duty-black-ops-6-accessories-controller-console-wrap/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[34].specEvidence.msrp",
+      "configuration": "elite-series-2-witcher",
+      "valueHash": "af4981e9837571211e87a661463dfef10dbdf3b4cf103a9cb99f34651d6e8d08",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Witcher Elite Series2 Core固定USD ERP，非完整套装；MicrosoftStore限定；去定制升级模板；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[34].specEvidence.salesRegion",
+      "configuration": "elite-series-2-witcher",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/05/22/the-witcher-3-wild-hunt-10th-anniversary-xbox-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "elite-series-2-ninja-gaiden:msrp",
+      "configuration": "elite-series-2-ninja-gaiden",
+      "valueHash": "eb31b74868545d35ce0a3953a350a6254f0117d1dff03c0984d800d492a7d668",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Elite Series 2 Core忍者龙剑传4版本；原页总计与券后字段同时保留，既不裁成实时成交价，也不作为原1699元/199.99美元证明。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[35].specEvidence.salesRegion",
+      "configuration": "elite-series-2-ninja-gaiden",
+      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-design-lab-elite-wireless-controller-series-2-core-ninja-gaiden-4"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "中国独立商品/技术页按本款身份记录；商品页存在不等于实时供货，价格与SKU条件另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[36].specEvidence.msrp",
+      "configuration": "elite-series-2-outerworlds",
+      "valueHash": "2d509e197e08be7af9be51e27d6ce97557ebb93db13e2a1cea6b90e81f6a6448",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "Outer Elite MSRP起价；DesignLab选配另计；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "controllers[36].specEvidence.salesRegion",
+      "configuration": "elite-series-2-outerworlds",
+      "valueHash": "4fe034569cdada999aaf3e147351856b4e686753f081aeb986ce910886b54c37",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "elite-series-2-outerworlds:colorName",
+      "configuration": "elite-series-2-outerworlds",
+      "valueHash": "f95624f9320818e9a12ab4d026c12648747e5517c7c47db0ffe702061540ca52",
+      "sourceUrl": "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2025/10/08/the-outer-worlds-2-xbox-design-lab-controllers/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2025-10-08官方主题发布；主题图案与可选按钮/金属配件分开，不固定称黄色或金色。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-adaptive-controller:salesRegion",
+      "configuration": "xbox-adaptive-controller",
+      "valueHash": "d8e8ce73403e344ec3413b4e8fbd14e589e0d747488232b3915e3724b88085d6",
+      "sourceUrl": "https://www.microsoftstore.com.cn/controller/xbox-adaptive-controller",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/controller/xbox-adaptive-controller"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "中国独立商品/技术页按本款身份记录；商品页存在不等于实时供货，价格与SKU条件另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "xbox-adaptive-joystick:salesRegion",
+      "configuration": "xbox-adaptive-joystick",
+      "valueHash": "4fe9cac64ff2702c7311a86e00bd20721c6a65b91a065204218ab01d431ad99d",
+      "sourceUrl": "https://www.microsoftstore.com.cn/accessories/xbox-adaptive-joystick",
+      "sourceUrls": [
+        "https://www.microsoftstore.com.cn/accessories/xbox-adaptive-joystick"
+      ],
+      "region": "CN",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "所引资料记录2026-10-09中国商品/选择器中的本款条目；厂商完整原网页尚待独立复核。不是当前库存、售价或制造商MPN证明。",
+      "sourceAuthority": "user-provided-structured-record"
+    },
+    {
+      "id": "one-standard-black:salesRegion",
+      "configuration": "one-standard-black",
+      "valueHash": "e4c13c4401d43136853edf41d4fa114389d5228b7f01ca06038e4ec9b73796ea",
+      "sourceUrl": "https://news.xbox.com/en-us/2013/06/12/e3-accessories/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2013/06/12/e3-accessories/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "one-s-white:salesRegion",
+      "configuration": "one-s-white",
+      "valueHash": "e4c13c4401d43136853edf41d4fa114389d5228b7f01ca06038e4ec9b73796ea",
+      "sourceUrl": "https://news.xbox.com/en-us/2016/06/14/xbox-one-s-2tb-launch-edition-console-is-now-available-for-pre-order/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2016/06/14/xbox-one-s-2tb-launch-edition-console-is-now-available-for-pre-order/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "360-wireless-white:msrp",
+      "configuration": "360-wireless-white",
+      "valueHash": "6ce7dbfa5b56378487ba1abc1bfd41fb8c92067494499f1bd7d2fe4b11df1e9b",
+      "sourceUrl": "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2005基本无线控制器US估价；仅家庭/基础款参考，非后来特殊颜色或当前价；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "360-wireless-white:salesRegion",
+      "configuration": "360-wireless-white",
+      "valueHash": "e4c13c4401d43136853edf41d4fa114389d5228b7f01ca06038e4ec9b73796ea",
+      "sourceUrl": "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/",
+      "sourceUrls": [
+        "https://news.xbox.com/en-us/2005/08/17/xbox-360-details-and-prices/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "360-wireless-black:msrp",
+      "configuration": "360-wireless-black",
+      "valueHash": "8aaef15ac057cc8485a0a96c1f1a9322917b8bc7a47e5a6759b6a3558095b1cc",
+      "sourceUrl": "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "2007黑色无线控制器独立US估价；非Elite主机479.99；独立发布稿日期记录，不认证人民币价、当前报价或库存。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "360-wireless-black:salesRegion",
+      "configuration": "360-wireless-black",
+      "valueHash": "e4c13c4401d43136853edf41d4fa114389d5228b7f01ca06038e4ec9b73796ea",
+      "sourceUrl": "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/2007/03/27/microsoft-unveils-xbox-360-elite/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "360-halo-odst:salesRegion",
+      "configuration": "360-halo-odst",
+      "valueHash": "e4c13c4401d43136853edf41d4fa114389d5228b7f01ca06038e4ec9b73796ea",
+      "sourceUrl": "https://news.microsoft.com/source/2009/06/01/xbox-360-primes-every-passion-with-games-that-rock-race-and-sizzle/",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/2009/06/01/xbox-360-primes-every-passion-with-games-that-rock-race-and-sizzle/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "original-the-duke:salesRegion",
+      "configuration": "original-the-duke",
+      "valueHash": "e4c13c4401d43136853edf41d4fa114389d5228b7f01ca06038e4ec9b73796ea",
+      "sourceUrl": "https://news.microsoft.com/source/2001/01/06/much-anticipated-xbox-game-console-along-with-xbox-controller-and-game-demonstrations-headline-consumer-electronics-show/",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/2001/01/06/much-anticipated-xbox-game-console-along-with-xbox-controller-and-game-demonstrations-headline-consumer-electronics-show/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
+      "sourceAuthority": "manufacturer-primary"
+    },
+    {
+      "id": "original-controller-s:salesRegion",
+      "configuration": "original-controller-s",
+      "valueHash": "e4c13c4401d43136853edf41d4fa114389d5228b7f01ca06038e4ec9b73796ea",
+      "sourceUrl": "https://news.microsoft.com/source/2002/10/14/xbox-offers-console-with-two-free-sega-games-and-new-controller-for-199/",
+      "sourceUrls": [
+        "https://news.microsoft.com/source/2002/10/14/xbox-offers-console-with-two-free-sega-games-and-new-controller-for-199/"
+      ],
+      "region": "GLOBAL",
+      "reviewedAt": "2026-10-12",
+      "configurationScope": "按海外厂商历史发布或资料引用收录本款；不推断美国独占或中国从未销售；中国SKU、价格、硬件修订及当前供应另核。",
       "sourceAuthority": "manufacturer-primary"
     }
   ]

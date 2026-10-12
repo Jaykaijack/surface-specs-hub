@@ -867,6 +867,7 @@ const Catalog = (function () {
     const labels = {name:'产品名称',nameEn:'英文名称',vendor:'芯片厂商',processNode:'制程',architecture:'架构',cores:'核心与频率',gpu:'GPU',memorySupport:'芯片内存支持',tdp:'芯片平台功耗',npuTops:'专用NPU算力',npuDesc:'NPU原厂口径',copilotPlus:'整机资格条件',equippedDevices:'已证搭载关系',highlights:'硬件概述',generation:'目录分类（本站）',generationName:'分类名称（本站）',status:'资料收录与供货',statusLabel:'供货状态说明',salesRegion:'地区供应范围',colorName:'配色与定制选项',weight:'装配重量',battery:'供电与续航',connectivity:'连接方式',compatibility:'设备与系统兼容',dpad:'方向键',triggers:'扳机',msrp:'地区与历史参考价',description:'设计与包装说明',headphoneJack:'音频与扩展接口',shareBtn:'分享键与映射',year:'公布与发售日期'};
     const official = primarySourceIdentity;
     labels.dimensions = '版本与尺寸说明';
+    labels.price = '地区与日期参考价';
     Object.assign(labels, {tagline:'型号概述',aliases:'型号别名',systemSku:'系统型号标识',releaseDate:'日期与事件范围'});
     const entries = Object.entries(proofs).filter(([field,e]) => e && e.configuration === object.id && e.reviewedAt &&
       JSON.stringify(e.value) === JSON.stringify(object[field]) && official(e.sourceUrl));
@@ -874,8 +875,9 @@ const Catalog = (function () {
     if (!entries.length) return gaps;
     return `<details class="field-evidence object-field-sources" data-source-object="${escape(object.id)}"><summary>逐字段来源与适用条件</summary>${entries.map(([field,e]) => {
       const urls = [...new Set([e.sourceUrl, ...(e.sourceUrls || [])])].filter(official);
-      const value = field === 'status' ? ({current_global:'海外官网列售（库存未核验）',current_cn:'国行目录',upcoming:'即将发售',legacy:'历史机型',pending:'—'}[e.value] || '') : Array.isArray(e.value) ? e.value.join('、') : e.value;
-      return `<p data-source-field="${escape(field)}"><strong>${escape(labels[field] || '参数条件')}</strong>：${escape(value)}<br>${e.region === 'CN' ? '中国来源' : '海外/全球来源'}。${escape(e.configurationScope)} ${urls.map((url,i) => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${primarySourceLabel(url,i+1)}</a>`).join(' ')}</p>`;
+      const value = field === 'status' ? ({current_global:'海外官网列售（库存未核验）',current_cn:'国行目录',upcoming:'即将发售',legacy:'历史机型',pending:'—'}[e.value] || '') : field === 'salesRegion' ? ({cn_official:'中国官方历史收录',cn_recorded:'中国目录记录（原网页待复核）',global_recorded:'海外资料收录（中国供应另核）',legacy:'历史资料收录',us_only:'美国限定（适用条件见来源）'}[e.value] || e.value) : Array.isArray(e.value) ? e.value.join('、') : e.value;
+      const sourceKind = e.sourceAuthority === 'user-provided-structured-record' ? '资料记录引用，厂商原文待复核' : e.region === 'CN' ? '中国适用来源' : '海外/全球来源';
+      return `<p data-source-field="${escape(field)}"><strong>${escape(labels[field] || '参数条件')}</strong>：${escape(value)}<br>${sourceKind}。${escape(e.configurationScope)} ${urls.map((url,i) => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${primarySourceLabel(url,i+1)}</a>`).join(' ')}</p>`;
     }).join('')}</details>${gaps}`;
   }
 
